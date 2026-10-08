@@ -19,6 +19,8 @@ if (!(Test-Path "$vfRoot/generated/equipment_visuals/eq_optic.mdl")) {
 if ($LASTEXITCODE -ne 0) { throw 'Reference weapon generation failed.' }
 & python "$vfRoot/build_personas.py" --ensure
 if ($LASTEXITCODE -ne 0) { throw 'GIGN character generation failed.' }
+& python "$vfRoot/build_lootpool.py"
+if ($LASTEXITCODE -ne 0) { throw 'Gameplay lootpool generation failed.' }
 & python "$vfRoot/build_effects.py"
 if ($LASTEXITCODE -ne 0) { throw 'Effect catalog generation failed.' }
 Push-Location $repoRoot

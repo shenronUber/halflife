@@ -137,25 +137,86 @@ receiver|r01_receiver_a|1|R-01 / Chassis Atelier|Baseline|Relais R-01|4|4|4|4|0|
 receiver|r01_receiver_b|1|R-01 / Chassis Circuit|Engine|Relais R-01|4|4|4|4|0|0|Capot clair, renforts sombres et panneau de service. Visuel uniquement.|0
 barrel|r01_barrel_a|1|Canon chemise|Baseline|Relais R-01|4|4|4|4|0|0|Chemise ventilee et bagues usinees. Visuel uniquement.|0
 barrel|r01_barrel_b|1|Canon a induction|Engine|Relais R-01|4|4|4|4|0|0|Enroulements de cuivre et isolateurs ceramiques. Visuel uniquement.|0
-muzzle|r01_muzzle_a|1|Frein ajoure|Baseline|Relais R-01|4|4|4|4|0|0|Chambres ouvertes et couronne metallique. Visuel uniquement.|0
-muzzle|r01_muzzle_b|1|Moderateur court|Engine|Relais R-01|4|4|4|4|0|0|Corps cylindrique court, colliers et bouche creuse. Visuel uniquement.|0
+muzzle|r01_muzzle_a|1|Frein ajoure|Rogue|Relais R-01|4|4|4|4|0|0|Chambres ouvertes et couronne metallique. Visuel uniquement.|0
+muzzle|r01_muzzle_b|1|Moderateur court|Fortress|Relais R-01|4|4|4|4|0|0|Corps cylindrique court, colliers et bouche creuse. Visuel uniquement.|0
 feed|r01_feed_a|1|Chargeur nervure|Baseline|Relais R-01|4|4|4|4|0|0|Coque emboutie et sabot. Suit la main au rechargement. Visuel uniquement.|0
 feed|r01_feed_b|1|Chargeur double pile|Engine|Relais R-01|4|4|4|4|0|0|Corps elargi et deux nervures. Meme point d insertion. Visuel uniquement.|0
-chamber|r01_chamber_a|1|Culasse a levier|Baseline|Relais R-01|4|4|4|4|0|0|Levier lateral et capot mobile au tir. Visuel uniquement.|0
-chamber|r01_chamber_b|1|Culasse a glissiere|Engine|Relais R-01|4|4|4|4|0|0|Glissiere renforcee animee avec le meme cycle. Visuel uniquement.|0
+chamber|r01_chamber_a|1|Culasse a levier|Rogue|Relais R-01|4|4|4|4|0|0|Levier lateral et capot mobile au tir. Visuel uniquement.|0
+chamber|r01_chamber_b|1|Culasse a glissiere|Anomalous|Relais R-01|4|4|4|4|0|0|Glissiere renforcee animee avec le meme cycle. Visuel uniquement.|0
 ammo|r01_ammo_a|1|Cassette balistique|Baseline|Relais R-01|4|4|4|4|0|0|Cartouches visibles dans une cassette laterale. Visuel uniquement.|0
 ammo|r01_ammo_b|1|Cassette energetique|Engine|Relais R-01|4|4|4|4|0|0|Cellules encastrees et indicateur de charge. Visuel uniquement.|0
-projectile|r01_projectile_a|1|Porte-flechettes|Baseline|Relais R-01|4|4|4|4|0|0|Trois flechettes retenues dans un berceau. Visuel uniquement.|0
-projectile|r01_projectile_b|1|Porte-ampoules|Engine|Relais R-01|4|4|4|4|0|0|Deux ampoules sous un capot de protection. Visuel uniquement.|0
-optic|r01_optic_a|1|Viseur cadre|Baseline|Relais R-01|4|4|4|4|0|0|Cadre rectangulaire et lentille texturee a reflets bleus, sans croix ajoutee. Visuel uniquement.|0
-optic|r01_optic_b|1|Lunette compacte|Engine|Relais R-01|4|4|4|4|0|0|Deux bagues, oculaire et tourelles de reglage. Visuel uniquement.|0
-underbarrel|r01_underbarrel_a|1|Poignee inclinee|Baseline|Relais R-01|4|4|4|4|0|0|Prise caoutchouc inclinee sur collier commun. Visuel uniquement.|0
+projectile|r01_projectile_a|1|Porte-flechettes|Predator|Relais R-01|4|4|4|4|0|0|Trois flechettes retenues dans un berceau. Visuel uniquement.|0
+projectile|r01_projectile_b|1|Porte-ampoules|Anomalous|Relais R-01|4|4|4|4|0|0|Deux ampoules sous un capot de protection. Visuel uniquement.|0
+optic|r01_optic_a|1|Viseur cadre|Predator|Relais R-01|4|4|4|4|0|0|Cadre rectangulaire et lentille texturee a reflets bleus, sans croix ajoutee. Visuel uniquement.|0
+optic|r01_optic_b|1|Lunette compacte|Predator|Relais R-01|4|4|4|4|0|0|Deux bagues, oculaire et tourelles de reglage. Visuel uniquement.|0
+underbarrel|r01_underbarrel_a|1|Poignee inclinee|Fortress|Relais R-01|4|4|4|4|0|0|Prise caoutchouc inclinee sur collier commun. Visuel uniquement.|0
 underbarrel|r01_underbarrel_b|1|Tube auxiliaire|Engine|Relais R-01|4|4|4|4|0|0|Capsule sous canon avec verrou et collier. Visuel uniquement.|0
-grip|r01_grip_a|1|Crosse squelette|Baseline|Relais R-01|4|4|4|4|0|0|Poignee textilee et crosse tubulaire. Visuel uniquement.|0
-grip|r01_grip_b|1|Crosse amortie|Engine|Relais R-01|4|4|4|4|0|0|Poignee moulee et crosse a plaque amortissante. Visuel uniquement.|0
-power|r01_power_a|1|Cellule ambre 24V|Baseline|Relais R-01|4|4|4|4|0|0|Batterie amovible, verrou, bornes et etiquette 24V. Visuel uniquement.|0
-power|r01_power_b|1|Condensateur teal 48V|Engine|Relais R-01|4|4|4|4|0|0|Deux capaciteurs, etrier, bornes et etiquette 48V. Visuel uniquement.|0
-cooling|r01_cooling_a|1|Radiateur a ailettes|Baseline|Relais R-01|4|4|4|4|0|0|Six ailettes metalliques sur semelle commune. Visuel uniquement.|0
+grip|r01_grip_a|1|Crosse squelette|Rogue|Relais R-01|4|4|4|4|0|0|Poignee textilee et crosse tubulaire. Visuel uniquement.|0
+grip|r01_grip_b|1|Crosse amortie|Fortress|Relais R-01|4|4|4|4|0|0|Poignee moulee et crosse a plaque amortissante. Visuel uniquement.|0
+power|r01_power_a|1|Cellule ambre 24V|Engine|Relais R-01|4|4|4|4|0|0|Batterie amovible, verrou, bornes et etiquette 24V. Visuel uniquement.|0
+power|r01_power_b|1|Condensateur teal 48V|Anomalous|Relais R-01|4|4|4|4|0|0|Deux capaciteurs, etrier, bornes et etiquette 48V. Visuel uniquement.|0
+cooling|r01_cooling_a|1|Radiateur a ailettes|Fortress|Relais R-01|4|4|4|4|0|0|Six ailettes metalliques sur semelle commune. Visuel uniquement.|0
 cooling|r01_cooling_b|1|Circuit cuivre|Engine|Relais R-01|4|4|4|4|0|0|Deux conduites cuivre et echangeur ceramique. Visuel uniquement.|0
 receiver|r01_receiver_side|1|R-01 / Traverse|Baseline|Relais R-01|4|4|4|4|0|0|Alimentation laterale. Extraction sur le cote et main animee. Memes chargeurs et proprietes.|0
 receiver|r01_receiver_top|1|R-01 / Zenith|Baseline|Relais R-01|4|4|4|4|0|0|Alimentation superieure. Extraction vers le haut et viseur decale. Memes chargeurs et proprietes.|0
+# GIGN gameplay: named equipment / gameplay family / cosmetic collection / fitted appearance key.
+head|gign_head_gign|1|Masque GIGN|Baseline|Intervention|0|0|0|0|4|3|Masque de la tenue Operateur GIGN.|0|persona_gign
+torso|gign_torso_gign|1|Veste GIGN|Baseline|Intervention|0|0|0|0|4|3|Veste de la tenue Operateur GIGN.|0|persona_gign
+gloves|gign_gloves_gign|1|Gants GIGN|Baseline|Intervention|0|0|0|0|4|3|Gants de la tenue Operateur GIGN.|0|persona_gign
+legs|gign_legs_gign|1|Pantalon GIGN|Baseline|Intervention|0|0|0|0|4|3|Pantalon de la tenue Operateur GIGN.|0|persona_gign
+boots|gign_boots_gign|1|Bottes GIGN|Baseline|Intervention|0|0|0|0|4|3|Bottes de la tenue Operateur GIGN.|0|persona_gign
+head|gign_head_salvager|1|Masque des ruines|Fortress|Ruines|0|0|0|0|6|5|Masque de la tenue Recuperateur des ruines.|0|persona_salvager
+torso|gign_torso_salvager|1|Veste des ruines|Fortress|Ruines|0|0|0|0|6|5|Veste de la tenue Recuperateur des ruines.|0|persona_salvager
+gloves|gign_gloves_salvager|1|Gants des ruines|Fortress|Ruines|0|0|0|0|6|5|Gants de la tenue Recuperateur des ruines.|0|persona_salvager
+legs|gign_legs_salvager|1|Pantalon des ruines|Fortress|Ruines|0|0|0|0|6|5|Pantalon de la tenue Recuperateur des ruines.|0|persona_salvager
+boots|gign_boots_salvager|1|Bottes des ruines|Fortress|Ruines|0|0|0|0|6|5|Bottes de la tenue Recuperateur des ruines.|0|persona_salvager
+head|gign_head_warden|1|Masque de la forge|Fortress|Forge medievale|0|0|0|0|6|5|Masque de la tenue Sentinelle de la forge.|0|persona_warden
+torso|gign_torso_warden|1|Veste de la forge|Fortress|Forge medievale|0|0|0|0|6|5|Veste de la tenue Sentinelle de la forge.|0|persona_warden
+gloves|gign_gloves_warden|1|Gants de la forge|Fortress|Forge medievale|0|0|0|0|6|5|Gants de la tenue Sentinelle de la forge.|0|persona_warden
+legs|gign_legs_warden|1|Pantalon de la forge|Fortress|Forge medievale|0|0|0|0|6|5|Pantalon de la tenue Sentinelle de la forge.|0|persona_warden
+boots|gign_boots_warden|1|Bottes de la forge|Fortress|Forge medievale|0|0|0|0|6|5|Bottes de la tenue Sentinelle de la forge.|0|persona_warden
+head|gign_head_bone|1|Masque d'os et de silex|Predator|Os et silex|0|0|0|0|5|4|Masque de la tenue Gardien d'os et de silex.|0|persona_bone
+torso|gign_torso_bone|1|Veste d'os et de silex|Predator|Os et silex|0|0|0|0|5|4|Veste de la tenue Gardien d'os et de silex.|0|persona_bone
+gloves|gign_gloves_bone|1|Gants d'os et de silex|Predator|Os et silex|0|0|0|0|5|4|Gants de la tenue Gardien d'os et de silex.|0|persona_bone
+legs|gign_legs_bone|1|Pantalon d'os et de silex|Predator|Os et silex|0|0|0|0|5|4|Pantalon de la tenue Gardien d'os et de silex.|0|persona_bone
+boots|gign_boots_bone|1|Bottes d'os et de silex|Predator|Os et silex|0|0|0|0|5|4|Bottes de la tenue Gardien d'os et de silex.|0|persona_bone
+head|gign_head_canopy|1|Masque de la canopee|Rogue|Canopee|0|0|0|0|7|6|Masque de la tenue Veilleur de la canopee.|0|persona_canopy
+torso|gign_torso_canopy|1|Veste de la canopee|Rogue|Canopee|0|0|0|0|7|6|Veste de la tenue Veilleur de la canopee.|0|persona_canopy
+gloves|gign_gloves_canopy|1|Gants de la canopee|Rogue|Canopee|0|0|0|0|7|6|Gants de la tenue Veilleur de la canopee.|0|persona_canopy
+legs|gign_legs_canopy|1|Pantalon de la canopee|Rogue|Canopee|0|0|0|0|7|6|Pantalon de la tenue Veilleur de la canopee.|0|persona_canopy
+boots|gign_boots_canopy|1|Bottes de la canopee|Rogue|Canopee|0|0|0|0|7|6|Bottes de la tenue Veilleur de la canopee.|0|persona_canopy
+head|gign_head_alchemist|1|Masque d'alchimie|Engine|Alchimie|0|0|0|0|8|7|Masque de la tenue Veilleur alchimiste.|0|persona_alchemist
+torso|gign_torso_alchemist|1|Veste d'alchimie|Engine|Alchimie|0|0|0|0|8|7|Veste de la tenue Veilleur alchimiste.|0|persona_alchemist
+gloves|gign_gloves_alchemist|1|Gants d'alchimie|Engine|Alchimie|0|0|0|0|8|7|Gants de la tenue Veilleur alchimiste.|0|persona_alchemist
+legs|gign_legs_alchemist|1|Pantalon d'alchimie|Engine|Alchimie|0|0|0|0|8|7|Pantalon de la tenue Veilleur alchimiste.|0|persona_alchemist
+boots|gign_boots_alchemist|1|Bottes d'alchimie|Engine|Alchimie|0|0|0|0|8|7|Bottes de la tenue Veilleur alchimiste.|0|persona_alchemist
+head|gign_head_porcelain|1|Masque de porcelaine|Anomalous|Porcelaine|0|0|0|0|9|8|Masque de la tenue Operateur de porcelaine.|0|persona_porcelain
+torso|gign_torso_porcelain|1|Veste de porcelaine|Anomalous|Porcelaine|0|0|0|0|9|8|Veste de la tenue Operateur de porcelaine.|0|persona_porcelain
+gloves|gign_gloves_porcelain|1|Gants de porcelaine|Anomalous|Porcelaine|0|0|0|0|9|8|Gants de la tenue Operateur de porcelaine.|0|persona_porcelain
+legs|gign_legs_porcelain|1|Pantalon de porcelaine|Anomalous|Porcelaine|0|0|0|0|9|8|Pantalon de la tenue Operateur de porcelaine.|0|persona_porcelain
+boots|gign_boots_porcelain|1|Bottes de porcelaine|Anomalous|Porcelaine|0|0|0|0|9|8|Bottes de la tenue Operateur de porcelaine.|0|persona_porcelain
+head|gign_head_trench|1|Masque des tranchees|Fortress|Grande Guerre|0|0|0|0|6|5|Masque de la tenue Sentinelle des tranchees.|0|persona_trench
+torso|gign_torso_trench|1|Veste des tranchees|Fortress|Grande Guerre|0|0|0|0|6|5|Veste de la tenue Sentinelle des tranchees.|0|persona_trench
+gloves|gign_gloves_trench|1|Gants des tranchees|Fortress|Grande Guerre|0|0|0|0|6|5|Gants de la tenue Sentinelle des tranchees.|0|persona_trench
+legs|gign_legs_trench|1|Pantalon des tranchees|Fortress|Grande Guerre|0|0|0|0|6|5|Pantalon de la tenue Sentinelle des tranchees.|0|persona_trench
+boots|gign_boots_trench|1|Bottes des tranchees|Fortress|Grande Guerre|0|0|0|0|6|5|Bottes de la tenue Sentinelle des tranchees.|0|persona_trench
+head|gign_head_bedrock|1|Masque des profondeurs|Engine|Bedrock|0|0|0|0|8|7|Masque de la tenue Mineur des profondeurs.|0|persona_bedrock
+torso|gign_torso_bedrock|1|Veste des profondeurs|Engine|Bedrock|0|0|0|0|8|7|Veste de la tenue Mineur des profondeurs.|0|persona_bedrock
+gloves|gign_gloves_bedrock|1|Gants des profondeurs|Engine|Bedrock|0|0|0|0|8|7|Gants de la tenue Mineur des profondeurs.|0|persona_bedrock
+legs|gign_legs_bedrock|1|Pantalon des profondeurs|Engine|Bedrock|0|0|0|0|8|7|Pantalon de la tenue Mineur des profondeurs.|0|persona_bedrock
+boots|gign_boots_bedrock|1|Bottes des profondeurs|Engine|Bedrock|0|0|0|0|8|7|Bottes de la tenue Mineur des profondeurs.|0|persona_bedrock
+head|gign_head_noir|1|Masque de minuit|Predator|New York noir|0|0|0|0|5|4|Masque de la tenue Detective de minuit.|0|persona_noir
+torso|gign_torso_noir|1|Veste de minuit|Predator|New York noir|0|0|0|0|5|4|Veste de la tenue Detective de minuit.|0|persona_noir
+gloves|gign_gloves_noir|1|Gants de minuit|Predator|New York noir|0|0|0|0|5|4|Gants de la tenue Detective de minuit.|0|persona_noir
+legs|gign_legs_noir|1|Pantalon de minuit|Predator|New York noir|0|0|0|0|5|4|Pantalon de la tenue Detective de minuit.|0|persona_noir
+boots|gign_boots_noir|1|Bottes de minuit|Predator|New York noir|0|0|0|0|5|4|Bottes de la tenue Detective de minuit.|0|persona_noir
+head|gign_head_castaway|1|Masque des rivages|Rogue|Bois de naufrage|0|0|0|0|7|6|Masque de la tenue Naufrage des rivages.|0|persona_castaway
+torso|gign_torso_castaway|1|Veste des rivages|Rogue|Bois de naufrage|0|0|0|0|7|6|Veste de la tenue Naufrage des rivages.|0|persona_castaway
+gloves|gign_gloves_castaway|1|Gants des rivages|Rogue|Bois de naufrage|0|0|0|0|7|6|Gants de la tenue Naufrage des rivages.|0|persona_castaway
+legs|gign_legs_castaway|1|Pantalon des rivages|Rogue|Bois de naufrage|0|0|0|0|7|6|Pantalon de la tenue Naufrage des rivages.|0|persona_castaway
+boots|gign_boots_castaway|1|Bottes des rivages|Rogue|Bois de naufrage|0|0|0|0|7|6|Bottes de la tenue Naufrage des rivages.|0|persona_castaway
+head|gign_head_diver|1|Masque des abysses|Baseline|Abysses|0|0|0|0|4|3|Masque de la tenue Plongeur des abysses.|0|persona_diver
+torso|gign_torso_diver|1|Veste des abysses|Baseline|Abysses|0|0|0|0|4|3|Veste de la tenue Plongeur des abysses.|0|persona_diver
+gloves|gign_gloves_diver|1|Gants des abysses|Baseline|Abysses|0|0|0|0|4|3|Gants de la tenue Plongeur des abysses.|0|persona_diver
+legs|gign_legs_diver|1|Pantalon des abysses|Baseline|Abysses|0|0|0|0|4|3|Pantalon de la tenue Plongeur des abysses.|0|persona_diver
+boots|gign_boots_diver|1|Bottes des abysses|Baseline|Abysses|0|0|0|0|4|3|Bottes de la tenue Plongeur des abysses.|0|persona_diver

@@ -1,9 +1,15 @@
 {
-  "version": "0.13.0",
+  "version": "0.14.0",
   "name": "Vector Fields",
   "date": "2026-10-08",
   "runtime_mod": "vf_visual",
   "launcher": "Jouer - Vector Fields.cmd",
   "default_theme": "ww1-trench",
-  "features": ["GIGN fitted modular body with 12 texture families", "R-01: 26 modules, 3 feed platforms, 12 finishes", "Five matching character and weapon themes", "Isotropic repeating weapon UVs", "Independent character appearance and equipped R-01", "Shared native renderer, arsenal, effects and map exploration"]
+  "features": [
+    "Gameplay equipment linked to fitted GIGN body and R1 models",
+    "396 named lootpool entries with six gameplay families",
+    "12 cosmetic collections independent of gameplay families",
+    "All operator slots retained; four accessory slots keep placeholder geometry",
+    "Developer workspace for imported arsenal, historical skins and visual experiments"
+  ]
 }

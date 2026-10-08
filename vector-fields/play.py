@@ -61,6 +61,8 @@ def main():
         from build_personas import build as build_personas
         if not ensure_current():build_reference()
         build_personas(ensure=True)
+        from build_lootpool import build as build_lootpool
+        build_lootpool()
     for p in ['build/server/hl.dll','build/client/client.dll','generated/modular/vf_operator.mdl','generated/modular/v_9mmar.mdl']:
         if not (ROOT/p).exists():raise RuntimeError('Build missing: '+p)
     engine=weapons.deploy(weapons.variants()[4],'xash',mod_name=MOD);dst=engine/MOD
@@ -128,8 +130,8 @@ max_edicts "2048"
     shutil.copytree(ROOT/'generated/effects',dst/'sprites/vf_effects',dirs_exist_ok=True)
     shutil.copy2(ROOT/'data/effects.json',dst/'vf/effects.json')
     with (dst/'lab_controls.cfg').open('a') as f:
-        f.write('\nbind "F1" "vf_character"\nbind "F2" "vf_skins"\nbind "F5" "exec vf_visit_2fort.cfg"\nhud_scale 1\nr_studio_drawelements 1\nr_studio_builtin_renderer 0\ndeveloper 0\ncon_notifytime 3\n')
-        f.write('\nbind F11 \"vf_reference\"\nbind F7 "vf_library_select 0"\nscr_drawversion 0\nbind F3 vf_effects\nbind F9 vf_effect_clear\nbind PGUP vf_effect_prev\nbind PGDN vf_effect_next\n')
+        f.write('\nbind "F1" "vf_character"\nbind "F2" "vf_operator"\nbind "F5" "vf_dev; exec vf_visit_2fort.cfg"\nhud_scale 1\nr_studio_drawelements 1\nr_studio_builtin_renderer 0\ndeveloper 0\ncon_notifytime 3\n')
+        f.write('\nbind F11 \"vf_reference\"\nbind F7 "vf_dev"\nscr_drawversion 0\nbind F6 vf_dev\nbind F4 "map vf_range; exec vf_start.cfg"\nbind F3 vf_effects\nbind F9 vf_effect_clear\nbind PGUP vf_effect_prev\nbind PGDN vf_effect_next\n')
         f.write('\nvf_native_models '+('1' if args.native_engine else '0')+'\n')
     wait='wait 180\n' # Xash3D supports a frame count; keep the command buffer small.
     equip='give item_suit\ngive weapon_9mmAR\ngive ammo_9mmbox\nweapon_9mmAR\n'
@@ -140,6 +142,7 @@ max_edicts "2048"
     if args.visual_lab and args.map=='vf_range' and not(args.reference_lab or args.smoke or args.smoke_skins or args.smoke_maps):
         start=release_startup()
     shutil.copy2(ROOT/'version.json',dst/'vf/version.json')
+    if args.visual_lab:shutil.copy2(ROOT/'data/lootpool.json',dst/'vf/lootpool.json')
     (dst/'vf_visit_2fort.cfg').write_text('map vf_tfc_2fort\n'+wait+equip,encoding='ascii')
     screenshots=[]
     def capture(name):

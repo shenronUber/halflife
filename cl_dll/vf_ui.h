@@ -7,6 +7,7 @@ extern const Color bg,panel,edge,muted,white,teal,amber,red;
 struct Family { const char* name; const char* role; const char* summary; Color color; };
 extern const Family families[6];
 float SX(); float SY(); float X(float value); float Y(float value);
+bool Developer(); void SetDeveloper(bool enabled);
 void Init(); void Focus(); void Move(float dx,float dy); bool Key(int down,int key);
 void Begin(int section); void End();
 void Text(float x,float y,const char* text,Color c,float width=0);

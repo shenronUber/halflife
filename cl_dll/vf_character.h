@@ -2,6 +2,7 @@
 #define VF_CHARACTER_H
 void VF_CharacterInit();
 void VF_CharacterShow(int page);
+void VF_CharacterGameplay(int page);
 void VF_CharacterClose();
 void VF_CharacterReset();
 void VF_CharacterDraw();

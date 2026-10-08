@@ -15,7 +15,7 @@ int main(int argc,char** argv) {
     std::ifstream f(argv[1],std::ios::binary);
     std::string text((std::istreambuf_iterator<char>(f)),std::istreambuf_iterator<char>());
     vf::Catalog c;Check(vf::ParseCatalog(text.data(),text.size(),c),"real catalog parses");
-    Check(c.count==155,"154 equipment objects plus empty");
+    Check(c.count==215,"214 equipment objects plus empty, including 60 fitted GIGN pieces");
     int selected[vf::SlotCount],totals[vf::BudgetCount];vf::Defaults(c,selected);
     Check(vf::Evaluate(c,selected,totals)==vf::Accepted,"starter build within all six budgets");
     for(int s=0;s<vf::SlotCount;++s) {
@@ -66,7 +66,25 @@ int main(int argc,char** argv) {
         vf::AppearanceCatalog catalog;Check(vf::ParseAppearances(data.data(),data.size(),catalog),"real appearance catalog parses");
         Check(catalog.count>50&&catalog.count<240,"complete library fits wire protocol");
         if(file==2){
-            int build[vf::SlotCount],ids[5];vf::Defaults(c,build);
+            int build[vf::SlotCount],ids[5];vf::GameplayDefaults(c,build);
+            Check(vf::Evaluate(c,build,totals)==vf::Accepted,"gameplay defaults fit budgets");
+            Check(vf::EquipmentSkins(c,build,catalog,ids),"gameplay default skins resolve");
+            for(int z=0;z<5;++z)Check(!strcmp(catalog.entries[ids[z]].model,"persona_scout"),"gameplay uses fitted GIGN model in every body zone");
+            for(int slot=0;slot<vf::SlotCount;++slot)Check(vf::GameplayItem(c.items[build[slot]]),"every gameplay slot is a registered loot item");
+            int custom=0,provisional=0,reference=0;
+            const int zoneSlots[]={0,3,2,5,6};
+            for(int i=1;i<c.count;++i){const vf::Item& item=c.items[i];
+                if(item.appearance[0]){
+                    ++custom;vf::GameplayDefaults(c,build);build[item.slot]=i;
+                    Check(vf::EquipmentSkins(c,build,catalog,ids),"custom item resolves its authored appearance");
+                    for(int z=0;z<5;++z)Check(!strcmp(catalog.entries[ids[z]].key,zoneSlots[z]==item.slot?item.appearance:"persona_gign"),"custom equipment changes only its mapped GIGN zone");
+                }else if(vf::GameplayItem(item)){if(item.slot<vf::GearSlots)++provisional;else ++reference;}
+            }
+            Check(custom==60&&provisional==24&&reference==26,"gameplay catalog excludes historical body and weapon placeholders");
+            vf::Defaults(c,build);build[1]=0;vf::NormalizeGameplay(c,build);
+            Check(build[1]==0,"normalizing keeps deliberately unequipped optional accessories");
+            for(int slot=0;slot<vf::SlotCount;++slot)if(build[slot])Check(vf::GameplayItem(c.items[build[slot]]),"return from dev normalizes every historical object");
+            vf::Defaults(c,build);
             Check(vf::EquipmentSkins(c,build,catalog,ids),"all default equipped looks resolve");
             for(int slot=0;slot<vf::SlotCount;++slot)for(int family=0;family<6;++family){
                 int found=0;

@@ -58,7 +58,7 @@ bool ParseCatalog(const char* data,size_t size,Catalog& c) {
             }
             limits=true; continue;
         }
-        if(fields!=14||c.count>=MaxItems) return Fail(c,lineNo,"format item invalide");
+        if((fields!=14&&fields!=15)||c.count>=MaxItems) return Fail(c,lineNo,"format item invalide");
         Item& item=c.items[c.count]; item.slot=-1;
         for(int s=0;s<SlotCount;++s) if(!strcmp(f[0],SlotKeys[s])) item.slot=s;
         unsigned int tier;
@@ -78,6 +78,11 @@ bool ParseCatalog(const char* data,size_t size,Catalog& c) {
         int maxVisual=(item.slot==0||item.slot==3||item.slot==5)?2:((item.slot==11||item.slot==12)?1:0);
         if(!ParseUnsigned(f[13],visual)||visual>(unsigned int)maxVisual) return Fail(c,lineNo,"variante visuelle invalide");
         item.visual=visual;
+        if(fields==15){
+            if(!Copy(item.appearance,sizeof(item.appearance),f[14]))return Fail(c,lineNo,"apparence invalide");
+            for(const char* p=item.appearance;*p;++p)if(!((*p>='a'&&*p<='z')||(*p>='0'&&*p<='9')||*p=='_'))return Fail(c,lineNo,"cle apparence invalide");
+            if(item.slot!=0&&item.slot!=2&&item.slot!=3&&item.slot!=5&&item.slot!=6)return Fail(c,lineNo,"apparence hors zone");
+        }
         ++c.count;
     }
     if(!limits||c.count<2) return Fail(c,lineNo,"catalogue incomplet");
@@ -102,6 +107,23 @@ void Defaults(const Catalog& c,int selection[SlotCount]) {
     for(int i=1;i<c.count;++i) if(!selection[c.items[i].slot]) selection[c.items[i].slot]=i;
     int totals[BudgetCount];
     if(Evaluate(c,selection,totals)!=Accepted) memset(selection,0,sizeof(int)*SlotCount);
+}
+bool GameplayItem(const Item& item) {
+    return item.appearance[0] || (item.slot>=GearSlots&&!strncmp(item.id,"r01_",4)) ||
+           item.slot==1||item.slot==4||item.slot==7||item.slot==8;
+}
+void GameplayDefaults(const Catalog& c,int selection[SlotCount]) {
+    memset(selection,0,sizeof(int)*SlotCount);if(!c.valid)return;
+    bool authored=false;
+    for(int i=1;i<c.count;++i)if(GameplayItem(c.items[i])){int s=c.items[i].slot;if(!selection[s])selection[s]=i;if(c.items[i].appearance[0])authored=true;}
+    if(!authored)Defaults(c,selection); // Historical developer deployments remain supported.
+}
+void NormalizeGameplay(const Catalog& c,int selection[SlotCount]) {
+    int base[SlotCount];GameplayDefaults(c,base);
+    for(int s=0;s<SlotCount;++s){int id=selection[s];bool optional=s==1||s==4||s==7||s==8;
+        if(id<0||id>=c.count||(id&&(!GameplayItem(c.items[id])||c.items[id].slot!=s))||(!id&&!optional))selection[s]=base[s];
+    }
+    int totals[BudgetCount];if(Evaluate(c,selection,totals)!=Accepted)memcpy(selection,base,sizeof(base));
 }
 int Cycle(const Catalog& c,int slot,int current,int direction) {
     if(!c.valid||slot<0||slot>=SlotCount) return 0;

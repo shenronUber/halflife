@@ -15,6 +15,7 @@
 #include "bench.h"
 #include "Exports.h"
 #include "vf_engine.h"
+#include "vf_ui.h"
 #include "vf_effects.h"
 
 #include "particleman.h"
@@ -34,6 +35,7 @@ HUD_AddEntity
 */
 int CL_DLLEXPORT HUD_AddEntity( int type, struct cl_entity_s *ent, const char *modelname )
 {
+    if(!vfui::Developer()&&modelname&&!strncmp(modelname,"models/vf_tfc/",14))return 0;
     VF_EngineEntity(ent,modelname);
 //	RecClAddEntity(type, ent, modelname);
 

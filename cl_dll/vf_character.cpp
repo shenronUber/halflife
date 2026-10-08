@@ -20,7 +20,9 @@ vf::Catalog catalog;
 vf::AppearanceCatalog weaponStyles;
 int draftStyles[vf::WeaponStyleSlots]={},appliedStyles[vf::WeaponStyleSlots]={};
 bool styleWhole=true;
+bool Eligible(const vf::Item& item){return vfui::Developer()||vf::GameplayItem(item);}
 int draft[vf::SlotCount],applied[vf::SlotCount];
+int gameplayItems[vf::SlotCount]={},gameplayStyles[vf::WeaponStyleSlots]={};bool gameplaySaved=false;
 bool opened=false,synchronized=false,pending=false;
 int tab=0,row=0,familyFilter=-1,itemPage=0;
 float fixedAngles[3],requestTime=0;
@@ -53,6 +55,13 @@ void PlatformCommand(){
 
 bool Dirty() { return memcmp(draft,applied,sizeof(draft))!=0||memcmp(draftStyles,appliedStyles,sizeof(draftStyles))!=0; }
 int Slot() { return (tab?vf::GearSlots:0)+row; }
+void FocusSelection(){
+ int ordinal=0,slot=Slot();bool ref=tab&&IsReference();
+ for(int i=1;i<catalog.count;++i){const vf::Item& item=catalog.items[i];
+  if(item.slot!=slot||!Eligible(item)||(ref&&strncmp(item.id,"r01_",4)))continue;
+  if(i==draft[slot]){itemPage=ordinal/(ref?2:4);return;}++ordinal;
+ }itemPage=0;
+}
 void ChooseStyle(int id,int slot){
  if(!synchronized||pending||!IsReference()||!weaponStyles.valid||id<0||id>=weaponStyles.count)return;
  if(slot<0)for(int s=0;s<vf::WeaponStyleSlots;++s)draftStyles[s]=id;
@@ -79,21 +88,45 @@ void Toggle() {
     if(opened) { opened=false; return; }
     VF_SkinsClose();VF_SkinsRefresh();Load(); opened=true; synchronized=false; pending=false;
     gEngfuncs.GetViewAngles(fixedAngles);
-    vf::Defaults(catalog,draft); memcpy(applied,draft,sizeof(draft));
+    if(vfui::Developer())vf::Defaults(catalog,draft);else vf::GameplayDefaults(catalog,draft); memcpy(applied,draft,sizeof(draft));
     memset(draftStyles,0,sizeof(draftStyles));memset(appliedStyles,0,sizeof(appliedStyles));
     requestTime=gEngfuncs.GetClientTime();
     if(!catalog.valid) { snprintf(status,sizeof(status),"Catalogue indisponible : %s",catalog.error); return; }
     strcpy(status,"Lecture de l'equipement...");
     gEngfuncs.pfnServerCmd("vf_request\n");
 }
-void Next() {
-    if(!opened||!synchronized||pending) return;
-    if(tab&&IsReference()){
-     for(int step=1;step<catalog.count;++step){int id=(draft[Slot()]+step)%catalog.count;if(catalog.items[id].slot==Slot()&&!strncmp(catalog.items[id].id,"r01_",4)){draft[Slot()]=id;break;}}
-    }
-    else draft[Slot()]=vf::Cycle(catalog,Slot(),draft[Slot()],1);
-    strcpy(status,Dirty()?"Modifications en attente de validation.":"Equipement actuel.");
+void GameplayCommand(){
+ if(opened&&!vfui::Developer()&&!tab){VF_CharacterClose();return;}
+ VF_CharacterGameplay(0);
 }
+void ItemCommand(){
+ if(!opened||!synchronized||pending||gEngfuncs.Cmd_Argc()!=2)return;
+ for(int i=1;i<catalog.count;++i)if(!strcmp(catalog.items[i].id,gEngfuncs.Cmd_Argv(1))&&Eligible(catalog.items[i])){
+  int at=catalog.items[i].slot;draft[at]=i;tab=at>=vf::GearSlots;row=at-(tab?vf::GearSlots:0);itemPage=0;
+  FocusSelection();gEngfuncs.Con_DPrintf("VFGameplay draft: %s\n",catalog.items[i].id);break;
+ }
+}
+void Outfit(const char* appearance){
+ if(!synchronized||pending||!appearance||!*appearance)return;
+ for(int i=1;i<catalog.count;++i)if(!strcmp(catalog.items[i].appearance,appearance))draft[catalog.items[i].slot]=i;
+ FocusSelection();strcpy(status,"Tenue chargee. Les autres equipements sont conserves. Appliquer pour valider.");
+}
+void OutfitCommand(){
+ if(!opened||gEngfuncs.Cmd_Argc()!=2)return;
+ char key[40];snprintf(key,sizeof(key),"persona_%s",gEngfuncs.Cmd_Argv(1));Outfit(key);
+}
+void CycleItem(int direction){
+ if(!opened||!synchronized||pending)return;
+ int at=Slot();bool optional=at==1||at==4||at==7||at==8;
+ for(int step=1;step<=catalog.count;++step){int id=(draft[at]+(direction>0?step:catalog.count*2-step))%catalog.count;
+  if(!id){if((vfui::Developer()&&!IsReference())||optional){draft[at]=0;break;}continue;}
+  const vf::Item& item=catalog.items[id];
+  if(item.slot!=at||!Eligible(item)||(tab&&IsReference()&&strncmp(item.id,"r01_",4)))continue;
+  draft[at]=id;break;
+ }
+ strcpy(status,Dirty()?"Modifications en attente de validation.":"Equipement actuel.");
+}
+void Next(){CycleItem(1);}
 void Commit() {
     if(!opened||!synchronized||pending) return;
     int totals[vf::BudgetCount];
@@ -125,6 +158,7 @@ int Message(const char*,int size,void* buffer) {
     int protocol=READ_BYTE(),result=READ_BYTE(); unsigned int hash=(unsigned int)READ_LONG(),styleHash=(unsigned int)READ_LONG();
     int received[vf::SlotCount]; for(int s=0;s<vf::SlotCount;++s) received[s]=READ_BYTE();
     int receivedStyles[vf::WeaponStyleSlots];for(int s=0;s<vf::WeaponStyleSlots;++s)receivedStyles[s]=READ_BYTE();
+    const bool firstSync=!synchronized;
     const bool referenceSubmission=pending&&tab&&IsReference();
     pending=false;
     if(protocol!=vf::Protocol||!catalog.valid||hash!=catalog.fingerprint||styleHash!=weaponStyles.hash||!vf::ValidWeaponStyles(weaponStyles,receivedStyles)) {
@@ -136,7 +170,11 @@ int Message(const char*,int size,void* buffer) {
     }
     memcpy(applied,received,sizeof(applied));memcpy(appliedStyles,receivedStyles,sizeof(appliedStyles));
     if(!synchronized||result==vf::Accepted){memcpy(draft,received,sizeof(draft));memcpy(draftStyles,receivedStyles,sizeof(draftStyles));}
-    synchronized=true;
+    synchronized=true;if(firstSync)FocusSelection();
+    if(!vfui::Developer()&&result==vf::Accepted){
+        bool eligible=true;for(int s=0;s<vf::SlotCount;++s){int id=applied[s];if(id&&!vf::GameplayItem(catalog.items[id]))eligible=false;}
+        if(eligible){memcpy(gameplayItems,applied,sizeof(applied));memcpy(gameplayStyles,appliedStyles,sizeof(appliedStyles));gameplaySaved=true;}
+    }
     // A confirmed R-01 choice replaces local weapon previews, not the body skin.
     if(referenceSubmission&&result==vf::Accepted)VF_EngineModuleReset();
     strcpy(status,result==vf::Accepted?"Equipement valide. Capacites speciales en preparation.":"Configuration refusee. Equipement precedent conserve.");
@@ -159,7 +197,10 @@ void VF_CharacterInit() {
     VF_EngineInit();
     VF_SkinsInit();
     VF_EffectsInit();
-    gEngfuncs.pfnAddCommand("vf_character",Toggle);
+    gEngfuncs.pfnAddCommand("vf_character",GameplayCommand);
+    gEngfuncs.pfnAddCommand("vf_operator",GameplayCommand);
+    gEngfuncs.pfnAddCommand("vf_item",ItemCommand);
+    gEngfuncs.pfnAddCommand("vf_operator_set",OutfitCommand);
     gEngfuncs.pfnAddCommand("vf_next_item",Next);
     gEngfuncs.pfnAddCommand("vf_commit",Commit);
     gEngfuncs.pfnAddCommand("vf_tab",SwitchTab);
@@ -170,17 +211,31 @@ void VF_CharacterInit() {
     gEngfuncs.pfnHookUserMsg("VFBuild",Message);
     VF_CharacterReset();
 }
-void VF_CharacterReset() { referencePending=-1;platformPending=-1;referenceIsolate=false; VF_EffectsReset(); vfui::Focus();opened=false;synchronized=false;pending=false;VF_PreviewReset();VF_SkinsReset();VF_EngineReset(); }
+void VF_CharacterReset() { gameplaySaved=false;referencePending=-1;platformPending=-1;referenceIsolate=false; VF_EffectsReset(); vfui::Focus();opened=false;synchronized=false;pending=false;VF_PreviewReset();VF_SkinsReset();VF_EngineReset(); }
 void VF_CharacterClose() {opened=false;vfui::Focus();}
 void VF_CharacterShow(int page) {
     if(!opened) {
         if(catalog.valid&&synchronized&&!pending) {VF_SkinsClose();vfui::Focus();opened=true;gEngfuncs.GetViewAngles(fixedAngles);}
         else Toggle();
     }
-    tab=page?1:0;row=0;familyFilter=-1;
+    tab=page?1:0;row=0;familyFilter=-1;FocusSelection();
+}
+void VF_CharacterGameplay(int page){
+ if(pending)return;
+ bool fromDev=vfui::Developer(),restore=fromDev||!VF_EngineLinked();
+ vfui::SetDeveloper(false);VF_CharacterShow(page);referenceIsolate=false;
+ if(fromDev&&gameplaySaved&&synchronized){
+  memcpy(draft,gameplayItems,sizeof(draft));memcpy(draftStyles,gameplayStyles,sizeof(draftStyles));Commit();
+  gEngfuncs.Con_DPrintf("VFGameplay: restoring equipped loadout after developer trial\n");
+ }
+ if(restore||!synchronized){
+  VF_EngineModuleReset();gEngfuncs.pfnClientCmd("vf_effect_clear\n");
+  synchronized=false;requestTime=gEngfuncs.GetClientTime();gEngfuncs.pfnServerCmd("vf_gameplay\n");
+ }
+ VF_PreviewRotate((page?185.f:5.f)-VF_PreviewYaw());
 }
 void VF_CharacterReference(int variant){
- VF_CharacterShow(1);if(pending)return; // Preserve the chosen character appearance mode.
+ if(vfui::Developer())VF_CharacterShow(1);else VF_CharacterGameplay(1);if(pending)return;
  if(synchronized){if(variant>=0||!IsReference())ApplyReference(variant==1?1:0);}
  else referencePending=variant<0?-2:variant;
 }
@@ -199,10 +254,11 @@ int VF_CharacterKey(int down,int key) {
     if(!opened) return 1;
     // Let releases reach the engine, so opening while moving never leaves a held key.
     if(!down) return 1;
+    if(key==K_F1&&vfui::Developer()){VF_CharacterGameplay(0);return 0;}
     if(key==K_ESCAPE||key==K_F1) { opened=false;return 0; }
     if(key==K_F2) {opened=false;return 1;}
     if(key==K_F11)return 1;
-    if(key==K_F3||key==K_F9||key==K_F8||key==K_F10) return 1;
+    if(key==K_F3||key==K_F6||key==K_F7||key==K_F9||key==K_F8||key==K_F10) return 1;
     if(key==K_TAB) { SwitchTab();return 0; }
     if(key=='q') VF_PreviewRotate(-10);
     else if(key=='e') VF_PreviewRotate(10);
@@ -213,7 +269,7 @@ int VF_CharacterKey(int down,int key) {
     else if(key==K_UPARROW) row=(row+(tab?12:9)-1)%(tab?12:9);
     else if(key==K_DOWNARROW) row=(row+1)%(tab?12:9);
     else if(key==K_RIGHTARROW||key==K_SPACE) Next();
-    else if(key==K_LEFTARROW&&!pending&&synchronized) { if(tab&&IsReference())Next();else draft[Slot()]=vf::Cycle(catalog,Slot(),draft[Slot()],-1);strcpy(status,"Modifications en attente de validation."); }
+    else if(key==K_LEFTARROW)CycleItem(-1);
     else if(key==K_ENTER) Commit();
     else if(key==K_BACKSPACE) Restore();
     return 0;
@@ -226,7 +282,7 @@ void Preset(int kind){
  int start=tab?vf::GearSlots:0,end=tab?vf::SlotCount:vf::GearSlots;
  for(int slot=start;slot<end;++slot){
   int best=0,score=-100000;
-  for(int i=1;i<catalog.count;++i)if(catalog.items[i].slot==slot){
+  for(int i=1;i<catalog.count;++i)if(catalog.items[i].slot==slot&&Eligible(catalog.items[i])){
    const vf::Item& it=catalog.items[i];int f=vfui::FamilyId(it.category),cost=0;for(int b=0;b<vf::BudgetCount;++b)cost+=it.cost[b];
    int value=kind==0?-cost:kind==1?((f==3?1000:f==0?500:0)-cost):((f==4||f==5?1000:0)+it.tier*100);
    if(value>score){score=value;best=i;}
@@ -238,7 +294,7 @@ void Preset(int kind){
 void VF_CharacterDraw() {
  namespace u=vfui;
  if(VF_SkinsOpen()){VF_SkinsDraw();return;}
- if(!opened){u::Text(22,30,"[F1] CONFIGURATION    [F2] APPARENCE    [F3] EFFETS    [F11] RELAIS R-01",u::amber);return;}
+ if(!opened){u::Text(22,30,"[F1 / F2] OPERATEUR    [F11] ARME    [F6] OPTIONS DEVELOPPEUR",u::amber);return;}
  if((pending||!synchronized)&&catalog.valid&&gEngfuncs.GetClientTime()-requestTime>5){pending=false;synchronized=false;strcpy(status,"Connexion absente. Fermer et rouvrir l'atelier.");}
  u::Begin(tab?1:0);if(!opened)return;if(u::Guide()){u::End();return;}
  int slot=Slot(),count=tab?12:9,start=tab?9:0;
@@ -251,27 +307,35 @@ void VF_CharacterDraw() {
   if(f>=0)u::Box(x+113,y+6,9,3,u::families[f].color);
   if(u::Hover(x,y,131,tab?44.f:49.f))u::Tip(vf::SlotNames[at]);
  }
- u::Text(24,509,"COLLECTIONS / 6 FAMILLES",u::muted);
+ u::Text(24,509,"FAMILLES DE GAMEPLAY",u::muted);
  const char* presets[]={"Baseline","Predator","Fortress","Rogue","Engine","Anom."};
  for(int f=0;f<6;++f)if(u::Button(24+(f%3)*94.f,536+(f/3)*38.f,87,31,presets[f],false,synchronized&&!pending)){
-  for(int s=start;s<start+count;++s){int best=0,score=999999;for(int i=1;i<catalog.count;++i){const vf::Item& it=catalog.items[i];if(it.slot!=s||u::FamilyId(it.category)!=f)continue;int cost=0;for(int b=0;b<vf::BudgetCount;++b)cost+=it.cost[b];if(cost<score){best=i;score=cost;}}draft[s]=best;}
-  strcpy(status,"Collection chargee : inspecter puis appliquer.");familyFilter=f;itemPage=0;
+  for(int s=start;s<start+count;++s){int best=0,score=999999;for(int i=1;i<catalog.count;++i){const vf::Item& it=catalog.items[i];if(it.slot!=s||!Eligible(it)||u::FamilyId(it.category)!=f)continue;int cost=0;for(int b=0;b<vf::BudgetCount;++b)cost+=it.cost[b];if(cost<score){best=i;score=cost;}}if(best||u::Developer())draft[s]=best;}
+  strcpy(status,"Famille selectionnee : inspecter puis appliquer.");familyFilter=f;itemPage=0;
  }
  if(tab){if(u::Button(318,157,155,28,"R-01 / Atelier",false,synchronized&&!pending))VF_CharacterReference(0);if(u::Button(483,157,155,28,"R-01 / Circuit",false,synchronized&&!pending))VF_CharacterReference(1);}
- else u::Text(318,160,"OPERATEUR / APERCU 3D",u::muted);
+ else if(!u::Developer()){
+  const vf::Item& selected=catalog.items[draft[slot]];
+  if(selected.appearance[0]){if(u::Button(318,157,320,28,"Equiper la tenue complete",false,synchronized&&!pending))Outfit(selected.appearance);}
+  else u::Text(318,160,"OPERATEUR / BASE GIGN",u::muted);
+ }else u::Text(318,160,"OPERATEUR / APERCU 3D",u::muted);
  u::Box(314,194,512,326,u::panel);
  for(int x=330;x<812;x+=32)u::Box((float)x,208,1,270,u::edge,30);
  int variants[3]={vf::Visual(catalog,draft,tab?12:0),vf::Visual(catalog,draft,tab?11:3),tab?0:vf::Visual(catalog,draft,5)};
  bool ref=tab&&IsReference();
- bool ok=ref&&referenceIsolate&&VF_EngineLinked()?VF_EnginePreviewReferencePart(draft,slot,u::X(330),u::Y(202),480*u::SX(),283*u::SY(),draftStyles):VF_EngineLinked()?VF_EnginePreviewEquipment(draft,tab!=0,u::X(330),u::Y(202),480*u::SX(),283*u::SY(),draftStyles):(tab?(VF_EngineModulesEquipped()?VF_PreviewModules(u::X(330),u::Y(202),480*u::SX(),283*u::SY()):VF_PreviewDraw(true,variants,u::X(330),u::Y(202),480*u::SX(),283*u::SY())):VF_SkinsPreview(u::X(330),u::Y(202),480*u::SX(),283*u::SY()));
+ bool ok=ref&&referenceIsolate&&u::Developer()?VF_EnginePreviewReferencePart(draft,slot,u::X(330),u::Y(202),480*u::SX(),283*u::SY(),draftStyles):(ref||VF_EngineLinked())?VF_EnginePreviewEquipment(draft,tab!=0,u::X(330),u::Y(202),480*u::SX(),283*u::SY(),draftStyles):(tab?(VF_EngineModulesEquipped()?VF_PreviewModules(u::X(330),u::Y(202),480*u::SX(),283*u::SY()):VF_PreviewDraw(true,variants,u::X(330),u::Y(202),480*u::SX(),283*u::SY())):VF_SkinsPreview(u::X(330),u::Y(202),480*u::SX(),283*u::SY()));
  if(!ok)u::Text(400,345,"Apercu indisponible",u::amber);
  u::Viewport(314,194,512,326);
  if(u::Button(680,157,42,28,"<"))VF_PreviewRotate(-30);
  if(u::Button(728,157,42,28,">"))VF_PreviewRotate(30);
- if(u::Button(776,157,50,28,"",false,true,8))VF_SkinsShow(tab?2:0);
+ if(u::Developer()&&u::Button(776,157,50,28,"",false,true,8))VF_SkinsShow(tab?2:0);
  const vf::Item& item=catalog.items[draft[slot]>=0&&draft[slot]<catalog.count?draft[slot]:0];
  u::Text(318,529,item.name,u::white,500);int family=u::FamilyId(item.category);u::Badge(family,318,557,158);u::Text(490,565,item.flavor,u::muted,330);
- u::Text(318,596,VF_EngineLinked()?(tab?"Visuel de l'objet / modules et accessoires":vf::EquipmentLookName(family)):"Apparence libre / changer les objets ne change pas le skin",u::teal,507);
+ if(u::Developer())u::Text(318,596,VF_EngineLinked()?(tab?"Visuel de l'objet / modules et accessoires":vf::EquipmentLookName(family)):"Apparence libre / changer les objets ne change pas le skin",u::teal,507);
+ else {
+  char cosmetic[160];const char* collection=tab&&weaponStyles.valid?weaponStyles.entries[draftStyles[slot-9]].name:item.flavor;
+  snprintf(cosmetic,sizeof(cosmetic),"Collection cosmetique : %s",collection);u::Text(318,596,cosmetic,u::teal,507);
+ }
  u::Text(850,160,vf::SlotNames[slot],u::white,396);
  if(ref){
   int platform=!strcmp(catalog.items[draft[9]].id,"r01_receiver_side")?1:!strcmp(catalog.items[draft[9]].id,"r01_receiver_top")?2:0;
@@ -285,7 +349,7 @@ void VF_CharacterDraw() {
 
  }
  int matches[vf::MaxItems],visible=0;
- for(int i=1;i<catalog.count;++i)if(catalog.items[i].slot==slot&&(ref?!strncmp(catalog.items[i].id,"r01_",4):(slot==9||strncmp(catalog.items[i].id,"r01_",4)))&&(ref||familyFilter<0||u::FamilyId(catalog.items[i].category)==familyFilter))matches[visible++]=i;
+ for(int i=1;i<catalog.count;++i)if(catalog.items[i].slot==slot&&Eligible(catalog.items[i])&&(ref?!strncmp(catalog.items[i].id,"r01_",4):(slot==9||strncmp(catalog.items[i].id,"r01_",4)))&&(ref||familyFilter<0||u::FamilyId(catalog.items[i].category)==familyFilter))matches[visible++]=i;
  int pageSize=ref?2:4;int pages=(visible+pageSize-1)/pageSize;if(pages<1)pages=1;itemPage-=u::Scroll(842,231,414,260);if(itemPage<0)itemPage=0;if(itemPage>=pages)itemPage=pages-1;
  for(int n=0;n<pageSize&&itemPage*pageSize+n<visible;++n){int i=matches[itemPage*pageSize+n];const vf::Item& candidate=catalog.items[i];float y=240+n*54.f;int f=u::FamilyId(candidate.category);
   if(u::Button(850,y,406,47,"",draft[slot]==i,synchronized&&!pending))SelectDraft(i);
@@ -307,9 +371,9 @@ void VF_CharacterDraw() {
  if(u::Button(850,460,50,27,"<",false,itemPage>0))--itemPage;
  char pageText[70];snprintf(pageText,sizeof(pageText),"%d objets / %d sur %d",visible,itemPage+1,pages);u::Text(918,465,pageText,u::muted,262);
  if(u::Button(1206,460,50,27,">",false,itemPage+1<pages))++itemPage;
- if(u::Button(850,494,406,26,"Emplacement libre",draft[slot]==0,synchronized&&!pending))SelectDraft(0);
- u::Text(850,526,ref?"PIECE / FINITION VISUELLE":"EFFET PREVU",u::amber);u::Wrap(850,551,item.description,406,u::white,2);
- if(ref&&u::Button(850,591,406,25,referenceIsolate?"Revenir a l arme complete":"Isoler cette piece en 3D",referenceIsolate))referenceIsolate=!referenceIsolate;
+ if(u::Developer()||slot==1||slot==4||slot==7||slot==8){if(u::Button(850,494,406,26,"Emplacement libre",draft[slot]==0,synchronized&&!pending))SelectDraft(0);}
+ u::Text(850,526,ref?"PIECE / COLLECTION":item.appearance[0]?"EQUIPEMENT / GIGN":"EQUIPEMENT / MODELE PROVISOIRE",u::amber);u::Wrap(850,551,item.description,406,u::white,2);
+ if(ref&&u::Developer()&&u::Button(850,591,406,25,referenceIsolate?"Revenir a l arme complete":"Isoler cette piece en 3D",referenceIsolate))referenceIsolate=!referenceIsolate;
  int totals[vf::BudgetCount],old[vf::BudgetCount];vf::Result result=vf::Evaluate(catalog,draft,totals);vf::Evaluate(catalog,applied,old);
  u::Box(24,622,1232,1,u::edge);int first=tab?0:4,last=tab?4:6;
  for(int b=first;b<last;++b){float step=1232.f/(last-first),x=24+(b-first)*step;u::Meter(x,632,step-28,vf::BudgetCodes[b],totals[b],old[b],catalog.limits[b],u::BudgetColor(b),34+b);if(u::Hover(x,632,step-28,30))u::Tip(u::BudgetTip(b));}

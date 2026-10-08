@@ -49,6 +49,8 @@ bool EquipmentSkins(const Catalog& c,const int* items,const AppearanceCatalog& s
  if(!c.valid||!skins.valid||!items||!out)return false;int resolved[5];
  for(int z=0;z<5;++z){int f=EquipmentFamily(c,items,slots[z]);const char* key=f<0?"style_eclaireur_1":keys[f];int id=items[slots[z]];
   if(id>0&&id<c.count&&strstr(c.items[id].id,"_scout"))key="style_eclaireur_3";
+  if(id>0&&id<c.count&&c.items[id].appearance[0])key=c.items[id].appearance;
+  if(!id)for(int i=0;i<skins.count;++i)if(!strcmp(skins.entries[i].key,"persona_gign")){key="persona_gign";break;}
   resolved[z]=-1;for(int i=0;i<skins.count;++i)if(!strcmp(skins.entries[i].key,key)){resolved[z]=i;break;}
   if(resolved[z]<0)return false;
  }memcpy(out,resolved,sizeof(resolved));return true;

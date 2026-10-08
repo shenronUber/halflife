@@ -39,20 +39,26 @@ static void Send(CBasePlayer* p,vf::Result result) {
 }
 unsigned int VF_EnsureEquipment(CBasePlayer* p) {
     LoadCatalog();if(!catalog.valid)return 0;int totals[vf::BudgetCount];
-    if((unsigned int)p->m_vfCatalogHash!=catalog.fingerprint||vf::Evaluate(catalog,p->m_vfItems,totals)!=vf::Accepted){vf::Defaults(catalog,p->m_vfItems);p->m_vfCatalogHash=(int)catalog.fingerprint;}
+    if((unsigned int)p->m_vfCatalogHash!=catalog.fingerprint||vf::Evaluate(catalog,p->m_vfItems,totals)!=vf::Accepted){vf::GameplayDefaults(catalog,p->m_vfItems);p->m_vfCatalogHash=(int)catalog.fingerprint;}
     if((unsigned int)p->m_vfWeaponStyleHash!=weaponStyles.hash||!vf::ValidWeaponStyles(weaponStyles,p->m_vfWeaponStyles)){
         memset(p->m_vfWeaponStyles,0,sizeof(p->m_vfWeaponStyles));p->m_vfWeaponStyleHash=(int)weaponStyles.hash;
     }
     return catalog.fingerprint;
 }
 bool VF_EquipmentCommand(CBasePlayer* p,const char* command) {
+    if(!strcmp(command,"vf_gameplay")){
+        VF_EnsureEquipment(p);if(!catalog.valid){Send(p,vf::BadCatalog);return true;}
+        vf::NormalizeGameplay(catalog,p->m_vfItems);p->m_vfAppearanceMode=0;
+        Send(p,vf::Accepted);VF_SyncPlayer(p);
+        ALERT(at_console,"VFGameplay: active player=%d head=%s receiver=%s\n",p->entindex(),catalog.items[p->m_vfItems[0]].id,catalog.items[p->m_vfItems[9]].id);return true;
+    }
     const bool request=!strcmp(command,"vf_request");
     if(!request&&strcmp(command,"vf_apply")) return false;
     VF_EnsureEquipment(p); // loads equipment and the data-driven style catalog
     if(!catalog.valid) { Send(p,vf::BadCatalog); return true; }
     int totals[vf::BudgetCount];
     if((unsigned int)p->m_vfCatalogHash!=catalog.fingerprint||vf::Evaluate(catalog,p->m_vfItems,totals)!=vf::Accepted) {
-        vf::Defaults(catalog,p->m_vfItems); p->m_vfCatalogHash=(int)catalog.fingerprint;
+        vf::GameplayDefaults(catalog,p->m_vfItems); p->m_vfCatalogHash=(int)catalog.fingerprint;
     }
     if(request) { Send(p,vf::Accepted); return true; }
     unsigned int hash;

@@ -22,7 +22,7 @@ const char* prefixes[]={"","TFC / ","HL / ","OF / ","BS / ","VF / ","CS / ","GIG
 void Load(const char* file,vf::AppearanceCatalog& c) {int n=0;byte* p=gEngfuncs.COM_LoadFile((char*)file,5,&n);vf::ParseAppearances((const char*)p,n>0?n:0,c);if(p)gEngfuncs.COM_FreeFile(p);}
 bool Dirty(){return memcmp(draft,applied,sizeof(draft))!=0;}
 void Toggle() {
- vfui::Focus();gEngfuncs.pfnClientCmd("-attack\n-attack2\n");
+ vfui::SetDeveloper(true);vfui::Focus();gEngfuncs.pfnClientCmd("-attack\n-attack2\n");
  if(opened){opened=false;return;}VF_CharacterClose();opened=true;gEngfuncs.GetViewAngles(angles);VF_SkinsRefresh();
 }
 bool Matches(int id){return !filter||!strncmp(skins.entries[id].name,prefixes[filter],strlen(prefixes[filter]));}
@@ -77,6 +77,7 @@ void VF_SkinsReset(){opened=synced=pending=false;skins.valid=arsenal.valid=false
 void VF_SkinsRefresh(){Load("vf/skins.txt",skins);Load("vf/arsenal.txt",arsenal);synced=false;pending=false;requested=gEngfuncs.GetClientTime();strcpy(status,skins.valid?"Lecture de l'apparence...":"Catalogue de skins indisponible.");if(skins.valid)gEngfuncs.pfnServerCmd("vf_skin_request\n");}
 void VF_SkinsClose(){opened=false;vfui::Focus();}
 void VF_SkinsShow(int page){
+ vfui::SetDeveloper(true);
  if(!opened){if(skins.valid&&synced&&!pending){VF_CharacterClose();vfui::Focus();opened=true;gEngfuncs.GetViewAngles(angles);}else Toggle();}
  tab=page>=0&&page<3?page:0;libraryPage=0;
 }
@@ -90,9 +91,10 @@ bool VF_SkinsPreview(float x,float y,float w,float h){
 int VF_SkinsKey(int down,int key){
  if(!opened||!down)return 1;
  if(tab==1&&VF_LibraryKey(key))return 0;
- if(key==K_ESCAPE||key==K_F2){opened=false;return 0;}
+ if(key==K_ESCAPE){opened=false;return 0;}
+ if(key==K_F2){VF_CharacterGameplay(0);return 0;}
  if(key==K_F1){opened=false;return 1;}
- if(key==K_F3||key==K_F9||key==K_F8||key==K_F10||key==K_F11)return 1;
+ if(key==K_F3||key==K_F6||key==K_F7||key==K_F9||key==K_F8||key==K_F10||key==K_F11)return 1;
  if(key==K_TAB)Tab();else if(key=='q')VF_PreviewRotate(-10);else if(key=='e')VF_PreviewRotate(10);
  else if(key=='z')VF_PreviewZoom(.05f);else if(key=='x')VF_PreviewZoom(-.05f);else if(key=='i')Isolate();
  else if(key=='t')VF_EngineAnimation(1);else if(key=='p')VF_EnginePause();

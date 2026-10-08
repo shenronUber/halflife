@@ -1,0 +1,31 @@
+{
+  "version": "0.14.0",
+  "loot_entries": 396,
+  "families": [
+    "Baseline",
+    "Predator",
+    "Fortress",
+    "Rogue",
+    "Engine",
+    "Anomalous"
+  ],
+  "operator_sets": 12,
+  "checks": [
+    "five GIGN body zones replace historical equipment appearances",
+    "nine operator slots retained with four provisional accessory categories",
+    "R1 top platform and cosmetic finish keep operator equipment",
+    "developer arsenal and historical skins remain usable",
+    "return to gameplay restores linked authored models and clears imported weapon overrides",
+    "mixed equipment and R1 finish survive save/load"
+  ],
+  "captures": [
+    "gameplay_operator",
+    "gameplay_mixed_gloves",
+    "gameplay_placeholder_shield",
+    "gameplay_weapon",
+    "gameplay_developer_arsenal",
+    "gameplay_developer_skin",
+    "gameplay_returned_operator",
+    "gameplay_world"
+  ]
+}

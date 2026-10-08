@@ -89,7 +89,7 @@ void Attach(){
 }
 void Next(){Select((selected+1)%vfx::Count);for(int i=0;i<emitterCount;++i)emitters[i].effect=selected;}
 void Prev(){Select((selected+vfx::Count-1)%vfx::Count);for(int i=0;i<emitterCount;++i)emitters[i].effect=selected;}
-void Open(){VF_CharacterShow(0);u::OpenEffects();gEngfuncs.pfnClientCmd("-attack\n-attack2\n");}
+void Open(){u::SetDeveloper(true);VF_CharacterShow(0);u::OpenEffects();gEngfuncs.pfnClientCmd("-attack\n-attack2\n");}
 void ChooseCommand(){if(gEngfuncs.Cmd_Argc()!=2)return;for(int i=0;i<vfx::Count;++i)if(!strcmp(gEngfuncs.Cmd_Argv(1),vfx::effects[i].id)){Select(i);return;}gEngfuncs.Con_DPrintf("VFX rejected: unknown effect\n");}
 void SpawnCommand(){Spawn(gEngfuncs.Cmd_Argc()>1&&!strcmp(gEngfuncs.Cmd_Argv(1),"compare"));}
 void Audit(){int loaded=0;for(int i=0;i<5;++i)if(Bind(i,0))++loaded;gEngfuncs.Con_DPrintf("VFX audit: effects=%d sprites=%d/5 active=%d\n",vfx::Count,loaded,emitterCount);}

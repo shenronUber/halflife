@@ -1,0 +1,159 @@
+{
+  "schema": 1,
+  "families": [
+    "Baseline",
+    "Predator",
+    "Fortress",
+    "Rogue",
+    "Engine",
+    "Anomalous"
+  ],
+  "collections": [
+    {
+      "id": "original",
+      "key": "gign",
+      "name": "Intervention",
+      "operator": "Operateur GIGN",
+      "family": "Baseline",
+      "suffix": "GIGN"
+    },
+    {
+      "id": "war-torn",
+      "key": "salvager",
+      "name": "Ruines",
+      "operator": "Recuperateur des ruines",
+      "family": "Fortress",
+      "suffix": "des ruines"
+    },
+    {
+      "id": "medieval-forge",
+      "key": "warden",
+      "name": "Forge medievale",
+      "operator": "Sentinelle de la forge",
+      "family": "Fortress",
+      "suffix": "de la forge"
+    },
+    {
+      "id": "prehistoric",
+      "key": "bone",
+      "name": "Os et silex",
+      "operator": "Gardien d'os et de silex",
+      "family": "Predator",
+      "suffix": "d'os et de silex"
+    },
+    {
+      "id": "living-jungle",
+      "key": "canopy",
+      "name": "Canopee",
+      "operator": "Veilleur de la canopee",
+      "family": "Rogue",
+      "suffix": "de la canopee"
+    },
+    {
+      "id": "medieval-alchemy",
+      "key": "alchemist",
+      "name": "Alchimie",
+      "operator": "Veilleur alchimiste",
+      "family": "Engine",
+      "suffix": "d'alchimie"
+    },
+    {
+      "id": "porcelain-fluidics",
+      "key": "porcelain",
+      "name": "Porcelaine",
+      "operator": "Operateur de porcelaine",
+      "family": "Anomalous",
+      "suffix": "de porcelaine"
+    },
+    {
+      "id": "ww1-trench",
+      "key": "trench",
+      "name": "Grande Guerre",
+      "operator": "Sentinelle des tranchees",
+      "family": "Fortress",
+      "suffix": "des tranchees"
+    },
+    {
+      "id": "bedrock-miner",
+      "key": "bedrock",
+      "name": "Bedrock",
+      "operator": "Mineur des profondeurs",
+      "family": "Engine",
+      "suffix": "des profondeurs"
+    },
+    {
+      "id": "new-york-noir",
+      "key": "noir",
+      "name": "New York noir",
+      "operator": "Detective de minuit",
+      "family": "Predator",
+      "suffix": "de minuit"
+    },
+    {
+      "id": "castaway",
+      "key": "castaway",
+      "name": "Bois de naufrage",
+      "operator": "Naufrage des rivages",
+      "family": "Rogue",
+      "suffix": "des rivages"
+    },
+    {
+      "id": "abyss-diver",
+      "key": "diver",
+      "name": "Abysses",
+      "operator": "Plongeur des abysses",
+      "family": "Baseline",
+      "suffix": "des abysses"
+    }
+  ],
+  "weapon_families": {
+    "receiver": [
+      "Baseline",
+      "Engine"
+    ],
+    "barrel": [
+      "Baseline",
+      "Engine"
+    ],
+    "muzzle": [
+      "Rogue",
+      "Fortress"
+    ],
+    "feed": [
+      "Baseline",
+      "Engine"
+    ],
+    "chamber": [
+      "Rogue",
+      "Anomalous"
+    ],
+    "ammo": [
+      "Baseline",
+      "Engine"
+    ],
+    "projectile": [
+      "Predator",
+      "Anomalous"
+    ],
+    "optic": [
+      "Predator",
+      "Predator"
+    ],
+    "underbarrel": [
+      "Fortress",
+      "Engine"
+    ],
+    "grip": [
+      "Rogue",
+      "Fortress"
+    ],
+    "power": [
+      "Engine",
+      "Anomalous"
+    ],
+    "cooling": [
+      "Fortress",
+      "Engine"
+    ]
+  }
+}

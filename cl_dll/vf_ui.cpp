@@ -26,7 +26,10 @@ const Family families[6]={
 };
 static float px=640,py=350,pressX=640,pressY=350;
 static bool held=false,released=false,drag=false,guide=false;
-static bool modeMenu=false,modeDrawing=false;
+static bool modeMenu=false,modeDrawing=false,devMode=false;
+bool Developer(){return devMode;}
+void SetDeveloper(bool enabled){if(devMode!=enabled)gEngfuncs.Con_DPrintf("VFUI mode: %s\n",enabled?"developer":"gameplay");devMode=enabled;modeMenu=false;}
+static void DevCommand(){SetDeveloper(true);Focus();VF_CharacterShow(0);}
 static int wheel=0,selectedFamily=0,guidePage=0,selectedBudget=4;
 static const char* tooltip=NULL;
 static char tooltipText[256];
@@ -49,7 +52,7 @@ bool Key(int down,int key){
  if(key==K_MWHEELUP||key==K_MWHEELDOWN){if(down)wheel+=key==K_MWHEELUP?1:-1;return true;}
  if(modeMenu&&key==K_ESCAPE){if(down)modeMenu=false;return true;}
  if(guide&&key==K_ESCAPE){if(down)guide=false;return true;}
- if(guide&&key!=K_F1&&key!=K_F2&&key!=K_F3&&key!=K_F9&&key!=K_F8&&key!=K_F10&&key!=K_F11)return true;
+ if(guide&&key!=K_F1&&key!=K_F2&&key!=K_F3&&key!=K_F6&&key!=K_F7&&key!=K_F9&&key!=K_F8&&key!=K_F10&&key!=K_F11)return true;
  return false;
 }
 void Box(float x,float y,float w,float h,Color c,int a){if(w<=0||h<=0)return;gEngfuncs.pfnFillRGBABlend(int(X(x)),int(Y(y)),int(w*SX()+.5f),int(h*SY()+.5f),c.r,c.g,c.b,a);}
@@ -171,20 +174,29 @@ void Meter(float x,float y,float w,const char* name,int value,int applied,int li
  float a=limit?Clamp(applied/(float)limit,0,1):0;Box(x+(w-2)*a,y+22,2,9,white);
 }
 void Begin(int section){
- tooltip=NULL;gEngfuncs.pfnFillRGBABlend(0,0,ScreenWidth,ScreenHeight,bg.r,bg.g,bg.b,254);Box(0,0,1280,720,bg,254);Box(0,0,1280,4,teal);Icon(33,25,24,32,teal);RenderText(72,12,"VECTOR FIELDS",white,1.5f);Text(72,47,"ATELIER / CONFIGURATION",muted);
- modeDrawing=true;if(Button(640,22,370,38,VF_EngineLinked()?"Apparence : liee a l'equipement  v":"Apparence : libre  v",modeMenu))modeMenu=!modeMenu;modeDrawing=false;
+ tooltip=NULL;gEngfuncs.pfnFillRGBABlend(0,0,ScreenWidth,ScreenHeight,bg.r,bg.g,bg.b,254);Box(0,0,1280,720,bg,254);Box(0,0,1280,4,teal);Icon(33,25,24,32,teal);RenderText(72,12,"VECTOR FIELDS",white,1.5f);Text(72,47,devMode?"DEVELOPPEUR / OUTILS":"EQUIPEMENT / LOOTPOOL",muted);
+ if(devMode){
+  if(Button(450,22,176,38,"Retour au jeu")){VF_CharacterGameplay(0);return;}
+  modeDrawing=true;if(Button(640,22,370,38,VF_EngineLinked()?"Apparence : liee aux objets  v":"Apparence : libre  v",modeMenu))modeMenu=!modeMenu;modeDrawing=false;
+ }else if(Button(640,22,370,38,"Options developpeur",false,true,4)){DevCommand();return;}
  if(Button(1026,22,138,38,"Guide",guide,true,9)){guide=!guide;released=false;}
  if(Button(1176,22,80,38,"",false,true,10)){VF_CharacterClose();VF_SkinsClose();Focus();}
- const char* tabs[]={"Operateur","Arme / systemes","Apparence","Arme / style","Arsenal"};int icons[]={6,4,8,7,9};
- for(int i=0;i<5;++i)if(Button(24+i*249.f,84,240,43,tabs[i],section==i,true,icons[i])){guide=false;if(i<2)VF_CharacterShow(i);else VF_SkinsShow(i==2?0:i==3?2:1);}
+ if(devMode){
+  const char* tabs[]={"Equipement test","Armes test","Skins / sources","Prototypes","Arsenal"};int icons[]={6,4,8,7,9};
+  for(int i=0;i<5;++i)if(Button(24+i*249.f,84,240,43,tabs[i],section==i,true,icons[i])){guide=false;if(i<2)VF_CharacterShow(i);else VF_SkinsShow(i==2?0:i==3?2:1);}
+ }else{
+  if(Button(24,84,603,43,"Operateur",section==0,true,6))VF_CharacterGameplay(0);
+  if(Button(650,84,606,43,"Arme / Relais R-01",section==1,true,7))VF_CharacterGameplay(1);
+ }
  Box(24,140,1232,1,edge);
 }
-void OpenEffects(){guide=true;guidePage=2;}
+void OpenEffects(){SetDeveloper(true);guide=true;guidePage=2;}
 bool Guide(){
  if(!guide)return false;
+ if(!devMode&&guidePage==2)guidePage=0;
 
  if(Button(574,155,155,35,"Relais R-01",guidePage==3))guidePage=3;
- if(Button(744,155,165,35,"Effets",guidePage==2))guidePage=2;
+ if(devMode&&Button(744,155,165,35,"Effets",guidePage==2))guidePage=2;
  if(Button(922,155,155,35,"Familles",guidePage==0))guidePage=0;
  if(Button(1091,155,165,35,"Jauges",guidePage==1))guidePage=1;
  if(guidePage==2){VF_EffectsGuide();return true;}
@@ -199,7 +211,7 @@ bool Guide(){
   Wrap(28,602,"F11 : atelier. Dessous / Lateral / Dessus change le chassis en conservant le chargeur, les autres pieces et les finitions. Appliquer puis R en jeu : rechargement propre au montage.",1210,white,2);
   Text(28,651,"Memes chargeurs, memes proprietes. Main et extraction adaptees ; viseur decale sur Zenith. Tir MP5 provisoire.",amber,1210);
   if(Button(28,679,268,30,"Ouvrir le Relais R-01",true)){guide=false;VF_CharacterReference(-1);}
-  Text(321,686,"Mode lie a l'equipement / 1920 x 1080 sans bordure",muted,900);
+  Text(321,686,"Famille de gameplay et collection cosmetique restent distinctes.",muted,900);
   return true;
  }
 
@@ -252,8 +264,8 @@ bool Guide(){
  for(int b=4;b<6;++b){float x=906+(b-4)*142.f;if(Button(x,532,135,35,"")){selectedBudget=b;guidePage=1;}Icon(34+b,x,537,24,BudgetColor(b));Text(x+35,540,codes[b],BudgetColor(b));if(Hover(x,532,135,35))Tip(BudgetTip(b));}
  Text(906,574,"ARME",muted);
  for(int b=0;b<4;++b){float x=906+b*78.f;if(Button(x,593,77,35,"")){selectedBudget=b;guidePage=1;}Icon(34+b,x,598,23,BudgetColor(b));Text(x+29,600,codes[b],BudgetColor(b));if(Hover(x,593,77,35))Tip(BudgetTip(b));}
- Text(40,651,"Liee a l'equipement : les objets determinent le visuel. Libre : les skins choisis prennent le dessus.",muted,1190);
- Text(40,682,"6 collections / 21 emplacements. Les effets de combat restent a implementer.",teal,1190);
+ Text(40,651,devMode?"Liee : les objets determinent le visuel. Libre : les skins choisis prennent le dessus.":"La famille decrit le role de l'objet. Sa collection cosmetique decrit son univers visuel.",muted,1190);
+ Text(40,682,"6 familles / 21 emplacements. Personnages GIGN et armes R-01 dans le lootpool.",teal,1190);
  return true;
 }
 void End(){
@@ -276,5 +288,5 @@ static void PointerCommand(){
  if(!std::isfinite(x)||!std::isfinite(y))return;
  Move((x-px)*SX(),(y-py)*SY());if(button==1)Key(1,K_MOUSE1);else if(button==0)Key(0,K_MOUSE1);else if(button==2)Key(1,K_MWHEELUP);else if(button==3)Key(1,K_MWHEELDOWN);
 }
-void Init(){Focus();gEngfuncs.pfnAddCommand("vf_ui_pointer",PointerCommand);}
+void Init(){SetDeveloper(false);gEngfuncs.pfnAddCommand("vf_dev",DevCommand);Focus();gEngfuncs.pfnAddCommand("vf_ui_pointer",PointerCommand);}
 }

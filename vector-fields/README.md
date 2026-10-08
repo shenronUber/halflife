@@ -1,14 +1,24 @@
-# Vector Fields — version 0.13.0
+# Vector Fields — version 0.14.0
 
 ## Version actuelle et lancement
 
-**Jouer - Vector Fields.cmd** est le point d'entrée unique. La version 0.13.0
-regroupe les personnages GIGN, les douze finitions R1 et les trois plateformes
-dans `runtime/vector-engine/vf_visual`. Le démarrage équipe un personnage et
-une arme Grande Guerre assortis. Les quatre raccourcis d'essai sont rangés
-dans `legacy-launchers` ; utiliser le lanceur principal pour la dernière version.
+**Jouer - Vector Fields.cmd** lance le build courant, dans
+`runtime/vector-engine/vf_visual`. Le menu de gameplay contient **Opérateur**
+et **Arme / Relais R-01**. Les neuf emplacements opérateur restent présents :
+cinq zones GIGN produites et quatre équipements aux modèles provisoires
+(épaules, ceinture, bouclier et spécial).
 
-[Notes de version, fonctionnalités et contrôles](docs/RELEASE-0.13.0.md) ·
+Le lootpool contient 396 entrées nommées : 60 pièces GIGN, 312 combinaisons R1
+et 24 équipements provisoires. Les six familles de gameplay restent inchangées ;
+la collection cosmétique est indiquée séparément. Le démarrage équipe la
+Sentinelle des tranchées et son R1 Grande Guerre.
+
+**F1/F2** : opérateur. **F11** : arme. **F6/F7** : options développeur.
+Les anciens skins, prototypes, arsenaux et outils de visualisation se trouvent
+dans cet espace dev. **Retour au jeu** restaure l'équipement de gameplay.
+Les anciens raccourcis restent archivés dans `legacy-launchers`.
+
+[Notes de version, lootpool et vérifications](docs/RELEASE-0.14.0.md) ·
 [Historique](CHANGELOG.md)
 
 ## Trois plateformes de chargement
@@ -87,7 +97,7 @@ ne font plus avancer, reculer ou glisser le joueur.
 Xash3D nomme les touches par leur position QWERTY : les entrées internes
 `w` et `a` dans `lab_controls.cfg` correspondent à **Z** et **Q** en AZERTY.
 Les raccourcis clavier historiques restent disponibles, mais la souris pilote
-maintenant toutes les vues. F1 ouvre les systèmes, F2 les apparences.
+maintenant toutes les vues. F1 et F2 ouvrent l’opérateur ; F6 ouvre les outils développeur.
 
 | Action | Commande |
 | --- | --- |
@@ -105,7 +115,7 @@ maintenant toutes les vues. F1 ouvre les systèmes, F2 les apparences.
 
 **`Jouer - Vector Fields.cmd`** ouvre le laboratoire avec le R-01 équipé, en
 1920×1080 sans bordure. **F11** ouvre son atelier depuis le jeu. Les boutons
-**R-01 / Atelier** et **R-01 / Circuit**, dans **Arme / systèmes**, chargent deux
+**R-01 / Atelier** et **R-01 / Circuit**, dans **Arme / Relais R-01**, chargent deux
 ensembles complets. Choisir un emplacement à gauche, une variante à droite,
 puis **Appliquer**. La croix ou Échap rend le contrôle au joueur.
 
@@ -116,7 +126,8 @@ molette. Une seconde pression revient à l'arme complète. F11 conserve les choi
 appliqués quand on rouvre l'atelier. Les collections historiques restent
 accessibles par leurs six boutons en bas à gauche.
 
-L'arme utilise les objets et finitions choisis. Le mode **Apparence libre**
+Le gameplay lie le personnage et l'arme aux objets équipés. Dans les options
+développeur, le mode **Apparence libre**
 permet de conserver simultanément un skin GIGN indépendant. Ouvrir F11 ne
 remplace plus le skin du personnage.
 Une page **Relais R-01** a également été ajoutée au guide dans le jeu.
@@ -198,9 +209,14 @@ le rechargement en première personne, les finitions et la sauvegarde/reprise.
 Son rapport est `build/reference-platform-verification.json`.
 La génération des pistes utilise Python, NumPy, SciPy et Pillow.
 
-## Arsenal et contenus 0.10
+## Outils développeur — Arsenal et contenus 0.10
 
-**F7 → Arsenal** ouvre la bibliothèque intégrée au jeu. Choisir une collection,
+Les sections historiques suivantes décrivent les outils désormais accessibles
+depuis **Options développeur**. Les anciens raccourcis F2 vers les skins et F7
+vers l’arsenal sont remplacés par les onglets de cet espace ; F2 revient à
+l’opérateur de gameplay et F6/F7 ouvrent les options dev.
+
+**Options développeur → Arsenal** ouvre la bibliothèque intégrée au jeu. Choisir une collection,
 utiliser la recherche par nom, puis sélectionner un modèle. La souris fait
 pivoter et zoomer l’aperçu ; Animation et Pause permettent d’inspecter les mouvements.
 
@@ -214,7 +230,7 @@ pivoter et zoomer l’aperçu ; Animation et Pause permettent d’inspecter les 
   inspecter. Ces références ne sont pas toutes équipables en première personne.
 - **Cartes CS** : **Visiter la carte** lance une copie adaptée à l’exploration.
   F4 revient au laboratoire. `Explorer - Counter-Strike.cmd` propose aussi les 25 cartes.
-- **Apparence → CS** : 22 nouvelles apparences Counter-Strike, originales et HD,
+- **Skins / sources → CS** : 22 nouvelles apparences Counter-Strike, originales et HD,
   segmentées en tête, torse, gants, jambes et chaussures. Le catalogue total
   contient 176 apparences, avec les identifiants existants conservés.
 
@@ -333,7 +349,7 @@ pour une partie multijoueur complète.
 
 ## Intégration des équipements 0.9
 
-Le menu déroulant **Apparence**, en haut de l’atelier, choisit entre deux modes :
+Dans les options développeur, le menu déroulant **Apparence**, en haut de l’atelier, choisit entre deux modes :
 
 - **Liée à l’équipement** (mode initial) : les objets déterminent le personnage et l’arme. Choisir un objet affiche immédiatement une proposition en 3D ; **Appliquer** la valide auprès du serveur. Les onglets Apparence et Arme/style restent consultables en lecture seule.
 - **Apparence libre** : les cinq zones corporelles et les quatre modules d’arme restent réglables dans leurs ateliers. Ces choix sont conservés lorsque l’on revient au mode lié, et réapparaissent au retour en mode libre. Changer de mode ne modifie ni les objets ni leurs budgets. Le mode et les skins corporels libres sont conservés dans les sauvegardes de partie ; les pièces libres d’arme utilisent les variables archivées existantes.
@@ -493,7 +509,7 @@ exécutables via `tests/ui_engine_test.py`.
 ## Interface 0.7
 
 Cinq vues partagent les mêmes boutons, cartes, couleurs, pictogrammes et
-pointeur : **Opérateur**, **Arme / systèmes**, **Apparence**, **Arme / style**,
+pointeur : **Opérateur**, **Arme / Relais R-01**, **Apparence**, **Arme / style**,
 **Arsenal**. Le bouton **Guide** présente les six familles retrouvées dans le
 catalogue, avec leur emblème et leur intention résumée :
 
