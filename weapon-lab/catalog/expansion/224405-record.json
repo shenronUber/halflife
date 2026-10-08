@@ -1,0 +1,93 @@
+{
+  "id": 224405,
+  "name": "SCAR-L w/ EOTech",
+  "url": "https://gamebanana.com/mods/224405",
+  "game": "Counter-Strike 1.6",
+  "likes": 6,
+  "downloads": 19851,
+  "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "license_checklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "credits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sName": "SevenZero"
+        },
+        {
+          "_sName": "Qwerty"
+        },
+        {
+          "_sName": "Pete"
+        },
+        {
+          "_sName": "kalansikov88"
+        },
+        {
+          "_sName": "Teh Snake"
+        },
+        {
+          "_sName": "General Tso"
+        },
+        {
+          "_sName": "Flamshmizer"
+        },
+        {
+          "_sName": "Twinkie Masta"
+        },
+        {
+          "_sName": "Jeniffer"
+        },
+        {
+          "_sName": "Behemoth"
+        }
+      ]
+    }
+  ],
+  "description_html": "Since I've been bored (as usual) I decided if I can try to put an EOTech on a SCAR, so yeah this was made. This is actually my first compile so tips would be appreciated. I noticed there were smoothing errors, since I'm new to this I have no idea how to fix it. I also did a recolor on the SCAR to make it look more tan and I added a tan color on the EOTech. I'm not really sure if that's how a EOTech should look big. Anyways enjoy my first!<br>\r\n<br>\r\n<br>\r\nNo pee, wee's. I'm new to this so don't keep on asking me to make one.<br>\r\n<br>\r\n<font size=\"4\">UPDATE!!</font><br>\r\nAdded SevenZero's Arms<br>\r\nAdded Behemoth's Origins<br>\r\nAdded Digicamo Textures<br>\r\nNo more texture misalignment on stock (only on behemoth origins, too lazy to do it on mine)<br>\r\n<br>\r\n<font size=\"6\">I insist you to use the Digicamo texture.</font>",
+  "files": [
+    {
+      "_idRow": 226318,
+      "_sFile": "scar-l_with_eotech_2.rar",
+      "_nFilesize": 2432676,
+      "_tsDateAdded": 1361498204,
+      "_nDownloadCount": 19851,
+      "_sDownloadUrl": "https://gamebanana.com/dl/226318",
+      "_sMd5Checksum": "30af74d44a2b68989f9d9882cfd7701b",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true
+    }
+  ],
+  "retrieved": "2026-10-08",
+  "download": {
+    "id": 224405,
+    "name": "SCAR-L w/ EOTech",
+    "archive": "downloads\\224405-scar-l_with_eotech_2.rar",
+    "sha256": "c8c59bd9281eeb9d8407f006b708bf723fb534724ce96723e7438b5fbe4167cb",
+    "bytes": 2432676,
+    "models": [
+      "extracted\\224405\\Scar-L with Eotech\\Behemoth Origins\\v_m4a1.mdl",
+      "extracted\\224405\\Scar-L with Eotech\\SevenZero origins\\v_m4a1.mdl"
+    ]
+  }
+}

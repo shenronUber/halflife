@@ -109,6 +109,15 @@ call ..\..\filecopy.bat $(TargetDir)\$(TargetName).pdb ..\..\..\game\mod\cl_dlls
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\game_shared\vf_loadout.cpp" />
+    <ClCompile Include="..\..\game_shared\vf_appearance.cpp" />
+    <ClCompile Include="..\..\cl_dll\vf_character.cpp" />
+    <ClCompile Include="..\..\cl_dll\vf_ui.cpp" />
+    <ClCompile Include="..\..\cl_dll\vf_effects.cpp" />
+    <ClCompile Include="..\..\cl_dll\vf_preview.cpp" />
+    <ClCompile Include="..\..\cl_dll\vf_engine.cpp" />
+    <ClCompile Include="..\..\cl_dll\vf_skinmenu.cpp" />
+    <ClCompile Include="..\..\cl_dll\vf_library.cpp" />
     <ClCompile Include="..\..\cl_dll\ammo.cpp" />
     <ClCompile Include="..\..\cl_dll\ammohistory.cpp" />
     <ClCompile Include="..\..\cl_dll\ammo_secondary.cpp" />

@@ -1,0 +1,209 @@
+{
+  "id": 210349,
+  "name": "M4A1 RIS Pack *Updated*",
+  "url": "https://gamebanana.com/mods/210349",
+  "game": "Counter-Strike: Source",
+  "likes": 33,
+  "downloads": 15698,
+  "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "license_checklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "credits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Compile, Camouflage, Minor Texture Edits",
+          "_sName": "PoisonHeadcrab"
+        },
+        {
+          "_sRole": "M4A1 Model",
+          "_sName": "Twinke Masta"
+        },
+        {
+          "_sRole": "M4A1 and VLTOR Texture",
+          "_sName": "El Maestro de Graffiti"
+        },
+        {
+          "_sRole": "VLTOR Modstock Model and UV",
+          "_sName": "TheLama"
+        },
+        {
+          "_sRole": "M4A1 Animations",
+          "_sName": "ZeeJ"
+        },
+        {
+          "_sRole": "RIS Model",
+          "_sName": "Soul_Slayer"
+        },
+        {
+          "_sRole": "RIS Texture",
+          "_sName": "Thanez"
+        },
+        {
+          "_sRole": "Silencer Model",
+          "_sName": "Stoke"
+        },
+        {
+          "_sRole": "Silencer Texture",
+          "_sName": "Wang Chung"
+        },
+        {
+          "_sRole": "Sounds",
+          "_sName": "The Noid"
+        },
+        {
+          "_sRole": "Sounds",
+          "_sName": "Vunsunta"
+        },
+        {
+          "_sRole": "Sounds",
+          "_sName": "XLongWayHome"
+        },
+        {
+          "_sRole": "Eotech Texture",
+          "_sName": "flamshmizer"
+        },
+        {
+          "_sRole": "Eotech Model",
+          "_sName": "TheLama"
+        },
+        {
+          "_sRole": "RDS Model",
+          "_sName": "Kaskad"
+        },
+        {
+          "_sRole": "RDS UV Maps",
+          "_sName": "B0T"
+        },
+        {
+          "_sRole": "RDS Texture",
+          "_sName": "obsolete"
+        },
+        {
+          "_sRole": "ACOG Model",
+          "_sName": "Twinke Masta"
+        },
+        {
+          "_sRole": "ACOG Texture",
+          "_sName": "Thanez and Twinke Masta"
+        },
+        {
+          "_sRole": "ACOG Refmaps",
+          "_sName": "Thanez"
+        }
+      ]
+    }
+  ],
+  "description_html": "<fieldset><legend><b>Update 17.01.2010</b></legend>\r\nChanges:\r\n<ul><li>Removed front sights from world models with attached sights.\r\n<li>Removed dead frames (Recoil is working properly now).\r\n</fieldset>\r\n\r\nSights/Camouflage for an M4A1 RIS (I hacked the RIS on it) on ZeeJ's animations, world models now have sights too!\r\n\r\nNo arctic camouflage sorry :/\r\n\r\n\r\nThanks to streetprof for the video!\r\n<object width=\"300\"><param name=\"movie\" value=\"http://www.youtube.com/v/L_nhbJnUcKk&hl=de_DE&fs=1&\"></param><param name=\"allowFullScreen\" value=\"true\"></param><param name=\"allowscriptaccess\" value=\"always\"></param><embed src=\"http://www.youtube.com/v/L_nhbJnUcKk&hl=de_DE&fs=1&\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" allowfullscreen=\"true\" width=\"300\" height=\"295\"></embed></object>\r\n\r\n<b class=red>If you got problems with any content or credits please contact me.</b>\r\n\r\n\r\n<center><a href=\"http://www.fpsbanana.com/responders/addtowl?section=users&itemid=648290\"><img src=\"http://www.abload.de/img/watchmezjqb.png\" /></a></center>",
+  "files": [
+    {
+      "_idRow": 249879,
+      "_sFile": "m4a1_ris_pack_updated.rar",
+      "_nFilesize": 41864209,
+      "_tsDateAdded": 1262534742,
+      "_nDownloadCount": 15698,
+      "_sDownloadUrl": "https://gamebanana.com/dl/249879",
+      "_sMd5Checksum": "7cdd55b5304e3af2ae9c2eb8c0f0b509",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,210349,249879"
+        }
+      ]
+    }
+  ],
+  "retrieved": "2026-10-08",
+  "download": {
+    "id": 210349,
+    "name": "M4A1 RIS Pack *Updated*",
+    "archive": "downloads\\210349-m4a1_ris_pack_updated.rar",
+    "sha256": "f2f06d91bd0df32d1b8741a88402f9bb82ea02e72f9289660be320c7e78bfb78",
+    "bytes": 41864209,
+    "models": [
+      "extracted\\210349\\Required\\models\\weapons\\v_rif_m4a1.mdl",
+      "extracted\\210349\\Required\\models\\weapons\\w_rif_m4a1.mdl",
+      "extracted\\210349\\Required\\models\\weapons\\w_rif_m4a1_silencer.mdl",
+      "extracted\\210349\\Sights\\ACOG Sight\\models\\weapons\\v_rif_m4a1.mdl",
+      "extracted\\210349\\Sights\\ACOG Sight\\models\\weapons\\w_rif_m4a1.mdl",
+      "extracted\\210349\\Sights\\ACOG Sight\\models\\weapons\\w_rif_m4a1_silencer.mdl",
+      "extracted\\210349\\Sights\\Eotech Sight\\models\\weapons\\v_rif_m4a1.mdl",
+      "extracted\\210349\\Sights\\Eotech Sight\\models\\weapons\\w_rif_m4a1.mdl",
+      "extracted\\210349\\Sights\\Eotech Sight\\models\\weapons\\w_rif_m4a1_silencer.mdl",
+      "extracted\\210349\\Sights\\Iron Sight (Carry Handle)\\models\\weapons\\v_rif_m4a1.mdl",
+      "extracted\\210349\\Sights\\Iron Sight (Carry Handle)\\models\\weapons\\w_rif_m4a1.mdl",
+      "extracted\\210349\\Sights\\Iron Sight (Carry Handle)\\models\\weapons\\w_rif_m4a1_silencer.mdl",
+      "extracted\\210349\\Sights\\Red Dot Sight\\models\\weapons\\v_rif_m4a1.mdl",
+      "extracted\\210349\\Sights\\Red Dot Sight\\models\\weapons\\w_rif_m4a1.mdl",
+      "extracted\\210349\\Sights\\Red Dot Sight\\models\\weapons\\w_rif_m4a1_silencer.mdl"
+    ]
+  }
+}

@@ -1,0 +1,416 @@
+{
+  "id": "castaway",
+  "title": "Bois de naufrage",
+  "description": "Bois flotte, fibres, ecorce, silex et cordages.",
+  "approach": "Ensemble assorti au personnage GIGN; memes fonctions et UV R-01.",
+  "atlas": "texture-atlas.png",
+  "atlas_dimensions": [
+    1254,
+    1254
+  ],
+  "atlas_sha256": "29f4fc8d24b2b4db0181028cd8b42cad86742de319787e33994e2f13aa566d61",
+  "generation_tool": "built-in image_gen",
+  "prompt": "prompt.txt",
+  "output_size": [
+    256,
+    256
+  ],
+  "bmp_format": "8-bit indexed RGB palette, 256 colors maximum",
+  "tiles": [
+    {
+      "index": 0,
+      "row": 1,
+      "column": 1,
+      "role": "structure",
+      "label": "Noyau structurel",
+      "source_bounds": [
+        3,
+        3,
+        311,
+        311
+      ],
+      "png": "tiles/r01_t00.png",
+      "bmp": "tiles/r01_t00.bmp",
+      "bmp_sha256": "50ba1fdbecd1b5aaf0f7a65cf349503617b7b2ed489aa48fc7b6598769fc2d11",
+      "used_by_models": [
+        "r01_receiver_a",
+        "r01_receiver_b",
+        "r01_barrel_a",
+        "r01_barrel_b",
+        "r01_muzzle_a",
+        "r01_muzzle_b",
+        "r01_feed_a",
+        "r01_feed_b",
+        "r01_chamber_a",
+        "r01_chamber_b",
+        "r01_ammo_a",
+        "r01_ammo_b",
+        "r01_projectile_a",
+        "r01_projectile_b",
+        "r01_optic_a",
+        "r01_optic_b",
+        "r01_underbarrel_a",
+        "r01_underbarrel_b",
+        "r01_grip_a",
+        "r01_grip_b",
+        "r01_power_a",
+        "r01_power_b",
+        "r01_cooling_a",
+        "r01_cooling_b"
+      ],
+      "used_in_current_builder": true
+    },
+    {
+      "index": 1,
+      "row": 1,
+      "column": 2,
+      "role": "housing",
+      "label": "Carter amovible",
+      "source_bounds": [
+        317,
+        3,
+        624,
+        311
+      ],
+      "png": "tiles/r01_t01.png",
+      "bmp": "tiles/r01_t01.bmp",
+      "bmp_sha256": "57404d0aa99d8a7428d4ab5ed21d1a30edec1dcaf6839717f11fd84f8ddff1ff",
+      "used_by_models": [
+        "r01_receiver_a",
+        "r01_receiver_b",
+        "r01_grip_b"
+      ],
+      "used_in_current_builder": true
+    },
+    {
+      "index": 2,
+      "row": 1,
+      "column": 3,
+      "role": "shell",
+      "label": "Habillage du chassis",
+      "source_bounds": [
+        630,
+        3,
+        937,
+        311
+      ],
+      "png": "tiles/r01_t02.png",
+      "bmp": "tiles/r01_t02.bmp",
+      "bmp_sha256": "71b9e64fb0df2a7599145c0740f099f58be98b233a63125aaf3032bf6b400983",
+      "used_by_models": [
+        "r01_receiver_a",
+        "r01_barrel_a",
+        "r01_ammo_a",
+        "r01_projectile_a",
+        "r01_optic_a",
+        "r01_grip_b",
+        "r01_power_a"
+      ],
+      "used_in_current_builder": true
+    },
+    {
+      "index": 3,
+      "row": 1,
+      "column": 4,
+      "role": "identity",
+      "label": "Identite / marquage",
+      "source_bounds": [
+        943,
+        3,
+        1251,
+        311
+      ],
+      "png": "tiles/r01_t03.png",
+      "bmp": "tiles/r01_t03.bmp",
+      "bmp_sha256": "d65e61226a1ce3e192e3a2905dec37cd75a7c037bf119147ed56deaf78033f16",
+      "used_by_models": [
+        "r01_receiver_a",
+        "r01_receiver_b",
+        "r01_ammo_b",
+        "r01_projectile_b"
+      ],
+      "used_in_current_builder": true
+    },
+    {
+      "index": 4,
+      "row": 2,
+      "column": 1,
+      "role": "grip",
+      "label": "Prise en main / amortissement",
+      "source_bounds": [
+        3,
+        317,
+        311,
+        624
+      ],
+      "png": "tiles/r01_t04.png",
+      "bmp": "tiles/r01_t04.bmp",
+      "bmp_sha256": "096fda3f7bcef9fb38b358835122c3122bf7346a519fed5c9116fea2778dbd72",
+      "used_by_models": [
+        "r01_feed_a",
+        "r01_feed_b",
+        "r01_chamber_a",
+        "r01_optic_b",
+        "r01_underbarrel_a",
+        "r01_grip_a",
+        "r01_grip_b"
+      ],
+      "used_in_current_builder": true
+    },
+    {
+      "index": 5,
+      "row": 2,
+      "column": 2,
+      "role": "contact",
+      "label": "Contacts / bagues / pieces dures",
+      "source_bounds": [
+        317,
+        317,
+        624,
+        624
+      ],
+      "png": "tiles/r01_t05.png",
+      "bmp": "tiles/r01_t05.bmp",
+      "bmp_sha256": "db7b8973d890e251737295fac281aed1bce2e6a7d1d167a4f31e258e2fa21789",
+      "used_by_models": [
+        "r01_receiver_a",
+        "r01_receiver_b",
+        "r01_barrel_a",
+        "r01_barrel_b",
+        "r01_muzzle_a",
+        "r01_muzzle_b",
+        "r01_feed_a",
+        "r01_feed_b",
+        "r01_chamber_a",
+        "r01_chamber_b",
+        "r01_ammo_a",
+        "r01_ammo_b",
+        "r01_projectile_a",
+        "r01_projectile_b",
+        "r01_optic_a",
+        "r01_optic_b",
+        "r01_underbarrel_a",
+        "r01_underbarrel_b",
+        "r01_grip_a",
+        "r01_grip_b",
+        "r01_power_a",
+        "r01_power_b",
+        "r01_cooling_a"
+      ],
+      "used_in_current_builder": true
+    },
+    {
+      "index": 6,
+      "row": 2,
+      "column": 3,
+      "role": "heat_release",
+      "label": "Surface de refroidissement",
+      "source_bounds": [
+        630,
+        317,
+        937,
+        624
+      ],
+      "png": "tiles/r01_t06.png",
+      "bmp": "tiles/r01_t06.bmp",
+      "bmp_sha256": "04407c8e947e65f84b5cfe82a3bb5a76f2986ceea8a2e91600a343a8e599e7ec",
+      "used_by_models": [
+        "r01_receiver_a",
+        "r01_receiver_b",
+        "r01_barrel_a"
+      ],
+      "used_in_current_builder": true
+    },
+    {
+      "index": 7,
+      "row": 2,
+      "column": 4,
+      "role": "conductor",
+      "label": "Conduction / enroulement",
+      "source_bounds": [
+        943,
+        317,
+        1251,
+        624
+      ],
+      "png": "tiles/r01_t07.png",
+      "bmp": "tiles/r01_t07.bmp",
+      "bmp_sha256": "d6366ad076800db6274cd5fd3402b07ef5d41a228d77a70a60df15b6c64ab16e",
+      "used_by_models": [
+        "r01_barrel_b",
+        "r01_ammo_a",
+        "r01_projectile_a",
+        "r01_power_a",
+        "r01_power_b",
+        "r01_cooling_b"
+      ],
+      "used_in_current_builder": true
+    },
+    {
+      "index": 8,
+      "row": 3,
+      "column": 1,
+      "role": "energy_a",
+      "label": "Reserve d'energie A",
+      "source_bounds": [
+        3,
+        630,
+        311,
+        937
+      ],
+      "png": "tiles/r01_t08.png",
+      "bmp": "tiles/r01_t08.bmp",
+      "bmp_sha256": "165bd39ea163692de14400546eb75c5f8888dcf343013177cca28a7aec5bd6e6",
+      "used_by_models": [
+        "r01_power_a"
+      ],
+      "used_in_current_builder": true
+    },
+    {
+      "index": 9,
+      "row": 3,
+      "column": 2,
+      "role": "energy_b",
+      "label": "Reserve d'energie B",
+      "source_bounds": [
+        317,
+        630,
+        624,
+        937
+      ],
+      "png": "tiles/r01_t09.png",
+      "bmp": "tiles/r01_t09.bmp",
+      "bmp_sha256": "c902f9170450e1fcefcf8704a4a87f1456664d73d9eff2aaea5dbe4401b7f309",
+      "used_by_models": [
+        "r01_ammo_b",
+        "r01_projectile_b",
+        "r01_power_b"
+      ],
+      "used_in_current_builder": true
+    },
+    {
+      "index": 10,
+      "row": 3,
+      "column": 3,
+      "role": "status",
+      "label": "Indicateur d'etat",
+      "source_bounds": [
+        630,
+        630,
+        937,
+        937
+      ],
+      "png": "tiles/r01_t10.png",
+      "bmp": "tiles/r01_t10.bmp",
+      "bmp_sha256": "51327817c6210a497bd7c2037982bdc3d0b9ab9db0474db2740d7b482e4a2688",
+      "used_by_models": [
+        "r01_power_a",
+        "r01_power_b"
+      ],
+      "used_in_current_builder": true
+    },
+    {
+      "index": 11,
+      "row": 3,
+      "column": 4,
+      "role": "optic",
+      "label": "Surface optique",
+      "source_bounds": [
+        943,
+        630,
+        1251,
+        937
+      ],
+      "png": "tiles/r01_t11.png",
+      "bmp": "tiles/r01_t11.bmp",
+      "bmp_sha256": "bd04751ca459d6b42ac8b415d6c407381b041e169d7962d9586867d5bd074e99",
+      "used_by_models": [
+        "r01_optic_a",
+        "r01_optic_b"
+      ],
+      "used_in_current_builder": true
+    },
+    {
+      "index": 12,
+      "row": 4,
+      "column": 1,
+      "role": "warning",
+      "label": "Avertissement / securite",
+      "source_bounds": [
+        3,
+        943,
+        311,
+        1251
+      ],
+      "png": "tiles/r01_t12.png",
+      "bmp": "tiles/r01_t12.bmp",
+      "bmp_sha256": "fc31f6a8e39fd255dd567bfcbe2e79e2cbbd76811bac7580123149b563935756",
+      "used_by_models": [],
+      "used_in_current_builder": false
+    },
+    {
+      "index": 13,
+      "row": 4,
+      "column": 2,
+      "role": "insulation",
+      "label": "Isolation thermique",
+      "source_bounds": [
+        317,
+        943,
+        624,
+        1251
+      ],
+      "png": "tiles/r01_t13.png",
+      "bmp": "tiles/r01_t13.bmp",
+      "bmp_sha256": "329bae53eb38aeea4a6bd9b7c9eccc4991f7cbb0cbda870f051ab071a4682f00",
+      "used_by_models": [
+        "r01_barrel_b",
+        "r01_underbarrel_b",
+        "r01_cooling_b"
+      ],
+      "used_in_current_builder": true
+    },
+    {
+      "index": 14,
+      "row": 4,
+      "column": 3,
+      "role": "ammunition",
+      "label": "Coque du chargeur",
+      "source_bounds": [
+        630,
+        943,
+        937,
+        1251
+      ],
+      "png": "tiles/r01_t14.png",
+      "bmp": "tiles/r01_t14.bmp",
+      "bmp_sha256": "a92bccb5fe9ad916c3c76c7235f06e837480ffadc163f28ff6343dca52a952b5",
+      "used_by_models": [
+        "r01_feed_a",
+        "r01_feed_b"
+      ],
+      "used_in_current_builder": true
+    },
+    {
+      "index": 15,
+      "row": 4,
+      "column": 4,
+      "role": "breech",
+      "label": "Culasse / verrou mobile",
+      "source_bounds": [
+        943,
+        943,
+        1251,
+        1251
+      ],
+      "png": "tiles/r01_t15.png",
+      "bmp": "tiles/r01_t15.bmp",
+      "bmp_sha256": "79dcdb4f5b5d3bc3c3f4fa7a5ce03e6cd96f27bd5c0e135c72e495100281e5e6",
+      "used_by_models": [
+        "r01_chamber_a",
+        "r01_chamber_b"
+      ],
+      "used_in_current_builder": true
+    }
+  ]
+}

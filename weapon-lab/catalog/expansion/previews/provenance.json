@@ -1,0 +1,122 @@
+[
+  {
+    "id": 394799,
+    "source": "extracted/394799/Camo/valve_addon/models/v_9mmar.mdl",
+    "note": "Bind pose, default bodygroups; hands filtered by material name; not an in-game screenshot."
+  },
+  {
+    "id": 567446,
+    "source": "extracted/567446/models/v_9mmar.mdl",
+    "note": "Bind pose, default bodygroups; hands filtered by material name; not an in-game screenshot."
+  },
+  {
+    "id": 179738,
+    "source": "extracted/179738/guard_hands/classic_animations/v_9mmAR.mdl",
+    "note": "Bind pose, default bodygroups; hands filtered by material name; not an in-game screenshot."
+  },
+  {
+    "id": 179724,
+    "source": "extracted/179724/valve/models/v_9mmar.mdl",
+    "note": "Bind pose, default bodygroups; hands filtered by material name; not an in-game screenshot."
+  },
+  {
+    "id": 498695,
+    "source": "extracted/498695/m4/m4/original/v_9mmar.mdl",
+    "note": "Bind pose, default bodygroups; hands filtered by material name; not an in-game screenshot."
+  },
+  {
+    "id": 179784,
+    "source": "extracted/179784/models/v_9mmAR_HEV.mdl",
+    "note": "Bind pose, default bodygroups; hands filtered by material name; not an in-game screenshot."
+  },
+  {
+    "id": 179772,
+    "source": "extracted/179772/v_9mmar.mdl",
+    "note": "Bind pose, default bodygroups; hands filtered by material name; not an in-game screenshot."
+  },
+  {
+    "id": 391277,
+    "source": "extracted/391277/valve/v_9mmar.mdl",
+    "note": "Bind pose, default bodygroups; hands filtered by material name; not an in-game screenshot."
+  },
+  {
+    "id": 179785,
+    "source": "extracted/179785/models/AK-101_GP-30/v_9mmAR_HEV.mdl",
+    "note": "Bind pose, default bodygroups; hands filtered by material name; not an in-game screenshot."
+  },
+  {
+    "id": 179782,
+    "source": "extracted/179782/models/AK-102/v_9mmAR_HEV.mdl",
+    "note": "Bind pose, default bodygroups; hands filtered by material name; not an in-game screenshot."
+  },
+  {
+    "id": 179674,
+    "source": "extracted/179674/Custom Hk416 for HL/Choose Hero/Barney Calhoun/models/v_9mmar.mdl",
+    "note": "Bind pose, default bodygroups; hands filtered by material name; not an in-game screenshot."
+  },
+  {
+    "id": 179733,
+    "source": "extracted/179733/v_9mmar.mdl",
+    "note": "Bind pose, default bodygroups; hands filtered by material name; not an in-game screenshot."
+  },
+  {
+    "id": 179775,
+    "source": "extracted/179775/default/HL/v_9mmar.mdl",
+    "note": "Bind pose, default bodygroups; hands filtered by material name; not an in-game screenshot."
+  },
+  {
+    "id": 179773,
+    "source": "extracted/179773/G36_HalfLife/A.I/All/v_9mmar.mdl",
+    "note": "Bind pose, default bodygroups; hands filtered by material name; not an in-game screenshot."
+  },
+  {
+    "id": 618463,
+    "source": "extracted/618463/twinke m4 cs goldsource pack/1.6 hands/cstrike - czero/models/v_m4a1.mdl",
+    "note": "Bind pose, default bodygroups; hands filtered by material name; not an in-game screenshot."
+  },
+  {
+    "id": 224147,
+    "source": "extracted/224147/cstrike/models/v_m4a1.mdl",
+    "note": "Bind pose, default bodygroups; hands filtered by material name; not an in-game screenshot."
+  },
+  {
+    "id": 227148,
+    "source": "extracted/227148/CSGO Weapon Pack - Update #4/cstrike/models/v_m4a1.mdl",
+    "note": "Bind pose, default bodygroups; hands filtered by material name; not an in-game screenshot."
+  },
+  {
+    "id": 227227,
+    "source": "extracted/227227/cs_16_weapons_-_csgo_animations/Without sleeves/v_m4a1.mdl",
+    "note": "Bind pose, default bodygroups; hands filtered by material name; not an in-game screenshot."
+  },
+  {
+    "id": 410921,
+    "source": "extracted/410921/cstrike_addon/models/v_m4a1.mdl",
+    "note": "Bind pose, default bodygroups; hands filtered by material name; not an in-game screenshot."
+  },
+  {
+    "id": 355401,
+    "source": "extracted/355401/models/BS/v_9mmAR.mdl",
+    "note": "Bind pose, default bodygroups; hands filtered by material name; not an in-game screenshot."
+  },
+  {
+    "id": 231336,
+    "source": "extracted/231336/Aug F10/v_aug.mdl",
+    "note": "Bind pose, default bodygroups; hands filtered by material name; not an in-game screenshot."
+  },
+  {
+    "id": 224405,
+    "source": "extracted/224405/Scar-L with Eotech/Behemoth Origins/v_m4a1.mdl",
+    "note": "Bind pose, default bodygroups; hands filtered by material name; not an in-game screenshot."
+  },
+  {
+    "id": 236099,
+    "source": "extracted/236099/models/v_uts15.mdl",
+    "note": "Bind pose, default bodygroups; hands filtered by material name; not an in-game screenshot."
+  },
+  {
+    "id": 236019,
+    "source": "extracted/236019/HK 416 Animation/v_m4a1.mdl",
+    "note": "Bind pose, default bodygroups; hands filtered by material name; not an in-game screenshot."
+  }
+]

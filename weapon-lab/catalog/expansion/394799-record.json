@@ -1,0 +1,308 @@
+{
+  "id": 394799,
+  "name": "Alpha M4A1 (Remake)",
+  "url": "https://gamebanana.com/mods/394799",
+  "game": "Half-Life",
+  "likes": 90,
+  "downloads": 2469,
+  "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "license_checklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "credits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Modeler, Texturer, Editor",
+          "_idRow": "1388101",
+          "_sName": "Dakashi_Val",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/66cfcd591ee45.png",
+          "_sProfileUrl": "https://gamebanana.com/members/1388101",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/66cfcbe495396.png",
+          "_bIsOnline": false
+        }
+      ]
+    },
+    {
+      "_sGroupName": "Original Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Original Owners",
+          "_sName": "Valve"
+        },
+        {
+          "_sRole": "Original Owners",
+          "_sName": "Gearbox"
+        },
+        {
+          "_sRole": "Pochita Icon (Thumbnail)",
+          "_sName": "Sofia Modenesi",
+          "_sUrl": "https://www.behance.net/sofimodenesi"
+        },
+        {
+          "_sRole": "MP5 Hands",
+          "_idRow": "1398907",
+          "_sName": "Slartibarty",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/567199f7ee538.png",
+          "_sProfileUrl": "https://gamebanana.com/members/1398907",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/56095fe906761.gif",
+          "_bIsOnline": false
+        }
+      ]
+    },
+    {
+      "_sGroupName": "Special Thanks",
+      "_aAuthors": [
+        {
+          "_sRole": "Sounds",
+          "_sName": "Jane Thrace",
+          "_sUrl": "https://www.moddb.com/members/ladyjanethrace"
+        },
+        {
+          "_sRole": "Animation Tweaks",
+          "_sName": "Sandi",
+          "_sUrl": "https://www.moddb.com/members/sandedsandals"
+        },
+        {
+          "_sRole": "Additional Help",
+          "_idRow": "1728797",
+          "_sName": "BrussTrigger",
+          "_sProfileUrl": "https://gamebanana.com/members/1728797",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/5f9d65bb78ab2.jpg",
+          "_bIsOnline": false
+        }
+      ]
+    }
+  ],
+  "description_html": "Hello everyone! Today I bring you, a weapon lost to time. <br><br><img src=\"https://i.imgur.com/xXHIS1p.png\"><br><br>The M4 Rifle!<br><br>It includes sounds, a hud icon, p and w models and hgrunt weapon model. I might or might not make expansions support in the future, but I'll see. <br><br>If you want to use this model feel free to, but remember to credit the authors.<br><br>",
+  "files": [
+    {
+      "_idRow": 846392,
+      "_sFile": "alpha_m4_v2.zip",
+      "_nFilesize": 6934257,
+      "_tsDateAdded": 1660161349,
+      "_nDownloadCount": 2119,
+      "_sDownloadUrl": "https://gamebanana.com/dl/846392",
+      "_sMd5Checksum": "c642a7139ae5096dea02e08e99591f1e",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_sDescription": "Mod",
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,394799,846392"
+        }
+      ]
+    },
+    {
+      "_idRow": 846393,
+      "_sFile": "source_files_v2.zip",
+      "_nFilesize": 19508017,
+      "_tsDateAdded": 1660161460,
+      "_nDownloadCount": 303,
+      "_sDownloadUrl": "https://gamebanana.com/dl/846393",
+      "_sMd5Checksum": "0865cb93d16906d78b2e50a0ec1f0cdb",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_sDescription": "Source Files",
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,394799,846393"
+        }
+      ]
+    }
+  ],
+  "retrieved": "2026-10-08",
+  "download": {
+    "id": 394799,
+    "name": "Alpha M4A1 (Remake)",
+    "archive": "downloads\\394799-alpha_m4_v2.zip",
+    "sha256": "77f9a6208df2963e5a820214a1988d42e4a9c98a6e9e8b36637c5d898884b50f",
+    "bytes": 6934257,
+    "models": [
+      "extracted\\394799\\Camo\\bshift_addon\\models\\hgrunt.mdl",
+      "extracted\\394799\\Camo\\bshift_addon\\models\\hgrunt01.mdl",
+      "extracted\\394799\\Camo\\bshift_addon\\models\\hgrunt02.mdl",
+      "extracted\\394799\\Camo\\bshift_addon\\models\\hgrunt03.mdl",
+      "extracted\\394799\\Camo\\bshift_addon\\models\\hgruntt.mdl",
+      "extracted\\394799\\Camo\\bshift_addon\\models\\p_9mmar.mdl",
+      "extracted\\394799\\Camo\\bshift_addon\\models\\v_9mmar.mdl",
+      "extracted\\394799\\Camo\\bshift_addon\\models\\w_9mmar.mdl",
+      "extracted\\394799\\Camo\\bshift_addon\\models\\w_9mmarclip.mdl",
+      "extracted\\394799\\Camo\\gearbox_addon\\models\\hgrunt_opfor.mdl",
+      "extracted\\394799\\Camo\\gearbox_addon\\models\\hgrunt_opfor01.mdl",
+      "extracted\\394799\\Camo\\gearbox_addon\\models\\hgrunt_opfor02.mdl",
+      "extracted\\394799\\Camo\\gearbox_addon\\models\\hgrunt_opfor03.mdl",
+      "extracted\\394799\\Camo\\gearbox_addon\\models\\hgrunt_opfor04.mdl",
+      "extracted\\394799\\Camo\\gearbox_addon\\models\\intro_regular.mdl",
+      "extracted\\394799\\Camo\\gearbox_addon\\models\\intro_saw.mdl",
+      "extracted\\394799\\Camo\\gearbox_addon\\models\\massn.mdl",
+      "extracted\\394799\\Camo\\gearbox_addon\\models\\massn01.mdl",
+      "extracted\\394799\\Camo\\gearbox_addon\\models\\massn02.mdl",
+      "extracted\\394799\\Camo\\gearbox_addon\\models\\p_9mmar.mdl",
+      "extracted\\394799\\Camo\\gearbox_addon\\models\\v_9mmar.mdl",
+      "extracted\\394799\\Camo\\gearbox_addon\\models\\w_9mmar.mdl",
+      "extracted\\394799\\Camo\\gearbox_addon\\models\\w_9mmarclip.mdl",
+      "extracted\\394799\\Camo\\valve_addon\\models\\hgrunt.mdl",
+      "extracted\\394799\\Camo\\valve_addon\\models\\hgrunt01.mdl",
+      "extracted\\394799\\Camo\\valve_addon\\models\\hgrunt02.mdl",
+      "extracted\\394799\\Camo\\valve_addon\\models\\hgrunt03.mdl",
+      "extracted\\394799\\Camo\\valve_addon\\models\\hgruntt.mdl",
+      "extracted\\394799\\Camo\\valve_addon\\models\\p_9mmar.mdl",
+      "extracted\\394799\\Camo\\valve_addon\\models\\v_9mmar.mdl",
+      "extracted\\394799\\Camo\\valve_addon\\models\\w_9mmar.mdl",
+      "extracted\\394799\\Camo\\valve_addon\\models\\w_9mmarclip.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\bshift_addon\\models\\hgrunt.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\bshift_addon\\models\\hgrunt01.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\bshift_addon\\models\\hgrunt02.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\bshift_addon\\models\\hgrunt03.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\bshift_addon\\models\\hgruntt.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\bshift_addon\\models\\p_9mmar.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\bshift_addon\\models\\v_9mmar.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\bshift_addon\\models\\w_9mmar.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\bshift_addon\\models\\w_9mmarclip.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\gearbox_addon\\models\\hgrunt_opfor.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\gearbox_addon\\models\\hgrunt_opfor01.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\gearbox_addon\\models\\hgrunt_opfor02.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\gearbox_addon\\models\\hgrunt_opfor03.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\gearbox_addon\\models\\hgrunt_opfor04.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\gearbox_addon\\models\\intro_regular.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\gearbox_addon\\models\\intro_saw.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\gearbox_addon\\models\\massn.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\gearbox_addon\\models\\massn01.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\gearbox_addon\\models\\massn02.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\gearbox_addon\\models\\p_9mmar.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\gearbox_addon\\models\\v_9mmar.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\gearbox_addon\\models\\w_9mmar.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\gearbox_addon\\models\\w_9mmarclip.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\valve_addon\\models\\hgrunt.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\valve_addon\\models\\hgrunt01.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\valve_addon\\models\\hgrunt02.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\valve_addon\\models\\hgrunt03.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\valve_addon\\models\\hgruntt.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\valve_addon\\models\\p_9mmar.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\valve_addon\\models\\v_9mmar.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\valve_addon\\models\\w_9mmar.mdl",
+      "extracted\\394799\\NoCamo (Dark)\\valve_addon\\models\\w_9mmarclip.mdl"
+    ]
+  }
+}

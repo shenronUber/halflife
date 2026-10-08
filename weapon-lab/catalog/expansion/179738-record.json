@@ -1,0 +1,287 @@
+{
+  "id": 179738,
+  "name": "LD MP5A3 v2, World Model Style MP5 Viewmodel.",
+  "url": "https://gamebanana.com/mods/179738",
+  "game": "Half-Life",
+  "likes": 60,
+  "downloads": 3836,
+  "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "license_checklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "credits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Modeler",
+          "_sName": "Jakescience"
+        }
+      ]
+    },
+    {
+      "_sGroupName": "Original Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Original: Model, textures, and animation.",
+          "_sName": "Valve and Gearbox"
+        }
+      ]
+    },
+    {
+      "_sGroupName": "Contributors",
+      "_aAuthors": [
+        {
+          "_sRole": "Arm Model",
+          "_sName": "Slartibarty"
+        }
+      ]
+    }
+  ],
+  "description_html": "This is a simple edit of the v_9mmar model to be more consistent with the world model.<br>The edit of the model was made in order to fix a small personal nitpick of mine about the<br>inconsistency between the view model and the world model.<br><br>Credits go to <a href=\"https://gamebanana.com/members/1398907\">Slartibarty</a> for the <a href=\"https://gamebanana.com/skins/140466\">fixed arm model</a><br><br>Rest of the credits go to Valve and Gearbox for the assets.<br><br>Other arm models for this include: HD HEV, MD HEV, LD HEV on gearbox animations, and Half-Life: ECHOES arms.<br><br>There's also classic style animations available for all arms!<br>",
+  "files": [
+    {
+      "_idRow": 485050,
+      "_sFile": "hl1_mp5a3_viewmodel_v2b.zip",
+      "_nFilesize": 1304704,
+      "_tsDateAdded": 1599643159,
+      "_nDownloadCount": 2194,
+      "_sDownloadUrl": "https://gamebanana.com/dl/485050",
+      "_sMd5Checksum": "ed240b72162e659fa1f3a8b8d559f95e",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,179738,485050"
+        }
+      ]
+    },
+    {
+      "_idRow": 395974,
+      "_sFile": "hl1_mp5a3_viewmodel_v2.zip",
+      "_nFilesize": 666836,
+      "_tsDateAdded": 1536453192,
+      "_nDownloadCount": 1295,
+      "_sDownloadUrl": "https://gamebanana.com/dl/395974",
+      "_sMd5Checksum": "d313ca3c6886c7e45aed6a4b6ed8e309",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,179738,395974"
+        }
+      ]
+    },
+    {
+      "_idRow": 395590,
+      "_sFile": "hl1_mp5a3_viewmodel_a4224.zip",
+      "_nFilesize": 309206,
+      "_tsDateAdded": 1536138526,
+      "_nDownloadCount": 349,
+      "_sDownloadUrl": "https://gamebanana.com/dl/395590",
+      "_sMd5Checksum": "74d185354ce526ee85d1333b623d64f7",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,179738,395590"
+        }
+      ]
+    }
+  ],
+  "retrieved": "2026-10-08",
+  "download": {
+    "id": 179738,
+    "name": "LD MP5A3 v2, World Model Style MP5 Viewmodel.",
+    "archive": "downloads\\179738-hl1_mp5a3_viewmodel_v2b.zip",
+    "sha256": "efd59ae9ddf13058d57f6f4e2760dc1cb18f25f3957df58473a53d132d7b0af1",
+    "bytes": 1304704,
+    "models": [
+      "extracted\\179738\\echoes_candidate12_hands\\classic_animations\\v_9mmAR.mdl",
+      "extracted\\179738\\echoes_candidate12_hands\\gearbox_animations\\v_9mmar.mdl",
+      "extracted\\179738\\guard_hands\\classic_animations\\v_9mmAR.mdl",
+      "extracted\\179738\\guard_hands\\gearbox_animations\\v_9mmAR.mdl",
+      "extracted\\179738\\HEV_hands\\classic_animations\\hd_hev\\v_9mmAR.mdl",
+      "extracted\\179738\\HEV_hands\\classic_animations\\hev_mediumdefinition\\v_9mmAR.mdl",
+      "extracted\\179738\\HEV_hands\\classic_animations\\hev_original\\v_9mmAR.mdl",
+      "extracted\\179738\\HEV_hands\\gearbox_animations\\hd_hev\\v_9mmar.mdl",
+      "extracted\\179738\\HEV_hands\\gearbox_animations\\hev_mediumdefinition\\v_9mmAR.mdl",
+      "extracted\\179738\\HEV_hands\\gearbox_animations\\hev_original\\v_9mmar.mdl",
+      "extracted\\179738\\HEV_hands\\Original_arm_with_knuckles\\v_9mmAR.mdl",
+      "extracted\\179738\\soldier_hands\\classic_animations\\v_9mmAR.mdl",
+      "extracted\\179738\\soldier_hands\\gearbox_animations\\v_9mmAR.mdl"
+    ]
+  }
+}

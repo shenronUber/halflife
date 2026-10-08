@@ -1,0 +1,30 @@
+{
+  "recipient": "https://gamebanana.com/mods/640445",
+  "donor": "https://gamebanana.com/mods/640447",
+  "operation": "Replace HK416 magazine triangles with LR-300 magazine triangles; preserve HK416 animations and HEV hands.",
+  "triangles_removed": 1228,
+  "triangles_added": 552,
+  "remapped_bones": [
+    "M16A2_MAG",
+    "M16A2_MAG01"
+  ],
+  "animation_sequences": 9,
+  "compiled_bytes": 2186392,
+  "in_game_verified": true,
+  "distribution": "Local experiment. Author permission required before redistribution.",
+  "in_game_evidence": {
+    "date": "2026-10-07",
+    "engine": "Xash3D FWGS 9137964 win32-i386",
+    "user_confirmed": [
+      "test room and weapon visible",
+      "movement works",
+      "primary fire works",
+      "reload works"
+    ],
+    "limits": [
+      "Singleplayer only",
+      "Third-person and dropped model are unchanged HK416 assets",
+      "No assertion of pixel-perfect equivalence to GoldSrc"
+    ]
+  }
+}

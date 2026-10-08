@@ -1,0 +1,37 @@
+{
+  "themes": [
+    "ww1-trench",
+    "bedrock-miner",
+    "new-york-noir",
+    "castaway",
+    "abyss-diver"
+  ],
+  "atlases": 10,
+  "character_skin_ids": [
+    183,
+    184,
+    185,
+    186,
+    187
+  ],
+  "weapon_styles": [
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "checks": [
+    "matching character and R-01 equipped by launcher",
+    "matching appearance pair survives save/load",
+    "reopening R1 and changing its finish preserves the free character skin",
+    "native front/back and R-01 previews assembled from verified captures"
+  ],
+  "coverage": "Visual review of atlas face, neck, gloves and all native front/back captures required",
+  "launcher_capture": "C:\\Users\\Mathieu\\Documents\\Half life Project\\runtime\\vector-engine\\vf_personas\\scrshots\\expeditions_launcher.png",
+  "uv_mapping": {
+    "models": 24,
+    "maximum_anisotropy": 1.0000000000004097,
+    "checks": "isotropic, bounded repeat cells; existing surface baseline retained"
+  }
+}

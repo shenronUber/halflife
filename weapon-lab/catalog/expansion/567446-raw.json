@@ -1,0 +1,337 @@
+{
+  "_idRow": 567446,
+  "_nStatus": "0",
+  "_bIsPrivate": false,
+  "_bAccessorIsSubmitter": false,
+  "_bIsTrashed": false,
+  "_bIsWithheld": false,
+  "_sName": "Promotional poster SMG",
+  "_sCommentsMode": "open",
+  "_tsDateModified": 1736216117,
+  "_tsDateAdded": 1736213929,
+  "_sProfileUrl": "https://gamebanana.com/mods/567446",
+  "_aPreviewMedia": {
+    "_aImages": [
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "677c84dd628fe.jpg",
+        "_sFile220": "220-90_677c84dd628fe.jpg",
+        "_hFile220": 163,
+        "_wFile220": 220,
+        "_sFile530": "530-90_677c84dd628fe.jpg",
+        "_hFile530": 393,
+        "_wFile530": 530,
+        "_sFile100": "100-90_677c84dd628fe.jpg",
+        "_hFile100": 74,
+        "_wFile100": 100,
+        "_sFile800": "677c84dd628fe.jpg",
+        "_hFile800": 394,
+        "_wFile800": 800
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "the promotional poster in question. it was arranged by Chuck Jones. Click the first link for info.",
+        "_sFile": "677c89499880d.jpg",
+        "_sFile100": "100-90_677c89499880d.jpg",
+        "_hFile100": 129,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "677c859d44765.jpg",
+        "_sFile100": "100-90_677c859d44765.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "677c859ced362.jpg",
+        "_sFile100": "100-90_677c859ced362.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "677c859d4917b.jpg",
+        "_sFile100": "100-90_677c859d4917b.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "677c859d5e395.jpg",
+        "_sFile100": "100-90_677c859d5e395.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "677c85a3d13e6.jpg",
+        "_sFile100": "100-90_677c85a3d13e6.jpg",
+        "_hFile100": 73,
+        "_wFile100": 100
+      }
+    ]
+  },
+  "_nUpdatesCount": 0,
+  "_bHasUpdates": false,
+  "_nAllTodosCount": 0,
+  "_bHasTodos": false,
+  "_nPostCount": 38,
+  "_aTags": [],
+  "_bCreatedBySubmitter": true,
+  "_bIsPorted": false,
+  "_nThanksCount": 6,
+  "_sInitialVisibility": "show",
+  "_sDownloadUrl": "https://gamebanana.com/mods/download/567446",
+  "_nDownloadCount": 583,
+  "_aFiles": [
+    {
+      "_idRow": 1358125,
+      "_sFile": "hl1-promo-smg_29262.zip",
+      "_nFilesize": 146360,
+      "_tsDateAdded": 1736216107,
+      "_nDownloadCount": 583,
+      "_sDownloadUrl": "https://gamebanana.com/dl/1358125",
+      "_sMd5Checksum": "1ef0a8307cb537c46d3a0f7170eeb992",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,567446,1358125"
+        }
+      ]
+    }
+  ],
+  "_nSubscriberCount": 12,
+  "_aContributingStudios": [],
+  "_sLicense": "the \"i don't really mind what you're gonna do with it, have fun\"\u00a0\u00a0license",
+  "_aLicenseChecklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "_sDescription": "in an alternate universe where valve decided to roll with the MPL rather than the MP5",
+  "_bGenerateTableOfContents": false,
+  "_sText": "A reconstruction of the SMG seen in <a href=\"https://www.artstation.com/artwork/A38bX\" class=\"SelectedElement\" target=\"_blank\">one of the pre-alpha promotional posters</a>, that was seemingly modelled after it's real-life counterpart, the Walther MPL. Made with fidelity to the game's aesthetics, including the sounds, just to simulate what it would look like if valve decided to roll with it rather than the model we're used to.<br><br>Done (a little late) as requested by <a href=\"https://gamebanana.com/blogs/19512\">https://gamebanana.com/blogs/19512</a>. Modelled, textured,animated in Blender by myself.",
+  "_bIsObsolete": false,
+  "_nLikeCount": 66,
+  "_nViewCount": 7505,
+  "_sVersion": "",
+  "_bAcceptsDonations": false,
+  "_bShowRipePromo": true,
+  "_aEmbeddables": {
+    "_sEmbeddableImageBaseUrl": "https://gamebanana.com/mods/embeddables/567446",
+    "_aVariants": [
+      "small",
+      "small_square",
+      "medium",
+      "medium_square",
+      "medium_square_minimal",
+      "large",
+      "large_minimal",
+      "large_square",
+      "large_minimal_square",
+      "thumbnail"
+    ]
+  },
+  "_aSubmitter": {
+    "_idRow": 4119293,
+    "_sName": "xyzzerxxx",
+    "_sUserTitle": "Bananite",
+    "_sHonoraryTitle": "",
+    "_tsJoinDate": 1736210689,
+    "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+    "_sSigUrl": "",
+    "_sProfileUrl": "https://gamebanana.com/members/4119293",
+    "_sPointsUrl": "https://gamebanana.com/members/logs/pointslog/4119293",
+    "_sMedalsUrl": "https://gamebanana.com/members/stats/medals/4119293",
+    "_bIsOnline": false,
+    "_sLocation": "<a href=\"https://gamebanana.com\">Home</a> > <a href=\"https://gamebanana.com/games/34\"><img src=\"https://images.gamebanana.com/img/ico/games/half-life.png\"/><span>Half-Life</span></a> > <a href=\"https://gamebanana.com/mods/games/34\">Mods</a> > <a href=\"https://gamebanana.com/mods/cats/7732\">Skins</a> > <a href=\"https://gamebanana.com/mods/cats/7735\">Weapons</a> > <a href=\"https://gamebanana.com/mods/cats/7736\">MP5 / M4</a> > <a href=\"https://gamebanana.com/mods/567446\">Promotional poster SMG</a>",
+    "_sOnlineTitle": "",
+    "_sOfflineTitle": "",
+    "_nPoints": 1579,
+    "_nPointsRank": 58840,
+    "_aNormalMedals": [
+      [
+        "thanks_recvd_1.png",
+        "Received thanks 5 times",
+        "normal",
+        2657103
+      ],
+      [
+        "m_pr_1.png",
+        "Reached 1,000 Points",
+        "normal",
+        2877076
+      ],
+      [
+        "m_age_1.png",
+        "One month a member",
+        "normal",
+        2877077
+      ]
+    ],
+    "_aRareMedals": [],
+    "_aLegendaryMedals": [],
+    "_bHasRipe": false,
+    "_nBuddyCount": 0,
+    "_nSubscriberCount": 4,
+    "_aDonationMethods": [],
+    "_bAccessorIsBuddy": false,
+    "_bBuddyRequestExistsWithAccessor": false,
+    "_bAccessorIsSubscribed": false,
+    "_aBio": [
+      {
+        "_sTitle": "My Ride",
+        "_sCustomTitle": "info",
+        "_sValue": "My old account and mods are at https://gamebanana.com/members/2027282"
+      },
+      {
+        "_sTitle": "Best Buddy",
+        "_sCustomTitle": "...",
+        "_sValue": "the email i used for that account is dead and i can't log in,i ended up making a new account instead of waiting for gamebanana's seemingly absent staff's response."
+      }
+    ],
+    "_aDefaultLicenseChecklist": [
+      "yes",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "no",
+      "ask"
+    ],
+    "_sDefaultLicense": ""
+  },
+  "_bFollowLinks": true,
+  "_aGame": {
+    "_idRow": 34,
+    "_sName": "Half-Life",
+    "_sAbbreviation": "HL",
+    "_sProfileUrl": "https://gamebanana.com/games/34",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/games/half-life.png",
+    "_sBannerUrl": "https://images.gamebanana.com/img/ico/games/half-life.png",
+    "_nSubscriberCount": 4637,
+    "_bHasSubmissionQueue": false,
+    "_bAccessorIsSubscribed": false
+  },
+  "_aCategory": {
+    "_idRow": 7736,
+    "_sName": "MP5 / M4",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/7736",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/560c876aaaf25.png",
+    "_bIsObsolete": false
+  },
+  "_aSuperCategory": {
+    "_idRow": 7735,
+    "_sName": "Weapons",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/7735",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/5ea2fdf1794ff.png"
+  },
+  "_aFeaturings": {
+    "today": {
+      "_sFeatureGroup": "today",
+      "_sTitle": "Today's Pick",
+      "_sIconClasses": "MiscIcon FeaturedTodayIcon",
+      "_tsDate": 1736298001
+    }
+  },
+  "_aCredits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "models,textures,animations",
+          "_idRow": 4119293,
+          "_sName": "xyzzerxxx",
+          "_sProfileUrl": "https://gamebanana.com/members/4119293",
+          "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "firing sounds",
+          "_sName": "Sound Ideas via their hollywoodedge sound library"
+        },
+        {
+          "_sRole": "reload sounds",
+          "_sName": "Fallout (1997),unknown sound library, Fallout Wiki (provider of the files)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "id": 210399,
+  "name": "Aimable S.I.R.S. M4",
+  "url": "https://gamebanana.com/mods/210399",
+  "game": "Counter-Strike: Source",
+  "likes": 32,
+  "downloads": 49994,
+  "license": "Feel free to edit, modify, hack, reanimate, recompile, reorigin, redistribute, or do anything to this skin in any way. All that I ask is that if you do release these animations elsewhere, modified or not, please at least credit me as the original creator.",
+  "license_checklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "credits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Model",
+          "_sName": "TheLama"
+        },
+        {
+          "_sRole": "Skin",
+          "_sName": "!NC!Furious"
+        },
+        {
+          "_sRole": "Animations",
+          "_sName": "-WildBill-"
+        },
+        {
+          "_sRole": "Compile",
+          "_sName": "BadPrankster"
+        },
+        {
+          "_sRole": "Sounds",
+          "_sName": "Vunsunta"
+        },
+        {
+          "_sRole": "Hands",
+          "_sName": "Valve"
+        }
+      ]
+    }
+  ],
+  "description_html": "<b class=red><blink><font size=5>NO, I WILL NOT MAKE THIS WITH AN EOTECH SIGHT. STOP ASKING.</blink></font></b>\r\n\r\n<b class=blue><font size=2>If you're looking for a fantastic weapon replacement on these anims but with a holosight instead then I highly recommend <a href=\"http://www.fpsbanana.com/skins/79710\">this</a> release. Top-notch work, and very functional in-game as well. Check it out!</b></font>\r\n\r\n<u><B>NOTES:</B></u>\r\nI know the aimer at the end of the sight when you look down the gun is higher than normal, but it's still on the center of the screen. The reason for that is that if it were how it normally looks then you can barely see anything through it and it simply becomes impractical to use.\r\n\r\nAlso, this does not actually make the gun more accurate or have less recoil. It just looks cool.\r\n\r\n<u><B>CREDITS</B></u><br>\r\n<b>Model</b>: TheLama<br>\r\n<b>Skin</b>: !NC!Furious<br>\r\n<b>Skin Edits</b>: -WildBill-<br>\r\n<b>Animations</b>: -WildBill-<br>\r\n<b>Compile</b>: BadPrankster<br>\r\n<b>Sounds</b>: Vunsunta, & various others<br>\r\n<b>World Models</b>: BadPrankster<br>\r\n<b>Screenies/Render</b>: -WildBill-<br>\r\n<b>Buy Menu Pic</b>: -WildBill-<br>\r\nAnd for all the credit nazis: yes, the hands were made by Valve...\r\n\r\n*Special thanks to TheStealthyOne and Markworth for the sound fix!*\r\n\r\n<u><B>FEATURES</B></u><br>\r\n* Extremely detailed and accurate R.I.S. M4 model!<br>\r\n* High-resolution textures <i>and</i> normal maps!<br>\r\n* Brand new set of animations exclusively for this gun!<br>\r\n* Quality custom sounds for a powerful in-game feel!\r\n\r\n<u><B>VIDEO</B></u><br>\r\n<iframe width=\"530\" height=\"315\" src=\"http://www.youtube.com/embed/SMdGsAyh3QA?rel=0&version=3&autohide=1&showinfo=0&color=blue\" frameborder=\"0\" allowfullscreen></iframe>\r\n\r\n<u><B>MISC.</B></u>\r\nWell, I came up with this idea over the summer to have an M4 that instead of silencing it like normal, you actually aimed it down the sights like you do for a real gun. So I began work on it and right away people were like \"you dumb nub this has already been done before!\" Apparently Mullet did a set of animation that aimed down the sights as well, and I didn't know. But I was already half way through animating it and I liked how it was turning out so I decided to keep at it and finish it up. Now, I'm definitely not Mullet, nor am I even close, but I think these actually turned out kind of nice. Let me know what you think!\r\n\r\nAnd again, this is my 2nd release of animations. I'm still new to it all so give me a break. :P\r\n\r\nAs always constructive criticism is <b>greatly</b> appreciated! If you've got any suggestions for improvements, or if you'd like to see a new set of animations, just let me know! :D\r\n\r\nFeel free to edit, modify, hack, reanimate, recompile, reorigin, redistribute, or do anything to this skin in any way. All that I ask is that if you do release these animations elsewhere, modified or not, please at least credit me as the original creator. Thanks again, and enjoy!\r\n\r\n<b>Show your support! Add to your favorites!</b>",
+  "files": [
+    {
+      "_idRow": 255993,
+      "_sFile": "aimable_m4_fixed.zip",
+      "_nFilesize": 9301237,
+      "_tsDateAdded": 1218858489,
+      "_nDownloadCount": 49996,
+      "_sDownloadUrl": "https://gamebanana.com/dl/255993",
+      "_sMd5Checksum": "f2ee3dc379f78b20afd2247c53c3b9aa",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,210399,255993"
+        }
+      ]
+    }
+  ],
+  "retrieved": "2026-10-08",
+  "download": {
+    "id": 210399,
+    "name": "Aimable S.I.R.S. M4",
+    "archive": "downloads\\210399-aimable_m4_fixed.zip",
+    "sha256": "e09b742b2693eb038b90c39746b8e8f38e445f59c1969442586e53e2bd1af030",
+    "bytes": 9301237,
+    "models": [
+      "extracted\\210399\\aimable_M4_R.I.S\\models\\weapons\\v_rif_m4a1.mdl",
+      "extracted\\210399\\aimable_M4_R.I.S\\models\\weapons\\w_rif_m4a1.mdl",
+      "extracted\\210399\\aimable_M4_R.I.S\\models\\weapons\\w_rif_m4a1_silencer.mdl"
+    ]
+  }
+}

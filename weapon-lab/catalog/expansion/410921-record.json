@@ -1,0 +1,174 @@
+{
+  "id": 410921,
+  "name": "Default Weapons on MW Animations Mini Pack",
+  "url": "https://gamebanana.com/mods/410921",
+  "game": "Counter-Strike 1.6",
+  "likes": 112,
+  "downloads": 73090,
+  "license": "This mod is a non-commercial and Exclusively for GameBanana<br><br>Permissions from the respective authors to use the assets is advisable<br><br>You can modify as long as you'll upload it in GameBanana&nbsp;<br><br>You are not allowed to reupload this or modify this on the other site.",
+  "license_checklist": {
+    "yes": [
+      "Download and install this Mod",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana"
+    ],
+    "no": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod commercially",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ]
+  },
+  "credits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Compile",
+          "_idRow": "1363142",
+          "_sName": "M1KU",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/65fd7c048fde6.png",
+          "_sProfileUrl": "https://gamebanana.com/members/1363142",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/69eeddf813421.png",
+          "_bIsOnline": false
+        }
+      ]
+    },
+    {
+      "_sGroupName": "Original Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Model",
+          "_sName": "Valve"
+        },
+        {
+          "_sRole": "Animations",
+          "_sName": "Infinity Ward"
+        },
+        {
+          "_sRole": "All Models",
+          "_idRow": "298110",
+          "_sName": "kalasnikov88",
+          "_sProfileUrl": "https://gamebanana.com/members/298110",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/298110.jpg",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "M4A1 Remodel",
+          "_idRow": "1507205",
+          "_sName": "RevTiva",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/5d4fb79148472.png",
+          "_sProfileUrl": "https://gamebanana.com/members/1507205",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/611a6ed002df4.png",
+          "_bIsOnline": false,
+          "_aAffiliatedStudio": {
+            "_sProfileUrl": "https://gamebanana.com/studios/34989",
+            "_sName": "Life Tree",
+            "_sFlagUrl": "https://images.gamebanana.com/img/flags/studios/58413052ba008.png",
+            "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/5841305c9ad02.png"
+          }
+        },
+        {
+          "_sRole": "Texture Upscales",
+          "_idRow": "1383394",
+          "_sName": "CS PRO",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/602b8ff0548f5.png",
+          "_sProfileUrl": "https://gamebanana.com/members/1383394",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/61f304aee3912.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Hand Rig",
+          "_idRow": "1480965",
+          "_sName": "ViperL33T",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/5ac7b9bcbcf30.png",
+          "_sProfileUrl": "https://gamebanana.com/members/1480965",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/5ac7b6918d7c6.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Decompiled Source provider",
+          "_idRow": "1603644",
+          "_sName": "PMR",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/646ef2a85d3c7.png",
+          "_sProfileUrl": "https://gamebanana.com/members/1603644",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/618160a6d60e4.png",
+          "_bIsOnline": false
+        }
+      ]
+    }
+  ],
+  "description_html": "Features:<br><ul><li>Default Weapons\u00a0</li><li>MW2019 Animation</li><li class=\"SelectedElement\">Default assigned sounds</li></ul>",
+  "files": [
+    {
+      "_idRow": 888156,
+      "_sFile": "cs_mw_anims.rar",
+      "_nFilesize": 4604209,
+      "_tsDateAdded": 1667801964,
+      "_nDownloadCount": 37806,
+      "_sDownloadUrl": "https://gamebanana.com/dl/888156",
+      "_sMd5Checksum": "21b552008f7897dc9cb51efaea5a21c0",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true
+    },
+    {
+      "_idRow": 888423,
+      "_sFile": "m4a1_update.rar",
+      "_nFilesize": 687256,
+      "_tsDateAdded": 1667869189,
+      "_nDownloadCount": 18500,
+      "_sDownloadUrl": "https://gamebanana.com/dl/888423",
+      "_sMd5Checksum": "2cccc1ff3d0970b20ce0a4fe8565b65d",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true
+    },
+    {
+      "_idRow": 954791,
+      "_sFile": "csmw19_nades.rar",
+      "_nFilesize": 878953,
+      "_tsDateAdded": 1679751443,
+      "_nDownloadCount": 16775,
+      "_sDownloadUrl": "https://gamebanana.com/dl/954791",
+      "_sMd5Checksum": "99dcb093c52932b5bd490e95d964f2e8",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true
+    }
+  ],
+  "retrieved": "2026-10-08",
+  "download": {
+    "id": 410921,
+    "name": "Default Weapons on MW Animations Mini Pack",
+    "archive": "downloads\\410921-cs_mw_anims.rar",
+    "sha256": "8d4e115f879300b862401530c32a24036d736975585f4cf48e2ddbd6c1ca1f86",
+    "bytes": 4604209,
+    "models": [
+      "extracted\\410921\\cstrike_addon\\models\\v_ak47.mdl",
+      "extracted\\410921\\cstrike_addon\\models\\v_deagle.mdl",
+      "extracted\\410921\\cstrike_addon\\models\\v_famas.mdl",
+      "extracted\\410921\\cstrike_addon\\models\\v_knife.mdl",
+      "extracted\\410921\\cstrike_addon\\models\\v_m3.mdl",
+      "extracted\\410921\\cstrike_addon\\models\\v_m4a1.mdl",
+      "extracted\\410921\\cstrike_addon\\models\\v_mp5.mdl",
+      "extracted\\410921\\cstrike_addon\\models\\v_p228.mdl",
+      "extracted\\410921\\cstrike_addon\\models\\v_p90.mdl",
+      "extracted\\410921\\cstrike_addon\\models\\v_sg552.mdl",
+      "extracted\\410921\\cstrike_addon\\models\\v_usp.mdl"
+    ]
+  }
+}

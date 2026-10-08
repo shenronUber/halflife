@@ -1,0 +1,10 @@
+/downloads/
+/extracted/
+/catalog/*-raw.json
+/catalog/636816.json
+/catalog/feed.json
+/catalog/category.json
+/generated/
+/tools/
+/logs/
+/__pycache__/

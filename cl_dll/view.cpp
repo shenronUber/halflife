@@ -1,6 +1,7 @@
 // view/refresh setup functions
 
 #include "hud.h"
+#include "vf_character.h"
 #include "cl_util.h"
 #include "cvardef.h"
 #include "usercmd.h"
@@ -1652,6 +1653,7 @@ void CL_DLLEXPORT V_CalcRefdef( struct ref_params_s *pparams )
 	{
 		V_CalcNormalRefdef ( pparams );
 	}
+	VF_CharacterUpdateModels();
 
 /*
 // Example of how to overlay the whole screen with red at 50 % alpha

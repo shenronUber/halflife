@@ -1,0 +1,16 @@
+{
+  "version": "0.13.0",
+  "runtime": "vf_visual",
+  "models_hash_verified": 31,
+  "checks": [
+    "canonical startup and release metadata deployed",
+    "all generated character and R1 model hashes match runtime",
+    "new character and matching R1 equipped together",
+    "changing R1 finish preserves free character appearance",
+    "matching pair survives save/load"
+  ],
+  "captures": [
+    "current_release_menu.png",
+    "current_release_pair.png"
+  ]
+}

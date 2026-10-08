@@ -1,0 +1,217 @@
+{
+  "id": 355401,
+  "name": "NovaRain MP5SD5 M203 ACOG",
+  "url": "https://gamebanana.com/mods/355401",
+  "game": "Half-Life",
+  "likes": 5,
+  "downloads": 218,
+  "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "license_checklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "credits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "MP5 Model",
+          "_sName": "Short_Fuse"
+        },
+        {
+          "_sRole": "MP5 Skin",
+          "_sName": "Creeping_Jesus"
+        },
+        {
+          "_sRole": "Silencer Skin",
+          "_sName": "NumbRider"
+        },
+        {
+          "_sRole": "M203 Model and skin",
+          "_sName": "OP4 REDUX Team"
+        },
+        {
+          "_sRole": "ACOG Model/Skin and Cartridge in Magazine",
+          "_idRow": "163164",
+          "_sName": "Stoke",
+          "_sProfileUrl": "https://gamebanana.com/members/163164",
+          "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "9mm Shell",
+          "_sName": "Benjamim"
+        },
+        {
+          "_sRole": "Improved HEV/OP4/BS Arms",
+          "_sName": "Ambient.Impact"
+        },
+        {
+          "_sRole": "HEV Arms Reskin",
+          "_sName": "Water-Phoenix"
+        },
+        {
+          "_sRole": "Tweaked Bones Layout from Oldschool MP5",
+          "_idRow": "125907",
+          "_sName": "RavenGT",
+          "_sProfileUrl": "https://gamebanana.com/members/125907",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/125907.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Animations",
+          "_idRow": "1701316",
+          "_sName": "Gearbox",
+          "_sProfileUrl": "https://gamebanana.com/members/1701316",
+          "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "edited Gearbox Animation",
+          "_idRow": "44739",
+          "_sName": "NovaRain",
+          "_sProfileUrl": "https://gamebanana.com/members/44739",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/585793ce7340c.png",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Grenade Launcher and Reloading Sound",
+          "_idRow": "926398",
+          "_sName": "hunter4708",
+          "_sProfileUrl": "https://gamebanana.com/members/926398",
+          "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Weaopon Sprite From CS1.6",
+          "_idRow": "8808",
+          "_sName": "End Of Days",
+          "_sProfileUrl": "https://gamebanana.com/members/8808",
+          "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Compile/Convert/Hack",
+          "_idRow": "44739",
+          "_sName": "NovaRain",
+          "_sProfileUrl": "https://gamebanana.com/members/44739",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/585793ce7340c.png",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Hgrunt Voice",
+          "_sName": "GamingLord"
+        }
+      ]
+    }
+  ],
+  "description_html": "Hack for HL/Sven 9mmAR.<br><br>I'm satisfied with this hack even though it's a bit of too-high-poly.<br><br>In my opinion, it's as good as my AKS-74U hack ;)<br><br>",
+  "files": [
+    {
+      "_idRow": 741815,
+      "_sFile": "nr_mp5sd5_hl_4fb1f.rar",
+      "_nFilesize": 11429958,
+      "_tsDateAdded": 1643958767,
+      "_nDownloadCount": 218,
+      "_sDownloadUrl": "https://gamebanana.com/dl/741815",
+      "_sMd5Checksum": "0ef9c0f55f14cee4ac9dec107d2b2e0d",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,355401,741815"
+        }
+      ]
+    }
+  ],
+  "retrieved": "2026-10-08",
+  "download": {
+    "id": 355401,
+    "name": "NovaRain MP5SD5 M203 ACOG",
+    "archive": "downloads\\355401-nr_mp5sd5_hl_4fb1f.rar",
+    "sha256": "a3b1a819e9ed096caeecab4770d957f8363544a4451e52c7251e2bf3e1ffa582",
+    "bytes": 11429958,
+    "models": [
+      "extracted\\355401\\models\\grenade.mdl",
+      "extracted\\355401\\models\\p_9mmAR.mdl",
+      "extracted\\355401\\models\\p_9mmAR_acog.mdl",
+      "extracted\\355401\\models\\shell.mdl",
+      "extracted\\355401\\models\\w_9mmAR.mdl",
+      "extracted\\355401\\models\\w_9mmARclip.mdl",
+      "extracted\\355401\\models\\w_9mmAR_acog.mdl",
+      "extracted\\355401\\models\\w_argrenade.mdl",
+      "extracted\\355401\\models\\w_chainammo.mdl",
+      "extracted\\355401\\models\\BS\\v_9mmAR.mdl",
+      "extracted\\355401\\models\\BS\\v_9mmAR_acog.mdl",
+      "extracted\\355401\\models\\HEV\\v_9mmAR.mdl",
+      "extracted\\355401\\models\\HEV\\v_9mmAR_acog.mdl",
+      "extracted\\355401\\models\\OP4\\v_9mmAR.mdl",
+      "extracted\\355401\\models\\OP4\\v_9mmAR_acog.mdl"
+    ]
+  }
+}

@@ -28,6 +28,8 @@
 #include "vgui_TeamFortressViewport.h"
 
 #include "demo.h"
+#include "vf_character.h"
+#include "vf_effects.h"
 #include "demo_api.h"
 #include "vgui_ScorePanel.h"
 
@@ -369,6 +371,7 @@ void CHud :: Init( void )
 	GetClientVoiceMgr()->Init(&g_VoiceStatusHelper, (vgui::Panel**)&gViewPort);
 
 	m_Menu.Init();
+	VF_CharacterInit();
 	
 	ServersInit();
 
@@ -419,6 +422,7 @@ int CHud :: GetSpriteIndex( const char *SpriteName )
 
 void CHud :: VidInit( void )
 {
+    VF_EffectsReset();
 	m_scrinfo.iSize = sizeof(m_scrinfo);
 	GetScreenInfo(&m_scrinfo);
 

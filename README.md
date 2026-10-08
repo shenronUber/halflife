@@ -1,3 +1,25 @@
+# Vector Fields
+
+Prototype de FPS modulaire basé sur le SDK Half-Life et une extension du moteur
+Xash3D FWGS. **Version actuelle : 0.13.0** — 8 octobre 2026.
+
+**Jouer :** lancer `Jouer - Vector Fields.cmd` depuis l'installation locale préparée.
+Les personnages, armes, effets et cartes sont réunis dans le même build.
+
+- [Fonctionnalités de la version 0.13.0](vector-fields/docs/RELEASE-0.13.0.md)
+- [Guide, construction et limites](vector-fields/README.md)
+- [Historique](vector-fields/CHANGELOG.md)
+- [Cinq nouveaux ensembles GIGN + R1](vector-fields/assets/EXPEDITIONS.md)
+- [Extension native Xash3D](vector-fields/engine/README.md)
+
+![Personnages et armes assortis](vector-fields/docs/images/expeditions-five-sets.jpg)
+
+Le dépôt contient les sources, atlas, prompts, catalogues et tests. Les ressources
+des jeux installés et les binaires générés restent locaux. Les licences et la
+documentation du SDK d'origine sont conservées ci-dessous.
+
+---
+
 Half Life 1 SDK LICENSE
 ======================
 

@@ -1,0 +1,50 @@
+{
+  "tool": "built-in image_gen",
+  "reference": "reference-uv.png",
+  "outputs": [
+    {
+      "id": "war-torn",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a11be2-708e-78a2-b12c-a67a704ceed4\\exec-c673b883-efdb-4343-94b4-ab78281cf2a9.png"
+    },
+    {
+      "id": "medieval-forge",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a11be2-708e-78a2-b12c-a67a704ceed4\\exec-148eafac-fdc2-4bfe-a3c8-b969d436c6de.png"
+    },
+    {
+      "id": "prehistoric",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a11be2-708e-78a2-b12c-a67a704ceed4\\exec-e2052efa-c9b5-4d0d-bc77-0edad34a4cf1.png"
+    },
+    {
+      "id": "living-jungle",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a11be2-708e-78a2-b12c-a67a704ceed4\\exec-f204c199-0c06-4d27-aa0a-1cd282bc4ee8.png"
+    },
+    {
+      "id": "medieval-alchemy",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a11be2-708e-78a2-b12c-a67a704ceed4\\exec-983c38c1-375c-45f3-82a5-8a7e7d0c426a.png"
+    },
+    {
+      "id": "porcelain-fluidics",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a11be2-708e-78a2-b12c-a67a704ceed4\\exec-18947d88-54ff-4c64-811c-b336c7d44a52.png"
+    },
+    {
+      "id": "ww1-trench",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a11be2-708e-78a2-b12c-a67a704ceed4\\exec-88e3f4af-6621-4d0a-99f3-d4cbc10cbee5.png"
+    },
+    {
+      "id": "bedrock-miner",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a11be2-708e-78a2-b12c-a67a704ceed4\\exec-a22a7111-14a0-4049-8a5f-9989252fbb97.png"
+    },
+    {
+      "id": "new-york-noir",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a11be2-708e-78a2-b12c-a67a704ceed4\\exec-22180669-713e-4ce2-acd9-019ed5aef3b8.png"
+    },
+    {
+      "id": "castaway",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a11be2-708e-78a2-b12c-a67a704ceed4\\exec-8170653a-b3d4-434e-8afd-28df3565d17b.png"
+    },
+    {
+      "id": "abyss-diver",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a11be2-708e-78a2-b12c-a67a704ceed4\\exec-3eef4cc6-32e8-475d-9970-5ebe7c162a15.png"
+    }
+  ]
+}

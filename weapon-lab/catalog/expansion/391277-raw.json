@@ -1,0 +1,361 @@
+{
+  "_idRow": 391277,
+  "_nStatus": "0",
+  "_bIsPrivate": false,
+  "_bAccessorIsSubmitter": false,
+  "_bIsTrashed": false,
+  "_bIsWithheld": false,
+  "_sName": "HDP Style MP5SD3 w/ M203PI",
+  "_sCommentsMode": "open",
+  "_tsDateModified": 1658846459,
+  "_tsDateAdded": 1658585563,
+  "_sProfileUrl": "https://gamebanana.com/mods/391277",
+  "_aPreviewMedia": {
+    "_aImages": [
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "62dc0127a90fa.jpg",
+        "_sFile220": "220-90_62dc0127a90fa.jpg",
+        "_sFile530": "530-90_62dc0127a90fa.jpg",
+        "_sFile100": "100-90_62dc0127a90fa.jpg",
+        "_hFile220": 152,
+        "_wFile220": 220,
+        "_hFile530": 368,
+        "_wFile530": 530,
+        "_hFile100": 69,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "62dc013a83df1.jpg",
+        "_sFile100": "100-90_62dc013a83df1.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "62dc0135c5cc9.jpg",
+        "_sFile100": "100-90_62dc0135c5cc9.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "62dc0138efb34.jpg",
+        "_sFile100": "100-90_62dc0138efb34.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "62dc013ce15eb.jpg",
+        "_sFile100": "100-90_62dc013ce15eb.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      }
+    ]
+  },
+  "_nUpdatesCount": 0,
+  "_bHasUpdates": false,
+  "_nAllTodosCount": 0,
+  "_bHasTodos": false,
+  "_nPostCount": 8,
+  "_aTags": [],
+  "_bCreatedBySubmitter": true,
+  "_bIsPorted": false,
+  "_nThanksCount": 4,
+  "_sInitialVisibility": "show",
+  "_sDownloadUrl": "https://gamebanana.com/mods/download/391277",
+  "_nDownloadCount": 1394,
+  "_aFiles": [
+    {
+      "_idRow": 836080,
+      "_sFile": "redslug_mp5_improved_7692e.zip",
+      "_nFilesize": 2135574,
+      "_tsDateAdded": 1658612961,
+      "_nDownloadCount": 1384,
+      "_sDownloadUrl": "https://gamebanana.com/dl/836080",
+      "_sMd5Checksum": "eb9b5bf30f1ad2e9c160b718cbe8a386",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_sDescription": "1.0",
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,391277,836080"
+        }
+      ]
+    }
+  ],
+  "_nSubscriberCount": 4,
+  "_aContributingStudios": [],
+  "_sLicense": "<h2 class=\"SelectedElement\">Red Slug's original copyright notice</h2>This is not to be used for financial gain of anykind, it is distributed on the internet 4 free. You may include the models and/or sounds in any custom model pack, as long as it is credited correctly to the authors or alterers concerned. But you may not include the models and/or sounds in any pack that is for resale or to make a profit, without the express permission of the authors & or alterers of the model.",
+  "_aLicenseChecklist": {
+    "yes": [
+      "Download and install this Mod",
+      "Redistribute this Mod on other sites"
+    ],
+    "only_if_same": [
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ],
+    "ask": [
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ]
+  },
+  "_bGenerateTableOfContents": false,
+  "_sText": "<a href=\"https://gamebanana.com/mods/179732\">Original model</a><br><br>Based on Red Slug's MP5 Recreation, I edited the model to more closely resemble the weapons that the original first person model was based on.<br>Also includes a magazine model that matches the world model, a 9mm shell model, and NPC reference files.<br><br>Opposing Force and Blue Shift versions included.<br><br>",
+  "_bIsObsolete": false,
+  "_nLikeCount": 30,
+  "_nViewCount": 14060,
+  "_sVersion": "1.0",
+  "_bAcceptsDonations": false,
+  "_bShowRipePromo": true,
+  "_aEmbeddables": {
+    "_sEmbeddableImageBaseUrl": "https://gamebanana.com/mods/embeddables/391277",
+    "_aVariants": [
+      "small",
+      "small_square",
+      "medium",
+      "medium_square",
+      "medium_square_minimal",
+      "large",
+      "large_minimal",
+      "large_square",
+      "large_minimal_square",
+      "thumbnail"
+    ]
+  },
+  "_aSubmitter": {
+    "_idRow": 2074451,
+    "_sName": "Owlet VII",
+    "_sUserTitle": "",
+    "_sHonoraryTitle": "",
+    "_tsJoinDate": 1643605214,
+    "_sAvatarUrl": "https://images.gamebanana.com/img/av/61f8229fc7f68.jpg",
+    "_sSigUrl": "",
+    "_sProfileUrl": "https://gamebanana.com/members/2074451",
+    "_sPointsUrl": "https://gamebanana.com/members/logs/pointslog/2074451",
+    "_sMedalsUrl": "https://gamebanana.com/members/stats/medals/2074451",
+    "_bIsOnline": false,
+    "_sLocation": "<a href=\"https://gamebanana.com\">Home</a> > <a href=\"https://gamebanana.com/games/8\"><img src=\"https://images.gamebanana.com/img/ico/games/banana.gif\"/><span>GameBanana</span></a> > <a href=\"https://gamebanana.com/tools/games/8\">Tools</a> > <a href=\"https://gamebanana.com/tools/cats/5\">Texturing, Painting & Graphics</a> > <a href=\"https://gamebanana.com/tools/6973\">TexMod</a>",
+    "_sOnlineTitle": "",
+    "_sOfflineTitle": "",
+    "_nPoints": 1811,
+    "_nPointsRank": 52428,
+    "_aNormalMedals": [
+      [
+        "returns_1.png",
+        "Returned 100 times",
+        "normal",
+        565355
+      ],
+      [
+        "m_age_1.png",
+        "One month a member",
+        "normal",
+        584841
+      ],
+      [
+        "thanks_recvd_1.png",
+        "Received thanks 5 times",
+        "normal",
+        717715
+      ],
+      [
+        "m_age_2.png",
+        "6 months a member",
+        "normal",
+        718910
+      ],
+      [
+        "m_age_3.png",
+        "1 year a member",
+        "normal",
+        886622
+      ],
+      [
+        "m_pr_1.png",
+        "Reached 1,000 Points",
+        "normal",
+        1300936
+      ],
+      [
+        "m_age_4.png",
+        "2 years a member",
+        "normal",
+        1536907
+      ],
+      [
+        "m_age_5.png",
+        "4 years a member",
+        "normal",
+        4331013
+      ]
+    ],
+    "_aRareMedals": [
+      [
+        "returns_2.png",
+        "Returned 1000 times",
+        "rare",
+        573103
+      ]
+    ],
+    "_aLegendaryMedals": [
+      [
+        "returns_3.png",
+        "Returned 5000 times",
+        "legendary",
+        631265
+      ]
+    ],
+    "_bHasRipe": false,
+    "_nBuddyCount": 1,
+    "_nSubscriberCount": 7,
+    "_aDonationMethods": [],
+    "_bAccessorIsBuddy": false,
+    "_bBuddyRequestExistsWithAccessor": false,
+    "_bAccessorIsSubscribed": false,
+    "_aDefaultLicenseChecklist": [
+      "yes",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "no",
+      "ask"
+    ],
+    "_sDefaultLicense": ""
+  },
+  "_bFollowLinks": true,
+  "_aGame": {
+    "_idRow": 34,
+    "_sName": "Half-Life",
+    "_sAbbreviation": "HL",
+    "_sProfileUrl": "https://gamebanana.com/games/34",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/games/half-life.png",
+    "_sBannerUrl": "https://images.gamebanana.com/img/ico/games/half-life.png",
+    "_nSubscriberCount": 4637,
+    "_bHasSubmissionQueue": false,
+    "_bAccessorIsSubscribed": false
+  },
+  "_aCategory": {
+    "_idRow": 7736,
+    "_sName": "MP5 / M4",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/7736",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/560c876aaaf25.png",
+    "_bIsObsolete": false
+  },
+  "_aSuperCategory": {
+    "_idRow": 7735,
+    "_sName": "Weapons",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/7735",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/5ea2fdf1794ff.png"
+  },
+  "_aCredits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Edit author",
+          "_idRow": "2074451",
+          "_sName": "Owlet VII",
+          "_sProfileUrl": "https://gamebanana.com/members/2074451",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/61f8229fc7f68.jpg",
+          "_bIsOnline": false
+        }
+      ]
+    },
+    {
+      "_sGroupName": "Original Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Original model",
+          "_idRow": "234990",
+          "_sName": "RedSlug",
+          "_sProfileUrl": "https://gamebanana.com/members/234990",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/234990.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Hands",
+          "_sName": "Ambient.Impact"
+        },
+        {
+          "_sRole": "Parts of the mesh, textures, animations",
+          "_sName": "Gearbox"
+        },
+        {
+          "_sRole": "Textures",
+          "_sName": "Valve"
+        }
+      ]
+    }
+  ],
+  "_sDevNotes": "<h2 class=\"SelectedElement\">Tools used</h2><ul><li>Blender 2.92.0</li><li>Blender Source Tools 3.1.0</li><li>GIMP 2.10.0</li><li>Half-Life Asset Manager V1.1.0 Alpha 004</li><li>Half-Life MDL Decompiler v1.2</li><li>Studio Model Compiler for Sven Co-op Dec 21 2020 Build</li></ul>"
+}

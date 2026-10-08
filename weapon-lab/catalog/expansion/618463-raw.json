@@ -1,0 +1,423 @@
+{
+  "_idRow": 618463,
+  "_nStatus": "0",
+  "_bIsPrivate": false,
+  "_bAccessorIsSubmitter": false,
+  "_bIsTrashed": false,
+  "_bIsWithheld": false,
+  "_sName": "Twinke M4 CS Goldsource Pack",
+  "_sCommentsMode": "open",
+  "_tsDateModified": 1757168373,
+  "_tsDateAdded": 1757168242,
+  "_sProfileUrl": "https://gamebanana.com/mods/618463",
+  "_aPreviewMedia": {
+    "_aImages": [
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "68bc3e076f551.jpg",
+        "_sFile220": "220-90_68bc3e076f551.jpg",
+        "_hFile220": 124,
+        "_wFile220": 220,
+        "_sFile530": "530-90_68bc3e076f551.jpg",
+        "_hFile530": 298,
+        "_wFile530": 530,
+        "_sFile100": "100-90_68bc3e076f551.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100,
+        "_sFile800": "800-90_68bc3e076f551.jpg",
+        "_hFile800": 450,
+        "_wFile800": 800
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "View Model CS 1.6",
+        "_sFile": "68bc3e1855c63.jpg",
+        "_sFile100": "100-90_68bc3e1855c63.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "View Model CZero",
+        "_sFile": "68bc3e23f1092.jpg",
+        "_sFile100": "100-90_68bc3e23f1092.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "View Model CSO",
+        "_sFile": "68bc3e172e44b.jpg",
+        "_sFile100": "100-90_68bc3e172e44b.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "CS 1.6",
+        "_sFile": "68bc3e359fdbf.jpg",
+        "_sFile100": "100-90_68bc3e359fdbf.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "CZero",
+        "_sFile": "68bc3e36af8c4.jpg",
+        "_sFile100": "100-90_68bc3e36af8c4.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "CSO Female",
+        "_sFile": "68bc3e402e0bf.jpg",
+        "_sFile100": "100-90_68bc3e402e0bf.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "CSO Male",
+        "_sFile": "68bc3e452864d.jpg",
+        "_sFile100": "100-90_68bc3e452864d.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "Player model",
+        "_sFile": "68bc3e6190338.jpg",
+        "_sFile100": "100-90_68bc3e6190338.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "World model",
+        "_sFile": "68bc3e5811638.jpg",
+        "_sFile100": "100-90_68bc3e5811638.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      }
+    ]
+  },
+  "_nUpdatesCount": 0,
+  "_bHasUpdates": false,
+  "_nAllTodosCount": 0,
+  "_bHasTodos": false,
+  "_nPostCount": 3,
+  "_aTags": [],
+  "_bCreatedBySubmitter": true,
+  "_bIsPorted": false,
+  "_nThanksCount": 0,
+  "_sInitialVisibility": "show",
+  "_sDownloadUrl": "https://gamebanana.com/mods/download/618463",
+  "_nDownloadCount": 357,
+  "_aFiles": [
+    {
+      "_idRow": 1512662,
+      "_sFile": "-060925-.rar",
+      "_nFilesize": 8552406,
+      "_tsDateAdded": 1757167334,
+      "_nDownloadCount": 357,
+      "_sDownloadUrl": "https://gamebanana.com/dl/1512662",
+      "_sMd5Checksum": "9412fea999587d8797e5f279ee6b4de8",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true
+    }
+  ],
+  "_nSubscriberCount": 0,
+  "_aContributingStudios": [],
+  "_sLicense": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "_aLicenseChecklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "_sDescription": "Twinke HD M4 CS Valve Anims",
+  "_bGenerateTableOfContents": false,
+  "_sText": "Finish polishing this.\r\nComplete Twinkle M4 Pack\r\n\r\nValve animations adapted to the model<br><br>&nbsp;I grabbed the model from this mod because it resembles the M4A1 from CS 1.6<br>&nbsp;https://gamebanana.com/mods/607282<br><br>&nbsp;I'm not sure if it's necessary since I tested it and it doesn't require \"mp_consistency 0\"\r\n\r\nBut put it in a file like \"autoexec.cfg\" or \"server.cfg and listenserver.cfg\" just in case you need it.<br><br>Graphics Mod:&nbsp;https://gamebanana.com/wips/74956",
+  "_bIsObsolete": false,
+  "_nLikeCount": 14,
+  "_nViewCount": 2502,
+  "_sVersion": "",
+  "_bAcceptsDonations": false,
+  "_bShowRipePromo": true,
+  "_aEmbeddables": {
+    "_sEmbeddableImageBaseUrl": "https://gamebanana.com/mods/embeddables/618463",
+    "_aVariants": [
+      "small",
+      "small_square",
+      "medium",
+      "medium_square",
+      "medium_square_minimal",
+      "large",
+      "large_minimal",
+      "large_square",
+      "large_minimal_square",
+      "thumbnail"
+    ]
+  },
+  "_aSubmitter": {
+    "_idRow": 4623299,
+    "_sName": "matikanetanmauser",
+    "_sUserTitle": "Just a chill guy",
+    "_sHonoraryTitle": "",
+    "_tsJoinDate": 1751814051,
+    "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+    "_sSigUrl": "",
+    "_sProfileUrl": "https://gamebanana.com/members/4623299",
+    "_sPointsUrl": "https://gamebanana.com/members/logs/pointslog/4623299",
+    "_sMedalsUrl": "https://gamebanana.com/members/stats/medals/4623299",
+    "_bIsOnline": false,
+    "_sLocation": "<a href=\"https://gamebanana.com\">Home</a> > <a href=\"https://gamebanana.com/games/4254\"><img src=\"https://images.gamebanana.com/img/ico/games/5ea788a63f636.png\"/><span>Counter-Strike 1.6</span></a> > <a href=\"https://gamebanana.com/mods/games/4254\">Mods</a> > <a href=\"https://gamebanana.com/mods/cats/3517\">Resources</a> > <a href=\"https://gamebanana.com/mods/624544\">1000 BotProfile.db</a>",
+    "_sOnlineTitle": "",
+    "_sOfflineTitle": "",
+    "_nPoints": 598,
+    "_nPointsRank": 149117,
+    "_aNormalMedals": [
+      [
+        "m_age_1.png",
+        "One month a member",
+        "normal",
+        3536464
+      ],
+      [
+        "mods1.png",
+        "Submitted 5 Mods",
+        "normal",
+        3668657
+      ],
+      [
+        "m_age_2.png",
+        "6 months a member",
+        "normal",
+        4308880
+      ],
+      [
+        "mods2.png",
+        "Submitted 10 Mods",
+        "normal",
+        4744165
+      ],
+      [
+        "m_age_3.png",
+        "1 year a member",
+        "normal",
+        5331097
+      ]
+    ],
+    "_aRareMedals": [],
+    "_aLegendaryMedals": [],
+    "_bHasRipe": false,
+    "_nBuddyCount": 3,
+    "_nSubscriberCount": 3,
+    "_aDonationMethods": [],
+    "_bAccessorIsBuddy": false,
+    "_bBuddyRequestExistsWithAccessor": false,
+    "_bAccessorIsSubscribed": false,
+    "_aBio": [
+      {
+        "_sTitle": "First Language",
+        "_sValue": "Spanish"
+      },
+      {
+        "_sTitle": "Gamer type",
+        "_sValue": "Casual"
+      },
+      {
+        "_sTitle": "First Game ever played",
+        "_sValue": "Need For Speed: Carbon"
+      },
+      {
+        "_sTitle": "Favorite Game Genre",
+        "_sValue": "First Person Shooter"
+      },
+      {
+        "_sTitle": "FPS Hero",
+        "_sValue": "Gordon Freeman"
+      },
+      {
+        "_sTitle": "Favorite Game",
+        "_sValue": "Need For Speed: Carbon, CSS, CS 1.6"
+      },
+      {
+        "_sTitle": "Favorite CS Weapon",
+        "_sValue": "Colt M4A1"
+      },
+      {
+        "_sTitle": "Favorite CS Map",
+        "_sValue": "de_dust2"
+      },
+      {
+        "_sTitle": "Favorite Gameplay Style",
+        "_sValue": "Stealth"
+      },
+      {
+        "_sTitle": "School",
+        "_sValue": "4th Year of Secondary School"
+      },
+      {
+        "_sTitle": "Favorite Villain",
+        "_sValue": "Muzan Kibutsuji"
+      },
+      {
+        "_sTitle": "Favorite Movie",
+        "_sValue": "Demon Slayer: Kimetsu no Yaiba \u2013 The Movie: Infinity Castle"
+      },
+      {
+        "_sTitle": "Country",
+        "_sValue": "Venezuela"
+      },
+      {
+        "_sTitle": "City",
+        "_sValue": "El Tigre"
+      },
+      {
+        "_sTitle": "Coke or Pepsi",
+        "_sValue": "Pepsi"
+      },
+      {
+        "_sTitle": "Cat or Dog",
+        "_sValue": "Cat"
+      },
+      {
+        "_sTitle": "Sonic or Mario",
+        "_sValue": "Mario"
+      },
+      {
+        "_sTitle": "Age",
+        "_sValue": "15 years old"
+      }
+    ],
+    "_aDefaultLicenseChecklist": [
+      "yes",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "no",
+      "ask"
+    ],
+    "_sDefaultLicense": ""
+  },
+  "_bFollowLinks": true,
+  "_aGame": {
+    "_idRow": 4254,
+    "_sName": "Counter-Strike 1.6",
+    "_sAbbreviation": "CS1.6",
+    "_sProfileUrl": "https://gamebanana.com/games/4254",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/games/5ea788a63f636.png",
+    "_sBannerUrl": "https://images.gamebanana.com/img/ico/games/5ea788a63f636.png",
+    "_nSubscriberCount": 6185,
+    "_bHasSubmissionQueue": false,
+    "_bAccessorIsSubscribed": false
+  },
+  "_aCategory": {
+    "_idRow": 8325,
+    "_sName": "M4A1",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/8325",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/4e97c9c3ae886.png",
+    "_bIsObsolete": false
+  },
+  "_aSuperCategory": {
+    "_idRow": 8320,
+    "_sName": "Rifles",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/8320",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/55df8c66bd948.png"
+  },
+  "_aCredits": [
+    {
+      "_sGroupName": "Mod Author",
+      "_aAuthors": [
+        {
+          "_sRole": "Port & Anim Fixes",
+          "_idRow": 4623299,
+          "_sName": "matikanetanmauser",
+          "_sProfileUrl": "https://gamebanana.com/members/4623299",
+          "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+          "_bIsOnline": false
+        }
+      ]
+    },
+    {
+      "_sGroupName": "Model Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Model",
+          "_idRow": 614054,
+          "_sName": "Twinke Masta Johan Santana",
+          "_sProfileUrl": "https://gamebanana.com/members/614054",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/614054.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Stock",
+          "_idRow": 177661,
+          "_sName": "TheLama",
+          "_sProfileUrl": "https://gamebanana.com/members/177661",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/177661.png",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Stock Texture",
+          "_idRow": 13289,
+          "_sName": "SureShot",
+          "_sProfileUrl": "https://gamebanana.com/members/13289",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/13289.png",
+          "_bIsOnline": false
+        }
+      ]
+    },
+    {
+      "_sGroupName": "Original Mod Author",
+      "_aAuthors": [
+        {
+          "_sRole": "Kivoto Part Timers Assault Carbine Rifle",
+          "_idRow": 967635,
+          "_sName": "Weiss Schnee",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/5a6db5d1a5480.png",
+          "_sProfileUrl": "https://gamebanana.com/members/967635",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/6a87ab589dc33.jpg",
+          "_bIsOnline": true,
+          "_aAffiliatedStudio": {
+            "_sProfileUrl": "https://gamebanana.com/studios/34989",
+            "_sName": "Life Tree",
+            "_sFlagUrl": "https://images.gamebanana.com/img/flags/studios/58413052ba008.png",
+            "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/5841305c9ad02.png"
+          }
+        }
+      ]
+    }
+  ]
+}

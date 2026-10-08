@@ -1,0 +1,35 @@
+{
+  "id": 36058,
+  "name": "[AMXX] Weapon Mod M1 Garand",
+  "files": [
+    {
+      "_idRow": 457827,
+      "_sFile": "amxx_weapon_mod_m1_garand.rar",
+      "_nFilesize": 1798674,
+      "_tsDateAdded": 1587042410,
+      "_nDownloadCount": 288,
+      "_sDownloadUrl": "https://gamebanana.com/dl/457827",
+      "_sMd5Checksum": "b8f0afac9d4dd65b8c9b6158c78312c9",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true
+    }
+  ],
+  "download": {
+    "id": 36058,
+    "name": "[AMXX] Weapon Mod M1 Garand",
+    "archive": "downloads\\36058-amxx_weapon_mod_m1_garand.rar",
+    "sha256": "e9e45586c6ba183d577a9a2c4ac04ec999a524442a6b033343f8dc0229bf9167",
+    "bytes": 1798674,
+    "models": [
+      "extracted\\36058\\AMXX WEAPON MOD M1 GARAND\\models\\p_garand.mdl",
+      "extracted\\36058\\AMXX WEAPON MOD M1 GARAND\\models\\v_garand.mdl",
+      "extracted\\36058\\AMXX WEAPON MOD M1 GARAND\\models\\w_garand.mdl",
+      "extracted\\36058\\AMXX WEAPON MOD M1 GARAND\\models\\w_garand_clip.mdl"
+    ]
+  }
+}

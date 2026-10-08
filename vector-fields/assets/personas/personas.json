@@ -1,0 +1,94 @@
+{
+  "base_skin": 157,
+  "model": "persona_scout",
+  "reference": "reference-uv.png",
+  "themes": [
+    {
+      "id": "war-torn",
+      "key": "salvager",
+      "title": "Recuperateur des ruines",
+      "theme": "WAR-TORN SALVAGER. Battle-worn sand canvas and olive patched fatigues, mismatched charcoal armor plates stitched to the vest, rusted rivets, ceramic crack repairs, faded orange cloth tabs, scuffed dark rubber boots. Hood becomes a patched protective fabric coif; the masked face keeps anatomically aligned human eyes with dusty surrounding cloth and a compact fabric filter pattern below the eye slit. Abrasion and visible hand repairs tell a survivor story. Material details should remain legible on a 512-pixel game texture.",
+      "skin": 1
+    },
+    {
+      "id": "medieval-forge",
+      "key": "warden",
+      "title": "Sentinelle de la forge",
+      "theme": "MEDIEVAL FORGE WARDEN. Replace the tactical appearance with steel lamellar armor plates over burgundy gambeson, dark chainmail sleeve and trouser sections, brown leather belts with bronze rivets, armored leather gauntlets and boots. Vest pockets become overlapping forged steel scales and leather clasps in the same outlines. Hood becomes a chainmail coif, masked face a dark steel lower-face guard with the same aligned visible human eye slit. No modern tactical signage, no futuristic panels. Rich rubbed steel and worn burgundy textile, bold legible medieval craftsmanship.",
+      "skin": 2
+    },
+    {
+      "id": "prehistoric",
+      "key": "bone",
+      "title": "Gardien d'os et de silex",
+      "theme": "PREHISTORIC BONE AND FLINT GUARDIAN. Pale irregular carved bone plates and chipped dark flint sewn onto ochre and russet rawhide. Trouser and sleeve islands become fur-trimmed stitched hides, vest pockets become carved bone protective sections held by sinew knots in the same positions. Hood becomes a rough suede and bone ritual covering with a matching lower-face bone mask, anatomically aligned brown human eyes at the existing eye slit. Gloves and boots become hide wraps. Strong ivory, ochre and charcoal material identity. No metal, modern pockets, logos, machinery, or gratuitous human skull imagery. Patterns must be large enough for low resolution.",
+      "skin": 3
+    },
+    {
+      "id": "living-jungle",
+      "key": "canopy",
+      "title": "Veilleur de la canopee",
+      "theme": "LIVING JUNGLE CANOPY SCOUT. An outfit constructed from overlapping deep green waxy leaves, braided rattan, dark bark protective scales and amber resin fasteners. Vest becomes bark chest armor bound by flexible vines; pants and sleeves woven palm fiber with green leaf reinforcement panels; gloves and boots woven fibers and mottled bark. Hood becomes a fitted leaf hood and lower-face mask made of tightly layered small leaves, retain exactly the existing human eye position. Tiny restrained turquoise bioluminescent veins as accent, dark olive leaf shadows and warm golden plant fiber edges. Botanical construction, no camouflage cloth and no army equipment.",
+      "skin": 4
+    },
+    {
+      "id": "medieval-alchemy",
+      "key": "alchemist",
+      "title": "Veilleur alchimiste",
+      "theme": "MEDIEVAL ALCHEMIST GUARD. Rich wine red quilted textile, etched aged brass armor panels, dark indigo leather joints, small amber and teal glass insets replacing existing vest pocket details. Delicate pale alchemical circular diagrams engraved within breastplate regions, no readable text. Hood becomes a fitted dark indigo leather coif with brass forehead filigree and ornate brass lower-face mask, preserving the exact eye slit with aligned human eyes. Boots and gloves wine leather reinforced with brass. Strong contrast between crimson cloth, honeyed brass and turquoise glass; hand-crafted mystical equipment rather than modern military.",
+      "skin": 5
+    },
+    {
+      "id": "porcelain-fluidics",
+      "key": "porcelain",
+      "title": "Operateur de porcelaine",
+      "theme": "PORCELAIN FLUIDICS OPERATOR. Smooth ivory ceramic armor with cobalt blue hand-painted channels, celadon green flexible joint fabrics, coral red seals and thin copper seams. Vest pockets become articulated glazed porcelain modules with small translucent cyan fluid channels painted inside their original outlines. Pants and sleeves segmented ivory ceramic protective shells over teal woven fabric; gloves and boots ivory and muted coral with teal joints. Hood and masked face become an elegant fitted porcelain automaton mask; the two eye slits stay precisely aligned and glow soft pale cyan instead of human eyes. No oversized ornaments. Distinct clean ceramic craft, fine crackle glazing and repaired gold seams, readable at low resolution.",
+      "skin": 6
+    },
+    {
+      "id": "ww1-trench",
+      "key": "trench",
+      "title": "Sentinelle des tranchees",
+      "theme": "Laine bleu horizon, toile et cuir; acier bleui, noyer et laiton.",
+      "skin": 7,
+      "coverage": "Full clothing and lower-face mask; visible human eyes only",
+      "pack": "expeditions-01"
+    },
+    {
+      "id": "bedrock-miner",
+      "key": "bedrock",
+      "title": "Mineur des profondeurs",
+      "theme": "Charbon, basalte, toile ocre et lampes ambrees.",
+      "skin": 8,
+      "coverage": "Full clothing and lower-face mask; visible human eyes only",
+      "pack": "expeditions-01"
+    },
+    {
+      "id": "new-york-noir",
+      "key": "noir",
+      "title": "Detective de minuit",
+      "theme": "Tweed anthracite, gabardine, cuir noir et metal poli.",
+      "skin": 9,
+      "coverage": "Full clothing and lower-face mask; visible human eyes only",
+      "pack": "expeditions-01"
+    },
+    {
+      "id": "castaway",
+      "key": "castaway",
+      "title": "Naufrage des rivages",
+      "theme": "Bois flotte, fibres, ecorce, silex et cordages.",
+      "skin": 10,
+      "coverage": "Full clothing and lower-face mask; visible human eyes only",
+      "pack": "expeditions-01"
+    },
+    {
+      "id": "abyss-diver",
+      "key": "diver",
+      "title": "Plongeur des abysses",
+      "theme": "Neoprene petrol, caoutchouc, laiton et verre marin.",
+      "skin": 11,
+      "coverage": "Full clothing and lower-face mask; visible human eyes only",
+      "pack": "expeditions-01"
+    }
+  ]
+}

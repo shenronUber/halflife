@@ -1,0 +1,574 @@
+{
+  "_idRow": 179738,
+  "_nStatus": "0",
+  "_bIsPrivate": false,
+  "_bAccessorIsSubmitter": false,
+  "_bIsTrashed": false,
+  "_bIsWithheld": false,
+  "_sName": "LD MP5A3 v2, World Model Style MP5 Viewmodel.",
+  "_sCommentsMode": "open",
+  "_tsDateModified": 1599643247,
+  "_tsDateAdded": 1536181196,
+  "_sProfileUrl": "https://gamebanana.com/mods/179738",
+  "_aPreviewMedia": {
+    "_aImages": [
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5b946ee6d6d9d.jpg",
+        "_sFile530": "530-90_5b946ee6d6d9d.jpg",
+        "_sFile100": "100-90_5b946ee6d6d9d.jpg",
+        "_sFile220": "220-90_5b946ee6d6d9d.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5b946c8830d50.jpg",
+        "_sFile100": "100-90_5b946c8830d50.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5b946c8885a6f.jpg",
+        "_sFile100": "100-90_5b946c8885a6f.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5b946c88dadd0.jpg",
+        "_sFile100": "100-90_5b946c88dadd0.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5b946c8753867.jpg",
+        "_sFile100": "100-90_5b946c8753867.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5b946c8774eaf.jpg",
+        "_sFile100": "100-90_5b946c8774eaf.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5b946c85995f9.jpg",
+        "_sFile100": "100-90_5b946c85995f9.jpg"
+      }
+    ]
+  },
+  "_nUpdatesCount": 2,
+  "_bHasUpdates": true,
+  "_tsDateUpdated": 1599643338,
+  "_nAllTodosCount": 0,
+  "_bHasTodos": false,
+  "_nPostCount": 35,
+  "_aTags": [
+    {
+      "_sTitle": "Aesthetic",
+      "_sValue": "Default"
+    },
+    {
+      "_sTitle": "Development State",
+      "_sValue": "Beta"
+    },
+    {
+      "_sTitle": "Animation",
+      "_sValue": "Default"
+    },
+    {
+      "_sTitle": "Texture",
+      "_sValue": "Custom"
+    },
+    {
+      "_sTitle": "Model",
+      "_sValue": "Custom"
+    }
+  ],
+  "_bCreatedBySubmitter": true,
+  "_bIsPorted": false,
+  "_nThanksCount": 3,
+  "_sInitialVisibility": "show",
+  "_sDownloadUrl": "https://gamebanana.com/mods/download/179738",
+  "_nDownloadCount": 3836,
+  "_aFiles": [
+    {
+      "_idRow": 485050,
+      "_sFile": "hl1_mp5a3_viewmodel_v2b.zip",
+      "_nFilesize": 1304704,
+      "_tsDateAdded": 1599643159,
+      "_nDownloadCount": 2194,
+      "_sDownloadUrl": "https://gamebanana.com/dl/485050",
+      "_sMd5Checksum": "ed240b72162e659fa1f3a8b8d559f95e",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,179738,485050"
+        }
+      ]
+    },
+    {
+      "_idRow": 395974,
+      "_sFile": "hl1_mp5a3_viewmodel_v2.zip",
+      "_nFilesize": 666836,
+      "_tsDateAdded": 1536453192,
+      "_nDownloadCount": 1295,
+      "_sDownloadUrl": "https://gamebanana.com/dl/395974",
+      "_sMd5Checksum": "d313ca3c6886c7e45aed6a4b6ed8e309",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,179738,395974"
+        }
+      ]
+    },
+    {
+      "_idRow": 395590,
+      "_sFile": "hl1_mp5a3_viewmodel_a4224.zip",
+      "_nFilesize": 309206,
+      "_tsDateAdded": 1536138526,
+      "_nDownloadCount": 349,
+      "_sDownloadUrl": "https://gamebanana.com/dl/395590",
+      "_sMd5Checksum": "74d185354ce526ee85d1333b623d64f7",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,179738,395590"
+        }
+      ]
+    }
+  ],
+  "_nSubscriberCount": 5,
+  "_aContributingStudios": [],
+  "_sLicense": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "_aLicenseChecklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "_bGenerateTableOfContents": false,
+  "_sText": "This is a simple edit of the v_9mmar model to be more consistent with the world model.<br>The edit of the model was made in order to fix a small personal nitpick of mine about the<br>inconsistency between the view model and the world model.<br><br>Credits go to <a href=\"https://gamebanana.com/members/1398907\">Slartibarty</a> for the <a href=\"https://gamebanana.com/skins/140466\">fixed arm model</a><br><br>Rest of the credits go to Valve and Gearbox for the assets.<br><br>Other arm models for this include: HD HEV, MD HEV, LD HEV on gearbox animations, and Half-Life: ECHOES arms.<br><br>There's also classic style animations available for all arms!<br>",
+  "_bIsObsolete": false,
+  "_nLikeCount": 60,
+  "_nViewCount": 36374,
+  "_sVersion": "",
+  "_bAcceptsDonations": true,
+  "_bShowRipePromo": true,
+  "_aEmbeddables": {
+    "_sEmbeddableImageBaseUrl": "https://gamebanana.com/mods/embeddables/179738",
+    "_aVariants": [
+      "small",
+      "small_square",
+      "medium",
+      "medium_square",
+      "medium_square_minimal",
+      "large",
+      "large_minimal",
+      "large_square",
+      "large_minimal_square",
+      "thumbnail"
+    ]
+  },
+  "_aSubmitter": {
+    "_idRow": 1663976,
+    "_sName": "Jakescience",
+    "_sUserTitle": "Bananite",
+    "_sHonoraryTitle": "",
+    "_tsJoinDate": 1536133014,
+    "_sAvatarUrl": "https://images.gamebanana.com/img/av/5b919644a8583.png",
+    "_sSigUrl": "",
+    "_sProfileUrl": "https://gamebanana.com/members/1663976",
+    "_sPointsUrl": "https://gamebanana.com/members/logs/pointslog/1663976",
+    "_sMedalsUrl": "https://gamebanana.com/members/stats/medals/1663976",
+    "_bIsOnline": false,
+    "_sLocation": "<a href=\"https://gamebanana.com\">Home</a> > <a href=\"https://gamebanana.com/games/396\"><img src=\"https://images.gamebanana.com/img/ico/games/8785.gif\" alt=\"Doom\"/><span>Doom</span></a> > <a href=\"https://gamebanana.com/mods/games/396\">Mods</a> > <a href=\"https://gamebanana.com/mods/cats/2788\">Game files</a> > <a href=\"https://gamebanana.com/mods/cats/2790\">Other/Misc</a> > <a href=\"https://gamebanana.com/mods/358927\">Project Hellfire</a>",
+    "_sOnlineTitle": "",
+    "_sOfflineTitle": "",
+    "_nPoints": 2648,
+    "_nPointsRank": 38838,
+    "_aNormalMedals": [
+      [
+        "features_1.png",
+        "Submission featured",
+        "normal",
+        220203
+      ],
+      [
+        "returns_1.png",
+        "Returned 100 times",
+        "normal",
+        222279
+      ],
+      [
+        "m_age_1.png",
+        "One month a member",
+        "normal",
+        223119
+      ],
+      [
+        "m_age_2.png",
+        "6 months a member",
+        "normal",
+        239799
+      ],
+      [
+        "m_pr_1.png",
+        "Reached 1,000 Points",
+        "normal",
+        243392
+      ],
+      [
+        "m_age_3.png",
+        "1 year a member",
+        "normal",
+        276121
+      ],
+      [
+        "m_age_4.png",
+        "2 years a member",
+        "normal",
+        319258
+      ],
+      [
+        "studio_leader.gif",
+        "Became a Studio Leader",
+        "normal",
+        340250
+      ],
+      [
+        "m_age_5.png",
+        "4 years a member",
+        "normal",
+        892990
+      ]
+    ],
+    "_aRareMedals": [],
+    "_aLegendaryMedals": [],
+    "_bHasRipe": false,
+    "_nBuddyCount": 1,
+    "_nSubscriberCount": 7,
+    "_aDonationMethods": [],
+    "_bAccessorIsBuddy": false,
+    "_bBuddyRequestExistsWithAccessor": false,
+    "_bAccessorIsSubscribed": false,
+    "_aBio": [
+      {
+        "_sTitle": "Favorite L4D2 Character",
+        "_sValue": "Nick"
+      },
+      {
+        "_sTitle": "Cat or Dog",
+        "_sValue": "Dog"
+      },
+      {
+        "_sTitle": "Gamer type",
+        "_sValue": "Regular"
+      },
+      {
+        "_sTitle": "Alignment",
+        "_sValue": "Chaotic Good"
+      },
+      {
+        "_sTitle": "Favorite L4D Character",
+        "_sValue": "Louis"
+      },
+      {
+        "_sTitle": "Gender",
+        "_sValue": "Male"
+      },
+      {
+        "_sTitle": "Religion",
+        "_sValue": "404 religion not found."
+      },
+      {
+        "_sTitle": "FPS Hero",
+        "_sValue": "Gordon Freeman"
+      },
+      {
+        "_sTitle": "Favorite Game",
+        "_sValue": "Garry&#039;s Mod or Minecraft or something like that."
+      },
+      {
+        "_sTitle": "First Language",
+        "_sValue": "English"
+      },
+      {
+        "_sTitle": "Country",
+        "_sValue": "U. S. of A."
+      },
+      {
+        "_sTitle": "Political stance",
+        "_sValue": "What Political Stance?"
+      },
+      {
+        "_sTitle": "Mage or Barbarian",
+        "_sValue": "Mage"
+      },
+      {
+        "_sTitle": "Kit Kat or Snickers",
+        "_sValue": "Kit Kat"
+      }
+    ],
+    "_aDefaultLicenseChecklist": [
+      "yes",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "no",
+      "ask"
+    ],
+    "_sDefaultLicense": ""
+  },
+  "_bFollowLinks": true,
+  "_aGame": {
+    "_idRow": 34,
+    "_sName": "Half-Life",
+    "_sAbbreviation": "HL",
+    "_sProfileUrl": "https://gamebanana.com/games/34",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/games/half-life.png",
+    "_sBannerUrl": "https://images.gamebanana.com/img/ico/games/half-life.png",
+    "_nSubscriberCount": 4637,
+    "_bHasSubmissionQueue": false,
+    "_bAccessorIsSubscribed": false
+  },
+  "_aCategory": {
+    "_idRow": 7736,
+    "_sName": "MP5 / M4",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/7736",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/560c876aaaf25.png",
+    "_bIsObsolete": false
+  },
+  "_aSuperCategory": {
+    "_idRow": 7735,
+    "_sName": "Weapons",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/7735",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/5ea2fdf1794ff.png"
+  },
+  "_aFeaturings": {
+    "3day": {
+      "_sFeatureGroup": "3day",
+      "_sTitle": "Best of the Banana",
+      "_sIconClasses": "MiscIcon FeaturedBestOfTheBananaIcon",
+      "_tsDate": 1536379201
+    },
+    "yesterday": {
+      "_sFeatureGroup": "yesterday",
+      "_sTitle": "Best of Yesterday",
+      "_sIconClasses": "MiscIcon FeaturedYesterdayIcon",
+      "_tsDate": 1536350401
+    },
+    "today": {
+      "_sFeatureGroup": "today",
+      "_sTitle": "Today's Pick",
+      "_sIconClasses": "MiscIcon FeaturedTodayIcon",
+      "_tsDate": 1536264001
+    }
+  },
+  "_aCredits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Modeler",
+          "_sName": "Jakescience"
+        }
+      ]
+    },
+    {
+      "_sGroupName": "Original Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Original: Model, textures, and animation.",
+          "_sName": "Valve and Gearbox"
+        }
+      ]
+    },
+    {
+      "_sGroupName": "Contributors",
+      "_aAuthors": [
+        {
+          "_sRole": "Arm Model",
+          "_sName": "Slartibarty"
+        }
+      ]
+    }
+  ]
+}

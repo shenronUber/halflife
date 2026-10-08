@@ -1,0 +1,153 @@
+{
+  "id": 179674,
+  "name": "Custom HK416",
+  "url": "https://gamebanana.com/mods/179674",
+  "game": "Half-Life",
+  "likes": 23,
+  "downloads": 2234,
+  "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "license_checklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "credits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Hk416 model/texture, m203 model/texture",
+          "_idRow": "614054",
+          "_sName": "Twinke Masta Johan Santana",
+          "_sProfileUrl": "https://gamebanana.com/members/614054",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/614054.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Hk416 Texture",
+          "_sName": "AcidSnake"
+        },
+        {
+          "_sRole": "Sounds",
+          "_idRow": "597879",
+          "_sName": "Ghost597879",
+          "_sProfileUrl": "https://gamebanana.com/members/597879",
+          "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Sight model/texture",
+          "_sName": "Snark"
+        },
+        {
+          "_sRole": "Compile, lens texture",
+          "_idRow": "1409928",
+          "_sName": "AVM",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/6a971e199de06.png",
+          "_sProfileUrl": "https://gamebanana.com/members/1409928",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/6a9718f88a0cc.gif",
+          "_bIsOnline": false
+        }
+      ]
+    }
+  ],
+  "description_html": "A custom HK416 w/m203 for HL!<br><br>Comes with world models (w_models), custom shoot sounds and for all official expansions (Blue shift and Oppossing Force).<br><br>Enjoy!<br><br>Check out my other HL mods:<br><br><img src=\"https://screenshots.gamebanana.com/img/ss/srends/5ff3496523823.jpg\" class=\"SelectedElement\" width=\"40%\"><br><a href=\"https://gamebanana.com/skins/184903\">Black Mesa HQ M61 Grenade on Bobito Pawner\u00b4s Animations</a>",
+  "files": [
+    {
+      "_idRow": 557110,
+      "_sFile": "hk416_e5129_960ec.zip",
+      "_nFilesize": 4004469,
+      "_tsDateAdded": 1619185058,
+      "_nDownloadCount": 1644,
+      "_sDownloadUrl": "https://gamebanana.com/dl/557110",
+      "_sMd5Checksum": "26e11f9adecd054e41b016b0259b46a0",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,179674,557110"
+        }
+      ]
+    }
+  ],
+  "retrieved": "2026-10-08",
+  "download": {
+    "id": 179674,
+    "name": "Custom HK416",
+    "archive": "downloads\\179674-hk416_e5129_960ec.zip",
+    "sha256": "5eea5e1a1fb443f1ad79af56a82fb1d1069d7f3112dcfba7f592df4d0b20f7e8",
+    "bytes": 4004469,
+    "models": [
+      "extracted\\179674\\Custom Hk416 for HL\\Choose Hero\\Adrian Shephard\\models\\v_9mmar.mdl",
+      "extracted\\179674\\Custom Hk416 for HL\\Choose Hero\\Barney Calhoun\\models\\v_9mmar.mdl",
+      "extracted\\179674\\Custom Hk416 for HL\\Choose Hero\\Gordon Freeman\\models\\v_9mmar.mdl",
+      "extracted\\179674\\Custom Hk416 for HL\\REQUIRED\\models\\w_9mmar.mdl",
+      "extracted\\179674\\Custom Hk416 for HL\\REQUIRED\\models\\w_9mmarclip.mdl",
+      "extracted\\179674\\Custom Hk416 for HL\\REQUIRED\\models\\w_9mmarclipT.mdl"
+    ]
+  }
+}

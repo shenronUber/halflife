@@ -1,0 +1,363 @@
+{
+  "_idRow": 231336,
+  "_nStatus": "0",
+  "_bIsPrivate": false,
+  "_bAccessorIsSubmitter": false,
+  "_bIsTrashed": false,
+  "_bIsWithheld": false,
+  "_sName": "Timittytim's Steyr Aug F10 - ND4E  *updated*",
+  "_sCommentsMode": "open",
+  "_tsDateModified": 1169307208,
+  "_tsDateAdded": 1144194188,
+  "_sProfileUrl": "https://gamebanana.com/mods/231336",
+  "_aPreviewMedia": {
+    "_aImages": [
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "7812.jpg",
+        "_sFile220": "220-90_7812.jpg",
+        "_sFile530": "530-90_7812.jpg",
+        "_sFile100": "100-90_7812.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "697_7294a.jpg",
+        "_sFile100": "100-90_697_7294a.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "049_7294b.jpg",
+        "_sFile100": "100-90_049_7294b.jpg"
+      }
+    ]
+  },
+  "_nUpdatesCount": 0,
+  "_bHasUpdates": false,
+  "_nAllTodosCount": 0,
+  "_bHasTodos": false,
+  "_nPostCount": 29,
+  "_aTags": [
+    {
+      "_sValue": "steyr"
+    },
+    {
+      "_sValue": "nd4e"
+    },
+    {
+      "_sValue": "updated"
+    },
+    {
+      "_sTitle": "Model",
+      "_sValue": "Hacked Custom Model"
+    },
+    {
+      "_sTitle": "Texture",
+      "_sValue": "Recolor"
+    }
+  ],
+  "_bCreatedBySubmitter": false,
+  "_bIsPorted": false,
+  "_nThanksCount": 0,
+  "_sInitialVisibility": "show",
+  "_sDownloadUrl": "https://gamebanana.com/mods/download/231336",
+  "_nDownloadCount": 17150,
+  "_aFiles": [
+    {
+      "_idRow": 267927,
+      "_sFile": "aug_f10_2.rar",
+      "_nFilesize": 3801270,
+      "_tsDateAdded": 1144194188,
+      "_nDownloadCount": 17150,
+      "_sDownloadUrl": "https://gamebanana.com/dl/267927",
+      "_sMd5Checksum": "47e1d21b50c0a13695295bae68144f76",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true
+    }
+  ],
+  "_nSubscriberCount": 0,
+  "_aStudio": {
+    "_idRow": 655,
+    "_sName": "Damage Inc.",
+    "_sProfileUrl": "https://gamebanana.com/studios/655",
+    "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/4f895a9a27421.png",
+    "_nSubscriberCount": 116,
+    "_bAccessorIsSubscribed": false
+  },
+  "_aContributingStudios": [],
+  "_sLicense": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "_aLicenseChecklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "_bGenerateTableOfContents": false,
+  "_sText": "********************************************************************\r\n-----------------------UPDATED--------------------------------\r\n********************************************************************\r\n\r\n- 3 simple Recolours\r\n- Eotech Resized\r\n- New Screens + Render\r\n- Texture misalignments finely tuned\r\n- Hand Textures Changed\r\n- Rail top Width Thinnend So it doesnt block light",
+  "_bIsObsolete": false,
+  "_nLikeCount": 10,
+  "_nViewCount": 56506,
+  "_sVersion": "",
+  "_bAcceptsDonations": false,
+  "_bShowRipePromo": true,
+  "_aEmbeddables": {
+    "_sEmbeddableImageBaseUrl": "https://gamebanana.com/mods/embeddables/231336",
+    "_aVariants": [
+      "small",
+      "small_square",
+      "medium",
+      "medium_square",
+      "medium_square_minimal",
+      "large",
+      "large_minimal",
+      "large_square",
+      "large_minimal_square",
+      "thumbnail"
+    ]
+  },
+  "_aSubmitter": {
+    "_idRow": 34668,
+    "_sName": "Timittytim",
+    "_sUserTitle": "",
+    "_sHonoraryTitle": "",
+    "_tsJoinDate": 1115407447,
+    "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+    "_sSigUrl": "",
+    "_sProfileUrl": "https://gamebanana.com/members/34668",
+    "_sPointsUrl": "https://gamebanana.com/members/logs/pointslog/34668",
+    "_sMedalsUrl": "https://gamebanana.com/members/stats/medals/34668",
+    "_bIsOnline": false,
+    "_sLocation": "<a href=\"https://gamebanana.com\">Home</a> > <a href=\"https://gamebanana.com/games/7\">Counter-Strike: Condition Zero</a> > <a href=\"https://gamebanana.com/skins/games/7\">Skins</a> > <a href=\"https://gamebanana.com/skins/cats/87\">Knife</a> > <a href=\"https://gamebanana.com/skins/121824\">Timittytim's Halo Sword</a>",
+    "_sOnlineTitle": "",
+    "_sOfflineTitle": "",
+    "_nPoints": 51635,
+    "_nPointsRank": 473,
+    "_aNormalMedals": [
+      [
+        "club_leader.gif",
+        "Became a Club Leader",
+        "normal",
+        258287
+      ],
+      [
+        "m_pr_1.png",
+        "Reached 1,000 Points",
+        "normal",
+        258288
+      ],
+      [
+        "m_pr_2.png",
+        "Reached 2,500 Points",
+        "normal",
+        258289
+      ],
+      [
+        "m_pr_3.png",
+        "Reached 7,500 Points",
+        "normal",
+        258290
+      ],
+      [
+        "m_pr_4.png",
+        "Reached 25,000 Points",
+        "normal",
+        258291
+      ],
+      [
+        "m_ef_1.png",
+        "1 post awarded Exemplary Feedback",
+        "normal",
+        258292
+      ],
+      [
+        "m_ef_2.png",
+        "5 posts awarded Exemplary Feedback",
+        "normal",
+        258293
+      ],
+      [
+        "m_age_1.png",
+        "One month a member",
+        "normal",
+        258294
+      ],
+      [
+        "m_age_2.png",
+        "6 months a member",
+        "normal",
+        258295
+      ],
+      [
+        "m_age_3.png",
+        "1 year a member",
+        "normal",
+        258296
+      ],
+      [
+        "m_age_4.png",
+        "2 years a member",
+        "normal",
+        258297
+      ],
+      [
+        "m_age_5.png",
+        "4 years a member",
+        "normal",
+        258298
+      ],
+      [
+        "skins1.png",
+        "Submitted 10 Skins",
+        "normal",
+        290085
+      ]
+    ],
+    "_aRareMedals": [
+      [
+        "m_age_6.png",
+        "6 years a member",
+        "rare",
+        258299
+      ],
+      [
+        "skins2.png",
+        "Submitted 50 Skins",
+        "rare",
+        290086
+      ]
+    ],
+    "_aLegendaryMedals": [
+      [
+        "m_age_7.png",
+        "10 years a member",
+        "legendary",
+        258300
+      ]
+    ],
+    "_bHasRipe": false,
+    "_nBuddyCount": 0,
+    "_nSubscriberCount": 4,
+    "_aDonationMethods": [],
+    "_bAccessorIsBuddy": false,
+    "_bBuddyRequestExistsWithAccessor": false,
+    "_bAccessorIsSubscribed": false,
+    "_aDefaultLicenseChecklist": [
+      "yes",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "no",
+      "ask"
+    ],
+    "_sDefaultLicense": ""
+  },
+  "_bFollowLinks": true,
+  "_aGame": {
+    "_idRow": 7,
+    "_sName": "Counter-Strike: Condition Zero",
+    "_sAbbreviation": "CS:CZ",
+    "_sProfileUrl": "https://gamebanana.com/games/7",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/games/5ea78800895ff.png",
+    "_sBannerUrl": "https://images.gamebanana.com/img/ico/games/5ea78800895ff.png",
+    "_nSubscriberCount": 916,
+    "_bHasSubmissionQueue": false,
+    "_bAccessorIsSubscribed": false
+  },
+  "_aCategory": {
+    "_idRow": 8445,
+    "_sName": "AUG",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/8445",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/aug_2.png",
+    "_bIsObsolete": false
+  },
+  "_aSuperCategory": {
+    "_idRow": 8440,
+    "_sName": "Rifles",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/8440",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/560ee8ac1e00d.png"
+  },
+  "_aCredits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Unknown",
+          "_sName": "Timittytim"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Zippax"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Short_fuse"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Creeping_jesus"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Bullet_head"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "SureShot"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "the_lama"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "!NC!FURIOUS"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Twinkemasta"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Unbreakable"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Sedj"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Valve"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Jennifer!!"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "XlongwayhomeX"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "expeditions-01",
+  "generation_tool": "built-in image_gen",
+  "themes": [
+    {
+      "id": "ww1-trench",
+      "key": "trench",
+      "title": "Sentinelle des tranchees",
+      "weaponTitle": "Grande Guerre",
+      "desc": "Laine bleu horizon, toile et cuir; acier bleui, noyer et laiton."
+    },
+    {
+      "id": "bedrock-miner",
+      "key": "bedrock",
+      "title": "Mineur des profondeurs",
+      "weaponTitle": "Bedrock",
+      "desc": "Charbon, basalte, toile ocre et lampes ambrees."
+    },
+    {
+      "id": "new-york-noir",
+      "key": "noir",
+      "title": "Detective de minuit",
+      "weaponTitle": "New York noir",
+      "desc": "Tweed anthracite, gabardine, cuir noir et metal poli."
+    },
+    {
+      "id": "castaway",
+      "key": "castaway",
+      "title": "Naufrage des rivages",
+      "weaponTitle": "Bois de naufrage",
+      "desc": "Bois flotte, fibres, ecorce, silex et cordages."
+    },
+    {
+      "id": "abyss-diver",
+      "key": "diver",
+      "title": "Plongeur des abysses",
+      "weaponTitle": "Abysses",
+      "desc": "Neoprene petrol, caoutchouc, laiton et verre marin."
+    }
+  ]
+}

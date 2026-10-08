@@ -1,0 +1,85 @@
+{
+  "id": 236099,
+  "name": "UTAS UTS-15 With Acog + Eotech Attachment (Pack)",
+  "url": "https://gamebanana.com/mods/236099",
+  "game": "Counter-Strike: Online",
+  "likes": 4,
+  "downloads": 1987,
+  "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "license_checklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "credits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sName": "Nexon"
+        },
+        {
+          "_idRow": "1250945",
+          "_sName": "Gerrard",
+          "_sProfileUrl": "https://gamebanana.com/members/1250945",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/55460dc9ce2f5.jpg",
+          "_bIsOnline": false
+        },
+        {
+          "_idRow": "1305750",
+          "_sName": "simple rulez",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/519cefe3bd1b3.png",
+          "_sProfileUrl": "https://gamebanana.com/members/1305750",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/5a636af0c26e3.gif",
+          "_bIsOnline": false
+        }
+      ]
+    }
+  ],
+  "description_html": "In this pack you'll get\r\n==================\r\n\r\n### - custom v_model\r\n### - sound \r\n### - nst wpn script\r\n### no custom p_model and w_model, but i'll add them soon\r\n### tell me if something wrong\r\n### this skin can replace the m3, rename the p_uts15,v_uts15,w_uts15 into p_m3,v_m3,w_m3",
+  "files": [
+    {
+      "_idRow": 228174,
+      "_sFile": "uts-15.rar",
+      "_nFilesize": 2716187,
+      "_tsDateAdded": 1355705013,
+      "_nDownloadCount": 1987,
+      "_sDownloadUrl": "https://gamebanana.com/dl/228174",
+      "_sMd5Checksum": "713dd8b7755629d31180aba3db902131",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true
+    }
+  ],
+  "retrieved": "2026-10-08",
+  "download": {
+    "id": 236099,
+    "name": "UTAS UTS-15 With Acog + Eotech Attachment (Pack)",
+    "archive": "downloads\\236099-uts-15.rar",
+    "sha256": "fb1567f2c9ad22756eeb9b89303b32afe71855eece0e68a71e18314213e37f1c",
+    "bytes": 2716187,
+    "models": [
+      "extracted\\236099\\models\\p_uts15.mdl",
+      "extracted\\236099\\models\\v_skulluts-15.mdl",
+      "extracted\\236099\\models\\v_uts15.mdl",
+      "extracted\\236099\\models\\v_uts15eo.mdl",
+      "extracted\\236099\\models\\v_uts15s.mdl",
+      "extracted\\236099\\models\\w_uts15.mdl"
+    ]
+  }
+}

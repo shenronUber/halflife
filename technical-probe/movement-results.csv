@@ -1,0 +1,14 @@
+scenario,result,actual,expected
+ground_acceleration_10ms_no_friction,PASS,31.999998,32.000000
+ground_acceleration_100ms_no_friction,PASS,319.999969,320.000000
+ground_acceleration_cap,PASS,320.000000,320.000000
+ground_friction_10ms,PASS,307.200012,307.200012
+air_has_no_ground_friction,PASS,307.200012,307.200012
+air_perpendicular_input_preserves_forward_speed,PASS,320.000000,320.000000
+air_perpendicular_input_adds_velocity,PASS,30.000000,30.000000
+air_cap_is_on_projection_not_total_speed,PASS,30.000000,30.000000
+dead_player_does_not_accelerate,PASS,0.000000,0.000000
+speed_below_bunny_threshold_is_preserved,PASS,540.000000,540.000000
+speed_above_bunny_threshold_is_reduced,PASS,353.600006,353.600006
+wall_clip_removes_normal_velocity,PASS,0.000000,0.000000
+wall_clip_preserves_tangential_velocity,PASS,50.000000,50.000000

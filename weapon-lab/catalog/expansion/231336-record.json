@@ -1,0 +1,119 @@
+{
+  "id": 231336,
+  "name": "Timittytim's Steyr Aug F10 - ND4E  *updated*",
+  "url": "https://gamebanana.com/mods/231336",
+  "game": "Counter-Strike: Condition Zero",
+  "likes": 10,
+  "downloads": 17150,
+  "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "license_checklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "credits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Unknown",
+          "_sName": "Timittytim"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Zippax"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Short_fuse"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Creeping_jesus"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Bullet_head"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "SureShot"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "the_lama"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "!NC!FURIOUS"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Twinkemasta"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Unbreakable"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Sedj"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Valve"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Jennifer!!"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "XlongwayhomeX"
+        }
+      ]
+    }
+  ],
+  "description_html": "********************************************************************\r\n-----------------------UPDATED--------------------------------\r\n********************************************************************\r\n\r\n- 3 simple Recolours\r\n- Eotech Resized\r\n- New Screens + Render\r\n- Texture misalignments finely tuned\r\n- Hand Textures Changed\r\n- Rail top Width Thinnend So it doesnt block light",
+  "files": [
+    {
+      "_idRow": 267927,
+      "_sFile": "aug_f10_2.rar",
+      "_nFilesize": 3801270,
+      "_tsDateAdded": 1144194188,
+      "_nDownloadCount": 17150,
+      "_sDownloadUrl": "https://gamebanana.com/dl/267927",
+      "_sMd5Checksum": "47e1d21b50c0a13695295bae68144f76",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true
+    }
+  ],
+  "retrieved": "2026-10-08",
+  "download": {
+    "id": 231336,
+    "name": "Timittytim's Steyr Aug F10 - ND4E  *updated*",
+    "archive": "downloads\\231336-aug_f10_2.rar",
+    "sha256": "2b542903018a1c1324e5f672cc9ec95c7183d691ce5c85524e3c97344839d6f6",
+    "bytes": 3801270,
+    "models": [
+      "extracted\\231336\\Aug F10\\v_aug.mdl",
+      "extracted\\231336\\Aug F10\\w_aug.mdl"
+    ]
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "id": 567446,
+  "name": "Promotional poster SMG",
+  "url": "https://gamebanana.com/mods/567446",
+  "game": "Half-Life",
+  "likes": 66,
+  "downloads": 583,
+  "license": "the \"i don't really mind what you're gonna do with it, have fun\"\u00a0\u00a0license",
+  "license_checklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "credits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "models,textures,animations",
+          "_idRow": 4119293,
+          "_sName": "xyzzerxxx",
+          "_sProfileUrl": "https://gamebanana.com/members/4119293",
+          "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "firing sounds",
+          "_sName": "Sound Ideas via their hollywoodedge sound library"
+        },
+        {
+          "_sRole": "reload sounds",
+          "_sName": "Fallout (1997),unknown sound library, Fallout Wiki (provider of the files)"
+        }
+      ]
+    }
+  ],
+  "description_html": "A reconstruction of the SMG seen in <a href=\"https://www.artstation.com/artwork/A38bX\" class=\"SelectedElement\" target=\"_blank\">one of the pre-alpha promotional posters</a>, that was seemingly modelled after it's real-life counterpart, the Walther MPL. Made with fidelity to the game's aesthetics, including the sounds, just to simulate what it would look like if valve decided to roll with it rather than the model we're used to.<br><br>Done (a little late) as requested by <a href=\"https://gamebanana.com/blogs/19512\">https://gamebanana.com/blogs/19512</a>. Modelled, textured,animated in Blender by myself.",
+  "files": [
+    {
+      "_idRow": 1358125,
+      "_sFile": "hl1-promo-smg_29262.zip",
+      "_nFilesize": 146360,
+      "_tsDateAdded": 1736216107,
+      "_nDownloadCount": 583,
+      "_sDownloadUrl": "https://gamebanana.com/dl/1358125",
+      "_sMd5Checksum": "1ef0a8307cb537c46d3a0f7170eeb992",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,567446,1358125"
+        }
+      ]
+    }
+  ],
+  "retrieved": "2026-10-08",
+  "download": {
+    "id": 567446,
+    "name": "Promotional poster SMG",
+    "archive": "downloads\\567446-hl1-promo-smg_29262.zip",
+    "sha256": "cba4327c91e24e4bac049bab5f19f1550f823ca63f452c1993c553b379919abf",
+    "bytes": 146360,
+    "models": [
+      "extracted\\567446\\models\\p_9mmar.mdl",
+      "extracted\\567446\\models\\v_9mmar.mdl",
+      "extracted\\567446\\models\\w_9mmar.mdl"
+    ]
+  }
+}

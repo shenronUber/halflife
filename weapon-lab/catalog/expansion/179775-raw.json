@@ -1,0 +1,375 @@
+{
+  "_idRow": 179775,
+  "_nStatus": "0",
+  "_bIsPrivate": false,
+  "_bAccessorIsSubmitter": false,
+  "_bIsTrashed": false,
+  "_bIsWithheld": false,
+  "_sName": "M4A1 package",
+  "_sCommentsMode": "open",
+  "_tsDateModified": 1230949433,
+  "_tsDateAdded": 1168148220,
+  "_sProfileUrl": "https://gamebanana.com/mods/179775",
+  "_aPreviewMedia": {
+    "_aImages": [
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "17583.jpg",
+        "_sFile220": "220-90_17583.jpg",
+        "_sFile530": "530-90_17583.jpg",
+        "_sFile100": "100-90_17583.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "516_20893.jpg",
+        "_sFile100": "100-90_516_20893.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "934_20894.jpg",
+        "_sFile100": "100-90_934_20894.jpg"
+      }
+    ]
+  },
+  "_nUpdatesCount": 0,
+  "_bHasUpdates": false,
+  "_nAllTodosCount": 0,
+  "_bHasTodos": false,
+  "_nPostCount": 16,
+  "_aTags": [
+    {
+      "_sValue": "m4a1"
+    },
+    {
+      "_sValue": "package"
+    },
+    {
+      "_sTitle": "Model",
+      "_sValue": "Hacked Custom Model"
+    },
+    {
+      "_sTitle": "Texture",
+      "_sValue": "Default"
+    }
+  ],
+  "_bCreatedBySubmitter": true,
+  "_bIsPorted": false,
+  "_nThanksCount": 0,
+  "_sInitialVisibility": "show",
+  "_sDownloadUrl": "https://gamebanana.com/mods/download/179775",
+  "_nDownloadCount": 9968,
+  "_aFiles": [
+    {
+      "_idRow": 264258,
+      "_sFile": "m49mmar.rar",
+      "_nFilesize": 10805350,
+      "_tsDateAdded": 1168148220,
+      "_nDownloadCount": 9968,
+      "_sDownloadUrl": "https://gamebanana.com/dl/264258",
+      "_sMd5Checksum": "a1bddfc93436857d54fb4635d0f1521e",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,179775,264258"
+        }
+      ]
+    }
+  ],
+  "_nSubscriberCount": 0,
+  "_aContributingStudios": [],
+  "_sLicense": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "_aLicenseChecklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "_bGenerateTableOfContents": false,
+  "_sText": "As if the Half Life customization community really needs another m4 to replace the 9mmAR...\r\nComes with optional choices of improved Half Life or Opposing Force arms and Gearbox's or Strykerwolf's animations. The HEV arms are compiled on H4wk's skin by default but they can be easily switched out.\r\n<b>WARNING: Due to severely massive amounts of polygons and textures, this model is recommended for high-end systems only.</b>\r\n\r\nModel: Soul_Slayer\r\n  Aimpoint: HellSpike\r\n  M203: Twinke Masta\r\nSkin: Thanez\r\n  Aimpoint Skin: Thanez\r\n  M203 Skin: Twinke Masta\r\n  Texture Chopping: HellSpike\r\nAnimations: Gearbox/Valve, Strykerwolf(ported by End of Days, edited by World Crafter)\r\nSounds: Vunsunta\r\nOriginal Base Compile: Sober\r\nCOmpile/Hack: World Crafter",
+  "_bIsObsolete": false,
+  "_nLikeCount": 19,
+  "_nViewCount": 35198,
+  "_sVersion": "",
+  "_bAcceptsDonations": false,
+  "_bShowRipePromo": true,
+  "_aEmbeddables": {
+    "_sEmbeddableImageBaseUrl": "https://gamebanana.com/mods/embeddables/179775",
+    "_aVariants": [
+      "small",
+      "small_square",
+      "medium",
+      "medium_square",
+      "medium_square_minimal",
+      "large",
+      "large_minimal",
+      "large_square",
+      "large_minimal_square",
+      "thumbnail"
+    ]
+  },
+  "_aSubmitter": {
+    "_idRow": 23444,
+    "_sName": "Soup Miner",
+    "_sUserTitle": ":3",
+    "_sHonoraryTitle": "",
+    "_tsJoinDate": 1110417126,
+    "_sAvatarUrl": "https://images.gamebanana.com/img/av/23444.png",
+    "_sSigUrl": "https://images.gamebanana.com/img/sig/23444.png",
+    "_sProfileUrl": "https://gamebanana.com/members/23444",
+    "_sPointsUrl": "https://gamebanana.com/members/logs/pointslog/23444",
+    "_sMedalsUrl": "https://gamebanana.com/members/stats/medals/23444",
+    "_bIsOnline": false,
+    "_sLocation": "<a href=\"http://www.fpsbanana.com/models\">Models</a> > <a href=\"http://www.fpsbanana.com/modelcats/59\">Shotguns</a> > <a href=\"http://www.fpsbanana.com/models/2218\">BenelliM4 FIN</a> > <a class=\"menu bold\" href=\"http://www.fpsbanana.com/models/screens/2218\">Screens</a>",
+    "_sOnlineTitle": "",
+    "_sOfflineTitle": "",
+    "_nPoints": 17111,
+    "_nPointsRank": 1922,
+    "_aNormalMedals": [
+      [
+        "m_pr_1.png",
+        "Reached 1,000 Points",
+        "normal",
+        38276
+      ],
+      [
+        "m_pr_2.png",
+        "Reached 2,500 Points",
+        "normal",
+        38277
+      ],
+      [
+        "m_pr_3.png",
+        "Reached 7,500 Points",
+        "normal",
+        38278
+      ],
+      [
+        "m_age_1.png",
+        "One month a member",
+        "normal",
+        38279
+      ],
+      [
+        "m_age_2.png",
+        "6 months a member",
+        "normal",
+        38280
+      ],
+      [
+        "m_age_3.png",
+        "1 year a member",
+        "normal",
+        38281
+      ],
+      [
+        "m_age_4.png",
+        "2 years a member",
+        "normal",
+        38282
+      ],
+      [
+        "m_age_5.png",
+        "4 years a member",
+        "normal",
+        38283
+      ],
+      [
+        "skins1.png",
+        "Submitted 10 Skins",
+        "normal",
+        126100
+      ],
+      [
+        "mods1.png",
+        "Submitted 5 Mods",
+        "normal",
+        2378185
+      ],
+      [
+        "mods2.png",
+        "Submitted 10 Mods",
+        "normal",
+        2378186
+      ]
+    ],
+    "_aRareMedals": [
+      [
+        "m_age_6.png",
+        "6 years a member",
+        "rare",
+        38284
+      ],
+      [
+        "mods3.png",
+        "Submitted 15 Mods",
+        "rare",
+        2378187
+      ],
+      [
+        "mods4.png",
+        "Submitted 20 Mods",
+        "rare",
+        2378188
+      ]
+    ],
+    "_aLegendaryMedals": [
+      [
+        "m_age_7.png",
+        "10 years a member",
+        "legendary",
+        38285
+      ]
+    ],
+    "_bHasRipe": false,
+    "_nBuddyCount": 0,
+    "_nSubscriberCount": 7,
+    "_aDonationMethods": [],
+    "_bAccessorIsBuddy": false,
+    "_bBuddyRequestExistsWithAccessor": false,
+    "_bAccessorIsSubscribed": false,
+    "_aDefaultLicenseChecklist": [
+      "yes",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "no",
+      "ask"
+    ],
+    "_sDefaultLicense": ""
+  },
+  "_bFollowLinks": true,
+  "_aGame": {
+    "_idRow": 34,
+    "_sName": "Half-Life",
+    "_sAbbreviation": "HL",
+    "_sProfileUrl": "https://gamebanana.com/games/34",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/games/half-life.png",
+    "_sBannerUrl": "https://images.gamebanana.com/img/ico/games/half-life.png",
+    "_nSubscriberCount": 4637,
+    "_bHasSubmissionQueue": false,
+    "_bAccessorIsSubscribed": false
+  },
+  "_aCategory": {
+    "_idRow": 7736,
+    "_sName": "MP5 / M4",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/7736",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/560c876aaaf25.png",
+    "_bIsObsolete": false
+  },
+  "_aSuperCategory": {
+    "_idRow": 7735,
+    "_sName": "Weapons",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/7735",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/5ea2fdf1794ff.png"
+  },
+  "_aCredits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Unknown",
+          "_sName": "Soul_SlayeThanez, Hellspike"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Twinke Masta"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Sober"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Vunsunta"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "End of Days"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Strykerwolf"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Gearbox"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "World Crafter"
+        }
+      ]
+    }
+  ]
+}

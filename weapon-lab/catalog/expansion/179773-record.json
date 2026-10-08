@@ -1,0 +1,171 @@
+{
+  "id": 179773,
+  "name": "G36 Hack",
+  "url": "https://gamebanana.com/mods/179773",
+  "game": "Half-Life",
+  "likes": 18,
+  "downloads": 6958,
+  "license": "Just include the credits I've listed in you're own release and I believe the authors will be fine with it.",
+  "license_checklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "credits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Unknown",
+          "_sName": "Stoke"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Millenia"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "The Spork"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Abyss 25"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Twinky Master"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Darkstorn"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "S.A.J Colonel"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "End Of Days"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "DiamonD"
+        }
+      ]
+    }
+  ],
+  "description_html": "Each Compile comes with several sets of arms and 4 variants for each arm ref (Choose from scoped, Silenced, Plain and Everything!). Enjoy!\r\n",
+  "files": [
+    {
+      "_idRow": 256977,
+      "_sFile": "g36_halflife.rar",
+      "_nFilesize": 19808741,
+      "_tsDateAdded": 1212892426,
+      "_nDownloadCount": 6959,
+      "_sDownloadUrl": "https://gamebanana.com/dl/256977",
+      "_sMd5Checksum": "3f85213ad30a1ed59460c63f05ac80b8",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,179773,256977"
+        }
+      ]
+    }
+  ],
+  "retrieved": "2026-10-08",
+  "download": {
+    "id": 179773,
+    "name": "G36 Hack",
+    "archive": "downloads\\179773-g36_halflife.rar",
+    "sha256": "36127944b52961f1fb34619c55a8d69247a843496209b700d1549f9f00c5b0c9",
+    "bytes": 19808741,
+    "models": [
+      "extracted\\179773\\G36_HalfLife\\A.I\\All\\v_9mmar.mdl",
+      "extracted\\179773\\G36_HalfLife\\A.I\\Plain\\v_9mmar.mdl",
+      "extracted\\179773\\G36_HalfLife\\A.I\\Scope\\v_9mmar.mdl",
+      "extracted\\179773\\G36_HalfLife\\A.I\\Silencer\\v_9mmar.mdl",
+      "extracted\\179773\\G36_HalfLife\\H4wk\\All\\v_9mmar.mdl",
+      "extracted\\179773\\G36_HalfLife\\H4wk\\Plain\\v_9mmar.mdl",
+      "extracted\\179773\\G36_HalfLife\\H4wk\\Scope\\v_9mmar.mdl",
+      "extracted\\179773\\G36_HalfLife\\H4wk\\Silencer\\v_9mmar.mdl",
+      "extracted\\179773\\G36_HalfLife\\P's\\All\\p_9mmar.mdl",
+      "extracted\\179773\\G36_HalfLife\\P's\\Plain\\p_9mmar.mdl",
+      "extracted\\179773\\G36_HalfLife\\P's\\Scope\\p_9mmar.mdl",
+      "extracted\\179773\\G36_HalfLife\\P's\\Silencer\\p_9mmar.mdl",
+      "extracted\\179773\\G36_HalfLife\\RavenGT\\All\\v_9mmar.mdl",
+      "extracted\\179773\\G36_HalfLife\\RavenGT\\Plain\\v_9mmar.mdl",
+      "extracted\\179773\\G36_HalfLife\\RavenGT\\Scope\\v_9mmar.mdl",
+      "extracted\\179773\\G36_HalfLife\\RavenGT\\Silencer\\v_9mmar.mdl",
+      "extracted\\179773\\G36_HalfLife\\W's\\w_9mmARclip.mdl",
+      "extracted\\179773\\G36_HalfLife\\W's\\All\\w_9mmar.mdl",
+      "extracted\\179773\\G36_HalfLife\\W's\\Plain\\w_9mmar.mdl",
+      "extracted\\179773\\G36_HalfLife\\W's\\Scope\\w_9mmar.mdl",
+      "extracted\\179773\\G36_HalfLife\\W's\\Silencer\\w_9mmar.mdl"
+    ]
+  }
+}

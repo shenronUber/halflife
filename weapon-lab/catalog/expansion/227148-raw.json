@@ -1,0 +1,1091 @@
+{
+  "_idRow": 227148,
+  "_nStatus": "0",
+  "_bIsPrivate": false,
+  "_bAccessorIsSubmitter": false,
+  "_bIsTrashed": false,
+  "_bIsWithheld": false,
+  "_sName": "CS:GO Weapon Pack - Update #4",
+  "_sCommentsMode": "open",
+  "_tsDateModified": 1680639553,
+  "_tsDateAdded": 1604849099,
+  "_sProfileUrl": "https://gamebanana.com/mods/227148",
+  "_aPreviewMedia": {
+    "_aImages": [
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5fa3f77ac7d39.jpg",
+        "_sFile220": "220-90_5fa3f77ac7d39.jpg",
+        "_hFile220": 123,
+        "_wFile220": 220,
+        "_sFile530": "530-90_5fa3f77ac7d39.jpg",
+        "_hFile530": 298,
+        "_wFile530": 530,
+        "_sFile100": "100-90_5fa3f77ac7d39.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "AK-47",
+        "_sFile": "5fa80f9b54c75.jpg",
+        "_sFile100": "100-90_5fa80f9b54c75.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "AUG",
+        "_sFile": "61fd699726b85.jpg",
+        "_sFile100": "100-90_61fd699726b85.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "AWP",
+        "_sFile": "5fa5bff308780.jpg",
+        "_sFile100": "100-90_5fa5bff308780.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "C4",
+        "_sFile": "5fa3fc635b540.jpg",
+        "_sFile100": "100-90_5fa3fc635b540.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "CZ75-Auto",
+        "_sFile": "606fdb6887268.jpg",
+        "_sFile100": "100-90_606fdb6887268.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "Desert Eagle",
+        "_sFile": "5fa72bde83590.jpg",
+        "_sFile100": "100-90_5fa72bde83590.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "Dual Berettas",
+        "_sFile": "5fa3fc6fcb132.jpg",
+        "_sFile100": "100-90_5fa3fc6fcb132.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "FAMAS",
+        "_sFile": "5fa3fc71b9894.jpg",
+        "_sFile100": "100-90_5fa3fc71b9894.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "Five-SeveN",
+        "_sFile": "5fa3fc7c8d806.jpg",
+        "_sFile100": "100-90_5fa3fc7c8d806.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "Flashbang",
+        "_sFile": "5fa3fc7e4ea95.jpg",
+        "_sFile100": "100-90_5fa3fc7e4ea95.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "G3SG1",
+        "_sFile": "5fa3fc8972e83.jpg",
+        "_sFile100": "100-90_5fa3fc8972e83.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "Galil AR",
+        "_sFile": "5fa80fa9a6176.jpg",
+        "_sFile100": "100-90_5fa80fa9a6176.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "Glock-18",
+        "_sFile": "5fa3fc91413ae.jpg",
+        "_sFile100": "100-90_5fa3fc91413ae.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "HE Grenade",
+        "_sFile": "5fa3fc9315033.jpg",
+        "_sFile100": "100-90_5fa3fc9315033.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "Knife",
+        "_sFile": "5fa3fc9b2e5f0.jpg",
+        "_sFile100": "100-90_5fa3fc9b2e5f0.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "M4A1-S",
+        "_sFile": "5fa3fc9d03fea.jpg",
+        "_sFile100": "100-90_5fa3fc9d03fea.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "M4A4",
+        "_sFile": "601941c755699.jpg",
+        "_sFile100": "100-90_601941c755699.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "M249",
+        "_sFile": "5fa3fc9ec4a0e.jpg",
+        "_sFile100": "100-90_5fa3fc9ec4a0e.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "MAC-10",
+        "_sFile": "5fa3fcb4921fb.jpg",
+        "_sFile100": "100-90_5fa3fcb4921fb.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "MAG-7",
+        "_sFile": "60f6b50d3663c.jpg",
+        "_sFile100": "100-90_60f6b50d3663c.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "MP5-SD",
+        "_sFile": "5fa3fcb6c6564.jpg",
+        "_sFile100": "100-90_5fa3fcb6c6564.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "MP9",
+        "_sFile": "5fa3fcb88b8b3.jpg",
+        "_sFile100": "100-90_5fa3fcb88b8b3.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "Negev",
+        "_sFile": "606c5ce24618b.jpg",
+        "_sFile100": "100-90_606c5ce24618b.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "Nova",
+        "_sFile": "5fa3fcc464989.jpg",
+        "_sFile100": "100-90_5fa3fcc464989.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "P90",
+        "_sFile": "5fa3fcc5ab914.jpg",
+        "_sFile100": "100-90_5fa3fcc5ab914.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "P250",
+        "_sFile": "5fa3fccdd42fe.jpg",
+        "_sFile100": "100-90_5fa3fccdd42fe.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "SCAR-20",
+        "_sFile": "5fa3fccf810eb.jpg",
+        "_sFile100": "100-90_5fa3fccf810eb.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "SG 553",
+        "_sFile": "5fa3fcd0cb6be.jpg",
+        "_sFile100": "100-90_5fa3fcd0cb6be.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "Smoke Grenade",
+        "_sFile": "5fa3fcd287b14.jpg",
+        "_sFile100": "100-90_5fa3fcd287b14.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "SSG 08",
+        "_sFile": "5fa3fcd448a5e.jpg",
+        "_sFile100": "100-90_5fa3fcd448a5e.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "UMP-45",
+        "_sFile": "5fa3fcd61763d.jpg",
+        "_sFile100": "100-90_5fa3fcd61763d.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "USP-S",
+        "_sFile": "61fd69a6f3a2f.jpg",
+        "_sFile100": "100-90_61fd69a6f3a2f.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "XM1014",
+        "_sFile": "5fa3fcd9b28f1.jpg",
+        "_sFile100": "100-90_5fa3fcd9b28f1.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      }
+    ]
+  },
+  "_nUpdatesCount": 5,
+  "_bHasUpdates": true,
+  "_tsDateUpdated": 1633206175,
+  "_nAllTodosCount": 0,
+  "_bHasTodos": false,
+  "_nPostCount": 190,
+  "_aTags": [
+    {
+      "_sTitle": "Model",
+      "_sValue": "Custom"
+    },
+    {
+      "_sTitle": "Texture",
+      "_sValue": "Custom"
+    },
+    {
+      "_sTitle": "Animation",
+      "_sValue": "Custom"
+    },
+    {
+      "_sTitle": "Development State",
+      "_sValue": "Beta"
+    },
+    {
+      "_sTitle": "Aesthetic",
+      "_sValue": "Default"
+    }
+  ],
+  "_bCreatedBySubmitter": true,
+  "_bIsPorted": true,
+  "_nThanksCount": 12,
+  "_sInitialVisibility": "show",
+  "_sDownloadUrl": "https://gamebanana.com/mods/download/227148",
+  "_nDownloadCount": 34608,
+  "_aFiles": [
+    {
+      "_idRow": 825492,
+      "_sFile": "csgo_wp4_upd4_4dbd3.7z",
+      "_nFilesize": 69746111,
+      "_tsDateAdded": 1657038587,
+      "_nDownloadCount": 14049,
+      "_sDownloadUrl": "https://gamebanana.com/dl/825492",
+      "_sMd5Checksum": "ae0f8c6958882ff7c17cd958afd087bb",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_sDescription": "models + compile files"
+    },
+    {
+      "_idRow": 660410,
+      "_sFile": "csgo_wp4_fullsize_textures.7z",
+      "_nFilesize": 104893892,
+      "_tsDateAdded": 1632013308,
+      "_nDownloadCount": 4293,
+      "_sDownloadUrl": "https://gamebanana.com/dl/660410",
+      "_sMd5Checksum": "f389fc6734f5b833bc0feff9a3451c53",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_sDescription": "full-size textures"
+    },
+    {
+      "_idRow": 660412,
+      "_sFile": "csgo_wp4_blender_bake.7z",
+      "_nFilesize": 7259613,
+      "_tsDateAdded": 1632013607,
+      "_nDownloadCount": 1621,
+      "_sDownloadUrl": "https://gamebanana.com/dl/660412",
+      "_sMd5Checksum": "929800641d8c0002912797530a8bda62",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_sDescription": "blender files required for texture baking"
+    },
+    {
+      "_idRow": 826629,
+      "_sFile": "csgo_wp4_knives_textures_4d9c1.7z",
+      "_nFilesize": 62364980,
+      "_tsDateAdded": 1657173671,
+      "_nDownloadCount": 1866,
+      "_sDownloadUrl": "https://gamebanana.com/dl/826629",
+      "_sMd5Checksum": "4931a37780c9fb0bf297c0ab87e17f08",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_sDescription": "textures for the knives"
+    }
+  ],
+  "_nSubscriberCount": 22,
+  "_aStudio": {
+    "_idRow": 34724,
+    "_sName": "CS:GO Ports",
+    "_sProfileUrl": "https://gamebanana.com/studios/34724",
+    "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/55c200bfa3957.png",
+    "_nSubscriberCount": 775,
+    "_bAccessorIsSubscribed": false
+  },
+  "_aContributingStudios": [],
+  "_sLicense": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "_aLicenseChecklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "no": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod commercially"
+    ],
+    "ask": [
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ]
+  },
+  "_bGenerateTableOfContents": true,
+  "_sText": "The 4th update of CS:GO Weapon Pack is now available after a long time !<br><br>What does the package contains ?:<br><br><ol><li>Low Poly View Models (CT & T Hands) With HD Textures</li><li>Low Poly Player & World Models</li><li>Buy Menu Pictures</li><li class=\"SelectedElement\">Extra/Alternative Weapons</li><li class=\"SelectedElement\">Knives (with every skin)</li><li><del>Higher Sound Quality Compared To <a href=\"https://gamebanana.com/skins/157208\">Pack #3</a></del>\u00a0 (not the case anymore since 21st July 2021)</li><li>Compile Files</li></ol><br>For the best texture quality use \"gl_max_size 512\" (without quotes).<br><br><a href=\"https://gamebanana.com/mods/287090\">CS:GO StatTrak Module</a>\u00a0works with this Pack ! <a href=\"https://gamebanana.com/mods/288843\">CS:GO Sticker System</a> may have some issues.<br>",
+  "_bIsObsolete": false,
+  "_nLikeCount": 102,
+  "_nViewCount": 145490,
+  "_sVersion": "",
+  "_bAcceptsDonations": true,
+  "_bShowRipePromo": true,
+  "_aEmbeddables": {
+    "_sEmbeddableImageBaseUrl": "https://gamebanana.com/mods/embeddables/227148",
+    "_aVariants": [
+      "small",
+      "small_square",
+      "medium",
+      "medium_square",
+      "medium_square_minimal",
+      "large",
+      "large_minimal",
+      "large_square",
+      "large_minimal_square",
+      "thumbnail"
+    ]
+  },
+  "_aSubmitter": {
+    "_idRow": 1383394,
+    "_sName": "CS PRO",
+    "_sUserTitle": "Stay Wholesome!",
+    "_sHonoraryTitle": "The Floating Hero",
+    "_tsJoinDate": 1394542793,
+    "_sAvatarUrl": "https://images.gamebanana.com/img/av/61f304aee3912.gif",
+    "_sSigUrl": "https://images.gamebanana.com/img/sig/602b90a3bb8bc.png",
+    "_sProfileUrl": "https://gamebanana.com/members/1383394",
+    "_sPointsUrl": "https://gamebanana.com/members/logs/pointslog/1383394",
+    "_sMedalsUrl": "https://gamebanana.com/members/stats/medals/1383394",
+    "_bIsOnline": false,
+    "_sLocation": "<a href=\"https://gamebanana.com\">Home</a> > <a href=\"https://gamebanana.com/members\">Members</a> > <a href=\"https://gamebanana.com/members/1383394\">CS PRO</a> > <a href=\"/members/settings/1383394\">Control Center : CS PRO</a>",
+    "_sOnlineTitle": "Floatin' around",
+    "_sOfflineTitle": "No more",
+    "_nPoints": 75112,
+    "_nPointsRank": 315,
+    "_aNormalMedals": [
+      [
+        "skins1.png",
+        "Submitted 10 Skins",
+        "normal",
+        1214
+      ],
+      [
+        "skins2.png",
+        "Submitted 50 Skins",
+        "normal",
+        1215
+      ],
+      [
+        "m_pr_1.png",
+        "Reached 1,000 Points",
+        "normal",
+        3557
+      ],
+      [
+        "m_age_1.png",
+        "One month a member",
+        "normal",
+        3558
+      ],
+      [
+        "m_age_2.png",
+        "6 months a member",
+        "normal",
+        3559
+      ],
+      [
+        "m_age_3.png",
+        "1 year a member",
+        "normal",
+        3560
+      ],
+      [
+        "m_pr_2.png",
+        "Reached 2,500 Points",
+        "normal",
+        14667
+      ],
+      [
+        "thanks_recvd_1.png",
+        "Received thanks 5 times",
+        "normal",
+        15363
+      ],
+      [
+        "guis1.png",
+        "Submitted 10 GUIs",
+        "normal",
+        27700
+      ],
+      [
+        "thanks_sent_1.png",
+        "Thanked 5 submitters",
+        "normal",
+        27855
+      ],
+      [
+        "5687f6811375f.png",
+        "1-7 Entries! GameBanana\u2019s Christmas Giveaway 2015",
+        "normal",
+        34837
+      ],
+      [
+        "m_age_4.png",
+        "2 years a member",
+        "normal",
+        43555
+      ],
+      [
+        "returns_1.png",
+        "Returned 100 times",
+        "normal",
+        68928
+      ],
+      [
+        "features_1.png",
+        "Submission featured",
+        "normal",
+        71381
+      ],
+      [
+        "subscribers_1.png",
+        "Reached 10 subscribers",
+        "normal",
+        73041
+      ],
+      [
+        "57b8caab65f77.png",
+        "2015 Uberstyles Contest Entrant",
+        "normal",
+        76723
+      ],
+      [
+        "m_cl_1.png",
+        "Unlocked Treehouse VIP clearance",
+        "normal",
+        77005
+      ],
+      [
+        "57e7c492f3771.png",
+        "2016 Uberstyles Contest Entrant",
+        "normal",
+        84850
+      ],
+      [
+        "tools1.png",
+        "Submitted 1 Tool",
+        "normal",
+        88501
+      ],
+      [
+        "threads1.png",
+        "Submitted 20 Threads",
+        "normal",
+        96409
+      ],
+      [
+        "58659a6e57356.png",
+        "1-7 Entries! GameBanana\u2019s Christmas Giveaway 2016",
+        "normal",
+        103523
+      ],
+      [
+        "studio_leader.gif",
+        "Became a Studio Leader",
+        "normal",
+        104568
+      ],
+      [
+        "wips1.png",
+        "Submitted 10 WiPs",
+        "normal",
+        107462
+      ],
+      [
+        "tutorials1.png",
+        "Submitted 5 Tutorials",
+        "normal",
+        116983
+      ],
+      [
+        "m_pr_3.png",
+        "Reached 7,500 Points",
+        "normal",
+        146600
+      ],
+      [
+        "m_ef_1.png",
+        "1 post awarded Exemplary Feedback",
+        "normal",
+        156102
+      ],
+      [
+        "m_age_5.png",
+        "4 years a member",
+        "normal",
+        201769
+      ],
+      [
+        "monthly_award.gif",
+        "GUIer of the Month, March 2018",
+        "normal",
+        204039
+      ],
+      [
+        "monthly_award.gif",
+        "Effecter of the Month, October 2018",
+        "normal",
+        226418
+      ],
+      [
+        "m_pr_4.png",
+        "Reached 25,000 Points",
+        "normal",
+        231565
+      ],
+      [
+        "monthly_award.gif",
+        "GUIer of the Month, June 2019",
+        "normal",
+        254207
+      ],
+      [
+        "maps1.png",
+        "Submitted 5 Maps",
+        "normal",
+        274264
+      ],
+      [
+        "m_ef_2.png",
+        "5 posts awarded Exemplary Feedback",
+        "normal",
+        291049
+      ],
+      [
+        "monthly_award.gif",
+        "Skinner of the Month, April 2020",
+        "normal",
+        294377
+      ],
+      [
+        "m_ef_3.png",
+        "10 posts awarded Exemplary Feedback",
+        "normal",
+        296949
+      ],
+      [
+        "mods1.png",
+        "Submitted 5 Mods",
+        "normal",
+        386519
+      ],
+      [
+        "mods2.png",
+        "Submitted 10 Mods",
+        "normal",
+        386520
+      ]
+    ],
+    "_aRareMedals": [
+      [
+        "returns_2.png",
+        "Returned 1000 times",
+        "rare",
+        68929
+      ],
+      [
+        "features_2.png",
+        "10 submissions featured",
+        "rare",
+        71382
+      ],
+      [
+        "subscribers_2.png",
+        "Reached 50 subscribers",
+        "rare",
+        73042
+      ],
+      [
+        "thanks_recvd_2.png",
+        "Received thanks 50 times",
+        "rare",
+        87373
+      ],
+      [
+        "game_moderator.png",
+        "Achieved Game Manager clearance",
+        "rare",
+        115697
+      ],
+      [
+        "thanks_sent_2.png",
+        "Thanked 50 submitters",
+        "rare",
+        219517
+      ],
+      [
+        "m_age_6.png",
+        "6 years a member",
+        "rare",
+        284497
+      ],
+      [
+        "tools2.png",
+        "Submitted 5 Tools",
+        "rare",
+        291882
+      ],
+      [
+        "m_ef_4.png",
+        "25 posts awarded Exemplary Feedback",
+        "rare",
+        305471
+      ],
+      [
+        "mods3.png",
+        "Submitted 15 Mods",
+        "rare",
+        386521
+      ],
+      [
+        "mods4.png",
+        "Submitted 20 Mods",
+        "rare",
+        386522
+      ],
+      [
+        "mods5.png",
+        "Submitted 50 Mods",
+        "rare",
+        386523
+      ],
+      [
+        "mods6.png",
+        "Submitted 100 Mods",
+        "rare",
+        386524
+      ],
+      [
+        "m_ef_5.png",
+        "50 posts awarded Exemplary Feedback",
+        "rare",
+        456027
+      ],
+      [
+        "m_pr_5.png",
+        "Reached 75,000 Points",
+        "rare",
+        587213
+      ]
+    ],
+    "_aLegendaryMedals": [
+      [
+        "skins3.png",
+        "Submitted 100 Skins",
+        "legendary",
+        86298
+      ],
+      [
+        "features_3.png",
+        "30 submissions featured",
+        "legendary",
+        103807
+      ],
+      [
+        "subscribers_3.png",
+        "Reached 100 subscribers",
+        "legendary",
+        152658
+      ],
+      [
+        "2017_top_contributor.png",
+        "2017 Top Contributor",
+        "legendary",
+        182175
+      ],
+      [
+        "returns_3.png",
+        "Returned 5000 times",
+        "legendary",
+        255746
+      ],
+      [
+        "2019_top_contributor.png",
+        "2019 Top Contributor",
+        "legendary",
+        274985
+      ],
+      [
+        "thanks_sent_3.png",
+        "Thanked 500 submitters",
+        "legendary",
+        293253
+      ],
+      [
+        "thanks_recvd_3.png",
+        "Received thanks 500 times",
+        "legendary",
+        294658
+      ],
+      [
+        "m_age_7.png",
+        "10 years a member",
+        "legendary",
+        1759441
+      ]
+    ],
+    "_bHasRipe": false,
+    "_nBuddyCount": 322,
+    "_nSubscriberCount": 503,
+    "_aDonationMethods": [
+      {
+        "_sTitle": "STEAM Wishlist",
+        "_sValue": "http://steamcommunity.com/id/cs-pro1/wishlist",
+        "_sInputType": "text",
+        "_sInputPlaceholder": "Wishlist URL...",
+        "_sIconClasses": "MiscIcon SteamWishlistIcon",
+        "_aValidator": {
+          "_regexValidPattern": "^https?\\:\\/\\/steamcommunity\\.com\\/id\\/.+\\/wishlist$",
+          "_sWarningMessage": "URL looks incorrect - it should look like: http://steamcommunity.com/id/USERNAME/wishlist"
+        },
+        "_sValueTemplate": "<a target=\"_blank\" href=\"%VALUE%\">STEAM Wishlist</a>",
+        "_bIsUrl": true,
+        "_sFormattedValue": "<a target=\"_blank\" href=\"http://steamcommunity.com/id/cs-pro1/wishlist\">STEAM Wishlist</a>"
+      }
+    ],
+    "_bAccessorIsBuddy": false,
+    "_bBuddyRequestExistsWithAccessor": false,
+    "_bAccessorIsSubscribed": false,
+    "_sUpicUrl": "https://images.gamebanana.com/img/upic/602b8ff0548f5.png",
+    "_aBio": [
+      {
+        "_sTitle": "Gamer type",
+        "_sValue": "Casual"
+      },
+      {
+        "_sTitle": "Favorite Game Genre",
+        "_sValue": "First Person Shooters"
+      },
+      {
+        "_sTitle": "Favorite CS Map",
+        "_sValue": "cs_assault - de_dust2 - de_aztec"
+      },
+      {
+        "_sTitle": "Favorite CS Weapon",
+        "_sValue": "M4A1 - AWP"
+      },
+      {
+        "_sTitle": "Favorite Game",
+        "_sValue": "CS - Half life - GTA SA - NFS U/U2/MW"
+      },
+      {
+        "_sTitle": "First Game ever played",
+        "_sValue": "Super Mario"
+      },
+      {
+        "_sTitle": "Favorite Gameplay Style",
+        "_sValue": "Assault"
+      },
+      {
+        "_sTitle": "Kit Kat or Snickers",
+        "_sValue": "Kit Kat"
+      },
+      {
+        "_sTitle": "FPS Hero",
+        "_sValue": "Gordon Freeman"
+      },
+      {
+        "_sTitle": "Favorite Sport",
+        "_sValue": "Football"
+      },
+      {
+        "_sTitle": "Favorite TV Series",
+        "_sValue": "Boku no Hero Academia"
+      },
+      {
+        "_sTitle": "Favorite Character",
+        "_sValue": "Ochaco Uraraka"
+      },
+      {
+        "_sTitle": "Personality",
+        "_sValue": "Cheerful"
+      },
+      {
+        "_sTitle": "Least favorite Cake",
+        "_sValue": "Anything with 'Lotus' flavour"
+      }
+    ],
+    "_aDefaultLicenseChecklist": [
+      "yes",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "no",
+      "ask"
+    ],
+    "_sDefaultLicense": "",
+    "_sHdAvatarUrl": "https://images.gamebanana.com/img/av/64148bb092af6.png"
+  },
+  "_bFollowLinks": true,
+  "_aGame": {
+    "_idRow": 4254,
+    "_sName": "Counter-Strike 1.6",
+    "_sAbbreviation": "CS1.6",
+    "_sProfileUrl": "https://gamebanana.com/games/4254",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/games/5ea788a63f636.png",
+    "_sBannerUrl": "https://images.gamebanana.com/img/ico/games/5ea788a63f636.png",
+    "_nSubscriberCount": 6185,
+    "_bHasSubmissionQueue": false,
+    "_bAccessorIsSubscribed": false
+  },
+  "_aCategory": {
+    "_idRow": 8352,
+    "_sName": "Weapon Packs",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/8352",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/4e97cb520990d.png",
+    "_bIsObsolete": false
+  },
+  "_aSuperCategory": {
+    "_idRow": 8322,
+    "_sName": "Packs",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/8322",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/55df870440e6e.png"
+  },
+  "_aAlternateFileSources": [
+    {
+      "url": "https://www.moddb.com/games/counter-strike/addons/csgo-weapons-pack-update-4",
+      "description": "moddb"
+    }
+  ],
+  "_aCredits": [
+    {
+      "_sGroupName": "Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Models & Textures & Animations & Sounds",
+          "_sName": "Valve"
+        },
+        {
+          "_sRole": "Compile",
+          "_idRow": 1443108,
+          "_sName": "FunnkyHD",
+          "_sProfileUrl": "https://gamebanana.com/members/1443108",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/63fbb5ff82910.png",
+          "_bIsOnline": false,
+          "_aAffiliatedStudio": {
+            "_sProfileUrl": "https://gamebanana.com/studios/34724",
+            "_sName": "CS:GO Ports",
+            "_sFlagUrl": "https://images.gamebanana.com/img/flags/studios/5bf8437056281.png",
+            "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/55c200bfa3957.png"
+          }
+        },
+        {
+          "_sRole": "Hand Rig",
+          "_idRow": 1480965,
+          "_sName": "ViperL33T",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/5ac7b9bcbcf30.png",
+          "_sProfileUrl": "https://gamebanana.com/members/1480965",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/5ac7b6918d7c6.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Shield Port & Player and World Models & Fixes",
+          "_idRow": 1383394,
+          "_sName": "CS PRO",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/602b8ff0548f5.png",
+          "_sProfileUrl": "https://gamebanana.com/members/1383394",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/61f304aee3912.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Video Preview",
+          "_idRow": 1654452,
+          "_sName": "ZONA Showcase",
+          "_sProfileUrl": "https://gamebanana.com/members/1654452",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/5de328ef14a58.png",
+          "_bIsOnline": false,
+          "_aAffiliatedStudio": {
+            "_sProfileUrl": "https://gamebanana.com/studios/34724",
+            "_sName": "CS:GO Ports",
+            "_sFlagUrl": "https://images.gamebanana.com/img/flags/studios/5bf8437056281.png",
+            "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/55c200bfa3957.png"
+          }
+        },
+        {
+          "_sRole": "Shield Animations",
+          "_idRow": 1522427,
+          "_sName": "MTB-Animations",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/6209ea2691ebf.png",
+          "_sProfileUrl": "https://gamebanana.com/members/1522427",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/5d57c1018cb7f.gif",
+          "_bIsOnline": false
+        }
+      ]
+    },
+    {
+      "_sGroupName": "Special Thanks",
+      "_aAuthors": [
+        {
+          "_sRole": "Testing",
+          "_idRow": 1504427,
+          "_sName": "guls",
+          "_sProfileUrl": "https://gamebanana.com/members/1504427",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/banned.gif",
+          "_bIsOnline": false
+        }
+      ]
+    }
+  ],
+  "_aEmbeddedMedia": [
+    "https://www.youtube.com/watch?v=vOzyRcNWwUE"
+  ],
+  "_bAdvancedRequirementsExist": false,
+  "_aRequirements": [
+    [
+      "CS:GO Weapon Inspect",
+      "https://gamebanana.com/gamefiles/5976"
+    ],
+    [
+      "CS:GO Arm Switcher",
+      "https://gamebanana.com/gamefiles/5097"
+    ]
+  ]
+}

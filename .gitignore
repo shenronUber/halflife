@@ -1,0 +1,11 @@
+# Local outputs and external runtime resources
+**/__pycache__/
+*.py[cod]
+.vs/
+.env
+.env.*
+!.env.example
+# Derived exports; source atlases and prompts are versioned.
+/vector-fields/assets/r01/variants/*/tiles/
+# Local validation/media are copied selectively into docs when relevant.
+*.tmp

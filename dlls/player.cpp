@@ -36,6 +36,8 @@
 #include "game.h"
 #include "pm_shared.h"
 #include "hltv.h"
+#include "vf_equipment.h"
+#include "vf_skins.h"
 
 // #define DUCKFIX
 
@@ -73,6 +75,13 @@ extern CGraph	WorldGraph;
 // Global Savedata for player
 TYPEDESCRIPTION	CBasePlayer::m_playerSaveData[] = 
 {
+	DEFINE_ARRAY( CBasePlayer, m_vfItems, FIELD_INTEGER, vf::SlotCount ),
+	DEFINE_FIELD( CBasePlayer, m_vfCatalogHash, FIELD_INTEGER ),
+	DEFINE_ARRAY( CBasePlayer, m_vfSkins, FIELD_INTEGER, 5 ),
+	DEFINE_FIELD( CBasePlayer, m_vfSkinHash, FIELD_INTEGER ),
+	DEFINE_FIELD( CBasePlayer, m_vfAppearanceMode, FIELD_INTEGER ),
+	DEFINE_ARRAY( CBasePlayer, m_vfWeaponStyles, FIELD_INTEGER, vf::WeaponStyleSlots ),
+	DEFINE_FIELD( CBasePlayer, m_vfWeaponStyleHash, FIELD_INTEGER ),
 	DEFINE_FIELD( CBasePlayer, m_flFlashLightTime, FIELD_TIME ),
 	DEFINE_FIELD( CBasePlayer, m_iFlashBattery, FIELD_INTEGER ),
 
@@ -194,6 +203,7 @@ int gmsgStatusValue = 0;
 
 void LinkUserMessages( void )
 {
+	VF_RegisterMessages();
 	// Already taken care of?
 	if ( gmsgSelAmmo )
 	{
@@ -4124,6 +4134,7 @@ void CBasePlayer :: UpdateClientData( void )
 		FireTargets( "game_playerspawn", this, this, USE_TOGGLE, 0 );
 
 		InitStatusBar();
+        VF_SyncPlayer(this,true);
 
 		// Update initial flashlight state
 		MESSAGE_BEGIN( MSG_ONE, gmsgFlashlight, NULL, pev );

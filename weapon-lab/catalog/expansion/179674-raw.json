@@ -1,0 +1,546 @@
+{
+  "_idRow": 179674,
+  "_nStatus": "0",
+  "_bIsPrivate": false,
+  "_bAccessorIsSubmitter": false,
+  "_bIsTrashed": false,
+  "_bIsWithheld": false,
+  "_sName": "Custom HK416",
+  "_sCommentsMode": "open",
+  "_tsDateModified": 1619185066,
+  "_tsDateAdded": 1609936603,
+  "_sProfileUrl": "https://gamebanana.com/mods/179674",
+  "_aPreviewMedia": {
+    "_aImages": [
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5ff5ade07be49.jpg",
+        "_sFile530": "530-90_5ff5ade07be49.jpg",
+        "_sFile100": "100-90_5ff5ade07be49.jpg",
+        "_sFile220": "220-90_5ff5ade07be49.jpg",
+        "_hFile220": 123,
+        "_wFile220": 220,
+        "_hFile530": 298,
+        "_wFile530": 530,
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5ff5a9faacb60.jpg",
+        "_sFile100": "100-90_5ff5a9faacb60.jpg",
+        "_hFile100": 75,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5ff5a9fad6fd6.jpg",
+        "_sFile100": "100-90_5ff5a9fad6fd6.jpg",
+        "_hFile100": 75,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5ff5a9fa3bc88.jpg",
+        "_sFile100": "100-90_5ff5a9fa3bc88.jpg",
+        "_hFile100": 75,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5ff5a9fac892d.jpg",
+        "_sFile100": "100-90_5ff5a9fac892d.jpg",
+        "_hFile100": 75,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5ff5a9faaab2e.jpg",
+        "_sFile100": "100-90_5ff5a9faaab2e.jpg",
+        "_hFile100": 75,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5ff5aa14c4dd0.jpg",
+        "_sFile100": "100-90_5ff5aa14c4dd0.jpg",
+        "_hFile100": 75,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5ff5aa14ce579.jpg",
+        "_sFile100": "100-90_5ff5aa14ce579.jpg",
+        "_hFile100": 75,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5ff5aa14eaf0a.jpg",
+        "_sFile100": "100-90_5ff5aa14eaf0a.jpg",
+        "_hFile100": 75,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5ff5aa150786f.jpg",
+        "_sFile100": "100-90_5ff5aa150786f.jpg",
+        "_hFile100": 75,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5ff5aa14e71c2.jpg",
+        "_sFile100": "100-90_5ff5aa14e71c2.jpg",
+        "_hFile100": 75,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5ff5aeb9ab739.jpg",
+        "_sFile100": "100-90_5ff5aeb9ab739.jpg",
+        "_hFile100": 75,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5ff5aeba058e0.jpg",
+        "_sFile100": "100-90_5ff5aeba058e0.jpg",
+        "_hFile100": 75,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5ff5aeb9a005f.jpg",
+        "_sFile100": "100-90_5ff5aeb9a005f.jpg",
+        "_hFile100": 75,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "6082cd97b90d7.jpg",
+        "_sFile100": "100-90_6082cd97b90d7.jpg",
+        "_hFile100": 75,
+        "_wFile100": 100
+      }
+    ]
+  },
+  "_nUpdatesCount": 1,
+  "_bHasUpdates": true,
+  "_tsDateUpdated": 1619185106,
+  "_nAllTodosCount": 0,
+  "_bHasTodos": false,
+  "_nPostCount": 8,
+  "_aTags": [
+    {
+      "_sTitle": "Model",
+      "_sValue": "Custom"
+    },
+    {
+      "_sTitle": "Texture",
+      "_sValue": "Custom"
+    },
+    {
+      "_sTitle": "Animation",
+      "_sValue": "Default"
+    },
+    {
+      "_sTitle": "Development State",
+      "_sValue": "Final"
+    }
+  ],
+  "_bCreatedBySubmitter": true,
+  "_bIsPorted": false,
+  "_nThanksCount": 0,
+  "_sInitialVisibility": "show",
+  "_sDownloadUrl": "https://gamebanana.com/mods/download/179674",
+  "_nDownloadCount": 2234,
+  "_aFiles": [
+    {
+      "_idRow": 557110,
+      "_sFile": "hk416_e5129_960ec.zip",
+      "_nFilesize": 4004469,
+      "_tsDateAdded": 1619185058,
+      "_nDownloadCount": 1644,
+      "_sDownloadUrl": "https://gamebanana.com/dl/557110",
+      "_sMd5Checksum": "26e11f9adecd054e41b016b0259b46a0",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,179674,557110"
+        }
+      ]
+    }
+  ],
+  "_nSubscriberCount": 0,
+  "_aContributingStudios": [],
+  "_sLicense": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "_aLicenseChecklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "_bGenerateTableOfContents": false,
+  "_sText": "A custom HK416 w/m203 for HL!<br><br>Comes with world models (w_models), custom shoot sounds and for all official expansions (Blue shift and Oppossing Force).<br><br>Enjoy!<br><br>Check out my other HL mods:<br><br><img src=\"https://screenshots.gamebanana.com/img/ss/srends/5ff3496523823.jpg\" class=\"SelectedElement\" width=\"40%\"><br><a href=\"https://gamebanana.com/skins/184903\">Black Mesa HQ M61 Grenade on Bobito Pawner\u00b4s Animations</a>",
+  "_bIsObsolete": false,
+  "_nLikeCount": 23,
+  "_nViewCount": 20307,
+  "_sVersion": "",
+  "_bAcceptsDonations": false,
+  "_bShowRipePromo": true,
+  "_aEmbeddables": {
+    "_sEmbeddableImageBaseUrl": "https://gamebanana.com/mods/embeddables/179674",
+    "_aVariants": [
+      "small",
+      "small_square",
+      "medium",
+      "medium_square",
+      "medium_square_minimal",
+      "large",
+      "large_minimal",
+      "large_square",
+      "large_minimal_square",
+      "thumbnail"
+    ]
+  },
+  "_aSubmitter": {
+    "_idRow": 1409928,
+    "_sName": "AVM",
+    "_sUserTitle": "FUBAR",
+    "_sHonoraryTitle": "",
+    "_tsJoinDate": 1417980718,
+    "_sAvatarUrl": "https://images.gamebanana.com/img/av/6a9718f88a0cc.gif",
+    "_sSigUrl": "",
+    "_sProfileUrl": "https://gamebanana.com/members/1409928",
+    "_sPointsUrl": "https://gamebanana.com/members/logs/pointslog/1409928",
+    "_sMedalsUrl": "https://gamebanana.com/members/stats/medals/1409928",
+    "_bIsOnline": false,
+    "_sLocation": "<a href=\"https://gamebanana.com\">Home</a> > <a href=\"https://gamebanana.com/members\">Members</a> > <a href=\"https://gamebanana.com/members/1409928\">AVM</a>",
+    "_sOnlineTitle": "Hello :)",
+    "_sOfflineTitle": "(: olleH",
+    "_nPoints": 43670,
+    "_nPointsRank": 577,
+    "_aNormalMedals": [
+      [
+        "m_age_1.png",
+        "One month a member",
+        "normal",
+        4765
+      ],
+      [
+        "m_age_2.png",
+        "6 months a member",
+        "normal",
+        4766
+      ],
+      [
+        "skins1.png",
+        "Submitted 10 Skins",
+        "normal",
+        27575
+      ],
+      [
+        "m_pr_1.png",
+        "Reached 1,000 Points",
+        "normal",
+        27952
+      ],
+      [
+        "m_age_3.png",
+        "1 year a member",
+        "normal",
+        33534
+      ],
+      [
+        "m_pr_2.png",
+        "Reached 2,500 Points",
+        "normal",
+        37285
+      ],
+      [
+        "returns_1.png",
+        "Returned 100 times",
+        "normal",
+        70296
+      ],
+      [
+        "subscribers_1.png",
+        "Reached 10 subscribers",
+        "normal",
+        78133
+      ],
+      [
+        "features_1.png",
+        "Submission featured",
+        "normal",
+        81051
+      ],
+      [
+        "thanks_recvd_1.png",
+        "Received thanks 5 times",
+        "normal",
+        81220
+      ],
+      [
+        "m_age_4.png",
+        "2 years a member",
+        "normal",
+        99326
+      ],
+      [
+        "m_age_5.png",
+        "4 years a member",
+        "normal",
+        292003
+      ],
+      [
+        "mods1.png",
+        "Submitted 5 Mods",
+        "normal",
+        440969
+      ],
+      [
+        "mods2.png",
+        "Submitted 10 Mods",
+        "normal",
+        440970
+      ],
+      [
+        "m_pr_3.png",
+        "Reached 7,500 Points",
+        "normal",
+        600021
+      ],
+      [
+        "m_pr_4.png",
+        "Reached 25,000 Points",
+        "normal",
+        2782648
+      ],
+      [
+        "thanks_sent_1.png",
+        "Thanked 5 submitters",
+        "normal",
+        3695755
+      ]
+    ],
+    "_aRareMedals": [
+      [
+        "features_2.png",
+        "10 submissions featured",
+        "rare",
+        81052
+      ],
+      [
+        "returns_2.png",
+        "Returned 1000 times",
+        "rare",
+        135478
+      ],
+      [
+        "subscribers_2.png",
+        "Reached 50 subscribers",
+        "rare",
+        260424
+      ],
+      [
+        "m_age_6.png",
+        "6 years a member",
+        "rare",
+        335798
+      ],
+      [
+        "mods3.png",
+        "Submitted 15 Mods",
+        "rare",
+        440971
+      ],
+      [
+        "mods4.png",
+        "Submitted 20 Mods",
+        "rare",
+        440972
+      ],
+      [
+        "thanks_recvd_2.png",
+        "Received thanks 50 times",
+        "rare",
+        2664626
+      ]
+    ],
+    "_aLegendaryMedals": [
+      [
+        "m_age_7.png",
+        "10 years a member",
+        "legendary",
+        2524098
+      ]
+    ],
+    "_bHasRipe": false,
+    "_nBuddyCount": 45,
+    "_nSubscriberCount": 98,
+    "_aDonationMethods": [],
+    "_bAccessorIsBuddy": false,
+    "_bBuddyRequestExistsWithAccessor": false,
+    "_bAccessorIsSubscribed": false,
+    "_sUpicUrl": "https://images.gamebanana.com/img/upic/6a971e199de06.png",
+    "_aDefaultLicenseChecklist": [
+      "yes",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "no",
+      "ask"
+    ],
+    "_sDefaultLicense": ""
+  },
+  "_bFollowLinks": true,
+  "_aGame": {
+    "_idRow": 34,
+    "_sName": "Half-Life",
+    "_sAbbreviation": "HL",
+    "_sProfileUrl": "https://gamebanana.com/games/34",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/games/half-life.png",
+    "_sBannerUrl": "https://images.gamebanana.com/img/ico/games/half-life.png",
+    "_nSubscriberCount": 4637,
+    "_bHasSubmissionQueue": false,
+    "_bAccessorIsSubscribed": false
+  },
+  "_aCategory": {
+    "_idRow": 7736,
+    "_sName": "MP5 / M4",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/7736",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/560c876aaaf25.png",
+    "_bIsObsolete": false
+  },
+  "_aSuperCategory": {
+    "_idRow": 7735,
+    "_sName": "Weapons",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/7735",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/5ea2fdf1794ff.png"
+  },
+  "_aCredits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Hk416 model/texture, m203 model/texture",
+          "_idRow": "614054",
+          "_sName": "Twinke Masta Johan Santana",
+          "_sProfileUrl": "https://gamebanana.com/members/614054",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/614054.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Hk416 Texture",
+          "_sName": "AcidSnake"
+        },
+        {
+          "_sRole": "Sounds",
+          "_idRow": "597879",
+          "_sName": "Ghost597879",
+          "_sProfileUrl": "https://gamebanana.com/members/597879",
+          "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Sight model/texture",
+          "_sName": "Snark"
+        },
+        {
+          "_sRole": "Compile, lens texture",
+          "_idRow": "1409928",
+          "_sName": "AVM",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/6a971e199de06.png",
+          "_sProfileUrl": "https://gamebanana.com/members/1409928",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/6a9718f88a0cc.gif",
+          "_bIsOnline": false
+        }
+      ]
+    }
+  ]
+}

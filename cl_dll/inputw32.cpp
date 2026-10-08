@@ -1,3 +1,5 @@
+#include "vf_ui.h"
+#include "vf_character.h"
 //========= Copyright © 1996-2002, Valve LLC, All rights reserved. ============
 //
 // Purpose: 
@@ -560,6 +562,14 @@ void IN_MouseMove ( float frametime, usercmd_t *cmd)
 		
 		mx_accum = 0;
 		my_accum = 0;
+        // Workshop input uses unscaled mouse motion. It never reaches aim or movement.
+        if (VF_CharacterOpen()) {
+            vfui::Move((float)mx,(float)my);
+            old_mouse_x=old_mouse_y=0;
+            IN_ResetMouse();
+            return;
+        }
+
 
 		if (m_filter && m_filter->value)
 		{

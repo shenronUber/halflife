@@ -1,0 +1,418 @@
+{
+  "_idRow": 210399,
+  "_nStatus": "0",
+  "_bIsPrivate": false,
+  "_bAccessorIsSubmitter": false,
+  "_bIsTrashed": false,
+  "_bIsWithheld": false,
+  "_sName": "Aimable S.I.R.S. M4",
+  "_sFeedbackInstructions": "This is my 2nd set of animations I've released. I'm a nub, so just keep that in mind when rating. Thanks, and enjoy!",
+  "_sCommentsMode": "open",
+  "_tsDateModified": 1323638305,
+  "_tsDateAdded": 1218858489,
+  "_sProfileUrl": "https://gamebanana.com/mods/210399",
+  "_aPreviewMedia": {
+    "_aImages": [
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "667_36788.jpg",
+        "_sFile220": "220-90_667_36788.jpg",
+        "_sFile530": "530-90_667_36788.jpg",
+        "_sFile100": "100-90_667_36788.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "526_68195.jpg",
+        "_sFile100": "100-90_526_68195.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "374_68193.jpg",
+        "_sFile100": "100-90_374_68193.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "992_68194.jpg",
+        "_sFile100": "100-90_992_68194.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "58c01351bb267.jpg",
+        "_sFile100": "100-90_58c01351bb267.jpg"
+      }
+    ]
+  },
+  "_nUpdatesCount": 0,
+  "_bHasUpdates": false,
+  "_nAllTodosCount": 0,
+  "_bHasTodos": false,
+  "_nPostCount": 344,
+  "_aTags": [
+    {
+      "_sValue": "aimable"
+    },
+    {
+      "_sValue": "sirs"
+    },
+    {
+      "_sValue": "ris"
+    },
+    {
+      "_sValue": "m4"
+    },
+    {
+      "_sTitle": "Model",
+      "_sValue": "Custom Model"
+    },
+    {
+      "_sTitle": "Texture",
+      "_sValue": "Recolor"
+    }
+  ],
+  "_bCreatedBySubmitter": true,
+  "_bIsPorted": false,
+  "_nThanksCount": 0,
+  "_sInitialVisibility": "show",
+  "_sDownloadUrl": "https://gamebanana.com/mods/download/210399",
+  "_nDownloadCount": 49994,
+  "_aFiles": [
+    {
+      "_idRow": 255993,
+      "_sFile": "aimable_m4_fixed.zip",
+      "_nFilesize": 9301237,
+      "_tsDateAdded": 1218858489,
+      "_nDownloadCount": 49996,
+      "_sDownloadUrl": "https://gamebanana.com/dl/255993",
+      "_sMd5Checksum": "f2ee3dc379f78b20afd2247c53c3b9aa",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,210399,255993"
+        }
+      ]
+    }
+  ],
+  "_nSubscriberCount": 0,
+  "_aContributingStudios": [],
+  "_sLicense": "Feel free to edit, modify, hack, reanimate, recompile, reorigin, redistribute, or do anything to this skin in any way. All that I ask is that if you do release these animations elsewhere, modified or not, please at least credit me as the original creator.",
+  "_aLicenseChecklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "_sDescription": "A new M4 model that aims down the sights instead of silencing!",
+  "_bGenerateTableOfContents": false,
+  "_sText": "<b class=red><blink><font size=5>NO, I WILL NOT MAKE THIS WITH AN EOTECH SIGHT. STOP ASKING.</blink></font></b>\r\n\r\n<b class=blue><font size=2>If you're looking for a fantastic weapon replacement on these anims but with a holosight instead then I highly recommend <a href=\"http://www.fpsbanana.com/skins/79710\">this</a> release. Top-notch work, and very functional in-game as well. Check it out!</b></font>\r\n\r\n<u><B>NOTES:</B></u>\r\nI know the aimer at the end of the sight when you look down the gun is higher than normal, but it's still on the center of the screen. The reason for that is that if it were how it normally looks then you can barely see anything through it and it simply becomes impractical to use.\r\n\r\nAlso, this does not actually make the gun more accurate or have less recoil. It just looks cool.\r\n\r\n<u><B>CREDITS</B></u><br>\r\n<b>Model</b>: TheLama<br>\r\n<b>Skin</b>: !NC!Furious<br>\r\n<b>Skin Edits</b>: -WildBill-<br>\r\n<b>Animations</b>: -WildBill-<br>\r\n<b>Compile</b>: BadPrankster<br>\r\n<b>Sounds</b>: Vunsunta, & various others<br>\r\n<b>World Models</b>: BadPrankster<br>\r\n<b>Screenies/Render</b>: -WildBill-<br>\r\n<b>Buy Menu Pic</b>: -WildBill-<br>\r\nAnd for all the credit nazis: yes, the hands were made by Valve...\r\n\r\n*Special thanks to TheStealthyOne and Markworth for the sound fix!*\r\n\r\n<u><B>FEATURES</B></u><br>\r\n* Extremely detailed and accurate R.I.S. M4 model!<br>\r\n* High-resolution textures <i>and</i> normal maps!<br>\r\n* Brand new set of animations exclusively for this gun!<br>\r\n* Quality custom sounds for a powerful in-game feel!\r\n\r\n<u><B>VIDEO</B></u><br>\r\n<iframe width=\"530\" height=\"315\" src=\"http://www.youtube.com/embed/SMdGsAyh3QA?rel=0&version=3&autohide=1&showinfo=0&color=blue\" frameborder=\"0\" allowfullscreen></iframe>\r\n\r\n<u><B>MISC.</B></u>\r\nWell, I came up with this idea over the summer to have an M4 that instead of silencing it like normal, you actually aimed it down the sights like you do for a real gun. So I began work on it and right away people were like \"you dumb nub this has already been done before!\" Apparently Mullet did a set of animation that aimed down the sights as well, and I didn't know. But I was already half way through animating it and I liked how it was turning out so I decided to keep at it and finish it up. Now, I'm definitely not Mullet, nor am I even close, but I think these actually turned out kind of nice. Let me know what you think!\r\n\r\nAnd again, this is my 2nd release of animations. I'm still new to it all so give me a break. :P\r\n\r\nAs always constructive criticism is <b>greatly</b> appreciated! If you've got any suggestions for improvements, or if you'd like to see a new set of animations, just let me know! :D\r\n\r\nFeel free to edit, modify, hack, reanimate, recompile, reorigin, redistribute, or do anything to this skin in any way. All that I ask is that if you do release these animations elsewhere, modified or not, please at least credit me as the original creator. Thanks again, and enjoy!\r\n\r\n<b>Show your support! Add to your favorites!</b>",
+  "_bIsObsolete": false,
+  "_nLikeCount": 32,
+  "_nViewCount": 216899,
+  "_sVersion": "",
+  "_bAcceptsDonations": false,
+  "_bShowRipePromo": true,
+  "_aEmbeddables": {
+    "_sEmbeddableImageBaseUrl": "https://gamebanana.com/mods/embeddables/210399",
+    "_aVariants": [
+      "small",
+      "small_square",
+      "medium",
+      "medium_square",
+      "medium_square_minimal",
+      "large",
+      "large_minimal",
+      "large_square",
+      "large_minimal_square",
+      "thumbnail"
+    ]
+  },
+  "_aSubmitter": {
+    "_idRow": 71287,
+    "_sName": "-WildBill-",
+    "_sUserTitle": "Want realism? Go play outside.",
+    "_sHonoraryTitle": "",
+    "_tsJoinDate": 1131412123,
+    "_sAvatarUrl": "https://images.gamebanana.com/img/av/71287.png",
+    "_sSigUrl": "",
+    "_sProfileUrl": "https://gamebanana.com/members/71287",
+    "_sPointsUrl": "https://gamebanana.com/members/logs/pointslog/71287",
+    "_sMedalsUrl": "https://gamebanana.com/members/stats/medals/71287",
+    "_bIsOnline": false,
+    "_sLocation": "<a href=\"https://gamebanana.com\">Home</a> > <a href=\"https://gamebanana.com/studios\">Studios</a> > <a href=\"https://gamebanana.com/studios/1109\">586 Studios</a>",
+    "_sOnlineTitle": "",
+    "_sOfflineTitle": "",
+    "_nPoints": 15293,
+    "_nPointsRank": 2205,
+    "_aNormalMedals": [
+      [
+        "m_pr_1.png",
+        "Reached 1,000 Points",
+        "normal",
+        13160
+      ],
+      [
+        "m_pr_2.png",
+        "Reached 2,500 Points",
+        "normal",
+        13161
+      ],
+      [
+        "m_pr_3.png",
+        "Reached 7,500 Points",
+        "normal",
+        13162
+      ],
+      [
+        "m_ef_1.png",
+        "1 post awarded Exemplary Feedback",
+        "normal",
+        13163
+      ],
+      [
+        "m_ef_2.png",
+        "5 posts awarded Exemplary Feedback",
+        "normal",
+        13164
+      ],
+      [
+        "m_ef_3.png",
+        "10 posts awarded Exemplary Feedback",
+        "normal",
+        13165
+      ],
+      [
+        "m_age_1.png",
+        "One month a member",
+        "normal",
+        13168
+      ],
+      [
+        "m_age_2.png",
+        "6 months a member",
+        "normal",
+        13169
+      ],
+      [
+        "m_age_3.png",
+        "1 year a member",
+        "normal",
+        13170
+      ],
+      [
+        "m_age_4.png",
+        "2 years a member",
+        "normal",
+        13171
+      ],
+      [
+        "m_age_5.png",
+        "4 years a member",
+        "normal",
+        13172
+      ],
+      [
+        "subscribers_1.png",
+        "Reached 10 subscribers",
+        "normal",
+        278112
+      ],
+      [
+        "wips1.png",
+        "Submitted 10 WiPs",
+        "normal",
+        324271
+      ]
+    ],
+    "_aRareMedals": [
+      [
+        "m_ef_4.png",
+        "25 posts awarded Exemplary Feedback",
+        "rare",
+        13166
+      ],
+      [
+        "m_ef_5.png",
+        "50 posts awarded Exemplary Feedback",
+        "rare",
+        13167
+      ],
+      [
+        "m_age_6.png",
+        "6 years a member",
+        "rare",
+        13173
+      ]
+    ],
+    "_aLegendaryMedals": [
+      [
+        "m_age_7.png",
+        "10 years a member",
+        "legendary",
+        248857
+      ]
+    ],
+    "_bHasRipe": false,
+    "_nBuddyCount": 23,
+    "_nSubscriberCount": 14,
+    "_aDonationMethods": [],
+    "_bAccessorIsBuddy": false,
+    "_bBuddyRequestExistsWithAccessor": false,
+    "_bAccessorIsSubscribed": false,
+    "_aBio": [
+      {
+        "_sTitle": "Country",
+        "_sValue": "United States"
+      },
+      {
+        "_sTitle": "First Game ever played",
+        "_sValue": "Quake I"
+      },
+      {
+        "_sTitle": "Gender",
+        "_sValue": "Male"
+      },
+      {
+        "_sTitle": "Gamer type",
+        "_sValue": "Casual"
+      }
+    ],
+    "_aDefaultLicenseChecklist": [
+      "yes",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "no",
+      "ask"
+    ],
+    "_sDefaultLicense": ""
+  },
+  "_bFollowLinks": true,
+  "_aGame": {
+    "_idRow": 2,
+    "_sName": "Counter-Strike: Source",
+    "_sAbbreviation": "CS:S",
+    "_sProfileUrl": "https://gamebanana.com/games/2",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/games/css_icon.png",
+    "_sBannerUrl": "https://images.gamebanana.com/img/ico/games/css_icon.png",
+    "_nSubscriberCount": 6993,
+    "_bHasSubmissionQueue": false,
+    "_bAccessorIsSubscribed": false
+  },
+  "_aCategory": {
+    "_idRow": 8242,
+    "_sName": "M4A1",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/8242",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/m4a1.png",
+    "_bIsObsolete": false
+  },
+  "_aSuperCategory": {
+    "_idRow": 8240,
+    "_sName": "Rifles",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/8240",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/55df458b63dce.png"
+  },
+  "_aCredits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Model",
+          "_sName": "TheLama"
+        },
+        {
+          "_sRole": "Skin",
+          "_sName": "!NC!Furious"
+        },
+        {
+          "_sRole": "Animations",
+          "_sName": "-WildBill-"
+        },
+        {
+          "_sRole": "Compile",
+          "_sName": "BadPrankster"
+        },
+        {
+          "_sRole": "Sounds",
+          "_sName": "Vunsunta"
+        },
+        {
+          "_sRole": "Hands",
+          "_sName": "Valve"
+        }
+      ]
+    }
+  ],
+  "_sDevNotes": "3D Studio Max 9\r\nPhotoshop CS2\r\nGallons and gallons of Red Bull"
+}

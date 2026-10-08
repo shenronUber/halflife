@@ -1,0 +1,373 @@
+{
+  "_idRow": 179733,
+  "_nStatus": "0",
+  "_bIsPrivate": false,
+  "_bAccessorIsSubmitter": false,
+  "_bIsTrashed": false,
+  "_bIsWithheld": false,
+  "_sName": "Lonewolf's LR300 For MP5",
+  "_sCommentsMode": "open",
+  "_tsDateModified": 1603320362,
+  "_tsDateAdded": 1160863207,
+  "_sProfileUrl": "https://gamebanana.com/mods/179733",
+  "_aPreviewMedia": {
+    "_aImages": [
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "14887.jpg",
+        "_sFile530": "530-90_14887.jpg",
+        "_sFile100": "100-90_14887.jpg",
+        "_sFile220": "220-90_14887.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "14826a.jpg",
+        "_sFile100": "100-90_14826a.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "14826b.jpg",
+        "_sFile100": "100-90_14826b.jpg"
+      }
+    ]
+  },
+  "_nUpdatesCount": 0,
+  "_bHasUpdates": false,
+  "_nAllTodosCount": 0,
+  "_bHasTodos": false,
+  "_nPostCount": 12,
+  "_aTags": [
+    {
+      "_sTitle": "Texture",
+      "_sValue": "Default"
+    },
+    {
+      "_sTitle": "Model",
+      "_sValue": "Hacked Custom Model"
+    },
+    {
+      "_sValue": "lr300"
+    },
+    {
+      "_sValue": "lonewolf"
+    }
+  ],
+  "_bCreatedBySubmitter": true,
+  "_bIsPorted": false,
+  "_nThanksCount": 0,
+  "_sInitialVisibility": "show",
+  "_sDownloadUrl": "https://gamebanana.com/mods/download/179733",
+  "_nDownloadCount": 2989,
+  "_aFiles": [
+    {
+      "_idRow": 265230,
+      "_sFile": "mp5_lr300.rar",
+      "_nFilesize": 1024065,
+      "_tsDateAdded": 1160863207,
+      "_nDownloadCount": 2989,
+      "_sDownloadUrl": "https://gamebanana.com/dl/265230",
+      "_sMd5Checksum": "29129f514c7ab8bd767cb54903e5a8c1",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,179733,265230"
+        }
+      ]
+    }
+  ],
+  "_nSubscriberCount": 1,
+  "_aContributingStudios": [],
+  "_sLicense": "You may use my modifications in your own work without permission. However, please <b>credit</b> me for my work.<br>",
+  "_aLicenseChecklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "_bGenerateTableOfContents": false,
+  "_sText": "CZLoneWolf's LR300\r\n===============\r\n--- OLD CREDITS ---\r\nModel: LoneWolf\r\nSkin: LoneWolf\r\nMaster: Lonewolf\r\nAnimations: Jennifer!!\r\nCSS Compile: Sober\r\nCZ Compile: Sedj\r\nRe: Compile: masterwiLL\r\nP & W models: masterwiLL\r\nLam Comiling : De@dMe@t a.k.a DMz\r\nLaser : Kais\r\n--- OLD CREDITS ---\r\n\r\n--- NEW CREDITS ---\r\nHL1.6 Compile: Doommarine23\r\nRecolor : Doommarine23\r\nAnimations : Vavle\r\n--- NEW CREDITS ---\r\n\r\nNote due to vertix limit the LAM and laser has been removed, Also a slight recolor was done so it does not show up red",
+  "_bIsObsolete": false,
+  "_nLikeCount": 20,
+  "_nViewCount": 16350,
+  "_sVersion": "",
+  "_bAcceptsDonations": false,
+  "_bShowRipePromo": true,
+  "_aEmbeddables": {
+    "_sEmbeddableImageBaseUrl": "https://gamebanana.com/mods/embeddables/179733",
+    "_aVariants": [
+      "small",
+      "small_square",
+      "medium",
+      "medium_square",
+      "medium_square_minimal",
+      "large",
+      "large_minimal",
+      "large_square",
+      "large_minimal_square",
+      "thumbnail"
+    ]
+  },
+  "_aSubmitter": {
+    "_idRow": 84875,
+    "_sName": "DoomMarine23",
+    "_sUserTitle": "",
+    "_sHonoraryTitle": "",
+    "_tsJoinDate": 1137378593,
+    "_sAvatarUrl": "https://images.gamebanana.com/img/av/_4988-.jpg",
+    "_sSigUrl": "https://images.gamebanana.com/img/sig/84875.gif",
+    "_sProfileUrl": "https://gamebanana.com/members/84875",
+    "_sPointsUrl": "https://gamebanana.com/members/logs/pointslog/84875",
+    "_sMedalsUrl": "https://gamebanana.com/members/stats/medals/84875",
+    "_bIsOnline": false,
+    "_sLocation": "<a href=\"https://gamebanana.com\">Home</a> > <a href=\"https://gamebanana.com/members\">Members</a> > <a href=\"https://gamebanana.com/members/1717684\">seedee</a>",
+    "_sOnlineTitle": "",
+    "_sOfflineTitle": "",
+    "_nPoints": 5579,
+    "_nPointsRank": 7929,
+    "_aNormalMedals": [
+      [
+        "m_pr_1.png",
+        "Reached 1,000 Points",
+        "normal",
+        12375
+      ],
+      [
+        "m_pr_2.png",
+        "Reached 2,500 Points",
+        "normal",
+        12376
+      ],
+      [
+        "m_pr_3.png",
+        "Reached 7,500 Points",
+        "normal",
+        12377
+      ],
+      [
+        "m_age_1.png",
+        "One month a member",
+        "normal",
+        12378
+      ],
+      [
+        "m_age_2.png",
+        "6 months a member",
+        "normal",
+        12379
+      ],
+      [
+        "m_age_3.png",
+        "1 year a member",
+        "normal",
+        12380
+      ],
+      [
+        "m_age_4.png",
+        "2 years a member",
+        "normal",
+        12381
+      ],
+      [
+        "m_age_5.png",
+        "4 years a member",
+        "normal",
+        12382
+      ],
+      [
+        "returns_1.png",
+        "Returned 100 times",
+        "normal",
+        210439
+      ],
+      [
+        "skins1.png",
+        "Submitted 10 Skins",
+        "normal",
+        224465
+      ]
+    ],
+    "_aRareMedals": [
+      [
+        "m_age_6.png",
+        "6 years a member",
+        "rare",
+        12383
+      ]
+    ],
+    "_aLegendaryMedals": [
+      [
+        "m_age_7.png",
+        "10 years a member",
+        "legendary",
+        39119
+      ]
+    ],
+    "_bHasRipe": false,
+    "_nBuddyCount": 5,
+    "_nSubscriberCount": 3,
+    "_aDonationMethods": [],
+    "_bAccessorIsBuddy": false,
+    "_bBuddyRequestExistsWithAccessor": false,
+    "_bAccessorIsSubscribed": false,
+    "_aDefaultLicenseChecklist": [
+      "yes",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "no",
+      "ask"
+    ],
+    "_sDefaultLicense": "You may use my modifications in your own work without permission. However, please <b>credit</b> me for my work.<br>"
+  },
+  "_bFollowLinks": true,
+  "_aGame": {
+    "_idRow": 34,
+    "_sName": "Half-Life",
+    "_sAbbreviation": "HL",
+    "_sProfileUrl": "https://gamebanana.com/games/34",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/games/half-life.png",
+    "_sBannerUrl": "https://images.gamebanana.com/img/ico/games/half-life.png",
+    "_nSubscriberCount": 4637,
+    "_bHasSubmissionQueue": false,
+    "_bAccessorIsSubscribed": false
+  },
+  "_aCategory": {
+    "_idRow": 7736,
+    "_sName": "MP5 / M4",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/7736",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/560c876aaaf25.png",
+    "_bIsObsolete": false
+  },
+  "_aSuperCategory": {
+    "_idRow": 7735,
+    "_sName": "Weapons",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/7735",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/5ea2fdf1794ff.png"
+  },
+  "_aCredits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Unknown",
+          "_idRow": "644940",
+          "_sName": "Lonewolf",
+          "_sProfileUrl": "https://gamebanana.com/members/644940",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/_10.png",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Jennifer!!"
+        },
+        {
+          "_sRole": "Unknown",
+          "_idRow": "59550",
+          "_sName": "Sober",
+          "_sProfileUrl": "https://gamebanana.com/members/59550",
+          "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Unknown",
+          "_idRow": "58206",
+          "_sName": "sedj",
+          "_sProfileUrl": "https://gamebanana.com/members/58206",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/banned.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Unknown",
+          "_idRow": "49465",
+          "_sName": "masterwiLL",
+          "_sProfileUrl": "https://gamebanana.com/members/49465",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/49465.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Unknown",
+          "_idRow": "84875",
+          "_sName": "DoomMarine23",
+          "_sProfileUrl": "https://gamebanana.com/members/84875",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/_4988-.jpg",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Vavle"
+        }
+      ]
+    }
+  ]
+}

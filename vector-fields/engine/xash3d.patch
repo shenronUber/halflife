@@ -1,0 +1,116 @@
+diff --git a/engine/client/dll_int/cl_game.c b/engine/client/dll_int/cl_game.c
+index a29e935..b8166e2 100644
+--- a/engine/client/dll_int/cl_game.c
++++ b/engine/client/dll_int/cl_game.c
+@@ -20,6 +20,7 @@ GNU General Public License for more details.
+ #endif // XASH_SDL
+ 
+ #include "common.h"
++#include "vf_engine_api.h"
+ #include "client.h"
+ #include "const.h"
+ #include "triangleapi.h"
+@@ -4159,6 +4160,13 @@ qboolean CL_LoadProgs( const char *name )
+ 	if( !R_InitRenderAPI( ))	// Xash3D extension
+ 		Con_Reportf( S_WARN "%s: couldn't get render API\n", __func__ );
+ 
++	// Optional, separately versioned mod extension; the GoldSrc interfaces stay intact.
++	{
++		vf_client_engine_init_fn client_vf = (vf_client_engine_init_fn)COM_GetProcAddress( clgame.hInstance, "HUD_VFEngineInterface" );
++		vf_get_engine_api_fn renderer_vf = (vf_get_engine_api_fn)COM_GetProcAddress( ref.hInstance, "VF_GetRenderAPI" );
++		if( client_vf ) client_vf( VF_ENGINE_API_VERSION, renderer_vf ? renderer_vf( VF_ENGINE_API_VERSION ) : NULL );
++	}
++
+ 	if( !Mobile_Init( )) // Xash3D FWGS extension: mobile interface
+ 		Con_Reportf( S_WARN "%s: couldn't get mobility API\n", __func__ );
+ 
+diff --git a/ref/gl/gl_context.c b/ref/gl/gl_context.c
+index d32a432..2748e64 100644
+--- a/ref/gl/gl_context.c
++++ b/ref/gl/gl_context.c
+@@ -395,6 +395,7 @@ static const char *R_GetConfigName( void )
+ 
+ static void R_NewMap( void )
+ {
++	R_VFReset();
+ 	tr.worldmodel = gp_cl->models[1];
+ 
+ 	R_ClearDecals(); // clear all level decals
+diff --git a/ref/gl/gl_image.c b/ref/gl/gl_image.c
+index fb0af14..c4ce141 100644
+--- a/ref/gl/gl_image.c
++++ b/ref/gl/gl_image.c
+@@ -15,6 +15,8 @@ GNU General Public License for more details.
+ 
+ #include <stdarg.h>
+ #include "gl_local.h"
++
++/* Texture accounting is implemented below, where the texture table is visible. */
+ #include "crclib.h"
+ 
+ #define TEXTURES_HASH_SIZE	(MAX_TEXTURES >> 2)
+@@ -2310,3 +2312,14 @@ void R_ShowTextures( void )
+ 	gEngfuncs.CL_DrawCenterPrint ();
+ 	pglFinish();
+ }
++
++void R_VFTextureStats( unsigned int *count, unsigned int *bytes )
++{
++	*count = *bytes = 0;
++	for( int i = 0; i < gl_numTextures; i++ )
++	{
++		if( !gl_textures[i].texnum ) continue;
++		(*count)++;
++		*bytes += gl_textures[i].size;
++	}
++}
+diff --git a/ref/gl/gl_local.h b/ref/gl/gl_local.h
+index 1e4d23e..1572580 100644
+--- a/ref/gl/gl_local.h
++++ b/ref/gl/gl_local.h
+@@ -288,6 +288,8 @@ typedef struct
+ 
+ extern ref_speeds_t		r_stats;
+ extern ref_instance_t	RI;
++void R_VFReset( void );
++void R_VFTextureStats( unsigned int *count, unsigned int *bytes );
+ extern gl_globals_t	tr;
+ 
+ extern float		gldepthmin, gldepthmax;
+diff --git a/ref/gl/gl_studio.c b/ref/gl/gl_studio.c
+index 39873fb..b8ed3b5 100644
+--- a/ref/gl/gl_studio.c
++++ b/ref/gl/gl_studio.c
+@@ -137,6 +137,8 @@ static studiohdr_t *m_pStudioHeader;
+ static float m_flGaitMovement;
+ static int g_nTopColor, g_nBottomColor;	// remap colors
+ static int g_nFaceFlags, g_nForceFaceFlags;
++static model_t *R_VFPlayerModel( int entity );
++static qboolean R_VFDrawRegistered( cl_entity_t *ent, int flags );
+ 
+ /*
+ ====================
+@@ -2980,7 +2982,8 @@ static int R_StudioDrawPlayer( int flags, entity_state_t *pplayer )
+ 	if( m_nPlayerIndex < 0 || m_nPlayerIndex >= gp_cl->maxclients )
+ 		return 0;
+ 
+-	RI.currentmodel = R_StudioSetupPlayerModel( m_nPlayerIndex );
++	RI.currentmodel = R_VFPlayerModel( pplayer->number );
++	if( !RI.currentmodel ) RI.currentmodel = R_StudioSetupPlayerModel( m_nPlayerIndex );
+ 	if( RI.currentmodel == NULL )
+ 		return 0;
+ 
+@@ -3205,6 +3208,7 @@ R_StudioDrawModelInternal
+ */
+ static void R_StudioDrawModelInternal( cl_entity_t *e, int flags )
+ {
++	if( R_VFDrawRegistered( e, flags )) return;
+ 	if( !FBitSet( RI.rvp.flags, RF_DRAW_WORLD ))
+ 	{
+ 		if( e->player )
+@@ -3567,3 +3571,5 @@ void R_StudioSetDrawInterface( r_studio_interface_t *pDraw )
+ {
+ 	pStudioDraw = pDraw;
+ }
++
++#include "gl_vf.inc"

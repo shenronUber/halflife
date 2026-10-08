@@ -1,0 +1,1917 @@
+[
+  {
+    "id": 636816,
+    "name": "Colt ARs on Cliffton_Vlodhammer's Animations",
+    "url": "https://gamebanana.com/mods/636816",
+    "description_html": "This is Colt AR pack on <a href=\"https://gamebanana.com/members/366438\">Cliffton_Vlodhammer's</a>\u00a0animation for Half-Life 1 and also for Opposing Force and Blue Shift.<br>So... I'm rigged the <a href=\"https://gamebanana.com/mods/587681\">M727</a>, <a href=\"https://gamebanana.com/mods/167402\">M4A1</a>, <a href=\"https://gamebanana.com/mods/167408\">M16A2</a> and <a href=\"https://gamebanana.com/mods/167407\">M16A3</a> models on <a href=\"https://www.moddb.com/games/half-life/addons/cliffton-vlodhammers-ar-15-animations-sven-co-op-m16a2\">this AR-15 animations</a> and also i rigged Ambient.Impact's hands.<br>By the way, I'm not rigged M4A1 model, <a href=\"https://gamebanana.com/members/1503330\">AleKK</a> is rigged M4A1 model from <a href=\"https://gamebanana.com/mods/243191\">weapons pack for Half-Life: Echoes</a>.<br>Enjoy!!!",
+    "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+    "license_checklist": {
+      "yes": [
+        "Download and install this Mod"
+      ],
+      "ask": [
+        "Redistribute this Mod on other sites",
+        "Modify this Mod and distribute the modified Mod on GameBanana",
+        "Modify this Mod and distribute the modified Mod on another site",
+        "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+        "Use parts of this Mod in another Mod and distribute the Mod on another site",
+        "Use this Mod or components of this Mod in adult/NSFW content"
+      ],
+      "no": [
+        "Use this Mod or components of this Mod commercially"
+      ]
+    },
+    "credits": [
+      {
+        "_sGroupName": "Key Authors",
+        "_aAuthors": [
+          {
+            "_sRole": "Model Rigs and Compile",
+            "_idRow": 2612532,
+            "_sName": "The_Invader79",
+            "_sUpicUrl": "https://images.gamebanana.com/img/upic/694465602e039.png",
+            "_sProfileUrl": "https://gamebanana.com/members/2612532",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/6a894c2d4582c.png",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "M4A1, M727, M16A2 Model Port to GoldSrc",
+            "_idRow": 1503330,
+            "_sName": "Tovarisch AleKK",
+            "_sUpicUrl": "https://images.gamebanana.com/img/upic/6a854c26e9823.png",
+            "_sProfileUrl": "https://gamebanana.com/members/1503330",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/63ebbb8bc0dd1.gif",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "M16A3 Model Port to GoldSrc",
+            "_idRow": 967635,
+            "_sName": "Weiss Schnee",
+            "_sUpicUrl": "https://images.gamebanana.com/img/upic/5a6db5d1a5480.png",
+            "_sProfileUrl": "https://gamebanana.com/members/967635",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/6a87ab589dc33.jpg",
+            "_bIsOnline": false,
+            "_aAffiliatedStudio": {
+              "_sProfileUrl": "https://gamebanana.com/studios/34989",
+              "_sName": "Life Tree",
+              "_sFlagUrl": "https://images.gamebanana.com/img/flags/studios/58413052ba008.png",
+              "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/5841305c9ad02.png"
+            }
+          }
+        ]
+      },
+      {
+        "_sGroupName": "Original Authors",
+        "_aAuthors": [
+          {
+            "_sRole": "M727, M16A2 Model, M16A3 Model and Textures, M203 Model Textures",
+            "_idRow": 614054,
+            "_sName": "Twinke Masta Johan Santana",
+            "_sProfileUrl": "https://gamebanana.com/members/614054",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/614054.gif",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "M4A1 and RAS Model",
+            "_idRow": 858272,
+            "_sName": "soul_slayer",
+            "_sProfileUrl": "https://gamebanana.com/members/858272",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/_7.png",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "M4A1 and RAS Textures",
+            "_idRow": 162698,
+            "_sName": "Thanez",
+            "_sProfileUrl": "https://gamebanana.com/members/162698",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/162698.png",
+            "_bIsOnline": false,
+            "_aAffiliatedStudio": {
+              "_sProfileUrl": "https://gamebanana.com/studios/655",
+              "_sName": "Damage Inc.",
+              "_sFlagUrl": "https://images.gamebanana.com/img/flags/studios/4f895c11c1fea.png",
+              "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/4f895a9a27421.png"
+            }
+          },
+          {
+            "_sRole": "M727 and M16A2 Textures",
+            "_idRow": 1246979,
+            "_sName": "Acid Snake",
+            "_sProfileUrl": "https://gamebanana.com/members/1246979",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/50e599afc04dd.png",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "M203 Heatshield Model",
+            "_sName": "Kila_syc3"
+          },
+          {
+            "_sRole": "M203 Heatshield Textures",
+            "_idRow": 163164,
+            "_sName": "Stoke",
+            "_sProfileUrl": "https://gamebanana.com/members/163164",
+            "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "M203 Heatshield Textures",
+            "_idRow": 159432,
+            "_sName": "Thegenius",
+            "_sProfileUrl": "https://gamebanana.com/members/159432",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/159432.jpg",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "Hands Models",
+            "_idRow": 5101635,
+            "_sName": "Ambient.Impact",
+            "_sUpicUrl": "https://images.gamebanana.com/img/upic/69fb925876d06.png",
+            "_sProfileUrl": "https://gamebanana.com/members/5101635",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/69633b507982f.png",
+            "_bIsOnline": false,
+            "_aAffiliatedStudio": {
+              "_sProfileUrl": "https://gamebanana.com/studios/39110",
+              "_sName": "Unforeseen Consequences",
+              "_sFlagUrl": "",
+              "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/69f13472e5856.png"
+            }
+          },
+          {
+            "_sRole": "HEV Hands Textures",
+            "_idRow": 43732,
+            "_sName": "Millenia",
+            "_sUpicUrl": "https://images.gamebanana.com/img/upic/6939d887a1d83.gif",
+            "_sProfileUrl": "https://gamebanana.com/members/43732",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/6939c6976b3a0.png",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "Animations",
+            "_idRow": 366438,
+            "_sName": "Cliffton_Vlodhammer",
+            "_sProfileUrl": "https://gamebanana.com/members/366438",
+            "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "Sounds",
+            "_idRow": 1306693,
+            "_sName": "Navaro",
+            "_sUpicUrl": "https://images.gamebanana.com/img/upic/65387f397fe21.png",
+            "_sProfileUrl": "https://gamebanana.com/members/1306693",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/655a8ed519789.png",
+            "_bIsOnline": false,
+            "_aAffiliatedStudio": {
+              "_sProfileUrl": "https://gamebanana.com/studios/34306",
+              "_sName": "Legacy",
+              "_sFlagUrl": "https://images.gamebanana.com/img/flags/studios/562268bd7fd74.png",
+              "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/56948f3368ee9.png"
+            }
+          },
+          {
+            "_sRole": "Sounds",
+            "_idRow": 1393732,
+            "_sName": "New World Interactive",
+            "_sProfileUrl": "https://gamebanana.com/members/1393732",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/53bbed327b4a5.png",
+            "_bIsOnline": false
+          }
+        ]
+      }
+    ],
+    "files": [
+      {
+        "_idRow": 1769082,
+        "_sFile": "colt_ar_on_cliffton_vlodhammer_animations_e8fb0.zip",
+        "_nFilesize": 29372996,
+        "_tsDateAdded": 1785440825,
+        "_nDownloadCount": 76,
+        "_sDownloadUrl": "https://gamebanana.com/dl/1769082",
+        "_sMd5Checksum": "f37d6be0754e109fc7cc1f1126b95eef",
+        "_sAnalysisState": "done",
+        "_sAnalysisResult": "ok",
+        "_sAnalysisResultVerbose": "File passed preliminary analysis",
+        "_sAvState": "done",
+        "_sAvResult": "clean",
+        "_bIsArchived": false,
+        "_bHasContents": true,
+        "_aModManagerIntegrations": [
+          {
+            "_sIconClasses": "ModboyIcon",
+            "_idToolRow": 6321,
+            "_aGameRowIds": [
+              4254,
+              2,
+              4660,
+              4,
+              34,
+              262,
+              263,
+              6651,
+              312,
+              9,
+              5,
+              249,
+              292,
+              222,
+              3456,
+              296,
+              4537,
+              297,
+              5418,
+              3370,
+              5306,
+              4214,
+              10,
+              5237,
+              73,
+              66,
+              124,
+              157,
+              150,
+              5531,
+              5694,
+              1843,
+              6,
+              6137,
+              6131,
+              2929,
+              6705,
+              8679,
+              7553
+            ],
+            "_sModManagerAlias": "Modboy",
+            "_sInstallerName": "Modboy",
+            "_idSubmitterRow": 142413,
+            "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+            "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+            "_sDownloadUrl": "modboy://Mod,636816,1769082"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 640447,
+    "name": "LR-300 on Cliffton_Vlodhammer's Animations",
+    "url": "https://gamebanana.com/mods/640447",
+    "description_html": "This is LR-300 on\u00a0<a href=\"https://gamebanana.com/members/366438\">Cliffton_Vlodhammer's</a>\u00a0animation for Half-Life 1 and also for Opposing Force and Blue Shift.<br>That LR-300 with M203 is used from <a href=\"https://www.moddb.com/mods/diamond-half-life-final\">DiamonD's pack</a> and I made on <a href=\"//null\">Cliffton_Vlodhammer's AR-15 animations</a>.<br>Enjoy!!!",
+    "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+    "license_checklist": {
+      "yes": [
+        "Download and install this Mod"
+      ],
+      "ask": [
+        "Redistribute this Mod on other sites",
+        "Modify this Mod and distribute the modified Mod on GameBanana",
+        "Modify this Mod and distribute the modified Mod on another site",
+        "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+        "Use parts of this Mod in another Mod and distribute the Mod on another site",
+        "Use this Mod or components of this Mod in adult/NSFW content"
+      ],
+      "no": [
+        "Use this Mod or components of this Mod commercially"
+      ]
+    },
+    "credits": [
+      {
+        "_sGroupName": "Key Authors",
+        "_aAuthors": [
+          {
+            "_sRole": "Model Rig and Compile",
+            "_idRow": 2612532,
+            "_sName": "The_Invader79",
+            "_sUpicUrl": "https://images.gamebanana.com/img/upic/694465602e039.png",
+            "_sProfileUrl": "https://gamebanana.com/members/2612532",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/6a894c2d4582c.png",
+            "_bIsOnline": false
+          }
+        ]
+      },
+      {
+        "_sGroupName": "Original Authors",
+        "_aAuthors": [
+          {
+            "_sRole": "LR-300 Model and Textures",
+            "_idRow": 177661,
+            "_sName": "TheLama",
+            "_sProfileUrl": "https://gamebanana.com/members/177661",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/177661.png",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "M203 Model and Textures",
+            "_idRow": 614054,
+            "_sName": "Twinke Masta Johan Santana",
+            "_sProfileUrl": "https://gamebanana.com/members/614054",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/614054.gif",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "LR-300 Model Edit",
+            "_idRow": 323855,
+            "_sName": "DiamonD MeteoR",
+            "_sProfileUrl": "https://gamebanana.com/members/323855",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/_8.png",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "Hands Models",
+            "_idRow": 5101635,
+            "_sName": "Ambient.Impact",
+            "_sUpicUrl": "https://images.gamebanana.com/img/upic/69fb925876d06.png",
+            "_sProfileUrl": "https://gamebanana.com/members/5101635",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/69633b507982f.png",
+            "_bIsOnline": false,
+            "_aAffiliatedStudio": {
+              "_sProfileUrl": "https://gamebanana.com/studios/39110",
+              "_sName": "Unforeseen Consequences",
+              "_sFlagUrl": "",
+              "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/69f13472e5856.png"
+            }
+          },
+          {
+            "_sRole": "HEV Hands and Textures",
+            "_idRow": 43732,
+            "_sName": "Millenia",
+            "_sUpicUrl": "https://images.gamebanana.com/img/upic/6939d887a1d83.gif",
+            "_sProfileUrl": "https://gamebanana.com/members/43732",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/6939c6976b3a0.png",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "Animations",
+            "_idRow": 366438,
+            "_sName": "Cliffton_Vlodhammer",
+            "_sProfileUrl": "https://gamebanana.com/members/366438",
+            "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "Shoot Sounds",
+            "_sName": "Strelok"
+          },
+          {
+            "_sRole": "Reload Sounds",
+            "_idRow": 1306693,
+            "_sName": "Navaro",
+            "_sUpicUrl": "https://images.gamebanana.com/img/upic/65387f397fe21.png",
+            "_sProfileUrl": "https://gamebanana.com/members/1306693",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/655a8ed519789.png",
+            "_bIsOnline": false,
+            "_aAffiliatedStudio": {
+              "_sProfileUrl": "https://gamebanana.com/studios/34306",
+              "_sName": "Legacy",
+              "_sFlagUrl": "https://images.gamebanana.com/img/flags/studios/562268bd7fd74.png",
+              "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/56948f3368ee9.png"
+            }
+          },
+          {
+            "_sRole": "M203 Shoot Sounds",
+            "_idRow": 1393732,
+            "_sName": "New World Interactive",
+            "_sProfileUrl": "https://gamebanana.com/members/1393732",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/53bbed327b4a5.png",
+            "_bIsOnline": false
+          }
+        ]
+      }
+    ],
+    "files": [
+      {
+        "_idRow": 1767827,
+        "_sFile": "lr300_on_cliffton_vlodhammer_animations_80748.zip",
+        "_nFilesize": 7683911,
+        "_tsDateAdded": 1785334109,
+        "_nDownloadCount": 54,
+        "_sDownloadUrl": "https://gamebanana.com/dl/1767827",
+        "_sMd5Checksum": "29fed08c59ddb278a8e4ea08d89eb1f9",
+        "_sAnalysisState": "done",
+        "_sAnalysisResult": "ok",
+        "_sAnalysisResultVerbose": "File passed preliminary analysis",
+        "_sAvState": "done",
+        "_sAvResult": "clean",
+        "_bIsArchived": false,
+        "_bHasContents": true,
+        "_aModManagerIntegrations": [
+          {
+            "_sIconClasses": "ModboyIcon",
+            "_idToolRow": 6321,
+            "_aGameRowIds": [
+              4254,
+              2,
+              4660,
+              4,
+              34,
+              262,
+              263,
+              6651,
+              312,
+              9,
+              5,
+              249,
+              292,
+              222,
+              3456,
+              296,
+              4537,
+              297,
+              5418,
+              3370,
+              5306,
+              4214,
+              10,
+              5237,
+              73,
+              66,
+              124,
+              157,
+              150,
+              5531,
+              5694,
+              1843,
+              6,
+              6137,
+              6131,
+              2929,
+              6705,
+              8679,
+              7553
+            ],
+            "_sModManagerAlias": "Modboy",
+            "_sInstallerName": "Modboy",
+            "_idSubmitterRow": 142413,
+            "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+            "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+            "_sDownloadUrl": "modboy://Mod,640447,1767827"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 640445,
+    "name": "HK416 on Cliffton_Vlodhammer's Animations",
+    "url": "https://gamebanana.com/mods/640445",
+    "description_html": "This is HK416 on\u00a0<a href=\"https://gamebanana.com/members/366438\">Cliffton_Vlodhammer's</a>\u00a0animation for Half-Life 1 and also for Opposing Force and Blue Shift.<br>Enjoy!!!",
+    "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+    "license_checklist": {
+      "yes": [
+        "Download and install this Mod"
+      ],
+      "ask": [
+        "Redistribute this Mod on other sites",
+        "Modify this Mod and distribute the modified Mod on GameBanana",
+        "Modify this Mod and distribute the modified Mod on another site",
+        "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+        "Use parts of this Mod in another Mod and distribute the Mod on another site",
+        "Use this Mod or components of this Mod in adult/NSFW content"
+      ],
+      "no": [
+        "Use this Mod or components of this Mod commercially"
+      ]
+    },
+    "credits": [
+      {
+        "_sGroupName": "Key Authors",
+        "_aAuthors": [
+          {
+            "_sRole": "Model Rig and Compile",
+            "_idRow": 2612532,
+            "_sName": "The_Invader79",
+            "_sUpicUrl": "https://images.gamebanana.com/img/upic/694465602e039.png",
+            "_sProfileUrl": "https://gamebanana.com/members/2612532",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/6a894c2d4582c.png",
+            "_bIsOnline": false
+          }
+        ]
+      },
+      {
+        "_sGroupName": "Original Authors",
+        "_aAuthors": [
+          {
+            "_sRole": "HK416 Model, M203 Model and Textures",
+            "_idRow": 614054,
+            "_sName": "Twinke Masta Johan Santana",
+            "_sProfileUrl": "https://gamebanana.com/members/614054",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/614054.gif",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "HK416 Textures",
+            "_idRow": 1246979,
+            "_sName": "Acid Snake",
+            "_sProfileUrl": "https://gamebanana.com/members/1246979",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/50e599afc04dd.png",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "Stock Model and Textures",
+            "_idRow": 177661,
+            "_sName": "TheLama",
+            "_sProfileUrl": "https://gamebanana.com/members/177661",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/177661.png",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "Hands Models",
+            "_idRow": 5101635,
+            "_sName": "Ambient.Impact",
+            "_sUpicUrl": "https://images.gamebanana.com/img/upic/69fb925876d06.png",
+            "_sProfileUrl": "https://gamebanana.com/members/5101635",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/69633b507982f.png",
+            "_bIsOnline": false,
+            "_aAffiliatedStudio": {
+              "_sProfileUrl": "https://gamebanana.com/studios/39110",
+              "_sName": "Unforeseen Consequences",
+              "_sFlagUrl": "",
+              "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/69f13472e5856.png"
+            }
+          },
+          {
+            "_sRole": "HEV Hands Textures",
+            "_idRow": 43732,
+            "_sName": "Millenia",
+            "_sUpicUrl": "https://images.gamebanana.com/img/upic/6939d887a1d83.gif",
+            "_sProfileUrl": "https://gamebanana.com/members/43732",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/6939c6976b3a0.png",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "Animations",
+            "_idRow": 366438,
+            "_sName": "Cliffton_Vlodhammer",
+            "_sProfileUrl": "https://gamebanana.com/members/366438",
+            "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "Reload Sounds",
+            "_idRow": 1306693,
+            "_sName": "Navaro",
+            "_sUpicUrl": "https://images.gamebanana.com/img/upic/65387f397fe21.png",
+            "_sProfileUrl": "https://gamebanana.com/members/1306693",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/655a8ed519789.png",
+            "_bIsOnline": false,
+            "_aAffiliatedStudio": {
+              "_sProfileUrl": "https://gamebanana.com/studios/34306",
+              "_sName": "Legacy",
+              "_sFlagUrl": "https://images.gamebanana.com/img/flags/studios/562268bd7fd74.png",
+              "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/56948f3368ee9.png"
+            }
+          },
+          {
+            "_sRole": "Shoot Sounds",
+            "_idRow": 1408938,
+            "_sName": "Bengty",
+            "_sUpicUrl": "https://images.gamebanana.com/img/upic/5d61599e8a85a.png",
+            "_sProfileUrl": "https://gamebanana.com/members/1408938",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/6a5552de07947.jpg",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "M203 Shoot Sounds",
+            "_idRow": 1393732,
+            "_sName": "New World Interactive",
+            "_sProfileUrl": "https://gamebanana.com/members/1393732",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/53bbed327b4a5.png",
+            "_bIsOnline": false
+          }
+        ]
+      }
+    ],
+    "files": [
+      {
+        "_idRow": 1767826,
+        "_sFile": "hk416_on_cliffton_vlodhammer_animations_3cb40.zip",
+        "_nFilesize": 7362680,
+        "_tsDateAdded": 1785334089,
+        "_nDownloadCount": 55,
+        "_sDownloadUrl": "https://gamebanana.com/dl/1767826",
+        "_sMd5Checksum": "8eae8b319b2694267014dfcef5381d15",
+        "_sAnalysisState": "done",
+        "_sAnalysisResult": "ok",
+        "_sAnalysisResultVerbose": "File passed preliminary analysis",
+        "_sAvState": "done",
+        "_sAvResult": "clean",
+        "_bIsArchived": false,
+        "_bHasContents": true,
+        "_aModManagerIntegrations": [
+          {
+            "_sIconClasses": "ModboyIcon",
+            "_idToolRow": 6321,
+            "_aGameRowIds": [
+              4254,
+              2,
+              4660,
+              4,
+              34,
+              262,
+              263,
+              6651,
+              312,
+              9,
+              5,
+              249,
+              292,
+              222,
+              3456,
+              296,
+              4537,
+              297,
+              5418,
+              3370,
+              5306,
+              4214,
+              10,
+              5237,
+              73,
+              66,
+              124,
+              157,
+              150,
+              5531,
+              5694,
+              1843,
+              6,
+              6137,
+              6131,
+              2929,
+              6705,
+              8679,
+              7553
+            ],
+            "_sModManagerAlias": "Modboy",
+            "_sInstallerName": "Modboy",
+            "_idSubmitterRow": 142413,
+            "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+            "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+            "_sDownloadUrl": "modboy://Mod,640445,1767826"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 682919,
+    "name": "Morita 9mm Assault Rifle Mk. 1",
+    "url": "https://gamebanana.com/mods/682919",
+    "description_html": "<u><b>Starship Troopers' Morita Rifle, in a 9mm Assault Rifle configuration.</b></u><br><br>The Morita Assault Rifle, you know what this thing is; especially if you're familiar with Starship Troopers, now in the hands of the finest crayon eaters and yours truly. Now your employment within the Black Mesa Research Facility is 100% guaranteed with this weapon.<br><br>While not exactly a 1:1 recreation of the movie gun itself (I had taken some artistic liberties with this), hopefully it'll be familiar enough that it'll satisfy your desire to roleplay as one of sci-fi's most well known cannon fodder in history.<br><br>What it contains:<br><br><ul><li>The gun itself, in all three forms (p_, w_ and v_models) and the HECU holding them.</li><li>A custom firing sfx by&nbsp;<a href=\"https://gamebanana.com/members/4416207\">UwU4181 </a>and some extra foley</li><li>Sprite weapon selection UI graphics and its own muzzleflash sprite</li></ul><br><br>Blue Shift and Opposing Force versions coming soon (maybe, idk, prolly in a hundred business days, I work that slow)<br><br>pls report if I fucked something up, it's the first time I posted something here.",
+    "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+    "license_checklist": {
+      "yes": [
+        "Download and install this Mod"
+      ],
+      "ask": [
+        "Redistribute this Mod on other sites",
+        "Modify this Mod and distribute the modified Mod on GameBanana",
+        "Modify this Mod and distribute the modified Mod on another site",
+        "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+        "Use parts of this Mod in another Mod and distribute the Mod on another site",
+        "Use this Mod or components of this Mod in adult/NSFW content"
+      ],
+      "no": [
+        "Use this Mod or components of this Mod commercially"
+      ]
+    },
+    "credits": [
+      {
+        "_sGroupName": "Key Author/s",
+        "_aAuthors": [
+          {
+            "_sRole": "Modeling, Texturing, Animating and Selection UI",
+            "_idRow": 5550481,
+            "_sName": "FourthRattling",
+            "_sProfileUrl": "https://gamebanana.com/members/5550481",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/6a2063927e92a.png",
+            "_bIsOnline": false
+          }
+        ]
+      },
+      {
+        "_sGroupName": "Contributors",
+        "_aAuthors": [
+          {
+            "_sRole": "Providing the Morita firing sfx",
+            "_idRow": 4416207,
+            "_sName": "UwU4181",
+            "_sProfileUrl": "https://gamebanana.com/members/4416207",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/68031749abfc1.png",
+            "_bIsOnline": false
+          }
+        ]
+      },
+      {
+        "_sGroupName": "Original Authors",
+        "_aAuthors": [
+          {
+            "_sRole": "Their LD-styled Hands",
+            "_idRow": 1325237,
+            "_sName": "Norman Roger",
+            "_sProfileUrl": "https://gamebanana.com/members/1325237",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/5da965f286fe0.png",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "Weapon & item foley sfx (Counter-Strike 1.6 & Deleted Scenes)",
+            "_sName": "Ritual Entertainment & Valve"
+          },
+          {
+            "_sRole": "Duke Nukem Forever 2001 M16 muzzleflash",
+            "_sName": "3D Realms (the old one)"
+          }
+        ]
+      }
+    ],
+    "files": [
+      {
+        "_idRow": 1719157,
+        "_sFile": "startroop_morita9mmar_81aa9.zip",
+        "_nFilesize": 1802332,
+        "_tsDateAdded": 1780507063,
+        "_nDownloadCount": 153,
+        "_sDownloadUrl": "https://gamebanana.com/dl/1719157",
+        "_sMd5Checksum": "cb1d817fa93485d78a2aad5432065ee8",
+        "_sAnalysisState": "done",
+        "_sAnalysisResult": "ok",
+        "_sAnalysisResultVerbose": "File passed preliminary analysis",
+        "_sAvState": "done",
+        "_sAvResult": "clean",
+        "_bIsArchived": false,
+        "_bHasContents": true,
+        "_aModManagerIntegrations": [
+          {
+            "_sIconClasses": "ModboyIcon",
+            "_idToolRow": 6321,
+            "_aGameRowIds": [
+              4254,
+              2,
+              4660,
+              4,
+              34,
+              262,
+              263,
+              6651,
+              312,
+              9,
+              5,
+              249,
+              292,
+              222,
+              3456,
+              296,
+              4537,
+              297,
+              5418,
+              3370,
+              5306,
+              4214,
+              10,
+              5237,
+              73,
+              66,
+              124,
+              157,
+              150,
+              5531,
+              5694,
+              1843,
+              6,
+              6137,
+              6131,
+              2929,
+              6705,
+              8679,
+              7553
+            ],
+            "_sModManagerAlias": "Modboy",
+            "_sInstallerName": "Modboy",
+            "_idSubmitterRow": 142413,
+            "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+            "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+            "_sDownloadUrl": "modboy://Mod,682919,1719157"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 660140,
+    "name": "Ak-47 View-Model (for 9mmAR/MP5)",
+    "url": "https://gamebanana.com/mods/660140",
+    "description_html": "Simple reskin of the viewmodel and world model. functions the same.",
+    "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+    "license_checklist": {
+      "yes": [
+        "Download and install this Mod"
+      ],
+      "ask": [
+        "Redistribute this Mod on other sites",
+        "Modify this Mod and distribute the modified Mod on GameBanana",
+        "Modify this Mod and distribute the modified Mod on another site",
+        "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+        "Use parts of this Mod in another Mod and distribute the Mod on another site"
+      ],
+      "no": [
+        "Use this Mod or components of this Mod commercially",
+        "Use this Mod or components of this Mod in adult/NSFW content"
+      ]
+    },
+    "credits": [
+      {
+        "_sGroupName": "creator",
+        "_aAuthors": [
+          {
+            "_sRole": "modeler",
+            "_sName": "aclin"
+          }
+        ]
+      }
+    ],
+    "files": [
+      {
+        "_idRow": 1648634,
+        "_sFile": "hl1ak47_6cdc1.rar",
+        "_nFilesize": 438191,
+        "_tsDateAdded": 1773601321,
+        "_nDownloadCount": 119,
+        "_sDownloadUrl": "https://gamebanana.com/dl/1648634",
+        "_sMd5Checksum": "5e7827a2a0e012d8a8821c9af08aec1f",
+        "_sAnalysisState": "done",
+        "_sAnalysisResult": "ok",
+        "_sAnalysisResultVerbose": "File passed preliminary analysis",
+        "_sAvState": "done",
+        "_sAvResult": "clean",
+        "_bIsArchived": false,
+        "_bHasContents": true,
+        "_aModManagerIntegrations": [
+          {
+            "_sIconClasses": "ModboyIcon",
+            "_idToolRow": 6321,
+            "_aGameRowIds": [
+              4254,
+              2,
+              4660,
+              4,
+              34,
+              262,
+              263,
+              6651,
+              312,
+              9,
+              5,
+              249,
+              292,
+              222,
+              3456,
+              296,
+              4537,
+              297,
+              5418,
+              3370,
+              5306,
+              4214,
+              10,
+              5237,
+              73,
+              66,
+              124,
+              157,
+              150,
+              5531,
+              5694,
+              1843,
+              6,
+              6137,
+              6131,
+              2929,
+              6705,
+              8679,
+              7553
+            ],
+            "_sModManagerAlias": "Modboy",
+            "_sInstallerName": "Modboy",
+            "_idSubmitterRow": 142413,
+            "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+            "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+            "_sDownloadUrl": "modboy://Mod,660140,1648634"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 641014,
+    "name": "AKS-74U + TISHINA GL",
+    "url": "https://gamebanana.com/mods/641014",
+    "description_html": "NovaRain AKS-74U from HIT.<br>Well, the model was good, but I think it was too simple, so I remade it, if you can call it that.<br><br>2 variants:<br><ul><li>ak74u + gl tishina</li><li>ak74u + silencer + gl tishina</li></ul><br>It also includes 3 types of texture:<br><ul><li>Black</li><li>Cod4 style (I don't know how to say this combination)</li></ul><img src=\"https://cdn.staticneo.com/w/callofduty/Cod4ak74u.jpg\" width=\"20%\" class=\"SelectedElement\"><br><ul><li>Normal</li></ul><img src=\"https://i.imgur.com/s2mRi5a.jpeg\" width=\"50%\"><br><br>Not everyone knows how to operate the Jet Half-Life Model Viewer to change textures, so I did it this way so you only have to put the model in your game, instead of just uploading the textures.<br><br>include PeeWee models<br>Add new Hgrunt models<br>Add new barney models<br><br>info:<br>ak74u normal polys: 4840<br>ak74u silenced polys: 5016<br><br><span class=\"GreenColor\">My version </span>:D<br><br>It's my fault that I'm not usually complacent, but I thought it would look more tactical if I added other accessories.<br><br><img src=\"https://i.imgur.com/eR1xPG3.jpeg\" width=\"65%\"><br><br>The version I originally created was going to have a PSO-1 scope like this skin I found, but I discovered that this is unthinkable:<br><br><ol><li>The AKS-74U is a very short weapon. The PSO-1 has a very long sight.</li><li>The AKS-74U has an effective range of about 200-300 meters, while the PSO-1 is designed to fire up to 1000 meters with a long-barreled rifle.</li></ol><br>So I decided to put something logical and iconic on it. Sorry to the person who originally thought a PSO1 scope would work on the gun; I put a Kobra sight on it instead.<br><br><img src=\"https://i.imgur.com/grfY75h.jpeg\"><br><br>2 variants:<br><br><ul><li>ak74u + gl tishina + kobra sight = 8900&nbsp;polys</li><li>ak74u + gl tishika + silencer + kobra sight = 9210&nbsp;polys</li></ul><img src=\"https://i.imgur.com/lqMpU9K.jpeg\" width=\"60%\"><br><br>opfor:&nbsp;<a href=\"https://gamebanana.com/mods/652405\">https://gamebanana.com/mods/652405</a><br>blue shift:&nbsp;<a href=\"https://gamebanana.com/mods/657673\">https://gamebanana.com/mods/657673</a><br><br>(Outdated)? Well, I don't know,&nbsp;It works perfectly for me in Half-Life.<br><br>ENJOY!!",
+    "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+    "license_checklist": {
+      "yes": [
+        "Download and install this Mod"
+      ],
+      "ask": [
+        "Redistribute this Mod on other sites",
+        "Modify this Mod and distribute the modified Mod on GameBanana",
+        "Modify this Mod and distribute the modified Mod on another site",
+        "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+        "Use parts of this Mod in another Mod and distribute the Mod on another site",
+        "Use this Mod or components of this Mod in adult/NSFW content"
+      ],
+      "no": [
+        "Use this Mod or components of this Mod commercially"
+      ]
+    },
+    "credits": [
+      {
+        "_sGroupName": "Key Authors",
+        "_aAuthors": [
+          {
+            "_sRole": "Editor & Compiler",
+            "_idRow": 4351247,
+            "_sName": "Aguilera1996",
+            "_sUpicUrl": "https://images.gamebanana.com/img/upic/684693abccb67.png",
+            "_sProfileUrl": "https://gamebanana.com/members/4351247",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/6846528ce4707.png",
+            "_bIsOnline": false
+          }
+        ]
+      },
+      {
+        "_sGroupName": "Original Authors",
+        "_aAuthors": [
+          {
+            "_sRole": "from CS 1.6, edited",
+            "_idRow": 44739,
+            "_sName": "NovaRain",
+            "_sProfileUrl": "https://gamebanana.com/members/44739",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/585793ce7340c.png",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "AK Body Model",
+            "_idRow": 16049,
+            "_sName": "Darkstorn",
+            "_sProfileUrl": "https://gamebanana.com/members/16049",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/16049.gif",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "AK Body Skin",
+            "_sName": "snake "
+          },
+          {
+            "_sRole": "Wooden Foregrip Skin",
+            "_idRow": 163164,
+            "_sName": "Stoke",
+            "_sProfileUrl": "https://gamebanana.com/members/163164",
+            "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "Synthetic Grip Skin",
+            "_idRow": 1078719,
+            "_sName": "splinter",
+            "_sProfileUrl": "https://gamebanana.com/members/1078719",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/_7.png",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "AK UV-Maps",
+            "_idRow": 3295627,
+            "_sName": "Bullet_Head",
+            "_sProfileUrl": "https://gamebanana.com/members/3295627",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/660f933726fb6.png",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "AK UV-Maps",
+            "_idRow": 16049,
+            "_sName": "Darkstorn",
+            "_sProfileUrl": "https://gamebanana.com/members/16049",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/16049.gif",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "AK74 Magazine Model/Skin",
+            "_sName": "n|rvy "
+          },
+          {
+            "_sRole": "AK74 Magazine Black Reskin",
+            "_idRow": 44739,
+            "_sName": "NovaRain",
+            "_sProfileUrl": "https://gamebanana.com/members/44739",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/585793ce7340c.png",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "Buttstock Skin",
+            "_idRow": 4750245,
+            "_sName": "Creeping_Jesus",
+            "_sProfileUrl": "https://gamebanana.com/members/4750245",
+            "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "Cartridge in Magazine",
+            "_idRow": 837209,
+            "_sName": "-X-",
+            "_sProfileUrl": "https://gamebanana.com/members/837209",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/_.gif",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "Low Poly Shell",
+            "_sName": "Paranoia Team "
+          },
+          {
+            "_sRole": "Shooting Sound",
+            "_sName": "cR45h "
+          },
+          {
+            "_sRole": "Kobra sights",
+            "_sName": "AbsolutSoft "
+          },
+          {
+            "_sRole": "Animation",
+            "_idRow": 2109589,
+            "_sName": "MarkedFour9027",
+            "_sProfileUrl": "https://gamebanana.com/members/2109589",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/655764c9cf721.png",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "Hand Model",
+            "_sName": "Valve/Gearbox"
+          },
+          {
+            "_sRole": "Sounds",
+            "_sName": "www.csexe.ru "
+          },
+          {
+            "_sRole": "New Explode sounds",
+            "_sName": "teh strelok "
+          },
+          {
+            "_sRole": "gl tishina model",
+            "_sName": "kot23rus "
+          },
+          {
+            "_sRole": "Soviet Barney (Red Alert: Half-Life X-pantion)",
+            "_sName": "dzugaru "
+          }
+        ]
+      }
+    ],
+    "files": [
+      {
+        "_idRow": 1585305,
+        "_sFile": "aks74u_f6a15.rar",
+        "_nFilesize": 12682954,
+        "_tsDateAdded": 1766390649,
+        "_nDownloadCount": 146,
+        "_sDownloadUrl": "https://gamebanana.com/dl/1585305",
+        "_sMd5Checksum": "e3a00aa62e3377f495b85225b5d0e4f4",
+        "_sAnalysisState": "done",
+        "_sAnalysisResult": "ok",
+        "_sAnalysisResultVerbose": "File passed preliminary analysis",
+        "_sAvState": "done",
+        "_sAvResult": "clean",
+        "_bIsArchived": false,
+        "_bHasContents": true,
+        "_sDescription": "aks74u + tishina gl",
+        "_aModManagerIntegrations": [
+          {
+            "_sIconClasses": "ModboyIcon",
+            "_idToolRow": 6321,
+            "_aGameRowIds": [
+              4254,
+              2,
+              4660,
+              4,
+              34,
+              262,
+              263,
+              6651,
+              312,
+              9,
+              5,
+              249,
+              292,
+              222,
+              3456,
+              296,
+              4537,
+              297,
+              5418,
+              3370,
+              5306,
+              4214,
+              10,
+              5237,
+              73,
+              66,
+              124,
+              157,
+              150,
+              5531,
+              5694,
+              1843,
+              6,
+              6137,
+              6131,
+              2929,
+              6705,
+              8679,
+              7553
+            ],
+            "_sModManagerAlias": "Modboy",
+            "_sInstallerName": "Modboy",
+            "_idSubmitterRow": 142413,
+            "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+            "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+            "_sDownloadUrl": "modboy://Mod,641014,1585305"
+          }
+        ]
+      },
+      {
+        "_idRow": 1585303,
+        "_sFile": "aks74u_silencer.rar",
+        "_nFilesize": 12386559,
+        "_tsDateAdded": 1766390474,
+        "_nDownloadCount": 74,
+        "_sDownloadUrl": "https://gamebanana.com/dl/1585303",
+        "_sMd5Checksum": "4b1df3d954695c36134dcc02f821bbdb",
+        "_sAnalysisState": "done",
+        "_sAnalysisResult": "ok",
+        "_sAnalysisResultVerbose": "File passed preliminary analysis",
+        "_sAvState": "done",
+        "_sAvResult": "clean",
+        "_bIsArchived": false,
+        "_bHasContents": true,
+        "_sDescription": "aks74u + tishina gl + silencer",
+        "_aModManagerIntegrations": [
+          {
+            "_sIconClasses": "ModboyIcon",
+            "_idToolRow": 6321,
+            "_aGameRowIds": [
+              4254,
+              2,
+              4660,
+              4,
+              34,
+              262,
+              263,
+              6651,
+              312,
+              9,
+              5,
+              249,
+              292,
+              222,
+              3456,
+              296,
+              4537,
+              297,
+              5418,
+              3370,
+              5306,
+              4214,
+              10,
+              5237,
+              73,
+              66,
+              124,
+              157,
+              150,
+              5531,
+              5694,
+              1843,
+              6,
+              6137,
+              6131,
+              2929,
+              6705,
+              8679,
+              7553
+            ],
+            "_sModManagerAlias": "Modboy",
+            "_sInstallerName": "Modboy",
+            "_idSubmitterRow": 142413,
+            "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+            "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+            "_sDownloadUrl": "modboy://Mod,641014,1585303"
+          }
+        ]
+      },
+      {
+        "_idRow": 1585306,
+        "_sFile": "my_aks74u_ver1.rar",
+        "_nFilesize": 14950463,
+        "_tsDateAdded": 1766390666,
+        "_nDownloadCount": 46,
+        "_sDownloadUrl": "https://gamebanana.com/dl/1585306",
+        "_sMd5Checksum": "fc5a993b2c55501d886bec10e786b56b",
+        "_sAnalysisState": "done",
+        "_sAnalysisResult": "ok",
+        "_sAnalysisResultVerbose": "File passed preliminary analysis",
+        "_sAvState": "done",
+        "_sAvResult": "clean",
+        "_bIsArchived": false,
+        "_bHasContents": true,
+        "_sDescription": "aks74u + tishina gl + kobra sight",
+        "_aModManagerIntegrations": [
+          {
+            "_sIconClasses": "ModboyIcon",
+            "_idToolRow": 6321,
+            "_aGameRowIds": [
+              4254,
+              2,
+              4660,
+              4,
+              34,
+              262,
+              263,
+              6651,
+              312,
+              9,
+              5,
+              249,
+              292,
+              222,
+              3456,
+              296,
+              4537,
+              297,
+              5418,
+              3370,
+              5306,
+              4214,
+              10,
+              5237,
+              73,
+              66,
+              124,
+              157,
+              150,
+              5531,
+              5694,
+              1843,
+              6,
+              6137,
+              6131,
+              2929,
+              6705,
+              8679,
+              7553
+            ],
+            "_sModManagerAlias": "Modboy",
+            "_sInstallerName": "Modboy",
+            "_idSubmitterRow": 142413,
+            "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+            "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+            "_sDownloadUrl": "modboy://Mod,641014,1585306"
+          }
+        ]
+      },
+      {
+        "_idRow": 1585307,
+        "_sFile": "my_aks74u_ver2.rar",
+        "_nFilesize": 14530963,
+        "_tsDateAdded": 1766390870,
+        "_nDownloadCount": 66,
+        "_sDownloadUrl": "https://gamebanana.com/dl/1585307",
+        "_sMd5Checksum": "80236fef2d4738686045d9fc6767d0f1",
+        "_sAnalysisState": "done",
+        "_sAnalysisResult": "ok",
+        "_sAnalysisResultVerbose": "File passed preliminary analysis",
+        "_sAvState": "done",
+        "_sAvResult": "clean",
+        "_bIsArchived": false,
+        "_bHasContents": true,
+        "_sDescription": "aks74u + tishina gl + silencer + kobra sight ",
+        "_aModManagerIntegrations": [
+          {
+            "_sIconClasses": "ModboyIcon",
+            "_idToolRow": 6321,
+            "_aGameRowIds": [
+              4254,
+              2,
+              4660,
+              4,
+              34,
+              262,
+              263,
+              6651,
+              312,
+              9,
+              5,
+              249,
+              292,
+              222,
+              3456,
+              296,
+              4537,
+              297,
+              5418,
+              3370,
+              5306,
+              4214,
+              10,
+              5237,
+              73,
+              66,
+              124,
+              157,
+              150,
+              5531,
+              5694,
+              1843,
+              6,
+              6137,
+              6131,
+              2929,
+              6705,
+              8679,
+              7553
+            ],
+            "_sModManagerAlias": "Modboy",
+            "_sInstallerName": "Modboy",
+            "_idSubmitterRow": 142413,
+            "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+            "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+            "_sDownloadUrl": "modboy://Mod,641014,1585307"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 618001,
+    "name": "Assault M4A1 with Drum Mag",
+    "url": "https://gamebanana.com/mods/618001",
+    "description_html": "Adaptation of an M4A1 originally created for Counter-Strike 1.6<br><br>Based on:\u00a0\u00a0<br><a href=\"https://gamebanana.com/mods/224357\"><img src=\"https://images.gamebanana.com/img/embeddables/Mod_224357_large.jpg?1620256245\"></a>",
+    "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+    "license_checklist": {
+      "yes": [
+        "Download and install this Mod"
+      ],
+      "ask": [
+        "Redistribute this Mod on other sites",
+        "Modify this Mod and distribute the modified Mod on GameBanana",
+        "Modify this Mod and distribute the modified Mod on another site",
+        "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+        "Use parts of this Mod in another Mod and distribute the Mod on another site",
+        "Use this Mod or components of this Mod in adult/NSFW content"
+      ],
+      "no": [
+        "Use this Mod or components of this Mod commercially"
+      ]
+    },
+    "credits": [
+      {
+        "_sGroupName": "Key Authors",
+        "_aAuthors": [
+          {
+            "_sRole": "Editor / Compiler",
+            "_idRow": 4351247,
+            "_sName": "Aguilera1996",
+            "_sUpicUrl": "https://images.gamebanana.com/img/upic/684693abccb67.png",
+            "_sProfileUrl": "https://gamebanana.com/members/4351247",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/6846528ce4707.png",
+            "_bIsOnline": false
+          }
+        ]
+      },
+      {
+        "_sGroupName": "Original Authors",
+        "_aAuthors": [
+          {
+            "_sRole": "Unknown",
+            "_sName": "MurdocK"
+          },
+          {
+            "_sRole": "Unknown",
+            "_sName": "FA Team"
+          },
+          {
+            "_sRole": "Unknown",
+            "_sName": "ocerlaod"
+          },
+          {
+            "_sRole": "Unknown",
+            "_sName": "Bullit"
+          },
+          {
+            "_sRole": "Unknown",
+            "_sName": "Ankalar"
+          },
+          {
+            "_sRole": "Unknown",
+            "_sName": "Creeping_Jesus"
+          },
+          {
+            "_sRole": "Unknown",
+            "_idRow": 164481,
+            "_sName": "Teh Snake",
+            "_sUpicUrl": "https://images.gamebanana.com/img/upic/663d1b73c61b4.png",
+            "_sProfileUrl": "https://gamebanana.com/members/164481",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/663d1b6a3aeed.png",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "Unknown",
+            "_idRow": 298110,
+            "_sName": "kalasnikov88",
+            "_sProfileUrl": "https://gamebanana.com/members/298110",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/298110.jpg",
+            "_bIsOnline": false
+          }
+        ]
+      }
+    ],
+    "files": [
+      {
+        "_idRow": 1680513,
+        "_sFile": "assault_m4a1_with_drum_mag.rar",
+        "_nFilesize": 2946029,
+        "_tsDateAdded": 1776577490,
+        "_nDownloadCount": 81,
+        "_sDownloadUrl": "https://gamebanana.com/dl/1680513",
+        "_sMd5Checksum": "b7e12a922292b870509ea05b67a18313",
+        "_sAnalysisState": "done",
+        "_sAnalysisResult": "ok",
+        "_sAnalysisResultVerbose": "File passed preliminary analysis",
+        "_sAvState": "done",
+        "_sAvResult": "clean",
+        "_bIsArchived": false,
+        "_bHasContents": true,
+        "_aModManagerIntegrations": [
+          {
+            "_sIconClasses": "ModboyIcon",
+            "_idToolRow": 6321,
+            "_aGameRowIds": [
+              4254,
+              2,
+              4660,
+              4,
+              34,
+              262,
+              263,
+              6651,
+              312,
+              9,
+              5,
+              249,
+              292,
+              222,
+              3456,
+              296,
+              4537,
+              297,
+              5418,
+              3370,
+              5306,
+              4214,
+              10,
+              5237,
+              73,
+              66,
+              124,
+              157,
+              150,
+              5531,
+              5694,
+              1843,
+              6,
+              6137,
+              6131,
+              2929,
+              6705,
+              8679,
+              7553
+            ],
+            "_sModManagerAlias": "Modboy",
+            "_sInstallerName": "Modboy",
+            "_idSubmitterRow": 142413,
+            "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+            "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+            "_sDownloadUrl": "modboy://Mod,618001,1680513"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 615797,
+    "name": "M4 with a grenade launcher and aimpoint scope",
+    "url": "https://gamebanana.com/mods/615797",
+    "description_html": "M4 series rifle with a grenade launcher and&nbsp;aimpoint scope.<br><br>Found without proper credits.<br><br>Based on:&nbsp;&nbsp;<br><a href=\"https://gamebanana.com/mods/224988\"><img src=\"https://images.gamebanana.com/img/embeddables/Mod_224988_large.jpg?1620430537\"></a><br>Map:<br><a href=\"https://gamebanana.com/mods/59128\"><img src=\"https://images.gamebanana.com/img/ss/mods/sgi_large_654e7288cd352_8b2016ebc2f0.webp\"></a>",
+    "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+    "license_checklist": {
+      "yes": [
+        "Download and install this Mod"
+      ],
+      "ask": [
+        "Redistribute this Mod on other sites",
+        "Modify this Mod and distribute the modified Mod on GameBanana",
+        "Modify this Mod and distribute the modified Mod on another site",
+        "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+        "Use parts of this Mod in another Mod and distribute the Mod on another site",
+        "Use this Mod or components of this Mod in adult/NSFW content"
+      ],
+      "no": [
+        "Use this Mod or components of this Mod commercially"
+      ]
+    },
+    "credits": [
+      {
+        "_sGroupName": "Key Authors",
+        "_aAuthors": [
+          {
+            "_sRole": "Editor / Compiler",
+            "_idRow": 4351247,
+            "_sName": "Aguilera1996",
+            "_sUpicUrl": "https://images.gamebanana.com/img/upic/684693abccb67.png",
+            "_sProfileUrl": "https://gamebanana.com/members/4351247",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/6846528ce4707.png",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "Everything",
+            "_sName": "Unknown"
+          }
+        ]
+      },
+      {
+        "_sGroupName": "Special Thanks",
+        "_aAuthors": [
+          {
+            "_sRole": "Hosting (2013)",
+            "_sName": "Fileplanet"
+          }
+        ]
+      }
+    ],
+    "files": [
+      {
+        "_idRow": 1679598,
+        "_sFile": "m4_m203_acog.rar",
+        "_nFilesize": 1952290,
+        "_tsDateAdded": 1776498471,
+        "_nDownloadCount": 49,
+        "_sDownloadUrl": "https://gamebanana.com/dl/1679598",
+        "_sMd5Checksum": "8f6341b3e19198bdea7e1ce272433458",
+        "_sAnalysisState": "done",
+        "_sAnalysisResult": "ok",
+        "_sAnalysisResultVerbose": "File passed preliminary analysis",
+        "_sAvState": "done",
+        "_sAvResult": "clean",
+        "_bIsArchived": false,
+        "_bHasContents": true,
+        "_aModManagerIntegrations": [
+          {
+            "_sIconClasses": "ModboyIcon",
+            "_idToolRow": 6321,
+            "_aGameRowIds": [
+              4254,
+              2,
+              4660,
+              4,
+              34,
+              262,
+              263,
+              6651,
+              312,
+              9,
+              5,
+              249,
+              292,
+              222,
+              3456,
+              296,
+              4537,
+              297,
+              5418,
+              3370,
+              5306,
+              4214,
+              10,
+              5237,
+              73,
+              66,
+              124,
+              157,
+              150,
+              5531,
+              5694,
+              1843,
+              6,
+              6137,
+              6131,
+              2929,
+              6705,
+              8679,
+              7553
+            ],
+            "_sModManagerAlias": "Modboy",
+            "_sInstallerName": "Modboy",
+            "_idSubmitterRow": 142413,
+            "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+            "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+            "_sDownloadUrl": "modboy://Mod,615797,1679598"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 536775,
+    "name": "Tigg's M4 (REWORKED)",
+    "url": "https://gamebanana.com/mods/536775",
+    "description_html": "It has some there when it reloads but it is not noticeable, I also added the default black mesa audios, nothing more to say.<br><br><b><span class=\"RedColor\">READ THE REQUIREMENTS</span></b><br>",
+    "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+    "license_checklist": {
+      "yes": [
+        "Download and install this Mod"
+      ],
+      "ask": [
+        "Redistribute this Mod on other sites",
+        "Modify this Mod and distribute the modified Mod on GameBanana",
+        "Modify this Mod and distribute the modified Mod on another site",
+        "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+        "Use parts of this Mod in another Mod and distribute the Mod on another site",
+        "Use this Mod or components of this Mod in adult/NSFW content"
+      ],
+      "no": [
+        "Use this Mod or components of this Mod commercially"
+      ]
+    },
+    "credits": [
+      {
+        "_sGroupName": "Key Authors",
+        "_aAuthors": [
+          {
+            "_sRole": "Port, riggin v model, Tests & screenshots",
+            "_idRow": 3348232,
+            "_sName": "-deathsun-",
+            "_sUpicUrl": "https://images.gamebanana.com/img/upic/6ab6d2779cf72.png",
+            "_sProfileUrl": "https://gamebanana.com/members/3348232",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/6a7cc81084f36.png",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "re animations, fix smooth shading from M4 references",
+            "_idRow": 2842436,
+            "_sName": "marshfreakinghoppers",
+            "_sUpicUrl": "https://images.gamebanana.com/img/upic/6998ba702d08f.png",
+            "_sProfileUrl": "https://gamebanana.com/members/2842436",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/6987fbe26eca9.png",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "Rig w & p models",
+            "_idRow": 1747626,
+            "_sName": "Mr.J01",
+            "_sProfileUrl": "https://gamebanana.com/members/1747626",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/5f4d92f90edb1.jpg",
+            "_bIsOnline": false
+          }
+        ]
+      },
+      {
+        "_sGroupName": "Original Authors",
+        "_aAuthors": [
+          {
+            "_sRole": "Model M4 & Textures",
+            "_idRow": 1277445,
+            "_sName": "tigg",
+            "_sProfileUrl": "https://gamebanana.com/members/1277445",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/4e949a08bfccb.png",
+            "_bIsOnline": false
+          },
+          {
+            "_sRole": "sound reload from Beefy Weapon Sounds - MBWS",
+            "_idRow": 1693546,
+            "_sName": "Kreze",
+            "_sProfileUrl": "https://gamebanana.com/members/1693546",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/647f688481740.jpg",
+            "_bIsOnline": false,
+            "_sUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=1954333932"
+          },
+          {
+            "_sRole": "references, animations, materials & sounds",
+            "_sName": "Crowbar Collective"
+          }
+        ]
+      }
+    ],
+    "files": [
+      {
+        "_idRow": 1637605,
+        "_sFile": "tigg_s_m4_reworked_.zip",
+        "_nFilesize": 123212871,
+        "_tsDateAdded": 1772392329,
+        "_nDownloadCount": 132,
+        "_sDownloadUrl": "https://gamebanana.com/dl/1637605",
+        "_sMd5Checksum": "c2a9275634556be48ba00d84bd4eea3f",
+        "_sAnalysisState": "done",
+        "_sAnalysisResult": "ok",
+        "_sAnalysisResultVerbose": "File passed preliminary analysis",
+        "_sAvState": "done",
+        "_sAvResult": "clean",
+        "_bIsArchived": false,
+        "_bHasContents": true,
+        "_aModManagerIntegrations": [
+          {
+            "_sIconClasses": "ModboyIcon",
+            "_idToolRow": 6321,
+            "_aGameRowIds": [
+              4254,
+              2,
+              4660,
+              4,
+              34,
+              262,
+              263,
+              6651,
+              312,
+              9,
+              5,
+              249,
+              292,
+              222,
+              3456,
+              296,
+              4537,
+              297,
+              5418,
+              3370,
+              5306,
+              4214,
+              10,
+              5237,
+              73,
+              66,
+              124,
+              157,
+              150,
+              5531,
+              5694,
+              1843,
+              6,
+              6137,
+              6131,
+              2929,
+              6705,
+              8679,
+              7553
+            ],
+            "_sModManagerAlias": "Modboy",
+            "_sInstallerName": "Modboy",
+            "_idSubmitterRow": 142413,
+            "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+            "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+            "_sDownloadUrl": "modboy://Mod,536775,1637605"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 706926,
+    "name": "Colt Model 727 on LD models",
+    "url": "https://gamebanana.com/mods/706926",
+    "description_html": "You ever wanted the HD Colt Model 727&nbsp;w/M203 Grenade Launcher&nbsp;on Low Definition? No? Then why are you here, I am literally absent in school today just to post this mod. But anyways, the LD HECU has the HD Colt Model 727&nbsp;w/M203 Grenade Launcher&nbsp;rather than the MP5SD w/M203 Grenade Launcher now, wanted to reanimate it but got too lazy.. Includes sprites too, sounds, and changed the damage for it (play it on Hard Mode I dare you).<br><br><span class=\"GreenColor\"><del>I AM ALSO MAKING AN GULF-WAR TYPE HECU MOD AND IT'S ON WiP!!</del></span>",
+    "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+    "license_checklist": {
+      "yes": [
+        "Download and install this Mod"
+      ],
+      "ask": [
+        "Redistribute this Mod on other sites",
+        "Modify this Mod and distribute the modified Mod on GameBanana",
+        "Modify this Mod and distribute the modified Mod on another site",
+        "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+        "Use parts of this Mod in another Mod and distribute the Mod on another site",
+        "Use this Mod or components of this Mod in adult/NSFW content"
+      ],
+      "no": [
+        "Use this Mod or components of this Mod commercially"
+      ]
+    },
+    "credits": [
+      {
+        "_sGroupName": "Key Authors",
+        "_aAuthors": [
+          {
+            "_sRole": "Creator of Half Life",
+            "_idRow": 2374704,
+            "_sName": "Valve",
+            "_sProfileUrl": "https://gamebanana.com/members/2374704",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/63fbf1e2ce75e.png",
+            "_bIsOnline": false
+          }
+        ]
+      },
+      {
+        "_sGroupName": "Original Authors",
+        "_aAuthors": [
+          {
+            "_sRole": "I hate writing this",
+            "_idRow": 4478772,
+            "_sName": "drxgwapojjj",
+            "_sProfileUrl": "https://gamebanana.com/members/4478772",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/68234c7ae72d4.jpg",
+            "_bIsOnline": false
+          }
+        ]
+      },
+      {
+        "_sGroupName": "Special Thanks",
+        "_aAuthors": [
+          {
+            "_sRole": "Creator of the HD pack",
+            "_idRow": 3028292,
+            "_sName": "Gearbox Software",
+            "_sProfileUrl": "https://gamebanana.com/members/3028292",
+            "_sAvatarUrl": "https://images.gamebanana.com/img/av/6a6a925736ae9.png",
+            "_bIsOnline": false
+          }
+        ]
+      }
+    ],
+    "files": [
+      {
+        "_idRow": 1790503,
+        "_sFile": "colt_model_727_in_ld_mod.rar",
+        "_nFilesize": 482129,
+        "_tsDateAdded": 1787196320,
+        "_nDownloadCount": 36,
+        "_sDownloadUrl": "https://gamebanana.com/dl/1790503",
+        "_sMd5Checksum": "2b8b45d5e38d54ed55353a52741dc818",
+        "_sAnalysisState": "done",
+        "_sAnalysisResult": "ok",
+        "_sAnalysisResultVerbose": "File passed preliminary analysis",
+        "_sAvState": "done",
+        "_sAvResult": "clean",
+        "_bIsArchived": false,
+        "_bHasContents": true,
+        "_sDescription": "penguinz0",
+        "_aModManagerIntegrations": [
+          {
+            "_sIconClasses": "ModboyIcon",
+            "_idToolRow": 6321,
+            "_aGameRowIds": [
+              4254,
+              2,
+              4660,
+              4,
+              34,
+              262,
+              263,
+              6651,
+              312,
+              9,
+              5,
+              249,
+              292,
+              222,
+              3456,
+              296,
+              4537,
+              297,
+              5418,
+              3370,
+              5306,
+              4214,
+              10,
+              5237,
+              73,
+              66,
+              124,
+              157,
+              150,
+              5531,
+              5694,
+              1843,
+              6,
+              6137,
+              6131,
+              2929,
+              6705,
+              8679,
+              7553
+            ],
+            "_sModManagerAlias": "Modboy",
+            "_sInstallerName": "Modboy",
+            "_idSubmitterRow": 142413,
+            "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+            "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+            "_sDownloadUrl": "modboy://Mod,706926,1790503"
+          }
+        ]
+      }
+    ]
+  }
+]

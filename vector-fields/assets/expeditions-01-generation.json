@@ -1,0 +1,52 @@
+[
+  {
+    "id": "ww1-trench",
+    "type": "character",
+    "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a11be2-708e-78a2-b12c-a67a704ceed4\\exec-88e3f4af-6621-4d0a-99f3-d4cbc10cbee5.png"
+  },
+  {
+    "id": "ww1-trench",
+    "type": "weapon",
+    "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a11be2-708e-78a2-b12c-a67a704ceed4\\exec-3f02ed64-95a7-4265-acb4-667334f23d54.png"
+  },
+  {
+    "id": "bedrock-miner",
+    "type": "character",
+    "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a11be2-708e-78a2-b12c-a67a704ceed4\\exec-a22a7111-14a0-4049-8a5f-9989252fbb97.png"
+  },
+  {
+    "id": "bedrock-miner",
+    "type": "weapon",
+    "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a11be2-708e-78a2-b12c-a67a704ceed4\\exec-f806439d-4a23-4bf7-a61f-16a4f07aee3a.png"
+  },
+  {
+    "id": "new-york-noir",
+    "type": "character",
+    "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a11be2-708e-78a2-b12c-a67a704ceed4\\exec-22180669-713e-4ce2-acd9-019ed5aef3b8.png"
+  },
+  {
+    "id": "new-york-noir",
+    "type": "weapon",
+    "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a11be2-708e-78a2-b12c-a67a704ceed4\\exec-2e2d19ec-3394-4677-b1a1-4d23c7d37257.png"
+  },
+  {
+    "id": "castaway",
+    "type": "character",
+    "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a11be2-708e-78a2-b12c-a67a704ceed4\\exec-8170653a-b3d4-434e-8afd-28df3565d17b.png"
+  },
+  {
+    "id": "castaway",
+    "type": "weapon",
+    "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a11be2-708e-78a2-b12c-a67a704ceed4\\exec-db467344-81d8-44e3-b2b5-b7a42526ab1b.png"
+  },
+  {
+    "id": "abyss-diver",
+    "type": "character",
+    "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a11be2-708e-78a2-b12c-a67a704ceed4\\exec-3eef4cc6-32e8-475d-9970-5ebe7c162a15.png"
+  },
+  {
+    "id": "abyss-diver",
+    "type": "weapon",
+    "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a11be2-708e-78a2-b12c-a67a704ceed4\\exec-dc8d5731-a4a6-4f7b-9dd1-1141a1f3ed6f.png"
+  }
+]

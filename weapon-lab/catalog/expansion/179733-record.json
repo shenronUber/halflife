@@ -1,0 +1,164 @@
+{
+  "id": 179733,
+  "name": "Lonewolf's LR300 For MP5",
+  "url": "https://gamebanana.com/mods/179733",
+  "game": "Half-Life",
+  "likes": 20,
+  "downloads": 2989,
+  "license": "You may use my modifications in your own work without permission. However, please <b>credit</b> me for my work.<br>",
+  "license_checklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "credits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Unknown",
+          "_idRow": "644940",
+          "_sName": "Lonewolf",
+          "_sProfileUrl": "https://gamebanana.com/members/644940",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/_10.png",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Jennifer!!"
+        },
+        {
+          "_sRole": "Unknown",
+          "_idRow": "59550",
+          "_sName": "Sober",
+          "_sProfileUrl": "https://gamebanana.com/members/59550",
+          "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Unknown",
+          "_idRow": "58206",
+          "_sName": "sedj",
+          "_sProfileUrl": "https://gamebanana.com/members/58206",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/banned.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Unknown",
+          "_idRow": "49465",
+          "_sName": "masterwiLL",
+          "_sProfileUrl": "https://gamebanana.com/members/49465",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/49465.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Unknown",
+          "_idRow": "84875",
+          "_sName": "DoomMarine23",
+          "_sProfileUrl": "https://gamebanana.com/members/84875",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/_4988-.jpg",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Vavle"
+        }
+      ]
+    }
+  ],
+  "description_html": "CZLoneWolf's LR300\r\n===============\r\n--- OLD CREDITS ---\r\nModel: LoneWolf\r\nSkin: LoneWolf\r\nMaster: Lonewolf\r\nAnimations: Jennifer!!\r\nCSS Compile: Sober\r\nCZ Compile: Sedj\r\nRe: Compile: masterwiLL\r\nP & W models: masterwiLL\r\nLam Comiling : De@dMe@t a.k.a DMz\r\nLaser : Kais\r\n--- OLD CREDITS ---\r\n\r\n--- NEW CREDITS ---\r\nHL1.6 Compile: Doommarine23\r\nRecolor : Doommarine23\r\nAnimations : Vavle\r\n--- NEW CREDITS ---\r\n\r\nNote due to vertix limit the LAM and laser has been removed, Also a slight recolor was done so it does not show up red",
+  "files": [
+    {
+      "_idRow": 265230,
+      "_sFile": "mp5_lr300.rar",
+      "_nFilesize": 1024065,
+      "_tsDateAdded": 1160863207,
+      "_nDownloadCount": 2989,
+      "_sDownloadUrl": "https://gamebanana.com/dl/265230",
+      "_sMd5Checksum": "29129f514c7ab8bd767cb54903e5a8c1",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,179733,265230"
+        }
+      ]
+    }
+  ],
+  "retrieved": "2026-10-08",
+  "download": {
+    "id": 179733,
+    "name": "Lonewolf's LR300 For MP5",
+    "archive": "downloads\\179733-mp5_lr300.rar",
+    "sha256": "debab1f33d38e4e19a3b0302a22673dc9d8f0c7d6300ed7e528495d38cb515c8",
+    "bytes": 1024065,
+    "models": [
+      "extracted\\179733\\v_9mmar.mdl",
+      "extracted\\179733\\w_9mmAR.mdl"
+    ]
+  }
+}

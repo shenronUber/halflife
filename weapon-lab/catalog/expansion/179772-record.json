@@ -1,0 +1,149 @@
+{
+  "id": 179772,
+  "name": "M15AA4 Tacical",
+  "url": "https://gamebanana.com/mods/179772",
+  "game": "Half-Life",
+  "likes": 33,
+  "downloads": 8561,
+  "license": "You may use my modifications in your own work without permission. However, please <b>credit</b> me for my work.<br>",
+  "license_checklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "credits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Unknown",
+          "_sName": "Twinke Masta"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "DOD Team Animations"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Jennifer!!"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Vunsunta"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "SureShot"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Fearisfood666"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Smokey joe"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Doommarine23"
+        }
+      ]
+    }
+  ],
+  "description_html": "Model - Twinke Masta Texture - Twinke Masta Sleeves - DoD Team Animations - Jennifer!! Sounds - Vunsunta / SureShot Animation Edits - SureShot Previous Compile (v/w) - SureShot Shortened Foregrip/Barrell Hack/aug recompile: Fearisfood666 reddot model: twinkee masta reddot skin: Smokey joe Convert to 1.6: Doommarine23 Terms and Conditions apply to these files and their usage/redistribution. For full details see http://www.csnation.net/skins/terms.html",
+  "files": [
+    {
+      "_idRow": 264580,
+      "_sFile": "m15convert.rar",
+      "_nFilesize": 1463408,
+      "_tsDateAdded": 1165638120,
+      "_nDownloadCount": 8561,
+      "_sDownloadUrl": "https://gamebanana.com/dl/264580",
+      "_sMd5Checksum": "4b37c46b676556258c4d3b1075d3b3a6",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,179772,264580"
+        }
+      ]
+    }
+  ],
+  "retrieved": "2026-10-08",
+  "download": {
+    "id": 179772,
+    "name": "M15AA4 Tacical",
+    "archive": "downloads\\179772-m15convert.rar",
+    "sha256": "510db7313da090c25884ba7a26d15a2b14919aea483704d512a685f2f760efd3",
+    "bytes": 1463408,
+    "models": [
+      "extracted\\179772\\v_9mmar.mdl",
+      "extracted\\179772\\w_9mmAR.mdl",
+      "extracted\\179772\\w_9mmarclip.mdl"
+    ]
+  }
+}

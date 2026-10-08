@@ -1,0 +1,50 @@
+[
+  {
+    "code": "TED",
+    "name": "Dissipation thermo-entropique",
+    "system": "weapon",
+    "color": "#f5a055",
+    "icon": "ted.svg",
+    "native_icon": 34
+  },
+  {
+    "code": "IP",
+    "name": "Profil inertiel",
+    "system": "weapon",
+    "color": "#70b5f9",
+    "icon": "ip.svg",
+    "native_icon": 35
+  },
+  {
+    "code": "HS",
+    "name": "Stabilisation harmonique",
+    "system": "weapon",
+    "color": "#c0a2fa",
+    "icon": "hs.svg",
+    "native_icon": 36
+  },
+  {
+    "code": "OI",
+    "name": "Integrite operationnelle",
+    "system": "weapon",
+    "color": "#66dab4",
+    "icon": "oi.svg",
+    "native_icon": 37
+  },
+  {
+    "code": "SIG",
+    "name": "Empreinte detectable",
+    "system": "operator",
+    "color": "#5cd9e8",
+    "icon": "sig.svg",
+    "native_icon": 38
+  },
+  {
+    "code": "BIO",
+    "name": "Charge metabolique",
+    "system": "operator",
+    "color": "#9fdb73",
+    "icon": "bio.svg",
+    "native_icon": 39
+  }
+]

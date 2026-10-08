@@ -17,6 +17,7 @@
 //
 
 #include "hud.h"
+#include "vf_character.h"
 #include "cl_util.h"
 #include "parsemsg.h"
 #include "r_efx.h"
@@ -41,6 +42,7 @@ int CHud :: MsgFunc_ResetHUD(const char *pszName, int iSize, void *pbuf )
 {
 	ASSERT( iSize == 0 );
 
+	VF_CharacterReset();
 	// clear all hud data
 	HUDLIST *pList = m_pHudList;
 

@@ -1,0 +1,230 @@
+{
+  "id": 179785,
+  "name": "AK74M, AK101, AK103 Rifle with GP30 for 9mmAR",
+  "url": "https://gamebanana.com/mods/179785",
+  "game": "Half-Life",
+  "likes": 29,
+  "downloads": 13469,
+  "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "license_checklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "credits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Unknown",
+          "_sName": "Darkstorn"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Kimono"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Splinter"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Bullet_Head"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Polygon"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Dreadus"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "TheLama"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Sproily"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Lonewolf"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Twinke Masta"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Pete"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Ambient.Impact"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "H4wK"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "wonrz"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Gearbox"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Unbreakable"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Aydin"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Toadie"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Global Warfare Team"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Vunsunta"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Firearms Team"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "CS Team"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Isaac"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "NovaRain"
+        }
+      ]
+    }
+  ],
+  "description_html": "Credits:\r\n--------\r\nAK Body Model: Darkstorn\r\nAK Body Skin: Kimono, Darkstorn, Splinter, receiver skins edited by Isaac\r\nSynthetic Skin: Splinter\r\nAK UV-Maps: Bullet_Head & Darkstorn\r\n\r\nAK Magazine Model: N.R.\r\nAK Magazine Skin: Polygon, edited by Isaac\r\n\r\nAK-74 Compensator Model: N.R.\r\nAK-74 Compensator Skin: Dreadus\r\n\r\nSide Rail Model: TheLama\r\nSide Rail Skin: Sproily\r\n\r\nGP-30 Model: Twinke Masta\r\nGP-30 Skin: Pete\r\n\r\nCartridge in Magazine: Lonewolf\r\nVOG-25P Grenade: Pete\r\n\r\nImproved HEV/OP4/BS Arm Models: Ambient.Impact\r\nHEV Arm Skins: H4wK, wonrz\r\nOP4 Glove Skins: Gearbox, Unbreakable(Desert), Aydin(Worn)\r\nOP4 Arm Skin: Gearbox\r\nRemapping Skins to Gearbox UV: Toadie\r\nBS Arm Skins: H4wK\r\n\r\nAnimations: Toadie (<3)\r\nShooting Sound: from AK-74 in Global Warfare 1.5\r\nReloading Sound: Vunsunta\r\nGrenade Launcher Sound: from GP-25 in Firearms Mod 3.0\r\nSafety Sound: from Firearms 3.0\r\nSound Tweaks: N.R.\r\n\r\nRealistic Muzzleflash: from Firearms 3.0\r\nSprite edits: N.R.\r\n\r\n+-----------------------------------+\r\n| Hack/Compile: NovaRain (aka N.R.) |\r\n+-----------------------------------+",
+  "files": [
+    {
+      "_idRow": 264393,
+      "_sFile": "ak10x_gp30_v4.rar",
+      "_nFilesize": 24661034,
+      "_tsDateAdded": 1167061763,
+      "_nDownloadCount": 13470,
+      "_sDownloadUrl": "https://gamebanana.com/dl/264393",
+      "_sMd5Checksum": "09cabb38495663aeb7323defb9c0fa87",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,179785,264393"
+        }
+      ]
+    }
+  ],
+  "retrieved": "2026-10-08",
+  "download": {
+    "id": 179785,
+    "name": "AK74M, AK101, AK103 Rifle with GP30 for 9mmAR",
+    "archive": "downloads\\179785-ak10x_gp30_v4.rar",
+    "sha256": "48b2d310d92b07a87f809939d75c78f16ef616aa84d98276607a6bb1323c0955",
+    "bytes": 24661034,
+    "models": [
+      "extracted\\179785\\models\\grenade.mdl",
+      "extracted\\179785\\models\\w_ARgrenade.mdl",
+      "extracted\\179785\\models\\AK-101_GP-30\\p_9mmAR.mdl",
+      "extracted\\179785\\models\\AK-101_GP-30\\v_9mmAR_BS.mdl",
+      "extracted\\179785\\models\\AK-101_GP-30\\v_9mmAR_HEV.mdl",
+      "extracted\\179785\\models\\AK-101_GP-30\\v_9mmAR_OP4.mdl",
+      "extracted\\179785\\models\\AK-101_GP-30\\w_9mmAR.mdl",
+      "extracted\\179785\\models\\AK-101_GP-30\\w_9mmARclip.mdl",
+      "extracted\\179785\\models\\AK-103_GP-30\\p_9mmAR.mdl",
+      "extracted\\179785\\models\\AK-103_GP-30\\v_9mmAR_BS.mdl",
+      "extracted\\179785\\models\\AK-103_GP-30\\v_9mmAR_HEV.mdl",
+      "extracted\\179785\\models\\AK-103_GP-30\\v_9mmAR_OP4.mdl",
+      "extracted\\179785\\models\\AK-103_GP-30\\w_9mmAR.mdl",
+      "extracted\\179785\\models\\AK-103_GP-30\\w_9mmARclip.mdl",
+      "extracted\\179785\\models\\AK-74M_GP-30\\p_9mmAR.mdl",
+      "extracted\\179785\\models\\AK-74M_GP-30\\v_9mmAR_BS.mdl",
+      "extracted\\179785\\models\\AK-74M_GP-30\\v_9mmAR_HEV.mdl",
+      "extracted\\179785\\models\\AK-74M_GP-30\\v_9mmAR_OP4.mdl",
+      "extracted\\179785\\models\\AK-74M_GP-30\\w_9mmAR.mdl",
+      "extracted\\179785\\models\\AK-74M_GP-30\\w_9mmARclip.mdl"
+    ]
+  }
+}

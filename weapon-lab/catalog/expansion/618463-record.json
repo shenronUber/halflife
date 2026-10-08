@@ -1,0 +1,124 @@
+{
+  "id": 618463,
+  "name": "Twinke M4 CS Goldsource Pack",
+  "url": "https://gamebanana.com/mods/618463",
+  "game": "Counter-Strike 1.6",
+  "likes": 14,
+  "downloads": 357,
+  "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "license_checklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "credits": [
+    {
+      "_sGroupName": "Mod Author",
+      "_aAuthors": [
+        {
+          "_sRole": "Port & Anim Fixes",
+          "_idRow": 4623299,
+          "_sName": "matikanetanmauser",
+          "_sProfileUrl": "https://gamebanana.com/members/4623299",
+          "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+          "_bIsOnline": false
+        }
+      ]
+    },
+    {
+      "_sGroupName": "Model Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Model",
+          "_idRow": 614054,
+          "_sName": "Twinke Masta Johan Santana",
+          "_sProfileUrl": "https://gamebanana.com/members/614054",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/614054.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Stock",
+          "_idRow": 177661,
+          "_sName": "TheLama",
+          "_sProfileUrl": "https://gamebanana.com/members/177661",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/177661.png",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Stock Texture",
+          "_idRow": 13289,
+          "_sName": "SureShot",
+          "_sProfileUrl": "https://gamebanana.com/members/13289",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/13289.png",
+          "_bIsOnline": false
+        }
+      ]
+    },
+    {
+      "_sGroupName": "Original Mod Author",
+      "_aAuthors": [
+        {
+          "_sRole": "Kivoto Part Timers Assault Carbine Rifle",
+          "_idRow": 967635,
+          "_sName": "Weiss Schnee",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/5a6db5d1a5480.png",
+          "_sProfileUrl": "https://gamebanana.com/members/967635",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/6a87ab589dc33.jpg",
+          "_bIsOnline": true,
+          "_aAffiliatedStudio": {
+            "_sProfileUrl": "https://gamebanana.com/studios/34989",
+            "_sName": "Life Tree",
+            "_sFlagUrl": "https://images.gamebanana.com/img/flags/studios/58413052ba008.png",
+            "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/5841305c9ad02.png"
+          }
+        }
+      ]
+    }
+  ],
+  "description_html": "Finish polishing this.\r\nComplete Twinkle M4 Pack\r\n\r\nValve animations adapted to the model<br><br>&nbsp;I grabbed the model from this mod because it resembles the M4A1 from CS 1.6<br>&nbsp;https://gamebanana.com/mods/607282<br><br>&nbsp;I'm not sure if it's necessary since I tested it and it doesn't require \"mp_consistency 0\"\r\n\r\nBut put it in a file like \"autoexec.cfg\" or \"server.cfg and listenserver.cfg\" just in case you need it.<br><br>Graphics Mod:&nbsp;https://gamebanana.com/wips/74956",
+  "files": [
+    {
+      "_idRow": 1512662,
+      "_sFile": "-060925-.rar",
+      "_nFilesize": 8552406,
+      "_tsDateAdded": 1757167334,
+      "_nDownloadCount": 357,
+      "_sDownloadUrl": "https://gamebanana.com/dl/1512662",
+      "_sMd5Checksum": "9412fea999587d8797e5f279ee6b4de8",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true
+    }
+  ],
+  "retrieved": "2026-10-08",
+  "download": {
+    "id": 618463,
+    "name": "Twinke M4 CS Goldsource Pack",
+    "archive": "downloads\\618463--060925-.rar",
+    "sha256": "b4993b774e8a687769522ec9f2a0589c24a960623873a0cf359f36708737dbf4",
+    "bytes": 8552406,
+    "models": [
+      "extracted\\618463\\twinke m4 cs goldsource pack\\1.6 hands\\cstrike - czero\\models\\v_m4a1.mdl",
+      "extracted\\618463\\twinke m4 cs goldsource pack\\cs cz hands\\cstrike - czero\\models\\v_m4a1.mdl",
+      "extracted\\618463\\twinke m4 cs goldsource pack\\cso hands\\cstrike - czero\\models\\female\\v_m4a1.mdl",
+      "extracted\\618463\\twinke m4 cs goldsource pack\\cso hands\\cstrike - czero\\models\\male\\v_m4a1.mdl",
+      "extracted\\618463\\twinke m4 cs goldsource pack\\p & w models\\p_m4a1.mdl",
+      "extracted\\618463\\twinke m4 cs goldsource pack\\p & w models\\w_m4a1.mdl"
+    ]
+  }
+}

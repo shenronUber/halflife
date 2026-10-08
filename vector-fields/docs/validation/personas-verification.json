@@ -1,0 +1,73 @@
+{
+  "geometry": {
+    "triangles": 740,
+    "collars": 0,
+    "skin_zone_checks": 60,
+    "seam_edges": {
+      "(0, 1)": 17,
+      "(1, 2)": 13,
+      "(1, 3)": 7,
+      "(3, 4)": 8
+    },
+    "shared_boundary_vertices": 44,
+    "animation_samples": 18,
+    "max_compiled_seam_gap": 0,
+    "animations": 77
+  },
+  "captures": [
+    "persona_legacy_gign",
+    "persona_fitted_gign",
+    "persona_persona_salvager_front",
+    "persona_persona_salvager_back",
+    "persona_persona_warden_front",
+    "persona_persona_warden_back",
+    "persona_persona_bone_front",
+    "persona_persona_bone_back",
+    "persona_persona_canopy_front",
+    "persona_persona_canopy_back",
+    "persona_persona_alchemist_front",
+    "persona_persona_alchemist_back",
+    "persona_persona_porcelain_front",
+    "persona_persona_porcelain_back",
+    "persona_persona_trench_front",
+    "persona_persona_trench_back",
+    "persona_persona_bedrock_front",
+    "persona_persona_bedrock_back",
+    "persona_persona_noir_front",
+    "persona_persona_noir_back",
+    "persona_persona_castaway_front",
+    "persona_persona_castaway_back",
+    "persona_persona_diver_front",
+    "persona_persona_diver_back",
+    "persona_ui_jungle",
+    "persona_mixed",
+    "persona_cancel_restored",
+    "persona_zone_0",
+    "persona_zone_1",
+    "persona_zone_2",
+    "persona_zone_3",
+    "persona_zone_4",
+    "persona_run_0",
+    "persona_run_2",
+    "persona_crouch_0",
+    "persona_crouch_2",
+    "persona_jump_0",
+    "persona_jump_2",
+    "persona_shoot_0",
+    "persona_shoot_2",
+    "persona_restored"
+  ],
+  "checks": [
+    "all complete themes rendered from front and back",
+    "five isolated body zones on GIGN topology",
+    "UI applies a complete set; mixed styles, cancel and save/load work",
+    "run, crouch, jump and shooting poses rendered",
+    "original player collision hull retained",
+    "warm skin switching requires zero model loads"
+  ],
+  "limits": [
+    "original GIGN geometry remains the shared silhouette",
+    "surface materials are painted diffuse, not physical relief",
+    "other character families retain their legacy interfaces"
+  ]
+}

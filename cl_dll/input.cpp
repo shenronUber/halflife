@@ -21,6 +21,7 @@ extern "C"
 #include <string.h>
 #include <ctype.h>
 #include "Exports.h"
+#include "vf_character.h"
 
 #include "vgui_TeamFortressViewport.h"
 
@@ -368,6 +369,7 @@ Return 1 to allow engine to process the key, otherwise, act on it as needed
 int CL_DLLEXPORT HUD_Key_Event( int down, int keynum, const char *pszCurrentBinding )
 {
 //	RecClKeyEvent(down, keynum, pszCurrentBinding);
+	if (!VF_CharacterKey(down, keynum)) return 0;
 
 	if (gViewPort)
 		return gViewPort->KeyInput(down, keynum, pszCurrentBinding);
@@ -764,6 +766,13 @@ void CL_DLLEXPORT CL_CreateMove ( float frametime, struct usercmd_s *cmd, int ac
 	}
 
 	Bench_SetViewAngles( 1, (float *)&cmd->viewangles, frametime, cmd );
+	if (VF_CharacterOpen())
+	{
+		cmd->forwardmove = cmd->sidemove = cmd->upmove = 0;
+		cmd->buttons = cmd->impulse = cmd->weaponselect = 0;
+		VF_CharacterView(cmd->viewangles);
+		gEngfuncs.SetViewAngles(cmd->viewangles);
+	}
 }
 
 /*

@@ -1,0 +1,12 @@
+0|original|Atelier original|0|r01|0
+1|war_torn|Guerre et recuperation|0|r01|1
+2|medieval_forge|Forge medievale|0|r01|2
+3|prehistoric|Prehistorique|0|r01|3
+4|living_jungle|Jungle vivante|0|r01|4
+5|medieval_alchemy|Alchimie medievale|0|r01|5
+6|porcelain_fluidics|Porcelaine fluidique|0|r01|6
+7|ww1_trench|Grande Guerre|0|r01|7
+8|bedrock_miner|Bedrock|0|r01|8
+9|new_york_noir|New York noir|0|r01|9
+10|castaway|Bois de naufrage|0|r01|10
+11|abyss_diver|Abysses|0|r01|11

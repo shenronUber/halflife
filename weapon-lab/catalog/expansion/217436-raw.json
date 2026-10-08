@@ -1,0 +1,278 @@
+{
+  "_idRow": 217436,
+  "_nStatus": "0",
+  "_bIsPrivate": false,
+  "_bAccessorIsSubmitter": false,
+  "_bIsTrashed": false,
+  "_bIsWithheld": false,
+  "_sName": "M4 Accessories Pack (M4 & AUG)",
+  "_sCommentsMode": "open",
+  "_tsDateModified": 1174810350,
+  "_tsDateAdded": 1150221188,
+  "_sProfileUrl": "https://gamebanana.com/mods/217436",
+  "_aPreviewMedia": {
+    "_aImages": [
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "10356.jpg",
+        "_sFile220": "220-90_10356.jpg",
+        "_sFile530": "530-90_10356.jpg",
+        "_sFile100": "100-90_10356.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "10001a.jpg",
+        "_sFile100": "100-90_10001a.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "10001b.jpg",
+        "_sFile100": "100-90_10001b.jpg"
+      }
+    ]
+  },
+  "_nUpdatesCount": 0,
+  "_bHasUpdates": false,
+  "_nAllTodosCount": 0,
+  "_bHasTodos": false,
+  "_nPostCount": 47,
+  "_aTags": [
+    {
+      "_sValue": "accessories"
+    },
+    {
+      "_sValue": "pack"
+    },
+    {
+      "_sTitle": "Model",
+      "_sValue": "Hacked Default Model"
+    },
+    {
+      "_sTitle": "Texture",
+      "_sValue": "Default"
+    }
+  ],
+  "_bCreatedBySubmitter": true,
+  "_bIsPorted": false,
+  "_nThanksCount": 0,
+  "_sInitialVisibility": "show",
+  "_sDownloadUrl": "https://gamebanana.com/mods/download/217436",
+  "_nDownloadCount": 7181,
+  "_aFiles": [
+    {
+      "_idRow": 266941,
+      "_sFile": "m4_accessories_pack.rar",
+      "_nFilesize": 1388994,
+      "_tsDateAdded": 1150221188,
+      "_nDownloadCount": 7182,
+      "_sDownloadUrl": "https://gamebanana.com/dl/266941",
+      "_sMd5Checksum": "9d8968ae45ec6822a133498a0d9bdd00",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,217436,266941"
+        }
+      ]
+    }
+  ],
+  "_nSubscriberCount": 0,
+  "_aContributingStudios": [],
+  "_sLicense": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "_aLicenseChecklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "_bGenerateTableOfContents": false,
+  "_sText": "Ok so heres the dealio. Theres an M4+flashlight model for the M4 in game\r\nand an M4+Scope for the AUG ingame. Includes M4 sound for the AUG version.\r\n\r\nNo World models BUT i use this: the M4A1 -NEGOTIATOR- *FINAL* world model over here - http://www.sixtoesstudios.com/forum/local_links.php?catid=21\r\n(am i allowed to do that?)\r\n\r\nN.B. Permissions recieved\r\n\r\n////Credits////\r\n\r\nM4 Model: Valve\r\nM4 Skin: Valve\r\nSkin Edits: McButterpants\r\nModel Re-origins: McButterpants\r\nM4 to AUG compile: McButterpants\r\n\r\n//Scope//\r\nScope Model: STOKE!\r\nScope Skin: STOKE!\r\nCompile and Hack: skladfin, Syco*\r\n\r\n//Flashlight//\r\nHacked model: InBlew\r\nLam: T-R-O-N",
+  "_bIsObsolete": false,
+  "_nLikeCount": 24,
+  "_nViewCount": 42754,
+  "_sVersion": "",
+  "_bAcceptsDonations": false,
+  "_bShowRipePromo": true,
+  "_aEmbeddables": {
+    "_sEmbeddableImageBaseUrl": "https://gamebanana.com/mods/embeddables/217436",
+    "_aVariants": [
+      "small",
+      "small_square",
+      "medium",
+      "medium_square",
+      "medium_square_minimal",
+      "large",
+      "large_minimal",
+      "large_square",
+      "large_minimal_square",
+      "thumbnail"
+    ]
+  },
+  "_aSubmitter": {
+    "_idRow": 104031,
+    "_sName": "McButterpants",
+    "_sUserTitle": "Theres no slaughter without la",
+    "_sHonoraryTitle": "",
+    "_tsJoinDate": 1144086977,
+    "_sAvatarUrl": "https://images.gamebanana.com/img/av/104031.png",
+    "_sSigUrl": "",
+    "_sProfileUrl": "https://gamebanana.com/members/104031",
+    "_sPointsUrl": "https://gamebanana.com/members/logs/pointslog/104031",
+    "_sMedalsUrl": "https://gamebanana.com/members/stats/medals/104031",
+    "_bIsOnline": false,
+    "_sLocation": "<a href=\"http://www.fpsbanana.com/sounds\">Sounds</a> > <a href=\"http://www.fpsbanana.com/sounds/games/296\">Portal</a> > <a href=\"http://www.fpsbanana.com/soundcats/178\">Other/Misc</a> > <a class=\"menu bold\" href=\"http://www.fpsbanana.com/sounds/4338\">Trappa's Psychedelic Portal</a>",
+    "_sOnlineTitle": "",
+    "_sOfflineTitle": "",
+    "_nPoints": 6659,
+    "_nPointsRank": 6303,
+    "_aNormalMedals": [],
+    "_aRareMedals": [],
+    "_aLegendaryMedals": [],
+    "_bHasRipe": false,
+    "_nBuddyCount": 0,
+    "_nSubscriberCount": 5,
+    "_aDonationMethods": [],
+    "_bAccessorIsBuddy": false,
+    "_bBuddyRequestExistsWithAccessor": false,
+    "_bAccessorIsSubscribed": false,
+    "_aDefaultLicenseChecklist": [
+      "yes",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "no",
+      "ask"
+    ],
+    "_sDefaultLicense": ""
+  },
+  "_bFollowLinks": true,
+  "_aGame": {
+    "_idRow": 2,
+    "_sName": "Counter-Strike: Source",
+    "_sAbbreviation": "CS:S",
+    "_sProfileUrl": "https://gamebanana.com/games/2",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/games/css_icon.png",
+    "_sBannerUrl": "https://images.gamebanana.com/img/ico/games/css_icon.png",
+    "_nSubscriberCount": 6993,
+    "_bHasSubmissionQueue": false,
+    "_bAccessorIsSubscribed": false
+  },
+  "_aCategory": {
+    "_idRow": 8272,
+    "_sName": "Weapon",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/8272",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/563385bf09af8.png",
+    "_bIsObsolete": false
+  },
+  "_aSuperCategory": {
+    "_idRow": 8271,
+    "_sName": "Packs",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/8271",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/packs_2.png"
+  },
+  "_aCredits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Unknown",
+          "_sName": "McButterpants"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "STOKE!"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "skladfin"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Syco"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "InBlew"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "T-R-O-N"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Valve"
+        }
+      ]
+    }
+  ]
+}

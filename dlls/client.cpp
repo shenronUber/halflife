@@ -30,6 +30,8 @@
 #include "player.h"
 #include "spectator.h"
 #include "client.h"
+#include "vf_equipment.h"
+#include "vf_skins.h"
 #include "soundent.h"
 #include "gamerules.h"
 #include "game.h"
@@ -105,6 +107,7 @@ GLOBALS ASSUMED SET:  g_fGameOver
 */
 void ClientDisconnect( edict_t *pEntity )
 {
+    VF_BroadcastPlayer(GetClassPtr((CBasePlayer *)&pEntity->v),false);
 	if (g_fGameOver)
 		return;
 
@@ -507,7 +510,11 @@ void ClientCommand( edict_t *pEntity )
 
 	entvars_t *pev = &pEntity->v;
 
-	if ( FStrEq(pcmd, "say" ) )
+	if ( VF_SkinCommand(GetClassPtr((CBasePlayer *)pev), pcmd) || VF_EquipmentCommand(GetClassPtr((CBasePlayer *)pev), pcmd) )
+	{
+		return;
+	}
+	else if ( FStrEq(pcmd, "say" ) )
 	{
 		Host_Say( pEntity, 0 );
 	}
@@ -806,6 +813,7 @@ void StartFrame( void )
 
 void ClientPrecache( void )
 {
+	VF_PrecacheSkins();
 	// setup precaches always needed
 	PRECACHE_SOUND("player/sprayer.wav");			// spray paint sound for PreAlpha
 	

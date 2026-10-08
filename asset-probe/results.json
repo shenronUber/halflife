@@ -1,0 +1,46 @@
+{
+  "model": {
+    "file": "generated/vf_modular.mdl",
+    "bytes": 21740,
+    "format": "IDST v10",
+    "bodygroups": [
+      {
+        "name": "receiver",
+        "alternatives": 1,
+        "base": 1
+      },
+      {
+        "name": "barrel",
+        "alternatives": 2,
+        "base": 1
+      },
+      {
+        "name": "magazine",
+        "alternatives": 2,
+        "base": 2
+      }
+    ],
+    "geometry_combinations": 4,
+    "skins": 2,
+    "display_combinations": 8,
+    "animation": "Single static idle frame; no hands, firing or reload"
+  },
+  "map": {
+    "file": "generated/vf_asset_lab.bsp",
+    "bytes": 54128,
+    "format": "BSP v30",
+    "multiplayer_spawns": 4,
+    "faces": 42,
+    "lightmap_bytes": 14286,
+    "visibility_bytes": 8,
+    "compiled_stages": [
+      "CSG",
+      "BSP",
+      "VIS",
+      "RAD"
+    ],
+    "leak_reported": false
+  },
+  "validation": "Compilation and binary structure verified; not loaded in game.",
+  "textures": "Read from the local Half-Life installation; generated assets are gitignored."
+}

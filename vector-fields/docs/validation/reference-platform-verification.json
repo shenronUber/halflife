@@ -1,0 +1,104 @@
+{
+  "assets": {
+    "serialized_frames": 740,
+    "max_grip_error": 1.2155062201202327e-07,
+    "styles": 182,
+    "checks": [
+      "left arm lengths unchanged",
+      "lateral hand holds magazine at idle and throughout all sequences",
+      "hand follows magazine during both reloads",
+      "centred lateral fist; top palm faces the player",
+      "directional extraction and identical seated endpoints",
+      "two shared magazine IDs and unchanged costs",
+      "26 meshes with seven finishes each"
+    ]
+  },
+  "native": {
+    "captures": [
+      "r01_platform_bottom_0_assembly",
+      "r01_platform_bottom_0_hand",
+      "r01_platform_bottom_0_reload_out",
+      "r01_platform_bottom_0_reload_in",
+      "r01_platform_side_0_assembly",
+      "r01_platform_side_pose_0",
+      "r01_platform_side_pose_18",
+      "r01_platform_side_pose_34",
+      "r01_platform_side_pose_54",
+      "r01_platform_side_pose_82",
+      "r01_platform_side_pose_93",
+      "r01_platform_side_pose_129",
+      "r01_platform_side_0_hand",
+      "r01_platform_side_0_reload_out",
+      "r01_platform_side_0_reload_in",
+      "r01_platform_top_0_assembly",
+      "r01_platform_top_pose_0",
+      "r01_platform_top_pose_18",
+      "r01_platform_top_pose_34",
+      "r01_platform_top_pose_54",
+      "r01_platform_top_pose_82",
+      "r01_platform_top_pose_93",
+      "r01_platform_top_pose_129",
+      "r01_platform_top_0_hand",
+      "r01_platform_top_0_reload_out",
+      "r01_platform_top_0_reload_in",
+      "r01_platform_bottom_1_assembly",
+      "r01_platform_bottom_1_hand",
+      "r01_platform_bottom_1_reload_out",
+      "r01_platform_bottom_1_reload_in",
+      "r01_platform_side_1_assembly",
+      "r01_platform_side_1_hand",
+      "r01_platform_side_1_reload_out",
+      "r01_platform_side_1_reload_in",
+      "r01_platform_top_1_assembly",
+      "r01_platform_top_1_hand",
+      "r01_platform_top_1_reload_out",
+      "r01_platform_top_1_reload_in",
+      "r01_platform_restored",
+      "r01_platform_chassis_catalogue",
+      "r01_platform_guide"
+    ],
+    "benchmarks": [
+      {
+        "name": "platform_bottom",
+        "mean_cpu_ms": "1.4032",
+        "p95_cpu_ms": "1.5884",
+        "frame_ms": "16.6601",
+        "model_loads": "0",
+        "texture_bytes": "134830371"
+      },
+      {
+        "name": "platform_side",
+        "mean_cpu_ms": "1.3404",
+        "p95_cpu_ms": "1.3807",
+        "frame_ms": "16.6667",
+        "model_loads": "0",
+        "texture_bytes": "144801887"
+      },
+      {
+        "name": "platform_top",
+        "mean_cpu_ms": "1.3260",
+        "p95_cpu_ms": "1.3526",
+        "frame_ms": "16.6668",
+        "model_loads": "0",
+        "texture_bytes": "153849152"
+      }
+    ],
+    "checks": [
+      "all three selectors clicked through native pointer routing",
+      "both unchanged magazines on all three platforms",
+      "first-person shooting and reload for all six combinations",
+      "top chassis and feed finish restored after save/load",
+      "8192 assemblies accepted, 154-equipment regression audit"
+    ],
+    "resolution": [
+      1920,
+      1080
+    ]
+  },
+  "limits": [
+    "existing MP5 firing, ammo and gameplay reload time",
+    "shared glove/finger grip; no dedicated latch finger animation",
+    "third-person weapon still stock",
+    "CPU preview timing is not GPU timing; combinations audit is not exhaustive visual inspection"
+  ]
+}

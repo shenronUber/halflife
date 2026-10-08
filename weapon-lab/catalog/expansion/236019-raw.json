@@ -1,0 +1,686 @@
+{
+  "_idRow": 236019,
+  "_nStatus": "0",
+  "_bIsPrivate": false,
+  "_bAccessorIsSubmitter": false,
+  "_bIsTrashed": false,
+  "_bIsWithheld": false,
+  "_sName": "HK416 + EOtech On 2 Animation",
+  "_sCommentsMode": "open",
+  "_tsDateModified": 1388549667,
+  "_tsDateAdded": 1388535000,
+  "_sProfileUrl": "https://gamebanana.com/mods/236019",
+  "_aPreviewMedia": {
+    "_aImages": [
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "52c35c21e2fc3.jpg",
+        "_sFile220": "220-90_52c35c21e2fc3.jpg",
+        "_sFile530": "530-90_52c35c21e2fc3.jpg",
+        "_sFile100": "100-90_52c35c21e2fc3.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "52c3591860037.jpg",
+        "_sFile100": "100-90_52c3591860037.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "52c358bd3f99b.jpg",
+        "_sFile100": "100-90_52c358bd3f99b.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "52c3589370e05.jpg",
+        "_sFile100": "100-90_52c3589370e05.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "52c358c7708dc.jpg",
+        "_sFile100": "100-90_52c358c7708dc.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "52c3589f94693.jpg",
+        "_sFile100": "100-90_52c3589f94693.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "52c358d3270f8.jpg",
+        "_sFile100": "100-90_52c358d3270f8.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "52c358a8b0d32.jpg",
+        "_sFile100": "100-90_52c358a8b0d32.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "52c358e132131.jpg",
+        "_sFile100": "100-90_52c358e132131.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "52c358b1c8525.jpg",
+        "_sFile100": "100-90_52c358b1c8525.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "52c358eb6a7a4.jpg",
+        "_sFile100": "100-90_52c358eb6a7a4.jpg"
+      }
+    ]
+  },
+  "_nUpdatesCount": 0,
+  "_bHasUpdates": false,
+  "_nAllTodosCount": 0,
+  "_bHasTodos": false,
+  "_nPostCount": 5,
+  "_aTags": [
+    {
+      "_sTitle": "Texture",
+      "_sValue": "Custom Texture"
+    }
+  ],
+  "_bCreatedBySubmitter": false,
+  "_bIsPorted": false,
+  "_nThanksCount": 0,
+  "_sInitialVisibility": "show",
+  "_sDownloadUrl": "https://gamebanana.com/mods/download/236019",
+  "_nDownloadCount": 1318,
+  "_aFiles": [
+    {
+      "_idRow": 219814,
+      "_sFile": "hk_416.zip",
+      "_nFilesize": 5058489,
+      "_tsDateAdded": 1388535000,
+      "_nDownloadCount": 1318,
+      "_sDownloadUrl": "https://gamebanana.com/dl/219814",
+      "_sMd5Checksum": "7c1d31b4dd13b0017a161320313c5cf4",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true
+    }
+  ],
+  "_nSubscriberCount": 0,
+  "_aContributingStudios": [],
+  "_sLicense": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "_aLicenseChecklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "_sDescription": "H&K Hecker & Koch 416",
+  "_bGenerateTableOfContents": false,
+  "_sText": "The credits are messed up because the earlier releases did not mentioned who did which part.\r\n\r\nHas flat shading error.\r\n\r\nNo P model\r\n\r\nOther Version\r\n=============\r\n\r\n[Click Here to search yourself](http://gamebanana.com/skins/search?search=hk416+416+hk417+417 \"\")\r\n\r\nAnimation\r\n=========\r\n\r\n![M4A1 Gold](http://static1.wikia.nocookie.net/__cb20120115071816/cso/images/6/6a/M4a1gold.png \"M4A1 Gold\")![HK 416](http://static3.wikia.nocookie.net/__cb20111228061223/cso/images/1/14/M4a1hk416.png \"HK 416\")",
+  "_bIsObsolete": false,
+  "_nLikeCount": 4,
+  "_nViewCount": 10134,
+  "_sVersion": "",
+  "_bAcceptsDonations": false,
+  "_bShowRipePromo": true,
+  "_aEmbeddables": {
+    "_sEmbeddableImageBaseUrl": "https://gamebanana.com/mods/embeddables/236019",
+    "_aVariants": [
+      "small",
+      "small_square",
+      "medium",
+      "medium_square",
+      "medium_square_minimal",
+      "large",
+      "large_minimal",
+      "large_square",
+      "large_minimal_square",
+      "thumbnail"
+    ]
+  },
+  "_aSubmitter": {
+    "_idRow": 1305750,
+    "_sName": "simple rulez",
+    "_sUserTitle": "I dunno what to put here anymo",
+    "_sHonoraryTitle": "",
+    "_tsJoinDate": 1337673601,
+    "_sAvatarUrl": "https://images.gamebanana.com/img/av/5a636af0c26e3.gif",
+    "_sSigUrl": "https://images.gamebanana.com/img/sig/51a6fe2521046.png",
+    "_sProfileUrl": "https://gamebanana.com/members/1305750",
+    "_sPointsUrl": "https://gamebanana.com/members/logs/pointslog/1305750",
+    "_sMedalsUrl": "https://gamebanana.com/members/stats/medals/1305750",
+    "_bIsOnline": false,
+    "_sLocation": "<a href=\"https://gamebanana.com\">Home</a> > <a href=\"https://gamebanana.com/members\">Members</a> > <a href=\"https://gamebanana.com/members/1305750\">simple rulez</a>",
+    "_sOnlineTitle": "Still Alive",
+    "_sOfflineTitle": "Out of Order",
+    "_nPoints": 46815,
+    "_nPointsRank": 534,
+    "_aNormalMedals": [
+      [
+        "548723b1416f4.gif",
+        "GameBanana\u2019s Christmas Giveaway 2014 Day Eight Winner!",
+        "normal",
+        917
+      ],
+      [
+        "54fc78c3dbb63.gif",
+        "11-15 Entries! GameBanana\u2019s Christmas Giveaway 2014",
+        "normal",
+        967
+      ],
+      [
+        "skins1.png",
+        "Submitted 10 Skins",
+        "normal",
+        1178
+      ],
+      [
+        "skins2.png",
+        "Submitted 50 Skins",
+        "normal",
+        1179
+      ],
+      [
+        "studio_leader.gif",
+        "Became a Studio Leader",
+        "normal",
+        1892
+      ],
+      [
+        "club_leader.gif",
+        "Became a Club Leader",
+        "normal",
+        1893
+      ],
+      [
+        "m_pr_1.png",
+        "Reached 1,000 Points",
+        "normal",
+        1894
+      ],
+      [
+        "m_pr_2.png",
+        "Reached 2,500 Points",
+        "normal",
+        1895
+      ],
+      [
+        "m_pr_3.png",
+        "Reached 7,500 Points",
+        "normal",
+        1896
+      ],
+      [
+        "m_ef_1.png",
+        "1 post awarded Exemplary Feedback",
+        "normal",
+        1897
+      ],
+      [
+        "m_cl_1.png",
+        "Unlocked Treehouse VIP clearance",
+        "normal",
+        1898
+      ],
+      [
+        "m_age_1.png",
+        "One month a member",
+        "normal",
+        1899
+      ],
+      [
+        "m_age_2.png",
+        "6 months a member",
+        "normal",
+        1900
+      ],
+      [
+        "m_age_3.png",
+        "1 year a member",
+        "normal",
+        1901
+      ],
+      [
+        "m_age_4.png",
+        "2 years a member",
+        "normal",
+        1902
+      ],
+      [
+        "thanks_sent_1.png",
+        "Thanked 5 submitters",
+        "normal",
+        13813
+      ],
+      [
+        "thanks_recvd_1.png",
+        "Received thanks 5 times",
+        "normal",
+        13820
+      ],
+      [
+        "m_age_5.png",
+        "4 years a member",
+        "normal",
+        54557
+      ],
+      [
+        "returns_1.png",
+        "Returned 100 times",
+        "normal",
+        69766
+      ],
+      [
+        "subscribers_1.png",
+        "Reached 10 subscribers",
+        "normal",
+        70278
+      ],
+      [
+        "m_pr_4.png",
+        "Reached 25,000 Points",
+        "normal",
+        83985
+      ],
+      [
+        "features_1.png",
+        "Submission featured",
+        "normal",
+        214971
+      ],
+      [
+        "sprays1.png",
+        "Submitted 20 Sprays",
+        "normal",
+        322868
+      ],
+      [
+        "mods1.png",
+        "Submitted 5 Mods",
+        "normal",
+        385699
+      ],
+      [
+        "mods2.png",
+        "Submitted 10 Mods",
+        "normal",
+        385700
+      ]
+    ],
+    "_aRareMedals": [
+      [
+        "thanks_sent_2.png",
+        "Thanked 50 submitters",
+        "rare",
+        13814
+      ],
+      [
+        "thanks_recvd_2.png",
+        "Received thanks 50 times",
+        "rare",
+        17057
+      ],
+      [
+        "5687f332948bf.png",
+        "8-14 Entries! GameBanana\u2019s Christmas Giveaway 2015",
+        "rare",
+        34777
+      ],
+      [
+        "returns_2.png",
+        "Returned 1000 times",
+        "rare",
+        69767
+      ],
+      [
+        "subscribers_2.png",
+        "Reached 50 subscribers",
+        "rare",
+        70279
+      ],
+      [
+        "5a33c900b33db.png",
+        "GameBanana\u2019s Christmas Giveaway 2017 Day Fourteen Winner!",
+        "rare",
+        182012
+      ],
+      [
+        "5a42df567cc7e.png",
+        "8-14 Entries! GameBanana\u2019s Christmas Giveaway 2017",
+        "rare",
+        184639
+      ],
+      [
+        "m_age_6.png",
+        "6 years a member",
+        "rare",
+        209022
+      ],
+      [
+        "features_2.png",
+        "10 submissions featured",
+        "rare",
+        214972
+      ],
+      [
+        "mods3.png",
+        "Submitted 15 Mods",
+        "rare",
+        385701
+      ],
+      [
+        "mods4.png",
+        "Submitted 20 Mods",
+        "rare",
+        385702
+      ],
+      [
+        "mods5.png",
+        "Submitted 50 Mods",
+        "rare",
+        385703
+      ],
+      [
+        "mods6.png",
+        "Submitted 100 Mods",
+        "rare",
+        385704
+      ]
+    ],
+    "_aLegendaryMedals": [
+      [
+        "skins3.png",
+        "Submitted 100 Skins",
+        "legendary",
+        15282
+      ],
+      [
+        "thanks_sent_3.png",
+        "Thanked 500 submitters",
+        "legendary",
+        39569
+      ],
+      [
+        "returns_3.png",
+        "Returned 5000 times",
+        "legendary",
+        69768
+      ],
+      [
+        "subscribers_3.png",
+        "Reached 100 subscribers",
+        "legendary",
+        87768
+      ],
+      [
+        "5865927219f8e.png",
+        "15+ Entries! GameBanana\u2019s Christmas Giveaway 2016",
+        "legendary",
+        103438
+      ],
+      [
+        "features_3.png",
+        "30 submissions featured",
+        "legendary",
+        214973
+      ],
+      [
+        "mods7.png",
+        "Submitted 250 Mods",
+        "legendary",
+        385705
+      ],
+      [
+        "m_age_7.png",
+        "10 years a member",
+        "legendary",
+        653109
+      ]
+    ],
+    "_bHasRipe": false,
+    "_nBuddyCount": 89,
+    "_nSubscriberCount": 145,
+    "_aDonationMethods": [
+      {
+        "_sTitle": "STEAM Wishlist",
+        "_sValue": "https://store.steampowered.com/wishlist/profiles/76561198119713903",
+        "_sInputType": "text",
+        "_sInputPlaceholder": "Wishlist URL...",
+        "_sIconClasses": "MiscIcon SteamWishlistIcon",
+        "_aValidator": {
+          "_regexValidPattern": "^https?\\:\\/\\/steamcommunity\\.com\\/id\\/.+\\/wishlist$",
+          "_sWarningMessage": "URL looks incorrect - it should look like: http://steamcommunity.com/id/USERNAME/wishlist"
+        },
+        "_sValueTemplate": "<a target=\"_blank\" href=\"%VALUE%\">STEAM Wishlist</a>",
+        "_bIsUrl": true,
+        "_sFormattedValue": "<a target=\"_blank\" href=\"https://store.steampowered.com/wishlist/profiles/76561198119713903\">STEAM Wishlist</a>"
+      }
+    ],
+    "_bAccessorIsBuddy": false,
+    "_bBuddyRequestExistsWithAccessor": false,
+    "_bAccessorIsSubscribed": false,
+    "_sUpicUrl": "https://images.gamebanana.com/img/upic/519cefe3bd1b3.png",
+    "_aBio": [
+      {
+        "_sTitle": "Country",
+        "_sValue": "Malaysia"
+      },
+      {
+        "_sTitle": "City",
+        "_sValue": "Ipoh, Perak"
+      },
+      {
+        "_sTitle": "Religion",
+        "_sValue": "Christian"
+      },
+      {
+        "_sTitle": "Employer",
+        "_sValue": "Parents"
+      },
+      {
+        "_sTitle": "First Language",
+        "_sValue": "English and Malay (Unfortunately I can&#039;t read &amp; write Chinese)"
+      },
+      {
+        "_sTitle": "Gamer type",
+        "_sValue": "Casual"
+      },
+      {
+        "_sTitle": "Favorite Game Genre",
+        "_sValue": "Enjoyed Genre so far: FPS, MOBA, Third-Person MMORPG, Zombies, Open World, City Builder, GTA Style, Stealth, Story-Rich"
+      },
+      {
+        "_sTitle": "First Game ever played",
+        "_sValue": "Crash Bandicoot On PS1 (Not Mine)"
+      },
+      {
+        "_sTitle": "Favorite CS Weapon",
+        "_sValue": "BrainCollector&#039;s Sling RIS M4, Strifer&#039;s Dual Boberg XR9, Nexon&#039;s Dual Infinity"
+      },
+      {
+        "_sTitle": "Favorite L4D Character",
+        "_sValue": "Louis"
+      },
+      {
+        "_sTitle": "Favorite L4D2 Character",
+        "_sValue": "Ellis"
+      },
+      {
+        "_sTitle": "Favorite TF2 Class",
+        "_sValue": "Engineer"
+      },
+      {
+        "_sTitle": "Mage or Barbarian",
+        "_sValue": "Mage"
+      },
+      {
+        "_sTitle": "Cat or Dog",
+        "_sValue": "Dog"
+      },
+      {
+        "_sTitle": "Kit Kat or Snickers",
+        "_sValue": "Kit Kat"
+      },
+      {
+        "_sTitle": "Political stance",
+        "_sValue": "Enviromentalist"
+      },
+      {
+        "_sTitle": "FPS Hero",
+        "_sValue": "Master Chief"
+      },
+      {
+        "_sTitle": "Favorite Superhero",
+        "_sValue": "Twinke Masta Johan Santana, XenoAisam, arby26, Mrbond123"
+      }
+    ],
+    "_aDefaultLicenseChecklist": [
+      "yes",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "no",
+      "ask"
+    ],
+    "_sDefaultLicense": ""
+  },
+  "_bFollowLinks": true,
+  "_aGame": {
+    "_idRow": 1415,
+    "_sName": "Counter-Strike: Online",
+    "_sAbbreviation": "CS:O",
+    "_sProfileUrl": "https://gamebanana.com/games/1415",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/games/55b16824d069f.png",
+    "_sBannerUrl": "https://images.gamebanana.com/img/ico/games/55b16824d069f.png",
+    "_nSubscriberCount": 95,
+    "_bHasSubmissionQueue": false,
+    "_bAccessorIsSubscribed": false
+  },
+  "_aCategory": {
+    "_idRow": 8764,
+    "_sName": "Assault Rifle",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/8764",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/560c89f809f59.png",
+    "_bIsObsolete": false
+  },
+  "_aSuperCategory": {
+    "_idRow": 8759,
+    "_sName": "Skins",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/8759",
+    "_sIconUrl": ""
+  },
+  "_aCredits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Compile",
+          "_sName": "qq985060394"
+        }
+      ]
+    },
+    {
+      "_sGroupName": "Original Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Receiver Model, Mag Model, EOtech Model, EOtech Texture",
+          "_idRow": "614054",
+          "_sName": "Twinke Masta Johan Santana",
+          "_sProfileUrl": "https://gamebanana.com/members/614054",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/614054.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Receiver Texture",
+          "_idRow": "39382",
+          "_sName": "Acid_Snake",
+          "_sProfileUrl": "https://gamebanana.com/members/39382",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/39382.bmp",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Texture",
+          "_idRow": "162698",
+          "_sName": "Thanez",
+          "_sProfileUrl": "https://gamebanana.com/members/162698",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/162698.png",
+          "_bIsOnline": false,
+          "_aAffiliatedStudio": {
+            "_sProfileUrl": "https://gamebanana.com/studios/655",
+            "_sName": "Damage Inc.",
+            "_sFlagUrl": "https://images.gamebanana.com/img/flags/studios/4f895c11c1fea.png",
+            "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/4f895a9a27421.png"
+          }
+        },
+        {
+          "_sRole": "Sight & Rear Sight Texture",
+          "_idRow": "13289",
+          "_sName": "SureShot",
+          "_sProfileUrl": "https://gamebanana.com/members/13289",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/13289.png",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "spr Model, Texture",
+          "_idRow": "163164",
+          "_sName": "Stoke",
+          "_sProfileUrl": "https://gamebanana.com/members/163164",
+          "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "RIS Model, Texture",
+          "_idRow": "69108",
+          "_sName": "Shiban",
+          "_sProfileUrl": "https://gamebanana.com/members/69108",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/5224e7687f2d5.gif",
+          "_bIsOnline": false,
+          "_aAffiliatedStudio": {
+            "_sProfileUrl": "https://gamebanana.com/studios/655",
+            "_sName": "Damage Inc.",
+            "_sFlagUrl": "https://images.gamebanana.com/img/flags/studios/4f895c11c1fea.png",
+            "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/4f895a9a27421.png"
+          }
+        },
+        {
+          "_sRole": "Other Model, Texture",
+          "_sName": "unknown"
+        },
+        {
+          "_sRole": "Animation",
+          "_sName": "Nexon"
+        },
+        {
+          "_sRole": "Animation",
+          "_sName": "VALVe"
+        }
+      ]
+    }
+  ]
+}

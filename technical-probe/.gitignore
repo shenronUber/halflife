@@ -1,0 +1,9 @@
+/server/
+/client/
+/obj-server/
+/obj-client/
+/movement-probe.exe
+/movement_probe.obj
+/movement-probe.pdb
+/*.log
+/*.ilk

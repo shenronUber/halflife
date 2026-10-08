@@ -1,0 +1,621 @@
+{
+  "_idRow": 224147,
+  "_nStatus": "0",
+  "_bIsPrivate": false,
+  "_bAccessorIsSubmitter": false,
+  "_bIsTrashed": false,
+  "_bIsWithheld": false,
+  "_sName": "Brain's Oldie Aimable M4",
+  "_sCommentsMode": "open",
+  "_tsDateModified": 1515488267,
+  "_tsDateAdded": 1512643330,
+  "_sProfileUrl": "https://gamebanana.com/mods/224147",
+  "_aPreviewMedia": {
+    "_aImages": [
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5a54840515788.jpg",
+        "_sFile530": "530-90_5a54840515788.jpg",
+        "_sFile100": "100-90_5a54840515788.jpg",
+        "_sFile220": "220-90_5a54840515788.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5a291909c5d03.jpg",
+        "_sFile100": "100-90_5a291909c5d03.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5a29190a08dcb.jpg",
+        "_sFile100": "100-90_5a29190a08dcb.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5a29190a571ce.jpg",
+        "_sFile100": "100-90_5a29190a571ce.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5a29190a8e4a0.jpg",
+        "_sFile100": "100-90_5a29190a8e4a0.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5a29190abee1b.jpg",
+        "_sFile100": "100-90_5a29190abee1b.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5a29190b6990c.jpg",
+        "_sFile100": "100-90_5a29190b6990c.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5a29190d13aca.jpg",
+        "_sFile100": "100-90_5a29190d13aca.jpg"
+      }
+    ]
+  },
+  "_nUpdatesCount": 0,
+  "_bHasUpdates": false,
+  "_nAllTodosCount": 0,
+  "_bHasTodos": false,
+  "_nPostCount": 10,
+  "_aTags": [
+    {
+      "_sTitle": "Model",
+      "_sValue": "Custom"
+    },
+    {
+      "_sTitle": "Texture",
+      "_sValue": "Custom"
+    },
+    {
+      "_sTitle": "Animation",
+      "_sValue": "Custom"
+    },
+    {
+      "_sTitle": "Development State",
+      "_sValue": "Final"
+    }
+  ],
+  "_bCreatedBySubmitter": true,
+  "_bIsPorted": true,
+  "_nThanksCount": 0,
+  "_sInitialVisibility": "show",
+  "_sDownloadUrl": "https://gamebanana.com/mods/download/224147",
+  "_nDownloadCount": 4731,
+  "_aFiles": [
+    {
+      "_idRow": 365591,
+      "_sFile": "bf3-m4-cic-cap.7z",
+      "_nFilesize": 1451188,
+      "_tsDateAdded": 1512643247,
+      "_nDownloadCount": 4731,
+      "_sDownloadUrl": "https://gamebanana.com/dl/365591",
+      "_sMd5Checksum": "c42a28a187af728d794c7dc329d29522",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true
+    }
+  ],
+  "_nSubscriberCount": 1,
+  "_aContributingStudios": [],
+  "_sLicense": "WTF ?? Did you just?<br><br>well is up to you",
+  "_aLicenseChecklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "_sDescription": "Sorry, CIC. x')",
+  "_bGenerateTableOfContents": false,
+  "_sText": "Well, I just fix and re-compile CIC's M4, made a correction on smoothing, added rail cover and p_model. I don't take any credit beyond that. Thanks. :)<br>(Captiva)",
+  "_bIsObsolete": false,
+  "_nLikeCount": 6,
+  "_nViewCount": 23169,
+  "_sVersion": "",
+  "_bAcceptsDonations": true,
+  "_bShowRipePromo": true,
+  "_aEmbeddables": {
+    "_sEmbeddableImageBaseUrl": "https://gamebanana.com/mods/embeddables/224147",
+    "_aVariants": [
+      "small",
+      "small_square",
+      "medium",
+      "medium_square",
+      "medium_square_minimal",
+      "large",
+      "large_minimal",
+      "large_square",
+      "large_minimal_square",
+      "thumbnail"
+    ]
+  },
+  "_aSubmitter": {
+    "_idRow": 1443349,
+    "_sName": "CIC.",
+    "_sUserTitle": "CIC - See i See you :)",
+    "_sHonoraryTitle": "",
+    "_tsJoinDate": 1450544323,
+    "_sAvatarUrl": "https://images.gamebanana.com/img/av/5ab0f44774264.jpg",
+    "_sSigUrl": "",
+    "_sProfileUrl": "https://gamebanana.com/members/1443349",
+    "_sPointsUrl": "https://gamebanana.com/members/logs/pointslog/1443349",
+    "_sMedalsUrl": "https://gamebanana.com/members/stats/medals/1443349",
+    "_bIsOnline": false,
+    "_sLocation": "<a href=\"https://gamebanana.com\">Home</a> > <a href=\"https://gamebanana.com/games/4254\"><img src=\"https://images.gamebanana.com/img/ico/games/5ea788a63f636.png\"/><span>Counter-Strike 1.6</span></a> > <a href=\"https://gamebanana.com/wips/games/4254\">WiPs</a> > <a href=\"https://gamebanana.com/wips/cats/5\">General</a> > <a href=\"https://gamebanana.com/wips/95686\">CrossFire Weapon Pack</a>",
+    "_sOnlineTitle": "modding",
+    "_sOfflineTitle": "Busy in Realife",
+    "_nPoints": 4632,
+    "_nPointsRank": 10023,
+    "_aNormalMedals": [
+      [
+        "m_age_1.png",
+        "One month a member",
+        "normal",
+        38338
+      ],
+      [
+        "m_age_2.png",
+        "6 months a member",
+        "normal",
+        68160
+      ],
+      [
+        "skins1.png",
+        "Submitted 10 Skins",
+        "normal",
+        72620
+      ],
+      [
+        "returns_1.png",
+        "Returned 100 times",
+        "normal",
+        73294
+      ],
+      [
+        "57ab5eea9a108.png",
+        "Site Improvement Ideating Contest Entrant",
+        "normal",
+        74261
+      ],
+      [
+        "features_1.png",
+        "Submission featured",
+        "normal",
+        75770
+      ],
+      [
+        "subscribers_1.png",
+        "Reached 10 subscribers",
+        "normal",
+        79283
+      ],
+      [
+        "m_pr_1.png",
+        "Reached 1,000 Points",
+        "normal",
+        82886
+      ],
+      [
+        "thanks_recvd_1.png",
+        "Received thanks 5 times",
+        "normal",
+        83912
+      ],
+      [
+        "studio_leader.gif",
+        "Became a Studio Leader",
+        "normal",
+        91622
+      ],
+      [
+        "581f67594ffd3.png",
+        "2016 Halloween Skinning Contest Entrant",
+        "normal",
+        92736
+      ],
+      [
+        "tools1.png",
+        "Submitted 1 Tool",
+        "normal",
+        95689
+      ],
+      [
+        "thanks_sent_1.png",
+        "Thanked 5 submitters",
+        "normal",
+        100231
+      ],
+      [
+        "m_age_3.png",
+        "1 year a member",
+        "normal",
+        101741
+      ],
+      [
+        "wips1.png",
+        "Submitted 10 WiPs",
+        "normal",
+        116826
+      ],
+      [
+        "monthly_award.gif",
+        "Castawayer of the Month, August 2017",
+        "normal",
+        146143
+      ],
+      [
+        "m_age_4.png",
+        "2 years a member",
+        "normal",
+        183746
+      ],
+      [
+        "m_pr_2.png",
+        "Reached 2,500 Points",
+        "normal",
+        199275
+      ],
+      [
+        "m_cl_1.png",
+        "Unlocked Treehouse VIP clearance",
+        "normal",
+        231078
+      ],
+      [
+        "m_age_5.png",
+        "4 years a member",
+        "normal",
+        283908
+      ]
+    ],
+    "_aRareMedals": [
+      [
+        "features_2.png",
+        "10 submissions featured",
+        "rare",
+        87385
+      ],
+      [
+        "thanks_sent_2.png",
+        "Thanked 50 submitters",
+        "rare",
+        143394
+      ],
+      [
+        "thanks_recvd_2.png",
+        "Received thanks 50 times",
+        "rare",
+        199249
+      ],
+      [
+        "returns_2.png",
+        "Returned 1000 times",
+        "rare",
+        260673
+      ],
+      [
+        "m_age_6.png",
+        "6 years a member",
+        "rare",
+        814039
+      ]
+    ],
+    "_aLegendaryMedals": [
+      [
+        "features_3.png",
+        "30 submissions featured",
+        "legendary",
+        114280
+      ],
+      [
+        "2017_top_contributor.png",
+        "2017 Top Contributor",
+        "legendary",
+        182181
+      ],
+      [
+        "m_age_7.png",
+        "10 years a member",
+        "legendary",
+        4584936
+      ]
+    ],
+    "_bHasRipe": false,
+    "_aAffiliatedStudio": {
+      "_sProfileUrl": "https://gamebanana.com/studios/34999",
+      "_sName": "Unreality",
+      "_sFlagUrl": "https://images.gamebanana.com/img/flags/studios/58b40a0fc2274.png",
+      "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/5a65f68435dec.png"
+    },
+    "_nBuddyCount": 52,
+    "_nSubscriberCount": 47,
+    "_aDonationMethods": [
+      {
+        "_sTitle": "Paypal",
+        "_sValue": "CC",
+        "_sInputType": "text",
+        "_sInputPlaceholder": "Paypal Email...",
+        "_sIconClasses": "MiscIcon PaypalDonateIcon",
+        "_aValidator": {
+          "_regexValidPattern": "@.*?\\.",
+          "_sWarningMessage": "Email looks incorrect"
+        },
+        "_bIsUrl": false
+      }
+    ],
+    "_bAccessorIsBuddy": false,
+    "_bBuddyRequestExistsWithAccessor": false,
+    "_bAccessorIsSubscribed": false,
+    "_sUpicUrl": "https://images.gamebanana.com/img/upic/5edf8e4f4f26b.png",
+    "_aBio": [
+      {
+        "_sTitle": "Country",
+        "_sValue": "Manila Philippines"
+      },
+      {
+        "_sTitle": "Favorite Game",
+        "_sValue": "Half-life, Counter-Strike, Battlefield 3"
+      },
+      {
+        "_sTitle": "First Game ever played",
+        "_sValue": "Crash Bandicoot 1"
+      },
+      {
+        "_sTitle": "First Game ever played",
+        "_sCustomTitle": "First PC Game ever played",
+        "_sValue": "Starcraft"
+      },
+      {
+        "_sTitle": "FPS Hero",
+        "_sValue": "Gordon Freeman"
+      }
+    ],
+    "_aDefaultLicenseChecklist": [
+      "yes",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "no",
+      "ask"
+    ],
+    "_sDefaultLicense": "WTF ?? Did you just?<br><br>well is up to you",
+    "_sHdAvatarUrl": "https://images.gamebanana.com/img/av/5ab1f1957bb4c.jpg"
+  },
+  "_bFollowLinks": true,
+  "_aGame": {
+    "_idRow": 4254,
+    "_sName": "Counter-Strike 1.6",
+    "_sAbbreviation": "CS1.6",
+    "_sProfileUrl": "https://gamebanana.com/games/4254",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/games/5ea788a63f636.png",
+    "_sBannerUrl": "https://images.gamebanana.com/img/ico/games/5ea788a63f636.png",
+    "_nSubscriberCount": 6185,
+    "_bHasSubmissionQueue": false,
+    "_bAccessorIsSubscribed": false
+  },
+  "_aCategory": {
+    "_idRow": 8325,
+    "_sName": "M4A1",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/8325",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/4e97c9c3ae886.png",
+    "_bIsObsolete": false
+  },
+  "_aSuperCategory": {
+    "_idRow": 8320,
+    "_sName": "Rifles",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/8320",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/55df8c66bd948.png"
+  },
+  "_aFeaturings": {
+    "yesterday": {
+      "_sFeatureGroup": "yesterday",
+      "_sTitle": "Best of Yesterday",
+      "_sIconClasses": "MiscIcon FeaturedYesterdayIcon",
+      "_tsDate": 1512813601
+    },
+    "today": {
+      "_sFeatureGroup": "today",
+      "_sTitle": "Today's Pick",
+      "_sIconClasses": "MiscIcon FeaturedTodayIcon",
+      "_tsDate": 1512727201
+    }
+  },
+  "_aCredits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Original compile",
+          "_idRow": "1443349",
+          "_sName": "CIC.",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/5edf8e4f4f26b.png",
+          "_sProfileUrl": "https://gamebanana.com/members/1443349",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/5ab0f44774264.jpg",
+          "_bIsOnline": false,
+          "_aAffiliatedStudio": {
+            "_sProfileUrl": "https://gamebanana.com/studios/34999",
+            "_sName": "Unreality",
+            "_sFlagUrl": "https://images.gamebanana.com/img/flags/studios/58b40a0fc2274.png",
+            "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/5a65f68435dec.png"
+          }
+        },
+        {
+          "_sRole": "Fix smoothing, attach railcover, p_model",
+          "_idRow": "1507205",
+          "_sName": "RevTiva",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/5d4fb79148472.png",
+          "_sProfileUrl": "https://gamebanana.com/members/1507205",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/611a6ed002df4.png",
+          "_bIsOnline": false,
+          "_aAffiliatedStudio": {
+            "_sProfileUrl": "https://gamebanana.com/studios/34989",
+            "_sName": "Life Tree",
+            "_sFlagUrl": "https://images.gamebanana.com/img/flags/studios/58413052ba008.png",
+            "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/5841305c9ad02.png"
+          }
+        },
+        {
+          "_sRole": "Animation port, hand rig (?)",
+          "_idRow": "298110",
+          "_sName": "kalasnikov88",
+          "_sProfileUrl": "https://gamebanana.com/members/298110",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/298110.jpg",
+          "_bIsOnline": false
+        }
+      ]
+    },
+    {
+      "_sGroupName": "Original Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Model (M4)",
+          "_idRow": "614054",
+          "_sName": "Twinke Masta Johan Santana",
+          "_sProfileUrl": "https://gamebanana.com/members/614054",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/614054.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Model (M4)",
+          "_idRow": "13289",
+          "_sName": "SureShot",
+          "_sProfileUrl": "https://gamebanana.com/members/13289",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/13289.png",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Texture (M4, Silencer)",
+          "_idRow": "43732",
+          "_sName": "Millenia",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/6939d887a1d83.gif",
+          "_sProfileUrl": "https://gamebanana.com/members/43732",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/6939c6976b3a0.png",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Model (Silencer)",
+          "_idRow": "163164",
+          "_sName": "Stoke",
+          "_sProfileUrl": "https://gamebanana.com/members/163164",
+          "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Model (RIS)",
+          "_idRow": "224148",
+          "_sName": "SoulSlayer",
+          "_sProfileUrl": "https://gamebanana.com/members/224148",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/224148.jpg",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Texture (RIS, Railcover)",
+          "_idRow": "162698",
+          "_sName": "Thanez",
+          "_sProfileUrl": "https://gamebanana.com/members/162698",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/162698.png",
+          "_bIsOnline": false,
+          "_aAffiliatedStudio": {
+            "_sProfileUrl": "https://gamebanana.com/studios/655",
+            "_sName": "Damage Inc.",
+            "_sFlagUrl": "https://images.gamebanana.com/img/flags/studios/4f895c11c1fea.png",
+            "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/4f895a9a27421.png"
+          }
+        },
+        {
+          "_sRole": "Model and texture (Rear sight)",
+          "_idRow": "177661",
+          "_sName": "TheLama",
+          "_sProfileUrl": "https://gamebanana.com/members/177661",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/177661.png",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Model edit (Railcover)",
+          "_idRow": "1530910",
+          "_sName": "Euniqho15",
+          "_sProfileUrl": "https://gamebanana.com/members/1530910",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/6295da0d7f931.png",
+          "_bIsOnline": false,
+          "_aAffiliatedStudio": {
+            "_sProfileUrl": "https://gamebanana.com/studios/34498",
+            "_sName": "Filipino Makers",
+            "_sFlagUrl": "https://images.gamebanana.com/img/flags/studios/5369af6e73c96.gif",
+            "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/5780a81940f78.gif"
+          }
+        },
+        {
+          "_sRole": "Model edit (Railcover)",
+          "_idRow": "1438652",
+          "_sName": "Michael Ben David",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/5c38cf9238cc8.png",
+          "_sProfileUrl": "https://gamebanana.com/members/1438652",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/5c38cabf78668.png",
+          "_bIsOnline": false,
+          "_aAffiliatedStudio": {
+            "_sProfileUrl": "https://gamebanana.com/studios/34989",
+            "_sName": "Life Tree",
+            "_sFlagUrl": "https://images.gamebanana.com/img/flags/studios/58413052ba008.png",
+            "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/5841305c9ad02.png"
+          }
+        },
+        {
+          "_sRole": "Hand texture",
+          "_idRow": "164481",
+          "_sName": "Teh Snake",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/663d1b73c61b4.png",
+          "_sProfileUrl": "https://gamebanana.com/members/164481",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/663d1b6a3aeed.png",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Sounds",
+          "_idRow": "597879",
+          "_sName": "Ghost597879",
+          "_sProfileUrl": "https://gamebanana.com/members/597879",
+          "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Animation",
+          "_idRow": "454578",
+          "_sName": "BrainCollector",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/509266941bb5f.png",
+          "_sProfileUrl": "https://gamebanana.com/members/454578",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/50d880e16c438.png",
+          "_bIsOnline": false
+        }
+      ]
+    }
+  ],
+  "_sDevNotes": "Too tired to create mine."
+}

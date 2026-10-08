@@ -17,6 +17,8 @@
 
 
 #include "pm_materials.h"
+#include "../game_shared/vf_loadout.h"
+#include "../game_shared/vf_appearance.h"
 
 
 #define PLAYER_FATAL_FALL_SPEED		1024// approx 60 feet
@@ -88,6 +90,11 @@ enum sbar_data
 class CBasePlayer : public CBaseMonster
 {
 public:
+	int m_vfItems[vf::SlotCount];
+	int m_vfCatalogHash;
+	int m_vfSkins[5],m_vfSkinHash;
+	int m_vfWeaponStyles[vf::WeaponStyleSlots],m_vfWeaponStyleHash;
+	int m_vfAppearanceMode; // 0 equipment-linked, 1 free appearance
 	
 	// Spectator camera
 	void	Observer_FindNextPlayer( bool bReverse );

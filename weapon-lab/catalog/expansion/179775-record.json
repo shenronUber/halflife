@@ -1,0 +1,151 @@
+{
+  "id": 179775,
+  "name": "M4A1 package",
+  "url": "https://gamebanana.com/mods/179775",
+  "game": "Half-Life",
+  "likes": 19,
+  "downloads": 9968,
+  "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "license_checklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "credits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Unknown",
+          "_sName": "Soul_SlayeThanez, Hellspike"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Twinke Masta"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Sober"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Vunsunta"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "End of Days"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Strykerwolf"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Gearbox"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "World Crafter"
+        }
+      ]
+    }
+  ],
+  "description_html": "As if the Half Life customization community really needs another m4 to replace the 9mmAR...\r\nComes with optional choices of improved Half Life or Opposing Force arms and Gearbox's or Strykerwolf's animations. The HEV arms are compiled on H4wk's skin by default but they can be easily switched out.\r\n<b>WARNING: Due to severely massive amounts of polygons and textures, this model is recommended for high-end systems only.</b>\r\n\r\nModel: Soul_Slayer\r\n  Aimpoint: HellSpike\r\n  M203: Twinke Masta\r\nSkin: Thanez\r\n  Aimpoint Skin: Thanez\r\n  M203 Skin: Twinke Masta\r\n  Texture Chopping: HellSpike\r\nAnimations: Gearbox/Valve, Strykerwolf(ported by End of Days, edited by World Crafter)\r\nSounds: Vunsunta\r\nOriginal Base Compile: Sober\r\nCOmpile/Hack: World Crafter",
+  "files": [
+    {
+      "_idRow": 264258,
+      "_sFile": "m49mmar.rar",
+      "_nFilesize": 10805350,
+      "_tsDateAdded": 1168148220,
+      "_nDownloadCount": 9968,
+      "_sDownloadUrl": "https://gamebanana.com/dl/264258",
+      "_sMd5Checksum": "a1bddfc93436857d54fb4635d0f1521e",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,179775,264258"
+        }
+      ]
+    }
+  ],
+  "retrieved": "2026-10-08",
+  "download": {
+    "id": 179775,
+    "name": "M4A1 package",
+    "archive": "downloads\\179775-m49mmar.rar",
+    "sha256": "170276dd270c398ab5560cd125ef653a2d7ca8105f638436d4a1ca1048a34a08",
+    "bytes": 10805350,
+    "models": [
+      "extracted\\179775\\w_9mmar.mdl",
+      "extracted\\179775\\default\\HL\\v_9mmar.mdl",
+      "extracted\\179775\\default\\Op4\\v_9mmar.mdl",
+      "extracted\\179775\\ghost ops\\HL\\v_9mmar.mdl",
+      "extracted\\179775\\ghost ops\\Op4\\v_9mmar.mdl"
+    ]
+  }
+}

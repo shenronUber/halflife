@@ -1,0 +1,146 @@
+{
+  "id": 236019,
+  "name": "HK416 + EOtech On 2 Animation",
+  "url": "https://gamebanana.com/mods/236019",
+  "game": "Counter-Strike: Online",
+  "likes": 4,
+  "downloads": 1318,
+  "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "license_checklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "credits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Compile",
+          "_sName": "qq985060394"
+        }
+      ]
+    },
+    {
+      "_sGroupName": "Original Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Receiver Model, Mag Model, EOtech Model, EOtech Texture",
+          "_idRow": "614054",
+          "_sName": "Twinke Masta Johan Santana",
+          "_sProfileUrl": "https://gamebanana.com/members/614054",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/614054.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Receiver Texture",
+          "_idRow": "39382",
+          "_sName": "Acid_Snake",
+          "_sProfileUrl": "https://gamebanana.com/members/39382",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/39382.bmp",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Texture",
+          "_idRow": "162698",
+          "_sName": "Thanez",
+          "_sProfileUrl": "https://gamebanana.com/members/162698",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/162698.png",
+          "_bIsOnline": false,
+          "_aAffiliatedStudio": {
+            "_sProfileUrl": "https://gamebanana.com/studios/655",
+            "_sName": "Damage Inc.",
+            "_sFlagUrl": "https://images.gamebanana.com/img/flags/studios/4f895c11c1fea.png",
+            "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/4f895a9a27421.png"
+          }
+        },
+        {
+          "_sRole": "Sight & Rear Sight Texture",
+          "_idRow": "13289",
+          "_sName": "SureShot",
+          "_sProfileUrl": "https://gamebanana.com/members/13289",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/13289.png",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "spr Model, Texture",
+          "_idRow": "163164",
+          "_sName": "Stoke",
+          "_sProfileUrl": "https://gamebanana.com/members/163164",
+          "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "RIS Model, Texture",
+          "_idRow": "69108",
+          "_sName": "Shiban",
+          "_sProfileUrl": "https://gamebanana.com/members/69108",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/5224e7687f2d5.gif",
+          "_bIsOnline": false,
+          "_aAffiliatedStudio": {
+            "_sProfileUrl": "https://gamebanana.com/studios/655",
+            "_sName": "Damage Inc.",
+            "_sFlagUrl": "https://images.gamebanana.com/img/flags/studios/4f895c11c1fea.png",
+            "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/4f895a9a27421.png"
+          }
+        },
+        {
+          "_sRole": "Other Model, Texture",
+          "_sName": "unknown"
+        },
+        {
+          "_sRole": "Animation",
+          "_sName": "Nexon"
+        },
+        {
+          "_sRole": "Animation",
+          "_sName": "VALVe"
+        }
+      ]
+    }
+  ],
+  "description_html": "The credits are messed up because the earlier releases did not mentioned who did which part.\r\n\r\nHas flat shading error.\r\n\r\nNo P model\r\n\r\nOther Version\r\n=============\r\n\r\n[Click Here to search yourself](http://gamebanana.com/skins/search?search=hk416+416+hk417+417 \"\")\r\n\r\nAnimation\r\n=========\r\n\r\n![M4A1 Gold](http://static1.wikia.nocookie.net/__cb20120115071816/cso/images/6/6a/M4a1gold.png \"M4A1 Gold\")![HK 416](http://static3.wikia.nocookie.net/__cb20111228061223/cso/images/1/14/M4a1hk416.png \"HK 416\")",
+  "files": [
+    {
+      "_idRow": 219814,
+      "_sFile": "hk_416.zip",
+      "_nFilesize": 5058489,
+      "_tsDateAdded": 1388535000,
+      "_nDownloadCount": 1318,
+      "_sDownloadUrl": "https://gamebanana.com/dl/219814",
+      "_sMd5Checksum": "7c1d31b4dd13b0017a161320313c5cf4",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true
+    }
+  ],
+  "retrieved": "2026-10-08",
+  "download": {
+    "id": 236019,
+    "name": "HK416 + EOtech On 2 Animation",
+    "archive": "downloads\\236019-hk_416.zip",
+    "sha256": "498b41a16ba933afbc0dea69d797b09e30fe1fee426fbe60bce3d112fb3b1992",
+    "bytes": 5058489,
+    "models": [
+      "extracted\\236019\\HK 416 Animation\\v_m4a1.mdl",
+      "extracted\\236019\\HK 416 Animation\\w_m4a1.mdl",
+      "extracted\\236019\\M4A1 Gold Animation\\v_m4a1gold.mdl",
+      "extracted\\236019\\M4A1 Gold Animation\\w_m4a1.mdl"
+    ]
+  }
+}

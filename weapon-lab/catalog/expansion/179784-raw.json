@@ -1,0 +1,377 @@
+{
+  "_idRow": 179784,
+  "_nStatus": "0",
+  "_bIsPrivate": false,
+  "_bAccessorIsSubmitter": false,
+  "_bIsTrashed": false,
+  "_bIsWithheld": false,
+  "_sName": "Ankalar's FN F2000",
+  "_sCommentsMode": "open",
+  "_tsDateModified": 1169504678,
+  "_tsDateAdded": 1153595865,
+  "_sProfileUrl": "https://gamebanana.com/mods/179784",
+  "_aPreviewMedia": {
+    "_aImages": [
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "11545.jpg",
+        "_sFile220": "220-90_11545.jpg",
+        "_sFile530": "530-90_11545.jpg",
+        "_sFile100": "100-90_11545.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "11301a.jpg",
+        "_sFile100": "100-90_11301a.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "11301b.jpg",
+        "_sFile100": "100-90_11301b.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "58c02243eead6.jpg",
+        "_sFile100": "100-90_58c02243eead6.jpg"
+      }
+    ]
+  },
+  "_nUpdatesCount": 0,
+  "_bHasUpdates": false,
+  "_nAllTodosCount": 0,
+  "_bHasTodos": false,
+  "_nPostCount": 35,
+  "_aTags": [
+    {
+      "_sValue": "ankalar"
+    },
+    {
+      "_sValue": "f2000"
+    },
+    {
+      "_sTitle": "Model",
+      "_sValue": "Custom Model"
+    },
+    {
+      "_sTitle": "Texture",
+      "_sValue": "Recolor"
+    }
+  ],
+  "_bCreatedBySubmitter": true,
+  "_bIsPorted": false,
+  "_nThanksCount": 0,
+  "_sInitialVisibility": "show",
+  "_sDownloadUrl": "https://gamebanana.com/mods/download/179784",
+  "_nDownloadCount": 14035,
+  "_aFiles": [
+    {
+      "_idRow": 266475,
+      "_sFile": "nr_f2000_hl.rar",
+      "_nFilesize": 3538321,
+      "_tsDateAdded": 1153595865,
+      "_nDownloadCount": 14036,
+      "_sDownloadUrl": "https://gamebanana.com/dl/266475",
+      "_sMd5Checksum": "c56dd52f720d57e0450d9515e0f9305b",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,179784,266475"
+        }
+      ]
+    }
+  ],
+  "_nSubscriberCount": 1,
+  "_aContributingStudios": [],
+  "_sLicense": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "_aLicenseChecklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "_bGenerateTableOfContents": false,
+  "_sText": "Ankalar's FN F2000 for HL/Sven 9mmAR\r\n=====================================\r\n\r\nHere comes the poly-waste-monster!\r\nJust kidding, I removed some unnecessary polys in the view model,\r\nso it shouldn't make your computer lagging too much.\r\n\r\nCredits:\r\n--------\r\nModel: Ankalar\r\nUV-maps: Ankalar\r\nSkin: Ankalar, Thanez, Numbrider\r\nM16 Magazine Dark Skin: Stoke\r\n\r\nCartridge in Magazine: -X-\r\n\r\nImproved HEV/OP4/BS Arm Models: Ambient.Impact\r\nHEV Arm Textures: H4wK\r\nOP4 Hatch Glove Texture: Tackleberry\r\nOP4 Arm Texture: Millenia\r\nRemapping Textures to Gearbox UV: Toadie\r\nBS Arm Textures: H4wK\r\n\r\nAnimations: Toadie\r\nShooting Sound: Toadie\r\nGrenade Launcher Sound: from M203 in Firearms Mod 3.0\r\nReloading Sound: ??? Please contact me if you know who made this.\r\nMuzzleflash Sprite: from CS 1.6\r\n\r\n+----------------------------------------------------+\r\n| Compile/Convert/Hacks/Tweaks: NovaRain (aka N.R.)  |\r\n+----------------------------------------------------+",
+  "_bIsObsolete": false,
+  "_nLikeCount": 35,
+  "_nViewCount": 62405,
+  "_sVersion": "",
+  "_bAcceptsDonations": false,
+  "_bShowRipePromo": true,
+  "_aEmbeddables": {
+    "_sEmbeddableImageBaseUrl": "https://gamebanana.com/mods/embeddables/179784",
+    "_aVariants": [
+      "small",
+      "small_square",
+      "medium",
+      "medium_square",
+      "medium_square_minimal",
+      "large",
+      "large_minimal",
+      "large_square",
+      "large_minimal_square",
+      "thumbnail"
+    ]
+  },
+  "_aSubmitter": {
+    "_idRow": 44739,
+    "_sName": "NovaRain",
+    "_sUserTitle": "",
+    "_sHonoraryTitle": "",
+    "_tsJoinDate": 1121667286,
+    "_sAvatarUrl": "https://images.gamebanana.com/img/av/585793ce7340c.png",
+    "_sSigUrl": "",
+    "_sProfileUrl": "https://gamebanana.com/members/44739",
+    "_sPointsUrl": "https://gamebanana.com/members/logs/pointslog/44739",
+    "_sMedalsUrl": "https://gamebanana.com/members/stats/medals/44739",
+    "_bIsOnline": false,
+    "_sLocation": "<a href=\"https://gamebanana.com\">Home</a> > <a href=\"https://gamebanana.com/members\">Members</a> > <a href=\"https://gamebanana.com/members/44739\">NovaRain</a> > <a href=\"https://gamebanana.com/members/stats/overview/44739\">Overview : NovaRain</a>",
+    "_sOnlineTitle": "",
+    "_sOfflineTitle": "",
+    "_nPoints": 6435,
+    "_nPointsRank": 6599,
+    "_aNormalMedals": [
+      [
+        "m_pr_1.png",
+        "Reached 1,000 Points",
+        "normal",
+        101325
+      ],
+      [
+        "m_pr_2.png",
+        "Reached 2,500 Points",
+        "normal",
+        101326
+      ],
+      [
+        "m_age_1.png",
+        "One month a member",
+        "normal",
+        101327
+      ],
+      [
+        "m_age_2.png",
+        "6 months a member",
+        "normal",
+        101328
+      ],
+      [
+        "m_age_3.png",
+        "1 year a member",
+        "normal",
+        101329
+      ],
+      [
+        "m_age_4.png",
+        "2 years a member",
+        "normal",
+        101330
+      ],
+      [
+        "m_age_5.png",
+        "4 years a member",
+        "normal",
+        101331
+      ],
+      [
+        "skins1.png",
+        "Submitted 10 Skins",
+        "normal",
+        232739
+      ],
+      [
+        "returns_1.png",
+        "Returned 100 times",
+        "normal",
+        309897
+      ]
+    ],
+    "_aRareMedals": [
+      [
+        "m_age_6.png",
+        "6 years a member",
+        "rare",
+        101332
+      ]
+    ],
+    "_aLegendaryMedals": [
+      [
+        "m_age_7.png",
+        "10 years a member",
+        "legendary",
+        101333
+      ]
+    ],
+    "_bHasRipe": false,
+    "_nBuddyCount": 0,
+    "_nSubscriberCount": 3,
+    "_aDonationMethods": [],
+    "_bAccessorIsBuddy": false,
+    "_bBuddyRequestExistsWithAccessor": false,
+    "_bAccessorIsSubscribed": false,
+    "_aDefaultLicenseChecklist": [
+      "yes",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "no",
+      "ask"
+    ],
+    "_sDefaultLicense": ""
+  },
+  "_bFollowLinks": true,
+  "_aGame": {
+    "_idRow": 34,
+    "_sName": "Half-Life",
+    "_sAbbreviation": "HL",
+    "_sProfileUrl": "https://gamebanana.com/games/34",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/games/half-life.png",
+    "_sBannerUrl": "https://images.gamebanana.com/img/ico/games/half-life.png",
+    "_nSubscriberCount": 4637,
+    "_bHasSubmissionQueue": false,
+    "_bAccessorIsSubscribed": false
+  },
+  "_aCategory": {
+    "_idRow": 7736,
+    "_sName": "MP5 / M4",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/7736",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/560c876aaaf25.png",
+    "_bIsObsolete": false
+  },
+  "_aSuperCategory": {
+    "_idRow": 7735,
+    "_sName": "Weapons",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/7735",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/5ea2fdf1794ff.png"
+  },
+  "_aCredits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Unknown",
+          "_sName": "Ankalar"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Thanez"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Numbrider"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Stoke"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "-X-"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Ambient.Impact"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Toadie"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "H4wK"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Tackleberry"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Millenia"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Firearms Team"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "CS Team"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "NovaRain"
+        }
+      ]
+    }
+  ]
+}

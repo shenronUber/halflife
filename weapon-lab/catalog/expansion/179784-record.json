@@ -1,0 +1,172 @@
+{
+  "id": 179784,
+  "name": "Ankalar's FN F2000",
+  "url": "https://gamebanana.com/mods/179784",
+  "game": "Half-Life",
+  "likes": 35,
+  "downloads": 14035,
+  "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "license_checklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "credits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Unknown",
+          "_sName": "Ankalar"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Thanez"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Numbrider"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Stoke"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "-X-"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Ambient.Impact"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Toadie"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "H4wK"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Tackleberry"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Millenia"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Firearms Team"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "CS Team"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "NovaRain"
+        }
+      ]
+    }
+  ],
+  "description_html": "Ankalar's FN F2000 for HL/Sven 9mmAR\r\n=====================================\r\n\r\nHere comes the poly-waste-monster!\r\nJust kidding, I removed some unnecessary polys in the view model,\r\nso it shouldn't make your computer lagging too much.\r\n\r\nCredits:\r\n--------\r\nModel: Ankalar\r\nUV-maps: Ankalar\r\nSkin: Ankalar, Thanez, Numbrider\r\nM16 Magazine Dark Skin: Stoke\r\n\r\nCartridge in Magazine: -X-\r\n\r\nImproved HEV/OP4/BS Arm Models: Ambient.Impact\r\nHEV Arm Textures: H4wK\r\nOP4 Hatch Glove Texture: Tackleberry\r\nOP4 Arm Texture: Millenia\r\nRemapping Textures to Gearbox UV: Toadie\r\nBS Arm Textures: H4wK\r\n\r\nAnimations: Toadie\r\nShooting Sound: Toadie\r\nGrenade Launcher Sound: from M203 in Firearms Mod 3.0\r\nReloading Sound: ??? Please contact me if you know who made this.\r\nMuzzleflash Sprite: from CS 1.6\r\n\r\n+----------------------------------------------------+\r\n| Compile/Convert/Hacks/Tweaks: NovaRain (aka N.R.)  |\r\n+----------------------------------------------------+",
+  "files": [
+    {
+      "_idRow": 266475,
+      "_sFile": "nr_f2000_hl.rar",
+      "_nFilesize": 3538321,
+      "_tsDateAdded": 1153595865,
+      "_nDownloadCount": 14036,
+      "_sDownloadUrl": "https://gamebanana.com/dl/266475",
+      "_sMd5Checksum": "c56dd52f720d57e0450d9515e0f9305b",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,179784,266475"
+        }
+      ]
+    }
+  ],
+  "retrieved": "2026-10-08",
+  "download": {
+    "id": 179784,
+    "name": "Ankalar's FN F2000",
+    "archive": "downloads\\179784-nr_f2000_hl.rar",
+    "sha256": "407684ae93ceb28791625f0bbe3eedd353d1cbefcf8bd92fb1b850106a8a5d9f",
+    "bytes": 3538321,
+    "models": [
+      "extracted\\179784\\models\\p_9mmAR.mdl",
+      "extracted\\179784\\models\\v_9mmAR_BS.mdl",
+      "extracted\\179784\\models\\v_9mmAR_HEV.mdl",
+      "extracted\\179784\\models\\v_9mmAR_OP4.mdl",
+      "extracted\\179784\\models\\w_9mmAR.mdl",
+      "extracted\\179784\\models\\w_9mmARclip.mdl"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+/tools/
+/obj-studiomdl/
+/sdhlt/
+/*.zip
+/*.log
+/generated/
+/__pycache__/

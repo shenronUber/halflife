@@ -1,0 +1,317 @@
+{
+  "id": 227227,
+  "name": "CS 1.6 Weapons | CS:GO Animations",
+  "url": "https://gamebanana.com/mods/227227",
+  "game": "Counter-Strike 1.6",
+  "likes": 197,
+  "downloads": 49965,
+  "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "license_checklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "credits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Rigs, Compile, Texture edits/upscale, Animation edits..",
+          "_idRow": "1383394",
+          "_sName": "CS PRO",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/602b8ff0548f5.png",
+          "_sProfileUrl": "https://gamebanana.com/members/1383394",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/61f304aee3912.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Animations port",
+          "_idRow": "1443108",
+          "_sName": "FunnkyHD",
+          "_sProfileUrl": "https://gamebanana.com/members/1443108",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/63fbb5ff82910.png",
+          "_bIsOnline": false,
+          "_aAffiliatedStudio": {
+            "_sProfileUrl": "https://gamebanana.com/studios/34724",
+            "_sName": "CS:GO Ports",
+            "_sFlagUrl": "https://images.gamebanana.com/img/flags/studios/5bf8437056281.png",
+            "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/55c200bfa3957.png"
+          }
+        },
+        {
+          "_sRole": "CS 1.6 handrig + Sleeve model optimization, smoothing/animation fixes",
+          "_idRow": "1480965",
+          "_sName": "ViperL33T",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/5ac7b9bcbcf30.png",
+          "_sProfileUrl": "https://gamebanana.com/members/1480965",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/5ac7b6918d7c6.gif",
+          "_bIsOnline": false
+        }
+      ]
+    },
+    {
+      "_sGroupName": "Original Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Almost all model edits",
+          "_idRow": "298110",
+          "_sName": "kalasnikov88",
+          "_sProfileUrl": "https://gamebanana.com/members/298110",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/298110.jpg",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "M4A1 Remodel (except for barrel/forearm)",
+          "_idRow": "1507205",
+          "_sName": "RevTiva",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/5d4fb79148472.png",
+          "_sProfileUrl": "https://gamebanana.com/members/1507205",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/611a6ed002df4.png",
+          "_bIsOnline": false,
+          "_aAffiliatedStudio": {
+            "_sProfileUrl": "https://gamebanana.com/studios/34989",
+            "_sName": "Life Tree",
+            "_sFlagUrl": "https://images.gamebanana.com/img/flags/studios/58413052ba008.png",
+            "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/5841305c9ad02.png"
+          }
+        },
+        {
+          "_sRole": "Galil Remodel",
+          "_idRow": "884411",
+          "_sName": "Ghost884411",
+          "_sProfileUrl": "https://gamebanana.com/members/884411",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/banned.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "All original models/animations",
+          "_sName": "Valve/Hiddenpath Ent."
+        }
+      ]
+    },
+    {
+      "_sGroupName": "Beta Testers",
+      "_aAuthors": [
+        {
+          "_sRole": "Also came up with the idea, it was his request..",
+          "_idRow": "1692585",
+          "_sName": "Ghost1692585",
+          "_sProfileUrl": "https://gamebanana.com/members/1692585",
+          "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_idRow": "968373",
+          "_sName": "Ghost968373",
+          "_sProfileUrl": "https://gamebanana.com/members/968373",
+          "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_idRow": "1606144",
+          "_sName": "LexonFlipao",
+          "_sProfileUrl": "https://gamebanana.com/members/1606144",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/5f0a5956ac025.gif",
+          "_bIsOnline": false,
+          "_aAffiliatedStudio": {
+            "_sProfileUrl": "https://gamebanana.com/studios/35215",
+            "_sName": "CSMI",
+            "_sFlagUrl": "https://images.gamebanana.com/img/flags/studios/5c9bccc940879.png",
+            "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/5cc775aae9ce5.png"
+          }
+        },
+        {
+          "_idRow": "1670307",
+          "_sName": "tishingof",
+          "_sProfileUrl": "https://gamebanana.com/members/1670307",
+          "_sAvatarUrl": "https://images.gamebanana.com/static/img/defaults/avatar.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_idRow": "1694646",
+          "_sName": "no.",
+          "_sProfileUrl": "https://gamebanana.com/members/1694646",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/5ec27136c6054.png",
+          "_bIsOnline": false
+        },
+        {
+          "_idRow": "1477661",
+          "_sName": "papaschlange",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/598efe09c662d.png",
+          "_sProfileUrl": "https://gamebanana.com/members/1477661",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/5739c36c26ad5.png",
+          "_bIsOnline": false
+        }
+      ]
+    },
+    {
+      "_sGroupName": "Special Thanks",
+      "_aAuthors": [
+        {
+          "_sRole": "Lazy, but helpful",
+          "_idRow": "1480965",
+          "_sName": "ViperL33T",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/5ac7b9bcbcf30.png",
+          "_sProfileUrl": "https://gamebanana.com/members/1480965",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/5ac7b6918d7c6.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "A vewy good friend",
+          "_idRow": "1443108",
+          "_sName": "FunnkyHD",
+          "_sProfileUrl": "https://gamebanana.com/members/1443108",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/63fbb5ff82910.png",
+          "_bIsOnline": false,
+          "_aAffiliatedStudio": {
+            "_sProfileUrl": "https://gamebanana.com/studios/34724",
+            "_sName": "CS:GO Ports",
+            "_sFlagUrl": "https://images.gamebanana.com/img/flags/studios/5bf8437056281.png",
+            "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/55c200bfa3957.png"
+          }
+        },
+        {
+          "_sRole": "Critical, and chill..",
+          "_idRow": "884411",
+          "_sName": "Ghost884411",
+          "_sProfileUrl": "https://gamebanana.com/members/884411",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/banned.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Video preview",
+          "_idRow": "1654452",
+          "_sName": "ZONA Showcase",
+          "_sProfileUrl": "https://gamebanana.com/members/1654452",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/5de328ef14a58.png",
+          "_bIsOnline": false,
+          "_aAffiliatedStudio": {
+            "_sProfileUrl": "https://gamebanana.com/studios/34724",
+            "_sName": "CS:GO Ports",
+            "_sFlagUrl": "https://images.gamebanana.com/img/flags/studios/5bf8437056281.png",
+            "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/55c200bfa3957.png"
+          }
+        },
+        {
+          "_sName": "And to all those who followed and supported this pack!"
+        }
+      ]
+    }
+  ],
+  "description_html": "I've been working on this for almost a whole year, a lot happened and I had to push the release date further multiple times. But now it's finally done!<br><br>The weapons are of course a bit altered to fit the animations, heavily utilizing Kalasnikov88's remodels and some hacks I did on my own (As well as Revtiva's nice M4A1 and Tenryuu's great Galil remodel). But\u00a0the overall aesthetics are pretty much the same as the original, classic ones.<br><br><h2><span class=\"GreenColor\">Features:</span></h2><ul><li>All CS 1.6 weapons rigged on CS:GO animations with 1.6 hands in the best way possible.<br></li><li>CS 1.6 handrig by ViperL33T</li><li>Both CT Sleeved and Un-Sleeved versions</li><li>Fully Upscaled textures for all weapons.<br></li><li>Edited animations to better fit the weapons.</li></ul><b>Tip:\u00a0</b>Set the \"<span class=\"GreenColor\">gl_max_size</span>\" convar to \"<span class=\"GreenColor\">512</span>\" and \"<code>gl round_down</code>\" to \"<code>0</code>\" to enjoy full texture resolution. You can type in \"<span class=\"GreenColor\">gl_max_size 512</span>\" and \"<code>gl_round_down 0</code>\" directly into the game console before starting a match or add the command into your \"<span class=\"GreenColor\">autoexec.cfg</span>\" file located inside your cstrike folder.<b><br></b><br>In the end I wanna thank all those who supported and believed in this pack ever since I shared the WiP almost a year ago. Your support and\u00a0generosity were aspiring me to keep pushing development forward and never give up on it. I also wanna thank\u00a0<a href=\"https://gamebanana.com/members/1692585\">NoobKing07</a>\u00a0who was the main reason this pack actually existed (I'm sorry that it took so long tho). And for the most part I'm proud with how this came out..\u00a0<br><br><i><span class=\"Spoiler SelectedElement\">Now I just wanna fade into the shadows for a long time becuz this pacc has given me cancer x)<br></span></i><img src=\"https://files.gamebanana.com/bitpit/uravity-has-fallen.gif\"><br><br>As always, stay safe. And I hope you enjoy :D<br><br>Featured maps:<br>Knife/Pistols/SMG/Shotgun screenshots: <a href=\"https://gamebanana.com/maps/206853\">css_dust20</a> by\u00a0<a href=\"https://gamebanana.com/members/515174\">Tatu Eugen</a><br>Rifles/M249/Grenades/C4 screenshots: <a href=\"https://gamebanana.com/maps/205346\">GO: Dust II</a>\u00a0by\u00a0<a href=\"https://gamebanana.com/members/1454821\">m3owth_47</a>",
+  "files": [
+    {
+      "_idRow": 462366,
+      "_sFile": "cs_16_weapons_-_csgo_animations_up1.7z",
+      "_nFilesize": 7546330,
+      "_tsDateAdded": 1589227235,
+      "_nDownloadCount": 38740,
+      "_sDownloadUrl": "https://gamebanana.com/dl/462366",
+      "_sMd5Checksum": "5ead050435e8a7503e6735faab327f38",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_sDescription": "Latest full release"
+    },
+    {
+      "_idRow": 462367,
+      "_sFile": "patch-1.7z",
+      "_nFilesize": 1115068,
+      "_tsDateAdded": 1589227388,
+      "_nDownloadCount": 10089,
+      "_sDownloadUrl": "https://gamebanana.com/dl/462367",
+      "_sMd5Checksum": "571135824f810db3f84dc2293cf6d93f",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_sDescription": "Update patch for those who already have the pack installed"
+    }
+  ],
+  "retrieved": "2026-10-08",
+  "download": {
+    "id": 227227,
+    "name": "CS 1.6 Weapons | CS:GO Animations",
+    "archive": "downloads\\227227-cs_16_weapons_-_csgo_animations_up1.7z",
+    "sha256": "5e137366795f491b50fc9222280c8c2ea5e3959b60836148ef1c6c32331f95d1",
+    "bytes": 7546330,
+    "models": [
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_ak47.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_aug.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_awp.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_c4.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_deagle.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_elite.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_famas.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_fiveseven.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_flashbang.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_g3sg1.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_galil.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_glock18.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_hegrenade.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_knife.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_m249.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_m3.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_m4a1.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_mac10.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_mp5.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_p228.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_p90.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_scout.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_sg550.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_sg552.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_smokegrenade.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_tmp.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_ump45.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_usp.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\With sleeves (CT)\\v_xm1014.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_ak47.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_aug.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_awp.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_c4.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_deagle.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_elite.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_famas.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_fiveseven.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_flashbang.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_g3sg1.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_galil.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_glock18.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_hegrenade.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_knife.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_m249.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_m3.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_m4a1.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_mac10.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_mp5.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_p228.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_p90.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_scout.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_sg550.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_sg552.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_smokegrenade.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_tmp.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_ump45.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_usp.mdl",
+      "extracted\\227227\\cs_16_weapons_-_csgo_animations\\Without sleeves\\v_xm1014.mdl"
+    ]
+  }
+}

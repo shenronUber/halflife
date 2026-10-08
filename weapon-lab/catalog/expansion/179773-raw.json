@@ -1,0 +1,338 @@
+{
+  "_idRow": 179773,
+  "_nStatus": "0",
+  "_bIsPrivate": false,
+  "_bAccessorIsSubmitter": false,
+  "_bIsTrashed": false,
+  "_bIsWithheld": false,
+  "_sName": "G36 Hack",
+  "_sCommentsMode": "open",
+  "_tsDateModified": 1212892426,
+  "_tsDateAdded": 1212892426,
+  "_sProfileUrl": "https://gamebanana.com/mods/179773",
+  "_aPreviewMedia": {
+    "_aImages": [
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "846_34497.jpg",
+        "_sFile220": "220-90_846_34497.jpg",
+        "_sFile530": "530-90_846_34497.jpg",
+        "_sFile100": "100-90_846_34497.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "62572.jpg",
+        "_sFile100": "100-90_62572.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "62573.jpg",
+        "_sFile100": "100-90_62573.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "62574.jpg",
+        "_sFile100": "100-90_62574.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "58c014c82efa9.jpg",
+        "_sFile100": "100-90_58c014c82efa9.jpg"
+      }
+    ]
+  },
+  "_nUpdatesCount": 0,
+  "_bHasUpdates": false,
+  "_nAllTodosCount": 0,
+  "_bHasTodos": false,
+  "_nPostCount": 22,
+  "_aTags": [
+    {
+      "_sValue": "g36"
+    },
+    {
+      "_sValue": "hk"
+    },
+    {
+      "_sValue": "heckler"
+    },
+    {
+      "_sValue": "koch"
+    },
+    {
+      "_sValue": "1337"
+    },
+    {
+      "_sValue": "stoke"
+    },
+    {
+      "_sValue": "millenia"
+    },
+    {
+      "_sValue": "the spork"
+    },
+    {
+      "_sValue": "abyss 25"
+    },
+    {
+      "_sValue": "twinky master"
+    },
+    {
+      "_sValue": "darkstorn"
+    },
+    {
+      "_sValue": "s.a.j colon"
+    },
+    {
+      "_sTitle": "Model",
+      "_sValue": "Hacked Custom Model"
+    },
+    {
+      "_sTitle": "Texture",
+      "_sValue": "Default"
+    }
+  ],
+  "_bCreatedBySubmitter": false,
+  "_bIsPorted": false,
+  "_nThanksCount": 0,
+  "_sInitialVisibility": "show",
+  "_sDownloadUrl": "https://gamebanana.com/mods/download/179773",
+  "_nDownloadCount": 6958,
+  "_aFiles": [
+    {
+      "_idRow": 256977,
+      "_sFile": "g36_halflife.rar",
+      "_nFilesize": 19808741,
+      "_tsDateAdded": 1212892426,
+      "_nDownloadCount": 6959,
+      "_sDownloadUrl": "https://gamebanana.com/dl/256977",
+      "_sMd5Checksum": "3f85213ad30a1ed59460c63f05ac80b8",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,179773,256977"
+        }
+      ]
+    }
+  ],
+  "_nSubscriberCount": 2,
+  "_aStudio": {
+    "_idRow": 5951,
+    "_sName": "Source Incorporated",
+    "_sProfileUrl": "https://gamebanana.com/studios/5951",
+    "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/logoyz.jpg",
+    "_nSubscriberCount": 8,
+    "_bAccessorIsSubscribed": false
+  },
+  "_aContributingStudios": [],
+  "_sLicense": "Just include the credits I've listed in you're own release and I believe the authors will be fine with it.",
+  "_aLicenseChecklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "_sDescription": "I hacked this up and recolored the scope lenses. DiamonD made the peewees and a bunch of people made the model, I give full credit to the people who made the model.",
+  "_bGenerateTableOfContents": false,
+  "_sText": "Each Compile comes with several sets of arms and 4 variants for each arm ref (Choose from scoped, Silenced, Plain and Everything!). Enjoy!\r\n",
+  "_bIsObsolete": false,
+  "_nLikeCount": 18,
+  "_nViewCount": 36646,
+  "_sVersion": "",
+  "_bAcceptsDonations": false,
+  "_bShowRipePromo": true,
+  "_aEmbeddables": {
+    "_sEmbeddableImageBaseUrl": "https://gamebanana.com/mods/embeddables/179773",
+    "_aVariants": [
+      "small",
+      "small_square",
+      "medium",
+      "medium_square",
+      "medium_square_minimal",
+      "large",
+      "large_minimal",
+      "large_square",
+      "large_minimal_square",
+      "thumbnail"
+    ]
+  },
+  "_aSubmitter": {
+    "_idRow": 444669,
+    "_sName": "- John -",
+    "_sUserTitle": "Used to go by \"Abyss 25\"",
+    "_sHonoraryTitle": "",
+    "_tsJoinDate": 1212096332,
+    "_sAvatarUrl": "https://images.gamebanana.com/img/av/444669.jpg",
+    "_sSigUrl": "https://images.gamebanana.com/img/sig/444669.jpg",
+    "_sProfileUrl": "https://gamebanana.com/members/444669",
+    "_sPointsUrl": "https://gamebanana.com/members/logs/pointslog/444669",
+    "_sMedalsUrl": "https://gamebanana.com/members/stats/medals/444669",
+    "_bIsOnline": false,
+    "_sLocation": "<a href=\"http://www.fpsbanana.com/maps\">Maps</a> > <a href=\"http://www.fpsbanana.com/maps/games/2\">CS:S</a> > <a href=\"http://www.fpsbanana.com/mapcats/26\">Bomb/Defuse</a> > <a class=\"menu bold\" href=\"http://www.fpsbanana.com/maps/7511\">de_vast</a>",
+    "_sOnlineTitle": "",
+    "_sOfflineTitle": "",
+    "_nPoints": 60,
+    "_nPointsRank": 0,
+    "_aNormalMedals": [],
+    "_aRareMedals": [],
+    "_aLegendaryMedals": [],
+    "_bHasRipe": false,
+    "_nBuddyCount": 0,
+    "_nSubscriberCount": 0,
+    "_aDonationMethods": [],
+    "_bAccessorIsBuddy": false,
+    "_bBuddyRequestExistsWithAccessor": false,
+    "_bAccessorIsSubscribed": false,
+    "_aDefaultLicenseChecklist": [
+      "yes",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "no",
+      "ask"
+    ],
+    "_sDefaultLicense": ""
+  },
+  "_bFollowLinks": true,
+  "_aGame": {
+    "_idRow": 34,
+    "_sName": "Half-Life",
+    "_sAbbreviation": "HL",
+    "_sProfileUrl": "https://gamebanana.com/games/34",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/games/half-life.png",
+    "_sBannerUrl": "https://images.gamebanana.com/img/ico/games/half-life.png",
+    "_nSubscriberCount": 4637,
+    "_bHasSubmissionQueue": false,
+    "_bAccessorIsSubscribed": false
+  },
+  "_aCategory": {
+    "_idRow": 7736,
+    "_sName": "MP5 / M4",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/7736",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/560c876aaaf25.png",
+    "_bIsObsolete": false
+  },
+  "_aSuperCategory": {
+    "_idRow": 7735,
+    "_sName": "Weapons",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/7735",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/5ea2fdf1794ff.png"
+  },
+  "_aCredits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Unknown",
+          "_sName": "Stoke"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Millenia"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "The Spork"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Abyss 25"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Twinky Master"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Darkstorn"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "S.A.J Colonel"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "End Of Days"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "DiamonD"
+        }
+      ]
+    }
+  ],
+  "_sDevNotes": "Milkshape 3D, GIMP 2.4"
+}

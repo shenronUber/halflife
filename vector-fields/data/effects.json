@@ -1,0 +1,929 @@
+{
+  "version": 1,
+  "scope": "Visual laboratory only; no gameplay properties or automatic reactions.",
+  "sources": [
+    "Conversation Brainstorming Techwear Equipement, 6962c094-6bc8-832f-81da-19aa4e775bd0, accessible architecture excerpt (partial history)",
+    "vector-fields/data/equipment.txt"
+  ],
+  "effects": [
+    {
+      "id": "hydro",
+      "name": "Hydro / Soaked",
+      "kind": 0,
+      "origin": "Echanges + Hydrophobic Weave",
+      "recipe": "Hydro",
+      "meaning": "Imbiber une cible ; preparer certaines reactions, dont ArcChain. Aucun changement de resistance dans ce laboratoire.",
+      "visual": "Gouttes descendantes et rides a la base du corps.",
+      "color": [
+        70,
+        175,
+        255
+      ],
+      "layers": [
+        {
+          "pattern": "Drops",
+          "texture": 0,
+          "count": 32,
+          "color": [
+            70,
+            175,
+            255
+          ],
+          "size": 1.6,
+          "speed": 0.85
+        },
+        {
+          "pattern": "Rings",
+          "texture": 4,
+          "count": 3,
+          "color": [
+            70,
+            175,
+            255
+          ],
+          "size": 1,
+          "speed": 0.65
+        }
+      ]
+    },
+    {
+      "id": "electro",
+      "name": "Electro / Shock",
+      "kind": 0,
+      "origin": "Echanges + Arc Nozzle",
+      "recipe": "Electro",
+      "meaning": "Amorcer une charge electrique. Arc Nozzle cite explicitement une cible Soaked comme partenaire.",
+      "visual": "Arcs anguleux mobiles et etincelles courtes.",
+      "color": [
+        255,
+        205,
+        80
+      ],
+      "layers": [
+        {
+          "pattern": "Arcs",
+          "texture": 4,
+          "count": 9,
+          "color": [
+            255,
+            205,
+            80
+          ],
+          "size": 1,
+          "speed": 1.5
+        },
+        {
+          "pattern": "Sparks",
+          "texture": 1,
+          "count": 18,
+          "color": [
+            255,
+            205,
+            80
+          ],
+          "size": 1.7,
+          "speed": 1.8
+        }
+      ]
+    },
+    {
+      "id": "cryo",
+      "name": "Cryo / Givre",
+      "kind": 0,
+      "origin": "Echanges ; statut propose",
+      "recipe": "Cryo",
+      "meaning": "Porter un etat froid. Le ralentissement et la fragilisation sont des intentions a definir ; ils ne sont pas actifs.",
+      "visual": "Eclats de givre suspendus et brume froide.",
+      "color": [
+        125,
+        230,
+        255
+      ],
+      "layers": [
+        {
+          "pattern": "Shards",
+          "texture": 4,
+          "count": 26,
+          "color": [
+            125,
+            230,
+            255
+          ],
+          "size": 2.2,
+          "speed": 0.4
+        },
+        {
+          "pattern": "Cloud",
+          "texture": 2,
+          "count": 10,
+          "color": [
+            125,
+            230,
+            255
+          ],
+          "size": 5,
+          "speed": 0.45
+        }
+      ]
+    },
+    {
+      "id": "thermal",
+      "name": "Thermal / Chaleur",
+      "kind": 0,
+      "origin": "Echanges ; statut propose",
+      "recipe": "Thermal",
+      "meaning": "Porter un etat thermique. Brulure et consommation de chaleur seront definies dans la future logique de combat.",
+      "visual": "Flammes montantes et braises qui se dissipent.",
+      "color": [
+        255,
+        112,
+        45
+      ],
+      "layers": [
+        {
+          "pattern": "Rise",
+          "texture": 3,
+          "count": 26,
+          "color": [
+            255,
+            112,
+            45
+          ],
+          "size": 3.8,
+          "speed": 1
+        },
+        {
+          "pattern": "Sparks",
+          "texture": 1,
+          "count": 18,
+          "color": [
+            255,
+            205,
+            80
+          ],
+          "size": 1.4,
+          "speed": 1.2
+        }
+      ]
+    },
+    {
+      "id": "toxic",
+      "name": "Toxic / Contamination",
+      "kind": 0,
+      "origin": "Primer: Contam",
+      "recipe": "Toxic",
+      "meaning": "Amorcer Toxic et une fenetre anti-regeneration, comme prevu par Primer: Contam. Aucun soin bloque ici.",
+      "visual": "Spores violettes fines en suspension ascendante ; aucun nuage vert ni projection acide.",
+      "color": [
+        176,
+        95,
+        230
+      ],
+      "layers": [
+        {
+          "pattern": "Rise",
+          "texture": 0,
+          "count": 24,
+          "color": [
+            185,
+            100,
+            240
+          ],
+          "size": 1.5,
+          "speed": 0.45
+        },
+        {
+          "pattern": "Orbit",
+          "texture": 1,
+          "count": 8,
+          "color": [
+            205,
+            140,
+            245
+          ],
+          "size": 0.7,
+          "speed": 0.3
+        }
+      ]
+    },
+    {
+      "id": "corrosion",
+      "name": "Corrosion",
+      "kind": 0,
+      "origin": "Acid Sprayer + Ceramic Lining",
+      "recipe": "Corrosion",
+      "meaning": "Representer une agression corrosive contre les protections. La diminution d'armure reste a definir et a implementer.",
+      "visual": "Filets acides descendants et bulles a la surface.",
+      "color": [
+        205,
+        235,
+        60
+      ],
+      "layers": [
+        {
+          "pattern": "Drops",
+          "texture": 0,
+          "count": 22,
+          "color": [
+            155,
+            230,
+            65
+          ],
+          "size": 2.2,
+          "speed": 1.3
+        },
+        {
+          "pattern": "Orbit",
+          "texture": 0,
+          "count": 18,
+          "color": [
+            230,
+            255,
+            110
+          ],
+          "size": 1.8,
+          "speed": 0.8
+        }
+      ]
+    },
+    {
+      "id": "sonic",
+      "name": "Sonic / Resonance",
+      "kind": 0,
+      "origin": "Echo Ping",
+      "recipe": "Sonic",
+      "meaning": "Sondage en cone et signature accrue, tels que prevus par Echo Ping. Aucun ennemi revele automatiquement.",
+      "visual": "Ondes concentriques progressives autour du corps.",
+      "color": [
+        255,
+        145,
+        215
+      ],
+      "layers": [
+        {
+          "pattern": "Rings",
+          "texture": 4,
+          "count": 7,
+          "color": [
+            255,
+            145,
+            215
+          ],
+          "size": 1,
+          "speed": 1.1
+        },
+        {
+          "pattern": "Orbit",
+          "texture": 1,
+          "count": 12,
+          "color": [
+            255,
+            200,
+            230
+          ],
+          "size": 1,
+          "speed": 0.9
+        }
+      ]
+    },
+    {
+      "id": "kinetic",
+      "name": "Kinetic / Impact",
+      "kind": 0,
+      "origin": "Kinetic Core ; cue propose",
+      "recipe": "Kinetic",
+      "meaning": "Charge d'impact conventionnelle citee par Kinetic Core. Recul, projection et degats restent inchanges.",
+      "visual": "Traits radiaux brefs et petits debris en expansion.",
+      "color": [
+        210,
+        200,
+        175
+      ],
+      "layers": [
+        {
+          "pattern": "Burst",
+          "texture": 4,
+          "count": 28,
+          "color": [
+            210,
+            200,
+            175
+          ],
+          "size": 1.2,
+          "speed": 1.3
+        },
+        {
+          "pattern": "Sparks",
+          "texture": 1,
+          "count": 12,
+          "color": [
+            255,
+            205,
+            80
+          ],
+          "size": 1,
+          "speed": 1.7
+        }
+      ]
+    },
+    {
+      "id": "arc_chain",
+      "name": "ArcChain / Conduction",
+      "kind": 1,
+      "origin": "Reaction retrouvee dans les echanges",
+      "recipe": "Electro + Hydro (Soaked)",
+      "meaning": "Intention retrouvee : une charge Electro sur Soaked declenche un arc en chaine. La propagation entre cibles reste inactive.",
+      "visual": "Deux petits relais lumineux sont relies au corps par des arcs.",
+      "color": [
+        255,
+        205,
+        80
+      ],
+      "layers": [
+        {
+          "pattern": "Drops",
+          "texture": 0,
+          "count": 14,
+          "color": [
+            70,
+            175,
+            255
+          ],
+          "size": 1.5,
+          "speed": 0.8
+        },
+        {
+          "pattern": "Chain",
+          "texture": 4,
+          "count": 3,
+          "color": [
+            255,
+            205,
+            80
+          ],
+          "size": 1,
+          "speed": 1.3
+        },
+        {
+          "pattern": "Sparks",
+          "texture": 1,
+          "count": 16,
+          "color": [
+            125,
+            230,
+            255
+          ],
+          "size": 1.4,
+          "speed": 1.6
+        }
+      ],
+      "parents": [
+        "hydro",
+        "electro"
+      ]
+    },
+    {
+      "id": "superconduction",
+      "name": "CryoCircuit / Supraconduction",
+      "kind": 1,
+      "origin": "PROPOSITION / nom et effet provisoires",
+      "recipe": "Cryo + Electro",
+      "meaning": "Proposition : associer froid et conduction electrique. Les resistances de la cible restent inchangees.",
+      "visual": "Reseau d'arcs blancs entre cristaux bleus.",
+      "color": [
+        125,
+        230,
+        255
+      ],
+      "layers": [
+        {
+          "pattern": "Shards",
+          "texture": 4,
+          "count": 22,
+          "color": [
+            70,
+            175,
+            255
+          ],
+          "size": 2.2,
+          "speed": 0.3
+        },
+        {
+          "pattern": "Arcs",
+          "texture": 4,
+          "count": 12,
+          "color": [
+            225,
+            250,
+            255
+          ],
+          "size": 1,
+          "speed": 1.2
+        }
+      ],
+      "parents": [
+        "electro",
+        "cryo"
+      ]
+    },
+    {
+      "id": "shatter",
+      "name": "FracturePulse / Fragmentation",
+      "kind": 1,
+      "origin": "PROPOSITION / nom et effet provisoires",
+      "recipe": "Cryo + Kinetic",
+      "parents": [
+        "cryo",
+        "kinetic"
+      ],
+      "meaning": "Proposition : un impact fragmente une enveloppe froide. Aucun degat additionnel ni perte de protection ne sont appliques.",
+      "visual": "Eclats de glace projetes radialement, gerbe blanche.",
+      "color": [
+        150,
+        230,
+        255
+      ],
+      "layers": [
+        {
+          "pattern": "Shards",
+          "texture": 4,
+          "count": 24,
+          "color": [
+            125,
+            230,
+            255
+          ],
+          "size": 3,
+          "speed": 1.2
+        },
+        {
+          "pattern": "Burst",
+          "texture": 4,
+          "count": 22,
+          "color": [
+            240,
+            250,
+            255
+          ],
+          "size": 1.5,
+          "speed": 1.4
+        }
+      ]
+    },
+    {
+      "id": "resonant_impact",
+      "name": "ResonantShock / Onde d'impact",
+      "kind": 1,
+      "origin": "PROPOSITION / nom et effet provisoires",
+      "recipe": "Kinetic + Sonic",
+      "parents": [
+        "kinetic",
+        "sonic"
+      ],
+      "meaning": "Proposition : convertir une impulsion mecanique en onde de resonance. Aucun recul force ni etourdissement.",
+      "visual": "Ondes roses et traits radiaux couleur metal.",
+      "color": [
+        255,
+        155,
+        215
+      ],
+      "layers": [
+        {
+          "pattern": "Rings",
+          "texture": 4,
+          "count": 7,
+          "color": [
+            255,
+            155,
+            215
+          ],
+          "size": 1,
+          "speed": 1.3
+        },
+        {
+          "pattern": "Burst",
+          "texture": 4,
+          "count": 22,
+          "color": [
+            220,
+            215,
+            190
+          ],
+          "size": 1.5,
+          "speed": 1.2
+        }
+      ]
+    },
+    {
+      "id": "cavitation",
+      "name": "AcidEcho / Cavitation",
+      "kind": 1,
+      "origin": "PROPOSITION / nom et effet provisoires",
+      "recipe": "Sonic + Corrosion",
+      "parents": [
+        "sonic",
+        "corrosion"
+      ],
+      "meaning": "Proposition : faire vibrer un milieu corrosif pour le disperser. Aucun affaiblissement d'armure ni degat de zone.",
+      "visual": "Bulles vertes, ondes roses et filets acides.",
+      "color": [
+        175,
+        235,
+        85
+      ],
+      "layers": [
+        {
+          "pattern": "Orbit",
+          "texture": 0,
+          "count": 25,
+          "color": [
+            175,
+            235,
+            85
+          ],
+          "size": 2.5,
+          "speed": 1.1
+        },
+        {
+          "pattern": "Rings",
+          "texture": 4,
+          "count": 5,
+          "color": [
+            255,
+            155,
+            215
+          ],
+          "size": 1,
+          "speed": 1.25
+        },
+        {
+          "pattern": "Drops",
+          "texture": 0,
+          "count": 14,
+          "color": [
+            200,
+            235,
+            90
+          ],
+          "size": 1.7,
+          "speed": 0.8
+        }
+      ]
+    },
+    {
+      "id": "caustic_contagion",
+      "name": "ContamBloom / Contamination",
+      "kind": 1,
+      "origin": "PROPOSITION / nom et effet provisoires",
+      "recipe": "Corrosion + Toxic",
+      "parents": [
+        "corrosion",
+        "toxic"
+      ],
+      "meaning": "Proposition : associer corrosion des protections et contamination. Aucune propagation, reduction d'armure ou suppression de soin.",
+      "visual": "Nuage vert dense, projections acides jaunes et spores violettes : Toxic couple a Corrosion.",
+      "color": [
+        165,
+        225,
+        70
+      ],
+      "layers": [
+        {
+          "pattern": "Cloud",
+          "texture": 2,
+          "count": 18,
+          "color": [
+            150,
+            220,
+            75
+          ],
+          "size": 6,
+          "speed": 0.5
+        },
+        {
+          "pattern": "Drops",
+          "texture": 0,
+          "count": 18,
+          "color": [
+            225,
+            240,
+            90
+          ],
+          "size": 2,
+          "speed": 1
+        },
+        {
+          "pattern": "Orbit",
+          "texture": 0,
+          "count": 12,
+          "color": [
+            185,
+            120,
+            255
+          ],
+          "size": 1.8,
+          "speed": 0.65
+        }
+      ]
+    },
+    {
+      "id": "toxic_ignition",
+      "name": "CinderMist / Ignition toxique",
+      "kind": 1,
+      "origin": "PROPOSITION / nom et effet provisoires",
+      "recipe": "Toxic + Thermal",
+      "meaning": "Proposition : enflammer un milieu contamine. Aucune explosion, contagion ou consommation de Toxic n'est active.",
+      "visual": "Flammes courtes orange au sein d'un nuage vert.",
+      "color": [
+        255,
+        112,
+        45
+      ],
+      "layers": [
+        {
+          "pattern": "Cloud",
+          "texture": 2,
+          "count": 17,
+          "color": [
+            155,
+            230,
+            65
+          ],
+          "size": 6,
+          "speed": 0.6
+        },
+        {
+          "pattern": "Rise",
+          "texture": 3,
+          "count": 22,
+          "color": [
+            255,
+            112,
+            45
+          ],
+          "size": 3.8,
+          "speed": 1.3
+        }
+      ],
+      "parents": [
+        "toxic",
+        "thermal"
+      ]
+    },
+    {
+      "id": "steam_veil",
+      "name": "SteamVeil / Vaporisation",
+      "kind": 1,
+      "origin": "Echanges + Vapor Capsule",
+      "recipe": "Thermal + Hydro",
+      "meaning": "Intention retrouvee : former un ecran de vapeur. Le nuage est visible ; aucune regle de vision ou de detection n'est appliquee.",
+      "visual": "Panaches blancs larges, ascendants, avec gouttelettes.",
+      "color": [
+        220,
+        235,
+        240
+      ],
+      "layers": [
+        {
+          "pattern": "Cloud",
+          "texture": 2,
+          "count": 30,
+          "color": [
+            220,
+            235,
+            240
+          ],
+          "size": 8,
+          "speed": 1
+        },
+        {
+          "pattern": "Rise",
+          "texture": 0,
+          "count": 14,
+          "color": [
+            70,
+            175,
+            255
+          ],
+          "size": 1.4,
+          "speed": 0.8
+        }
+      ],
+      "parents": [
+        "thermal",
+        "hydro"
+      ]
+    },
+    {
+      "id": "phase",
+      "name": "Phase",
+      "kind": 2,
+      "origin": "Phase Dash + Phase Optics",
+      "recipe": "Etat tactique / Anomalous",
+      "meaning": "Impulsion courte et perception dans la vapeur sont prevues par les pieces Phase. Aucun dash, camouflage ou traversee de mur.",
+      "visual": "Orbites violettes decalees et traces ascendantes.",
+      "color": [
+        185,
+        120,
+        255
+      ],
+      "layers": [
+        {
+          "pattern": "Orbit",
+          "texture": 0,
+          "count": 28,
+          "color": [
+            185,
+            120,
+            255
+          ],
+          "size": 2.4,
+          "speed": 1.4
+        },
+        {
+          "pattern": "Rings",
+          "texture": 4,
+          "count": 4,
+          "color": [
+            125,
+            115,
+            255
+          ],
+          "size": 1,
+          "speed": 0.9
+        }
+      ]
+    },
+    {
+      "id": "null",
+      "name": "Null / Neutralisation",
+      "kind": 2,
+      "origin": "Null Harness + Void Field",
+      "recipe": "Etat tactique / Anomalous",
+      "meaning": "Neutralisation temporaire des reactions, avec contreparties de capacite. Ce laboratoire n'annule aucun effet reel.",
+      "visual": "Anneaux convergents blancs et violets, coeur calme.",
+      "color": [
+        195,
+        180,
+        255
+      ],
+      "layers": [
+        {
+          "pattern": "Collapse",
+          "texture": 4,
+          "count": 6,
+          "color": [
+            195,
+            180,
+            255
+          ],
+          "size": 1,
+          "speed": 0.75
+        },
+        {
+          "pattern": "Orbit",
+          "texture": 1,
+          "count": 14,
+          "color": [
+            235,
+            235,
+            255
+          ],
+          "size": 1.1,
+          "speed": -0.5
+        }
+      ]
+    },
+    {
+      "id": "ward",
+      "name": "Ward / Protection",
+      "kind": 2,
+      "origin": "Elemental Ward ; visuel propose",
+      "recipe": "Etat tactique / Fortress - Engine",
+      "meaning": "Resistance specialisee et contre-element prevus par Elemental Ward. Le halo ne rend pas invincible.",
+      "visual": "Enveloppe lumineuse et anneaux de protection.",
+      "color": [
+        80,
+        225,
+        190
+      ],
+      "layers": [
+        {
+          "pattern": "Rings",
+          "texture": 4,
+          "count": 5,
+          "color": [
+            80,
+            225,
+            190
+          ],
+          "size": 1,
+          "speed": 0.45
+        },
+        {
+          "pattern": "Orbit",
+          "texture": 0,
+          "count": 24,
+          "color": [
+            80,
+            225,
+            190
+          ],
+          "size": 1.8,
+          "speed": 0.55
+        }
+      ]
+    },
+    {
+      "id": "reveal",
+      "name": "Ping / Marquage",
+      "kind": 2,
+      "origin": "Utility Ping + Reactive Flare",
+      "recipe": "Etat tactique / Predator",
+      "meaning": "Lecture breve des traces et flash reactif au marquage. Le test n'expose pas les ennemis a travers les murs.",
+      "visual": "Balayage vertical ambre et rayons de signalisation.",
+      "color": [
+        255,
+        205,
+        80
+      ],
+      "layers": [
+        {
+          "pattern": "Scan",
+          "texture": 4,
+          "count": 5,
+          "color": [
+            255,
+            205,
+            80
+          ],
+          "size": 1,
+          "speed": 0.7
+        },
+        {
+          "pattern": "Burst",
+          "texture": 4,
+          "count": 12,
+          "color": [
+            255,
+            205,
+            80
+          ],
+          "size": 1,
+          "speed": 0.6
+        }
+      ]
+    },
+    {
+      "id": "overclock",
+      "name": "Overclock / Surcharge",
+      "kind": 2,
+      "origin": "Overclock Grip",
+      "recipe": "Etat tactique / Engine",
+      "meaning": "Surcharge breve contre dette thermique. Aucun changement de cadence, de vitesse ou de TED dans ce test.",
+      "visual": "Double orbite rapide et etincelles orange.",
+      "color": [
+        255,
+        112,
+        45
+      ],
+      "layers": [
+        {
+          "pattern": "Orbit",
+          "texture": 1,
+          "count": 28,
+          "color": [
+            255,
+            112,
+            45
+          ],
+          "size": 1.8,
+          "speed": 2.1
+        },
+        {
+          "pattern": "Sparks",
+          "texture": 1,
+          "count": 20,
+          "color": [
+            255,
+            205,
+            80
+          ],
+          "size": 1.4,
+          "speed": 1.8
+        }
+      ]
+    }
+  ],
+  "combination_rule": "Eight elementary effects, exactly two different partners each, unordered pairs, eight distinct reactions. Tactical cues excluded from the elemental graph.",
+  "terminology": {
+    "primary": "Vecteur primaire (VP) : composante elementaire qui porte un etat.",
+    "state": "Etat : empreinte laissee sur la cible, par exemple Soaked pour Hydro.",
+    "coupled": "Reaction couplee (RC) : resultat nomme de deux vecteurs compatibles.",
+    "tactical": "Etat tactique (ET) : phase, neutralisation, protection, marquage ou surcharge, hors matrice elementaire."
+  },
+  "inspiration": {
+    "url": "https://www.warframe.com/en/patch-notes/pc/36-0-0",
+    "used_for": "Distinction entre source elementaire, statut et combinaison ; silhouettes de froid fragmente et nuage gaz lisible. Aucun asset ou chiffre de Warframe reutilise."
+  }
+}

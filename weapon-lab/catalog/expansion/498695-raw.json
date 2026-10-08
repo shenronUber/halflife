@@ -1,0 +1,570 @@
+{
+  "_idRow": 498695,
+  "_nStatus": "0",
+  "_bIsPrivate": false,
+  "_bAccessorIsSubmitter": false,
+  "_bIsTrashed": false,
+  "_bIsWithheld": false,
+  "_sName": "Full-Poly M4 V2",
+  "_sCommentsMode": "open",
+  "_tsDateModified": 1744472974,
+  "_tsDateAdded": 1709388344,
+  "_sProfileUrl": "https://gamebanana.com/mods/498695",
+  "_aPreviewMedia": {
+    "_aImages": [
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "Bshift and Opfor hands included",
+        "_sFile": "662685f7626fc.jpg",
+        "_sFile220": "220-90_662685f7626fc.jpg",
+        "_hFile220": 103,
+        "_wFile220": 220,
+        "_sFile530": "530-90_662685f7626fc.jpg",
+        "_hFile530": 247,
+        "_wFile530": 530,
+        "_sFile100": "100-90_662685f7626fc.jpg",
+        "_hFile100": 47,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "Actual screenshot of the V2 model (mw3 anims) in Base-Game",
+        "_sFile": "665218c17a68d.jpg",
+        "_sFile100": "100-90_665218c17a68d.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sCaption": "Actual screenshot of the V2 model (mw3 anims) in opfor",
+        "_sFile": "66521862e004c.jpg",
+        "_sFile100": "100-90_66521862e004c.jpg",
+        "_hFile100": 56,
+        "_wFile100": 100
+      }
+    ]
+  },
+  "_nUpdatesCount": 3,
+  "_bHasUpdates": true,
+  "_tsDateUpdated": 1716656955,
+  "_nAllTodosCount": 0,
+  "_bHasTodos": false,
+  "_nPostCount": 9,
+  "_aTags": [
+    {
+      "_sTitle": "Software Used",
+      "_sValue": "Blender"
+    },
+    {
+      "_sTitle": "Software Used",
+      "_sValue": "Paint.NET"
+    },
+    {
+      "_sTitle": "Software Used",
+      "_sValue": "Photoshop"
+    }
+  ],
+  "_bCreatedBySubmitter": true,
+  "_bIsPorted": false,
+  "_nThanksCount": 2,
+  "_sInitialVisibility": "show",
+  "_sDownloadUrl": "https://gamebanana.com/mods/download/498695",
+  "_nDownloadCount": 925,
+  "_aFiles": [
+    {
+      "_idRow": 1201081,
+      "_sFile": "m4_v2_22.zip",
+      "_nFilesize": 6349006,
+      "_tsDateAdded": 1716656358,
+      "_nDownloadCount": 469,
+      "_sDownloadUrl": "https://gamebanana.com/dl/1201081",
+      "_sMd5Checksum": "21e72595a464aff036a5c8468095bf41",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_sDescription": "Improved 2.2 zip update",
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,498695,1201081"
+        }
+      ]
+    },
+    {
+      "_idRow": 1183159,
+      "_sFile": "m4_v2_21.zip",
+      "_nFilesize": 5577534,
+      "_tsDateAdded": 1714246557,
+      "_nDownloadCount": 136,
+      "_sDownloadUrl": "https://gamebanana.com/dl/1183159",
+      "_sMd5Checksum": "3b7678c5ee3fd45c202671e2b00aa065",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_sDescription": "Improved 2.1 zip update",
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,498695,1183159"
+        }
+      ]
+    },
+    {
+      "_idRow": 1179772,
+      "_sFile": "m4_b4b03.zip",
+      "_nFilesize": 3030592,
+      "_tsDateAdded": 1713803210,
+      "_nDownloadCount": 84,
+      "_sDownloadUrl": "https://gamebanana.com/dl/1179772",
+      "_sMd5Checksum": "9889f2113c813a6e3b1822c6a5fae7ec",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_sDescription": "2.0 MEGA BASED UPDATE",
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,498695,1179772"
+        }
+      ]
+    },
+    {
+      "_idRow": 1148952,
+      "_sFile": "full_poly_m4.zip",
+      "_nFilesize": 772232,
+      "_tsDateAdded": 1709387613,
+      "_nDownloadCount": 236,
+      "_sDownloadUrl": "https://gamebanana.com/dl/1148952",
+      "_sMd5Checksum": "556fe18ca5fb409e9c58ca7cd87a33eb",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_sDescription": "Original 1.0 from ModDB",
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,498695,1148952"
+        }
+      ]
+    }
+  ],
+  "_nSubscriberCount": 4,
+  "_aContributingStudios": [],
+  "_sLicense": "CC BY-NC-SA 4.0",
+  "_aLicenseChecklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites"
+    ],
+    "only_if_same": [
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ]
+  },
+  "_sDescription": "I restored 90% of the polygons on the M4, It's one whole model now.",
+  "_bGenerateTableOfContents": false,
+  "_sText": "V2 IS HERE!!! It's been 2 months And I thought to completely<br>do-over the m4 using the new mirroring technique and add actual<br>Re-animations using IK. I've included both a regular and IK rig<br>of the M4 model for animating and editing animations respectively.<br><br>You can use these for your mods and re-animations,\u00a0<br>as long as I am credited fairly for creating the<br>polygon-restored M4 V2.<br><br>specify the website when you type my username;\u00a0<br>I don't use the same one on all platforms.<br><br>\t\t<code>\u00a0 Gamebanana: XPRT98<br>\u00a0 ModDB:\u00a0 \u00a0 \u00a0\u00a0<span class=\"SelectedElement\">XPRT98</span><br>\u00a0 Discord: Half-Dead</code>\t\t\t\t<br><br><code>\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510<br>\u2502\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 Install Instructions\u00a0 \u00a0 \u00a0 \u00a0 \u2502<br>\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518</code><br><br>To have these in-game for either Half-Life, Opposing Force or Blue Shift:<br><br>Create a folder in \"Steam\\steamapps\\common\\Half-Life\" called<br><br>GAMEFOLDER_addon (e.g valve_addon for HL1)<br><br>Inside create another folder called \"models\" then place the model you want In-game<br>(for opfor or bshift make sure to delete the opfor/bshift part of the model name.)<br>Ensure You have disabled Original Models as it's a HD pack weapon.<br><br><code>\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510<br>\u2502\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 Modding Instructions\u00a0 \u00a0 \u00a0 \u00a0 \u2502<br>\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518</code><br>This Weapon has been created with Blender 4.0 with blender source tools<br>and is designed to Work with Blender 3.6 and Blender 4.0. Blender 4.1 as<br>far as I can recall breaks blender source tools due to shade smooth being<br>changed. I cannot guarrantee any version of blender prior to 3.6 will work<br>with this.<br><br>I have provided a standard rig of the m4 in a .\u0299\u029f\u1d07\u0274\u1d05 file.<br>It has only one difference: the Bip01_L/R_Armbones have been unparented<br>to serve as IK bones. Keep this in mind when importing new animations.<br><br>I have also provided an inverse kinematics rig in a .\u0299\u029f\u1d07\u0274\u1d05 file to use<br>for animation. Further below is an IK animation tutorial that I have<br>Found to be the best method for me using this rig. When animating with<br>my IK rig, make sure to ONLY animate the Weapon itself.<br><br><code>\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510<br>\u2502\u00a0 \u00a0 \u00a0 \u00a0 \u00a0IK Animation Instructions\u00a0 \u00a0 \u00a0 \u2502<br>\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518</code><br><br>\u2022Open the m4_IK.blend<br><br>\u2022A system of child constraints already exist, but you can fine-tune it for yourself.<br>\u00a0Make it so in some way the L_Arm_bone & R_Arm_bone (the two IK bones) are moving in conjunction with the M4 bone.<br><br>\u2022Animate the carbine bone (location & rotation) and both IK bones should follow<br><br>\u2022While in pose mode, click at the top-right pose \u2192 animation \u2192 bake animation<br>\u00a0Make sure you have \"Visual Keying\" & \"clear constraints\" enabled & \"selected bones only\" disabled.<br>\u00a0This automatically then animates the positions of all the other bones and removes constraints that'll affect the final export.<br><br>\u2022Export the animation and after you do that hit CTRL + Z until you go before\u00a0<br>\u00a0baking the animation to once-again reinstate all IK and Child-of constraints<br><br>",
+  "_bIsObsolete": false,
+  "_nLikeCount": 36,
+  "_nViewCount": 8656,
+  "_sVersion": "2.2",
+  "_bAcceptsDonations": false,
+  "_bShowRipePromo": true,
+  "_aEmbeddables": {
+    "_sEmbeddableImageBaseUrl": "https://gamebanana.com/mods/embeddables/498695",
+    "_aVariants": [
+      "small",
+      "small_square",
+      "medium",
+      "medium_square",
+      "medium_square_minimal",
+      "large",
+      "large_minimal",
+      "large_square",
+      "large_minimal_square",
+      "thumbnail"
+    ]
+  },
+  "_aSubmitter": {
+    "_idRow": 2682373,
+    "_sName": "xprt98",
+    "_sUserTitle": "Gamer",
+    "_sHonoraryTitle": "",
+    "_tsJoinDate": 1685813063,
+    "_sAvatarUrl": "https://images.gamebanana.com/img/av/6716a85af39c9.png",
+    "_sSigUrl": "https://images.gamebanana.com/img/sig/6716a45086f1a.png",
+    "_sProfileUrl": "https://gamebanana.com/members/2682373",
+    "_sPointsUrl": "https://gamebanana.com/members/logs/pointslog/2682373",
+    "_sMedalsUrl": "https://gamebanana.com/members/stats/medals/2682373",
+    "_bIsOnline": false,
+    "_sLocation": "<a href=\"https://gamebanana.com\">Home</a> > <a href=\"https://gamebanana.com/games/34\"><img src=\"https://images.gamebanana.com/img/ico/games/half-life.png\"/><span>Half-Life</span></a> > <a href=\"https://gamebanana.com/mods/games/34\">Mods</a> > <a href=\"https://gamebanana.com/mods/cats/7732\">Skins</a> > <a href=\"https://gamebanana.com/mods/cats/7735\">Weapons</a> > <a href=\"https://gamebanana.com/mods/cats/7746\">SPAS-12</a> > <a href=\"https://gamebanana.com/mods/680176\">Rotoscoped \"Upscaled Vanilla Shotgun\" animations</a>",
+    "_sOnlineTitle": "Online",
+    "_sOfflineTitle": "Offline",
+    "_nPoints": 799,
+    "_nPointsRank": 121619,
+    "_aNormalMedals": [
+      [
+        "m_age_1.png",
+        "One month a member",
+        "normal",
+        1117298
+      ],
+      [
+        "m_age_2.png",
+        "6 months a member",
+        "normal",
+        1610647
+      ],
+      [
+        "thanks_recvd_1.png",
+        "Received thanks 5 times",
+        "normal",
+        1674846
+      ],
+      [
+        "mods1.png",
+        "Submitted 5 Mods",
+        "normal",
+        1713309
+      ],
+      [
+        "m_age_3.png",
+        "1 year a member",
+        "normal",
+        1842931
+      ],
+      [
+        "subscribers_1.png",
+        "Reached 10 subscribers",
+        "normal",
+        1856098
+      ],
+      [
+        "m_pr_1.png",
+        "Reached 1,000 Points",
+        "normal",
+        1933131
+      ],
+      [
+        "mods2.png",
+        "Submitted 10 Mods",
+        "normal",
+        1949732
+      ],
+      [
+        "m_age_4.png",
+        "2 years a member",
+        "normal",
+        3301576
+      ]
+    ],
+    "_aRareMedals": [],
+    "_aLegendaryMedals": [],
+    "_bHasRipe": false,
+    "_nBuddyCount": 12,
+    "_nSubscriberCount": 16,
+    "_aDonationMethods": [],
+    "_bAccessorIsBuddy": false,
+    "_bBuddyRequestExistsWithAccessor": false,
+    "_bAccessorIsSubscribed": false,
+    "_sUpicUrl": "https://images.gamebanana.com/img/upic/6716a3d5600e3.png",
+    "_aBio": [
+      {
+        "_sTitle": "Country",
+        "_sValue": "Poland"
+      },
+      {
+        "_sTitle": "Alignment",
+        "_sValue": "Lawful Evil"
+      },
+      {
+        "_sTitle": "Gender",
+        "_sCustomTitle": "Sex",
+        "_sValue": "Male"
+      },
+      {
+        "_sTitle": "Political stance",
+        "_sValue": "Member of the Evil Party"
+      }
+    ],
+    "_aDefaultLicenseChecklist": {
+      "1": "ask",
+      "2": "only_if_same",
+      "3": "only_if_same",
+      "4": "only_if_same",
+      "5": "only_if_same",
+      "6": "no",
+      "7": "no"
+    },
+    "_sDefaultLicense": "",
+    "_sHdAvatarUrl": "https://images.gamebanana.com/img/av/671d7ee171dcd.png"
+  },
+  "_bFollowLinks": true,
+  "_aGame": {
+    "_idRow": 34,
+    "_sName": "Half-Life",
+    "_sAbbreviation": "HL",
+    "_sProfileUrl": "https://gamebanana.com/games/34",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/games/half-life.png",
+    "_sBannerUrl": "https://images.gamebanana.com/img/ico/games/half-life.png",
+    "_nSubscriberCount": 4637,
+    "_bHasSubmissionQueue": false,
+    "_bAccessorIsSubscribed": false
+  },
+  "_aCategory": {
+    "_idRow": 7736,
+    "_sName": "MP5 / M4",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/7736",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/560c876aaaf25.png",
+    "_bIsObsolete": false
+  },
+  "_aSuperCategory": {
+    "_idRow": 7735,
+    "_sName": "Weapons",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/7735",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/5ea2fdf1794ff.png"
+  },
+  "_aAlternateFileSources": [
+    {
+      "url": "https://www.moddb.com/games/half-life/addons/full-polygon-m4-model",
+      "description": "ModDB 1.0"
+    },
+    {
+      "url": "https://www.moddb.com/games/half-life/addons/full-poly-m4-v2",
+      "description": "ModDB 2.0"
+    }
+  ],
+  "_aCredits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "modeler",
+          "_idRow": 2682373,
+          "_sName": "xprt98",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/6716a3d5600e3.png",
+          "_sProfileUrl": "https://gamebanana.com/members/2682373",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/6716a85af39c9.png",
+          "_bIsOnline": false
+        }
+      ]
+    }
+  ]
+}

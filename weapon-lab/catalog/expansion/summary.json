@@ -1,0 +1,17 @@
+{
+  "new_gamebanana_packs": 30,
+  "archives_bytes": 344179027,
+  "mdl_files": 595,
+  "unique_mdl_hashes": 545,
+  "versions": {
+    "10": 504,
+    "None": 24,
+    "44": 42,
+    "48": 25
+  },
+  "notes": [
+    "MDL file count includes hands, views, world models, animations and variants, not distinct weapons.",
+    "Likes and downloads are popularity signals, not visual or modularity certification.",
+    "Only the first current archive per entry was selected."
+  ]
+}

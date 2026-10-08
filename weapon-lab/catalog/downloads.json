@@ -1,0 +1,222 @@
+[
+  {
+    "id": 636816,
+    "name": "Colt ARs on Cliffton_Vlodhammer's Animations",
+    "archive": "downloads\\636816-colt_ar_on_cliffton_vlodhammer_animations_e8fb0.zip",
+    "sha256": "3d550ce33a36773c8137678ef30d8b2898421e528cc21734f619362267619e76",
+    "bytes": 29372996,
+    "models": [
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M16A2\\Hand Options\\Barney Hands\\v_9mmar.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M16A2\\Hand Options\\HEV Hands\\v_9mmar.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M16A2\\Hand Options\\Soldier Hands\\v_9mmar.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M16A2\\Required\\models\\grenade.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M16A2\\Required\\models\\p_9mmar.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M16A2\\Required\\models\\shell.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M16A2\\Required\\models\\w_9mmar.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M16A2\\Required\\models\\w_9mmarclip.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M16A2\\Required\\models\\w_argrenade.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M16A2\\Required\\models\\w_chainammo.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M16A3\\Hand Options\\Barney Hands\\v_9mmar.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M16A3\\Hand Options\\HEV Hands\\v_9mmar.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M16A3\\Hand Options\\Soldier Hands\\v_9mmar.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M16A3\\Required\\models\\grenade.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M16A3\\Required\\models\\p_9mmar.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M16A3\\Required\\models\\shell.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M16A3\\Required\\models\\w_9mmar.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M16A3\\Required\\models\\w_9mmarclip.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M16A3\\Required\\models\\w_argrenade.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M16A3\\Required\\models\\w_chainammo.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M4A1\\Hand Options\\Barney Hands\\v_9mmar.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M4A1\\Hand Options\\HEV Hands\\v_9mmar.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M4A1\\Hand Options\\Soldier Hands\\v_9mmar.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M4A1\\Required\\models\\grenade.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M4A1\\Required\\models\\p_9mmar.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M4A1\\Required\\models\\shell.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M4A1\\Required\\models\\w_9mmar.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M4A1\\Required\\models\\w_9mmarclip.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M4A1\\Required\\models\\w_argrenade.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M4A1\\Required\\models\\w_chainammo.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M727\\Hand Options\\Barney Hands\\v_9mmar.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M727\\Hand Options\\HEV Hands\\v_9mmar.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M727\\Hand Options\\Soldier Hands\\v_9mmar.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M727\\Required\\models\\grenade.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M727\\Required\\models\\p_9mmar.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M727\\Required\\models\\shell.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M727\\Required\\models\\w_9mmar.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M727\\Required\\models\\w_9mmarclip.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M727\\Required\\models\\w_argrenade.mdl",
+      "extracted\\636816\\Colt ARs on Cliffton_Vlodhammer's Animations\\Choose Your AR\\M727\\Required\\models\\w_chainammo.mdl"
+    ]
+  },
+  {
+    "id": 640447,
+    "name": "LR-300 on Cliffton_Vlodhammer's Animations",
+    "archive": "downloads\\640447-lr300_on_cliffton_vlodhammer_animations_80748.zip",
+    "sha256": "ff1c44d2a2f6dcc4bc64f9487ac5a162ae88a929ac67d1f0575d3890a1ce6b05",
+    "bytes": 7683911,
+    "models": [
+      "extracted\\640447\\LR-300 on Cliffton_Vlodhammer's Animations\\Hands Options\\Barney Hands\\v_9mmar.mdl",
+      "extracted\\640447\\LR-300 on Cliffton_Vlodhammer's Animations\\Hands Options\\HEV Hands\\v_9mmar.mdl",
+      "extracted\\640447\\LR-300 on Cliffton_Vlodhammer's Animations\\Hands Options\\Soldier Hands\\v_9mmar.mdl",
+      "extracted\\640447\\LR-300 on Cliffton_Vlodhammer's Animations\\Required\\models\\grenade.mdl",
+      "extracted\\640447\\LR-300 on Cliffton_Vlodhammer's Animations\\Required\\models\\p_9mmar.mdl",
+      "extracted\\640447\\LR-300 on Cliffton_Vlodhammer's Animations\\Required\\models\\shell.mdl",
+      "extracted\\640447\\LR-300 on Cliffton_Vlodhammer's Animations\\Required\\models\\w_9mmar.mdl",
+      "extracted\\640447\\LR-300 on Cliffton_Vlodhammer's Animations\\Required\\models\\w_9mmarclip.mdl",
+      "extracted\\640447\\LR-300 on Cliffton_Vlodhammer's Animations\\Required\\models\\w_argrenade.mdl",
+      "extracted\\640447\\LR-300 on Cliffton_Vlodhammer's Animations\\Required\\models\\w_chainammo.mdl"
+    ]
+  },
+  {
+    "id": 640445,
+    "name": "HK416 on Cliffton_Vlodhammer's Animations",
+    "archive": "downloads\\640445-hk416_on_cliffton_vlodhammer_animations_3cb40.zip",
+    "sha256": "126c0ca06e03eee51357f81bb18ffeb9c6fbb5bfd58b82560cf76be187cd51c4",
+    "bytes": 7362680,
+    "models": [
+      "extracted\\640445\\HK416 on Cliffton_Vlodhammer's Animations\\Hands Options\\Barney Hands\\v_9mmar.mdl",
+      "extracted\\640445\\HK416 on Cliffton_Vlodhammer's Animations\\Hands Options\\HEV Hands\\v_9mmar.mdl",
+      "extracted\\640445\\HK416 on Cliffton_Vlodhammer's Animations\\Hands Options\\Soldier Hands\\v_9mmar.mdl",
+      "extracted\\640445\\HK416 on Cliffton_Vlodhammer's Animations\\Required\\models\\grenade.mdl",
+      "extracted\\640445\\HK416 on Cliffton_Vlodhammer's Animations\\Required\\models\\p_9mmar.mdl",
+      "extracted\\640445\\HK416 on Cliffton_Vlodhammer's Animations\\Required\\models\\shell.mdl",
+      "extracted\\640445\\HK416 on Cliffton_Vlodhammer's Animations\\Required\\models\\w_9mmar.mdl",
+      "extracted\\640445\\HK416 on Cliffton_Vlodhammer's Animations\\Required\\models\\w_9mmarclip.mdl",
+      "extracted\\640445\\HK416 on Cliffton_Vlodhammer's Animations\\Required\\models\\w_argrenade.mdl",
+      "extracted\\640445\\HK416 on Cliffton_Vlodhammer's Animations\\Required\\models\\w_chainammo.mdl"
+    ]
+  },
+  {
+    "id": 682919,
+    "name": "Morita 9mm Assault Rifle Mk. 1",
+    "archive": "downloads\\682919-startroop_morita9mmar_81aa9.zip",
+    "sha256": "400e4a4349635e50da220b4f22858cca4b866af03ce83d1e0a38572d826cc7bb",
+    "bytes": 1802332,
+    "models": [
+      "extracted\\682919\\p&w's\\hgrunt.mdl",
+      "extracted\\682919\\p&w's\\hgrunt01.mdl",
+      "extracted\\682919\\p&w's\\hgrunt02.mdl",
+      "extracted\\682919\\p&w's\\hgrunt03.mdl",
+      "extracted\\682919\\p&w's\\hgruntT.mdl",
+      "extracted\\682919\\p&w's\\p_9mmar.mdl",
+      "extracted\\682919\\p&w's\\w_9mmar.mdl",
+      "extracted\\682919\\p&w's\\w_9mmarclip.mdl",
+      "extracted\\682919\\v_choices\\chrome\\v_9mmar.mdl",
+      "extracted\\682919\\v_choices\\nochrome\\v_9mmar.mdl"
+    ]
+  },
+  {
+    "id": 660140,
+    "name": "Ak-47 View-Model (for 9mmAR/MP5)",
+    "archive": "downloads\\660140-hl1ak47_6cdc1.rar",
+    "sha256": "2ad8faba58395d84fa8cbb7017165f2dcc092c6c8daa09e9d2528cc0e8b073e1",
+    "bytes": 438191,
+    "models": [
+      "extracted\\660140\\models\\v_9mmar.mdl",
+      "extracted\\660140\\models\\w_9mmar.mdl"
+    ]
+  },
+  {
+    "id": 641014,
+    "name": "AKS-74U + TISHINA GL",
+    "archive": "downloads\\641014-aks74u_f6a15.rar",
+    "sha256": "0f1fa543e0d2b84396ffb1cca2a042d7142ac4f2a62ed2b91b9bc4032ac7369a",
+    "bytes": 12682954,
+    "models": [
+      "extracted\\641014\\Aks74u\\barney.mdl",
+      "extracted\\641014\\Aks74u\\barney01.mdl",
+      "extracted\\641014\\Aks74u\\barney02.mdl",
+      "extracted\\641014\\Aks74u\\barney03.mdl",
+      "extracted\\641014\\Aks74u\\barney04.mdl",
+      "extracted\\641014\\Aks74u\\barney05.mdl",
+      "extracted\\641014\\Aks74u\\barney06.mdl",
+      "extracted\\641014\\Aks74u\\barney07.mdl",
+      "extracted\\641014\\Aks74u\\hgrunt.mdl",
+      "extracted\\641014\\Aks74u\\hgruntT.mdl",
+      "extracted\\641014\\Aks74u\\black\\models\\grenade.mdl",
+      "extracted\\641014\\Aks74u\\black\\models\\p_9mmar.mdl",
+      "extracted\\641014\\Aks74u\\black\\models\\shell.mdl",
+      "extracted\\641014\\Aks74u\\black\\models\\v_9mmar.mdl",
+      "extracted\\641014\\Aks74u\\black\\models\\w_9mmAR.mdl",
+      "extracted\\641014\\Aks74u\\black\\models\\w_9mmARclip.mdl",
+      "extracted\\641014\\Aks74u\\black\\models\\w_ARgrenade.mdl",
+      "extracted\\641014\\Aks74u\\cod4 style\\models\\grenade.mdl",
+      "extracted\\641014\\Aks74u\\cod4 style\\models\\p_9mmar.mdl",
+      "extracted\\641014\\Aks74u\\cod4 style\\models\\shell.mdl",
+      "extracted\\641014\\Aks74u\\cod4 style\\models\\v_9mmar.mdl",
+      "extracted\\641014\\Aks74u\\cod4 style\\models\\w_9mmAR.mdl",
+      "extracted\\641014\\Aks74u\\cod4 style\\models\\w_9mmARclip.mdl",
+      "extracted\\641014\\Aks74u\\cod4 style\\models\\w_ARgrenade.mdl",
+      "extracted\\641014\\Aks74u\\normal\\models\\grenade.mdl",
+      "extracted\\641014\\Aks74u\\normal\\models\\p_9mmar.mdl",
+      "extracted\\641014\\Aks74u\\normal\\models\\shell.mdl",
+      "extracted\\641014\\Aks74u\\normal\\models\\v_9mmar.mdl",
+      "extracted\\641014\\Aks74u\\normal\\models\\w_9mmAR.mdl",
+      "extracted\\641014\\Aks74u\\normal\\models\\w_9mmARclip.mdl",
+      "extracted\\641014\\Aks74u\\normal\\models\\w_ARgrenade.mdl"
+    ]
+  },
+  {
+    "id": 618001,
+    "name": "Assault M4A1 with Drum Mag",
+    "archive": "downloads\\618001-assault_m4a1_with_drum_mag.rar",
+    "sha256": "ebc88e887017013ec80a3fb53b411e6116d38465c88f707f3e70d0004816faba",
+    "bytes": 2946029,
+    "models": [
+      "extracted\\618001\\valve\\models\\p_9mmar.mdl",
+      "extracted\\618001\\valve\\models\\v_9mmAR.mdl",
+      "extracted\\618001\\valve\\models\\w_9mmar.mdl",
+      "extracted\\618001\\valve\\models\\w_9mmARclip.mdl"
+    ]
+  },
+  {
+    "id": 615797,
+    "name": "M4 with a grenade launcher and aimpoint scope",
+    "archive": "downloads\\615797-m4_m203_acog.rar",
+    "sha256": "0cc6a19f424b04b625b1cb1f5e3fc7ff0bf2d8d621b68f3eea4c449e3b2d2f7d",
+    "bytes": 1952290,
+    "models": [
+      "extracted\\615797\\valve\\models\\p_9mmar.mdl",
+      "extracted\\615797\\valve\\models\\v_9mmAR.mdl",
+      "extracted\\615797\\valve\\models\\w_9mmar.mdl",
+      "extracted\\615797\\valve\\models\\w_9mmarclip.mdl"
+    ]
+  },
+  {
+    "id": 536775,
+    "name": "Tigg's M4 (REWORKED)",
+    "archive": "downloads\\536775-tigg_s_m4_reworked_.zip",
+    "sha256": "5ee53d8bc2a1bac3cf7e344bec39b2d5b843be187b8b43cf77802389ea7fefac",
+    "bytes": 123212871,
+    "models": [
+      "extracted\\536775\\Tigg's M4 (REWORKED)\\models\\alternatives sleeves\\gman\\v_9mmar.mdl",
+      "extracted\\536775\\Tigg's M4 (REWORKED)\\models\\alternatives sleeves\\guard\\v_9mmar.mdl",
+      "extracted\\536775\\Tigg's M4 (REWORKED)\\models\\alternatives sleeves\\hecu\\v_9mmar.mdl",
+      "extracted\\536775\\Tigg's M4 (REWORKED)\\models\\alternatives sleeves\\hev def ed\\v_9mmAR.mdl",
+      "extracted\\536775\\Tigg's M4 (REWORKED)\\models\\alternatives sleeves\\hev detailed\\v_9mmar.mdl",
+      "extracted\\536775\\Tigg's M4 (REWORKED)\\models\\alternatives sleeves\\scientist\\v_9mmar.mdl",
+      "extracted\\536775\\Tigg's M4 (REWORKED)\\models\\models\\p_9mmar.mdl",
+      "extracted\\536775\\Tigg's M4 (REWORKED)\\models\\models\\v_9mmar.mdl",
+      "extracted\\536775\\Tigg's M4 (REWORKED)\\models\\models\\w_9mmAR.mdl",
+      "extracted\\536775\\Tigg's M4 (REWORKED)\\models\\models\\w_9mmarclip.mdl"
+    ]
+  },
+  {
+    "id": 706926,
+    "name": "Colt Model 727 on LD models",
+    "archive": "downloads\\706926-colt_model_727_in_ld_mod.rar",
+    "sha256": "3a74d781074ed38be38eef5a21391806c39c951dc100965a1b261aa36e0a1ad2",
+    "bytes": 482129,
+    "models": [
+      "extracted\\706926\\Colt Model 727 in LD mod\\valve\\models\\hgrunt.mdl",
+      "extracted\\706926\\Colt Model 727 in LD mod\\valve\\models\\hgrunt01.mdl",
+      "extracted\\706926\\Colt Model 727 in LD mod\\valve\\models\\hgrunt02.mdl",
+      "extracted\\706926\\Colt Model 727 in LD mod\\valve\\models\\hgrunt03.mdl",
+      "extracted\\706926\\Colt Model 727 in LD mod\\valve\\models\\hgruntt.mdl",
+      "extracted\\706926\\Colt Model 727 in LD mod\\valve\\models\\p_9mmAR.mdl",
+      "extracted\\706926\\Colt Model 727 in LD mod\\valve\\models\\v_9mmAR.mdl",
+      "extracted\\706926\\Colt Model 727 in LD mod\\valve\\models\\W_9mmAR.mdl",
+      "extracted\\706926\\Colt Model 727 in LD mod\\valve\\models\\w_9mmARclip.mdl"
+    ]
+  }
+]

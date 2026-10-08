@@ -1,0 +1,802 @@
+[
+  {
+    "path": "backpack.mdl",
+    "bytes": 21480,
+    "version": 10,
+    "bones": 1,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "ball.mdl",
+    "bytes": 23792,
+    "version": 10,
+    "bones": 3,
+    "sequences": 2,
+    "bodyparts": 1
+  },
+  {
+    "path": "base.mdl",
+    "bytes": 26752,
+    "version": 10,
+    "bones": 1,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "bigrat.mdl",
+    "bytes": 35112,
+    "version": 10,
+    "bones": 1,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "bomblet.mdl",
+    "bytes": 3296,
+    "version": 10,
+    "bones": 1,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "caltrop.mdl",
+    "bytes": 7868,
+    "version": 10,
+    "bones": 1,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "chainammo.mdl",
+    "bytes": 17852,
+    "version": 10,
+    "bones": 1,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "conc_grenade.mdl",
+    "bytes": 8568,
+    "version": 10,
+    "bones": 1,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "detpack.mdl",
+    "bytes": 30776,
+    "version": 10,
+    "bones": 2,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "dispenser.mdl",
+    "bytes": 27700,
+    "version": 10,
+    "bones": 1,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "emp_grenade.mdl",
+    "bytes": 9336,
+    "version": 10,
+    "bones": 1,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "flag.mdl",
+    "bytes": 87956,
+    "version": 10,
+    "bones": 21,
+    "sequences": 5,
+    "bodyparts": 1
+  },
+  {
+    "path": "gasmask.mdl",
+    "bytes": 9388,
+    "version": 10,
+    "bones": 2,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "g_armor.mdl",
+    "bytes": 21008,
+    "version": 10,
+    "bones": 1,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "invis.mdl",
+    "bytes": 7916,
+    "version": 10,
+    "bones": 2,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "keycard.mdl",
+    "bytes": 71424,
+    "version": 10,
+    "bones": 2,
+    "sequences": 2,
+    "bodyparts": 1
+  },
+  {
+    "path": "mirv_grenade.mdl",
+    "bytes": 12316,
+    "version": 10,
+    "bones": 2,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "nail.mdl",
+    "bytes": 2220,
+    "version": 10,
+    "bones": 1,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "napalm.mdl",
+    "bytes": 5300,
+    "version": 10,
+    "bones": 2,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "ngrenade.mdl",
+    "bytes": 12072,
+    "version": 10,
+    "bones": 1,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "pent.mdl",
+    "bytes": 10912,
+    "version": 10,
+    "bones": 2,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "pipebomb.mdl",
+    "bytes": 5084,
+    "version": 10,
+    "bones": 1,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "presentlg.mdl",
+    "bytes": 46844,
+    "version": 10,
+    "bones": 1,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "presentsm.mdl",
+    "bytes": 33320,
+    "version": 10,
+    "bones": 1,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_9mmhandgun.mdl",
+    "bytes": 28252,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_9mmhandgun2.mdl",
+    "bytes": 17860,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_crowbar.mdl",
+    "bytes": 4852,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_crowbar2.mdl",
+    "bytes": 4852,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_egon.mdl",
+    "bytes": 87408,
+    "version": 10,
+    "bones": 11,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_egon2.mdl",
+    "bytes": 37548,
+    "version": 10,
+    "bones": 11,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_glauncher.mdl",
+    "bytes": 44472,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_glauncher2.mdl",
+    "bytes": 15472,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_grenade.mdl",
+    "bytes": 19432,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_grenade2.mdl",
+    "bytes": 19432,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_knife.mdl",
+    "bytes": 206132,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_knife2.mdl",
+    "bytes": 17420,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_medkit.mdl",
+    "bytes": 9908,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_medkit2.mdl",
+    "bytes": 9908,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_mini.mdl",
+    "bytes": 86124,
+    "version": 10,
+    "bones": 14,
+    "sequences": 4,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_mini2.mdl",
+    "bytes": 39676,
+    "version": 10,
+    "bones": 13,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_nailgun.mdl",
+    "bytes": 28312,
+    "version": 10,
+    "bones": 13,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_nailgun2.mdl",
+    "bytes": 23468,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_rpg.mdl",
+    "bytes": 27572,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_rpg2.mdl",
+    "bytes": 41004,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_shotgun.mdl",
+    "bytes": 28164,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_shotgun2.mdl",
+    "bytes": 13468,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_smallshotgun.mdl",
+    "bytes": 26996,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_snailgun.mdl",
+    "bytes": 29424,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_snailgun2.mdl",
+    "bytes": 24452,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_sniper.mdl",
+    "bytes": 36252,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_sniper2.mdl",
+    "bytes": 20428,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_spanner.mdl",
+    "bytes": 30312,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_spanner2.mdl",
+    "bytes": 23016,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_spygun.mdl",
+    "bytes": 40064,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_srpg.mdl",
+    "bytes": 27572,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_umbrella.mdl",
+    "bytes": 17124,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "p_umbrella2.mdl",
+    "bytes": 17124,
+    "version": 10,
+    "bones": 12,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "quad.mdl",
+    "bytes": 8300,
+    "version": 10,
+    "bones": 2,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "r_armor.mdl",
+    "bytes": 21008,
+    "version": 10,
+    "bones": 1,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "sentry1.mdl",
+    "bytes": 30040,
+    "version": 10,
+    "bones": 4,
+    "sequences": 3,
+    "bodyparts": 1
+  },
+  {
+    "path": "sentry2.mdl",
+    "bytes": 33956,
+    "version": 10,
+    "bones": 4,
+    "sequences": 3,
+    "bodyparts": 1
+  },
+  {
+    "path": "sentry3.mdl",
+    "bytes": 34200,
+    "version": 10,
+    "bones": 6,
+    "sequences": 3,
+    "bodyparts": 1
+  },
+  {
+    "path": "spy_grenade.mdl",
+    "bytes": 3436,
+    "version": 10,
+    "bones": 1,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "teleporter.mdl",
+    "bytes": 264000,
+    "version": 10,
+    "bones": 1,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "v_flame.mdl",
+    "bytes": 127436,
+    "version": 10,
+    "bones": 32,
+    "sequences": 11,
+    "bodyparts": 2
+  },
+  {
+    "path": "v_tfac.mdl",
+    "bytes": 67296,
+    "version": 10,
+    "bones": 13,
+    "sequences": 7,
+    "bodyparts": 1
+  },
+  {
+    "path": "v_tfc_12gauge.mdl",
+    "bytes": 131628,
+    "version": 10,
+    "bones": 32,
+    "sequences": 10,
+    "bodyparts": 2
+  },
+  {
+    "path": "v_tfc_crowbar.mdl",
+    "bytes": 47356,
+    "version": 10,
+    "bones": 11,
+    "sequences": 11,
+    "bodyparts": 1
+  },
+  {
+    "path": "v_tfc_knife.mdl",
+    "bytes": 53020,
+    "version": 10,
+    "bones": 12,
+    "sequences": 6,
+    "bodyparts": 1
+  },
+  {
+    "path": "v_tfc_medkit.mdl",
+    "bytes": 149044,
+    "version": 10,
+    "bones": 47,
+    "sequences": 6,
+    "bodyparts": 1
+  },
+  {
+    "path": "v_tfc_nailgun.mdl",
+    "bytes": 87904,
+    "version": 10,
+    "bones": 26,
+    "sequences": 8,
+    "bodyparts": 1
+  },
+  {
+    "path": "v_tfc_pistol.mdl",
+    "bytes": 134016,
+    "version": 10,
+    "bones": 48,
+    "sequences": 10,
+    "bodyparts": 3
+  },
+  {
+    "path": "v_tfc_railgun.mdl",
+    "bytes": 116984,
+    "version": 10,
+    "bones": 13,
+    "sequences": 4,
+    "bodyparts": 1
+  },
+  {
+    "path": "v_tfc_rpg.mdl",
+    "bytes": 156360,
+    "version": 10,
+    "bones": 32,
+    "sequences": 12,
+    "bodyparts": 3
+  },
+  {
+    "path": "v_tfc_shotgun.mdl",
+    "bytes": 94652,
+    "version": 10,
+    "bones": 32,
+    "sequences": 10,
+    "bodyparts": 2
+  },
+  {
+    "path": "v_tfc_sniper.mdl",
+    "bytes": 139212,
+    "version": 10,
+    "bones": 20,
+    "sequences": 9,
+    "bodyparts": 1
+  },
+  {
+    "path": "v_tfc_spanner.mdl",
+    "bytes": 107016,
+    "version": 10,
+    "bones": 11,
+    "sequences": 6,
+    "bodyparts": 1
+  },
+  {
+    "path": "v_tfc_supernailgun.mdl",
+    "bytes": 84144,
+    "version": 10,
+    "bones": 19,
+    "sequences": 8,
+    "bodyparts": 1
+  },
+  {
+    "path": "v_tfgl.mdl",
+    "bytes": 126896,
+    "version": 10,
+    "bones": 33,
+    "sequences": 12,
+    "bodyparts": 1
+  },
+  {
+    "path": "v_umbrella.mdl",
+    "bytes": 67368,
+    "version": 10,
+    "bones": 11,
+    "sequences": 11,
+    "bodyparts": 1
+  },
+  {
+    "path": "y_armor.mdl",
+    "bytes": 21008,
+    "version": 10,
+    "bones": 1,
+    "sequences": 1,
+    "bodyparts": 1
+  },
+  {
+    "path": "player\\civilian\\civilian.mdl",
+    "bytes": 323888,
+    "version": 10,
+    "bones": 26,
+    "sequences": 77,
+    "bodyparts": 1
+  },
+  {
+    "path": "player\\demo\\demo.mdl",
+    "bytes": 682940,
+    "version": 10,
+    "bones": 53,
+    "sequences": 77,
+    "bodyparts": 1
+  },
+  {
+    "path": "player\\demo\\demo2.mdl",
+    "bytes": 310340,
+    "version": 10,
+    "bones": 30,
+    "sequences": 77,
+    "bodyparts": 1
+  },
+  {
+    "path": "player\\engineer\\engineer.mdl",
+    "bytes": 675356,
+    "version": 10,
+    "bones": 53,
+    "sequences": 77,
+    "bodyparts": 1
+  },
+  {
+    "path": "player\\engineer\\engineer2.mdl",
+    "bytes": 306612,
+    "version": 10,
+    "bones": 28,
+    "sequences": 77,
+    "bodyparts": 1
+  },
+  {
+    "path": "player\\hvyweapon\\hvyweapon.mdl",
+    "bytes": 745896,
+    "version": 10,
+    "bones": 53,
+    "sequences": 77,
+    "bodyparts": 1
+  },
+  {
+    "path": "player\\hvyweapon\\hvyweapon2.mdl",
+    "bytes": 312176,
+    "version": 10,
+    "bones": 28,
+    "sequences": 77,
+    "bodyparts": 1
+  },
+  {
+    "path": "player\\medic\\medic.mdl",
+    "bytes": 652116,
+    "version": 10,
+    "bones": 51,
+    "sequences": 77,
+    "bodyparts": 1
+  },
+  {
+    "path": "player\\medic\\medic2.mdl",
+    "bytes": 309052,
+    "version": 10,
+    "bones": 30,
+    "sequences": 77,
+    "bodyparts": 1
+  },
+  {
+    "path": "player\\pyro\\pyro.mdl",
+    "bytes": 677568,
+    "version": 10,
+    "bones": 53,
+    "sequences": 77,
+    "bodyparts": 1
+  },
+  {
+    "path": "player\\pyro\\pyro2.mdl",
+    "bytes": 314676,
+    "version": 10,
+    "bones": 30,
+    "sequences": 77,
+    "bodyparts": 1
+  },
+  {
+    "path": "player\\scout\\scout.mdl",
+    "bytes": 685128,
+    "version": 10,
+    "bones": 53,
+    "sequences": 77,
+    "bodyparts": 1
+  },
+  {
+    "path": "player\\scout\\scout2.mdl",
+    "bytes": 311552,
+    "version": 10,
+    "bones": 31,
+    "sequences": 77,
+    "bodyparts": 1
+  },
+  {
+    "path": "player\\sniper\\sniper.mdl",
+    "bytes": 618464,
+    "version": 10,
+    "bones": 49,
+    "sequences": 77,
+    "bodyparts": 1
+  },
+  {
+    "path": "player\\sniper\\sniper2.mdl",
+    "bytes": 310024,
+    "version": 10,
+    "bones": 30,
+    "sequences": 77,
+    "bodyparts": 1
+  },
+  {
+    "path": "player\\soldier\\soldier.mdl",
+    "bytes": 807724,
+    "version": 10,
+    "bones": 53,
+    "sequences": 77,
+    "bodyparts": 1
+  },
+  {
+    "path": "player\\soldier\\soldier2.mdl",
+    "bytes": 307516,
+    "version": 10,
+    "bones": 28,
+    "sequences": 77,
+    "bodyparts": 1
+  },
+  {
+    "path": "player\\spy\\spy.mdl",
+    "bytes": 674452,
+    "version": 10,
+    "bones": 53,
+    "sequences": 77,
+    "bodyparts": 1
+  },
+  {
+    "path": "player\\spy\\spy2.mdl",
+    "bytes": 305308,
+    "version": 10,
+    "bones": 28,
+    "sequences": 77,
+    "bodyparts": 1
+  }
+]

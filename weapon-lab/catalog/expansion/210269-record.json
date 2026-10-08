@@ -1,0 +1,177 @@
+{
+  "id": 210269,
+  "name": "CAR15 / Aimpoint / M203",
+  "url": "https://gamebanana.com/mods/210269",
+  "game": "Counter-Strike: Source",
+  "likes": 13,
+  "downloads": 11923,
+  "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "license_checklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "credits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Unknown",
+          "_sName": "Twinke Masta"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "ankalar"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Tin Soldier"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Dirtball"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Soul_Slayer"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Kimono"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "creeping jesus"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Stoke"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Pr0d!gy"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Thanez"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "-Smokyjoe-"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Valve"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Gooseman"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Sober"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "3DStart"
+        }
+      ]
+    }
+  ],
+  "description_html": "This is car15 adds the aimpoint aiming device, Canada hangs the m203 grenade launcher!\r\nCredits&#65306;\r\nCAR-15 M203 AIMPOINT\r\n==========================\r\n\r\nModel:\r\nCar-15/Aimpoint - Twinke Masta \r\nMag - ankalar\r\nM203 - Tin Soldier\r\nSilencer - Dirtball\r\nMount - Soul_Slayer\r\n\r\nSkin:\r\nCar-15 - Kimono\r\nMag - creeping jesus\r\nUV Maps - Twinke Masta\r\nM203 - Tin Soldier(Edited by Stoke)\r\nSilencer - Pr0d!gy\r\nMount - Thanez\r\nAimpoint - -Smokyjoe-\r\n\r\nsound: \r\nValve\r\n\r\nAnimations: \r\nVALVe, Gooseman, Sober\r\n\r\nCompile: \r\n3DStart",
+  "files": [
+    {
+      "_idRow": 257052,
+      "_sFile": "car15m203aim.rar",
+      "_nFilesize": 5558287,
+      "_tsDateAdded": 1212330190,
+      "_nDownloadCount": 11923,
+      "_sDownloadUrl": "https://gamebanana.com/dl/257052",
+      "_sMd5Checksum": "8e58f45aa2cdcdae29e73df01d9abbd2",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,210269,257052"
+        }
+      ]
+    }
+  ],
+  "retrieved": "2026-10-08",
+  "download": {
+    "id": 210269,
+    "name": "CAR15 / Aimpoint / M203",
+    "archive": "downloads\\210269-car15m203aim.rar",
+    "sha256": "6b64d906b4436e681aedecaa16771b1467a49e0868fe1090323cbc6121129b40",
+    "bytes": 5558287,
+    "models": [
+      "extracted\\210269\\models\\weapons\\v_rif_m4a1.mdl",
+      "extracted\\210269\\models\\weapons\\w_rif_m4a1.mdl",
+      "extracted\\210269\\models\\weapons\\w_rif_m4a1_silencer.mdl"
+    ]
+  }
+}

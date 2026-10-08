@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "reference": "../texture-atlas.png",
+  "reference_sha256": "6e2820424beee8027234b302713a2fcdd3bec2741f11c7625f51bfef6b3374f4",
+  "generation_tool": "built-in image_gen",
+  "builder": "vector-fields/build_reference_weapon.py",
+  "builder_sha256": "0338b3f460f8fef09d17033d56eae1aa50357a88e0015419cdbeb381dbe35082",
+  "model_material_usage": {
+    "r01_receiver_a": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6
+    ],
+    "r01_receiver_b": [
+      0,
+      1,
+      3,
+      5,
+      6
+    ],
+    "r01_barrel_a": [
+      0,
+      2,
+      5,
+      6
+    ],
+    "r01_barrel_b": [
+      0,
+      5,
+      7,
+      13
+    ],
+    "r01_muzzle_a": [
+      0,
+      5
+    ],
+    "r01_muzzle_b": [
+      0,
+      5
+    ],
+    "r01_feed_a": [
+      0,
+      4,
+      5,
+      14
+    ],
+    "r01_feed_b": [
+      0,
+      4,
+      5,
+      14
+    ],
+    "r01_chamber_a": [
+      0,
+      4,
+      5,
+      15
+    ],
+    "r01_chamber_b": [
+      0,
+      5,
+      15
+    ],
+    "r01_ammo_a": [
+      0,
+      2,
+      5,
+      7
+    ],
+    "r01_ammo_b": [
+      0,
+      3,
+      5,
+      9
+    ],
+    "r01_projectile_a": [
+      0,
+      2,
+      5,
+      7
+    ],
+    "r01_projectile_b": [
+      0,
+      3,
+      5,
+      9
+    ],
+    "r01_optic_a": [
+      0,
+      2,
+      5,
+      11
+    ],
+    "r01_optic_b": [
+      0,
+      4,
+      5,
+      11
+    ],
+    "r01_underbarrel_a": [
+      0,
+      4,
+      5
+    ],
+    "r01_underbarrel_b": [
+      0,
+      5,
+      13
+    ],
+    "r01_grip_a": [
+      0,
+      4,
+      5
+    ],
+    "r01_grip_b": [
+      0,
+      1,
+      2,
+      4,
+      5
+    ],
+    "r01_power_a": [
+      0,
+      2,
+      5,
+      7,
+      8,
+      10
+    ],
+    "r01_power_b": [
+      0,
+      5,
+      7,
+      9,
+      10
+    ],
+    "r01_cooling_a": [
+      0,
+      5
+    ],
+    "r01_cooling_b": [
+      0,
+      7,
+      13
+    ]
+  },
+  "layout": "4x4 row-major, zero-based IDs, 3px crop inset",
+  "themes": [
+    {
+      "id": "war-torn",
+      "title": "Guerre et récupération",
+      "description": "Acier noirci, peinture olive écaillée, soudures et cuivre oxydé.",
+      "manifest": "war-torn/manifest.json"
+    },
+    {
+      "id": "medieval-forge",
+      "title": "Forge médiévale",
+      "description": "Fer forgé, bronze martelé, chêne, cuir bordeaux et émail ambré.",
+      "manifest": "medieval-forge/manifest.json"
+    },
+    {
+      "id": "prehistoric",
+      "title": "Préhistorique",
+      "description": "Obsidienne, os, tendons, pierre poreuse et résine fossile.",
+      "manifest": "prehistoric/manifest.json"
+    },
+    {
+      "id": "living-jungle",
+      "title": "Jungle vivante",
+      "description": "Carapace, bambou, feuilles, sève, gousses et optique à facettes.",
+      "manifest": "living-jungle/manifest.json"
+    },
+    {
+      "id": "medieval-alchemy",
+      "title": "Alchimie médiévale",
+      "description": "Cotte de mailles, vitrail, cristal taillé, réservoirs alchimiques et poches en cuir.",
+      "manifest": "medieval-alchemy/manifest.json"
+    },
+    {
+      "id": "porcelain-fluidics",
+      "title": "Porcelaine fluidique",
+      "description": "Céramique ivoire, silicone corail, membranes de gel et canaux capillaires.",
+      "manifest": "porcelain-fluidics/manifest.json"
+    },
+    {
+      "id": "ww1-trench",
+      "title": "Grande Guerre",
+      "description": "Laine bleu horizon, toile et cuir; acier bleui, noyer et laiton.",
+      "manifest": "ww1-trench/manifest.json"
+    },
+    {
+      "id": "bedrock-miner",
+      "title": "Bedrock",
+      "description": "Charbon, basalte, toile ocre et lampes ambrees.",
+      "manifest": "bedrock-miner/manifest.json"
+    },
+    {
+      "id": "new-york-noir",
+      "title": "New York noir",
+      "description": "Tweed anthracite, gabardine, cuir noir et metal poli.",
+      "manifest": "new-york-noir/manifest.json"
+    },
+    {
+      "id": "castaway",
+      "title": "Bois de naufrage",
+      "description": "Bois flotte, fibres, ecorce, silex et cordages.",
+      "manifest": "castaway/manifest.json"
+    },
+    {
+      "id": "abyss-diver",
+      "title": "Abysses",
+      "description": "Neoprene petrol, caoutchouc, laiton et verre marin.",
+      "manifest": "abyss-diver/manifest.json"
+    }
+  ],
+  "atlases": 11,
+  "tile_count": 176,
+  "integration": "Texture banks exported; active MDL/runtime unchanged. GoldSrc embeds textures in compiled MDL files: a material-bank change requires recompile or skin import."
+}

@@ -1,0 +1,237 @@
+{
+  "id": 179782,
+  "name": "AK102, AK104, AK105 Carbine for 9mmAR",
+  "url": "https://gamebanana.com/mods/179782",
+  "game": "Half-Life",
+  "likes": 25,
+  "downloads": 7296,
+  "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "license_checklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "credits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Unknown",
+          "_sName": "Darkstorn"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Kimono"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Splinter"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Bullet_Head"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Polygon"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Thanez"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "TheLama"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Sproily"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Lonewolf"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Pete"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Ambient.Impact"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "H4wK"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "wonrz"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Gearbox"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Unbreakable"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Aydin"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "DoD Team"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Soviet1942"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Toadie"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Malignant"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Vunsunta"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Firearms Team"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "CS Team"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Isaac"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "NovaRain"
+        }
+      ]
+    }
+  ],
+  "description_html": "Credits:\r\n--------\r\nAK Body Model: Darkstorn\r\nAK Body Skin: Kimono, Darkstorn, Splinter, receiver skins edited by Isaac\r\nSynthetic Skin: Splinter\r\nAK UV-Maps: Bullet_Head & Darkstorn\r\n\r\nAK Magazine Model: N.R.\r\nAK Magazine Skin: Polygon, edited by Isaac\r\n\r\nKrinkov Flash Hider Model: N.R.\r\nKrinkov Flash Hider Skin: Thanez, edited by Isaac\r\n\r\nSide Rail Model: TheLama\r\nSide Rail Skin: Sproily\r\n\r\nCartridge in Magazine: Lonewolf\r\nVOG-25P Grenade: Pete\r\n\r\nImproved HEV/OP4/BS Arm Models: Ambient.Impact\r\nHEV Arm Skins: H4wK, wonrz\r\nOP4 Glove Skins: Gearbox, Unbreakable(Desert), Aydin(Worn)\r\nOP4 Arm Skin: Gearbox\r\nOP4 Sleeve Model: DoD Team\r\nOP4 Sleeve Skin: Soviet1942(Russian Svd), Unbreakable(Desert), Toadie(Others)\r\nRemapping Skins to Gearbox UV: Toadie\r\nBS Arm Skins: H4wK\r\n\r\nAnimations: Toadie (<3)\r\nShooting Sound: Malignant\r\nReloading Sound: Vunsunta\r\nSafety Sound: from Firearms 3.0\r\nSound Tweaks: N.R.\r\n\r\nRealistic Muzzleflash: from Firearms 3.0\r\nHUD Weapon Sprite: from CS 1.6\r\nSprite edits: N.R.\r\n\r\n+-----------------------------------+\r\n| Hack/Compile: NovaRain (aka N.R.) |\r\n+-----------------------------------+",
+  "files": [
+    {
+      "_idRow": 264391,
+      "_sFile": "ak10x_carbines_v5.rar",
+      "_nFilesize": 26433795,
+      "_tsDateAdded": 1167063845,
+      "_nDownloadCount": 7298,
+      "_sDownloadUrl": "https://gamebanana.com/dl/264391",
+      "_sMd5Checksum": "de092783d99444105f3a94b618638125",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,179782,264391"
+        }
+      ]
+    }
+  ],
+  "retrieved": "2026-10-08",
+  "download": {
+    "id": 179782,
+    "name": "AK102, AK104, AK105 Carbine for 9mmAR",
+    "archive": "downloads\\179782-ak10x_carbines_v5.rar",
+    "sha256": "cac921043f6f9799e04ce8091099a59c9cc48bbf1205841b12ae6f5517904430",
+    "bytes": 26433795,
+    "models": [
+      "extracted\\179782\\models\\grenade.mdl",
+      "extracted\\179782\\models\\w_ARgrenade.mdl",
+      "extracted\\179782\\models\\AK-102\\p_9mmAR.mdl",
+      "extracted\\179782\\models\\AK-102\\v_9mmAR_BS.mdl",
+      "extracted\\179782\\models\\AK-102\\v_9mmAR_HEV.mdl",
+      "extracted\\179782\\models\\AK-102\\v_9mmAR_OP4.mdl",
+      "extracted\\179782\\models\\AK-102\\v_9mmAR_OP4_sleeved.mdl",
+      "extracted\\179782\\models\\AK-102\\w_9mmAR.mdl",
+      "extracted\\179782\\models\\AK-102\\w_9mmARclip.mdl",
+      "extracted\\179782\\models\\AK-104\\p_9mmAR.mdl",
+      "extracted\\179782\\models\\AK-104\\v_9mmAR_BS.mdl",
+      "extracted\\179782\\models\\AK-104\\v_9mmAR_HEV.mdl",
+      "extracted\\179782\\models\\AK-104\\v_9mmAR_OP4.mdl",
+      "extracted\\179782\\models\\AK-104\\v_9mmAR_OP4_sleeved.mdl",
+      "extracted\\179782\\models\\AK-104\\w_9mmAR.mdl",
+      "extracted\\179782\\models\\AK-104\\w_9mmARclip.mdl",
+      "extracted\\179782\\models\\AK-105\\p_9mmAR.mdl",
+      "extracted\\179782\\models\\AK-105\\v_9mmAR_BS.mdl",
+      "extracted\\179782\\models\\AK-105\\v_9mmAR_HEV.mdl",
+      "extracted\\179782\\models\\AK-105\\v_9mmAR_OP4.mdl",
+      "extracted\\179782\\models\\AK-105\\v_9mmAR_OP4_sleeved.mdl",
+      "extracted\\179782\\models\\AK-105\\w_9mmAR.mdl",
+      "extracted\\179782\\models\\AK-105\\w_9mmARclip.mdl"
+    ]
+  }
+}

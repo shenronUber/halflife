@@ -1,0 +1,360 @@
+{
+  "_idRow": 210406,
+  "_nStatus": "0",
+  "_bIsPrivate": false,
+  "_bAccessorIsSubmitter": false,
+  "_bIsTrashed": false,
+  "_bIsWithheld": false,
+  "_sName": "Aimpoint ANPEQ M4A1",
+  "_sCommentsMode": "open",
+  "_tsDateModified": 1199561137,
+  "_tsDateAdded": 1199561137,
+  "_sProfileUrl": "https://gamebanana.com/mods/210406",
+  "_aPreviewMedia": {
+    "_aImages": [
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "29075.jpg",
+        "_sFile220": "220-90_29075.jpg",
+        "_sFile530": "530-90_29075.jpg",
+        "_sFile100": "100-90_29075.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "448_49744.jpg",
+        "_sFile100": "100-90_448_49744.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "461_49745.jpg",
+        "_sFile100": "100-90_461_49745.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "064_49746.jpg",
+        "_sFile100": "100-90_064_49746.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "140_49747.jpg",
+        "_sFile100": "100-90_140_49747.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "58c018eaaebb8.jpg",
+        "_sFile100": "100-90_58c018eaaebb8.jpg"
+      }
+    ]
+  },
+  "_nUpdatesCount": 0,
+  "_bHasUpdates": false,
+  "_nAllTodosCount": 0,
+  "_bHasTodos": false,
+  "_nPostCount": 105,
+  "_aTags": [
+    {
+      "_sValue": "tactical"
+    },
+    {
+      "_sTitle": "Model",
+      "_sValue": "Hacked Custom Model"
+    },
+    {
+      "_sTitle": "Texture",
+      "_sValue": "Recolor"
+    }
+  ],
+  "_bCreatedBySubmitter": true,
+  "_bIsPorted": false,
+  "_nThanksCount": 0,
+  "_sInitialVisibility": "show",
+  "_sDownloadUrl": "https://gamebanana.com/mods/download/210406",
+  "_nDownloadCount": 119658,
+  "_aFiles": [
+    {
+      "_idRow": 259570,
+      "_sFile": "atm4.rar",
+      "_nFilesize": 7171191,
+      "_tsDateAdded": 1199561137,
+      "_nDownloadCount": 119658,
+      "_sDownloadUrl": "https://gamebanana.com/dl/259570",
+      "_sMd5Checksum": "ac692af4c26c2c852c4c65a5040bc5e5",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,210406,259570"
+        }
+      ]
+    }
+  ],
+  "_nSubscriberCount": 4,
+  "_aStudio": {
+    "_idRow": 1109,
+    "_sName": "586 Studios",
+    "_sProfileUrl": "https://gamebanana.com/studios/1109",
+    "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/_37-.png",
+    "_nSubscriberCount": 125,
+    "_bAccessorIsSubscribed": false
+  },
+  "_aContributingStudios": [],
+  "_sLicense": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "_aLicenseChecklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "_bGenerateTableOfContents": false,
+  "_sText": "==============\r\nInstallation:\r\n==============\r\n\r\nUnzip to C:\\Program Files\\Valve\\Steam\\SteamApps\\YourSteamName\\counter-strike source\\cstrike folder and enjoy!",
+  "_bIsObsolete": false,
+  "_nLikeCount": 32,
+  "_nViewCount": 363113,
+  "_sVersion": "",
+  "_bAcceptsDonations": false,
+  "_bShowRipePromo": true,
+  "_aEmbeddables": {
+    "_sEmbeddableImageBaseUrl": "https://gamebanana.com/mods/embeddables/210406",
+    "_aVariants": [
+      "small",
+      "small_square",
+      "medium",
+      "medium_square",
+      "medium_square_minimal",
+      "large",
+      "large_minimal",
+      "large_square",
+      "large_minimal_square",
+      "thumbnail"
+    ]
+  },
+  "_aSubmitter": {
+    "_idRow": 87568,
+    "_sName": "3dstart",
+    "_sUserTitle": "sniper",
+    "_sHonoraryTitle": "",
+    "_tsJoinDate": 1138496388,
+    "_sAvatarUrl": "https://images.gamebanana.com/img/av/87568.gif",
+    "_sSigUrl": "https://images.gamebanana.com/img/sig/87568.jpg",
+    "_sProfileUrl": "https://gamebanana.com/members/87568",
+    "_sPointsUrl": "https://gamebanana.com/members/logs/pointslog/87568",
+    "_sMedalsUrl": "https://gamebanana.com/members/stats/medals/87568",
+    "_bIsOnline": false,
+    "_sLocation": "<a class=\"menu bold\" href=\"http://www.fpsbanana.com/skins\">Skins</a>",
+    "_sOnlineTitle": "",
+    "_sOfflineTitle": "",
+    "_nPoints": 64340,
+    "_nPointsRank": 374,
+    "_aNormalMedals": [
+      [
+        "skins1.png",
+        "Submitted 10 Skins",
+        "normal",
+        248516
+      ],
+      [
+        "subscribers_1.png",
+        "Reached 10 subscribers",
+        "normal",
+        278108
+      ]
+    ],
+    "_aRareMedals": [
+      [
+        "skins2.png",
+        "Submitted 50 Skins",
+        "rare",
+        248517
+      ]
+    ],
+    "_aLegendaryMedals": [
+      [
+        "skins3.png",
+        "Submitted 100 Skins",
+        "legendary",
+        248518
+      ]
+    ],
+    "_bHasRipe": false,
+    "_nBuddyCount": 0,
+    "_nSubscriberCount": 18,
+    "_aDonationMethods": [],
+    "_bAccessorIsBuddy": false,
+    "_bBuddyRequestExistsWithAccessor": false,
+    "_bAccessorIsSubscribed": false,
+    "_aDefaultLicenseChecklist": [
+      "yes",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "no",
+      "ask"
+    ],
+    "_sDefaultLicense": ""
+  },
+  "_bFollowLinks": true,
+  "_aGame": {
+    "_idRow": 2,
+    "_sName": "Counter-Strike: Source",
+    "_sAbbreviation": "CS:S",
+    "_sProfileUrl": "https://gamebanana.com/games/2",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/games/css_icon.png",
+    "_sBannerUrl": "https://images.gamebanana.com/img/ico/games/css_icon.png",
+    "_nSubscriberCount": 6993,
+    "_bHasSubmissionQueue": false,
+    "_bAccessorIsSubscribed": false
+  },
+  "_aCategory": {
+    "_idRow": 8242,
+    "_sName": "M4A1",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/8242",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/m4a1.png",
+    "_bIsObsolete": false
+  },
+  "_aSuperCategory": {
+    "_idRow": 8240,
+    "_sName": "Rifles",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/8240",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/55df458b63dce.png"
+  },
+  "_aCredits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Unknown",
+          "_sName": "Ankalar"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Stoke"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "sas.stu"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Hellspike"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Kimono"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Stoke"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "-X-"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Version_2"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Thanez"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Soul_Slayer"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "End of Days"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "The_tub"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Jennifer!!"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Vunsunta"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "3DStart"
+        }
+      ]
+    }
+  ]
+}

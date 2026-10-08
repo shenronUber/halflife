@@ -1,0 +1,9 @@
+#ifndef VF_SKINS_H
+#define VF_SKINS_H
+class CBasePlayer;
+void VF_InitSkins();
+void VF_SyncPlayer(CBasePlayer* player,bool spawn=false);
+void VF_BroadcastPlayer(CBasePlayer* player,bool active=true);
+void VF_PrecacheSkins();
+bool VF_SkinCommand(CBasePlayer* player,const char* command);
+#endif

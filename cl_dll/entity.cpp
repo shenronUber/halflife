@@ -14,6 +14,8 @@
 #include "pm_shared.h"
 #include "bench.h"
 #include "Exports.h"
+#include "vf_engine.h"
+#include "vf_effects.h"
 
 #include "particleman.h"
 extern IParticleMan *g_pParticleMan;
@@ -32,6 +34,7 @@ HUD_AddEntity
 */
 int CL_DLLEXPORT HUD_AddEntity( int type, struct cl_entity_s *ent, const char *modelname )
 {
+    VF_EngineEntity(ent,modelname);
 //	RecClAddEntity(type, ent, modelname);
 
 	switch ( type )
@@ -306,6 +309,7 @@ Gives us a chance to add additional entities to the render this frame
 */
 void CL_DLLEXPORT HUD_CreateEntities( void )
 {
+    VF_EffectsEntities();
 //	RecClCreateEntities();
 
 #if defined( BEAM_TEST )

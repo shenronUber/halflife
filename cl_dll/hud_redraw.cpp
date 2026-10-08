@@ -19,6 +19,8 @@
 #include "hud.h"
 #include "cl_util.h"
 #include "bench.h"
+#include "vf_character.h"
+#include "vf_effects.h"
 
 #include "vgui_TeamFortressViewport.h"
 
@@ -219,6 +221,7 @@ int CHud :: Redraw( float flTime, int intermission )
 	}
 	*/
 
+	if (!intermission) { VF_CharacterDraw(); VF_EffectsHud(); }
 	return 1;
 }
 

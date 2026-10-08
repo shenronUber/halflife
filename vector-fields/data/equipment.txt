@@ -1,0 +1,161 @@
+# Vector Fields prototype 0.3 - provisional capacity costs.
+# Independent systems: weapon TED/IP/HS/OI; operator SIG/BIO.
+limits|100|100|100|100|100|100
+# slot|id|tier|name|category|flavor|TED|IP|HS|OI|SIG|BIO|planned behavior|visual
+head|head_standard|1|Soldier / Resist Glyphs|Predator|Operator Overkill|0|0|0|0|3|3|Lecture de la resistance dominante apres impact.|0
+head|head_experimental|3|Heavy / Phase Optics|Anomalous|Xeno Relic|0|0|0|0|14|14|Vision dans la vapeur ; fatigue metabolique.|1
+shoulders|shoulders_standard|1|Impact Baffles|Fortress|Trenchworks|0|0|0|0|3|3|Amortissement du micro-stagger a l'impact.|0
+shoulders|shoulders_experimental|3|Reactive Flare|Predator|Neon Circuit|0|0|0|0|14|14|Flash reactif lorsque l'operateur est marque.|0
+gloves|gloves_standard|1|Perfect Reload Window|Baseline|Operator Overkill|0|0|0|0|3|3|Fenetre de rechargement precis.|0
+gloves|gloves_experimental|3|Overclock Grip|Engine|Bioforge|0|0|0|0|14|14|Surcharge breve contre dette thermique.|0
+torso|torso_standard|1|Soldier / Ceramic Lining|Fortress|Clean Sci-Foundry|0|0|0|0|3|3|Doublure contre la corrosion.|0
+torso|torso_experimental|3|Heavy / Null Harness|Anomalous|Xeno Relic|0|0|0|0|14|14|Neutralisation temporaire des reactions.|1
+belt|belt_standard|1|Ammo Indexer|Baseline|Retro-Synth|0|0|0|0|3|3|Lecture de l'ordre des munitions.|0
+belt|belt_experimental|2|Quick-Flip|Rogue|Trenchworks|0|0|0|0|14|14|Permutation rapide contre desequilibre.|0
+legs|legs_standard|1|Soldier / Hydrophobic Weave|Baseline|Clean Sci-Foundry|0|0|0|0|3|3|Tissage hydrophobe contre l'etat Soaked.|0
+legs|legs_experimental|2|Heavy / Slide Vector|Rogue|Neon Circuit|0|0|0|0|14|14|Glissade prolongee contre signature sonore.|1
+boots|boots_standard|1|Silent Steps|Rogue|Operator Overkill|0|0|0|0|3|3|Pas amortis contre consommation d'energie.|0
+boots|boots_experimental|3|Phase Dash|Anomalous|Xeno Relic|0|0|0|0|14|14|Impulsion de phase courte, forte signature.|0
+shield|shield_standard|1|Directional Plate|Fortress|Arsenal 1944|0|0|0|0|3|3|Plaque de protection frontale.|0
+shield|shield_experimental|3|Elemental Ward|Engine|Bioforge|0|0|0|0|14|14|Resistance specialisee et contre-element.|0
+special|special_standard|1|Utility Ping|Predator|Retro-Synth|0|0|0|0|3|3|Lecture breve des traces recentes.|0
+special|special_experimental|3|State Engine|Engine|Bioforge|0|0|0|0|14|14|Amorcage temporaire d'un etat elementaire.|0
+receiver|receiver_standard|1|Protocol: Momentum|Baseline|Operator Overkill|2|2|1|3|0|0|Fenetre de stabilisation apres le sprint.|0
+receiver|receiver_experimental|3|Protocol: Debt|Engine|Xeno Relic|8|6|5|19|0|0|Depenser une surcharge pour amorcer un effet.|0
+barrel|barrel_standard|1|Vented Lattice|Baseline|Trenchworks|2|2|1|1|0|0|Trace de tir pour corriger la visee.|0
+barrel|barrel_experimental|3|Coil Pitch|Engine|Neon Circuit|8|6|5|5|0|0|Charge du tir au prix d'une dette thermique.|0
+muzzle|muzzle_standard|1|Bouche nue / Flash-Snap|Predator|Arsenal 1944|2|2|1|1|0|0|Flash bref pour perturber l'acquisition.|0
+muzzle|muzzle_experimental|3|Embout long / Arc Nozzle|Engine|Neon Circuit|8|6|5|5|0|0|Amorce Electro pour cible Soaked.|1
+feed|feed_standard|1|Chargeur droit / Twin-Mag|Baseline|Operator Overkill|4|2|1|1|0|0|Reserve jumelle a permutation rapide.|0
+feed|feed_experimental|3|Tambour / Smart Stacker|Engine|Clean Sci-Foundry|22|6|5|5|0|0|Premieres balles preparees pour un amorcage.|1
+chamber|chamber_standard|1|Staccato Cycle|Baseline|Trenchworks|2|4|1|1|0|0|Cycle qui favorise les impacts consecutifs.|0
+chamber|chamber_experimental|3|Debt Blowback|Anomalous|Arsenal 1944|8|20|5|5|0|0|Rafale forte contre risque de fiabilite.|0
+ammo|ammo_standard|1|Kinetic Core|Baseline|Arsenal 1944|2|2|3|1|0|0|Charge d'impact pour une arme conventionnelle.|0
+ammo|ammo_experimental|3|Primer: Contam|Engine|Bioforge|8|6|19|5|0|0|Amorce Toxic et fenetre anti-regeneration.|0
+projectile|projectile_standard|1|Hollow-Point|Baseline|Arsenal 1944|2|2|1|3|0|0|Ogive specialisee sur cible non blindee.|0
+projectile|projectile_experimental|3|Ricochet Disc|Anomalous|Xeno Relic|8|6|5|19|0|0|Disque a rebond sous faible incidence.|0
+optic|optic_standard|1|Resist Peek|Predator|Operator Overkill|2|2|1|1|0|0|Lecture de resistance d'une cible touchee.|0
+optic|optic_experimental|3|Echo Ping|Predator|Retro-Synth|8|6|5|5|0|0|Sondage Sonic en cone, signature accrue.|0
+underbarrel|underbarrel_standard|1|Vapor Capsule|Engine|Trenchworks|2|2|1|1|0|0|Hydro et Thermal pour former un ecran vapeur.|0
+underbarrel|underbarrel_experimental|3|Acid Sprayer|Fortress|Bioforge|8|6|5|5|0|0|Projection de corrosion a courte portee.|0
+grip|grip_standard|1|Jump Stabilizer|Rogue|Operator Overkill|4|2|1|1|0|0|Stabilisation en l'air contre reload plus lent.|0
+grip|grip_experimental|3|Flinch Inverter|Anomalous|Xeno Relic|22|6|5|5|0|0|Transformer un impact recu en stabilisation.|0
+power|power_standard|1|Reload Capacitor|Baseline|Clean Sci-Foundry|2|4|1|1|0|0|Recuperation thermique pendant le reload.|0
+power|power_experimental|3|Void Field|Anomalous|Xeno Relic|8|20|5|5|0|0|Champ de neutralisation, forte dette TED.|0
+cooling|cooling_standard|1|Insulation Weave|Baseline|Clean Sci-Foundry|2|2|3|1|0|0|Isolant anti-Shock contre chaleur accrue.|0
+cooling|cooling_experimental|3|Reactive Shed|Engine|Bioforge|8|6|19|5|0|0|Absorber un etat puis le restituer a l'impact.|0
+head|head_scout|1|Scout / Tete|Baseline|TFC Scout|0|0|0|0|6|5|Piece legere du Scout, ajustee au squelette commun.|2
+torso|torso_scout|1|Scout / Torse|Baseline|TFC Scout|0|0|0|0|6|5|Piece legere du Scout, ajustee au squelette commun.|2
+legs|legs_scout|1|Scout / Jambes|Baseline|TFC Scout|0|0|0|0|6|5|Piece legere du Scout, ajustee au squelette commun.|2
+
+# Collection 0.9 : six familles representees dans chacun des 21 emplacements.
+head|head_look_fortress|1|Casque Bastion|Fortress|Collection Bastion|0|0|0|0|6|5|Objet de test visuel Fortress ; comportement special a definir.|0
+head|head_look_rogue|1|Casque Eclaireur|Rogue|Collection Eclaireur|0|0|0|0|7|6|Objet de test visuel Rogue ; comportement special a definir.|0
+head|head_look_engine|2|Casque Relais|Engine|Collection Relais|0|0|0|0|8|7|Objet de test visuel Engine ; comportement special a definir.|0
+shoulders|shoulders_look_baseline|1|Epaulieres Standard|Baseline|Collection Standard|0|0|0|0|4|3|Objet de test visuel Baseline ; comportement special a definir.|0
+shoulders|shoulders_look_rogue|1|Epaulieres Eclaireur|Rogue|Collection Eclaireur|0|0|0|0|7|6|Objet de test visuel Rogue ; comportement special a definir.|0
+shoulders|shoulders_look_engine|2|Epaulieres Relais|Engine|Collection Relais|0|0|0|0|8|7|Objet de test visuel Engine ; comportement special a definir.|0
+shoulders|shoulders_look_anomalous|2|Epaulieres Phase|Anomalous|Collection Phase|0|0|0|0|9|8|Objet de test visuel Anomalous ; comportement special a definir.|0
+gloves|gloves_look_predator|1|Gants Traqueur|Predator|Collection Traqueur|0|0|0|0|5|4|Objet de test visuel Predator ; comportement special a definir.|0
+gloves|gloves_look_fortress|1|Gants Bastion|Fortress|Collection Bastion|0|0|0|0|6|5|Objet de test visuel Fortress ; comportement special a definir.|0
+gloves|gloves_look_rogue|1|Gants Eclaireur|Rogue|Collection Eclaireur|0|0|0|0|7|6|Objet de test visuel Rogue ; comportement special a definir.|0
+gloves|gloves_look_anomalous|2|Gants Phase|Anomalous|Collection Phase|0|0|0|0|9|8|Objet de test visuel Anomalous ; comportement special a definir.|0
+torso|torso_look_predator|1|Plastron Traqueur|Predator|Collection Traqueur|0|0|0|0|5|4|Objet de test visuel Predator ; comportement special a definir.|0
+torso|torso_look_rogue|1|Plastron Eclaireur|Rogue|Collection Eclaireur|0|0|0|0|7|6|Objet de test visuel Rogue ; comportement special a definir.|0
+torso|torso_look_engine|2|Plastron Relais|Engine|Collection Relais|0|0|0|0|8|7|Objet de test visuel Engine ; comportement special a definir.|0
+belt|belt_look_predator|1|Ceinture Traqueur|Predator|Collection Traqueur|0|0|0|0|5|4|Objet de test visuel Predator ; comportement special a definir.|0
+belt|belt_look_fortress|1|Ceinture Bastion|Fortress|Collection Bastion|0|0|0|0|6|5|Objet de test visuel Fortress ; comportement special a definir.|0
+belt|belt_look_engine|2|Ceinture Relais|Engine|Collection Relais|0|0|0|0|8|7|Objet de test visuel Engine ; comportement special a definir.|0
+belt|belt_look_anomalous|2|Ceinture Phase|Anomalous|Collection Phase|0|0|0|0|9|8|Objet de test visuel Anomalous ; comportement special a definir.|0
+legs|legs_look_predator|1|Pantalon Traqueur|Predator|Collection Traqueur|0|0|0|0|5|4|Objet de test visuel Predator ; comportement special a definir.|0
+legs|legs_look_fortress|1|Pantalon Bastion|Fortress|Collection Bastion|0|0|0|0|6|5|Objet de test visuel Fortress ; comportement special a definir.|0
+legs|legs_look_engine|2|Pantalon Relais|Engine|Collection Relais|0|0|0|0|8|7|Objet de test visuel Engine ; comportement special a definir.|0
+legs|legs_look_anomalous|2|Pantalon Phase|Anomalous|Collection Phase|0|0|0|0|9|8|Objet de test visuel Anomalous ; comportement special a definir.|0
+boots|boots_look_baseline|1|Bottes Standard|Baseline|Collection Standard|0|0|0|0|4|3|Objet de test visuel Baseline ; comportement special a definir.|0
+boots|boots_look_predator|1|Bottes Traqueur|Predator|Collection Traqueur|0|0|0|0|5|4|Objet de test visuel Predator ; comportement special a definir.|0
+boots|boots_look_fortress|1|Bottes Bastion|Fortress|Collection Bastion|0|0|0|0|6|5|Objet de test visuel Fortress ; comportement special a definir.|0
+boots|boots_look_engine|2|Bottes Relais|Engine|Collection Relais|0|0|0|0|8|7|Objet de test visuel Engine ; comportement special a definir.|0
+shield|shield_look_baseline|1|Plaque Standard|Baseline|Collection Standard|0|0|0|0|4|3|Objet de test visuel Baseline ; comportement special a definir.|0
+shield|shield_look_predator|1|Plaque Traqueur|Predator|Collection Traqueur|0|0|0|0|5|4|Objet de test visuel Predator ; comportement special a definir.|0
+shield|shield_look_rogue|1|Plaque Eclaireur|Rogue|Collection Eclaireur|0|0|0|0|7|6|Objet de test visuel Rogue ; comportement special a definir.|0
+shield|shield_look_anomalous|2|Plaque Phase|Anomalous|Collection Phase|0|0|0|0|9|8|Objet de test visuel Anomalous ; comportement special a definir.|0
+special|special_look_baseline|1|Pack Standard|Baseline|Collection Standard|0|0|0|0|4|3|Objet de test visuel Baseline ; comportement special a definir.|0
+special|special_look_fortress|1|Pack Bastion|Fortress|Collection Bastion|0|0|0|0|6|5|Objet de test visuel Fortress ; comportement special a definir.|0
+special|special_look_rogue|1|Pack Eclaireur|Rogue|Collection Eclaireur|0|0|0|0|7|6|Objet de test visuel Rogue ; comportement special a definir.|0
+special|special_look_anomalous|2|Pack Phase|Anomalous|Collection Phase|0|0|0|0|9|8|Objet de test visuel Anomalous ; comportement special a definir.|0
+receiver|receiver_look_predator|1|Chassis Traqueur|Predator|Collection Traqueur|4|2|2|2|0|0|Objet de test visuel Predator ; comportement special a definir.|0
+receiver|receiver_look_fortress|1|Chassis Bastion|Fortress|Collection Bastion|5|3|3|3|0|0|Objet de test visuel Fortress ; comportement special a definir.|0
+receiver|receiver_look_rogue|1|Chassis Eclaireur|Rogue|Collection Eclaireur|6|3|3|3|0|0|Objet de test visuel Rogue ; comportement special a definir.|0
+receiver|receiver_look_anomalous|2|Chassis Phase|Anomalous|Collection Phase|8|4|4|4|0|0|Objet de test visuel Anomalous ; comportement special a definir.|0
+barrel|barrel_look_predator|1|Canon Traqueur|Predator|Collection Traqueur|4|2|2|2|0|0|Objet de test visuel Predator ; comportement special a definir.|0
+barrel|barrel_look_fortress|1|Canon Bastion|Fortress|Collection Bastion|5|3|3|3|0|0|Objet de test visuel Fortress ; comportement special a definir.|0
+barrel|barrel_look_rogue|1|Canon Eclaireur|Rogue|Collection Eclaireur|6|3|3|3|0|0|Objet de test visuel Rogue ; comportement special a definir.|0
+barrel|barrel_look_anomalous|2|Canon Phase|Anomalous|Collection Phase|8|4|4|4|0|0|Objet de test visuel Anomalous ; comportement special a definir.|0
+muzzle|muzzle_look_baseline|1|Embout Standard|Baseline|Collection Standard|3|2|2|2|0|0|Objet de test visuel Baseline ; comportement special a definir.|0
+muzzle|muzzle_look_fortress|1|Embout Bastion|Fortress|Collection Bastion|5|3|3|3|0|0|Objet de test visuel Fortress ; comportement special a definir.|0
+muzzle|muzzle_look_rogue|1|Embout Eclaireur|Rogue|Collection Eclaireur|6|3|3|3|0|0|Objet de test visuel Rogue ; comportement special a definir.|0
+muzzle|muzzle_look_anomalous|2|Embout Phase|Anomalous|Collection Phase|8|4|4|4|0|0|Objet de test visuel Anomalous ; comportement special a definir.|0
+feed|feed_look_predator|1|Chargeur Traqueur|Predator|Collection Traqueur|4|2|2|2|0|0|Objet de test visuel Predator ; comportement special a definir.|0
+feed|feed_look_fortress|1|Chargeur Bastion|Fortress|Collection Bastion|5|3|3|3|0|0|Objet de test visuel Fortress ; comportement special a definir.|0
+feed|feed_look_rogue|1|Chargeur Eclaireur|Rogue|Collection Eclaireur|6|3|3|3|0|0|Objet de test visuel Rogue ; comportement special a definir.|0
+feed|feed_look_anomalous|2|Chargeur Phase|Anomalous|Collection Phase|8|4|4|4|0|0|Objet de test visuel Anomalous ; comportement special a definir.|0
+chamber|chamber_look_predator|1|Culasse Traqueur|Predator|Collection Traqueur|4|2|2|2|0|0|Objet de test visuel Predator ; comportement special a definir.|0
+chamber|chamber_look_fortress|1|Culasse Bastion|Fortress|Collection Bastion|5|3|3|3|0|0|Objet de test visuel Fortress ; comportement special a definir.|0
+chamber|chamber_look_rogue|1|Culasse Eclaireur|Rogue|Collection Eclaireur|6|3|3|3|0|0|Objet de test visuel Rogue ; comportement special a definir.|0
+chamber|chamber_look_engine|2|Culasse Relais|Engine|Collection Relais|7|4|4|4|0|0|Objet de test visuel Engine ; comportement special a definir.|0
+ammo|ammo_look_predator|1|Cartouche Traqueur|Predator|Collection Traqueur|4|2|2|2|0|0|Objet de test visuel Predator ; comportement special a definir.|0
+ammo|ammo_look_fortress|1|Cartouche Bastion|Fortress|Collection Bastion|5|3|3|3|0|0|Objet de test visuel Fortress ; comportement special a definir.|0
+ammo|ammo_look_rogue|1|Cartouche Eclaireur|Rogue|Collection Eclaireur|6|3|3|3|0|0|Objet de test visuel Rogue ; comportement special a definir.|0
+ammo|ammo_look_anomalous|2|Cartouche Phase|Anomalous|Collection Phase|8|4|4|4|0|0|Objet de test visuel Anomalous ; comportement special a definir.|0
+projectile|projectile_look_predator|1|Ogive Traqueur|Predator|Collection Traqueur|4|2|2|2|0|0|Objet de test visuel Predator ; comportement special a definir.|0
+projectile|projectile_look_fortress|1|Ogive Bastion|Fortress|Collection Bastion|5|3|3|3|0|0|Objet de test visuel Fortress ; comportement special a definir.|0
+projectile|projectile_look_rogue|1|Ogive Eclaireur|Rogue|Collection Eclaireur|6|3|3|3|0|0|Objet de test visuel Rogue ; comportement special a definir.|0
+projectile|projectile_look_engine|2|Ogive Relais|Engine|Collection Relais|7|4|4|4|0|0|Objet de test visuel Engine ; comportement special a definir.|0
+optic|optic_look_baseline|1|Viseur Standard|Baseline|Collection Standard|3|2|2|2|0|0|Objet de test visuel Baseline ; comportement special a definir.|0
+optic|optic_look_fortress|1|Viseur Bastion|Fortress|Collection Bastion|5|3|3|3|0|0|Objet de test visuel Fortress ; comportement special a definir.|0
+optic|optic_look_rogue|1|Viseur Eclaireur|Rogue|Collection Eclaireur|6|3|3|3|0|0|Objet de test visuel Rogue ; comportement special a definir.|0
+optic|optic_look_engine|2|Viseur Relais|Engine|Collection Relais|7|4|4|4|0|0|Objet de test visuel Engine ; comportement special a definir.|0
+optic|optic_look_anomalous|2|Viseur Phase|Anomalous|Collection Phase|8|4|4|4|0|0|Objet de test visuel Anomalous ; comportement special a definir.|0
+underbarrel|underbarrel_look_baseline|1|Garde-main Standard|Baseline|Collection Standard|3|2|2|2|0|0|Objet de test visuel Baseline ; comportement special a definir.|0
+underbarrel|underbarrel_look_predator|1|Garde-main Traqueur|Predator|Collection Traqueur|4|2|2|2|0|0|Objet de test visuel Predator ; comportement special a definir.|0
+underbarrel|underbarrel_look_rogue|1|Garde-main Eclaireur|Rogue|Collection Eclaireur|6|3|3|3|0|0|Objet de test visuel Rogue ; comportement special a definir.|0
+underbarrel|underbarrel_look_anomalous|2|Garde-main Phase|Anomalous|Collection Phase|8|4|4|4|0|0|Objet de test visuel Anomalous ; comportement special a definir.|0
+grip|grip_look_baseline|1|Crosse Standard|Baseline|Collection Standard|3|2|2|2|0|0|Objet de test visuel Baseline ; comportement special a definir.|0
+grip|grip_look_predator|1|Crosse Traqueur|Predator|Collection Traqueur|4|2|2|2|0|0|Objet de test visuel Predator ; comportement special a definir.|0
+grip|grip_look_fortress|1|Crosse Bastion|Fortress|Collection Bastion|5|3|3|3|0|0|Objet de test visuel Fortress ; comportement special a definir.|0
+grip|grip_look_engine|2|Crosse Relais|Engine|Collection Relais|7|4|4|4|0|0|Objet de test visuel Engine ; comportement special a definir.|0
+power|power_look_predator|1|Batterie Traqueur|Predator|Collection Traqueur|4|2|2|2|0|0|Objet de test visuel Predator ; comportement special a definir.|0
+power|power_look_fortress|1|Batterie Bastion|Fortress|Collection Bastion|5|3|3|3|0|0|Objet de test visuel Fortress ; comportement special a definir.|0
+power|power_look_rogue|1|Batterie Eclaireur|Rogue|Collection Eclaireur|6|3|3|3|0|0|Objet de test visuel Rogue ; comportement special a definir.|0
+power|power_look_engine|2|Batterie Relais|Engine|Collection Relais|7|4|4|4|0|0|Objet de test visuel Engine ; comportement special a definir.|0
+cooling|cooling_look_predator|1|Radiateur Traqueur|Predator|Collection Traqueur|4|2|2|2|0|0|Objet de test visuel Predator ; comportement special a definir.|0
+cooling|cooling_look_fortress|1|Radiateur Bastion|Fortress|Collection Bastion|5|3|3|3|0|0|Objet de test visuel Fortress ; comportement special a definir.|0
+cooling|cooling_look_rogue|1|Radiateur Eclaireur|Rogue|Collection Eclaireur|6|3|3|3|0|0|Objet de test visuel Rogue ; comportement special a definir.|0
+cooling|cooling_look_anomalous|2|Radiateur Phase|Anomalous|Collection Phase|8|4|4|4|0|0|Objet de test visuel Anomalous ; comportement special a definir.|0
+# Relais R-01: original visual reference, two variants per weapon slot.
+receiver|r01_receiver_a|1|R-01 / Chassis Atelier|Baseline|Relais R-01|4|4|4|4|0|0|Capot ocre, pontets metalliques et plaque de serie. Visuel uniquement.|0
+receiver|r01_receiver_b|1|R-01 / Chassis Circuit|Engine|Relais R-01|4|4|4|4|0|0|Capot clair, renforts sombres et panneau de service. Visuel uniquement.|0
+barrel|r01_barrel_a|1|Canon chemise|Baseline|Relais R-01|4|4|4|4|0|0|Chemise ventilee et bagues usinees. Visuel uniquement.|0
+barrel|r01_barrel_b|1|Canon a induction|Engine|Relais R-01|4|4|4|4|0|0|Enroulements de cuivre et isolateurs ceramiques. Visuel uniquement.|0
+muzzle|r01_muzzle_a|1|Frein ajoure|Baseline|Relais R-01|4|4|4|4|0|0|Chambres ouvertes et couronne metallique. Visuel uniquement.|0
+muzzle|r01_muzzle_b|1|Moderateur court|Engine|Relais R-01|4|4|4|4|0|0|Corps cylindrique court, colliers et bouche creuse. Visuel uniquement.|0
+feed|r01_feed_a|1|Chargeur nervure|Baseline|Relais R-01|4|4|4|4|0|0|Coque emboutie et sabot. Suit la main au rechargement. Visuel uniquement.|0
+feed|r01_feed_b|1|Chargeur double pile|Engine|Relais R-01|4|4|4|4|0|0|Corps elargi et deux nervures. Meme point d insertion. Visuel uniquement.|0
+chamber|r01_chamber_a|1|Culasse a levier|Baseline|Relais R-01|4|4|4|4|0|0|Levier lateral et capot mobile au tir. Visuel uniquement.|0
+chamber|r01_chamber_b|1|Culasse a glissiere|Engine|Relais R-01|4|4|4|4|0|0|Glissiere renforcee animee avec le meme cycle. Visuel uniquement.|0
+ammo|r01_ammo_a|1|Cassette balistique|Baseline|Relais R-01|4|4|4|4|0|0|Cartouches visibles dans une cassette laterale. Visuel uniquement.|0
+ammo|r01_ammo_b|1|Cassette energetique|Engine|Relais R-01|4|4|4|4|0|0|Cellules encastrees et indicateur de charge. Visuel uniquement.|0
+projectile|r01_projectile_a|1|Porte-flechettes|Baseline|Relais R-01|4|4|4|4|0|0|Trois flechettes retenues dans un berceau. Visuel uniquement.|0
+projectile|r01_projectile_b|1|Porte-ampoules|Engine|Relais R-01|4|4|4|4|0|0|Deux ampoules sous un capot de protection. Visuel uniquement.|0
+optic|r01_optic_a|1|Viseur cadre|Baseline|Relais R-01|4|4|4|4|0|0|Cadre rectangulaire et lentille texturee a reflets bleus, sans croix ajoutee. Visuel uniquement.|0
+optic|r01_optic_b|1|Lunette compacte|Engine|Relais R-01|4|4|4|4|0|0|Deux bagues, oculaire et tourelles de reglage. Visuel uniquement.|0
+underbarrel|r01_underbarrel_a|1|Poignee inclinee|Baseline|Relais R-01|4|4|4|4|0|0|Prise caoutchouc inclinee sur collier commun. Visuel uniquement.|0
+underbarrel|r01_underbarrel_b|1|Tube auxiliaire|Engine|Relais R-01|4|4|4|4|0|0|Capsule sous canon avec verrou et collier. Visuel uniquement.|0
+grip|r01_grip_a|1|Crosse squelette|Baseline|Relais R-01|4|4|4|4|0|0|Poignee textilee et crosse tubulaire. Visuel uniquement.|0
+grip|r01_grip_b|1|Crosse amortie|Engine|Relais R-01|4|4|4|4|0|0|Poignee moulee et crosse a plaque amortissante. Visuel uniquement.|0
+power|r01_power_a|1|Cellule ambre 24V|Baseline|Relais R-01|4|4|4|4|0|0|Batterie amovible, verrou, bornes et etiquette 24V. Visuel uniquement.|0
+power|r01_power_b|1|Condensateur teal 48V|Engine|Relais R-01|4|4|4|4|0|0|Deux capaciteurs, etrier, bornes et etiquette 48V. Visuel uniquement.|0
+cooling|r01_cooling_a|1|Radiateur a ailettes|Baseline|Relais R-01|4|4|4|4|0|0|Six ailettes metalliques sur semelle commune. Visuel uniquement.|0
+cooling|r01_cooling_b|1|Circuit cuivre|Engine|Relais R-01|4|4|4|4|0|0|Deux conduites cuivre et echangeur ceramique. Visuel uniquement.|0
+receiver|r01_receiver_side|1|R-01 / Traverse|Baseline|Relais R-01|4|4|4|4|0|0|Alimentation laterale. Extraction sur le cote et main animee. Memes chargeurs et proprietes.|0
+receiver|r01_receiver_top|1|R-01 / Zenith|Baseline|Relais R-01|4|4|4|4|0|0|Alimentation superieure. Extraction vers le haut et viseur decale. Memes chargeurs et proprietes.|0

@@ -1,0 +1,167 @@
+{
+  "original_hk416": {
+    "sha256": "2c9fdde3a7147cb49e4c17dd152e9881e1479222137a20199df44d6f57f21a18",
+    "bytes": 2308084,
+    "textures": [
+      "sights.bmp",
+      "upper.bmp",
+      "stock.bmp",
+      "forerail.bmp",
+      "mag.bmp",
+      "rec.bmp",
+      "m203.bmp",
+      "PLAYER_Chrome1.bmp",
+      "HEV_arm.bmp",
+      "gordon_glove_Chrome.bmp",
+      "gordon_glove.bmp",
+      "gordon_sleeve.bmp"
+    ],
+    "bodyparts": [
+      {
+        "name": "studio",
+        "models": 1,
+        "default_model": "HK416_1"
+      },
+      {
+        "name": "studio",
+        "models": 1,
+        "default_model": "HK416_2"
+      },
+      {
+        "name": "studio",
+        "models": 1,
+        "default_model": "HK416_3"
+      },
+      {
+        "name": "studio",
+        "models": 1,
+        "default_model": "HK416_4"
+      },
+      {
+        "name": "studio",
+        "models": 1,
+        "default_model": "M203"
+      },
+      {
+        "name": "hands",
+        "models": 1,
+        "default_model": "REF_HANDS_HEV"
+      }
+    ]
+  },
+  "hybrid_compiled": {
+    "sha256": "9faa9975ba15185db6173e9974109e05bb1b7fbf742e99e1c5a8d31f4021f5df",
+    "bytes": 2186392,
+    "textures": [
+      "sights.bmp",
+      "upper.bmp",
+      "stock.bmp",
+      "forerail.bmp",
+      "lr300_mag.bmp",
+      "rec.bmp",
+      "m203.bmp",
+      "PLAYER_Chrome1.bmp",
+      "HEV_arm.bmp",
+      "gordon_glove_Chrome.bmp",
+      "gordon_glove.bmp",
+      "gordon_sleeve.bmp"
+    ],
+    "bodyparts": [
+      {
+        "name": "studio",
+        "models": 1,
+        "default_model": "HK416_1"
+      },
+      {
+        "name": "studio",
+        "models": 1,
+        "default_model": "HK416_2"
+      },
+      {
+        "name": "studio",
+        "models": 1,
+        "default_model": "HK416_3"
+      },
+      {
+        "name": "magazine",
+        "models": 1,
+        "default_model": "LR300_magazine"
+      },
+      {
+        "name": "studio",
+        "models": 1,
+        "default_model": "HK416_4"
+      },
+      {
+        "name": "studio",
+        "models": 1,
+        "default_model": "M203"
+      },
+      {
+        "name": "hands",
+        "models": 1,
+        "default_model": "REF_HANDS_HEV"
+      }
+    ]
+  },
+  "deployed": {
+    "sha256": "9faa9975ba15185db6173e9974109e05bb1b7fbf742e99e1c5a8d31f4021f5df",
+    "bytes": 2186392,
+    "textures": [
+      "sights.bmp",
+      "upper.bmp",
+      "stock.bmp",
+      "forerail.bmp",
+      "lr300_mag.bmp",
+      "rec.bmp",
+      "m203.bmp",
+      "PLAYER_Chrome1.bmp",
+      "HEV_arm.bmp",
+      "gordon_glove_Chrome.bmp",
+      "gordon_glove.bmp",
+      "gordon_sleeve.bmp"
+    ],
+    "bodyparts": [
+      {
+        "name": "studio",
+        "models": 1,
+        "default_model": "HK416_1"
+      },
+      {
+        "name": "studio",
+        "models": 1,
+        "default_model": "HK416_2"
+      },
+      {
+        "name": "studio",
+        "models": 1,
+        "default_model": "HK416_3"
+      },
+      {
+        "name": "magazine",
+        "models": 1,
+        "default_model": "LR300_magazine"
+      },
+      {
+        "name": "studio",
+        "models": 1,
+        "default_model": "HK416_4"
+      },
+      {
+        "name": "studio",
+        "models": 1,
+        "default_model": "M203"
+      },
+      {
+        "name": "hands",
+        "models": 1,
+        "default_model": "REF_HANDS_HEV"
+      }
+    ]
+  },
+  "checks": {
+    "deployed_identical_to_hybrid": true,
+    "original_magazine_texture_removed": true,
+    "donor_magazine_body_is_enabled_by_default": true
+  }
+}

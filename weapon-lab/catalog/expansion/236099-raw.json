@@ -1,0 +1,407 @@
+{
+  "_idRow": 236099,
+  "_nStatus": "0",
+  "_bIsPrivate": false,
+  "_bAccessorIsSubmitter": false,
+  "_bIsTrashed": false,
+  "_bIsWithheld": false,
+  "_sName": "UTAS UTS-15 With Acog + Eotech Attachment (Pack)",
+  "_sCommentsMode": "open",
+  "_tsDateModified": 1376785277,
+  "_tsDateAdded": 1355705013,
+  "_sProfileUrl": "https://gamebanana.com/mods/236099",
+  "_aPreviewMedia": {
+    "_aImages": [
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "5115cc7ca15ed.jpg",
+        "_sFile530": "530-90_5115cc7ca15ed.jpg",
+        "_sFile100": "100-90_5115cc7ca15ed.jpg",
+        "_sFile220": "220-90_5115cc7ca15ed.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "50ce673607c75.jpg",
+        "_sFile100": "100-90_50ce673607c75.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "50ce674be6669.jpg",
+        "_sFile100": "100-90_50ce674be6669.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "50ce67635eae4.jpg",
+        "_sFile100": "100-90_50ce67635eae4.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "50ce677944089.jpg",
+        "_sFile100": "100-90_50ce677944089.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "50ce679713fa9.jpg",
+        "_sFile100": "100-90_50ce679713fa9.jpg"
+      }
+    ]
+  },
+  "_nUpdatesCount": 0,
+  "_bHasUpdates": false,
+  "_nAllTodosCount": 0,
+  "_bHasTodos": false,
+  "_nPostCount": 0,
+  "_aTags": [
+    {
+      "_sTitle": "Model",
+      "_sValue": "Hacked Default Model"
+    },
+    {
+      "_sTitle": "Texture",
+      "_sValue": "Default"
+    }
+  ],
+  "_bCreatedBySubmitter": true,
+  "_bIsPorted": false,
+  "_nThanksCount": 0,
+  "_sInitialVisibility": "show",
+  "_sDownloadUrl": "https://gamebanana.com/mods/download/236099",
+  "_nDownloadCount": 1987,
+  "_aFiles": [
+    {
+      "_idRow": 228174,
+      "_sFile": "uts-15.rar",
+      "_nFilesize": 2716187,
+      "_tsDateAdded": 1355705013,
+      "_nDownloadCount": 1987,
+      "_sDownloadUrl": "https://gamebanana.com/dl/228174",
+      "_sMd5Checksum": "713dd8b7755629d31180aba3db902131",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true
+    }
+  ],
+  "_nSubscriberCount": 0,
+  "_aStudio": {
+    "_idRow": 33901,
+    "_sName": "980th Production Studios",
+    "_sProfileUrl": "https://gamebanana.com/studios/33901",
+    "_sBannerUrl": "https://images.gamebanana.com/img/banners/studios/52612def5a8bc.jpg",
+    "_nSubscriberCount": 3,
+    "_bAccessorIsSubscribed": false
+  },
+  "_aContributingStudios": [],
+  "_sLicense": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "_aLicenseChecklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "_sDescription": "Fastest pump action shotgun ever (CSO)",
+  "_bGenerateTableOfContents": false,
+  "_sText": "In this pack you'll get\r\n==================\r\n\r\n### - custom v_model\r\n### - sound \r\n### - nst wpn script\r\n### no custom p_model and w_model, but i'll add them soon\r\n### tell me if something wrong\r\n### this skin can replace the m3, rename the p_uts15,v_uts15,w_uts15 into p_m3,v_m3,w_m3",
+  "_bIsObsolete": false,
+  "_nLikeCount": 4,
+  "_nViewCount": 11358,
+  "_sVersion": "",
+  "_bAcceptsDonations": false,
+  "_bShowRipePromo": true,
+  "_aEmbeddables": {
+    "_sEmbeddableImageBaseUrl": "https://gamebanana.com/mods/embeddables/236099",
+    "_aVariants": [
+      "small",
+      "small_square",
+      "medium",
+      "medium_square",
+      "medium_square_minimal",
+      "large",
+      "large_minimal",
+      "large_square",
+      "large_minimal_square",
+      "thumbnail"
+    ]
+  },
+  "_aSubmitter": {
+    "_idRow": 1250945,
+    "_sName": "Gerrard",
+    "_sUserTitle": "Zombie Hunter",
+    "_sHonoraryTitle": "",
+    "_tsJoinDate": 1308523319,
+    "_sAvatarUrl": "https://images.gamebanana.com/img/av/55460dc9ce2f5.jpg",
+    "_sSigUrl": "",
+    "_sProfileUrl": "https://gamebanana.com/members/1250945",
+    "_sPointsUrl": "https://gamebanana.com/members/logs/pointslog/1250945",
+    "_sMedalsUrl": "https://gamebanana.com/members/stats/medals/1250945",
+    "_bIsOnline": false,
+    "_sLocation": "[location redacted]",
+    "_sOnlineTitle": "",
+    "_sOfflineTitle": "",
+    "_nPoints": 8163,
+    "_nPointsRank": 4875,
+    "_aNormalMedals": [
+      [
+        "54fc79ebd75e3.gif",
+        "Historical Weapons Skinning Contest Entrant",
+        "normal",
+        768
+      ],
+      [
+        "skins1.png",
+        "Submitted 10 Skins",
+        "normal",
+        1446
+      ],
+      [
+        "skins2.png",
+        "Submitted 50 Skins",
+        "normal",
+        1447
+      ],
+      [
+        "club_leader.gif",
+        "Became a Club Leader",
+        "normal",
+        3178
+      ],
+      [
+        "m_pr_1.png",
+        "Reached 1,000 Points",
+        "normal",
+        3179
+      ],
+      [
+        "m_pr_2.png",
+        "Reached 2,500 Points",
+        "normal",
+        3180
+      ],
+      [
+        "m_cl_1.png",
+        "Unlocked Treehouse VIP clearance",
+        "normal",
+        3181
+      ],
+      [
+        "m_age_1.png",
+        "One month a member",
+        "normal",
+        3182
+      ],
+      [
+        "m_age_2.png",
+        "6 months a member",
+        "normal",
+        3183
+      ],
+      [
+        "m_age_3.png",
+        "1 year a member",
+        "normal",
+        3184
+      ],
+      [
+        "m_age_4.png",
+        "2 years a member",
+        "normal",
+        3185
+      ],
+      [
+        "m_age_5.png",
+        "4 years a member",
+        "normal",
+        3186
+      ],
+      [
+        "returns_1.png",
+        "Returned 100 times",
+        "normal",
+        71617
+      ],
+      [
+        "subscribers_1.png",
+        "Reached 10 subscribers",
+        "normal",
+        323885
+      ],
+      [
+        "m_pr_3.png",
+        "Reached 7,500 Points",
+        "normal",
+        4147139
+      ]
+    ],
+    "_aRareMedals": [
+      [
+        "m_age_6.png",
+        "6 years a member",
+        "rare",
+        156418
+      ]
+    ],
+    "_aLegendaryMedals": [
+      [
+        "m_age_7.png",
+        "10 years a member",
+        "legendary",
+        785308
+      ]
+    ],
+    "_bHasRipe": false,
+    "_nBuddyCount": 47,
+    "_nSubscriberCount": 22,
+    "_aDonationMethods": [],
+    "_bAccessorIsBuddy": false,
+    "_bBuddyRequestExistsWithAccessor": false,
+    "_bAccessorIsSubscribed": false,
+    "_aBio": [
+      {
+        "_sTitle": "FPS Hero",
+        "_sValue": "Gordon Freeman"
+      },
+      {
+        "_sTitle": "Favorite Game",
+        "_sValue": "Counter Strike Series, Some &quot;H&quot; game, Corpse Party"
+      },
+      {
+        "_sTitle": "Favorite L4D2 Character",
+        "_sValue": "Nick"
+      },
+      {
+        "_sTitle": "Favorite L4D Character",
+        "_sValue": "Bill"
+      },
+      {
+        "_sTitle": "Favorite TF2 Class",
+        "_sValue": "Spy"
+      },
+      {
+        "_sTitle": "Favorite CS Map",
+        "_sValue": "de_dust2"
+      },
+      {
+        "_sTitle": "Favorite Game Genre",
+        "_sValue": "FPS"
+      },
+      {
+        "_sTitle": "Cat or Dog",
+        "_sValue": "Cat"
+      },
+      {
+        "_sTitle": "Most proud of",
+        "_sValue": "My weird ideas? :D"
+      },
+      {
+        "_sTitle": "Favorite CS Weapon",
+        "_sValue": "Blaster (Owned), Volcano (Owned), Lightning AR-1 &quot;Guitar&quot; (Not Owned), Tempest (Not Owned ), Dual Infinity Set (Owned), Skull-9 (Owned), Holy Bomb"
+      },
+      {
+        "_sTitle": "First Game ever played",
+        "_sValue": "Counter strike 1.6"
+      },
+      {
+        "_sTitle": "Coke or Pepsi",
+        "_sValue": "Pepsi"
+      },
+      {
+        "_sTitle": "Gender",
+        "_sValue": "Male"
+      },
+      {
+        "_sTitle": "Country",
+        "_sValue": "Indonesia"
+      },
+      {
+        "_sTitle": "Best Buddy",
+        "_sValue": "simple rule 02516 (Alive), Delta Frost (Alive), Lightning Cyan (Alive)"
+      },
+      {
+        "_sTitle": "Gamer type",
+        "_sValue": "Hardcore"
+      }
+    ],
+    "_aDefaultLicenseChecklist": [
+      "yes",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "no",
+      "ask"
+    ],
+    "_sDefaultLicense": ""
+  },
+  "_bFollowLinks": true,
+  "_aGame": {
+    "_idRow": 1415,
+    "_sName": "Counter-Strike: Online",
+    "_sAbbreviation": "CS:O",
+    "_sProfileUrl": "https://gamebanana.com/games/1415",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/games/55b16824d069f.png",
+    "_sBannerUrl": "https://images.gamebanana.com/img/ico/games/55b16824d069f.png",
+    "_nSubscriberCount": 95,
+    "_bHasSubmissionQueue": false,
+    "_bAccessorIsSubscribed": false
+  },
+  "_aCategory": {
+    "_idRow": 8765,
+    "_sName": "Shotgun",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/8765",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/560c89604a2ca.png",
+    "_bIsObsolete": false
+  },
+  "_aSuperCategory": {
+    "_idRow": 8759,
+    "_sName": "Skins",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/8759",
+    "_sIconUrl": ""
+  },
+  "_aCredits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sName": "Nexon"
+        },
+        {
+          "_idRow": "1250945",
+          "_sName": "Gerrard",
+          "_sProfileUrl": "https://gamebanana.com/members/1250945",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/55460dc9ce2f5.jpg",
+          "_bIsOnline": false
+        },
+        {
+          "_idRow": "1305750",
+          "_sName": "simple rulez",
+          "_sUpicUrl": "https://images.gamebanana.com/img/upic/519cefe3bd1b3.png",
+          "_sProfileUrl": "https://gamebanana.com/members/1305750",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/5a636af0c26e3.gif",
+          "_bIsOnline": false
+        }
+      ]
+    }
+  ]
+}

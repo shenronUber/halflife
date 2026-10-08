@@ -1,0 +1,446 @@
+{
+  "_idRow": 226527,
+  "_nStatus": "0",
+  "_bIsPrivate": false,
+  "_bAccessorIsSubmitter": false,
+  "_bIsTrashed": false,
+  "_bIsWithheld": false,
+  "_sName": "PPSh-41",
+  "_sCommentsMode": "open",
+  "_tsDateModified": 1433338606,
+  "_tsDateAdded": 1421155596,
+  "_sProfileUrl": "https://gamebanana.com/mods/226527",
+  "_aPreviewMedia": {
+    "_aImages": [
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "550af07101734.jpg",
+        "_sFile220": "220-90_550af07101734.jpg",
+        "_sFile530": "530-90_550af07101734.jpg",
+        "_sFile100": "100-90_550af07101734.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "54b51bbf49c2e.jpg",
+        "_sFile100": "100-90_54b51bbf49c2e.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "54b51bc42ee72.jpg",
+        "_sFile100": "100-90_54b51bc42ee72.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "54b51be72dbdf.jpg",
+        "_sFile100": "100-90_54b51be72dbdf.jpg"
+      },
+      {
+        "_sType": "screenshot",
+        "_sBaseUrl": "https://images.gamebanana.com/img/ss/mods",
+        "_sFile": "54b51c25dc380.jpg",
+        "_sFile100": "100-90_54b51c25dc380.jpg"
+      }
+    ]
+  },
+  "_nUpdatesCount": 0,
+  "_bHasUpdates": false,
+  "_nAllTodosCount": 0,
+  "_bHasTodos": false,
+  "_nPostCount": 1,
+  "_aTags": [
+    {
+      "_sTitle": "Model",
+      "_sValue": "New Custom Model"
+    },
+    {
+      "_sTitle": "Texture",
+      "_sValue": "Custom Texture"
+    }
+  ],
+  "_bCreatedBySubmitter": false,
+  "_bIsPorted": true,
+  "_nThanksCount": 0,
+  "_sInitialVisibility": "show",
+  "_sDownloadUrl": "https://gamebanana.com/mods/download/226527",
+  "_nDownloadCount": 12547,
+  "_aFiles": [
+    {
+      "_idRow": 212786,
+      "_sFile": "ppsh_41.rar",
+      "_nFilesize": 700890,
+      "_tsDateAdded": 1421155596,
+      "_nDownloadCount": 12549,
+      "_sDownloadUrl": "https://gamebanana.com/dl/212786",
+      "_sMd5Checksum": "0aaa0c7d9b3bdcdeb3f11e776e6fc29b",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true
+    }
+  ],
+  "_nSubscriberCount": 1,
+  "_aContributingStudios": [],
+  "_sLicense": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "_aLicenseChecklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "_bGenerateTableOfContents": false,
+  "_sText": "Enjoy...",
+  "_bIsObsolete": false,
+  "_nLikeCount": 3,
+  "_nViewCount": 37270,
+  "_sVersion": "",
+  "_bAcceptsDonations": false,
+  "_bShowRipePromo": true,
+  "_aEmbeddables": {
+    "_sEmbeddableImageBaseUrl": "https://gamebanana.com/mods/embeddables/226527",
+    "_aVariants": [
+      "small",
+      "small_square",
+      "medium",
+      "medium_square",
+      "medium_square_minimal",
+      "large",
+      "large_minimal",
+      "large_square",
+      "large_minimal_square",
+      "thumbnail"
+    ]
+  },
+  "_aSubmitter": {
+    "_idRow": 1408068,
+    "_sName": "FireBlast98",
+    "_sUserTitle": "Back from the dead",
+    "_sHonoraryTitle": "",
+    "_tsJoinDate": 1416659060,
+    "_sAvatarUrl": "https://images.gamebanana.com/img/av/61cec9bf35e91.gif",
+    "_sSigUrl": "",
+    "_sProfileUrl": "https://gamebanana.com/members/1408068",
+    "_sPointsUrl": "https://gamebanana.com/members/logs/pointslog/1408068",
+    "_sMedalsUrl": "https://gamebanana.com/members/stats/medals/1408068",
+    "_bIsOnline": false,
+    "_sLocation": "<a href=\"https://gamebanana.com\">Home</a> > <a href=\"https://gamebanana.com/members\">Members</a> > <a href=\"https://gamebanana.com/members/1408068\">FireBlast98</a>",
+    "_sOnlineTitle": "",
+    "_sOfflineTitle": "",
+    "_nPoints": 1375,
+    "_nPointsRank": 66272,
+    "_aNormalMedals": [
+      [
+        "skins1.png",
+        "Submitted 10 Skins",
+        "normal",
+        1203
+      ],
+      [
+        "skins2.png",
+        "Submitted 50 Skins",
+        "normal",
+        1204
+      ],
+      [
+        "club_leader.gif",
+        "Became a Club Leader",
+        "normal",
+        4557
+      ],
+      [
+        "m_cl_1.png",
+        "Unlocked Treehouse VIP clearance",
+        "normal",
+        4558
+      ],
+      [
+        "m_age_1.png",
+        "One month a member",
+        "normal",
+        4559
+      ],
+      [
+        "m_age_2.png",
+        "6 months a member",
+        "normal",
+        4560
+      ],
+      [
+        "thanks_recvd_1.png",
+        "Received thanks 5 times",
+        "normal",
+        15341
+      ],
+      [
+        "m_pr_1.png",
+        "Reached 1,000 Points",
+        "normal",
+        15473
+      ],
+      [
+        "thanks_sent_1.png",
+        "Thanked 5 submitters",
+        "normal",
+        17010
+      ],
+      [
+        "sounds1.png",
+        "Submitted 10 Sounds",
+        "normal",
+        17195
+      ],
+      [
+        "gamefiles1.png",
+        "Submitted 5 Gamefiles",
+        "normal",
+        27054
+      ],
+      [
+        "m_age_3.png",
+        "1 year a member",
+        "normal",
+        29935
+      ],
+      [
+        "m_pr_2.png",
+        "Reached 2,500 Points",
+        "normal",
+        49492
+      ],
+      [
+        "returns_1.png",
+        "Returned 100 times",
+        "normal",
+        71037
+      ],
+      [
+        "subscribers_1.png",
+        "Reached 10 subscribers",
+        "normal",
+        76966
+      ],
+      [
+        "polls1.png",
+        "Submitted 10 Polls",
+        "normal",
+        92545
+      ],
+      [
+        "m_age_4.png",
+        "2 years a member",
+        "normal",
+        96066
+      ],
+      [
+        "58659a6c0f690.png",
+        "1-7 Entries! GameBanana\u2019s Christmas Giveaway 2016",
+        "normal",
+        103521
+      ],
+      [
+        "m_age_5.png",
+        "4 years a member",
+        "normal",
+        228344
+      ],
+      [
+        "mods1.png",
+        "Submitted 5 Mods",
+        "normal",
+        464197
+      ],
+      [
+        "mods2.png",
+        "Submitted 10 Mods",
+        "normal",
+        464198
+      ]
+    ],
+    "_aRareMedals": [
+      [
+        "returns_2.png",
+        "Returned 1000 times",
+        "rare",
+        71038
+      ],
+      [
+        "new_game_pioneer.png",
+        "Became a Game Pioneer",
+        "rare",
+        266078
+      ],
+      [
+        "m_age_6.png",
+        "6 years a member",
+        "rare",
+        459598
+      ],
+      [
+        "mods3.png",
+        "Submitted 15 Mods",
+        "rare",
+        464199
+      ],
+      [
+        "mods4.png",
+        "Submitted 20 Mods",
+        "rare",
+        464200
+      ],
+      [
+        "mods5.png",
+        "Submitted 50 Mods",
+        "rare",
+        464201
+      ],
+      [
+        "mods6.png",
+        "Submitted 100 Mods",
+        "rare",
+        464202
+      ],
+      [
+        "subscribers_2.png",
+        "Reached 50 subscribers",
+        "rare",
+        5097985
+      ]
+    ],
+    "_aLegendaryMedals": [
+      [
+        "skins3.png",
+        "Submitted 100 Skins",
+        "legendary",
+        20110
+      ],
+      [
+        "returns_3.png",
+        "Returned 5000 times",
+        "legendary",
+        694514
+      ],
+      [
+        "m_age_7.png",
+        "10 years a member",
+        "legendary",
+        3751558
+      ]
+    ],
+    "_bHasRipe": false,
+    "_nBuddyCount": 141,
+    "_nSubscriberCount": 51,
+    "_aDonationMethods": [],
+    "_bAccessorIsBuddy": false,
+    "_bBuddyRequestExistsWithAccessor": false,
+    "_bAccessorIsSubscribed": false,
+    "_aBio": [
+      {
+        "_sTitle": "Gamer type",
+        "_sValue": "Regular"
+      },
+      {
+        "_sTitle": "Favorite Game",
+        "_sValue": "God of War Franchise, Witcher 3, Red Dead Redemption 2"
+      },
+      {
+        "_sTitle": "First Game ever played",
+        "_sValue": "Quake 2"
+      }
+    ],
+    "_aDefaultLicenseChecklist": [
+      "yes",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "ask",
+      "no",
+      "ask"
+    ],
+    "_sDefaultLicense": "",
+    "_sHdAvatarUrl": "https://images.gamebanana.com/img/av/61ce37d70bbbc.gif"
+  },
+  "_bFollowLinks": true,
+  "_aGame": {
+    "_idRow": 4254,
+    "_sName": "Counter-Strike 1.6",
+    "_sAbbreviation": "CS1.6",
+    "_sProfileUrl": "https://gamebanana.com/games/4254",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/games/5ea788a63f636.png",
+    "_sBannerUrl": "https://images.gamebanana.com/img/ico/games/5ea788a63f636.png",
+    "_nSubscriberCount": 6185,
+    "_bHasSubmissionQueue": false,
+    "_bAccessorIsSubscribed": false
+  },
+  "_aCategory": {
+    "_idRow": 8347,
+    "_sName": "P90",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/8347",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/4e97ca3ccc6da.png",
+    "_bIsObsolete": false
+  },
+  "_aSuperCategory": {
+    "_idRow": 8314,
+    "_sName": "SMGs",
+    "_sModelName": "ModCategory",
+    "_sProfileUrl": "https://gamebanana.com/mods/cats/8314",
+    "_sIconUrl": "https://images.gamebanana.com/img/ico/ModCategory/55df8c2cbd085.png"
+  },
+  "_aCredits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Model",
+          "_sName": "Dav0r"
+        },
+        {
+          "_sRole": "Textures",
+          "_sName": "Unknown"
+        }
+      ]
+    },
+    {
+      "_sGroupName": "Contributors",
+      "_aAuthors": [
+        {
+          "_sRole": "Hand Texture",
+          "_idRow": "312402",
+          "_sName": "GRavityShock",
+          "_sProfileUrl": "https://gamebanana.com/members/312402",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/312402.png",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Animations",
+          "_idRow": "390994",
+          "_sName": "Mr.Scratch",
+          "_sProfileUrl": "https://gamebanana.com/members/390994",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/4f7ec0fef2c11.png",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Sounds",
+          "_sName": "Unknown"
+        }
+      ]
+    }
+  ]
+}

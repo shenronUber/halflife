@@ -1,0 +1,22 @@
+{
+  "name": "Relais R-01",
+  "geometry": "Authored procedurally in vector-fields/build_reference_weapon.py; independent slot meshes, common interfaces.",
+  "textures": {
+    "method": "Built-in imagegen tool, opaque 4x4 diffuse atlas",
+    "original": "texture-atlas.png",
+    "prompt": "texture-prompt.txt",
+    "preparation": "Equal-cell crop, resize to 256x256, 256-color BMP palette; no hand-painted replacement of generated art.",
+    "sha256": "6e2820424beee8027234b302713a2fcdd3bec2741f11c7625f51bfef6b3374f4",
+    "original_size": [
+      1254,
+      1254
+    ],
+    "lens": "Original tile 11 glass region is UV-mapped to the rectangular sight. Additive render flag keeps scene visibility. No yellow cross geometry."
+  },
+  "animation": {
+    "base": "Existing MP40 hands and nine sequences from generated/weapon_visuals/mp40_rig; archived donor provenance remains in weapon-lab.",
+    "new": "R01_Bolt socket and authored firing/reload translation track.",
+    "retained": "Bone76 chassis and Bone71 magazine animation."
+  },
+  "output": "../../generated/r01/manifest.json"
+}

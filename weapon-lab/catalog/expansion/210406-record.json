@@ -1,0 +1,177 @@
+{
+  "id": 210406,
+  "name": "Aimpoint ANPEQ M4A1",
+  "url": "https://gamebanana.com/mods/210406",
+  "game": "Counter-Strike: Source",
+  "likes": 32,
+  "downloads": 119658,
+  "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "license_checklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "credits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Unknown",
+          "_sName": "Ankalar"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Stoke"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "sas.stu"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Hellspike"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Kimono"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Stoke"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "-X-"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Version_2"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Thanez"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Soul_Slayer"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "End of Days"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "The_tub"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Jennifer!!"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Vunsunta"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "3DStart"
+        }
+      ]
+    }
+  ],
+  "description_html": "==============\r\nInstallation:\r\n==============\r\n\r\nUnzip to C:\\Program Files\\Valve\\Steam\\SteamApps\\YourSteamName\\counter-strike source\\cstrike folder and enjoy!",
+  "files": [
+    {
+      "_idRow": 259570,
+      "_sFile": "atm4.rar",
+      "_nFilesize": 7171191,
+      "_tsDateAdded": 1199561137,
+      "_nDownloadCount": 119658,
+      "_sDownloadUrl": "https://gamebanana.com/dl/259570",
+      "_sMd5Checksum": "ac692af4c26c2c852c4c65a5040bc5e5",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,210406,259570"
+        }
+      ]
+    }
+  ],
+  "retrieved": "2026-10-08",
+  "download": {
+    "id": 210406,
+    "name": "Aimpoint ANPEQ M4A1",
+    "archive": "downloads\\210406-atm4.rar",
+    "sha256": "c53c291b53db6010f849be266d38d0c5b6412d2fa532110b86725f6e8ed7af34",
+    "bytes": 7171191,
+    "models": [
+      "extracted\\210406\\models\\weapons\\v_rif_m4a1.mdl",
+      "extracted\\210406\\models\\weapons\\w_rif_m4a1.mdl",
+      "extracted\\210406\\models\\weapons\\w_rif_m4a1_silencer.mdl"
+    ]
+  }
+}

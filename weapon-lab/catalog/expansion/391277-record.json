@@ -1,0 +1,163 @@
+{
+  "id": 391277,
+  "name": "HDP Style MP5SD3 w/ M203PI",
+  "url": "https://gamebanana.com/mods/391277",
+  "game": "Half-Life",
+  "likes": 30,
+  "downloads": 1394,
+  "license": "<h2 class=\"SelectedElement\">Red Slug's original copyright notice</h2>This is not to be used for financial gain of anykind, it is distributed on the internet 4 free. You may include the models and/or sounds in any custom model pack, as long as it is credited correctly to the authors or alterers concerned. But you may not include the models and/or sounds in any pack that is for resale or to make a profit, without the express permission of the authors & or alterers of the model.",
+  "license_checklist": {
+    "yes": [
+      "Download and install this Mod",
+      "Redistribute this Mod on other sites"
+    ],
+    "only_if_same": [
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ],
+    "ask": [
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ]
+  },
+  "credits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Edit author",
+          "_idRow": "2074451",
+          "_sName": "Owlet VII",
+          "_sProfileUrl": "https://gamebanana.com/members/2074451",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/61f8229fc7f68.jpg",
+          "_bIsOnline": false
+        }
+      ]
+    },
+    {
+      "_sGroupName": "Original Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Original model",
+          "_idRow": "234990",
+          "_sName": "RedSlug",
+          "_sProfileUrl": "https://gamebanana.com/members/234990",
+          "_sAvatarUrl": "https://images.gamebanana.com/img/av/234990.gif",
+          "_bIsOnline": false
+        },
+        {
+          "_sRole": "Hands",
+          "_sName": "Ambient.Impact"
+        },
+        {
+          "_sRole": "Parts of the mesh, textures, animations",
+          "_sName": "Gearbox"
+        },
+        {
+          "_sRole": "Textures",
+          "_sName": "Valve"
+        }
+      ]
+    }
+  ],
+  "description_html": "<a href=\"https://gamebanana.com/mods/179732\">Original model</a><br><br>Based on Red Slug's MP5 Recreation, I edited the model to more closely resemble the weapons that the original first person model was based on.<br>Also includes a magazine model that matches the world model, a 9mm shell model, and NPC reference files.<br><br>Opposing Force and Blue Shift versions included.<br><br>",
+  "files": [
+    {
+      "_idRow": 836080,
+      "_sFile": "redslug_mp5_improved_7692e.zip",
+      "_nFilesize": 2135574,
+      "_tsDateAdded": 1658612961,
+      "_nDownloadCount": 1384,
+      "_sDownloadUrl": "https://gamebanana.com/dl/836080",
+      "_sMd5Checksum": "eb9b5bf30f1ad2e9c160b718cbe8a386",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_sDescription": "1.0",
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,391277,836080"
+        }
+      ]
+    }
+  ],
+  "retrieved": "2026-10-08",
+  "download": {
+    "id": 391277,
+    "name": "HDP Style MP5SD3 w/ M203PI",
+    "archive": "downloads\\391277-redslug_mp5_improved_7692e.zip",
+    "sha256": "52bce9a192f28dbddc3a63737918b0c5d4c9c52abf056f3023771dac1a715bfb",
+    "bytes": 2135574,
+    "models": [
+      "extracted\\391277\\bshift\\p_9mmar.mdl",
+      "extracted\\391277\\bshift\\shell.mdl",
+      "extracted\\391277\\bshift\\v_9mmar.mdl",
+      "extracted\\391277\\bshift\\w_9mmar.mdl",
+      "extracted\\391277\\bshift\\w_9mmarclip.mdl",
+      "extracted\\391277\\gearbox\\shell.mdl",
+      "extracted\\391277\\gearbox\\v_9mmar.mdl",
+      "extracted\\391277\\gearbox\\w_9mmar.mdl",
+      "extracted\\391277\\valve\\p_9mmar.mdl",
+      "extracted\\391277\\valve\\shell.mdl",
+      "extracted\\391277\\valve\\v_9mmar.mdl",
+      "extracted\\391277\\valve\\w_9mmar.mdl",
+      "extracted\\391277\\valve\\w_9mmarclip.mdl"
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "id": 217436,
+  "name": "M4 Accessories Pack (M4 & AUG)",
+  "url": "https://gamebanana.com/mods/217436",
+  "game": "Counter-Strike: Source",
+  "likes": 24,
+  "downloads": 7181,
+  "license": "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png\" /></a><br />This work is licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-nd/4.0/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.",
+  "license_checklist": {
+    "yes": [
+      "Download and install this Mod"
+    ],
+    "ask": [
+      "Redistribute this Mod on other sites",
+      "Modify this Mod and distribute the modified Mod on GameBanana",
+      "Modify this Mod and distribute the modified Mod on another site",
+      "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+      "Use parts of this Mod in another Mod and distribute the Mod on another site",
+      "Use this Mod or components of this Mod in adult/NSFW content"
+    ],
+    "no": [
+      "Use this Mod or components of this Mod commercially"
+    ]
+  },
+  "credits": [
+    {
+      "_sGroupName": "Key Authors",
+      "_aAuthors": [
+        {
+          "_sRole": "Unknown",
+          "_sName": "McButterpants"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "STOKE!"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "skladfin"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Syco"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "InBlew"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "T-R-O-N"
+        },
+        {
+          "_sRole": "Unknown",
+          "_sName": "Valve"
+        }
+      ]
+    }
+  ],
+  "description_html": "Ok so heres the dealio. Theres an M4+flashlight model for the M4 in game\r\nand an M4+Scope for the AUG ingame. Includes M4 sound for the AUG version.\r\n\r\nNo World models BUT i use this: the M4A1 -NEGOTIATOR- *FINAL* world model over here - http://www.sixtoesstudios.com/forum/local_links.php?catid=21\r\n(am i allowed to do that?)\r\n\r\nN.B. Permissions recieved\r\n\r\n////Credits////\r\n\r\nM4 Model: Valve\r\nM4 Skin: Valve\r\nSkin Edits: McButterpants\r\nModel Re-origins: McButterpants\r\nM4 to AUG compile: McButterpants\r\n\r\n//Scope//\r\nScope Model: STOKE!\r\nScope Skin: STOKE!\r\nCompile and Hack: skladfin, Syco*\r\n\r\n//Flashlight//\r\nHacked model: InBlew\r\nLam: T-R-O-N",
+  "files": [
+    {
+      "_idRow": 266941,
+      "_sFile": "m4_accessories_pack.rar",
+      "_nFilesize": 1388994,
+      "_tsDateAdded": 1150221188,
+      "_nDownloadCount": 7182,
+      "_sDownloadUrl": "https://gamebanana.com/dl/266941",
+      "_sMd5Checksum": "9d8968ae45ec6822a133498a0d9bdd00",
+      "_sAnalysisState": "done",
+      "_sAnalysisResult": "ok",
+      "_sAnalysisResultVerbose": "File passed preliminary analysis",
+      "_sAvState": "done",
+      "_sAvResult": "clean",
+      "_bIsArchived": false,
+      "_bHasContents": true,
+      "_aModManagerIntegrations": [
+        {
+          "_sIconClasses": "ModboyIcon",
+          "_idToolRow": 6321,
+          "_aGameRowIds": [
+            4254,
+            2,
+            4660,
+            4,
+            34,
+            262,
+            263,
+            6651,
+            312,
+            9,
+            5,
+            249,
+            292,
+            222,
+            3456,
+            296,
+            4537,
+            297,
+            5418,
+            3370,
+            5306,
+            4214,
+            10,
+            5237,
+            73,
+            66,
+            124,
+            157,
+            150,
+            5531,
+            5694,
+            1843,
+            6,
+            6137,
+            6131,
+            2929,
+            6705,
+            8679,
+            7553
+          ],
+          "_sModManagerAlias": "Modboy",
+          "_sInstallerName": "Modboy",
+          "_idSubmitterRow": 142413,
+          "_sInstallerUrl": "https://gamebanana.com/tools/6321",
+          "_sIconUrl": "https://images.gamebanana.com/img/ico/tools/60b4e38695538.png",
+          "_sDownloadUrl": "modboy://Mod,217436,266941"
+        }
+      ]
+    }
+  ],
+  "retrieved": "2026-10-08",
+  "download": {
+    "id": 217436,
+    "name": "M4 Accessories Pack (M4 & AUG)",
+    "archive": "downloads\\217436-m4_accessories_pack.rar",
+    "sha256": "192f4aeca6973cec01852adbd2286c91f81d4e3af60b33014387ee86c413f698",
+    "bytes": 1388994,
+    "models": [
+      "extracted\\217436\\models\\weapons\\v_rif_aug.mdl",
+      "extracted\\217436\\models\\weapons\\v_rif_m4a1.mdl"
+    ]
+  }
+}
