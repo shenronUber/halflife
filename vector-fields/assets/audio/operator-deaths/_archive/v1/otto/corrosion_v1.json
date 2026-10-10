@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "actor": "otto",
+  "cause": "corrosion",
+  "text": "[screaming] Aaaagh! [choking] Ghrgh... [exhales] Hhh...",
+  "request": {
+    "text": "[screaming] Aaaagh! [choking] Ghrgh... [exhales] Hhh...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "52d5051e60a0a5e78cc073304a69e8007cd7c15158efc71429048b3bb8ec0a45",
+  "sha256": "aec30363a651eb28e044a76636ee7308eebd96bde2643082c0e5594745b51d1f",
+  "request_id": "S1fm200BDi8MtuwZZDph"
+}

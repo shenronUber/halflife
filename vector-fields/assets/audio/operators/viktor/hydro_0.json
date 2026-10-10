@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "hydro",
+  "variant": 0,
+  "text": "[annoyed] Мокрый. Now I am soaked.",
+  "request": {
+    "text": "[annoyed] Мокрый. Now I am soaked.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "0c5309d0d117adb7e0e5cdbb690bcbce523996a46063591996211a64a0188c07",
+  "sha256": "22f337d5b73e02f7ccea95fde88915afe3b6010fc99b78ef2bb0a2ded683b923",
+  "request_id": "PXA74EcYVLIzBRzkTd85",
+  "reported_credit_cost": "4"
+}

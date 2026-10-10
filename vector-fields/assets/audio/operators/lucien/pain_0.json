@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "pain",
+  "variant": 0,
+  "text": "[pained] Ah! Putain!",
+  "request": {
+    "text": "[pained] Ah! Putain!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "587bcc5bb96d03005312a7a9da661da47fcd862f46c2bbef9df2ecc990675327",
+  "sha256": "4b8e8b109b782d67b017d7078152b4d090435b5d943acbb780c96c495a9a86a7",
+  "request_id": "d70m9fcE40MY3fJNH8xQ",
+  "reported_credit_cost": "2"
+}

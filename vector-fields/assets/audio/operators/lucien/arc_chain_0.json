@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "arc_chain",
+  "variant": 0,
+  "text": "[pained] Soaked and electrocuted. Très mauvais.",
+  "request": {
+    "text": "[pained] Soaked and electrocuted. Très mauvais.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "b0a7c50454aaa5c0132b45fa93e78d6a9c94a3c78aa016dff795c16fffe89ae9",
+  "sha256": "89fe8a828fe1d4fca48a521e3995cf8630259c990d8e7ac759db76dd1bce77d3",
+  "request_id": "yVLS4Y7aeR5XU31CK520",
+  "reported_credit_cost": "5"
+}

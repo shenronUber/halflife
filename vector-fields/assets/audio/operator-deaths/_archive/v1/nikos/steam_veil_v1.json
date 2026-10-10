@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "actor": "nikos",
+  "cause": "steam_veil",
+  "text": "[gasping] Hah! [coughing] Khh! [choking] Ghrr... [wheezing] Hhh...",
+  "request": {
+    "text": "[gasping] Hah! [coughing] Khh! [choking] Ghrr... [wheezing] Hhh...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "84674e0899a9202394d1ca975efe151d96884e4399c3f8f8bf06484d7cefe91d",
+  "sha256": "c3ce08361123e7e6a3fc2ec58ee95fc4884ce377a3fe789c436ada149e86fd60",
+  "request_id": "9P0jocxHzpp7C8EGFYnc"
+}

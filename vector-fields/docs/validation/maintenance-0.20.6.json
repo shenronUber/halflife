@@ -1,0 +1,277 @@
+{
+  "version": "0.20.6",
+  "baseline": "0.20.5",
+  "verified_at_utc": "2026-10-09T15:40:13.229330+00:00",
+  "passed": true,
+  "unit_tests": 37,
+  "cpp": {
+    "loadout_checks": 1896,
+    "architecture_checks": 2486,
+    "effect_checks": 10601,
+    "voice_and_combat_policies": "passed"
+  },
+  "assets_tests": 10,
+  "native_tests": 5,
+  "multiplayer_tests": 4,
+  "baseline_files_unchanged": 76,
+  "baseline_hashes": {
+    "vector-fields\\generated\\r01\\r01_ammo_a.mdl": "75cf015cc1d90d8fbe49dd361fa3a20f8dcd883c1eeb01f29a1fee1b1501f430",
+    "vector-fields\\generated\\r01\\r01_ammo_b.mdl": "32bfb3ed3d63bef05460e383e4dd7f794383b1b82ef93a7b1c4a441cb07c0856",
+    "vector-fields\\generated\\r01\\r01_ammo_c.mdl": "bed9a91f518bbea71efcaacbdc8628f0ceec358fb8cf6ad725da8aecd4bcba16",
+    "vector-fields\\generated\\r01\\r01_ammo_d.mdl": "98b84a5a7cc907c0fec0adafffb27345987acdcf8a4b6af7d052b62286566c10",
+    "vector-fields\\generated\\r01\\r01_barrel_a.mdl": "226ecc704052e1400e80a853c21527f907882e8e28fbfd88f8b5f00f86c1e7a8",
+    "vector-fields\\generated\\r01\\r01_barrel_b.mdl": "54ba63bba78eedf3a75acb0fc7f3a4eeef00e81a58e558c827b6fdebf77aef87",
+    "vector-fields\\generated\\r01\\r01_barrel_c.mdl": "46d09dc93f95a01ce6e0d8ce87b765866b0f729b29ad6f66b08a73e190206427",
+    "vector-fields\\generated\\r01\\r01_barrel_d.mdl": "e7419a0f42ad9119f299458cbda0f4d391a0a9b4732f81f95205870b0f7db368",
+    "vector-fields\\generated\\r01\\r01_chamber_a.mdl": "4e617b66079725a11c1359a7a2a31b2a3e1c05aa70c51c8e6084d5643893eaca",
+    "vector-fields\\generated\\r01\\r01_chamber_b.mdl": "9171654853a251fd25d7f6ffa6f9728656a56c061eb8de0f68fc5decd29791d0",
+    "vector-fields\\generated\\r01\\r01_chamber_c.mdl": "4713dc1f70407a8702d6a1242cff084375af320fa5371471e64b76e1f6b6bcf2",
+    "vector-fields\\generated\\r01\\r01_chamber_d.mdl": "f54e90df74b919fe01fbadc264559b70f9296abb286f3ce37359bdd1e997b7d7",
+    "vector-fields\\generated\\r01\\r01_chamber_diesel.mdl": "5b5608f46d70845e048702aa938d186ab44dfecba11163ad23a7ca90f5bead31",
+    "vector-fields\\generated\\r01\\r01_chamber_inventor.mdl": "1b42ebf76cc3b774e5a1672ca0fb70750d315e28e7561d064479c47d6a2e036a",
+    "vector-fields\\generated\\r01\\r01_cooling_a.mdl": "ddc10cb1e53dfe4188efde4784539ad333bab3bcd65ddb75f566377d2b4e5d00",
+    "vector-fields\\generated\\r01\\r01_cooling_b.mdl": "f888ec532844806a902fd81181e9be587e4638439d0e3d74669145be76d971ec",
+    "vector-fields\\generated\\r01\\r01_cooling_c.mdl": "7b96cb71f403c07536832ba0fab2f1a5043788d815d585f6f6660f227cabf7a2",
+    "vector-fields\\generated\\r01\\r01_cooling_d.mdl": "78af7795e119c7f8b5070c8b3bde8d6c344dad7a9d6ca57bdda7eab412f53f69",
+    "vector-fields\\generated\\r01\\r01_cooling_diesel.mdl": "b2a7f3088e52963071d76310e952c0b3f7125e7d190110dd8db0205891cae0ec",
+    "vector-fields\\generated\\r01\\r01_cooling_inventor.mdl": "2ed68fa5b10e2c42b8a56e2df3b403e7f29b0a9138948cc95ae7de71129abce6",
+    "vector-fields\\generated\\r01\\r01_feed_a.mdl": "b665bddf10ce624da55ed3b443d5fde97f643b495e75b7f41229fc9c6e9e808b",
+    "vector-fields\\generated\\r01\\r01_feed_b.mdl": "2e2038c32d91e6c1ee89e74bc6dcf7a6a036c14b36d63584f7936f5d26aa8754",
+    "vector-fields\\generated\\r01\\r01_feed_c.mdl": "28a2cb8831aeef634866af2bef7f611099191545f49f5832e634f3621f7cf95b",
+    "vector-fields\\generated\\r01\\r01_feed_d.mdl": "0d502fcc3af33e46e4df69bb56180089f76f3e84c68f4711c1bc4724ff590fa0",
+    "vector-fields\\generated\\r01\\r01_fp_gloves.mdl": "4e142061df6979dc7db6d54308326d0844056f8257063a06e7bc434674ec20e9",
+    "vector-fields\\generated\\r01\\r01_fp_sleeves.mdl": "48ee39619a2db7eb3174baf3f18971b7c2d461696ab49a97212a7b1fbc9ed507",
+    "vector-fields\\generated\\r01\\r01_grip_a.mdl": "79cd333560b5ada90ac01e1de8eb12b80c7b8f36746283321cbf5b736f5ffca4",
+    "vector-fields\\generated\\r01\\r01_grip_b.mdl": "9596267f5af3aaed899631f0428a7f7a358737357384b471226c2e74fecd8df0",
+    "vector-fields\\generated\\r01\\r01_grip_c.mdl": "4079626ab847b2f81fed3a65fd00a1d6a15d8ff52a1af5f71ffe3619e51cce1b",
+    "vector-fields\\generated\\r01\\r01_grip_d.mdl": "218c01370418b345bc8601cd93c88c56b463b390d88da339234c51b6e3dd6f74",
+    "vector-fields\\generated\\r01\\r01_muzzle_a.mdl": "c6554216fe76e73e0eef3bb8c02e4207d5091e73cbc9440471435f0fbdb3265a",
+    "vector-fields\\generated\\r01\\r01_muzzle_b.mdl": "38aaa33666b9f6150ffed603bda44882ebad0aaf149387d98cf7410fefeca5a0",
+    "vector-fields\\generated\\r01\\r01_muzzle_c.mdl": "c27180c181787a55e817ecfc5d5d46b161132d2f6957d33cd4e698ab1940df7d",
+    "vector-fields\\generated\\r01\\r01_muzzle_d.mdl": "880e9610a861b7328cb3777d609b53cb943a2b4dce896fdd40faa7dfb803601e",
+    "vector-fields\\generated\\r01\\r01_optic_a.mdl": "7dfd55c5dbe1d1035d421ffc3c3463e6292e51ad372856b67b75617e9c2e1f72",
+    "vector-fields\\generated\\r01\\r01_optic_b.mdl": "52ce6779a8834825d38ddbfcda02f92c065df1d03c77c559dbabc9c2cbaf4c39",
+    "vector-fields\\generated\\r01\\r01_optic_c.mdl": "b0eee2be2c80dc3b3c1aa70664d643df2811afe3a52cd97891cc2ad034a663ea",
+    "vector-fields\\generated\\r01\\r01_optic_d.mdl": "dd9867f162587d4605a6af0ad119cdc682e35738a508be9454cdbf9c5d07e3ff",
+    "vector-fields\\generated\\r01\\r01_optic_diesel.mdl": "c6e371f653575d341f5fe2585f4cffcc09cdcf5ff173ee78f45aa984b6356f63",
+    "vector-fields\\generated\\r01\\r01_optic_inventor.mdl": "cfab7407294d436e20b525deeaaf2ea0ebc9cf64d215d5167e70b6f8ae10a303",
+    "vector-fields\\generated\\r01\\r01_power_a.mdl": "f115ad360b3648f49e3bf53ba71d870715e1c336439945112b1eac9b82ce2532",
+    "vector-fields\\generated\\r01\\r01_power_b.mdl": "c9657d5315e83e3b065e9dafa4cf8b0ce4837efadb71c73da031148c0d1f8b37",
+    "vector-fields\\generated\\r01\\r01_power_c.mdl": "95a5415dbe5c58e5a06ec4cb16e80291f2d6127c6e0ec81c427995734e7e51c3",
+    "vector-fields\\generated\\r01\\r01_power_d.mdl": "d9598b0fb038571a08fb28bf1972adb37611f7ae0ebcf58488c9bea8b9d0ce9d",
+    "vector-fields\\generated\\r01\\r01_power_diesel.mdl": "483f57ff60ddc3d72c6b217bae6df1a802c404a51467a5e2540defa4b391b84e",
+    "vector-fields\\generated\\r01\\r01_power_inventor.mdl": "46cb965783ca8123274ba5b7e79bf53d5b9842ab985616a415a3d5eb610759b2",
+    "vector-fields\\generated\\r01\\r01_projectile_a.mdl": "e5a5d075b3fdbe6e8c1ce0a1a6027b775af53887b1da6760068de54c62a9c878",
+    "vector-fields\\generated\\r01\\r01_projectile_b.mdl": "53f2f98cdc952f5c641c2dbb0f284878966d14163290fab20af110de4513e937",
+    "vector-fields\\generated\\r01\\r01_projectile_c.mdl": "a00c6c0f60571a5612a690e91ae22e2ea645ee5b5bb2d5b551a44873b3d528dd",
+    "vector-fields\\generated\\r01\\r01_projectile_d.mdl": "00ee6b3999b6061abe117482147ccdc7eb42c456e44a873ed704dd2218f07a10",
+    "vector-fields\\generated\\r01\\r01_receiver_a.mdl": "454a37fe2329075fe1d9ade5f4380a45a6e494fb511e98c8fd24f18bb0edcb09",
+    "vector-fields\\generated\\r01\\r01_receiver_arch.mdl": "824145f7347dff1c604d561f6c5ff0066bb006b845439efddaa4a0e1b1c9c54e",
+    "vector-fields\\generated\\r01\\r01_receiver_arch_top.mdl": "3930eb664f2e16445ab501e7b810bca58c93b2f8fc671fd76d118b29d67cfac0",
+    "vector-fields\\generated\\r01\\r01_receiver_b.mdl": "bf63603b60e96758de9e190c86d5bd8b60302a5559b3b6a48a82814449b318b8",
+    "vector-fields\\generated\\r01\\r01_receiver_c.mdl": "73450268309ddbc46b513bb4768b2a3eea196328b1cfa2a1008a14a9ff65f6ec",
+    "vector-fields\\generated\\r01\\r01_receiver_d.mdl": "c99663113cb299f855b7ac6827962f9b2d22bfb68b680d8416b7ac55ea6086bf",
+    "vector-fields\\generated\\r01\\r01_receiver_gyre.mdl": "87f35e7bd2f0f0e3ecade350777375ace641978d728efb1acdee1033636feb23",
+    "vector-fields\\generated\\r01\\r01_receiver_side.mdl": "c9c5ac055beb18cc6f832394dd2725e3b66f19caed2915e8b9699f3de18638ce",
+    "vector-fields\\generated\\r01\\r01_receiver_top.mdl": "896ada46d98833fb4e553a06b777655ca2deabda39483b87016e9f29959b5dc7",
+    "vector-fields\\generated\\r01\\r01_rig.mdl": "2e25aab7f27a0930fa0700b45fdbfb6e03eae8b8f65fd66d4fe2016adeca413a",
+    "vector-fields\\generated\\r01\\r01_rig_fg.mdl": "77ccff428164cd7051e8ae765392be9bc217c6f154fb2ccd125220c81b0b72d3",
+    "vector-fields\\generated\\r01\\r01_rig_side.mdl": "02430543ed085b099da803e6012c6024c77d2fe36b4de3121c00e9653abecb53",
+    "vector-fields\\generated\\r01\\r01_rig_side_fg.mdl": "34cd89946c2b061fa0d78092f2de6f419bd23a5467c1064c5d9f69a72801bd1b",
+    "vector-fields\\generated\\r01\\r01_rig_top.mdl": "979328b5d7b63bfbf5a1631f5b6e11ca5f10165f2e14c5b02fca2f1bc0c8225c",
+    "vector-fields\\generated\\r01\\r01_rig_top_fg.mdl": "7dc66977d0b1ca98dc0556cbe313f4583709dc3f5f407e8a8ff6a0563cd700da",
+    "vector-fields\\generated\\r01\\r01_underbarrel_a.mdl": "56cdedef9fb1a19a456c7b5435827ca3944653564c2b9b1c4a3163dc79b45730",
+    "vector-fields\\generated\\r01\\r01_underbarrel_b.mdl": "e286c89cc0cfb7fd1b19d07d54d1aead99e8706c646bebdd89a9a86a90d56360",
+    "vector-fields\\generated\\r01\\r01_underbarrel_c.mdl": "0671c888976df663d9e7ed042d2d672bfd680e90618d5e2425d591b4fa25392c",
+    "vector-fields\\generated\\r01\\r01_underbarrel_d.mdl": "18dd89ea4a9bcd6da36f8ee13d57302dc09385a609aa93aacdb0dbbad7d21e61",
+    "vector-fields\\generated\\personas\\persona_rig.mdl": "63f06713d3c60f521ee0199c6ee79df5de26c0b454d869aea5fa4ce0711ad3a7",
+    "vector-fields\\generated\\personas\\persona_scout.mdl": "149539b887b4f4b7dff168b264493d0b0248094fd6fd8326ad06e813940306b1",
+    "vector-fields\\generated\\third-person\\r01_tp.mdl": "320bb04e195d17a955a36d4b0ec69ebcd535e13a452300f2a143649988b19bd2",
+    "vector-fields\\generated\\third-person\\r01_tp_side.mdl": "653e554cdd4f85a51e48771ea49a9a833cd5d8ea06769745000ca7da1a41b501",
+    "vector-fields\\generated\\third-person\\r01_tp_top.mdl": "86b23476956c5df835d980986cb76fa31798738d6e6a1907d5710053471c463b",
+    "vector-fields\\data\\equipment.txt": "b7c590ddd9fd8a5706c575e67a6e0663de10ca5628d3b774b0bd2552adddd79a",
+    "vector-fields\\data\\r01_styles.txt": "1cf8adcccc727bde15e0eb80af17eab499cafa70a209e646b0c3ead92fb521a4"
+  },
+  "deployed": {
+    "files": 168,
+    "models": 74
+  },
+  "dlls": {
+    "client": "27004e551c4ab4534af3b22b6b210b8838452743d5c7da10c081f7e8c6f9fc05",
+    "server": "9ae2b2356f46c4a04aa4407c6634c38055c3a869d8183abc8f48e70bd09135bd"
+  },
+  "incremental": {
+    "models": 74,
+    "modified": [],
+    "seconds": 2.0
+  },
+  "validation": {
+    "unit_assets": {
+      "suites": [
+        "unit",
+        "assets"
+      ],
+      "passed": true,
+      "results": [
+        {
+          "suite": "unit",
+          "test": "validate.py",
+          "passed": true,
+          "seconds": 1.25
+        },
+        {
+          "suite": "unit",
+          "test": "model_contract.py",
+          "passed": true,
+          "seconds": 0.06
+        },
+        {
+          "suite": "unit",
+          "test": "contract_documentation.py",
+          "passed": true,
+          "seconds": 0.08
+        },
+        {
+          "suite": "unit",
+          "test": "tests/status_renderer_update_test.py",
+          "passed": true,
+          "seconds": 0.14
+        },
+        {
+          "suite": "assets",
+          "test": "tests/model_contract_assets_test.py",
+          "passed": true,
+          "seconds": 0.22
+        },
+        {
+          "suite": "assets",
+          "test": "tests/first_person_test.py",
+          "passed": true,
+          "seconds": 1.53
+        },
+        {
+          "suite": "assets",
+          "test": "tests/operator_rig_test.py",
+          "passed": true,
+          "seconds": 0.77
+        },
+        {
+          "suite": "assets",
+          "test": "tests/reference_extensions_test.py",
+          "passed": true,
+          "seconds": 11.62
+        },
+        {
+          "suite": "assets",
+          "test": "tests/reference_chassis_test.py",
+          "passed": true,
+          "seconds": 5.83
+        },
+        {
+          "suite": "assets",
+          "test": "tests/reference_themes_test.py",
+          "passed": true,
+          "seconds": 4.28
+        },
+        {
+          "suite": "assets",
+          "test": "tests/reference_platform_test.py",
+          "passed": true,
+          "seconds": 15.47
+        },
+        {
+          "suite": "assets",
+          "test": "tests/foregrip_assets_test.py",
+          "passed": true,
+          "seconds": 3.17
+        },
+        {
+          "suite": "assets",
+          "test": "tests/third_person_assets_test.py",
+          "passed": true,
+          "seconds": 4.41
+        },
+        {
+          "suite": "assets",
+          "test": "tests/weapon_fx_test.py",
+          "passed": true,
+          "seconds": 0.3
+        }
+      ]
+    },
+    "native": {
+      "suites": [
+        "native"
+      ],
+      "passed": true,
+      "results": [
+        {
+          "suite": "native",
+          "test": "tests/current_release_test.py",
+          "passed": true,
+          "seconds": 11.78
+        },
+        {
+          "suite": "native",
+          "test": "tests/architecture_engine_test.py",
+          "passed": true,
+          "seconds": 12.89
+        },
+        {
+          "suite": "native",
+          "test": "tests/inventory_engine_test.py",
+          "passed": true,
+          "seconds": 50.56
+        },
+        {
+          "suite": "native",
+          "test": "tests/reference_platform_test.py",
+          "passed": true,
+          "seconds": 88.41
+        },
+        {
+          "suite": "native",
+          "test": "tests/foregrip_native_test.py",
+          "passed": true,
+          "seconds": 26.77
+        }
+      ]
+    },
+    "multiplayer": {
+      "suites": [
+        "multiplayer"
+      ],
+      "passed": true,
+      "results": [
+        {
+          "suite": "multiplayer",
+          "test": "tests/third_person_native_test.py",
+          "passed": true,
+          "seconds": 45.62
+        },
+        {
+          "suite": "multiplayer",
+          "test": "tests/r01_styles_multiplayer_test.py",
+          "passed": true,
+          "seconds": 55.12
+        },
+        {
+          "suite": "multiplayer",
+          "test": "tests/weapon_fx_multiplayer_test.py",
+          "passed": true,
+          "seconds": 25.78
+        },
+        {
+          "suite": "multiplayer",
+          "test": "tests/status_voice_multiplayer_test.py",
+          "passed": true,
+          "seconds": 71.59
+        }
+      ]
+    }
+  },
+  "limits": [
+    "network scenarios use a local dedicated server and two native clients",
+    "native captures and pairwise assemblies are not exhaustive artistic review of all complete builds"
+  ]
+}

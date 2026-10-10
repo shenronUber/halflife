@@ -1,0 +1,28 @@
+Use case: style-transfer.
+Asset type: production diffuse material atlas for the modular low-poly game weapon Relais R-01.
+Input image 1 is the exact edit target and functional tile layout reference. Restyle the materials to the requested theme; preserve the exact sixteen material roles and feature centers.
+ONE opaque square image, edge-to-edge exact 4x4 grid of sixteen equal square tiles, with boundaries at 25%, 50%, 75%. Flat orthographic diffuse textures, readable after each tile is reduced to 256 pixels, restrained hand-painted late-1990s game asset style. Each material fills its entire tile. No outside border, gaps, gutters, captions, tile numbers, complete weapon, perspective object renders, scenery, cast shadows, watermark or logos.
+Important reuse constraints: t00, t02 and t05 must be mostly plain seamless repeatable materials, no centered symbol, perimeter frame, border wear, fasteners or object drawing. They wrap long curved beams, rings and cylinders. Reserve diagrams and decoration for the small functional panels t01/t03/t08/t09/t10. No readable text, numerals, alphabet, signatures or arrows anywhere. t15 must also repeat cleanly with simple vertical recesses, no unique label. Low contrast fine material grain with clear differences between material categories. Keep the lens perfectly centered in t11 and clear enough to see the environment through it in the game.
+Tile numbers below are ZERO-BASED and must not be written on the atlas. Order is left to right, top to bottom.
+Theme: DIESELPUNK / INTERWAR HEAVY MACHINE WORKSHOP. Distinct graphite blackened steel, desaturated petrol-blue enamel, worn warm cream paint, aged copper, deep oxblood bakelite, ribbed black rubber, amber instrument glass and sparse ochre safety markings. Oil-darkened joints, fine machining and restrained wear, robust precision machinery. Subtle streamlined Art Deco panel geometry. No steampunk scrollwork, excessive rust, futuristic neon, military insignia, letters or numbers.
+Row 1:
+t00 mostly plain graphite blackened engine steel with subtle fine oil-dark grain and fine scratches, seamless.
+t01 petrol-blue enamel access panel with four broad slotted screws and subtle stepped Art Deco inset frame, modest cream pinline.
+t02 mostly plain desaturated petrol-blue industrial enamel over steel with sparse fine chips, seamlessly repeatable, no frame or screws.
+t03 warm ivory enamel instrument/service insert with a small centered abstract mechanical calibration tick motif, NO writing, charcoal stepped frame.
+Row 2:
+t04 dark oxblood molded bakelite grip with vertical ribs and finely pebbled black rubber channels.
+t05 mostly plain satin nickel/chromed steel, soft horizontal machining, subdued reflections, seamless.
+t06 six heavy horizontal radiator louvers recessed into oily black steel, cream enamel corners and broad fasteners.
+t07 close horizontal oxidized copper cooling windings with two narrow graphite retaining strips.
+Row 3:
+t08 ochre enamel pressure-cell face, small centered circular fastener or embossed stepped lozenge, black riveted perimeter, no letters or warning pictogram.
+t09 petrol-blue steel reservoir face, thin warm amber four-segment level window down right, graphite fittings and small cream accent.
+t10 black bakelite instrument panel with centered horizontal inset containing four warm amber status panes, nickel border, no lettering.
+t11 perfectly centered clear pale smoke-amber circular optic glass inside concentric black steel and nickel rings; glass stays transparent-looking and luminous, no opaque symbols.
+Row 4:
+t12 central narrow diagonal ochre-and-black safety band across dark steel, minimal surrounding detail.
+t13 four charcoal ceramic insulation squares with a copper-colored cross gasket seam.
+t14 graphite and petrol-blue magazine side plate, three long horizontal stamped channels, three brass-ring inspection holes down right.
+t15 repeating narrow vertical recessed black steel bolt grooves with sparse nickel wear, no text, arrows or unique frame.
+Strong industrial petrol/ivory/black color grouping with copper accents, more refined heavy-engine character than generic military olive.

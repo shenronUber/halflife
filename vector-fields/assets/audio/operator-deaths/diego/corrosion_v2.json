@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "actor": "diego",
+  "cause": "corrosion",
+  "text": "[raspy][screaming] GRAAAGH!",
+  "request": {
+    "text": "[raspy][screaming] GRAAAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "b106c90a123be8d5ac6350b2bd73f6b75a646cb7d64a68b2e85cc9f9295071f8",
+  "sha256": "edc0233a74c5c0b35eb452aa139dbef1fe2ffa2fcb013724d2c1bb076a1d0332",
+  "request_id": "RbZIP6lhfet0XZCrhn0A"
+}

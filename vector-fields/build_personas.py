@@ -1,5 +1,5 @@
 """Compile authored character textures on one five-zone Counter-Strike-derived mesh."""
-import argparse,hashlib,json,shutil,collections,re
+import argparse,hashlib,json,shutil,collections,re,struct,itertools
 from scipy.spatial.transform import Rotation
 import numpy as np
 import build_skins as geometry
@@ -7,6 +7,7 @@ from pathlib import Path
 from PIL import Image
 from build_modular import compile_model
 from studio_assets import Studio,canonical
+import build_cache
 ROOT=Path(__file__).resolve().parent
 ASSETS=ROOT/'assets/personas';OUT=ROOT/'generated/personas';CATALOG=ROOT/'generated/visual_skins'
 
@@ -17,7 +18,7 @@ def input_hash(config):
  paths=[Path(__file__),ASSETS/'personas.json',ASSETS/config['reference'],Path(donor(config)['path'])]
  paths += [ASSETS/t['id']/'texture-atlas.png'for t in config['themes']]
  paths += [ROOT/'generated/modular/vf_operator.qc',ROOT/'build_skins.py']+sorted((ROOT/'generated/tfc-soldier').glob('*.smd'))
- return hashlib.sha256(b''.join(p.read_bytes()for p in paths)).hexdigest()
+ return build_cache.fingerprint(paths+[CATALOG/'cs-skins.json']+build_cache.compiler_inputs())
 
 def fitted_skeleton(source):
  import build_modular as base
@@ -34,6 +35,22 @@ def fitted_skeleton(source):
   header.append(str(b)+' '+' '.join(f'{v:.8f}'for v in values))
  header.append('end')
  return header,fitted,local,oldlocal
+
+def fitted_hitboxes(source,bind):
+ # Preserve the donor's anatomical hit groups in the fitted bone coordinates.
+ count,offset=struct.unpack_from('<ii',source.data,156);rows=[]
+ for i in range(count):
+  bone,group,*bounds=struct.unpack_from('<ii6f',source.data,offset+32*i)
+  # The CS donor contains a left-hand shield volume, without a shield mesh.
+  # Keep only anatomical groups; an actual future shield needs its own geometry.
+  if group==8:continue
+  ancestor=bone
+  while canonical(source.names[ancestor])not in geometry.TARGET and source.parents[ancestor]>=0:ancestor=source.parents[ancestor]
+  target=geometry.TARGET[canonical(source.names[ancestor])]
+  matrix=np.linalg.inv(bind[target])@source.bind[bone]
+  corners=np.array([(matrix@np.r_[p,1])[:3] for p in itertools.product(*zip(bounds[:3],bounds[3:]))])
+  rows.append(f'$hbox {group} "{geometry.NODES[target]}" '+' '.join(f'{v:.8f}'for v in [*corners.min(0),*corners.max(0)]))
+ return rows
 
 def build_fitted_rig(config):
  from build_modular import write_smd
@@ -62,7 +79,12 @@ def build_fitted_rig(config):
  qc=(ROOT/'generated/modular/vf_operator.qc').read_text()
  qc=qc.replace('vf_operator.mdl','persona_rig.mdl')
  qc=re.sub(r'\$bodygroup\s+\w+\s*\{.*?\}', '',qc,flags=re.S)
- qc+='\n$body rig "persona_anchors"\n'
+ qc=re.sub(r'^\$hbox .*$', '',qc,flags=re.M)
+ qc+='\n'+'\n'.join(fitted_hitboxes(source,bind))+'\n'
+ # The renderer hides the carrier. Keep a complete fallback for corpses.
+ zones,_=tailored_mesh(config)
+ write_smd(OUT/'persona_body.smd',header,geometry.smd_tri([t for zone in zones for t in zone]))
+ qc+='\n$body rig "persona_anchors"\n$body body "persona_body"\n'
  path=OUT/'persona_rig.qc';path.write_text(qc);compile_model(path)
  rig=Studio(path.with_suffix('.mdl'));oldrig=Studio(ROOT/'generated/modular/vf_operator.mdl')
  assert rig.sequences==oldrig.sequences
@@ -98,7 +120,7 @@ def build(ensure=False):
  manifest=OUT/'manifest.json';model=config['model'];catalog=CATALOG/'skins.txt'
  if ensure and manifest.exists():
   old=json.loads(manifest.read_text())
-  if old.get('inputs_sha256')==digest and (CATALOG/(model+'.mdl')).exists()and (CATALOG/'persona_rig.mdl').exists():
+  if build_cache.current(old.get('build_cache'),digest):
    keys={x.split('|')[1]for x in catalog.read_text().splitlines()if x}
    if 'persona_gign'in keys and all(t['key']in keys for t in old['themes']):print('Character texture families are current.');return old
  OUT.mkdir(parents=True,exist_ok=True)
@@ -137,7 +159,9 @@ def build(ensure=False):
  shutil.copy2(compiled,CATALOG/compiled.name)
  shutil.copy2(OUT/'persona_rig.mdl',CATALOG/'persona_rig.mdl')
  record=dict(inputs_sha256=digest,base_skin=config['base_skin'],base_model=f'cs_skin_{config["base_skin"]}',base_entry=baseid,model=model,skin_families=len(materials),zones=5,themes=themes,triangles=sum(len(studio.mesh({i:1 if i==z else 0 for i in range(5)}))for z in range(5)),bytes=compiled.stat().st_size,sha256=hashlib.sha256(compiled.read_bytes()).hexdigest(),tailoring=tailoring,rig=rig,limits=['Original GIGN shape; compatible animation rotations on fitted bone origins; newly authored textures','same silhouette for all themes','five zones fitted to the GIGN topology; other donor bodies can have mismatched boundaries','indexed diffuse textures, no PBR or geometry relief'])
- manifest.write_text(json.dumps(record,indent=2),encoding='utf-8')
+ outputs=[p for p in OUT.iterdir() if p.suffix in ('.mdl','.qc','.smd','.bmp')]+[CATALOG/(model+'.mdl'),CATALOG/'persona_rig.mdl']
+ record['build_cache']=build_cache.record(digest,outputs)
+ build_cache.write(manifest,record)
  print('Built',model,len(themes),'new appearances on one model;',len(lines),'catalog entries.')
  return record
 if __name__=='__main__':

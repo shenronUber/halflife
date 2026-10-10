@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "toxic_ignition",
+  "variant": 0,
+  "text": "[panicked] Poison is on fire. Чёрт!",
+  "request": {
+    "text": "[panicked] Poison is on fire. Чёрт!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "d2c095b583872f71c35c67c7710620dc10e1362f45ad41fbf5c120169b3a5fb2",
+  "sha256": "ae08087b843ae34be3299979ec8e41293237002fd25a3b52490fe0af4ef39015",
+  "request_id": "pxrb4UniLkpO4zhnYg2h",
+  "reported_credit_cost": "4"
+}

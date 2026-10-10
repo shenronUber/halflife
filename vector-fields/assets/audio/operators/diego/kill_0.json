@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "kill",
+  "variant": 0,
+  "text": "[laughing] Hasta luego!",
+  "request": {
+    "text": "[laughing] Hasta luego!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "42fc8fd93f463b001d2ed7b82b7b0581386177e55e25f5ec62b6d4b8cd6139a0",
+  "sha256": "10e2e052e629d2132ca9667c88be50c5f59630a19307a862c1344cb612eb3d14",
+  "request_id": "14hkYbdxoIvV3FqlVu61",
+  "reported_credit_cost": "3"
+}

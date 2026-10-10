@@ -1,0 +1,1555 @@
+================================================================================
+Xash3D FWGS 0.21 (-1, [], [], win32-i386)
+Game started at Oct09 2026 [19:15.37]
+================================================================================
+Console initialized.
+C:/Users/Mathieu/Documents/Half life Project/vector-fields/build/animation-native/test-room is working directory now
+Adding directory: F:/SteamLibrary/steamapps/common/Half-Life/
+Adding directory: ./
+execing vf_animation/vfs.cfg
+FS_AddGameHierarchy( valve )
+Adding directory: F:/SteamLibrary/steamapps/common/Half-Life/valve/
+Adding directory: valve/
+FS_AddGameHierarchy( vf_visual )
+Adding directory: F:/SteamLibrary/steamapps/common/Half-Life/vf_visual/
+Adding directory: vf_visual/
+FS_AddGameHierarchy( vf_animation )
+Adding directory: F:/SteamLibrary/steamapps/common/Half-Life/vf_animation/
+Adding directory: vf_animation_downloads/
+Adding directory: vf_animation/
+Adding directory: vf_animation/custom/
+Touch_Init()
+Dll loaded for game "Half-Life"
+execing skill.cfg
+execing video.cfg
+Loading renderer: gl -> ref_gl.dll
+execing opengl.cfg
+Trying safe opengl mode 0
+bpp 24
+Video: SDL
+Video driver: windows
+Window size: 1280x720 (real 1280x720)
+Window position: 320x180
+Window mode: windowed
+Window bordered: true
+Window resizable: true
+Window maximized: false
+Window display index: 0
+Window display mode: 1280x720@60
+
+GL_VENDOR: NVIDIA Corporation
+GL_RENDERER: NVIDIA GeForce GTX 980 Ti/PCIe/SSE2
+GL_VERSION: 4.6.0 NVIDIA 560.94
+GL_MAX_TEXTURE_SIZE: 16384
+GL_MAX_TEXTURE_UNITS_ARB: 4
+GL_MAX_CUBE_MAP_TEXTURE_SIZE_ARB: 16384
+GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT: 16.0
+GL_MAX_RECTANGLE_TEXTURE_SIZE: 16384
+GL_MAX_ARRAY_TEXTURE_LAYERS_EXT: 2048
+GL_MAX_TEXTURE_COORDS_ARB: 8
+GL_MAX_TEXTURE_IMAGE_UNITS_ARB: 32
+GL_MAX_VERTEX_UNIFORM_COMPONENTS_ARB: 4096
+GL_MAX_VERTEX_ATTRIBS_ARB: 16
+
+MODE: 1280x720
+
+Color 24 bits, Alpha 8 bits, Depth 24 bits, Stencil 8 bits
+UI_ApplyCustomColors: colors.lst not found
+AVI: Not supported
+Using SDL audio driver: directsound @ 44100 Hz
+Note: cl_dlls/client.dll uses SDL2 for mouse input
+execing valve.rc
+Warning: Unknown command "s_refgain"
+Warning: Unknown command "s_refdelay"
+Warning: Unknown command "s_occfactor"
+Warning: Unknown command "s_verbwet"
+Warning: Unknown command "s_distance"
+execing language.cfg
+Warning: Unknown command "sv_language"
+execing joystick.cfg
+execing controller.cfg
+execing autoexec.cfg
+execing lab_controls.cfg
+execing config.cfg
+execing userconfig.cfg
+execing lab_controls.cfg
+execing range_test.cfg
+Time to first frame: 1.209 seconds
+Spawn Server: vf_range
+
+GAME SKILL LEVEL:1
+VF skin catalog: 190 sources, five zones
+VFVoice precache: actors=6 clips=233
+VFRange target=0 entity=24 skin=13 actor=viktor model=models/vf_skins/persona_rig.mdl health=300
+VFRange target=1 entity=25 skin=3 actor=otto model=models/vf_skins/persona_rig.mdl health=300
+VFRange target=2 entity=26 skin=7 actor=nikos model=models/vf_skins/persona_rig.mdl health=300
+VFRange target=3 entity=27 skin=11 actor=nikos model=models/vf_skins/persona_rig.mdl health=300
+
+0 entities inhibited
+Game started
+level loaded at 0.67 sec
+Trying to connect with modern protocol
+LoadBackground: found steam background in base directory
+Localize_AddToDict( resource/mainui_english.txt ): couldn't open file. Some strings will not be localized!.
+Localize_AddToDict( resource/vf_animation_english.txt ): couldn't open file. Some strings will not be localized!.
+Reading config script file settings.scr
+Reading config script file user.scr
+Spooling demo header.
+
+BUILD -1 SERVER (0 CRC)
+Server #1
+Warning: unexpected end of sprites/hud.txt (257 should be 247)
+Unable to open commandmenu.txt
+Verifying and downloading resources...
+Setting up renderer...
+SKY:  desertrt, desertbk, desertlf, desertft, desertup, desertdn. done
+VFVoice assigned: player=1 actor=lucien
+Signon network traffic:  22.032 Kb from server, 199 bytes to server
+client connected at 0.68 sec
+Couldn't open file overviews/vf_range.txt. Using default values for overiew mode.
+Couldn't open file overviews/vf_range.txt. Using default values for overiew mode.
+VFAppearance state: player=1 mode=0
+VFR01 state: player=1 first=0 optic=0 feed=0
+VFState player=1 skins=182,182,182,182,182 weapon=0
+VFShot sync: player=1 code=0
+VFAppearance state: player=1 mode=0
+VFR01 state: player=1 first=0 optic=0 feed=0
+VFState player=1 skins=182,182,182,182,182 weapon=0
+VFShot sync: player=1 code=0
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFStatus received: player=1 developer=0 active=0
+VFSkin: result=0 ids=0,0,0,0,0
+Unknown command: VModEnable
+VFAppearance state: player=1 mode=0
+VFR01 state: player=1 first=0 optic=0 feed=0
+VFState player=1 skins=182,182,182,182,182 weapon=0
+VFShot sync: player=1 code=0
+VFAppearance state: player=1 mode=0
+VFR01 state: player=1 first=0 optic=0 feed=0
+VFState player=1 skins=182,182,182,182,182 weapon=0
+VFShot sync: player=1 code=0
+VFAppearance state: player=1 mode=0
+VFR01 state: player=1 first=0 optic=0 feed=0
+VFState player=1 skins=182,182,182,182,182 weapon=0
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFThirdPerson player=1 rig=models/vf_r01/r01_tp.mdl parts=17 scale=0.68 replace_carried=1
+VFVoice play: player=1 actor=lucien event=spawn clip=39 sample=vf_voices/lucien/spawn_0.wav
+VFVoice received: player=1 actor=lucien event=spawn clip=39 sample=vf_voices/lucien/spawn_0.wav
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange client target=0 entity=24 skin=13 health=300 alive=1
+VFRange client effect target=0 id=hydro hits=0 active=0
+VFRange client effect target=0 id=electro hits=0 active=0
+VFRange client effect target=0 id=cryo hits=0 active=0
+VFRange client effect target=0 id=thermal hits=0 active=0
+VFRange client effect target=0 id=toxic hits=0 active=0
+VFRange client effect target=0 id=corrosion hits=0 active=0
+VFRange client effect target=0 id=sonic hits=0 active=0
+VFRange client effect target=0 id=kinetic hits=0 active=0
+VFRange client target=1 entity=25 skin=3 health=300 alive=1
+VFRange client effect target=1 id=hydro hits=0 active=0
+VFRange client effect target=1 id=electro hits=0 active=0
+VFRange client effect target=1 id=cryo hits=0 active=0
+VFRange client effect target=1 id=thermal hits=0 active=0
+VFRange client effect target=1 id=toxic hits=0 active=0
+VFRange client effect target=1 id=corrosion hits=0 active=0
+VFRange client effect target=1 id=sonic hits=0 active=0
+VFRange client effect target=1 id=kinetic hits=0 active=0
+VFRange client target=2 entity=26 skin=7 health=300 alive=1
+VFRange client effect target=2 id=hydro hits=0 active=0
+VFRange client effect target=2 id=electro hits=0 active=0
+VFRange client effect target=2 id=cryo hits=0 active=0
+VFRange client effect target=2 id=thermal hits=0 active=0
+VFRange client effect target=2 id=toxic hits=0 active=0
+VFRange client effect target=2 id=corrosion hits=0 active=0
+VFRange client effect target=2 id=sonic hits=0 active=0
+VFRange client effect target=2 id=kinetic hits=0 active=0
+VFRange client target=3 entity=27 skin=11 health=300 alive=1
+VFRange client effect target=3 id=hydro hits=0 active=0
+VFRange client effect target=3 id=electro hits=0 active=0
+VFRange client effect target=3 id=cryo hits=0 active=0
+VFRange client effect target=3 id=thermal hits=0 active=0
+VFRange client effect target=3 id=toxic hits=0 active=0
+VFRange client effect target=3 id=corrosion hits=0 active=0
+VFRange client effect target=3 id=sonic hits=0 active=0
+VFRange client effect target=3 id=kinetic hits=0 active=0
+VFRange info target=0 entity=24 skin=13 actor=viktor health=300.0 alive=1
+VFRange effect target=0 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=1 entity=25 skin=3 actor=otto health=300.0 alive=1
+VFRange effect target=1 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=2 entity=26 skin=7 actor=nikos health=300.0 alive=1
+VFRange effect target=2 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=3 entity=27 skin=11 actor=nikos health=300.0 alive=1
+VFRange effect target=3 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=kinetic hits=0 active=0 remaining=0.00
+VFShot accepted: player=1 code=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFShot sync: player=1 code=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange voice entity=24 actor=viktor event=pain clip=124
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange voice received entity=24 actor=viktor event=pain
+FIVE_hydro 
+VFRange info target=0 entity=24 skin=13 actor=viktor health=275.0 alive=1
+VFRange effect target=0 id=hydro hits=5 active=0 remaining=0.00
+VFRange effect target=0 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=1 entity=25 skin=3 actor=otto health=300.0 alive=1
+VFRange effect target=1 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=2 entity=26 skin=7 actor=nikos health=300.0 alive=1
+VFRange effect target=2 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=3 entity=27 skin=11 actor=nikos health=300.0 alive=1
+VFRange effect target=3 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=kinetic hits=0 active=0 remaining=0.00
+VFProc target=0 entity=24 effect=hydro hits=6 window=3 duration=6
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange voice entity=24 actor=viktor event=hydro clip=131
+VFRange voice received entity=24 actor=viktor event=hydro
+PROC_hydro 
+VFRange client target=0 entity=24 skin=13 health=270 alive=1
+VFRange client effect target=0 id=hydro hits=0 active=1
+VFRange client effect target=0 id=electro hits=0 active=0
+VFRange client effect target=0 id=cryo hits=0 active=0
+VFRange client effect target=0 id=thermal hits=0 active=0
+VFRange client effect target=0 id=toxic hits=0 active=0
+VFRange client effect target=0 id=corrosion hits=0 active=0
+VFRange client effect target=0 id=sonic hits=0 active=0
+VFRange client effect target=0 id=kinetic hits=0 active=0
+VFRange client target=1 entity=25 skin=3 health=300 alive=1
+VFRange client effect target=1 id=hydro hits=0 active=0
+VFRange client effect target=1 id=electro hits=0 active=0
+VFRange client effect target=1 id=cryo hits=0 active=0
+VFRange client effect target=1 id=thermal hits=0 active=0
+VFRange client effect target=1 id=toxic hits=0 active=0
+VFRange client effect target=1 id=corrosion hits=0 active=0
+VFRange client effect target=1 id=sonic hits=0 active=0
+VFRange client effect target=1 id=kinetic hits=0 active=0
+VFRange client target=2 entity=26 skin=7 health=300 alive=1
+VFRange client effect target=2 id=hydro hits=0 active=0
+VFRange client effect target=2 id=electro hits=0 active=0
+VFRange client effect target=2 id=cryo hits=0 active=0
+VFRange client effect target=2 id=thermal hits=0 active=0
+VFRange client effect target=2 id=toxic hits=0 active=0
+VFRange client effect target=2 id=corrosion hits=0 active=0
+VFRange client effect target=2 id=sonic hits=0 active=0
+VFRange client effect target=2 id=kinetic hits=0 active=0
+VFRange client target=3 entity=27 skin=11 health=300 alive=1
+VFRange client effect target=3 id=hydro hits=0 active=0
+VFRange client effect target=3 id=electro hits=0 active=0
+VFRange client effect target=3 id=cryo hits=0 active=0
+VFRange client effect target=3 id=thermal hits=0 active=0
+VFRange client effect target=3 id=toxic hits=0 active=0
+VFRange client effect target=3 id=corrosion hits=0 active=0
+VFRange client effect target=3 id=sonic hits=0 active=0
+VFRange client effect target=3 id=kinetic hits=0 active=0
+VFRange info target=0 entity=24 skin=13 actor=viktor health=270.0 alive=1
+VFRange effect target=0 id=hydro hits=0 active=1 remaining=5.67
+VFRange effect target=0 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=1 entity=25 skin=3 actor=otto health=300.0 alive=1
+VFRange effect target=1 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=2 entity=26 skin=7 actor=nikos health=300.0 alive=1
+VFRange effect target=2 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=3 entity=27 skin=11 actor=nikos health=300.0 alive=1
+VFRange effect target=3 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=kinetic hits=0 active=0 remaining=0.00
+VFShot accepted: player=1 code=2
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFShot sync: player=1 code=2
+VFRange voice entity=25 actor=otto event=pain clip=162
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange voice received entity=25 actor=otto event=pain
+FIVE_electro 
+VFRange info target=0 entity=24 skin=13 actor=viktor health=270.0 alive=1
+VFRange effect target=0 id=hydro hits=0 active=1 remaining=5.18
+VFRange effect target=0 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=1 entity=25 skin=3 actor=otto health=275.0 alive=1
+VFRange effect target=1 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=electro hits=5 active=0 remaining=0.00
+VFRange effect target=1 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=2 entity=26 skin=7 actor=nikos health=300.0 alive=1
+VFRange effect target=2 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=3 entity=27 skin=11 actor=nikos health=300.0 alive=1
+VFRange effect target=3 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=kinetic hits=0 active=0 remaining=0.00
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFProc target=1 entity=25 effect=electro hits=6 window=3 duration=6
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange voice entity=25 actor=otto event=electro clip=174
+VFRange voice received entity=25 actor=otto event=electro
+PROC_electro 
+VFRange client target=0 entity=24 skin=13 health=270 alive=1
+VFRange client effect target=0 id=hydro hits=0 active=1
+VFRange client effect target=0 id=electro hits=0 active=0
+VFRange client effect target=0 id=cryo hits=0 active=0
+VFRange client effect target=0 id=thermal hits=0 active=0
+VFRange client effect target=0 id=toxic hits=0 active=0
+VFRange client effect target=0 id=corrosion hits=0 active=0
+VFRange client effect target=0 id=sonic hits=0 active=0
+VFRange client effect target=0 id=kinetic hits=0 active=0
+VFRange client target=1 entity=25 skin=3 health=270 alive=1
+VFRange client effect target=1 id=hydro hits=0 active=0
+VFRange client effect target=1 id=electro hits=0 active=1
+VFRange client effect target=1 id=cryo hits=0 active=0
+VFRange client effect target=1 id=thermal hits=0 active=0
+VFRange client effect target=1 id=toxic hits=0 active=0
+VFRange client effect target=1 id=corrosion hits=0 active=0
+VFRange client effect target=1 id=sonic hits=0 active=0
+VFRange client effect target=1 id=kinetic hits=0 active=0
+VFRange client target=2 entity=26 skin=7 health=300 alive=1
+VFRange client effect target=2 id=hydro hits=0 active=0
+VFRange client effect target=2 id=electro hits=0 active=0
+VFRange client effect target=2 id=cryo hits=0 active=0
+VFRange client effect target=2 id=thermal hits=0 active=0
+VFRange client effect target=2 id=toxic hits=0 active=0
+VFRange client effect target=2 id=corrosion hits=0 active=0
+VFRange client effect target=2 id=sonic hits=0 active=0
+VFRange client effect target=2 id=kinetic hits=0 active=0
+VFRange client target=3 entity=27 skin=11 health=300 alive=1
+VFRange client effect target=3 id=hydro hits=0 active=0
+VFRange client effect target=3 id=electro hits=0 active=0
+VFRange client effect target=3 id=cryo hits=0 active=0
+VFRange client effect target=3 id=thermal hits=0 active=0
+VFRange client effect target=3 id=toxic hits=0 active=0
+VFRange client effect target=3 id=corrosion hits=0 active=0
+VFRange client effect target=3 id=sonic hits=0 active=0
+VFRange client effect target=3 id=kinetic hits=0 active=0
+VFRange info target=0 entity=24 skin=13 actor=viktor health=270.0 alive=1
+VFRange effect target=0 id=hydro hits=0 active=1 remaining=4.78
+VFRange effect target=0 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=1 entity=25 skin=3 actor=otto health=270.0 alive=1
+VFRange effect target=1 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=electro hits=0 active=1 remaining=5.68
+VFRange effect target=1 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=2 entity=26 skin=7 actor=nikos health=300.0 alive=1
+VFRange effect target=2 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=3 entity=27 skin=11 actor=nikos health=300.0 alive=1
+VFRange effect target=3 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=kinetic hits=0 active=0 remaining=0.00
+VFShot accepted: player=1 code=3
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFShot sync: player=1 code=3
+VFRange voice entity=26 actor=nikos event=pain clip=202
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange voice received entity=26 actor=nikos event=pain
+Lucien Moreau: Bon. Let's try to be professional.
+FIVE_cryo 
+VFRange info target=0 entity=24 skin=13 actor=viktor health=270.0 alive=1
+VFRange effect target=0 id=hydro hits=0 active=1 remaining=4.30
+VFRange effect target=0 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=1 entity=25 skin=3 actor=otto health=270.0 alive=1
+VFRange effect target=1 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=electro hits=0 active=1 remaining=5.20
+VFRange effect target=1 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=2 entity=26 skin=7 actor=nikos health=275.0 alive=1
+VFRange effect target=2 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=cryo hits=5 active=0 remaining=0.00
+VFRange effect target=2 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=3 entity=27 skin=11 actor=nikos health=300.0 alive=1
+VFRange effect target=3 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=kinetic hits=0 active=0 remaining=0.00
+VFProc target=2 entity=26 effect=cryo hits=6 window=3 duration=6
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange voice entity=26 actor=nikos event=cryo clip=214
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange voice received entity=26 actor=nikos event=cryo
+Viktor Volkov: Ugh!
+PROC_cryo 
+VFRange client target=0 entity=24 skin=13 health=270 alive=1
+VFRange client effect target=0 id=hydro hits=0 active=1
+VFRange client effect target=0 id=electro hits=0 active=0
+VFRange client effect target=0 id=cryo hits=0 active=0
+VFRange client effect target=0 id=thermal hits=0 active=0
+VFRange client effect target=0 id=toxic hits=0 active=0
+VFRange client effect target=0 id=corrosion hits=0 active=0
+VFRange client effect target=0 id=sonic hits=0 active=0
+VFRange client effect target=0 id=kinetic hits=0 active=0
+VFRange client target=1 entity=25 skin=3 health=270 alive=1
+VFRange client effect target=1 id=hydro hits=0 active=0
+VFRange client effect target=1 id=electro hits=0 active=1
+VFRange client effect target=1 id=cryo hits=0 active=0
+VFRange client effect target=1 id=thermal hits=0 active=0
+VFRange client effect target=1 id=toxic hits=0 active=0
+VFRange client effect target=1 id=corrosion hits=0 active=0
+VFRange client effect target=1 id=sonic hits=0 active=0
+VFRange client effect target=1 id=kinetic hits=0 active=0
+VFRange client target=2 entity=26 skin=7 health=270 alive=1
+VFRange client effect target=2 id=hydro hits=0 active=0
+VFRange client effect target=2 id=electro hits=0 active=0
+VFRange client effect target=2 id=cryo hits=0 active=1
+VFRange client effect target=2 id=thermal hits=0 active=0
+VFRange client effect target=2 id=toxic hits=0 active=0
+VFRange client effect target=2 id=corrosion hits=0 active=0
+VFRange client effect target=2 id=sonic hits=0 active=0
+VFRange client effect target=2 id=kinetic hits=0 active=0
+VFRange client target=3 entity=27 skin=11 health=300 alive=1
+VFRange client effect target=3 id=hydro hits=0 active=0
+VFRange client effect target=3 id=electro hits=0 active=0
+VFRange client effect target=3 id=cryo hits=0 active=0
+VFRange client effect target=3 id=thermal hits=0 active=0
+VFRange client effect target=3 id=toxic hits=0 active=0
+VFRange client effect target=3 id=corrosion hits=0 active=0
+VFRange client effect target=3 id=sonic hits=0 active=0
+VFRange client effect target=3 id=kinetic hits=0 active=0
+VFRange info target=0 entity=24 skin=13 actor=viktor health=270.0 alive=1
+VFRange effect target=0 id=hydro hits=0 active=1 remaining=3.90
+VFRange effect target=0 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=1 entity=25 skin=3 actor=otto health=270.0 alive=1
+VFRange effect target=1 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=electro hits=0 active=1 remaining=4.80
+VFRange effect target=1 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=2 entity=26 skin=7 actor=nikos health=270.0 alive=1
+VFRange effect target=2 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=cryo hits=0 active=1 remaining=5.67
+VFRange effect target=2 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=3 entity=27 skin=11 actor=nikos health=300.0 alive=1
+VFRange effect target=3 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=kinetic hits=0 active=0 remaining=0.00
+VFShot accepted: player=1 code=4
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFShot sync: player=1 code=4
+VFRange voice entity=27 actor=nikos event=pain clip=201
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange voice received entity=27 actor=nikos event=pain
+Viktor Volkov: Mokryy. Now I am soaked.
+FIVE_thermal 
+VFRange info target=0 entity=24 skin=13 actor=viktor health=270.0 alive=1
+VFRange effect target=0 id=hydro hits=0 active=1 remaining=3.40
+VFRange effect target=0 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=1 entity=25 skin=3 actor=otto health=270.0 alive=1
+VFRange effect target=1 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=electro hits=0 active=1 remaining=4.30
+VFRange effect target=1 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=2 entity=26 skin=7 actor=nikos health=270.0 alive=1
+VFRange effect target=2 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=cryo hits=0 active=1 remaining=5.17
+VFRange effect target=2 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=3 entity=27 skin=11 actor=nikos health=275.0 alive=1
+VFRange effect target=3 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=thermal hits=5 active=0 remaining=0.00
+VFRange effect target=3 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=kinetic hits=0 active=0 remaining=0.00
+VFProc target=3 entity=27 effect=thermal hits=6 window=3 duration=6
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange voice entity=27 actor=nikos event=thermal clip=215
+VFRange voice received entity=27 actor=nikos event=thermal
+Otto Stahl: Ah! Verdammt!
+PROC_thermal 
+VFRange client target=0 entity=24 skin=13 health=270 alive=1
+VFRange client effect target=0 id=hydro hits=0 active=1
+VFRange client effect target=0 id=electro hits=0 active=0
+VFRange client effect target=0 id=cryo hits=0 active=0
+VFRange client effect target=0 id=thermal hits=0 active=0
+VFRange client effect target=0 id=toxic hits=0 active=0
+VFRange client effect target=0 id=corrosion hits=0 active=0
+VFRange client effect target=0 id=sonic hits=0 active=0
+VFRange client effect target=0 id=kinetic hits=0 active=0
+VFRange client target=1 entity=25 skin=3 health=270 alive=1
+VFRange client effect target=1 id=hydro hits=0 active=0
+VFRange client effect target=1 id=electro hits=0 active=1
+VFRange client effect target=1 id=cryo hits=0 active=0
+VFRange client effect target=1 id=thermal hits=0 active=0
+VFRange client effect target=1 id=toxic hits=0 active=0
+VFRange client effect target=1 id=corrosion hits=0 active=0
+VFRange client effect target=1 id=sonic hits=0 active=0
+VFRange client effect target=1 id=kinetic hits=0 active=0
+VFRange client target=2 entity=26 skin=7 health=270 alive=1
+VFRange client effect target=2 id=hydro hits=0 active=0
+VFRange client effect target=2 id=electro hits=0 active=0
+VFRange client effect target=2 id=cryo hits=0 active=1
+VFRange client effect target=2 id=thermal hits=0 active=0
+VFRange client effect target=2 id=toxic hits=0 active=0
+VFRange client effect target=2 id=corrosion hits=0 active=0
+VFRange client effect target=2 id=sonic hits=0 active=0
+VFRange client effect target=2 id=kinetic hits=0 active=0
+VFRange client target=3 entity=27 skin=11 health=270 alive=1
+VFRange client effect target=3 id=hydro hits=0 active=0
+VFRange client effect target=3 id=electro hits=0 active=0
+VFRange client effect target=3 id=cryo hits=0 active=0
+VFRange client effect target=3 id=thermal hits=0 active=1
+VFRange client effect target=3 id=toxic hits=0 active=0
+VFRange client effect target=3 id=corrosion hits=0 active=0
+VFRange client effect target=3 id=sonic hits=0 active=0
+VFRange client effect target=3 id=kinetic hits=0 active=0
+VFRange info target=0 entity=24 skin=13 actor=viktor health=270.0 alive=1
+VFRange effect target=0 id=hydro hits=0 active=1 remaining=3.00
+VFRange effect target=0 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=1 entity=25 skin=3 actor=otto health=270.0 alive=1
+VFRange effect target=1 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=electro hits=0 active=1 remaining=3.90
+VFRange effect target=1 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=2 entity=26 skin=7 actor=nikos health=270.0 alive=1
+VFRange effect target=2 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=cryo hits=0 active=1 remaining=4.77
+VFRange effect target=2 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=3 entity=27 skin=11 actor=nikos health=270.0 alive=1
+VFRange effect target=3 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=thermal hits=0 active=1 remaining=5.67
+VFRange effect target=3 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=kinetic hits=0 active=0 remaining=0.00
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+Otto Stahl: Aah! Strom! I'm getting shocked!
+VFShot accepted: player=1 code=5
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFShot sync: player=1 code=5
+VFRange voice entity=24 actor=viktor event=pain clip=123
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange voice received entity=24 actor=viktor event=pain
+FIVE_toxic 
+VFRange info target=0 entity=24 skin=13 actor=viktor health=275.0 alive=1
+VFRange effect target=0 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=toxic hits=5 active=0 remaining=0.00
+VFRange effect target=0 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=1 entity=25 skin=3 actor=otto health=270.0 alive=1
+VFRange effect target=1 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=electro hits=0 active=1 remaining=3.40
+VFRange effect target=1 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=2 entity=26 skin=7 actor=nikos health=270.0 alive=1
+VFRange effect target=2 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=cryo hits=0 active=1 remaining=4.27
+VFRange effect target=2 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=3 entity=27 skin=11 actor=nikos health=270.0 alive=1
+VFRange effect target=3 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=thermal hits=0 active=1 remaining=5.17
+VFRange effect target=3 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=kinetic hits=0 active=0 remaining=0.00
+VFProc target=0 entity=24 effect=toxic hits=6 window=3 duration=6
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange voice entity=24 actor=viktor event=toxic clip=135
+VFRange voice received entity=24 actor=viktor event=toxic
+Nikos Petros: Ugh!
+PROC_toxic 
+VFRange client target=0 entity=24 skin=13 health=270 alive=1
+VFRange client effect target=0 id=hydro hits=0 active=0
+VFRange client effect target=0 id=electro hits=0 active=0
+VFRange client effect target=0 id=cryo hits=0 active=0
+VFRange client effect target=0 id=thermal hits=0 active=0
+VFRange client effect target=0 id=toxic hits=0 active=1
+VFRange client effect target=0 id=corrosion hits=0 active=0
+VFRange client effect target=0 id=sonic hits=0 active=0
+VFRange client effect target=0 id=kinetic hits=0 active=0
+VFRange client target=1 entity=25 skin=3 health=270 alive=1
+VFRange client effect target=1 id=hydro hits=0 active=0
+VFRange client effect target=1 id=electro hits=0 active=1
+VFRange client effect target=1 id=cryo hits=0 active=0
+VFRange client effect target=1 id=thermal hits=0 active=0
+VFRange client effect target=1 id=toxic hits=0 active=0
+VFRange client effect target=1 id=corrosion hits=0 active=0
+VFRange client effect target=1 id=sonic hits=0 active=0
+VFRange client effect target=1 id=kinetic hits=0 active=0
+VFRange client target=2 entity=26 skin=7 health=270 alive=1
+VFRange client effect target=2 id=hydro hits=0 active=0
+VFRange client effect target=2 id=electro hits=0 active=0
+VFRange client effect target=2 id=cryo hits=0 active=1
+VFRange client effect target=2 id=thermal hits=0 active=0
+VFRange client effect target=2 id=toxic hits=0 active=0
+VFRange client effect target=2 id=corrosion hits=0 active=0
+VFRange client effect target=2 id=sonic hits=0 active=0
+VFRange client effect target=2 id=kinetic hits=0 active=0
+VFRange client target=3 entity=27 skin=11 health=270 alive=1
+VFRange client effect target=3 id=hydro hits=0 active=0
+VFRange client effect target=3 id=electro hits=0 active=0
+VFRange client effect target=3 id=cryo hits=0 active=0
+VFRange client effect target=3 id=thermal hits=0 active=1
+VFRange client effect target=3 id=toxic hits=0 active=0
+VFRange client effect target=3 id=corrosion hits=0 active=0
+VFRange client effect target=3 id=sonic hits=0 active=0
+VFRange client effect target=3 id=kinetic hits=0 active=0
+VFRange info target=0 entity=24 skin=13 actor=viktor health=270.0 alive=1
+VFRange effect target=0 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=toxic hits=0 active=1 remaining=5.67
+VFRange effect target=0 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=1 entity=25 skin=3 actor=otto health=270.0 alive=1
+VFRange effect target=1 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=electro hits=0 active=1 remaining=3.00
+VFRange effect target=1 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=2 entity=26 skin=7 actor=nikos health=270.0 alive=1
+VFRange effect target=2 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=cryo hits=0 active=1 remaining=3.87
+VFRange effect target=2 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=3 entity=27 skin=11 actor=nikos health=270.0 alive=1
+VFRange effect target=3 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=thermal hits=0 active=1 remaining=4.77
+VFRange effect target=3 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=kinetic hits=0 active=0 remaining=0.00
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFShot accepted: player=1 code=6
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFShot sync: player=1 code=6
+VFRange voice entity=25 actor=otto event=pain clip=163
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange voice received entity=25 actor=otto event=pain
+Nikos Petros: Brr! I'm freezing, gamoto!
+FIVE_corrosion 
+VFRange info target=0 entity=24 skin=13 actor=viktor health=270.0 alive=1
+VFRange effect target=0 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=toxic hits=0 active=1 remaining=5.17
+VFRange effect target=0 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=1 entity=25 skin=3 actor=otto health=275.0 alive=1
+VFRange effect target=1 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=corrosion hits=5 active=0 remaining=0.00
+VFRange effect target=1 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=2 entity=26 skin=7 actor=nikos health=270.0 alive=1
+VFRange effect target=2 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=cryo hits=0 active=1 remaining=3.37
+VFRange effect target=2 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=3 entity=27 skin=11 actor=nikos health=270.0 alive=1
+VFRange effect target=3 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=thermal hits=0 active=1 remaining=4.27
+VFRange effect target=3 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=kinetic hits=0 active=0 remaining=0.00
+VFProc target=1 entity=25 effect=corrosion hits=6 window=3 duration=6
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange voice entity=25 actor=otto event=corrosion clip=178
+VFRange voice received entity=25 actor=otto event=corrosion
+Nikos Petros: Ah! Gamoto!
+PROC_corrosion 
+VFRange client target=0 entity=24 skin=13 health=270 alive=1
+VFRange client effect target=0 id=hydro hits=0 active=0
+VFRange client effect target=0 id=electro hits=0 active=0
+VFRange client effect target=0 id=cryo hits=0 active=0
+VFRange client effect target=0 id=thermal hits=0 active=0
+VFRange client effect target=0 id=toxic hits=0 active=1
+VFRange client effect target=0 id=corrosion hits=0 active=0
+VFRange client effect target=0 id=sonic hits=0 active=0
+VFRange client effect target=0 id=kinetic hits=0 active=0
+VFRange client target=1 entity=25 skin=3 health=270 alive=1
+VFRange client effect target=1 id=hydro hits=0 active=0
+VFRange client effect target=1 id=electro hits=0 active=0
+VFRange client effect target=1 id=cryo hits=0 active=0
+VFRange client effect target=1 id=thermal hits=0 active=0
+VFRange client effect target=1 id=toxic hits=0 active=0
+VFRange client effect target=1 id=corrosion hits=0 active=1
+VFRange client effect target=1 id=sonic hits=0 active=0
+VFRange client effect target=1 id=kinetic hits=0 active=0
+VFRange client target=2 entity=26 skin=7 health=270 alive=1
+VFRange client effect target=2 id=hydro hits=0 active=0
+VFRange client effect target=2 id=electro hits=0 active=0
+VFRange client effect target=2 id=cryo hits=0 active=1
+VFRange client effect target=2 id=thermal hits=0 active=0
+VFRange client effect target=2 id=toxic hits=0 active=0
+VFRange client effect target=2 id=corrosion hits=0 active=0
+VFRange client effect target=2 id=sonic hits=0 active=0
+VFRange client effect target=2 id=kinetic hits=0 active=0
+VFRange client target=3 entity=27 skin=11 health=270 alive=1
+VFRange client effect target=3 id=hydro hits=0 active=0
+VFRange client effect target=3 id=electro hits=0 active=0
+VFRange client effect target=3 id=cryo hits=0 active=0
+VFRange client effect target=3 id=thermal hits=0 active=1
+VFRange client effect target=3 id=toxic hits=0 active=0
+VFRange client effect target=3 id=corrosion hits=0 active=0
+VFRange client effect target=3 id=sonic hits=0 active=0
+VFRange client effect target=3 id=kinetic hits=0 active=0
+VFRange info target=0 entity=24 skin=13 actor=viktor health=270.0 alive=1
+VFRange effect target=0 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=toxic hits=0 active=1 remaining=4.77
+VFRange effect target=0 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=1 entity=25 skin=3 actor=otto health=270.0 alive=1
+VFRange effect target=1 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=corrosion hits=0 active=1 remaining=5.67
+VFRange effect target=1 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=2 entity=26 skin=7 actor=nikos health=270.0 alive=1
+VFRange effect target=2 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=cryo hits=0 active=1 remaining=2.97
+VFRange effect target=2 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=3 entity=27 skin=11 actor=nikos health=270.0 alive=1
+VFRange effect target=3 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=thermal hits=0 active=1 remaining=3.87
+VFRange effect target=3 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=kinetic hits=0 active=0 remaining=0.00
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFShot accepted: player=1 code=7
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFShot sync: player=1 code=7
+VFRange voice entity=26 actor=nikos event=pain clip=201
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange voice received entity=26 actor=nikos event=pain
+Nikos Petros: Fotia! I'm on fire!
+FIVE_sonic 
+VFRange info target=0 entity=24 skin=13 actor=viktor health=270.0 alive=1
+VFRange effect target=0 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=toxic hits=0 active=1 remaining=4.27
+VFRange effect target=0 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=1 entity=25 skin=3 actor=otto health=270.0 alive=1
+VFRange effect target=1 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=corrosion hits=0 active=1 remaining=5.17
+VFRange effect target=1 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=2 entity=26 skin=7 actor=nikos health=275.0 alive=1
+VFRange effect target=2 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=sonic hits=5 active=0 remaining=0.00
+VFRange effect target=2 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=3 entity=27 skin=11 actor=nikos health=270.0 alive=1
+VFRange effect target=3 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=thermal hits=0 active=1 remaining=3.37
+VFRange effect target=3 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=kinetic hits=0 active=0 remaining=0.00
+VFProc target=2 entity=26 effect=sonic hits=6 window=3 duration=6
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange voice entity=26 actor=nikos event=sonic clip=218
+VFRange voice received entity=26 actor=nikos event=sonic
+Viktor Volkov: Argh! Blin!
+PROC_sonic 
+VFRange client target=0 entity=24 skin=13 health=270 alive=1
+VFRange client effect target=0 id=hydro hits=0 active=0
+VFRange client effect target=0 id=electro hits=0 active=0
+VFRange client effect target=0 id=cryo hits=0 active=0
+VFRange client effect target=0 id=thermal hits=0 active=0
+VFRange client effect target=0 id=toxic hits=0 active=1
+VFRange client effect target=0 id=corrosion hits=0 active=0
+VFRange client effect target=0 id=sonic hits=0 active=0
+VFRange client effect target=0 id=kinetic hits=0 active=0
+VFRange client target=1 entity=25 skin=3 health=270 alive=1
+VFRange client effect target=1 id=hydro hits=0 active=0
+VFRange client effect target=1 id=electro hits=0 active=0
+VFRange client effect target=1 id=cryo hits=0 active=0
+VFRange client effect target=1 id=thermal hits=0 active=0
+VFRange client effect target=1 id=toxic hits=0 active=0
+VFRange client effect target=1 id=corrosion hits=0 active=1
+VFRange client effect target=1 id=sonic hits=0 active=0
+VFRange client effect target=1 id=kinetic hits=0 active=0
+VFRange client target=2 entity=26 skin=7 health=270 alive=1
+VFRange client effect target=2 id=hydro hits=0 active=0
+VFRange client effect target=2 id=electro hits=0 active=0
+VFRange client effect target=2 id=cryo hits=0 active=0
+VFRange client effect target=2 id=thermal hits=0 active=0
+VFRange client effect target=2 id=toxic hits=0 active=0
+VFRange client effect target=2 id=corrosion hits=0 active=0
+VFRange client effect target=2 id=sonic hits=0 active=1
+VFRange client effect target=2 id=kinetic hits=0 active=0
+VFRange client target=3 entity=27 skin=11 health=270 alive=1
+VFRange client effect target=3 id=hydro hits=0 active=0
+VFRange client effect target=3 id=electro hits=0 active=0
+VFRange client effect target=3 id=cryo hits=0 active=0
+VFRange client effect target=3 id=thermal hits=0 active=1
+VFRange client effect target=3 id=toxic hits=0 active=0
+VFRange client effect target=3 id=corrosion hits=0 active=0
+VFRange client effect target=3 id=sonic hits=0 active=0
+VFRange client effect target=3 id=kinetic hits=0 active=0
+VFRange info target=0 entity=24 skin=13 actor=viktor health=270.0 alive=1
+VFRange effect target=0 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=toxic hits=0 active=1 remaining=3.87
+VFRange effect target=0 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=1 entity=25 skin=3 actor=otto health=270.0 alive=1
+VFRange effect target=1 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=corrosion hits=0 active=1 remaining=4.77
+VFRange effect target=1 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=2 entity=26 skin=7 actor=nikos health=270.0 alive=1
+VFRange effect target=2 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=sonic hits=0 active=1 remaining=5.67
+VFRange effect target=2 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=3 entity=27 skin=11 actor=nikos health=270.0 alive=1
+VFRange effect target=3 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=thermal hits=0 active=1 remaining=2.97
+VFRange effect target=3 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=kinetic hits=0 active=0 remaining=0.00
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFShot accepted: player=1 code=8
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFShot sync: player=1 code=8
+VFRange voice entity=27 actor=nikos event=pain clip=202
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange voice received entity=27 actor=nikos event=pain
+Viktor Volkov: Yad. Poison in my lungs.
+FIVE_kinetic 
+VFRange info target=0 entity=24 skin=13 actor=viktor health=270.0 alive=1
+VFRange effect target=0 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=toxic hits=0 active=1 remaining=3.38
+VFRange effect target=0 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=1 entity=25 skin=3 actor=otto health=270.0 alive=1
+VFRange effect target=1 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=corrosion hits=0 active=1 remaining=4.28
+VFRange effect target=1 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=2 entity=26 skin=7 actor=nikos health=270.0 alive=1
+VFRange effect target=2 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=sonic hits=0 active=1 remaining=5.18
+VFRange effect target=2 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=3 entity=27 skin=11 actor=nikos health=275.0 alive=1
+VFRange effect target=3 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=kinetic hits=5 active=0 remaining=0.00
+VFProc target=3 entity=27 effect=kinetic hits=6 window=3 duration=6
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange voice entity=27 actor=nikos event=kinetic clip=219
+VFRange voice received entity=27 actor=nikos event=kinetic
+Otto Stahl: Ugh!
+PROC_kinetic 
+VFRange client target=0 entity=24 skin=13 health=270 alive=1
+VFRange client effect target=0 id=hydro hits=0 active=0
+VFRange client effect target=0 id=electro hits=0 active=0
+VFRange client effect target=0 id=cryo hits=0 active=0
+VFRange client effect target=0 id=thermal hits=0 active=0
+VFRange client effect target=0 id=toxic hits=0 active=1
+VFRange client effect target=0 id=corrosion hits=0 active=0
+VFRange client effect target=0 id=sonic hits=0 active=0
+VFRange client effect target=0 id=kinetic hits=0 active=0
+VFRange client target=1 entity=25 skin=3 health=270 alive=1
+VFRange client effect target=1 id=hydro hits=0 active=0
+VFRange client effect target=1 id=electro hits=0 active=0
+VFRange client effect target=1 id=cryo hits=0 active=0
+VFRange client effect target=1 id=thermal hits=0 active=0
+VFRange client effect target=1 id=toxic hits=0 active=0
+VFRange client effect target=1 id=corrosion hits=0 active=1
+VFRange client effect target=1 id=sonic hits=0 active=0
+VFRange client effect target=1 id=kinetic hits=0 active=0
+VFRange client target=2 entity=26 skin=7 health=270 alive=1
+VFRange client effect target=2 id=hydro hits=0 active=0
+VFRange client effect target=2 id=electro hits=0 active=0
+VFRange client effect target=2 id=cryo hits=0 active=0
+VFRange client effect target=2 id=thermal hits=0 active=0
+VFRange client effect target=2 id=toxic hits=0 active=0
+VFRange client effect target=2 id=corrosion hits=0 active=0
+VFRange client effect target=2 id=sonic hits=0 active=1
+VFRange client effect target=2 id=kinetic hits=0 active=0
+VFRange client target=3 entity=27 skin=11 health=270 alive=1
+VFRange client effect target=3 id=hydro hits=0 active=0
+VFRange client effect target=3 id=electro hits=0 active=0
+VFRange client effect target=3 id=cryo hits=0 active=0
+VFRange client effect target=3 id=thermal hits=0 active=0
+VFRange client effect target=3 id=toxic hits=0 active=0
+VFRange client effect target=3 id=corrosion hits=0 active=0
+VFRange client effect target=3 id=sonic hits=0 active=0
+VFRange client effect target=3 id=kinetic hits=0 active=1
+VFRange info target=0 entity=24 skin=13 actor=viktor health=270.0 alive=1
+VFRange effect target=0 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=toxic hits=0 active=1 remaining=2.98
+VFRange effect target=0 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=1 entity=25 skin=3 actor=otto health=270.0 alive=1
+VFRange effect target=1 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=corrosion hits=0 active=1 remaining=3.88
+VFRange effect target=1 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=2 entity=26 skin=7 actor=nikos health=270.0 alive=1
+VFRange effect target=2 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=sonic hits=0 active=1 remaining=4.78
+VFRange effect target=2 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=3 entity=27 skin=11 actor=nikos health=270.0 alive=1
+VFRange effect target=3 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=kinetic hits=0 active=1 remaining=5.67
+VFShot accepted: player=1 code=4
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFShot sync: player=1 code=4
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange voice entity=24 actor=viktor event=pain clip=123
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange voice received entity=24 actor=viktor event=pain
+Otto Stahl: Acid! My armor is dissolving!
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFProc target=0 entity=24 effect=thermal hits=6 window=3 duration=6
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange voice entity=24 actor=viktor event=thermal clip=134
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange voice received entity=24 actor=viktor event=thermal
+Nikos Petros: Ah! Gamoto!
+Nikos Petros: My ears! Stamata!
+REAL_TRIGGER 
+VFRange info target=0 entity=24 skin=13 actor=viktor health=265.0 alive=1
+VFRange effect target=0 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=thermal hits=1 active=1 remaining=5.60
+VFRange effect target=0 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=1 entity=25 skin=3 actor=otto health=270.0 alive=1
+VFRange effect target=1 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=corrosion hits=0 active=1 remaining=2.18
+VFRange effect target=1 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=2 entity=26 skin=7 actor=nikos health=270.0 alive=1
+VFRange effect target=2 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=sonic hits=0 active=1 remaining=3.08
+VFRange effect target=2 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=3 entity=27 skin=11 actor=nikos health=270.0 alive=1
+VFRange effect target=3 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=kinetic hits=0 active=1 remaining=3.97
+VFVoice play: player=1 actor=lucien event=taunt clip=52 sample=vf_voices/lucien/taunt_2.wav
+VFRange heard target=0 source=1
+VFVoice social: player=1 event=taunt reply_to=0 bot=0
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFVoice received: player=1 actor=lucien event=taunt clip=52 sample=vf_voices/lucien/taunt_2.wav
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange voice entity=24 actor=viktor event=counter_taunt clip=152
+VFRange voice received entity=24 actor=viktor event=counter_taunt
+Nikos Petros: Ugh!
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+COUNTER_DONE 
+VFProc target=0 entity=24 effect=thermal hits=6 window=3 duration=6
+VFRange voice entity=24 actor=viktor event=pain clip=123
+VFProc target=0 entity=24 effect=thermal hits=6 window=3 duration=6
+VFProc target=0 entity=24 effect=thermal hits=6 window=3 duration=6
+VFProc target=0 entity=24 effect=thermal hits=6 window=3 duration=6
+VFProc target=0 entity=24 effect=thermal hits=6 window=3 duration=6
+VFProc target=0 entity=24 effect=thermal hits=6 window=3 duration=6
+VFProc target=0 entity=24 effect=thermal hits=6 window=3 duration=6
+VFProc target=0 entity=24 effect=thermal hits=6 window=3 duration=6
+VFProc target=0 entity=24 effect=thermal hits=6 window=3 duration=6
+VFProc target=0 entity=24 effect=thermal hits=6 window=3 duration=6
+VFRange voice entity=24 actor=viktor event=death clip=125
+VFRange death target=0 respawn=2
+VFRange info target=0 entity=24 skin=13 actor=viktor health=300.0 alive=1
+VFRange effect target=0 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=1 entity=25 skin=3 actor=otto health=270.0 alive=1
+VFRange effect target=1 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=2 entity=26 skin=7 actor=nikos health=270.0 alive=1
+VFRange effect target=2 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=3 entity=27 skin=11 actor=nikos health=270.0 alive=1
+VFRange effect target=3 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=kinetic hits=0 active=0 remaining=0.00
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=1
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=0
+VFRange received target=0 entity=24 skin=13 actor=viktor alive=0
+VFRange voice received entity=24 actor=viktor event=pain
+Nikos Petros: Oof! That hit like a truck!
+Overflow 500 temporary ents!
+VFRange voice received entity=24 actor=viktor event=death
+Viktor Volkov: Argh! Blin!
+Viktor Volkov: Goryu! I am burning!
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+VFRange target=0 entity=24 skin=3 actor=rocco model=models/vf_skins/persona_rig.mdl health=300
+VFRange received target=0 entity=24 skin=3 actor=rocco alive=1
+VFRange received target=3 entity=27 skin=11 actor=nikos alive=1
+VFRange received target=2 entity=26 skin=7 actor=nikos alive=1
+VFRange received target=1 entity=25 skin=3 actor=otto alive=1
+RESPAWN_DONE 
+VFEngine: assemblies=6 parts=35 models=18 loads=18 cache_hits=1014 poses=8052 merged=8052 sockets=11784 previews=0 rejected=0 textures=1590 texture_bytes=232783846 preview_ms=0.000
+VFPeer 1: 182,182,182,182,182 weapon=0
+VFPeerPose player=1 sequence=41 frame=17.0 gait=2 model=models/vf_r01/r01_tp.mdl
+VFFirstPerson: player=1 gloves=0 sleeves=0 parts=14 rig=models/vf_r01/r01_rig_fg.mdl
+VFEngine remote weapons drawn=0
+VFRange info target=0 entity=24 skin=3 actor=rocco health=300.0 alive=1
+VFRange effect target=0 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=0 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=1 entity=25 skin=3 actor=otto health=270.0 alive=1
+VFRange effect target=1 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=1 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=2 entity=26 skin=7 actor=nikos health=270.0 alive=1
+VFRange effect target=2 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=2 id=kinetic hits=0 active=0 remaining=0.00
+VFRange info target=3 entity=27 skin=11 actor=nikos health=270.0 alive=1
+VFRange effect target=3 id=hydro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=electro hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=cryo hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=thermal hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=toxic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=corrosion hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=sonic hits=0 active=0 remaining=0.00
+VFRange effect target=3 id=kinetic hits=0 active=0 remaining=0.00
+Note: Issuing host shutdown due to reason "command"
+Server shutdown
+CL_Shutdown()
+Shutting down audio.
+Press Enter to continue...
+
+================================================================================
+Xash3D FWGS 0.21 (-1, [], [], win32-i386)
+Stopped with reason "command" at Oct09 2026 [19:16.00]
+================================================================================

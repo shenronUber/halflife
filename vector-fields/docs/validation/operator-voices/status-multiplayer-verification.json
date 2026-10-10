@@ -1,0 +1,15 @@
+{
+  "clients": 2,
+  "late_join": true,
+  "checks": [
+    "ordinary multiplayer rejects developer effect activation",
+    "late join receives active Hydro with its remaining duration",
+    "late join does not replay the old Hydro dialogue",
+    "both clients receive the same combined reaction speech",
+    "reaction consumes primary states on remote clients",
+    "revoking sv_cheats clears developer states on both clients",
+    "attempted effect application after revocation rejected",
+    "real rifle fire kills an enemy and triggers killer and victim voices"
+  ],
+  "scope": "dedicated loopback server and native clients; public Internet not tested"
+}

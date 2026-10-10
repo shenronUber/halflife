@@ -20,6 +20,9 @@
 #include "weapons.h"
 #include "nodes.h"
 #include "player.h"
+#ifndef CLIENT_DLL
+#include "vf_equipment.h"
+#endif
 #include "soundent.h"
 #include "gamerules.h"
 
@@ -148,7 +151,11 @@ void CMP5::PrimaryAttack()
 	m_iClip--;
 
 
-	m_pPlayer->pev->effects = (int)(m_pPlayer->pev->effects) | EF_MUZZLEFLASH;
+	int vfShotCode=0;
+#ifndef CLIENT_DLL
+    vfShotCode=VF_WeaponFXCode(m_pPlayer);
+#endif
+    if(!vfShotCode)m_pPlayer->pev->effects = (int)(m_pPlayer->pev->effects) | EF_MUZZLEFLASH;
 
 	// player "shoot" animation
 	m_pPlayer->SetAnimation( PLAYER_ATTACK1 );
@@ -179,7 +186,7 @@ void CMP5::PrimaryAttack()
 	flags = 0;
 #endif
 
-	PLAYBACK_EVENT_FULL( flags, m_pPlayer->edict(), m_usMP5, 0.0, (float *)&g_vecZero, (float *)&g_vecZero, vecDir.x, vecDir.y, 0, 0, 0, 0 );
+	PLAYBACK_EVENT_FULL( flags, m_pPlayer->edict(), m_usMP5, 0.0, (float *)&g_vecZero, (float *)&g_vecZero, vecDir.x, vecDir.y, vfShotCode, 0, 0, 0 );
 
 	if (!m_iClip && m_pPlayer->m_rgAmmo[m_iPrimaryAmmoType] <= 0)
 		// HEV suit - indicate out of ammo condition
@@ -252,7 +259,8 @@ void CMP5::Reload( void )
 	if ( m_pPlayer->ammo_9mm <= 0 )
 		return;
 
-	DefaultReload( MP5_MAX_CLIP, MP5_RELOAD, 1.5 );
+	if (DefaultReload( MP5_MAX_CLIP, MP5_RELOAD, 1.5 ))
+		m_pPlayer->SetAnimation( PLAYER_RELOAD );
 }
 
 

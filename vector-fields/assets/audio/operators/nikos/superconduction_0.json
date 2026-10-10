@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "model_id": "eleven_v4",
+  "event": "superconduction",
+  "variant": 0,
+  "text": "[strained] Frozen and shocked! Παναγία μου!",
+  "request": {
+    "text": "[strained] Frozen and shocked! Παναγία μου!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "e7693c9221435e42c8e0cd7fa7ac604af7d9761983e8d492cd57e69d76bfc916",
+  "sha256": "9b721a8dc12d5dc2e468fb5dbe1efa032eacbb4636437e017712dee7a561682d",
+  "request_id": "nS0M7mVEijgARjOxJu1z",
+  "reported_credit_cost": "5"
+}

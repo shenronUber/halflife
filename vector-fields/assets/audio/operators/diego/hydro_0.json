@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "hydro",
+  "variant": 0,
+  "text": "[annoyed] Empapado! I'm soaked!",
+  "request": {
+    "text": "[annoyed] Empapado! I'm soaked!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "1ef6960a995e38f6ceade912a2687076c18fe893c3c2da7edd2a3136a684fce0",
+  "sha256": "3d4ad3c43fe90861c6b507a210a169b6c96d2d5ef5068ae2fbb4b310f77c3844",
+  "request_id": "u1mNe59jn55paWHxmcOe",
+  "reported_credit_cost": "3"
+}

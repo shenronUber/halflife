@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "reload",
+  "variant": 0,
+  "text": "[urgent] Je recharge. Cover me.",
+  "request": {
+    "text": "[urgent] Je recharge. Cover me.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "b716f678c20222af30f7d0012ac9bea9d5139704e65248c52f30f1a896b45d28",
+  "sha256": "023ab6c026e5a894e2812561254dfa8e4e0e8da31efc463a555dd0e1bc2eb252",
+  "request_id": "DLXWPUlB4lL5Yba72hDU",
+  "reported_credit_cost": "3"
+}

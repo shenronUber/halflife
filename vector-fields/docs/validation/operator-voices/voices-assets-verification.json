@@ -1,0 +1,17 @@
+{
+  "actors": 6,
+  "clips": 233,
+  "bytes": 7450724,
+  "seconds": 674.14,
+  "format": "mono PCM 11025 Hz / 8-bit",
+  "checks": [
+    "distinct generated voice identities for every actor",
+    "every event and variant covered for every actor",
+    "all game WAVs match manifest hashes and durations",
+    "no silence or full-scale clipping",
+    "clean masters retained at 22050 Hz / 16-bit",
+    "all listening page links exist",
+    "all 8 elements, 8 combinations and 5 tactical cues covered",
+    "no ambiguous requests pending"
+  ]
+}

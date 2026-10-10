@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "taunt",
+  "variant": 0,
+  "text": "[mocking] Your aim is an insult to geometry, mon ami.",
+  "request": {
+    "text": "[mocking] Your aim is an insult to geometry, mon ami.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "2fcf48c4ef66b93865e5c1e30cb6489df1d461e4c0ce4b34379d002e5ff6e875",
+  "sha256": "17fc428bb65aac7c5932585931527eafec5ac427fb878ebf049d4962f0dc960d",
+  "request_id": "6EyjaxQOFvlUpY9iV2WD",
+  "reported_credit_cost": "6"
+}

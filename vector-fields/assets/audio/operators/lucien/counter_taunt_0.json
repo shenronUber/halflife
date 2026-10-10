@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "counter_taunt",
+  "variant": 0,
+  "text": "[angry] Viens ici! Say that to my face, connard!",
+  "request": {
+    "text": "[angry] Viens ici! Say that to my face, connard!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "42828a8d928789c457fa7f82553e8b92509c8fd33c3dcf5d2bdf1e085264b77d",
+  "sha256": "f0d75099bab038069d6f851639407e5b5f092673b2c73aa2176134d6ce9f99c7",
+  "request_id": "I5naHXy4j3j7SrFI63Wh",
+  "reported_credit_cost": "5"
+}

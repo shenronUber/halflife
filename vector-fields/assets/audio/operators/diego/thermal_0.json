@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "thermal",
+  "variant": 0,
+  "text": "[panicked] Fuego! Get it off me!",
+  "request": {
+    "text": "[panicked] Fuego! Get it off me!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "f215d4177ca12aa73110fce982919e348f772520625477dfb63731de4f89a4d8",
+  "sha256": "4e7b23ae7dba69f032d9fb3cf90c0709d0b9575e4cfb7df3d674de9fc363e206",
+  "request_id": "DJJHkkNlglR0fzM6gFGg",
+  "reported_credit_cost": "4"
+}

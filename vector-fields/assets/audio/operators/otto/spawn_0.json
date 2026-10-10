@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "spawn",
+  "variant": 0,
+  "text": "[confident] Jawohl. Let's do this properly.",
+  "request": {
+    "text": "[confident] Jawohl. Let's do this properly.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "20d4495e69625ef73d017d6580c5bea7304bc9a76a51ca3b7f9dfdc55d3eebdf",
+  "sha256": "178fe5b3ce194c82fcde8a25fbc4f4e4e11abe580aa23c2ed3fab1ba8d79219a",
+  "request_id": "0RhxqKt0QXNMbukJvwd9",
+  "reported_credit_cost": "5"
+}

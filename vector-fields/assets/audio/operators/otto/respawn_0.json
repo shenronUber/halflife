@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "respawn",
+  "variant": 0,
+  "text": "[frustrated] Schon wieder! You at the keyboard. Focus, du Idiot!",
+  "request": {
+    "text": "[frustrated] Schon wieder! You at the keyboard. Focus, du Idiot!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "06fa2627df472efbf989d59f9c8eb11dff0f60b0fddb367efeaf4650cfba007a",
+  "sha256": "03ac55bfe1760d703eb73adcaaf157aca169eeff60720d696e9c00241e296a94",
+  "request_id": "jJSL4Mn2FhRDRQc4WsUD",
+  "reported_credit_cost": "7"
+}

@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "actor": "rocco",
+  "cause": "cavitation",
+  "text": "[choking] Ghh! [groaning] Urrgh! [gurgling] Ghrr...",
+  "request": {
+    "text": "[choking] Ghh! [groaning] Urrgh! [gurgling] Ghrr...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "85f76bbb2f9efa61617876989839eff34e9dfc95a7323ca7af969d7a1c9cd8d6",
+  "sha256": "a4d45906ab2a2786564867d088d6a1878e42502062b5b95d75df19b7705d2e1e",
+  "request_id": "tblVUGxLsh6xI0RFqa3q"
+}

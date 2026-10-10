@@ -78,10 +78,17 @@ def weapon_usage():
     spec.loader.exec_module(module)
     usage = {}
     for slot in module.KEYS:
-        for variant in range(2):
-            name = f"r01_{slot}_{'ab'[variant]}"
+        for variant in range(4):
+            name = f"r01_{slot}_{'abcd'[variant]}"
             usage[name] = sorted({int(material[5:7])
                                  for material, _ in module.part(slot, variant)})
+    for key,mount in [('side',1),('top',2)]:
+        usage['r01_receiver_'+key]=sorted({int(material[5:7])for material,_ in module.part('receiver',0 if mount==1 else 1,mount)})
+    for key in module.chassis.CHASSIS:
+        usage['r01_receiver_'+key]=sorted({int(material[5:7])for material,_ in module.chassis.part(key,module.Mesh)})
+    for slot,specs in module.themes.PARTS.items():
+        for spec in specs:
+            usage[f"r01_{slot}_{spec['key']}"]=sorted({int(material[5:7])for material,_ in module.themes.part(slot,spec['key'],module.Mesh)})
     return sha(source), usage
 
 

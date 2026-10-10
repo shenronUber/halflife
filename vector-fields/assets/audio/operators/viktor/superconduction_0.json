@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "superconduction",
+  "variant": 0,
+  "text": "[strained] Frozen and shocked. Очень плохо.",
+  "request": {
+    "text": "[strained] Frozen and shocked. Очень плохо.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "05bef444a1f2d29fe77d05eaf7d1ab478e5a93ca4cfe6de2ebd0063a1280d4ef",
+  "sha256": "728e6f27827e53f7c98cc8585fbb9231e95564a0736346e10f9a57e20822d87d",
+  "request_id": "XFPhrT0kDX6J6m4ko0c9",
+  "reported_credit_cost": "5"
+}

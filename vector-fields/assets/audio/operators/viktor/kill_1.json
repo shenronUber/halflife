@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "kill",
+  "variant": 1,
+  "text": "[pleased] Хорошо. Next.",
+  "request": {
+    "text": "[pleased] Хорошо. Next.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "63ac7f51b67a031fcc955f3f539c299d2f67941181f89ebb6fa8890e7e2f05a5",
+  "sha256": "9c02bb181c2e6963704eb533fee342cf0b5bf56d95972ffd1a2cd524b560b921",
+  "request_id": "uGPGTlTVWdURHHGpOTVb",
+  "reported_credit_cost": "3"
+}

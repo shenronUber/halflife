@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "model_id": "eleven_v4",
+  "event": "taunt",
+  "variant": 1,
+  "text": "[mocking] My grandmother shoots better than you!",
+  "request": {
+    "text": "[mocking] My grandmother shoots better than you!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "b9216d91fedbbaf01e84a4cca33527edd876a1f87d08e0c701f89010762d7b66",
+  "sha256": "09bb38c14ad3b855d6992deb22a831cff96b43430a5d1252eb55253a2f34fef2",
+  "request_id": "ZkTiKuR6hdu8uwAlYOiG",
+  "reported_credit_cost": "5"
+}

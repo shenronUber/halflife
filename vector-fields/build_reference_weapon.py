@@ -1,4 +1,4 @@
-"""Relais R-01: reproducible textured meshes, 12 interfaces, 2 variants each.
+"""Relais R-01: reproducible textured meshes, 12 interfaces, four core variants per slot, four extra receivers and eight themed modules.
 All geometry is authored here. Hands and their timing come from the MP40 rig.
 The generated diffuse atlas is archived with its exact imagegen prompt.
 """
@@ -10,6 +10,9 @@ import build_modular as base
 import build_skins as geo
 from build_weapon_visuals import HEADER
 from studio_assets import Studio
+import build_reference_extensions as extensions
+import build_reference_chassis as chassis
+import build_reference_themes as themes
 ROOT=Path(__file__).resolve().parent
 OUT=ROOT/'generated/r01'; SOURCE=ROOT/'generated/weapon_visuals'
 KEYS=['receiver','barrel','muzzle','feed','chamber','ammo','projectile','optic','underbarrel','grip','power','cooling']
@@ -119,6 +122,7 @@ class Mesh:
   for y in np.arange(y0+.3,y1,.65):self.box([0,y,z+.24],[1.8,.32,.3],5,.07)
 
 def part(slot,v,mount=0):
+ if v>=2:return extensions.part(slot,v,Mesh)
  m=Mesh();paint=2 if not v else 3
  if slot=='receiver':
   m.box([0,5,0],[3.5,24,4],0,.45)
@@ -288,6 +292,7 @@ def prepare_rig():
   text=text[:skstart]+''.join(frames)+text[skend:];(OUT/(name+'.smd')).write_text(text,encoding='ascii')
  qc=(SOURCE/'mp40_rig.qc').read_text(encoding='utf-8').replace('mp40_rig.mdl','r01_rig.mdl')
  qc=re.sub(r'\$bodygroup magazine\s*\{.*?\}','',qc,flags=re.S)
+ qc=re.sub(r'(\$sequence "reload" \{.*?fps )50',lambda m:m[1]+str(139/1.5),qc,flags=re.S)
  qc=qc.replace('$attachment 0 "Bone76" 0.000000 29.500000 1.750000','$attachment 0 "Bone76" 0.000000 36.500000 1.300000')
  header,_,_=base.read_smd(OUT/'mp40_hands.smd')
  anchors=[]
@@ -298,6 +303,8 @@ def prepare_rig():
  base.write_smd(OUT/'r01_anchors.smd',header,anchors)
  qc+='\n$bodygroup anchors\n{\n blank\n studio "r01_anchors"\n}\n'
  qc+='\n$attachment 2 "R01_Bolt" 0 0 0\n';(OUT/'r01_rig.qc').write_text(qc,encoding='ascii')
+ from first_person_grips import bottom_reload
+ bottom_reload(OUT)
  base.compile_model(OUT/'r01_rig.qc');s=Studio(OUT/'r01_rig.mdl');assert 'R01_Bolt'in s.names
  return s
 
@@ -310,11 +317,9 @@ def prepare_styles():
   split_atlas(folder/'texture-atlas.png',folder/'tiles')
   for material in range(16):shutil.copy2(folder/'tiles'/tex(material),OUT/f's{index:02}_t{material:02}.bmp')
   styles.append(dict(id=entry['id'],title=entry['title'],skin=index))
- lines=[]
- for style in styles:
-  title=unicodedata.normalize('NFKD',style['title']).encode('ascii','ignore').decode()
-  lines.append(f"{style['skin']}|{style['id'].replace('-','_')}|{title}|0|r01|{style['skin']}")
- (ROOT/'data/r01_styles.txt').write_text('\n'.join(lines)+'\n',encoding='ascii')
+ from catalog_assets import weapon_style_catalog
+ content=json.loads((ROOT/'data/gameplay-content.json').read_text(encoding='utf-8'))
+ (ROOT/'data/r01_styles.txt').write_text(weapon_style_catalog(styles,content),encoding='ascii')
  return styles
 
 def style_texture(style,material):
@@ -326,49 +331,112 @@ def texture_group(mesh,styles):
  rows=['{ '+' '.join(tex(i)if style['skin']==0 else f"s{style['skin']:02}_t{i:02}.bmp"for i in materials)+' }'for style in styles]
  return '\n$texturegroup r01_styles\n{\n'+'\n'.join(rows)+'\n}\n'
 
+def stage_inputs():
+ from build_cache import compiler_inputs
+ common=[Path(__file__),ROOT/'model_contract.py',ROOT/'data/model_contract.json']+compiler_inputs()
+ config=json.loads((ROOT/'assets/r01/variants/variants.json').read_text(encoding='utf-8'))
+ modules=common+[ROOT/p for p in ['build_reference_extensions.py','build_reference_chassis.py','build_reference_themes.py','build_weapon_visuals.py','build_r01_texture_variants.py','catalog_assets.py','data/gameplay-content.json','assets/r01/texture-atlas.png','assets/r01/variants/variants.json']]
+ modules += [ROOT/'assets/r01/variants'/entry['id']/'texture-atlas.png' for entry in config['variants']]
+ # Only the bind pose affects magazine vertices, not gesture or foregrip recipes.
+ modules += [SOURCE/'mp40_hands.smd',SOURCE/'mp40_rig.qc']
+ rigs=common+[ROOT/'assets/r01/texture-atlas.png',ROOT/'build_reference_platforms.py',ROOT/'first_person_grips.py',ROOT/'build_foregrip.py',ROOT/'assets/animations/r01-first-person-foregrip.json']
+ rigs += [p for p in SOURCE.iterdir() if p.suffix in ('.smd','.qc','.bmp')]
+ return dict(modules=modules,rigs=rigs)
+
+
 def inputs_hash():
- paths=[Path(__file__),ROOT/'build_reference_platforms.py',ROOT/'assets/r01/texture-atlas.png',ROOT/'assets/r01/variants/variants.json']
- config=json.loads(paths[-1].read_text(encoding='utf-8'))
- paths += [ROOT/'assets/r01/variants'/entry['id']/'texture-atlas.png'for entry in config['variants']]
- digest=hashlib.sha256()
- for path in paths:digest.update(path.read_bytes())
- return digest.hexdigest()
+ from build_cache import fingerprint
+ return fingerprint([p for paths in stage_inputs().values() for p in paths])
+
+
+def stage_outputs(stage,manifest):
+ if stage=='modules':
+  return [OUT/(r['id']+'.mdl') for r in manifest['pieces']]+[ROOT/'data/r01_styles.txt',OUT/'module_idle.smd']+list(OUT.glob('r01_t*.bmp'))+list(OUT.glob('s*_t*.bmp'))
+ sequences=['idle','idle_1','shoot1','reload','draw','shoot1_1','shoot2','shoot2_1','empty_idle']
+ names=['mp40_hands','r01_anchors']+sequences
+ names += [prefix+seq for prefix in ['side_','top_'] for seq in sequences]
+ names += [prefix+seq+'_fg' for prefix in ['','side_','top_'] for seq in sequences]
+ paths=[OUT/(name+'.smd') for name in names]
+ paths += [OUT/(name+ext) for name in ['r01_rig','r01_rig_side','r01_rig_top','r01_rig_fg','r01_rig_side_fg','r01_rig_top_fg'] for ext in ['.mdl','.qc']]
+ return paths+[OUT/'platform-motion.json',OUT/'foregrip-motion.json']+[OUT/p.name for p in SOURCE.glob('*.bmp')]
+
+
+def module_catalog_current(manifest):
+ if not manifest.get('pieces') or not (ROOT/'data/equipment.txt').exists():return False
+ keys={x.split('|')[1] for x in (ROOT/'data/equipment.txt').read_text(encoding='utf-8').splitlines() if x and not x.startswith('#') and '|' in x}
+ return all(r['id'] in keys for r in manifest['pieces'])
+
 
 def ensure_current():
- manifest=OUT/'manifest.json'
- if not manifest.exists()or not(ROOT/'data/r01_styles.txt').exists():return False
- saved=json.loads(manifest.read_text(encoding='utf-8'))
- if saved.get('inputs_sha256')!=inputs_hash():return False
- return all((OUT/(record['id']+'.mdl')).exists()for record in saved['pieces'])and all((OUT/(name+'.mdl')).exists()for name in ['r01_rig','r01_rig_side','r01_rig_top'])
+ from build_cache import fingerprint,current,read
+ saved=read(OUT/'build-state.json');manifest=read(OUT/'manifest.json')
+ return module_catalog_current(manifest) and all(current(saved.get(stage),fingerprint(paths)) for stage,paths in stage_inputs().items())
 
-def main():
- OUT.mkdir(parents=True,exist_ok=True)
+
+def prepare_tiles():
  im=Image.open(ROOT/'assets/r01/texture-atlas.png').convert('RGB');w,h=im.size
  for i in range(16):
   x,y=i%4,i//4
   tile=im.crop((round(x*w/4)+3,round(y*h/4)+3,round((x+1)*w/4)-3,round((y+1)*h/4)-3))
   tile.resize((256,256),Image.Resampling.LANCZOS).quantize(256).save(OUT/tex(i))
+
+
+def build_rigs():
+ rig=prepare_rig()
+ from build_reference_platforms import build_rigs as mounted_rigs
+ from build_foregrip import build as foregrip
+ mounted_rigs(OUT);foregrip(OUT)
+ return rig
+
+
+def build(ensure=False):
+ from build_cache import fingerprint,current,read,record,write
+ from model_contract import generate
+ generate();OUT.mkdir(parents=True,exist_ok=True)
+ saved=read(OUT/'build-state.json');manifest=read(OUT/'manifest.json')
+ identities={stage:fingerprint(paths) for stage,paths in stage_inputs().items()}
+ dirty={stage:not ensure or not current(saved.get(stage),identity) for stage,identity in identities.items()}
+ dirty['modules'] |= not module_catalog_current(manifest)
+ if not any(dirty.values()):
+  print('R-01 modules and animated rigs are current.');return manifest
+ prepare_tiles()
+ rig=build_rigs() if dirty['rigs'] else Studio(OUT/'r01_rig.mdl')
+ if dirty['modules']:
+  build_modules(rig);manifest=read(OUT/'manifest.json')
+ else:
+  manifest['inputs_sha256']=inputs_hash();write(OUT/'manifest.json',manifest)
+ for stage in identities:
+  if dirty[stage]:saved[stage]=record(identities[stage],stage_outputs(stage,manifest))
+ write(OUT/'build-state.json',saved)
+ return manifest
+
+
+def main():
+ return build()
+
+def build_modules(rig):
+ OUT.mkdir(parents=True,exist_ok=True)
  (OUT/'module_idle.smd').write_text('\n'.join(HEADER)+'\n',encoding='ascii')
  styles=prepare_styles()
- rig=prepare_rig();mag=np.linalg.inv(rig.bind[rig.names.index('Bone71')])@rig.bind[rig.names.index('Bone76')]
+ mag=np.linalg.inv(rig.bind[rig.names.index('Bone71')])@rig.bind[rig.names.index('Bone76')]
  records=[];lines=[]
  for z,key in enumerate(KEYS):
-  for v in range(2):
-   mesh=part(key,v);name=f'r01_{key}_{"ab"[v]}'
+  names=(*NAMES[z],*(r[0]for r in extensions.VARIANTS[key]));descs=(*DESCS[z],*(r[1]for r in extensions.VARIANTS[key]))
+  for v in range(4):
+   mesh=part(key,v);name=f'r01_{key}_{"abcd"[v]}'
    if key=='feed':
     for _,tri in mesh:
      for p in tri:p['p']=(mag@np.r_[p['p'],1])[:3];p['n']=mag[:3,:3]@p['n']
    base.write_smd(OUT/(name+'.smd'),HEADER,geo.smd_tri(mesh))
-   qc=OUT/(name+'.qc');render='\n'+''.join(f'$texrendermode "{style_texture(st,11)}" additive\n'for st in styles)if key=='optic'and v==0 else'';qc.write_text(f'$modelname "{name}.mdl"\n$cd "."\n$cdtexture "."\n$origin 0 0 0 -90\n$body module "{name}"\n$sequence idle "module_idle" fps 1\n'+texture_group(mesh,styles)+render,encoding='ascii')
+   qc=OUT/(name+'.qc');render='\n'+''.join(f'$texrendermode "{style_texture(st,11)}" additive\n'for st in styles)if key=='optic'and v!=1 else'';qc.write_text(f'$modelname "{name}.mdl"\n$cd "."\n$cdtexture "."\n$origin 0 0 0 -90\n$body module "{name}"\n$sequence idle "module_idle" fps 1\n'+texture_group(mesh,styles)+render,encoding='ascii')
    model=base.compile_model(qc);s=Studio(model);assert np.allclose(s.bind[0],np.eye(4),atol=1e-5)
    assert struct.unpack_from('<i',s.data,196)[0]==len(styles)
-   record=dict(id=name,slot=key,slot_index=z+9,variant=v,name=NAMES[z][v],triangles=len(mesh),bytes=model.stat().st_size,sha256=hashlib.sha256(model.read_bytes()).hexdigest());records.append(record)
-   lines.append('|'.join([key,name,'1',NAMES[z][v],'Baseline'if not v else'Engine','Relais R-01','4','4','4','4','0','0',DESCS[z][v]+' Visuel uniquement.','0']))
+   record=dict(id=name,slot=key,slot_index=z+9,variant=v,name=names[v],triangles=len(mesh),bytes=model.stat().st_size,sha256=hashlib.sha256(model.read_bytes()).hexdigest());records.append(record)
+   lines.append('|'.join([key,name,'1',names[v],'Baseline'if not v else'Engine','Relais R-01','4','4','4','4','0','0',descs[v]+' Visuel uniquement.','0']))
    print(name,len(mesh),'triangles',flush=True)
- from build_reference_platforms import build_rigs,PLATFORMS
- build_rigs(OUT)
- for variant,(key,spec) in enumerate(PLATFORMS.items(),2):
-  mesh=part('receiver',variant%2,variant-1);name='r01_receiver_'+key
+ from build_reference_platforms import PLATFORMS
+ for variant,(key,spec) in enumerate(PLATFORMS.items(),4):
+  mesh=part('receiver',variant%2,variant-3);name='r01_receiver_'+key
   base.write_smd(OUT/(name+'.smd'),HEADER,geo.smd_tri(mesh))
   qc=OUT/(name+'.qc');qc.write_text(f'$modelname "{name}.mdl"\n$cd "."\n$cdtexture "."\n$origin 0 0 0 -90\n$body module "{name}"\n$sequence idle "module_idle" fps 1\n'+texture_group(mesh,styles),encoding='ascii')
   model=base.compile_model(qc)
@@ -376,14 +444,33 @@ def main():
   description=('Alimentation laterale. Extraction sur le cote et main animee.'if key=='side'else'Alimentation superieure. Extraction vers le haut et viseur decale.')+' Memes chargeurs et proprietes.'
   lines.append('|'.join(['receiver',name,'1',spec['name'],'Baseline','Relais R-01','4','4','4','4','0','0',description,'0']))
   print(name,len(mesh),'triangles',flush=True)
+ for variant,(key,spec) in enumerate(chassis.CHASSIS.items(),6):
+  mesh=chassis.part(key,Mesh);name='r01_receiver_'+key
+  base.write_smd(OUT/(name+'.smd'),HEADER,geo.smd_tri(mesh))
+  qc=OUT/(name+'.qc');qc.write_text(f'$modelname "{name}.mdl"\n$cd "."\n$cdtexture "."\n$origin 0 0 0 -90\n$body module "{name}"\n$sequence idle "module_idle" fps 1\n'+texture_group(mesh,styles),encoding='ascii')
+  model=base.compile_model(qc)
+  records.append(dict(id=name,slot='receiver',slot_index=9,variant=variant,name=spec['name'],triangles=len(mesh),bytes=model.stat().st_size,sha256=hashlib.sha256(model.read_bytes()).hexdigest()))
+  lines.append('|'.join(['receiver',name,'1',spec['name'],spec['family'],'Relais R-01','4','4','4','4','0','0',spec['description']+(' Alimentation superieure.' if spec.get('mount')==2 else ' Alimentation dessous.'),'0']))
+  print(name,len(mesh),'triangles',flush=True)
+ # Append themed pieces after every established ID to retain catalogue ordering.
+ for key,specs in themes.PARTS.items():
+  for v,spec in enumerate(specs,4):
+   mesh=themes.part(key,spec['key'],Mesh);name=f"r01_{key}_{spec['key']}"
+   base.write_smd(OUT/(name+'.smd'),HEADER,geo.smd_tri(mesh))
+   render='\n'+''.join(f'$texrendermode "{style_texture(st,11)}" additive\n'for st in styles)if key=='optic'else''
+   qc=OUT/(name+'.qc');qc.write_text(f'$modelname "{name}.mdl"\n$cd "."\n$cdtexture "."\n$origin 0 0 0 -90\n$body module "{name}"\n$sequence idle "module_idle" fps 1\n'+texture_group(mesh,styles)+render,encoding='ascii')
+   model=base.compile_model(qc);compiled=Studio(model)
+   assert compiled.numskinfamilies==len(styles) and len(compiled.names)==1
+   records.append(dict(id=name,slot=key,slot_index=KEYS.index(key)+9,variant=v,name=spec['name'],theme=spec['key'],triangles=len(mesh),bytes=model.stat().st_size,sha256=hashlib.sha256(model.read_bytes()).hexdigest()))
+   lines.append('|'.join([key,name,'1',spec['name'],spec['family'],'Relais R-01','4','4','4','4','0','0',spec['description']+' Visuel uniquement.','0']))
+   print(name,len(mesh),'triangles',flush=True)
  catalog=ROOT/'data/equipment.txt';old=catalog.read_text(encoding='utf-8');old='\n'.join(x for x in old.splitlines()if '|r01_'not in x and not x.startswith('# Relais R-01'))
- catalog.write_text(old.rstrip()+'\n# Relais R-01: original visual reference, two variants per weapon slot.\n'+'\n'.join(lines)+'\n',encoding='utf-8')
- report=dict(inputs_sha256=inputs_hash(),name='Relais R-01',version=4,platforms=[dict(id="bottom",name="Atelier / Circuit",rig="r01_rig"),dict(id="side",name="Traverse",rig="r01_rig_side"),dict(id="top",name="Zenith",rig="r01_rig_top")],uv_mapping='isotropic-tiled-v1',styles=styles,skin_families=len(styles),pieces=records,combinations=4*2**11,texture_source='assets/r01/texture-atlas.png',socket='Bone76',animated_sockets={'feed':'Bone71','chamber':'R01_Bolt'},rig='r01_rig',limits=['MP5 gameplay retained','bottom reload from MP40; side/top authored feed tracks and left-arm IK on the same hands','world/third-person weapon remains stock'])
+ catalog.write_text(old.rstrip()+'\n# Relais R-01: four core variants per slot, four extra receivers and eight themed modules.\n'+'\n'.join(lines)+'\n',encoding='utf-8')
+ report=dict(inputs_sha256=inputs_hash(),name='Relais R-01',version=7,platforms=[dict(id="bottom",name="Atelier / Circuit",rig="r01_rig"),dict(id="side",name="Traverse",rig="r01_rig_side"),dict(id="top",name="Zenith",rig="r01_rig_top")],uv_mapping='isotropic-tiled-v1',styles=styles,skin_families=len(styles),pieces=records,combinations=math.prod(sum(r['slot']==key for r in records)for key in KEYS),texture_source='assets/r01/texture-atlas.png',socket='Bone76',animated_sockets={'feed':'Bone71','chamber':'R01_Bolt'},rig='r01_rig',limits=['MP5 gameplay retained','bottom reload from MP40; side/top authored feed tracks and left-arm IK on the same hands','first-person angled foregrip variants; third-person contacts authored separately'])
  (OUT/'manifest.json').write_text(json.dumps(report,indent=2,ensure_ascii=False),encoding='utf-8')
- print('Built 26 textured modules and three animated rigs;',sum(x['triangles']for x in records),'triangles across both sets')
+ print('Built',len(records),'textured modules and six animated rigs;',sum(x['triangles']for x in records),'triangles across four core sets and two themed selections')
 if __name__=='__main__':
  parser=argparse.ArgumentParser(description=__doc__)
  parser.add_argument('--ensure',action='store_true',help='Rebuild only when atlas/catalog/builder inputs change')
  args=parser.parse_args()
- if args.ensure and ensure_current():print('R-01 texture families are current.')
- else:main()
+ build(ensure=args.ensure)

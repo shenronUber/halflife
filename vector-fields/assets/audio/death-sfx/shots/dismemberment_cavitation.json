@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Cavitation / dismemberment",
+  "created_utc": "2026-10-09T23:29:09.155145+00:00",
+  "request_sha256": "7c86c1816ef44dd5147798f900892265899c03533340480cbd65073803fd3173",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A short suction gulp, then a dense wet tissue pop as fluid pressure tears the limb off, followed by a brief acidic spray. Hollow implosion rather than a dry impact.",
+    "duration_seconds": 1.1,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "59b00f2041ed9f910ab58eb940c727cc44e0e50b1febb9d4661f4bada8021313",
+  "bytes": 18434,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A short suction gulp, then a dense wet tissue pop as fluid pressure tears the limb off, followed by a brief acidic spray. Hollow implosion rather than a dry impact.",
+  "request_id": null,
+  "reported_credit_cost": "11"
+}

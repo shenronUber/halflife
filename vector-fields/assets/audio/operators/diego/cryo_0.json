@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "cryo",
+  "variant": 0,
+  "text": "[shivering] Qué frío! I'm freezing!",
+  "request": {
+    "text": "[shivering] Qué frío! I'm freezing!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "3ddf6f8b5a004bb1a68f1a40d5a1dff7ba8b2902832095895140fe6c6923b050",
+  "sha256": "5a86009ec75014626a760da837766f155ad321174219c1f7b261ec833958522d",
+  "request_id": "zqC1TfRUgH118hAKGeCU",
+  "reported_credit_cost": "4"
+}

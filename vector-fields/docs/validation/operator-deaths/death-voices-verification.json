@@ -1,0 +1,29 @@
+{
+  "asset_version": 2,
+  "actors": 6,
+  "causes": 17,
+  "clips": 102,
+  "maximum_seconds": 2.8177,
+  "minimum_seconds": 0.9255,
+  "maximum_vocalizations": 2,
+  "bytes": 1874880,
+  "seconds": 169.33,
+  "format": "mono PCM 11025 Hz / 8-bit",
+  "integration": "native-death-hooks",
+  "checks": [
+    "all six existing voice identities retained",
+    "standard, eight elements and eight reactions complete",
+    "five tactical states explicitly fall back to standard",
+    "scripts contain only vocalizations and performance tags",
+    "Scribe verification contains only audio events and nonverbal interjections",
+    "game WAV hashes, duration, nonsilence and no full-scale clipping validated",
+    "raw MP3/source masters retained; compact dry and processed 22050 Hz masters are at most three seconds",
+    "one or two vocalizations per script; no long agony or terminal breath sequences",
+    "one or two recognized vocal attacks per take; no unwanted speech, laughter or hiccups",
+    "empty caption text; separate generated death catalog for native hooks",
+    "game-only ZIP contains exactly 102 game WAVs and the manifest; no masters or rejected takes"
+  ],
+  "limits": [
+    "ASR is an automated lexical check, not a guarantee of acting quality or cause recognition. Human listening remains useful."
+  ]
+}

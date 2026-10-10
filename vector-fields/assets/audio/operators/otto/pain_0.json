@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "pain",
+  "variant": 0,
+  "text": "[pained] Ah! Verdammt!",
+  "request": {
+    "text": "[pained] Ah! Verdammt!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "0d9907e6326498a032f5ae9e0f3861714d518cd5093713dd1e98911dd85be748",
+  "sha256": "6d61035101b15e130cb96d03e4d53466fdee28fdb12c678af56b27e5c64028cd",
+  "request_id": "OiTyB1SHjDZE5NFz6Etl",
+  "reported_credit_cost": "2"
+}

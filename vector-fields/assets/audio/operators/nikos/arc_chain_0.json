@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "model_id": "eleven_v4",
+  "event": "arc_chain",
+  "variant": 0,
+  "text": "[pained] Water and lightning! Γαμώτο!",
+  "request": {
+    "text": "[pained] Water and lightning! Γαμώτο!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "80ef7db03898077448d949907f5f0ab63ed32d0b23107625a3d71af44a990679",
+  "sha256": "a6cdfedfc75b737d1c58adb5b71976dfba892c326e2d072abb004edd8e5ff456",
+  "request_id": "xwENmBgld0L1QlH8WMRj",
+  "reported_credit_cost": "4"
+}

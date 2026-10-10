@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Superconduction / death",
+  "created_utc": "2026-10-09T23:29:02.691581+00:00",
+  "request_sha256": "e5b0f38c9f840e72a318a700eb8e7a6148b84c8b2e830a4cbe409789137b041a",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A thin high cold metallic singing whistle sweeps downward, fractures into tiny crystalline ticks, and leaves a fine needle-like electrical fizz. Icy electrical conduction, no bass explosion.",
+    "duration_seconds": 1.7,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "950ff478527ce84cd33c0c651b9b82b39e81703d6f5fe12756a8c08ba43514e8",
+  "bytes": 28047,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A thin high cold metallic singing whistle sweeps downward, fractures into tiny crystalline ticks, and leaves a fine needle-like electrical fizz. Icy electrical conduction, no bass explosion.",
+  "request_id": null,
+  "reported_credit_cost": "17"
+}

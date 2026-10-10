@@ -1,0 +1,33 @@
+{
+  "audio_sha256": "b29e71444fbffd97a3abf910741cc6eda582bad98d0e46e45cd1738ad87006fa",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "[gasping] God!",
+    "words": [
+      {
+        "text": "[gasping]",
+        "start": 0.1,
+        "end": 1.78,
+        "type": "audio_event",
+        "logprob": -0.05318372425305521
+      },
+      {
+        "text": " ",
+        "start": 1.78,
+        "end": 1.86,
+        "type": "spacing",
+        "logprob": -0.0809975415468216
+      },
+      {
+        "text": "God!",
+        "start": 1.86,
+        "end": 2.48,
+        "type": "word",
+        "logprob": -0.06078200930642197
+      }
+    ],
+    "transcription_id": "0iqiUK09kIvnJEqpyPh2",
+    "audio_duration_secs": 2.9186875
+  }
+}

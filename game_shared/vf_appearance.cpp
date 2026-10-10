@@ -23,6 +23,21 @@ bool ParseAppearances(const char* text,size_t size,AppearanceCatalog& c) {
  }
  c.valid=c.count>0;return c.valid;
 }
+int FindAppearance(const AppearanceCatalog& c,const char* key) {
+ if(!c.valid||!key)return -1;
+ for(int i=0;i<c.count;++i)if(!strcmp(c.entries[i].key,key))return i;
+ return -1;
+}
+void RestoreAppearances(const AppearanceCatalog& c,const char* const* keys,int* selection,int count) {
+ for(int i=0;i<count;++i){int id=keys?FindAppearance(c,keys[i]):-1;selection[i]=id<0?0:id;}
+}
+const char* OperatorRig(const AppearanceCatalog& c,const int skins[SkinZones]) {
+ if(ValidSkins(c,skins)){
+  bool fitted=true;for(int z=0;z<SkinZones;++z)if(strcmp(c.entries[skins[z]].model,"persona_scout"))fitted=false;
+  if(fitted)return "models/vf_skins/persona_rig.mdl";
+ }
+ return "models/vf_operator.mdl";
+}
 bool ValidSkins(const AppearanceCatalog& c,const int skins[SkinZones]) {
  if(!c.valid)return false;for(int i=0;i<SkinZones;++i)if(skins[i]<0||skins[i]>=c.count)return false;return true;
 }
@@ -31,6 +46,25 @@ bool ValidWeaponStyles(const AppearanceCatalog& c,const int* styles) {
  for(int i=0;i<c.count;++i)if(c.entries[i].skin!=i)return false;
  for(int i=0;i<WeaponStyleSlots;++i)if(styles[i]<0||styles[i]>=c.count)return false;
  return true;
+}
+bool BoundWeaponStyles(const Catalog& c,const AppearanceCatalog& styles,const int* items,const int* chosen){
+ if(!c.valid||!ValidWeaponStyles(styles,chosen))return false;
+ for(int s=GearSlots;s<SlotCount;++s){int id=items[s];if(id<0||id>=c.count)return false;
+  if(c.items[id].weaponStyle[0]&&FindAppearance(styles,c.items[id].weaponStyle)!=chosen[s-GearSlots])return false;
+ }return true;
+}
+void BindWeaponStyles(const Catalog& c,const AppearanceCatalog& styles,const int* items,int* chosen){
+ for(int s=GearSlots;s<SlotCount;++s){int id=items[s];if(id<=0||id>=c.count)continue;
+  if(c.items[id].weaponStyle[0])chosen[s-GearSlots]=FindAppearance(styles,c.items[id].weaponStyle);
+ }
+}
+void PromoteGameplayEquipment(const Catalog& c,const AppearanceCatalog& styles,int* items,int* chosen){
+ // Migrate saved developer/base IDs only after their separately saved finishes.
+ for(int s=GearSlots;s<SlotCount;++s){int id=items[s],style=chosen[s-GearSlots];
+  if(id<=0||id>=c.count||c.items[id].model[0]||style<0||style>=styles.count)continue;
+  for(int i=1;i<c.count;++i)if(c.items[i].slot==s&&!strcmp(c.items[i].model,c.items[id].id)&&!strcmp(c.items[i].weaponStyle,styles.entries[style].key)){items[s]=i;break;}
+ }
+ NormalizeGameplay(c,items);BindWeaponStyles(c,styles,items,chosen);
 }
 int EquipmentFamily(const Catalog& c,const int* items,int slot) {
  if(!c.valid||!items||slot<0||slot>=SlotCount)return -1;
@@ -50,10 +84,19 @@ bool EquipmentSkins(const Catalog& c,const int* items,const AppearanceCatalog& s
  for(int z=0;z<5;++z){int f=EquipmentFamily(c,items,slots[z]);const char* key=f<0?"style_eclaireur_1":keys[f];int id=items[slots[z]];
   if(id>0&&id<c.count&&strstr(c.items[id].id,"_scout"))key="style_eclaireur_3";
   if(id>0&&id<c.count&&c.items[id].appearance[0])key=c.items[id].appearance;
-  if(!id)for(int i=0;i<skins.count;++i)if(!strcmp(skins.entries[i].key,"persona_gign")){key="persona_gign";break;}
+  // Unspecified/legacy equipment must not silently select a HEV family.
+  // Authored appearances still take precedence, including explicit lab choices.
+  if(id<=0||id>=c.count||!c.items[id].appearance[0])for(int i=0;i<skins.count;++i)if(!strcmp(skins.entries[i].key,"persona_gign")){key="persona_gign";break;}
   resolved[z]=-1;for(int i=0;i<skins.count;++i)if(!strcmp(skins.entries[i].key,key)){resolved[z]=i;break;}
   if(resolved[z]<0)return false;
  }memcpy(out,resolved,sizeof(resolved));return true;
+}
+int FirstPersonSkin(const Catalog& c,const int* items,const AppearanceCatalog& skins,int slot){
+ if(!c.valid||!items||!skins.valid||(slot!=2&&slot!=3))return 0;
+ int id=items[slot];if(id<=0||id>=c.count||c.items[id].slot!=slot)return 0;
+ int appearance=FindAppearance(skins,c.items[id].appearance);
+ if(appearance<0||strcmp(skins.entries[appearance].model,"persona_scout"))return 0;
+ return skins.entries[appearance].skin;
 }
 int EquipmentModule(const Catalog& c,const int* items,int zone){
  const int slots[]={9,10,18,17};const int variants[6][4]={{0,0,0,0},{2,2,0,2},{1,1,2,1},{0,2,1,0},{1,0,1,1},{2,1,2,0}};

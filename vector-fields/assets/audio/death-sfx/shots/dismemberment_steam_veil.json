@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "SteamVeil / dismemberment",
+  "created_utc": "2026-10-09T23:29:14.031034+00:00",
+  "request_sha256": "7615176a132ecb36e0dc5e4fb4c87816d5f9acef20a92f47da3586115c8b502d",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A taut soaked tissue snap with a tight pressurized steam jet and hot water droplets sputtering out. One fast wet severing onset followed by a short white vapor release.",
+    "duration_seconds": 1.1,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "8befe9d5295ca80bb8436c66f298c05d52314a18766fabc326ae255e869ee147",
+  "bytes": 18434,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A taut soaked tissue snap with a tight pressurized steam jet and hot water droplets sputtering out. One fast wet severing onset followed by a short white vapor release.",
+  "request_id": null,
+  "reported_credit_cost": "11"
+}

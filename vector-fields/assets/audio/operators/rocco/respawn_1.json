@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "respawn",
+  "variant": 1,
+  "text": "[indignant] This gun shoots everywhere except where I aim. Che schifo!",
+  "request": {
+    "text": "[indignant] This gun shoots everywhere except where I aim. Che schifo!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "2b8fb248164e7d04e12d5bae46f7ad1e073cb3e02b06f785bf5255c9c4f163c9",
+  "sha256": "b55ed91603c615b40107879d16ad974692b69d3c79751d636ff888f67d3ac91c",
+  "request_id": "uu8camqnMxWnF0RPa4iy",
+  "reported_credit_cost": "8"
+}

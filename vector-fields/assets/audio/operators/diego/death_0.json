@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "death",
+  "variant": 0,
+  "text": "[screams] Aah! No puede ser!",
+  "request": {
+    "text": "[screams] Aah! No puede ser!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "6a99ab314e941690714b23ba0d68305cb58e91eb27ea3822843455c6d6df3f95",
+  "sha256": "4612b11326a7958d8288f8458d91146bb4feb7aa487f229ce82ea151693c934a",
+  "request_id": "8ftm8L7YW16WFPsE8H2X",
+  "reported_credit_cost": "3"
+}

@@ -1,0 +1,19 @@
+{
+  "audio_sha256": "86cbf5bb09dffab6f43c409db4a4ca1d06d20757ca1a42ae35f0413a4d048c6c",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "[screaming]",
+    "words": [
+      {
+        "text": "[screaming]",
+        "start": 0.62,
+        "end": 1.6,
+        "type": "audio_event",
+        "logprob": -0.10605564386437268
+      }
+    ],
+    "transcription_id": "wNvQcnrre7VgatbK659s",
+    "audio_duration_secs": 2.9395625
+  }
+}

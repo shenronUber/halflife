@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Cryo / death",
+  "created_utc": "2026-10-09T23:28:50.708579+00:00",
+  "request_sha256": "892ae67ff883afdc5355c91ffca8bec3725fab873b65e4f6d0cfe7a4298e6ee9",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A frozen solid object develops three brittle spreading ice cracks, then a thin crystalline chime as fine frost grains settle. Small intimate ice failure, no big shattering explosion.",
+    "duration_seconds": 1.7,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "fc1eaac310860c7e223489ea476e80773a098dc4e3cd4a6ec6e1a417e699dd10",
+  "bytes": 28047,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A frozen solid object develops three brittle spreading ice cracks, then a thin crystalline chime as fine frost grains settle. Small intimate ice failure, no big shattering explosion.",
+  "request_id": null,
+  "reported_credit_cost": "17"
+}

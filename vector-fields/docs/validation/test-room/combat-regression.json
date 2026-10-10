@@ -1,0 +1,489 @@
+{
+  "elapsed_seconds": 9.23,
+  "material_count": 14,
+  "profile_count": 5,
+  "multipliers": {
+    "head": 3.0,
+    "chest": 1.0,
+    "abdomen": 1.0,
+    "arm": 1.0,
+    "leg": 1.0
+  },
+  "reload_samples": {
+    "COMBAT_IDLE": {
+      "probe": [
+        -359.454,
+        -249.835,
+        46.776
+      ],
+      "model": "models/vf_r01/r01_tp.mdl",
+      "boxes": 20,
+      "sequence": 41,
+      "frame": 131.56,
+      "clienttrace": 1.0,
+      "centers": {
+        "Bip01 Pelvis": [
+          -355.231,
+          -264.469,
+          36.612
+        ],
+        "Bip01 L Leg": [
+          -358.468,
+          -264.21,
+          26.568
+        ],
+        "Bip01 L Leg1": [
+          -358.139,
+          -265.556,
+          11.45
+        ],
+        "Bip01 L Foot": [
+          -357.766,
+          -263.54,
+          2.055
+        ],
+        "Bip01 R Leg": [
+          -351.682,
+          -264.183,
+          26.674
+        ],
+        "Bip01 R Leg1": [
+          -351.986,
+          -265.562,
+          11.485
+        ],
+        "Bip01 R Foot": [
+          -351.889,
+          -263.538,
+          2.055
+        ],
+        "Bip01 Spine1": [
+          -355.231,
+          -262.841,
+          43.435
+        ],
+        "Bip01 Spine2": [
+          -355.019,
+          -259.571,
+          49.943
+        ],
+        "Bip01 Spine3": [
+          -355.216,
+          -259.568,
+          52.585
+        ],
+        "Bip01 Neck": [
+          -354.663,
+          -257.806,
+          52.559
+        ],
+        "Bip01 Head": [
+          -353.79,
+          -250.685,
+          57.772
+        ],
+        "Bip01 L Arm": [
+          -359.338,
+          -256.856,
+          52.038
+        ],
+        "Bip01 L Arm1": [
+          -362.08,
+          -255.562,
+          45.605
+        ],
+        "Bip01 L Arm2": [
+          -357.437,
+          -252.005,
+          39.292
+        ],
+        "Bip01 L Hand": [
+          -350.694,
+          -248.226,
+          38.83
+        ],
+        "Bip01 R Arm": [
+          -350.662,
+          -260.923,
+          53.851
+        ],
+        "Bip01 R Arm1": [
+          -346.503,
+          -264.638,
+          49.743
+        ],
+        "Bip01 R Arm2": [
+          -347.907,
+          -262.167,
+          44.545
+        ],
+        "Bip01 R Hand": [
+          -351.73,
+          -255.292,
+          43.703
+        ]
+      }
+    },
+    "COMBAT_RELOAD_A": {
+      "probe": [
+        -359.454,
+        -249.835,
+        46.776
+      ],
+      "model": "models/vf_r01/r01_tp.mdl",
+      "boxes": 20,
+      "sequence": 77,
+      "frame": 59.7,
+      "clienttrace": 1.0,
+      "centers": {
+        "Bip01 Pelvis": [
+          -355.231,
+          -264.469,
+          36.612
+        ],
+        "Bip01 L Leg": [
+          -358.468,
+          -264.21,
+          26.568
+        ],
+        "Bip01 L Leg1": [
+          -358.139,
+          -265.556,
+          11.45
+        ],
+        "Bip01 L Foot": [
+          -357.766,
+          -263.54,
+          2.055
+        ],
+        "Bip01 R Leg": [
+          -351.682,
+          -264.183,
+          26.674
+        ],
+        "Bip01 R Leg1": [
+          -351.986,
+          -265.562,
+          11.485
+        ],
+        "Bip01 R Foot": [
+          -351.889,
+          -263.538,
+          2.055
+        ],
+        "Bip01 Spine1": [
+          -355.231,
+          -263.923,
+          43.646
+        ],
+        "Bip01 Spine2": [
+          -355.112,
+          -262.949,
+          50.921
+        ],
+        "Bip01 Spine3": [
+          -355.547,
+          -264.5,
+          53.205
+        ],
+        "Bip01 Neck": [
+          -355.028,
+          -262.903,
+          54.452
+        ],
+        "Bip01 Head": [
+          -354.984,
+          -261.877,
+          63.272
+        ],
+        "Bip01 L Arm": [
+          -360.05,
+          -262.595,
+          54.218
+        ],
+        "Bip01 L Arm1": [
+          -361.507,
+          -257.632,
+          49.921
+        ],
+        "Bip01 L Arm2": [
+          -355.546,
+          -250.453,
+          45.637
+        ],
+        "Bip01 L Hand": [
+          -348.652,
+          -246.496,
+          46.184
+        ],
+        "Bip01 R Arm": [
+          -350.801,
+          -266.469,
+          54.114
+        ],
+        "Bip01 R Arm1": [
+          -345.976,
+          -266.921,
+          49.28
+        ],
+        "Bip01 R Arm2": [
+          -347.167,
+          -262.283,
+          45.895
+        ],
+        "Bip01 R Hand": [
+          -351.464,
+          -256.102,
+          48.33
+        ]
+      }
+    },
+    "COMBAT_RELOAD_B": {
+      "probe": [
+        -364.239,
+        -252.719,
+        44.312
+      ],
+      "model": "models/vf_r01/r01_tp.mdl",
+      "boxes": 20,
+      "sequence": 77,
+      "frame": 187.68,
+      "clienttrace": 1.0,
+      "centers": {
+        "Bip01 Pelvis": [
+          -355.231,
+          -264.469,
+          36.612
+        ],
+        "Bip01 L Leg": [
+          -358.468,
+          -264.21,
+          26.568
+        ],
+        "Bip01 L Leg1": [
+          -358.139,
+          -265.556,
+          11.45
+        ],
+        "Bip01 L Foot": [
+          -357.766,
+          -263.54,
+          2.055
+        ],
+        "Bip01 R Leg": [
+          -351.682,
+          -264.183,
+          26.674
+        ],
+        "Bip01 R Leg1": [
+          -351.986,
+          -265.562,
+          11.485
+        ],
+        "Bip01 R Foot": [
+          -351.889,
+          -263.538,
+          2.055
+        ],
+        "Bip01 Spine1": [
+          -355.231,
+          -263.923,
+          43.646
+        ],
+        "Bip01 Spine2": [
+          -355.112,
+          -262.949,
+          50.921
+        ],
+        "Bip01 Spine3": [
+          -355.547,
+          -264.5,
+          53.205
+        ],
+        "Bip01 Neck": [
+          -355.028,
+          -262.903,
+          54.452
+        ],
+        "Bip01 Head": [
+          -354.984,
+          -261.877,
+          63.272
+        ],
+        "Bip01 L Arm": [
+          -360.05,
+          -262.595,
+          54.218
+        ],
+        "Bip01 L Arm1": [
+          -361.816,
+          -258.105,
+          49.62
+        ],
+        "Bip01 L Arm2": [
+          -356.104,
+          -251.689,
+          43.868
+        ],
+        "Bip01 L Hand": [
+          -349.065,
+          -247.889,
+          43.43
+        ],
+        "Bip01 R Arm": [
+          -350.801,
+          -266.469,
+          54.114
+        ],
+        "Bip01 R Arm1": [
+          -345.952,
+          -266.954,
+          49.293
+        ],
+        "Bip01 R Arm2": [
+          -347.135,
+          -262.334,
+          45.816
+        ],
+        "Bip01 R Hand": [
+          -351.463,
+          -256.124,
+          48.125
+        ]
+      }
+    },
+    "COMBAT_FINISHED": {
+      "probe": null,
+      "model": "models/vf_r01/r01_tp.mdl",
+      "boxes": 20,
+      "sequence": 41,
+      "frame": 51.19,
+      "clienttrace": 1.0,
+      "centers": {
+        "Bip01 Pelvis": [
+          -355.231,
+          -264.469,
+          36.612
+        ],
+        "Bip01 L Leg": [
+          -358.468,
+          -264.21,
+          26.568
+        ],
+        "Bip01 L Leg1": [
+          -358.139,
+          -265.556,
+          11.45
+        ],
+        "Bip01 L Foot": [
+          -357.766,
+          -263.54,
+          2.055
+        ],
+        "Bip01 R Leg": [
+          -351.682,
+          -264.183,
+          26.674
+        ],
+        "Bip01 R Leg1": [
+          -351.986,
+          -265.562,
+          11.485
+        ],
+        "Bip01 R Foot": [
+          -351.889,
+          -263.538,
+          2.055
+        ],
+        "Bip01 Spine1": [
+          -355.231,
+          -262.841,
+          43.435
+        ],
+        "Bip01 Spine2": [
+          -355.019,
+          -259.571,
+          49.943
+        ],
+        "Bip01 Spine3": [
+          -355.252,
+          -259.674,
+          52.61
+        ],
+        "Bip01 Neck": [
+          -354.709,
+          -257.91,
+          52.676
+        ],
+        "Bip01 Head": [
+          -353.904,
+          -250.937,
+          58.082
+        ],
+        "Bip01 L Arm": [
+          -359.415,
+          -256.848,
+          52.24
+        ],
+        "Bip01 L Arm1": [
+          -362.061,
+          -255.253,
+          45.962
+        ],
+        "Bip01 L Arm2": [
+          -357.326,
+          -251.505,
+          39.776
+        ],
+        "Bip01 L Hand": [
+          -350.595,
+          -247.668,
+          39.477
+        ],
+        "Bip01 R Arm": [
+          -350.64,
+          -260.999,
+          54.028
+        ],
+        "Bip01 R Arm1": [
+          -346.398,
+          -264.472,
+          49.955
+        ],
+        "Bip01 R Arm2": [
+          -347.795,
+          -261.846,
+          44.719
+        ],
+        "Bip01 R Hand": [
+          -351.661,
+          -254.965,
+          43.993
+        ]
+      }
+    }
+  },
+  "left_hand_motion_units": 3.113765244844254,
+  "actual_trace_motion_units": 6.1061425630261565,
+  "server_sha256": "3eb71f031859c3f4f988e87d2f44568ce79f0b1993c3d5249f9f25f1bca96762",
+  "catalog_sha256": "603e55a569b43897df64b1339296814d212dafe6448b9f50d4c4f85609d52a70",
+  "checks": [
+    "actual engine traces find all seven anatomical regions",
+    "legacy health damage verified for seven regions",
+    "legacy armor ratio and armor consumption preserved",
+    "projectile context does not leak into unscoped melee",
+    "equipped projectile and ammo identity captured independently of finish/VFX",
+    "textile and flesh layers identified",
+    "20 anatomical hitboxes, no invisible shield",
+    "actual engine trace intersections and server bone centers advance with reload; pelvis stays fixed",
+    "movement hull unchanged",
+    "reload completes and no renderer rejection"
+  ],
+  "limits": [
+    "GET_BONE_POSITION diagnostics reflect the server pose; precise hull blending may differ",
+    "client gait and torso corrections are not fully reproduced in server collision",
+    "clothing coverage is a coarse hitgroup proxy; no triangle-level layering or penetration",
+    "density is provisional; resistance, thickness, mass and speed are uncalibrated"
+  ],
+  "mode": "identify_only"
+}

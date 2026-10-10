@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "actor": "otto",
+  "cause": "caustic_contagion",
+  "text": "[raspy][screaming] KHAAAGH!",
+  "request": {
+    "text": "[raspy][screaming] KHAAAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "7797e14e7a4f0d58e1b2c95ac0c96d84beaadae33b5d9c5622a8d2faa458309f",
+  "sha256": "c544df2df9f0e8f74ff543e52d6c58ae10af897e5fdf2ad55bca169ba9fc9faf",
+  "request_id": "yDuUg60Gc2DuNpZTdAik"
+}

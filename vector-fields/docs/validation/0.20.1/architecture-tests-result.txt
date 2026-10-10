@@ -1,0 +1,1 @@
+PASS architecture: 1899 validation, stable-key migration and rig-selection checks

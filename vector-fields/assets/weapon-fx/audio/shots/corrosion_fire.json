@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Corrosion / fire",
+  "created_utc": "2026-10-09T02:54:30.123596+00:00",
+  "request_sha256": "762efbca190d3f5170955edbe59a5b7fb0b9aa0814adbfed81607d6d0c8727c7",
+  "request": {
+    "text": "Single corrosive liquid rifle shot. Immediate sharp pneumatic bark with a heavy viscous spit and small bubbling chemical tail. Punchy compact game sound, one trigger pull right at start, no voice, no music, no echo.",
+    "duration_seconds": 1.2,
+    "prompt_influence": 0.55,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "31da7a3a29a757c3fa755f6165d1acfea53e3da93acb2d390fe2f95d889f2be7",
+  "bytes": 20106,
+  "text": "Single corrosive liquid rifle shot. Immediate sharp pneumatic bark with a heavy viscous spit and small bubbling chemical tail. Punchy compact game sound, one trigger pull right at start, no voice, no music, no echo.",
+  "request_id": null,
+  "reported_credit_cost": "12"
+}

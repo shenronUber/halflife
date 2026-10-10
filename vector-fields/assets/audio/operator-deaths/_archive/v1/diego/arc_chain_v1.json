@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "actor": "diego",
+  "cause": "arc_chain",
+  "text": "[choking] Ghh... [screaming] A-a-aagh! [gurgling] Ghrr...",
+  "request": {
+    "text": "[choking] Ghh... [screaming] A-a-aagh! [gurgling] Ghrr...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "c3576464c78f76e5633f3458830f2bb589f09a55270792f3aba647c2d17bd415",
+  "sha256": "b0f80f476dde24a682c36b5db8660ce9db813c04964d1c35c53960ea720cbf81",
+  "request_id": "x2D7j7A7Lp0cfTRjmRth"
+}

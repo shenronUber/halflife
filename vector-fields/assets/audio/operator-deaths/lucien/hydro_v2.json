@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "actor": "lucien",
+  "cause": "hydro",
+  "text": "[choking][screaming] GRAAGH!",
+  "request": {
+    "text": "[choking][screaming] GRAAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "0e7aa8ab9634da0b575d37b356e77256ec9f3e69eb7944c3e413f4ceeb7c8e67",
+  "sha256": "3f24cda3f06827b9822b2dc5494428e7ea77110274db612939de2077ce91d38f",
+  "request_id": "c0WWOfagfnCPGm6uTR5j"
+}

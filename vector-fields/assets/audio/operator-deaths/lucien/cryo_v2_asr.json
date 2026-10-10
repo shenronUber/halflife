@@ -1,0 +1,33 @@
+{
+  "audio_sha256": "4f0fc4cbf55099c4ef3877747ca3f8501b5c645ad91f9e7ee00858dea696524e",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "Ah! Ah!",
+    "words": [
+      {
+        "text": "Ah!",
+        "start": 0.22,
+        "end": 0.74,
+        "type": "word",
+        "logprob": -0.2702351038654645
+      },
+      {
+        "text": " ",
+        "start": 0.74,
+        "end": 0.74,
+        "type": "spacing",
+        "logprob": -3.766942609217949e-05
+      },
+      {
+        "text": "Ah!",
+        "start": 1.4,
+        "end": 2.16,
+        "type": "word",
+        "logprob": -3.135151200694963e-05
+      }
+    ],
+    "transcription_id": "5kJCd79RJfaTP0Jg9Hh6",
+    "audio_duration_secs": 2.6080625
+  }
+}

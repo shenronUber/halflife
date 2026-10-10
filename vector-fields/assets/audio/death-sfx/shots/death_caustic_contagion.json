@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "CausticContagion / death",
+  "created_utc": "2026-10-09T23:29:09.672618+00:00",
+  "request_sha256": "ba2cc268ec3c94c82f1c89d9345b5601fdbf35ed8dd22f3c203f01e915eb9b3b",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. Two distinctly spaced viscous chemical bubble bursts with a crackly papery spore flutter between them, ending in a brief sour wet fizz. Acid and toxic contagion, pulsing organic texture.",
+    "duration_seconds": 2.1,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "1a19bf9c0ff93a74b00735cab936db508512f35008c241397039242661db98f1",
+  "bytes": 34316,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. Two distinctly spaced viscous chemical bubble bursts with a crackly papery spore flutter between them, ending in a brief sour wet fizz. Acid and toxic contagion, pulsing organic texture.",
+  "request_id": null,
+  "reported_credit_cost": "21"
+}

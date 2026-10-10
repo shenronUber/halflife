@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "model_id": "eleven_v4",
+  "event": "steam_veil",
+  "variant": 0,
+  "text": "[strained] Hot steam! I can't see!",
+  "request": {
+    "text": "[strained] Hot steam! I can't see!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "022efdd0f6d2ccbaccea6aa0459fc9489bd9ddd250b301c0a80fc5657f78e53c",
+  "sha256": "498b42e353518f178ab458a0569d5fc5467c1e5076354706d7fd9b139d5ae546",
+  "request_id": "1iJnGvxKKVo4OzsnAQX1",
+  "reported_credit_cost": "4"
+}

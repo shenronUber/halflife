@@ -1,0 +1,25 @@
+{
+  "verification": {
+    "files": 290,
+    "models": 76
+  },
+  "modified": [
+    {
+      "file": "dlls\\hl.dll",
+      "sha256": "6db15a07c9aa061e589df395996ae41a0be7fed038bbcb0048a5ba3507e136c2"
+    },
+    {
+      "file": "cl_dlls\\client.dll",
+      "sha256": "f6ed356ba04c7e61e291050c39a95345009f298a8595385386806dccaa8035af"
+    },
+    {
+      "file": "models\\vf_deaths\\persona_death.mdl",
+      "sha256": "9a234adfb8db014260e1ee28289aef658dbec161e3458ecb445b81d4557bb9df"
+    },
+    {
+      "file": "models\\vf_deaths\\persona_death_gibs.mdl",
+      "sha256": "0719ea686bd7974db14557ea76890d0c66be9b0067a9a4ecb62ba83fd1e6f6b1"
+    }
+  ],
+  "scope": "GIGN players/bots and native range targets; element and dismemberment thresholds unchanged"
+}

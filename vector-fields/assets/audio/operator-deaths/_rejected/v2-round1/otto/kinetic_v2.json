@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "actor": "otto",
+  "cause": "kinetic",
+  "text": "[grunts][screaming] AAGH!",
+  "request": {
+    "text": "[grunts][screaming] AAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "498c23ae6678100e771ecb47b59acfc8d14ae386af024a80b884e734ab506e41",
+  "sha256": "28f05ac0e7d2f9c22be3ce662763d8ca553246dcee29d681e5a41e27a0609735",
+  "request_id": "gtAEqS1ffH2hnAJRPMhT"
+}

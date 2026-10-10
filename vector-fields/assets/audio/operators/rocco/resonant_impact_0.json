@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "resonant_impact",
+  "variant": 0,
+  "text": "[pained] That shockwave went straight through me!",
+  "request": {
+    "text": "[pained] That shockwave went straight through me!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "aea0f4040d2ea3611417d10586391129076ed73b3bee60473507aa25e286da93",
+  "sha256": "99066ceec7b0ae21cf18de5f1395e71a15efb10e04e9da2c90acf9e00c4cb913",
+  "request_id": "84mx9eWVPyyy1u0ea68J",
+  "reported_credit_cost": "5"
+}

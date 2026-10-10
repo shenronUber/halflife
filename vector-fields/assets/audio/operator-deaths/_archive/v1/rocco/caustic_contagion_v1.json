@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "actor": "rocco",
+  "cause": "caustic_contagion",
+  "text": "[coughing] Khh! [choking] Ghrr... [wheezing] Hhh...",
+  "request": {
+    "text": "[coughing] Khh! [choking] Ghrr... [wheezing] Hhh...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "1fd78684b4afa866a075ad6cedae5389b8f2b7506499370e54422372b9dfc07d",
+  "sha256": "1a66990a512b4bb94a72bdaccb7678b0dd0dc4ad15f713e3ba04c4d6ca690803",
+  "request_id": "iKo3UUM1jif21Sx1Am1c"
+}

@@ -1,0 +1,25 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Sarah / reload_start",
+  "created_utc": "2026-10-09T02:34:54.319235+00:00",
+  "request_sha256": "f223ddbb31a036c0668bd04de82fe88ee09fd4c674a67e1323037e877f9a02dd",
+  "request": {
+    "text": "Reloading. Cover me.",
+    "model_id": "eleven_v4",
+    "language_code": "en",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "endpoint": "/v1/text-to-speech/EXAVITQu4vr4xnSDxMaL?output_format=mp3_44100_128",
+  "sha256": "09aba9011a59f8f1e0322bc4a146d85e054f6f6fc05c959772a3052df27d1abc",
+  "bytes": 29301,
+  "text": "Reloading. Cover me.",
+  "request_id": "tkqoEAJyOEnxEBymRhCU",
+  "reported_credit_cost": "2",
+  "voice_id": "EXAVITQu4vr4xnSDxMaL",
+  "voice_name": "Sarah",
+  "language": "en"
+}

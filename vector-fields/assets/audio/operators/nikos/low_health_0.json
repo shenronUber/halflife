@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "model_id": "eleven_v4",
+  "event": "low_health",
+  "variant": 0,
+  "text": "[strained] Παναγία μου. I'm barely standing.",
+  "request": {
+    "text": "[strained] Παναγία μου. I'm barely standing.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "2dd0020d2da491bcde571f8e0d91d674b29b73aca5c09ca337b9989c5f8b6669",
+  "sha256": "3d6a311f2a1a22b663f68409eaf391b676098677a7191f5c69dda65431434277",
+  "request_id": "UW17Xyj9HMQOHIZ3O4m6",
+  "reported_credit_cost": "5"
+}

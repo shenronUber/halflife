@@ -1,0 +1,190 @@
+{
+  "clips": [
+    {
+      "id": "vf_q_death",
+      "label": "Quaternius - chute",
+      "source_file": "quaternius-standard.gltf",
+      "source_clip": "Death01",
+      "reference": "A_TPose",
+      "frames": 73,
+      "fps": 30.31578947368421,
+      "seconds": 2.375,
+      "leg_scale": 38.10475930169596,
+      "sha256": "0ff075c7ad6855c5c2c37a171592ee8f0d6ab2f58259e2be77a9b63dd8027765",
+      "compiled_sequence": 78,
+      "floor_range": [
+        -35.90048741824576,
+        -35.88469689629152
+      ],
+      "settled_torso_min": -35.89918222210771
+    },
+    {
+      "id": "vf_k_death_a",
+      "label": "KayKit - mort A",
+      "source_file": "kaykit-general.glb",
+      "source_clip": "Death_A",
+      "reference": "T-Pose",
+      "frames": 26,
+      "fps": 31.24999953433872,
+      "seconds": 0.800000011920929,
+      "leg_scale": 84.3788751358,
+      "sha256": "5f725c0f745f36078c7238968cd5c04843cbc6260689eb6e7f5e2bbd7ffdd7ad",
+      "compiled_sequence": 79,
+      "floor_range": [
+        -35.90277192619213,
+        -35.885689431911594
+      ],
+      "settled_torso_min": -35.88946635063476
+    },
+    {
+      "id": "vf_k_death_b",
+      "label": "KayKit - mort B",
+      "source_file": "kaykit-general.glb",
+      "source_clip": "Death_B",
+      "reference": "T-Pose",
+      "frames": 81,
+      "fps": 30.379745551856445,
+      "seconds": 2.633333444595337,
+      "leg_scale": 84.3788751358,
+      "sha256": "5f725c0f745f36078c7238968cd5c04843cbc6260689eb6e7f5e2bbd7ffdd7ad",
+      "compiled_sequence": 80,
+      "floor_range": [
+        -35.90673160420085,
+        -35.88737056145622
+      ],
+      "settled_torso_min": -35.89738656771634
+    },
+    {
+      "id": "vf_m_collapse",
+      "label": "Mixamo : chute au sol",
+      "source_file": "mixamo-Death.glb",
+      "source_clip": "mixamo.com",
+      "reference": "bind",
+      "frames": 91,
+      "fps": 30.0,
+      "seconds": 3.0,
+      "leg_scale": 35.56922746006123,
+      "sha256": "fe25cf6b5c24703d410ce168a2bf1dfce0ac0189891b83291a661e2c4b411b67",
+      "compiled_sequence": 81,
+      "floor_range": [
+        -35.90327364794267,
+        -35.883478121658044
+      ],
+      "settled_torso_min": -35.89752412287685
+    },
+    {
+      "id": "vf_m_impact_right",
+      "label": "Mixamo : impact lateral",
+      "source_file": "mixamo-Death_From_Right.glb",
+      "source_clip": "mixamo.com",
+      "reference": "bind",
+      "frames": 100,
+      "fps": 30.075948640945324,
+      "seconds": 3.2916667461395264,
+      "leg_scale": 35.56922746006123,
+      "sha256": "9ec41141c135a2a1b03cc3912b77d1c5778ebe22b94355ed0c2aa93fc2ca8e92",
+      "compiled_sequence": 82,
+      "floor_range": [
+        -35.90346063755238,
+        -35.88406311237147
+      ],
+      "settled_torso_min": -35.89102583297298
+    },
+    {
+      "id": "vf_m_impact_front",
+      "label": "Mixamo : recul frontal",
+      "source_file": "mixamo-Death_From_The_Front.glb",
+      "source_clip": "mixamo.com",
+      "reference": "bind",
+      "frames": 104,
+      "fps": 30.14634076220022,
+      "seconds": 3.4166667461395264,
+      "leg_scale": 35.56922746006123,
+      "sha256": "4de3acc5173656bdfcc2edeb6df54881bcb6073fc13d20ba42a9c951bc65f4d3",
+      "compiled_sequence": 83,
+      "floor_range": [
+        -35.89996508494861,
+        -35.88135412527825
+      ],
+      "settled_torso_min": -35.897100696387234
+    },
+    {
+      "id": "vf_m_agony",
+      "label": "Mixamo : agonie lente",
+      "source_file": "mixamo-Dying.glb",
+      "source_clip": "mixamo.com",
+      "reference": "bind",
+      "frames": 174,
+      "fps": 30.08695652173913,
+      "seconds": 5.75,
+      "leg_scale": 35.56922746006123,
+      "sha256": "be1e9655ed41c77c3dfeb6538fa2ef218a2386e909fb56b628b9b438561b174a",
+      "compiled_sequence": 84,
+      "floor_range": [
+        -35.89983986581453,
+        -35.88341892661835
+      ],
+      "settled_torso_min": -35.89780114397885
+    },
+    {
+      "id": "vf_m_collapse_left",
+      "label": "Mixamo : chute laterale",
+      "source_file": "mixamo-Standing_Death_Left_01.glb",
+      "source_clip": "mixamo.com",
+      "reference": "bind",
+      "frames": 69,
+      "fps": 30.22222222222222,
+      "seconds": 2.25,
+      "leg_scale": 35.56922746006123,
+      "sha256": "39816a55581aaa825088b60ddc9edecb64d334a2a568c5f78e87702675e81f37",
+      "compiled_sequence": 85,
+      "floor_range": [
+        -35.90123466321563,
+        -35.88514133153687
+      ],
+      "settled_torso_min": -35.893056254531466
+    },
+    {
+      "id": "vf_m_recoil_back",
+      "label": "Mixamo : douleur puis recul",
+      "source_file": "mixamo-Standing_React_Death_Backward.glb",
+      "source_clip": "mixamo.com",
+      "reference": "bind",
+      "frames": 110,
+      "fps": 30.06896551724138,
+      "seconds": 3.625,
+      "leg_scale": 35.56922746006123,
+      "sha256": "0926791a3b9acb080835499cb584c358814fcfe35775f3d0bd364645cc80defa",
+      "compiled_sequence": 86,
+      "floor_range": [
+        -35.902797185986,
+        -35.884767507043144
+      ],
+      "settled_torso_min": -35.89983855345816
+    },
+    {
+      "id": "vf_m_recoil_right",
+      "label": "Mixamo : douleur puis chute",
+      "source_file": "mixamo-Standing_React_Death_Right.glb",
+      "source_clip": "mixamo.com",
+      "reference": "bind",
+      "frames": 106,
+      "fps": 30.0,
+      "seconds": 3.5,
+      "leg_scale": 35.56922746006123,
+      "sha256": "b5eb01a3c9d207a961f324174c6d31a741b66dfe6566c59f31d61a27507f338b",
+      "compiled_sequence": 87,
+      "floor_range": [
+        -35.900377750463086,
+        -35.88296242090579
+      ],
+      "settled_torso_min": -35.88482994641538
+    }
+  ],
+  "checks": [
+    "pinned donor tracks compiled on the original 28 bones",
+    "77 historical sequences and electrical index preserved",
+    "constant GIGN limb lengths in every imported frame",
+    "ground contact and settled torso checked on the actual compiled mesh"
+  ]
+}

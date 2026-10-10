@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "model_id": "eleven_v4",
+  "event": "respawn",
+  "variant": 2,
+  "text": "[sarcastic] Terrible game. Obviously the developers are afraid of my talent.",
+  "request": {
+    "text": "[sarcastic] Terrible game. Obviously the developers are afraid of my talent.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "801dc0f9389fbbb6133b745d443e27f655ff2de90f09322a0069dffe40d916c3",
+  "sha256": "00604081c883f135ef43edc5b1fc9bc4a9ba8987f4e726413a76aeca1cdc7309",
+  "request_id": "I8BN5Bn6pYkKG4XSl2uF",
+  "reported_credit_cost": "8"
+}

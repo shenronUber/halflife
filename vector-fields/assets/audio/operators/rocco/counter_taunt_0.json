@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "counter_taunt",
+  "variant": 0,
+  "text": "[angry] Vieni qui! Say that to my face, stronzo!",
+  "request": {
+    "text": "[angry] Vieni qui! Say that to my face, stronzo!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "5adf6ff0aace3366755f35b182ecd4acb06454a6eb8fce033ac7e319639b202e",
+  "sha256": "f3ac8b9a89244b36de03a911ef93f6f320f003b3d952c21240708113612397d6",
+  "request_id": "HvywBuWkzwGVocgY1adz",
+  "reported_credit_cost": "5"
+}

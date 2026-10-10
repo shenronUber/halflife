@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "actor": "rocco",
+  "cause": "superconduction",
+  "text": "[shivering] Hh-hh... [screaming] A-a-aagh! [weakly] Hhh...",
+  "request": {
+    "text": "[shivering] Hh-hh... [screaming] A-a-aagh! [weakly] Hhh...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "7252c00a4d16ad507313bf12beda8478f55dc9a8e1f9d661b4419e266a2a7e49",
+  "sha256": "62e1f4a75a288bce390a92ccfdc5bbfcb8c243b9099d8bd2a2c2e1d2eef2532d",
+  "request_id": "abc7Vnfh13jh9EP1HUAk"
+}

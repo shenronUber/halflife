@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "actor": "lucien",
+  "cause": "cryo",
+  "text": "[strained][screaming] AAGH!",
+  "request": {
+    "text": "[strained][screaming] AAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "7e4e82fe36e647ed0ec87039792c67427060de512e105f56ea1adcd6f1077450",
+  "sha256": "ffb1547b9ef1692202e6afcc9b2f6962ebe395509fe62e938f0ddd60754500ec",
+  "request_id": "KCFsufZxfLHnY2mAfaYd"
+}

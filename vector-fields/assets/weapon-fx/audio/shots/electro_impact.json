@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Electro / impact",
+  "created_utc": "2026-10-09T02:54:19.432268+00:00",
+  "request_sha256": "b5ff23f72c6acdaee0c311f9930583e63b030b2c4b7fca313cf64ebf6df1f674",
+  "request": {
+    "text": "Single abrupt electrical projectile contact on hard material. Sharp electric snap, brittle crackling sparks, short dying sizzle. No voice, no music, no firing sound.",
+    "duration_seconds": 1.2,
+    "prompt_influence": 0.55,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "0bef2fb793fe94164d6677a407ebab52d8a659a9b5c9be10ddd58c78b16d4c46",
+  "bytes": 20106,
+  "text": "Single abrupt electrical projectile contact on hard material. Sharp electric snap, brittle crackling sparks, short dying sizzle. No voice, no music, no firing sound.",
+  "request_id": null,
+  "reported_credit_cost": "12"
+}

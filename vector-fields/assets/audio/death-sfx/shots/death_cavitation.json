@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Cavitation / death",
+  "created_utc": "2026-10-09T23:29:07.896400+00:00",
+  "request_sha256": "e106a12c50a0f34039201c8cd4cca74dc05f9c82dc6e3465a45fcf6e91d03c47",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A cluster of liquid bubbles rapidly implodes into one hollow deep pop, a short pressure ring and a splattering acidic water spray. Vacuum-like watery suction then collapse.",
+    "duration_seconds": 1.7,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "18e3a9ddf16f876cf4e8878ca0d817b7c093aeab96aecb2fd38ba3e3d857415f",
+  "bytes": 28047,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A cluster of liquid bubbles rapidly implodes into one hollow deep pop, a short pressure ring and a splattering acidic water spray. Vacuum-like watery suction then collapse.",
+  "request_id": null,
+  "reported_credit_cost": "17"
+}

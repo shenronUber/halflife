@@ -1,0 +1,213 @@
+{
+  "barney": {
+    "formats": [
+      {
+        "rate": 11025,
+        "bits": 8,
+        "channels": 1,
+        "encoding": "NONE",
+        "count": 178
+      }
+    ],
+    "examples": [
+      {
+        "file": "_comma.wav",
+        "rate": 11025,
+        "bits": 8,
+        "channels": 1,
+        "encoding": "NONE"
+      },
+      {
+        "file": "aimforhead.wav",
+        "rate": 11025,
+        "bits": 8,
+        "channels": 1,
+        "encoding": "NONE"
+      },
+      {
+        "file": "aintgoin.wav",
+        "rate": 11025,
+        "bits": 8,
+        "channels": 1,
+        "encoding": "NONE"
+      }
+    ]
+  },
+  "scientist": {
+    "formats": [
+      {
+        "rate": 11025,
+        "bits": 8,
+        "channels": 1,
+        "encoding": "NONE",
+        "count": 385
+      }
+    ],
+    "examples": [
+      {
+        "file": "_comma.wav",
+        "rate": 11025,
+        "bits": 8,
+        "channels": 1,
+        "encoding": "NONE"
+      },
+      {
+        "file": "absolutely.wav",
+        "rate": 11025,
+        "bits": 8,
+        "channels": 1,
+        "encoding": "NONE"
+      },
+      {
+        "file": "absolutelynot.wav",
+        "rate": 11025,
+        "bits": 8,
+        "channels": 1,
+        "encoding": "NONE"
+      }
+    ]
+  },
+  "hgrunt": {
+    "formats": [
+      {
+        "rate": 11025,
+        "bits": 8,
+        "channels": 1,
+        "encoding": "NONE",
+        "count": 326
+      },
+      {
+        "rate": 22050,
+        "bits": 8,
+        "channels": 1,
+        "encoding": "NONE",
+        "count": 3
+      }
+    ],
+    "examples": [
+      {
+        "file": "_comma.wav",
+        "rate": 11025,
+        "bits": 8,
+        "channels": 1,
+        "encoding": "NONE"
+      },
+      {
+        "file": "_period.wav",
+        "rate": 11025,
+        "bits": 8,
+        "channels": 1,
+        "encoding": "NONE"
+      },
+      {
+        "file": "a!.wav",
+        "rate": 11025,
+        "bits": 8,
+        "channels": 1,
+        "encoding": "NONE"
+      }
+    ]
+  },
+  "vox": {
+    "formats": [
+      {
+        "rate": 11025,
+        "bits": 8,
+        "channels": 1,
+        "encoding": "NONE",
+        "count": 616
+      }
+    ],
+    "examples": [
+      {
+        "file": "_comma.wav",
+        "rate": 11025,
+        "bits": 8,
+        "channels": 1,
+        "encoding": "NONE"
+      },
+      {
+        "file": "_period.wav",
+        "rate": 11025,
+        "bits": 8,
+        "channels": 1,
+        "encoding": "NONE"
+      },
+      {
+        "file": "a.wav",
+        "rate": 11025,
+        "bits": 8,
+        "channels": 1,
+        "encoding": "NONE"
+      }
+    ]
+  },
+  "fvox": {
+    "formats": [
+      {
+        "rate": 11025,
+        "bits": 8,
+        "channels": 1,
+        "encoding": "NONE",
+        "count": 142
+      }
+    ],
+    "examples": [
+      {
+        "file": "_comma.wav",
+        "rate": 11025,
+        "bits": 8,
+        "channels": 1,
+        "encoding": "NONE"
+      },
+      {
+        "file": "_period.wav",
+        "rate": 11025,
+        "bits": 8,
+        "channels": 1,
+        "encoding": "NONE"
+      },
+      {
+        "file": "acquired.wav",
+        "rate": 11025,
+        "bits": 8,
+        "channels": 1,
+        "encoding": "NONE"
+      }
+    ]
+  },
+  "gman": {
+    "formats": [
+      {
+        "rate": 11025,
+        "bits": 8,
+        "channels": 1,
+        "encoding": "NONE",
+        "count": 18
+      }
+    ],
+    "examples": [
+      {
+        "file": "gman_choose1.wav",
+        "rate": 11025,
+        "bits": 8,
+        "channels": 1,
+        "encoding": "NONE"
+      },
+      {
+        "file": "gman_choose2.wav",
+        "rate": 11025,
+        "bits": 8,
+        "channels": 1,
+        "encoding": "NONE"
+      },
+      {
+        "file": "gman_mumble1.wav",
+        "rate": 11025,
+        "bits": 8,
+        "channels": 1,
+        "encoding": "NONE"
+      }
+    ]
+  }
+}

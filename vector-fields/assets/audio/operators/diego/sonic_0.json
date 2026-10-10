@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "sonic",
+  "variant": 0,
+  "text": "[pained] Mis oídos! That noise hurts!",
+  "request": {
+    "text": "[pained] Mis oídos! That noise hurts!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "9c49900af2be13b80abbd949c51b373786bb94410ec4f29dbfd49a590220c109",
+  "sha256": "f8f22a0892d782792f66dfd7ae0983efba1d63b941cd302ca37e3c4d6290ac03",
+  "request_id": "QrGuxiQsfgHc4ihRSBOU",
+  "reported_credit_cost": "4"
+}

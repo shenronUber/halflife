@@ -4,7 +4,7 @@
   "reference_sha256": "6e2820424beee8027234b302713a2fcdd3bec2741f11c7625f51bfef6b3374f4",
   "generation_tool": "built-in image_gen",
   "builder": "vector-fields/build_reference_weapon.py",
-  "builder_sha256": "0338b3f460f8fef09d17033d56eae1aa50357a88e0015419cdbeb381dbe35082",
+  "builder_sha256": "46e59c44dfb82931d46a925ad7f4d120438bade64091c120510d548c458b7bc8",
   "model_material_usage": {
     "r01_receiver_a": [
       0,
@@ -15,6 +15,19 @@
       6
     ],
     "r01_receiver_b": [
+      0,
+      1,
+      3,
+      5,
+      6
+    ],
+    "r01_receiver_c": [
+      0,
+      1,
+      2,
+      5
+    ],
+    "r01_receiver_d": [
       0,
       1,
       3,
@@ -33,11 +46,30 @@
       7,
       13
     ],
+    "r01_barrel_c": [
+      0,
+      2,
+      5
+    ],
+    "r01_barrel_d": [
+      0,
+      5,
+      6,
+      13
+    ],
     "r01_muzzle_a": [
       0,
       5
     ],
     "r01_muzzle_b": [
+      0,
+      5
+    ],
+    "r01_muzzle_c": [
+      0,
+      5
+    ],
+    "r01_muzzle_d": [
       0,
       5
     ],
@@ -53,6 +85,17 @@
       5,
       14
     ],
+    "r01_feed_c": [
+      0,
+      4,
+      5,
+      14
+    ],
+    "r01_feed_d": [
+      0,
+      5,
+      14
+    ],
     "r01_chamber_a": [
       0,
       4,
@@ -64,6 +107,17 @@
       5,
       15
     ],
+    "r01_chamber_c": [
+      0,
+      5,
+      15
+    ],
+    "r01_chamber_d": [
+      0,
+      3,
+      5,
+      15
+    ],
     "r01_ammo_a": [
       0,
       2,
@@ -71,6 +125,18 @@
       7
     ],
     "r01_ammo_b": [
+      0,
+      3,
+      5,
+      9
+    ],
+    "r01_ammo_c": [
+      0,
+      2,
+      5,
+      7
+    ],
+    "r01_ammo_d": [
       0,
       3,
       5,
@@ -88,6 +154,18 @@
       5,
       9
     ],
+    "r01_projectile_c": [
+      0,
+      2,
+      5,
+      7
+    ],
+    "r01_projectile_d": [
+      0,
+      3,
+      5,
+      9
+    ],
     "r01_optic_a": [
       0,
       2,
@@ -97,6 +175,17 @@
     "r01_optic_b": [
       0,
       4,
+      5,
+      11
+    ],
+    "r01_optic_c": [
+      0,
+      5,
+      11
+    ],
+    "r01_optic_d": [
+      0,
+      3,
       5,
       11
     ],
@@ -110,6 +199,17 @@
       5,
       13
     ],
+    "r01_underbarrel_c": [
+      0,
+      4,
+      5
+    ],
+    "r01_underbarrel_d": [
+      0,
+      4,
+      5,
+      13
+    ],
     "r01_grip_a": [
       0,
       4,
@@ -119,6 +219,17 @@
       0,
       1,
       2,
+      4,
+      5
+    ],
+    "r01_grip_c": [
+      0,
+      4,
+      5
+    ],
+    "r01_grip_d": [
+      0,
+      3,
       4,
       5
     ],
@@ -137,6 +248,21 @@
       9,
       10
     ],
+    "r01_power_c": [
+      0,
+      2,
+      5,
+      7,
+      10
+    ],
+    "r01_power_d": [
+      0,
+      3,
+      5,
+      7,
+      9,
+      10
+    ],
     "r01_cooling_a": [
       0,
       5
@@ -145,6 +271,91 @@
       0,
       7,
       13
+    ],
+    "r01_cooling_c": [
+      0,
+      5
+    ],
+    "r01_cooling_d": [
+      0,
+      5,
+      7
+    ],
+    "r01_receiver_side": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6
+    ],
+    "r01_receiver_top": [
+      0,
+      1,
+      3,
+      5,
+      6
+    ],
+    "r01_receiver_arch": [
+      0,
+      2,
+      5
+    ],
+    "r01_receiver_gyre": [
+      0,
+      2,
+      3,
+      5,
+      7
+    ],
+    "r01_chamber_inventor": [
+      0,
+      4,
+      5,
+      7,
+      15
+    ],
+    "r01_chamber_diesel": [
+      0,
+      2,
+      4,
+      5
+    ],
+    "r01_optic_inventor": [
+      0,
+      5,
+      11
+    ],
+    "r01_optic_diesel": [
+      0,
+      2,
+      5,
+      10,
+      11
+    ],
+    "r01_power_inventor": [
+      0,
+      4,
+      5,
+      7
+    ],
+    "r01_power_diesel": [
+      0,
+      5,
+      7,
+      8,
+      10
+    ],
+    "r01_cooling_inventor": [
+      0,
+      5,
+      6
+    ],
+    "r01_cooling_diesel": [
+      0,
+      2,
+      5,
+      7
     ]
   },
   "layout": "4x4 row-major, zero-based IDs, 3px crop inset",
@@ -214,9 +425,21 @@
       "title": "Abysses",
       "description": "Neoprene petrol, caoutchouc, laiton et verre marin.",
       "manifest": "abyss-diver/manifest.json"
+    },
+    {
+      "id": "roman-inventor",
+      "title": "Rome / Atelier d'inventeur",
+      "description": "Noyer, cordages, toile de construction, ivoire, bronze patine et mecanismes a poulies.",
+      "manifest": "roman-inventor/manifest.json"
+    },
+    {
+      "id": "dieselpunk",
+      "title": "Dieselpunk",
+      "description": "Carrosserie petrole nervuree, fonte huileuse, bakelite rouge, radiateurs et cadrans analogiques.",
+      "manifest": "dieselpunk/manifest.json"
     }
   ],
-  "atlases": 11,
-  "tile_count": 176,
+  "atlases": 13,
+  "tile_count": 208,
   "integration": "Texture banks exported; active MDL/runtime unchanged. GoldSrc embeds textures in compiled MDL files: a material-bank change requires recompile or skin import."
 }

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "toxic",
+  "variant": 0,
+  "text": "[coughs] Яд. Poison in my lungs.",
+  "request": {
+    "text": "[coughs] Яд. Poison in my lungs.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "bc46ce36060c20412ebe61c07fb3e1aa7f49f80b08d7f41ccd1c4774c551a409",
+  "sha256": "c9947c858f65d3fcb5db7727fecca59bd42e0e9a7897a598a1f33eb968e9189e",
+  "request_id": "YQseGkRC5EpT0qSNp4wc",
+  "reported_credit_cost": "4"
+}

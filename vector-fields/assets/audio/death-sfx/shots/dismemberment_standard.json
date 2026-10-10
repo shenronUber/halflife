@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Neutre / dismemberment",
+  "created_utc": "2026-10-09T23:28:46.659325+00:00",
+  "request_sha256": "a0cd0e753141faf7a0dc4706030e5609c13cccb96c56ff2e3a8c2b4544c5efa4",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A single close dry tendon rip followed by a sharp bone crack, a compact wet snap and three soft blood droplets. Restrained organic gore foley, quick physical limb detachment. Not an impact landing.",
+    "duration_seconds": 1.1,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "bd2f1e052b3ce9658b569298ac2595dfa7a74ef8b9160d34990e53f6da191532",
+  "bytes": 18434,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A single close dry tendon rip followed by a sharp bone crack, a compact wet snap and three soft blood droplets. Restrained organic gore foley, quick physical limb detachment. Not an impact landing.",
+  "request_id": null,
+  "reported_credit_cost": "11"
+}

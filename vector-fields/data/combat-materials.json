@@ -1,0 +1,269 @@
+{
+  "schema": 1,
+  "mode": "identify_only",
+  "units": {
+    "density": "kg/m3",
+    "thickness": "mm",
+    "resistance": "J/mm"
+  },
+  "note": "Density values are provisional game parameters, not calibrated material measurements. Unknown thickness and resistance stay null. Paint/skin does not determine physics.",
+  "materials": [
+    {
+      "id": "unknown",
+      "family": "unknown",
+      "density_kg_m3": null,
+      "ballistic_resistance_j_per_mm": null,
+      "calibrated": false
+    },
+    {
+      "id": "flesh",
+      "family": "biological",
+      "density_kg_m3": 1000,
+      "ballistic_resistance_j_per_mm": null,
+      "calibrated": false
+    },
+    {
+      "id": "textile",
+      "family": "fabric",
+      "density_kg_m3": 500,
+      "ballistic_resistance_j_per_mm": null,
+      "calibrated": false
+    },
+    {
+      "id": "leather",
+      "family": "organic",
+      "density_kg_m3": 850,
+      "ballistic_resistance_j_per_mm": null,
+      "calibrated": false
+    },
+    {
+      "id": "rubber",
+      "family": "polymer",
+      "density_kg_m3": 1100,
+      "ballistic_resistance_j_per_mm": null,
+      "calibrated": false
+    },
+    {
+      "id": "steel",
+      "family": "metal",
+      "density_kg_m3": 7800,
+      "ballistic_resistance_j_per_mm": null,
+      "calibrated": false
+    },
+    {
+      "id": "glass",
+      "family": "mineral",
+      "density_kg_m3": 2500,
+      "ballistic_resistance_j_per_mm": null,
+      "calibrated": false
+    },
+    {
+      "id": "concrete",
+      "family": "mineral",
+      "density_kg_m3": 2400,
+      "ballistic_resistance_j_per_mm": null,
+      "calibrated": false
+    },
+    {
+      "id": "wood",
+      "family": "organic",
+      "density_kg_m3": 600,
+      "ballistic_resistance_j_per_mm": null,
+      "calibrated": false
+    },
+    {
+      "id": "soil",
+      "family": "granular",
+      "density_kg_m3": 1700,
+      "ballistic_resistance_j_per_mm": null,
+      "calibrated": false
+    },
+    {
+      "id": "ceramic",
+      "family": "mineral",
+      "density_kg_m3": 2300,
+      "ballistic_resistance_j_per_mm": null,
+      "calibrated": false
+    },
+    {
+      "id": "water",
+      "family": "fluid",
+      "density_kg_m3": 1000,
+      "ballistic_resistance_j_per_mm": null,
+      "calibrated": false
+    },
+    {
+      "id": "composite",
+      "family": "composite",
+      "density_kg_m3": null,
+      "ballistic_resistance_j_per_mm": null,
+      "calibrated": false
+    },
+    {
+      "id": "snow",
+      "family": "granular",
+      "density_kg_m3": null,
+      "ballistic_resistance_j_per_mm": null,
+      "calibrated": false
+    }
+  ],
+  "profiles": [
+    {
+      "id": "unknown",
+      "layers": [
+        {
+          "material": "unknown",
+          "thickness_mm": null
+        }
+      ]
+    },
+    {
+      "id": "uniform",
+      "layers": [
+        {
+          "material": "textile",
+          "thickness_mm": null
+        }
+      ]
+    },
+    {
+      "id": "glove",
+      "layers": [
+        {
+          "material": "leather",
+          "thickness_mm": null
+        }
+      ]
+    },
+    {
+      "id": "boot",
+      "layers": [
+        {
+          "material": "rubber",
+          "thickness_mm": null
+        }
+      ]
+    },
+    {
+      "id": "metal",
+      "layers": [
+        {
+          "material": "steel",
+          "thickness_mm": null
+        }
+      ]
+    }
+  ],
+  "slot_profiles": {
+    "head": "unknown",
+    "shoulders": "unknown",
+    "gloves": "glove",
+    "torso": "uniform",
+    "belt": "unknown",
+    "legs": "uniform",
+    "boots": "boot",
+    "shield": "unknown",
+    "special": "unknown",
+    "receiver": "unknown",
+    "barrel": "unknown",
+    "muzzle": "unknown",
+    "feed": "unknown",
+    "chamber": "unknown",
+    "ammo": "unknown",
+    "projectile": "unknown",
+    "optic": "unknown",
+    "underbarrel": "unknown",
+    "grip": "unknown",
+    "power": "unknown",
+    "cooling": "unknown"
+  },
+  "item_overrides": [],
+  "texture_types": {
+    "C": "concrete",
+    "M": "steel",
+    "D": "soil",
+    "V": "steel",
+    "G": "steel",
+    "T": "ceramic",
+    "S": "water",
+    "W": "wood",
+    "P": "composite",
+    "Y": "glass",
+    "F": "flesh",
+    "N": "snow"
+  },
+  "native_projectiles": [
+    {
+      "native_type": 0,
+      "id": "none",
+      "nature": "unknown",
+      "mass_kg": null,
+      "speed_m_s": null,
+      "calibrated": false
+    },
+    {
+      "native_type": 1,
+      "id": "player_9mm",
+      "nature": "kinetic",
+      "mass_kg": null,
+      "speed_m_s": null,
+      "calibrated": false
+    },
+    {
+      "native_type": 2,
+      "id": "player_mp5",
+      "nature": "kinetic",
+      "mass_kg": null,
+      "speed_m_s": null,
+      "calibrated": false
+    },
+    {
+      "native_type": 3,
+      "id": "player_357",
+      "nature": "kinetic",
+      "mass_kg": null,
+      "speed_m_s": null,
+      "calibrated": false
+    },
+    {
+      "native_type": 4,
+      "id": "player_buckshot",
+      "nature": "kinetic",
+      "mass_kg": null,
+      "speed_m_s": null,
+      "calibrated": false
+    },
+    {
+      "native_type": 5,
+      "id": "player_crowbar",
+      "nature": "blunt",
+      "mass_kg": null,
+      "speed_m_s": null,
+      "calibrated": false
+    },
+    {
+      "native_type": 6,
+      "id": "monster_9mm",
+      "nature": "kinetic",
+      "mass_kg": null,
+      "speed_m_s": null,
+      "calibrated": false
+    },
+    {
+      "native_type": 7,
+      "id": "monster_mp5",
+      "nature": "kinetic",
+      "mass_kg": null,
+      "speed_m_s": null,
+      "calibrated": false
+    },
+    {
+      "native_type": 8,
+      "id": "monster_12mm",
+      "nature": "kinetic",
+      "mass_kg": null,
+      "speed_m_s": null,
+      "calibrated": false
+    }
+  ]
+}

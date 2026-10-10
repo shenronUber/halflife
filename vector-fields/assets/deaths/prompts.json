@@ -1,0 +1,37 @@
+{
+  "generator": "built-in image_gen",
+  "date": "2026-10-09",
+  "specs": [
+    {
+      "key": "neck",
+      "prompt": "Use case: stylized-concept. Asset type: one opaque square albedo texture for a fictional low-polygon GoldSource game's neck dismemberment cap. Create a flat, orthographic texture filling the entire square, viewed straight onto the cross-section. Restrained stylized gore, sober and readable: mostly dark desaturated burgundy muscle, subtle uneven fleshy fibers, sparse dull brown-red clots, one small irregular gray-beige vertebral bone cross-section near the center, no more than 8-10 percent of image width. Thin dark red fissures, faint gray-pink connective tissue. Matte, low contrast, subdued late-1990s game texture treatment, hand-painted material rather than a medical photograph. Uniform diffuse lighting with no cast shadows or strong highlights. The measured neck opening spans 9.38 by 8.71 game units; the UV canvas represents 16 by 16 units, so keep the small bone feature central and avoid large decorative shapes. The whole canvas must be continuous tissue color, including the edges; no separate circular object on a background. No text, no border, no grid, no symbols, no radial spokes, no symmetrical star, no bright white bone, no excessive blood, no splashes, no organs or full body."
+    },
+    {
+      "key": "arm",
+      "prompt": "Use case: stylized-concept. Asset type: one opaque square albedo texture for a fictional low-polygon GoldSource game's severed upper-arm/shoulder cap. Create a flat orthographic cross-section texture, straight-on, filling the entire canvas. Restrained stylized gore: dark muted burgundy muscle in a few irregular asymmetric bundles with subtle fibrous direction, sparse dull red-brown clots, one small irregular gray-beige humerus cross-section near the center (8 percent of image width), a few dull pink-gray connective fibers. Sober low-contrast hand-painted late-1990s game material, not a medical photograph, matte and evenly lit, no baked highlights or cast shadows. The actual wound's projected bounds are 11.70 by 7.82 game units with curved edges; the square UV canvas represents 16 by 16 units. Keep the small bone central; do not paint an object outline because the real mesh supplies the opening's shape. Continuous tissue color all the way to image edges. No skin ring, clothing, text, border, grid, symbols, radial spokes or decorative star. No glaring white bone, wet glossy gore, blood spray, organs or full body."
+    },
+    {
+      "key": "thigh",
+      "prompt": "Use case: stylized-concept. Asset type: one opaque square albedo texture for a fictional low-polygon GoldSource game's severed upper-thigh cap and its limb fragments. Flat orthographic cross-section, straight-on texture filling the entire square. Restrained stylized gore, sober visual treatment: several broad asymmetrical muscle bundles in dark desaturated burgundy and red-brown, muted thin gray-pink connective seams, very sparse clotted blood, one small irregular gray-beige femur cross-section centrally placed and only 10 percent of the canvas width. Muscle should remain the dominant material, bone small and dull. Low-contrast matte hand-painted 1990s shooter texture, not a medical photo. Even diffuse lighting, no strong highlights or shadows. The projected wounds span about 12.5 by 10.55 game units; the UV square represents 16 by 16 units. Let the mesh define its outline; fill the edges with continuous tissue color. No skin or clothing ring, organs, body, severed limb silhouette, text, labels, border, grid, perfect circles, radial spokes, white starbursts, decorative patterns, excessive fresh blood or glossy gore."
+    }
+  ],
+  "outputs": [
+    {
+      "family": "neck",
+      "file": "vector-fields/assets/deaths/neck-source.png",
+      "sha256": "e2d9992526d6edc66a2ba21733bd62b8e2b608af70b1de794520330a08791005"
+    },
+    {
+      "family": "arm",
+      "file": "vector-fields/assets/deaths/arm-source.png",
+      "sha256": "014497da260420943b68ff337d6ea98bd20c8b905b7b21f0891c5df85435ef24"
+    },
+    {
+      "family": "thigh",
+      "file": "vector-fields/assets/deaths/thigh-source.png",
+      "sha256": "2c285091db877639fa865e0b4057a5b836f44d9e755426c3a2f7e66862ba7515"
+    }
+  ],
+  "final_measurements": "vector-fields/docs/validation/wound-textures/measurements.json",
+  "note": "Source prompts were used before the final planar-cut correction; each canvas still represents 16 x 16 model units. Final measured geometry is recorded separately."
+}

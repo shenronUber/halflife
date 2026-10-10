@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "model_id": "eleven_v4",
+  "event": "respawn",
+  "variant": 0,
+  "text": "[frustrated] Πάλι? You with the keyboard! Wake up, re!",
+  "request": {
+    "text": "[frustrated] Πάλι? You with the keyboard! Wake up, re!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "6880a540494e089f9ca3e8a082e24556b40cfa2e5ee440eb03bb7595cec66fac",
+  "sha256": "89f7ed9cc1ea06f3e8b49e580fefba43c5356ab9a42fe7fc5e01d8f63d88e641",
+  "request_id": "ijodHlh1Dx53XgP07Afk",
+  "reported_credit_cost": "6"
+}

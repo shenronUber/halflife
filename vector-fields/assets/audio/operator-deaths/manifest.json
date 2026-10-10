@@ -1,0 +1,2037 @@
+{
+  "schema": 1,
+  "asset_version": 2,
+  "max_duration_seconds": 3,
+  "max_vocalizations": 2,
+  "integration": "native-death-hooks",
+  "nonverbal_only": true,
+  "actors": [
+    {
+      "id": "rocco",
+      "name": "Rocco Bellini",
+      "voice_reference": "../assets/audio/operators/rocco/voice.json"
+    },
+    {
+      "id": "lucien",
+      "name": "Lucien Moreau",
+      "voice_reference": "../assets/audio/operators/lucien/voice.json",
+      "script_overrides": {
+        "toxic_ignition": "[screaming] AAAAAGH!"
+      }
+    },
+    {
+      "id": "diego",
+      "name": "Diego Vega",
+      "voice_reference": "../assets/audio/operators/diego/voice.json",
+      "script_overrides": {
+        "toxic": "[wheezing][screaming] AAAGH!"
+      }
+    },
+    {
+      "id": "viktor",
+      "name": "Viktor Volkov",
+      "voice_reference": "../assets/audio/operators/viktor/voice.json"
+    },
+    {
+      "id": "otto",
+      "name": "Otto Stahl",
+      "voice_reference": "../assets/audio/operators/otto/voice.json"
+    },
+    {
+      "id": "nikos",
+      "name": "Nikos Petros",
+      "voice_reference": "../assets/audio/operators/nikos/voice.json"
+    }
+  ],
+  "causes": [
+    {
+      "id": "standard",
+      "name": "Mort standard / balle",
+      "performance": "Un seul cri de douleur soudain, attaque nette, mort immediate.",
+      "text": "[screaming] AAAAGH!",
+      "master_filter": "anull",
+      "kind": -1
+    },
+    {
+      "id": "hydro",
+      "name": "Hydro / noyade",
+      "performance": "Un cri noye bref, gorge serree et couleur liquide.",
+      "text": "[choking][screaming] GRAAGH!",
+      "master_filter": "lowpass=f=1200,tremolo=f=6:d=0.3",
+      "kind": 0
+    },
+    {
+      "id": "electro",
+      "name": "Electro / electrocution",
+      "performance": "Un cri crispe coupe de spasmes electriques.",
+      "text": "[screaming] A-a-aagh!",
+      "master_filter": "highpass=f=160,tremolo=f=42:d=0.65",
+      "kind": 0
+    },
+    {
+      "id": "cryo",
+      "name": "Cryo / froid",
+      "performance": "Un cri serre et raidi par le froid.",
+      "text": "[strained][screaming] AAGH!",
+      "master_filter": "lowpass=f=2800",
+      "kind": 0
+    },
+    {
+      "id": "thermal",
+      "name": "Thermal / brulure",
+      "performance": "Un cri aigu de brulure, panique explosive.",
+      "text": "[screaming] AAAAAAGH!",
+      "master_filter": "highpass=f=160",
+      "kind": 0
+    },
+    {
+      "id": "toxic",
+      "name": "Toxic / intoxication",
+      "performance": "Un cri rauque expulse par une gorge intoxiquee.",
+      "text": "[wheezing][screaming] KHAAGH!",
+      "master_filter": "highpass=f=140,lowpass=f=3000",
+      "kind": 0
+    },
+    {
+      "id": "corrosion",
+      "name": "Corrosion / acide",
+      "performance": "Un cri de douleur rugueux, gorge agresse par l'acide.",
+      "text": "[raspy][screaming] GRAAAGH!",
+      "master_filter": "highpass=f=160,lowpass=f=2400,acompressor=threshold=0.16:ratio=4:attack=2:release=60",
+      "kind": 0
+    },
+    {
+      "id": "sonic",
+      "name": "Sonic / resonance",
+      "performance": "Un cri tendu et vibrant, douleur de resonance.",
+      "text": "[strained][screaming] AAAAGH!",
+      "master_filter": "tremolo=f=18:d=0.25",
+      "kind": 0
+    },
+    {
+      "id": "kinetic",
+      "name": "Kinetic / impact",
+      "performance": "Un cri court et brutal avec l'air chasse par l'impact.",
+      "text": "[screaming] AAAGH!",
+      "master_filter": "anull",
+      "kind": 0
+    },
+    {
+      "id": "arc_chain",
+      "name": "ArcChain / eau + electricite",
+      "performance": "Un cri noye et electrique, hache dans une gorge serree.",
+      "text": "[choking][screaming] A-a-agh!",
+      "master_filter": "lowpass=f=1900,tremolo=f=30:d=0.6",
+      "kind": 1
+    },
+    {
+      "id": "superconduction",
+      "name": "CryoCircuit / froid + electricite",
+      "performance": "Un cri froid et crispe, secoue de spasmes electriques.",
+      "text": "[strained][screaming] A-a-agh!",
+      "master_filter": "highpass=f=180,lowpass=f=3000,tremolo=f=40:d=0.55",
+      "kind": 1
+    },
+    {
+      "id": "shatter",
+      "name": "FracturePulse / froid + impact",
+      "performance": "Un cri abrupt de fracture, froid et tranchant.",
+      "text": "[screaming] AAGH!",
+      "master_filter": "lowpass=f=2600",
+      "kind": 1
+    },
+    {
+      "id": "resonant_impact",
+      "name": "ResonantShock / impact + sonic",
+      "performance": "Un cri d'impact brutal avec tremblement resonant.",
+      "text": "[strained][screaming] AAAGH!",
+      "master_filter": "lowpass=f=3000,tremolo=f=12:d=0.3",
+      "kind": 1
+    },
+    {
+      "id": "cavitation",
+      "name": "AcidEcho / sonic + corrosion",
+      "performance": "Un cri rugueux et liquide, gorge vibrante irritee.",
+      "text": "[choking][screaming] GRAAGH!",
+      "master_filter": "lowpass=f=2000,tremolo=f=8:d=0.3",
+      "kind": 1
+    },
+    {
+      "id": "caustic_contagion",
+      "name": "ContamBloom / corrosion + toxic",
+      "performance": "Un cri etouffe, rapeux, gorge attaquee par poison et acide.",
+      "text": "[raspy][screaming] KHAAAGH!",
+      "master_filter": "highpass=f=140,lowpass=f=2300",
+      "kind": 1
+    },
+    {
+      "id": "toxic_ignition",
+      "name": "CinderMist / toxic + thermal",
+      "performance": "Un cri explosif et rauque de gorge empoisonnee qui brule.",
+      "text": "[choking][screaming] KAAAAGH!",
+      "master_filter": "highpass=f=180",
+      "kind": 1
+    },
+    {
+      "id": "steam_veil",
+      "name": "SteamVeil / vapeur",
+      "performance": "Un cri suffoque, souffle coince par la vapeur.",
+      "text": "[choking][screaming] HAAAGH!",
+      "master_filter": "highpass=f=180,lowpass=f=2800",
+      "kind": 1
+    }
+  ],
+  "tactical_fallback": {
+    "phase": "standard",
+    "null": "standard",
+    "ward": "standard",
+    "reveal": "standard",
+    "overclock": "standard"
+  },
+  "default_cause": "standard",
+  "format": {
+    "channels": 1,
+    "sample_rate": 11025,
+    "bits": 8
+  },
+  "clips": [
+    {
+      "actor": "rocco",
+      "cause": "standard",
+      "path": "vf_deaths/rocco/standard_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.1217,
+      "sha256": "46f8c7c2dbe9785609a3a01878b118d89690daa21588da18ff1b99701c28d50c",
+      "voice_id": "FmMTwHErJNXXbixvoFWZ",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "anull",
+      "edit": {
+        "source_seconds": 1.414,
+        "active_seconds": 1.1217,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "rocco",
+      "cause": "hydro",
+      "path": "vf_deaths/rocco/hydro_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.8131,
+      "sha256": "cb332cc494582a767161f91db375b5bc9305e62f825bfd5242dedc89f8153d2b",
+      "voice_id": "FmMTwHErJNXXbixvoFWZ",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=1200,tremolo=f=6:d=0.3",
+      "edit": {
+        "source_seconds": 3.2972,
+        "active_seconds": 3.0238,
+        "time_scale": 1.0799
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "rocco",
+      "cause": "electro",
+      "path": "vf_deaths/rocco/electro_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.302,
+      "sha256": "659b29fda67f927b7f81b7bf8f60aa5551dc8fc41990af3ec284790b019d97b3",
+      "voice_id": "FmMTwHErJNXXbixvoFWZ",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=160,tremolo=f=42:d=0.65",
+      "edit": {
+        "source_seconds": 1.6557,
+        "active_seconds": 1.302,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "rocco",
+      "cause": "cryo",
+      "path": "vf_deaths/rocco/cryo_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.0986,
+      "sha256": "837917731beaa672c27fbdbd29c94939514a9596c820994d8e9d106f4be67ac0",
+      "voice_id": "FmMTwHErJNXXbixvoFWZ",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=2800",
+      "edit": {
+        "source_seconds": 1.466,
+        "active_seconds": 1.0986,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "rocco",
+      "cause": "thermal",
+      "path": "vf_deaths/rocco/thermal_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.2431,
+      "sha256": "503167e56a9d3bbcef177258e9100c5315a451f95ba79f60163a8e4357dec9da",
+      "voice_id": "FmMTwHErJNXXbixvoFWZ",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=160",
+      "edit": {
+        "source_seconds": 1.5499,
+        "active_seconds": 1.2431,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "rocco",
+      "cause": "toxic",
+      "path": "vf_deaths/rocco/toxic_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.8052,
+      "sha256": "5a356156dfc4e09a0208faa0c555024368ee98420c44c490539aa5021ed2f5c9",
+      "voice_id": "FmMTwHErJNXXbixvoFWZ",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=140,lowpass=f=3000",
+      "edit": {
+        "source_seconds": 3.3855,
+        "active_seconds": 3.0644,
+        "time_scale": 1.0944
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "rocco",
+      "cause": "corrosion",
+      "path": "vf_deaths/rocco/corrosion_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.3613,
+      "sha256": "a31d7bc3ed2499b93ebac62186f1a31f3826841c0a292e2c2246915cbdc11893",
+      "voice_id": "FmMTwHErJNXXbixvoFWZ",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=160,lowpass=f=2400,acompressor=threshold=0.16:ratio=4:attack=2:release=60",
+      "edit": {
+        "source_seconds": 1.7858,
+        "active_seconds": 1.3612,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "rocco",
+      "cause": "sonic",
+      "path": "vf_deaths/rocco/sonic_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.1517,
+      "sha256": "37a00fefc8200b70a2f5852061602b888434847fa0d24a4a9b02b572009c7698",
+      "voice_id": "FmMTwHErJNXXbixvoFWZ",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "tremolo=f=18:d=0.25",
+      "edit": {
+        "source_seconds": 1.4879,
+        "active_seconds": 1.1517,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "rocco",
+      "cause": "kinetic",
+      "path": "vf_deaths/rocco/kinetic_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.0817,
+      "sha256": "44a21464e481412b14b6e396871faf8b989918d991c25023e9341af24a7ed3cf",
+      "voice_id": "FmMTwHErJNXXbixvoFWZ",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "anull",
+      "edit": {
+        "source_seconds": 1.3887,
+        "active_seconds": 1.0817,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "rocco",
+      "cause": "arc_chain",
+      "path": "vf_deaths/rocco/arc_chain_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.1643,
+      "sha256": "b409f43e079138c5ceed484779dc4eec7f8a5a3243d9c99b54c6ea742f1c8d5f",
+      "voice_id": "FmMTwHErJNXXbixvoFWZ",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=1900,tremolo=f=30:d=0.6",
+      "edit": {
+        "source_seconds": 2.5076,
+        "active_seconds": 2.17,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "rocco",
+      "cause": "superconduction",
+      "path": "vf_deaths/rocco/superconduction_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.7795,
+      "sha256": "b0cd951ff1728f281c2438a7ce5f53016ed19d6ad97bf5f74c93f4197c6477b4",
+      "voice_id": "FmMTwHErJNXXbixvoFWZ",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=180,lowpass=f=3000,tremolo=f=40:d=0.55",
+      "edit": {
+        "source_seconds": 2.1324,
+        "active_seconds": 1.7795,
+        "time_scale": 1
+      },
+      "vocalizations": 2
+    },
+    {
+      "actor": "rocco",
+      "cause": "shatter",
+      "path": "vf_deaths/rocco/shatter_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.0218,
+      "sha256": "547e0e9bbdc0b4ed402dcb87f20ef7a3c0c5701d32c9eb7a612bd532a80830b9",
+      "voice_id": "FmMTwHErJNXXbixvoFWZ",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=2600",
+      "edit": {
+        "source_seconds": 1.3858,
+        "active_seconds": 1.0217,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "rocco",
+      "cause": "resonant_impact",
+      "path": "vf_deaths/rocco/resonant_impact_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.0882,
+      "sha256": "4598473190e91515fdc3c6e1017716ce60a650792797ff79c372b1fa30aaeae2",
+      "voice_id": "FmMTwHErJNXXbixvoFWZ",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=3000,tremolo=f=12:d=0.3",
+      "edit": {
+        "source_seconds": 1.3217,
+        "active_seconds": 1.0881,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "rocco",
+      "cause": "cavitation",
+      "path": "vf_deaths/rocco/cavitation_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.8121,
+      "sha256": "69b87a5d97b3cd40f6c01eab24ec5bea26999cf5707b84a99098ae8ed7fd43cb",
+      "voice_id": "FmMTwHErJNXXbixvoFWZ",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=2000,tremolo=f=8:d=0.3",
+      "edit": {
+        "source_seconds": 3.2101,
+        "active_seconds": 2.8987,
+        "time_scale": 1.0353
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "rocco",
+      "cause": "caustic_contagion",
+      "path": "vf_deaths/rocco/caustic_contagion_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.1536,
+      "sha256": "706a7be8c53b2343894fdf13e2c4d513df6f448f1b58a64c4b1224c54ab11c89",
+      "voice_id": "FmMTwHErJNXXbixvoFWZ",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=140,lowpass=f=2300",
+      "edit": {
+        "source_seconds": 1.5053,
+        "active_seconds": 1.1535,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "rocco",
+      "cause": "toxic_ignition",
+      "path": "vf_deaths/rocco/toxic_ignition_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.5985,
+      "sha256": "7d41a7d4ca76a4eacb822e88ed0adadb169e413b11e41f761a11eb15eeff807f",
+      "voice_id": "FmMTwHErJNXXbixvoFWZ",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=180",
+      "edit": {
+        "source_seconds": 2.8899,
+        "active_seconds": 2.6041,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "rocco",
+      "cause": "steam_veil",
+      "path": "vf_deaths/rocco/steam_veil_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.882,
+      "sha256": "cf6af888ebc57390825f17587ebface3c758d1435231a99a2989bb91abd3bf15",
+      "voice_id": "FmMTwHErJNXXbixvoFWZ",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=180,lowpass=f=2800",
+      "edit": {
+        "source_seconds": 2.1663,
+        "active_seconds": 1.8868,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "lucien",
+      "cause": "standard",
+      "path": "vf_deaths/lucien/standard_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.0869,
+      "sha256": "ab863b487fe24f5cbb059df6266badbd9df8e2771c7ec1ce325f4c26b3b4b7d8",
+      "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "anull",
+      "edit": {
+        "source_seconds": 1.3944,
+        "active_seconds": 1.0869,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "lucien",
+      "cause": "hydro",
+      "path": "vf_deaths/lucien/hydro_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.6874,
+      "sha256": "adeae2ef6d7eece201ef8098088b9c17a49cb6c6cb18979f446bcb57cfc0e4aa",
+      "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=1200,tremolo=f=6:d=0.3",
+      "edit": {
+        "source_seconds": 2.9724,
+        "active_seconds": 2.6935,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "lucien",
+      "cause": "electro",
+      "path": "vf_deaths/lucien/electro_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.3488,
+      "sha256": "cb00d6e9309e0badc7b297415db3e2b7adeb6456f59bed1481c25e6df9ae4284",
+      "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=160,tremolo=f=42:d=0.65",
+      "edit": {
+        "source_seconds": 1.6414,
+        "active_seconds": 1.3487,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "lucien",
+      "cause": "cryo",
+      "path": "vf_deaths/lucien/cryo_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.2909,
+      "sha256": "3c5c6eb7ae38289ca819a0991b3ae92ccfb65b2f039c4c3b4b2cb8ab1adbe8cb",
+      "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=2800",
+      "edit": {
+        "source_seconds": 2.608,
+        "active_seconds": 2.2909,
+        "time_scale": 1
+      },
+      "vocalizations": 2
+    },
+    {
+      "actor": "lucien",
+      "cause": "thermal",
+      "path": "vf_deaths/lucien/thermal_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.1785,
+      "sha256": "bf619520c2dd7a3a045b3db38706e8d42ea069b8456fec33cfe145fc9312b52a",
+      "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=160",
+      "edit": {
+        "source_seconds": 1.4566,
+        "active_seconds": 1.1785,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "lucien",
+      "cause": "toxic",
+      "path": "vf_deaths/lucien/toxic_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.9476,
+      "sha256": "f424603ef819d042ee84f4fc519fba94ab45183442d62c1e1a49bb7165427892",
+      "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=140,lowpass=f=3000",
+      "edit": {
+        "source_seconds": 2.3437,
+        "active_seconds": 1.9536,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "lucien",
+      "cause": "corrosion",
+      "path": "vf_deaths/lucien/corrosion_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.2303,
+      "sha256": "700f365749ad634eb70a940bcfdfb7e7faa3e4b0c8d370cef08fbfc9d0cfa6b5",
+      "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=160,lowpass=f=2400,acompressor=threshold=0.16:ratio=4:attack=2:release=60",
+      "edit": {
+        "source_seconds": 1.5512,
+        "active_seconds": 1.2303,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "lucien",
+      "cause": "sonic",
+      "path": "vf_deaths/lucien/sonic_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.3496,
+      "sha256": "595a61999f8b16ed8faf93874fc04922a0088a30619d6a9c04eb488f4cc5c9b1",
+      "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "tremolo=f=18:d=0.25",
+      "edit": {
+        "source_seconds": 1.7022,
+        "active_seconds": 1.3495,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "lucien",
+      "cause": "kinetic",
+      "path": "vf_deaths/lucien/kinetic_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.0716,
+      "sha256": "bf9a92d3ffb801196969544e5ee12f86c82f6b4f4fe0fe27e06c28cd85089437",
+      "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "anull",
+      "edit": {
+        "source_seconds": 1.3704,
+        "active_seconds": 1.0769,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "lucien",
+      "cause": "arc_chain",
+      "path": "vf_deaths/lucien/arc_chain_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.7783,
+      "sha256": "eecc0afa1bf7975a569128c9fb4b63e769fc72e32299f1350a2426ac656cde2b",
+      "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=1900,tremolo=f=30:d=0.6",
+      "edit": {
+        "source_seconds": 3.0805,
+        "active_seconds": 2.7843,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "lucien",
+      "cause": "superconduction",
+      "path": "vf_deaths/lucien/superconduction_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.6044,
+      "sha256": "88b40ce8f0f4cf432180dcd478ec8f0c448b53715b99c45bba79db653a51c09d",
+      "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=180,lowpass=f=3000,tremolo=f=40:d=0.55",
+      "edit": {
+        "source_seconds": 1.8816,
+        "active_seconds": 1.6045,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "lucien",
+      "cause": "shatter",
+      "path": "vf_deaths/lucien/shatter_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.0591,
+      "sha256": "dd8597c55f988b5428bf3138edfd946199a2e3b3f934a659be91d96ebc50bd41",
+      "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=2600",
+      "edit": {
+        "source_seconds": 1.3877,
+        "active_seconds": 1.0591,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "lucien",
+      "cause": "resonant_impact",
+      "path": "vf_deaths/lucien/resonant_impact_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.0145,
+      "sha256": "d48c3ae30955ce2e9dfc6d12798f075f65f43c57973ba7843031ae760f6c9794",
+      "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=3000,tremolo=f=12:d=0.3",
+      "edit": {
+        "source_seconds": 1.3577,
+        "active_seconds": 1.0145,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "lucien",
+      "cause": "cavitation",
+      "path": "vf_deaths/lucien/cavitation_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.7961,
+      "sha256": "ad9737a4a6d37eef073a19d7d9a8535892818c1da63d186df52d62f0442b91f0",
+      "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=2000,tremolo=f=8:d=0.3",
+      "edit": {
+        "source_seconds": 2.0309,
+        "active_seconds": 1.8005,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "lucien",
+      "cause": "caustic_contagion",
+      "path": "vf_deaths/lucien/caustic_contagion_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.0971,
+      "sha256": "94b1f908e0d72f9317b658c9389da1c508879c33d1d63c688433692ca2545c52",
+      "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=140,lowpass=f=2300",
+      "edit": {
+        "source_seconds": 1.4243,
+        "active_seconds": 1.097,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "lucien",
+      "cause": "toxic_ignition",
+      "path": "vf_deaths/lucien/toxic_ignition_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.1242,
+      "sha256": "468f50387dde97cdcc6874ad2abc21841c5fff09e0feda380476115e61b901fe",
+      "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=180",
+      "edit": {
+        "source_seconds": 1.4557,
+        "active_seconds": 1.1242,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "lucien",
+      "cause": "steam_veil",
+      "path": "vf_deaths/lucien/steam_veil_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.3888,
+      "sha256": "6795c6f4a9e1cc2e5bfe45db795c831c6891b238e106acfa8036ec4858a65e54",
+      "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=180,lowpass=f=2800",
+      "edit": {
+        "source_seconds": 2.7084,
+        "active_seconds": 2.3925,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "diego",
+      "cause": "standard",
+      "path": "vf_deaths/diego/standard_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.1253,
+      "sha256": "7f7acc7fc65f2137da24d63b88a639104453eb7d2d76f6deea9345e575927fa1",
+      "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "anull",
+      "edit": {
+        "source_seconds": 1.3394,
+        "active_seconds": 1.1253,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "diego",
+      "cause": "hydro",
+      "path": "vf_deaths/diego/hydro_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.5775,
+      "sha256": "d35758cc6396d515c9c42a8c8b868574d832fe25bfb21a5f37c09248878942c3",
+      "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=1200,tremolo=f=6:d=0.3",
+      "edit": {
+        "source_seconds": 2.8413,
+        "active_seconds": 2.5826,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "diego",
+      "cause": "electro",
+      "path": "vf_deaths/diego/electro_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.4425,
+      "sha256": "ba6ba4ed853e2a295a2e98dea3fcbc97407a2aa384dc6b56783defe26fcb654d",
+      "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=160,tremolo=f=42:d=0.65",
+      "edit": {
+        "source_seconds": 1.7087,
+        "active_seconds": 1.4426,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "diego",
+      "cause": "cryo",
+      "path": "vf_deaths/diego/cryo_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.4504,
+      "sha256": "0f5b8a7b83da0126f4bf73615a53cf620948e32c696fc7d7f311abbf2f09416a",
+      "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=2800",
+      "edit": {
+        "source_seconds": 2.7612,
+        "active_seconds": 2.4588,
+        "time_scale": 1
+      },
+      "vocalizations": 2
+    },
+    {
+      "actor": "diego",
+      "cause": "thermal",
+      "path": "vf_deaths/diego/thermal_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.1143,
+      "sha256": "3efff8280d9888c8be49287f9588d05f7a1eca2fe63b19be1e0d95988d8a1f7c",
+      "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=160",
+      "edit": {
+        "source_seconds": 1.4256,
+        "active_seconds": 1.1143,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "diego",
+      "cause": "toxic",
+      "path": "vf_deaths/diego/toxic_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.0153,
+      "sha256": "05db101e8990481b75fc1275d26533dd5ecd7d39c3fac2f5413dfd82c9042a3e",
+      "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=140,lowpass=f=3000",
+      "edit": {
+        "source_seconds": 2.3462,
+        "active_seconds": 2.0209,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "diego",
+      "cause": "corrosion",
+      "path": "vf_deaths/diego/corrosion_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.2425,
+      "sha256": "0957e743f9faa1a5dbf28c85fdbf5cbc53b8c566fb363a3c578edf9d84c331c6",
+      "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=160,lowpass=f=2400,acompressor=threshold=0.16:ratio=4:attack=2:release=60",
+      "edit": {
+        "source_seconds": 1.5434,
+        "active_seconds": 1.2426,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "diego",
+      "cause": "sonic",
+      "path": "vf_deaths/diego/sonic_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.1024,
+      "sha256": "bc4cefaec6d5c7e26bc100d1e37282c714b436eba1edda53b13ccbbcb5c3c3f8",
+      "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "tremolo=f=18:d=0.25",
+      "edit": {
+        "source_seconds": 1.4747,
+        "active_seconds": 1.1024,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "diego",
+      "cause": "kinetic",
+      "path": "vf_deaths/diego/kinetic_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.019,
+      "sha256": "057d1c62ac89a0677a47477a1745e7011fbfd04827d7efbd9bd844ed7205e2f4",
+      "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "anull",
+      "edit": {
+        "source_seconds": 1.2698,
+        "active_seconds": 1.0189,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "diego",
+      "cause": "arc_chain",
+      "path": "vf_deaths/diego/arc_chain_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.6963,
+      "sha256": "a52fb417cb131ac373416c877cf10292742c40b954b820a765cf5375b281b48a",
+      "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=1900,tremolo=f=30:d=0.6",
+      "edit": {
+        "source_seconds": 3.0489,
+        "active_seconds": 2.7038,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "diego",
+      "cause": "superconduction",
+      "path": "vf_deaths/diego/superconduction_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.86,
+      "sha256": "5cb0b3efc438dff802c7ad152c5ab3f509ec63d4f76bd7e09fcb81465dbe4453",
+      "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=180,lowpass=f=3000,tremolo=f=40:d=0.55",
+      "edit": {
+        "source_seconds": 2.1296,
+        "active_seconds": 1.8599,
+        "time_scale": 1
+      },
+      "vocalizations": 2
+    },
+    {
+      "actor": "diego",
+      "cause": "shatter",
+      "path": "vf_deaths/diego/shatter_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 0.9255,
+      "sha256": "e08a5b7dfb01e74a7bc986d65436e53c6260e59801c1fc874173fa21d4465e8d",
+      "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=2600",
+      "edit": {
+        "source_seconds": 1.2441,
+        "active_seconds": 0.9256,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "diego",
+      "cause": "resonant_impact",
+      "path": "vf_deaths/diego/resonant_impact_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 0.9721,
+      "sha256": "ad6a9b4e6407ff002e46ce8e58d42c30559560946ce0cfe584a478407c635bec",
+      "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=3000,tremolo=f=12:d=0.3",
+      "edit": {
+        "source_seconds": 1.308,
+        "active_seconds": 0.972,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "diego",
+      "cause": "cavitation",
+      "path": "vf_deaths/diego/cavitation_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.6717,
+      "sha256": "7a0abe289c8a592edd9db199fde4c0b82f685654130c2a88a5f5d97648302e76",
+      "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=2000,tremolo=f=8:d=0.3",
+      "edit": {
+        "source_seconds": 1.9848,
+        "active_seconds": 1.6769,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "diego",
+      "cause": "caustic_contagion",
+      "path": "vf_deaths/diego/caustic_contagion_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.117,
+      "sha256": "54ef992795f78c041c7249d3d9de7142df7f0ef739436504bd5b3c3be29fa3a3",
+      "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=140,lowpass=f=2300",
+      "edit": {
+        "source_seconds": 1.3799,
+        "active_seconds": 1.117,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "diego",
+      "cause": "toxic_ignition",
+      "path": "vf_deaths/diego/toxic_ignition_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.2308,
+      "sha256": "9771c2c1eebc91088c9e1633153e3c245e1f113bc932a38d3e6849b2ae0aed61",
+      "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=180",
+      "edit": {
+        "source_seconds": 2.4824,
+        "active_seconds": 2.2372,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "diego",
+      "cause": "steam_veil",
+      "path": "vf_deaths/diego/steam_veil_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.365,
+      "sha256": "f6432202ab9e66d4b72e8777a3153ff6737c27d65b1e3826c2f60952da9d687c",
+      "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=180,lowpass=f=2800",
+      "edit": {
+        "source_seconds": 2.6492,
+        "active_seconds": 2.3661,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "viktor",
+      "cause": "standard",
+      "path": "vf_deaths/viktor/standard_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.1422,
+      "sha256": "4c37c43bb4981a16c2643287ef58c2f11c4d93733a71ddef572090c38116cd02",
+      "voice_id": "MIGoD5dgOR9odYK1ejQC",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "anull",
+      "edit": {
+        "source_seconds": 1.4364,
+        "active_seconds": 1.1422,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "viktor",
+      "cause": "hydro",
+      "path": "vf_deaths/viktor/hydro_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.2068,
+      "sha256": "e82a6f613cabf3421d1cde18361eaea24de8af2b649a93dfb939cf1230394463",
+      "voice_id": "MIGoD5dgOR9odYK1ejQC",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=1200,tremolo=f=6:d=0.3",
+      "edit": {
+        "source_seconds": 2.5022,
+        "active_seconds": 2.212,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "viktor",
+      "cause": "electro",
+      "path": "vf_deaths/viktor/electro_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.3416,
+      "sha256": "7afe3a9895f16c937e1083f6bffb9f273511c323785dee3e5709b6180c77e151",
+      "voice_id": "MIGoD5dgOR9odYK1ejQC",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=160,tremolo=f=42:d=0.65",
+      "edit": {
+        "source_seconds": 1.6415,
+        "active_seconds": 1.3416,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "viktor",
+      "cause": "cryo",
+      "path": "vf_deaths/viktor/cryo_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.2456,
+      "sha256": "9d8ab9259328a2edbb85157079cfd4f8e644c31e92bb9c7f260e7f675ffa508d",
+      "voice_id": "MIGoD5dgOR9odYK1ejQC",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=2800",
+      "edit": {
+        "source_seconds": 2.5834,
+        "active_seconds": 2.2533,
+        "time_scale": 1
+      },
+      "vocalizations": 2
+    },
+    {
+      "actor": "viktor",
+      "cause": "thermal",
+      "path": "vf_deaths/viktor/thermal_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.1094,
+      "sha256": "3c6b769e0379699346cd342cf50b61d91d7e0f19fed4ff939406854ce8d71d18",
+      "voice_id": "MIGoD5dgOR9odYK1ejQC",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=160",
+      "edit": {
+        "source_seconds": 1.4622,
+        "active_seconds": 1.1094,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "viktor",
+      "cause": "toxic",
+      "path": "vf_deaths/viktor/toxic_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.7213,
+      "sha256": "2cee4ccdbe7e001a3ae73c84423a8708f7f44430f06e0f6113fdd63c2efccf12",
+      "voice_id": "MIGoD5dgOR9odYK1ejQC",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=140,lowpass=f=3000",
+      "edit": {
+        "source_seconds": 2.0468,
+        "active_seconds": 1.7305,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "viktor",
+      "cause": "corrosion",
+      "path": "vf_deaths/viktor/corrosion_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.5121,
+      "sha256": "44f4a2ac75a1ef518f4b69d8dfb07330712549b2c3b94c3bad3a262a905d2e90",
+      "voice_id": "MIGoD5dgOR9odYK1ejQC",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=160,lowpass=f=2400,acompressor=threshold=0.16:ratio=4:attack=2:release=60",
+      "edit": {
+        "source_seconds": 1.8783,
+        "active_seconds": 1.5121,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "viktor",
+      "cause": "sonic",
+      "path": "vf_deaths/viktor/sonic_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.3516,
+      "sha256": "70f2815e76cd7e90425d086e9d387432468e2cefabd47c858e19cd086d57ac20",
+      "voice_id": "MIGoD5dgOR9odYK1ejQC",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "tremolo=f=18:d=0.25",
+      "edit": {
+        "source_seconds": 1.6513,
+        "active_seconds": 1.3515,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "viktor",
+      "cause": "kinetic",
+      "path": "vf_deaths/viktor/kinetic_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.1011,
+      "sha256": "857ebf9d62427a6b2ce25cc5c4993df3155f064627d023b13fed3c5c7e142c6e",
+      "voice_id": "MIGoD5dgOR9odYK1ejQC",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "anull",
+      "edit": {
+        "source_seconds": 1.3863,
+        "active_seconds": 1.1011,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "viktor",
+      "cause": "arc_chain",
+      "path": "vf_deaths/viktor/arc_chain_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.0773,
+      "sha256": "7aa14b369aa39a5b3b6f6b9aa4083a428cd71f837af9afac208e84ac86c75f33",
+      "voice_id": "MIGoD5dgOR9odYK1ejQC",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=1900,tremolo=f=30:d=0.6",
+      "edit": {
+        "source_seconds": 2.3964,
+        "active_seconds": 2.0821,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "viktor",
+      "cause": "superconduction",
+      "path": "vf_deaths/viktor/superconduction_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.7326,
+      "sha256": "598b08313743b5bd1eb63cc82d4424748e4162e72d80576ca3be853283d1979e",
+      "voice_id": "MIGoD5dgOR9odYK1ejQC",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=180,lowpass=f=3000,tremolo=f=40:d=0.55",
+      "edit": {
+        "source_seconds": 2.0469,
+        "active_seconds": 1.7326,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "viktor",
+      "cause": "shatter",
+      "path": "vf_deaths/viktor/shatter_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.1739,
+      "sha256": "d4620e62428a895d63bc3efdb3a0b0db0d96b95b0bb4eeb22d1182a6dc89d9b7",
+      "voice_id": "MIGoD5dgOR9odYK1ejQC",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=2600",
+      "edit": {
+        "source_seconds": 1.4637,
+        "active_seconds": 1.1739,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "viktor",
+      "cause": "resonant_impact",
+      "path": "vf_deaths/viktor/resonant_impact_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.1053,
+      "sha256": "16e8ae0cc911a88282f302f844cd0ea9a4b29ae492e3dba1b918524dbb68cde9",
+      "voice_id": "MIGoD5dgOR9odYK1ejQC",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=3000,tremolo=f=12:d=0.3",
+      "edit": {
+        "source_seconds": 1.39,
+        "active_seconds": 1.1053,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "viktor",
+      "cause": "cavitation",
+      "path": "vf_deaths/viktor/cavitation_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.9389,
+      "sha256": "e9348d91d22bdc69df66aeaec78b5645a483399c815420dcae120bf694967ebb",
+      "voice_id": "MIGoD5dgOR9odYK1ejQC",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=2000,tremolo=f=8:d=0.3",
+      "edit": {
+        "source_seconds": 2.2553,
+        "active_seconds": 1.9403,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "viktor",
+      "cause": "caustic_contagion",
+      "path": "vf_deaths/viktor/caustic_contagion_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.2584,
+      "sha256": "fda6ef57e7cebeebf13610283f334f644133fb06fc5e445298b9ba8ac0d61f69",
+      "voice_id": "MIGoD5dgOR9odYK1ejQC",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=140,lowpass=f=2300",
+      "edit": {
+        "source_seconds": 1.5098,
+        "active_seconds": 1.2584,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "viktor",
+      "cause": "toxic_ignition",
+      "path": "vf_deaths/viktor/toxic_ignition_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.019,
+      "sha256": "4e0e05d7b290aa503e28f7ba7917cdac96105e631856bd466503b5112bc35c63",
+      "voice_id": "MIGoD5dgOR9odYK1ejQC",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=180",
+      "edit": {
+        "source_seconds": 2.2478,
+        "active_seconds": 2.024,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "viktor",
+      "cause": "steam_veil",
+      "path": "vf_deaths/viktor/steam_veil_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.6901,
+      "sha256": "35ca65cc9f07c4a305a8daaa14aac8db8386597947fc249f6520eb00558ef01d",
+      "voice_id": "MIGoD5dgOR9odYK1ejQC",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=180,lowpass=f=2800",
+      "edit": {
+        "source_seconds": 2.047,
+        "active_seconds": 1.695,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "otto",
+      "cause": "standard",
+      "path": "vf_deaths/otto/standard_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.1569,
+      "sha256": "ada827749b9601a91c5a57038630b51a9389fcb098163ce3e149d0faa10e29ac",
+      "voice_id": "edgqs6sEs8iMvFG1VpR8",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "anull",
+      "edit": {
+        "source_seconds": 1.461,
+        "active_seconds": 1.1569,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "otto",
+      "cause": "hydro",
+      "path": "vf_deaths/otto/hydro_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.8155,
+      "sha256": "db0d9f33dea9c6037e99d3acc5f4d1736b0a90e71198fb91722ded95e6d0c912",
+      "voice_id": "edgqs6sEs8iMvFG1VpR8",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=1200,tremolo=f=6:d=0.3",
+      "edit": {
+        "source_seconds": 3.3371,
+        "active_seconds": 3.0895,
+        "time_scale": 1.1034
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "otto",
+      "cause": "electro",
+      "path": "vf_deaths/otto/electro_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.7288,
+      "sha256": "7e62c07efc5e6a7f009d4f96f0c5de659bd743d5d3d7d60fcf1a5ba48bd54705",
+      "voice_id": "edgqs6sEs8iMvFG1VpR8",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=160,tremolo=f=42:d=0.65",
+      "edit": {
+        "source_seconds": 1.9468,
+        "active_seconds": 1.7326,
+        "time_scale": 1
+      },
+      "vocalizations": 2
+    },
+    {
+      "actor": "otto",
+      "cause": "cryo",
+      "path": "vf_deaths/otto/cryo_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.1507,
+      "sha256": "ed556f6161b7f609c3180674ca3c1404d0168211603766aa202ed3470e51de9e",
+      "voice_id": "edgqs6sEs8iMvFG1VpR8",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=2800",
+      "edit": {
+        "source_seconds": 1.4385,
+        "active_seconds": 1.1507,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "otto",
+      "cause": "thermal",
+      "path": "vf_deaths/otto/thermal_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.2645,
+      "sha256": "6dc3d98da01a2547f52774e4e48b71181f74b47475dda013b3c86d156054dfd5",
+      "voice_id": "edgqs6sEs8iMvFG1VpR8",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=160",
+      "edit": {
+        "source_seconds": 1.5432,
+        "active_seconds": 1.2645,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "otto",
+      "cause": "toxic",
+      "path": "vf_deaths/otto/toxic_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.796,
+      "sha256": "872e7b8e3ab3314c5b4aaa90278794c7832ca84e1fe81a8bd1837866a88323b8",
+      "voice_id": "edgqs6sEs8iMvFG1VpR8",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=140,lowpass=f=3000",
+      "edit": {
+        "source_seconds": 3.0698,
+        "active_seconds": 2.8069,
+        "time_scale": 1.0025
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "otto",
+      "cause": "corrosion",
+      "path": "vf_deaths/otto/corrosion_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.405,
+      "sha256": "6c0336bf3f49f96630ee05dbef4c324b3bc1b72701aa17080bd8865b2440968b",
+      "voice_id": "edgqs6sEs8iMvFG1VpR8",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=160,lowpass=f=2400,acompressor=threshold=0.16:ratio=4:attack=2:release=60",
+      "edit": {
+        "source_seconds": 1.5996,
+        "active_seconds": 1.405,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "otto",
+      "cause": "sonic",
+      "path": "vf_deaths/otto/sonic_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.4316,
+      "sha256": "c065a0d538b264978b400ad55c13a4fe1b260ade39f0fd5cb4d4eeecb86eef93",
+      "voice_id": "edgqs6sEs8iMvFG1VpR8",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "tremolo=f=18:d=0.25",
+      "edit": {
+        "source_seconds": 1.6442,
+        "active_seconds": 1.4316,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "otto",
+      "cause": "kinetic",
+      "path": "vf_deaths/otto/kinetic_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.1679,
+      "sha256": "a541099e483be0b35f075fc9451aed0c0db7be20806bc9d1dd53f1caecb5263c",
+      "voice_id": "edgqs6sEs8iMvFG1VpR8",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "anull",
+      "edit": {
+        "source_seconds": 1.44,
+        "active_seconds": 1.1679,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "otto",
+      "cause": "arc_chain",
+      "path": "vf_deaths/otto/arc_chain_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.8132,
+      "sha256": "d6624337bc6eded14f6a7afe87aef181043f19eb16c2860008bdc71a0916c1c9",
+      "voice_id": "edgqs6sEs8iMvFG1VpR8",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=1900,tremolo=f=30:d=0.6",
+      "edit": {
+        "source_seconds": 3.4204,
+        "active_seconds": 3.1145,
+        "time_scale": 1.1123
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "otto",
+      "cause": "superconduction",
+      "path": "vf_deaths/otto/superconduction_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.4519,
+      "sha256": "9b950583eea9a03dfffc58c084a393c7c3db04be625167eb9bbaf31694449b00",
+      "voice_id": "edgqs6sEs8iMvFG1VpR8",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=180,lowpass=f=3000,tremolo=f=40:d=0.55",
+      "edit": {
+        "source_seconds": 1.7718,
+        "active_seconds": 1.4519,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "otto",
+      "cause": "shatter",
+      "path": "vf_deaths/otto/shatter_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 0.9751,
+      "sha256": "f3b26ad2b2fa1b0fa1c10cd0426035e5e0442e1a607397542be99c7a100dd6dd",
+      "voice_id": "edgqs6sEs8iMvFG1VpR8",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=2600",
+      "edit": {
+        "source_seconds": 1.2263,
+        "active_seconds": 0.9751,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "otto",
+      "cause": "resonant_impact",
+      "path": "vf_deaths/otto/resonant_impact_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.181,
+      "sha256": "6689b5e85f346273da2be3e1a7f8b9c0a632f326be59b19ba98ac53a4c8a6717",
+      "voice_id": "edgqs6sEs8iMvFG1VpR8",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=3000,tremolo=f=12:d=0.3",
+      "edit": {
+        "source_seconds": 1.4784,
+        "active_seconds": 1.181,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "otto",
+      "cause": "cavitation",
+      "path": "vf_deaths/otto/cavitation_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.8115,
+      "sha256": "41079b155272b006db96e46d3e3ec48872628e005a4950341848647dbf92aad1",
+      "voice_id": "edgqs6sEs8iMvFG1VpR8",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=2000,tremolo=f=8:d=0.3",
+      "edit": {
+        "source_seconds": 3.2652,
+        "active_seconds": 3.0367,
+        "time_scale": 1.0845
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "otto",
+      "cause": "caustic_contagion",
+      "path": "vf_deaths/otto/caustic_contagion_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.2929,
+      "sha256": "8b6616484a4dd8529c13e92d0b174101383479f8cfc23e3db5834c3b348acc2b",
+      "voice_id": "edgqs6sEs8iMvFG1VpR8",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=140,lowpass=f=2300",
+      "edit": {
+        "source_seconds": 1.5266,
+        "active_seconds": 1.2929,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "otto",
+      "cause": "toxic_ignition",
+      "path": "vf_deaths/otto/toxic_ignition_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.7432,
+      "sha256": "03fc180bb0fa957dd9acd29eb7675d540adfdba48219cfeb42d1f6cae45b40cf",
+      "voice_id": "edgqs6sEs8iMvFG1VpR8",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=180",
+      "edit": {
+        "source_seconds": 2.9756,
+        "active_seconds": 2.7552,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "otto",
+      "cause": "steam_veil",
+      "path": "vf_deaths/otto/steam_veil_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.701,
+      "sha256": "e242fff514516578c91d347d09f84b66404917ee3ac5db560a8207a215e6016e",
+      "voice_id": "edgqs6sEs8iMvFG1VpR8",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=180,lowpass=f=2800",
+      "edit": {
+        "source_seconds": 2.9395,
+        "active_seconds": 2.707,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "nikos",
+      "cause": "standard",
+      "path": "vf_deaths/nikos/standard_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.028,
+      "sha256": "b5acaf254e83b2571ab795fcb9cb98a63de3a605e2cd89dd36f0e545ca4de10d",
+      "voice_id": "uAGRkdJlXqIKwzx0HORp",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "anull",
+      "edit": {
+        "source_seconds": 1.3005,
+        "active_seconds": 1.0281,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "nikos",
+      "cause": "hydro",
+      "path": "vf_deaths/nikos/hydro_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.0034,
+      "sha256": "49f8b15935360bc46f44d03d0f28eebe18b8f68d30c352a482db51b3be7f1ac3",
+      "voice_id": "uAGRkdJlXqIKwzx0HORp",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=1200,tremolo=f=6:d=0.3",
+      "edit": {
+        "source_seconds": 2.2815,
+        "active_seconds": 2.0077,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "nikos",
+      "cause": "electro",
+      "path": "vf_deaths/nikos/electro_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.4834,
+      "sha256": "eb1f1c5a7c4825a55c87a88dab6773d33e9ac61fe5807d32a1ae68f1f3402acd",
+      "voice_id": "uAGRkdJlXqIKwzx0HORp",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=160,tremolo=f=42:d=0.65",
+      "edit": {
+        "source_seconds": 1.7057,
+        "active_seconds": 1.4835,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "nikos",
+      "cause": "cryo",
+      "path": "vf_deaths/nikos/cryo_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.3234,
+      "sha256": "96a6747f48175f2e64fcbd6fb0a1a7bc475ca4700f39edc20a384d6fd96530ae",
+      "voice_id": "uAGRkdJlXqIKwzx0HORp",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=2800",
+      "edit": {
+        "source_seconds": 2.6058,
+        "active_seconds": 2.3304,
+        "time_scale": 1
+      },
+      "vocalizations": 2
+    },
+    {
+      "actor": "nikos",
+      "cause": "thermal",
+      "path": "vf_deaths/nikos/thermal_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.2586,
+      "sha256": "514656123de9c277758a0d4b356a5fbf7252323529ff5fc5f1df6efe222f0775",
+      "voice_id": "uAGRkdJlXqIKwzx0HORp",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=160",
+      "edit": {
+        "source_seconds": 1.5423,
+        "active_seconds": 1.2586,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "nikos",
+      "cause": "toxic",
+      "path": "vf_deaths/nikos/toxic_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.8806,
+      "sha256": "8ae7df79fb0ab220e27dbc183aaef7336341a549f10cddd1cfeabc55ce619158",
+      "voice_id": "uAGRkdJlXqIKwzx0HORp",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=140,lowpass=f=3000",
+      "edit": {
+        "source_seconds": 2.1975,
+        "active_seconds": 1.8871,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "nikos",
+      "cause": "corrosion",
+      "path": "vf_deaths/nikos/corrosion_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.3154,
+      "sha256": "c58f3cdf39ffea506e7abfee16793a6c3e023aac06e771b8eb24395829bc1f4d",
+      "voice_id": "uAGRkdJlXqIKwzx0HORp",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=160,lowpass=f=2400,acompressor=threshold=0.16:ratio=4:attack=2:release=60",
+      "edit": {
+        "source_seconds": 1.6295,
+        "active_seconds": 1.3154,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "nikos",
+      "cause": "sonic",
+      "path": "vf_deaths/nikos/sonic_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.2349,
+      "sha256": "12fde3d89203d8d96d0ba9bf1703b3e3cfd59134769565b8f7a52f8f4686f8d9",
+      "voice_id": "uAGRkdJlXqIKwzx0HORp",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "tremolo=f=18:d=0.25",
+      "edit": {
+        "source_seconds": 1.5283,
+        "active_seconds": 1.2349,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "nikos",
+      "cause": "kinetic",
+      "path": "vf_deaths/nikos/kinetic_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.0707,
+      "sha256": "1a5de08fbf63d749367e8e29711ea92ae4c2af8ac039da86930b4079eebb6386",
+      "voice_id": "uAGRkdJlXqIKwzx0HORp",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "anull",
+      "edit": {
+        "source_seconds": 1.3316,
+        "active_seconds": 1.0708,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "nikos",
+      "cause": "arc_chain",
+      "path": "vf_deaths/nikos/arc_chain_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.2128,
+      "sha256": "4baa22a1798f966aa4b43d18590ab8a681c8d62aa19ea3fc4e5627cb966179aa",
+      "voice_id": "uAGRkdJlXqIKwzx0HORp",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=1900,tremolo=f=30:d=0.6",
+      "edit": {
+        "source_seconds": 2.4929,
+        "active_seconds": 2.2163,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "nikos",
+      "cause": "superconduction",
+      "path": "vf_deaths/nikos/superconduction_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.8317,
+      "sha256": "c473c2ed56d5030c4ae80b94e6d9f76ae8dc6dabc7a30e4f92f59b20e7cd8f1e",
+      "voice_id": "uAGRkdJlXqIKwzx0HORp",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=180,lowpass=f=3000,tremolo=f=40:d=0.55",
+      "edit": {
+        "source_seconds": 2.1745,
+        "active_seconds": 1.8359,
+        "time_scale": 1
+      },
+      "vocalizations": 2
+    },
+    {
+      "actor": "nikos",
+      "cause": "shatter",
+      "path": "vf_deaths/nikos/shatter_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 0.997,
+      "sha256": "c7eca7fdc814663aec5a73a7a2224537edea67573eed9c8c8d66554e287b6ff6",
+      "voice_id": "uAGRkdJlXqIKwzx0HORp",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=2600",
+      "edit": {
+        "source_seconds": 1.2973,
+        "active_seconds": 0.997,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "nikos",
+      "cause": "resonant_impact",
+      "path": "vf_deaths/nikos/resonant_impact_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.1523,
+      "sha256": "0788a03fccaaef6bbc5ae9e63e4c1618805c751df6b135b1c348315674727fa5",
+      "voice_id": "uAGRkdJlXqIKwzx0HORp",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=3000,tremolo=f=12:d=0.3",
+      "edit": {
+        "source_seconds": 1.4051,
+        "active_seconds": 1.1523,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "nikos",
+      "cause": "cavitation",
+      "path": "vf_deaths/nikos/cavitation_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.8177,
+      "sha256": "3695b1591c24603b7cf45560ed5e7db968c8f438d0e23e3e00678cc329870e29",
+      "voice_id": "uAGRkdJlXqIKwzx0HORp",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "lowpass=f=2000,tremolo=f=8:d=0.3",
+      "edit": {
+        "source_seconds": 3.1331,
+        "active_seconds": 2.8807,
+        "time_scale": 1.0288
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "nikos",
+      "cause": "caustic_contagion",
+      "path": "vf_deaths/nikos/caustic_contagion_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 1.2212,
+      "sha256": "36de7b705ed9bb00f858fdd0878395c9b37f62e850acbea268f5cf73fa328b39",
+      "voice_id": "uAGRkdJlXqIKwzx0HORp",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=140,lowpass=f=2300",
+      "edit": {
+        "source_seconds": 1.5264,
+        "active_seconds": 1.2212,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "nikos",
+      "cause": "toxic_ignition",
+      "path": "vf_deaths/nikos/toxic_ignition_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.1676,
+      "sha256": "161af39d332456b79773d0fe1e3b2beb101108aa1a746bf41c0df8ffa4fd79d0",
+      "voice_id": "uAGRkdJlXqIKwzx0HORp",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=180",
+      "edit": {
+        "source_seconds": 2.4934,
+        "active_seconds": 2.1763,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    },
+    {
+      "actor": "nikos",
+      "cause": "steam_veil",
+      "path": "vf_deaths/nikos/steam_veil_v2.wav",
+      "text": "",
+      "subtitle": null,
+      "duration": 2.2585,
+      "sha256": "a811a91e33ce24a3840386035491130175eae84af883a5256d86820800503081",
+      "voice_id": "uAGRkdJlXqIKwzx0HORp",
+      "speech_check": "nonverbal/interjections only",
+      "master_filter": "highpass=f=180,lowpass=f=2800",
+      "edit": {
+        "source_seconds": 2.5289,
+        "active_seconds": 2.2627,
+        "time_scale": 1
+      },
+      "vocalizations": 1
+    }
+  ],
+  "legacy_spoken_death_clips": "deprecated; never emitted by native death hooks",
+  "engine_note": "Separate VFDeath actor/cause catalog; native positional CHAN_VOICE audio; no captions."
+}

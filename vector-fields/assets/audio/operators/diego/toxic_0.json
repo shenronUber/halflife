@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "toxic",
+  "variant": 0,
+  "text": "[coughs] Veneno! That tastes like death!",
+  "request": {
+    "text": "[coughs] Veneno! That tastes like death!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "d3ddde2600d22c6d08bb1d1d64385f5cdaa2a51eb7f401ccea351e2abdce8f65",
+  "sha256": "e20c620f22b65a92036e1d01f6e65f490221f0228119fd5b77e0e0b74671adf6",
+  "request_id": "wTkwqDe2QPDhrUXTc1Xx",
+  "reported_credit_cost": "4"
+}

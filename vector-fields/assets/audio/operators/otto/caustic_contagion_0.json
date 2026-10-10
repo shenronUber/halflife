@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "caustic_contagion",
+  "variant": 0,
+  "text": "[coughs] Corrosive poison! It's spreading!",
+  "request": {
+    "text": "[coughs] Corrosive poison! It's spreading!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "910f39ddf0bae893e38620d69f78f8011ac64bdb846dd8f299683270eb2fdc08",
+  "sha256": "361d35bbee56e8a77d20ad8bb1341d3cf5512e20e472f2254e6217084af779a9",
+  "request_id": "F8jJB5xnLPI2f17lHx49",
+  "reported_credit_cost": "5"
+}

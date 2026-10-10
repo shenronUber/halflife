@@ -1,8 +1,9 @@
-param([int]$Jobs=8,[switch]$Configure)
+param([int]$Jobs=8,[switch]$Configure,[string]$Destination="")
 $ErrorActionPreference='Stop'
 $projectRoot=Split-Path -Parent $PSScriptRoot
 $sourceRoot=(Join-Path $projectRoot 'runtime/engine-source').Replace('\','/')
-$outputRoot=Join-Path $projectRoot 'runtime/vector-engine'
+$outputRoot=if ($Destination) {[IO.Path]::GetFullPath((Join-Path $projectRoot $Destination))} else {Join-Path $projectRoot 'runtime/vector-engine'}
+if (!$outputRoot.StartsWith(([IO.Path]::GetFullPath($projectRoot)+[IO.Path]::DirectorySeparatorChar),[StringComparison]::OrdinalIgnoreCase)) {throw 'Engine destination must remain inside the project.'}
 $sdlRoot=Join-Path $projectRoot 'devtools/SDL2-sdk/SDL2-2.32.10'
 $revision='9137964147d8f749dbeddf1cb5482c3d16f86e4a'
 if (!(Test-Path "$sourceRoot/waf")) {throw 'Missing Xash3D checkout: see vector-fields/engine/README.md.'}
@@ -41,7 +42,7 @@ foreach($binaryName in @('xash3d.exe','xash.dll','xash.exe','ref_gl.dll','SDL2.d
     $binaryHashes[$binaryName]=(Get-FileHash (Join-Path $outputRoot $binaryName) -Algorithm SHA256).Hash
 }
 @{base_commit=$revision;built_utc=[DateTime]::UtcNow.ToString('o');architecture='win32-i386';
-  extension_version=2;patch_sha256=(Get-FileHash $patchFile -Algorithm SHA256).Hash;
+  extension_version=3;status_viewmodel_version=1;patch_sha256=(Get-FileHash $patchFile -Algorithm SHA256).Hash;
   renderer_sha256=(Get-FileHash "$PSScriptRoot/engine/gl_vf.inc" -Algorithm SHA256).Hash;
   binaries=$binaryHashes} | ConvertTo-Json -Depth 3 | Set-Content "$outputRoot/vector-engine-build.json" -Encoding utf8
 Write-Output "Native engine built: $outputRoot"

@@ -1,0 +1,64 @@
+{
+  "clips": [
+    {
+      "id": "vf_q_death",
+      "label": "Quaternius - chute",
+      "source_file": "quaternius-standard.gltf",
+      "source_clip": "Death01",
+      "reference": "A_TPose",
+      "frames": 73,
+      "fps": 30.31578947368421,
+      "seconds": 2.375,
+      "leg_scale": 38.10475930169596,
+      "sha256": "0ff075c7ad6855c5c2c37a171592ee8f0d6ab2f58259e2be77a9b63dd8027765",
+      "compiled_sequence": 78,
+      "floor_range": [
+        -35.90173104346502,
+        -35.89541040487922
+      ],
+      "settled_torso_min": -35.899212731484226
+    },
+    {
+      "id": "vf_k_death_a",
+      "label": "KayKit - mort A",
+      "source_file": "kaykit-general.glb",
+      "source_clip": "Death_A",
+      "reference": "T-Pose",
+      "frames": 26,
+      "fps": 31.24999953433872,
+      "seconds": 0.800000011920929,
+      "leg_scale": 84.3788751358,
+      "sha256": "5f725c0f745f36078c7238968cd5c04843cbc6260689eb6e7f5e2bbd7ffdd7ad",
+      "compiled_sequence": 79,
+      "floor_range": [
+        -35.90413671976983,
+        -35.89564679274537
+      ],
+      "settled_torso_min": -35.89733493127506
+    },
+    {
+      "id": "vf_k_death_b",
+      "label": "KayKit - mort B",
+      "source_file": "kaykit-general.glb",
+      "source_clip": "Death_B",
+      "reference": "T-Pose",
+      "frames": 81,
+      "fps": 30.379745551856445,
+      "seconds": 2.633333444595337,
+      "leg_scale": 84.3788751358,
+      "sha256": "5f725c0f745f36078c7238968cd5c04843cbc6260689eb6e7f5e2bbd7ffdd7ad",
+      "compiled_sequence": 80,
+      "floor_range": [
+        -35.90437090444732,
+        -35.89695508547312
+      ],
+      "settled_torso_min": -35.89740691378222
+    }
+  ],
+  "checks": [
+    "pinned donor tracks compiled on the original 28 bones",
+    "77 historical sequences and electrical index preserved",
+    "constant GIGN limb lengths in every imported frame",
+    "ground contact and settled torso checked on the actual compiled mesh"
+  ]
+}

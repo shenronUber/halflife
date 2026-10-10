@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "actor": "nikos",
+  "cause": "arc_chain",
+  "text": "[choking] Ghh... [screaming] A-a-aagh! [gurgling] Ghrr...",
+  "request": {
+    "text": "[choking] Ghh... [screaming] A-a-aagh! [gurgling] Ghrr...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "c3576464c78f76e5633f3458830f2bb589f09a55270792f3aba647c2d17bd415",
+  "sha256": "7e9762666a19f7b4dd39de67cad40f60e3bc6831f1a212c80e1745cf8f3fefb5",
+  "request_id": "Rk1c5qUN16dwVK1rVFHK"
+}

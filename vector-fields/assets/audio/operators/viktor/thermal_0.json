@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "thermal",
+  "variant": 0,
+  "text": "[panicked] Горю! I am burning!",
+  "request": {
+    "text": "[panicked] Горю! I am burning!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "6d61d00ed735ff1dc0526097d8ca26adc4aa4ff9122b5d4240e5c797e43503f6",
+  "sha256": "18cc104196cde1f7f43c95067dc81d9c2c354f3aa8bc7f0524cda4fca010a2c5",
+  "request_id": "YEDm9ATGb7HbL5uqIewt",
+  "reported_credit_cost": "3"
+}

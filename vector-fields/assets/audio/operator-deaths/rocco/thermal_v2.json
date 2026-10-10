@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "actor": "rocco",
+  "cause": "thermal",
+  "text": "[screaming] AAAAAAGH!",
+  "request": {
+    "text": "[screaming] AAAAAAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "33d5fc3758c67849352f9a7beda02046cbc039ace13bc6a02a777506cef99ae0",
+  "sha256": "d9fc65b10433b540cf873697baccdcfa6fdb9629755c64ee8da51299f598eb97",
+  "request_id": "t4FF8SgYyzue56xcNV0u"
+}

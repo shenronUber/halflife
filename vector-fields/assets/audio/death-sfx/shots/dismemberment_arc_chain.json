@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "ArcChain / dismemberment",
+  "created_utc": "2026-10-09T23:29:02.694583+00:00",
+  "request_sha256": "733e9772347bca05a5aa9e2cd675c6b9c53e94d617e0becc1791dffa8c4fbd2c",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A taut wet tendon rupture followed immediately by three fast climbing electric whip snaps over small watery spits. Very short chained electric-water detachment, no sustained hum.",
+    "duration_seconds": 1.1,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "6d9fa54f876618e24af77b8cd45d09cf895765d47b307ec30bf083ec8b78fbb4",
+  "bytes": 18434,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A taut wet tendon rupture followed immediately by three fast climbing electric whip snaps over small watery spits. Very short chained electric-water detachment, no sustained hum.",
+  "request_id": null,
+  "reported_credit_cost": "11"
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "null",
+  "variant": 0,
+  "text": "[frustrated] Abgeschaltet! My systems are dead!",
+  "request": {
+    "text": "[frustrated] Abgeschaltet! My systems are dead!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "400181f764c78488bf5b6bc2b2eba6394d3814d21c979c029f81298d5913da86",
+  "sha256": "5be3e2f2f15efb52267931d28b95a335003c9420e4cf3759bffe71e882185b98",
+  "request_id": "zCqmVF5jof5JE5dAKBnK",
+  "reported_credit_cost": "5"
+}

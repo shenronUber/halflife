@@ -1,0 +1,19 @@
+{
+  "audio_sha256": "298ee211280af10d7497ffc2c58752e473336abc647fceb7680022be91a297a1",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "[gasping]",
+    "words": [
+      {
+        "text": "[gasping]",
+        "start": 1.02,
+        "end": 4.56,
+        "type": "audio_event",
+        "logprob": -0.036234749853714936
+      }
+    ],
+    "transcription_id": "WyhD1lEcMB9rssBRpjze",
+    "audio_duration_secs": 7.4969375
+  }
+}

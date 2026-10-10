@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "model_id": "eleven_v4",
+  "event": "kill",
+  "variant": 0,
+  "text": "[pleased] Μπράβο! Stay down.",
+  "request": {
+    "text": "[pleased] Μπράβο! Stay down.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "44a16da44a599602df72c32d7e18b39ccf860998f84c50ead2f342491196714b",
+  "sha256": "bb44de21a4a919047a0f163ef541fecfd00778631a190738961b2894f4b0318a",
+  "request_id": "iNsg0AyIMvX50oKPy0ri",
+  "reported_credit_cost": "3"
+}

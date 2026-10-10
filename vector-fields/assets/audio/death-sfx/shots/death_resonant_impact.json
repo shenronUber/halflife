@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "ResonantImpact / death",
+  "created_utc": "2026-10-09T23:29:06.142482+00:00",
+  "request_sha256": "71f996f8ff27c30ca32a745745c06cdcf40da5e0b51eb16ca8df3ed2f20abaa9",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. One dense hard impact followed by two separated pitched metallic resonant echoes, each lower and softer, with a low physical pressure tail. Distinct hit-ring-ring rhythm.",
+    "duration_seconds": 1.7,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "626280145fb6192fd8fc6d10da822a7af91344c68e91e9cd5f747e76c4e61562",
+  "bytes": 28047,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. One dense hard impact followed by two separated pitched metallic resonant echoes, each lower and softer, with a low physical pressure tail. Distinct hit-ring-ring rhythm.",
+  "request_id": null,
+  "reported_credit_cost": "17"
+}

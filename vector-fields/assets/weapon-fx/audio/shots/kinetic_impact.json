@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Kinetic / impact",
+  "created_utc": "2026-10-09T02:54:38.435314+00:00",
+  "request_sha256": "c4c9607bd9c1998b705462d538c113132c788c9a5c92b4b59ba1a67bb422d8ba",
+  "request": {
+    "text": "One single rifle bullet hitting hard concrete. Immediate sharp crunchy chip crack, tiny gritty fragments scattering briefly. Dry close game impact, no ricochet whistle, no firing sound, no voice, no music.",
+    "duration_seconds": 1.2,
+    "prompt_influence": 0.55,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "b2dc770315376e9fe15880782a2b4b2a19455769351dc1caa76a0bef0f91d3d9",
+  "bytes": 20106,
+  "text": "One single rifle bullet hitting hard concrete. Immediate sharp crunchy chip crack, tiny gritty fragments scattering briefly. Dry close game impact, no ricochet whistle, no firing sound, no voice, no music.",
+  "request_id": null,
+  "reported_credit_cost": "12"
+}

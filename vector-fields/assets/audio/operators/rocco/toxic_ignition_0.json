@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "toxic_ignition",
+  "variant": 0,
+  "text": "[panicked] The poison's burning! Cazzo!",
+  "request": {
+    "text": "[panicked] The poison's burning! Cazzo!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "6952db3437d5042a72738a7f16f1d3c4aab54ddacf187afffea9d63feb86bd7d",
+  "sha256": "e5603f39ccb4e21b452ae046255d1e9bec91938e962ebe5fe44f27af3a8648f3",
+  "request_id": "vvplmDJwiZaP0tEuWgCD",
+  "reported_credit_cost": "4"
+}

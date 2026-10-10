@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "cavitation",
+  "variant": 0,
+  "text": "[alarmed] Acid and pressure! It's popping!",
+  "request": {
+    "text": "[alarmed] Acid and pressure! It's popping!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "8dce64382e70d0c79520be234eb634c7516fd020b3aabb72eaedc3c5caa1fb9a",
+  "sha256": "e558e786900639d840e4ddb48ee58e1b2c91d724f6b4c94e99981b7b45076f64",
+  "request_id": "23YPKytWB8eukL7Wtf1W",
+  "reported_credit_cost": "5"
+}

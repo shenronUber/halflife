@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "null",
+  "variant": 0,
+  "text": "[relieved] Reactions blocked. Perfecto.",
+  "request": {
+    "text": "[relieved] Reactions blocked. Perfecto.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "0f84d474a4506cc7b5365b416af5c0f8b63fc577e72b5c82bc5a28375c049465",
+  "sha256": "c23420182e68d3cb54b5e91f61f1f9ea67d43d69e5d3c8df3c1c426a372a5797",
+  "request_id": "sYBKYVo495toXgVoqBGI",
+  "reported_credit_cost": "4"
+}

@@ -1,0 +1,222 @@
+{
+  "version": "0.20.6",
+  "assets": {
+    "effects": 16,
+    "authored_frames": 64,
+    "native_sprites": 16,
+    "checks": [
+      "all elemental and reaction IDs covered in catalog order",
+      "16 native RGBA sprite buffers and 64 distinct authored frames",
+      "all 4 peripheral sides populated; center exactly transparent",
+      "reaction colors and original alpha preserved exactly in native RGBA",
+      "source and generated output SHA256 contracts"
+    ]
+  },
+  "native": {
+    "effects": 21,
+    "captures": [
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_clear.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_hydro.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_electro.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_cryo.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_thermal.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_toxic.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_corrosion.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_sonic.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_kinetic.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_arc_chain.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_superconduction.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_shatter.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_resonant_impact.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_cavitation.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_caustic_contagion.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_toxic_ignition.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_steam_veil.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_phase.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_null.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_ward.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_reveal.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_overclock.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_thermal_motion_a.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_thermal_motion_b.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_bg_sky.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_sky_thermal.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_sky_cryo.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_sky_caustic_contagion.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_bg_metal.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_metal_thermal.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_metal_cryo.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_metal_caustic_contagion.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_atomic_arc.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_four.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_layers_off.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_layers_on.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_arms_only.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_arms_base.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_reload.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_third_person.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_expired.png"
+    ],
+    "checks": [
+      "16 custom flipbooks loaded with 64 native frames; visible pixel animation",
+      "clear aiming area and visible borders verified on bright sky and dark metal backgrounds",
+      "all 8 elements, 8 reactions and 5 tactical states render 4 edges and fitted first-person arm shells",
+      "reaction consumes component states and displays only the result",
+      "refresh remains visible",
+      "4 simultaneous states retain separate edge signatures",
+      "independent screen and arm layer controls",
+      "arm shell retained during accepted reload",
+      "expiry, clear, death and map reset remove both layers"
+    ],
+    "limits": [
+      "Fitted R1 hands and sleeves receive the shell; legacy developer weapons retain their own presentation.",
+      "Native screenshot review complements the state and draw counters."
+    ]
+  },
+  "multiplayer": {
+    "clients": 2,
+    "checks": [
+      "late join renders remote active state without contaminating local screen or arms",
+      "local Cryo remains while a different player has Thermal",
+      "clearing remote state preserves own feedback",
+      "revoking developer state clears both clients"
+    ],
+    "captures": [
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\mp-b\\vf_fx_test\\scrshots\\status_remote_only.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\mp-b\\vf_fx_test\\scrshots\\status_local_cryo_remote_fire.png"
+    ]
+  },
+  "unit": {
+    "suites": [
+      "unit"
+    ],
+    "passed": true,
+    "results": [
+      {
+        "suite": "unit",
+        "test": "validate.py",
+        "passed": true,
+        "seconds": 1.61
+      },
+      {
+        "suite": "unit",
+        "test": "model_contract.py",
+        "passed": true,
+        "seconds": 0.08
+      },
+      {
+        "suite": "unit",
+        "test": "contract_documentation.py",
+        "passed": true,
+        "seconds": 0.06
+      },
+      {
+        "suite": "unit",
+        "test": "tests/status_renderer_update_test.py",
+        "passed": true,
+        "seconds": 0.12
+      }
+    ]
+  },
+  "client_sha256": "b0752af89615aef3cee76255e880b6fcdae31716741826031a9a778ca8f64b11",
+  "configuration": {
+    "version": 1,
+    "frame_count": 4,
+    "size": 512,
+    "border": 0.14,
+    "fade_start": 0.09,
+    "effects": [
+      {
+        "id": "hydro",
+        "sheet": "hydro-flipbook.png",
+        "fps": 3.6
+      },
+      {
+        "id": "electro",
+        "sheet": "electro-flipbook.png",
+        "fps": 5.6
+      },
+      {
+        "id": "cryo",
+        "sheet": "cryo-flipbook.png",
+        "fps": 2.4
+      },
+      {
+        "id": "thermal",
+        "sheet": "thermal-flipbook.png",
+        "fps": 4.8
+      },
+      {
+        "id": "toxic",
+        "sheet": "toxic-flipbook.png",
+        "fps": 2.6
+      },
+      {
+        "id": "corrosion",
+        "sheet": "corrosion-flipbook.png",
+        "fps": 3.2
+      },
+      {
+        "id": "sonic",
+        "sheet": "sonic-flipbook.png",
+        "fps": 3.8
+      },
+      {
+        "id": "kinetic",
+        "sheet": "kinetic-flipbook.png",
+        "fps": 2.8
+      },
+      {
+        "id": "arc_chain",
+        "sheet": "arc_chain-flipbook.png",
+        "fps": 4.6
+      },
+      {
+        "id": "superconduction",
+        "sheet": "superconduction-flipbook.png",
+        "fps": 3.6
+      },
+      {
+        "id": "shatter",
+        "sheet": "shatter-flipbook.png",
+        "fps": 3.2
+      },
+      {
+        "id": "resonant_impact",
+        "sheet": "resonant_impact-flipbook.png",
+        "fps": 3.8
+      },
+      {
+        "id": "cavitation",
+        "sheet": "cavitation-flipbook.png",
+        "fps": 3.6
+      },
+      {
+        "id": "caustic_contagion",
+        "sheet": "caustic_contagion-flipbook.png",
+        "fps": 2.8
+      },
+      {
+        "id": "toxic_ignition",
+        "sheet": "toxic_ignition-flipbook.png",
+        "fps": 4.4
+      },
+      {
+        "id": "steam_veil",
+        "sheet": "steam_veil-flipbook.png",
+        "fps": 2.6
+      }
+    ],
+    "opacity": 0.72,
+    "registration": "shared four-frame perimeter alpha profile, 20% core onset to 94% material mass"
+  },
+  "source": "built-in imagegen: one distinct original flipbook per element or reaction",
+  "production": "Shared four-frame perimeter registration, native RGBA, uniform 72% opacity; no HUD-specific quiet zones",
+  "deployment": {
+    "files": 185,
+    "models": 74,
+    "destination": "C:\\Users\\Mathieu\\Documents\\Half life Project\\runtime\\vector-engine\\vf_visual",
+    "verified_at": "2026-10-09T16:55:09.655207+00:00",
+    "client_sha256": "b0752af89615aef3cee76255e880b6fcdae31716741826031a9a778ca8f64b11"
+  }
+}

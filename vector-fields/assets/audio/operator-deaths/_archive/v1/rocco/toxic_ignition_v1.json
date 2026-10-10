@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "actor": "rocco",
+  "cause": "toxic_ignition",
+  "text": "[coughing] Khh! [screaming] AAAAAAGH! [wheezing] Hhh...",
+  "request": {
+    "text": "[coughing] Khh! [screaming] AAAAAAGH! [wheezing] Hhh...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "5025d1fa3b6079c15ab54d86b912e9183f423d0af1c017c030762352cf5f5d0b",
+  "sha256": "7bf0aac907688e172a601b31396c4af82889860fe2f3c5dd7eb91f04025f6c54",
+  "request_id": "xwRgS7JWwWPmyZYwGSFC"
+}

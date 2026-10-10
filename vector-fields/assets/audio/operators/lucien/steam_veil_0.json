@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "steam_veil",
+  "variant": 0,
+  "text": "[coughs] Vapeur! Visibility is gone!",
+  "request": {
+    "text": "[coughs] Vapeur! Visibility is gone!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "1815bf6972f22dd9de247fa66a9801f949f9081aa8b6fb2ee158f8f5e14358e3",
+  "sha256": "8a366eaf4b4433f4cd6f01ea1af0e852e7991cce553bcfaa8fb9fb34f6416057",
+  "request_id": "IwPr8JQWpYMgwtfY93M0",
+  "reported_credit_cost": "4"
+}

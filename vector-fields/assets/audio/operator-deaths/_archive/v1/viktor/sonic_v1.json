@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "actor": "viktor",
+  "cause": "sonic",
+  "text": "[screaming] Aaa-eeeeegh! [groaning] Nnngh... [exhales] Hhh...",
+  "request": {
+    "text": "[screaming] Aaa-eeeeegh! [groaning] Nnngh... [exhales] Hhh...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "0ee2259f4b859bab3737284deae351bc00f0f688b9b99a08493b9578cfc514e9",
+  "sha256": "d69fc746a90f6dd157b397a909b6cd2ac6b1eddb354280a193a425b9dedb29fe",
+  "request_id": "5TC7uQyatRCJCeidACBI"
+}

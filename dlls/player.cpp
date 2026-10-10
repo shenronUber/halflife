@@ -37,7 +37,12 @@
 #include "pm_shared.h"
 #include "hltv.h"
 #include "vf_equipment.h"
+#include "vf_voice.h"
+#include "vf_status.h"
+#include "vf_combat.h"
+#include "../game_shared/vf_voice_catalog.h"
 #include "vf_skins.h"
+#include "vf_death.h"
 
 // #define DUCKFIX
 
@@ -75,11 +80,20 @@ extern CGraph	WorldGraph;
 // Global Savedata for player
 TYPEDESCRIPTION	CBasePlayer::m_playerSaveData[] = 
 {
+	DEFINE_FIELD( CBasePlayer, m_vfVoice, FIELD_INTEGER ),
+	DEFINE_FIELD( CBasePlayer, m_vfVoiceDied, FIELD_INTEGER ),
+	DEFINE_FIELD( CBasePlayer, m_vfVoiceRespawnLast, FIELD_INTEGER ),
 	DEFINE_ARRAY( CBasePlayer, m_vfItems, FIELD_INTEGER, vf::SlotCount ),
 	DEFINE_FIELD( CBasePlayer, m_vfCatalogHash, FIELD_INTEGER ),
 	DEFINE_ARRAY( CBasePlayer, m_vfSkins, FIELD_INTEGER, 5 ),
 	DEFINE_FIELD( CBasePlayer, m_vfSkinHash, FIELD_INTEGER ),
 	DEFINE_FIELD( CBasePlayer, m_vfAppearanceMode, FIELD_INTEGER ),
+	DEFINE_FIELD( CBasePlayer, m_vfDeveloper, FIELD_INTEGER ),
+	DEFINE_FIELD( CBasePlayer, m_vfShotFX, FIELD_INTEGER ),
+	DEFINE_FIELD( CBasePlayer, m_vfKeyFlags, FIELD_INTEGER ),
+	DEFINE_ARRAY( CBasePlayer, m_vfItemKeys, FIELD_STRING, vf::SlotCount ),
+	DEFINE_ARRAY( CBasePlayer, m_vfStyleKeys, FIELD_STRING, vf::WeaponStyleSlots ),
+	DEFINE_ARRAY( CBasePlayer, m_vfSkinKeys, FIELD_STRING, vf::SkinZones ),
 	DEFINE_ARRAY( CBasePlayer, m_vfWeaponStyles, FIELD_INTEGER, vf::WeaponStyleSlots ),
 	DEFINE_FIELD( CBasePlayer, m_vfWeaponStyleHash, FIELD_INTEGER ),
 	DEFINE_FIELD( CBasePlayer, m_flFlashLightTime, FIELD_TIME ),
@@ -355,6 +369,7 @@ int TrainSpeed(int iSpeed, int iMax)
 
 void CBasePlayer :: DeathSound( void )
 {
+	if (VF_VoiceDeath(this)) return;
 	// water death sounds
 	/*
 	if (pev->waterlevel == 3)
@@ -411,30 +426,7 @@ void CBasePlayer :: TraceAttack( entvars_t *pevAttacker, float flDamage, Vector 
 	{
 		m_LastHitGroup = ptr->iHitgroup;
 
-		switch ( ptr->iHitgroup )
-		{
-		case HITGROUP_GENERIC:
-			break;
-		case HITGROUP_HEAD:
-			flDamage *= gSkillData.plrHead;
-			break;
-		case HITGROUP_CHEST:
-			flDamage *= gSkillData.plrChest;
-			break;
-		case HITGROUP_STOMACH:
-			flDamage *= gSkillData.plrStomach;
-			break;
-		case HITGROUP_LEFTARM:
-		case HITGROUP_RIGHTARM:
-			flDamage *= gSkillData.plrArm;
-			break;
-		case HITGROUP_LEFTLEG:
-		case HITGROUP_RIGHTLEG:
-			flDamage *= gSkillData.plrLeg;
-			break;
-		default:
-			break;
-		}
+		flDamage = VF_PlayerTraceDamage(this, pevAttacker, flDamage, vecDir, *ptr, bitsDamageType);
 
 		SpawnBlood(ptr->vecEndPos, BloodColor(), flDamage);// a little surface blood.
 		TraceBleed( flDamage, vecDir, ptr, bitsDamageType );
@@ -464,6 +456,7 @@ int CBasePlayer :: TakeDamage( entvars_t *pevInflictor, entvars_t *pevAttacker, 
 	float flRatio;
 	float flBonus;
 	float flHealthPrev = pev->health;
+	float vfArmorBefore = pev->armorvalue;
 
 	flBonus = ARMOR_BONUS;
 	flRatio = ARMOR_RATIO;
@@ -517,6 +510,7 @@ int CBasePlayer :: TakeDamage( entvars_t *pevInflictor, entvars_t *pevAttacker, 
 	// this cast to INT is critical!!! If a player ends up with 0.5 health, the engine will get that
 	// as an int (zero) and think the player is dead! (this will incite a clientside screentilt, etc)
 	fTookDamage = CBaseMonster::TakeDamage(pevInflictor, pevAttacker, (int)flDamage, bitsDamageType);
+	if (fTookDamage) VF_VoiceDamage(this,bitsDamageType,flHealthPrev,vfArmorBefore);
 
 	// reset damage time countdown for each type of time based damage player just sustained
 
@@ -936,6 +930,8 @@ entvars_t *g_pevLastInflictor;  // Set in combat.cpp.  Used to pass the damage i
 
 void CBasePlayer::Killed( entvars_t *pevAttacker, int iGib )
 {
+	VF_DeathCapture(this);
+	VF_VoiceKilled(this,pevAttacker);
 	CSound *pSound;
 
 	// Holster weapon immediately, to allow it to cleanup
@@ -963,7 +959,7 @@ void CBasePlayer::Killed( entvars_t *pevAttacker, int iGib )
 	
 	m_flRespawnTimer = 0.0f;
 
-	pev->modelindex = g_ulModelIndexPlayer;    // don't use eyes
+	if (!VF_ApplyPlayerModel(this)) pev->modelindex = g_ulModelIndexPlayer;
 
 	pev->deadflag		= DEAD_DYING;
 	pev->movetype		= MOVETYPE_TOSS;
@@ -1012,6 +1008,7 @@ void CBasePlayer::Killed( entvars_t *pevAttacker, int iGib )
 		return;
 	}
 
+	VF_DeathPlayer(this);
 	DeathSound();
 	
 	pev->angles.x = 0;
@@ -1025,9 +1022,11 @@ void CBasePlayer::Killed( entvars_t *pevAttacker, int iGib )
 // Set the activity based on an event or current state
 void CBasePlayer::SetAnimation( PLAYER_ANIM playerAnim )
 {
+	if (playerAnim==PLAYER_RELOAD) VF_VoiceSpeak(this,vfv::E_reload);
 	int animDesired;
 	float speed;
 	char szAnim[64];
+	bool preserveReloadFrame = false;
 
 	speed = pev->velocity.Length2D();
 
@@ -1052,6 +1051,7 @@ void CBasePlayer::SetAnimation( PLAYER_ANIM playerAnim )
 		m_IdealActivity = GetDeathActivity( );
 		break;
 
+	case PLAYER_RELOAD:
 	case PLAYER_ATTACK1:	
 		switch( m_Activity )
 		{
@@ -1063,7 +1063,7 @@ void CBasePlayer::SetAnimation( PLAYER_ANIM playerAnim )
 			m_IdealActivity = m_Activity;
 			break;
 		default:
-			m_IdealActivity = ACT_RANGE_ATTACK1;
+			m_IdealActivity = playerAnim == PLAYER_RELOAD ? ACT_RELOAD : ACT_RANGE_ATTACK1;
 			break;
 		}
 		break;
@@ -1139,7 +1139,21 @@ void CBasePlayer::SetAnimation( PLAYER_ANIM playerAnim )
 		ResetSequenceInfo( );
 		break;
 
+	case ACT_RELOAD:
 	case ACT_WALK:
+		// The weapon remains authoritative for completion and cancellation. Gait
+		// still runs below, so legs can walk/crouch while the upper body reloads.
+		{
+		 CBasePlayerWeapon* weapon=m_pActiveItem?(CBasePlayerWeapon*)m_pActiveItem->GetWeaponPtr():NULL;
+		 if(weapon && weapon->m_fInReload){
+		  strcpy(szAnim,FBitSet(pev->flags,FL_DUCKING)?"crouch_reload_":"ref_reload_");
+		  strcat(szAnim,m_szAnimExtention);animDesired=LookupSequence(szAnim);
+		  if(animDesired>=0){
+		   preserveReloadFrame=m_Activity==ACT_RELOAD;
+		   m_Activity=ACT_RELOAD;break;
+		  }
+		 }
+		}
 		if (m_Activity != ACT_RANGE_ATTACK1 || m_fSequenceFinished)
 		{
 			if ( FBitSet( pev->flags, FL_DUCKING ) )	// crouching
@@ -1193,7 +1207,7 @@ void CBasePlayer::SetAnimation( PLAYER_ANIM playerAnim )
 
 	// Reset to first frame of desired animation
 	pev->sequence		= animDesired;
-	pev->frame			= 0;
+	if (!preserveReloadFrame) pev->frame = 0;
 	ResetSequenceInfo( );
 }
 
@@ -1958,6 +1972,7 @@ void CBasePlayer::UpdateStatusBar()
 
 void CBasePlayer::PreThink(void)
 {
+	VF_VoiceThink(this);
 	int buttonsChanged = (m_afButtonLast ^ pev->button);	// These buttons have changed this frame
 	
 	// Debounced button codes for pressed/released
@@ -2575,12 +2590,15 @@ GLOBALS ASSUMED SET:  g_ulModelIndexPlayer
 ================
 */
 	static void
-CheckPowerups(entvars_t *pev)
+CheckPowerups(CBasePlayer* player)
 {
+	entvars_t* pev=player->pev;
 	if (pev->health <= 0)
 		return;
 
-	pev->modelindex = g_ulModelIndexPlayer;    // don't use eyes
+	// Keep the equipped carrier and its sequence table authoritative. The old
+	// unconditional reset silently restored Gordon after every PostThink.
+	if (!VF_ApplyPlayerModel(player)) pev->modelindex = g_ulModelIndexPlayer;
 }
 
 
@@ -2781,6 +2799,8 @@ void CBasePlayer::PostThink()
 		m_flFallVelocity = 0;
 	}
 
+	CheckPowerups(this);
+
 	// select the proper animation for the player character	
 	if ( IsAlive() )
 	{
@@ -2793,7 +2813,7 @@ void CBasePlayer::PostThink()
 	}
 
 	StudioFrameAdvance( );
-	CheckPowerups(pev);
+
 
 	UpdatePlayerSound();
 
@@ -3004,6 +3024,7 @@ ReturnSpot:
 
 void CBasePlayer::Spawn( void )
 {
+	VF_CombatClear(this);
 	m_flStartCharge = gpGlobals->time;
 
 	pev->classname		= MAKE_STRING("player");
@@ -3095,6 +3116,8 @@ void CBasePlayer::Spawn( void )
 	m_flNextChatTime = gpGlobals->time;
 
 	g_pGameRules->PlayerSpawn( this );
+	VF_DeathSpawn(this);
+	VF_VoiceSpawn(this);
 }
 
 
@@ -3144,6 +3167,7 @@ void CBasePlayer :: Precache( void )
 
 int CBasePlayer::Save( CSave &save )
 {
+	VF_PreparePlayerSave(this);
 	if ( !CBaseMonster::Save(save) )
 		return 0;
 
@@ -3223,6 +3247,7 @@ int CBasePlayer::Restore( CRestore &restore )
 	m_flNextAttack = UTIL_WeaponTimeBase();
 #endif
 
+	VF_VoiceRestore(this);
 	return status;
 }
 
@@ -4135,6 +4160,7 @@ void CBasePlayer :: UpdateClientData( void )
 
 		InitStatusBar();
         VF_SyncPlayer(this,true);
+        VF_StatusSync(this);
 
 		// Update initial flashlight state
 		MESSAGE_BEGIN( MSG_ONE, gmsgFlashlight, NULL, pev );

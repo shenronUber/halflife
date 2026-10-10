@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "counter_taunt",
+  "variant": 0,
+  "text": "[angry] Komm her! Say that to my face!",
+  "request": {
+    "text": "[angry] Komm her! Say that to my face!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "e27fd3cb72277d47da24f27ddc0180ee101843ba19722b99b88c0aa98b3971fb",
+  "sha256": "b1259e6a09fe9e708cc93fd22c9f06e3683a6089d79309d213e78d725a6e9965",
+  "request_id": "tOi707HVQiU7mRdJx5C7",
+  "reported_credit_cost": "4"
+}

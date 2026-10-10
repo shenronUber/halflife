@@ -144,6 +144,9 @@ int CHud :: Redraw( float flTime, int intermission )
 	// if no redrawing is necessary
 	// return 0;
 	
+	// Status borders are behind health/ammo so combat information stays legible.
+	VF_EffectsScreen();
+
 	// draw all registered HUD elements
 	if ( m_pCvarDraw->value )
 	{

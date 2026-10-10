@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "reveal",
+  "variant": 0,
+  "text": "[urgent] Spotted! They can see me!",
+  "request": {
+    "text": "[urgent] Spotted! They can see me!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "0c14fbf1a29c00fa7dac5ffacde0b2c51277561b1c586eb792b38ce1ea1a0722",
+  "sha256": "6159e75c5ce5b4c7a6773392481989d60b8ef41dbc5b6d9babcebce4e3658ae4",
+  "request_id": "eJGY9ovW7iWYw0ZaoPXI",
+  "reported_credit_cost": "4"
+}

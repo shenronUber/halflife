@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Kinetic / dismemberment",
+  "created_utc": "2026-10-09T23:29:00.921459+00:00",
+  "request_sha256": "547a3a6c3f5aeebeca454f225e9952a67028bda9da36e4e0e35ccfab56ea6c06",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A heavy sharp bone break and deep fibrous rip, with one wet compact snap and a couple of dry fragments. Pure kinetic severing, no elemental buzz or ringing.",
+    "duration_seconds": 1.1,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "cd4f06903d42b11aebcd950d88e5e3300dd18b98631070b8c061d4d489cb93ef",
+  "bytes": 18434,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A heavy sharp bone break and deep fibrous rip, with one wet compact snap and a couple of dry fragments. Pure kinetic severing, no elemental buzz or ringing.",
+  "request_id": null,
+  "reported_credit_cost": "11"
+}

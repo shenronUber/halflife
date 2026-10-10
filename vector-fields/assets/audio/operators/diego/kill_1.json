@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "kill",
+  "variant": 1,
+  "text": "[pleased] Uno menos. Who's next?",
+  "request": {
+    "text": "[pleased] Uno menos. Who's next?",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "37e4c736ffe43bc16372a43d74923d0c7e3dd38c6dbc1341160170ba311658d5",
+  "sha256": "8fbaf189a14c2bef32f736aa668b6de411ee3ebaeb24ffd6cfaa2d7b96b0e7cf",
+  "request_id": "JzYYIzt3qEnpXLv9GLGr",
+  "reported_credit_cost": "4"
+}

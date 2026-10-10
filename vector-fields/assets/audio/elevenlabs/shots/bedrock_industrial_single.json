@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Bedrock / Industrial launcher",
+  "created_utc": "2026-10-09T02:32:51.065523+00:00",
+  "request_sha256": "31c121c1c3e9d8ade4d7817dffe75d563aa06cc21fab6a14c035c83d70bd887a",
+  "request": {
+    "text": "One firing sound of a fictional heavy industrial mining weapon. A brutal compressed mechanical thunk, a short deep pressure blast, and a rattling steel mechanism settling. Dense tactile machinery, substantially different from a normal rifle. Single event immediately at the start, isolated dry close recording. No explosion at a distance, no music, no voice, no repeated shots.",
+    "duration_seconds": 1.8,
+    "prompt_influence": 0.5,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "e108ecd4b11f5a3862c8083988d13ad29c9f4a929268526894141f53c2c6e603",
+  "bytes": 29301,
+  "text": "One firing sound of a fictional heavy industrial mining weapon. A brutal compressed mechanical thunk, a short deep pressure blast, and a rattling steel mechanism settling. Dense tactile machinery, substantially different from a normal rifle. Single event immediately at the start, isolated dry close recording. No explosion at a distance, no music, no voice, no repeated shots.",
+  "request_id": null,
+  "reported_credit_cost": "18"
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Corrosion / dismemberment",
+  "created_utc": "2026-10-09T23:28:57.291943+00:00",
+  "request_sha256": "ce79a9785a55ad2d3b9b6971083d1d4b15dc8c2fa8be6f722ec4d393adc9d2b0",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A dissolving limb pulls apart with a short viscous wet rip, a dense acidic spit and a brief sizzling etch at the stump. Fast tear onset, shorter than a sustained acid death.",
+    "duration_seconds": 1.1,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "cd2314bacb65005acf4b77b84826558e393886fab8e4034dec178d337003b69c",
+  "bytes": 18434,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A dissolving limb pulls apart with a short viscous wet rip, a dense acidic spit and a brief sizzling etch at the stump. Fast tear onset, shorter than a sustained acid death.",
+  "request_id": null,
+  "reported_credit_cost": "11"
+}

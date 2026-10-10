@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "actor": "diego",
+  "cause": "hydro",
+  "text": "[choking] Ghrr... [gurgling] Ghh... ghh... [gasping] Hah... [exhales] Hhh...",
+  "request": {
+    "text": "[choking] Ghrr... [gurgling] Ghh... ghh... [gasping] Hah... [exhales] Hhh...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "92d5822e6699d5a09c7499c06f0464d092fd1882ea424553b3f123611388bfe7",
+  "sha256": "c9d60d3b2ecf4170e0113e76a924f093b9792b28f066bc25b4806077a301df01",
+  "request_id": "6tewfzRYxN3NtlqCgKup"
+}

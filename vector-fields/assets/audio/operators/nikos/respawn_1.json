@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "model_id": "eleven_v4",
+  "event": "respawn",
+  "variant": 1,
+  "text": "[indignant] This gun is useless! Even my grandmother could build a better one!",
+  "request": {
+    "text": "[indignant] This gun is useless! Even my grandmother could build a better one!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "fec422075772d67d9e910162e9eaa0156407d084ff95d63b3e186cb82f792774",
+  "sha256": "679045fd10e03f513192384c2bbf3435a7ee10aa3ecbaf325f6f188e8524d0dd",
+  "request_id": "16PhfiTrdAGTqtSkyXij",
+  "reported_credit_cost": "9"
+}

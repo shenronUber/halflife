@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "kill",
+  "variant": 0,
+  "text": "[dry] Sehr gut. Stay down.",
+  "request": {
+    "text": "[dry] Sehr gut. Stay down.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "0253048d035cf3b80b58cbfbb5a35e60c4cbf0b59d258be669728dde91450595",
+  "sha256": "95fc66084d5919b22eda80fff45317a87b66a301716da8bde7861b1f0425082c",
+  "request_id": "JdTZ4JhH5Da6TIz5bk7W",
+  "reported_credit_cost": "3"
+}

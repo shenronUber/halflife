@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "actor": "viktor",
+  "cause": "toxic",
+  "text": "[wheezing][screaming] KHAAGH!",
+  "request": {
+    "text": "[wheezing][screaming] KHAAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "dc352cef7c7601c41eb571b0d01ada0d6a096d51eca620d23c3f43129fc5334e",
+  "sha256": "ea1134f71353e763c3c01f09c9a602a97010440363161dbd76729bf681760ef7",
+  "request_id": "V97qajH9RhbqucM9jKg2"
+}

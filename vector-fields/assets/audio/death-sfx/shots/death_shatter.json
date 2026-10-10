@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Shatter / death",
+  "created_utc": "2026-10-09T23:29:04.260009+00:00",
+  "request_sha256": "a6d5110e0407c2ae710efd73ed1ff073472bd35680f734767722cc8d9ccd26d0",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A forceful broad ice smashing crash followed by a dense cascade of sharp glassy chunks, dropping from high to low. One explosive frozen shatter, no sustained whistle.",
+    "duration_seconds": 1.7,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "686f88823c34384d1b42073f8a7b8d7093ea5af61c66ae9ee16ef88eab8ee5b2",
+  "bytes": 28047,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A forceful broad ice smashing crash followed by a dense cascade of sharp glassy chunks, dropping from high to low. One explosive frozen shatter, no sustained whistle.",
+  "request_id": null,
+  "reported_credit_cost": "17"
+}

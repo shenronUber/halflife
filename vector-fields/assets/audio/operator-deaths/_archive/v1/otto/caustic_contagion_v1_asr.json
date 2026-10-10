@@ -1,0 +1,19 @@
+{
+  "audio_sha256": "a1f50250a5c52f55503a35cd4513879d2ed2659f84ceda8c5e40579a80cc22e9",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "[coughs]",
+    "words": [
+      {
+        "text": "[coughs]",
+        "start": 0.56,
+        "end": 4.22,
+        "type": "audio_event",
+        "logprob": -0.014604355557764848
+      }
+    ],
+    "transcription_id": "Lsu7yya7sxiyELD8fzkB",
+    "audio_duration_secs": 5.3415625
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "release": "0.20.5",
+  "native": {
+    "effects": 21,
+    "captures": [
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_clear.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_hydro.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_electro.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_cryo.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_thermal.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_toxic.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_corrosion.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_sonic.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_kinetic.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_arc_chain.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_superconduction.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_shatter.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_resonant_impact.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_cavitation.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_caustic_contagion.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_toxic_ignition.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_steam_veil.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_phase.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_null.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_ward.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_reveal.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_overclock.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_atomic_arc.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_four.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_layers_off.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_layers_on.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_arms_only.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_arms_base.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_reload.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_third_person.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\single\\vf_fx_test\\scrshots\\status_expired.png"
+    ],
+    "checks": [
+      "all 8 elements, 8 reactions and 5 tactical states render 4 edges and fitted first-person arm shells",
+      "reaction consumes component states and displays only the result",
+      "refresh remains visible",
+      "4 simultaneous states retain separate edge signatures",
+      "independent screen and arm layer controls",
+      "arm shell retained during accepted reload",
+      "expiry, clear, death and map reset remove both layers"
+    ],
+    "limits": [
+      "Fitted R1 hands and sleeves receive the shell; legacy developer weapons retain their own presentation.",
+      "Native screenshot review complements the state and draw counters."
+    ]
+  },
+  "multiplayer": {
+    "clients": 2,
+    "checks": [
+      "late join renders remote active state without contaminating local screen or arms",
+      "local Cryo remains while a different player has Thermal",
+      "clearing remote state preserves own feedback",
+      "revoking developer state clears both clients"
+    ],
+    "captures": [
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\mp-b\\vf_fx_test\\scrshots\\status_remote_only.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\status-feedback-native\\mp-b\\vf_fx_test\\scrshots\\status_local_cryo_remote_fire.png"
+    ]
+  },
+  "geometry": {
+    "effects": 21,
+    "formats": 5,
+    "frames_per_effect": 180,
+    "quads_checked": 2959200,
+    "protected_center": true
+  },
+  "engine_checks": "18/18",
+  "launcher_checks": [
+    "hash validation",
+    "renderer capability checked",
+    "all destinations probed before replacing locked binaries",
+    "repeat launch is a no-op"
+  ],
+  "binary_sha256": {
+    "build/client/client.dll": "ffe766369c21e14037f513c4ad90e40f2546b01e8ca2ab5a63f89977eef7bfab",
+    "build/server/hl.dll": "d1530aad2866022e5565831687753d82a2a47d490b1dfa8d4a55962088e7cddb"
+  },
+  "visual_review": "assets/status-feedback/in-game-feedback.jpg"
+}

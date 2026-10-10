@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "counter_taunt",
+  "variant": 1,
+  "text": "[threatening] Te voy a matar! You're dead, amigo!",
+  "request": {
+    "text": "[threatening] Te voy a matar! You're dead, amigo!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "f661cc875aad32b6b0b7dc57fd55f9000e979df10336a14e7cbdde4467bee6c1",
+  "sha256": "9b206ce46f2f8726931f72e6731912cb96bd8cb54f19f07c1e49af134837fabb",
+  "request_id": "rNfhX5djqXrpy9t6OCtM",
+  "reported_credit_cost": "5"
+}

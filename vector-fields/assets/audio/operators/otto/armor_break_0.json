@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "armor_break",
+  "variant": 0,
+  "text": "[urgent] Armor gone! Verdammt!",
+  "request": {
+    "text": "[urgent] Armor gone! Verdammt!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "066c218d70b19d4d3f393f705c20cee852453022d4c39e47a420b2057ff4374a",
+  "sha256": "d0dd59581f8982514bc71876b443f797e2c1d5723a93b1a92e35c0f5201621c7",
+  "request_id": "ahhG2HFcy1dU9dumC1WZ",
+  "reported_credit_cost": "3"
+}

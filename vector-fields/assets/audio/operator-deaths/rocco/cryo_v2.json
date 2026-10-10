@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "actor": "rocco",
+  "cause": "cryo",
+  "text": "[strained][screaming] AAGH!",
+  "request": {
+    "text": "[strained][screaming] AAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "7e4e82fe36e647ed0ec87039792c67427060de512e105f56ea1adcd6f1077450",
+  "sha256": "0bcf78ccd19566a9e4d5e218c23fc73473aedf69a15b1c5f3c36aa0dfd5db89a",
+  "request_id": "WvYUO1nJ2H4at07fTOIq"
+}

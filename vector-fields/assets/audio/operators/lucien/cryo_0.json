@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "cryo",
+  "variant": 0,
+  "text": "[shivering] Glacé! I can barely move!",
+  "request": {
+    "text": "[shivering] Glacé! I can barely move!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "b96c0e0690c4e3fd9e17c56fb36e309c33dcfe9dded9480cd5dddaa38e5a9db4",
+  "sha256": "17cddae836bde0f771e4e0d81ff51f99d651e3d3a2802a58ef518041c4d6f20f",
+  "request_id": "NySKOY9Pc5K5NUwrmrdk",
+  "reported_credit_cost": "4"
+}

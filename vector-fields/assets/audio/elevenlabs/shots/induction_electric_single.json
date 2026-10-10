@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Induction / Electrical discharge",
+  "created_utc": "2026-10-09T02:32:52.774975+00:00",
+  "request_sha256": "e0c1f3ee800c47033e57ae7460cff1403fb0e6ceaeb02da8fb33576ec0d16ba1",
+  "request": {
+    "text": "One single shot of a fictional electromagnetic induction weapon. An immediate hard electrical snap with a punchy low impulse, a fine sizzling arc and a tiny descending resonant coil tail. Crisp aggressive energy discharge, no musical note, no long charging sound, no conventional gunshot. Dry isolated game sound effect, no music, no voices, no ambience, no repeated fire.",
+    "duration_seconds": 1.8,
+    "prompt_influence": 0.5,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "f9da8536078a97f542ff32cf39bdd577f2ae20f2b04bea6a91066091544f5c45",
+  "bytes": 29301,
+  "text": "One single shot of a fictional electromagnetic induction weapon. An immediate hard electrical snap with a punchy low impulse, a fine sizzling arc and a tiny descending resonant coil tail. Crisp aggressive energy discharge, no musical note, no long charging sound, no conventional gunshot. Dry isolated game sound effect, no music, no voices, no ambience, no repeated fire.",
+  "request_id": null,
+  "reported_credit_cost": "18"
+}

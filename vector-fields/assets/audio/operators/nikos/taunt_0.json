@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "model_id": "eleven_v4",
+  "event": "taunt",
+  "variant": 0,
+  "text": "[taunting] Come here, μαλάκα. I have a surprise.",
+  "request": {
+    "text": "[taunting] Come here, μαλάκα. I have a surprise.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "3dc4995aa63e2e06159ccbf829224cb18d3b95e8eccdd060033c1536a1a0c16d",
+  "sha256": "12754ffee73c83b50e241a6a01c86eab8e53314f7ce38bc6157b75d87f6a8f79",
+  "request_id": "KUlA7df3uStLV1CNCeXW",
+  "reported_credit_cost": "5"
+}

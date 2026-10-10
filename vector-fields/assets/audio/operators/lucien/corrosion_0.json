@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "corrosion",
+  "variant": 0,
+  "text": "[alarmed] Acide! My armor is dissolving!",
+  "request": {
+    "text": "[alarmed] Acide! My armor is dissolving!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "937e764bde5b66c987bae0c6f0855c27dc02b7eac06cfdbc8fadf74bd7726615",
+  "sha256": "ee70d9d313f7b57aadf10099f6f35d8e32e732ede64c1aa3ac734c01e1da6d80",
+  "request_id": "E6NycKg7aYxqCWL46E1I",
+  "reported_credit_cost": "4"
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "superconduction",
+  "variant": 0,
+  "text": "[strained] Frozen and shocked! Porca miseria!",
+  "request": {
+    "text": "[strained] Frozen and shocked! Porca miseria!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "2bd91de80f0bb79f330775fe21e30d8e0349cfcb7a2781c290d4d87124eff411",
+  "sha256": "20b883a353afa991ed26f70b936f3256e5a4a51e172af4c69334739922ad9496",
+  "request_id": "ZuBYuFH4qaziraiPrYYO",
+  "reported_credit_cost": "5"
+}

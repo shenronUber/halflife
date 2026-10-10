@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "ToxicIgnition / dismemberment",
+  "created_utc": "2026-10-09T23:29:12.365515+00:00",
+  "request_sha256": "7b8f8f4a20a0af9d2842ce4c9f42b2621ce5f3ecda9b2536684e6e2711a4433b",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A sharp wet tendon snap engulfed by one muffled gas ignition pop, a tiny flame lick and a dusty papery flutter. Compact toxic burning limb detachment.",
+    "duration_seconds": 1.1,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "2e595c9e1d0996f49bb2d6f58fc29d00c697f07f849d6995e9eb85dfee9f6b70",
+  "bytes": 18434,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A sharp wet tendon snap engulfed by one muffled gas ignition pop, a tiny flame lick and a dusty papery flutter. Compact toxic burning limb detachment.",
+  "request_id": null,
+  "reported_credit_cost": "11"
+}

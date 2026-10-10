@@ -1,0 +1,248 @@
+{
+  "status": "third-person reload integrated and tested in isolated native runtime; normal installed 0.20.1 unchanged",
+  "body": "GIGN persona_scout only in all new workshop scenes and native test",
+  "assets": {
+    "samples": 1677,
+    "max_reload_contact_error": 0.006864558064601889,
+    "max_palm_contact_error": 0.3991763339926623,
+    "max_arm_length_change": 0.0,
+    "max_preserved_local_error": 0.00390625,
+    "checks": [
+      "three feed platforms, standing/crouched hold and fire",
+      "both authored aim blend endpoints and neutral interpolation",
+      "walk/run/crouch lower-body layering preserves hand contacts",
+      "twelve magazine tracks move and return to their exact seats",
+      "reload palms remain attached to the firing grip and moving magazine",
+      "MP5 reload duration matches the authoritative 1.5-second delay",
+      "no bone stretching or edited lower-body tracks",
+      "mixed renderer/client rejected before deployment (prevents stock player fallback)"
+    ]
+  },
+  "native": {
+    "clients": 2,
+    "late_join": true,
+    "captures": [
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\animation-native\\a\\vf_animation\\scrshots\\reload_11.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\animation-native\\a\\vf_animation\\scrshots\\reload_12.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\animation-native\\a\\vf_animation\\scrshots\\reload_17.png",
+      "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\animation-native\\a\\vf_animation\\scrshots\\reload_18.png"
+    ],
+    "cases": {
+      "RELOAD_STANDING": [
+        "77",
+        "67.2",
+        "2",
+        "1",
+        "48",
+        "models/vf_r01/r01_tp_top.mdl"
+      ],
+      "RELOAD_FINISHED": [
+        "41",
+        "60.3",
+        "2",
+        "0",
+        "50",
+        "models/vf_r01/r01_tp_top.mdl"
+      ],
+      "FULL_CLIP_IGNORED": [
+        "41",
+        "99.9",
+        "2",
+        "0",
+        "50",
+        "models/vf_r01/r01_tp_top.mdl"
+      ],
+      "RELOAD_CROUCHED": [
+        "78",
+        "56.4",
+        "6",
+        "1",
+        "48",
+        "models/vf_r01/r01_tp_top.mdl"
+      ],
+      "RELOAD_STOOD_UP": [
+        "77",
+        "112.9",
+        "2",
+        "1",
+        "48",
+        "models/vf_r01/r01_tp_top.mdl"
+      ],
+      "RELOAD_HOLSTERED": [
+        "25",
+        "33.8",
+        "2",
+        "0",
+        "-1",
+        "models/vf_skins/persona_rig.mdl"
+      ]
+    },
+    "remote_reload_samples": [
+      [
+        "1",
+        "77",
+        "2.0",
+        "2"
+      ],
+      [
+        "2",
+        "77",
+        "67.0",
+        "2"
+      ],
+      [
+        "3",
+        "77",
+        "146.0",
+        "2"
+      ],
+      [
+        "4",
+        "77",
+        "200.0",
+        "2"
+      ],
+      [
+        "0",
+        "41",
+        "8.0",
+        "2"
+      ],
+      [
+        "1",
+        "77",
+        "5.0",
+        "4"
+      ],
+      [
+        "2",
+        "78",
+        "69.0",
+        "6"
+      ],
+      [
+        "3",
+        "77",
+        "128.0",
+        "2"
+      ],
+      [
+        "4",
+        "77",
+        "200.0",
+        "2"
+      ],
+      [
+        "0",
+        "41",
+        "15.0",
+        "2"
+      ],
+      [
+        "1",
+        "77",
+        "5.0",
+        "2"
+      ],
+      [
+        "0",
+        "25",
+        "3.0",
+        "2"
+      ]
+    ],
+    "elapsed_seconds": 40.3,
+    "verification_mode": "live run",
+    "checks": [
+      "remote modular R-01 rendered with independent finishes",
+      "server transmits standing and crouching reload sequences",
+      "reload frame advances across all four quarters on the observer",
+      "walking gait continues underneath reload",
+      "standing up preserves reload progress",
+      "full clip does not trigger reload; completion restores 50 rounds",
+      "holster cancels reload and restores compatible original body rig",
+      "collision hull remains unchanged",
+      "no rejected assemblies; GIGN fallback preserved",
+      "installed release binaries unchanged"
+    ],
+    "limits": [
+      "engaged posture remains an offline experiment",
+      "first-person authored clip still lasts 2.78 seconds while gameplay reload lasts 1.5 seconds"
+    ]
+  },
+  "browser_scenes": 8,
+  "browser_errors": [],
+  "recipes": "browser JSON export successfully read by Author; all hold/shoot/reload paths reachable",
+  "engine": "v3 client/renderer compiled; upstream tests 18/18 passed",
+  "equipment": "1896 loadout checks passed, including automatic HEV fallback and invalid legacy item IDs",
+  "compiled_models": [
+    {
+      "platform": "bottom",
+      "path": "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\generated\\third-person\\r01_tp.mdl",
+      "sha256": "d92bbf5583e798db918627eaff86f0149e3b95d8aa4c9de4ae177c62649393cf",
+      "bones": 31,
+      "sequences": 81,
+      "max_compiler_global_error": 0.006592186459322136,
+      "max_preserved_local_error": 0.005859560302724276
+    },
+    {
+      "platform": "side",
+      "path": "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\generated\\third-person\\r01_tp_side.mdl",
+      "sha256": "339cd8e616035df7416d6cfdee7de573ca1ca3a2decea45b04dd5db1088d367e",
+      "bones": 31,
+      "sequences": 81,
+      "max_compiler_global_error": 0.008038394166093532,
+      "max_preserved_local_error": 0.005859560302724276
+    },
+    {
+      "platform": "top",
+      "path": "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\generated\\third-person\\r01_tp_top.mdl",
+      "sha256": "a2795007e4dfc78b68e91d30e9d84ce61482e1a641d7b5445bdcd07a2fac58ca",
+      "bones": 31,
+      "sequences": 81,
+      "max_compiler_global_error": 0.007598499023320215,
+      "max_preserved_local_error": 0.005859560302724276
+    }
+  ],
+  "hev_fix": [
+    "Unspecified/legacy equipment appearance resolves to persona_gign when available; explicit authored selections preserved",
+    "While VFState is pending, use the complete fitted GIGN body supplied by the server instead of the default Gordon player model",
+    "Launcher rejects mixed v2/v3 native binaries before changing installed files",
+    "CheckPowerups no longer restores the Gordon modelindex each PostThink; server sequence lookups and network modelindex stay on the equipped carrier"
+  ],
+  "limits": [
+    "Installed release unchanged: native reload integration is confined to the test runtime",
+    "FP authored animation lasts 2.78 seconds versus a 1.5-second gameplay delay",
+    "GIGN anatomical hitbox dimensions inherited, now evaluated on the server carrier; combat not validated in this animation test",
+    "Donor includes a historical shield hit group 8; reconcile it with our equipment before normal deployment",
+    "Neutral aim support contact tolerance remains half a GoldSrc unit"
+  ],
+  "artifacts": {
+    "workshop": "build/animation-inspector.html",
+    "preview": "build/animation-workshop/r01-third-person-preview.jpg",
+    "reload": "build/animation-workshop/r01-third-person-reload.gif",
+    "movement": "build/animation-workshop/r01-athletic-run.gif"
+  },
+  "build": "latest client/server and native renderer compiled; engine upstream tests 18/18 passed; two-client reload state/cancel/gait check passed",
+  "browser_checks": [
+    "all eight scenes rendered with WebGL",
+    "R01 holds/reloads plus native gait layering rendered on three feeds",
+    "engaged posture preserves feet throughout walk/run/crouch on all three feeds",
+    "arm editor changes actual pixels and exports a reusable recipe",
+    "compiled animation timeline scrubbed",
+    "index closeups on all three feeds",
+    "continuous playback advances",
+    "before/after changes actual rendered pixels",
+    "all four magazines on all three feeds during insertion"
+  ],
+  "locomotion": {
+    "offline_preview": "10-degree forward torso lean, pelvis lowered 1.5 units, analytic leg IK retains both world-space foot contacts; no bone stretching",
+    "native_correction": "R-01 torso yaw distributed around world up instead of the bent local spine axes; native gait/feet unchanged",
+    "next": "starts/stops, directional strafes, turn transitions; validate combat hit groups before deploying"
+  },
+  "binary_sha256": {
+    "vector-fields\\build\\animation-client\\client.dll": "231fcb71c636a5e6346ae6fe39851f56e50b5bc87ce39b3155cd8cbb99e80bde",
+    "vector-fields\\build\\animation-server\\hl.dll": "23d51cd580bf33951ebbf61e6ca92559fe4e4890a40677ac7ef1c4def08e248a",
+    "runtime\\engine-source\\build\\ref\\gl\\ref_gl.dll": "53a80289de59dbb06bc6e23550afa5442f7d02f3a58f2f5edcb87e7635b5ea17"
+  }
+}

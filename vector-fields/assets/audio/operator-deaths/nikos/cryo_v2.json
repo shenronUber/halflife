@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "actor": "nikos",
+  "cause": "cryo",
+  "text": "[strained][screaming] AAGH!",
+  "request": {
+    "text": "[strained][screaming] AAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "7e4e82fe36e647ed0ec87039792c67427060de512e105f56ea1adcd6f1077450",
+  "sha256": "b59c56218fd859e7eab3dc3a41f27e63a73aadf1045bf4fe603e080289274541",
+  "request_id": "3SL9S0asHd4MyVlUxHWs"
+}

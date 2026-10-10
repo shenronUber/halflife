@@ -1,0 +1,30 @@
+{
+  "assets": 33,
+  "death_signatures": 16,
+  "detachment_signatures": 17,
+  "unit_tests": 43,
+  "native_cases": 27,
+  "multiplayer_clients": 3,
+  "delivery": {
+    "files": 324,
+    "models": 76
+  },
+  "checks": [
+    "33 independent generated masters",
+    "three simultaneous native audio channels",
+    "automatic status cause before status clear",
+    "five dismemberment zones and neutral variant",
+    "real player death and full-body gib",
+    "voice and SFX volumes independent",
+    "no old audio on late join or settled corpse restore",
+    "radial dark-red blood with alpha blending and gravity",
+    "main launcher assets and DLL hashes verified"
+  ],
+  "limits": [
+    "listening mix examples are offline mono previews; game plays separate positional native sound events",
+    "regional dismemberment damage thresholds remain the existing prototype controls"
+  ],
+  "additional_player_cases": 2,
+  "current_release_native": "passed",
+  "blood_native": "passed"
+}

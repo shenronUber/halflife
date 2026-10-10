@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Shatter / dismemberment",
+  "created_utc": "2026-10-09T23:29:05.845805+00:00",
+  "request_sha256": "cd15d6a146e21d8369877e71b24ab8a71a4ac04935b276e04b5d3e3a7773c7a1",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A forceful ice-bone fracture blast with a dense short crunchy crack and many small sharp frozen splinters scattering. More explosive than the ordinary small cryo limb break.",
+    "duration_seconds": 1.25,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "e93c6a00a64928cb7b9785490300325a911736ea6a9c2c5048ad1c5bde51691c",
+  "bytes": 20942,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A forceful ice-bone fracture blast with a dense short crunchy crack and many small sharp frozen splinters scattering. More explosive than the ordinary small cryo limb break.",
+  "request_id": null,
+  "reported_credit_cost": "12"
+}

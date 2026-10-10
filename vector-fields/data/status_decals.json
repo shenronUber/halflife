@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "frame_count": 4,
+  "size": 512,
+  "border": 0.14,
+  "fade_start": 0.09,
+  "effects": [
+    {
+      "id": "hydro",
+      "sheet": "hydro-flipbook.png",
+      "fps": 3.6
+    },
+    {
+      "id": "electro",
+      "sheet": "electro-flipbook.png",
+      "fps": 5.6
+    },
+    {
+      "id": "cryo",
+      "sheet": "cryo-flipbook.png",
+      "fps": 2.4
+    },
+    {
+      "id": "thermal",
+      "sheet": "thermal-flipbook.png",
+      "fps": 4.8
+    },
+    {
+      "id": "toxic",
+      "sheet": "toxic-flipbook.png",
+      "fps": 2.6
+    },
+    {
+      "id": "corrosion",
+      "sheet": "corrosion-flipbook.png",
+      "fps": 3.2
+    },
+    {
+      "id": "sonic",
+      "sheet": "sonic-flipbook.png",
+      "fps": 3.8
+    },
+    {
+      "id": "kinetic",
+      "sheet": "kinetic-flipbook.png",
+      "fps": 2.8
+    },
+    {
+      "id": "arc_chain",
+      "sheet": "arc_chain-flipbook.png",
+      "fps": 4.6
+    },
+    {
+      "id": "superconduction",
+      "sheet": "superconduction-flipbook.png",
+      "fps": 3.6
+    },
+    {
+      "id": "shatter",
+      "sheet": "shatter-flipbook.png",
+      "fps": 3.2
+    },
+    {
+      "id": "resonant_impact",
+      "sheet": "resonant_impact-flipbook.png",
+      "fps": 3.8
+    },
+    {
+      "id": "cavitation",
+      "sheet": "cavitation-flipbook.png",
+      "fps": 3.6
+    },
+    {
+      "id": "caustic_contagion",
+      "sheet": "caustic_contagion-flipbook.png",
+      "fps": 2.8
+    },
+    {
+      "id": "toxic_ignition",
+      "sheet": "toxic_ignition-flipbook.png",
+      "fps": 4.4
+    },
+    {
+      "id": "steam_veil",
+      "sheet": "steam_veil-flipbook.png",
+      "fps": 2.6
+    }
+  ],
+  "opacity": 0.72,
+  "registration": "shared four-frame perimeter alpha profile, 20% core onset to 94% material mass"
+}

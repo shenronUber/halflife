@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "ToxicIgnition / death",
+  "created_utc": "2026-10-09T23:29:11.407142+00:00",
+  "request_sha256": "913abb350c38a0144fe58283ba1ad76532a525ec21bd76b1d7a5ed400bcf79a5",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A muffled gas-cloud ignition whump, a rapid rough orange flame roll and a brief hollow dusty spore flutter. Short poisonous gas fire, heavier muffled onset than pure thermal.",
+    "duration_seconds": 1.7,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "1b570232b3e9f895a7ae3e8741262120937ae98581a80b6feac41f045d8bd990",
+  "bytes": 28047,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A muffled gas-cloud ignition whump, a rapid rough orange flame roll and a brief hollow dusty spore flutter. Short poisonous gas fire, heavier muffled onset than pure thermal.",
+  "request_id": null,
+  "reported_credit_cost": "17"
+}

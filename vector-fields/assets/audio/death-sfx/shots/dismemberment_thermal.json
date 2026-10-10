@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Thermal / dismemberment",
+  "created_utc": "2026-10-09T23:28:53.923977+00:00",
+  "request_sha256": "f18e59c8a0ae057dba9b538925475517bf766962300c8292779b1ba1c5d25183",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A charred limb separates with a dry fibrous tearing crack, one tight flame whip and a quick gritty ember shower. A very short physical break with fire at the cut.",
+    "duration_seconds": 1.1,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "5b7a1859bfbb2f99bf76cc011a7d43b636e7e5d88547899c8ec789d9cdf1c988",
+  "bytes": 18434,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A charred limb separates with a dry fibrous tearing crack, one tight flame whip and a quick gritty ember shower. A very short physical break with fire at the cut.",
+  "request_id": null,
+  "reported_credit_cost": "11"
+}

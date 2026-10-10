@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "caustic_contagion",
+  "variant": 0,
+  "text": "[coughs] Corrosion and poison. Quelle horreur!",
+  "request": {
+    "text": "[coughs] Corrosion and poison. Quelle horreur!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "171047b55257c7e2e30c0bd3e8dd20167e6e02a9f05c3fc7efcd2861c8231f6c",
+  "sha256": "099b25319817e11da237755a3eddf1df44a24a6a2e9eaafbc2d82c4e1d6ad991",
+  "request_id": "eoJSfD8LLqr5DM3PW0jc",
+  "reported_credit_cost": "5"
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "spawn",
+  "variant": 0,
+  "text": "[excited] Andiamo! Let's make an entrance.",
+  "request": {
+    "text": "[excited] Andiamo! Let's make an entrance.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "a0fabb774d416c03be9130277c680ac4bb1d84e6be9c85a4381ae8f186212182",
+  "sha256": "a7999e6d22653619fef5375dae91132383815a1d1a7f65a583bc43905e8baaab",
+  "request_id": "GgY48M7jLBCExZRluyca",
+  "reported_credit_cost": "5"
+}

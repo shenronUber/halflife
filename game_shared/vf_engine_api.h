@@ -1,8 +1,8 @@
 /* Optional, versioned Vector Fields renderer extension. No GoldSrc ABI changes. */
 #ifndef VF_ENGINE_API_H
 #define VF_ENGINE_API_H
-#define VF_ENGINE_API_VERSION 2
-#define VF_MAX_PARTS 16
+#define VF_ENGINE_API_VERSION 3
+#define VF_MAX_PARTS 24
 #define VF_MAX_ASSEMBLIES 96
 #define VF_PART_MERGE 0
 #define VF_PART_SOCKET 1
@@ -11,10 +11,12 @@ typedef struct vf_part_s {
  int body,skin,mode;
  char bone[32];
  float offset[3],angles[3];
+ float scale; /* 0 is legacy identity; positive uniform socket scale */
 } vf_part_t;
 typedef struct vf_assembly_s {
  char rig[64];
  int draw_rig,body,skin,count;
+ int replace_carried; /* assembly includes the equipped third-person weapon */
  vf_part_t parts[VF_MAX_PARTS];
 } vf_assembly_t;
 typedef struct vf_preview_s {

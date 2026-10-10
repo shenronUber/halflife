@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "reload",
+  "variant": 0,
+  "text": "[urgent] Перезарядка. Cover me.",
+  "request": {
+    "text": "[urgent] Перезарядка. Cover me.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "80e4c957a5430affd71d7ba18867f3ebb269fe3667ee45739fe06876d1ee5bbf",
+  "sha256": "fdc2df0ac8d92ad151b737e43dfaa7861bbafd09231e50c9b13d2193bd8a1a26",
+  "request_id": "RbKDqyxP4cSE4ixOwlbT",
+  "reported_credit_cost": "3"
+}

@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "actor": "lucien",
+  "cause": "steam_veil",
+  "text": "[choking][screaming] HAAAGH!",
+  "request": {
+    "text": "[choking][screaming] HAAAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "d2476e9cad9b23b536aff81ca79075bd8d157d102501fdb0c5ab68cf56fd911d",
+  "sha256": "b6f8c89fd3adcf09ea321b62bc35cbd2a09bbc54341cfce8d564409efdaa4dd5",
+  "request_id": "OljKFe2jDPWKDvQivt8W"
+}

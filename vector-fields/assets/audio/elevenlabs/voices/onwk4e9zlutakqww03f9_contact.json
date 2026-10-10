@@ -1,0 +1,25 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Daniel / enemy_spotted",
+  "created_utc": "2026-10-09T02:34:52.570072+00:00",
+  "request_sha256": "e2b72f5045e67097f8a9479ddce53b7b822dc3e0095fabd796172a38b41cd123",
+  "request": {
+    "text": "Contact ahead. Stay sharp.",
+    "model_id": "eleven_v4",
+    "language_code": "en",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "endpoint": "/v1/text-to-speech/onwK4e9ZLuTAKqWW03F9?output_format=mp3_44100_128",
+  "sha256": "d91c16be03c34f5d6374fe6728a32b88e83980be16c017264bb399b0e1707fa4",
+  "bytes": 39332,
+  "text": "Contact ahead. Stay sharp.",
+  "request_id": "XkopxaqzRjVPkJOeeCdj",
+  "reported_credit_cost": "3",
+  "voice_id": "onwK4e9ZLuTAKqWW03F9",
+  "voice_name": "Daniel",
+  "language": "en"
+}

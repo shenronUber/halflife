@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "shatter",
+  "variant": 0,
+  "text": "[alarmed] Ice shattering. I am breaking with it.",
+  "request": {
+    "text": "[alarmed] Ice shattering. I am breaking with it.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "13194085ff4ce28bd56e942b13d30eb19d3fb968027a1cb9997aa1e8537a5fee",
+  "sha256": "f9850904e8f55066bc64a6186f87bfc4f8553a97d3658fdff1f35c2f13ce1c65",
+  "request_id": "PBoIA0oC1khceOg9JC1z",
+  "reported_credit_cost": "5"
+}

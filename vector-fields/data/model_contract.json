@@ -1,0 +1,179 @@
+{
+  "schema": 1,
+  "platforms": [
+    {
+      "id": "bottom",
+      "first_person": "models/vf_r01/r01_rig.mdl",
+      "foregrip": "models/vf_r01/r01_rig_fg.mdl",
+      "third_person": "models/vf_r01/r01_tp.mdl"
+    },
+    {
+      "id": "side",
+      "first_person": "models/vf_r01/r01_rig_side.mdl",
+      "foregrip": "models/vf_r01/r01_rig_side_fg.mdl",
+      "third_person": "models/vf_r01/r01_tp_side.mdl",
+      "name": "R-01 / Traverse",
+      "label": "Lateral",
+      "angle": 90,
+      "entry": [
+        -1.75,
+        15.25,
+        0.1
+      ]
+    },
+    {
+      "id": "top",
+      "first_person": "models/vf_r01/r01_rig_top.mdl",
+      "foregrip": "models/vf_r01/r01_rig_top_fg.mdl",
+      "third_person": "models/vf_r01/r01_tp_top.mdl",
+      "name": "R-01 / Zenith",
+      "label": "Superieur",
+      "angle": 180,
+      "entry": [
+        0,
+        15.25,
+        2.25
+      ]
+    }
+  ],
+  "source_entry": [
+    -0.15,
+    15.25,
+    -0.8
+  ],
+  "sockets": {
+    "first_person": {
+      "weapon": "Bone76",
+      "feed": "Bone71",
+      "chamber": "R01_Bolt"
+    },
+    "third_person": {
+      "weapon": "VF_Weapon",
+      "feed": "VF_Magazine",
+      "chamber": "VF_Bolt"
+    }
+  },
+  "receivers": {
+    "r01_receiver_a": {
+      "feed_mount": "bottom"
+    },
+    "r01_receiver_b": {
+      "feed_mount": "bottom"
+    },
+    "r01_receiver_c": {
+      "feed_mount": "bottom"
+    },
+    "r01_receiver_d": {
+      "feed_mount": "bottom"
+    },
+    "r01_receiver_side": {
+      "feed_mount": "side"
+    },
+    "r01_receiver_top": {
+      "feed_mount": "top"
+    },
+    "r01_receiver_arch": {
+      "feed_mount": "bottom"
+    },
+    "r01_receiver_arch_top": {
+      "feed_mount": "top"
+    },
+    "r01_receiver_gyre": {
+      "feed_mount": "bottom"
+    }
+  },
+  "underbarrels": {
+    "r01_underbarrel_a": {
+      "support_grip": true
+    },
+    "r01_underbarrel_b": {
+      "support_grip": false
+    },
+    "r01_underbarrel_c": {
+      "support_grip": false
+    },
+    "r01_underbarrel_d": {
+      "support_grip": false
+    }
+  },
+  "skeletons": {
+    "first_person": [
+      "Bone01",
+      "Bone02",
+      "Bone03",
+      "Bone04",
+      "Bone05",
+      "Bone06",
+      "Bone07",
+      "Bone08",
+      "Bone09",
+      "Bone10",
+      "Bone40",
+      "Bone41",
+      "Bone42",
+      "Bone43",
+      "Bone44",
+      "Bone45",
+      "Bone47",
+      "Bone48",
+      "Bone49",
+      "Bone50",
+      "Bone51",
+      "Bone52",
+      "Bone53",
+      "Bone54",
+      "Bone55",
+      "Bone56",
+      "Bone57",
+      "Bone58",
+      "Bone59",
+      "Bone60",
+      "Bone61",
+      "Bone62",
+      "Bone95",
+      "Bone110",
+      "Bone112",
+      "Bone114",
+      "Bone116",
+      "Bone118",
+      "Bone120",
+      "Bone75",
+      "Bone76",
+      "Bone67",
+      "Bone77",
+      "Bone71",
+      "Bone80"
+    ],
+    "third_person": [
+      "Bip01",
+      "Bip01 Pelvis",
+      "Bip01 L Leg",
+      "Bip01 L Leg1",
+      "Bip01 L Foot",
+      "Bip01 R Leg",
+      "Bip01 R Leg1",
+      "Bip01 R Foot",
+      "Bip01 Spine",
+      "Bip01 Spine1",
+      "Bip01 Spine2",
+      "Bip01 Spine3",
+      "Bip01 Neck",
+      "Bip01 Head",
+      "Bip01 L Arm",
+      "Bip01 L Arm1",
+      "Bip01 L Arm2",
+      "Bip01 L Hand",
+      "Bip01 L Finger0",
+      "Bip01 L Finger1",
+      "Bip01 L Finger11",
+      "Bip01 R Arm",
+      "Bip01 R Arm1",
+      "Bip01 R Arm2",
+      "Bip01 R Hand",
+      "Bip01 R Finger0",
+      "Bip01 R Finger1",
+      "Bip01 R Finger11"
+    ]
+  },
+  "persona_sequences": 77
+}

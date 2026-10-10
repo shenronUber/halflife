@@ -1,0 +1,19 @@
+{
+  "audio_sha256": "200baeb44d4b322e2ace9c3189a215b649293d4d0c6d50dba0df99d115d0b980",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "Ah!",
+    "words": [
+      {
+        "text": "Ah!",
+        "start": 0.14,
+        "end": 0.5,
+        "type": "word",
+        "logprob": -0.05400518456008285
+      }
+    ],
+    "transcription_id": "EMZonS58DRG4bopG2Zdo",
+    "audio_duration_secs": 1.542375
+  }
+}

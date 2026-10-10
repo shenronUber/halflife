@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "taunt",
+  "variant": 0,
+  "text": "[taunting] Come here, stronzo. I have a present.",
+  "request": {
+    "text": "[taunting] Come here, stronzo. I have a present.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "95e527b459aca0fe7c4545f81c1b81071037d7e07ad3b383fad53d1db0f129d8",
+  "sha256": "acd0e01b4f93c40542623cf8f17e34eb1d2d0065a4f6b0e7da053651d93c2e42",
+  "request_id": "vNlXNriZodL1xXoYB5Ds",
+  "reported_credit_cost": "5"
+}

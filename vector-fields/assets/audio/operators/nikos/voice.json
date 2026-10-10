@@ -1,0 +1,68 @@
+{
+  "request_sha256": "15caaf719414e308afa1e72daad87cb1cdd4ccb3b7679fe1d7b092daadbb6dec",
+  "request": {
+    "voice_name": "VF / Nikos Petros",
+    "voice_description": "An original male Greek action-game fighter, age 36. Warm husky mid-low baritone, lively chest resonance and a rough laughing edge. Recognisable modern Greek accent in fluent intelligible English: Greek vowel shapes, rolled Rs and expressive emphatic rhythm. Proud, boastful, argumentative, theatrical and quick to explode when provoked. English mixed with short naturally pronounced modern Greek interjections, never ancient Greek. Physical energetic video-game acting, not narration. Clean dry close microphone, no music, no background, no reverb. No imitation of a real person.",
+    "generated_voice_id": "uAGRkdJlXqIKwzx0HORp",
+    "labels": {
+      "gender": "male",
+      "accent": "Greek",
+      "use_case": "video_game"
+    }
+  },
+  "response": {
+    "voice_id": "uAGRkdJlXqIKwzx0HORp",
+    "name": "VF / Nikos Petros",
+    "samples": null,
+    "category": "generated",
+    "fine_tuning": {
+      "is_allowed_to_fine_tune": false,
+      "state": {},
+      "verification_failures": [],
+      "verification_attempts_count": 0,
+      "manual_verification_requested": false,
+      "language": null,
+      "progress": {},
+      "message": {},
+      "dataset_duration_seconds": null,
+      "verification_attempts": null,
+      "slice_ids": null,
+      "manual_verification": null,
+      "max_verification_attempts": null,
+      "next_max_verification_attempts_reset_unix_ms": null
+    },
+    "labels": {
+      "gender": "male",
+      "accent": "Greek",
+      "use_case": "video_game"
+    },
+    "description": "An original male Greek action-game fighter, age 36. Warm husky mid-low baritone, lively chest resonance and a rough laughing edge. Recognisable modern Greek accent in fluent intelligible English: Greek vowel shapes, rolled Rs and expressive emphatic rhythm. Proud, boastful, argumentative, theatrical and quick to explode when provoked. English mixed with short naturally pronounced modern Greek interjections, never ancient Greek. Physical energetic video-game acting, not narration. Clean dry close microphone, no music, no background, no reverb. No imitation of a real person.",
+    "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/fc94dd0c338b420083a332b3a9d57a9f/voices/uAGRkdJlXqIKwzx0HORp/c2947ba0-827c-4214-957c-a07a516fb7a1.mp3",
+    "available_for_tiers": [],
+    "settings": {
+      "stability": 0.5,
+      "use_speaker_boost": true,
+      "similarity_boost": 0.75,
+      "style": 0.0,
+      "speed": 1.0
+    },
+    "sharing": null,
+    "high_quality_base_model_ids": [],
+    "verified_languages": [],
+    "collection_ids": null,
+    "safety_control": null,
+    "voice_verification": null,
+    "permission_on_resource": null,
+    "is_owner": null,
+    "is_legacy": false,
+    "is_mixed": false,
+    "favorited_at_unix": null,
+    "created_at_unix": 1791540468,
+    "is_bookmarked": null,
+    "recording_quality": null,
+    "labelling_status": null,
+    "recording_quality_reason": null,
+    "orb_thumbnail_signed_urls": null
+  },
+  "request_id": null
+}

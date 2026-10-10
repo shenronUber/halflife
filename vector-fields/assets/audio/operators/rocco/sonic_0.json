@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "sonic",
+  "variant": 0,
+  "text": "[pained] My ears! Basta with the noise!",
+  "request": {
+    "text": "[pained] My ears! Basta with the noise!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "d770bd21b120773f3f6213a01108c77e67e5045aeb5459a0fe9a3b64f7694d32",
+  "sha256": "288104ec188e08f7857d69047edf5179d4c5a5c095acbcfa59046b43c6ea6863",
+  "request_id": "0Nc64s35Tx0ICCZLfSLd",
+  "reported_credit_cost": "4"
+}

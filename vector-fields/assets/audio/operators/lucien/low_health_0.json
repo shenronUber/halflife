@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "low_health",
+  "variant": 0,
+  "text": "[strained] Merde. I need medical attention.",
+  "request": {
+    "text": "[strained] Merde. I need medical attention.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "86bede1552e6363e9e2ab37dd5d038d5cc345d2d3d031afa54e4aa7b039ab7a4",
+  "sha256": "cefa9a9e606a2bdbc37e7541ec461d4276b01d4a16bbcf66cf84195918df24c9",
+  "request_id": "i91iGwkRuZ73matlwTKG",
+  "reported_credit_cost": "5"
+}

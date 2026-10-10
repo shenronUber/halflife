@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "actor": "nikos",
+  "cause": "cavitation",
+  "text": "[choking] Ghh! [groaning] Urrgh! [gurgling] Ghrr...",
+  "request": {
+    "text": "[choking] Ghh! [groaning] Urrgh! [gurgling] Ghrr...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "85f76bbb2f9efa61617876989839eff34e9dfc95a7323ca7af969d7a1c9cd8d6",
+  "sha256": "36d8b580ad78a8cd6e01b057c9d9a8e5288f0d62b4eaa2509ff8d3d78cb24194",
+  "request_id": "gw643YFMbUAVYkeWatPf"
+}

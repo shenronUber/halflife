@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Hydro / death",
+  "created_utc": "2026-10-09T23:28:46.630299+00:00",
+  "request_sha256": "b22098572d3399acef259be6610e6617df14945571fb2fa8af9513b0a1ce4846",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A compressed water pocket suddenly collapses: a low hollow watery gulp, one dense splash and a short trickle fading out. Distinct underwater pressure death release.",
+    "duration_seconds": 1.7,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "178fba20f4cd3c3e852a5df105c4e2ae2e6ad67ba7666aaeadfa5b4b52368735",
+  "bytes": 28047,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A compressed water pocket suddenly collapses: a low hollow watery gulp, one dense splash and a short trickle fading out. Distinct underwater pressure death release.",
+  "request_id": null,
+  "reported_credit_cost": "17"
+}

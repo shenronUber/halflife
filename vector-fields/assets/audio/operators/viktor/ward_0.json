@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "ward",
+  "variant": 0,
+  "text": "[confident] Protected. Давай.",
+  "request": {
+    "text": "[confident] Protected. Давай.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "4d3100273476efecc05338a70c9d478b09356077bffb7bb8c3e1bd5a6deccadd",
+  "sha256": "25ef728689232aa90e934a5cd431e58a8b03c849c0dfa4b80e912a1a9326f1b5",
+  "request_id": "cbqm6ojEo0MAGp2E7rt7",
+  "reported_credit_cost": "3"
+}

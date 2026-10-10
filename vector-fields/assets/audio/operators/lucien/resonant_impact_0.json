@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "resonant_impact",
+  "variant": 0,
+  "text": "[pained] Resonant impact! Right through me!",
+  "request": {
+    "text": "[pained] Resonant impact! Right through me!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "d63a43427f86d061962a779f9860b43525768826c7769245cff499df3ff31238",
+  "sha256": "c54e28fb9c4bbb9f8ae1c1a2da60a004862572e636b29164de74428176e18ca4",
+  "request_id": "SLYNHAJEsy8jwKleVIgo",
+  "reported_credit_cost": "5"
+}

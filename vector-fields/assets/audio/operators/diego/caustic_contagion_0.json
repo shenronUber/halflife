@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "caustic_contagion",
+  "variant": 0,
+  "text": "[coughs] Acid and poison! Qué asco!",
+  "request": {
+    "text": "[coughs] Acid and poison! Qué asco!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "5d84f18a8ed8e3b1323fff1af9dd48048c2ef3b3b26440bb422eadcf05dd74d8",
+  "sha256": "6c1707b0f484d7d7798e6cfe21e4eb75ed98d97bd76c79c9d7c1fa092ae379ff",
+  "request_id": "tL5j0aO6IBiExbrAGQmu",
+  "reported_credit_cost": "4"
+}

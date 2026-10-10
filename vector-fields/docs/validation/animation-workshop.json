@@ -1,0 +1,121 @@
+{
+  "status": "offline workshop; no runtime deployment",
+  "first_person": {
+    "grips": {
+      "bottom": {
+        "held_frames": 76,
+        "max_conservative_shell_penetration": 0.03685964044830348
+      },
+      "side": {
+        "held_frames": 76,
+        "max_conservative_shell_penetration": 0.0
+      },
+      "top": {
+        "held_frames": 76,
+        "max_conservative_shell_penetration": 0.0
+      }
+    },
+    "compiled_poses": 564,
+    "max_decoder_global_error": 0.012275231216552385,
+    "weapon_models_unchanged": 61,
+    "third_person_old_sequences": 77,
+    "third_person_added_reloads": 4,
+    "limits": [
+      "cassette shell envelope is not a full mesh collision solver",
+      "borrowed third-person reloads still need a moving magazine and game trigger"
+    ]
+  },
+  "browser": {
+    "samples": [
+      {
+        "scene": "bottom",
+        "clip": "reload",
+        "frame": 34,
+        "playing": false,
+        "bones": 43,
+        "triangles": 7051,
+        "glError": 0
+      },
+      {
+        "scene": "side",
+        "clip": "reload",
+        "frame": 34,
+        "playing": false,
+        "bones": 43,
+        "triangles": 7303,
+        "glError": 0
+      },
+      {
+        "scene": "top",
+        "clip": "reload",
+        "frame": 34,
+        "playing": false,
+        "bones": 43,
+        "triangles": 7323,
+        "glError": 0
+      },
+      {
+        "scene": "third_current",
+        "clip": "shoot",
+        "frame": 2,
+        "playing": false,
+        "bones": 32,
+        "triangles": 11969,
+        "glError": 0
+      },
+      {
+        "scene": "third_cs",
+        "clip": "reload",
+        "frame": 22,
+        "playing": false,
+        "bones": 32,
+        "triangles": 11969,
+        "glError": 0
+      }
+    ],
+    "errors": [],
+    "checks": [
+      "all five scenes rendered with WebGL",
+      "compiled animation timeline scrubbed",
+      "index closeups on all three feeds",
+      "continuous playback advances",
+      "before/after changes actual rendered pixels",
+      "all four magazines on all three feeds during insertion"
+    ]
+  },
+  "third_person": {
+    "source": "F:\\SteamLibrary\\steamapps\\common\\Half-Life\\cstrike\\models\\player\\gign\\gign.mdl",
+    "source_sha256": "939d4c34cb8b7339afc286feddd45c5d88f103e3a9ae69066ab372da276f3b0e",
+    "output": "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\generated\\animation-workshop\\persona_rig_cs_preview.mdl",
+    "sha256": "f99489c83779443aa3c5b35f032da5cd581c7e30435e4e17a52ed86f09cf9100",
+    "bones": 28,
+    "old_sequences_preserved": 77,
+    "added_sequences": [
+      "ref_reload_mp5",
+      "crouch_reload_mp5",
+      "ref_reload_rifle",
+      "crouch_reload_rifle"
+    ],
+    "max_global_transform_errors": {
+      "ref_reload_mp5": 0.006868578230690092,
+      "crouch_reload_mp5": 0.010774947439983862,
+      "ref_reload_rifle": 0.009679266462255143,
+      "crouch_reload_rifle": 0.009679266462246261
+    },
+    "status": "offline preview only; no runtime deployment",
+    "sources": {
+      "motion": "Installed Counter-Strike GIGN model",
+      "code_reference": "https://github.com/rehlds/ReGameDLL_CS/blob/master/regamedll/dlls/player.cpp"
+    }
+  },
+  "runtime_untouched": true,
+  "launcher": "Atelier - Animations.cmd",
+  "workflow": "Inspect three feed layouts and adjust the index offline; use a short game smoke only after contact and timing are settled.",
+  "remaining": [
+    "Synchronise FP visual reload duration 2.78s with gameplay 1.5s",
+    "Attach the modular R-01 and animate its magazine in third person",
+    "Adapt the borrowed hand contact for the three feed positions",
+    "Implement third-person reload selection, state and transitions in the game"
+  ],
+  "primary_code_reference": "https://github.com/rehlds/ReGameDLL_CS/blob/master/regamedll/dlls/player.cpp"
+}

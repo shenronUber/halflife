@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "actor": "otto",
+  "cause": "toxic",
+  "text": "[coughing] Khh! Khh! [wheezing] Hhh... [groaning] Nngh...",
+  "request": {
+    "text": "[coughing] Khh! Khh! [wheezing] Hhh... [groaning] Nngh...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "f7ce71281de38ab1656f632530456c882e28361441aefc9904c49451fdf6bc92",
+  "sha256": "427ea0c1a80656351a09aaf897bfce06b04aa46ee7211e2cf03292f8e7b7bf69",
+  "request_id": "iButBt85604LwYcK1qWM"
+}

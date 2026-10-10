@@ -1,0 +1,80 @@
+{
+  "seconds": 25.73,
+  "cases": [
+    {
+      "effect": "standard",
+      "region": "head",
+      "active_blood": 25,
+      "red_pixel_counts": [
+        1194,
+        1191,
+        642,
+        29,
+        20,
+        0,
+        0,
+        0,
+        0,
+        4424
+      ]
+    },
+    {
+      "effect": "electro",
+      "region": "left_arm",
+      "active_blood": 20,
+      "red_pixel_counts": [
+        3249,
+        2489,
+        1251,
+        1778,
+        424,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "effect": "corrosion",
+      "region": "right_leg",
+      "active_blood": 25,
+      "red_pixel_counts": [
+        0,
+        18,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "effect": "standard",
+      "region": "all",
+      "active_blood": 115,
+      "red_pixel_counts": [
+        765,
+        1866,
+        677,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "checks": [
+    "fresh detached whole pieces emit ten irregular blood droplets",
+    "explicit dark-red alpha-blended blood separated from additive elemental layers",
+    "blood and elemental trails share a 384-particle budget",
+    "native frames show red blood in neutral and elemental events",
+    "clearing deletes retained blood trails"
+  ]
+}

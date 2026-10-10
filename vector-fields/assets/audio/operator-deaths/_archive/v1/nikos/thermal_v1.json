@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "actor": "nikos",
+  "cause": "thermal",
+  "text": "[screaming] AAAAAAGH! [gasping] Hah! [exhales] Hhh...",
+  "request": {
+    "text": "[screaming] AAAAAAGH! [gasping] Hah! [exhales] Hhh...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "e676b86600479034e98f1d6ebb51aee4f1908212348c0dc275a177f5a21f6b45",
+  "sha256": "6fd817c369c940552438b2a583fc3f52481d10466a18989fd8eea6e67c2c874e",
+  "request_id": "tqdSrGaybjdjn46nMyTi"
+}

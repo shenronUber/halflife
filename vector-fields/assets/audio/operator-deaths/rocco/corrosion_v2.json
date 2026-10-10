@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "actor": "rocco",
+  "cause": "corrosion",
+  "text": "[raspy][screaming] GRAAAGH!",
+  "request": {
+    "text": "[raspy][screaming] GRAAAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "b106c90a123be8d5ac6350b2bd73f6b75a646cb7d64a68b2e85cc9f9295071f8",
+  "sha256": "c42e843131b32095b147c3fccc22db8d14b793f2beb1c392ec2efea43741ea3a",
+  "request_id": "l0LwDpAEHx9zwxLhNcxP"
+}

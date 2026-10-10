@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "model_id": "eleven_v4",
+  "event": "kill",
+  "variant": 1,
+  "text": "[laughing] Nice try, φίλε!",
+  "request": {
+    "text": "[laughing] Nice try, φίλε!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "eda0637e878dfde5ba55419d7cea3413816857a4ae1b5201795b91cc29953e2b",
+  "sha256": "6c36c48b3cfd6d487483183d8ff264e2f55ce109f561ae297b0a0e8c2440afa8",
+  "request_id": "Ehp65p9PV0wwsiH1MW3i",
+  "reported_credit_cost": "3"
+}

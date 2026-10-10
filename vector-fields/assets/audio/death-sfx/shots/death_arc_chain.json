@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "ArcChain / death",
+  "created_utc": "2026-10-09T23:29:00.977510+00:00",
+  "request_sha256": "5aeb038bf8a4e87bb7c98945202c3014477dc1f58314bb5b86f62ebd7d90ab4a",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. Three distinct branching electric arc jumps, first low then medium then high, separated by tiny watery sputters, ending in a rattling liquid discharge. Electricity chained through water, recognizably three jumps.",
+    "duration_seconds": 1.7,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "1388053728c7bb696885f0c263102b92e42c75e802f21f6ced50e93a24bb328a",
+  "bytes": 28047,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. Three distinct branching electric arc jumps, first low then medium then high, separated by tiny watery sputters, ending in a rattling liquid discharge. Electricity chained through water, recognizably three jumps.",
+  "request_id": null,
+  "reported_credit_cost": "17"
+}

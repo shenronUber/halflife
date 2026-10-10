@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "respawn",
+  "variant": 2,
+  "text": "[sarcastic] Clearly a bug. A flawless man, a badly coded game.",
+  "request": {
+    "text": "[sarcastic] Clearly a bug. A flawless man, a badly coded game.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "cda717102f165a852181a971574c833f8ce80819080f9dffe0ae067746892453",
+  "sha256": "b11232a42704b1a5ff49725bd6850d5e73f5e5f0bb5ec023fbcb807091feed9e",
+  "request_id": "U4WAnDb4zzikbkDgYVwL",
+  "reported_credit_cost": "7"
+}

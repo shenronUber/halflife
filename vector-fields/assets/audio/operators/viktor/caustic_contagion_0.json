@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "caustic_contagion",
+  "variant": 0,
+  "text": "[coughs] Acid and poison. Вот дерьмо.",
+  "request": {
+    "text": "[coughs] Acid and poison. Вот дерьмо.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "64d1841510e3b6599b4ca4d2766bcab158f11f2ddb77d7e7d0ee0d1e220ddda8",
+  "sha256": "fff15f43559db59fc715cdab6ee8d10ff26964d15aef84de72001db2a932c453",
+  "request_id": "Nb1OaKt8oqrejlg7Mw1x",
+  "reported_credit_cost": "4"
+}

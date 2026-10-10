@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "superconduction",
+  "variant": 0,
+  "text": "[strained] Ice and lightning! Joder!",
+  "request": {
+    "text": "[strained] Ice and lightning! Joder!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "a9311a33b6061a4c93554f2f211bacb2a7b5ae983e839e1518380057f1cba192",
+  "sha256": "f4dc6a176461e704050b3e56ebfab6c25c882451764a1cd0f2b5a6c25c719a51",
+  "request_id": "oAp8YWcACOGjK4blKNz4",
+  "reported_credit_cost": "4"
+}

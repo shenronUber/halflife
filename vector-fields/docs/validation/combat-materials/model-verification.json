@@ -1,0 +1,34 @@
+[
+  {
+    "model": "persona_rig.mdl",
+    "hitboxes": 20,
+    "removed_group": 8,
+    "animation_channels_unchanged": true,
+    "geometry_unchanged": true,
+    "textures_unchanged": true
+  },
+  {
+    "model": "r01_tp.mdl",
+    "hitboxes": 20,
+    "removed_group": 8,
+    "animation_channels_unchanged": true,
+    "geometry_unchanged": true,
+    "textures_unchanged": true
+  },
+  {
+    "model": "r01_tp_side.mdl",
+    "hitboxes": 20,
+    "removed_group": 8,
+    "animation_channels_unchanged": true,
+    "geometry_unchanged": true,
+    "textures_unchanged": true
+  },
+  {
+    "model": "r01_tp_top.mdl",
+    "hitboxes": 20,
+    "removed_group": 8,
+    "animation_channels_unchanged": true,
+    "geometry_unchanged": true,
+    "textures_unchanged": true
+  }
+]

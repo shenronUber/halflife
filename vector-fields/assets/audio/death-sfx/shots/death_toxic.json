@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Toxic / death",
+  "created_utc": "2026-10-09T23:28:54.422340+00:00",
+  "request_sha256": "8e1b838c841998cd7a8bcfbb317b093cf3b093d3683600411eab1d142a031a9d",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. Two muted organic spore puffs with a hollow low flutter and dusty papery rattles, slowing and dying out. Purple poisonous particulate release. No liquid bubbling, no acid hiss.",
+    "duration_seconds": 2.1,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "9d5637681daa8bddbd4fe07acc9ebf4b7ce0ae72d6ec7d614c8a270857bbd8ef",
+  "bytes": 34316,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. Two muted organic spore puffs with a hollow low flutter and dusty papery rattles, slowing and dying out. Purple poisonous particulate release. No liquid bubbling, no acid hiss.",
+  "request_id": null,
+  "reported_credit_cost": "21"
+}

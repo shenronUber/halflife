@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "actor": "otto",
+  "cause": "arc_chain",
+  "text": "[choking] Ghh... [screaming] A-a-aagh! [gurgling] Ghrr...",
+  "request": {
+    "text": "[choking] Ghh... [screaming] A-a-aagh! [gurgling] Ghrr...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "c3576464c78f76e5633f3458830f2bb589f09a55270792f3aba647c2d17bd415",
+  "sha256": "32518d17c2845a56b9c43421922363b86c4b8c166ad65b733eb406e6efb4542b",
+  "request_id": "F2AJdb2F5AuEqKH3MXnM"
+}

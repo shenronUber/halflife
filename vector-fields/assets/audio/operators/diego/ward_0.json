@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "ward",
+  "variant": 0,
+  "text": "[confident] Protection up! Dale!",
+  "request": {
+    "text": "[confident] Protection up! Dale!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "32afe58fe93baa7d4ecf846128d332c091f4192cc00ad2c341de7c508b0a5c08",
+  "sha256": "9441c0e9da9852a6bc9541ac0283e32f7a747c163e1d2a45e7bf206694d88b6f",
+  "request_id": "FBrWaWBJa4cApMZNdzzg",
+  "reported_credit_cost": "4"
+}

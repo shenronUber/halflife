@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "taunt",
+  "variant": 1,
+  "text": "[mocking] Stop shooting the furniture! I'm over here!",
+  "request": {
+    "text": "[mocking] Stop shooting the furniture! I'm over here!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "8f653ec81cdc1c9cddd80306b3eadcd8018233071ba92a275f47dbbc1b5e0790",
+  "sha256": "726e6d1e81687897a93df5686ac5043fe890fc2dbe558823f2fed5051a7d4151",
+  "request_id": "YWGpPtm9e4z3iIgGK83F",
+  "reported_credit_cost": "6"
+}

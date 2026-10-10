@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "counter_taunt",
+  "variant": 2,
+  "text": "[defiant] Shut your mouth and come fight me!",
+  "request": {
+    "text": "[defiant] Shut your mouth and come fight me!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "8ae68f25e3e74c31de2b8090a2b5045daf9a4c8927a2f866c53012ccb6ba3801",
+  "sha256": "f2f3d9202b325996c1232d7616b93e7b0a342895987368608333a8fb09afe555",
+  "request_id": "AVlZiHnuPAonXhp82RLW",
+  "reported_credit_cost": "5"
+}

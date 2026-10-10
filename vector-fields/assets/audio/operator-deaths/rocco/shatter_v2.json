@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "actor": "rocco",
+  "cause": "shatter",
+  "text": "[screaming] AAGH!",
+  "request": {
+    "text": "[screaming] AAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "d896c1a97d6f43b88f7043f49fb350dd32f25d212fc4055677a7e017b860f9fb",
+  "sha256": "fe249703b1e98692fafaa89227d4555f886ea488211ab63f5086c15553437e05",
+  "request_id": "9zIXEE7TFl8HCsOsXcFk"
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "model_id": "eleven_v4",
+  "event": "electro",
+  "variant": 0,
+  "text": "[pained] Aah! Ρεύμα! I'm getting shocked!",
+  "request": {
+    "text": "[pained] Aah! Ρεύμα! I'm getting shocked!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "3b7847515396e0746573d4581417dc44ddc107f19fd1833a031bade80b430fe7",
+  "sha256": "f858b62e667f0d62e21a18385f7c53281503428349b706497b95bb3d75705d09",
+  "request_id": "2Z30wO4T4vmkozCLuddd",
+  "reported_credit_cost": "5"
+}

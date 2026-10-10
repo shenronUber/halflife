@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "kill",
+  "variant": 1,
+  "text": "[mocking] Your performance was unacceptable.",
+  "request": {
+    "text": "[mocking] Your performance was unacceptable.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "9dc9f06bed25e4811781ba05adfd79d84694d150d6a9501647acab3ce3f8ecfe",
+  "sha256": "30a6701af194cc3cf358630785e6f0009f4800a0a9de1f075250738f102331c8",
+  "request_id": "MTvUIy1ZLFMxsD2LktR1",
+  "reported_credit_cost": "5"
+}

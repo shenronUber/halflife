@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "taunt",
+  "variant": 0,
+  "text": "[taunting] Иди сюда. Even you can hit at this distance.",
+  "request": {
+    "text": "[taunting] Иди сюда. Even you can hit at this distance.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "d554d33a40ffeba45f19ec84593facedf213e1d1b3074b915ec974cf7ab84c87",
+  "sha256": "cb8faf21ad663560904993d73059075ec2d31550343e092c6d80c17d83728b0c",
+  "request_id": "3KO0szXKOG6sZ6766TEj",
+  "reported_credit_cost": "6"
+}

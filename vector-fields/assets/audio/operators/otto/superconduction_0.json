@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "superconduction",
+  "variant": 0,
+  "text": "[strained] Frozen and shocked! Verdammt!",
+  "request": {
+    "text": "[strained] Frozen and shocked! Verdammt!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "7b39888476185d7587df0a792985a3a15b94ed916c6aa8dfbed51159ef0209a7",
+  "sha256": "b1ad415ac52692e342e0514358c8ceef78ab470189212d80a0a4d0ae18532ffe",
+  "request_id": "MntMmEBBiRFOZ1HkSFhz",
+  "reported_credit_cost": "4"
+}

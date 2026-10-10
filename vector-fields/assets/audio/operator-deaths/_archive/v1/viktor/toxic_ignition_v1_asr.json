@@ -1,0 +1,47 @@
+{
+  "audio_sha256": "222d82bd36dd825909425cc0c2d4c3573ec44d9ef6d142b2c6b96fbb1dad023f",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "[coughing] [yelling] [exhaling]",
+    "words": [
+      {
+        "text": "[coughing]",
+        "start": 0.0,
+        "end": 1.34,
+        "type": "audio_event",
+        "logprob": -0.15675775252263216
+      },
+      {
+        "text": " ",
+        "start": 1.34,
+        "end": 1.38,
+        "type": "spacing",
+        "logprob": -0.3123992681503296
+      },
+      {
+        "text": "[yelling]",
+        "start": 1.38,
+        "end": 2.82,
+        "type": "audio_event",
+        "logprob": -0.14359845696543785
+      },
+      {
+        "text": " ",
+        "start": 2.82,
+        "end": 2.82,
+        "type": "spacing",
+        "logprob": -0.00592890614643693
+      },
+      {
+        "text": "[exhaling]",
+        "start": 2.82,
+        "end": 4.48,
+        "type": "audio_event",
+        "logprob": -0.04411928147843961
+      }
+    ],
+    "transcription_id": "Mgwuh9urwpRFwxJ4jutb",
+    "audio_duration_secs": 4.5398125
+  }
+}

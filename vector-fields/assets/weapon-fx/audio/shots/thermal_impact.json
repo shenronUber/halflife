@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Thermal / impact",
+  "created_utc": "2026-10-09T02:54:25.391966+00:00",
+  "request_sha256": "e22a32b8658cfb8f5d1bda957ba23c54666c62ba1a6d9b70298bb8fe15a3cce0",
+  "request": {
+    "text": "Single small incendiary projectile contact. Sudden hard hot crack and short fire burst, tiny glowing ember crackles. Compact close game impact, no firing sound, no voice, no music.",
+    "duration_seconds": 1.2,
+    "prompt_influence": 0.55,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "356d4b2f408ef7320abcb357a8198ec1d3b2f17c6edb80acc18118b2c435e6e3",
+  "bytes": 20106,
+  "text": "Single small incendiary projectile contact. Sudden hard hot crack and short fire burst, tiny glowing ember crackles. Compact close game impact, no firing sound, no voice, no music.",
+  "request_id": null,
+  "reported_credit_cost": "12"
+}

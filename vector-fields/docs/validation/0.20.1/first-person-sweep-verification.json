@@ -1,0 +1,52 @@
+{
+  "sweep": {
+    "captures": [
+      "fp_fix_top_00",
+      "fp_fix_top_01",
+      "fp_fix_top_02",
+      "fp_fix_top_03",
+      "fp_fix_top_04",
+      "fp_fix_top_05",
+      "fp_fix_top_06",
+      "fp_fix_top_07",
+      "fp_fix_top_08",
+      "fp_fix_top_09",
+      "fp_fix_top_10",
+      "fp_fix_top_11",
+      "fp_fix_top_12",
+      "fp_fix_top_13",
+      "fp_fix_top_14",
+      "fp_fix_top_15",
+      "fp_fix_top_16",
+      "fp_fix_top_17",
+      "fp_fix_top_18",
+      "fp_fix_top_19",
+      "fp_fix_top_20",
+      "fp_fix_top_21",
+      "fp_fix_top_22",
+      "fp_fix_side_00",
+      "fp_fix_side_01",
+      "fp_fix_side_02",
+      "fp_fix_side_03",
+      "fp_fix_side_04",
+      "fp_fix_side_05",
+      "fp_fix_side_06",
+      "fp_fix_side_07",
+      "fp_fix_side_08",
+      "fp_fix_side_09",
+      "fp_fix_side_10",
+      "fp_fix_side_11"
+    ],
+    "resolution": [
+      1920,
+      1080
+    ],
+    "checks": [
+      "dense top and side reload capture sweep",
+      "no rejected assemblies"
+    ],
+    "limits": [
+      "sleeve end visibility and finger silhouette require visual inspection of captures"
+    ]
+  }
+}

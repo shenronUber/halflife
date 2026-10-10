@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Kinetic / death",
+  "created_utc": "2026-10-09T23:28:59.323893+00:00",
+  "request_sha256": "29532df73dd88408660411281258affa99a6991a86837bd63219027599a113f6",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. One heavy blunt body-sized impact, a dense low thud with a dry gritty crunch and falling small debris. Mechanical kinetic energy ends in one hit, no repeated pulses.",
+    "duration_seconds": 1.7,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "2a38c6a85b318092883e4ee8a540da91c8d0a51c9c241ce14d3fc6de2e9fac74",
+  "bytes": 28047,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. One heavy blunt body-sized impact, a dense low thud with a dry gritty crunch and falling small debris. Mechanical kinetic energy ends in one hit, no repeated pulses.",
+  "request_id": null,
+  "reported_credit_cost": "17"
+}

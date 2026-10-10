@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "default": "kinetic",
+  "scope": "presentation_only",
+  "profiles": [
+    {
+      "id": "hydro",
+      "name": "Hydro",
+      "color": [
+        70,
+        175,
+        255
+      ],
+      "muzzle_size": 10,
+      "muzzle_life": 0.1,
+      "trail_life": 0.13,
+      "trail_width": 12,
+      "particles": 7,
+      "particle_life": 0.65,
+      "light_radius": 100,
+      "fire_prompt": "Single pressurized water rifle shot. Immediate sharp compressed air crack with a wet high pressure liquid snap, tiny water droplets falling briefly. Punchy close dry game sound, no voice, no music, no echo, exactly one trigger pull at the beginning.",
+      "impact_prompt": "One short violent water projectile impact. Immediate wet slap on stone, sharp spray and falling droplets, short close dry tail. No firing sound, no voice, no music.",
+      "decal_size": 6
+    },
+    {
+      "id": "electro",
+      "name": "Electro",
+      "color": [
+        255,
+        205,
+        80
+      ],
+      "muzzle_size": 12,
+      "muzzle_life": 0.08,
+      "trail_life": 0.1,
+      "trail_width": 3,
+      "particles": 8,
+      "particle_life": 0.35,
+      "light_radius": 150,
+      "fire_prompt": "One single futuristic electric rifle shot. Immediate sharp electrical arc crack and short sizzling ion discharge, punchy transient, very short electronic tail. No laser hum beforehand, no voice, no music, no echo, exactly one trigger pull at the start.",
+      "impact_prompt": "Single abrupt electrical projectile contact on hard material. Sharp electric snap, brittle crackling sparks, short dying sizzle. No voice, no music, no firing sound.",
+      "decal_size": 4
+    },
+    {
+      "id": "cryo",
+      "name": "Cryo",
+      "color": [
+        125,
+        230,
+        255
+      ],
+      "muzzle_size": 11,
+      "muzzle_life": 0.11,
+      "trail_life": 0.13,
+      "trail_width": 3.5,
+      "particles": 7,
+      "particle_life": 0.7,
+      "light_radius": 100,
+      "fire_prompt": "Single cryogenic ice rifle shot. Immediate cold pressurized pneumatic crack with bright brittle ice tinkling, forceful compact discharge, very short frosty tail. Close dry game sound, no voice, no music, no echo, exactly one trigger pull at start.",
+      "impact_prompt": "Single ice projectile shattering on stone. Immediate glassy crystalline crunch, tiny sharp ice fragments scattering, a brief hiss of cold vapor. No firing sound, no voice, no music.",
+      "decal_size": 5
+    },
+    {
+      "id": "thermal",
+      "name": "Thermal",
+      "color": [
+        255,
+        112,
+        45
+      ],
+      "muzzle_size": 13,
+      "muzzle_life": 0.08,
+      "trail_life": 0.09,
+      "trail_width": 2.5,
+      "particles": 7,
+      "particle_life": 0.55,
+      "light_radius": 150,
+      "fire_prompt": "Single thermal rifle shot, exactly one trigger pull at start. Immediate loud compact incendiary crack, short hot flame whoosh under the sharp transient, a few ember crackles. Close dry game effect, no voice, no music, no echo.",
+      "impact_prompt": "Single small incendiary projectile contact. Sudden hard hot crack and short fire burst, tiny glowing ember crackles. Compact close game impact, no firing sound, no voice, no music.",
+      "decal_size": 5
+    },
+    {
+      "id": "toxic",
+      "name": "Toxic",
+      "color": [
+        176,
+        95,
+        230
+      ],
+      "muzzle_size": 9,
+      "muzzle_life": 0.13,
+      "trail_life": 0.17,
+      "trail_width": 6,
+      "particles": 8,
+      "particle_life": 0.9,
+      "light_radius": 65,
+      "fire_prompt": "Single fictional spore rifle discharge. Immediate muffled pressure pop and dry papery organic crackle, fine powder spraying with a brief breathy hiss. Not liquid, not acid, not a monster voice. One compact trigger pull, no voice, no music, no echo.",
+      "impact_prompt": "Single toxic spore projectile contact. Immediate soft dry organic pop and dusty papery scattering, a short thin powder hiss. Not liquid, no monster vocalization, no firing sound, no voice, no music.",
+      "decal_size": 5
+    },
+    {
+      "id": "corrosion",
+      "name": "Corrosion",
+      "color": [
+        205,
+        235,
+        60
+      ],
+      "muzzle_size": 10,
+      "muzzle_life": 0.12,
+      "trail_life": 0.15,
+      "trail_width": 7,
+      "particles": 7,
+      "particle_life": 0.75,
+      "light_radius": 75,
+      "fire_prompt": "Single corrosive liquid rifle shot. Immediate sharp pneumatic bark with a heavy viscous spit and small bubbling chemical tail. Punchy compact game sound, one trigger pull right at start, no voice, no music, no echo.",
+      "impact_prompt": "Single corrosive glob striking hard stone. Immediate heavy wet splat with a short acidic sizzling and bubbling reaction. Compact dry game impact, no voice, no music, no firing sound.",
+      "decal_size": 6
+    },
+    {
+      "id": "sonic",
+      "name": "Sonic",
+      "color": [
+        255,
+        145,
+        215
+      ],
+      "muzzle_size": 12,
+      "muzzle_life": 0.12,
+      "trail_life": 0.16,
+      "trail_width": 10,
+      "particles": 5,
+      "particle_life": 0.4,
+      "light_radius": 100,
+      "fire_prompt": "Single sonic pulse rifle shot. Immediate deep tight concussive thump with a sharp airy pressure crack, very short bending resonant metallic overtone, no long bass rumble. Exactly one trigger pull at beginning, dry close game effect, no voice, no music.",
+      "impact_prompt": "Single sonic pressure projectile contact. Immediate concussive slap, brief high ringing pressure chirp and tiny grit scattering. Very short game effect, no voice, no music, no firing sound.",
+      "decal_size": 7
+    },
+    {
+      "id": "kinetic",
+      "name": "Kinetic",
+      "color": [
+        210,
+        200,
+        175
+      ],
+      "muzzle_size": 12,
+      "muzzle_life": 0.065,
+      "trail_life": 0.085,
+      "trail_width": 1.8,
+      "particles": 8,
+      "particle_life": 0.5,
+      "light_radius": 135,
+      "fire_prompt": "Single compact military assault rifle gunshot. Exactly one loud immediate sharp supersonic crack with short weighty mechanical body, tiny action clack after it. No multiple shots, no shell bouncing, no voice, no music, no long reverb. Close dry game sound.",
+      "impact_prompt": "One single rifle bullet hitting hard concrete. Immediate sharp crunchy chip crack, tiny gritty fragments scattering briefly. Dry close game impact, no ricochet whistle, no firing sound, no voice, no music.",
+      "decal_size": 4
+    }
+  ]
+}

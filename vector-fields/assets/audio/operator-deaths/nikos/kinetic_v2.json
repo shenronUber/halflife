@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "actor": "nikos",
+  "cause": "kinetic",
+  "text": "[screaming] AAAGH!",
+  "request": {
+    "text": "[screaming] AAAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "2c795fa55051ef5020dfb989976f5a6c468891bde1a0ec440ddd86ea3825c612",
+  "sha256": "bff850a8e3c65287a42b82a92ff5d8008ccfb8c48246aa58d6ff9e90e9bb2819",
+  "request_id": "AxwVqMEpr0o7gzwdyakW"
+}

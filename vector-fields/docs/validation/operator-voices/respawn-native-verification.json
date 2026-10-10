@@ -1,0 +1,16 @@
+{
+  "clients": 2,
+  "actors": 6,
+  "private_variants": 18,
+  "actual_respawns": 3,
+  "checks": [
+    "first appearances retain the original introduction",
+    "actual normal and gib deaths trigger one post-death complaint each",
+    "death while voices are muted still selects respawn after re-enabling",
+    "all six actors play private variants without consecutive repeats",
+    "owner-only local audio plays independently of subtitle settings",
+    "a nearby native peer receives neither private metadata nor audio playback",
+    "post-death spawns do not replay initial introductions"
+  ],
+  "scope": "two native loopback clients; audio acting quality requires listening"
+}

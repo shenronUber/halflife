@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "counter_taunt",
+  "variant": 0,
+  "text": "[angry] Ven aqui! Say that to my face, cabron!",
+  "request": {
+    "text": "[angry] Ven aqui! Say that to my face, cabron!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "dde4f7e2d5f1ad6bcfe52a889094a6e96776b34ff703e6d9982888a46bbfcf66",
+  "sha256": "42162ccb590bdcfb29ceb90159c81894209695cc54575e1662f2aba31688fdc6",
+  "request_id": "0YHWPiuc9oUpXjHD0c1O",
+  "reported_credit_cost": "5"
+}

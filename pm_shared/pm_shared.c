@@ -87,7 +87,8 @@ typedef struct hull_s
 #define VEC_VIEW			28
 #define	STOP_EPSILON		0.1
 
-#define CTEXTURESMAX		512			// max number of textures loaded
+// The imported CS material table includes 662 entries (including HL surfaces).
+#define CTEXTURESMAX		1024			// max number of textures loaded
 #define CBTEXTURENAMEMAX	13			// only load first n chars of name
 
 #define CHAR_TEX_CONCRETE	'C'			// texture types

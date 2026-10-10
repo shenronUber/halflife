@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "resonant_impact",
+  "variant": 0,
+  "text": "[pained] That ringing punch went through me!",
+  "request": {
+    "text": "[pained] That ringing punch went through me!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "65b602b225415966f7edeaf52a0c22b64817e250e837df9095d97d05975104c9",
+  "sha256": "09bc7ad7e91318a06080e6e8100aab62176e250bc7d674058bf7d8bdb53d39ef",
+  "request_id": "gHn42WLWSwCTmwAjMASt",
+  "reported_credit_cost": "5"
+}

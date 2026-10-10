@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "corrosion",
+  "variant": 0,
+  "text": "[alarmed] Кислота. It is eating the armor.",
+  "request": {
+    "text": "[alarmed] Кислота. It is eating the armor.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "70adebd3e220abb79e135ebb16e7461c61a638576568393d419e3aab8a93d5c8",
+  "sha256": "1ffe4332f5160e1b8e8f7991e5bfab77ccff8e7ac266068668dade2a89624549",
+  "request_id": "EVS68jJL57OYr3RbmxZ4",
+  "reported_credit_cost": "5"
+}

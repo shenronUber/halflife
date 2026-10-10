@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Electro / death",
+  "created_utc": "2026-10-09T23:28:49.005264+00:00",
+  "request_sha256": "59dd0ce41664fe5dc15f402da8ee0ac19e32f7c1c26a226f3607b087d40954cd",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. Five rapid dry electrical arcs in a descending sequence, a rough buzzy short-circuit crackle, then abrupt power-down. Staccato amber electricity, no large explosion.",
+    "duration_seconds": 1.7,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "9841a477447f6a02a515cacbd1fc69b8efe325b63790c69a90639ce2534d9359",
+  "bytes": 28047,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. Five rapid dry electrical arcs in a descending sequence, a rough buzzy short-circuit crackle, then abrupt power-down. Staccato amber electricity, no large explosion.",
+  "request_id": null,
+  "reported_credit_cost": "17"
+}

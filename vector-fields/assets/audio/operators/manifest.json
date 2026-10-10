@@ -1,0 +1,2139 @@
+{
+  "actors": [
+    {
+      "id": "rocco",
+      "name": "Rocco Bellini",
+      "accent": "Italian"
+    },
+    {
+      "id": "lucien",
+      "name": "Lucien Moreau",
+      "accent": "French"
+    },
+    {
+      "id": "diego",
+      "name": "Diego Vega",
+      "accent": "Spanish"
+    },
+    {
+      "id": "viktor",
+      "name": "Viktor Volkov",
+      "accent": "Russian"
+    },
+    {
+      "id": "otto",
+      "name": "Otto Stahl",
+      "accent": "German"
+    },
+    {
+      "id": "nikos",
+      "name": "Nikos Petros",
+      "accent": "Greek"
+    }
+  ],
+  "clips": [
+    {
+      "actor": 0,
+      "event": 0,
+      "variant": 0,
+      "path": "vf_voices/rocco/spawn_0.wav",
+      "text": "Andiamo! Let's make an entrance.",
+      "duration": 2.6697,
+      "sha256": "a6afbed64fc64ff39f329f76c12f062e4349ec4a723735a697af26f1c6ffc2d6"
+    },
+    {
+      "actor": 0,
+      "event": 9,
+      "variant": 0,
+      "path": "vf_voices/rocco/respawn_0.wav",
+      "text": "Mamma mia! You with the keyboard. Focus, idiota!",
+      "duration": 4.4378,
+      "sha256": "1ed3746397b8b56533c3cc68782dbf33c92a0d5729c7e42720af6a049d719130"
+    },
+    {
+      "actor": 0,
+      "event": 9,
+      "variant": 1,
+      "path": "vf_voices/rocco/respawn_1.wav",
+      "text": "This gun shoots everywhere except where I aim. Che schifo!",
+      "duration": 4.4893,
+      "sha256": "71a7dd4dcb0e672c0f608cb5ff603cdd23b464a1c2abc4f1da7f0c5b64ffa2f6"
+    },
+    {
+      "actor": 0,
+      "event": 9,
+      "variant": 2,
+      "path": "vf_voices/rocco/respawn_2.wav",
+      "text": "Again? This game is broken. Rocco cannot possibly be the problem.",
+      "duration": 4.8752,
+      "sha256": "9e683afc6e8ca3e2b37f03f168d927c70be43b558b259ad295833d56f0fcacac"
+    },
+    {
+      "actor": 0,
+      "event": 1,
+      "variant": 0,
+      "path": "vf_voices/rocco/reload_0.wav",
+      "text": "Ricarico! Cover me.",
+      "duration": 1.8795,
+      "sha256": "246c5c096e7035c24cb8486a73376e735159b99cdb829dc576ee9c5102336bb2"
+    },
+    {
+      "actor": 0,
+      "event": 2,
+      "variant": 0,
+      "path": "vf_voices/rocco/kill_0.wav",
+      "text": "Bellissimo. Stay down.",
+      "duration": 2.3503,
+      "sha256": "d883c527cc97908795afe52ee5619da2d44328b51b82419b6b557f4ea5604d57"
+    },
+    {
+      "actor": 0,
+      "event": 2,
+      "variant": 1,
+      "path": "vf_voices/rocco/kill_1.wav",
+      "text": "Bravo, you almost had me!",
+      "duration": 3.3049,
+      "sha256": "53ba86ba62a4d5687b0444bcec1f5900abc6211c3666e1d04902a51198749e7a"
+    },
+    {
+      "actor": 0,
+      "event": 3,
+      "variant": 0,
+      "path": "vf_voices/rocco/pain_0.wav",
+      "text": "Ah! Porca miseria!",
+      "duration": 2.2543,
+      "sha256": "ef9f49b3986552768bd35448b6e4440c8f92342811301a4756163dec01daddc2"
+    },
+    {
+      "actor": 0,
+      "event": 3,
+      "variant": 1,
+      "path": "vf_voices/rocco/pain_1.wav",
+      "text": "Ugh!",
+      "duration": 1.8611,
+      "sha256": "ce6a435fa58a67b236b15087e7185a4aebc59f8bccf756d6e886d64f2bbf96ae"
+    },
+    {
+      "actor": 0,
+      "event": 4,
+      "variant": 0,
+      "path": "vf_voices/rocco/death_0.wav",
+      "text": "Aah! No, no, no!",
+      "duration": 2.5539,
+      "sha256": "7e40ce91f03cca0ca6d2668f1f6660b839ea4570bbd8f9928df7956de2337db8"
+    },
+    {
+      "actor": 0,
+      "event": 5,
+      "variant": 0,
+      "path": "vf_voices/rocco/low_health_0.wav",
+      "text": "Merda. I'm barely standing.",
+      "duration": 3.2368,
+      "sha256": "031663d6ee2ab4fae27de5caa7fcaf3981b35739ebd2892b4b6b6bddad547998"
+    },
+    {
+      "actor": 0,
+      "event": 6,
+      "variant": 0,
+      "path": "vf_voices/rocco/armor_break_0.wav",
+      "text": "Armor's gone! Che disastro!",
+      "duration": 2.7665,
+      "sha256": "25b4b81e6494ec6c33b70c53e34d3a6beaaa64aa808dc3ec454c3cc65fd6180e"
+    },
+    {
+      "actor": 0,
+      "event": 7,
+      "variant": 0,
+      "path": "vf_voices/rocco/taunt_0.wav",
+      "text": "Come here, stronzo. I have a present.",
+      "duration": 3.1477,
+      "sha256": "cb507839349774fbae71db1c7943522d986a46e31666f97491fb6e73611b0fd4"
+    },
+    {
+      "actor": 0,
+      "event": 7,
+      "variant": 1,
+      "path": "vf_voices/rocco/taunt_1.wav",
+      "text": "Mamma mia, you aim like a broken toaster!",
+      "duration": 3.4645,
+      "sha256": "31316bf555281faa9071cbaa0da33c36d77e99c663b750dea6bcd0f8fa4689b9"
+    },
+    {
+      "actor": 0,
+      "event": 7,
+      "variant": 2,
+      "path": "vf_voices/rocco/taunt_2.wav",
+      "text": "All that noise, and you still miss!",
+      "duration": 3.8818,
+      "sha256": "68c469b6b19ab669fb33b2b3431d5c1657d43829ee56e36c46de13259e74474d"
+    },
+    {
+      "actor": 0,
+      "event": 10,
+      "variant": 0,
+      "path": "vf_voices/rocco/hydro_0.wav",
+      "text": "Mamma mia, I'm soaked!",
+      "duration": 2.5057,
+      "sha256": "314eb9563c2ba6301fbdf536402c109957f279defd46596bb04f569b37fc3203"
+    },
+    {
+      "actor": 0,
+      "event": 11,
+      "variant": 0,
+      "path": "vf_voices/rocco/electro_0.wav",
+      "text": "Aah! I'm getting shocked!",
+      "duration": 2.2354,
+      "sha256": "826a7c4a5f3f63e99a38f2e764548fb879c70e8944f1bfda0d9d3348cf95b797"
+    },
+    {
+      "actor": 0,
+      "event": 12,
+      "variant": 0,
+      "path": "vf_voices/rocco/cryo_0.wav",
+      "text": "Brr! I'm freezing, cazzo!",
+      "duration": 3.3477,
+      "sha256": "77a3e1b88a23f7d65e7939672d532fe6e3456903a1476cfa2cff9bafcb87203c"
+    },
+    {
+      "actor": 0,
+      "event": 13,
+      "variant": 0,
+      "path": "vf_voices/rocco/thermal_0.wav",
+      "text": "Fuoco! I'm on fire!",
+      "duration": 2.2708,
+      "sha256": "13f64ec41f98562cd500be88addb1fecb4cb9f00215819a2ffc6d5f6db398c84"
+    },
+    {
+      "actor": 0,
+      "event": 14,
+      "variant": 0,
+      "path": "vf_voices/rocco/toxic_0.wav",
+      "text": "Ugh! Poison. Che schifo!",
+      "duration": 4.2191,
+      "sha256": "e7e0de5b921cc62508e80492a5da73f1ca4e26d500ddf6b1f85ec194a3087490"
+    },
+    {
+      "actor": 0,
+      "event": 15,
+      "variant": 0,
+      "path": "vf_voices/rocco/corrosion_0.wav",
+      "text": "Acid! It's eating my armor!",
+      "duration": 2.309,
+      "sha256": "2271a122557bc576de29922cf6a14e61fa3a1779708be1a022f6b618dbcaf29a"
+    },
+    {
+      "actor": 0,
+      "event": 16,
+      "variant": 0,
+      "path": "vf_voices/rocco/sonic_0.wav",
+      "text": "My ears! Basta with the noise!",
+      "duration": 3.0098,
+      "sha256": "d4c775ae11ea8acd2bc569246d8879d8cea14008b5894ee46f0947b6a1e64264"
+    },
+    {
+      "actor": 0,
+      "event": 17,
+      "variant": 0,
+      "path": "vf_voices/rocco/kinetic_0.wav",
+      "text": "Oof! That hit like a truck!",
+      "duration": 3.4556,
+      "sha256": "8544c3ce5f0b258e888aea5e919160ad6e98e8780857ec13df6d644a441b6a74"
+    },
+    {
+      "actor": 0,
+      "event": 18,
+      "variant": 0,
+      "path": "vf_voices/rocco/arc_chain_0.wav",
+      "text": "Water and lightning! Not bellissimo!",
+      "duration": 3.4796,
+      "sha256": "60c21998bc4c1003f5ca382633d147c61ea0125a57eb879ad0af9f7890f76261"
+    },
+    {
+      "actor": 0,
+      "event": 19,
+      "variant": 0,
+      "path": "vf_voices/rocco/superconduction_0.wav",
+      "text": "Frozen and shocked! Porca miseria!",
+      "duration": 2.7492,
+      "sha256": "e08ceb4e27ec0d8776a004a7b8c3efb66b8d895827d3f30fcee80cf840aeff77"
+    },
+    {
+      "actor": 0,
+      "event": 20,
+      "variant": 0,
+      "path": "vf_voices/rocco/shatter_0.wav",
+      "text": "My frozen armor is shattering!",
+      "duration": 2.1796,
+      "sha256": "58c26265eb640d08209f1222f2fbb852407ebfa6505b5f761897cf0a667c549c"
+    },
+    {
+      "actor": 0,
+      "event": 21,
+      "variant": 0,
+      "path": "vf_voices/rocco/resonant_impact_0.wav",
+      "text": "That shockwave went straight through me!",
+      "duration": 2.6945,
+      "sha256": "81d165aff9109981c15e3b09603b14026b2bca67051f7a1ab0b40b836541df49"
+    },
+    {
+      "actor": 0,
+      "event": 22,
+      "variant": 0,
+      "path": "vf_voices/rocco/cavitation_0.wav",
+      "text": "Acid shockwave! Everything's bursting!",
+      "duration": 3.1803,
+      "sha256": "76213e90b0b4adcd73de0ec4138c4d896848792ae616bccf343dbe659bd6b4a9"
+    },
+    {
+      "actor": 0,
+      "event": 23,
+      "variant": 0,
+      "path": "vf_voices/rocco/caustic_contagion_0.wav",
+      "text": "Acid and poison! Get it off!",
+      "duration": 3.5014,
+      "sha256": "abe753aaaa3864156e38ebd04c358934255f204b4da1eb3eecce4b3b2b350180"
+    },
+    {
+      "actor": 0,
+      "event": 24,
+      "variant": 0,
+      "path": "vf_voices/rocco/toxic_ignition_0.wav",
+      "text": "The poison's burning! Cazzo!",
+      "duration": 2.6242,
+      "sha256": "deb00af24b8dd2fc91c5b6706244a210fb1061836a46b4822edad515134f9274"
+    },
+    {
+      "actor": 0,
+      "event": 25,
+      "variant": 0,
+      "path": "vf_voices/rocco/steam_veil_0.wav",
+      "text": "Steam! I can't see a damn thing!",
+      "duration": 3.8388,
+      "sha256": "5139a2ed9c0d679e2324623a09f66e06f10fe062321c449623e765543164e454"
+    },
+    {
+      "actor": 0,
+      "event": 26,
+      "variant": 0,
+      "path": "vf_voices/rocco/phase_0.wav",
+      "text": "Intoccabile! Phasing through!",
+      "duration": 2.6557,
+      "sha256": "8a856dbdc32333ca111eb85935681ff60c6ff2a4c0439d56d7d9d4e697667e8c"
+    },
+    {
+      "actor": 0,
+      "event": 27,
+      "variant": 0,
+      "path": "vf_voices/rocco/null_0.wav",
+      "text": "Reactions blocked. Molto bene.",
+      "duration": 2.8148,
+      "sha256": "1b9928e3a79745b22ce17de13191f1b52bdf83f32af4625f86d5a40eac9e4329"
+    },
+    {
+      "actor": 0,
+      "event": 28,
+      "variant": 0,
+      "path": "vf_voices/rocco/ward_0.wav",
+      "text": "Protected! Come on, then!",
+      "duration": 2.0696,
+      "sha256": "892bc628fb29564cbbb12d875d4a5ad01e440f2c86b006917874171a978d76a5"
+    },
+    {
+      "actor": 0,
+      "event": 29,
+      "variant": 0,
+      "path": "vf_voices/rocco/reveal_0.wav",
+      "text": "They've marked me! Che palle!",
+      "duration": 2.5916,
+      "sha256": "7c0dfec13d0cd878004c044aaebd04a41c665b34e6606b8d82d0d8de86010b18"
+    },
+    {
+      "actor": 0,
+      "event": 30,
+      "variant": 0,
+      "path": "vf_voices/rocco/overclock_0.wav",
+      "text": "Overclock! Piu veloce!",
+      "duration": 2.2854,
+      "sha256": "6a995e4c94195584ab26b0a894e1ddc97f81177b7fa9a8459b04d9cec34ddb94"
+    },
+    {
+      "actor": 0,
+      "event": 8,
+      "variant": 0,
+      "path": "vf_voices/rocco/counter_taunt_0.wav",
+      "text": "Vieni qui! Say that to my face, stronzo!",
+      "duration": 3.4627,
+      "sha256": "ef8f30110027d8d2eef1cad20e9de1fb16eea966765bf27ccda6da1d1d5b2e24"
+    },
+    {
+      "actor": 0,
+      "event": 8,
+      "variant": 1,
+      "path": "vf_voices/rocco/counter_taunt_1.wav",
+      "text": "I'll kill you, pezzo di merda!",
+      "duration": 2.5117,
+      "sha256": "38a3df222be546c3e3572558f6ae27a719fbc700d58f6112b26d5591904052dd"
+    },
+    {
+      "actor": 0,
+      "event": 8,
+      "variant": 2,
+      "path": "vf_voices/rocco/counter_taunt_2.wav",
+      "text": "Keep talking. I'll knock those teeth out!",
+      "duration": 2.8292,
+      "sha256": "ac2022e1d63a75336fd644f8301961efa3e52bee2c005f90064cddf6454b4c34"
+    },
+    {
+      "actor": 1,
+      "event": 0,
+      "variant": 0,
+      "path": "vf_voices/lucien/spawn_0.wav",
+      "text": "Bon. Let's try to be professional.",
+      "duration": 2.4403,
+      "sha256": "b2dadeb527fd74e1ed7e5067f4f0531fbce32dc909a8879ef9083be26320c54e"
+    },
+    {
+      "actor": 1,
+      "event": 9,
+      "variant": 0,
+      "path": "vf_voices/lucien/respawn_0.wav",
+      "text": "Respawned. Magnifique. Perhaps you could aim this time, mon ami.",
+      "duration": 4.7501,
+      "sha256": "0a1c343aa484977dacafc626b95b5e6b82fed2b90f16614eb52fe969e0802b1e"
+    },
+    {
+      "actor": 1,
+      "event": 9,
+      "variant": 1,
+      "path": "vf_voices/lucien/respawn_1.wav",
+      "text": "This weapon is an insult to engineering. I demand a refund!",
+      "duration": 4.3097,
+      "sha256": "075bb6fdd06bcd478e21c1dbd3b6b41769e81c7cdb51fef9552c385462137464"
+    },
+    {
+      "actor": 1,
+      "event": 9,
+      "variant": 2,
+      "path": "vf_voices/lucien/respawn_2.wav",
+      "text": "Clearly a bug. A flawless man, a badly coded game.",
+      "duration": 4.4288,
+      "sha256": "4065475967735884618c86c639f65e8c8e2844230e3be4a21bd42026bc222fb6"
+    },
+    {
+      "actor": 1,
+      "event": 1,
+      "variant": 0,
+      "path": "vf_voices/lucien/reload_0.wav",
+      "text": "Je recharge. Cover me.",
+      "duration": 1.802,
+      "sha256": "2e2c38f89f4eb1195ca4510c4fc1b95af8051b06c1023ef4e5ea2ba526da6fd8"
+    },
+    {
+      "actor": 1,
+      "event": 2,
+      "variant": 0,
+      "path": "vf_voices/lucien/kill_0.wav",
+      "text": "Voila. A lesson in precision.",
+      "duration": 2.5801,
+      "sha256": "8c283d4589ecb7eed7285eedf467cd004d7aaa840fddea67aa29fe1b02fc0a81"
+    },
+    {
+      "actor": 1,
+      "event": 2,
+      "variant": 1,
+      "path": "vf_voices/lucien/kill_1.wav",
+      "text": "Adieu, amateur.",
+      "duration": 2.1166,
+      "sha256": "42f09693fce3cc8beeac30823bf3d62234bf6ed575da78230587500250e700d2"
+    },
+    {
+      "actor": 1,
+      "event": 3,
+      "variant": 0,
+      "path": "vf_voices/lucien/pain_0.wav",
+      "text": "Ah! Putain!",
+      "duration": 1.6282,
+      "sha256": "1854b556de008a8bfd064dac84b7a8b6bdc03f17facf130d3595f1d54ed0f3ff"
+    },
+    {
+      "actor": 1,
+      "event": 4,
+      "variant": 0,
+      "path": "vf_voices/lucien/death_0.wav",
+      "text": "Aah! Quelle fin stupide!",
+      "duration": 2.5214,
+      "sha256": "f9a0ae000b9eef9214d64b9dea4252533739eb79bf712cebc831a20e81dce6d7"
+    },
+    {
+      "actor": 1,
+      "event": 5,
+      "variant": 0,
+      "path": "vf_voices/lucien/low_health_0.wav",
+      "text": "Merde. I need medical attention.",
+      "duration": 3.1406,
+      "sha256": "db5f644a6bf3bad99bac8cdf4cfe8426309418fee7ad07a7ea4b8f9c0a2c7032"
+    },
+    {
+      "actor": 1,
+      "event": 6,
+      "variant": 0,
+      "path": "vf_voices/lucien/armor_break_0.wav",
+      "text": "Armor broken. Magnifique.",
+      "duration": 2.4455,
+      "sha256": "e19f8fd43ecc2b37764dd201ddaf67968dec5658a287e7d26a074ffc2766e88e"
+    },
+    {
+      "actor": 1,
+      "event": 7,
+      "variant": 0,
+      "path": "vf_voices/lucien/taunt_0.wav",
+      "text": "Your aim is an insult to geometry, mon ami.",
+      "duration": 3.1675,
+      "sha256": "fb257053e0337ccc9f7d697e4529a570d0cc08d9677703515dfe59a6f5b4928e"
+    },
+    {
+      "actor": 1,
+      "event": 7,
+      "variant": 1,
+      "path": "vf_voices/lucien/taunt_1.wav",
+      "text": "Come on, connard. Impress me.",
+      "duration": 2.5249,
+      "sha256": "4e7b1df9be9987474a52fc531ef99b0c558e041501b69250a9e02880d01966f5"
+    },
+    {
+      "actor": 1,
+      "event": 7,
+      "variant": 2,
+      "path": "vf_voices/lucien/taunt_2.wav",
+      "text": "All this equipment, and absolutely no talent.",
+      "duration": 3.5749,
+      "sha256": "87df48487cd110e7ecaaafd8cc03281a5c3fcadc10c58d302c9ac2262a0a5552"
+    },
+    {
+      "actor": 1,
+      "event": 10,
+      "variant": 0,
+      "path": "vf_voices/lucien/hydro_0.wav",
+      "text": "Trempe. My suit is ruined.",
+      "duration": 2.8447,
+      "sha256": "eb746f0d459178c8b6111bdf774c35cee2923ba64ae4026af451969d98ed1602"
+    },
+    {
+      "actor": 1,
+      "event": 11,
+      "variant": 0,
+      "path": "vf_voices/lucien/electro_0.wav",
+      "text": "Putain! Electric shock!",
+      "duration": 2.3638,
+      "sha256": "79d0d6237296de283df00feeb697d718899b022e5decfaa98a881b10888a42bb"
+    },
+    {
+      "actor": 1,
+      "event": 12,
+      "variant": 0,
+      "path": "vf_voices/lucien/cryo_0.wav",
+      "text": "Glace! I can barely move!",
+      "duration": 3.4671,
+      "sha256": "2d2f126141ba50f63584ac71a535f46ca1a4c31cb80f22eb0f9fed1fabf5e843"
+    },
+    {
+      "actor": 1,
+      "event": 13,
+      "variant": 0,
+      "path": "vf_voices/lucien/thermal_0.wav",
+      "text": "Au feu! I'm burning!",
+      "duration": 1.9932,
+      "sha256": "54c0f9e965457fbd9e46c55cde4053476b0c29ec63d27ab0fac8fbcd8edcd4c5"
+    },
+    {
+      "actor": 1,
+      "event": 14,
+      "variant": 0,
+      "path": "vf_voices/lucien/toxic_0.wav",
+      "text": "Poison. C'est degoutant.",
+      "duration": 3.34,
+      "sha256": "84fdf6e28dc559537daaaf6022a2def85885727513aef00c0f86246016bba431"
+    },
+    {
+      "actor": 1,
+      "event": 15,
+      "variant": 0,
+      "path": "vf_voices/lucien/corrosion_0.wav",
+      "text": "Acide! My armor is dissolving!",
+      "duration": 2.5742,
+      "sha256": "cb9741de5c4ca13c45d7bda957d890874ee1438f2d9af7b30f1430b19b8b9f6b"
+    },
+    {
+      "actor": 1,
+      "event": 16,
+      "variant": 0,
+      "path": "vf_voices/lucien/sonic_0.wav",
+      "text": "Mes oreilles! Stop that noise!",
+      "duration": 2.8196,
+      "sha256": "88c7feed73ac5e600a347bfafa7dacf24af19c7e0f445f87133150a12fbeab1a"
+    },
+    {
+      "actor": 1,
+      "event": 17,
+      "variant": 0,
+      "path": "vf_voices/lucien/kinetic_0.wav",
+      "text": "Oof! Quel manque de finesse.",
+      "duration": 3.4667,
+      "sha256": "7d8d0afc0082680c25ed8a2816e53a3b08651eeb9784ee85a42cdeca1b6ab3e8"
+    },
+    {
+      "actor": 1,
+      "event": 18,
+      "variant": 0,
+      "path": "vf_voices/lucien/arc_chain_0.wav",
+      "text": "Soaked and electrocuted. Tres mauvais.",
+      "duration": 3.7205,
+      "sha256": "aebb40959f2f7c4f06fcc03d0e1d8f572855a20192008fd42caf07b63828fed2"
+    },
+    {
+      "actor": 1,
+      "event": 19,
+      "variant": 0,
+      "path": "vf_voices/lucien/superconduction_0.wav",
+      "text": "Frozen and electrified! Merde!",
+      "duration": 3.2336,
+      "sha256": "5085e219350599fb9e969eff08b344732a51a30031a0658bca0c22c0edce30e2"
+    },
+    {
+      "actor": 1,
+      "event": 20,
+      "variant": 0,
+      "path": "vf_voices/lucien/shatter_0.wav",
+      "text": "The ice is shattering around me!",
+      "duration": 2.127,
+      "sha256": "8cfa09480b4ff1ce7334c445000982cca8213785f02aac2be593175c404585f4"
+    },
+    {
+      "actor": 1,
+      "event": 21,
+      "variant": 0,
+      "path": "vf_voices/lucien/resonant_impact_0.wav",
+      "text": "Resonant impact! Right through me!",
+      "duration": 3.1133,
+      "sha256": "aadc41c0ef8b4f23e9e235d84e16211b12c6a505f97bddc4f5ad8f4bf0b1d87d"
+    },
+    {
+      "actor": 1,
+      "event": 22,
+      "variant": 0,
+      "path": "vf_voices/lucien/cavitation_0.wav",
+      "text": "Acid and pressure! It's bursting!",
+      "duration": 2.6217,
+      "sha256": "80cc0a828acfe6577db30347857c94a73310295994af43140d3cad73b591fe63"
+    },
+    {
+      "actor": 1,
+      "event": 23,
+      "variant": 0,
+      "path": "vf_voices/lucien/caustic_contagion_0.wav",
+      "text": "Corrosion and poison. Quelle horreur!",
+      "duration": 3.982,
+      "sha256": "f02c4a5f6f72ddb90afee02d3a7044e4e93313c13907e4b8b4bc809546220bf1"
+    },
+    {
+      "actor": 1,
+      "event": 24,
+      "variant": 0,
+      "path": "vf_voices/lucien/toxic_ignition_0.wav",
+      "text": "The poison ignited! Putain!",
+      "duration": 2.3187,
+      "sha256": "adba80b07f3b759eb82c63e80a9794f5f0b4c97e631e42717c6d266299b8455a"
+    },
+    {
+      "actor": 1,
+      "event": 25,
+      "variant": 0,
+      "path": "vf_voices/lucien/steam_veil_0.wav",
+      "text": "Vapeur! Visibility is gone!",
+      "duration": 3.5819,
+      "sha256": "9d17865a35b3deeab24793fd42c060529166a43a88d4406a34a83ec0318a0b59"
+    },
+    {
+      "actor": 1,
+      "event": 26,
+      "variant": 0,
+      "path": "vf_voices/lucien/phase_0.wav",
+      "text": "Intangible. Tres elegant.",
+      "duration": 2.4288,
+      "sha256": "0262df2256b17a669476908c9bf832a8b9a537d69caa1e2c13afaf7a8b3d08e0"
+    },
+    {
+      "actor": 1,
+      "event": 27,
+      "variant": 0,
+      "path": "vf_voices/lucien/null_0.wav",
+      "text": "Reactions suppressed. Enfin.",
+      "duration": 2.7585,
+      "sha256": "e5df1642c866963fc776266caa4c8885a980c4004787d6d58d7b0d43bb2908c3"
+    },
+    {
+      "actor": 1,
+      "event": 28,
+      "variant": 0,
+      "path": "vf_voices/lucien/ward_0.wav",
+      "text": "Ward active. Essayez encore.",
+      "duration": 2.5174,
+      "sha256": "d0f64279011a6e9fef6b0aacc748bd6f35c4f693df4ad28cd316a7d966f9eb70"
+    },
+    {
+      "actor": 1,
+      "event": 29,
+      "variant": 0,
+      "path": "vf_voices/lucien/reveal_0.wav",
+      "text": "Repere! They can see me!",
+      "duration": 2.3185,
+      "sha256": "d3d5077c7507b89c66a3c0e1a026fe18e2ce99392b3a59ef63f87c25c796e570"
+    },
+    {
+      "actor": 1,
+      "event": 30,
+      "variant": 0,
+      "path": "vf_voices/lucien/overclock_0.wav",
+      "text": "Overclock. Allons-y!",
+      "duration": 1.7872,
+      "sha256": "ab54ad41e5aaf42d85a6031281689ecad78badf2fbb32b88a4a25437c81a07e8"
+    },
+    {
+      "actor": 1,
+      "event": 8,
+      "variant": 0,
+      "path": "vf_voices/lucien/counter_taunt_0.wav",
+      "text": "Viens ici! Say that to my face, connard!",
+      "duration": 3.1661,
+      "sha256": "0a031183239db86d1acea96cc1d9cfe556cad54ede5f50519756047f50e1ba65"
+    },
+    {
+      "actor": 1,
+      "event": 8,
+      "variant": 1,
+      "path": "vf_voices/lucien/counter_taunt_1.wav",
+      "text": "I'll kill you, mon cher. Slowly.",
+      "duration": 2.8576,
+      "sha256": "0d3bfb1ea1b5dcd92042031fad52b9438c7ef8cbf3da3fe924091837bb1cfc27"
+    },
+    {
+      "actor": 1,
+      "event": 8,
+      "variant": 2,
+      "path": "vf_voices/lucien/counter_taunt_2.wav",
+      "text": "Shut your mouth and come fight me!",
+      "duration": 2.1347,
+      "sha256": "cd227ba837acc303ea3f4f243b4e20c6c391e807bdffd8bc454602018adbd76e"
+    },
+    {
+      "actor": 2,
+      "event": 0,
+      "variant": 0,
+      "path": "vf_voices/diego/spawn_0.wav",
+      "text": "Vamos! Keep up if you can!",
+      "duration": 2.2639,
+      "sha256": "ca0d1fdc3de288d44776f9c17fea9b3541b1a7369e8f00446766c78d7ed87b1c"
+    },
+    {
+      "actor": 2,
+      "event": 9,
+      "variant": 0,
+      "path": "vf_voices/diego/respawn_0.wav",
+      "text": "Otra vez? Hey, genius at the keyboard. Try staying alive!",
+      "duration": 4.6906,
+      "sha256": "09977a3477d233a4765f166888fb983b279e720532a6361d437dbb5d8564bcb4"
+    },
+    {
+      "actor": 2,
+      "event": 9,
+      "variant": 1,
+      "path": "vf_voices/diego/respawn_1.wav",
+      "text": "This gun is basura! I want the one the enemy has!",
+      "duration": 3.5863,
+      "sha256": "cb50f4aff7bc16b3d25cc7ec3350586196fe4826a7438ef2a64563830e9712c5"
+    },
+    {
+      "actor": 2,
+      "event": 9,
+      "variant": 2,
+      "path": "vf_voices/diego/respawn_2.wav",
+      "text": "The game cheated, amigo. Obviously. My talent is not up for debate.",
+      "duration": 5.0911,
+      "sha256": "069555e2801eb10ef5473eaaf4c3d21e0403abb65fda6cc417c20e1c9447ffcb"
+    },
+    {
+      "actor": 2,
+      "event": 1,
+      "variant": 0,
+      "path": "vf_voices/diego/reload_0.wav",
+      "text": "Recargando! Cover me!",
+      "duration": 1.8482,
+      "sha256": "c734684cf322e553c34db88b395a0855fbc9053f952b753e1eb64d8d811ad2db"
+    },
+    {
+      "actor": 2,
+      "event": 2,
+      "variant": 0,
+      "path": "vf_voices/diego/kill_0.wav",
+      "text": "Hasta luego!",
+      "duration": 2.0619,
+      "sha256": "5bb6fa9d0ca1d81c5a3426be450ab0a2571fade9143e9bd2b2a3ebbf01b930a8"
+    },
+    {
+      "actor": 2,
+      "event": 2,
+      "variant": 1,
+      "path": "vf_voices/diego/kill_1.wav",
+      "text": "Uno menos. Who's next?",
+      "duration": 1.9965,
+      "sha256": "1e6a36942fd9f4cdf89f890b1dfd135ab2d57615cafe42fb59b558418745c342"
+    },
+    {
+      "actor": 2,
+      "event": 3,
+      "variant": 0,
+      "path": "vf_voices/diego/pain_0.wav",
+      "text": "Ah! Joder!",
+      "duration": 1.8204,
+      "sha256": "c082af867a34e61663c7ba058f00b9c195222e14fee2bbc85fcb561d715a73c6"
+    },
+    {
+      "actor": 2,
+      "event": 3,
+      "variant": 1,
+      "path": "vf_voices/diego/pain_1.wav",
+      "text": "Hah!",
+      "duration": 1.5788,
+      "sha256": "d1e44644ebd6173a629916f04c7fbff9cb573cdae4ab3bbe17b998b3c1b51a8c"
+    },
+    {
+      "actor": 2,
+      "event": 4,
+      "variant": 0,
+      "path": "vf_voices/diego/death_0.wav",
+      "text": "Aah! No puede ser!",
+      "duration": 2.2113,
+      "sha256": "933f48559e1c7076a6f89a4cdf51d4cb97135282eed1af3ea8fba085fcaa5da5"
+    },
+    {
+      "actor": 2,
+      "event": 5,
+      "variant": 0,
+      "path": "vf_voices/diego/low_health_0.wav",
+      "text": "Mierda. I'm nearly done.",
+      "duration": 2.7536,
+      "sha256": "a17e5810f1cdc6932e009b0ff2ddf09b8eeb91e5b731d0cf72920123d1ff6216"
+    },
+    {
+      "actor": 2,
+      "event": 6,
+      "variant": 0,
+      "path": "vf_voices/diego/armor_break_0.wav",
+      "text": "Sin armadura! I need cover!",
+      "duration": 2.282,
+      "sha256": "ffb522c8fc66e904a33ef6a05559a8ff65e896728db7735647dd365bace6bce6"
+    },
+    {
+      "actor": 2,
+      "event": 7,
+      "variant": 0,
+      "path": "vf_voices/diego/taunt_0.wav",
+      "text": "Vamos, cabron. Hit me if you can!",
+      "duration": 3.0591,
+      "sha256": "946132a43b3e31122583067d3d1102c662d54a0649f4729f735e769151bd501c"
+    },
+    {
+      "actor": 2,
+      "event": 7,
+      "variant": 1,
+      "path": "vf_voices/diego/taunt_1.wav",
+      "text": "Stop shooting the furniture! I'm over here!",
+      "duration": 3.0437,
+      "sha256": "c106ac9812c2f3434eeebbdadd9e2508ffbc5bce92b9850edcfffb265443aa35"
+    },
+    {
+      "actor": 2,
+      "event": 7,
+      "variant": 2,
+      "path": "vf_voices/diego/taunt_2.wav",
+      "text": "That was your best shot? Que pena!",
+      "duration": 3.7215,
+      "sha256": "81ad8c624a31736a912d838e8812d7d4973f1a38a75b14aa8cf4dc2ab0b669c1"
+    },
+    {
+      "actor": 2,
+      "event": 10,
+      "variant": 0,
+      "path": "vf_voices/diego/hydro_0.wav",
+      "text": "Empapado! I'm soaked!",
+      "duration": 2.551,
+      "sha256": "92cf0cc57ff2e2ef4cd8b9b38e2f22335c3dfb0e9b844c773f39338c11267622"
+    },
+    {
+      "actor": 2,
+      "event": 11,
+      "variant": 0,
+      "path": "vf_voices/diego/electro_0.wav",
+      "text": "Joder! Electric shock!",
+      "duration": 2.6706,
+      "sha256": "6f58609c403e0a614b569f1b0076ea07803b4fa60b71e0c0a16e2a200225fe8f"
+    },
+    {
+      "actor": 2,
+      "event": 12,
+      "variant": 0,
+      "path": "vf_voices/diego/cryo_0.wav",
+      "text": "Que frio! I'm freezing!",
+      "duration": 3.1471,
+      "sha256": "deda7173873550ab1c519b75b81352543d03fca290cdfb601d4ab24e51f327af"
+    },
+    {
+      "actor": 2,
+      "event": 13,
+      "variant": 0,
+      "path": "vf_voices/diego/thermal_0.wav",
+      "text": "Fuego! Get it off me!",
+      "duration": 2.1444,
+      "sha256": "31ceb9b0483d6b544290fef3fc61ea997f720ed50363e764574a5f88eac70fe6"
+    },
+    {
+      "actor": 2,
+      "event": 14,
+      "variant": 0,
+      "path": "vf_voices/diego/toxic_0.wav",
+      "text": "Veneno! That tastes like death!",
+      "duration": 3.5622,
+      "sha256": "14456553367b30f8570832ed790acc54f0867663604ba58e097cde894c494385"
+    },
+    {
+      "actor": 2,
+      "event": 15,
+      "variant": 0,
+      "path": "vf_voices/diego/corrosion_0.wav",
+      "text": "Acido! My armor is melting!",
+      "duration": 2.6054,
+      "sha256": "595fac8ebad24e354460556767070dc0c87a445555f9681b7606be7f0bf78aca"
+    },
+    {
+      "actor": 2,
+      "event": 16,
+      "variant": 0,
+      "path": "vf_voices/diego/sonic_0.wav",
+      "text": "Mis oidos! That noise hurts!",
+      "duration": 3.1851,
+      "sha256": "3d916a8700839a6acb8dd0863b0394cd50fbbb0a8e7ecdee669987f0cffb6797"
+    },
+    {
+      "actor": 2,
+      "event": 17,
+      "variant": 0,
+      "path": "vf_voices/diego/kinetic_0.wav",
+      "text": "Oof! Menudo golpe!",
+      "duration": 2.8484,
+      "sha256": "0bb25535ae996e8c86f49043920378337e1f191d8490b0104426e7158f277a98"
+    },
+    {
+      "actor": 2,
+      "event": 18,
+      "variant": 0,
+      "path": "vf_voices/diego/arc_chain_0.wav",
+      "text": "Soaked and shocked! Mierda!",
+      "duration": 3.0797,
+      "sha256": "4559cb3abdc901ea5d887934fc5e514ed0bef63c4b51234b3e6781615603744a"
+    },
+    {
+      "actor": 2,
+      "event": 19,
+      "variant": 0,
+      "path": "vf_voices/diego/superconduction_0.wav",
+      "text": "Ice and lightning! Joder!",
+      "duration": 2.754,
+      "sha256": "aac6aa5e7cd5bd19ad9bc0ceed7477c3f8752e075c8a8fd1e454e540b0a0bae3"
+    },
+    {
+      "actor": 2,
+      "event": 20,
+      "variant": 0,
+      "path": "vf_voices/diego/shatter_0.wav",
+      "text": "The ice is breaking! I'm shattering!",
+      "duration": 2.7211,
+      "sha256": "deec72e247d010d56d71447f8abd499f579e827723b87aa61e3e82dc11de2b6c"
+    },
+    {
+      "actor": 2,
+      "event": 21,
+      "variant": 0,
+      "path": "vf_voices/diego/resonant_impact_0.wav",
+      "text": "That ringing punch went through me!",
+      "duration": 2.4363,
+      "sha256": "6baf55a9ce73a051acdbe2c5bb3151cff387c86fd9bb1a2a9de9c15477b1de38"
+    },
+    {
+      "actor": 2,
+      "event": 22,
+      "variant": 0,
+      "path": "vf_voices/diego/cavitation_0.wav",
+      "text": "Acid and pressure! It's popping!",
+      "duration": 2.4602,
+      "sha256": "c8137630a6e97cfcc939d07bd3d450201a742b2f405d4d5f283dc39b9517a3d3"
+    },
+    {
+      "actor": 2,
+      "event": 23,
+      "variant": 0,
+      "path": "vf_voices/diego/caustic_contagion_0.wav",
+      "text": "Acid and poison! Que asco!",
+      "duration": 3.7585,
+      "sha256": "8175556fff45e0048eb9fa463900bcad359bceba01f2dc9cecf35e71c39ed4a2"
+    },
+    {
+      "actor": 2,
+      "event": 24,
+      "variant": 0,
+      "path": "vf_voices/diego/toxic_ignition_0.wav",
+      "text": "The poison caught fire! Joder!",
+      "duration": 2.7033,
+      "sha256": "e69e4f91a6600a944e06a662b8641031ae25a4e0e60cbdce02deb7bf4f32aa59"
+    },
+    {
+      "actor": 2,
+      "event": 25,
+      "variant": 0,
+      "path": "vf_voices/diego/steam_veil_0.wav",
+      "text": "Vapor! Can't see a thing!",
+      "duration": 3.4228,
+      "sha256": "c33417bae4093ad914511bba8684f63fcedf40930d63f759766deb24c9fa2cb2"
+    },
+    {
+      "actor": 2,
+      "event": 26,
+      "variant": 0,
+      "path": "vf_voices/diego/phase_0.wav",
+      "text": "Intangible! Catch me now!",
+      "duration": 3.1808,
+      "sha256": "3850ea0acac1e2ff22162850554ee181e2076b95ec564ce6aec710144e79022b"
+    },
+    {
+      "actor": 2,
+      "event": 27,
+      "variant": 0,
+      "path": "vf_voices/diego/null_0.wav",
+      "text": "Reactions blocked. Perfecto.",
+      "duration": 2.3358,
+      "sha256": "32b567e1b224bac594b20b5dece29fa845d06c9028ee80c8dfc937bca2bc4356"
+    },
+    {
+      "actor": 2,
+      "event": 28,
+      "variant": 0,
+      "path": "vf_voices/diego/ward_0.wav",
+      "text": "Protection up! Dale!",
+      "duration": 2.0732,
+      "sha256": "ef218a55a062c53a4fc73de00190f5cb2105056bf970785a3d5b729372c95738"
+    },
+    {
+      "actor": 2,
+      "event": 29,
+      "variant": 0,
+      "path": "vf_voices/diego/reveal_0.wav",
+      "text": "Marcado! They know where I am!",
+      "duration": 2.2923,
+      "sha256": "2503bcf29041b6f1bebb887913f2fb3716931295a70d13b93d8341186299f3a0"
+    },
+    {
+      "actor": 2,
+      "event": 30,
+      "variant": 0,
+      "path": "vf_voices/diego/overclock_0.wav",
+      "text": "Overclock! Mas rapido!",
+      "duration": 2.2028,
+      "sha256": "8e8f8183badc9a169fbb2e9455239505e5642d99c3f6fd44aea5a31b69c98703"
+    },
+    {
+      "actor": 2,
+      "event": 8,
+      "variant": 0,
+      "path": "vf_voices/diego/counter_taunt_0.wav",
+      "text": "Ven aqui! Say that to my face, cabron!",
+      "duration": 2.929,
+      "sha256": "83a46ad099d76ac6baddfb149fc45f66e406780e47867fca9b44a5e0d2781ed2"
+    },
+    {
+      "actor": 2,
+      "event": 8,
+      "variant": 1,
+      "path": "vf_voices/diego/counter_taunt_1.wav",
+      "text": "Te voy a matar! You're dead, amigo!",
+      "duration": 3.0684,
+      "sha256": "eef1d541adecd845fb40f423bd421e2b5904c59b1a3a8eb638918ded185d15d9"
+    },
+    {
+      "actor": 2,
+      "event": 8,
+      "variant": 2,
+      "path": "vf_voices/diego/counter_taunt_2.wav",
+      "text": "Keep talking. I'll shut that mouth for you!",
+      "duration": 3.0165,
+      "sha256": "a93525d7212b9a4663437fb94373d7799b87a695f329f95f99a1d1cd91eda496"
+    },
+    {
+      "actor": 3,
+      "event": 0,
+      "variant": 0,
+      "path": "vf_voices/viktor/spawn_0.wav",
+      "text": "Ladno. Let's finish this.",
+      "duration": 2.4401,
+      "sha256": "22e81e953039c76fb08cfbcb9e98a9437950619aace6b6130c0fc3fddd0c4fd7"
+    },
+    {
+      "actor": 3,
+      "event": 9,
+      "variant": 0,
+      "path": "vf_voices/viktor/respawn_0.wav",
+      "text": "Opyat! You at keyboard. Concentrate, durak!",
+      "duration": 4.38,
+      "sha256": "0acd0a0cbdf4a74212fb069408f275a4481bce972eecf950f03dca8883ad2fbe"
+    },
+    {
+      "actor": 3,
+      "event": 9,
+      "variant": 1,
+      "path": "vf_voices/viktor/respawn_1.wav",
+      "text": "Gun is defective. Bullets refuse to cooperate. Very suspicious.",
+      "duration": 5.7077,
+      "sha256": "0ef27a3f9a51b3c7081c88951be34b4c39b660498897eb08cfeed460c19731ed"
+    },
+    {
+      "actor": 3,
+      "event": 9,
+      "variant": 2,
+      "path": "vf_voices/viktor/respawn_2.wav",
+      "text": "Another death. Engine problem. I am submitting complaint. To nobody.",
+      "duration": 5.5868,
+      "sha256": "495fb09428b10c6336fff03ae914381808347a15feb3ac415b251d0b1ccfa32d"
+    },
+    {
+      "actor": 3,
+      "event": 1,
+      "variant": 0,
+      "path": "vf_voices/viktor/reload_0.wav",
+      "text": "Perezaryadka. Cover me.",
+      "duration": 1.9638,
+      "sha256": "86f0ccd0b5644b134bafe7a7be0d658264d46413c47ef3cd735db57f58b6074d"
+    },
+    {
+      "actor": 3,
+      "event": 2,
+      "variant": 0,
+      "path": "vf_voices/viktor/kill_0.wav",
+      "text": "Gotovo. You can rest now.",
+      "duration": 2.5951,
+      "sha256": "98c22cc86f1065f58cff0c5fd281f5fe83cb60e5c1a459749f659ea915dafa3b"
+    },
+    {
+      "actor": 3,
+      "event": 2,
+      "variant": 1,
+      "path": "vf_voices/viktor/kill_1.wav",
+      "text": "Khorosho. Next.",
+      "duration": 2.2155,
+      "sha256": "78ad1e51868ca51b5c3357be2daa7076ae91aad0f5ac02536ffe1e1a85fba07a"
+    },
+    {
+      "actor": 3,
+      "event": 3,
+      "variant": 0,
+      "path": "vf_voices/viktor/pain_0.wav",
+      "text": "Argh! Blin!",
+      "duration": 1.866,
+      "sha256": "04d683b85f55208cdfa33c11bdf5a2ffa837aeb281b63f5c807b11598b7e4e46"
+    },
+    {
+      "actor": 3,
+      "event": 3,
+      "variant": 1,
+      "path": "vf_voices/viktor/pain_1.wav",
+      "text": "Ugh!",
+      "duration": 1.8834,
+      "sha256": "9436aab952053ca3e37db7cc1bee0380abbcd769e71a22f9806b6ca146a20973"
+    },
+    {
+      "actor": 3,
+      "event": 4,
+      "variant": 0,
+      "path": "vf_voices/viktor/death_0.wav",
+      "text": "Aah! Chyort!",
+      "duration": 2.019,
+      "sha256": "a3b3eec75f6260bc061c165c3a5798fcfd8682fb8e60d285ffa176217f44750f"
+    },
+    {
+      "actor": 3,
+      "event": 5,
+      "variant": 0,
+      "path": "vf_voices/viktor/low_health_0.wav",
+      "text": "Plokho. Need a medic.",
+      "duration": 2.6006,
+      "sha256": "05c046ce8ea7fd534e1caec026660bd808f5ba522b151d3e6e06e38461be4d8a"
+    },
+    {
+      "actor": 3,
+      "event": 6,
+      "variant": 0,
+      "path": "vf_voices/viktor/armor_break_0.wav",
+      "text": "Armor gone. Chyort.",
+      "duration": 2.205,
+      "sha256": "6f8779145d354e8f669ea8c65cff2d073988043d6fd537044cd56ea92652988c"
+    },
+    {
+      "actor": 3,
+      "event": 7,
+      "variant": 0,
+      "path": "vf_voices/viktor/taunt_0.wav",
+      "text": "Idi syuda. Even you can hit at this distance.",
+      "duration": 3.8019,
+      "sha256": "fb2c84475cb5d55f583c5069ee5643b4d9f01e6477a012a966c1a93eb86235bb"
+    },
+    {
+      "actor": 3,
+      "event": 7,
+      "variant": 1,
+      "path": "vf_voices/viktor/taunt_1.wav",
+      "text": "So much ammunition. So little talent.",
+      "duration": 3.5634,
+      "sha256": "7e9d99c26b85265607fd31d7f610c1e40a66e0a1045a1afe78b2324f2f4d118f"
+    },
+    {
+      "actor": 3,
+      "event": 7,
+      "variant": 2,
+      "path": "vf_voices/viktor/taunt_2.wav",
+      "text": "Come closer, pridurok. I am getting bored.",
+      "duration": 3.7566,
+      "sha256": "196139d553c1f6a15c3c50ca17d4a8d203cc56dccd6f05a0b078ba3acdc66dd8"
+    },
+    {
+      "actor": 3,
+      "event": 10,
+      "variant": 0,
+      "path": "vf_voices/viktor/hydro_0.wav",
+      "text": "Mokryy. Now I am soaked.",
+      "duration": 3.0122,
+      "sha256": "7d95a11fd6e635d0dca4ea4202d1cfa82032f72a2e4e47555863f90194435d4e"
+    },
+    {
+      "actor": 3,
+      "event": 11,
+      "variant": 0,
+      "path": "vf_voices/viktor/electro_0.wav",
+      "text": "Chyort! Electric shock!",
+      "duration": 2.7164,
+      "sha256": "e59fe423fbfeb72e48b978ae1d99e9138919a89d7d4b54c50e5a6150b3f722d0"
+    },
+    {
+      "actor": 3,
+      "event": 12,
+      "variant": 0,
+      "path": "vf_voices/viktor/cryo_0.wav",
+      "text": "Kholodno. Too cold, even for me.",
+      "duration": 4.428,
+      "sha256": "d6380d5b2fcca503191af9d65599605f164643f4fe19c1a7de2cdae1cf32bfbc"
+    },
+    {
+      "actor": 3,
+      "event": 13,
+      "variant": 0,
+      "path": "vf_voices/viktor/thermal_0.wav",
+      "text": "Goryu! I am burning!",
+      "duration": 2.3622,
+      "sha256": "3d16a06f3e614c1e6d38daa8ec97225c4cf60269ed16fc37d91e074a6697c05b"
+    },
+    {
+      "actor": 3,
+      "event": 14,
+      "variant": 0,
+      "path": "vf_voices/viktor/toxic_0.wav",
+      "text": "Yad. Poison in my lungs.",
+      "duration": 3.8201,
+      "sha256": "50b475a5cc46466bf10a0aa8a0a8e6d25f2f88ca616be8eca63d14141893722b"
+    },
+    {
+      "actor": 3,
+      "event": 15,
+      "variant": 0,
+      "path": "vf_voices/viktor/corrosion_0.wav",
+      "text": "Kislota. It is eating the armor.",
+      "duration": 2.6063,
+      "sha256": "d538f5d8c3a16e6d380c5490d05a8d9f02d99a19a30181da87c5853b2b302a6c"
+    },
+    {
+      "actor": 3,
+      "event": 16,
+      "variant": 0,
+      "path": "vf_voices/viktor/sonic_0.wav",
+      "text": "My ears. Tishe!",
+      "duration": 2.6132,
+      "sha256": "31c1a06c70ea94df47f2ec15c247940ef9ae473847e7b9bfbb243e0b3076478c"
+    },
+    {
+      "actor": 3,
+      "event": 17,
+      "variant": 0,
+      "path": "vf_voices/viktor/kinetic_0.wav",
+      "text": "Oof! Silno. Good hit.",
+      "duration": 3.7857,
+      "sha256": "ee533e1c74b150ae661fd2b3f160dc2adce445359b5fc7ecb076c9be690f9ac5"
+    },
+    {
+      "actor": 3,
+      "event": 18,
+      "variant": 0,
+      "path": "vf_voices/viktor/arc_chain_0.wav",
+      "text": "Wet and electrified. Blin.",
+      "duration": 3.3292,
+      "sha256": "7dec5baba1e420d31e5cacafd088adce768c72d06b762878956c12cccf580ea4"
+    },
+    {
+      "actor": 3,
+      "event": 19,
+      "variant": 0,
+      "path": "vf_voices/viktor/superconduction_0.wav",
+      "text": "Frozen and shocked. Ochen plokho.",
+      "duration": 1.5157,
+      "sha256": "44b1ea8980e1c633fc984b3a6c8b19b31dd673b96f5df78c80efa4e5ef11dcc9"
+    },
+    {
+      "actor": 3,
+      "event": 20,
+      "variant": 0,
+      "path": "vf_voices/viktor/shatter_0.wav",
+      "text": "Ice shattering. I am breaking with it.",
+      "duration": 2.6034,
+      "sha256": "e2e2f9c9da31333bc79c104b8ca41dd02e550e77fe9b1e091420f8a9ed28f3e8"
+    },
+    {
+      "actor": 3,
+      "event": 21,
+      "variant": 0,
+      "path": "vf_voices/viktor/resonant_impact_0.wav",
+      "text": "Resonance. Felt that in my bones.",
+      "duration": 3.3222,
+      "sha256": "f6e72ca6317639c86dd10b8b6ff0fc4a3fea9956cf786b6b7ec50eb51ebf481b"
+    },
+    {
+      "actor": 3,
+      "event": 22,
+      "variant": 0,
+      "path": "vf_voices/viktor/cavitation_0.wav",
+      "text": "Acid pressure. It is bursting.",
+      "duration": 2.6157,
+      "sha256": "d2a23deb08169e24d286234f87735054d73ec13588bb2ab3233897c6efefe285"
+    },
+    {
+      "actor": 3,
+      "event": 23,
+      "variant": 0,
+      "path": "vf_voices/viktor/caustic_contagion_0.wav",
+      "text": "Acid and poison. Vot dermo.",
+      "duration": 4.2219,
+      "sha256": "deb74343f5f2d9b664608dba4f96582b37d96795bc20b6779ee4e313b9cc497e"
+    },
+    {
+      "actor": 3,
+      "event": 24,
+      "variant": 0,
+      "path": "vf_voices/viktor/toxic_ignition_0.wav",
+      "text": "Poison is on fire. Chyort!",
+      "duration": 2.5367,
+      "sha256": "372fb9b0ef34a3fe48dd1a1ee10d5c12b6b35461fb6d03367628ff3992d43d7b"
+    },
+    {
+      "actor": 3,
+      "event": 25,
+      "variant": 0,
+      "path": "vf_voices/viktor/steam_veil_0.wav",
+      "text": "Par. Steam everywhere. Can't see.",
+      "duration": 4.6824,
+      "sha256": "ce4e8f6e48892116148e30679dff6b55362e232434cd617428d5af3767fd776b"
+    },
+    {
+      "actor": 3,
+      "event": 26,
+      "variant": 0,
+      "path": "vf_voices/viktor/phase_0.wav",
+      "text": "Faza. Your bullets can wait.",
+      "duration": 2.8046,
+      "sha256": "9d5e73bf1f41087c6c51d02490de0bcf8e29aa0b1997b71b48507e6ea2113485"
+    },
+    {
+      "actor": 3,
+      "event": 27,
+      "variant": 0,
+      "path": "vf_voices/viktor/null_0.wav",
+      "text": "Reactions blocked. Khorosho.",
+      "duration": 2.5173,
+      "sha256": "dde40cc58420a25eb6961917c11c0fd9754f02c7a58721e1f4e975b9177659fa"
+    },
+    {
+      "actor": 3,
+      "event": 28,
+      "variant": 0,
+      "path": "vf_voices/viktor/ward_0.wav",
+      "text": "Protected. Davay.",
+      "duration": 1.8844,
+      "sha256": "5837f34fd89fe1ec63f38f823a21cdf1ed0158bae1f92c96b0de13aa5cb27df3"
+    },
+    {
+      "actor": 3,
+      "event": 29,
+      "variant": 0,
+      "path": "vf_voices/viktor/reveal_0.wav",
+      "text": "They marked me. Proklyate.",
+      "duration": 2.7091,
+      "sha256": "cb86ed3203b231fbce40467216ee33c443cd0a1ccf710cc2a9d415e433e05d9a"
+    },
+    {
+      "actor": 3,
+      "event": 30,
+      "variant": 0,
+      "path": "vf_voices/viktor/overclock_0.wav",
+      "text": "Overclock. Bystree!",
+      "duration": 2.2399,
+      "sha256": "8dcb48124dc3ae0270286cef0f388ab47a9288964ef55e2a92f4d156f38d11f9"
+    },
+    {
+      "actor": 3,
+      "event": 8,
+      "variant": 0,
+      "path": "vf_voices/viktor/counter_taunt_0.wav",
+      "text": "Idi syuda! Say that to my face.",
+      "duration": 2.9995,
+      "sha256": "9a27f73d6f7db1ad9ec13bd0ae4bdfcd1991b8aac2e7c2f0825ba35413330740"
+    },
+    {
+      "actor": 3,
+      "event": 8,
+      "variant": 1,
+      "path": "vf_voices/viktor/counter_taunt_1.wav",
+      "text": "I'll kill you, suka.",
+      "duration": 2.1243,
+      "sha256": "dc34d0616ba040c74dbbd1588b0860bbf3dd9d9a79b8a804642634f4c2b66086"
+    },
+    {
+      "actor": 3,
+      "event": 8,
+      "variant": 2,
+      "path": "vf_voices/viktor/counter_taunt_2.wav",
+      "text": "Big mouth. Come closer. We fix that.",
+      "duration": 3.3524,
+      "sha256": "26c54e7d0e68a143fe99a6b470f30db50b3bd546dd4fc3d2e5f0934367c488ab"
+    },
+    {
+      "actor": 4,
+      "event": 0,
+      "variant": 0,
+      "path": "vf_voices/otto/spawn_0.wav",
+      "text": "Jawohl. Let's do this properly.",
+      "duration": 2.4727,
+      "sha256": "5108056b9d287cd9f84a4b02ab3d954c37a41a26cace11b464c56149817d23c1"
+    },
+    {
+      "actor": 4,
+      "event": 9,
+      "variant": 0,
+      "path": "vf_voices/otto/respawn_0.wav",
+      "text": "Schon wieder! You at the keyboard. Focus, du Idiot!",
+      "duration": 4.4435,
+      "sha256": "3c54fb8383f6061cc6fe0393b1140269b39e228dfff53da8c7241d5e7651e54c"
+    },
+    {
+      "actor": 4,
+      "event": 9,
+      "variant": 1,
+      "path": "vf_voices/otto/respawn_1.wav",
+      "text": "This rifle is defective. I demand German quality control!",
+      "duration": 4.1406,
+      "sha256": "f3ca101955423d42a8b8e70eb90a806593393fda05782a2163af04bca76a8935"
+    },
+    {
+      "actor": 4,
+      "event": 9,
+      "variant": 2,
+      "path": "vf_voices/otto/respawn_2.wav",
+      "text": "The engine has made an error. Naturally, I am operating perfectly.",
+      "duration": 4.9181,
+      "sha256": "844d8f6b87fc7a96f1d4eca39763d785350c03762b5064c4cb2c528804221a72"
+    },
+    {
+      "actor": 4,
+      "event": 1,
+      "variant": 0,
+      "path": "vf_voices/otto/reload_0.wav",
+      "text": "Nachladen! Cover me.",
+      "duration": 1.8863,
+      "sha256": "65b3997c63404563dfbcd56b76b3972bb6e9aee297f606872854bb956a8f4404"
+    },
+    {
+      "actor": 4,
+      "event": 2,
+      "variant": 0,
+      "path": "vf_voices/otto/kill_0.wav",
+      "text": "Sehr gut. Stay down.",
+      "duration": 2.1298,
+      "sha256": "8db1267a58646bfac27e940116867f6ecb593e29965b284a33939e673c9317e3"
+    },
+    {
+      "actor": 4,
+      "event": 2,
+      "variant": 1,
+      "path": "vf_voices/otto/kill_1.wav",
+      "text": "Your performance was unacceptable.",
+      "duration": 2.5998,
+      "sha256": "0351aeb155d7bb558b903a6de645b8338eb1205cd1ded00fcd10ccc2fda435b4"
+    },
+    {
+      "actor": 4,
+      "event": 3,
+      "variant": 0,
+      "path": "vf_voices/otto/pain_0.wav",
+      "text": "Ah! Verdammt!",
+      "duration": 2.0766,
+      "sha256": "dafb56ae2ec8022ea4b089337248d7e2b203681d35323633ce7a0224eabad181"
+    },
+    {
+      "actor": 4,
+      "event": 3,
+      "variant": 1,
+      "path": "vf_voices/otto/pain_1.wav",
+      "text": "Ugh!",
+      "duration": 1.9099,
+      "sha256": "3afa5aae2a6db685baae65b2049880779476c231e7c24e917b865e3a24dedf52"
+    },
+    {
+      "actor": 4,
+      "event": 4,
+      "variant": 0,
+      "path": "vf_voices/otto/death_0.wav",
+      "text": "Aah! Nein!",
+      "duration": 1.887,
+      "sha256": "37dc6aef1b83383ef8291688aa8a35d7dffab8df34a0adc333ab257cd4795466"
+    },
+    {
+      "actor": 4,
+      "event": 5,
+      "variant": 0,
+      "path": "vf_voices/otto/low_health_0.wav",
+      "text": "Scheisse. I'm barely standing.",
+      "duration": 3.2416,
+      "sha256": "4492356e41c43cc24ee0a7a78fe471f7762e38c3a131a18bf5de48a683d63351"
+    },
+    {
+      "actor": 4,
+      "event": 6,
+      "variant": 0,
+      "path": "vf_voices/otto/armor_break_0.wav",
+      "text": "Armor gone! Verdammt!",
+      "duration": 2.1417,
+      "sha256": "ba1369753dc4a08efdca17a1072ade77a61962d0dbc4795a4601efa62d95ebc3"
+    },
+    {
+      "actor": 4,
+      "event": 7,
+      "variant": 0,
+      "path": "vf_voices/otto/taunt_0.wav",
+      "text": "Come here, Dummkopf. Show me your aim.",
+      "duration": 3.2929,
+      "sha256": "4d1cdf2e46d3bb0b6f8626267115c9aa2bcbc9a09f11990fe0215049ed45dbfc"
+    },
+    {
+      "actor": 4,
+      "event": 7,
+      "variant": 1,
+      "path": "vf_voices/otto/taunt_1.wav",
+      "text": "So much ammunition. So little talent.",
+      "duration": 3.6164,
+      "sha256": "14a9bb93dcc5fc26b043ebae08fa36f9a9cf81b5078eeccccb5a387f4ce38d1c"
+    },
+    {
+      "actor": 4,
+      "event": 7,
+      "variant": 2,
+      "path": "vf_voices/otto/taunt_2.wav",
+      "text": "Ach, you call that shooting?",
+      "duration": 3.1517,
+      "sha256": "b6a027905502f3fd8b606caeb0c9c74c9d3dee92d71ba85f098348817189b212"
+    },
+    {
+      "actor": 4,
+      "event": 8,
+      "variant": 0,
+      "path": "vf_voices/otto/counter_taunt_0.wav",
+      "text": "Komm her! Say that to my face!",
+      "duration": 2.4293,
+      "sha256": "fc2939c1795b0990c3ca057d6cdeee93c3bccf2befcdec08c224c73aa526e9aa"
+    },
+    {
+      "actor": 4,
+      "event": 8,
+      "variant": 1,
+      "path": "vf_voices/otto/counter_taunt_1.wav",
+      "text": "I'll kill you, verdammter Idiot!",
+      "duration": 2.6692,
+      "sha256": "014b6b43bf8158171b9f9f94b60ee3331c6c0e25115d9b0716b3568c40cf14b7"
+    },
+    {
+      "actor": 4,
+      "event": 8,
+      "variant": 2,
+      "path": "vf_voices/otto/counter_taunt_2.wav",
+      "text": "Enough talking. Come and fight me!",
+      "duration": 2.6832,
+      "sha256": "42fef9a97d0f0dc93c25fd17504775d853323538302bc7172b49cd1949fe0dc3"
+    },
+    {
+      "actor": 4,
+      "event": 10,
+      "variant": 0,
+      "path": "vf_voices/otto/hydro_0.wav",
+      "text": "Nass! I'm completely soaked.",
+      "duration": 2.7795,
+      "sha256": "729cf1a8a31fe1fe19d68e1064aa167046ad87ae459fb0ed099f524f6b5d1cfa"
+    },
+    {
+      "actor": 4,
+      "event": 11,
+      "variant": 0,
+      "path": "vf_voices/otto/electro_0.wav",
+      "text": "Aah! Strom! I'm getting shocked!",
+      "duration": 3.1246,
+      "sha256": "b5a1eb752dd44983e339de9540c231f4feb20a84a7dffd53eea313043f2af5f9"
+    },
+    {
+      "actor": 4,
+      "event": 12,
+      "variant": 0,
+      "path": "vf_voices/otto/cryo_0.wav",
+      "text": "Brr! Verdammt, I'm freezing!",
+      "duration": 3.3595,
+      "sha256": "ccb8bc1386c5ab12e83ebfeed946fb4ac3795a797f14f008a1f87e0845361338"
+    },
+    {
+      "actor": 4,
+      "event": 13,
+      "variant": 0,
+      "path": "vf_voices/otto/thermal_0.wav",
+      "text": "Feuer! I'm on fire!",
+      "duration": 2.4437,
+      "sha256": "c0224e1ed00a99faaf509f60da1f337c6826cb994e2523a2d2b16d92eb7bf493"
+    },
+    {
+      "actor": 4,
+      "event": 14,
+      "variant": 0,
+      "path": "vf_voices/otto/toxic_0.wav",
+      "text": "Gift! Ugh, poison!",
+      "duration": 3.341,
+      "sha256": "adc19f8b596f3088db9db524190533dd5ed87acf37578cede3b6ec439ee4bb4c"
+    },
+    {
+      "actor": 4,
+      "event": 15,
+      "variant": 0,
+      "path": "vf_voices/otto/corrosion_0.wav",
+      "text": "Acid! My armor is dissolving!",
+      "duration": 2.6068,
+      "sha256": "1ee97f762972a28a7f9318aaec9480f57c004b235b1721bcf27f2fa779d68660"
+    },
+    {
+      "actor": 4,
+      "event": 16,
+      "variant": 0,
+      "path": "vf_voices/otto/sonic_0.wav",
+      "text": "My ears! Ruhe!",
+      "duration": 2.3005,
+      "sha256": "184451e5953a57b1f85cbb21df7ae9f308ac7f0c9546b013e31b21786811f876"
+    },
+    {
+      "actor": 4,
+      "event": 17,
+      "variant": 0,
+      "path": "vf_voices/otto/kinetic_0.wav",
+      "text": "Oof! That hit like a truck!",
+      "duration": 3.2763,
+      "sha256": "921ffbfc80f9805a58db22cba1880df790e4b60ab51092ba44de0057ed6dd339"
+    },
+    {
+      "actor": 4,
+      "event": 18,
+      "variant": 0,
+      "path": "vf_voices/otto/arc_chain_0.wav",
+      "text": "Water and electricity! Scheisse!",
+      "duration": 3.1277,
+      "sha256": "d1608fd968bce4f54e72259225f1821b4a5f7d6a9d870e2fe03495a1fe2a4965"
+    },
+    {
+      "actor": 4,
+      "event": 19,
+      "variant": 0,
+      "path": "vf_voices/otto/superconduction_0.wav",
+      "text": "Frozen and shocked! Verdammt!",
+      "duration": 3.1583,
+      "sha256": "b2fe03514a0682830388cf74a25c098ca12dbdaedaa5c99cd4faced88260f18d"
+    },
+    {
+      "actor": 4,
+      "event": 20,
+      "variant": 0,
+      "path": "vf_voices/otto/shatter_0.wav",
+      "text": "My frozen armor is shattering!",
+      "duration": 2.3954,
+      "sha256": "da4748d1da7a212f5545bd846f9dddb9871fe4cfed62428c7743e827dcf90d2e"
+    },
+    {
+      "actor": 4,
+      "event": 21,
+      "variant": 0,
+      "path": "vf_voices/otto/resonant_impact_0.wav",
+      "text": "That shockwave went straight through me!",
+      "duration": 2.7648,
+      "sha256": "17a8abf7527d34133291dbedc444b1e9d82a5198d9e037ad50354a6850839462"
+    },
+    {
+      "actor": 4,
+      "event": 22,
+      "variant": 0,
+      "path": "vf_voices/otto/cavitation_0.wav",
+      "text": "Acid shockwave! Everything is bursting!",
+      "duration": 3.1821,
+      "sha256": "d181ca842f41d22620de74aa5f023f510d2759194f14ca35a0a6a6c05075b34a"
+    },
+    {
+      "actor": 4,
+      "event": 23,
+      "variant": 0,
+      "path": "vf_voices/otto/caustic_contagion_0.wav",
+      "text": "Corrosive poison! It's spreading!",
+      "duration": 3.9002,
+      "sha256": "ef034a4a92f3ff45d77dd21201cae868d879149d7e6a1dafb64f2d7c6b22c977"
+    },
+    {
+      "actor": 4,
+      "event": 24,
+      "variant": 0,
+      "path": "vf_voices/otto/toxic_ignition_0.wav",
+      "text": "The poison is burning! Feuer!",
+      "duration": 2.6945,
+      "sha256": "87184dd99e9ac2916c0460fd8720be4f5ca6d117782779451859f86a95cb3240"
+    },
+    {
+      "actor": 4,
+      "event": 25,
+      "variant": 0,
+      "path": "vf_voices/otto/steam_veil_0.wav",
+      "text": "Hot steam! I can't see!",
+      "duration": 3.0785,
+      "sha256": "3f52ceab5a18317b4b9e1598636c72a0cc71df221616ece93c53259628d01a0e"
+    },
+    {
+      "actor": 4,
+      "event": 26,
+      "variant": 0,
+      "path": "vf_voices/otto/phase_0.wav",
+      "text": "Phase active. Going through.",
+      "duration": 2.3104,
+      "sha256": "3c89bb60779fa1d07276b973aa5eaf0b09ff8b749c2aaa63f2b169165642dad9"
+    },
+    {
+      "actor": 4,
+      "event": 27,
+      "variant": 0,
+      "path": "vf_voices/otto/null_0.wav",
+      "text": "Abgeschaltet! My systems are dead!",
+      "duration": 3.0202,
+      "sha256": "dcc71f21a21b1b29340c03086080e64334bc6b5baadf8b341df12c621f49c2ad"
+    },
+    {
+      "actor": 4,
+      "event": 28,
+      "variant": 0,
+      "path": "vf_voices/otto/ward_0.wav",
+      "text": "Shield up. Sehr gut.",
+      "duration": 2.4096,
+      "sha256": "97bb49afcb48e5ba8fac4e6d61fb18d90954445dc9c2bb3f9d61c1381dbde10a"
+    },
+    {
+      "actor": 4,
+      "event": 29,
+      "variant": 0,
+      "path": "vf_voices/otto/reveal_0.wav",
+      "text": "Spotted! They can see me!",
+      "duration": 2.1184,
+      "sha256": "b1c802a1bdd191ecef0260e6b621d6c9829e26ab3e03f6052259ca946ca53f61"
+    },
+    {
+      "actor": 4,
+      "event": 30,
+      "variant": 0,
+      "path": "vf_voices/otto/overclock_0.wav",
+      "text": "Schneller! Everything is faster!",
+      "duration": 2.8443,
+      "sha256": "2278c058f623a33d370f6f4af71e8f5acacf979a863bef2cd7d7804071f3197a"
+    },
+    {
+      "actor": 5,
+      "event": 0,
+      "variant": 0,
+      "path": "vf_voices/nikos/spawn_0.wav",
+      "text": "Ela! Let's make some trouble.",
+      "duration": 2.5562,
+      "sha256": "209454fe5befc6a64d9572eb0b368295e11489918920e35ba7e7301a0912de91"
+    },
+    {
+      "actor": 5,
+      "event": 9,
+      "variant": 0,
+      "path": "vf_voices/nikos/respawn_0.wav",
+      "text": "Pali? You with the keyboard! Wake up, re!",
+      "duration": 3.5634,
+      "sha256": "906539e16bcac7fde8c93d170e27f390c6cf2000547a0b80318cc987f200e3b0"
+    },
+    {
+      "actor": 5,
+      "event": 9,
+      "variant": 1,
+      "path": "vf_voices/nikos/respawn_1.wav",
+      "text": "This gun is useless! Even my grandmother could build a better one!",
+      "duration": 4.2922,
+      "sha256": "6ae2b2cb4cfec5d74ffee244739aa743a5cf789b8ef119379296eb51bef9e717"
+    },
+    {
+      "actor": 5,
+      "event": 9,
+      "variant": 2,
+      "path": "vf_voices/nikos/respawn_2.wav",
+      "text": "Terrible game. Obviously the developers are afraid of my talent.",
+      "duration": 4.9764,
+      "sha256": "25eb46eaf31174d48a8b520726282529ec6f2be682e4f91ba6fd61dc904ce275"
+    },
+    {
+      "actor": 5,
+      "event": 1,
+      "variant": 0,
+      "path": "vf_voices/nikos/reload_0.wav",
+      "text": "Reloading! Kalypse me!",
+      "duration": 2.0196,
+      "sha256": "30e5486f1167aefb091827d4017ae13b5414ded96341b714cfda32c24ed6e5ba"
+    },
+    {
+      "actor": 5,
+      "event": 2,
+      "variant": 0,
+      "path": "vf_voices/nikos/kill_0.wav",
+      "text": "Mpravo! Stay down.",
+      "duration": 2.37,
+      "sha256": "905a9be83fdb840daaeecb43c71875733ff8477385b8827fc1e8cd8ccd3bc9a6"
+    },
+    {
+      "actor": 5,
+      "event": 2,
+      "variant": 1,
+      "path": "vf_voices/nikos/kill_1.wav",
+      "text": "Nice try, file!",
+      "duration": 2.6771,
+      "sha256": "b6e847bc1ad46583fe997d57fd8172c30625dec781585383b86ba0b077b7ea3c"
+    },
+    {
+      "actor": 5,
+      "event": 3,
+      "variant": 0,
+      "path": "vf_voices/nikos/pain_0.wav",
+      "text": "Ah! Gamoto!",
+      "duration": 2.117,
+      "sha256": "ba85da7e1531d775db605e5e4c7736dd19d07ab577d96813b9e99137ec11bfc3"
+    },
+    {
+      "actor": 5,
+      "event": 3,
+      "variant": 1,
+      "path": "vf_voices/nikos/pain_1.wav",
+      "text": "Ugh!",
+      "duration": 1.9434,
+      "sha256": "8989f59134e1bb2557c47099fc81cc12766ce605be09656891d9975e087f8fad"
+    },
+    {
+      "actor": 5,
+      "event": 4,
+      "variant": 0,
+      "path": "vf_voices/nikos/death_0.wav",
+      "text": "Aah! Ochi!",
+      "duration": 2.0158,
+      "sha256": "6fbfc56f4a2d8534028c37e39299b08f47ac7017e6cc7330dab3e5a010808c9e"
+    },
+    {
+      "actor": 5,
+      "event": 5,
+      "variant": 0,
+      "path": "vf_voices/nikos/low_health_0.wav",
+      "text": "Panagia moy. I'm barely standing.",
+      "duration": 3.5484,
+      "sha256": "7ddf8a35972ca1e6d29038d9541382a5f327bc5182ee1bddd801216ed732b069"
+    },
+    {
+      "actor": 5,
+      "event": 6,
+      "variant": 0,
+      "path": "vf_voices/nikos/armor_break_0.wav",
+      "text": "Armor's gone! Gamoto!",
+      "duration": 2.3772,
+      "sha256": "b52e26ea6ef300e4c0632493747ea02f36de11b7ab8307e06685b56d2563c8e6"
+    },
+    {
+      "actor": 5,
+      "event": 7,
+      "variant": 0,
+      "path": "vf_voices/nikos/taunt_0.wav",
+      "text": "Come here, malaka. I have a surprise.",
+      "duration": 3.3089,
+      "sha256": "6c64e8582d2562023fbc77a58b144b8d00b0d9e0733f52dc0a8f65ff773ba994"
+    },
+    {
+      "actor": 5,
+      "event": 7,
+      "variant": 1,
+      "path": "vf_voices/nikos/taunt_1.wav",
+      "text": "My grandmother shoots better than you!",
+      "duration": 2.6589,
+      "sha256": "c3ac31210a7e4d72888793f8b8b96525328c29aa3e532f8cee3f60f4b2726aca"
+    },
+    {
+      "actor": 5,
+      "event": 7,
+      "variant": 2,
+      "path": "vf_voices/nikos/taunt_2.wav",
+      "text": "All that noise, and you still miss, file!",
+      "duration": 4.364,
+      "sha256": "1399143d077a47035406cdf3f8c1423c44f2a1c0f4bb304abebd6af8b8ee7e00"
+    },
+    {
+      "actor": 5,
+      "event": 8,
+      "variant": 0,
+      "path": "vf_voices/nikos/counter_taunt_0.wav",
+      "text": "Ela edo! Say that to my face!",
+      "duration": 2.502,
+      "sha256": "ea851ab689d1e1308b2e0393f116264ffb8bdfe68999241674b26a2c6dd485f2"
+    },
+    {
+      "actor": 5,
+      "event": 8,
+      "variant": 1,
+      "path": "vf_voices/nikos/counter_taunt_1.wav",
+      "text": "I'll kill you, malaka!",
+      "duration": 1.9575,
+      "sha256": "a548b6a1dad33948f7358719851b11232c546d34ae0fa24b0472624885a03104"
+    },
+    {
+      "actor": 5,
+      "event": 8,
+      "variant": 2,
+      "path": "vf_voices/nikos/counter_taunt_2.wav",
+      "text": "Keep talking. I'll knock those teeth out!",
+      "duration": 3.0212,
+      "sha256": "5daa6135749e158564b583c5a85afb5fa734a47fdb641fa86e338198499aafc4"
+    },
+    {
+      "actor": 5,
+      "event": 10,
+      "variant": 0,
+      "path": "vf_voices/nikos/hydro_0.wav",
+      "text": "Panagia moy, I'm soaked!",
+      "duration": 2.6191,
+      "sha256": "8b9fd9a4a7913cfa067529a820c19f5b0b69edf8b7dec611c6101d750ad371b9"
+    },
+    {
+      "actor": 5,
+      "event": 11,
+      "variant": 0,
+      "path": "vf_voices/nikos/electro_0.wav",
+      "text": "Aah! Reyma! I'm getting shocked!",
+      "duration": 3.3257,
+      "sha256": "ce29273ed43f420bfa2d90b38e360c77b42196b5081103fe014d74c5683794b6"
+    },
+    {
+      "actor": 5,
+      "event": 12,
+      "variant": 0,
+      "path": "vf_voices/nikos/cryo_0.wav",
+      "text": "Brr! I'm freezing, gamoto!",
+      "duration": 3.2224,
+      "sha256": "4f8114089814b6e33a6d3cb2cc2c47bfd5c6d72537b460fdf532050dd0df3b49"
+    },
+    {
+      "actor": 5,
+      "event": 13,
+      "variant": 0,
+      "path": "vf_voices/nikos/thermal_0.wav",
+      "text": "Fotia! I'm on fire!",
+      "duration": 2.272,
+      "sha256": "fe9c283e7cd23e773a0a514625285b16f1712c26b9c1a8aae6314480f95c1e68"
+    },
+    {
+      "actor": 5,
+      "event": 14,
+      "variant": 0,
+      "path": "vf_voices/nikos/toxic_0.wav",
+      "text": "Ugh! Poison, gamoto!",
+      "duration": 3.2626,
+      "sha256": "779092914d5c03ff81f0f158dc71bdf3b4b00b277767e79776533510017383fc"
+    },
+    {
+      "actor": 5,
+      "event": 15,
+      "variant": 0,
+      "path": "vf_voices/nikos/corrosion_0.wav",
+      "text": "Acid! It's eating my armor!",
+      "duration": 2.474,
+      "sha256": "28900ad68382b136691245a9eae050410710ff1a9e017b13263eefb4666a8903"
+    },
+    {
+      "actor": 5,
+      "event": 16,
+      "variant": 0,
+      "path": "vf_voices/nikos/sonic_0.wav",
+      "text": "My ears! Stamata!",
+      "duration": 2.6963,
+      "sha256": "273c3c894cd082ac3998c7e9b5a597c98e9f109adac5bd81484b3296d32c709e"
+    },
+    {
+      "actor": 5,
+      "event": 17,
+      "variant": 0,
+      "path": "vf_voices/nikos/kinetic_0.wav",
+      "text": "Oof! That hit like a truck!",
+      "duration": 3.5886,
+      "sha256": "f50cb22168e1d0a1155a56e840b7c81a67359ef54f99038a12061e390af83984"
+    },
+    {
+      "actor": 5,
+      "event": 18,
+      "variant": 0,
+      "path": "vf_voices/nikos/arc_chain_0.wav",
+      "text": "Water and lightning! Gamoto!",
+      "duration": 3.2673,
+      "sha256": "860166a8aa1cc6209ce9ab8efc04dcd8d0612f0eebafe21f19cd768881a069d4"
+    },
+    {
+      "actor": 5,
+      "event": 19,
+      "variant": 0,
+      "path": "vf_voices/nikos/superconduction_0.wav",
+      "text": "Frozen and shocked! Panagia moy!",
+      "duration": 1.4679,
+      "sha256": "a72d1ba158bbe592f45d5b26251a1f320d46c7cee5896b7deaab39ebb407abbb"
+    },
+    {
+      "actor": 5,
+      "event": 20,
+      "variant": 0,
+      "path": "vf_voices/nikos/shatter_0.wav",
+      "text": "My frozen armor is shattering!",
+      "duration": 2.2554,
+      "sha256": "e004a8e8e2966d0c56e6093f8dbe6af09670063295bb52e2b3f9539e20d6f86b"
+    },
+    {
+      "actor": 5,
+      "event": 21,
+      "variant": 0,
+      "path": "vf_voices/nikos/resonant_impact_0.wav",
+      "text": "That shockwave went straight through me!",
+      "duration": 2.881,
+      "sha256": "8fefd8b0239b4c8b072056ddfc245865c56360754795490a8e0760d30ae7248b"
+    },
+    {
+      "actor": 5,
+      "event": 22,
+      "variant": 0,
+      "path": "vf_voices/nikos/cavitation_0.wav",
+      "text": "Acid shockwave! Everything's bursting!",
+      "duration": 3.0115,
+      "sha256": "2db1b653e206b2e59374326a65aee53513e3aabd43ed83cbd81dce5767637785"
+    },
+    {
+      "actor": 5,
+      "event": 23,
+      "variant": 0,
+      "path": "vf_voices/nikos/caustic_contagion_0.wav",
+      "text": "Corrosive poison! It's spreading!",
+      "duration": 3.9913,
+      "sha256": "7accde49b3da75e915161b8b8f86c715d10b6199c20a91ceac0a4cec8918e108"
+    },
+    {
+      "actor": 5,
+      "event": 24,
+      "variant": 0,
+      "path": "vf_voices/nikos/toxic_ignition_0.wav",
+      "text": "The poison is burning! Fotia!",
+      "duration": 2.88,
+      "sha256": "d01026111e40020d5c0974f193278ff383a62ffd003232d63b99fe1831ca58ec"
+    },
+    {
+      "actor": 5,
+      "event": 25,
+      "variant": 0,
+      "path": "vf_voices/nikos/steam_veil_0.wav",
+      "text": "Hot steam! I can't see!",
+      "duration": 2.9977,
+      "sha256": "82b69d538a68677aedbdbc5c21a8c20add39a4c84e69c546bfce49fc6da2b6e8"
+    },
+    {
+      "actor": 5,
+      "event": 26,
+      "variant": 0,
+      "path": "vf_voices/nikos/phase_0.wav",
+      "text": "Phase active. Coming through, file!",
+      "duration": 2.8375,
+      "sha256": "06ee864686e6279ac119cac747e5e6502f8d11f223222fdf0b976569d47a9b00"
+    },
+    {
+      "actor": 5,
+      "event": 27,
+      "variant": 0,
+      "path": "vf_voices/nikos/null_0.wav",
+      "text": "Nothing works! Gamoto!",
+      "duration": 2.7586,
+      "sha256": "4ed20810ed76dfdd1d7e9158c8d8b49dc249e71a49c97d76e9b901bb4da83882"
+    },
+    {
+      "actor": 5,
+      "event": 28,
+      "variant": 0,
+      "path": "vf_voices/nikos/ward_0.wav",
+      "text": "Shield up. Mpravo!",
+      "duration": 2.1079,
+      "sha256": "b1f66574e3071861ddb128b7ef49b35cb8b1362efec95e95ddd1f46cd7d99915"
+    },
+    {
+      "actor": 5,
+      "event": 29,
+      "variant": 0,
+      "path": "vf_voices/nikos/reveal_0.wav",
+      "text": "Spotted! They can see me!",
+      "duration": 2.0815,
+      "sha256": "f277bac375a7cd3f74b2b375243551d62e50bf9e10c30bdc4584f3e5fe8054f2"
+    },
+    {
+      "actor": 5,
+      "event": 30,
+      "variant": 0,
+      "path": "vf_voices/nikos/overclock_0.wav",
+      "text": "Pame! Everything's faster!",
+      "duration": 2.4431,
+      "sha256": "c1c8e1fb8337f6dc552f56527c421be75c7b5ff6431f70d9d7eccdff876986b3"
+    }
+  ],
+  "missing": [],
+  "format": {
+    "channels": 1,
+    "sample_rate": 11025,
+    "sample_width": 1
+  }
+}

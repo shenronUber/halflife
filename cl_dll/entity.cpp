@@ -17,6 +17,7 @@
 #include "vf_engine.h"
 #include "vf_ui.h"
 #include "vf_effects.h"
+#include "vf_weapon_fx.h"
 
 #include "particleman.h"
 extern IParticleMan *g_pParticleMan;
@@ -342,7 +343,7 @@ void CL_DLLEXPORT HUD_StudioEvent( const struct mstudioevent_s *event, const str
 {
 //	RecClStudioEvent(event, entity);
 
-	int iMuzzleFlash = 1;
+	int iMuzzleFlash = VF_WeaponFXSuppressStudioFlash(entity,event->event)?0:1;
 
 #if defined( _TFC )
 

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "toxic_ignition",
+  "variant": 0,
+  "text": "[panicked] The poison caught fire! Joder!",
+  "request": {
+    "text": "[panicked] The poison caught fire! Joder!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "d4914a0c919ade2bcf8ee15fc39c4187758dc6acd0bfdf53f5ff217efb87148e",
+  "sha256": "d5e01f9f76ef42ee43ae8de2a58f0f2809234645206961192fb0c1b2a07130e0",
+  "request_id": "KBzlaFMF9UhrnzlySq2X",
+  "reported_credit_cost": "5"
+}

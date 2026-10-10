@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "actor": "diego",
+  "cause": "toxic",
+  "text": "[wheezing][screaming] AAAGH!",
+  "request": {
+    "text": "[wheezing][screaming] AAAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "2573aa36c5cdd521f14073ae28d2bd81144aa9e962e015cfaffacb5c22765d2e",
+  "sha256": "64bf26f8f519b7a520695f9a038618f3b6f2ab2ca9647e3b52c4ffd3ff5bcd65",
+  "request_id": "glZH1WcgYpMFDMFYf2Zf"
+}

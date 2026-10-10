@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "model_id": "eleven_v4",
+  "event": "spawn",
+  "variant": 0,
+  "text": "[excited] Έλα! Let's make some trouble.",
+  "request": {
+    "text": "[excited] Έλα! Let's make some trouble.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "201ea69bda4a596ef9305c0e66b7e3ba9c67ad4bc0d102f22ce29fb4564ad6ae",
+  "sha256": "5e755c139595b8c01ee8c43e39bf195fdb73bcf5e1123e4d9048f489748ac0b4",
+  "request_id": "CViUgNo5vyboXpGfp0wq",
+  "reported_credit_cost": "4"
+}

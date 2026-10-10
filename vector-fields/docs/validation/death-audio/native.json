@@ -1,0 +1,799 @@
+{
+  "seconds": 83.38,
+  "cases": [
+    {
+      "case": "hydro",
+      "region": "head",
+      "active_native_channels": [
+        {
+          "name": "vf_death_sfx/death_hydro.wav",
+          "entnum": 24,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 4,
+          "pitch": 100,
+          "samplePos": 2560.0
+        },
+        {
+          "name": "vf_death_sfx/dismemberment_hydro.wav",
+          "entnum": 13,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 3,
+          "pitch": 112,
+          "samplePos": 2867.2000122070312
+        },
+        {
+          "name": "vf_deaths/rocco/hydro_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 1280.0
+        }
+      ]
+    },
+    {
+      "case": "electro",
+      "region": "left_arm",
+      "active_native_channels": [
+        {
+          "name": "vf_death_sfx/death_electro.wav",
+          "entnum": 24,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 4,
+          "pitch": 100,
+          "samplePos": 2048.0
+        },
+        {
+          "name": "vf_death_sfx/dismemberment_electro.wav",
+          "entnum": 34,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 3,
+          "pitch": 100,
+          "samplePos": 2048.0
+        },
+        {
+          "name": "vf_deaths/rocco/electro_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 1024.0
+        }
+      ]
+    },
+    {
+      "case": "cryo",
+      "region": "right_arm",
+      "active_native_channels": [
+        {
+          "name": "vf_death_sfx/death_cryo.wav",
+          "entnum": 24,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 4,
+          "pitch": 100,
+          "samplePos": 2048.0
+        },
+        {
+          "name": "vf_death_sfx/dismemberment_cryo.wav",
+          "entnum": 13,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 3,
+          "pitch": 100,
+          "samplePos": 2048.0
+        },
+        {
+          "name": "vf_deaths/rocco/cryo_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 1024.0
+        }
+      ]
+    },
+    {
+      "case": "thermal",
+      "region": "left_leg",
+      "active_native_channels": [
+        {
+          "name": "vf_death_sfx/death_thermal.wav",
+          "entnum": 24,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 4,
+          "pitch": 100,
+          "samplePos": 2048.0
+        },
+        {
+          "name": "vf_death_sfx/dismemberment_thermal.wav",
+          "entnum": 34,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 3,
+          "pitch": 92,
+          "samplePos": 1884.1600341796875
+        },
+        {
+          "name": "vf_deaths/rocco/thermal_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 1024.0
+        }
+      ]
+    },
+    {
+      "case": "toxic",
+      "region": "right_leg",
+      "active_native_channels": [
+        {
+          "name": "vf_death_sfx/death_toxic.wav",
+          "entnum": 24,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 4,
+          "pitch": 100,
+          "samplePos": 2048.0
+        },
+        {
+          "name": "vf_death_sfx/dismemberment_toxic.wav",
+          "entnum": 13,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 3,
+          "pitch": 92,
+          "samplePos": 1884.1600341796875
+        },
+        {
+          "name": "vf_deaths/rocco/toxic_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 1024.0
+        }
+      ]
+    },
+    {
+      "case": "corrosion",
+      "region": "head",
+      "active_native_channels": [
+        {
+          "name": "vf_death_sfx/death_corrosion.wav",
+          "entnum": 24,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 4,
+          "pitch": 100,
+          "samplePos": 2048.0
+        },
+        {
+          "name": "vf_death_sfx/dismemberment_corrosion.wav",
+          "entnum": 34,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 3,
+          "pitch": 112,
+          "samplePos": 2293.760009765625
+        },
+        {
+          "name": "vf_deaths/rocco/corrosion_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 1024.0
+        }
+      ]
+    },
+    {
+      "case": "sonic",
+      "region": "left_arm",
+      "active_native_channels": [
+        {
+          "name": "vf_death_sfx/death_sonic.wav",
+          "entnum": 24,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 4,
+          "pitch": 100,
+          "samplePos": 2560.0
+        },
+        {
+          "name": "vf_death_sfx/dismemberment_sonic.wav",
+          "entnum": 13,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 3,
+          "pitch": 100,
+          "samplePos": 2560.0
+        },
+        {
+          "name": "vf_deaths/rocco/sonic_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 1280.0
+        }
+      ]
+    },
+    {
+      "case": "kinetic",
+      "region": "right_arm",
+      "active_native_channels": [
+        {
+          "name": "vf_death_sfx/death_kinetic.wav",
+          "entnum": 24,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 4,
+          "pitch": 100,
+          "samplePos": 2560.0
+        },
+        {
+          "name": "vf_death_sfx/dismemberment_kinetic.wav",
+          "entnum": 34,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 3,
+          "pitch": 100,
+          "samplePos": 2560.0
+        },
+        {
+          "name": "vf_deaths/rocco/kinetic_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 1280.0
+        }
+      ]
+    },
+    {
+      "case": "arc_chain",
+      "region": "left_leg",
+      "active_native_channels": [
+        {
+          "name": "vf_death_sfx/death_arc_chain.wav",
+          "entnum": 24,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 4,
+          "pitch": 100,
+          "samplePos": 2048.0
+        },
+        {
+          "name": "vf_death_sfx/dismemberment_arc_chain.wav",
+          "entnum": 13,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 3,
+          "pitch": 92,
+          "samplePos": 1884.1600341796875
+        },
+        {
+          "name": "vf_deaths/rocco/arc_chain_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 1024.0
+        }
+      ]
+    },
+    {
+      "case": "superconduction",
+      "region": "right_leg",
+      "active_native_channels": [
+        {
+          "name": "vf_death_sfx/death_superconduction.wav",
+          "entnum": 24,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 4,
+          "pitch": 100,
+          "samplePos": 2048.0
+        },
+        {
+          "name": "vf_death_sfx/dismemberment_superconduction.wav",
+          "entnum": 34,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 3,
+          "pitch": 92,
+          "samplePos": 1884.1600341796875
+        },
+        {
+          "name": "vf_deaths/rocco/superconduction_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 1024.0
+        }
+      ]
+    },
+    {
+      "case": "shatter",
+      "region": "head",
+      "active_native_channels": [
+        {
+          "name": "vf_death_sfx/death_shatter.wav",
+          "entnum": 24,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 4,
+          "pitch": 100,
+          "samplePos": 2048.0
+        },
+        {
+          "name": "vf_death_sfx/dismemberment_shatter.wav",
+          "entnum": 13,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 3,
+          "pitch": 112,
+          "samplePos": 2293.760009765625
+        },
+        {
+          "name": "vf_deaths/rocco/shatter_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 1024.0
+        }
+      ]
+    },
+    {
+      "case": "resonant_impact",
+      "region": "left_arm",
+      "active_native_channels": [
+        {
+          "name": "vf_death_sfx/death_resonant_impact.wav",
+          "entnum": 24,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 4,
+          "pitch": 100,
+          "samplePos": 2048.0
+        },
+        {
+          "name": "vf_death_sfx/dismemberment_resonant_impact.wav",
+          "entnum": 34,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 3,
+          "pitch": 100,
+          "samplePos": 2048.0
+        },
+        {
+          "name": "vf_deaths/rocco/resonant_impact_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 1024.0
+        }
+      ]
+    },
+    {
+      "case": "cavitation",
+      "region": "right_arm",
+      "active_native_channels": [
+        {
+          "name": "vf_death_sfx/death_cavitation.wav",
+          "entnum": 24,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 4,
+          "pitch": 100,
+          "samplePos": 2048.0
+        },
+        {
+          "name": "vf_death_sfx/dismemberment_cavitation.wav",
+          "entnum": 13,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 3,
+          "pitch": 100,
+          "samplePos": 2048.0
+        },
+        {
+          "name": "vf_deaths/rocco/cavitation_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 1024.0
+        }
+      ]
+    },
+    {
+      "case": "caustic_contagion",
+      "region": "left_leg",
+      "active_native_channels": [
+        {
+          "name": "vf_death_sfx/death_caustic_contagion.wav",
+          "entnum": 24,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 4,
+          "pitch": 100,
+          "samplePos": 2560.0
+        },
+        {
+          "name": "vf_death_sfx/dismemberment_caustic_contagion.wav",
+          "entnum": 34,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 3,
+          "pitch": 92,
+          "samplePos": 2355.2000427246094
+        },
+        {
+          "name": "vf_deaths/rocco/caustic_contagion_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 1280.0
+        }
+      ]
+    },
+    {
+      "case": "toxic_ignition",
+      "region": "right_leg",
+      "active_native_channels": [
+        {
+          "name": "vf_death_sfx/death_toxic_ignition.wav",
+          "entnum": 24,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 4,
+          "pitch": 100,
+          "samplePos": 2048.0
+        },
+        {
+          "name": "vf_death_sfx/dismemberment_toxic_ignition.wav",
+          "entnum": 13,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 3,
+          "pitch": 92,
+          "samplePos": 1884.1600341796875
+        },
+        {
+          "name": "vf_deaths/rocco/toxic_ignition_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 1024.0
+        }
+      ]
+    },
+    {
+      "case": "steam_veil",
+      "region": "head",
+      "active_native_channels": [
+        {
+          "name": "vf_death_sfx/death_steam_veil.wav",
+          "entnum": 24,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 4,
+          "pitch": 100,
+          "samplePos": 2048.0
+        },
+        {
+          "name": "vf_death_sfx/dismemberment_steam_veil.wav",
+          "entnum": 34,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 3,
+          "pitch": 112,
+          "samplePos": 2293.760009765625
+        },
+        {
+          "name": "vf_deaths/rocco/steam_veil_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 1024.0
+        }
+      ]
+    },
+    {
+      "case": "neutral",
+      "region": "head",
+      "active_native_channels": [
+        {
+          "name": "vf_death_sfx/dismemberment_standard.wav",
+          "entnum": 13,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 3,
+          "pitch": 112,
+          "samplePos": 2293.760009765625
+        },
+        {
+          "name": "vf_deaths/rocco/standard_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 1024.0
+        }
+      ]
+    },
+    {
+      "case": "plain",
+      "region": "none",
+      "active_native_channels": [
+        {
+          "name": "vf_deaths/rocco/standard_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 1024.0
+        }
+      ]
+    },
+    {
+      "case": "effect_only",
+      "region": "none",
+      "active_native_channels": [
+        {
+          "name": "vf_death_sfx/death_electro.wav",
+          "entnum": 24,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 4,
+          "pitch": 100,
+          "samplePos": 2560.0
+        },
+        {
+          "name": "vf_deaths/rocco/electro_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 1280.0
+        }
+      ]
+    },
+    {
+      "case": "voices_muted",
+      "region": "left_arm",
+      "active_native_channels": [
+        {
+          "name": "vf_death_sfx/death_electro.wav",
+          "entnum": 24,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 4,
+          "pitch": 100,
+          "samplePos": 2048.0
+        },
+        {
+          "name": "vf_death_sfx/dismemberment_electro.wav",
+          "entnum": 28,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 3,
+          "pitch": 100,
+          "samplePos": 2048.0
+        }
+      ]
+    },
+    {
+      "case": "death_muted",
+      "region": "right_arm",
+      "active_native_channels": [
+        {
+          "name": "vf_death_sfx/dismemberment_electro.wav",
+          "entnum": 13,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 3,
+          "pitch": 100,
+          "samplePos": 2048.0
+        },
+        {
+          "name": "vf_deaths/rocco/electro_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 1024.0
+        }
+      ]
+    },
+    {
+      "case": "tear_muted",
+      "region": "right_leg",
+      "active_native_channels": [
+        {
+          "name": "vf_death_sfx/death_electro.wav",
+          "entnum": 24,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 4,
+          "pitch": 100,
+          "samplePos": 2048.0
+        },
+        {
+          "name": "vf_deaths/rocco/electro_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 1024.0
+        }
+      ]
+    },
+    {
+      "case": "both_muted",
+      "region": "head",
+      "active_native_channels": [
+        {
+          "name": "vf_deaths/rocco/electro_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 1024.0
+        }
+      ]
+    },
+    {
+      "case": "reaction_priority",
+      "region": "left_arm",
+      "active_native_channels": [
+        {
+          "name": "vf_death_sfx/death_arc_chain.wav",
+          "entnum": 24,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 4,
+          "pitch": 100,
+          "samplePos": 4096.0
+        },
+        {
+          "name": "vf_death_sfx/dismemberment_arc_chain.wav",
+          "entnum": 28,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 3,
+          "pitch": 100,
+          "samplePos": 4096.0
+        },
+        {
+          "name": "vf_deaths/rocco/arc_chain_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 2048.0
+        }
+      ]
+    },
+    {
+      "case": "expired",
+      "region": "none",
+      "active_native_channels": [
+        {
+          "name": "vf_deaths/rocco/standard_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 2048.0
+        }
+      ]
+    },
+    {
+      "case": "tactical",
+      "region": "none",
+      "active_native_channels": [
+        {
+          "name": "vf_deaths/rocco/standard_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 2304.0
+        }
+      ]
+    },
+    {
+      "case": "all_limbs",
+      "region": "all",
+      "active_native_channels": [
+        {
+          "name": "vf_death_sfx/death_shatter.wav",
+          "entnum": 24,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 4,
+          "pitch": 100,
+          "samplePos": 4096.0
+        },
+        {
+          "name": "vf_death_sfx/dismemberment_shatter.wav",
+          "entnum": 13,
+          "volume": 0.800000011920929,
+          "attenuation": 0.796875,
+          "channel": 3,
+          "pitch": 100,
+          "samplePos": 4096.0
+        },
+        {
+          "name": "vf_deaths/rocco/shatter_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 2048.0
+        }
+      ]
+    }
+  ],
+  "player": {
+    "cause": "cryo",
+    "native_s_show_capture": "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\death-audio\\player_mix.png"
+  },
+  "full_gib": {
+    "cause": "electro",
+    "native_s_show_capture": "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\death-audio\\gib_mix.png"
+  },
+  "checks": [
+    "all 16 genuine status deaths play three simultaneous native mixer channels",
+    "five body regions plus all-limb event; one detachment cue per event",
+    "ordinary non-elemental deaths retain only the cry",
+    "elemental death without dismemberment has two channels",
+    "voice and each SFX volume mute independently",
+    "active reaction outranks a more recently applied base element",
+    "expired effects and tactical conditions do not select elemental sounds",
+    "already dead targets cannot trigger a second death",
+    "restoring a settled corpse does not trigger old death sounds",
+    "real player death and full-body gib preserve the pre-clear effect"
+  ]
+}

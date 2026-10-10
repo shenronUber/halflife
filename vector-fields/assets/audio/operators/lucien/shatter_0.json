@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "shatter",
+  "variant": 0,
+  "text": "[alarmed] The ice is shattering around me!",
+  "request": {
+    "text": "[alarmed] The ice is shattering around me!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "9db6fb73cbf6abb845cad22d3f056c61681c9840774aa6b05b2d20881cf084f5",
+  "sha256": "d211dca0173f6b875a295ba0e50ac7c73b7de1f705e6e90a61dce70937229280",
+  "request_id": "8zJbOKirSPs7qiKcHWrF",
+  "reported_credit_cost": "5"
+}

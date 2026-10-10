@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "superconduction",
+  "variant": 0,
+  "text": "[strained] Frozen and electrified! Merde!",
+  "request": {
+    "text": "[strained] Frozen and electrified! Merde!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "3c8897d7958d1df6f46392353a170bd024f12eee9cd6a1ea6efb9db1f95ce871",
+  "sha256": "bf9699804983404372a8f34f3ecf28816345fc8af10cc0ab55b2d379c818b772",
+  "request_id": "PNc8QBSI8D6fbdG3T87U",
+  "reported_credit_cost": "5"
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "respawn",
+  "variant": 1,
+  "text": "[annoyed] This rifle is defective. I demand German quality control!",
+  "request": {
+    "text": "[annoyed] This rifle is defective. I demand German quality control!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "9d7970f39e8264f7f720aba4ac3b0bd59b3ef2bff58fc2a49c27ded646853bd8",
+  "sha256": "ee497b83a44df59a8e3744264a99a510d17c6f10cecca2388717726418a872a0",
+  "request_id": "047phhiRQRVtnhElog1h",
+  "reported_credit_cost": "7"
+}

@@ -1,0 +1,8 @@
+LIBRARY vf_bot_probe
+EXPORTS
+GiveFnptrsToDll=_GiveFnptrsToDll@8
+Meta_Query
+Meta_Attach
+Meta_Detach
+GetEntityAPI2
+GetEngineFunctions

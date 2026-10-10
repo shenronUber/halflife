@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "taunt",
+  "variant": 2,
+  "text": "[laughing] That was your best shot? Qué pena!",
+  "request": {
+    "text": "[laughing] That was your best shot? Qué pena!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "2aae2879fe678a7497684dddfc683f1310a01b233b9187f7a65028e89cc11abe",
+  "sha256": "72033b565de3a7b4e9512bda312404900229bed2b56c5f1b163f376ed7a7c48a",
+  "request_id": "RWxqKyKfi70ZbY1hnqW0",
+  "reported_credit_cost": "5"
+}

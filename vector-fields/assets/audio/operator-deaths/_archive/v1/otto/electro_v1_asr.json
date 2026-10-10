@@ -1,0 +1,47 @@
+{
+  "audio_sha256": "b10754fbba7f69ef363c08ab5e519db67f01fe9c3c22a58235f3b18b7f2ada96",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "[screaming] [grunting] [panting]",
+    "words": [
+      {
+        "text": "[screaming]",
+        "start": 0.0,
+        "end": 0.98,
+        "type": "audio_event",
+        "logprob": -0.019422019348928222
+      },
+      {
+        "text": " ",
+        "start": 0.98,
+        "end": 1.0,
+        "type": "spacing",
+        "logprob": -0.0008092227508313954
+      },
+      {
+        "text": "[grunting]",
+        "start": 1.0,
+        "end": 3.52,
+        "type": "audio_event",
+        "logprob": -0.005403984078535966
+      },
+      {
+        "text": " ",
+        "start": 3.52,
+        "end": 3.54,
+        "type": "spacing",
+        "logprob": -0.023245563730597496
+      },
+      {
+        "text": "[panting]",
+        "start": 3.54,
+        "end": 6.14,
+        "type": "audio_event",
+        "logprob": -0.033363201185455264
+      }
+    ],
+    "transcription_id": "KP5baughdl1snTNrQ17C",
+    "audio_duration_secs": 6.181
+  }
+}

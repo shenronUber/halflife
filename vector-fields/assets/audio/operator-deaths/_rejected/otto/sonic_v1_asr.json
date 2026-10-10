@@ -1,0 +1,61 @@
+{
+  "audio_sha256": "f009f2d316bdfbfe06a3a3b5442cc43c3b40c715877875c4ae27ef35e32db450",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "Ah, dear. [groaning] [exhaling]",
+    "words": [
+      {
+        "text": "Ah,",
+        "start": 0.14,
+        "end": 0.5,
+        "type": "word",
+        "logprob": -0.40398697679241496
+      },
+      {
+        "text": " ",
+        "start": 0.5,
+        "end": 0.74,
+        "type": "spacing",
+        "logprob": -0.1176876649260521
+      },
+      {
+        "text": "dear.",
+        "start": 0.74,
+        "end": 1.4,
+        "type": "word",
+        "logprob": -0.23282837271690368
+      },
+      {
+        "text": " ",
+        "start": 1.4,
+        "end": 1.4,
+        "type": "spacing",
+        "logprob": -2.2411095415009186e-05
+      },
+      {
+        "text": "[groaning]",
+        "start": 1.4,
+        "end": 2.8,
+        "type": "audio_event",
+        "logprob": -0.12111668371774915
+      },
+      {
+        "text": " ",
+        "start": 2.8,
+        "end": 2.8,
+        "type": "spacing",
+        "logprob": -0.0031777145341038704
+      },
+      {
+        "text": "[exhaling]",
+        "start": 2.8,
+        "end": 6.46,
+        "type": "audio_event",
+        "logprob": -0.04454465502021776
+      }
+    ],
+    "transcription_id": "yE550pzDJRs4aSznSnPs",
+    "audio_duration_secs": 6.51375
+  }
+}

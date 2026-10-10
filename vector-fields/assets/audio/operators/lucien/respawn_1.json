@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "respawn",
+  "variant": 1,
+  "text": "[annoyed] This weapon is an insult to engineering. I demand a refund!",
+  "request": {
+    "text": "[annoyed] This weapon is an insult to engineering. I demand a refund!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "81d15d0de1460b7e1ea617a83d9e5e52d27f6f6e3d78b85ca3631fd78f990bc3",
+  "sha256": "694744a8c927df0dd13df5fb1a775ac5aeb8d7c6897ab290de0c1b493e92263d",
+  "request_id": "qLuipV6MqVdSTAsgNKHZ",
+  "reported_credit_cost": "8"
+}

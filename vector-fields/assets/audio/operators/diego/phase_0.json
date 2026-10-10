@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "phase",
+  "variant": 0,
+  "text": "[laughing] Intangible! Catch me now!",
+  "request": {
+    "text": "[laughing] Intangible! Catch me now!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "fb99ca2d55d1c6efe422940f89fd4eeea26a276aa25562a3c422e1a32493e371",
+  "sha256": "37e1692359e7c17970d0f622b0dc7ecd5216ea8065d72f12c79f0a8d080b8b20",
+  "request_id": "eIpSJYcmVNm8ZazX59Yy",
+  "reported_credit_cost": "4"
+}

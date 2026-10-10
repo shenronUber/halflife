@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "actor": "diego",
+  "cause": "caustic_contagion",
+  "text": "[coughing] Khh! [choking] Ghrr... [wheezing] Hhh...",
+  "request": {
+    "text": "[coughing] Khh! [choking] Ghrr... [wheezing] Hhh...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "1fd78684b4afa866a075ad6cedae5389b8f2b7506499370e54422372b9dfc07d",
+  "sha256": "594cd6d51bbe3879bb31862e32702efe4cbb2c2b8f9bd373d6632be38d3b5fc4",
+  "request_id": "2JFlVCwgCSKddwma4Zpb"
+}

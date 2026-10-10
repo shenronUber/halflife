@@ -1,0 +1,49 @@
+{
+  "real_bots": 2,
+  "human_clients": 1,
+  "bot_exchange": [
+    [
+      "2",
+      "taunt",
+      "0",
+      "1"
+    ],
+    [
+      "1",
+      "counter_taunt",
+      "2",
+      "1"
+    ]
+  ],
+  "human_to_bots": [
+    [
+      "3",
+      "taunt",
+      "0",
+      "0"
+    ],
+    [
+      "2",
+      "counter_taunt",
+      "3",
+      "1"
+    ],
+    [
+      "1",
+      "counter_taunt",
+      "3",
+      "1"
+    ]
+  ],
+  "checks": [
+    "real jk_botti clients initiate taunts without injected speech commands",
+    "bots counter each other through ordinary auditory memory",
+    "bot master switch stops all new social speech",
+    "zero initiative and counter chances suppress bot speech",
+    "both bots hear and automatically answer the human when probability is one",
+    "a human answers an audible bot through the same key",
+    "native client receives bot and human counter clips",
+    "actual bullets proc Electro on a real bot and its fatal hit emits one contextual nonverbal cry"
+  ],
+  "scope": "local dedicated server; voice behavior uses the mod player think hook alongside jk_botti navigation and combat"
+}

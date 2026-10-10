@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Hydro / fire",
+  "created_utc": "2026-10-09T02:54:14.685452+00:00",
+  "request_sha256": "d53a6061d0ddd8094df408afcf5ebadda41fc05267f6414632fc1f72685553e6",
+  "request": {
+    "text": "Single pressurized water rifle shot. Immediate sharp compressed air crack with a wet high pressure liquid snap, tiny water droplets falling briefly. Punchy close dry game sound, no voice, no music, no echo, exactly one trigger pull at the beginning.",
+    "duration_seconds": 1.2,
+    "prompt_influence": 0.55,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "c99231f5e8a067ad5f242512555bc68078b362b0e8db6552c2ba9824f6397623",
+  "bytes": 20106,
+  "text": "Single pressurized water rifle shot. Immediate sharp compressed air crack with a wet high pressure liquid snap, tiny water droplets falling briefly. Punchy close dry game sound, no voice, no music, no echo, exactly one trigger pull at the beginning.",
+  "request_id": null,
+  "reported_credit_cost": "12"
+}

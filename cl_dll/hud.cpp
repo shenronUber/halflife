@@ -23,6 +23,7 @@
 #include <string.h>
 #include <stdio.h>
 #include "parsemsg.h"
+#include "vf_voice.h"
 #include "hud_servers.h"
 #include "vgui_int.h"
 #include "vgui_TeamFortressViewport.h"
@@ -372,6 +373,7 @@ void CHud :: Init( void )
 
 	m_Menu.Init();
 	VF_CharacterInit();
+	VF_VoiceInit();
 	
 	ServersInit();
 

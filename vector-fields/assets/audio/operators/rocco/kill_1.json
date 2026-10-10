@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "kill",
+  "variant": 1,
+  "text": "[laughing] Bravo, you almost had me!",
+  "request": {
+    "text": "[laughing] Bravo, you almost had me!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "66da43c65b6b836639dd1d8cc361094899f5aa5db42c60c5202ceb903d46ac8e",
+  "sha256": "154f6bda4627964ef882e061fa3ee0edef8ee4cc0ca4c1c07a276d6a6c2633e9",
+  "request_id": "xmliOQC4f1YaVQ34oPAU",
+  "reported_credit_cost": "4"
+}

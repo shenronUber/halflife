@@ -1,77 +1,175 @@
-# Vector Fields — version 0.14.0
+# Vector Fields — version 0.20.7
+
+La 0.20.7 consolide les équipements, animations, effets, voix et morts ajoutés depuis la dernière publication GitHub. Les fragments gardent les finitions indépendantes des gants et bottes ; la salle et les deux lanceurs utilisent des ressources vérifiées. [Notes de version](docs/RELEASE-0.20.7.md) · [Rapport de validation](docs/validation/maintenance-0.20.7.json).
+
+Morts : 16 signatures elementaires et 17 arrachements sonores, superposes au cri. Sang disperse en gouttes rouges avec gravite. Essai : **F4 puis F8** ; ecoute : `Atelier - Sons de mort.cmd`. Voir [les details](docs/DEATH-SOUNDS.md).
+
+Correction 0.20.1 : retrait complet du boîtier et du bracelet des gants, index aligné sur la prise des autres doigts, rechargement supérieur avec bascule de l’arme vers la gauche.
+
+Les états reçus du serveur affichent désormais une signature sur les bords de
+l’écran, un nom anglais avec durée restante et un halo sur les vrais gants et
+manches du R1. Les réactions montrent leurs deux composantes. Essai dans
+**F3 > Test joueur / voix** ; voir [les détails](docs/STATUS-FEEDBACK.md).
+
+Les huit éléments et huit réactions ont chacun une texture HUD originale,
+animée sur quatre images avec fondu entre les frames. Matières et couleurs
+restent distinctes ; le centre de visée est dégagé.
+Voir [la planche des decals](assets/status-feedback/decals/contact-sheet.png).
+
+La salle **vf_range** dispose de quatre cibles GIGN avec tenue et voix aléatoires.
+Six impacts du même élément en **3 secondes** activent un état visible pendant
+**6 secondes**. Choisir le vecteur dans **F3 > Weapon FX / R1**, puis tirer ;
+**J** les provoque. Voir [la salle et ses règles](docs/TEST-ROOM.md).
+
+Les morts et démembrements se testent dans **F8** après **F4**. L'**Atlas** relie
+les huit éléments et huit réactions à des gestuelles distinctes. Dix mouvements
+Quaternius/KayKit/Mixamo sont importés sur le GIGN. Les membres projetés produisent
+du sang et les particules de leur effet ; voir [l'atlas et l'inventaire](docs/DEATH-ATLAS.md).
+Les cinq coupes utilisent des [textures de plaie mesurées](docs/WOUND-TEXTURES.md).
 
 ## Version actuelle et lancement
 
-**Jouer - Vector Fields.cmd** lance le build courant, dans
-`runtime/vector-engine/vf_visual`. Le menu de gameplay contient **Opérateur**
-et **Arme / Relais R-01**. Les neuf emplacements opérateur restent présents :
-cinq zones GIGN produites et quatre équipements aux modèles provisoires
-(épaules, ceinture, bouclier et spécial).
+**Jouer - Vector Fields.cmd** lance la version courante dans
+`runtime/vector-engine/vf_visual`. **F1/F2** ouvre l’opérateur ; **F11**, l’arme.
+Choisir un emplacement, puis un objet de la liste, puis **Équiper**.
+**Annuler** rétablit la configuration précédente.
 
-Le lootpool contient 396 entrées nommées : 60 pièces GIGN, 312 combinaisons R1
-et 24 équipements provisoires. Les six familles de gameplay restent inchangées ;
-la collection cosmétique est indiquée séparément. Le démarrage équipe la
-Sentinelle des tranchées et son R1 Grande Guerre.
+Les collections servent uniquement à filtrer la liste. Il n’y a plus de boutons
+d’ensemble ni de changement global de texture dans le menu de jeu. Chaque
+objet possède sa finition, son nom et son identifiant ; changer de châssis
+conserve les onze autres objets de l’arme. Tous les objets sont accessibles.
 
-**F1/F2** : opérateur. **F11** : arme. **F6/F7** : options développeur.
-Les anciens skins, prototypes, arsenaux et outils de visualisation se trouvent
-dans cet espace dev. **Retour au jeu** restaure l'équipement de gameplay.
-Les anciens raccourcis restent archivés dans `legacy-launchers`.
+Le catalogue de jeu comporte **948 objets** : 854 pièces R1 (61 géométries dans
+14 finitions), 70 pièces de tenue et 24 accessoires provisoires. Les cinq zones
+GIGN ont quatorze collections, dont les nouvelles tenues **Rome / Inventeur**
+et **Dieselpunk**. Épaules, ceinture, bouclier et spécial restent optionnels.
 
-[Notes de version, lootpool et vérifications](docs/RELEASE-0.14.0.md) ·
-[Historique](CHANGELOG.md)
+Les mains en première personne suivent les **gants équipés**, et les manches
+la **veste équipée**. Les quatorze collections peuvent être mélangées ; le
+changement prend effet en validant l’objet, sans modifier la finition de l’arme.
+Le dépliage anatomique conserve les détails disponibles dans les textures
+actuelles ; la plaque carrée est supprimée et les doigts arrondis sans changer le
+squelette. La prise du chargeur latéral est inclinée vers l’avant, avec un
+poignet assoupli.
 
-## Trois plateformes de chargement
+Pour contrôler les modèles compilés et leurs UV hors du jeu :
+`python vector-fields/inspect_first_person.py`, puis ouvrir
+`vector-fields/build/first-person-inspector.html` (rotation, zoom, paume/dos,
+maillage et choix des quatorze tenues).
 
-Dans **F11**, les boutons **Dessous / Latéral / Dessus** changent uniquement
-le châssis. **Appliquer**, fermer le menu, tirer puis **R** pour recharger.
+**Atelier - Animations.cmd** prépare et ouvre l’atelier animé hors du jeu.
+La vue initiale présente notre personnage GIGN tenant les douze pièces réelles
+R-01. Trois alimentations, quatre chargeurs, finitions, maintien, tir personnalisé,
+recharges MP5/fusil adaptées et poses accroupies sont disponibles. Marche,
+course et déplacement accroupi superposent les animations existantes des jambes.
+Les animations de déplacement de base sont conservées.
 
-| Plateforme | Emplacement | Animation |
-|---|---|---|
-| Atelier / Circuit | Dessous | Cycle MP40 existant |
-| Traverse | Côté gauche | Prise du chargeur, extraction latérale, échange puis insertion latérale |
-| Zénith | Dessus | Prise haute, levée, dégagement sur le côté, échange puis insertion verticale |
+En première personne, **Appui avant** permet de vérifier la poignée inclinée,
+le tube auxiliaire, le stabilisateur replié et le garde-main. Équiper une poignée
+inclinée sélectionne automatiquement une prise dédiée dans le jeu, pour ses
+quatorze finitions et les trois alimentations. La main quitte la poignée pour
+saisir le chargeur, puis revient dessus. Le geste visuel termine maintenant en
+**1,5 s**, comme la recharge gameplay existante. Le trajet du chargeur, la main
+droite, les événements sonores et les neuf indices de séquences sont conservés.
+La torsion de l’avant-bras supérieur est stabilisée. La troisième personne
+conserve ses prises actuelles ; aucune variante de poignée avant n’y est ajoutée.
 
-Les **mêmes deux chargeurs**, avec les mêmes identifiants, coûts et propriétés,
-fonctionnent sur les trois plateformes. Changer de plateforme conserve tous
-les autres composants et leurs douze finitions. Zénith possède un pont déporté
-pour le viseur. Le châssis a quatre variantes (deux dessous, une latérale, une
-supérieure), les onze autres interfaces deux chacune : **8 192 assemblages**.
+Les réglages déplacent l’arme, son appui gauche et les coudes, avec vérification
+de la portée des bras. **Exporter la recette** sauvegarde un JSON ; déposer ce
+fichier sur **Atelier - Animations.cmd** recompile l’essai et ouvre le résultat.
+La recette de référence est `assets/animations/r01-third-person.json`.
+Les anciennes vues FP et Counter-Strike restent accessibles pour comparaison.
 
-Sur Traverse, la main gauche forme un poing au centre du chargeur latéral,
-y compris au repos et au tir.
-Sur Zénith, elle soutient le garde-main au repos puis vient saisir le chargeur
-par la gauche pour recharger, paume tournée vers le joueur.
+Les trois porteurs R-01 compilés ont 31 os (les 28 existants et trois points
+pour l’arme, le chargeur et la culasse), 77 séquences à leurs indices historiques
+et quatre recharges ajoutées. Les recharges ont un chargeur mobile, une arme légèrement abaissée et basculée,
+et des prises adaptées à chaque alimentation.
+L’affichage des adversaires réutilise leur équipement et leurs finitions réseau,
+avec une extension native v3 (24 pièces, échelle des sockets, suppression de
+l’arme historique remplacée). Cette intégration est vérifiée dans un runtime
+d’essai séparé sous `build/animation-native`. Le moteur installé dispose aussi
+de cette extension v3. Recompiler le moteur et le client ensemble lors
+d’un changement d’interface. Le lanceur refuse un mélange v2/v3 avant de copier des
+fichiers, pour éviter un affichage de secours Half-Life inattendu.
 
-Les nouveaux cycles utilisent les mains du MP40, mais leur trajectoire gauche
-et celle du chargeur sont produites dans `build_reference_platforms.py`.
-Une résolution à deux articulations conserve les longueurs du bras ; la main
-accompagne le chargeur pendant l'extraction et l'insertion. Les sons de retrait
-et d'insertion sont synchronisés aux nouveaux cycles. Les doigts utilisent
-encore une prise commune, sans animation distincte de chaque verrou.
+Le serveur déclenche la recharge MP5 uniquement lorsqu’elle est acceptée,
+utilise le porteur à 81 séquences, conserve le geste pendant les déplacements et
+son avancement lors d’un changement debout/accroupi. La fin ou le rangement de
+l’arme rend la pose de maintien. Les chargeurs pleins ne déclenchent aucun geste.
+Le remplacement systématique du modèle joueur dans `CheckPowerups` est corrigé :
+il rétablissait l’index Gordon à chaque image, malgré le nom du modèle équipé.
+Pour les porteurs R-01, la rotation du torse suit désormais la verticale plutôt
+que les axes inclinés de la colonne accroupie ; les appuis natifs sont conservés.
+`tests/third_person_native_test.py` vérifie ces états sur deux clients et prend
+des captures du geste reçu. `--verify` relit une session existante sans relancer
+le jeu. L’intégration reste dans `build/animation-native`.
+Les dimensions anatomiques des zones de dégâts sont héritées du porteur GIGN ;
+leurs positions suivent maintenant le porteur serveur. Le combat et ces zones
+restent à valider. Le donneur
+comporte notamment une ancienne zone de bouclier (groupe 8), à adapter à notre équipement.
+Le geste FP est synchronisé sur les 1,5 s de recharge gameplay.
+Les contrôles de prise et le test natif ciblé sont décrits dans
+[la note sur les poignées avant](docs/ANIMATIONS-FOREGRIP.md).
 
-Commandes de contrôle : `vf_reference_platform 0|1|2`, `vf_reference_hands 1`
-(mains dans l'aperçu), `vf_animation 3` (rechargement),
-`vf_animation_time 0.7` (arrêt sur une seconde précise).
-Le tir, la capacité et la durée de recharge effective restent ceux du MP5 ;
-cette étape valide la construction et les gestes des trois alimentations.
+Les équipements sans apparence explicite utilisent désormais GIGN lorsque ce
+corps est disponible, y compris les anciennes catégories qui choisissaient HEV.
+Une apparence explicitement sélectionnée dans l’ancien laboratoire reste respectée.
+Le moteur utilise aussi le corps GIGN complet envoyé par le serveur pendant
+l’attente de l’assemblage réseau, au lieu du modèle Half-Life Gordon par défaut.
 
-## Finitions R-01 sur geometrie partagee
+**F6/F7** ouvre l’espace développeur avec les anciens skins, préréglages,
+prototypes et outils de finition. **Retour au jeu** restaure l’équipement de jeu.
+Le lancement ouvre l’inventaire sans appliquer un ensemble préfabriqué.
 
-**F11** ouvre le Relais R-01. Le panneau **FINITION** propose douze jeux de
-textures : original, guerre, forge medievale, prehistoire, jungle,
-alchimie medievale, porcelaine fluidique, Grande Guerre, Bedrock, New York noir,
-Bois de naufrage et Abysses. Choisir **Toute l arme** ou
-**Cette piece**, utiliser les fleches, puis **Appliquer**. **Annuler** restaure
-les formes et les finitions precedentes.
+[Notes de version et vérifications](docs/RELEASE-0.20.1.md) ·
+[Historique](CHANGELOG.md) ·
+[Validation et sauvegardes](docs/ARCHITECTURE.md) ·
+[Hitboxes et propriétés physiques des matériaux](docs/COMBAT-MATERIALS.md)
 
-Les 26 pièces embarquent les douze familles de textures : un changement
-de finition reutilise le meme maillage et les memes animations. Les choix
-par emplacement sont valides avec l'equipement, sauvegardes et transmis
-aux clients. L'atelier et la premiere personne les affichent ; l'arme en
-troisieme personne conserve encore son modele stock.
+## Châssis et modules
 
-[Banques, ajout d'un atlas et fonctionnement](assets/r01/variants/README.md)
+**Arche supérieure** est une nouvelle variante du corps central, courbe et
+ajourée, alimentée par le haut et dotée d’un support d’optique déporté. Elle
+complète Zénith. Le châssis définit la position du chargeur :
+
+| Position | Châssis |
+| --- | --- |
+| Dessous | Atelier, Circuit, Nomade, Bastion, Arche, Gyre |
+| Latérale | Traverse |
+| Dessus | Zénith, Arche supérieure |
+
+Les quatre modèles de chargeur et tous les autres modules restent
+interchangeables. Les neuf châssis existent dans les quatorze finitions.
+Dans **F11 → Châssis**, filtrer une collection permet de comparer leurs formes.
+
+Les pièces Inventeur et Dieselpunk font partie du même inventaire :
+
+| Emplacement | Inventeur | Dieselpunk |
+| --- | --- | --- |
+| Culasse | Manivelle et roue dentée | Arbre à cames et ressort |
+| Optique | Dioptre astrolabe | Viseur périscopique |
+| Batterie | Accumulateur à ressort | Réservoir à huile |
+| Refroidissement | Éventails à lamelles | Radiateur à faisceau |
+
+Chacune possède quatorze objets nommés, un par finition. Les préréglages Atelier,
+Circuit, Nomade, Bastion, Inventeur et Dieselpunk sont réservés au développeur.
+Les matières Rome / Inventeur emploient bois, toile dessinée, cordages et
+mécanismes anciens ; Dieselpunk emploie fonte huileuse, carrosserie nervurée,
+bakélite et instruments analogiques. Les mêmes atlas couvrent les 61 géométries.
+
+## Technique et limites actuelles
+
+Les indices d’objets réseau sont sur 16 bits (protocole 4). Les sauvegardes
+reposent sur des clés stables et retrouvent les anciennes pièces avec leurs
+finitions indépendantes. Les finitions liées aux objets sont validées côté serveur.
+
+Le tir, la capacité et la durée effective de recharge restent ceux du MP5.
+Les formes s’assemblent dans l’inventaire et à la première personne ; l’arme
+portée en troisième personne garde encore son modèle historique. Les nouvelles
+tenues utilisent la silhouette et les animations GIGN communes. Les quatre
+emplacements d’accessoires opérateur utilisent toujours des modèles provisoires.
+
+[Banques de matières et ajout d’un atlas](assets/r01/variants/README.md)
 
 ## Jouer
 
@@ -111,6 +209,11 @@ maintenant toutes les vues. F1 et F2 ouvrent l’opérateur ; F6 ouvre les outil
 | Annuler les choix techniques ou les skins non validés | Annuler |
 | Fermer et retrouver la visée souris | Croix en haut à droite, F1/F2 ou Échap |
 
+## Archives techniques du laboratoire
+
+Les parcours et boutons de ces anciennes versions concernent les outils développeur.
+Pour le menu de jeu actuel, utiliser le parcours d’inventaire décrit en tête de page.
+
 ## Relais R-01 — arme de référence 0.11
 
 **`Jouer - Vector Fields.cmd`** ouvre le laboratoire avec le R-01 équipé, en
@@ -119,8 +222,8 @@ maintenant toutes les vues. F1 et F2 ouvrent l’opérateur ; F6 ouvre les outil
 ensembles complets. Choisir un emplacement à gauche, une variante à droite,
 puis **Appliquer**. La croix ou Échap rend le contrôle au joueur.
 
-Les deux ensembles partagent les mêmes interfaces ; les 12 choix sont
-indépendants, soit **8 192 assemblages visuels**. Le bouton **Isoler cette pièce
+Les quatre ensembles partagent les mêmes interfaces ; les 12 choix sont
+indépendants, soit **169 869 312 assemblages possibles** avec les huit châssis. Le bouton **Isoler cette pièce
 en 3D** permet d'examiner un composant avec rotation à la souris et zoom à la
 molette. Une seconde pression revient à l'arme complète. F11 conserve les choix
 appliqués quand on rouvre l'atelier. Les collections historiques restent
@@ -149,8 +252,8 @@ Une page **Relais R-01** a également été ajoutée au guide dans le jeu.
 
 ### Fabrication et animations
 
-Les 26 pièces sont de nouvelles géométries créées dans
-`build_reference_weapon.py`, avec des plans de raccord communs. Les détails
+Les 60 pièces sont des géométries créées dans
+`build_reference_weapon.py`, `build_reference_extensions.py` et `build_reference_chassis.py`, avec des plans de raccord communs. Les détails
 comprennent des bouches creuses, colliers, ailettes, conduites, bornes, rails,
 verrous, vis, protections et des panneaux portant des marquages techniques.
 Le viseur cadre utilise une ouverture rectangulaire chanfreinée et **la texture
@@ -190,17 +293,20 @@ python vector-fields/play.py --visual-lab --deploy-only
 python vector-fields/tests/reference_engine_test.py
 python vector-fields/tests/reference_lens_test.py
 python vector-fields/tests/reference_platform_test.py
+python vector-fields/tests/reference_extensions_test.py --mode native
+python vector-fields/tests/reference_chassis_test.py --mode all
+python vector-fields/tests/reference_themes_test.py --mode all
 ```
 
-Le test natif vérifie les 8 192 assemblages, les 26 maillages et les 12 différences
-visuelles de variantes, puis les choix à la souris, le guide, les deux ensembles
-en main et en rechargement, un montage mixte, et la sauvegarde/reprise.
-Il produit des captures exclusivement en 1920×1080 dans
-`runtime/vector-engine/vf_visual/scrshots/r01_*.png` et un rapport
-`build/reference-verification.json`. Le test exhaustif d'assemblage vérifie la
-validité des modèles et des ancrages ; il ne remplace pas une inspection visuelle
-de chacune des 8 192 combinaisons. Les mesures de prévisualisation sont des temps
-CPU, pas des temps GPU.
+Le test natif vérifie 1 700 assemblages couvrant chaque pièce et chaque paire
+d’emplacements, ainsi que les 60 maillages. Il contrôle les choix à la souris,
+le guide, les ensembles en main, les rechargements et la sauvegarde/reprise.
+`reference_extensions_test.py --mode native` ajoute les 24 aperçus Nomade/Bastion
+et les deux nouveaux chargeurs sur les trois montages. Leurs captures et
+rapports sont produits dans `runtime/vector-engine/vf_visual/scrshots/` et
+`vector-fields/build/`. Cette couverture par paires ne constitue pas une
+inspection de toutes les configurations complètes. Les mesures de
+prévisualisation portent sur les temps CPU.
 
 `reference_platform_test.py` contrôle en plus les poses des mains relues depuis
 les SMD, les longueurs de bras, l'orientation de la paume et la prise centrée,
@@ -369,7 +475,7 @@ Les boutons de collection chargent une proposition complète pour l’onglet cou
 
 **Arme :** châssis, canon, poignée/crosse et sous-canon déterminent les quatre pièces déjà découpées dans les modèles MP40, Thompson et Nailgun. Les huit autres emplacements ajoutent embout, habillage de chargeur, culasse, cartouche, ogive, optique, batterie et refroidisseur. Le chargeur suit son os animé `Bone71`. Les accessoires proviennent de `build_equipment_visuals.py` : **12 modèles procéduraux, chacun avec 6 variantes de famille**, soit 72 variantes. Ils sont volontairement simples ; certains emplacements internes sont rendus visibles comme boîtiers de démonstration.
 
-Le personnage et le mannequin utilisent le choix confirmé par le serveur. Ce choix et le mode sont transmis aux autres clients. Les assemblages de l’arme restent une démonstration **en première personne** ; l’arme portée en troisième personne conserve son modèle antérieur. Le tir, les dégâts et la balistique restent ceux du MP5. Les prises de main et intersections de certains mélanges nécessitent encore du travail artistique. Les mains en première personne restent celles du modèle MP40 ; les gants sélectionnés pour l’opérateur sont visibles sur le personnage 3D.
+Le personnage et le mannequin utilisent le choix confirmé par le serveur. Ce choix et le mode sont transmis aux autres clients. Les assemblages de l’arme restent une démonstration **en première personne** ; l’arme portée en troisième personne conserve son modèle antérieur. Le tir, les dégâts et la balistique restent ceux du MP5. Les prises de main et intersections de certains mélanges nécessitent encore du travail artistique. Depuis la 0.20, les mains R-01 conservent le squelette MP40 avec un maillage ajusté ; elles reprennent les gants équipés, et les manches reprennent la veste.
 
 ### Corrections visuelles
 
@@ -446,7 +552,7 @@ Aucun asset, coefficient ou système de dégâts de Warframe n’est importé.
 
 ### Manipuler les effets
 
-Dans chaque fiche, **Voir cet effet dans la salle** place un mannequin TFC
+Dans chaque fiche, **Voir cet effet dans la salle** place un mannequin GIGN
 local devant le joueur, sur un sol libre. **Comparer A / B / résultat** place
 les deux VP de part et d’autre de leur RC. L’espace doit être libre ; un
 placement obstrué est refusé. **Appliquer à la cible** attache le visuel au
@@ -459,11 +565,12 @@ projetées dans le cadre. Le halo natif est évalué **dans la salle** (bouton
 sur le modèle. Rotation, zoom, pause et désactivation des particules permettent
 d’inspecter les couches. Le halo et les particules peuvent être coupés séparément.
 
-**Tous ces effets sont visuels et locaux au client.** Il n’y a ni dégâts,
-ni bonus, ni ralentissement, ni invincibilité, ni déclenchement automatique
-par les armes. Les descriptions présentent l’intention future, sans fixer
-les chiffres. La synchronisation des effets entre clients n’est pas encore
-implémentée. Les précédentes synchronisations d’équipement sont conservées.
+Les aperçus de ce guide restent locaux au client. Les états des vrais joueurs
+et des quatre cibles GIGN sont maintenant gérés par le serveur. Les balles
+peuvent déclencher les huit états primaires après six impacts en trois secondes ;
+voir [la salle de test](docs/TEST-ROOM.md). Les dégâts et coefficients de protection
+restent ceux du jeu actuel ; les effets ne calibrent pas encore de ralentissement,
+dégât périodique ou invincibilité.
 
 ### Rendu et ressources
 
@@ -471,7 +578,7 @@ implémentée. Les précédentes synchronisations d’équipement sont conservé
 le graphe et produit `cl_dll/vf_effect_catalog.h`. Le rendu lit ces recettes.
 Les trajectoires sont dans `cl_dll/vf_effect_math.h` et les intégrations dans
 `cl_dll/vf_effects.cpp` (HUD, TriangleAPI, entités locales, `kRenderFxGlowShell`).
-Le cœur Xash3D n’a pas besoin d’une nouvelle modification pour ces effets.
+Le cÅ“ur Xash3D n’a pas besoin d’une nouvelle modification pour ces effets.
 
 Cinq sprites installés de Half-Life sont réutilisés : `bubble.spr`,
 `hotglow.spr`, `steam1.spr`, `fire.spr`, `white.spr`. Ils sont copiés dans
@@ -861,3 +968,28 @@ Le lanceur `Jouer - Vector Fields.cmd` équipe un GIGN et un R1 assortis.
 Les cinq nouveaux ensembles (Grande Guerre, Bedrock, New York noir, naufragé
 et plongeur) sont décrits dans [assets/EXPEDITIONS.md](assets/EXPEDITIONS.md).
 Les personnages restent entièrement couverts, avec les yeux visibles.
+
+
+## Effets de tir R1
+
+Huit profils de présentation sont disponibles dans **F3 > Weapon FX / R1** :
+Hydro, Electro, Cryo, Thermal, Toxic, Corrosion, Sonic et Kinetic. Le tireur voit une étoile frontale dédiée ; le jet axial est réservé aux vues
+extérieures. Les flashes historiques du modèle R1 sont filtrés. Les marques de
+balle sont réduites à 4–7 unités. Chaque profil possède ses particules, sa
+trace et ses sons, avec des contacts métal, bois et chair distincts.
+**Open FX test range** ouvre le stand de contrôle. Kinetic reste le profil
+normal ; les profils de test ne changent pas les dégâts.
+Voir [les commandes, les assets et les tests](WEAPON_FX.md).
+
+## Validation et maintenance
+
+`powershell -ExecutionPolicy Bypass -File vector-fields/build.ps1` compile les DLL,
+les tests C++ et valide les suites unitaires et les assets. Après déploiement avec
+`python vector-fields/play.py --visual-lab --deploy-only`, exécuter
+`python vector-fields/validate.py --suite native`, puis `--suite multiplayer`.
+`--suite all` enchaîne les quatre suites ; `--list` donne la liste maintenue.
+
+Les traits de modèles sont dans `data/model_contract.json`. Les rigs et les
+pièces d’arme disposent de caches séparés qui vérifient leurs dépendances et
+sorties. Voir [les contrats](docs/ARCHITECTURE.md) et
+[la version 0.20.7](docs/RELEASE-0.20.7.md).

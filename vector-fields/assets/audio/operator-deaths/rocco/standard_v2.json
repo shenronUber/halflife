@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "actor": "rocco",
+  "cause": "standard",
+  "text": "[screaming] AAAAGH!",
+  "request": {
+    "text": "[screaming] AAAAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "16c9446c4d0d1e52cd3ca0573c50a9aaf8bbf0bfdf1136e71c92d2abde95be89",
+  "sha256": "228179fb17ac2866b27f4cf8cc1545355bf38bcc2f52cd18ecae3a18fc158538",
+  "request_id": "oFTkp7A56Dshb46pwszY"
+}

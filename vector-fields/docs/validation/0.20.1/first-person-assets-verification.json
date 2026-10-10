@@ -1,0 +1,37 @@
+{
+  "assets": {
+    "triangles": 825,
+    "added_finger_triangles": 334,
+    "skin_pairs": 196,
+    "weapon_models_unchanged": 61,
+    "idle_wrist_degrees": 23.015108202212073,
+    "max_reload_elbow_step_degrees": 6.65019097217909,
+    "top_reload_roll_degrees": -64.99999978248724,
+    "top_wrist_height_reduction_units": 17.93622841068103,
+    "removed_accessory_triangles": 55,
+    "checks": [
+      "original glove surface and joint vertices retained; complete display/frame and detached cuff removed; fingers rounded without new bones",
+      "merge bones and bind pose compatible with all three rigs",
+      "14 non-CHROME skin families on each part, noncollapsed anatomical UVs, smooth glove normals",
+      "all 196 glove/sleeve skin pairs resolve",
+      "relaxed lateral wrist and low elbow",
+      "no elbow pole flip in reload",
+      "whole index chain matches the middle finger",
+      "smooth left top-reload roll, right grip and both arm lengths preserved"
+    ]
+  },
+  "platforms": {
+    "serialized_frames": 740,
+    "max_grip_error": 2.0923434629338544e-07,
+    "styles": 854,
+    "checks": [
+      "left arm lengths unchanged",
+      "lateral hand holds magazine at idle and throughout all sequences",
+      "hand follows magazine during both reloads",
+      "centred overhand lateral grasp; top palm faces the player",
+      "directional extraction and identical seated endpoints",
+      "four shared magazine IDs and unchanged costs",
+      "61 meshes with all installed finishes"
+    ]
+  }
+}

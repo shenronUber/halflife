@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "counter_taunt",
+  "variant": 1,
+  "text": "[threatening] I'll kill you, pezzo di merda!",
+  "request": {
+    "text": "[threatening] I'll kill you, pezzo di merda!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "2301aa4ebc51839ce097dbfd9a5b2e6696d2fc214b02efcb922071c8da3d8cbe",
+  "sha256": "fd0f54f03b1e6020fe37c9237eb3c62d17a16ecffa6a8a82bb69b9f77387a95a",
+  "request_id": "FHLNB7dF6sebGczibDTA",
+  "reported_credit_cost": "5"
+}

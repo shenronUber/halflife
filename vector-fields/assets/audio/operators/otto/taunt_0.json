@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "taunt",
+  "variant": 0,
+  "text": "[taunting] Come here, Dummkopf. Show me your aim.",
+  "request": {
+    "text": "[taunting] Come here, Dummkopf. Show me your aim.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "64acdae9e0953758c4a30d255cf767c434cb586e2995c9d6de7b751e462bbec7",
+  "sha256": "a4198343292d237974ca7fc3ee7dc30bef737aaf44cf35f4c6f68bfc7fa490ad",
+  "request_id": "3w6N4XICBvenGOJRKnwF",
+  "reported_credit_cost": "5"
+}

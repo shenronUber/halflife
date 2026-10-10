@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "toxic",
+  "variant": 0,
+  "text": "[coughs] Gift! Ugh, poison!",
+  "request": {
+    "text": "[coughs] Gift! Ugh, poison!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "1a46b08407aceabfcfee61b295c5a87a415c81d290f635f5e3f52020e888cb89",
+  "sha256": "ed975c1161d8724584cff228e18f951979470948e4925fe21eebda195d60f1a8",
+  "request_id": "foQlFg2FL8H8M4GiyiJC",
+  "reported_credit_cost": "3"
+}

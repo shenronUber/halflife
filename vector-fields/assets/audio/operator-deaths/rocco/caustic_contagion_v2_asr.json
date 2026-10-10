@@ -1,0 +1,19 @@
+{
+  "audio_sha256": "798d7b06ffbade3e9451490b896e0854c61f23dfd9f31e81593f0b6629a6f59b",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "[shouts]",
+    "words": [
+      {
+        "text": "[shouts]",
+        "start": 0.08,
+        "end": 1.0,
+        "type": "audio_event",
+        "logprob": -0.2650991250670308
+      }
+    ],
+    "transcription_id": "SBR0u0xoJU3zQg9RO0ny",
+    "audio_duration_secs": 1.5053125
+  }
+}

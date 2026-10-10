@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "actor": "lucien",
+  "cause": "shatter",
+  "text": "[screaming] AAGH!",
+  "request": {
+    "text": "[screaming] AAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "d896c1a97d6f43b88f7043f49fb350dd32f25d212fc4055677a7e017b860f9fb",
+  "sha256": "cfa2cbdcba9c010051efd845ca549775fc0c607a0d1ac1caef26214c8f5e4ab1",
+  "request_id": "G0vWwShREppDka4sw1Pq"
+}

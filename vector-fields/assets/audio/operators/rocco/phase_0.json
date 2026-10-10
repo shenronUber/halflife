@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "phase",
+  "variant": 0,
+  "text": "[pleased] Intoccabile! Phasing through!",
+  "request": {
+    "text": "[pleased] Intoccabile! Phasing through!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "45e60cab35ed47d3a9ea7470790960b8b2a7dec161890ad432a88a0b2c2d66f0",
+  "sha256": "dbaafd7b5b56783f2a528994a7a1b3bd8a80c41fc62c4e772ff8fc5ee6dc2fc0",
+  "request_id": "xTK0YMhAZgQ63bSaXbwt",
+  "reported_credit_cost": "4"
+}

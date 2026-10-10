@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "actor": "nikos",
+  "cause": "cryo",
+  "text": "[shivering] Hh-hh... [groaning] Nnngh... [weakly] Hhh...",
+  "request": {
+    "text": "[shivering] Hh-hh... [groaning] Nnngh... [weakly] Hhh...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "2d90b7e28058d0eed2e0aaefb8dd985213c141ca5347068c65293e49ca590267",
+  "sha256": "bcc532cd4bc2d7188823a5f586602981c4cfeda7c83fdc369fea54423895e07d",
+  "request_id": "ATFUbfE4jqj88zaOgPLD"
+}

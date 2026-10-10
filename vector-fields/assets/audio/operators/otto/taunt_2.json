@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "taunt",
+  "variant": 2,
+  "text": "[laughing] Ach, you call that shooting?",
+  "request": {
+    "text": "[laughing] Ach, you call that shooting?",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "00597b8241554b07b0abb33d9deea60c9ed6068a3a2a83407c054e461e2b4778",
+  "sha256": "a69fab18bf88eabbb9659e1aa784d2d98b865a3f00906fecfc77ebef2137dd43",
+  "request_id": "wlypJTtXqa0WuiPyXJ2N",
+  "reported_credit_cost": "4"
+}

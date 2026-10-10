@@ -1,0 +1,20 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Asset type: a production VFX sprite atlas for a retro first person shooter using GoldSrc / Half-Life style effects.\nCreate ONE precisely aligned sprite atlas on a genuinely transparent background, portrait format, 4 columns and exactly 8 rows (32 equal rectangular cells). No labels, letters, borders, grid lines, weapons, characters or scenery. Each sprite centered in its own cell with generous transparent padding; no sprite may cross its cell. Treat all sprites as individual isolated white / light gray effects, with internal gray shading and strong legible silhouettes, suitable for runtime color tinting. Avoid any colored background, checkerboard pattern, or uniform square glow.\nEach row is a distinct elemental visual family, in THIS exact top-to-bottom order:\n1 WATER: a short pressured splash of droplets; a radial watery impact splash; one rounded droplet particle; a soft fine mist puff.\n2 ELECTRIC: angular branching arc burst; a sharp radial arc contact burst; a short crooked lightning particle; a thin wispy ion haze.\n3 ICE: jagged crystalline muzzle eruption; a shattered frost star with needle crystals; one faceted ice shard; a compact frosty vapor puff.\n4 FIRE: an irregular fiery muzzle bloom with pointed flame tongues; a scorched radial flame impact; one tiny ember spark with tapered tail; a soot smoke puff.\n5 TOXIC: a restrained spore discharge with fine floating points; a clustered organic spore contact bloom; one distinct small spore pod; a thin spore haze. Not acid, not liquid.\n6 CORROSION: a short viscous liquid spit; an irregular radial acid splatter with separate beads; one elongated acid bead; a small chemical fume curl.\n7 SONIC: three compressed concentric pressure waves with broken bright arcs; a clear concentric ripple impact disk; a short curved wave fragment; faint airy pressure distortion wisps rendered as visible fine gray strokes.\n8 KINETIC: a classic asymmetrical muzzle flash with hot white core and small spikes; a rough physical chipped bullet crater with gray rocky radial cracks; one angular flying metal/stone fragment; a gritty impact dust puff.\nColumns in EVERY row, left to right: (1) compact muzzle burst viewed approximately toward camera, (2) surface-facing radial impact, (3) isolated small particle, (4) isolated soft smoke/mist/dust puff.\nStyle: practical painted 1998-2004 FPS sprite art, detailed but readable at 64-128 pixels, semi-realistic organic texture, soft alpha edges for vapor, crisp silhouettes for shards. The purpose is actual reusable game sprites, not a poster. Preserve cell alignment rigorously. White/grayscale only. True transparency.",
+  "rows": [
+    "hydro",
+    "electro",
+    "cryo",
+    "thermal",
+    "toxic",
+    "corrosion",
+    "sonic",
+    "kinetic"
+  ],
+  "columns": [
+    "muzzle",
+    "impact",
+    "particle",
+    "smoke"
+  ]
+}

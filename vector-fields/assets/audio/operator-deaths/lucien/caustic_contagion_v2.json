@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "actor": "lucien",
+  "cause": "caustic_contagion",
+  "text": "[raspy][screaming] KHAAAGH!",
+  "request": {
+    "text": "[raspy][screaming] KHAAAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "7797e14e7a4f0d58e1b2c95ac0c96d84beaadae33b5d9c5622a8d2faa458309f",
+  "sha256": "fae20cbe5e34533e07abb6d28b53fd57ceab444fe6633d43e3da8814bf1255a9",
+  "request_id": "MXIENE844tLLOL9oPKjt"
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "SteamVeil / death",
+  "created_utc": "2026-10-09T23:29:13.085171+00:00",
+  "request_sha256": "ce54f8304ab7dd7bd6a45aa4ecf9d2bfc5a143fdeb4062d4d9ed207db18433f5",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A quick pressurized steam valve release, a wide bright white vapor hiss swelling once then fading into a few cooling water droplets. Steam and heat, no organic breathing.",
+    "duration_seconds": 2.1,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "aff983dd3f20e38d0c4fbc62ad6beae1e23eea89156f289086f32fff1b59ddf4",
+  "bytes": 34316,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A quick pressurized steam valve release, a wide bright white vapor hiss swelling once then fading into a few cooling water droplets. Steam and heat, no organic breathing.",
+  "request_id": null,
+  "reported_credit_cost": "21"
+}

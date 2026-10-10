@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "thermal",
+  "variant": 0,
+  "text": "[panicked] Feuer! I'm on fire!",
+  "request": {
+    "text": "[panicked] Feuer! I'm on fire!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "f86aab14b8eb370826136538efb54431620230b890accc90e12af0f2d045c432",
+  "sha256": "b793632c1005424564cc4b4794bf73f97d48f3793c0b0f1c4c4cfafa57e3014b",
+  "request_id": "nEZyggaqMXJOslC5sfMh",
+  "reported_credit_cost": "3"
+}

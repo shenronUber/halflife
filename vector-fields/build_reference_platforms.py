@@ -7,11 +7,10 @@ from scipy.spatial.transform import Rotation, Slerp
 from studio_assets import transform, Studio
 import build_modular as base
 
-PLATFORMS={
- 'side':dict(name='R-01 / Traverse',label='Lateral',angle=90,entry=[-1.75,15.25,.1]),
- 'top':dict(name='R-01 / Zenith',label='Superieur',angle=180,entry=[0,15.25,2.25]),
-}
-SOURCE_ENTRY=np.array([-.15,15.25,-.8])
+from model_contract import load as model_contract, check_skeleton
+CONTRACT=model_contract()
+PLATFORMS={p['id']:p for p in CONTRACT['platforms'] if p['id']!='bottom'}
+SOURCE_ENTRY=np.array(CONTRACT['source_entry'])
 
 def mount_matrix(key):
  spec=PLATFORMS[key];m=np.eye(4);m[:3,:3]=Rotation.from_euler('y',spec['angle'],degrees=True).as_matrix()
@@ -58,32 +57,72 @@ def magazine_offset(key,frame):
    return np.array(a)*(1-f)+np.array(b)*f
  return np.zeros(3)
 
-def solve_arm(local,parents,goal):
+def top_reload_roll(frame):
+ """Left/down roll around the barrel axis, held through magazine extraction."""
+ keys=[(0,0),(18,-65),(99,-65),(129,0),(139,0)]
+ for (t0,a),(t1,b) in zip(keys,keys[1:]):
+  if frame<=t1:
+   u=np.clip((frame-t0)/(t1-t0),0,1);u=u*u*(3-2*u)
+   return a*(1-u)+b*u
+ return 0.
+
+
+def roll_top_weapon(local,parents,angle):
+ """Roll the chassis about the right grip and let that hand follow the grip."""
+ if abs(angle)<1e-8:return
+ g=globals_of(local,parents);gun=g[40];wrist=g[6].copy()
+ roll=gun[:3,:3]@Rotation.from_euler('y',angle,degrees=True).as_matrix()@gun[:3,:3].T
+ target=gun.copy();target[:3,:3]=roll@gun[:3,:3]
+ target[:3,3]=wrist[:3,3]+roll@(gun[:3,3]-wrist[:3,3])
+ local[40]=np.linalg.inv(g[parents[40]])@target
+ wrist[:3,:3]=roll@wrist[:3,:3]
+ error,_,_=solve_arm(local,parents,wrist,neutral_wrist=True,right=True)
+ assert error<1e-5,error
+
+
+def solve_arm(local,parents,goal,neutral_wrist=False,right=False):
  """Two-link arm with preserved lengths and a stable elbow pole.
- Bone04 anchors the arm, Bone40 is elbow, Bone42 wrist; Bone41 is a short
- intermediate joint. Only left-arm locals change. Finger pose is retained.
+ Bone04 anchors both arms. A short intermediate joint precedes each wrist.
+ Finger pose and all bone lengths are retained.
  """
- g=globals_of(local,parents);shoulder=g[3][:3,3];elbow=g[10][:3,3];wrist=g[12][:3,3]
+ elbow_id,intermediate,wrist_id=(4,5,6)if right else(10,11,12)
+ g=globals_of(local,parents);shoulder=g[3][:3,3];elbow=g[elbow_id][:3,3];wrist=g[wrist_id][:3,3]
  a=np.linalg.norm(elbow-shoulder);b=np.linalg.norm(wrist-elbow)
  delta=goal[:3,3]-shoulder;dist=np.linalg.norm(delta);direction=delta/dist
  if dist>a+b-1e-4 or dist<abs(a-b)+1e-4:raise ValueError(f'Unreachable R01 wrist: {dist:.3f} vs {a:.3f}+{b:.3f}')
- pole=elbow-shoulder;pole-=direction*np.dot(pole,direction)
+ relative=np.linalg.inv(g[elbow_id])@g[wrist_id]
+ desired=goal[:3,:3]@relative[:3,:3].T
+ # For the lateral handlebar grasp, place the elbow on the feasible circle
+ # biased toward a straight wrist, retaining a low elbow outside the view.
+ ideal_elbow=goal[:3,3]-desired@relative[:3,3] if neutral_wrist else elbow
+ pole=.4*(ideal_elbow-shoulder)+.6*(elbow-shoulder);pole-=direction*np.dot(pole,direction)
  if np.linalg.norm(pole)<1e-6:pole=np.cross(direction,[0,0,1])
  pole/=np.linalg.norm(pole)
  along=(a*a-b*b+dist*dist)/(2*dist);height=math.sqrt(max(0,a*a-along*along))
  new_elbow=shoulder+along*direction+height*pole
- target=g[10].copy();target[:3,3]=new_elbow
+ target=g[elbow_id].copy();target[:3,3]=new_elbow
  # Choose forearm roll from the desired palm, rather than retaining the old
  # MP40 roll. The remaining wrist bend is the smallest aiming adjustment.
- relative=np.linalg.inv(g[10])@g[12]
- desired=goal[:3,:3]@relative[:3,:3].T
  target[:3,:3]=rotation_between(desired@relative[:3,3],goal[:3,3]-new_elbow)@desired
- local[10]=np.linalg.inv(g[3])@target
+ local[elbow_id]=np.linalg.inv(g[3])@target
  g=globals_of(local,parents)
  # Wrist rotation is independent of forearm direction; no bone stretching.
- local[12][:3,:3]=g[11][:3,:3].T@goal[:3,:3]
+ local[wrist_id][:3,:3]=g[intermediate][:3,:3].T@goal[:3,:3]
  g=globals_of(local,parents)
- return float(np.linalg.norm(g[12][:3,3]-goal[:3,3])),a,b
+ return float(np.linalg.norm(g[wrist_id][:3,3]-goal[:3,3])),a,b
+
+def steady_forearm(local,parents,reference):
+ """Remove the wrist-driven forearm roll singularity; retain the exact palm."""
+ g=globals_of(local,parents);hand=g[12].copy()
+ relative=np.linalg.inv(g[10])@g[12]
+ seed=g[3][:3,:3]@reference[:3,:3]
+ direction=hand[:3,3]-g[10][:3,3]
+ orientation=rotation_between(seed@relative[:3,3],direction)@seed
+ local[10][:3,:3]=g[3][:3,:3].T@orientation
+ g=globals_of(local,parents)
+ local[12][:3,:3]=g[11][:3,:3].T@hand[:3,:3]
+ assert np.linalg.norm(globals_of(local,parents)[12]-hand)<1e-5
+
 
 def write_frames(path,text,frames):
  start=text.index('skeleton\n')+9;end=text.index('\nend',start)
@@ -97,6 +136,7 @@ def write_frames(path,text,frames):
 
 def build_rigs(out):
  names,parents,bind=base.skeleton(out/'mp40_hands.smd')
+ check_skeleton(names,'first_person',CONTRACT)
  _,idle=read_frames(out/'idle.smd');idle_g=globals_of(idle[0],parents)
  gun=40;mag=43;hand=12
  mag_in_gun=np.linalg.inv(idle_g[gun])@idle_g[mag]
@@ -107,6 +147,10 @@ def build_rigs(out):
  for index,middle in [(17,21),(18,22),(19,23)]:closed[index][:3,:3]=closed[middle][:3,:3]
  curl=Rotation.from_euler('x',-20,degrees=True).as_matrix()
  for knuckle in [16,20,24,28]:closed[knuckle][:3,:3]=curl@closed[knuckle][:3,:3]
+ # The index base was still half-open: match the entire middle-finger chain.
+ for index,middle in zip(range(16,20),range(20,24)):closed[index][:3,:3]=closed[middle][:3,:3]
+ from first_person_grips import mounted_index
+ mounted_index(closed)
  support=source_hand.copy();support[:3,3]+=[0,8.2,1.5]
  left_desc=[]
  for i in names:
@@ -118,16 +162,19 @@ def build_rigs(out):
  for key,spec in PLATFORMS.items():
   errors=[];lengths=[];samples=[];mount=mount_matrix(key)
   # Palm coordinates: +Y wrist->knuckles, +X across fingers, -Z inward.
-  # Traverse: dorsal face visible and fist centred on the horizontal body.
+  # Traverse: overhand grip, palm down/forward like a motorcycle handlebar.
   # Zenith: inward palm faces the player (-weapon Y), thumb points upward.
   hand_pose=np.eye(4)
-  hand_pose[:3,:3]=np.array([[1,0,0],[0,0,-1],[0,1,0]])if key=='side'else np.array([[0,1,0],[0,0,1],[1,0,0]])
-  centre=(mount@np.array([-.15,15.25,-8.3,1]))[:3]
+  hand_pose[:3,:3]=Rotation.from_euler('x',40,degrees=True).as_matrix()if key=='side'else np.array([[0,1,0],[0,0,1],[1,0,0]])
+  # Keep the top index above the low drum, within the common neck/hand area.
+  centre=(mount@np.array([-.15,15.25,-7.0 if key=='top' else -8.3,1]))[:3]
   hand_pose[:3,3]=centre-hand_pose[:3,:3]@np.array([.3,3.9,-2.1])
   grip=np.linalg.inv(mount@mag_in_gun)@hand_pose
   for seq in sequences:
    text,frames=read_frames(out/(seq+'.smd'))
    for t,local in enumerate(frames):
+    roll=top_reload_roll(t)if key=='top'and seq=='reload'else 0.
+    if roll:roll_top_weapon(local,parents,roll)
     g=globals_of(local,parents);relative=mount@mag_in_gun
     if seq=='reload':relative[:3,3]+=magazine_offset(key,t)
     local[mag]=relative # Bone71 is a direct child of Bone76.
@@ -142,11 +189,12 @@ def build_rigs(out):
      if key=='top':target[:3,3]+=g[gun][:3,:3]@np.array([-2*math.sin(math.pi*u),0,0])
     # Retain a closed grip independently of the legacy MP40 finger motion.
     for i in left_desc:local[i]=closed[i].copy()
-    error,a,b=solve_arm(local,parents,target)
+    error,a,b=solve_arm(local,parents,target,neutral_wrist=key=='side')
+    if key=='top':steady_forearm(local,parents,idle[0][10])
     errors.append(error);lengths.append([a,b])
     if seq=='reload':
      final=globals_of(local,parents);inv=np.linalg.inv(final[gun])
-     samples.append(dict(frame=t,magazine=(inv@final[mag]).tolist(),wrist=(inv@final[hand]).tolist(),grip_error=error))
+     samples.append(dict(frame=t,roll_degrees=roll,gun=final[gun].tolist(),magazine=(inv@final[mag]).tolist(),wrist=(inv@final[hand]).tolist(),grip_error=error))
    write_frames(out/(key+'_'+seq+'.smd'),text,frames)
   newqc=qc.replace('r01_rig.mdl','r01_rig_'+key+'.mdl')
   for seq in sequences:newqc=newqc.replace('"'+seq+'"\n','"'+key+'_'+seq+'"\n')

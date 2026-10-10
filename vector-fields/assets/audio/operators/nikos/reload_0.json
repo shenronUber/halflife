@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "model_id": "eleven_v4",
+  "event": "reload",
+  "variant": 0,
+  "text": "[urgent] Reloading! Κάλυψέ με!",
+  "request": {
+    "text": "[urgent] Reloading! Κάλυψέ με!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "41a1073929fe15ec2c79a3ed5383546be8015f6f8d59a85451ad26c434bea72e",
+  "sha256": "3859cbae6c6dc128faa9c8a3bebafad89ea84c0c380ed55331113e02ed552f7c",
+  "request_id": "pdV4LouD5tjdfUrQOvKl",
+  "reported_credit_cost": "3"
+}

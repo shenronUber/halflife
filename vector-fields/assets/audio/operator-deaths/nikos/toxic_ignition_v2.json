@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "actor": "nikos",
+  "cause": "toxic_ignition",
+  "text": "[choking][screaming] KAAAAGH!",
+  "request": {
+    "text": "[choking][screaming] KAAAAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "95de5db1f49b355df428c4c8e5150ac4a43f993dd19218f1265ccc72450ba11c",
+  "sha256": "83660085639125e27b2c27e99bf1fd059c755ef23f85fa0fb9b1b4564be0c407",
+  "request_id": "BpR2VMKFsAh3LbFDhJmI"
+}

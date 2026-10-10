@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "kill",
+  "variant": 0,
+  "text": "[dryly] Voilà. A lesson in precision.",
+  "request": {
+    "text": "[dryly] Voilà. A lesson in precision.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "0793a35f5534bf96c8c2834a9e2b6432e194ecaf95c3c73d39b9cb100e939bdc",
+  "sha256": "11dd88c6d9fbf40eafff995dd2ed1980c3d2a8b2abe6db831cdd5486d0f81c74",
+  "request_id": "775JWCBurQV3sjqUMyr4",
+  "reported_credit_cost": "4"
+}

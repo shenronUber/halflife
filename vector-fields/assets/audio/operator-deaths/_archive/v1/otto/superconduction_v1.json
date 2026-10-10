@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "actor": "otto",
+  "cause": "superconduction",
+  "text": "[shivering] Hh-hh... [screaming] A-a-aagh! [weakly] Hhh...",
+  "request": {
+    "text": "[shivering] Hh-hh... [screaming] A-a-aagh! [weakly] Hhh...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "7252c00a4d16ad507313bf12beda8478f55dc9a8e1f9d661b4419e266a2a7e49",
+  "sha256": "a42825edf9e5ab061d11aea57b9d5a730707a29c283b1b8b6b2cd791494d392c",
+  "request_id": "s0zfDQ4iqgsW3nQK86U7"
+}

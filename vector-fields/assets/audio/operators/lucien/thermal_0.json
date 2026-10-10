@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "thermal",
+  "variant": 0,
+  "text": "[panicked] Au feu! I'm burning!",
+  "request": {
+    "text": "[panicked] Au feu! I'm burning!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "6069fb9bdd97b714f30ee9410150868a570df781277ba68e865a25174121dc4f",
+  "sha256": "9b918f46fb0dfa776c93c9cdd74d229b3ffb1f69363a3723fc14720a164fa9c0",
+  "request_id": "dqMdjbhTUpvNucNofblc",
+  "reported_credit_cost": "3"
+}

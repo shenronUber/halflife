@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "hydro",
+  "variant": 0,
+  "text": "[disgusted] Trempé. My suit is ruined.",
+  "request": {
+    "text": "[disgusted] Trempé. My suit is ruined.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "67c3d858668264291eb2afaeddf4fc3bddbdfd37f8222bb7625a1fd8ebc64f38",
+  "sha256": "46a508c5c41e2a84f7ea38e91990849340ab7714768fd3642febed9d0bbef50d",
+  "request_id": "Sz8eWaEomgUDKH9x7tF3",
+  "reported_credit_cost": "4"
+}

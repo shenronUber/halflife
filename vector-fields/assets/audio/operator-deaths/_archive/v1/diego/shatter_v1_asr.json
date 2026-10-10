@@ -1,0 +1,19 @@
+{
+  "audio_sha256": "55b7826f193b4963a78ec6880d5df1941acc1d2a6ecd5df651af50bb6429882d",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "[grunting]",
+    "words": [
+      {
+        "text": "[grunting]",
+        "start": 0.08,
+        "end": 5.14,
+        "type": "audio_event",
+        "logprob": -0.04807085199475599
+      }
+    ],
+    "transcription_id": "2QUo0Vu3j2tDhcwcGiJg",
+    "audio_duration_secs": 5.1848125
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "model_id": "eleven_v4",
+  "event": "phase",
+  "variant": 0,
+  "text": "[confident] Phase active. Coming through, φίλε!",
+  "request": {
+    "text": "[confident] Phase active. Coming through, φίλε!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "e5d4e81332dbeac61f3fd8309df6fd50d35dcba45f7ff11e5fe5f524c74f6221",
+  "sha256": "48685e2a5d7b4f2164a350c13322c3497c1f449006761759fd72583bd0251f4c",
+  "request_id": "FLF0wcrKa6Xo3IyNxO7D",
+  "reported_credit_cost": "5"
+}

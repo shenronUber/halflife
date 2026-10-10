@@ -1,0 +1,732 @@
+{
+  "schema": 1,
+  "version": "0.3.0",
+  "status": "design_proposal",
+  "runtime_enabled": false,
+  "date": "2026-10-09",
+  "title": "Charte des huit éléments et huit matières",
+  "scope": "Charte de gameplay à cinq réponses. Chaque matière et chaque élément : une résistance forte, une légère, quatre normales, une faiblesse légère et une forte. Moyennes exactement égales à 1 à répartition uniforme.",
+  "coefficient_definition": "Dégâts reçus : résistance forte = 0.50, résistance légère = 0.75, normal = 1, faiblesse légère = 1.25, faiblesse forte = 1.50. Valeurs de gameplay, distinctes de la calibration physique. Toxic porte sur l’exposition du vivant ; Corrosion sur l’usure de la protection.",
+  "elements": [
+    {
+      "id": "hydro",
+      "name": "Hydro",
+      "channel": "Jet pressurisé si le payload déclare des dégâts. Soaked seul : zéro dégât.",
+      "content": "Hydrophobic Weave, Vapor Capsule, profil Hydro"
+    },
+    {
+      "id": "electro",
+      "name": "Electro",
+      "channel": "Décharge de contact et charge électrique.",
+      "content": "Arc Nozzle, profil Electro"
+    },
+    {
+      "id": "cryo",
+      "name": "Cryo",
+      "channel": "Refroidissement brutal. Ralentissement et fragilisation : intentions à définir.",
+      "content": "Profil Cryo"
+    },
+    {
+      "id": "thermal",
+      "name": "Thermal",
+      "channel": "Chaleur et brûlure si le payload les déclare.",
+      "content": "Vapor Capsule, profil Thermal"
+    },
+    {
+      "id": "toxic",
+      "name": "Toxic",
+      "channel": "Contamination du vivant. Zéro dégât structurel sur une matière inerte.",
+      "content": "Primer: Contam, profil Toxic"
+    },
+    {
+      "id": "corrosion",
+      "name": "Corrosion",
+      "channel": "Usure chimique de la protection. Santé seulement avec payload distinct.",
+      "content": "Acid Sprayer, Ceramic Lining"
+    },
+    {
+      "id": "sonic",
+      "name": "Sonic",
+      "channel": "Impulsion mécanique couplée à la cible. Echo Ping : sondage sans dégâts implicites.",
+      "content": "Echo Ping, profil Sonic"
+    },
+    {
+      "id": "kinetic",
+      "name": "Kinetic",
+      "channel": "Impact balistique de référence. Pénétration réelle calculée séparément.",
+      "content": "Kinetic Core, Hollow-Point, MP5 natif"
+    }
+  ],
+  "materials": [
+    {
+      "id": "flesh",
+      "name": "Chair",
+      "coefficients": [
+        1,
+        1,
+        0.75,
+        1,
+        1.5,
+        1,
+        0.5,
+        1.25
+      ],
+      "reference": "Chair vivante souple. Inertie thermique et amortissement, sans protection balistique.",
+      "niche": "Forte : Sonic ; légère : Cryo.",
+      "tradeoff": "Légère : Kinetic ; forte : Toxic.",
+      "art": "Corps et tissus vivants de la Canopée.",
+      "reasons": [
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Inertie thermique des tissus : retard limité face au refroidissement de référence.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Toxic cible directement les fonctions du vivant.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Souplesse des tissus : amortissement fort de l’impulsion Sonic retenue pour le jeu.",
+        "Absence de structure rigide : l’impact provoque facilement une lésion."
+      ],
+      "affinities": {
+        "strong_resistance": "sonic",
+        "slight_resistance": "cryo",
+        "slight_weakness": "kinetic",
+        "strong_weakness": "toxic"
+      }
+    },
+    {
+      "id": "textile",
+      "name": "Textile",
+      "coefficients": [
+        1,
+        1.25,
+        0.5,
+        1.5,
+        1,
+        1,
+        0.75,
+        1
+      ],
+      "reference": "Textile matelassé absorbant, sans plaque ou membrane spécialisée.",
+      "niche": "Forte : Cryo ; légère : Sonic.",
+      "tradeoff": "Légère : Electro ; forte : Thermal.",
+      "art": "Intervention, Grande Guerre, Rome / Inventeur, Naufrage.",
+      "reasons": [
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Tissage absorbant : humidité et résidus conducteurs favorisent une décharge de contact. Hypothèse du profil.",
+        "Matelassage et air piégé : forte isolation face au refroidissement.",
+        "Fibres sensibles à la chaleur et à la combustion.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Fibres et rembourrage dissipent une partie de l’impulsion mécanique.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte."
+      ],
+      "affinities": {
+        "strong_resistance": "cryo",
+        "slight_resistance": "sonic",
+        "slight_weakness": "electro",
+        "strong_weakness": "thermal"
+      }
+    },
+    {
+      "id": "leather",
+      "name": "Cuir",
+      "coefficients": [
+        0.5,
+        1,
+        1.25,
+        1,
+        1,
+        1.5,
+        1,
+        0.75
+      ],
+      "reference": "Cuir tanné épais et entretenu. Hydro désigne un jet, Cryo un refroidissement brutal.",
+      "niche": "Forte : Hydro ; légère : Kinetic.",
+      "tradeoff": "Légère : Cryo ; forte : Corrosion.",
+      "art": "Forge médiévale, New York noir, Préhistorique, Rome.",
+      "reasons": [
+        "Cuir entretenu : enveloppe qui freine fortement le jet Hydro de référence.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Froid brutal : raidissement et perte de souplesse du profil de jeu.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "L’agent chimique retenu altère fortement la structure du cuir.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Épaisseur et souplesse absorbent une part limitée de l’impact ; aucune invulnérabilité balistique."
+      ],
+      "affinities": {
+        "strong_resistance": "hydro",
+        "slight_resistance": "kinetic",
+        "slight_weakness": "cryo",
+        "strong_weakness": "corrosion"
+      }
+    },
+    {
+      "id": "wood",
+      "name": "Bois",
+      "coefficients": [
+        1,
+        0.75,
+        1,
+        1.25,
+        0.5,
+        1,
+        1,
+        1.5
+      ],
+      "reference": "Bois dense sec en enveloppe de contact. Aucune protection respiratoire implicite.",
+      "niche": "Forte : Toxic ; légère : Electro.",
+      "tradeoff": "Légère : Thermal ; forte : Kinetic.",
+      "art": "Forge, Canopée, Naufrage, Grande Guerre, Rome.",
+      "reasons": [
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Bois sec : conduction de contact limitée. Le profil humide demande une règle d’état distincte.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Matière combustible : sensibilité à la chaleur.",
+        "Enveloppe dense : niche de barrière au contaminant de contact. Ne protège pas les voies respiratoires.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Fissuration et éclats sous impact."
+      ],
+      "affinities": {
+        "strong_resistance": "toxic",
+        "slight_resistance": "electro",
+        "slight_weakness": "thermal",
+        "strong_weakness": "kinetic"
+      }
+    },
+    {
+      "id": "rubber",
+      "name": "Élastomère",
+      "coefficients": [
+        1.25,
+        0.5,
+        1.5,
+        1,
+        0.75,
+        1,
+        1,
+        1
+      ],
+      "reference": "Élastomère isolant à membrane souple. Jet pressurisé et froid restent distincts de l’étanchéité.",
+      "niche": "Forte : Electro ; légère : Toxic.",
+      "tradeoff": "Légère : Hydro ; forte : Cryo.",
+      "art": "Abysses, Porcelaine fluidique, Dieselpunk, joints.",
+      "reasons": [
+        "Le jet pressurisé déforme une membrane souple. Résistance aux impacts Hydro distincte de l’étanchéité.",
+        "Isolation électrique du profil de référence.",
+        "Froid brutal : forte perte de souplesse et fragilisation.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Membrane continue : barrière partielle au contaminant de contact ; perméation à qualifier.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte."
+      ],
+      "affinities": {
+        "strong_resistance": "electro",
+        "slight_resistance": "toxic",
+        "slight_weakness": "hydro",
+        "strong_weakness": "cryo"
+      }
+    },
+    {
+      "id": "steel",
+      "name": "Métal",
+      "coefficients": [
+        0.75,
+        1.5,
+        1,
+        1,
+        1,
+        1.25,
+        1,
+        0.5
+      ],
+      "reference": "Plaque métallique exposée, sans isolation intérieure. Profil sensible à l’agent corrosif retenu.",
+      "niche": "Forte : Kinetic ; légère : Hydro.",
+      "tradeoff": "Légère : Corrosion ; forte : Electro.",
+      "art": "Intervention, Ruines, Forge, Grande Guerre, Bedrock, Diesel.",
+      "reasons": [
+        "Surface rigide dense : résistance partielle au jet Hydro.",
+        "Conduction de contact vers la couche interne.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Agent corrosif compatible avec l’alliage de référence : usure accrue.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Plaque dure : forte protection contre l’impact Kinetic de référence."
+      ],
+      "affinities": {
+        "strong_resistance": "kinetic",
+        "slight_resistance": "hydro",
+        "slight_weakness": "corrosion",
+        "strong_weakness": "electro"
+      }
+    },
+    {
+      "id": "ceramic",
+      "name": "Céramique",
+      "coefficients": [
+        1,
+        1,
+        1,
+        0.75,
+        1.25,
+        0.5,
+        1.5,
+        1
+      ],
+      "reference": "Céramique soutenue, résistante à l’agent corrosif retenu, surface microporeuse.",
+      "niche": "Forte : Corrosion ; légère : Thermal.",
+      "tradeoff": "Légère : Toxic ; forte : Sonic.",
+      "art": "Porcelaine fluidique, inserts d'Intervention, Sci-Foundry.",
+      "reasons": [
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Matière incombustible : résistance partielle à la chaleur, sans annuler le choc thermique.",
+        "Surface microporeuse : rétention du contaminant et exposition de contact accrue. Aucun dégât Toxic structurel.",
+        "Bonne résistance à l’agent chimique retenu. Pas d’immunité à tous les produits.",
+        "Couche cassante : forte sensibilité à une impulsion mécanique adaptée.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte."
+      ],
+      "affinities": {
+        "strong_resistance": "corrosion",
+        "slight_resistance": "thermal",
+        "slight_weakness": "toxic",
+        "strong_weakness": "sonic"
+      }
+    },
+    {
+      "id": "mineral",
+      "name": "Minéral",
+      "coefficients": [
+        1.5,
+        1,
+        1,
+        0.5,
+        1,
+        0.75,
+        1.25,
+        1
+      ],
+      "reference": "Minéral siliceux à joints, incombustible. Verre et béton restent des profils distincts.",
+      "niche": "Forte : Thermal ; légère : Corrosion.",
+      "tradeoff": "Légère : Sonic ; forte : Hydro.",
+      "art": "Bedrock, Préhistorique, silex. Verre : profil dédié.",
+      "reasons": [
+        "Le jet pressurisé exploite joints et pores du profil minéral de référence.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Profil incombustible : forte résistance à la chaleur.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte.",
+        "Matrice siliceuse : résistance partielle à l’agent de référence. Liants qualifiés séparément.",
+        "Joints et fissures : sensibilité partielle à une impulsion couplée.",
+        "Normal : aucun modificateur supplémentaire pour ce canal dans la charte."
+      ],
+      "affinities": {
+        "strong_resistance": "thermal",
+        "slight_resistance": "corrosion",
+        "slight_weakness": "sonic",
+        "strong_weakness": "hydro"
+      }
+    }
+  ],
+  "reactions": [
+    {
+      "id": "arc_chain",
+      "name": "ArcChain",
+      "parents": [
+        "electro",
+        "hydro"
+      ],
+      "bonus": 0,
+      "trigger": "Electro sur zone Soaked active.",
+      "effect": "Arc entre cibles reliées par contact conducteur.",
+      "counter": "Zone sèche, isolation, rupture de liaison.",
+      "rule": "Répartir le budget déclaré entre les cibles. Aucun budget de dégâts dupliqué.",
+      "channel": "dégâts / propagation",
+      "eligible_materials": [
+        "flesh",
+        "textile",
+        "leather",
+        "wood",
+        "rubber",
+        "steel",
+        "ceramic",
+        "mineral"
+      ],
+      "damage_bonus": 0
+    },
+    {
+      "id": "superconduction",
+      "name": "CryoCircuit",
+      "parents": [
+        "cryo",
+        "electro"
+      ],
+      "bonus": 0,
+      "trigger": "Electro sur une amorce Cryo.",
+      "effect": "Accumulation électrique accélérée.",
+      "counter": "Isolation ou dissipation de l'amorce.",
+      "rule": "État électrique accéléré. Nom de fiction, sans supraconductivité réelle ni réduction globale des résistances.",
+      "channel": "état",
+      "eligible_materials": [
+        "flesh",
+        "textile",
+        "leather",
+        "wood",
+        "rubber",
+        "steel",
+        "ceramic",
+        "mineral"
+      ],
+      "damage_bonus": 0
+    },
+    {
+      "id": "shatter",
+      "name": "FracturePulse",
+      "parents": [
+        "cryo",
+        "kinetic"
+      ],
+      "bonus": 0,
+      "trigger": "Kinetic sur couche rigide cassante fragilisée par Cryo.",
+      "effect": "Fracture locale.",
+      "counter": "Couche souple ou amorce dissipée.",
+      "rule": "Altérer localement une couche cassante valide. Aucun dégât santé additionnel gratuit.",
+      "channel": "dégâts / intégrité",
+      "eligible_materials": [
+        "ceramic",
+        "mineral"
+      ],
+      "damage_bonus": 0
+    },
+    {
+      "id": "resonant_impact",
+      "name": "ResonantShock",
+      "parents": [
+        "kinetic",
+        "sonic"
+      ],
+      "bonus": 0,
+      "trigger": "Sonic couplé à la même zone que Kinetic.",
+      "effect": "Micro-déstabilisation brève.",
+      "counter": "Amortissement ou rupture du contact.",
+      "rule": "Contrôle bref avec diminution en répétition. Aucun verrouillage permanent du mouvement.",
+      "channel": "dégâts / contrôle",
+      "eligible_materials": [
+        "flesh",
+        "textile",
+        "leather",
+        "wood",
+        "rubber",
+        "steel",
+        "ceramic",
+        "mineral"
+      ],
+      "damage_bonus": 0
+    },
+    {
+      "id": "cavitation",
+      "name": "AcidEcho",
+      "parents": [
+        "sonic",
+        "corrosion"
+      ],
+      "bonus": 0,
+      "trigger": "Sonic sur film corrosif humide.",
+      "effect": "Dispersion et usure locale.",
+      "counter": "Retrait du film, résistance chimique, amortissement.",
+      "rule": "Usure locale sur film humide. Aucun bonus de santé ni cavitation dans une matière sèche.",
+      "channel": "usure",
+      "eligible_materials": [
+        "textile",
+        "leather",
+        "wood",
+        "rubber",
+        "steel",
+        "ceramic",
+        "mineral"
+      ],
+      "damage_bonus": 0
+    },
+    {
+      "id": "caustic_contagion",
+      "name": "ContamBloom",
+      "parents": [
+        "corrosion",
+        "toxic"
+      ],
+      "bonus": 0,
+      "trigger": "Contamination sur protection localement dégradée.",
+      "effect": "Exposition du vivant accrue.",
+      "counter": "Étanchéité intacte, décontamination.",
+      "rule": "Exposition locale du vivant. Aucun Toxic structurel, contagion ou blocage de soin implicite.",
+      "channel": "exposition",
+      "eligible_materials": [
+        "textile",
+        "leather",
+        "wood",
+        "rubber",
+        "steel",
+        "ceramic",
+        "mineral"
+      ],
+      "damage_bonus": 0
+    },
+    {
+      "id": "toxic_ignition",
+      "name": "CinderMist",
+      "parents": [
+        "toxic",
+        "thermal"
+      ],
+      "bonus": 0,
+      "trigger": "Thermal sur contaminant déclaré inflammable.",
+      "effect": "Ignition du film ou aérosol.",
+      "counter": "Agent non inflammable, purge, refroidissement.",
+      "rule": "Ignition seulement si le contaminant est inflammable. Son budget remplace une portion du payload, sans ajout gratuit.",
+      "channel": "dégâts",
+      "eligible_materials": [
+        "flesh",
+        "textile",
+        "leather",
+        "wood",
+        "rubber",
+        "steel",
+        "ceramic",
+        "mineral"
+      ],
+      "damage_bonus": 0
+    },
+    {
+      "id": "steam_veil",
+      "name": "SteamVeil",
+      "parents": [
+        "thermal",
+        "hydro"
+      ],
+      "bonus": 0,
+      "trigger": "Thermal sur volume Hydro suffisant.",
+      "effect": "Écran de vapeur temporaire.",
+      "counter": "Ventilation, contournement, Phase Optics déclaré.",
+      "rule": "Écran tactique temporaire. Aucun bonus de dégâts, invisibilité ou immunité.",
+      "channel": "utilité",
+      "eligible_materials": [
+        "flesh",
+        "textile",
+        "leather",
+        "wood",
+        "rubber",
+        "steel",
+        "ceramic",
+        "mineral"
+      ],
+      "damage_bonus": 0
+    }
+  ],
+  "physical_catalog_mapping": [
+    {
+      "physical": "unknown",
+      "balance": null,
+      "action": "Inconnu, sans bonus ni immunité. Signaler."
+    },
+    {
+      "physical": "flesh",
+      "balance": "flesh",
+      "action": "Direct."
+    },
+    {
+      "physical": "textile",
+      "balance": "textile",
+      "action": "Direct. Renforts balistiques = construction."
+    },
+    {
+      "physical": "leather",
+      "balance": "leather",
+      "action": "Direct."
+    },
+    {
+      "physical": "rubber",
+      "balance": "rubber",
+      "action": "Direct, formulation chimique à qualifier."
+    },
+    {
+      "physical": "steel",
+      "balance": "steel",
+      "action": "Direct pour métal ferreux de référence."
+    },
+    {
+      "physical": "glass",
+      "balance": "mineral",
+      "action": "Classement seulement. Profil verre dédié requis."
+    },
+    {
+      "physical": "concrete",
+      "balance": "mineral",
+      "action": "Classement seulement. Profil béton et liant requis."
+    },
+    {
+      "physical": "wood",
+      "balance": "wood",
+      "action": "Direct."
+    },
+    {
+      "physical": "soil",
+      "balance": null,
+      "action": "Milieu du décor, hors matières d'armure."
+    },
+    {
+      "physical": "ceramic",
+      "balance": "ceramic",
+      "action": "Direct si plaque dense soutenue."
+    },
+    {
+      "physical": "water",
+      "balance": null,
+      "action": "Milieu / état Hydro, hors matières d'armure."
+    },
+    {
+      "physical": "composite",
+      "balance": null,
+      "action": "Décomposer en couches parmi les huit matières."
+    },
+    {
+      "physical": "snow",
+      "balance": null,
+      "action": "Milieu Cryo/Hydro, hors matières d'armure."
+    }
+  ],
+  "constructions": [
+    {
+      "name": "Maille",
+      "material": "Métal",
+      "rule": "Anneaux et ouvertures : couverture locale. Aucun bonus Sonic universel."
+    },
+    {
+      "name": "Plaque",
+      "material": "Métal / Céramique / Minéral",
+      "rule": "Couverture, support, masse et épaisseur explicites. Protection aux intersections réelles."
+    },
+    {
+      "name": "Matelassage",
+      "material": "Textile / Cuir / Élastomère",
+      "rule": "Amortissement et isolation, sans bonus balistique déduit d'une texture."
+    },
+    {
+      "name": "Membrane / joint",
+      "material": "Élastomère / Textile",
+      "rule": "Étanchéité et perméation déclarées. Ne protège pas l'inhalation par défaut."
+    },
+    {
+      "name": "Composite",
+      "material": "Plusieurs des huit matières",
+      "rule": "Couches ordonnées, sans multiplication automatique de toutes les affinités."
+    },
+    {
+      "name": "Os / carapace",
+      "material": "Après qualification",
+      "rule": "Composition, rigidité et support définissent un profil dans les huit matières. Le nom seul ne suffit pas."
+    }
+  ],
+  "rules": [
+    "Huit matières. Chacune possède une résistance forte, une légère, quatre normales, une faiblesse légère et une forte, chair comprise.",
+    "Cinq réponses : ×0,50 / ×0,75 / ×1 / ×1,25 / ×1,50. Écarts symétriques autour de ×1, même échelle pour tous.",
+    "Chaque élément rencontre également une matière dans chacun des quatre niveaux non neutres et quatre normales. Chaque ligne et colonne a une moyenne de ×1.",
+    "Égalité à répartition uniforme. Les fréquences réelles inégales modifient la moyenne observée ; aucune compensation cachée.",
+    "Normal signifie absence de modificateur dans le jeu. Les autres propriétés physiques ne sont pas niées.",
+    "Les affinités sont des conventions de jeu et des profils de référence. Aucune densité, épaisseur ou résistance J/mm manquante n’est inventée.",
+    "Couplage : additionner les scores -2, -1, 0, +1, +2 des parents distincts, puis borner entre -2 et +2. Fortes opposées = normal ; forte faiblesse + résistance légère = faiblesse légère.",
+    "Un couplage garde cinq réponses et un budget unique, sans bonus additionnel. Les huit types nommés gardent une moyenne de ×1 par couplage et par matière.",
+    "Les huit couplages nommés conservent leurs conditions et effets tactiques. Les vingt autres paires distinctes ne sont pas des types couplés autorisés. Répéter un élément n’augmente pas son affinité.",
+    "Symétrie du tableau ne signifie pas même puissance tactique. Tester portée, cadence, coûts, utilité et fréquence des cibles.",
+    "L’interface joueur affiche deux résistances et deux faiblesses avec leur intensité ; les quatre autres réponses sont normales.",
+    "L’objet physique prime sur la géométrie. Ni une finition ni un nom artistique n’assignent une matière.",
+    "Maille, plaque, matelassage et composite décrivent la construction. Couverture et intégrité restent des paramètres distincts.",
+    "Soaked et Echo Ping seuls : aucun dégât. Le payload serveur déclare le canal ; les FX ne le définissent pas.",
+    "Toxic : exposition biologique explicite. Protection de contact ne signifie pas protection contre les gaz inhalés.",
+    "Corrosion : usure de la couche touchée. Éviter le double compte entre usure d’armure et dégâts santé.",
+    "Réaction : amorce locale, consommation et délai proposé de 2 s par cible. Aucune boucle récursive.",
+    "Les couches réellement traversées et la couverture précise restent à qualifier. Ne pas appliquer la matière de chair une seconde fois par défaut.",
+    "Choisir une absorption de gameplay ou l’absorption historique pour le même budget. Aucun cumul automatique avec les 80 % Half-Life."
+  ],
+  "sources": [
+    {
+      "ref": "vector-fields/data/effects.json",
+      "fact": "Huit vecteurs kind 0, huit couplages kind 1. Les tactiques kind 2 sont séparés."
+    },
+    {
+      "ref": "vector-fields/data/equipment.txt",
+      "fact": "Munitions, Acid Sprayer, Arc Nozzle, Echo Ping, Vapor Capsule, doublure céramique et tissage hydrophobe."
+    },
+    {
+      "ref": "vector-fields/data/weapon_fx.json",
+      "fact": "Huit profils. scope=presentation_only. Les prompts audio ne définissent pas les dégâts."
+    },
+    {
+      "ref": "vector-fields/WEAPON_FX.md",
+      "fact": "Présentation des tirs et sprays, sans changement des dégâts."
+    },
+    {
+      "ref": "vector-fields/data/combat-materials.json",
+      "fact": "14 identifiants physiques. identify_only. Résistances et épaisseurs inconnues."
+    },
+    {
+      "ref": "game_shared/vf_combat_policy.h",
+      "fact": "LegacyTraceDamage, SurfaceSlot, ItemProfile, LayerCalibrated. Priorité objet sur modèle."
+    },
+    {
+      "ref": "vector-fields/docs/COMBAT-MATERIALS.md",
+      "fact": "Socle serveur : zone, couches, projectile. Dégâts historiques conservés."
+    },
+    {
+      "ref": "vector-fields/assets/r01/variants/README.md",
+      "fact": "14 directions artistiques, sans assignation physique automatique."
+    },
+    {
+      "ref": "codex://threads/01a11dc2-526a-7071-8b89-6561173a97dd",
+      "fact": "Chat « Évaluer Brutal Half-Life V3 » : socle matériaux installé, dégâts inchangés."
+    },
+    {
+      "ref": "https://www.osha.gov/otm/section-3-health-hazards/chapter-5",
+      "fact": "Amortissement de surfaces résonantes. Ne calibre pas Sonic du jeu."
+    },
+    {
+      "ref": "https://ceramics.org/about/what-are-ceramics/structure-and-properties-of-ceramics/",
+      "fact": "Céramiques : isolation, résistance chimique et fragilité. Propriétés générales."
+    },
+    {
+      "ref": "https://archive.cdc.gov/www_cdc_gov/niosh/topics/disinfectant/default.html",
+      "fact": "Pénétration, perméation et dégradation d'une barrière chimique."
+    }
+  ],
+  "balance_model": {
+    "levels": {
+      "strong_resistance": 0.5,
+      "slight_resistance": 0.75,
+      "normal": 1,
+      "slight_weakness": 1.25,
+      "strong_weakness": 1.5
+    },
+    "base_per_row": {
+      "strong_resistance": 1,
+      "slight_resistance": 1,
+      "normal": 4,
+      "slight_weakness": 1,
+      "strong_weakness": 1
+    },
+    "base_per_column": {
+      "strong_resistance": 1,
+      "slight_resistance": 1,
+      "normal": 4,
+      "slight_weakness": 1,
+      "strong_weakness": 1
+    },
+    "uniform_mean": 1,
+    "weighted_mean_condition": "Égalité garantie à poids égaux. Des fréquences de cibles inégales changent la moyenne observée, sans normalisation cachée.",
+    "coupling_rule": "Scores : -2, -1, 0, +1, +2. Addition des scores de deux parents distincts ; borne entre -2 et +2. Coefficient = 1 + 0.25 × score. Équivalent : max(0.5, min(1.5, coefficientA + coefficientB - 1)). Un élément répété reste une attaque simple.",
+    "balanced_named_couplings": 8,
+    "coupling_mean_scope": "Les huit couplages nommés sont équilibrés à moyenne 1 sur les huit matières ; chaque matière garde aussi une moyenne 1 face à ces huit couplages. Les autres paires ne constituent pas des types couplés autorisés par cette proposition.",
+    "flat_reaction_damage_bonus": 0
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "request_sha256": "a6e016d7eea40eaa893592c1b7a2e20d25b380e5696990ecbc9e6c3b3a3b1244",
+  "request": {
+    "voice_name": "VF / Otto Stahl",
+    "voice_description": "An original male German action-game fighter, age 40. Deep resonant stern baritone with a compact chesty growl. Recognisable German accent in fluent intelligible English: crisp consonants, firm rhythm and German vowel shapes. Methodical, blunt, impatient, very dry humour; sudden forceful bursts when hurt or provoked. Short naturally pronounced German interjections mixed with English. Energetic physical video-game acting, not narration. Clean dry close microphone, no music, no background, no reverb. No imitation of a real person.",
+    "generated_voice_id": "edgqs6sEs8iMvFG1VpR8",
+    "labels": {
+      "gender": "male",
+      "accent": "German",
+      "use_case": "video_game"
+    }
+  },
+  "response": {
+    "voice_id": "edgqs6sEs8iMvFG1VpR8",
+    "name": "VF / Otto Stahl",
+    "samples": null,
+    "category": "generated",
+    "fine_tuning": {
+      "is_allowed_to_fine_tune": false,
+      "state": {},
+      "verification_failures": [],
+      "verification_attempts_count": 0,
+      "manual_verification_requested": false,
+      "language": null,
+      "progress": {},
+      "message": {},
+      "dataset_duration_seconds": null,
+      "verification_attempts": null,
+      "slice_ids": null,
+      "manual_verification": null,
+      "max_verification_attempts": null,
+      "next_max_verification_attempts_reset_unix_ms": null
+    },
+    "labels": {
+      "gender": "male",
+      "accent": "German",
+      "use_case": "video_game"
+    },
+    "description": "An original male German action-game fighter, age 40. Deep resonant stern baritone with a compact chesty growl. Recognisable German accent in fluent intelligible English: crisp consonants, firm rhythm and German vowel shapes. Methodical, blunt, impatient, very dry humour; sudden forceful bursts when hurt or provoked. Short naturally pronounced German interjections mixed with English. Energetic physical video-game acting, not narration. Clean dry close microphone, no music, no background, no reverb. No imitation of a real person.",
+    "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/fc94dd0c338b420083a332b3a9d57a9f/voices/edgqs6sEs8iMvFG1VpR8/5379f42a-45b6-431c-9749-3ef7f50ac4bc.mp3",
+    "available_for_tiers": [],
+    "settings": {
+      "stability": 0.5,
+      "use_speaker_boost": true,
+      "similarity_boost": 0.75,
+      "style": 0.0,
+      "speed": 1.0
+    },
+    "sharing": null,
+    "high_quality_base_model_ids": [],
+    "verified_languages": [],
+    "collection_ids": null,
+    "safety_control": null,
+    "voice_verification": null,
+    "permission_on_resource": null,
+    "is_owner": null,
+    "is_legacy": false,
+    "is_mixed": false,
+    "favorited_at_unix": null,
+    "created_at_unix": 1791540455,
+    "is_bookmarked": null,
+    "recording_quality": null,
+    "labelling_status": null,
+    "recording_quality_reason": null,
+    "orb_thumbnail_signed_urls": null
+  },
+  "request_id": null
+}

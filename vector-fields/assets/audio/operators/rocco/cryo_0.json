@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "cryo",
+  "variant": 0,
+  "text": "[shivering] Brr! I'm freezing, cazzo!",
+  "request": {
+    "text": "[shivering] Brr! I'm freezing, cazzo!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "ba9c1c7e9db72502ad5e1602dcdaad777448e485c2d20f69d199da6033c5f622",
+  "sha256": "bf264553703506a8232dc085b3aaab1eaa92d6029afe1e51c49d3dbf9b288cdb",
+  "request_id": "hvrphEZMgH4ptN6EUoLk",
+  "reported_credit_cost": "4"
+}

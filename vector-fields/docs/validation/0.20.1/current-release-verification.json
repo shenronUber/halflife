@@ -1,0 +1,16 @@
+{
+  "version": "0.20.1",
+  "runtime": "vf_visual",
+  "models_hash_verified": 68,
+  "checks": [
+    "canonical startup and release metadata deployed",
+    "all generated character and R1 model hashes match runtime",
+    "startup opens the inventory without applying a preset",
+    "equipping a named top receiver preserves all other items",
+    "named receiver and fixed finish survive save/load"
+  ],
+  "captures": [
+    "current_release_menu.png",
+    "current_release_pair.png"
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "generated_requests": 12,
+  "shots": [
+    {
+      "file": "shots/abyss_pneumatic_single.wav",
+      "rate": 22050,
+      "bits": 16,
+      "channels": 1,
+      "duration": 1.759,
+      "peak": 0.7943,
+      "rms_dbfs": -27.0,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "shots/bedrock_industrial_single.wav",
+      "rate": 22050,
+      "bits": 16,
+      "channels": 1,
+      "duration": 1.76,
+      "peak": 0.7943,
+      "rms_dbfs": -14.3,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "shots/breacher_shotgun_single.wav",
+      "rate": 22050,
+      "bits": 16,
+      "channels": 1,
+      "duration": 2.0,
+      "peak": 0.7943,
+      "rms_dbfs": -12.3,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "shots/compact_suppressed_single.wav",
+      "rate": 22050,
+      "bits": 16,
+      "channels": 1,
+      "duration": 1.36,
+      "peak": 0.7943,
+      "rms_dbfs": -20.2,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "shots/induction_electric_single.wav",
+      "rate": 22050,
+      "bits": 16,
+      "channels": 1,
+      "duration": 1.76,
+      "peak": 0.7943,
+      "rms_dbfs": -22.0,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "shots/r1_service_single.wav",
+      "rate": 22050,
+      "bits": 16,
+      "channels": 1,
+      "duration": 1.599,
+      "peak": 0.7943,
+      "rms_dbfs": -31.7,
+      "full_scale_samples": 0
+    }
+  ],
+  "voices": [
+    {
+      "file": "voices/exavitqu4vr4xnsdxmal_contact.wav",
+      "rate": 22050,
+      "bits": 16,
+      "channels": 1,
+      "duration": 2.526,
+      "peak": 0.7943,
+      "rms_dbfs": -19.4,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "voices/exavitqu4vr4xnsdxmal_contact_hl.wav",
+      "rate": 11025,
+      "bits": 8,
+      "channels": 1,
+      "duration": 2.526,
+      "peak": 0.5469,
+      "rms_dbfs": -20.4,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "voices/exavitqu4vr4xnsdxmal_contact_radio.wav",
+      "rate": 11025,
+      "bits": 8,
+      "channels": 1,
+      "duration": 2.526,
+      "peak": 0.4375,
+      "rms_dbfs": -23.2,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "voices/exavitqu4vr4xnsdxmal_reload.wav",
+      "rate": 22050,
+      "bits": 16,
+      "channels": 1,
+      "duration": 1.711,
+      "peak": 0.7943,
+      "rms_dbfs": -16.7,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "voices/exavitqu4vr4xnsdxmal_reload_hl.wav",
+      "rate": 11025,
+      "bits": 8,
+      "channels": 1,
+      "duration": 1.711,
+      "peak": 0.6094,
+      "rms_dbfs": -18.9,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "voices/exavitqu4vr4xnsdxmal_reload_radio.wav",
+      "rate": 11025,
+      "bits": 8,
+      "channels": 1,
+      "duration": 1.711,
+      "peak": 0.4453,
+      "rms_dbfs": -21.6,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "voices/exavitqu4vr4xnsdxmal_shield.wav",
+      "rate": 22050,
+      "bits": 16,
+      "channels": 1,
+      "duration": 2.155,
+      "peak": 0.7943,
+      "rms_dbfs": -16.5,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "voices/exavitqu4vr4xnsdxmal_shield_hl.wav",
+      "rate": 11025,
+      "bits": 8,
+      "channels": 1,
+      "duration": 2.155,
+      "peak": 0.5,
+      "rms_dbfs": -18.6,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "voices/exavitqu4vr4xnsdxmal_shield_radio.wav",
+      "rate": 11025,
+      "bits": 8,
+      "channels": 1,
+      "duration": 2.155,
+      "peak": 0.4297,
+      "rms_dbfs": -21.4,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "voices/onwk4e9zlutakqww03f9_contact.wav",
+      "rate": 22050,
+      "bits": 16,
+      "channels": 1,
+      "duration": 2.36,
+      "peak": 0.7943,
+      "rms_dbfs": -20.4,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "voices/onwk4e9zlutakqww03f9_contact_hl.wav",
+      "rate": 11025,
+      "bits": 8,
+      "channels": 1,
+      "duration": 2.36,
+      "peak": 0.7344,
+      "rms_dbfs": -21.4,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "voices/onwk4e9zlutakqww03f9_contact_radio.wav",
+      "rate": 11025,
+      "bits": 8,
+      "channels": 1,
+      "duration": 2.36,
+      "peak": 0.4531,
+      "rms_dbfs": -24.2,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "voices/onwk4e9zlutakqww03f9_reload.wav",
+      "rate": 22050,
+      "bits": 16,
+      "channels": 1,
+      "duration": 1.556,
+      "peak": 0.7943,
+      "rms_dbfs": -19.6,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "voices/onwk4e9zlutakqww03f9_reload_hl.wav",
+      "rate": 11025,
+      "bits": 8,
+      "channels": 1,
+      "duration": 1.556,
+      "peak": 0.6484,
+      "rms_dbfs": -21.0,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "voices/onwk4e9zlutakqww03f9_reload_radio.wav",
+      "rate": 11025,
+      "bits": 8,
+      "channels": 1,
+      "duration": 1.556,
+      "peak": 0.4609,
+      "rms_dbfs": -24.0,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "voices/onwk4e9zlutakqww03f9_shield.wav",
+      "rate": 22050,
+      "bits": 16,
+      "channels": 1,
+      "duration": 2.301,
+      "peak": 0.7943,
+      "rms_dbfs": -21.0,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "voices/onwk4e9zlutakqww03f9_shield_hl.wav",
+      "rate": 11025,
+      "bits": 8,
+      "channels": 1,
+      "duration": 2.301,
+      "peak": 0.6562,
+      "rms_dbfs": -21.4,
+      "full_scale_samples": 0
+    },
+    {
+      "file": "voices/onwk4e9zlutakqww03f9_shield_radio.wav",
+      "rate": 11025,
+      "bits": 8,
+      "channels": 1,
+      "duration": 2.301,
+      "peak": 0.4297,
+      "rms_dbfs": -24.3,
+      "full_scale_samples": 0
+    }
+  ],
+  "reported_credit_cost_total": 120,
+  "listening_players": 30,
+  "all_audio_links_exist": true,
+  "listening_review": "Pending human listening review; structural and signal validation only.",
+  "requests_with_reported_credit_cost": 12,
+  "requests_without_reported_credit_cost": 0,
+  "reported_credit_cost_note": "Partial provider header total only; not a full account charge estimate."
+}

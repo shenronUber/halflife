@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "counter_taunt",
+  "variant": 1,
+  "text": "[threatening] I'll kill you, сука.",
+  "request": {
+    "text": "[threatening] I'll kill you, сука.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "29d7c7bb53baedaa708715571310a132b40b1c6b3df35367bb737b3aabf69188",
+  "sha256": "a1c157b8390cdced2af62ea59b2988629689201a43ed7482dbf30cdb7d37656d",
+  "request_id": "f55jzkJGYxEgRT0sFuUw",
+  "reported_credit_cost": "4"
+}

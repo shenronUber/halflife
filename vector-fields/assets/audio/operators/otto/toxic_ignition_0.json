@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "toxic_ignition",
+  "variant": 0,
+  "text": "[panicked] The poison is burning! Feuer!",
+  "request": {
+    "text": "[panicked] The poison is burning! Feuer!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "5124061f54bb2d2d39f4e18111ca59aaa95c011ece93e2bb4cd28e1132f53bbd",
+  "sha256": "f370bfccb2a2ab52097558e5a596d6def3a18b2e164092889e305d203294f2aa",
+  "request_id": "bFLkRPWf0PTMouIZj7uj",
+  "reported_credit_cost": "4"
+}

@@ -1,0 +1,68 @@
+{
+  "request_sha256": "ea35b2cdc2873ca24afd8a2b65d9c1c8ac80922ea678c1b3397b3a4154a25e38",
+  "request": {
+    "voice_name": "VF / Viktor Volkov",
+    "voice_description": "An original male Russian video-game heavy fighter, age 48. Very deep resonant gravel bass, broad chest tone, slow deliberate clipped speech, unmistakable Russian accent in fluent intelligible English, firm consonants and Russian vowel placement. Deadpan absurdly calm humour, stoic menace, small amused breaths, sudden raw physical grunts under impact. English is the main language, with brief idiomatic Russian interjections pronounced natively. Compact grounded action-game performance, not narration. Clean dry close microphone, no music, no background, no reverb. No imitation of a real person.",
+    "generated_voice_id": "MIGoD5dgOR9odYK1ejQC",
+    "labels": {
+      "gender": "male",
+      "accent": "Russian",
+      "use_case": "video_game"
+    }
+  },
+  "response": {
+    "voice_id": "MIGoD5dgOR9odYK1ejQC",
+    "name": "VF / Viktor Volkov",
+    "samples": null,
+    "category": "generated",
+    "fine_tuning": {
+      "is_allowed_to_fine_tune": false,
+      "state": {},
+      "verification_failures": [],
+      "verification_attempts_count": 0,
+      "manual_verification_requested": false,
+      "language": null,
+      "progress": {},
+      "message": {},
+      "dataset_duration_seconds": null,
+      "verification_attempts": null,
+      "slice_ids": null,
+      "manual_verification": null,
+      "max_verification_attempts": null,
+      "next_max_verification_attempts_reset_unix_ms": null
+    },
+    "labels": {
+      "gender": "male",
+      "accent": "Russian",
+      "use_case": "video_game"
+    },
+    "description": "An original male Russian video-game heavy fighter, age 48. Very deep resonant gravel bass, broad chest tone, slow deliberate clipped speech, unmistakable Russian accent in fluent intelligible English, firm consonants and Russian vowel placement. Deadpan absurdly calm humour, stoic menace, small amused breaths, sudden raw physical grunts under impact. English is the main language, with brief idiomatic Russian interjections pronounced natively. Compact grounded action-game performance, not narration. Clean dry close microphone, no music, no background, no reverb. No imitation of a real person.",
+    "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/fc94dd0c338b420083a332b3a9d57a9f/voices/MIGoD5dgOR9odYK1ejQC/e6b40c88-c1dc-4484-be4c-5f6c27f409d1.mp3",
+    "available_for_tiers": [],
+    "settings": {
+      "stability": 0.5,
+      "use_speaker_boost": true,
+      "similarity_boost": 0.75,
+      "style": 0.0,
+      "speed": 1.0
+    },
+    "sharing": null,
+    "high_quality_base_model_ids": [],
+    "verified_languages": [],
+    "collection_ids": null,
+    "safety_control": null,
+    "voice_verification": null,
+    "permission_on_resource": null,
+    "is_owner": null,
+    "is_legacy": false,
+    "is_mixed": false,
+    "favorited_at_unix": null,
+    "created_at_unix": 1791514589,
+    "is_bookmarked": null,
+    "recording_quality": null,
+    "labelling_status": null,
+    "recording_quality_reason": null,
+    "orb_thumbnail_signed_urls": null
+  },
+  "request_id": null
+}

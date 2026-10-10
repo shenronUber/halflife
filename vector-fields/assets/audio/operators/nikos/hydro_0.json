@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "model_id": "eleven_v4",
+  "event": "hydro",
+  "variant": 0,
+  "text": "[annoyed] Παναγία μου, I'm soaked!",
+  "request": {
+    "text": "[annoyed] Παναγία μου, I'm soaked!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "5513af159f8574aee77015d6ba2c6cf59a3d30daade923d7439171721cc6d862",
+  "sha256": "8d86c3f5d20642501da2f1b32c7413cae6086e20ebe9bd13405f5a8395314e89",
+  "request_id": "CsS5Vqmzh2Ft2RA24Wds",
+  "reported_credit_cost": "4"
+}

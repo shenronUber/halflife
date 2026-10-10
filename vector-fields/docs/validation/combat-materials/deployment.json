@@ -1,0 +1,48 @@
+{
+  "installed_at": "2026-10-09T12:46:21",
+  "mode": "identify_only",
+  "effective": "next game process",
+  "server_sha256": "bb86163e0563aaae9648006cb3e3bd5a3fd5cea2d7d730fca23cf5351430d01f",
+  "catalog_sha256": "603e55a569b43897df64b1339296814d212dafe6448b9f50d4c4f85609d52a70",
+  "files": [
+    {
+      "source": "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\combat-server\\hl.dll",
+      "installed": "C:\\Users\\Mathieu\\Documents\\Half life Project\\runtime\\vector-engine\\vf_visual\\dlls\\hl.dll",
+      "sha256": "bb86163e0563aaae9648006cb3e3bd5a3fd5cea2d7d730fca23cf5351430d01f",
+      "previous_sha256": "b223da6c3ff3fd47c38cc293154a6257c7b5cca300953badba69ff40a114d274"
+    },
+    {
+      "source": "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\generated\\personas\\persona_rig.mdl",
+      "installed": "C:\\Users\\Mathieu\\Documents\\Half life Project\\runtime\\vector-engine\\vf_visual\\models\\vf_skins\\persona_rig.mdl",
+      "sha256": "63f06713d3c60f521ee0199c6ee79df5de26c0b454d869aea5fa4ce0711ad3a7",
+      "previous_sha256": "63f06713d3c60f521ee0199c6ee79df5de26c0b454d869aea5fa4ce0711ad3a7"
+    },
+    {
+      "source": "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\generated\\third-person\\r01_tp.mdl",
+      "installed": "C:\\Users\\Mathieu\\Documents\\Half life Project\\runtime\\vector-engine\\vf_visual\\models\\vf_r01\\r01_tp.mdl",
+      "sha256": "320bb04e195d17a955a36d4b0ec69ebcd535e13a452300f2a143649988b19bd2",
+      "previous_sha256": "320bb04e195d17a955a36d4b0ec69ebcd535e13a452300f2a143649988b19bd2"
+    },
+    {
+      "source": "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\generated\\third-person\\r01_tp_side.mdl",
+      "installed": "C:\\Users\\Mathieu\\Documents\\Half life Project\\runtime\\vector-engine\\vf_visual\\models\\vf_r01\\r01_tp_side.mdl",
+      "sha256": "653e554cdd4f85a51e48771ea49a9a833cd5d8ea06769745000ca7da1a41b501",
+      "previous_sha256": "653e554cdd4f85a51e48771ea49a9a833cd5d8ea06769745000ca7da1a41b501"
+    },
+    {
+      "source": "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\generated\\third-person\\r01_tp_top.mdl",
+      "installed": "C:\\Users\\Mathieu\\Documents\\Half life Project\\runtime\\vector-engine\\vf_visual\\models\\vf_r01\\r01_tp_top.mdl",
+      "sha256": "86b23476956c5df835d980986cb76fa31798738d6e6a1907d5710053471c463b",
+      "previous_sha256": "86b23476956c5df835d980986cb76fa31798738d6e6a1907d5710053471c463b"
+    }
+  ],
+  "protected_files_unchanged": {
+    "C:\\Users\\Mathieu\\Documents\\Half life Project\\runtime\\vector-engine\\vf_visual\\cl_dlls\\client.dll": "d87b7d3da7e8dd1d9aeaf2b45b26a73186d176bc516b14cfc5d959cd3d310e67",
+    "C:\\Users\\Mathieu\\Documents\\Half life Project\\runtime\\vector-engine\\xash.dll": "5eaeb23b315ec0801a9b79e653e7803fc95c5d3a3a7bd79019c21f2aa11b71e3",
+    "C:\\Users\\Mathieu\\Documents\\Half life Project\\runtime\\vector-engine\\ref_gl.dll": "a898d33f2a7df997540b7a79bdc2a0f03db15d3fc4eb392c4a7235930240c90b"
+  },
+  "damage_and_armor_unchanged": true,
+  "models_geometry_and_animation_unchanged": true,
+  "verification": "exact tested server and models",
+  "previous_files_directory": "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\combat\\previous-installation"
+}

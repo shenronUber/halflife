@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "sonic",
+  "variant": 0,
+  "text": "[pained] My ears! Ruhe!",
+  "request": {
+    "text": "[pained] My ears! Ruhe!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "953779adaeedb85c93b959a59688ace2a0f5b08081a327a59c0af4ae777f9407",
+  "sha256": "01f15d1f2bf608a58eacbbf37319f6da34f5d87f2f007101a6a7a6ac11e4f185",
+  "request_id": "vrERbUHVWqOTIjQWvb3F",
+  "reported_credit_cost": "3"
+}

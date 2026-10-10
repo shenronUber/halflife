@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "taunt",
+  "variant": 1,
+  "text": "[taunting] Come on, connard. Impress me.",
+  "request": {
+    "text": "[taunting] Come on, connard. Impress me.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "b4fee9d435f475948504c198418d94aa44d1a543325c4cdcb50ab3fea9022a4a",
+  "sha256": "799b27b6b9931a6fe46cd1c8c7371066ff90bd331887c056c2f1368ed52baf39",
+  "request_id": "s2A3AprPD88VJXGs0ggF",
+  "reported_credit_cost": "4"
+}

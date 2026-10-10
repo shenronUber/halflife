@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "low_health",
+  "variant": 0,
+  "text": "[strained] Merda. I'm barely standing.",
+  "request": {
+    "text": "[strained] Merda. I'm barely standing.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "8aa76ddaa4490749b899812de531f6efa543814b5a7d0cbdeca9509be128b47d",
+  "sha256": "963ada52010df19ef19d17d1fb964932eb31149124c37585754f50a5b7187c4a",
+  "request_id": "oERbrfWtBWnWeS5OcoR1",
+  "reported_credit_cost": "4"
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Breacher / Heavy shotgun",
+  "created_utc": "2026-10-09T02:32:49.277020+00:00",
+  "request_sha256": "3bc7d7fb5d0aa080542194c683c8cce02b609aa6f3e6c2740a73fb4e9915c31a",
+  "request": {
+    "text": "One single powerful shotgun discharge for a first person shooter. A wide rough explosive crack with a substantial bass punch and a gritty short tail. Close and dry, readable transient, no clipping. Fire once immediately at the start. No pumping or reloading, no cinematic boom, no long reverberation, no music, no voice, no second shot.",
+    "duration_seconds": 2,
+    "prompt_influence": 0.5,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "a4fd10c596196c0f597fac34e2c377e86ae2e818fd54b152c022eb01808c523d",
+  "bytes": 33062,
+  "text": "One single powerful shotgun discharge for a first person shooter. A wide rough explosive crack with a substantial bass punch and a gritty short tail. Close and dry, readable transient, no clipping. Fire once immediately at the start. No pumping or reloading, no cinematic boom, no long reverberation, no music, no voice, no second shot.",
+  "request_id": null,
+  "reported_credit_cost": "20"
+}

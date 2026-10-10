@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "arc_chain",
+  "variant": 0,
+  "text": "[pained] Soaked and shocked! Mierda!",
+  "request": {
+    "text": "[pained] Soaked and shocked! Mierda!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "cab844bd9dd60b6074c220b0844d669fbb00eac633ab1b51d4ee0f4cefed1395",
+  "sha256": "561cdfe7c5f9b5b4e3e6921912a94a5d3e80c125332307e01fc6cd859041cefc",
+  "request_id": "BHwcWIVdo59OLEZSO1bo",
+  "reported_credit_cost": "4"
+}

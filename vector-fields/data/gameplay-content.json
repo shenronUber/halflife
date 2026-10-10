@@ -15,7 +15,8 @@
       "name": "Intervention",
       "operator": "Operateur GIGN",
       "family": "Baseline",
-      "suffix": "GIGN"
+      "suffix": "GIGN",
+      "item_suffix": "d'intervention"
     },
     {
       "id": "war-torn",
@@ -23,7 +24,8 @@
       "name": "Ruines",
       "operator": "Recuperateur des ruines",
       "family": "Fortress",
-      "suffix": "des ruines"
+      "suffix": "des ruines",
+      "item_suffix": "des ruines"
     },
     {
       "id": "medieval-forge",
@@ -31,7 +33,8 @@
       "name": "Forge medievale",
       "operator": "Sentinelle de la forge",
       "family": "Fortress",
-      "suffix": "de la forge"
+      "suffix": "de la forge",
+      "item_suffix": "de la forge"
     },
     {
       "id": "prehistoric",
@@ -39,7 +42,8 @@
       "name": "Os et silex",
       "operator": "Gardien d'os et de silex",
       "family": "Predator",
-      "suffix": "d'os et de silex"
+      "suffix": "d'os et de silex",
+      "item_suffix": "d'os et de silex"
     },
     {
       "id": "living-jungle",
@@ -47,7 +51,8 @@
       "name": "Canopee",
       "operator": "Veilleur de la canopee",
       "family": "Rogue",
-      "suffix": "de la canopee"
+      "suffix": "de la canopee",
+      "item_suffix": "de la canopee"
     },
     {
       "id": "medieval-alchemy",
@@ -55,7 +60,8 @@
       "name": "Alchimie",
       "operator": "Veilleur alchimiste",
       "family": "Engine",
-      "suffix": "d'alchimie"
+      "suffix": "d'alchimie",
+      "item_suffix": "d'alchimie"
     },
     {
       "id": "porcelain-fluidics",
@@ -63,7 +69,8 @@
       "name": "Porcelaine",
       "operator": "Operateur de porcelaine",
       "family": "Anomalous",
-      "suffix": "de porcelaine"
+      "suffix": "de porcelaine",
+      "item_suffix": "de porcelaine"
     },
     {
       "id": "ww1-trench",
@@ -71,7 +78,8 @@
       "name": "Grande Guerre",
       "operator": "Sentinelle des tranchees",
       "family": "Fortress",
-      "suffix": "des tranchees"
+      "suffix": "des tranchees",
+      "item_suffix": "des tranchees"
     },
     {
       "id": "bedrock-miner",
@@ -79,7 +87,8 @@
       "name": "Bedrock",
       "operator": "Mineur des profondeurs",
       "family": "Engine",
-      "suffix": "des profondeurs"
+      "suffix": "des profondeurs",
+      "item_suffix": "des profondeurs"
     },
     {
       "id": "new-york-noir",
@@ -87,7 +96,8 @@
       "name": "New York noir",
       "operator": "Detective de minuit",
       "family": "Predator",
-      "suffix": "de minuit"
+      "suffix": "de minuit",
+      "item_suffix": "de minuit"
     },
     {
       "id": "castaway",
@@ -95,7 +105,8 @@
       "name": "Bois de naufrage",
       "operator": "Naufrage des rivages",
       "family": "Rogue",
-      "suffix": "des rivages"
+      "suffix": "des rivages",
+      "item_suffix": "des rivages"
     },
     {
       "id": "abyss-diver",
@@ -103,57 +114,100 @@
       "name": "Abysses",
       "operator": "Plongeur des abysses",
       "family": "Baseline",
-      "suffix": "des abysses"
+      "suffix": "des abysses",
+      "item_suffix": "des abysses"
+    },
+    {
+      "id": "roman-inventor",
+      "key": "roman_inventor",
+      "name": "Rome / Inventeur",
+      "operator": "Artisan de la Renaissance",
+      "family": "Rogue",
+      "suffix": "d inventeur",
+      "item_suffix": "d'inventeur"
+    },
+    {
+      "id": "dieselpunk",
+      "key": "dieselpunk",
+      "name": "Dieselpunk",
+      "operator": "Mecanicien diesel",
+      "family": "Engine",
+      "suffix": "diesel",
+      "item_suffix": "diesel"
     }
   ],
   "weapon_families": {
     "receiver": [
       "Baseline",
-      "Engine"
+      "Engine",
+      "Rogue",
+      "Fortress"
     ],
     "barrel": [
       "Baseline",
-      "Engine"
+      "Engine",
+      "Rogue",
+      "Fortress"
     ],
     "muzzle": [
       "Rogue",
-      "Fortress"
+      "Fortress",
+      "Predator",
+      "Engine"
     ],
     "feed": [
       "Baseline",
-      "Engine"
-    ],
-    "chamber": [
-      "Rogue",
-      "Anomalous"
-    ],
-    "ammo": [
-      "Baseline",
-      "Engine"
-    ],
-    "projectile": [
-      "Predator",
-      "Anomalous"
-    ],
-    "optic": [
-      "Predator",
-      "Predator"
-    ],
-    "underbarrel": [
-      "Fortress",
-      "Engine"
-    ],
-    "grip": [
+      "Engine",
       "Rogue",
       "Fortress"
     ],
+    "chamber": [
+      "Rogue",
+      "Anomalous",
+      "Predator",
+      "Engine"
+    ],
+    "ammo": [
+      "Baseline",
+      "Engine",
+      "Rogue",
+      "Fortress"
+    ],
+    "projectile": [
+      "Predator",
+      "Anomalous",
+      "Baseline",
+      "Fortress"
+    ],
+    "optic": [
+      "Predator",
+      "Predator",
+      "Rogue",
+      "Engine"
+    ],
+    "underbarrel": [
+      "Fortress",
+      "Engine",
+      "Predator",
+      "Fortress"
+    ],
+    "grip": [
+      "Rogue",
+      "Fortress",
+      "Baseline",
+      "Engine"
+    ],
     "power": [
       "Engine",
-      "Anomalous"
+      "Anomalous",
+      "Rogue",
+      "Fortress"
     ],
     "cooling": [
       "Fortress",
-      "Engine"
+      "Engine",
+      "Rogue",
+      "Anomalous"
     ]
   }
 }

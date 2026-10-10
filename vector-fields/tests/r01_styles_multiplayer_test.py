@@ -6,12 +6,15 @@ from native_multiplayer_test import prepare_peer
 def run():
  peer=prepare_peer('vf_visual')
  common=['-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_visual','-console','-nointro']
- start='wait 220\ndeveloper 1\ncon_notifytime 0\nfps_max 100\nweapon_9mmAR\nvf_reference 0\nwait 35\n'
- first=start+'vf_reference_style 4\nvf_commit\nwait 35\n'+click(1220,40)+'wait 2200\nvf_engine_stats\nscreenshot scrshots/r01_styles_peer_a.png\nwait 20\nquit\n'
- second=start+'vf_reference_style 2\nvf_reference_style 6 16\nvf_commit\nwait 35\n'+click(1220,40)+'wait 1000\nvf_engine_stats\nscreenshot scrshots/r01_styles_peer_b.png\nwait 20\nquit\n'
+ start='wait 220\ndeveloper 1\ncon_notifytime 0\nfps_max 100\nweapon_9mmAR\nvf_reference\nwait 35\n'
+ slots='receiver barrel muzzle feed chamber ammo projectile optic underbarrel grip power cooling'.split()
+ first_items=''.join(f'vf_item r01_{slot}_{"arch_top" if slot=="receiver" else "a"}__living-jungle\nwait 1\n'for slot in slots)
+ second_items=''.join(f'vf_item r01_{slot}_b__{"porcelain-fluidics" if slot=="optic" else "medieval-forge"}\nwait 1\n'for slot in slots)
+ first=start+first_items+'vf_commit\nwait 35\n'+click(1220,40)+'wait 2200\nvf_engine_stats\nscreenshot scrshots/r01_styles_peer_a.png\nwait 20\nquit\n'
+ second=start+second_items+'vf_commit\nwait 35\n'+click(1220,40)+'wait 1000\nvf_engine_stats\nscreenshot scrshots/r01_styles_peer_b.png\nwait 20\nquit\n'
  (MOD/'r01_peer_a.cfg').write_text(first,encoding='ascii')
  (peer/'vf_visual/r01_peer_b.cfg').write_text(second,encoding='ascii')
- server=subprocess.Popen([str(ENGINE/'xash.exe'),*common,'-log','r01-styles-server.log','+ip','127.0.0.1','-port','27035','+maxplayers','4','+sv_lan','1','+sv_cheats','1','+deathmatch','1','+developer','1','+map','vf_range'],cwd=ENGINE,creationflags=subprocess.CREATE_NO_WINDOW)
+ server=subprocess.Popen([str(ENGINE/'xash.exe'),*common,'-log','r01-styles-server.log','+ip','127.0.0.1','-port','27035','+maxplayers','4','+sv_lan','1','+sv_cheats','0','+deathmatch','1','+developer','1','+map','vf_range'],cwd=ENGINE,creationflags=subprocess.CREATE_NO_WINDOW)
  children=[];started=time.time()
  try:
   time.sleep(4);assert server.poll()is None
@@ -38,7 +41,7 @@ def run():
     'late join receives player 1 jungle choices',
     'both clients receive player 2 medieval choices',
     'player 2 also applies a porcelain optic-module override',
-    'authoritative equipment/style packets accepted by both clients'],
+    'protocol 4 inventory indices above 255 accepted by both clients with cheats disabled'],
     scope='loopback replication; third-person weapon retains its existing stock model')
   (ROOT/'build/r01-styles-multiplayer-verification.json').write_text(json.dumps(report,indent=2))
   print('PASS R01 styles: two clients, late join, independent saved texture choices.')

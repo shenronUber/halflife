@@ -5,7 +5,7 @@ import shutil
 import subprocess
 import sys
 import time
-from release import VERSION, startup as release_startup
+from release import VERSION, startup as release_startup, check_native_interface, prepare_native_renderer_update, verify_deployment
 from pathlib import Path
 from import_tfc import install,entities,write_entities
 from import_cs import install as install_cs
@@ -16,22 +16,28 @@ import play as weapons
 MOD='vf_skins'
 
 def add_mannequins(destination,native=False):
-    bsp=destination/'maps/vf_range.bsp';data=bsp.read_bytes();items=entities(data)
+    # The range and effect-guide previews share the installed GIGN assets.
+    target=destination/'models/vf_skins';target.mkdir(parents=True,exist_ok=True)
+    for name in ('persona_rig.mdl','persona_scout.mdl'):
+        shutil.copy2(ROOT/'generated/personas'/name,target/name)
+    bsp=destination/'maps/vf_range.bsp'
+    if native:
+        from build_test_room import build
+        shutil.copy2(build(ensure=True),bsp)
+        return
+    # Keep the standalone legacy skin inspector usable without native assembly.
+    data=bsp.read_bytes();items=entities(data)
     for item in items:
         if item.get('classname')=='game_player_equip':item['ammo_9mmbox']='1'
     for name,x in [('scout',-200),('soldier',0),('hvyweapon',200)]:
         source=weapons.HALF_LIFE/'tfc/models/player'/name/(name+'2.mdl')
-        target=destination/'models/vf_tfc'/(name+'.mdl')
-        target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(source,target)
+        model=destination/'models/vf_tfc'/(name+'.mdl')
+        model.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(source,model)
         items.append(dict(classname='cycler',model=f'models/vf_tfc/{name}.mdl',origin=f'{x} -220 36',angle='225'))
-    if native:
-        items.append(dict(classname='cycler',targetname='vf_skin_assembly',model='models/vf_operator.mdl',origin='-280 -160 36',angle='225'))
-        for x,y in [(-355,-265),(-355,-65),(300,200),(300,-200)]:
-            items.append(dict(classname='info_player_deathmatch',origin=f'{x} {y} 36',angle='90'))
-    else:
-        for z in range(5):
-            items.append(dict(classname='cycler',targetname=f'vf_skin_zone_{z}',model='models/vf_skins/skin_000.mdl',body=str(1<<z),origin='-280 -160 36',angle='225'))
+    for z in range(5):
+        items.append(dict(classname='cycler',targetname=f'vf_skin_zone_{z}',model='models/vf_skins/skin_000.mdl',body=str(1<<z),origin='-280 -160 36',angle='225'))
     bsp.write_bytes(write_entities(data,items))
+
 
 def fingerprint():
     value=2166136261
@@ -56,10 +62,12 @@ def main():
         MOD='vf_engine';weapons.XASH=PROJECT/'runtime/vector-engine'
         if not (weapons.XASH/'xash3d.exe').exists():raise RuntimeError('Run build-engine.ps1 first')
         if args.visual_lab:MOD='vf_visual'
+        if prepare_native_renderer_update(weapons.XASH,ROOT/'build/client/client.dll'):print('Verified native status renderer installed.',flush=True)
+        check_native_interface(weapons.XASH,ROOT/'build/client/client.dll')
     if args.visual_lab:
-        from build_reference_weapon import ensure_current,main as build_reference
+        from build_reference_weapon import build as build_reference
         from build_personas import build as build_personas
-        if not ensure_current():build_reference()
+        build_reference(ensure=True)
         build_personas(ensure=True)
         from build_lootpool import build as build_lootpool
         build_lootpool()
@@ -100,11 +108,19 @@ def main():
         for folder in ['models','sound']:
             if (library/folder).exists():shutil.copytree(library/folder,dst/folder,dirs_exist_ok=True)
         shutil.copy2(library/'manifest.json',dst/'vf/library-provenance.json')
+        from build_first_person import build as build_first_person
+        build_first_person(ensure=True)
+        from third_person import build as build_third_person
+        build_third_person(ensure=True)
         target=dst/'models/vf_r01';target.mkdir(parents=True,exist_ok=True)
         for path in (ROOT/'generated/r01').glob('*.mdl'):shutil.copy2(path,target/path.name)
+        for path in (ROOT/'generated/third-person').glob('*.mdl'):shutil.copy2(path,target/path.name)
         print(f'CS: {cs_manifest["count"]} resources, {len(cs_manifest["maps"])} exploration maps',flush=True)
     valid_maps=['vf_range']+[i['name'] for i in manifest['maps']]+[i['name'] for i in cs_manifest['maps']]
     if args.map not in valid_maps:raise ValueError('Choose one of: '+', '.join(valid_maps))
+    from build_deaths import build as build_deaths
+    build_deaths(ensure=True)
+    shutil.copytree(ROOT/'generated/deaths',dst/'models/vf_deaths',dirs_exist_ok=True,ignore=shutil.ignore_patterns('*.smd','*.qc','*.bmp','*.log','manifest.json'))
     add_mannequins(dst,args.native_engine)
     (dst/'gameinfo.txt').write_text('''title "Vector Fields - Atelier de skins"
 basedir "valve"
@@ -128,10 +144,39 @@ max_edicts "2048"
             if companion.exists():shutil.copy2(companion,target/companion.name)
     shutil.copytree(ROOT/'generated/ui',dst/'sprites/vf_ui',dirs_exist_ok=True)
     shutil.copytree(ROOT/'generated/effects',dst/'sprites/vf_effects',dirs_exist_ok=True)
+    from build_status_decals import build as build_status_decals
+    build_status_decals(ensure=True)
+    shutil.copytree(ROOT/'generated/status-decals',dst/'sprites/vf_status',dirs_exist_ok=True,ignore=shutil.ignore_patterns('manifest.json','*-mask.spr'))
+    shutil.copy2(ROOT/'data/status_decals.json',dst/'vf/status_decals.json')
     shutil.copy2(ROOT/'data/effects.json',dst/'vf/effects.json')
+    # Six original bilingual operators; no ElevenLabs dependency at runtime.
+    from death_voice_workshop import deploy as deploy_death_voices
+    deploy_death_voices(dst)
+    from build_death_sounds import deploy as deploy_death_sounds
+    deploy_death_sounds(dst)
+    voice_assets=ROOT/'assets/audio/operators'
+    if (voice_assets/'manifest.json').exists():
+        for actor in json.loads((voice_assets/'manifest.json').read_text())['actors']:
+            target=dst/'sound/vf_voices'/actor['id'];target.mkdir(parents=True,exist_ok=True)
+            for wav in (voice_assets/actor['id']).glob('*.wav'):
+                if not wav.stem.endswith('_master') and not wav.stem.startswith('death'):shutil.copy2(wav,target/wav.name)
+        shutil.copy2(voice_assets/'manifest.json',dst/'vf/voice-manifest.json')
+        (dst/'vf_voices.cfg').write_text('bind "j" "cmd vf_taunt"\nvf_voice_subtitles 1\n',encoding='ascii')
+
+    from build_weapon_fx_range import build as build_fx_range
+    build_fx_range()
+    from build_weapon_fx import build as build_weapon_fx
+    build_weapon_fx()
+    shutil.copytree(ROOT/'generated/weapon-fx/sprites',dst/'sprites/vf_weaponfx',dirs_exist_ok=True)
+    shutil.copytree(ROOT/'generated/weapon-fx/sound',dst/'sound/vf_weaponfx',dirs_exist_ok=True)
+    shutil.copy2(ROOT/'generated/weapon-fx/decals.wad',dst/'decals.wad')
+    shutil.copy2(ROOT/'data/weapon_fx.json',dst/'vf/weapon_fx.json')
+    shutil.copy2(ROOT/'generated/weapon-fx/range/vf_fx_range.bsp',dst/'maps/vf_fx_range.bsp')
     with (dst/'lab_controls.cfg').open('a') as f:
         f.write('\nbind "F1" "vf_character"\nbind "F2" "vf_operator"\nbind "F5" "vf_dev; exec vf_visit_2fort.cfg"\nhud_scale 1\nr_studio_drawelements 1\nr_studio_builtin_renderer 0\ndeveloper 0\ncon_notifytime 3\n')
         f.write('\nbind F11 \"vf_reference\"\nbind F7 "vf_dev"\nscr_drawversion 0\nbind F6 vf_dev\nbind F4 "map vf_range; exec vf_start.cfg"\nbind F3 vf_effects\nbind F9 vf_effect_clear\nbind PGUP vf_effect_prev\nbind PGDN vf_effect_next\n')
+        f.write('\nbind F8 vf_death_lab\n')
+        f.write('\nbind j "cmd vf_taunt"\n')
         f.write('\nvf_native_models '+('1' if args.native_engine else '0')+'\n')
     wait='wait 180\n' # Xash3D supports a frame count; keep the command buffer small.
     equip='give item_suit\ngive weapon_9mmAR\ngive ammo_9mmbox\nweapon_9mmAR\n'
@@ -205,7 +250,10 @@ max_edicts "2048"
         (ROOT/'build/maps-verification.json').write_text(json.dumps({'maps':screenshots,'count':len(screenshots),'tfc_files':manifest['count'],'checks':['each map spawned in a fresh process and produced a screenshot'],'limits':['exploration only; TFC classes and objectives not implemented']},indent=2))
         return
     assert len(start.encode('ascii'))<24000,'Leave room in the engine command buffer'
+    if not (dst/'vf_voice_behavior.cfg').exists():shutil.copy2(ROOT/'data/voice_behavior.cfg',dst/'vf_voice_behavior.cfg')
+    if not start.startswith('exec vf_voice_behavior.cfg\n'):start='exec vf_voice_behavior.cfg\n'+start
     (dst/'vf_start.cfg').write_text(start,encoding='ascii')
+    if args.visual_lab:verify_deployment(dst)
     if args.deploy_only:return
     smoke=args.smoke or args.smoke_maps or args.smoke_skins
     log_name='vf-skins-test.log' if args.smoke_skins else 'vf-modular-test.log' if args.smoke else 'vf-skins.log'

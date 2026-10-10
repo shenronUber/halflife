@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "R1 / Service rifle",
+  "created_utc": "2026-10-09T02:32:44.798794+00:00",
+  "request_sha256": "c150ea19bd2483d59f970019adf6d8cf6592296b0f082147bcb469a86f0c494b",
+  "request": {
+    "text": "One isolated shot from a compact service assault rifle, for a first person shooter game. Immediate sharp dry crack, tight low body, brief metallic bolt clack and very short natural decay. Clean close perspective, anechoic recording. Exactly one shot at the start. No echo, no music, no speech, no shell hitting the floor, no other shots.",
+    "duration_seconds": 1.6,
+    "prompt_influence": 0.5,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "2d46ccdadcbc76ebfc7315005f55d0d3df4c0eb28c4c82720edcfa089964e23e",
+  "bytes": 26793,
+  "text": "One isolated shot from a compact service assault rifle, for a first person shooter game. Immediate sharp dry crack, tight low body, brief metallic bolt clack and very short natural decay. Clean close perspective, anechoic recording. Exactly one shot at the start. No echo, no music, no speech, no shell hitting the floor, no other shots.",
+  "request_id": null,
+  "reported_credit_cost": "16"
+}

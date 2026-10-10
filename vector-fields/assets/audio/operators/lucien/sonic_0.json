@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "sonic",
+  "variant": 0,
+  "text": "[pained] Mes oreilles! Stop that noise!",
+  "request": {
+    "text": "[pained] Mes oreilles! Stop that noise!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "947359fe3b052239cbcfae02e26ab76c5e8efbd5ead0dc2cb1a20240b99ac182",
+  "sha256": "5815c6bd90e521824500dff004db6d1836e99aa23d441f389219380ac84e0f28",
+  "request_id": "jbVPkQzDvgXkzJGdhoyd",
+  "reported_credit_cost": "4"
+}

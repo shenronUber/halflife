@@ -10,3 +10,5 @@
 9|new_york_noir|New York noir|0|r01|9
 10|castaway|Bois de naufrage|0|r01|10
 11|abyss_diver|Abysses|0|r01|11
+12|roman_inventor|Rome / Inventeur|0|r01|12
+13|dieselpunk|Dieselpunk|0|r01|13

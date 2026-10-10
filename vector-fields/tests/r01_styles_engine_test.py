@@ -26,7 +26,7 @@ def assets():
  from r01_uv_mapping_test import surface,BASELINE,assert_surface
  before=json.loads(BASELINE.read_text())
  assert data['uv_mapping']=='isotropic-tiled-v1'
- assert data['skin_families']==len(data['styles']) and len(data['pieces'])==26
+ assert data['skin_families']==len(data['styles']) and len(data['pieces'])==61
  total=0
  for record in data['pieces']:
   s=Studio(ROOT/'generated/r01'/(record['id']+'.mdl'))
@@ -49,7 +49,7 @@ def run():
  def snap(name):
   name='r01_style_'+name;captures.append(name)
   return f'wait 18\nscreenshot scrshots/{name}.png\nwait 4\n'
- script='wait 180\ndeveloper 1\ncon_notifytime 0\nweapon_9mmAR\n+forward\nwait 25\n-forward\nvf_reference 0\nwait 35\nvf_animation_time 0\n'
+ script='wait 180\ndeveloper 1\ncon_notifytime 0\nweapon_9mmAR\n+forward\nwait 25\n-forward\nvf_dev\nwait 25\nvf_reference 0\nwait 35\nvf_animation_time 0\n'
  script+=snap('preview_0')+'vf_commit\nwait 25\n'+click(1220,40)+snap('hand_0')+'vf_reference\nwait 25\nvf_animation_time 0\nvf_engine_stats\n'
  for style in range(1,families):
   # Actual mouse route: the right arrow of the finish chooser.

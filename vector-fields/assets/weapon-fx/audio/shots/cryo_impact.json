@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Cryo / impact",
+  "created_utc": "2026-10-09T02:54:22.423743+00:00",
+  "request_sha256": "7add676514d222a0a79a464035ef26749665af822194461709d8b5d445a2f5c1",
+  "request": {
+    "text": "Single ice projectile shattering on stone. Immediate glassy crystalline crunch, tiny sharp ice fragments scattering, a brief hiss of cold vapor. No firing sound, no voice, no music.",
+    "duration_seconds": 1.2,
+    "prompt_influence": 0.55,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "6797e0e2aa6a6c512e64558ebb87d00b750e4098b3ae7a8e813983ffc466d7e9",
+  "bytes": 20106,
+  "text": "Single ice projectile shattering on stone. Immediate glassy crystalline crunch, tiny sharp ice fragments scattering, a brief hiss of cold vapor. No firing sound, no voice, no music.",
+  "request_id": null,
+  "reported_credit_cost": "12"
+}

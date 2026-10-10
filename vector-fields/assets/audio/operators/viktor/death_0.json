@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "death",
+  "variant": 0,
+  "text": "[screams] Aah! Чёрт!",
+  "request": {
+    "text": "[screams] Aah! Чёрт!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "5850475adaf26b1a10a558f18d024c49bf2cc31667d0026f3b07957c6e5d2faf",
+  "sha256": "630e1947680946e832924bb8eab07637d5330a3c06e2356d089cbb6e85cf90a2",
+  "request_id": "7jgAwLhALqWDmzxIjHmC",
+  "reported_credit_cost": "2"
+}

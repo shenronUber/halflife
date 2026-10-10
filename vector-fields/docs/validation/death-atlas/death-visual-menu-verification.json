@@ -1,0 +1,11 @@
+{
+  "checks": [
+    "pointer click triggers actual head explosion/electrical death",
+    "corpse pose, missing head and cause survive save/load",
+    "thirteen simultaneous full dismemberments retain twelve corpses and 72 fragments",
+    "elemental particle pool stays within 384",
+    "clear removes all corpse states",
+    "native assemblies accepted",
+    "crouching player corpse preserves floor height"
+  ]
+}

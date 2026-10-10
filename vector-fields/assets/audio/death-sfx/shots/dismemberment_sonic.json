@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Sonic / dismemberment",
+  "created_utc": "2026-10-09T23:28:59.300873+00:00",
+  "request_sha256": "8e471616f840e69b2ea04b7660c4be3d9dc78011aa5638275c3d20f9332d86c9",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. One sharp dry tissue snap punched by a narrow air-pressure clap, followed by a very short hollow high ringing ripple. Directional sonic limb severing, compact attack.",
+    "duration_seconds": 1.1,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "51a15140e2bdcdfa1117cfc1923decc5a24302d09df8fe6cc8f307321314cf14",
+  "bytes": 18434,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. One sharp dry tissue snap punched by a narrow air-pressure clap, followed by a very short hollow high ringing ripple. Directional sonic limb severing, compact attack.",
+  "request_id": null,
+  "reported_credit_cost": "11"
+}

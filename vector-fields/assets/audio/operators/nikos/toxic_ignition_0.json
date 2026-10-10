@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "model_id": "eleven_v4",
+  "event": "toxic_ignition",
+  "variant": 0,
+  "text": "[panicked] The poison is burning! Φωτιά!",
+  "request": {
+    "text": "[panicked] The poison is burning! Φωτιά!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "4ff271b03bd7893e8bb8f7d43735aba6e554a746658772176ce04a79e4cd5ccc",
+  "sha256": "882539a4c7a753e5057a12b7f62a211f1dc09ef31e04264c5ace6b6052226148",
+  "request_id": "eH4KHuj6ILbx9DBzVXXX",
+  "reported_credit_cost": "4"
+}

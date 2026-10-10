@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Sonic / impact",
+  "created_utc": "2026-10-09T02:54:35.105680+00:00",
+  "request_sha256": "d829fdd179fde328b1c903b94400ea585a9ceced26537cefaf75d8ac2f53bdb2",
+  "request": {
+    "text": "Single sonic pressure projectile contact. Immediate concussive slap, brief high ringing pressure chirp and tiny grit scattering. Very short game effect, no voice, no music, no firing sound.",
+    "duration_seconds": 1.2,
+    "prompt_influence": 0.55,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "0b46843c67d1506960ce628f5945722e97b9cd1b200a648b9d97cd6a74cd2dba",
+  "bytes": 20106,
+  "text": "Single sonic pressure projectile contact. Immediate concussive slap, brief high ringing pressure chirp and tiny grit scattering. Very short game effect, no voice, no music, no firing sound.",
+  "request_id": null,
+  "reported_credit_cost": "12"
+}

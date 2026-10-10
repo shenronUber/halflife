@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "respawn",
+  "variant": 2,
+  "text": "[annoyed] Again? This game is broken. Rocco cannot possibly be the problem.",
+  "request": {
+    "text": "[annoyed] Again? This game is broken. Rocco cannot possibly be the problem.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "97ac8397e253494b0178b8eb201a8be3b2878018b3d484ac7175089e063fc8fe",
+  "sha256": "10fcee7dfd19daebe3aee6dafe8663482ba4513d01c17b60b850b1c48c52988e",
+  "request_id": "NONNrwBOANYMBoNvjIOJ",
+  "reported_credit_cost": "8"
+}

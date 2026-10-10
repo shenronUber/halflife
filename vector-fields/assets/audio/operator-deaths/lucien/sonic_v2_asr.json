@@ -1,0 +1,19 @@
+{
+  "audio_sha256": "2671b38526e4dcb2617d989633b17291a102868fc445d3c31eedf14652f4c40c",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "[screams]",
+    "words": [
+      {
+        "text": "[screams]",
+        "start": 0.06,
+        "end": 1.68,
+        "type": "audio_event",
+        "logprob": -0.2278764368411863
+      }
+    ],
+    "transcription_id": "O9fHeWnF3jNOdORRqX5w",
+    "audio_duration_secs": 1.7021875
+  }
+}

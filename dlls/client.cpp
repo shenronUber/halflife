@@ -31,6 +31,11 @@
 #include "spectator.h"
 #include "client.h"
 #include "vf_equipment.h"
+#include "vf_voice.h"
+#include "vf_status.h"
+#include "vf_combat.h"
+#include "vf_range.h"
+#include "vf_death.h"
 #include "vf_skins.h"
 #include "soundent.h"
 #include "gamerules.h"
@@ -107,6 +112,8 @@ GLOBALS ASSUMED SET:  g_fGameOver
 */
 void ClientDisconnect( edict_t *pEntity )
 {
+    VF_StatusReset(GetClassPtr((CBasePlayer *)&pEntity->v));
+    VF_CombatClear(GetClassPtr((CBasePlayer *)&pEntity->v));
     VF_BroadcastPlayer(GetClassPtr((CBasePlayer *)&pEntity->v),false);
 	if (g_fGameOver)
 		return;
@@ -203,6 +210,7 @@ void ClientPutInServer( edict_t *pEntity )
 
 	pPlayer = GetClassPtr((CBasePlayer *)pev);
 	pPlayer->SetCustomDecalFrames(-1); // Assume none;
+	pPlayer->m_vfVoiceDied=pPlayer->m_vfVoiceRespawnLast=0; // a new connection is a first appearance
 
 	// Allocate a CBasePlayer for pev, and call spawn
 	pPlayer->Spawn() ;
@@ -510,7 +518,7 @@ void ClientCommand( edict_t *pEntity )
 
 	entvars_t *pev = &pEntity->v;
 
-	if ( VF_SkinCommand(GetClassPtr((CBasePlayer *)pev), pcmd) || VF_EquipmentCommand(GetClassPtr((CBasePlayer *)pev), pcmd) )
+	if ( VF_DeathCommand(GetClassPtr((CBasePlayer *)pev), pcmd) || VF_RangeCommand(GetClassPtr((CBasePlayer *)pev), pcmd) || VF_CombatCommand(GetClassPtr((CBasePlayer *)pev), pcmd) || VF_StatusCommand(GetClassPtr((CBasePlayer *)pev), pcmd) || VF_VoiceCommand(GetClassPtr((CBasePlayer *)pev), pcmd) || VF_SkinCommand(GetClassPtr((CBasePlayer *)pev), pcmd) || VF_EquipmentCommand(GetClassPtr((CBasePlayer *)pev), pcmd) )
 	{
 		return;
 	}
@@ -814,6 +822,10 @@ void StartFrame( void )
 void ClientPrecache( void )
 {
 	VF_PrecacheSkins();
+	VF_VoicePrecache();
+	VF_StatusPrecache();
+	VF_RangePrecache();
+	VF_CombatReset();
 	// setup precaches always needed
 	PRECACHE_SOUND("player/sprayer.wav");			// spray paint sound for PreAlpha
 	

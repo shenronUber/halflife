@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "toxic",
+  "variant": 0,
+  "text": "[coughs] Poison. C'est dégoûtant.",
+  "request": {
+    "text": "[coughs] Poison. C'est dégoûtant.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "518d5525baba2d3af4de5c98c2fe8139a248c9cdecbb4d37b530221fc07e5148",
+  "sha256": "b62aa4f74f46696937686d82bbeb66c29226190d765aeb336d746c117cf0e02b",
+  "request_id": "CwxO0tOiJ0fzUgjyj6qn",
+  "reported_credit_cost": "4"
+}

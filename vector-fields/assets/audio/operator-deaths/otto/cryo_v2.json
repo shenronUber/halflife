@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "actor": "otto",
+  "cause": "cryo",
+  "text": "[strained][screaming] AAGH!",
+  "request": {
+    "text": "[strained][screaming] AAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "7e4e82fe36e647ed0ec87039792c67427060de512e105f56ea1adcd6f1077450",
+  "sha256": "6a984f5261a479ac3280492ac7ac4fe300cebe52e5e570ed82e5555d48fc9f8b",
+  "request_id": "wNdmzqMzmRE18gAuoREy"
+}

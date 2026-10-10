@@ -1,0 +1,38 @@
+{
+  "verified": "2026-10-09",
+  "installations": {
+    "main": {
+      "mod": "C:\\Users\\Mathieu\\Documents\\Half life Project\\runtime\\vector-engine\\vf_visual",
+      "actors": 6,
+      "clips": 233,
+      "private_respawn_variants": 18,
+      "configuration": "C:\\Users\\Mathieu\\Documents\\Half life Project\\runtime\\vector-engine\\vf_visual\\vf_voice_behavior.cfg",
+      "current_build_dlls": {
+        "server": true,
+        "client": true
+      },
+      "activation": "ready"
+    },
+    "bots": {
+      "mod": "C:\\Users\\Mathieu\\Documents\\Half life Project\\runtime\\jk-botti-research\\engine\\valve",
+      "actors": 6,
+      "clips": 233,
+      "private_respawn_variants": 18,
+      "configuration": "C:\\Users\\Mathieu\\Documents\\Half life Project\\runtime\\jk-botti-research\\engine\\valve\\vf_voice_behavior.cfg",
+      "current_build_dlls": {
+        "server": true,
+        "client": true
+      },
+      "activation": "ready"
+    }
+  },
+  "engine_changes_required": false,
+  "checks": [
+    "Both runtime banks contain all 233 matching retro WAVs",
+    "18 owner-only respawn variants are installed",
+    "Original first-spawn scripts and cached performances retained",
+    "Clean masters excluded from both game sound banks",
+    "Bot runtime uses the current production DLLs",
+    "Main launcher automatically activates the compiled DLLs after the current game closes"
+  ]
+}

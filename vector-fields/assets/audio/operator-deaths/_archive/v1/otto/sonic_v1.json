@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "actor": "otto",
+  "cause": "sonic",
+  "text": "[screaming] AAAAAGH! [groaning] Nnngh... [exhales] Hhh...",
+  "request": {
+    "text": "[screaming] AAAAAGH! [groaning] Nnngh... [exhales] Hhh...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "aa959f97ba271dc304806a5a11a93b903f645c226e4b1d611e0f6df20d1fd71f",
+  "sha256": "4ad5e81a342f910fb091f2a9b3c730757cd8a7d020a5423f4167dff7321a065d",
+  "request_id": "qIm7CCOZntl53PvkvZXr"
+}

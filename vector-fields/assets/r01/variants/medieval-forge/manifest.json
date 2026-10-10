@@ -35,28 +35,64 @@
       "used_by_models": [
         "r01_receiver_a",
         "r01_receiver_b",
+        "r01_receiver_c",
+        "r01_receiver_d",
         "r01_barrel_a",
         "r01_barrel_b",
+        "r01_barrel_c",
+        "r01_barrel_d",
         "r01_muzzle_a",
         "r01_muzzle_b",
+        "r01_muzzle_c",
+        "r01_muzzle_d",
         "r01_feed_a",
         "r01_feed_b",
+        "r01_feed_c",
+        "r01_feed_d",
         "r01_chamber_a",
         "r01_chamber_b",
+        "r01_chamber_c",
+        "r01_chamber_d",
         "r01_ammo_a",
         "r01_ammo_b",
+        "r01_ammo_c",
+        "r01_ammo_d",
         "r01_projectile_a",
         "r01_projectile_b",
+        "r01_projectile_c",
+        "r01_projectile_d",
         "r01_optic_a",
         "r01_optic_b",
+        "r01_optic_c",
+        "r01_optic_d",
         "r01_underbarrel_a",
         "r01_underbarrel_b",
+        "r01_underbarrel_c",
+        "r01_underbarrel_d",
         "r01_grip_a",
         "r01_grip_b",
+        "r01_grip_c",
+        "r01_grip_d",
         "r01_power_a",
         "r01_power_b",
+        "r01_power_c",
+        "r01_power_d",
         "r01_cooling_a",
-        "r01_cooling_b"
+        "r01_cooling_b",
+        "r01_cooling_c",
+        "r01_cooling_d",
+        "r01_receiver_side",
+        "r01_receiver_top",
+        "r01_receiver_arch",
+        "r01_receiver_gyre",
+        "r01_chamber_inventor",
+        "r01_chamber_diesel",
+        "r01_optic_inventor",
+        "r01_optic_diesel",
+        "r01_power_inventor",
+        "r01_power_diesel",
+        "r01_cooling_inventor",
+        "r01_cooling_diesel"
       ],
       "used_in_current_builder": true
     },
@@ -78,7 +114,11 @@
       "used_by_models": [
         "r01_receiver_a",
         "r01_receiver_b",
-        "r01_grip_b"
+        "r01_receiver_c",
+        "r01_receiver_d",
+        "r01_grip_b",
+        "r01_receiver_side",
+        "r01_receiver_top"
       ],
       "used_in_current_builder": true
     },
@@ -99,12 +139,23 @@
       "bmp_sha256": "b93caf5a79c7378287eb1af5c36509793c034d5993b916a7356ae88b6400142e",
       "used_by_models": [
         "r01_receiver_a",
+        "r01_receiver_c",
         "r01_barrel_a",
+        "r01_barrel_c",
         "r01_ammo_a",
+        "r01_ammo_c",
         "r01_projectile_a",
+        "r01_projectile_c",
         "r01_optic_a",
         "r01_grip_b",
-        "r01_power_a"
+        "r01_power_a",
+        "r01_power_c",
+        "r01_receiver_side",
+        "r01_receiver_arch",
+        "r01_receiver_gyre",
+        "r01_chamber_diesel",
+        "r01_optic_diesel",
+        "r01_cooling_diesel"
       ],
       "used_in_current_builder": true
     },
@@ -126,8 +177,18 @@
       "used_by_models": [
         "r01_receiver_a",
         "r01_receiver_b",
+        "r01_receiver_d",
+        "r01_chamber_d",
         "r01_ammo_b",
-        "r01_projectile_b"
+        "r01_ammo_d",
+        "r01_projectile_b",
+        "r01_projectile_d",
+        "r01_optic_d",
+        "r01_grip_d",
+        "r01_power_d",
+        "r01_receiver_side",
+        "r01_receiver_top",
+        "r01_receiver_gyre"
       ],
       "used_in_current_builder": true
     },
@@ -149,11 +210,19 @@
       "used_by_models": [
         "r01_feed_a",
         "r01_feed_b",
+        "r01_feed_c",
         "r01_chamber_a",
         "r01_optic_b",
         "r01_underbarrel_a",
+        "r01_underbarrel_c",
+        "r01_underbarrel_d",
         "r01_grip_a",
-        "r01_grip_b"
+        "r01_grip_b",
+        "r01_grip_c",
+        "r01_grip_d",
+        "r01_chamber_inventor",
+        "r01_chamber_diesel",
+        "r01_power_inventor"
       ],
       "used_in_current_builder": true
     },
@@ -175,27 +244,63 @@
       "used_by_models": [
         "r01_receiver_a",
         "r01_receiver_b",
+        "r01_receiver_c",
+        "r01_receiver_d",
         "r01_barrel_a",
         "r01_barrel_b",
+        "r01_barrel_c",
+        "r01_barrel_d",
         "r01_muzzle_a",
         "r01_muzzle_b",
+        "r01_muzzle_c",
+        "r01_muzzle_d",
         "r01_feed_a",
         "r01_feed_b",
+        "r01_feed_c",
+        "r01_feed_d",
         "r01_chamber_a",
         "r01_chamber_b",
+        "r01_chamber_c",
+        "r01_chamber_d",
         "r01_ammo_a",
         "r01_ammo_b",
+        "r01_ammo_c",
+        "r01_ammo_d",
         "r01_projectile_a",
         "r01_projectile_b",
+        "r01_projectile_c",
+        "r01_projectile_d",
         "r01_optic_a",
         "r01_optic_b",
+        "r01_optic_c",
+        "r01_optic_d",
         "r01_underbarrel_a",
         "r01_underbarrel_b",
+        "r01_underbarrel_c",
+        "r01_underbarrel_d",
         "r01_grip_a",
         "r01_grip_b",
+        "r01_grip_c",
+        "r01_grip_d",
         "r01_power_a",
         "r01_power_b",
-        "r01_cooling_a"
+        "r01_power_c",
+        "r01_power_d",
+        "r01_cooling_a",
+        "r01_cooling_c",
+        "r01_cooling_d",
+        "r01_receiver_side",
+        "r01_receiver_top",
+        "r01_receiver_arch",
+        "r01_receiver_gyre",
+        "r01_chamber_inventor",
+        "r01_chamber_diesel",
+        "r01_optic_inventor",
+        "r01_optic_diesel",
+        "r01_power_inventor",
+        "r01_power_diesel",
+        "r01_cooling_inventor",
+        "r01_cooling_diesel"
       ],
       "used_in_current_builder": true
     },
@@ -217,7 +322,12 @@
       "used_by_models": [
         "r01_receiver_a",
         "r01_receiver_b",
-        "r01_barrel_a"
+        "r01_receiver_d",
+        "r01_barrel_a",
+        "r01_barrel_d",
+        "r01_receiver_side",
+        "r01_receiver_top",
+        "r01_cooling_inventor"
       ],
       "used_in_current_builder": true
     },
@@ -239,10 +349,20 @@
       "used_by_models": [
         "r01_barrel_b",
         "r01_ammo_a",
+        "r01_ammo_c",
         "r01_projectile_a",
+        "r01_projectile_c",
         "r01_power_a",
         "r01_power_b",
-        "r01_cooling_b"
+        "r01_power_c",
+        "r01_power_d",
+        "r01_cooling_b",
+        "r01_cooling_d",
+        "r01_receiver_gyre",
+        "r01_chamber_inventor",
+        "r01_power_inventor",
+        "r01_power_diesel",
+        "r01_cooling_diesel"
       ],
       "used_in_current_builder": true
     },
@@ -262,7 +382,8 @@
       "bmp": "tiles/r01_t08.bmp",
       "bmp_sha256": "023c8ab0dda8a9765e0441c4c4331793dcf2f1e80c2a0ac36a6dfceb89116302",
       "used_by_models": [
-        "r01_power_a"
+        "r01_power_a",
+        "r01_power_diesel"
       ],
       "used_in_current_builder": true
     },
@@ -283,8 +404,11 @@
       "bmp_sha256": "b883c8de4c9ad52dc197245484b4f019ee659893d69efc77df7b251dc1e84be5",
       "used_by_models": [
         "r01_ammo_b",
+        "r01_ammo_d",
         "r01_projectile_b",
-        "r01_power_b"
+        "r01_projectile_d",
+        "r01_power_b",
+        "r01_power_d"
       ],
       "used_in_current_builder": true
     },
@@ -305,7 +429,11 @@
       "bmp_sha256": "c1d912e3e91cbe96e948a8c66a8d577639e3a684cabb8bc5eac86dcc6a808099",
       "used_by_models": [
         "r01_power_a",
-        "r01_power_b"
+        "r01_power_b",
+        "r01_power_c",
+        "r01_power_d",
+        "r01_optic_diesel",
+        "r01_power_diesel"
       ],
       "used_in_current_builder": true
     },
@@ -326,7 +454,11 @@
       "bmp_sha256": "1cc11e57b34ed921d1f1039f7391d0deb56c8374d4a741cd1b64d79dc0a83b35",
       "used_by_models": [
         "r01_optic_a",
-        "r01_optic_b"
+        "r01_optic_b",
+        "r01_optic_c",
+        "r01_optic_d",
+        "r01_optic_inventor",
+        "r01_optic_diesel"
       ],
       "used_in_current_builder": true
     },
@@ -365,7 +497,9 @@
       "bmp_sha256": "8d3da1b518690a8dfc19a9ca3a391dc882ce63a1db1e5da041feb8c8eba1330b",
       "used_by_models": [
         "r01_barrel_b",
+        "r01_barrel_d",
         "r01_underbarrel_b",
+        "r01_underbarrel_d",
         "r01_cooling_b"
       ],
       "used_in_current_builder": true
@@ -387,7 +521,9 @@
       "bmp_sha256": "4a370016747af6417e99b2a2388932223b1a92aac4a7bbdbd242ce32ed6e831a",
       "used_by_models": [
         "r01_feed_a",
-        "r01_feed_b"
+        "r01_feed_b",
+        "r01_feed_c",
+        "r01_feed_d"
       ],
       "used_in_current_builder": true
     },
@@ -408,7 +544,10 @@
       "bmp_sha256": "cdf3fd0a3909ebb909e54309aec1930bc55f3b991cbe9c166d6b09fcea07f194",
       "used_by_models": [
         "r01_chamber_a",
-        "r01_chamber_b"
+        "r01_chamber_b",
+        "r01_chamber_c",
+        "r01_chamber_d",
+        "r01_chamber_inventor"
       ],
       "used_in_current_builder": true
     }

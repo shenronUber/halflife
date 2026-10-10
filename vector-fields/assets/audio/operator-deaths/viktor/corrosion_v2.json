@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "actor": "viktor",
+  "cause": "corrosion",
+  "text": "[raspy][screaming] GRAAAGH!",
+  "request": {
+    "text": "[raspy][screaming] GRAAAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "b106c90a123be8d5ac6350b2bd73f6b75a646cb7d64a68b2e85cc9f9295071f8",
+  "sha256": "e137e740f87fb3ead7f8d65a08aa9b4355719b880e8e27bad3f86f8a0141a92c",
+  "request_id": "a9rUYVqa5sTCkGGv3AA7"
+}

@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "actor": "nikos",
+  "cause": "toxic",
+  "text": "[wheezing][screaming] KHAAGH!",
+  "request": {
+    "text": "[wheezing][screaming] KHAAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "dc352cef7c7601c41eb571b0d01ada0d6a096d51eca620d23c3f43129fc5334e",
+  "sha256": "5ddb3bcde332bdb39484c06cf54ae74e552df7ff91d9343202aef47abc63a2eb",
+  "request_id": "uDBL4NwtMhGn2uPaGLiq"
+}

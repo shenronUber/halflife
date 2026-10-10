@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "null",
+  "variant": 0,
+  "text": "[relieved] Reactions suppressed. Enfin.",
+  "request": {
+    "text": "[relieved] Reactions suppressed. Enfin.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "6cdbda9f8189667fb93813175490a99dc98e288d3e650d4ecd29dc2decbf06de",
+  "sha256": "be152c479746cae8d1504aa115e49bdffff825d6471c2a70717b9e0228f3f23d",
+  "request_id": "00etFh6h7cBg2addVZtz",
+  "reported_credit_cost": "4"
+}

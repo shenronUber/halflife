@@ -1,0 +1,33 @@
+{
+  "audio_sha256": "8320a39bbfd36c6d5f954d10b79fa58a0598e07b931081fa7297d58b6bafaf4a",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "[coughs] [groans]",
+    "words": [
+      {
+        "text": "[coughs]",
+        "start": 0.58,
+        "end": 0.86,
+        "type": "audio_event",
+        "logprob": -0.018252456476643728
+      },
+      {
+        "text": " ",
+        "start": 0.86,
+        "end": 1.16,
+        "type": "spacing",
+        "logprob": -0.005289488006383181
+      },
+      {
+        "text": "[groans]",
+        "start": 1.16,
+        "end": 5.66,
+        "type": "audio_event",
+        "logprob": -0.09457182409338809
+      }
+    ],
+    "transcription_id": "qwaC0lhfKe0DHp9UIZq4",
+    "audio_duration_secs": 6.7784375
+  }
+}

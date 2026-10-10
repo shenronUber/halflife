@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "reload",
+  "variant": 0,
+  "text": "[urgent] Ricarico! Cover me.",
+  "request": {
+    "text": "[urgent] Ricarico! Cover me.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "933e21c47145205a724da40064c3c4ac234b7e8d2f113f996bc63dd68b1673c5",
+  "sha256": "1f8cfd8bcefb9240577a024c1ec68344512191cac850eedc5d64329794d6275f",
+  "request_id": "duXZaHNNp64or25EnLyC",
+  "reported_credit_cost": "3"
+}

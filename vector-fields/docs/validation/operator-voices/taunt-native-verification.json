@@ -1,0 +1,15 @@
+{
+  "clients": 2,
+  "checks": [
+    "real German and Greek speakers use the same taunt key",
+    "nearby taunt automatically selects counter dialogue",
+    "three rapid reply presses emit one counter",
+    "both native clients receive the selected counter clip",
+    "counter responses do not create an automatic chain",
+    "hearing window expiry restores normal taunts",
+    "moving outside the configured range prevents a reply",
+    "a dead source cannot receive a counter",
+    "server taunt mute blocks new speech"
+  ],
+  "scope": "loopback native clients; audio acting quality requires listening"
+}

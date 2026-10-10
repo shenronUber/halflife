@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "reload",
+  "variant": 0,
+  "text": "[urgent] Nachladen! Cover me.",
+  "request": {
+    "text": "[urgent] Nachladen! Cover me.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "f3eb4046fbee02bef91194ac88d905a2f59499eb6811cd6046c11ff0250e3e12",
+  "sha256": "855f77d2e38fd5bfb842a14b9751fb3b1eb9f5a7d67e74cf2dc57bc718d02c76",
+  "request_id": "Xo4xFN0XSvv670rxqQKS",
+  "reported_credit_cost": "3"
+}

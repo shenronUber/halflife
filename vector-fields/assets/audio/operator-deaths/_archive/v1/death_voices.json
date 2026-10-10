@@ -1,0 +1,199 @@
+{
+  "schema": 1,
+  "scope": "Prepared audio bank only; contextual death selection is not yet wired to gameplay.",
+  "nonverbal_only": true,
+  "replaces": "The six old spoken death performances are deprecated for the future integration.",
+  "default_cause": "standard",
+  "tactical_fallback": {
+    "phase": "standard",
+    "null": "standard",
+    "ward": "standard",
+    "reveal": "standard",
+    "overclock": "standard"
+  },
+  "actors": [
+    {
+      "id": "rocco",
+      "name": "Rocco Bellini",
+      "voice_reference": "../assets/audio/operators/rocco/voice.json"
+    },
+    {
+      "id": "lucien",
+      "name": "Lucien Moreau",
+      "voice_reference": "../assets/audio/operators/lucien/voice.json"
+    },
+    {
+      "id": "diego",
+      "name": "Diego Vega",
+      "voice_reference": "../assets/audio/operators/diego/voice.json",
+      "script_overrides": {
+        "steam_veil": "[gasping] Hhh! [coughing] Khh! [choking] Ghrgh... [wheezing] Hhh..."
+      }
+    },
+    {
+      "id": "viktor",
+      "name": "Viktor Volkov",
+      "voice_reference": "../assets/audio/operators/viktor/voice.json"
+    },
+    {
+      "id": "otto",
+      "name": "Otto Stahl",
+      "voice_reference": "../assets/audio/operators/otto/voice.json",
+      "script_overrides": {
+        "sonic": "[screaming] AAAAAGH! [groaning] Nnngh... [exhales] Hhh..."
+      }
+    },
+    {
+      "id": "nikos",
+      "name": "Nikos Petros",
+      "voice_reference": "../assets/audio/operators/nikos/voice.json"
+    }
+  ],
+  "causes": [
+    {
+      "id": "standard",
+      "name": "Mort standard / balle",
+      "performance": "Impact bref, cri de douleur qui retombe en dernier souffle.",
+      "text": "[grunts] Ungh! [screaming] Aaaagh! [exhales] Hhh...",
+      "master_filter": "anull",
+      "kind": -1
+    },
+    {
+      "id": "hydro",
+      "name": "Hydro / noyade",
+      "performance": "Gorge noyee, gargouillis, inspiration impossible puis souffle qui s'eteint.",
+      "text": "[choking] Ghrr... [gurgling] Ghh... ghh... [gasping] Hah... [exhales] Hhh...",
+      "master_filter": "lowpass=f=1200,tremolo=f=6:d=0.3",
+      "kind": 0
+    },
+    {
+      "id": "electro",
+      "name": "Electro / electrocution",
+      "performance": "Cri crispe et hache par les spasmes electriques, expiration finale.",
+      "text": "[screaming] A-a-a-aagh! [groaning] Nnngh! [exhales] Hhh...",
+      "master_filter": "highpass=f=160,tremolo=f=42:d=0.65",
+      "kind": 0
+    },
+    {
+      "id": "cryo",
+      "name": "Cryo / froid",
+      "performance": "Souffle tremblant, grognement contracte, gorge affaiblie par le froid.",
+      "text": "[shivering] Hh-hh... [groaning] Nnngh... [weakly] Hhh...",
+      "master_filter": "lowpass=f=2800",
+      "kind": 0
+    },
+    {
+      "id": "thermal",
+      "name": "Thermal / brulure",
+      "performance": "Cri aigu et intense de brulure, haletement puis dernier souffle.",
+      "text": "[screaming] AAAAAAGH! [gasping] Hah! [exhales] Hhh...",
+      "master_filter": "highpass=f=160",
+      "kind": 0
+    },
+    {
+      "id": "toxic",
+      "name": "Toxic / intoxication",
+      "performance": "Quinte de toux seche puis respiration sifflante et effondrement.",
+      "text": "[coughing] Khh! Khh! [wheezing] Hhh... [groaning] Nngh...",
+      "master_filter": "highpass=f=140,lowpass=f=3000",
+      "kind": 0
+    },
+    {
+      "id": "corrosion",
+      "name": "Corrosion / acide",
+      "performance": "Cri douloureux qui se brise en gargouillement de gorge irritee.",
+      "text": "[screaming] Aaaagh! [choking] Ghrgh... [exhales] Hhh...",
+      "master_filter": "highpass=f=160,lowpass=f=2400,acompressor=threshold=0.16:ratio=4:attack=2:release=60",
+      "kind": 0
+    },
+    {
+      "id": "sonic",
+      "name": "Sonic / resonance",
+      "performance": "Cri tendu, vibratoire, puis grognement desoriente.",
+      "text": "[screaming] Aaa-eeeeegh! [groaning] Nnngh... [exhales] Hhh...",
+      "master_filter": "tremolo=f=18:d=0.25",
+      "kind": 0
+    },
+    {
+      "id": "kinetic",
+      "name": "Kinetic / impact",
+      "performance": "Air chasse des poumons, choc vocal court et grognement terminal.",
+      "text": "[grunts] UHH! [gasping] Hah! [groaning] Urrgh...",
+      "master_filter": "anull",
+      "kind": 0
+    },
+    {
+      "id": "arc_chain",
+      "name": "ArcChain / eau + electricite",
+      "performance": "Gargouillement noye coupe par un cri electrique saccade.",
+      "text": "[choking] Ghh... [screaming] A-a-aagh! [gurgling] Ghrr...",
+      "master_filter": "lowpass=f=1900,tremolo=f=30:d=0.6",
+      "kind": 1
+    },
+    {
+      "id": "superconduction",
+      "name": "CryoCircuit / froid + electricite",
+      "performance": "Souffle tremblant puis cri electrique crispe qui s'eteint.",
+      "text": "[shivering] Hh-hh... [screaming] A-a-aagh! [weakly] Hhh...",
+      "master_filter": "highpass=f=180,lowpass=f=3000,tremolo=f=40:d=0.55",
+      "kind": 1
+    },
+    {
+      "id": "shatter",
+      "name": "FracturePulse / froid + impact",
+      "performance": "Cri bref de fracture, douleur contractee et expiration froide.",
+      "text": "[grunts] Unngh! [screaming] AAAAGH! [exhales] Hhh...",
+      "master_filter": "lowpass=f=2600",
+      "kind": 1
+    },
+    {
+      "id": "resonant_impact",
+      "name": "ResonantShock / impact + sonic",
+      "performance": "Air expulse par le choc, cri avec tremblement resonnant puis rale.",
+      "text": "[grunts] UHH! [screaming] Aaaaagh! [groaning] Nnngh...",
+      "master_filter": "lowpass=f=3000,tremolo=f=12:d=0.3",
+      "kind": 1
+    },
+    {
+      "id": "cavitation",
+      "name": "AcidEcho / sonic + corrosion",
+      "performance": "Gorge liquide et irritee, sursaut douloureux et gargouillement vibrant.",
+      "text": "[choking] Ghh! [groaning] Urrgh! [gurgling] Ghrr...",
+      "master_filter": "lowpass=f=2000,tremolo=f=8:d=0.3",
+      "kind": 1
+    },
+    {
+      "id": "caustic_contagion",
+      "name": "ContamBloom / corrosion + toxic",
+      "performance": "Toux rauque puis etouffement corrosif et respiration affaiblie.",
+      "text": "[coughing] Khh! [choking] Ghrr... [wheezing] Hhh...",
+      "master_filter": "highpass=f=140,lowpass=f=2300",
+      "kind": 1
+    },
+    {
+      "id": "toxic_ignition",
+      "name": "CinderMist / toxic + thermal",
+      "performance": "Toux empoisonnee brusquement interrompue par un cri de brulure.",
+      "text": "[coughing] Khh! [screaming] AAAAAAGH! [wheezing] Hhh...",
+      "master_filter": "highpass=f=180",
+      "kind": 1
+    },
+    {
+      "id": "steam_veil",
+      "name": "SteamVeil / vapeur",
+      "performance": "Inspiration panique, toux humide puis suffocation et dernier souffle.",
+      "text": "[gasping] Hah! [coughing] Khh! [choking] Ghrr... [wheezing] Hhh...",
+      "master_filter": "highpass=f=180,lowpass=f=2800",
+      "kind": 1
+    }
+  ],
+  "format": {
+    "channels": 1,
+    "sample_rate": 11025,
+    "bits": 8
+  },
+  "source_references": [
+    "https://elevenlabs.io/docs/help-center/product/core-capabilities/text-to-speech/how-do-audio-tags-work-with-eleven-v3-and-v4",
+    "https://elevenlabs.io/docs/api-reference/speech-to-text/convert"
+  ]
+}

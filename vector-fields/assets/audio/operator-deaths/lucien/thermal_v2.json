@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "actor": "lucien",
+  "cause": "thermal",
+  "text": "[screaming] AAAAAAGH!",
+  "request": {
+    "text": "[screaming] AAAAAAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "33d5fc3758c67849352f9a7beda02046cbc039ace13bc6a02a777506cef99ae0",
+  "sha256": "91f8ef062105e58d4e06608c36d48d22dd17f14ce44635972924cf4ca1df2d14",
+  "request_id": "WLhgtqbdujqbhsQK8vvU"
+}

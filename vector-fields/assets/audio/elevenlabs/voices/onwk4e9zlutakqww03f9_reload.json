@@ -1,0 +1,25 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Daniel / reload_start",
+  "created_utc": "2026-10-09T02:34:51.653893+00:00",
+  "request_sha256": "2e49a31af85289d513436a24eac1ceb16e289e910d78a6db14dcef20646c5a2c",
+  "request": {
+    "text": "Reloading. Cover me.",
+    "model_id": "eleven_v4",
+    "language_code": "en",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "endpoint": "/v1/text-to-speech/onwK4e9ZLuTAKqWW03F9?output_format=mp3_44100_128",
+  "sha256": "b94218e040ec900a0f9a565f9470f78591560a6d64c6a0a2b56cf0825c40405e",
+  "bytes": 26793,
+  "text": "Reloading. Cover me.",
+  "request_id": "mdTm1PpYtcqjpJZaumJL",
+  "reported_credit_cost": "2",
+  "voice_id": "onwK4e9ZLuTAKqWW03F9",
+  "voice_name": "Daniel",
+  "language": "en"
+}

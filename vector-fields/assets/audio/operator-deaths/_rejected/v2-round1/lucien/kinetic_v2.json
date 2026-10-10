@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "actor": "lucien",
+  "cause": "kinetic",
+  "text": "[grunts][screaming] AAGH!",
+  "request": {
+    "text": "[grunts][screaming] AAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "498c23ae6678100e771ecb47b59acfc8d14ae386af024a80b884e734ab506e41",
+  "sha256": "1f2ba3ac643fbae02fe7338135cb07ff26415a3030c081faa6a5cf30e7a5bd5b",
+  "request_id": "ozIpNcrtGn8q8IM8dZmF"
+}

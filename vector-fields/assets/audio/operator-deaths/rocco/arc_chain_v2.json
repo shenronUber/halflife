@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "actor": "rocco",
+  "cause": "arc_chain",
+  "text": "[choking][screaming] A-a-agh!",
+  "request": {
+    "text": "[choking][screaming] A-a-agh!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "ebb8f5528c96ea5027bdd9279fbb01d464776c726840a801b91a6c948208072f",
+  "sha256": "1194d5dc737fd03500e64683b78dcc3146ccd11052a4407a45e173eb159ad13e",
+  "request_id": "wAYOJyYdi36dyuU8WoH6"
+}

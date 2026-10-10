@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "model_id": "eleven_v4",
+  "event": "death",
+  "variant": 0,
+  "text": "[screams] Aah! Όχι!",
+  "request": {
+    "text": "[screams] Aah! Όχι!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "6627c9b3c1d8fc386d259f4f2a247ac3e9e29f70f31ff73ae031c00779a95a03",
+  "sha256": "08ec6b76745d7a03d0f84a4de60f0fc1faa98f229607fba71d7a3401ff05c64f",
+  "request_id": "1YzhS0E4o6WbOSjusycP",
+  "reported_credit_cost": "2"
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "pain",
+  "variant": 0,
+  "text": "[pained] Ah! Joder!",
+  "request": {
+    "text": "[pained] Ah! Joder!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "fbfcbec0f9a8ff16ab9f97c75a5cab4f9bfca7f27e24943e7df2fb9060cc51c1",
+  "sha256": "ac33e048440232cfe4418db71d246fd93b6aa491074b85afd3f4f5fa6e4bf5cd",
+  "request_id": "USF0Q0n2yZHJTlMlrbw0",
+  "reported_credit_cost": "2"
+}

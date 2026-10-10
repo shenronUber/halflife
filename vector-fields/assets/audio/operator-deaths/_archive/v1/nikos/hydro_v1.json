@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "actor": "nikos",
+  "cause": "hydro",
+  "text": "[choking] Ghrr... [gurgling] Ghh... ghh... [gasping] Hah... [exhales] Hhh...",
+  "request": {
+    "text": "[choking] Ghrr... [gurgling] Ghh... ghh... [gasping] Hah... [exhales] Hhh...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "92d5822e6699d5a09c7499c06f0464d092fd1882ea424553b3f123611388bfe7",
+  "sha256": "2f3797c4c83811a644db5b3504c649c59925de681dbf00e5c51490b6925e401c",
+  "request_id": "ULUgWzSaPv7QY7iifhrg"
+}

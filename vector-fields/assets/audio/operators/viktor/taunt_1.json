@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "taunt",
+  "variant": 1,
+  "text": "[dryly] So much ammunition. So little talent.",
+  "request": {
+    "text": "[dryly] So much ammunition. So little talent.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "a850277209f717e91a4d9e7c1d0591442cf5011132f1d3148190769d1ba0c2fa",
+  "sha256": "8259580e7266be94d788956c7f2bf365f86e9b261e3928558a0b97d15c92f8db",
+  "request_id": "CKarChuocMf4vXeeLw7q",
+  "reported_credit_cost": "5"
+}

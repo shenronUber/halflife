@@ -1,0 +1,47 @@
+{
+  "audio_sha256": "ae4d4f10c666b8ec0737afe4ec57778a27922e95b8f1c29ae7e53ebb63fa7c49",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "[grunting] Ah! Ah!",
+    "words": [
+      {
+        "text": "[grunting]",
+        "start": 0.04,
+        "end": 0.8,
+        "type": "audio_event",
+        "logprob": -0.17347141621091092
+      },
+      {
+        "text": " ",
+        "start": 0.8,
+        "end": 0.82,
+        "type": "spacing",
+        "logprob": -0.24022430181503296
+      },
+      {
+        "text": "Ah!",
+        "start": 0.92,
+        "end": 1.04,
+        "type": "word",
+        "logprob": -0.16164163080975413
+      },
+      {
+        "text": " ",
+        "start": 1.04,
+        "end": 1.48,
+        "type": "spacing",
+        "logprob": -1.7881377516459906e-06
+      },
+      {
+        "text": "Ah!",
+        "start": 1.96,
+        "end": 2.72,
+        "type": "word",
+        "logprob": -3.933894276997307e-06
+      }
+    ],
+    "transcription_id": "df4tVcpLRlx4gY1oqIAg",
+    "audio_duration_secs": 3.1663125
+  }
+}

@@ -89,6 +89,26 @@
       "skin": 11,
       "coverage": "Full clothing and lower-face mask; visible human eyes only",
       "pack": "expeditions-01"
+    },
+    {
+      "id": "roman-inventor",
+      "key": "roman_inventor",
+      "title": "Artisan de la Renaissance",
+      "skin": 12,
+      "theme": "Artisan de la Renaissance",
+      "generated_source": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a11cc3-e1ee-71f1-9175-b4b5cb65a6cc\\exec-b3a67d90-e076-429f-a5d7-6b768b28fa22.png",
+      "prompt": "prompt.txt",
+      "generation_tool": "built-in image_gen"
+    },
+    {
+      "id": "dieselpunk",
+      "key": "dieselpunk",
+      "title": "Mecanicien diesel",
+      "skin": 13,
+      "theme": "Mecanicien diesel",
+      "generated_source": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a11cc3-e1ee-71f1-9175-b4b5cb65a6cc\\exec-c9f37c84-6046-4e2a-a9ab-76c542062837.png",
+      "prompt": "prompt.txt",
+      "generation_tool": "built-in image_gen"
     }
   ]
 }

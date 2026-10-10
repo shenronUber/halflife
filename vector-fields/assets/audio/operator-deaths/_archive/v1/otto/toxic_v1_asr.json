@@ -1,0 +1,33 @@
+{
+  "audio_sha256": "fcbe884e6575d18fd790fed4e7fe4d02c08ca1facf10c0e0bb04e951325f3d44",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "[coughing] [sighing]",
+    "words": [
+      {
+        "text": "[coughing]",
+        "start": 0.56,
+        "end": 2.8,
+        "type": "audio_event",
+        "logprob": -0.09991520400577276
+      },
+      {
+        "text": " ",
+        "start": 2.8,
+        "end": 2.8,
+        "type": "spacing",
+        "logprob": -0.03804141283035278
+      },
+      {
+        "text": "[sighing]",
+        "start": 2.8,
+        "end": 5.02,
+        "type": "audio_event",
+        "logprob": -0.25383542090674466
+      }
+    ],
+    "transcription_id": "YWGo3zcdPWiNOU5jsUyc",
+    "audio_duration_secs": 5.998375
+  }
+}

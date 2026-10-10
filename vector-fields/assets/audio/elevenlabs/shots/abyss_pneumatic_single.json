@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Abyss / Pneumatic harpoon",
+  "created_utc": "2026-10-09T02:32:54.718491+00:00",
+  "request_sha256": "d4c7bfc4393b4218ea0ce4d2456fe1d35f32d8e934b52fa02f813f1ad1117853",
+  "request": {
+    "text": "One shot from a fictional pneumatic diver harpoon weapon. A forceful compressed air thump and crisp metal latch, followed by a short airy pressure hiss with a few tiny wet bubbles. Close mechanical sound, compact and tactile, distinct from a firearm. One immediate event only. Dry isolated game asset, no underwater ambience, no music, no speech, no repeated firing.",
+    "duration_seconds": 1.8,
+    "prompt_influence": 0.5,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "c67790fbcd36c41b9384c9555089c7b211870a5aa32c129e81928e28c553f28f",
+  "bytes": 29301,
+  "text": "One shot from a fictional pneumatic diver harpoon weapon. A forceful compressed air thump and crisp metal latch, followed by a short airy pressure hiss with a few tiny wet bubbles. Close mechanical sound, compact and tactile, distinct from a firearm. One immediate event only. Dry isolated game asset, no underwater ambience, no music, no speech, no repeated firing.",
+  "request_id": null,
+  "reported_credit_cost": "18"
+}

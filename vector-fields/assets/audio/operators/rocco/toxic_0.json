@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "toxic",
+  "variant": 0,
+  "text": "[coughs] Ugh! Poison. Che schifo!",
+  "request": {
+    "text": "[coughs] Ugh! Poison. Che schifo!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "887dc6416acbe4d051a4d729db1583b5d569b1036603f67459db21883bcf6423",
+  "sha256": "eeaf6c976a7e53b14ca302b32ec1792a0aad6ddeb783899894a94f89a62564e1",
+  "request_id": "WBLXs6Au9O0dHRPzyoU9",
+  "reported_credit_cost": "4"
+}

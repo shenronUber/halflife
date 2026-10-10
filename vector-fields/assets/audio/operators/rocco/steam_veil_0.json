@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "steam_veil",
+  "variant": 0,
+  "text": "[coughs] Steam! I can't see a damn thing!",
+  "request": {
+    "text": "[coughs] Steam! I can't see a damn thing!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "6508c233c00581b527f72a6260fdf45b35d171b56ce2facb4af93d6fd4b9fc71",
+  "sha256": "b9688ff2ef27227e7dd24fa1008b8193db040662dea6ff2b9d32afb78bef0f01",
+  "request_id": "oVRKnHK8c6wrplw3X1r4",
+  "reported_credit_cost": "5"
+}

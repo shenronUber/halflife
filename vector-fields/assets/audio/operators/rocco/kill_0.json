@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "kill",
+  "variant": 0,
+  "text": "[pleased] Bellissimo. Stay down.",
+  "request": {
+    "text": "[pleased] Bellissimo. Stay down.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "f0f4effc41849cac37b24056a024036f9928e9e960ef10b62c6841408a611a5e",
+  "sha256": "57c521156eaaaf4b9e14a27c098fb9ede583c8b9eaf0e7a8a3d49da12948dbdb",
+  "request_id": "guOUwwbtKdPKhRIyWLwY",
+  "reported_credit_cost": "4"
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "steam_veil",
+  "variant": 0,
+  "text": "[coughs] Пар. Steam everywhere. Can't see.",
+  "request": {
+    "text": "[coughs] Пар. Steam everywhere. Can't see.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "19de1d334ae55d53eca31235d043bfd6548f4b16e29f4179d98c5be1e2c5c6e3",
+  "sha256": "b7afcdac4dcf27b89f112bf908881257914750cab99c36ec3ce600a7e50ee485",
+  "request_id": "aNGbhrQlgusMJiJw3DGN",
+  "reported_credit_cost": "5"
+}

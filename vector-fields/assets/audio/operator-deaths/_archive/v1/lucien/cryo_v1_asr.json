@@ -1,0 +1,19 @@
+{
+  "audio_sha256": "db932c06e30e9c15f62d29c765dc4c2edb576a8de155b10850afd343d0c625c0",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "[moaning]",
+    "words": [
+      {
+        "text": "[moaning]",
+        "start": 0.1,
+        "end": 2.66,
+        "type": "audio_event",
+        "logprob": -0.09990851417552178
+      }
+    ],
+    "transcription_id": "vJhhe63RZIdTiV23Yokj",
+    "audio_duration_secs": 4.389125
+  }
+}

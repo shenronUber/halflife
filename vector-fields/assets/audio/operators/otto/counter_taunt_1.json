@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "counter_taunt",
+  "variant": 1,
+  "text": "[threatening] I'll kill you, verdammter Idiot!",
+  "request": {
+    "text": "[threatening] I'll kill you, verdammter Idiot!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "04d30da3661e60553a5bfac20bdc6dc4c39237b75ed77fd8dc59914e380f3485",
+  "sha256": "cc76aec3a427789c0b45b2f7dd1adf637d18fc1c8b5530a3d082dc7926ee4178",
+  "request_id": "Tg2o5jcd4szuPEnQgsWG",
+  "reported_credit_cost": "5"
+}

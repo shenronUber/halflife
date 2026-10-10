@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "spawn",
+  "variant": 0,
+  "text": "[excited] Vamos! Keep up if you can!",
+  "request": {
+    "text": "[excited] Vamos! Keep up if you can!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "3cde2ddda0e01ca4beccecc0be7301faa5dfc251c34dcd72f36d2508ca711309",
+  "sha256": "646f4353ddaeafb8525edda282dfb450c3ce15225cd195194c5cf79d954a5542",
+  "request_id": "I2LEWzH9WYCzGUwRAGdA",
+  "reported_credit_cost": "4"
+}

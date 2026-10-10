@@ -1,0 +1,25 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Sarah / enemy_spotted",
+  "created_utc": "2026-10-09T02:34:55.239078+00:00",
+  "request_sha256": "ae2624cbfb21f15be1a096f85c9bf72141af4c493a22c4381257f6f794fec6ab",
+  "request": {
+    "text": "Contact ahead. Stay sharp.",
+    "model_id": "eleven_v4",
+    "language_code": "en",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "endpoint": "/v1/text-to-speech/EXAVITQu4vr4xnSDxMaL?output_format=mp3_44100_128",
+  "sha256": "d5da7d74794d404dbd84693d5be6aa94e6eeffe6ee6f6d4c537cefdc6eee764c",
+  "bytes": 41839,
+  "text": "Contact ahead. Stay sharp.",
+  "request_id": "wtYzRJ4KeL2mozPhix0Z",
+  "reported_credit_cost": "3",
+  "voice_id": "EXAVITQu4vr4xnSDxMaL",
+  "voice_name": "Sarah",
+  "language": "en"
+}

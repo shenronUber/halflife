@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Hydro / dismemberment",
+  "created_utc": "2026-10-09T23:28:48.950141+00:00",
+  "request_sha256": "8b24ff3bcb3c772b08f73a249a31e62468cc047fcab0b197a2d4e0b84e03ac1c",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A soaked limb detaches with a sharp wet fiber snap, a brief pressurized liquid squirt and heavy droplets. Crisp tear first, water after.",
+    "duration_seconds": 1.1,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "78b881916126699cf58970c35444dc1e06cac5fde2a09ad02aa227a7c81726a2",
+  "bytes": 18434,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A soaked limb detaches with a sharp wet fiber snap, a brief pressurized liquid squirt and heavy droplets. Crisp tear first, water after.",
+  "request_id": null,
+  "reported_credit_cost": "11"
+}

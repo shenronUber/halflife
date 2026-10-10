@@ -44,7 +44,8 @@
           "size": 1,
           "speed": 0.65
         }
-      ]
+      ],
+      "hud_name": "SOAKED"
     },
     {
       "id": "electro",
@@ -84,7 +85,8 @@
           "size": 1.7,
           "speed": 1.8
         }
-      ]
+      ],
+      "hud_name": "SHOCKED"
     },
     {
       "id": "cryo",
@@ -124,7 +126,8 @@
           "size": 5,
           "speed": 0.45
         }
-      ]
+      ],
+      "hud_name": "FROST"
     },
     {
       "id": "thermal",
@@ -164,7 +167,8 @@
           "size": 1.4,
           "speed": 1.2
         }
-      ]
+      ],
+      "hud_name": "BURNING"
     },
     {
       "id": "toxic",
@@ -204,7 +208,8 @@
           "size": 0.7,
           "speed": 0.3
         }
-      ]
+      ],
+      "hud_name": "TOXIC"
     },
     {
       "id": "corrosion",
@@ -244,7 +249,8 @@
           "size": 1.8,
           "speed": 0.8
         }
-      ]
+      ],
+      "hud_name": "CORRODED"
     },
     {
       "id": "sonic",
@@ -284,7 +290,8 @@
           "size": 1,
           "speed": 0.9
         }
-      ]
+      ],
+      "hud_name": "RESONANCE"
     },
     {
       "id": "kinetic",
@@ -324,7 +331,8 @@
           "size": 1,
           "speed": 1.7
         }
-      ]
+      ],
+      "hud_name": "IMPACT"
     },
     {
       "id": "arc_chain",
@@ -380,7 +388,8 @@
       "parents": [
         "hydro",
         "electro"
-      ]
+      ],
+      "hud_name": "ARC CHAIN"
     },
     {
       "id": "superconduction",
@@ -424,7 +433,8 @@
       "parents": [
         "electro",
         "cryo"
-      ]
+      ],
+      "hud_name": "CRYO CIRCUIT"
     },
     {
       "id": "shatter",
@@ -468,7 +478,8 @@
           "size": 1.5,
           "speed": 1.4
         }
-      ]
+      ],
+      "hud_name": "SHATTER"
     },
     {
       "id": "resonant_impact",
@@ -512,7 +523,8 @@
           "size": 1.5,
           "speed": 1.2
         }
-      ]
+      ],
+      "hud_name": "RESONANT IMPACT"
     },
     {
       "id": "cavitation",
@@ -568,7 +580,8 @@
           "size": 1.7,
           "speed": 0.8
         }
-      ]
+      ],
+      "hud_name": "CAVITATION"
     },
     {
       "id": "caustic_contagion",
@@ -624,7 +637,8 @@
           "size": 1.8,
           "speed": 0.65
         }
-      ]
+      ],
+      "hud_name": "CAUSTIC CONTAGION"
     },
     {
       "id": "toxic_ignition",
@@ -668,7 +682,8 @@
       "parents": [
         "toxic",
         "thermal"
-      ]
+      ],
+      "hud_name": "TOXIC IGNITION"
     },
     {
       "id": "steam_veil",
@@ -712,7 +727,8 @@
       "parents": [
         "thermal",
         "hydro"
-      ]
+      ],
+      "hud_name": "STEAM VEIL"
     },
     {
       "id": "phase",
@@ -752,7 +768,8 @@
           "size": 1,
           "speed": 0.9
         }
-      ]
+      ],
+      "hud_name": "PHASE"
     },
     {
       "id": "null",
@@ -792,7 +809,8 @@
           "size": 1.1,
           "speed": -0.5
         }
-      ]
+      ],
+      "hud_name": "NULL"
     },
     {
       "id": "ward",
@@ -832,7 +850,8 @@
           "size": 1.8,
           "speed": 0.55
         }
-      ]
+      ],
+      "hud_name": "WARD"
     },
     {
       "id": "reveal",
@@ -872,7 +891,8 @@
           "size": 1,
           "speed": 0.6
         }
-      ]
+      ],
+      "hud_name": "REVEALED"
     },
     {
       "id": "overclock",
@@ -912,7 +932,8 @@
           "size": 1.4,
           "speed": 1.8
         }
-      ]
+      ],
+      "hud_name": "OVERCLOCK"
     }
   ],
   "combination_rule": "Eight elementary effects, exactly two different partners each, unordered pairs, eight distinct reactions. Tactical cues excluded from the elemental graph.",

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Toxic / fire",
+  "created_utc": "2026-10-09T02:54:27.381570+00:00",
+  "request_sha256": "284ca956766e749518f3271ee2ce832885f20cf0d57e42d61725d253903baee4",
+  "request": {
+    "text": "Single fictional spore rifle discharge. Immediate muffled pressure pop and dry papery organic crackle, fine powder spraying with a brief breathy hiss. Not liquid, not acid, not a monster voice. One compact trigger pull, no voice, no music, no echo.",
+    "duration_seconds": 1.2,
+    "prompt_influence": 0.55,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "f0e8662b7ac8c17225195216aba2c5594a6bf433c6267e668571745a36c58227",
+  "bytes": 20106,
+  "text": "Single fictional spore rifle discharge. Immediate muffled pressure pop and dry papery organic crackle, fine powder spraying with a brief breathy hiss. Not liquid, not acid, not a monster voice. One compact trigger pull, no voice, no music, no echo.",
+  "request_id": null,
+  "reported_credit_cost": "12"
+}

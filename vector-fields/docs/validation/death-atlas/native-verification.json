@@ -1,0 +1,143 @@
+{
+  "seconds": 123.81,
+  "profiles": [
+    {
+      "effect": "hydro",
+      "animation": "vf_k_death_b",
+      "region": "head",
+      "blood": 42,
+      "elemental": 42,
+      "whole_limb_distance": 175.1
+    },
+    {
+      "effect": "electro",
+      "animation": "vf_electro",
+      "region": "left_arm",
+      "blood": 16,
+      "elemental": 16,
+      "whole_limb_distance": 106.2
+    },
+    {
+      "effect": "cryo",
+      "animation": "vf_k_death_a",
+      "region": "right_arm",
+      "blood": 22,
+      "elemental": 22,
+      "whole_limb_distance": 169.0
+    },
+    {
+      "effect": "thermal",
+      "animation": "vf_m_recoil_back",
+      "region": "left_leg",
+      "blood": 10,
+      "elemental": 10,
+      "whole_limb_distance": 82.5
+    },
+    {
+      "effect": "toxic",
+      "animation": "vf_m_agony",
+      "region": "right_leg",
+      "blood": 18,
+      "elemental": 18,
+      "whole_limb_distance": 111.8
+    },
+    {
+      "effect": "corrosion",
+      "animation": "vf_m_recoil_right",
+      "region": "head",
+      "blood": 16,
+      "elemental": 16,
+      "whole_limb_distance": 152.6
+    },
+    {
+      "effect": "sonic",
+      "animation": "vf_m_collapse_left",
+      "region": "left_arm",
+      "blood": 16,
+      "elemental": 16,
+      "whole_limb_distance": 94.9
+    },
+    {
+      "effect": "kinetic",
+      "animation": "vf_m_impact_front",
+      "region": "right_arm",
+      "blood": 16,
+      "elemental": 16,
+      "whole_limb_distance": 108.5
+    },
+    {
+      "effect": "arc_chain",
+      "animation": "vf_electro",
+      "region": "left_leg",
+      "blood": 16,
+      "elemental": 24,
+      "whole_limb_distance": 89.9
+    },
+    {
+      "effect": "superconduction",
+      "animation": "vf_electro",
+      "region": "right_leg",
+      "blood": 24,
+      "elemental": 24,
+      "whole_limb_distance": 115.4
+    },
+    {
+      "effect": "shatter",
+      "animation": "vf_k_death_a",
+      "region": "head",
+      "blood": 40,
+      "elemental": 40,
+      "whole_limb_distance": 210.0
+    },
+    {
+      "effect": "resonant_impact",
+      "animation": "vf_m_impact_front",
+      "region": "left_arm",
+      "blood": 36,
+      "elemental": 36,
+      "whole_limb_distance": 297.8
+    },
+    {
+      "effect": "cavitation",
+      "animation": "vf_m_recoil_right",
+      "region": "right_arm",
+      "blood": 28,
+      "elemental": 42,
+      "whole_limb_distance": 177.9
+    },
+    {
+      "effect": "caustic_contagion",
+      "animation": "vf_m_agony",
+      "region": "left_leg",
+      "blood": 22,
+      "elemental": 33,
+      "whole_limb_distance": 128.6
+    },
+    {
+      "effect": "toxic_ignition",
+      "animation": "vf_m_recoil_back",
+      "region": "right_leg",
+      "blood": 22,
+      "elemental": 22,
+      "whole_limb_distance": 82.7
+    },
+    {
+      "effect": "steam_veil",
+      "animation": "vf_m_recoil_back",
+      "region": "head",
+      "blood": 46,
+      "elemental": 46,
+      "whole_limb_distance": 181.0
+    }
+  ],
+  "checks": [
+    "sixteen automatic effect-to-animation selections",
+    "five anatomical regions exercised",
+    "real whole limb plus three small physics fragments per removal",
+    "blood and elemental particles emitted along each moving limb",
+    "sprite pool bounded at 384",
+    "native F8 atlas effect selection and second catalogue page",
+    "clearing deletes corpses, fragments and trails"
+  ],
+  "log": "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\death-atlas\\native.log"
+}

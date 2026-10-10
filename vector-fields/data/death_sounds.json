@@ -1,0 +1,238 @@
+{
+  "schema": 1,
+  "profiles": [
+    {
+      "id": "standard",
+      "name": "Neutre",
+      "dismemberment": {
+        "signature": "Un claquement humide court, suivi d une rupture fibreuse et de gouttes.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A single close dry tendon rip followed by a sharp bone crack, a compact wet snap and three soft blood droplets. Restrained organic gore foley, quick physical limb detachment. Not an impact landing.",
+        "seconds": 1.1
+      }
+    },
+    {
+      "id": "hydro",
+      "name": "Hydro",
+      "dismemberment": {
+        "signature": "Rupture imbibee et jet bref.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A soaked limb detaches with a sharp wet fiber snap, a brief pressurized liquid squirt and heavy droplets. Crisp tear first, water after.",
+        "seconds": 1.1
+      },
+      "death": {
+        "signature": "Affaissement liquide, bouillon grave puis eclaboussure.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A compressed water pocket suddenly collapses: a low hollow watery gulp, one dense splash and a short trickle fading out. Distinct underwater pressure death release.",
+        "seconds": 1.7
+      }
+    },
+    {
+      "id": "electro",
+      "name": "Electro",
+      "dismemberment": {
+        "signature": "Craquement organique et claquement electrique sec.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. One taut tendon crack and wet organic snap simultaneously with a very sharp high-voltage electrical whip snap, followed by three tiny fizzing sparks. Immediate violent detachment, not continuous buzzing.",
+        "seconds": 1.1
+      },
+      "death": {
+        "signature": "Crepitement sec en cinq impulsions, extinction descendante.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. Five rapid dry electrical arcs in a descending sequence, a rough buzzy short-circuit crackle, then abrupt power-down. Staccato amber electricity, no large explosion.",
+        "seconds": 1.7
+      }
+    },
+    {
+      "id": "cryo",
+      "name": "Cryo",
+      "dismemberment": {
+        "signature": "Cassure gelee, craquement de glace compact.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A frozen limb breaks cleanly: a single sharp brittle ice and bone crack with a compact crunchy snap, four small ice chips scatter and tinkle. No long frost ambience.",
+        "seconds": 1.1
+      },
+      "death": {
+        "signature": "Petites fractures cristallines et tintement froid.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A frozen solid object develops three brittle spreading ice cracks, then a thin crystalline chime as fine frost grains settle. Small intimate ice failure, no big shattering explosion.",
+        "seconds": 1.7
+      }
+    },
+    {
+      "id": "thermal",
+      "name": "Thermal",
+      "dismemberment": {
+        "signature": "Rupture brulante et souffle sec.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A charred limb separates with a dry fibrous tearing crack, one tight flame whip and a quick gritty ember shower. A very short physical break with fire at the cut.",
+        "seconds": 1.1
+      },
+      "death": {
+        "signature": "Souffle de flamme bref, braises qui retombent.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A fast orange flame whoosh blooms then collapses into dry ember crackles and a soft charred crunch. Hot combustion release, short and physical.",
+        "seconds": 1.7
+      }
+    },
+    {
+      "id": "toxic",
+      "name": "Toxic",
+      "dismemberment": {
+        "signature": "Dechirure molle et souffle de spores.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A soft wet fibrous rupture followed by one muffled dusty spore puff and a brief papery flutter. Physical tissue detachment first, purple poison cloud afterwards. No bubbling.",
+        "seconds": 1.1
+      },
+      "death": {
+        "signature": "Bouffee de spores sourde, flutter creux.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. Two muted organic spore puffs with a hollow low flutter and dusty papery rattles, slowing and dying out. Purple poisonous particulate release. No liquid bubbling, no acid hiss.",
+        "seconds": 2.1
+      }
+    },
+    {
+      "id": "corrosion",
+      "name": "Corrosion",
+      "dismemberment": {
+        "signature": "Dechirure liquide et gresillement acide.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A dissolving limb pulls apart with a short viscous wet rip, a dense acidic spit and a brief sizzling etch at the stump. Fast tear onset, shorter than a sustained acid death.",
+        "seconds": 1.1
+      },
+      "death": {
+        "signature": "Bulles irregulieres et dissolution sifflante.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. Close aggressive acid etching: irregular wet sizzling bubbles, a brief dissolving squelch and a narrow chemical fizz tapering away. Bright acid corrosion; no flame whoosh.",
+        "seconds": 2.1
+      }
+    },
+    {
+      "id": "sonic",
+      "name": "Sonic",
+      "dismemberment": {
+        "signature": "Rupture seche et anneau de pression.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. One sharp dry tissue snap punched by a narrow air-pressure clap, followed by a very short hollow high ringing ripple. Directional sonic limb severing, compact attack.",
+        "seconds": 1.1
+      },
+      "death": {
+        "signature": "Trois pulsations graves et anneau descendant.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. Three compact low air-pressure pulses followed by a clean falling hollow ringing wobble. Physical sonic shock dissipation, sparse and tonal, no electric crackles.",
+        "seconds": 1.7
+      }
+    },
+    {
+      "id": "kinetic",
+      "name": "Kinetic",
+      "dismemberment": {
+        "signature": "Craquement lourd et rupture fibreuse.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A heavy sharp bone break and deep fibrous rip, with one wet compact snap and a couple of dry fragments. Pure kinetic severing, no elemental buzz or ringing.",
+        "seconds": 1.1
+      },
+      "death": {
+        "signature": "Impact grave unique, fragments secs.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. One heavy blunt body-sized impact, a dense low thud with a dry gritty crunch and falling small debris. Mechanical kinetic energy ends in one hit, no repeated pulses.",
+        "seconds": 1.7
+      }
+    },
+    {
+      "id": "arc_chain",
+      "name": "ArcChain",
+      "dismemberment": {
+        "signature": "Rupture mouillee et trois arcs rapides.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A taut wet tendon rupture followed immediately by three fast climbing electric whip snaps over small watery spits. Very short chained electric-water detachment, no sustained hum.",
+        "seconds": 1.1
+      },
+      "death": {
+        "signature": "Trois relais electriques sur un bouillon d eau.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. Three distinct branching electric arc jumps, first low then medium then high, separated by tiny watery sputters, ending in a rattling liquid discharge. Electricity chained through water, recognizably three jumps.",
+        "seconds": 1.7
+      }
+    },
+    {
+      "id": "superconduction",
+      "name": "Superconduction",
+      "dismemberment": {
+        "signature": "Cassure cristalline et sifflement electrique aigu.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A very brittle glassy ice and bone snap with a piercing tiny electrical chirp and a shower of fine crystalline ticks. Frozen electrically charged limb detachment.",
+        "seconds": 1.1
+      },
+      "death": {
+        "signature": "Sifflement glace, cristal puis etincelles fines.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A thin high cold metallic singing whistle sweeps downward, fractures into tiny crystalline ticks, and leaves a fine needle-like electrical fizz. Icy electrical conduction, no bass explosion.",
+        "seconds": 1.7
+      }
+    },
+    {
+      "id": "shatter",
+      "name": "Shatter",
+      "dismemberment": {
+        "signature": "Cassure violente et pluie courte d eclats.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A forceful ice-bone fracture blast with a dense short crunchy crack and many small sharp frozen splinters scattering. More explosive than the ordinary small cryo limb break.",
+        "seconds": 1.25
+      },
+      "death": {
+        "signature": "Fracas glace ample, cascade d eclats.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A forceful broad ice smashing crash followed by a dense cascade of sharp glassy chunks, dropping from high to low. One explosive frozen shatter, no sustained whistle.",
+        "seconds": 1.7
+      }
+    },
+    {
+      "id": "resonant_impact",
+      "name": "ResonantImpact",
+      "dismemberment": {
+        "signature": "Claquement osseux et double resonance.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A heavy hard bone and tendon snap followed by two short metallic resonant pings decreasing in pitch. Compact impact-driven severing with a recognizable double ring.",
+        "seconds": 1.1
+      },
+      "death": {
+        "signature": "Choc suivi de deux rebonds metalliques.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. One dense hard impact followed by two separated pitched metallic resonant echoes, each lower and softer, with a low physical pressure tail. Distinct hit-ring-ring rhythm.",
+        "seconds": 1.7
+      }
+    },
+    {
+      "id": "cavitation",
+      "name": "Cavitation",
+      "dismemberment": {
+        "signature": "Implosion humide et rupture sous pression.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A short suction gulp, then a dense wet tissue pop as fluid pressure tears the limb off, followed by a brief acidic spray. Hollow implosion rather than a dry impact.",
+        "seconds": 1.1
+      },
+      "death": {
+        "signature": "Implosion de bulles, pop creux et liquide.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A cluster of liquid bubbles rapidly implodes into one hollow deep pop, a short pressure ring and a splattering acidic water spray. Vacuum-like watery suction then collapse.",
+        "seconds": 1.7
+      }
+    },
+    {
+      "id": "caustic_contagion",
+      "name": "CausticContagion",
+      "dismemberment": {
+        "signature": "Rupture visqueuse, bulles et bouffee de spores.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A sticky fibrous tissue rip, two tiny acidic bubble pops and a compact papery spore puff. Wet caustic and dusty poisonous detachment, physically sharp onset.",
+        "seconds": 1.1
+      },
+      "death": {
+        "signature": "Deux pustules acides, spores froissees.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. Two distinctly spaced viscous chemical bubble bursts with a crackly papery spore flutter between them, ending in a brief sour wet fizz. Acid and toxic contagion, pulsing organic texture.",
+        "seconds": 2.1
+      }
+    },
+    {
+      "id": "toxic_ignition",
+      "name": "ToxicIgnition",
+      "dismemberment": {
+        "signature": "Claquement humide, inflammation et spores.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A sharp wet tendon snap engulfed by one muffled gas ignition pop, a tiny flame lick and a dusty papery flutter. Compact toxic burning limb detachment.",
+        "seconds": 1.1
+      },
+      "death": {
+        "signature": "Allumage de gaz sourd, flamme et flutter.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A muffled gas-cloud ignition whump, a rapid rough orange flame roll and a brief hollow dusty spore flutter. Short poisonous gas fire, heavier muffled onset than pure thermal.",
+        "seconds": 1.7
+      }
+    },
+    {
+      "id": "steam_veil",
+      "name": "SteamVeil",
+      "dismemberment": {
+        "signature": "Rupture saturee et jet de vapeur sous pression.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A taut soaked tissue snap with a tight pressurized steam jet and hot water droplets sputtering out. One fast wet severing onset followed by a short white vapor release.",
+        "seconds": 1.1
+      },
+      "death": {
+        "signature": "Decompression sifflante et gouttelettes.",
+        "prompt": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A quick pressurized steam valve release, a wide bright white vapor hiss swelling once then fading into a few cooling water droplets. Steam and heat, no organic breathing.",
+        "seconds": 2.1
+      }
+    }
+  ]
+}

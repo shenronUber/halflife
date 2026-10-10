@@ -1,0 +1,45 @@
+{
+  "clips": 33,
+  "death": 16,
+  "dismemberment": 17,
+  "format": "mono PCM 22050 Hz / 16 bit",
+  "bytes": 2073336,
+  "duration_range": [
+    1.061497,
+    2.08
+  ],
+  "closest_signal_pairs": [
+    [
+      0.9725761981762998,
+      "dismemberment_resonant_impact",
+      "death_corrosion"
+    ],
+    [
+      0.9488835310373727,
+      "dismemberment_resonant_impact",
+      "dismemberment_arc_chain"
+    ],
+    [
+      0.9392733466511752,
+      "dismemberment_arc_chain",
+      "death_corrosion"
+    ],
+    [
+      0.9379390972890935,
+      "death_toxic_ignition",
+      "death_hydro"
+    ],
+    [
+      0.9308027098553672,
+      "death_resonant_impact",
+      "death_shatter"
+    ]
+  ],
+  "checks": [
+    "each element and cross-element reaction has independent death and detachment assets",
+    "neutral detachment exists without an elemental death cue",
+    "33 unique generated masters and exported WAV hashes",
+    "audible quick attacks, no digital clipping, fade-outs and mix headroom",
+    "complete offline bank; preview links and provenance valid"
+  ]
+}

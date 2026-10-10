@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-09",
+  "runtime": "C:\\Users\\Mathieu\\Documents\\Half life Project\\runtime\\vector-engine\\vf_visual",
+  "verified_deployment": {
+    "files": 290,
+    "models": 76
+  },
+  "wound_inputs_sha256": "8f242d08fdbaccba6bc881a3c83c15b1b95f76f1ee5daa050b9eec60b2bc67ca",
+  "updated_files": {
+    "cl_dlls\\client.dll": "5185f5ed9c6bcc4a95b4fb683a6792c4ce8dcfa98a13360d5205330ad7e952d7",
+    "dlls\\hl.dll": "35439d5fabd7b8509533442108ca82fc0b246ccef3ba3f23172f25af5ea86d6e",
+    "models\\vf_deaths\\persona_death.mdl": "a4c077f2c059525cd74f5514579a4ba8e3a2958af620252d2faac48acca5096b",
+    "models\\vf_deaths\\persona_death_gibs.mdl": "17df0b647f17154f2515841c2f4bbe41f414330f7e369f5a9671aa65d761c165"
+  },
+  "reports": {
+    "close_views": {
+      "seconds": 20.55,
+      "checks": [
+        "five native close views of measured wounds",
+        "actual F8 head/electric death and settled corpse",
+        "native renderer accepts all new bodygroups"
+      ],
+      "captures": "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\wound-textures",
+      "log": "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\wound-textures\\native.log"
+    },
+    "real_deaths": {
+      "seconds": 59.97,
+      "checks": [
+        "original silhouette, UVs and 77 sequences unchanged",
+        "all 32 anatomical combinations valid; 15 themed fragments",
+        "14 real target deaths, standard and electrical independently of anatomical loss",
+        "one corpse per death; corpse survives target respawn",
+        "active effect captured on normal fatal damage",
+        "cadaver expiry clears client state",
+        "actual player head explosion with electrical death",
+        "native screenshots of initial pose, motion, settled corpse and menu"
+      ],
+      "log": "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\death-visual\\native.log",
+      "captures": "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\animation-native\\death-visual\\vf_animation\\scrshots"
+    },
+    "multiplayer": {
+      "clients": 3,
+      "seconds": 31.0,
+      "corpse": 33,
+      "skins": "1,2,0,1,0",
+      "late_join_age": 6.16,
+      "checks": [
+        "remote electrical animation and missing left arm",
+        "five-zone outfit retained after victim respawn and equipment change",
+        "late join receives age, mask, effect and settled pose",
+        "all corpse assemblies accepted by native renderer",
+        "15-second expiry removes client corpse state"
+      ]
+    },
+    "menu_save_budget": {
+      "checks": [
+        "pointer click triggers actual head explosion/electrical death",
+        "corpse pose, missing head and cause survive save/load",
+        "thirteen simultaneous full dismemberments retain twelve corpses",
+        "clear removes all corpse states",
+        "native assemblies accepted",
+        "crouching player corpse preserves floor height"
+      ]
+    },
+    "unit": {
+      "suites": [
+        "unit"
+      ],
+      "passed": true,
+      "results": [
+        {
+          "suite": "unit",
+          "test": "validate.py",
+          "passed": true,
+          "seconds": 1.73
+        },
+        {
+          "suite": "unit",
+          "test": "model_contract.py",
+          "passed": true,
+          "seconds": 0.06
+        },
+        {
+          "suite": "unit",
+          "test": "contract_documentation.py",
+          "passed": true,
+          "seconds": 0.06
+        },
+        {
+          "suite": "unit",
+          "test": "tests/status_renderer_update_test.py",
+          "passed": true,
+          "seconds": 0.12
+        }
+      ]
+    }
+  },
+  "visual_review": [
+    "all five native close screenshots inspected",
+    "cloth-to-wound borders no longer form spikes",
+    "downward cut faces remain visible under scene light",
+    "neck/arms/thigh materials use muted blood-red and dull beige bone",
+    "actual F8 head/electric death inspected"
+  ]
+}

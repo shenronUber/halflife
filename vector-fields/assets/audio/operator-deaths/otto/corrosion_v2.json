@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "actor": "otto",
+  "cause": "corrosion",
+  "text": "[raspy][screaming] GRAAAGH!",
+  "request": {
+    "text": "[raspy][screaming] GRAAAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "b106c90a123be8d5ac6350b2bd73f6b75a646cb7d64a68b2e85cc9f9295071f8",
+  "sha256": "b80df3fca42b85068ce480f2d8ab119d8f281eb1e02be7b8917cc76319fda15f",
+  "request_id": "OmiAGZy60an8YebuiGTY"
+}

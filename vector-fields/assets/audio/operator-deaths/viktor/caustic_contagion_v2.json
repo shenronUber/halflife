@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "actor": "viktor",
+  "cause": "caustic_contagion",
+  "text": "[raspy][screaming] KHAAAGH!",
+  "request": {
+    "text": "[raspy][screaming] KHAAAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "7797e14e7a4f0d58e1b2c95ac0c96d84beaadae33b5d9c5622a8d2faa458309f",
+  "sha256": "ad25d57ed9fc0984dbdb8ac9fa6dbe0d9ccbb73bd9f149a7ca09b5b59c923e8f",
+  "request_id": "fSeAKHlCRfmlTqnivpi8"
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "corrosion",
+  "variant": 0,
+  "text": "[alarmed] Ácido! My armor is melting!",
+  "request": {
+    "text": "[alarmed] Ácido! My armor is melting!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "e2fd4b9d891244bce1c9501045b11a5d560bca7093c3a6d13429e483d6773c5a",
+  "sha256": "0b989356f2ee14d570001485f6d1f1f1c90bab4cdc07373b356dc65eebee1074",
+  "request_id": "sFhhIsvKqlPMShpej7VL",
+  "reported_credit_cost": "4"
+}

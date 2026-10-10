@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "kinetic",
+  "variant": 0,
+  "text": "[grunts] Oof! Quel manque de finesse.",
+  "request": {
+    "text": "[grunts] Oof! Quel manque de finesse.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "1d208af32ad87f940a0d5d1309082d03413fde8dcd40540eed67ed419f2691b6",
+  "sha256": "62ea733f45f2d004d2e693f2376378a2805c1bb7cf57c0266333b8eaf7c52991",
+  "request_id": "A5AkKGTuapGOqRplwN04",
+  "reported_credit_cost": "4"
+}

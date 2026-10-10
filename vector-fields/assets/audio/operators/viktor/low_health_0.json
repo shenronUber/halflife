@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "low_health",
+  "variant": 0,
+  "text": "[strained] Плохо. Need a medic.",
+  "request": {
+    "text": "[strained] Плохо. Need a medic.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "6aaaeb654688b6cb9d07e0251d2e0cbc00fb4d53d7c61b22e782da1b8006ff58",
+  "sha256": "6bac092275fa818b1d7797a2f7fb6887973e2103a9a468428c583ef707c02937",
+  "request_id": "t2fpG126qD3JfrbmgesU",
+  "reported_credit_cost": "3"
+}

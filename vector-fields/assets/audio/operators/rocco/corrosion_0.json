@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "corrosion",
+  "variant": 0,
+  "text": "[alarmed] Acid! It's eating my armor!",
+  "request": {
+    "text": "[alarmed] Acid! It's eating my armor!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "c404da3fcc50fb3a588318b93e4bccf8f32c8b1b0ffd2865a5f61ae2abbd246c",
+  "sha256": "320176b9e84c6f3feb76d73b620bc368970aa2b3d416662c6d4adb0082ff23d2",
+  "request_id": "2HyLR19j2PRqbMHJopu9",
+  "reported_credit_cost": "4"
+}

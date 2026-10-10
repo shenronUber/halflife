@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "respawn",
+  "variant": 2,
+  "text": "[deadpan] Another death. Engine problem. I am submitting complaint. To nobody.",
+  "request": {
+    "text": "[deadpan] Another death. Engine problem. I am submitting complaint. To nobody.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "ee013fde32a77f2fccf44ed9ab56441adbb802e50ab7dda5d43c013806da7195",
+  "sha256": "f650bb7ec8f59c564efeaac853462b7474f6317dc7ff64762588a56daf81d054",
+  "request_id": "MZ0JMSILP0kfrMsNuxzG",
+  "reported_credit_cost": "9"
+}

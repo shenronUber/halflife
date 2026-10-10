@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "shatter",
+  "variant": 0,
+  "text": "[panicked] My frozen armor is shattering!",
+  "request": {
+    "text": "[panicked] My frozen armor is shattering!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "89fdd1cc40569d8e4f40afaeee5deca67defec4fb523654805827f68c7875eee",
+  "sha256": "74974eb2a6190e01a21656e46699029449f80f232a15d6c13ab31438f6af5517",
+  "request_id": "C609N54HwZypM3XoICbN",
+  "reported_credit_cost": "5"
+}

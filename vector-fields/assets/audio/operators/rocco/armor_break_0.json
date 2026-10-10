@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "armor_break",
+  "variant": 0,
+  "text": "[urgent] Armor's gone! Che disastro!",
+  "request": {
+    "text": "[urgent] Armor's gone! Che disastro!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "eca4643df0ff223e032137ab2ebc2b550fbaa17e8c3b3a84ced8f6b86afab93b",
+  "sha256": "1ba3289c69d4053541dbea3662488c5f0db1cdccf01e3632a9e220bbae1d8092",
+  "request_id": "EZRrni1RtpMs2WUoxoBx",
+  "reported_credit_cost": "4"
+}

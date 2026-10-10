@@ -153,8 +153,10 @@ bool Button(float x,float y,float w,float h,const char* label,bool selected,bool
 int FamilyId(const char* name){for(int i=0;i<6;++i)if(!strcmp(name,families[i].name))return i;return -1;}
 void Badge(int f,float x,float y,float w){if(f<0||f>5)return;Box(x,y,w,30,families[f].color,24);Icon(f,x+6,y+5,19,families[f].color);Text(x+34,y+7,families[f].name,families[f].color,w-40);if(Hover(x,y,w,30))Tip(families[f].summary);}
 void Viewport(float x,float y,float w,float h){
- if(held&&pressX>=x&&pressX<x+w&&pressY>=y&&pressY<y+h)drag=true;
- if(Hover(x,y,w,h)&&wheel){VF_PreviewZoom(.06f*wheel);wheel=0;}
+ // The bottom strip holds the gesture hint and optional preset buttons.
+ // Only the rendered preview captures drag/zoom, so footer controls can click.
+ if(held&&pressX>=x&&pressX<x+w&&pressY>=y&&pressY<y+h-32)drag=true;
+ if(Hover(x,y,w,h-32)&&wheel){VF_PreviewZoom(.06f*wheel);wheel=0;}
  Frame(x,y,w,h,drag?teal:edge);Box(x+12,y+h-25,4,4,teal);Text(x+25,y+h-30,"Glisser : rotation   Molette : zoom",muted,w-35);
 }
 int Scroll(float x,float y,float w,float h){if(!Hover(x,y,w,h))return 0;int value=wheel;wheel=0;return value;}
@@ -174,19 +176,19 @@ void Meter(float x,float y,float w,const char* name,int value,int applied,int li
  float a=limit?Clamp(applied/(float)limit,0,1):0;Box(x+(w-2)*a,y+22,2,9,white);
 }
 void Begin(int section){
- tooltip=NULL;gEngfuncs.pfnFillRGBABlend(0,0,ScreenWidth,ScreenHeight,bg.r,bg.g,bg.b,254);Box(0,0,1280,720,bg,254);Box(0,0,1280,4,teal);Icon(33,25,24,32,teal);RenderText(72,12,"VECTOR FIELDS",white,1.5f);Text(72,47,devMode?"DEVELOPPEUR / OUTILS":"EQUIPEMENT / LOOTPOOL",muted);
+ tooltip=NULL;gEngfuncs.pfnFillRGBABlend(0,0,ScreenWidth,ScreenHeight,bg.r,bg.g,bg.b,254);Box(0,0,1280,720,bg,254);Box(0,0,1280,4,teal);Icon(33,25,24,32,teal);RenderText(72,12,"VECTOR FIELDS",white,1.5f);Text(72,47,devMode?"DEVELOPPEUR / OUTILS":"EQUIPEMENT",muted);
  if(devMode){
   if(Button(450,22,176,38,"Retour au jeu")){VF_CharacterGameplay(0);return;}
   modeDrawing=true;if(Button(640,22,370,38,VF_EngineLinked()?"Apparence : liee aux objets  v":"Apparence : libre  v",modeMenu))modeMenu=!modeMenu;modeDrawing=false;
- }else if(Button(640,22,370,38,"Options developpeur",false,true,4)){DevCommand();return;}
- if(Button(1026,22,138,38,"Guide",guide,true,9)){guide=!guide;released=false;}
+ }
+ if(devMode&&Button(1026,22,138,38,"Guide",guide,true,9)){guide=!guide;released=false;}
  if(Button(1176,22,80,38,"",false,true,10)){VF_CharacterClose();VF_SkinsClose();Focus();}
  if(devMode){
   const char* tabs[]={"Equipement test","Armes test","Skins / sources","Prototypes","Arsenal"};int icons[]={6,4,8,7,9};
   for(int i=0;i<5;++i)if(Button(24+i*249.f,84,240,43,tabs[i],section==i,true,icons[i])){guide=false;if(i<2)VF_CharacterShow(i);else VF_SkinsShow(i==2?0:i==3?2:1);}
  }else{
   if(Button(24,84,603,43,"Operateur",section==0,true,6))VF_CharacterGameplay(0);
-  if(Button(650,84,606,43,"Arme / Relais R-01",section==1,true,7))VF_CharacterGameplay(1);
+  if(Button(650,84,606,43,"Arme",section==1,true,7))VF_CharacterGameplay(1);
  }
  Box(24,140,1232,1,edge);
 }
@@ -203,9 +205,9 @@ bool Guide(){
 
  if(guidePage==3){
   Text(28,162,"RELAIS R-01 / ATELIER MODULAIRE",white,530);
-  Text(28,204,"12 emplacements / 26 pieces / 3 alimentations / 8 192 assemblages",teal,1210);
+  Text(28,204,"12 emplacements / 52 pieces / 8 chassis / 3 alimentations",teal,1210);
   const char* names[]={"Chassis","Canon","Bouche","Chargeur","Culasse","Charge","Projectile","Optique","Sous-canon","Poignee / crosse","Batterie","Refroidisseur"};
-  const char* pairs[]={"Dessous : Atelier, Circuit / Lateral : Traverse / Dessus : Zenith","Chemise ventilee / Induction cuivre","Frein ajoure / Moderateur court","Nervure / Double pile","Levier / Glissiere","Cassette balistique / Energetique","Porte-flechettes / Porte-ampoules","Viseur cadre / Lunette compacte","Poignee inclinee / Tube auxiliaire","Squelette / Amortie","Cellule 24V / Condensateur 48V","Ailettes / Circuit cuivre"};
+  const char* pairs[]={"Arche / Gyre / Atelier / Circuit / +4 chassis","Chemise / Induction / Longerons / Caisson","Frein / Moderateur / Griffes / Hexagonal","Nervure / Double pile / Coude / Tambour bas","Levier / Glissiere / Anneau / Double piston","Balistique / Energetique / Bi-tube / Triple chambre","Flechettes / Ampoules / Monodard / Disques","Cadre / Lunette / Dioptre / Prisme","Poignee / Tube / Stabilisateur / Garde-main","Squelette / Amortie / Triangulee / Joue reglable","Cellule / Condensateur / Tore / Trois cartouches","Ailettes / Cuivre / Pointes / Ventilateurs"};
   const int icons[]={21,22,23,24,4,26,27,28,29,30,31,32};
   for(int i=0;i<12;++i){float x=24+(i%2)*626.f,y=239+(i/2)*59.f;Box(x,y,606,52,panel);Icon(icons[i],x+12,y+12,27,i%2?amber:teal);Text(x+54,y+5,names[i],white,540);Text(x+54,y+29,pairs[i],muted,540);}
   Wrap(28,602,"F11 : atelier. Dessous / Lateral / Dessus change le chassis en conservant le chargeur, les autres pieces et les finitions. Appliquer puis R en jeu : rechargement propre au montage.",1210,white,2);

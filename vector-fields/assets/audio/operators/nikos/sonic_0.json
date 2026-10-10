@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "model_id": "eleven_v4",
+  "event": "sonic",
+  "variant": 0,
+  "text": "[pained] My ears! Σταμάτα!",
+  "request": {
+    "text": "[pained] My ears! Σταμάτα!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "d8863846c537a3dbcb3b26720a4ce5fab7865586497791ab81dd1891279b8070",
+  "sha256": "78e3611ce12a9a540cebe68dae6202cd4f7933f9889bdf8cbb58450a3210fc49",
+  "request_id": "aiMc1HIQMCfjnDjAtQlq",
+  "reported_credit_cost": "3"
+}

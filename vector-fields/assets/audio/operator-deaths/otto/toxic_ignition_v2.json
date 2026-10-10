@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "actor": "otto",
+  "cause": "toxic_ignition",
+  "text": "[choking][screaming] KAAAAGH!",
+  "request": {
+    "text": "[choking][screaming] KAAAAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "95de5db1f49b355df428c4c8e5150ac4a43f993dd19218f1265ccc72450ba11c",
+  "sha256": "9128f0426027e5deab8b128dc246e7aca24456bfd91fedbe0693d147c33ae2fc",
+  "request_id": "9is9Dafz68A8MO9RgaBj"
+}

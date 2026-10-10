@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "taunt",
+  "variant": 2,
+  "text": "[mocking] Come closer, придурок. I am getting bored.",
+  "request": {
+    "text": "[mocking] Come closer, придурок. I am getting bored.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "49c9a50b6e5259c04dafa82bf71bd1ab21f3cc342c7cb9266263b70ad3f2acae",
+  "sha256": "1a8755c7fa57d4af62e5f5e0d7de8dc31d9569c67235d5c9f8489d1c0286635a",
+  "request_id": "D50JphJMXq0elWLB8Lj3",
+  "reported_credit_cost": "6"
+}

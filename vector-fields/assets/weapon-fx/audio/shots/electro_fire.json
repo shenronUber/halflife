@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Electro / fire",
+  "created_utc": "2026-10-09T02:54:18.083041+00:00",
+  "request_sha256": "5de7b242edac31621bd748598cd8d26de49fd5911dffe00d5045e285e100cb5f",
+  "request": {
+    "text": "One single futuristic electric rifle shot. Immediate sharp electrical arc crack and short sizzling ion discharge, punchy transient, very short electronic tail. No laser hum beforehand, no voice, no music, no echo, exactly one trigger pull at the start.",
+    "duration_seconds": 1.2,
+    "prompt_influence": 0.55,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "156b2936286812a7c364c8762408ba1f8893d83344bccf1736ca687b5bc28ed1",
+  "bytes": 20106,
+  "text": "One single futuristic electric rifle shot. Immediate sharp electrical arc crack and short sizzling ion discharge, punchy transient, very short electronic tail. No laser hum beforehand, no voice, no music, no echo, exactly one trigger pull at the start.",
+  "request_id": null,
+  "reported_credit_cost": "12"
+}

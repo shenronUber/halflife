@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "electro",
+  "variant": 0,
+  "text": "[pained] Joder! Electric shock!",
+  "request": {
+    "text": "[pained] Joder! Electric shock!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "5b63e44ec440bbb86bf88d6b3c2dda4dc4e640f0aa54be224004626fff0d4d00",
+  "sha256": "043fe0c3b84e42b51933fb8d272535ba4cb38ea7ce75e3a0024c025d1d8d747c",
+  "request_id": "i0fIUIa69E1nwtktUV1H",
+  "reported_credit_cost": "3"
+}

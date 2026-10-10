@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "actor": "lucien",
+  "cause": "superconduction",
+  "text": "[strained][screaming] A-a-agh!",
+  "request": {
+    "text": "[strained][screaming] A-a-agh!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "d1961b8ef5f89ad0436a0bc3f455570684d927bc6b2888af59bf57bf1cfc369a",
+  "sha256": "e89f457fb0fbd4190466e6dae188b334a95369c5990c9c9cf7d6614568f33834",
+  "request_id": "eoixNQd6ujeWSTwfhfdb"
+}

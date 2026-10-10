@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "actor": "lucien",
+  "cause": "superconduction",
+  "text": "[shivering] Hh-hh... [screaming] A-a-aagh! [weakly] Hhh...",
+  "request": {
+    "text": "[shivering] Hh-hh... [screaming] A-a-aagh! [weakly] Hhh...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "7252c00a4d16ad507313bf12beda8478f55dc9a8e1f9d661b4419e266a2a7e49",
+  "sha256": "8b99ec4b72551730318dfdcca0822dee13f934e8fc601b3cfe3ca6bf5a48b09b",
+  "request_id": "GvTSYPbUjbFVT7AV8pV8"
+}

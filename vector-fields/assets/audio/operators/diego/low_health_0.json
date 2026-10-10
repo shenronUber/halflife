@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "low_health",
+  "variant": 0,
+  "text": "[strained] Mierda. I'm nearly done.",
+  "request": {
+    "text": "[strained] Mierda. I'm nearly done.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "e10b01dabea2638933141ca11776b39151438661cbed9cec8fe333fa3b7d0bac",
+  "sha256": "73aaef278c1a9574592485fbcf7875803b319f09caa2a4d31ded0e0ebc5f6abc",
+  "request_id": "MjJmCXr9zaFUtTZpZQ5S",
+  "reported_credit_cost": "4"
+}

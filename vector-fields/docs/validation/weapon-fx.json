@@ -1,0 +1,312 @@
+{
+  "release": "0.20.4",
+  "date": "2026-10-09",
+  "assets": {
+    "profiles": 8,
+    "sprites": 40,
+    "sounds": 40,
+    "decals": 8,
+    "stock_decals": 222,
+    "audio": [
+      {
+        "file": "corrosion_fire.wav",
+        "duration": 1.2,
+        "peak": 0.3438,
+        "rms": 0.0329
+      },
+      {
+        "file": "corrosion_hit_flesh.wav",
+        "duration": 1.2,
+        "peak": 0.3516,
+        "rms": 0.0276
+      },
+      {
+        "file": "corrosion_hit_hard.wav",
+        "duration": 1.2,
+        "peak": 0.3516,
+        "rms": 0.0206
+      },
+      {
+        "file": "corrosion_hit_metal.wav",
+        "duration": 1.2,
+        "peak": 0.3906,
+        "rms": 0.021
+      },
+      {
+        "file": "corrosion_hit_wood.wav",
+        "duration": 1.2,
+        "peak": 0.3672,
+        "rms": 0.0246
+      },
+      {
+        "file": "cryo_fire.wav",
+        "duration": 1.2,
+        "peak": 0.375,
+        "rms": 0.0126
+      },
+      {
+        "file": "cryo_hit_flesh.wav",
+        "duration": 1.2,
+        "peak": 0.3281,
+        "rms": 0.0358
+      },
+      {
+        "file": "cryo_hit_hard.wav",
+        "duration": 1.2,
+        "peak": 0.3281,
+        "rms": 0.0342
+      },
+      {
+        "file": "cryo_hit_metal.wav",
+        "duration": 1.2,
+        "peak": 0.3281,
+        "rms": 0.0344
+      },
+      {
+        "file": "cryo_hit_wood.wav",
+        "duration": 1.2,
+        "peak": 0.3672,
+        "rms": 0.035
+      },
+      {
+        "file": "electro_fire.wav",
+        "duration": 1.2,
+        "peak": 0.3047,
+        "rms": 0.0634
+      },
+      {
+        "file": "electro_hit_flesh.wav",
+        "duration": 1.2,
+        "peak": 0.2656,
+        "rms": 0.0398
+      },
+      {
+        "file": "electro_hit_hard.wav",
+        "duration": 1.2,
+        "peak": 0.3047,
+        "rms": 0.0383
+      },
+      {
+        "file": "electro_hit_metal.wav",
+        "duration": 1.2,
+        "peak": 0.2812,
+        "rms": 0.0384
+      },
+      {
+        "file": "electro_hit_wood.wav",
+        "duration": 1.2,
+        "peak": 0.2891,
+        "rms": 0.0394
+      },
+      {
+        "file": "hydro_fire.wav",
+        "duration": 1.2,
+        "peak": 0.3906,
+        "rms": 0.0168
+      },
+      {
+        "file": "hydro_hit_flesh.wav",
+        "duration": 1.2,
+        "peak": 0.3438,
+        "rms": 0.0263
+      },
+      {
+        "file": "hydro_hit_hard.wav",
+        "duration": 1.2,
+        "peak": 0.3438,
+        "rms": 0.02
+      },
+      {
+        "file": "hydro_hit_metal.wav",
+        "duration": 1.2,
+        "peak": 0.3438,
+        "rms": 0.0198
+      },
+      {
+        "file": "hydro_hit_wood.wav",
+        "duration": 1.2,
+        "peak": 0.3438,
+        "rms": 0.0247
+      },
+      {
+        "file": "kinetic_fire.wav",
+        "duration": 1.2,
+        "peak": 0.3906,
+        "rms": 0.0515
+      },
+      {
+        "file": "kinetic_hit_flesh.wav",
+        "duration": 1.2,
+        "peak": 0.25,
+        "rms": 0.0242
+      },
+      {
+        "file": "kinetic_hit_hard.wav",
+        "duration": 1.2,
+        "peak": 0.2656,
+        "rms": 0.0165
+      },
+      {
+        "file": "kinetic_hit_metal.wav",
+        "duration": 1.2,
+        "peak": 0.2109,
+        "rms": 0.0163
+      },
+      {
+        "file": "kinetic_hit_wood.wav",
+        "duration": 1.2,
+        "peak": 0.2266,
+        "rms": 0.0226
+      },
+      {
+        "file": "sonic_fire.wav",
+        "duration": 1.2,
+        "peak": 0.4375,
+        "rms": 0.0363
+      },
+      {
+        "file": "sonic_hit_flesh.wav",
+        "duration": 1.2,
+        "peak": 0.3203,
+        "rms": 0.0246
+      },
+      {
+        "file": "sonic_hit_hard.wav",
+        "duration": 1.2,
+        "peak": 0.3125,
+        "rms": 0.0196
+      },
+      {
+        "file": "sonic_hit_metal.wav",
+        "duration": 1.2,
+        "peak": 0.3125,
+        "rms": 0.0197
+      },
+      {
+        "file": "sonic_hit_wood.wav",
+        "duration": 1.2,
+        "peak": 0.3125,
+        "rms": 0.0236
+      },
+      {
+        "file": "thermal_fire.wav",
+        "duration": 1.2,
+        "peak": 0.4297,
+        "rms": 0.0339
+      },
+      {
+        "file": "thermal_hit_flesh.wav",
+        "duration": 1.2,
+        "peak": 0.3281,
+        "rms": 0.0384
+      },
+      {
+        "file": "thermal_hit_hard.wav",
+        "duration": 1.2,
+        "peak": 0.3281,
+        "rms": 0.0371
+      },
+      {
+        "file": "thermal_hit_metal.wav",
+        "duration": 1.2,
+        "peak": 0.3359,
+        "rms": 0.0372
+      },
+      {
+        "file": "thermal_hit_wood.wav",
+        "duration": 1.2,
+        "peak": 0.3359,
+        "rms": 0.0386
+      },
+      {
+        "file": "toxic_fire.wav",
+        "duration": 1.2,
+        "peak": 0.25,
+        "rms": 0.0177
+      },
+      {
+        "file": "toxic_hit_flesh.wav",
+        "duration": 1.2,
+        "peak": 0.25,
+        "rms": 0.0342
+      },
+      {
+        "file": "toxic_hit_hard.wav",
+        "duration": 1.2,
+        "peak": 0.2344,
+        "rms": 0.0305
+      },
+      {
+        "file": "toxic_hit_metal.wav",
+        "duration": 1.2,
+        "peak": 0.2188,
+        "rms": 0.0305
+      },
+      {
+        "file": "toxic_hit_wood.wav",
+        "duration": 1.2,
+        "peak": 0.2578,
+        "rms": 0.0335
+      }
+    ],
+    "checks": [
+      "native index-alpha sprite headers, frames, nonempty alpha and buffer lengths",
+      "WAD mip offsets, palette transparency, preserved stock entries",
+      "eight frontal flashes have centered emission and light in all four quadrants",
+      "40 mono 11025 Hz / 8-bit PCM WAVs: level, duration, RMS, DC and four distinct material variants"
+    ]
+  },
+  "native_checks": [
+    "8 actual predicted primary-fire events: one shot, one hit, one decal, two audio triggers each",
+    "concrete, metal, wood and studio contact; sky excluded; brush-local decal",
+    "bounded burst and pool returns to zero",
+    "developer profile survives save/load; invalid profile rejected; auto restores Kinetic",
+    "eight shooter views render frontal art and zero axial plume frames; legacy model flash suppressed",
+    "native 1080p screenshots produced"
+  ],
+  "native_profile_stats": {
+    "hydro": "VFShot stats: shots=1 hits=1 misses=0 decals=1 audio=2 sky=0 hard=1 metal=0 wood=0 flesh=0 alive=0 peak=9 capacity=512 overwrites=0 drawn=0 frames=27 muzzle_front=3 muzzle_side=0 stock_suppressed=2 mean_ms=0.0094",
+    "electro": "VFShot stats: shots=1 hits=1 misses=0 decals=1 audio=2 sky=0 hard=1 metal=0 wood=0 flesh=0 alive=0 peak=10 capacity=512 overwrites=0 drawn=0 frames=27 muzzle_front=3 muzzle_side=0 stock_suppressed=2 mean_ms=0.0064",
+    "cryo": "VFShot stats: shots=1 hits=1 misses=0 decals=1 audio=2 sky=0 hard=1 metal=0 wood=0 flesh=0 alive=2 peak=9 capacity=512 overwrites=0 drawn=2 frames=27 muzzle_front=3 muzzle_side=0 stock_suppressed=2 mean_ms=0.0084",
+    "thermal": "VFShot stats: shots=1 hits=1 misses=0 decals=1 audio=2 sky=0 hard=1 metal=0 wood=0 flesh=0 alive=0 peak=9 capacity=512 overwrites=0 drawn=0 frames=27 muzzle_front=3 muzzle_side=0 stock_suppressed=2 mean_ms=0.0067",
+    "toxic": "VFShot stats: shots=1 hits=1 misses=0 decals=1 audio=2 sky=0 hard=1 metal=0 wood=0 flesh=0 alive=5 peak=10 capacity=512 overwrites=0 drawn=5 frames=27 muzzle_front=3 muzzle_side=0 stock_suppressed=1 mean_ms=0.0096",
+    "corrosion": "VFShot stats: shots=1 hits=1 misses=0 decals=1 audio=2 sky=0 hard=1 metal=0 wood=0 flesh=0 alive=1 peak=9 capacity=512 overwrites=0 drawn=1 frames=27 muzzle_front=3 muzzle_side=0 stock_suppressed=1 mean_ms=0.0088",
+    "sonic": "VFShot stats: shots=1 hits=1 misses=0 decals=1 audio=2 sky=0 hard=1 metal=0 wood=0 flesh=0 alive=0 peak=7 capacity=512 overwrites=0 drawn=0 frames=27 muzzle_front=3 muzzle_side=0 stock_suppressed=2 mean_ms=0.0054",
+    "kinetic": "VFShot stats: shots=1 hits=1 misses=0 decals=1 audio=2 sky=0 hard=1 metal=0 wood=0 flesh=0 alive=0 peak=10 capacity=512 overwrites=0 drawn=0 frames=27 muzzle_front=3 muzzle_side=0 stock_suppressed=2 mean_ms=0.0064"
+  },
+  "multiplayer_checks": [
+    "two real clients and dedicated loopback server",
+    "late join receives A's Electro profile",
+    "both clients receive remote shot effects for distinct profiles",
+    "sv_cheats 0 rejects test override and broadcasts A's Kinetic reset to both clients",
+    "remote side camera renders axial art; shooter camera uses frontal art",
+    "side-view remote captures generated"
+  ],
+  "binary_sha256": {
+    "build/client/client.dll": "7c25af0362c21572a4b65abaf38528bfc9b53412e632ecf743521645e9ff3870",
+    "build/server/hl.dll": "d1530aad2866022e5565831687753d82a2a47d490b1dfa8d4a55962088e7cddb"
+  },
+  "sources": {
+    "frontal": "assets/weapon-fx/source-muzzle-frontal.png",
+    "frontal_prompt": "assets/weapon-fx/frontal-provenance.json",
+    "side": "assets/weapon-fx/source-muzzle-cones-mask.png"
+  },
+  "visual_review": {
+    "shooter": "assets/weapon-fx/frontal-muzzle-in-game.png",
+    "side": "assets/weapon-fx/remote-cone-in-game.png",
+    "comparison": "assets/weapon-fx/muzzle-visibility-comparison.png"
+  },
+  "limits": [
+    "Presentation only; damage and spread unchanged",
+    "Loopback multiplayer tested; Internet hosting not tested"
+  ],
+  "muzzle_visibility": {
+    "frontal_size_multiplier": 2.0,
+    "frontal_brightness_before": 0.65,
+    "frontal_brightness_after": 0.88,
+    "tip_offset_before": 0.45,
+    "tip_offset_after": 1.5,
+    "side_length_ratio": 1.2692307692307692,
+    "side_radius_ratio": 1.391304347826087
+  }
+}

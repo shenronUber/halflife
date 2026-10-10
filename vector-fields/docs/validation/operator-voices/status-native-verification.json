@@ -1,0 +1,22 @@
+{
+  "actors": 6,
+  "effects": 21,
+  "actual_onsets": 126,
+  "checks": [
+    "F3 pointer controls enable server testing, choose actor and apply a real state",
+    "every actor speaks once for every actual effect onset",
+    "refresh extends duration without repeated dialogue",
+    "rapid component application coalesces to one reaction line",
+    "atomic pair consumes its parents and speaks only the result",
+    "clear cancels pending dialogue",
+    "expiry removes server and client states",
+    "invalid IDs, incompatible pairs and invalid durations rejected",
+    "actual pain, armor break, critical health and elemental damage select contextual lines",
+    "normal and gib deaths each speak once and cancel pending effects",
+    "save/load clears temporary states and developer mode"
+  ],
+  "limits": [
+    "Effect states currently provide visuals and voice; combat balance and abilities remain undefined.",
+    "Audio intelligibility still benefits from human listening."
+  ]
+}

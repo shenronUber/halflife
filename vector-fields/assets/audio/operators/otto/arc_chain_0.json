@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "arc_chain",
+  "variant": 0,
+  "text": "[pained] Water and electricity! Scheisse!",
+  "request": {
+    "text": "[pained] Water and electricity! Scheisse!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "5b2ddff86faa947424d30eef3ba934272a6a46f741b4e15cd63523d7ca3a5a08",
+  "sha256": "36e6cd86ae11afd5a27bb157bea78b4dcd249c4db4f2f8197812a89b31ac932e",
+  "request_id": "xWjw0cU6bXPkgcEQNveu",
+  "reported_credit_cost": "5"
+}

@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "actor": "diego",
+  "cause": "caustic_contagion",
+  "text": "[raspy][screaming] KHAAAGH!",
+  "request": {
+    "text": "[raspy][screaming] KHAAAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "7797e14e7a4f0d58e1b2c95ac0c96d84beaadae33b5d9c5622a8d2faa458309f",
+  "sha256": "1a8c9963aa3393b51eaa6b8812f2fccf33f82c7c2d1c5a52ab7189f8b17cfb36",
+  "request_id": "pft7OOSbhrQ5P4wxPvmH"
+}

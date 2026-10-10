@@ -1,0 +1,67 @@
+{
+  "elapsed_seconds": 22.73,
+  "targets": [
+    [
+      "0",
+      "24",
+      "13",
+      "viktor",
+      "models/vf_skins/persona_rig.mdl"
+    ],
+    [
+      "1",
+      "25",
+      "3",
+      "otto",
+      "models/vf_skins/persona_rig.mdl"
+    ],
+    [
+      "2",
+      "26",
+      "7",
+      "nikos",
+      "models/vf_skins/persona_rig.mdl"
+    ],
+    [
+      "3",
+      "27",
+      "11",
+      "nikos",
+      "models/vf_skins/persona_rig.mdl"
+    ]
+  ],
+  "elements": [
+    "hydro",
+    "electro",
+    "cryo",
+    "thermal",
+    "toxic",
+    "corrosion",
+    "sonic",
+    "kinetic"
+  ],
+  "server_sha256": "3eb71f031859c3f4f988e87d2f44568ce79f0b1993c3d5249f9f25f1bca96762",
+  "client_sha256": "e334c8ef94e7981ca10e3dd0155a99aa2a2f35fdbc49437f979ae9691a92bc57",
+  "map_sha256": "df878cb6b96f2b0b8af057cee4b7c6f54ad6435c3f8ae5a72d698302908b461e",
+  "captures": [
+    "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\docs\\validation\\test-room\\proc_hydro.png",
+    "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\docs\\validation\\test-room\\proc_electro.png",
+    "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\docs\\validation\\test-room\\proc_cryo.png",
+    "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\docs\\validation\\test-room\\proc_thermal.png",
+    "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\docs\\validation\\test-room\\proc_toxic.png",
+    "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\docs\\validation\\test-room\\proc_corrosion.png",
+    "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\docs\\validation\\test-room\\proc_sonic.png",
+    "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\docs\\validation\\test-room\\proc_kinetic.png"
+  ],
+  "checks": [
+    "four distinct GIGN outfits; random existing operator voices",
+    "five actual engine hits do not proc; sixth hit procs for all eight elements",
+    "effect state and counts received by the client",
+    "normal attack input also triggers the six-hit rule",
+    "nearest target responds to a genuine player taunt",
+    "all status durations expire and the eight effect onset voices are emitted",
+    "target dies under genuine hits and respawns after two seconds",
+    "renderer accepts all GIGN target assemblies",
+    "map geometry and lighting preserved; patch is idempotent"
+  ]
+}

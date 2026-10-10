@@ -1,0 +1,19 @@
+{
+  "audio_sha256": "b61c8b07fa727c1c59566974e9623f086b3b34c09e026452e002900a12b37269",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "[hiccup]",
+    "words": [
+      {
+        "text": "[hiccup]",
+        "start": 1.3,
+        "end": 2.06,
+        "type": "audio_event",
+        "logprob": -0.0359029076838245
+      }
+    ],
+    "transcription_id": "1I3UTJU0mEEBrVWrKrCO",
+    "audio_duration_secs": 2.6863125
+  }
+}

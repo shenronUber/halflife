@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "actor": "lucien",
+  "cause": "toxic",
+  "text": "[wheezing][screaming] KHAAGH!",
+  "request": {
+    "text": "[wheezing][screaming] KHAAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "dc352cef7c7601c41eb571b0d01ada0d6a096d51eca620d23c3f43129fc5334e",
+  "sha256": "8b29410509943f4fd61f8ee0a491f546524789d7b5c2ae80e1dd1ac3b865549a",
+  "request_id": "00go1Pcrtp3T9juLRBX5"
+}

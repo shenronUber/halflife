@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "kinetic",
+  "variant": 0,
+  "text": "[grunts] Oof! Сильно. Good hit.",
+  "request": {
+    "text": "[grunts] Oof! Сильно. Good hit.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "a29ec7580b63b9ca16eb20e9fad207cd975c495e3f8e3f3ca28b6a1f541a5650",
+  "sha256": "cadab18869ab1b6e2124bfed0c1dd0cd0b9990bbd579fa4ffba3cc348fe24aa5",
+  "request_id": "WBW9fizMnsYbtHOkYhiS",
+  "reported_credit_cost": "3"
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "phase",
+  "variant": 0,
+  "text": "[confident] Intangible. Très élégant.",
+  "request": {
+    "text": "[confident] Intangible. Très élégant.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "98540a8850965aa07b625c969907f1e70fc03d2889f8d90a312cc3b9ec0be42b",
+  "sha256": "8260aa15f4bfa60ca3bdd1f67d9c7245cfb511d4ccd6ed93d87eac976727f5e0",
+  "request_id": "OrO9K7upOSBfrasIyMQM",
+  "reported_credit_cost": "4"
+}

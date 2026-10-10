@@ -1,0 +1,19 @@
+{
+  "audio_sha256": "d4a8d512ba0cc85589e212ae72524895dca328f5e465b55a74b3bcf87ccddf9e",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "[groans]",
+    "words": [
+      {
+        "text": "[groans]",
+        "start": 0.18,
+        "end": 1.34,
+        "type": "audio_event",
+        "logprob": -0.07704618594531591
+      }
+    ],
+    "transcription_id": "QqYSfJlKnHpgafvmdUQz",
+    "audio_duration_secs": 2.0469375
+  }
+}

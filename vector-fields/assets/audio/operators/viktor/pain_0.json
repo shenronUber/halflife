@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "pain",
+  "variant": 0,
+  "text": "[pained] Argh! Блин!",
+  "request": {
+    "text": "[pained] Argh! Блин!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "3b2386967e099536f45ec08a670c306e4ba704227603fdf5313120f3b9548b73",
+  "sha256": "8c2ffec56cba9dd36f64748636f737f6a2ea3243bdb070ae5dc7f25486f909f0",
+  "request_id": "c3xTDSFdFPxJOEl3xSno",
+  "reported_credit_cost": "2"
+}

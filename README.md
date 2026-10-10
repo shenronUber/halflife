@@ -1,18 +1,25 @@
 # Vector Fields
 
 Prototype de FPS modulaire basé sur le SDK Half-Life et une extension du moteur
-Xash3D FWGS. **Version actuelle : 0.14.0** — 8 octobre 2026.
+Xash3D FWGS. **Version actuelle : 0.20.7** — 10 octobre 2026.
 
 **Jouer :** lancer `Jouer - Vector Fields.cmd` depuis l'installation locale préparée.
 Le gameplay utilise les équipements GIGN et R1. Les neuf emplacements opérateur
 restent disponibles ; les bibliothèques historiques et visualisations sont dans
 les options développeur. Le même build contient les deux espaces.
 
-- [Fonctionnalités de la version 0.14.0](vector-fields/docs/RELEASE-0.14.0.md)
+- [Fonctionnalités de la version 0.20.7](vector-fields/docs/RELEASE-0.20.7.md)
+- [Validation : 58 tests unitaires, 19 contrôles d’assets et essais natifs/réseau](vector-fields/docs/validation/maintenance-0.20.7.json)
 - [Guide, construction et limites](vector-fields/README.md)
 - [Historique](vector-fields/CHANGELOG.md)
 - [Cinq nouveaux ensembles GIGN + R1](vector-fields/assets/EXPEDITIONS.md)
 - [Extension native Xash3D](vector-fields/engine/README.md)
+
+Cette version rassemble 948 équipements à apparence fixe, quatorze finitions dont
+Rome / Inventeur et Dieselpunk, des mains qui suivent la tenue équipée, des animations
+R1 adaptées, les effets élémentaires et les voix de six opérateurs. La salle GIGN,
+l’atlas des morts, les démembrements et le laboratoire des bots sont intégrés à une
+chaîne de génération et de validation commune.
 
 ![Personnages et armes assortis](vector-fields/docs/images/expeditions-five-sets.jpg)
 

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "taunt",
+  "variant": 1,
+  "text": "[mocking] Mamma mia, you aim like a broken toaster!",
+  "request": {
+    "text": "[mocking] Mamma mia, you aim like a broken toaster!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "6a4a9f60bc85dd50cc2f22a6e3841ff41aeb5f5eb00fe2e5c36517607ceb0c4c",
+  "sha256": "b7c53a112557af0f9110b9a2781527c914bac5af5603ba5008aacdbf3c28a429",
+  "request_id": "JnAaCQAyYZVFRlcpv8uH",
+  "reported_credit_cost": "6"
+}

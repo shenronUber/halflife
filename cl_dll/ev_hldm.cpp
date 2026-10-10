@@ -24,6 +24,7 @@
 
 #include "eventscripts.h"
 #include "ev_hldm.h"
+#include "vf_weapon_fx.h"
 
 #include "r_efx.h"
 #include "event_api.h"
@@ -364,7 +365,7 @@ FireBullets
 Go to the trouble of combining multiple pellets into a single damage call.
 ================
 */
-void EV_HLDM_FireBullets( int idx, float *forward, float *right, float *up, int cShots, float *vecSrc, float *vecDirShooting, float flDistance, int iBulletType, int iTracerFreq, int *tracerCount, float flSpreadX, float flSpreadY )
+void EV_HLDM_FireBullets( int idx, float *forward, float *right, float *up, int cShots, float *vecSrc, float *vecDirShooting, float flDistance, int iBulletType, int iTracerFreq, int *tracerCount, float flSpreadX, float flSpreadY, int vfProfile )
 {
 	int i;
 	pmtrace_t tr;
@@ -421,7 +422,12 @@ void EV_HLDM_FireBullets( int idx, float *forward, float *right, float *up, int 
 		// Also... CStrike was always using PM_NORMAL for all of these so it didn't have the problem.
 		gEngfuncs.pEventAPI->EV_PlayerTrace( vecSrc, vecEnd, PM_NORMAL, -1, &tr );
 
-		tracer = EV_HLDM_CheckTracer( idx, vecSrc, tr.endpos, forward, right, iBulletType, iTracerFreq, tracerCount );
+		if(vfProfile>=0){
+            VF_WeaponFXTrace(idx,vfProfile,vecSrc,vecEnd,&tr);
+            gEngfuncs.pEventAPI->EV_PopPMStates();
+            continue;
+        }
+        tracer = EV_HLDM_CheckTracer( idx, vecSrc, tr.endpos, forward, right, iBulletType, iTracerFreq, tracerCount );
 
 		// do damage, paint decals
 		if ( tr.fraction != 1.0 )
@@ -690,6 +696,8 @@ void EV_FireMP5( event_args_t *args )
 	float flSpread = 0.01;
 
 	idx = args->entindex;
+	if(idx<1||idx>32)return;
+	const int vfProfile=VF_WeaponFXProfile(idx,args->iparam1);
 	VectorCopy( args->origin, origin );
 	VectorCopy( args->angles, angles );
 	VectorCopy( args->velocity, velocity );
@@ -701,7 +709,7 @@ void EV_FireMP5( event_args_t *args )
 	if ( EV_IsLocal( idx ) )
 	{
 		// Add muzzle flash to current weapon model
-		EV_MuzzleFlash();
+		if(vfProfile<0)EV_MuzzleFlash();
 		gEngfuncs.pEventAPI->EV_WeaponAnimation( MP5_FIRE1 + gEngfuncs.pfnRandomLong(0,2), 2 );
 
 		V_PunchAxis( 0, gEngfuncs.pfnRandomFloat( -2, 2 ) );
@@ -711,7 +719,7 @@ void EV_FireMP5( event_args_t *args )
 
 	EV_EjectBrass ( ShellOrigin, ShellVelocity, angles[ YAW ], shell, TE_BOUNCE_SHELL ); 
 
-	switch( gEngfuncs.pfnRandomLong( 0, 1 ) )
+	if(vfProfile<0)switch( gEngfuncs.pfnRandomLong( 0, 1 ) )
 	{
 	case 0:
 		gEngfuncs.pEventAPI->EV_PlaySound( idx, origin, CHAN_WEAPON, "weapons/hks1.wav", 1, ATTN_NORM, 0, 94 + gEngfuncs.pfnRandomLong( 0, 0xf ) );
@@ -723,14 +731,15 @@ void EV_FireMP5( event_args_t *args )
 
 	EV_GetGunPosition( args, vecSrc, origin );
 	VectorCopy( forward, vecAiming );
+	if(vfProfile>=0)VF_WeaponFXFire(idx,vfProfile,vecSrc,forward,right,up);
 
 	if ( gEngfuncs.GetMaxClients() > 1 )
 	{
-		EV_HLDM_FireBullets( idx, forward, right, up, 1, vecSrc, vecAiming, 8192, BULLET_PLAYER_MP5, 2, &tracerCount[idx-1], args->fparam1, args->fparam2 );
+		EV_HLDM_FireBullets( idx, forward, right, up, 1, vecSrc, vecAiming, 8192, BULLET_PLAYER_MP5, 2, &tracerCount[idx-1], args->fparam1, args->fparam2, vfProfile );
 	}
 	else
 	{
-		EV_HLDM_FireBullets( idx, forward, right, up, 1, vecSrc, vecAiming, 8192, BULLET_PLAYER_MP5, 2, &tracerCount[idx-1], args->fparam1, args->fparam2 );
+		EV_HLDM_FireBullets( idx, forward, right, up, 1, vecSrc, vecAiming, 8192, BULLET_PLAYER_MP5, 2, &tracerCount[idx-1], args->fparam1, args->fparam2, vfProfile );
 	}
 }
 

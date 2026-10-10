@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "model_id": "eleven_v4",
+  "event": "null",
+  "variant": 0,
+  "text": "[frustrated] Nothing works! Γαμώτο!",
+  "request": {
+    "text": "[frustrated] Nothing works! Γαμώτο!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "fb1b0c227a208b5f38af61aa0b7029c69273c8d3e40435916b9b552386aa51f9",
+  "sha256": "98f436efdaa2678b2fc7490ad50225d456ffb5ca3ea11dc6373e00883274cbc4",
+  "request_id": "xMnM7489A79LFcCpSbM8",
+  "reported_credit_cost": "4"
+}

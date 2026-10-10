@@ -1,6 +1,7 @@
 #ifndef VF_ENGINE_CLIENT_H
 #define VF_ENGINE_CLIENT_H
 struct cl_entity_s;
+bool VF_EngineIsReferenceWeapon(int player);
 void VF_EngineInit();
 void VF_EngineReset();
 bool VF_EngineAvailable();

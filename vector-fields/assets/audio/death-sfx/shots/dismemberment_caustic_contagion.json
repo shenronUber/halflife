@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "CausticContagion / dismemberment",
+  "created_utc": "2026-10-09T23:29:10.777351+00:00",
+  "request_sha256": "58537ec387b1ae3b2ca76472201280ac42e784758450a5223ef8edf8d85b07ca",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A sticky fibrous tissue rip, two tiny acidic bubble pops and a compact papery spore puff. Wet caustic and dusty poisonous detachment, physically sharp onset.",
+    "duration_seconds": 1.1,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "1bf7035313c13e5b55b14b11e5e99b74986e59dab8b961c0b1e1a01ede3e3610",
+  "bytes": 18434,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A sticky fibrous tissue rip, two tiny acidic bubble pops and a compact papery spore puff. Wet caustic and dusty poisonous detachment, physically sharp onset.",
+  "request_id": null,
+  "reported_credit_cost": "11"
+}

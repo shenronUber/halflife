@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "actor": "diego",
+  "cause": "steam_veil",
+  "text": "[choking][screaming] HAAAGH!",
+  "request": {
+    "text": "[choking][screaming] HAAAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "d2476e9cad9b23b536aff81ca79075bd8d157d102501fdb0c5ab68cf56fd911d",
+  "sha256": "436e658c51e1dd2e60c98d5462a956c6c2c3d6dbe72044428ae517bea4cc9bf1",
+  "request_id": "jkz5Nb5K6DecXEn0KRiF"
+}

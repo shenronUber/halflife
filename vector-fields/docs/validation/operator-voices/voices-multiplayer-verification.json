@@ -1,0 +1,27 @@
+{
+  "clients": 2,
+  "late_join": true,
+  "cheats": false,
+  "shared_taunts": [
+    [
+      "2",
+      "diego",
+      "75",
+      "vf_voices/diego/taunt_1.wav"
+    ],
+    [
+      "1",
+      "rocco",
+      "10",
+      "vf_voices/rocco/taunt_1.wav"
+    ]
+  ],
+  "checks": [
+    "dedicated loopback server assigns identities",
+    "late join and existing client both hear the same actor/clip for both players",
+    "ordinary player taunt works with cheats disabled",
+    "actor override and event forgery rejected",
+    "rapid repeated requests produce one taunt per player"
+  ],
+  "scope": "Native positional sound transport plus metadata replication; internet play and physical keyboard not tested."
+}

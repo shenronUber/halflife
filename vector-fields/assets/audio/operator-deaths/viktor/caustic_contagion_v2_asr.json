@@ -1,0 +1,19 @@
+{
+  "audio_sha256": "2bbe9c6d8bf693721fdb5dd2af2f5a1c1bc43fa19a72014dd15d7d29be15784f",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "Ha!",
+    "words": [
+      {
+        "text": "Ha!",
+        "start": 0.08,
+        "end": 0.44,
+        "type": "word",
+        "logprob": -0.3357305300111572
+      }
+    ],
+    "transcription_id": "8eewHmG3ShiaAQli8q4m",
+    "audio_duration_secs": 1.5098125
+  }
+}

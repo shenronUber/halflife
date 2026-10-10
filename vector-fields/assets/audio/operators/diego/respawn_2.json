@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "respawn",
+  "variant": 2,
+  "text": "[sarcastic] The game cheated, amigo. Obviously. My talent is not up for debate.",
+  "request": {
+    "text": "[sarcastic] The game cheated, amigo. Obviously. My talent is not up for debate.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "9253f81153d70b3f8ad31e6c12b83a6d06417678d01319f1c45a74c56f0add32",
+  "sha256": "9df3366c20c6539f4d0634cc59844c65c9606580e594eb0f9fe48411ffd698fd",
+  "request_id": "8T1Z0k8RaeSbOw5xSTg0",
+  "reported_credit_cost": "9"
+}

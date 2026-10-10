@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "cavitation",
+  "variant": 0,
+  "text": "[alarmed] Acid pressure. It is bursting.",
+  "request": {
+    "text": "[alarmed] Acid pressure. It is bursting.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "e5875b02cabedcfc85c80e3a1d1cb9c9615c21652e21da8e8c768ff99bf4dcd5",
+  "sha256": "1be9a68a5f8e98df4415c64c2a41f06aaa41c6f41e753d7499421f7dffdda70a",
+  "request_id": "7g73rbK3Gq6RoKnJ7cAn",
+  "reported_credit_cost": "4"
+}

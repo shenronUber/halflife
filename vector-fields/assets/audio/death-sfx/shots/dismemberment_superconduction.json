@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Superconduction / dismemberment",
+  "created_utc": "2026-10-09T23:29:04.199954+00:00",
+  "request_sha256": "d2046a8de554ce66ff6f2bfdd3754cbd5ca33d112107765987102f0aa527854a",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A very brittle glassy ice and bone snap with a piercing tiny electrical chirp and a shower of fine crystalline ticks. Frozen electrically charged limb detachment.",
+    "duration_seconds": 1.1,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "d783837543fe57306121f9e24cc5bb65ec04f8745e8df3acbe6381fae8c918d9",
+  "bytes": 18434,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A very brittle glassy ice and bone snap with a piercing tiny electrical chirp and a shower of fine crystalline ticks. Frozen electrically charged limb detachment.",
+  "request_id": null,
+  "reported_credit_cost": "11"
+}

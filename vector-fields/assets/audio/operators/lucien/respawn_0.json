@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "respawn",
+  "variant": 0,
+  "text": "[dryly] Respawned. Magnifique. Perhaps you could aim this time, mon ami.",
+  "request": {
+    "text": "[dryly] Respawned. Magnifique. Perhaps you could aim this time, mon ami.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "f4a5f1e8dc0bd6e6ac5cf69cd3124b35b472d20e9f0cbcd2b76242a693967f14",
+  "sha256": "65ed8944525bace5c0abb19e2394fb3bba325cd8e38e87d1ff8cad6dcfec5a28",
+  "request_id": "qjFNqAkdM89YakYUKAwU",
+  "reported_credit_cost": "8"
+}

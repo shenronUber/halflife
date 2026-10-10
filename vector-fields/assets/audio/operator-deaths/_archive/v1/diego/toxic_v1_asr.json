@@ -1,0 +1,33 @@
+{
+  "audio_sha256": "77509b3716438d7575caa2f6ed5a14a7ba68c5665fffd751bb9f7a8c36bba0f8",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "[coughing] [groaning]",
+    "words": [
+      {
+        "text": "[coughing]",
+        "start": 0.74,
+        "end": 1.14,
+        "type": "audio_event",
+        "logprob": -0.040250978665426373
+      },
+      {
+        "text": " ",
+        "start": 1.14,
+        "end": 1.66,
+        "type": "spacing",
+        "logprob": -0.47407907247543335
+      },
+      {
+        "text": "[groaning]",
+        "start": 1.66,
+        "end": 6.14,
+        "type": "audio_event",
+        "logprob": -0.22723600935326735
+      }
+    ],
+    "transcription_id": "L4kFGEujgMSgOOfo6nof",
+    "audio_duration_secs": 6.20525
+  }
+}

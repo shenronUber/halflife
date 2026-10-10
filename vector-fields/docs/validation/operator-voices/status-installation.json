@@ -1,0 +1,27 @@
+{
+  "status": "current production DLLs and 233 audio clips are installed; ready for the next regular launch",
+  "next_launch": "Jouer - Vector Fields.cmd automatically copies the standard build DLLs before starting the game",
+  "deferred": [],
+  "dlls": [
+    {
+      "source": "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\server\\hl.dll",
+      "sha256": "d1530aad2866022e5565831687753d82a2a47d490b1dfa8d4a55962088e7cddb",
+      "currently_installed_sha256": "d1530aad2866022e5565831687753d82a2a47d490b1dfa8d4a55962088e7cddb"
+    },
+    {
+      "source": "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\client\\client.dll",
+      "sha256": "7c25af0362c21572a4b65abaf38528bfc9b53412e632ecf743521645e9ff3870",
+      "currently_installed_sha256": "7c25af0362c21572a4b65abaf38528bfc9b53412e632ecf743521645e9ff3870"
+    }
+  ],
+  "actors": 6,
+  "clips": 233,
+  "features_ready": [
+    "21 contextual player effects",
+    "6 actor identities",
+    "normal taunts and counter-taunts",
+    "configurable real-bot vocal decisions",
+    "18 private post-death respawn variants"
+  ],
+  "current_validation": "respawn-installation.json"
+}

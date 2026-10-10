@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "taunt",
+  "variant": 2,
+  "text": "[laughing] All that noise, and you still miss!",
+  "request": {
+    "text": "[laughing] All that noise, and you still miss!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "ed3c9c3b2637f99fdf8496fe1ae780a92aafc9e29996ba4340791d2049cef8e2",
+  "sha256": "d5b2ca78032907667f3dc1ca752423f2b3cdba64b658d59e1faad44f8de247f3",
+  "request_id": "LFpaenRN4hv53s65qqkE",
+  "reported_credit_cost": "5"
+}

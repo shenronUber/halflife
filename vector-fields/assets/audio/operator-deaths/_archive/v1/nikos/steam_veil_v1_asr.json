@@ -1,0 +1,75 @@
+{
+  "audio_sha256": "49b3a44b63e60d4f7e076b3c6ab452fc12d20c3c32928427a81472e0329ea1f4",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "[gasp] Ha! [coughs] Grr. [sighs]",
+    "words": [
+      {
+        "text": "[gasp]",
+        "start": 0.82,
+        "end": 0.82,
+        "type": "audio_event",
+        "logprob": -0.2975735788239338
+      },
+      {
+        "text": " ",
+        "start": 0.82,
+        "end": 0.9,
+        "type": "spacing",
+        "logprob": -0.00010609064338495955
+      },
+      {
+        "text": "Ha!",
+        "start": 0.9,
+        "end": 1.04,
+        "type": "word",
+        "logprob": -0.00020159320653571436
+      },
+      {
+        "text": " ",
+        "start": 1.04,
+        "end": 1.04,
+        "type": "spacing",
+        "logprob": -2.3841855067985307e-07
+      },
+      {
+        "text": "[coughs]",
+        "start": 1.04,
+        "end": 3.5,
+        "type": "audio_event",
+        "logprob": -0.03781571730384472
+      },
+      {
+        "text": " ",
+        "start": 3.5,
+        "end": 3.58,
+        "type": "spacing",
+        "logprob": -0.011282217688858509
+      },
+      {
+        "text": "Grr.",
+        "start": 3.58,
+        "end": 4.059,
+        "type": "word",
+        "logprob": -0.07930939503830814
+      },
+      {
+        "text": " ",
+        "start": 4.059,
+        "end": 4.34,
+        "type": "spacing",
+        "logprob": -6.603976362384856e-05
+      },
+      {
+        "text": "[sighs]",
+        "start": 4.34,
+        "end": 5.56,
+        "type": "audio_event",
+        "logprob": -0.005255734291858497
+      }
+    ],
+    "transcription_id": "AboY5yuiKbz6oKJu2kLF",
+    "audio_duration_secs": 6.6661875
+  }
+}

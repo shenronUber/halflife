@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "toxic_ignition",
+  "variant": 0,
+  "text": "[panicked] The poison ignited! Putain!",
+  "request": {
+    "text": "[panicked] The poison ignited! Putain!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "ae6c4f1d7a62bc3d8a379b62ca770b40bfab69b6b6a6f96ad225c6eced580282",
+  "sha256": "990d575e8a3cd2c04944d7fbccaece2531d5fefa14f03fdb4222e57ad44b0b87",
+  "request_id": "NR34thlFNleyShp2rVcl",
+  "reported_credit_cost": "4"
+}

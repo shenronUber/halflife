@@ -18,7 +18,7 @@ yellow=[v['p'][2]for mat,tri in s.mesh()if s.textures[mat][0]=='r01_t02.bmp'for 
 script='wait 180\ndeveloper 1\ncon_notifytime 0\nweapon_9mmAR\nvf_reference 0\nwait 35\nvf_select_slot 16\nvf_animation_time 0\n'+click(1000,602)+'wait 20\nscreenshot scrshots/r01_lens_final_isolated.png\nwait 5\n'
 script+=click(1000,602)+click(1110,690)+'wait 25\n'+click(1220,40)+'wait 20\n+forward\nwait 20\n-forward\nwait 20\nscreenshot scrshots/r01_lens_final_hand.png\nwait 5\nvf_reference_audit\nvf_engine_stats\nquit\n'
 log=run_cfg('vf_r01_lens_final',script,captures=['r01_lens_final_isolated','r01_lens_final_hand'],timeout=55)
-assert 'VFR01 audit: combinations=8192 failed=0 parts=12'in log and 'rejected=0'in log
-report=dict(checks=['original lens image embedded in MDL','source UVs use the glass region of the image','all lens skin variants use additive glass','12 lens triangles form the two faces of the window','yellow geometry confined to lower frame; no overlaid cross','8192 native assemblies accepted'],captures=['r01_lens_final_isolated','r01_lens_final_hand'],resolution=[1920,1080],lens_materials={k:v for k,v in flags.items()if k.endswith('_t11.bmp')},model_sha256=hashlib.sha256(s.data).hexdigest())
+assert 'VFR01 audit: checked=1700 failed=0 parts=12 combinations=169869312'in log and 'rejected=0'in log
+report=dict(checks=['original lens image embedded in MDL','source UVs use the glass region of the image','all lens skin variants use additive glass','12 lens triangles form the two faces of the window','yellow geometry confined to lower frame; no overlaid cross','1700 individual/pair assemblies accepted'],captures=['r01_lens_final_isolated','r01_lens_final_hand'],resolution=[1920,1080],lens_materials={k:v for k,v in flags.items()if k.endswith('_t11.bmp')},model_sha256=hashlib.sha256(s.data).hexdigest())
 (ROOT/'build/reference-lens-verification.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
-print('PASS final lens: image retained, additive glass, no yellow cross; 8192 assemblies')
+print('PASS final lens: image retained, additive glass, no yellow cross; 1700 assemblies')

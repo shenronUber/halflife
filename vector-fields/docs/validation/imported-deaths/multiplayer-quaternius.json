@@ -1,0 +1,15 @@
+{
+  "motion": "vf_q_death",
+  "clients": 3,
+  "seconds": 28.8,
+  "corpse": 32,
+  "skins": "1,2,0,1,0",
+  "late_join_age": 8.16,
+  "checks": [
+    "remote electrical animation and missing left arm",
+    "five-zone outfit retained after victim respawn and equipment change",
+    "late join receives age, mask, effect and settled pose",
+    "all corpse assemblies accepted by native renderer",
+    "15-second expiry removes client corpse state"
+  ]
+}

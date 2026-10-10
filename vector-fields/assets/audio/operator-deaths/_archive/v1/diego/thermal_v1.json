@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "actor": "diego",
+  "cause": "thermal",
+  "text": "[screaming] AAAAAAGH! [gasping] Hah! [exhales] Hhh...",
+  "request": {
+    "text": "[screaming] AAAAAAGH! [gasping] Hah! [exhales] Hhh...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "e676b86600479034e98f1d6ebb51aee4f1908212348c0dc275a177f5a21f6b45",
+  "sha256": "a4aeeeba4647b237b442edb4a6a222a90284c9f4bee376da514b0ff79dc0b929",
+  "request_id": "I7I520CPZ48KLveMIjvY"
+}

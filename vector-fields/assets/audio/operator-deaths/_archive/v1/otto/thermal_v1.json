@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "actor": "otto",
+  "cause": "thermal",
+  "text": "[screaming] AAAAAAGH! [gasping] Hah! [exhales] Hhh...",
+  "request": {
+    "text": "[screaming] AAAAAAGH! [gasping] Hah! [exhales] Hhh...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "e676b86600479034e98f1d6ebb51aee4f1908212348c0dc275a177f5a21f6b45",
+  "sha256": "bc2914f1db226c7b783ee8be5873878ea098503dc4d5d2d0479750e785ab3b03",
+  "request_id": "S8pHcfbPXW9KSo5tD3yJ"
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "model_id": "eleven_v4",
+  "event": "pain",
+  "variant": 1,
+  "text": "[grunts] Ugh!",
+  "request": {
+    "text": "[grunts] Ugh!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "ac5a7d4d2b3fcea2d6dfad0fd7ad7baaa7434d0b17ed7467640526a32e3bc120",
+  "sha256": "8d4db4c8d9693d18beb73b0dade44778e4384af5dd9f293c327d5a1d52821b24",
+  "request_id": "lizy7pA6SZx06DE3PCqU",
+  "reported_credit_cost": "1"
+}

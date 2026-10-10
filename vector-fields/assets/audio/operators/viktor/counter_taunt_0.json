@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "counter_taunt",
+  "variant": 0,
+  "text": "[angry] Иди сюда! Say that to my face.",
+  "request": {
+    "text": "[angry] Иди сюда! Say that to my face.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "f79df8ee90f77375e39ea1bf014b7f418097156bf3cb79a30e73734afcd06605",
+  "sha256": "d011018c9966b0606940bc35e37c909ba7d80284b034ed3feec3d5a2d3ef9676",
+  "request_id": "jnTSAmt89bLNQmd3vSFc",
+  "reported_credit_cost": "4"
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "overclock",
+  "variant": 0,
+  "text": "[excited] Overclock! Più veloce!",
+  "request": {
+    "text": "[excited] Overclock! Più veloce!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "188af0af5a4c85f74594a738463bd14fae7f14337e1453c7d90db29d0888a82e",
+  "sha256": "e0c408bd4bf39c53a9d3a7b215eb66a6af1a36cd0c6b67f162274024d919683f",
+  "request_id": "uKBnTa21gwEYQo4luouP",
+  "reported_credit_cost": "4"
+}

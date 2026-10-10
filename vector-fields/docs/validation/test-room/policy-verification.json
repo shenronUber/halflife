@@ -1,0 +1,10 @@
+{
+  "proc": "passed",
+  "voice_and_status": "passed",
+  "combat": "passed",
+  "tests": [
+    "proc_policy_test.cpp",
+    "voice_policy_test.cpp",
+    "combat_policy_test.cpp"
+  ]
+}

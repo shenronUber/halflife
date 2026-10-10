@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "motion": "collapse",
+      "region": "left_arm",
+      "effect": "corrosion",
+      "sequence": 81
+    },
+    {
+      "motion": "impact_right",
+      "region": "right_leg",
+      "effect": "hydro",
+      "sequence": 82
+    },
+    {
+      "motion": "spin",
+      "region": "head",
+      "effect": "resonant_impact",
+      "sequence": 23
+    }
+  ],
+  "checks": [
+    "alternate hydro and corrosion candidates render through completion",
+    "historical spinning death combines with resonant particles",
+    "all assemblies accepted"
+  ]
+}

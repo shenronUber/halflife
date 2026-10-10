@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "overclock",
+  "variant": 0,
+  "text": "[excited] Overclock. Allons-y!",
+  "request": {
+    "text": "[excited] Overclock. Allons-y!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "5eff2ee10b1562a1e7bc3301e513d0b5b69fffdab61fd33265d9beaa1ee5ea82",
+  "sha256": "a3954c53a760e5d386117ac95454aa33489a1dce554d7ff3e5a2b4ec68b9f242",
+  "request_id": "y4TC4sTfUrPZHp41MJHF",
+  "reported_credit_cost": "3"
+}

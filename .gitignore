@@ -9,3 +9,7 @@
 /vector-fields/assets/r01/variants/*/tiles/
 # Local validation/media are copied selectively into docs when relevant.
 *.tmp
+
+# Disposable workspace exports and installed JavaScript dependencies.
+/outputs/
+**/node_modules/

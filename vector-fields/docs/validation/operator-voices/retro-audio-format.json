@@ -1,0 +1,16 @@
+{
+  "operators": {
+    "count": 131,
+    "channels": 1,
+    "sample_rate": 11025,
+    "bits": 8,
+    "bytes": 3987238
+  },
+  "weapon_fx": {
+    "count": 40,
+    "channels": 1,
+    "sample_rate": 11025,
+    "bits": 8,
+    "bytes": 532320
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Cryo / dismemberment",
+  "created_utc": "2026-10-09T23:28:52.656254+00:00",
+  "request_sha256": "7d1b1cd95f39ce8f66ab1203941cfa1d4ce085fc25b6806e2f829de3d839a9de",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A frozen limb breaks cleanly: a single sharp brittle ice and bone crack with a compact crunchy snap, four small ice chips scatter and tinkle. No long frost ambience.",
+    "duration_seconds": 1.1,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "bb56246724e70d01b1a53024a3997183c7ad34accfe39ea2b1949786c72b3106",
+  "bytes": 18434,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A frozen limb breaks cleanly: a single sharp brittle ice and bone crack with a compact crunchy snap, four small ice chips scatter and tinkle. No long frost ambience.",
+  "request_id": null,
+  "reported_credit_cost": "11"
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "model_id": "eleven_v4",
+  "event": "thermal",
+  "variant": 0,
+  "text": "[panicked] Φωτιά! I'm on fire!",
+  "request": {
+    "text": "[panicked] Φωτιά! I'm on fire!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "d8ba0800c8bf3431b13860cb9d999a3bdbc8f2dd829ff41e180c48dd0b026e83",
+  "sha256": "9fdf16cb65aa3a1aec0b1b2ea55a3e6ed405c395f1cd033450aad49fdd50799e",
+  "request_id": "RsIv9M3EGPkqg3fZx4rf",
+  "reported_credit_cost": "3"
+}

@@ -1,0 +1,234 @@
+{
+  "schema": 1,
+  "motions": [
+    {
+      "id": "auto",
+      "label": "Variante automatique",
+      "sequence": null
+    },
+    {
+      "id": "legacy",
+      "label": "Chutes historiques",
+      "sequence": null
+    },
+    {
+      "id": "quaternius",
+      "label": "Quaternius : chute",
+      "sequence": "vf_q_death"
+    },
+    {
+      "id": "kaykit_a",
+      "label": "KayKit : chute rapide",
+      "sequence": "vf_k_death_a"
+    },
+    {
+      "id": "kaykit_b",
+      "label": "KayKit : effondrement",
+      "sequence": "vf_k_death_b"
+    },
+    {
+      "id": "collapse",
+      "label": "Mixamo : chute au sol",
+      "sequence": "vf_m_collapse",
+      "source_file": "mixamo-Death.glb",
+      "source_clip": "mixamo.com",
+      "reference": "bind"
+    },
+    {
+      "id": "impact_right",
+      "label": "Mixamo : impact lateral",
+      "sequence": "vf_m_impact_right",
+      "source_file": "mixamo-Death_From_Right.glb",
+      "source_clip": "mixamo.com",
+      "reference": "bind"
+    },
+    {
+      "id": "impact_front",
+      "label": "Mixamo : recul frontal",
+      "sequence": "vf_m_impact_front",
+      "source_file": "mixamo-Death_From_The_Front.glb",
+      "source_clip": "mixamo.com",
+      "reference": "bind"
+    },
+    {
+      "id": "agony",
+      "label": "Mixamo : agonie lente",
+      "sequence": "vf_m_agony",
+      "source_file": "mixamo-Dying.glb",
+      "source_clip": "mixamo.com",
+      "reference": "bind"
+    },
+    {
+      "id": "collapse_left",
+      "label": "Mixamo : chute laterale",
+      "sequence": "vf_m_collapse_left",
+      "source_file": "mixamo-Standing_Death_Left_01.glb",
+      "source_clip": "mixamo.com",
+      "reference": "bind"
+    },
+    {
+      "id": "recoil_back",
+      "label": "Mixamo : douleur puis recul",
+      "sequence": "vf_m_recoil_back",
+      "source_file": "mixamo-Standing_React_Death_Backward.glb",
+      "source_clip": "mixamo.com",
+      "reference": "bind"
+    },
+    {
+      "id": "recoil_right",
+      "label": "Mixamo : douleur puis chute",
+      "sequence": "vf_m_recoil_right",
+      "source_file": "mixamo-Standing_React_Death_Right.glb",
+      "source_clip": "mixamo.com",
+      "reference": "bind"
+    },
+    {
+      "id": "electric",
+      "label": "Contractions electriques",
+      "sequence": "vf_electro"
+    },
+    {
+      "id": "headshot",
+      "label": "Impact a la tete",
+      "sequence": "headshot"
+    },
+    {
+      "id": "spin",
+      "label": "Impact avec rotation",
+      "sequence": "die_spin"
+    }
+  ],
+  "profiles": [
+    {
+      "effect": "hydro",
+      "label": "Perte d equilibre",
+      "motions": [
+        "impact_right",
+        "kaykit_b"
+      ],
+      "fx_seconds": 3.7
+    },
+    {
+      "effect": "electro",
+      "label": "Contractions",
+      "motions": [
+        "electric"
+      ],
+      "fx_seconds": 2.1
+    },
+    {
+      "effect": "cryo",
+      "label": "Effondrement raide",
+      "motions": [
+        "kaykit_a"
+      ],
+      "fx_seconds": 1.6
+    },
+    {
+      "effect": "thermal",
+      "label": "Douleur et recul",
+      "motions": [
+        "recoil_back"
+      ],
+      "fx_seconds": 4.1
+    },
+    {
+      "effect": "toxic",
+      "label": "Agonie lente",
+      "motions": [
+        "agony"
+      ],
+      "fx_seconds": 6.2
+    },
+    {
+      "effect": "corrosion",
+      "label": "Douleur et chute",
+      "motions": [
+        "recoil_right",
+        "collapse"
+      ],
+      "fx_seconds": 4.0
+    },
+    {
+      "effect": "sonic",
+      "label": "Chute laterale",
+      "motions": [
+        "collapse_left"
+      ],
+      "fx_seconds": 2.8
+    },
+    {
+      "effect": "kinetic",
+      "label": "Recul violent",
+      "motions": [
+        "impact_front"
+      ],
+      "fx_seconds": 3.9
+    },
+    {
+      "effect": "arc_chain",
+      "label": "Contractions et gouttes",
+      "motions": [
+        "electric"
+      ],
+      "fx_seconds": 2.1
+    },
+    {
+      "effect": "superconduction",
+      "label": "Contractions et givre",
+      "motions": [
+        "electric"
+      ],
+      "fx_seconds": 2.1
+    },
+    {
+      "effect": "shatter",
+      "label": "Rupture et chute raide",
+      "motions": [
+        "kaykit_a"
+      ],
+      "fx_seconds": 1.8
+    },
+    {
+      "effect": "resonant_impact",
+      "label": "Impact avec rotation",
+      "motions": [
+        "spin",
+        "impact_front"
+      ],
+      "fx_seconds": 3.9
+    },
+    {
+      "effect": "cavitation",
+      "label": "Douleur et chute laterale",
+      "motions": [
+        "recoil_right"
+      ],
+      "fx_seconds": 4.0
+    },
+    {
+      "effect": "caustic_contagion",
+      "label": "Agonie corrosive",
+      "motions": [
+        "agony"
+      ],
+      "fx_seconds": 6.2
+    },
+    {
+      "effect": "toxic_ignition",
+      "label": "Douleur et combustion",
+      "motions": [
+        "recoil_back"
+      ],
+      "fx_seconds": 4.1
+    },
+    {
+      "effect": "steam_veil",
+      "label": "Recul dans la vapeur",
+      "motions": [
+        "recoil_back"
+      ],
+      "fx_seconds": 4.1
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "provider": "ElevenLabs",
+  "purpose": "First listening tests; candidate sounds, not yet gameplay assets",
+  "voice_language": "en",
+  "sound_effects": [
+    {
+      "id": "r1_service_single",
+      "name": "R1 / Service rifle",
+      "duration_seconds": 1.6,
+      "prompt": "One isolated shot from a compact service assault rifle, for a first person shooter game. Immediate sharp dry crack, tight low body, brief metallic bolt clack and very short natural decay. Clean close perspective, anechoic recording. Exactly one shot at the start. No echo, no music, no speech, no shell hitting the floor, no other shots."
+    },
+    {
+      "id": "compact_suppressed_single",
+      "name": "Compact / Suppressed pistol",
+      "duration_seconds": 1.4,
+      "prompt": "Exactly one suppressed pistol shot, isolated close microphone recording for a video game. A tight low pressure pop with a crisp sliding metal action and restrained punch, realistic rather than a laser or cartoon silencer. Shot immediately at the start, short clean decay. Dry studio sound, no music, no voice, no ambience, no echo, no additional shots."
+    },
+    {
+      "id": "breacher_shotgun_single",
+      "name": "Breacher / Heavy shotgun",
+      "duration_seconds": 2,
+      "prompt": "One single powerful shotgun discharge for a first person shooter. A wide rough explosive crack with a substantial bass punch and a gritty short tail. Close and dry, readable transient, no clipping. Fire once immediately at the start. No pumping or reloading, no cinematic boom, no long reverberation, no music, no voice, no second shot."
+    },
+    {
+      "id": "bedrock_industrial_single",
+      "name": "Bedrock / Industrial launcher",
+      "duration_seconds": 1.8,
+      "prompt": "One firing sound of a fictional heavy industrial mining weapon. A brutal compressed mechanical thunk, a short deep pressure blast, and a rattling steel mechanism settling. Dense tactile machinery, substantially different from a normal rifle. Single event immediately at the start, isolated dry close recording. No explosion at a distance, no music, no voice, no repeated shots."
+    },
+    {
+      "id": "induction_electric_single",
+      "name": "Induction / Electrical discharge",
+      "duration_seconds": 1.8,
+      "prompt": "One single shot of a fictional electromagnetic induction weapon. An immediate hard electrical snap with a punchy low impulse, a fine sizzling arc and a tiny descending resonant coil tail. Crisp aggressive energy discharge, no musical note, no long charging sound, no conventional gunshot. Dry isolated game sound effect, no music, no voices, no ambience, no repeated fire."
+    },
+    {
+      "id": "abyss_pneumatic_single",
+      "name": "Abyss / Pneumatic harpoon",
+      "duration_seconds": 1.8,
+      "prompt": "One shot from a fictional pneumatic diver harpoon weapon. A forceful compressed air thump and crisp metal latch, followed by a short airy pressure hiss with a few tiny wet bubbles. Close mechanical sound, compact and tactile, distinct from a firearm. One immediate event only. Dry isolated game asset, no underwater ambience, no music, no speech, no repeated firing."
+    }
+  ],
+  "voice_lines": [
+    {
+      "id": "reload",
+      "event": "reload_start",
+      "text": "Reloading. Cover me."
+    },
+    {
+      "id": "contact",
+      "event": "enemy_spotted",
+      "text": "Contact ahead. Stay sharp."
+    },
+    {
+      "id": "shield",
+      "event": "shield_broken",
+      "text": "Shield down. Moving to cover."
+    }
+  ],
+  "voice_directions": [
+    {
+      "id": "operator_calm",
+      "name": "Calm operator",
+      "direction": "Adult English voice, calm and concise, controlled urgency, intelligible through a face covering. Avoid theatrical narration."
+    },
+    {
+      "id": "operator_rough",
+      "name": "Rough operator",
+      "direction": "Adult English voice with a contrasting timbre, grounded and terse, alert rather than shouting. Avoid theatrical narration."
+    }
+  ]
+}

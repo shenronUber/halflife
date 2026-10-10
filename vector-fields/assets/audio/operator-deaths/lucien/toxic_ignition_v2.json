@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "actor": "lucien",
+  "cause": "toxic_ignition",
+  "text": "[screaming] AAAAAGH!",
+  "request": {
+    "text": "[screaming] AAAAAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "6430e7b44b426bfb7b245b1c9612fc42a4e2d2c761ffe15b600804f6c6dc51af",
+  "sha256": "f8913dec3081a38ad977f10721a1fcad33c9f530f8a46e152b158e69bb8f7a2e",
+  "request_id": "gUXksGScfD4nqaFBsypD"
+}

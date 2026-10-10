@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "armor_break",
+  "variant": 0,
+  "text": "[annoyed] Armor broken. Magnifique.",
+  "request": {
+    "text": "[annoyed] Armor broken. Magnifique.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "d5f609525d9ccaaec955e4358cd1edec2e2a94137b551be224c76866efd1ffdd",
+  "sha256": "dc3d3911ec7b6dbb0a9a1ad7325d4c311ee74f99a5ad69d5fd27e08d5f40e61c",
+  "request_id": "PfmjsedvSzt1Jm4BGlUU",
+  "reported_credit_cost": "4"
+}

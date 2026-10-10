@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "arc_chain",
+  "variant": 0,
+  "text": "[pained] Water and lightning! Not bellissimo!",
+  "request": {
+    "text": "[pained] Water and lightning! Not bellissimo!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "6ce45913e2e253b1294f6bdc1c59cdc64bf36bf416a6b79a588741719ac93fd8",
+  "sha256": "f4076b866f3b285b4d62406a2a1ab6814cb3b8cd18d851ce6a12c56919148e30",
+  "request_id": "AC9hIhiyMvn5xZpX4AJV",
+  "reported_credit_cost": "5"
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "armor_break",
+  "variant": 0,
+  "text": "[urgent] Sin armadura! I need cover!",
+  "request": {
+    "text": "[urgent] Sin armadura! I need cover!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "7fa1e4afbc9312606755f8a923d6e01f5da29cd98b0a123cbed0b480fcada332",
+  "sha256": "35cd2a976608e8d7f0b17d7746fdee3162e934a6fad58b773ce9c8fcbc9d9963",
+  "request_id": "4405flOw0GZxs7ZemCB1",
+  "reported_credit_cost": "4"
+}

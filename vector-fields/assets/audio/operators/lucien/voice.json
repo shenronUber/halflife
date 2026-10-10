@@ -1,0 +1,68 @@
+{
+  "request_sha256": "b66541fcdf70344a1be8c711f8227a03770de7194a2a6f89360b5a23bf503505",
+  "request": {
+    "voice_name": "VF / Lucien Moreau",
+    "voice_description": "An original male French video-game duellist, age 42. Smooth dry medium baritone with a slight nasal edge, precise consonants, unmistakable French accent in fluent clear English, French uvular R and elegant restrained musical phrasing. Suave sarcastic superiority, clipped wit, easily offended dignity, controlled urgency that breaks into sharp pain. English is the main language, brief French phrases pronounced natively. Natural compact action-game acting, not narration or announcer. Clean dry close microphone, no music, no background, no reverb. No imitation of a real person.",
+    "generated_voice_id": "lWtkpHRd8R4BLyKo8pl2",
+    "labels": {
+      "gender": "male",
+      "accent": "French",
+      "use_case": "video_game"
+    }
+  },
+  "response": {
+    "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+    "name": "VF / Lucien Moreau",
+    "samples": null,
+    "category": "generated",
+    "fine_tuning": {
+      "is_allowed_to_fine_tune": false,
+      "state": {},
+      "verification_failures": [],
+      "verification_attempts_count": 0,
+      "manual_verification_requested": false,
+      "language": null,
+      "progress": {},
+      "message": {},
+      "dataset_duration_seconds": null,
+      "verification_attempts": null,
+      "slice_ids": null,
+      "manual_verification": null,
+      "max_verification_attempts": null,
+      "next_max_verification_attempts_reset_unix_ms": null
+    },
+    "labels": {
+      "gender": "male",
+      "accent": "French",
+      "use_case": "video_game"
+    },
+    "description": "An original male French video-game duellist, age 42. Smooth dry medium baritone with a slight nasal edge, precise consonants, unmistakable French accent in fluent clear English, French uvular R and elegant restrained musical phrasing. Suave sarcastic superiority, clipped wit, easily offended dignity, controlled urgency that breaks into sharp pain. English is the main language, brief French phrases pronounced natively. Natural compact action-game acting, not narration or announcer. Clean dry close microphone, no music, no background, no reverb. No imitation of a real person.",
+    "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/fc94dd0c338b420083a332b3a9d57a9f/voices/lWtkpHRd8R4BLyKo8pl2/20c5b8ab-8f89-419d-b7b6-eefab443f842.mp3",
+    "available_for_tiers": [],
+    "settings": {
+      "stability": 0.5,
+      "use_speaker_boost": true,
+      "similarity_boost": 0.75,
+      "style": 0.0,
+      "speed": 1.0
+    },
+    "sharing": null,
+    "high_quality_base_model_ids": [],
+    "verified_languages": [],
+    "collection_ids": null,
+    "safety_control": null,
+    "voice_verification": null,
+    "permission_on_resource": null,
+    "is_owner": null,
+    "is_legacy": false,
+    "is_mixed": false,
+    "favorited_at_unix": null,
+    "created_at_unix": 1791514553,
+    "is_bookmarked": null,
+    "recording_quality": null,
+    "labelling_status": null,
+    "recording_quality_reason": null,
+    "orb_thumbnail_signed_urls": null
+  },
+  "request_id": null
+}

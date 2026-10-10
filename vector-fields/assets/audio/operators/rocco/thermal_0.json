@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "thermal",
+  "variant": 0,
+  "text": "[panicked] Fuoco! I'm on fire!",
+  "request": {
+    "text": "[panicked] Fuoco! I'm on fire!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "7e5c8e65bcf47907f713ed7ca3fc92592515584345c85ec82cd8808b52114f1d",
+  "sha256": "a0fb58975b6cb8422dc8e3a583dfbff76df658c817c8e052396254d1d89029f6",
+  "request_id": "syuhmBuOKhuRfidH7lsb",
+  "reported_credit_cost": "3"
+}

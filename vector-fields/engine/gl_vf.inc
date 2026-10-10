@@ -48,7 +48,7 @@ static model_t *R_VFLoadModel( const char *path )
 static qboolean R_VFResolve( const vf_assembly_t *in, vf_resolved_t *out )
 {
 	memset( out, 0, sizeof( *out ));
-	if( !in || in->count < 0 || in->count > VF_MAX_PARTS || in->body < 0 || in->skin < 0 )
+	if( !in || in->count < 0 || in->count > VF_MAX_PARTS || in->body < 0 || in->skin < 0 || in->replace_carried < 0 || in->replace_carried > 1 )
 		return false;
 	out->rig = R_VFLoadModel( in->rig );
 	if( !out->rig )
@@ -56,6 +56,7 @@ static qboolean R_VFResolve( const vf_assembly_t *in, vf_resolved_t *out )
 	for( int i = 0; i < in->count; i++ )
 	{
 		const vf_part_t *part = &in->parts[i];
+		if( IS_NAN( part->scale ) || part->scale < 0 || part->scale > 4 ) return false;
 		if( part->body < 0 || part->skin < 0 || part->mode < VF_PART_MERGE || part->mode > VF_PART_SOCKET || !memchr( part->bone, 0, sizeof( part->bone )))
 			return false;
 		for( int j = 0; j < 3; j++ )
@@ -133,7 +134,15 @@ void R_VFReset( void )
 static model_t *R_VFPlayerModel( int entity )
 {
 	vf_resolved_t *entry = R_VFFind( entity );
-	return entry ? entry->rig : NULL;
+	if( entry ) return entry->rig;
+ // Before VFState arrives (or if an optional assembly is unavailable), use
+ // the server's complete fitted body rather than Half-Life's gordon/HEV default.
+ cl_entity_t *player = CL_GetEntityByIndex( entity );
+ if( player && player->model && (!Q_stricmp( player->model->name, "models/vf_skins/persona_rig.mdl" ) ||
+  !Q_stricmp( player->model->name, "models/vf_r01/r01_tp.mdl" ) ||
+  !Q_stricmp( player->model->name, "models/vf_r01/r01_tp_side.mdl" ) ||
+  !Q_stricmp( player->model->name, "models/vf_r01/r01_tp_top.mdl" ))) return player->model;
+ return NULL;
 }
 
 static void R_VFPreparePart( cl_entity_t *piece, const vf_part_t *part, model_t *model, const short *mapping )
@@ -158,7 +167,7 @@ static void R_VFPreparePart( cl_entity_t *piece, const vf_part_t *part, model_t 
 		{
 			if( Q_stricmp( part->bone, g_studio.cached_bonenames[i] )) continue;
 			matrix3x4 local;
-			Matrix3x4_CreateFromEntity( local, part->angles, part->offset, 1.0f );
+			Matrix3x4_CreateFromEntity( local, part->angles, part->offset, part->scale > 0 ? part->scale : 1.0f );
 			Matrix3x4_ConcatTransforms( g_studio.rotationmatrix, g_studio.cached_bonestransform[i], local );
 			piece->curstate.sequence = 0;
 			piece->curstate.frame = 0;
@@ -212,6 +221,32 @@ static void R_VFLighting( cl_entity_t *parent, alight_t *light, vec3_t dir )
 	R_StudioSetupLighting( light );
 }
 
+static void R_VFMuzzleAttachment( cl_entity_t *parent )
+{
+ float front = -999999.0f; vec3_t center; int count = 0, bone = 0;
+ VectorClear( center );
+ for( int pass = 0; pass < 2; ++pass )
+ for( int part = 0; part < m_pStudioHeader->numbodyparts; ++part )
+ {
+  R_StudioSetupModel( part, (void **)&m_pBodyPart, (void **)&m_pSubModel );
+  const vec3_t *vertices = (void *)((byte *)m_pStudioHeader + m_pSubModel->vertindex);
+  const byte *bones = (byte *)m_pStudioHeader + m_pSubModel->vertinfoindex;
+  for( int v = 0; v < m_pSubModel->numverts; ++v )
+  {
+   if( pass == 0 ) { if( vertices[v][1] > front ) front = vertices[v][1]; }
+   else if( fabsf( vertices[v][1] - front ) < 0.1f ) { VectorAdd( center, vertices[v], center ); bone = bones[v]; count++; }
+  }
+ }
+ if( count ) {
+  vec3_t along,up;
+  VectorScale( center, 1.0f / count, center );
+  Matrix3x4_VectorTransform( g_studio.bonestransform[bone], center, parent->attachment[0] );
+  VectorCopy(center,along);along[1]+=8.0f;
+  VectorCopy(center,up);up[2]+=8.0f;
+  Matrix3x4_VectorTransform( g_studio.bonestransform[bone], along, parent->attachment[1] );
+  Matrix3x4_VectorTransform( g_studio.bonestransform[bone], up, parent->attachment[3] );
+ }
+}
 static void R_VFDrawParts( cl_entity_t *parent, const vf_resolved_t *assembly, qboolean bounds, vec3_t mins, vec3_t maxs )
 {
 	alight_t light;
@@ -225,17 +260,72 @@ static void R_VFDrawParts( cl_entity_t *parent, const vf_resolved_t *assembly, q
 		R_VFPreparePart( &piece, &assembly->definition.parts[i], assembly->parts[i], assembly->bone_map[i] );
 		if( bounds ) { R_VFBounds( mins, maxs ); continue; }
 		cl_entity_t *viewent = tr.viewent;
+        // Status shells belong to the fitted hands/sleeves, never the R1 sockets.
+        // Preserve the original mesh and pose; Studio adds its shell pass.
+        if( parent == viewent && piece.curstate.renderfx == kRenderFxGlowShell &&
+            Q_strcmp( assembly->definition.parts[i].model, "models/vf_r01/r01_fp_gloves.mdl" ) &&
+            Q_strcmp( assembly->definition.parts[i].model, "models/vf_r01/r01_fp_sleeves.mdl" ))
+            piece.curstate.renderfx = kRenderFxNone;
 		// Socket matrices already contain the parent's handedness. Keep the
 		// renderer's viewmodel culling/lighting convention for each child.
 		if( parent == viewent ) tr.viewent = &piece;
 		g_studio.framecount++;
 		R_VFLighting( &piece, &light, dir );
 		R_StudioRenderModel();
+        if( !strncmp(assembly->definition.parts[i].model,"models/vf_r01/r01_muzzle_",24) ) R_VFMuzzleAttachment(parent);
 		tr.viewent = viewent;
 		if( assembly->definition.parts[i].mode == VF_PART_MERGE ) vf_stats.merged_parts++;
 		else vf_stats.socket_parts++;
 	}
 	Matrix3x4_Copy( g_studio.rotationmatrix, root );
+}
+
+// Fitted crouch poses bend the spine forward. Rotating each local spine X
+// axis then rolls the torso while strafing. Distribute the same yaw around
+// world-up instead, preserving the native feet/gait and every hand socket.
+static void R_VFPlayerTorsoYaw( cl_entity_t *ent )
+{
+ if( !ent->player || !ent->curstate.gaitsequence ) return;
+ player_info_t *info = pfnPlayerInfo( ent->index - 1 );
+ if( !info ) return;
+ float yaw = ent->angles[YAW] - info->gaityaw;
+ while( yaw > 180.0f ) yaw -= 360.0f;
+ while( yaw < -180.0f ) yaw += 360.0f;
+ // StudioProcessGait already chose forward/backward gait at +/-120 degrees.
+ for( int i = 0; i < 4; ++i )
+  ent->curstate.controller[i] = ent->latched.prevcontroller[i] = 127;
+ m_pPlayerInfo = info;
+ R_StudioSetupBones( ent );
+ m_pPlayerInfo = NULL;
+ mstudiobone_t *bones = (void *)((byte *)m_pStudioHeader + m_pStudioHeader->boneindex);
+ const char *spines[] = {"Bip01 Spine", "Bip01 Spine1", "Bip01 Spine2", "Bip01 Spine3"};
+ for( int joint = 0; joint < 4; ++joint )
+ {
+  int root = -1;
+  for( int b = 0; b < m_pStudioHeader->numbones; ++b )
+   if( !Q_strcmp( bones[b].name, spines[joint] )) { root = b; break; }
+  if( root < 0 ) continue;
+  matrix3x4 turn;
+  vec3_t angles = {0, yaw * .25f, 0}, pivot, rotated, origin;
+  for( int i = 0; i < 3; ++i ) pivot[i] = g_studio.bonestransform[root][i][3];
+  VectorClear( origin );
+  Matrix3x4_CreateFromEntity( turn, angles, origin, 1 );
+  Matrix3x4_VectorRotate( turn, pivot, rotated );
+  for( int i = 0; i < 3; ++i ) turn[i][3] = pivot[i] - rotated[i];
+  for( int b = 0; b < m_pStudioHeader->numbones; ++b )
+  {
+   int ancestor = b;
+   while( ancestor >= 0 && ancestor != root ) ancestor = bones[ancestor].parent;
+   if( ancestor != root ) continue;
+   matrix3x4 posed;
+   Matrix3x4_ConcatTransforms( posed, turn, g_studio.bonestransform[b] );
+   Matrix3x4_Copy( g_studio.bonestransform[b], posed );
+   Matrix3x4_ConcatTransforms( posed, turn, g_studio.lighttransform[b] );
+   Matrix3x4_Copy( g_studio.lighttransform[b], posed );
+  }
+ }
+ R_StudioSaveBones();
+ R_StudioCalcAttachments();
 }
 
 static qboolean R_VFDrawRegistered( cl_entity_t *ent, int flags )
@@ -249,12 +339,15 @@ static qboolean R_VFDrawRegistered( cl_entity_t *ent, int flags )
 	ent->model = assembly->rig;
 	ent->curstate.body = assembly->definition.body;
 	ent->curstate.skin = assembly->definition.skin;
+	if( assembly->definition.replace_carried ) ent->curstate.weaponmodel = 0;
 	RI.currentmodel = ent->model;
 	int base_flags = assembly->definition.draw_rig ? flags : flags & ~STUDIO_RENDER;
 	int drawn = ent->player ? R_StudioDrawPlayer( base_flags, &ent->curstate ) : R_StudioDrawModel( base_flags );
 	vf_stats.pose_evaluations++;
+ if( drawn && assembly->definition.replace_carried ) R_VFPlayerTorsoYaw( ent );
 	if( drawn && (flags & STUDIO_RENDER) ) R_VFDrawParts( ent, assembly, false, NULL, NULL );
-	// Hiding the rig mesh must not hide the player's carried weapon.
+	if( drawn && (flags & STUDIO_RENDER) && ent->player && assembly->definition.replace_carried ) vf_stats.weapon_draws++;
+	// A separate carried model is drawn only when the assembly does not replace it.
 	if( drawn && (flags & STUDIO_RENDER) && ent->player && !assembly->definition.draw_rig && ent->curstate.weaponmodel )
 	{
 		model_t *weapon = CL_ModelHandle( ent->curstate.weaponmodel );

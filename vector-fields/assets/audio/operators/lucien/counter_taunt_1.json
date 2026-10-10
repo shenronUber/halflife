@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "counter_taunt",
+  "variant": 1,
+  "text": "[threatening] I'll kill you, mon cher. Slowly.",
+  "request": {
+    "text": "[threatening] I'll kill you, mon cher. Slowly.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "af8120dbbecaa8782c17f7b2e535729aec354a63b23d5518159b323867dbbded",
+  "sha256": "89251d1e9c6a336e1686b8d43c0820a21fd903fe536c4bfb16f06954887fd692",
+  "request_id": "EAfleClmOD9skTRsLsuB",
+  "reported_credit_cost": "5"
+}

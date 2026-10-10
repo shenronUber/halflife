@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "ward",
+  "variant": 0,
+  "text": "[confident] Protected! Come on, then!",
+  "request": {
+    "text": "[confident] Protected! Come on, then!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "48e82303f511f3f39f797b29735945f914d7a7cb5c06d7ce0a8b17f09fd34916",
+  "sha256": "60e1981cb77f14b54c275a4757aacab06443b0f82ba130b0d6f1f48487bef085",
+  "request_id": "rHmL5J7FyVQIIlTUzUEr",
+  "reported_credit_cost": "4"
+}

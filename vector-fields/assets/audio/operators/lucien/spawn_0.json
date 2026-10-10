@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "spawn",
+  "variant": 0,
+  "text": "[dryly] Bon. Let's try to be professional.",
+  "request": {
+    "text": "[dryly] Bon. Let's try to be professional.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "3496a18f80e73179878ffb02a4941b14376abfa8880338e8988d026c18214f31",
+  "sha256": "32be7aa29b41199a3ae2a78178c132285c3e35d3859c8a1309b8b88011d165cc",
+  "request_id": "iejcgZZjfbfcPzqNJDqH",
+  "reported_credit_cost": "5"
+}

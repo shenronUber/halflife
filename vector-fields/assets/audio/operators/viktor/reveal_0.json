@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "reveal",
+  "variant": 0,
+  "text": "[annoyed] They marked me. Проклятье.",
+  "request": {
+    "text": "[annoyed] They marked me. Проклятье.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "50f626eb7532781c67d638e6714a1099f3f1c284d186074f2779fd621994dd7d",
+  "sha256": "8ab6ae9b0b3e58ca22b58359a1d1641f16465975b257fb1322f71d83eaff41f2",
+  "request_id": "XcmxmNjZghR5UwuOPvbC",
+  "reported_credit_cost": "4"
+}

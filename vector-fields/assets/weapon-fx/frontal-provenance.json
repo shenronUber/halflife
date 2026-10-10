@@ -1,0 +1,20 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Asset type: production game VFX sprite atlas, FRONTAL muzzle flashes for the shooter view of a rifle. Create a single atlas with exactly 8 separate cells in a strict 4 columns by 2 rows grid, equal cell sizes with generous empty transparent gutters, no text, no labels, no borders. EACH CELL MUST BE SEEN HEAD-ON LOOKING STRAIGHT DOWN THE BARREL AXIS, radial centered burst, compact central bright core and 5 to 8 irregular radial star rays distributed around it. There must be NO sideways plume, NO elongated directional flame, NO arrow, NO bullet, NO gun, NO perspective or side-view cone. Full radial 360 degree composition with roughly circular extents, center at the exact center of each cell. White/grayscale emission masks so the game can tint them: white bright center, softer gray edges, fine organic detail, crisp small-sized readable shape, restrained bloom. All empty areas genuinely transparent, no opaque backgrounds or dark haze. Cell order left-to-right row 1: Hydro (starburst of liquid jets with a few droplets, radial); Electro (sharp forked electrical star with jagged rays, radial); Cryo (angular crystalline ice star and short mist, radial); Thermal (classic irregular star of hot gas flame with 6 short lobes, radial). Row 2: Toxic (radial spore/puff burst with tendrils, compact star silhouette); Corrosion (wet splattery radial star with short liquid jets); Sonic (thin luminous concentric wave rings with a subtle radial star center); Kinetic (classic firearm muzzle star of hot propellant gases, 5 jagged flame lobes radiating symmetrically around a brilliant core). Retro Half-Life / Counter-Strike game VFX look, realistic energetic texture, not vector icons. Each burst takes about 65 percent of its cell width and height with no spilling into adjacent cells. Strong requirement: all eight are FRONT FACING STARS, never side-facing flame jets.",
+  "grid": [
+    4,
+    2
+  ],
+  "profiles": [
+    "hydro",
+    "electro",
+    "cryo",
+    "thermal",
+    "toxic",
+    "corrosion",
+    "sonic",
+    "kinetic"
+  ],
+  "purpose": "head-on radial shooter muzzle flashes",
+  "source_file": "source-muzzle-frontal.png"
+}

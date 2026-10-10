@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "actor": "otto",
+  "cause": "cavitation",
+  "text": "[choking][screaming] GRAAGH!",
+  "request": {
+    "text": "[choking][screaming] GRAAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "0e7aa8ab9634da0b575d37b356e77256ec9f3e69eb7944c3e413f4ceeb7c8e67",
+  "sha256": "a6cde0b23e36e8b6a994e83a5efa991543fda4dca7e74c042996b37af26bff22",
+  "request_id": "OBo5CIGXKswvb2tn2iwW"
+}

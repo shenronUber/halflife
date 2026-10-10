@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "ward",
+  "variant": 0,
+  "text": "[confident] Ward active. Essayez encore.",
+  "request": {
+    "text": "[confident] Ward active. Essayez encore.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "8f3bb9dafcbef917a8a702d144c3633b4799c1f7d8a5c03ec9a9435499b51b1e",
+  "sha256": "fddc90e181ddf6b3be21bbad7d7e1e329043cafddffa501a061e27a59c1c6798",
+  "request_id": "pZCX3jAl6oKeQNxaRcBo",
+  "reported_credit_cost": "4"
+}

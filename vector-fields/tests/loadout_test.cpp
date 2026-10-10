@@ -14,8 +14,8 @@ int main(int argc,char** argv) {
     Check(argc==4,"equipment, skins and arsenal catalog paths provided");
     std::ifstream f(argv[1],std::ios::binary);
     std::string text((std::istreambuf_iterator<char>(f)),std::istreambuf_iterator<char>());
-    vf::Catalog c;Check(vf::ParseCatalog(text.data(),text.size(),c),"real catalog parses");
-    Check(c.count==215,"214 equipment objects plus empty, including 60 fitted GIGN pieces");
+    static vf::Catalog c;Check(vf::ParseCatalog(text.data(),text.size(),c),"real catalog parses");
+    Check(c.count==1114,"1113 equipment objects plus empty, including 70 fitted GIGN pieces");
     int selected[vf::SlotCount],totals[vf::BudgetCount];vf::Defaults(c,selected);
     Check(vf::Evaluate(c,selected,totals)==vf::Accepted,"starter build within all six budgets");
     for(int s=0;s<vf::SlotCount;++s) {
@@ -50,7 +50,7 @@ int main(int argc,char** argv) {
     Check(!vf::ParseUnsigned("-1",value)&&!vf::ParseUnsigned("2x",value),"malformed network integers rejected");
     Check(vf::ParseUnsigned("4294967295",value)&&value==0xffffffffu,"full fingerprint range accepted");
     std::string malformed=text;size_t at=malformed.find("head_standard");malformed.replace(at,13,"torso_standard");
-    vf::Catalog bad;Check(!vf::ParseCatalog(malformed.data(),malformed.size(),bad),"duplicate IDs rejected");
+    static vf::Catalog bad;Check(!vf::ParseCatalog(malformed.data(),malformed.size(),bad),"duplicate IDs rejected");
     Check(vf::Evaluate(bad,selected,totals)==vf::BadCatalog,"invalid catalog never equippable");
     Check(!vf::ParseCatalog("limits|100|100",14,bad),"truncated metadata rejected");
     std::string overlong(800,'x');Check(!vf::ParseCatalog(overlong.data(),overlong.size(),bad),"oversized row rejected");
@@ -59,7 +59,7 @@ int main(int argc,char** argv) {
     Check(!vf::ParseCatalog(mixed.data(),mixed.size(),bad),"cross-system costs rejected at catalog load");
     std::string badVisual=text;at=badVisual.find("|0\n",badVisual.find("head|head_standard"));badVisual[at+1]='9';
     Check(!vf::ParseCatalog(badVisual.data(),badVisual.size(),bad),"unsupported bodygroup variant rejected");
-    std::string changed=text+"\n# changed\n";vf::Catalog other;
+    std::string changed=text+"\n# changed\n";static vf::Catalog other;
     Check(vf::ParseCatalog(changed.data(),changed.size(),other)&&other.fingerprint!=c.fingerprint,"catalog mismatch detectable");
     for(int file=2;file<4;++file){
         std::ifstream a(argv[file],std::ios::binary);std::string data((std::istreambuf_iterator<char>(a)),std::istreambuf_iterator<char>());
@@ -70,20 +70,28 @@ int main(int argc,char** argv) {
             Check(vf::Evaluate(c,build,totals)==vf::Accepted,"gameplay defaults fit budgets");
             Check(vf::EquipmentSkins(c,build,catalog,ids),"gameplay default skins resolve");
             for(int z=0;z<5;++z)Check(!strcmp(catalog.entries[ids[z]].model,"persona_scout"),"gameplay uses fitted GIGN model in every body zone");
-            for(int slot=0;slot<vf::SlotCount;++slot)Check(vf::GameplayItem(c.items[build[slot]]),"every gameplay slot is a registered loot item");
+            for(int slot=0;slot<vf::SlotCount;++slot)Check(!build[slot]||vf::GameplayItem(c.items[build[slot]]),"every gameplay slot is a registered loot item");
             int custom=0,provisional=0,reference=0;
             const int zoneSlots[]={0,3,2,5,6};
             for(int i=1;i<c.count;++i){const vf::Item& item=c.items[i];
                 if(item.appearance[0]){
                     ++custom;vf::GameplayDefaults(c,build);build[item.slot]=i;
+                    int expectedSkin=catalog.entries[vf::FindAppearance(catalog,item.appearance)].skin;
+                    for(int fp=2;fp<=3;++fp)Check(vf::FirstPersonSkin(c,build,catalog,fp)==(item.slot==fp?expectedSkin:0),"first-person gloves and sleeves follow only their equipped slot");
                     Check(vf::EquipmentSkins(c,build,catalog,ids),"custom item resolves its authored appearance");
                     for(int z=0;z<5;++z)Check(!strcmp(catalog.entries[ids[z]].key,zoneSlots[z]==item.slot?item.appearance:"persona_gign"),"custom equipment changes only its mapped GIGN zone");
                 }else if(vf::GameplayItem(item)){if(item.slot<vf::GearSlots)++provisional;else ++reference;}
             }
-            Check(custom==60&&provisional==24&&reference==26,"gameplay catalog excludes historical body and weapon placeholders");
+            Check(custom==70&&provisional==24&&reference==854,"gameplay catalog excludes historical body and weapon placeholders");
+            Check(vf::FirstPersonSkin(c,NULL,catalog,2)==0,"missing first-person loadout uses default gloves");
+            vf::GameplayDefaults(c,build);
+            Check(vf::FirstPersonSkin(c,build,catalog,-1)==0&&vf::FirstPersonSkin(c,build,catalog,9)==0,"unrelated first-person slots use default");
+            for(int invalid=-1;invalid<=1;++invalid){build[2]=invalid<0?-1:invalid==0?0:c.count;Check(vf::FirstPersonSkin(c,build,catalog,2)==0,"missing or invalid first-person gloves fall back safely");}
+            build[2]=build[3];Check(vf::FirstPersonSkin(c,build,catalog,2)==0,"first-person wrong-slot input falls back");
+
             vf::Defaults(c,build);build[1]=0;vf::NormalizeGameplay(c,build);
             Check(build[1]==0,"normalizing keeps deliberately unequipped optional accessories");
-            for(int slot=0;slot<vf::SlotCount;++slot)if(build[slot])Check(vf::GameplayItem(c.items[build[slot]]),"return from dev normalizes every historical object");
+            for(int slot=0;slot<vf::SlotCount;++slot)if(build[slot])Check(!build[slot]||vf::GameplayItem(c.items[build[slot]]),"return from dev normalizes every historical object");
             vf::Defaults(c,build);
             Check(vf::EquipmentSkins(c,build,catalog,ids),"all default equipped looks resolve");
             for(int slot=0;slot<vf::SlotCount;++slot)for(int family=0;family<6;++family){
@@ -94,10 +102,22 @@ int main(int argc,char** argv) {
                 for(int z=0;z<4;++z)Check(vf::EquipmentModule(c,build,z)>=0&&vf::EquipmentModule(c,build,z)<3,"module variant is in donor range");
                 vf::Defaults(c,build);
             }
+            // Legacy category Engine/Anomalous used to implicitly choose HEV.
+            // With the current fitted body present, unspecified looks use GIGN.
+            for(int i=1;i<c.count;++i)if(c.items[i].slot<vf::GearSlots&&!c.items[i].appearance[0]){
+                vf::GameplayDefaults(c,build);build[c.items[i].slot]=i;
+                Check(vf::EquipmentSkins(c,build,catalog,ids),"legacy equipment keeps a usable body");
+                for(int z=0;z<5;++z)Check(!strcmp(catalog.entries[ids[z]].model,"persona_scout"),"legacy equipment never implicitly equips HEV");
+            }
+            for(int invalid=-1;invalid<2;++invalid){
+                vf::GameplayDefaults(c,build);build[0]=invalid<0?-1:invalid==0?c.count:c.count+1;
+                Check(vf::EquipmentSkins(c,build,catalog,ids),"invalid legacy appearance input has a safe fallback");
+                Check(!strcmp(catalog.entries[ids[0]].key,"persona_gign"),"invalid legacy appearance input keeps GIGN");
+            }
             memset(build,0,sizeof(build));Check(vf::EquipmentSkins(c,build,catalog,ids),"empty operator keeps a valid under-outfit");
             for(int slot=0;slot<vf::SlotCount;++slot)Check(vf::EquipmentFamily(c,build,slot)==-1,"unequipped accessory has no family");
-            vf::Defaults(c,build);int before[5],after[5];vf::EquipmentSkins(c,build,catalog,before);build[2]=6;vf::EquipmentSkins(c,build,catalog,after);
-            for(int z=0;z<5;++z)Check(z==2?before[z]!=after[z]:before[z]==after[z],"glove choice only changes hands");
+            vf::Defaults(c,build);int before[5],after[5];vf::EquipmentSkins(c,build,catalog,before);build[2]=vf::FindItem(c,"gign_gloves_warden");vf::EquipmentSkins(c,build,catalog,after);
+            for(int z=0;z<5;++z)Check(z==2?before[z]!=after[z]:before[z]==after[z],"authored glove choice only changes hands");
         }
         int ids[5]={0,1,2,3,catalog.count-1};Check(vf::ValidSkins(catalog,ids),"mixed sources and last ID accepted");
         ids[2]=catalog.count;Check(!vf::ValidSkins(catalog,ids),"upper-bound skin rejected");ids[2]=-1;Check(!vf::ValidSkins(catalog,ids),"negative skin rejected");

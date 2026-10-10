@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "sonic",
+  "variant": 0,
+  "text": "[pained] My ears. Тише!",
+  "request": {
+    "text": "[pained] My ears. Тише!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "2f0bae4ddd7c4322fa6954ad083df2a7613773847f4617decede0e49240234a7",
+  "sha256": "0faf7d39cccc8e8e8edd03f47d9529a75ba6a6df958777b71daaae3da7253805",
+  "request_id": "06fnGUBcOd7ZKBd8LBfZ",
+  "reported_credit_cost": "3"
+}

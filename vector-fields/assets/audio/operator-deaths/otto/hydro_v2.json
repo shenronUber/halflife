@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "actor": "otto",
+  "cause": "hydro",
+  "text": "[choking][screaming] GRAAGH!",
+  "request": {
+    "text": "[choking][screaming] GRAAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "0e7aa8ab9634da0b575d37b356e77256ec9f3e69eb7944c3e413f4ceeb7c8e67",
+  "sha256": "edbadcb02c1ab53987536cdb3c08bd4b9890368de8381f27c6d792431504d258",
+  "request_id": "u5om4SjOdO4xMHFc2YYW"
+}

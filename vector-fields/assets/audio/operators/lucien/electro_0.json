@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "electro",
+  "variant": 0,
+  "text": "[pained] Putain! Electric shock!",
+  "request": {
+    "text": "[pained] Putain! Electric shock!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "d709e27b87c96ae01b854de4fdd58a2411e88ede26db09a94193b24ecf87397c",
+  "sha256": "b49291749b5fca03b5318651b9be7da741c6b704f108d838f484f8fd197db2aa",
+  "request_id": "LLaeebdipSq5gK7WVxuZ",
+  "reported_credit_cost": "4"
+}

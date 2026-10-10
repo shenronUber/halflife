@@ -1,0 +1,37 @@
+{
+  "installations": {
+    "main": {
+      "mod": "C:\\Users\\Mathieu\\Documents\\Half life Project\\runtime\\vector-engine\\vf_visual",
+      "actors": 6,
+      "clips": 215,
+      "format": "mono PCM 11025 Hz / 8-bit",
+      "configuration": "C:\\Users\\Mathieu\\Documents\\Half life Project\\runtime\\vector-engine\\vf_visual\\vf_voice_behavior.cfg",
+      "current_build_dlls": {
+        "server": false,
+        "client": false
+      },
+      "activation": "close current game and use the regular launcher to load the current build"
+    },
+    "bots": {
+      "mod": "C:\\Users\\Mathieu\\Documents\\Half life Project\\runtime\\jk-botti-research\\engine\\valve",
+      "actors": 6,
+      "clips": 215,
+      "format": "mono PCM 11025 Hz / 8-bit",
+      "configuration": "C:\\Users\\Mathieu\\Documents\\Half life Project\\runtime\\jk-botti-research\\engine\\valve\\vf_voice_behavior.cfg",
+      "current_build_dlls": {
+        "server": true,
+        "client": true
+      },
+      "activation": "ready"
+    }
+  },
+  "engine_changes_required": false,
+  "verified": "2026-10-09",
+  "checks": [
+    "Both runtime banks match all 215 catalog WAVs",
+    "Retro WAV format retained in both runtimes",
+    "Clean masters are excluded from both runtime banks",
+    "Bots use the current production server and client DLLs",
+    "Persistent behavior configuration exists in both launchers"
+  ]
+}

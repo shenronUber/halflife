@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "electro",
+  "variant": 0,
+  "text": "[pained] Чёрт! Electric shock!",
+  "request": {
+    "text": "[pained] Чёрт! Electric shock!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "441b55b255727efc21760de8aa192e5f2d7031f45e95827246e3179466bfd8e8",
+  "sha256": "4bba6b8da3fd82b71b6cbfb9b8387d2bb07b25e42d67988d6cf74ab2487a48f3",
+  "request_id": "aNCgUro4O16jkTxMJtcD",
+  "reported_credit_cost": "3"
+}

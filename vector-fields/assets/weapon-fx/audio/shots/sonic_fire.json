@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Sonic / fire",
+  "created_utc": "2026-10-09T02:54:33.543802+00:00",
+  "request_sha256": "51668bdcc8f85cc900adb90cae5da461950edb0a5ed052b4ca033d661d7cf2cb",
+  "request": {
+    "text": "Single sonic pulse rifle shot. Immediate deep tight concussive thump with a sharp airy pressure crack, very short bending resonant metallic overtone, no long bass rumble. Exactly one trigger pull at beginning, dry close game effect, no voice, no music.",
+    "duration_seconds": 1.2,
+    "prompt_influence": 0.55,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "238258a4ce94be2052bbe6cffdbb473f0fc7e7934252d105f30bc54404c8be33",
+  "bytes": 20106,
+  "text": "Single sonic pulse rifle shot. Immediate deep tight concussive thump with a sharp airy pressure crack, very short bending resonant metallic overtone, no long bass rumble. Exactly one trigger pull at beginning, dry close game effect, no voice, no music.",
+  "request_id": null,
+  "reported_credit_cost": "12"
+}

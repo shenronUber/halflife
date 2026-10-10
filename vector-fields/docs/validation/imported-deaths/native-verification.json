@@ -1,0 +1,17 @@
+{
+  "seconds": null,
+  "verification_mode": "saved native run",
+  "target_deaths": 18,
+  "imported_clips": 3,
+  "checks": [
+    "three native motion previews",
+    "each imported clip combined with head, both arms and both legs removed",
+    "electrical arcs combined with all three imported clips",
+    "actual F8 choice of KayKit A plus electrical head explosion",
+    "imported corpse retains animation, effect and wound through save/load",
+    "actual player death with imported Quaternius motion and missing leg",
+    "invalid clip rejected without causing damage"
+  ],
+  "captures": "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\animation-native\\external-deaths\\vf_animation\\scrshots",
+  "log": "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\external-deaths\\native.log"
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "reveal",
+  "variant": 0,
+  "text": "[annoyed] Repéré! They can see me!",
+  "request": {
+    "text": "[annoyed] Repéré! They can see me!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "b3e480f955dc6dab434349864001a2617abe4040611a2749b38d31245a6a2e30",
+  "sha256": "2084e0561d08f5f68cf13bfc3f8b17aec1d022b8c38d9d0c2164e6e7911ca6cd",
+  "request_id": "Rkcl4hpmU4bAGJCv9a3E",
+  "reported_credit_cost": "4"
+}

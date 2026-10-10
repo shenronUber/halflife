@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "phase",
+  "variant": 0,
+  "text": "[calm] Фаза. Your bullets can wait.",
+  "request": {
+    "text": "[calm] Фаза. Your bullets can wait.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "aaa1126164f7575c9577b9ffc782ee8df2d1205f05efb680432e4e6a6c79a098",
+  "sha256": "03af8b0e519b76ce1c9854c0af1b5f7b9ba0015e70aa8318e49ed428b2e62c36",
+  "request_id": "vhb7bQmr81ia3qyKXEFH",
+  "reported_credit_cost": "4"
+}

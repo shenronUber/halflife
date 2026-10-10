@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Toxic / impact",
+  "created_utc": "2026-10-09T02:54:28.816626+00:00",
+  "request_sha256": "27ff2ec9c83e82849c1619212c5cc1cbf1066531a7225bd371ebb77069d0d543",
+  "request": {
+    "text": "Single toxic spore projectile contact. Immediate soft dry organic pop and dusty papery scattering, a short thin powder hiss. Not liquid, no monster vocalization, no firing sound, no voice, no music.",
+    "duration_seconds": 1.2,
+    "prompt_influence": 0.55,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "c5219e4b92f3990266a9c81f2166007cdb6b9b5cc8b5423ee6b88437882833f5",
+  "bytes": 20106,
+  "text": "Single toxic spore projectile contact. Immediate soft dry organic pop and dusty papery scattering, a short thin powder hiss. Not liquid, no monster vocalization, no firing sound, no voice, no music.",
+  "request_id": null,
+  "reported_credit_cost": "12"
+}

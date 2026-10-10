@@ -1,0 +1,28 @@
+Use case: style-transfer.
+Asset type: production diffuse material atlas for the modular low-poly game weapon Relais R-01.
+Input image 1 is the exact edit target and functional tile layout reference. Restyle the materials to the requested theme; preserve the exact sixteen material roles and feature centers.
+ONE opaque square image, edge-to-edge exact 4x4 grid of sixteen equal square tiles, with boundaries at 25%, 50%, 75%. Flat orthographic diffuse textures, readable after each tile is reduced to 256 pixels, restrained hand-painted late-1990s game asset style. Each material fills its entire tile. No outside border, gaps, gutters, captions, tile numbers, complete weapon, perspective object renders, scenery, cast shadows, watermark or logos.
+Important reuse constraints: t00, t02 and t05 must be mostly plain seamless repeatable materials, no centered symbol, perimeter frame, border wear, fasteners or object drawing. They wrap long curved beams, rings and cylinders. Reserve diagrams and decoration for the small functional panels t01/t03/t08/t09/t10. No readable text, numerals, alphabet, signatures or arrows anywhere. t15 must also repeat cleanly with simple vertical recesses, no unique label. Low contrast fine material grain with clear differences between material categories. Keep the lens perfectly centered in t11 and clear enough to see the environment through it in the game.
+Tile numbers below are ZERO-BASED and must not be written on the atlas. Order is left to right, top to bottom.
+Theme: ROME / THE INVENTOR'S WORKSHOP, an imaginative meeting of Roman engineering and Leonardo da Vinci's mechanical notebooks. Sun-warmed bronze, restrained verdigris, oxblood Roman red lacquer, ivory parchment, oiled walnut, dark iron, stitched leather, thin sepia compass-and-gear construction lines. Ingenious crafted precision, not a medieval fantasy or generic brass steampunk. Roman character through restrained incised laurel and geometric border work on SMALL panels only. No portraits or buildings.
+Row 1:
+t00 plain dark hand-forged iron, fine hammer texture with gentle burnished warm highlights.
+t01 bronze access panel with four corner rivets and fine incised compass circles and gear construction lines, subtle classical geometric edge.
+t02 mostly plain deep oxblood/red ochre lacquer over wood, subtle fine horizontal grain, sparse tiny abrasions, no framing.
+t03 ivory parchment-colored enamel inset with a small centered sepia mechanical linkage construction sketch, no writing, thin bronze frame.
+Row 2:
+t04 oiled walnut and dark brown leather grip, close vertical raised leather ribs with restrained hand stitching.
+t05 mostly plain satin antique bronze with subtle horizontal machining and very light verdigris speckling, seamless.
+t06 six recessed horizontal forged-iron cooling slots in a restrained bronze frame, corner rivets.
+t07 tight horizontal braided bronze cables with two narrow dark leather retaining straps.
+Row 3:
+t08 honey-colored amber resin reserve face in a bronze frame, small centered engraved gear motif, NO hazard symbol or text.
+t09 oxblood lacquer reservoir face with a slim right-side vertical row of four pale green glass indicators in bronze.
+t10 dark walnut instrument plate with one centered horizontal row of four greenish glass status windows, restrained brass edges.
+t11 centered perfectly circular clear warm amber lens, concentric aged bronze retaining rings, subtle engraved radial ticks without numbers, no opaque decoration across glass.
+Row 4:
+t12 narrow central band of repeating red ochre and ivory diagonal geometric chevrons on dark iron.
+t13 four pale terracotta/ivory fired-clay insulating squares with a cross seam.
+t14 oiled walnut magazine side plate with three horizontal bronze-lined recessed channels, three small round inspection holes down right.
+t15 dark forged iron and bronze repeatable vertical latch grooves, clean functional relief without frame, text or symbols.
+The atlas must read as an inventive Roman/Renaissance workshop through material choices and small mechanical sketches, while broad surfaces remain reusable.

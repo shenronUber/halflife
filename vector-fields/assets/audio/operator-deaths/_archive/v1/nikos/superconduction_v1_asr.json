@@ -1,0 +1,19 @@
+{
+  "audio_sha256": "779643edcd4d768f612ca5ac0885e01d9ce118d4ae40e61f53280ced8d624a2e",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "[shrieking]",
+    "words": [
+      {
+        "text": "[shrieking]",
+        "start": 0.1,
+        "end": 3.5,
+        "type": "audio_event",
+        "logprob": -0.20426641629038148
+      }
+    ],
+    "transcription_id": "LRUQfjaFzuSdWF5r1twR",
+    "audio_duration_secs": 3.555875
+  }
+}

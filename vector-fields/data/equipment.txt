@@ -132,39 +132,74 @@ cooling|cooling_look_predator|1|Radiateur Traqueur|Predator|Collection Traqueur|
 cooling|cooling_look_fortress|1|Radiateur Bastion|Fortress|Collection Bastion|5|3|3|3|0|0|Objet de test visuel Fortress ; comportement special a definir.|0
 cooling|cooling_look_rogue|1|Radiateur Eclaireur|Rogue|Collection Eclaireur|6|3|3|3|0|0|Objet de test visuel Rogue ; comportement special a definir.|0
 cooling|cooling_look_anomalous|2|Radiateur Phase|Anomalous|Collection Phase|8|4|4|4|0|0|Objet de test visuel Anomalous ; comportement special a definir.|0
-# Relais R-01: original visual reference, two variants per weapon slot.
+# Relais R-01: four core variants per slot, four extra receivers and eight themed modules.
 receiver|r01_receiver_a|1|R-01 / Chassis Atelier|Baseline|Relais R-01|4|4|4|4|0|0|Capot ocre, pontets metalliques et plaque de serie. Visuel uniquement.|0
 receiver|r01_receiver_b|1|R-01 / Chassis Circuit|Engine|Relais R-01|4|4|4|4|0|0|Capot clair, renforts sombres et panneau de service. Visuel uniquement.|0
+receiver|r01_receiver_c|1|R-01 / Chassis Nomade|Rogue|Relais R-01|4|4|4|4|0|0|Ossature ajouree, flancs nervures et capot etroit. Visuel uniquement.|0
+receiver|r01_receiver_d|1|R-01 / Chassis Bastion|Fortress|Relais R-01|4|4|4|4|0|0|Carter polygonal renforce, longerons et verrou de service. Visuel uniquement.|0
 barrel|r01_barrel_a|1|Canon chemise|Baseline|Relais R-01|4|4|4|4|0|0|Chemise ventilee et bagues usinees. Visuel uniquement.|0
 barrel|r01_barrel_b|1|Canon a induction|Engine|Relais R-01|4|4|4|4|0|0|Enroulements de cuivre et isolateurs ceramiques. Visuel uniquement.|0
+barrel|r01_barrel_c|1|Canon a longerons|Rogue|Relais R-01|4|4|4|4|0|0|Trois longerons protegent le tube dans une chemise ouverte. Visuel uniquement.|0
+barrel|r01_barrel_d|1|Canon a caisson|Fortress|Relais R-01|4|4|4|4|0|0|Caisson ceramique, brides massives et ouies laterales. Visuel uniquement.|0
 muzzle|r01_muzzle_a|1|Frein ajoure|Rogue|Relais R-01|4|4|4|4|0|0|Chambres ouvertes et couronne metallique. Visuel uniquement.|0
 muzzle|r01_muzzle_b|1|Moderateur court|Fortress|Relais R-01|4|4|4|4|0|0|Corps cylindrique court, colliers et bouche creuse. Visuel uniquement.|0
+muzzle|r01_muzzle_c|1|Cache-flamme a griffes|Predator|Relais R-01|4|4|4|4|0|0|Couronne ouverte a six griffes autour du passage central. Visuel uniquement.|0
+muzzle|r01_muzzle_d|1|Compensateur hexagonal|Engine|Relais R-01|4|4|4|4|0|0|Deux chambres hexagonales et bague frontale renforcee. Visuel uniquement.|0
 feed|r01_feed_a|1|Chargeur nervure|Baseline|Relais R-01|4|4|4|4|0|0|Coque emboutie et sabot. Suit la main au rechargement. Visuel uniquement.|0
 feed|r01_feed_b|1|Chargeur double pile|Engine|Relais R-01|4|4|4|4|0|0|Corps elargi et deux nervures. Meme point d insertion. Visuel uniquement.|0
+feed|r01_feed_c|1|Chargeur coude|Rogue|Relais R-01|4|4|4|4|0|0|Corps nervure termine par un sabot coude. Col et prise communs. Visuel uniquement.|0
+feed|r01_feed_d|1|Chargeur a tambour bas|Fortress|Relais R-01|4|4|4|4|0|0|Tambour sous une prise etroite. Col et prise communs. Visuel uniquement.|0
 chamber|r01_chamber_a|1|Culasse a levier|Rogue|Relais R-01|4|4|4|4|0|0|Levier lateral et capot mobile au tir. Visuel uniquement.|0
 chamber|r01_chamber_b|1|Culasse a glissiere|Anomalous|Relais R-01|4|4|4|4|0|0|Glissiere renforcee animee avec le meme cycle. Visuel uniquement.|0
+chamber|r01_chamber_c|1|Culasse a anneau|Predator|Relais R-01|4|4|4|4|0|0|Anneau de traction ouvert sur le chariot mobile. Visuel uniquement.|0
+chamber|r01_chamber_d|1|Culasse a double piston|Engine|Relais R-01|4|4|4|4|0|0|Deux tiges de guidage et un capot de protection mobile. Visuel uniquement.|0
 ammo|r01_ammo_a|1|Cassette balistique|Baseline|Relais R-01|4|4|4|4|0|0|Cartouches visibles dans une cassette laterale. Visuel uniquement.|0
 ammo|r01_ammo_b|1|Cassette energetique|Engine|Relais R-01|4|4|4|4|0|0|Cellules encastrees et indicateur de charge. Visuel uniquement.|0
+ammo|r01_ammo_c|1|Cassette bi-tube|Rogue|Relais R-01|4|4|4|4|0|0|Deux tubes horizontaux retenus par un etrier ouvert. Visuel uniquement.|0
+ammo|r01_ammo_d|1|Bloc triple chambre|Fortress|Relais R-01|4|4|4|4|0|0|Trois chambres hexagonales avec leur cerclage frontal. Visuel uniquement.|0
 projectile|r01_projectile_a|1|Porte-flechettes|Predator|Relais R-01|4|4|4|4|0|0|Trois flechettes retenues dans un berceau. Visuel uniquement.|0
 projectile|r01_projectile_b|1|Porte-ampoules|Anomalous|Relais R-01|4|4|4|4|0|0|Deux ampoules sous un capot de protection. Visuel uniquement.|0
+projectile|r01_projectile_c|1|Berceau monodard|Baseline|Relais R-01|4|4|4|4|0|0|Un dard large retenu par deux attaches et une pointe conique. Visuel uniquement.|0
+projectile|r01_projectile_d|1|Rack a disques|Fortress|Relais R-01|4|4|4|4|0|0|Quatre capsules circulaires dans un casier ouvert. Visuel uniquement.|0
 optic|r01_optic_a|1|Viseur cadre|Predator|Relais R-01|4|4|4|4|0|0|Cadre rectangulaire et lentille texturee a reflets bleus, sans croix ajoutee. Visuel uniquement.|0
 optic|r01_optic_b|1|Lunette compacte|Predator|Relais R-01|4|4|4|4|0|0|Deux bagues, oculaire et tourelles de reglage. Visuel uniquement.|0
+optic|r01_optic_c|1|Dioptre annulaire|Rogue|Relais R-01|4|4|4|4|0|0|Anneau metallique et verre existant dans une monture ouverte. Visuel uniquement.|0
+optic|r01_optic_d|1|Viseur prismatique|Engine|Relais R-01|4|4|4|4|0|0|Corps octogonal court, verre en retrait et bloc de reglage. Visuel uniquement.|0
 underbarrel|r01_underbarrel_a|1|Poignee inclinee|Fortress|Relais R-01|4|4|4|4|0|0|Prise caoutchouc inclinee sur collier commun. Visuel uniquement.|0
 underbarrel|r01_underbarrel_b|1|Tube auxiliaire|Engine|Relais R-01|4|4|4|4|0|0|Capsule sous canon avec verrou et collier. Visuel uniquement.|0
+underbarrel|r01_underbarrel_c|1|Stabilisateur replie|Predator|Relais R-01|4|4|4|4|0|0|Deux branches repliees sous le canon et patins articules. Visuel uniquement.|0
+underbarrel|r01_underbarrel_d|1|Garde-main carene|Fortress|Relais R-01|4|4|4|4|0|0|Deux joues laterales et un sabot protegent la prise inferieure. Visuel uniquement.|0
 grip|r01_grip_a|1|Crosse squelette|Rogue|Relais R-01|4|4|4|4|0|0|Poignee textilee et crosse tubulaire. Visuel uniquement.|0
 grip|r01_grip_b|1|Crosse amortie|Fortress|Relais R-01|4|4|4|4|0|0|Poignee moulee et crosse a plaque amortissante. Visuel uniquement.|0
+grip|r01_grip_c|1|Crosse triangulee|Baseline|Relais R-01|4|4|4|4|0|0|Prise commune et crosse ouverte a deux diagonales. Visuel uniquement.|0
+grip|r01_grip_d|1|Crosse a joue reglable|Engine|Relais R-01|4|4|4|4|0|0|Cadre ferme, appui-joue sureleve et plaque amortissante. Visuel uniquement.|0
 power|r01_power_a|1|Cellule ambre 24V|Engine|Relais R-01|4|4|4|4|0|0|Batterie amovible, verrou, bornes et etiquette 24V. Visuel uniquement.|0
 power|r01_power_b|1|Condensateur teal 48V|Anomalous|Relais R-01|4|4|4|4|0|0|Deux capaciteurs, etrier, bornes et etiquette 48V. Visuel uniquement.|0
+power|r01_power_c|1|Reserve toroidale|Rogue|Relais R-01|4|4|4|4|0|0|Reserve annulaire ouverte et connecteurs sur un support plat. Visuel uniquement.|0
+power|r01_power_d|1|Batterie a trois cartouches|Fortress|Relais R-01|4|4|4|4|0|0|Trois cartouches verticales retenues sous un capot commun. Visuel uniquement.|0
 cooling|r01_cooling_a|1|Radiateur a ailettes|Fortress|Relais R-01|4|4|4|4|0|0|Six ailettes metalliques sur semelle commune. Visuel uniquement.|0
 cooling|r01_cooling_b|1|Circuit cuivre|Engine|Relais R-01|4|4|4|4|0|0|Deux conduites cuivre et echangeur ceramique. Visuel uniquement.|0
+cooling|r01_cooling_c|1|Dissipateur a pointes|Rogue|Relais R-01|4|4|4|4|0|0|Deux plaques portant chacune neuf picots metalliques. Visuel uniquement.|0
+cooling|r01_cooling_d|1|Ventilateurs doubles|Anomalous|Relais R-01|4|4|4|4|0|0|Deux petits ventilateurs carenes de chaque cote du canon. Visuel uniquement.|0
 receiver|r01_receiver_side|1|R-01 / Traverse|Baseline|Relais R-01|4|4|4|4|0|0|Alimentation laterale. Extraction sur le cote et main animee. Memes chargeurs et proprietes.|0
 receiver|r01_receiver_top|1|R-01 / Zenith|Baseline|Relais R-01|4|4|4|4|0|0|Alimentation superieure. Extraction vers le haut et viseur decale. Memes chargeurs et proprietes.|0
+receiver|r01_receiver_arch|1|R-01 / Arche|Rogue|Relais R-01|4|4|4|4|0|0|Double arche ajouree, branches effilees et mecanique suspendue. Alimentation dessous.|0
+receiver|r01_receiver_arch_top|1|R-01 / Arche superieure|Rogue|Relais R-01|4|4|4|4|0|0|Arche ajouree, collier superieur et viseur deporte. Alimentation superieure.|0
+receiver|r01_receiver_gyre|1|R-01 / Gyre|Engine|Relais R-01|4|4|4|4|0|0|Noyau cylindrique, cerclages ouverts et cage helicoidale. Alimentation dessous.|0
+chamber|r01_chamber_inventor|1|Culasse a manivelle|Rogue|Relais R-01|4|4|4|4|0|0|Chariot ouvert, roue dentee et manivelle decalee. Visuel uniquement.|0
+chamber|r01_chamber_diesel|1|Culasse a cames|Engine|Relais R-01|4|4|4|4|0|0|Arbre a cames, ressort apparent et levier de rappel. Visuel uniquement.|0
+optic|r01_optic_inventor|1|Dioptre astrolabe|Predator|Relais R-01|4|4|4|4|0|0|Anneaux de visee, graduations en relief et molette laterale. Visuel uniquement.|0
+optic|r01_optic_diesel|1|Viseur periscopique|Engine|Relais R-01|4|4|4|4|0|0|Colonne etagee, capot profile et reglage lateral. Visuel uniquement.|0
+power|r01_power_inventor|1|Accumulateur a ressort|Rogue|Relais R-01|4|4|4|4|0|0|Deux tambours de remontage et courroies sous un arceau ouvert. Visuel uniquement.|0
+power|r01_power_diesel|1|Reservoir a huile|Engine|Relais R-01|4|4|4|4|0|0|Deux colonnes d huile, conduites et manometre mecanique. Visuel uniquement.|0
+cooling|r01_cooling_inventor|1|Eventails a lamelles|Baseline|Relais R-01|4|4|4|4|0|0|Deux bouquets de lamelles deployees sur leurs pivots. Visuel uniquement.|0
+cooling|r01_cooling_diesel|1|Radiateur a faisceau|Fortress|Relais R-01|4|4|4|4|0|0|Collecteurs arrondis, tubes paralleles et ailettes exterieures. Visuel uniquement.|0
 # GIGN gameplay: named equipment / gameplay family / cosmetic collection / fitted appearance key.
-head|gign_head_gign|1|Masque GIGN|Baseline|Intervention|0|0|0|0|4|3|Masque de la tenue Operateur GIGN.|0|persona_gign
-torso|gign_torso_gign|1|Veste GIGN|Baseline|Intervention|0|0|0|0|4|3|Veste de la tenue Operateur GIGN.|0|persona_gign
-gloves|gign_gloves_gign|1|Gants GIGN|Baseline|Intervention|0|0|0|0|4|3|Gants de la tenue Operateur GIGN.|0|persona_gign
-legs|gign_legs_gign|1|Pantalon GIGN|Baseline|Intervention|0|0|0|0|4|3|Pantalon de la tenue Operateur GIGN.|0|persona_gign
-boots|gign_boots_gign|1|Bottes GIGN|Baseline|Intervention|0|0|0|0|4|3|Bottes de la tenue Operateur GIGN.|0|persona_gign
+head|gign_head_gign|1|Masque d'intervention|Baseline|Intervention|0|0|0|0|4|3|Masque de la tenue Operateur GIGN.|0|persona_gign
+torso|gign_torso_gign|1|Veste d'intervention|Baseline|Intervention|0|0|0|0|4|3|Veste de la tenue Operateur GIGN.|0|persona_gign
+gloves|gign_gloves_gign|1|Gants d'intervention|Baseline|Intervention|0|0|0|0|4|3|Gants de la tenue Operateur GIGN.|0|persona_gign
+legs|gign_legs_gign|1|Pantalon d'intervention|Baseline|Intervention|0|0|0|0|4|3|Pantalon de la tenue Operateur GIGN.|0|persona_gign
+boots|gign_boots_gign|1|Bottes d'intervention|Baseline|Intervention|0|0|0|0|4|3|Bottes de la tenue Operateur GIGN.|0|persona_gign
 head|gign_head_salvager|1|Masque des ruines|Fortress|Ruines|0|0|0|0|6|5|Masque de la tenue Recuperateur des ruines.|0|persona_salvager
 torso|gign_torso_salvager|1|Veste des ruines|Fortress|Ruines|0|0|0|0|6|5|Veste de la tenue Recuperateur des ruines.|0|persona_salvager
 gloves|gign_gloves_salvager|1|Gants des ruines|Fortress|Ruines|0|0|0|0|6|5|Gants de la tenue Recuperateur des ruines.|0|persona_salvager
@@ -220,3 +255,868 @@ torso|gign_torso_diver|1|Veste des abysses|Baseline|Abysses|0|0|0|0|4|3|Veste de
 gloves|gign_gloves_diver|1|Gants des abysses|Baseline|Abysses|0|0|0|0|4|3|Gants de la tenue Plongeur des abysses.|0|persona_diver
 legs|gign_legs_diver|1|Pantalon des abysses|Baseline|Abysses|0|0|0|0|4|3|Pantalon de la tenue Plongeur des abysses.|0|persona_diver
 boots|gign_boots_diver|1|Bottes des abysses|Baseline|Abysses|0|0|0|0|4|3|Bottes de la tenue Plongeur des abysses.|0|persona_diver
+head|gign_head_roman_inventor|1|Masque d'inventeur|Rogue|Rome / Inventeur|0|0|0|0|7|6|Masque de la tenue Artisan de la Renaissance.|0|persona_roman_inventor
+torso|gign_torso_roman_inventor|1|Veste d'inventeur|Rogue|Rome / Inventeur|0|0|0|0|7|6|Veste de la tenue Artisan de la Renaissance.|0|persona_roman_inventor
+gloves|gign_gloves_roman_inventor|1|Gants d'inventeur|Rogue|Rome / Inventeur|0|0|0|0|7|6|Gants de la tenue Artisan de la Renaissance.|0|persona_roman_inventor
+legs|gign_legs_roman_inventor|1|Pantalon d'inventeur|Rogue|Rome / Inventeur|0|0|0|0|7|6|Pantalon de la tenue Artisan de la Renaissance.|0|persona_roman_inventor
+boots|gign_boots_roman_inventor|1|Bottes d'inventeur|Rogue|Rome / Inventeur|0|0|0|0|7|6|Bottes de la tenue Artisan de la Renaissance.|0|persona_roman_inventor
+head|gign_head_dieselpunk|1|Masque diesel|Engine|Dieselpunk|0|0|0|0|8|7|Masque de la tenue Mecanicien diesel.|0|persona_dieselpunk
+torso|gign_torso_dieselpunk|1|Veste diesel|Engine|Dieselpunk|0|0|0|0|8|7|Veste de la tenue Mecanicien diesel.|0|persona_dieselpunk
+gloves|gign_gloves_dieselpunk|1|Gants diesel|Engine|Dieselpunk|0|0|0|0|8|7|Gants de la tenue Mecanicien diesel.|0|persona_dieselpunk
+legs|gign_legs_dieselpunk|1|Pantalon diesel|Engine|Dieselpunk|0|0|0|0|8|7|Pantalon de la tenue Mecanicien diesel.|0|persona_dieselpunk
+boots|gign_boots_dieselpunk|1|Bottes diesel|Engine|Dieselpunk|0|0|0|0|8|7|Bottes de la tenue Mecanicien diesel.|0|persona_dieselpunk
+# Named weapon inventory: fixed model and finish, one object per combination.
+receiver|r01_receiver_a__original|1|Chassis Atelier d'intervention|Baseline|Intervention|4|4|4|4|0|0|Capot ocre, pontets metalliques et plaque de serie.|0||r01_receiver_a|original
+receiver|r01_receiver_a__war-torn|1|Chassis Atelier des ruines|Baseline|Ruines|4|4|4|4|0|0|Capot ocre, pontets metalliques et plaque de serie.|0||r01_receiver_a|war_torn
+receiver|r01_receiver_a__medieval-forge|1|Chassis Atelier de la forge|Baseline|Forge medievale|4|4|4|4|0|0|Capot ocre, pontets metalliques et plaque de serie.|0||r01_receiver_a|medieval_forge
+receiver|r01_receiver_a__prehistoric|1|Chassis Atelier d'os et de silex|Baseline|Os et silex|4|4|4|4|0|0|Capot ocre, pontets metalliques et plaque de serie.|0||r01_receiver_a|prehistoric
+receiver|r01_receiver_a__living-jungle|1|Chassis Atelier de la canopee|Baseline|Canopee|4|4|4|4|0|0|Capot ocre, pontets metalliques et plaque de serie.|0||r01_receiver_a|living_jungle
+receiver|r01_receiver_a__medieval-alchemy|1|Chassis Atelier d'alchimie|Baseline|Alchimie|4|4|4|4|0|0|Capot ocre, pontets metalliques et plaque de serie.|0||r01_receiver_a|medieval_alchemy
+receiver|r01_receiver_a__porcelain-fluidics|1|Chassis Atelier de porcelaine|Baseline|Porcelaine|4|4|4|4|0|0|Capot ocre, pontets metalliques et plaque de serie.|0||r01_receiver_a|porcelain_fluidics
+receiver|r01_receiver_a__ww1-trench|1|Chassis Atelier des tranchees|Baseline|Grande Guerre|4|4|4|4|0|0|Capot ocre, pontets metalliques et plaque de serie.|0||r01_receiver_a|ww1_trench
+receiver|r01_receiver_a__bedrock-miner|1|Chassis Atelier des profondeurs|Baseline|Bedrock|4|4|4|4|0|0|Capot ocre, pontets metalliques et plaque de serie.|0||r01_receiver_a|bedrock_miner
+receiver|r01_receiver_a__new-york-noir|1|Chassis Atelier de minuit|Baseline|New York noir|4|4|4|4|0|0|Capot ocre, pontets metalliques et plaque de serie.|0||r01_receiver_a|new_york_noir
+receiver|r01_receiver_a__castaway|1|Chassis Atelier des rivages|Baseline|Bois de naufrage|4|4|4|4|0|0|Capot ocre, pontets metalliques et plaque de serie.|0||r01_receiver_a|castaway
+receiver|r01_receiver_a__abyss-diver|1|Chassis Atelier des abysses|Baseline|Abysses|4|4|4|4|0|0|Capot ocre, pontets metalliques et plaque de serie.|0||r01_receiver_a|abyss_diver
+receiver|r01_receiver_a__roman-inventor|1|Chassis Atelier d'inventeur|Baseline|Rome / Inventeur|4|4|4|4|0|0|Capot ocre, pontets metalliques et plaque de serie.|0||r01_receiver_a|roman_inventor
+receiver|r01_receiver_a__dieselpunk|1|Chassis Atelier diesel|Baseline|Dieselpunk|4|4|4|4|0|0|Capot ocre, pontets metalliques et plaque de serie.|0||r01_receiver_a|dieselpunk
+receiver|r01_receiver_b__original|1|Chassis Circuit d'intervention|Engine|Intervention|4|4|4|4|0|0|Capot clair, renforts sombres et panneau de service.|0||r01_receiver_b|original
+receiver|r01_receiver_b__war-torn|1|Chassis Circuit des ruines|Engine|Ruines|4|4|4|4|0|0|Capot clair, renforts sombres et panneau de service.|0||r01_receiver_b|war_torn
+receiver|r01_receiver_b__medieval-forge|1|Chassis Circuit de la forge|Engine|Forge medievale|4|4|4|4|0|0|Capot clair, renforts sombres et panneau de service.|0||r01_receiver_b|medieval_forge
+receiver|r01_receiver_b__prehistoric|1|Chassis Circuit d'os et de silex|Engine|Os et silex|4|4|4|4|0|0|Capot clair, renforts sombres et panneau de service.|0||r01_receiver_b|prehistoric
+receiver|r01_receiver_b__living-jungle|1|Chassis Circuit de la canopee|Engine|Canopee|4|4|4|4|0|0|Capot clair, renforts sombres et panneau de service.|0||r01_receiver_b|living_jungle
+receiver|r01_receiver_b__medieval-alchemy|1|Chassis Circuit d'alchimie|Engine|Alchimie|4|4|4|4|0|0|Capot clair, renforts sombres et panneau de service.|0||r01_receiver_b|medieval_alchemy
+receiver|r01_receiver_b__porcelain-fluidics|1|Chassis Circuit de porcelaine|Engine|Porcelaine|4|4|4|4|0|0|Capot clair, renforts sombres et panneau de service.|0||r01_receiver_b|porcelain_fluidics
+receiver|r01_receiver_b__ww1-trench|1|Chassis Circuit des tranchees|Engine|Grande Guerre|4|4|4|4|0|0|Capot clair, renforts sombres et panneau de service.|0||r01_receiver_b|ww1_trench
+receiver|r01_receiver_b__bedrock-miner|1|Chassis Circuit des profondeurs|Engine|Bedrock|4|4|4|4|0|0|Capot clair, renforts sombres et panneau de service.|0||r01_receiver_b|bedrock_miner
+receiver|r01_receiver_b__new-york-noir|1|Chassis Circuit de minuit|Engine|New York noir|4|4|4|4|0|0|Capot clair, renforts sombres et panneau de service.|0||r01_receiver_b|new_york_noir
+receiver|r01_receiver_b__castaway|1|Chassis Circuit des rivages|Engine|Bois de naufrage|4|4|4|4|0|0|Capot clair, renforts sombres et panneau de service.|0||r01_receiver_b|castaway
+receiver|r01_receiver_b__abyss-diver|1|Chassis Circuit des abysses|Engine|Abysses|4|4|4|4|0|0|Capot clair, renforts sombres et panneau de service.|0||r01_receiver_b|abyss_diver
+receiver|r01_receiver_b__roman-inventor|1|Chassis Circuit d'inventeur|Engine|Rome / Inventeur|4|4|4|4|0|0|Capot clair, renforts sombres et panneau de service.|0||r01_receiver_b|roman_inventor
+receiver|r01_receiver_b__dieselpunk|1|Chassis Circuit diesel|Engine|Dieselpunk|4|4|4|4|0|0|Capot clair, renforts sombres et panneau de service.|0||r01_receiver_b|dieselpunk
+receiver|r01_receiver_c__original|1|Chassis Nomade d'intervention|Rogue|Intervention|4|4|4|4|0|0|Ossature ajouree, flancs nervures et capot etroit.|0||r01_receiver_c|original
+receiver|r01_receiver_c__war-torn|1|Chassis Nomade des ruines|Rogue|Ruines|4|4|4|4|0|0|Ossature ajouree, flancs nervures et capot etroit.|0||r01_receiver_c|war_torn
+receiver|r01_receiver_c__medieval-forge|1|Chassis Nomade de la forge|Rogue|Forge medievale|4|4|4|4|0|0|Ossature ajouree, flancs nervures et capot etroit.|0||r01_receiver_c|medieval_forge
+receiver|r01_receiver_c__prehistoric|1|Chassis Nomade d'os et de silex|Rogue|Os et silex|4|4|4|4|0|0|Ossature ajouree, flancs nervures et capot etroit.|0||r01_receiver_c|prehistoric
+receiver|r01_receiver_c__living-jungle|1|Chassis Nomade de la canopee|Rogue|Canopee|4|4|4|4|0|0|Ossature ajouree, flancs nervures et capot etroit.|0||r01_receiver_c|living_jungle
+receiver|r01_receiver_c__medieval-alchemy|1|Chassis Nomade d'alchimie|Rogue|Alchimie|4|4|4|4|0|0|Ossature ajouree, flancs nervures et capot etroit.|0||r01_receiver_c|medieval_alchemy
+receiver|r01_receiver_c__porcelain-fluidics|1|Chassis Nomade de porcelaine|Rogue|Porcelaine|4|4|4|4|0|0|Ossature ajouree, flancs nervures et capot etroit.|0||r01_receiver_c|porcelain_fluidics
+receiver|r01_receiver_c__ww1-trench|1|Chassis Nomade des tranchees|Rogue|Grande Guerre|4|4|4|4|0|0|Ossature ajouree, flancs nervures et capot etroit.|0||r01_receiver_c|ww1_trench
+receiver|r01_receiver_c__bedrock-miner|1|Chassis Nomade des profondeurs|Rogue|Bedrock|4|4|4|4|0|0|Ossature ajouree, flancs nervures et capot etroit.|0||r01_receiver_c|bedrock_miner
+receiver|r01_receiver_c__new-york-noir|1|Chassis Nomade de minuit|Rogue|New York noir|4|4|4|4|0|0|Ossature ajouree, flancs nervures et capot etroit.|0||r01_receiver_c|new_york_noir
+receiver|r01_receiver_c__castaway|1|Chassis Nomade des rivages|Rogue|Bois de naufrage|4|4|4|4|0|0|Ossature ajouree, flancs nervures et capot etroit.|0||r01_receiver_c|castaway
+receiver|r01_receiver_c__abyss-diver|1|Chassis Nomade des abysses|Rogue|Abysses|4|4|4|4|0|0|Ossature ajouree, flancs nervures et capot etroit.|0||r01_receiver_c|abyss_diver
+receiver|r01_receiver_c__roman-inventor|1|Chassis Nomade d'inventeur|Rogue|Rome / Inventeur|4|4|4|4|0|0|Ossature ajouree, flancs nervures et capot etroit.|0||r01_receiver_c|roman_inventor
+receiver|r01_receiver_c__dieselpunk|1|Chassis Nomade diesel|Rogue|Dieselpunk|4|4|4|4|0|0|Ossature ajouree, flancs nervures et capot etroit.|0||r01_receiver_c|dieselpunk
+receiver|r01_receiver_d__original|1|Chassis Bastion d'intervention|Fortress|Intervention|4|4|4|4|0|0|Carter polygonal renforce, longerons et verrou de service.|0||r01_receiver_d|original
+receiver|r01_receiver_d__war-torn|1|Chassis Bastion des ruines|Fortress|Ruines|4|4|4|4|0|0|Carter polygonal renforce, longerons et verrou de service.|0||r01_receiver_d|war_torn
+receiver|r01_receiver_d__medieval-forge|1|Chassis Bastion de la forge|Fortress|Forge medievale|4|4|4|4|0|0|Carter polygonal renforce, longerons et verrou de service.|0||r01_receiver_d|medieval_forge
+receiver|r01_receiver_d__prehistoric|1|Chassis Bastion d'os et de silex|Fortress|Os et silex|4|4|4|4|0|0|Carter polygonal renforce, longerons et verrou de service.|0||r01_receiver_d|prehistoric
+receiver|r01_receiver_d__living-jungle|1|Chassis Bastion de la canopee|Fortress|Canopee|4|4|4|4|0|0|Carter polygonal renforce, longerons et verrou de service.|0||r01_receiver_d|living_jungle
+receiver|r01_receiver_d__medieval-alchemy|1|Chassis Bastion d'alchimie|Fortress|Alchimie|4|4|4|4|0|0|Carter polygonal renforce, longerons et verrou de service.|0||r01_receiver_d|medieval_alchemy
+receiver|r01_receiver_d__porcelain-fluidics|1|Chassis Bastion de porcelaine|Fortress|Porcelaine|4|4|4|4|0|0|Carter polygonal renforce, longerons et verrou de service.|0||r01_receiver_d|porcelain_fluidics
+receiver|r01_receiver_d__ww1-trench|1|Chassis Bastion des tranchees|Fortress|Grande Guerre|4|4|4|4|0|0|Carter polygonal renforce, longerons et verrou de service.|0||r01_receiver_d|ww1_trench
+receiver|r01_receiver_d__bedrock-miner|1|Chassis Bastion des profondeurs|Fortress|Bedrock|4|4|4|4|0|0|Carter polygonal renforce, longerons et verrou de service.|0||r01_receiver_d|bedrock_miner
+receiver|r01_receiver_d__new-york-noir|1|Chassis Bastion de minuit|Fortress|New York noir|4|4|4|4|0|0|Carter polygonal renforce, longerons et verrou de service.|0||r01_receiver_d|new_york_noir
+receiver|r01_receiver_d__castaway|1|Chassis Bastion des rivages|Fortress|Bois de naufrage|4|4|4|4|0|0|Carter polygonal renforce, longerons et verrou de service.|0||r01_receiver_d|castaway
+receiver|r01_receiver_d__abyss-diver|1|Chassis Bastion des abysses|Fortress|Abysses|4|4|4|4|0|0|Carter polygonal renforce, longerons et verrou de service.|0||r01_receiver_d|abyss_diver
+receiver|r01_receiver_d__roman-inventor|1|Chassis Bastion d'inventeur|Fortress|Rome / Inventeur|4|4|4|4|0|0|Carter polygonal renforce, longerons et verrou de service.|0||r01_receiver_d|roman_inventor
+receiver|r01_receiver_d__dieselpunk|1|Chassis Bastion diesel|Fortress|Dieselpunk|4|4|4|4|0|0|Carter polygonal renforce, longerons et verrou de service.|0||r01_receiver_d|dieselpunk
+barrel|r01_barrel_a__original|1|Canon chemise d'intervention|Baseline|Intervention|4|4|4|4|0|0|Chemise ventilee et bagues usinees.|0||r01_barrel_a|original
+barrel|r01_barrel_a__war-torn|1|Canon chemise des ruines|Baseline|Ruines|4|4|4|4|0|0|Chemise ventilee et bagues usinees.|0||r01_barrel_a|war_torn
+barrel|r01_barrel_a__medieval-forge|1|Canon chemise de la forge|Baseline|Forge medievale|4|4|4|4|0|0|Chemise ventilee et bagues usinees.|0||r01_barrel_a|medieval_forge
+barrel|r01_barrel_a__prehistoric|1|Canon chemise d'os et de silex|Baseline|Os et silex|4|4|4|4|0|0|Chemise ventilee et bagues usinees.|0||r01_barrel_a|prehistoric
+barrel|r01_barrel_a__living-jungle|1|Canon chemise de la canopee|Baseline|Canopee|4|4|4|4|0|0|Chemise ventilee et bagues usinees.|0||r01_barrel_a|living_jungle
+barrel|r01_barrel_a__medieval-alchemy|1|Canon chemise d'alchimie|Baseline|Alchimie|4|4|4|4|0|0|Chemise ventilee et bagues usinees.|0||r01_barrel_a|medieval_alchemy
+barrel|r01_barrel_a__porcelain-fluidics|1|Canon chemise de porcelaine|Baseline|Porcelaine|4|4|4|4|0|0|Chemise ventilee et bagues usinees.|0||r01_barrel_a|porcelain_fluidics
+barrel|r01_barrel_a__ww1-trench|1|Canon chemise des tranchees|Baseline|Grande Guerre|4|4|4|4|0|0|Chemise ventilee et bagues usinees.|0||r01_barrel_a|ww1_trench
+barrel|r01_barrel_a__bedrock-miner|1|Canon chemise des profondeurs|Baseline|Bedrock|4|4|4|4|0|0|Chemise ventilee et bagues usinees.|0||r01_barrel_a|bedrock_miner
+barrel|r01_barrel_a__new-york-noir|1|Canon chemise de minuit|Baseline|New York noir|4|4|4|4|0|0|Chemise ventilee et bagues usinees.|0||r01_barrel_a|new_york_noir
+barrel|r01_barrel_a__castaway|1|Canon chemise des rivages|Baseline|Bois de naufrage|4|4|4|4|0|0|Chemise ventilee et bagues usinees.|0||r01_barrel_a|castaway
+barrel|r01_barrel_a__abyss-diver|1|Canon chemise des abysses|Baseline|Abysses|4|4|4|4|0|0|Chemise ventilee et bagues usinees.|0||r01_barrel_a|abyss_diver
+barrel|r01_barrel_a__roman-inventor|1|Canon chemise d'inventeur|Baseline|Rome / Inventeur|4|4|4|4|0|0|Chemise ventilee et bagues usinees.|0||r01_barrel_a|roman_inventor
+barrel|r01_barrel_a__dieselpunk|1|Canon chemise diesel|Baseline|Dieselpunk|4|4|4|4|0|0|Chemise ventilee et bagues usinees.|0||r01_barrel_a|dieselpunk
+barrel|r01_barrel_b__original|1|Canon a induction d'intervention|Engine|Intervention|4|4|4|4|0|0|Enroulements de cuivre et isolateurs ceramiques.|0||r01_barrel_b|original
+barrel|r01_barrel_b__war-torn|1|Canon a induction des ruines|Engine|Ruines|4|4|4|4|0|0|Enroulements de cuivre et isolateurs ceramiques.|0||r01_barrel_b|war_torn
+barrel|r01_barrel_b__medieval-forge|1|Canon a induction de la forge|Engine|Forge medievale|4|4|4|4|0|0|Enroulements de cuivre et isolateurs ceramiques.|0||r01_barrel_b|medieval_forge
+barrel|r01_barrel_b__prehistoric|1|Canon a induction d'os et de silex|Engine|Os et silex|4|4|4|4|0|0|Enroulements de cuivre et isolateurs ceramiques.|0||r01_barrel_b|prehistoric
+barrel|r01_barrel_b__living-jungle|1|Canon a induction de la canopee|Engine|Canopee|4|4|4|4|0|0|Enroulements de cuivre et isolateurs ceramiques.|0||r01_barrel_b|living_jungle
+barrel|r01_barrel_b__medieval-alchemy|1|Canon a induction d'alchimie|Engine|Alchimie|4|4|4|4|0|0|Enroulements de cuivre et isolateurs ceramiques.|0||r01_barrel_b|medieval_alchemy
+barrel|r01_barrel_b__porcelain-fluidics|1|Canon a induction de porcelaine|Engine|Porcelaine|4|4|4|4|0|0|Enroulements de cuivre et isolateurs ceramiques.|0||r01_barrel_b|porcelain_fluidics
+barrel|r01_barrel_b__ww1-trench|1|Canon a induction des tranchees|Engine|Grande Guerre|4|4|4|4|0|0|Enroulements de cuivre et isolateurs ceramiques.|0||r01_barrel_b|ww1_trench
+barrel|r01_barrel_b__bedrock-miner|1|Canon a induction des profondeurs|Engine|Bedrock|4|4|4|4|0|0|Enroulements de cuivre et isolateurs ceramiques.|0||r01_barrel_b|bedrock_miner
+barrel|r01_barrel_b__new-york-noir|1|Canon a induction de minuit|Engine|New York noir|4|4|4|4|0|0|Enroulements de cuivre et isolateurs ceramiques.|0||r01_barrel_b|new_york_noir
+barrel|r01_barrel_b__castaway|1|Canon a induction des rivages|Engine|Bois de naufrage|4|4|4|4|0|0|Enroulements de cuivre et isolateurs ceramiques.|0||r01_barrel_b|castaway
+barrel|r01_barrel_b__abyss-diver|1|Canon a induction des abysses|Engine|Abysses|4|4|4|4|0|0|Enroulements de cuivre et isolateurs ceramiques.|0||r01_barrel_b|abyss_diver
+barrel|r01_barrel_b__roman-inventor|1|Canon a induction d'inventeur|Engine|Rome / Inventeur|4|4|4|4|0|0|Enroulements de cuivre et isolateurs ceramiques.|0||r01_barrel_b|roman_inventor
+barrel|r01_barrel_b__dieselpunk|1|Canon a induction diesel|Engine|Dieselpunk|4|4|4|4|0|0|Enroulements de cuivre et isolateurs ceramiques.|0||r01_barrel_b|dieselpunk
+barrel|r01_barrel_c__original|1|Canon a longerons d'intervention|Rogue|Intervention|4|4|4|4|0|0|Trois longerons protegent le tube dans une chemise ouverte.|0||r01_barrel_c|original
+barrel|r01_barrel_c__war-torn|1|Canon a longerons des ruines|Rogue|Ruines|4|4|4|4|0|0|Trois longerons protegent le tube dans une chemise ouverte.|0||r01_barrel_c|war_torn
+barrel|r01_barrel_c__medieval-forge|1|Canon a longerons de la forge|Rogue|Forge medievale|4|4|4|4|0|0|Trois longerons protegent le tube dans une chemise ouverte.|0||r01_barrel_c|medieval_forge
+barrel|r01_barrel_c__prehistoric|1|Canon a longerons d'os et de silex|Rogue|Os et silex|4|4|4|4|0|0|Trois longerons protegent le tube dans une chemise ouverte.|0||r01_barrel_c|prehistoric
+barrel|r01_barrel_c__living-jungle|1|Canon a longerons de la canopee|Rogue|Canopee|4|4|4|4|0|0|Trois longerons protegent le tube dans une chemise ouverte.|0||r01_barrel_c|living_jungle
+barrel|r01_barrel_c__medieval-alchemy|1|Canon a longerons d'alchimie|Rogue|Alchimie|4|4|4|4|0|0|Trois longerons protegent le tube dans une chemise ouverte.|0||r01_barrel_c|medieval_alchemy
+barrel|r01_barrel_c__porcelain-fluidics|1|Canon a longerons de porcelaine|Rogue|Porcelaine|4|4|4|4|0|0|Trois longerons protegent le tube dans une chemise ouverte.|0||r01_barrel_c|porcelain_fluidics
+barrel|r01_barrel_c__ww1-trench|1|Canon a longerons des tranchees|Rogue|Grande Guerre|4|4|4|4|0|0|Trois longerons protegent le tube dans une chemise ouverte.|0||r01_barrel_c|ww1_trench
+barrel|r01_barrel_c__bedrock-miner|1|Canon a longerons des profondeurs|Rogue|Bedrock|4|4|4|4|0|0|Trois longerons protegent le tube dans une chemise ouverte.|0||r01_barrel_c|bedrock_miner
+barrel|r01_barrel_c__new-york-noir|1|Canon a longerons de minuit|Rogue|New York noir|4|4|4|4|0|0|Trois longerons protegent le tube dans une chemise ouverte.|0||r01_barrel_c|new_york_noir
+barrel|r01_barrel_c__castaway|1|Canon a longerons des rivages|Rogue|Bois de naufrage|4|4|4|4|0|0|Trois longerons protegent le tube dans une chemise ouverte.|0||r01_barrel_c|castaway
+barrel|r01_barrel_c__abyss-diver|1|Canon a longerons des abysses|Rogue|Abysses|4|4|4|4|0|0|Trois longerons protegent le tube dans une chemise ouverte.|0||r01_barrel_c|abyss_diver
+barrel|r01_barrel_c__roman-inventor|1|Canon a longerons d'inventeur|Rogue|Rome / Inventeur|4|4|4|4|0|0|Trois longerons protegent le tube dans une chemise ouverte.|0||r01_barrel_c|roman_inventor
+barrel|r01_barrel_c__dieselpunk|1|Canon a longerons diesel|Rogue|Dieselpunk|4|4|4|4|0|0|Trois longerons protegent le tube dans une chemise ouverte.|0||r01_barrel_c|dieselpunk
+barrel|r01_barrel_d__original|1|Canon a caisson d'intervention|Fortress|Intervention|4|4|4|4|0|0|Caisson ceramique, brides massives et ouies laterales.|0||r01_barrel_d|original
+barrel|r01_barrel_d__war-torn|1|Canon a caisson des ruines|Fortress|Ruines|4|4|4|4|0|0|Caisson ceramique, brides massives et ouies laterales.|0||r01_barrel_d|war_torn
+barrel|r01_barrel_d__medieval-forge|1|Canon a caisson de la forge|Fortress|Forge medievale|4|4|4|4|0|0|Caisson ceramique, brides massives et ouies laterales.|0||r01_barrel_d|medieval_forge
+barrel|r01_barrel_d__prehistoric|1|Canon a caisson d'os et de silex|Fortress|Os et silex|4|4|4|4|0|0|Caisson ceramique, brides massives et ouies laterales.|0||r01_barrel_d|prehistoric
+barrel|r01_barrel_d__living-jungle|1|Canon a caisson de la canopee|Fortress|Canopee|4|4|4|4|0|0|Caisson ceramique, brides massives et ouies laterales.|0||r01_barrel_d|living_jungle
+barrel|r01_barrel_d__medieval-alchemy|1|Canon a caisson d'alchimie|Fortress|Alchimie|4|4|4|4|0|0|Caisson ceramique, brides massives et ouies laterales.|0||r01_barrel_d|medieval_alchemy
+barrel|r01_barrel_d__porcelain-fluidics|1|Canon a caisson de porcelaine|Fortress|Porcelaine|4|4|4|4|0|0|Caisson ceramique, brides massives et ouies laterales.|0||r01_barrel_d|porcelain_fluidics
+barrel|r01_barrel_d__ww1-trench|1|Canon a caisson des tranchees|Fortress|Grande Guerre|4|4|4|4|0|0|Caisson ceramique, brides massives et ouies laterales.|0||r01_barrel_d|ww1_trench
+barrel|r01_barrel_d__bedrock-miner|1|Canon a caisson des profondeurs|Fortress|Bedrock|4|4|4|4|0|0|Caisson ceramique, brides massives et ouies laterales.|0||r01_barrel_d|bedrock_miner
+barrel|r01_barrel_d__new-york-noir|1|Canon a caisson de minuit|Fortress|New York noir|4|4|4|4|0|0|Caisson ceramique, brides massives et ouies laterales.|0||r01_barrel_d|new_york_noir
+barrel|r01_barrel_d__castaway|1|Canon a caisson des rivages|Fortress|Bois de naufrage|4|4|4|4|0|0|Caisson ceramique, brides massives et ouies laterales.|0||r01_barrel_d|castaway
+barrel|r01_barrel_d__abyss-diver|1|Canon a caisson des abysses|Fortress|Abysses|4|4|4|4|0|0|Caisson ceramique, brides massives et ouies laterales.|0||r01_barrel_d|abyss_diver
+barrel|r01_barrel_d__roman-inventor|1|Canon a caisson d'inventeur|Fortress|Rome / Inventeur|4|4|4|4|0|0|Caisson ceramique, brides massives et ouies laterales.|0||r01_barrel_d|roman_inventor
+barrel|r01_barrel_d__dieselpunk|1|Canon a caisson diesel|Fortress|Dieselpunk|4|4|4|4|0|0|Caisson ceramique, brides massives et ouies laterales.|0||r01_barrel_d|dieselpunk
+muzzle|r01_muzzle_a__original|1|Frein ajoure d'intervention|Rogue|Intervention|4|4|4|4|0|0|Chambres ouvertes et couronne metallique.|0||r01_muzzle_a|original
+muzzle|r01_muzzle_a__war-torn|1|Frein ajoure des ruines|Rogue|Ruines|4|4|4|4|0|0|Chambres ouvertes et couronne metallique.|0||r01_muzzle_a|war_torn
+muzzle|r01_muzzle_a__medieval-forge|1|Frein ajoure de la forge|Rogue|Forge medievale|4|4|4|4|0|0|Chambres ouvertes et couronne metallique.|0||r01_muzzle_a|medieval_forge
+muzzle|r01_muzzle_a__prehistoric|1|Frein ajoure d'os et de silex|Rogue|Os et silex|4|4|4|4|0|0|Chambres ouvertes et couronne metallique.|0||r01_muzzle_a|prehistoric
+muzzle|r01_muzzle_a__living-jungle|1|Frein ajoure de la canopee|Rogue|Canopee|4|4|4|4|0|0|Chambres ouvertes et couronne metallique.|0||r01_muzzle_a|living_jungle
+muzzle|r01_muzzle_a__medieval-alchemy|1|Frein ajoure d'alchimie|Rogue|Alchimie|4|4|4|4|0|0|Chambres ouvertes et couronne metallique.|0||r01_muzzle_a|medieval_alchemy
+muzzle|r01_muzzle_a__porcelain-fluidics|1|Frein ajoure de porcelaine|Rogue|Porcelaine|4|4|4|4|0|0|Chambres ouvertes et couronne metallique.|0||r01_muzzle_a|porcelain_fluidics
+muzzle|r01_muzzle_a__ww1-trench|1|Frein ajoure des tranchees|Rogue|Grande Guerre|4|4|4|4|0|0|Chambres ouvertes et couronne metallique.|0||r01_muzzle_a|ww1_trench
+muzzle|r01_muzzle_a__bedrock-miner|1|Frein ajoure des profondeurs|Rogue|Bedrock|4|4|4|4|0|0|Chambres ouvertes et couronne metallique.|0||r01_muzzle_a|bedrock_miner
+muzzle|r01_muzzle_a__new-york-noir|1|Frein ajoure de minuit|Rogue|New York noir|4|4|4|4|0|0|Chambres ouvertes et couronne metallique.|0||r01_muzzle_a|new_york_noir
+muzzle|r01_muzzle_a__castaway|1|Frein ajoure des rivages|Rogue|Bois de naufrage|4|4|4|4|0|0|Chambres ouvertes et couronne metallique.|0||r01_muzzle_a|castaway
+muzzle|r01_muzzle_a__abyss-diver|1|Frein ajoure des abysses|Rogue|Abysses|4|4|4|4|0|0|Chambres ouvertes et couronne metallique.|0||r01_muzzle_a|abyss_diver
+muzzle|r01_muzzle_a__roman-inventor|1|Frein ajoure d'inventeur|Rogue|Rome / Inventeur|4|4|4|4|0|0|Chambres ouvertes et couronne metallique.|0||r01_muzzle_a|roman_inventor
+muzzle|r01_muzzle_a__dieselpunk|1|Frein ajoure diesel|Rogue|Dieselpunk|4|4|4|4|0|0|Chambres ouvertes et couronne metallique.|0||r01_muzzle_a|dieselpunk
+muzzle|r01_muzzle_b__original|1|Moderateur court d'intervention|Fortress|Intervention|4|4|4|4|0|0|Corps cylindrique court, colliers et bouche creuse.|0||r01_muzzle_b|original
+muzzle|r01_muzzle_b__war-torn|1|Moderateur court des ruines|Fortress|Ruines|4|4|4|4|0|0|Corps cylindrique court, colliers et bouche creuse.|0||r01_muzzle_b|war_torn
+muzzle|r01_muzzle_b__medieval-forge|1|Moderateur court de la forge|Fortress|Forge medievale|4|4|4|4|0|0|Corps cylindrique court, colliers et bouche creuse.|0||r01_muzzle_b|medieval_forge
+muzzle|r01_muzzle_b__prehistoric|1|Moderateur court d'os et de silex|Fortress|Os et silex|4|4|4|4|0|0|Corps cylindrique court, colliers et bouche creuse.|0||r01_muzzle_b|prehistoric
+muzzle|r01_muzzle_b__living-jungle|1|Moderateur court de la canopee|Fortress|Canopee|4|4|4|4|0|0|Corps cylindrique court, colliers et bouche creuse.|0||r01_muzzle_b|living_jungle
+muzzle|r01_muzzle_b__medieval-alchemy|1|Moderateur court d'alchimie|Fortress|Alchimie|4|4|4|4|0|0|Corps cylindrique court, colliers et bouche creuse.|0||r01_muzzle_b|medieval_alchemy
+muzzle|r01_muzzle_b__porcelain-fluidics|1|Moderateur court de porcelaine|Fortress|Porcelaine|4|4|4|4|0|0|Corps cylindrique court, colliers et bouche creuse.|0||r01_muzzle_b|porcelain_fluidics
+muzzle|r01_muzzle_b__ww1-trench|1|Moderateur court des tranchees|Fortress|Grande Guerre|4|4|4|4|0|0|Corps cylindrique court, colliers et bouche creuse.|0||r01_muzzle_b|ww1_trench
+muzzle|r01_muzzle_b__bedrock-miner|1|Moderateur court des profondeurs|Fortress|Bedrock|4|4|4|4|0|0|Corps cylindrique court, colliers et bouche creuse.|0||r01_muzzle_b|bedrock_miner
+muzzle|r01_muzzle_b__new-york-noir|1|Moderateur court de minuit|Fortress|New York noir|4|4|4|4|0|0|Corps cylindrique court, colliers et bouche creuse.|0||r01_muzzle_b|new_york_noir
+muzzle|r01_muzzle_b__castaway|1|Moderateur court des rivages|Fortress|Bois de naufrage|4|4|4|4|0|0|Corps cylindrique court, colliers et bouche creuse.|0||r01_muzzle_b|castaway
+muzzle|r01_muzzle_b__abyss-diver|1|Moderateur court des abysses|Fortress|Abysses|4|4|4|4|0|0|Corps cylindrique court, colliers et bouche creuse.|0||r01_muzzle_b|abyss_diver
+muzzle|r01_muzzle_b__roman-inventor|1|Moderateur court d'inventeur|Fortress|Rome / Inventeur|4|4|4|4|0|0|Corps cylindrique court, colliers et bouche creuse.|0||r01_muzzle_b|roman_inventor
+muzzle|r01_muzzle_b__dieselpunk|1|Moderateur court diesel|Fortress|Dieselpunk|4|4|4|4|0|0|Corps cylindrique court, colliers et bouche creuse.|0||r01_muzzle_b|dieselpunk
+muzzle|r01_muzzle_c__original|1|Cache-flamme a griffes d'intervention|Predator|Intervention|4|4|4|4|0|0|Couronne ouverte a six griffes autour du passage central.|0||r01_muzzle_c|original
+muzzle|r01_muzzle_c__war-torn|1|Cache-flamme a griffes des ruines|Predator|Ruines|4|4|4|4|0|0|Couronne ouverte a six griffes autour du passage central.|0||r01_muzzle_c|war_torn
+muzzle|r01_muzzle_c__medieval-forge|1|Cache-flamme a griffes de la forge|Predator|Forge medievale|4|4|4|4|0|0|Couronne ouverte a six griffes autour du passage central.|0||r01_muzzle_c|medieval_forge
+muzzle|r01_muzzle_c__prehistoric|1|Cache-flamme a griffes d'os et de silex|Predator|Os et silex|4|4|4|4|0|0|Couronne ouverte a six griffes autour du passage central.|0||r01_muzzle_c|prehistoric
+muzzle|r01_muzzle_c__living-jungle|1|Cache-flamme a griffes de la canopee|Predator|Canopee|4|4|4|4|0|0|Couronne ouverte a six griffes autour du passage central.|0||r01_muzzle_c|living_jungle
+muzzle|r01_muzzle_c__medieval-alchemy|1|Cache-flamme a griffes d'alchimie|Predator|Alchimie|4|4|4|4|0|0|Couronne ouverte a six griffes autour du passage central.|0||r01_muzzle_c|medieval_alchemy
+muzzle|r01_muzzle_c__porcelain-fluidics|1|Cache-flamme a griffes de porcelaine|Predator|Porcelaine|4|4|4|4|0|0|Couronne ouverte a six griffes autour du passage central.|0||r01_muzzle_c|porcelain_fluidics
+muzzle|r01_muzzle_c__ww1-trench|1|Cache-flamme a griffes des tranchees|Predator|Grande Guerre|4|4|4|4|0|0|Couronne ouverte a six griffes autour du passage central.|0||r01_muzzle_c|ww1_trench
+muzzle|r01_muzzle_c__bedrock-miner|1|Cache-flamme a griffes des profondeurs|Predator|Bedrock|4|4|4|4|0|0|Couronne ouverte a six griffes autour du passage central.|0||r01_muzzle_c|bedrock_miner
+muzzle|r01_muzzle_c__new-york-noir|1|Cache-flamme a griffes de minuit|Predator|New York noir|4|4|4|4|0|0|Couronne ouverte a six griffes autour du passage central.|0||r01_muzzle_c|new_york_noir
+muzzle|r01_muzzle_c__castaway|1|Cache-flamme a griffes des rivages|Predator|Bois de naufrage|4|4|4|4|0|0|Couronne ouverte a six griffes autour du passage central.|0||r01_muzzle_c|castaway
+muzzle|r01_muzzle_c__abyss-diver|1|Cache-flamme a griffes des abysses|Predator|Abysses|4|4|4|4|0|0|Couronne ouverte a six griffes autour du passage central.|0||r01_muzzle_c|abyss_diver
+muzzle|r01_muzzle_c__roman-inventor|1|Cache-flamme a griffes d'inventeur|Predator|Rome / Inventeur|4|4|4|4|0|0|Couronne ouverte a six griffes autour du passage central.|0||r01_muzzle_c|roman_inventor
+muzzle|r01_muzzle_c__dieselpunk|1|Cache-flamme a griffes diesel|Predator|Dieselpunk|4|4|4|4|0|0|Couronne ouverte a six griffes autour du passage central.|0||r01_muzzle_c|dieselpunk
+muzzle|r01_muzzle_d__original|1|Compensateur hexagonal d'intervention|Engine|Intervention|4|4|4|4|0|0|Deux chambres hexagonales et bague frontale renforcee.|0||r01_muzzle_d|original
+muzzle|r01_muzzle_d__war-torn|1|Compensateur hexagonal des ruines|Engine|Ruines|4|4|4|4|0|0|Deux chambres hexagonales et bague frontale renforcee.|0||r01_muzzle_d|war_torn
+muzzle|r01_muzzle_d__medieval-forge|1|Compensateur hexagonal de la forge|Engine|Forge medievale|4|4|4|4|0|0|Deux chambres hexagonales et bague frontale renforcee.|0||r01_muzzle_d|medieval_forge
+muzzle|r01_muzzle_d__prehistoric|1|Compensateur hexagonal d'os et de silex|Engine|Os et silex|4|4|4|4|0|0|Deux chambres hexagonales et bague frontale renforcee.|0||r01_muzzle_d|prehistoric
+muzzle|r01_muzzle_d__living-jungle|1|Compensateur hexagonal de la canopee|Engine|Canopee|4|4|4|4|0|0|Deux chambres hexagonales et bague frontale renforcee.|0||r01_muzzle_d|living_jungle
+muzzle|r01_muzzle_d__medieval-alchemy|1|Compensateur hexagonal d'alchimie|Engine|Alchimie|4|4|4|4|0|0|Deux chambres hexagonales et bague frontale renforcee.|0||r01_muzzle_d|medieval_alchemy
+muzzle|r01_muzzle_d__porcelain-fluidics|1|Compensateur hexagonal de porcelaine|Engine|Porcelaine|4|4|4|4|0|0|Deux chambres hexagonales et bague frontale renforcee.|0||r01_muzzle_d|porcelain_fluidics
+muzzle|r01_muzzle_d__ww1-trench|1|Compensateur hexagonal des tranchees|Engine|Grande Guerre|4|4|4|4|0|0|Deux chambres hexagonales et bague frontale renforcee.|0||r01_muzzle_d|ww1_trench
+muzzle|r01_muzzle_d__bedrock-miner|1|Compensateur hexagonal des profondeurs|Engine|Bedrock|4|4|4|4|0|0|Deux chambres hexagonales et bague frontale renforcee.|0||r01_muzzle_d|bedrock_miner
+muzzle|r01_muzzle_d__new-york-noir|1|Compensateur hexagonal de minuit|Engine|New York noir|4|4|4|4|0|0|Deux chambres hexagonales et bague frontale renforcee.|0||r01_muzzle_d|new_york_noir
+muzzle|r01_muzzle_d__castaway|1|Compensateur hexagonal des rivages|Engine|Bois de naufrage|4|4|4|4|0|0|Deux chambres hexagonales et bague frontale renforcee.|0||r01_muzzle_d|castaway
+muzzle|r01_muzzle_d__abyss-diver|1|Compensateur hexagonal des abysses|Engine|Abysses|4|4|4|4|0|0|Deux chambres hexagonales et bague frontale renforcee.|0||r01_muzzle_d|abyss_diver
+muzzle|r01_muzzle_d__roman-inventor|1|Compensateur hexagonal d'inventeur|Engine|Rome / Inventeur|4|4|4|4|0|0|Deux chambres hexagonales et bague frontale renforcee.|0||r01_muzzle_d|roman_inventor
+muzzle|r01_muzzle_d__dieselpunk|1|Compensateur hexagonal diesel|Engine|Dieselpunk|4|4|4|4|0|0|Deux chambres hexagonales et bague frontale renforcee.|0||r01_muzzle_d|dieselpunk
+feed|r01_feed_a__original|1|Chargeur nervure d'intervention|Baseline|Intervention|4|4|4|4|0|0|Coque emboutie et sabot. Suit la main au rechargement.|0||r01_feed_a|original
+feed|r01_feed_a__war-torn|1|Chargeur nervure des ruines|Baseline|Ruines|4|4|4|4|0|0|Coque emboutie et sabot. Suit la main au rechargement.|0||r01_feed_a|war_torn
+feed|r01_feed_a__medieval-forge|1|Chargeur nervure de la forge|Baseline|Forge medievale|4|4|4|4|0|0|Coque emboutie et sabot. Suit la main au rechargement.|0||r01_feed_a|medieval_forge
+feed|r01_feed_a__prehistoric|1|Chargeur nervure d'os et de silex|Baseline|Os et silex|4|4|4|4|0|0|Coque emboutie et sabot. Suit la main au rechargement.|0||r01_feed_a|prehistoric
+feed|r01_feed_a__living-jungle|1|Chargeur nervure de la canopee|Baseline|Canopee|4|4|4|4|0|0|Coque emboutie et sabot. Suit la main au rechargement.|0||r01_feed_a|living_jungle
+feed|r01_feed_a__medieval-alchemy|1|Chargeur nervure d'alchimie|Baseline|Alchimie|4|4|4|4|0|0|Coque emboutie et sabot. Suit la main au rechargement.|0||r01_feed_a|medieval_alchemy
+feed|r01_feed_a__porcelain-fluidics|1|Chargeur nervure de porcelaine|Baseline|Porcelaine|4|4|4|4|0|0|Coque emboutie et sabot. Suit la main au rechargement.|0||r01_feed_a|porcelain_fluidics
+feed|r01_feed_a__ww1-trench|1|Chargeur nervure des tranchees|Baseline|Grande Guerre|4|4|4|4|0|0|Coque emboutie et sabot. Suit la main au rechargement.|0||r01_feed_a|ww1_trench
+feed|r01_feed_a__bedrock-miner|1|Chargeur nervure des profondeurs|Baseline|Bedrock|4|4|4|4|0|0|Coque emboutie et sabot. Suit la main au rechargement.|0||r01_feed_a|bedrock_miner
+feed|r01_feed_a__new-york-noir|1|Chargeur nervure de minuit|Baseline|New York noir|4|4|4|4|0|0|Coque emboutie et sabot. Suit la main au rechargement.|0||r01_feed_a|new_york_noir
+feed|r01_feed_a__castaway|1|Chargeur nervure des rivages|Baseline|Bois de naufrage|4|4|4|4|0|0|Coque emboutie et sabot. Suit la main au rechargement.|0||r01_feed_a|castaway
+feed|r01_feed_a__abyss-diver|1|Chargeur nervure des abysses|Baseline|Abysses|4|4|4|4|0|0|Coque emboutie et sabot. Suit la main au rechargement.|0||r01_feed_a|abyss_diver
+feed|r01_feed_a__roman-inventor|1|Chargeur nervure d'inventeur|Baseline|Rome / Inventeur|4|4|4|4|0|0|Coque emboutie et sabot. Suit la main au rechargement.|0||r01_feed_a|roman_inventor
+feed|r01_feed_a__dieselpunk|1|Chargeur nervure diesel|Baseline|Dieselpunk|4|4|4|4|0|0|Coque emboutie et sabot. Suit la main au rechargement.|0||r01_feed_a|dieselpunk
+feed|r01_feed_b__original|1|Chargeur double pile d'intervention|Engine|Intervention|4|4|4|4|0|0|Corps elargi et deux nervures. Meme point d insertion.|0||r01_feed_b|original
+feed|r01_feed_b__war-torn|1|Chargeur double pile des ruines|Engine|Ruines|4|4|4|4|0|0|Corps elargi et deux nervures. Meme point d insertion.|0||r01_feed_b|war_torn
+feed|r01_feed_b__medieval-forge|1|Chargeur double pile de la forge|Engine|Forge medievale|4|4|4|4|0|0|Corps elargi et deux nervures. Meme point d insertion.|0||r01_feed_b|medieval_forge
+feed|r01_feed_b__prehistoric|1|Chargeur double pile d'os et de silex|Engine|Os et silex|4|4|4|4|0|0|Corps elargi et deux nervures. Meme point d insertion.|0||r01_feed_b|prehistoric
+feed|r01_feed_b__living-jungle|1|Chargeur double pile de la canopee|Engine|Canopee|4|4|4|4|0|0|Corps elargi et deux nervures. Meme point d insertion.|0||r01_feed_b|living_jungle
+feed|r01_feed_b__medieval-alchemy|1|Chargeur double pile d'alchimie|Engine|Alchimie|4|4|4|4|0|0|Corps elargi et deux nervures. Meme point d insertion.|0||r01_feed_b|medieval_alchemy
+feed|r01_feed_b__porcelain-fluidics|1|Chargeur double pile de porcelaine|Engine|Porcelaine|4|4|4|4|0|0|Corps elargi et deux nervures. Meme point d insertion.|0||r01_feed_b|porcelain_fluidics
+feed|r01_feed_b__ww1-trench|1|Chargeur double pile des tranchees|Engine|Grande Guerre|4|4|4|4|0|0|Corps elargi et deux nervures. Meme point d insertion.|0||r01_feed_b|ww1_trench
+feed|r01_feed_b__bedrock-miner|1|Chargeur double pile des profondeurs|Engine|Bedrock|4|4|4|4|0|0|Corps elargi et deux nervures. Meme point d insertion.|0||r01_feed_b|bedrock_miner
+feed|r01_feed_b__new-york-noir|1|Chargeur double pile de minuit|Engine|New York noir|4|4|4|4|0|0|Corps elargi et deux nervures. Meme point d insertion.|0||r01_feed_b|new_york_noir
+feed|r01_feed_b__castaway|1|Chargeur double pile des rivages|Engine|Bois de naufrage|4|4|4|4|0|0|Corps elargi et deux nervures. Meme point d insertion.|0||r01_feed_b|castaway
+feed|r01_feed_b__abyss-diver|1|Chargeur double pile des abysses|Engine|Abysses|4|4|4|4|0|0|Corps elargi et deux nervures. Meme point d insertion.|0||r01_feed_b|abyss_diver
+feed|r01_feed_b__roman-inventor|1|Chargeur double pile d'inventeur|Engine|Rome / Inventeur|4|4|4|4|0|0|Corps elargi et deux nervures. Meme point d insertion.|0||r01_feed_b|roman_inventor
+feed|r01_feed_b__dieselpunk|1|Chargeur double pile diesel|Engine|Dieselpunk|4|4|4|4|0|0|Corps elargi et deux nervures. Meme point d insertion.|0||r01_feed_b|dieselpunk
+feed|r01_feed_c__original|1|Chargeur coude d'intervention|Rogue|Intervention|4|4|4|4|0|0|Corps nervure termine par un sabot coude. Col et prise communs.|0||r01_feed_c|original
+feed|r01_feed_c__war-torn|1|Chargeur coude des ruines|Rogue|Ruines|4|4|4|4|0|0|Corps nervure termine par un sabot coude. Col et prise communs.|0||r01_feed_c|war_torn
+feed|r01_feed_c__medieval-forge|1|Chargeur coude de la forge|Rogue|Forge medievale|4|4|4|4|0|0|Corps nervure termine par un sabot coude. Col et prise communs.|0||r01_feed_c|medieval_forge
+feed|r01_feed_c__prehistoric|1|Chargeur coude d'os et de silex|Rogue|Os et silex|4|4|4|4|0|0|Corps nervure termine par un sabot coude. Col et prise communs.|0||r01_feed_c|prehistoric
+feed|r01_feed_c__living-jungle|1|Chargeur coude de la canopee|Rogue|Canopee|4|4|4|4|0|0|Corps nervure termine par un sabot coude. Col et prise communs.|0||r01_feed_c|living_jungle
+feed|r01_feed_c__medieval-alchemy|1|Chargeur coude d'alchimie|Rogue|Alchimie|4|4|4|4|0|0|Corps nervure termine par un sabot coude. Col et prise communs.|0||r01_feed_c|medieval_alchemy
+feed|r01_feed_c__porcelain-fluidics|1|Chargeur coude de porcelaine|Rogue|Porcelaine|4|4|4|4|0|0|Corps nervure termine par un sabot coude. Col et prise communs.|0||r01_feed_c|porcelain_fluidics
+feed|r01_feed_c__ww1-trench|1|Chargeur coude des tranchees|Rogue|Grande Guerre|4|4|4|4|0|0|Corps nervure termine par un sabot coude. Col et prise communs.|0||r01_feed_c|ww1_trench
+feed|r01_feed_c__bedrock-miner|1|Chargeur coude des profondeurs|Rogue|Bedrock|4|4|4|4|0|0|Corps nervure termine par un sabot coude. Col et prise communs.|0||r01_feed_c|bedrock_miner
+feed|r01_feed_c__new-york-noir|1|Chargeur coude de minuit|Rogue|New York noir|4|4|4|4|0|0|Corps nervure termine par un sabot coude. Col et prise communs.|0||r01_feed_c|new_york_noir
+feed|r01_feed_c__castaway|1|Chargeur coude des rivages|Rogue|Bois de naufrage|4|4|4|4|0|0|Corps nervure termine par un sabot coude. Col et prise communs.|0||r01_feed_c|castaway
+feed|r01_feed_c__abyss-diver|1|Chargeur coude des abysses|Rogue|Abysses|4|4|4|4|0|0|Corps nervure termine par un sabot coude. Col et prise communs.|0||r01_feed_c|abyss_diver
+feed|r01_feed_c__roman-inventor|1|Chargeur coude d'inventeur|Rogue|Rome / Inventeur|4|4|4|4|0|0|Corps nervure termine par un sabot coude. Col et prise communs.|0||r01_feed_c|roman_inventor
+feed|r01_feed_c__dieselpunk|1|Chargeur coude diesel|Rogue|Dieselpunk|4|4|4|4|0|0|Corps nervure termine par un sabot coude. Col et prise communs.|0||r01_feed_c|dieselpunk
+feed|r01_feed_d__original|1|Chargeur a tambour bas d'intervention|Fortress|Intervention|4|4|4|4|0|0|Tambour sous une prise etroite. Col et prise communs.|0||r01_feed_d|original
+feed|r01_feed_d__war-torn|1|Chargeur a tambour bas des ruines|Fortress|Ruines|4|4|4|4|0|0|Tambour sous une prise etroite. Col et prise communs.|0||r01_feed_d|war_torn
+feed|r01_feed_d__medieval-forge|1|Chargeur a tambour bas de la forge|Fortress|Forge medievale|4|4|4|4|0|0|Tambour sous une prise etroite. Col et prise communs.|0||r01_feed_d|medieval_forge
+feed|r01_feed_d__prehistoric|1|Chargeur a tambour bas d'os et de silex|Fortress|Os et silex|4|4|4|4|0|0|Tambour sous une prise etroite. Col et prise communs.|0||r01_feed_d|prehistoric
+feed|r01_feed_d__living-jungle|1|Chargeur a tambour bas de la canopee|Fortress|Canopee|4|4|4|4|0|0|Tambour sous une prise etroite. Col et prise communs.|0||r01_feed_d|living_jungle
+feed|r01_feed_d__medieval-alchemy|1|Chargeur a tambour bas d'alchimie|Fortress|Alchimie|4|4|4|4|0|0|Tambour sous une prise etroite. Col et prise communs.|0||r01_feed_d|medieval_alchemy
+feed|r01_feed_d__porcelain-fluidics|1|Chargeur a tambour bas de porcelaine|Fortress|Porcelaine|4|4|4|4|0|0|Tambour sous une prise etroite. Col et prise communs.|0||r01_feed_d|porcelain_fluidics
+feed|r01_feed_d__ww1-trench|1|Chargeur a tambour bas des tranchees|Fortress|Grande Guerre|4|4|4|4|0|0|Tambour sous une prise etroite. Col et prise communs.|0||r01_feed_d|ww1_trench
+feed|r01_feed_d__bedrock-miner|1|Chargeur a tambour bas des profondeurs|Fortress|Bedrock|4|4|4|4|0|0|Tambour sous une prise etroite. Col et prise communs.|0||r01_feed_d|bedrock_miner
+feed|r01_feed_d__new-york-noir|1|Chargeur a tambour bas de minuit|Fortress|New York noir|4|4|4|4|0|0|Tambour sous une prise etroite. Col et prise communs.|0||r01_feed_d|new_york_noir
+feed|r01_feed_d__castaway|1|Chargeur a tambour bas des rivages|Fortress|Bois de naufrage|4|4|4|4|0|0|Tambour sous une prise etroite. Col et prise communs.|0||r01_feed_d|castaway
+feed|r01_feed_d__abyss-diver|1|Chargeur a tambour bas des abysses|Fortress|Abysses|4|4|4|4|0|0|Tambour sous une prise etroite. Col et prise communs.|0||r01_feed_d|abyss_diver
+feed|r01_feed_d__roman-inventor|1|Chargeur a tambour bas d'inventeur|Fortress|Rome / Inventeur|4|4|4|4|0|0|Tambour sous une prise etroite. Col et prise communs.|0||r01_feed_d|roman_inventor
+feed|r01_feed_d__dieselpunk|1|Chargeur a tambour bas diesel|Fortress|Dieselpunk|4|4|4|4|0|0|Tambour sous une prise etroite. Col et prise communs.|0||r01_feed_d|dieselpunk
+chamber|r01_chamber_a__original|1|Culasse a levier d'intervention|Rogue|Intervention|4|4|4|4|0|0|Levier lateral et capot mobile au tir.|0||r01_chamber_a|original
+chamber|r01_chamber_a__war-torn|1|Culasse a levier des ruines|Rogue|Ruines|4|4|4|4|0|0|Levier lateral et capot mobile au tir.|0||r01_chamber_a|war_torn
+chamber|r01_chamber_a__medieval-forge|1|Culasse a levier de la forge|Rogue|Forge medievale|4|4|4|4|0|0|Levier lateral et capot mobile au tir.|0||r01_chamber_a|medieval_forge
+chamber|r01_chamber_a__prehistoric|1|Culasse a levier d'os et de silex|Rogue|Os et silex|4|4|4|4|0|0|Levier lateral et capot mobile au tir.|0||r01_chamber_a|prehistoric
+chamber|r01_chamber_a__living-jungle|1|Culasse a levier de la canopee|Rogue|Canopee|4|4|4|4|0|0|Levier lateral et capot mobile au tir.|0||r01_chamber_a|living_jungle
+chamber|r01_chamber_a__medieval-alchemy|1|Culasse a levier d'alchimie|Rogue|Alchimie|4|4|4|4|0|0|Levier lateral et capot mobile au tir.|0||r01_chamber_a|medieval_alchemy
+chamber|r01_chamber_a__porcelain-fluidics|1|Culasse a levier de porcelaine|Rogue|Porcelaine|4|4|4|4|0|0|Levier lateral et capot mobile au tir.|0||r01_chamber_a|porcelain_fluidics
+chamber|r01_chamber_a__ww1-trench|1|Culasse a levier des tranchees|Rogue|Grande Guerre|4|4|4|4|0|0|Levier lateral et capot mobile au tir.|0||r01_chamber_a|ww1_trench
+chamber|r01_chamber_a__bedrock-miner|1|Culasse a levier des profondeurs|Rogue|Bedrock|4|4|4|4|0|0|Levier lateral et capot mobile au tir.|0||r01_chamber_a|bedrock_miner
+chamber|r01_chamber_a__new-york-noir|1|Culasse a levier de minuit|Rogue|New York noir|4|4|4|4|0|0|Levier lateral et capot mobile au tir.|0||r01_chamber_a|new_york_noir
+chamber|r01_chamber_a__castaway|1|Culasse a levier des rivages|Rogue|Bois de naufrage|4|4|4|4|0|0|Levier lateral et capot mobile au tir.|0||r01_chamber_a|castaway
+chamber|r01_chamber_a__abyss-diver|1|Culasse a levier des abysses|Rogue|Abysses|4|4|4|4|0|0|Levier lateral et capot mobile au tir.|0||r01_chamber_a|abyss_diver
+chamber|r01_chamber_a__roman-inventor|1|Culasse a levier d'inventeur|Rogue|Rome / Inventeur|4|4|4|4|0|0|Levier lateral et capot mobile au tir.|0||r01_chamber_a|roman_inventor
+chamber|r01_chamber_a__dieselpunk|1|Culasse a levier diesel|Rogue|Dieselpunk|4|4|4|4|0|0|Levier lateral et capot mobile au tir.|0||r01_chamber_a|dieselpunk
+chamber|r01_chamber_b__original|1|Culasse a glissiere d'intervention|Anomalous|Intervention|4|4|4|4|0|0|Glissiere renforcee animee avec le meme cycle.|0||r01_chamber_b|original
+chamber|r01_chamber_b__war-torn|1|Culasse a glissiere des ruines|Anomalous|Ruines|4|4|4|4|0|0|Glissiere renforcee animee avec le meme cycle.|0||r01_chamber_b|war_torn
+chamber|r01_chamber_b__medieval-forge|1|Culasse a glissiere de la forge|Anomalous|Forge medievale|4|4|4|4|0|0|Glissiere renforcee animee avec le meme cycle.|0||r01_chamber_b|medieval_forge
+chamber|r01_chamber_b__prehistoric|1|Culasse a glissiere d'os et de silex|Anomalous|Os et silex|4|4|4|4|0|0|Glissiere renforcee animee avec le meme cycle.|0||r01_chamber_b|prehistoric
+chamber|r01_chamber_b__living-jungle|1|Culasse a glissiere de la canopee|Anomalous|Canopee|4|4|4|4|0|0|Glissiere renforcee animee avec le meme cycle.|0||r01_chamber_b|living_jungle
+chamber|r01_chamber_b__medieval-alchemy|1|Culasse a glissiere d'alchimie|Anomalous|Alchimie|4|4|4|4|0|0|Glissiere renforcee animee avec le meme cycle.|0||r01_chamber_b|medieval_alchemy
+chamber|r01_chamber_b__porcelain-fluidics|1|Culasse a glissiere de porcelaine|Anomalous|Porcelaine|4|4|4|4|0|0|Glissiere renforcee animee avec le meme cycle.|0||r01_chamber_b|porcelain_fluidics
+chamber|r01_chamber_b__ww1-trench|1|Culasse a glissiere des tranchees|Anomalous|Grande Guerre|4|4|4|4|0|0|Glissiere renforcee animee avec le meme cycle.|0||r01_chamber_b|ww1_trench
+chamber|r01_chamber_b__bedrock-miner|1|Culasse a glissiere des profondeurs|Anomalous|Bedrock|4|4|4|4|0|0|Glissiere renforcee animee avec le meme cycle.|0||r01_chamber_b|bedrock_miner
+chamber|r01_chamber_b__new-york-noir|1|Culasse a glissiere de minuit|Anomalous|New York noir|4|4|4|4|0|0|Glissiere renforcee animee avec le meme cycle.|0||r01_chamber_b|new_york_noir
+chamber|r01_chamber_b__castaway|1|Culasse a glissiere des rivages|Anomalous|Bois de naufrage|4|4|4|4|0|0|Glissiere renforcee animee avec le meme cycle.|0||r01_chamber_b|castaway
+chamber|r01_chamber_b__abyss-diver|1|Culasse a glissiere des abysses|Anomalous|Abysses|4|4|4|4|0|0|Glissiere renforcee animee avec le meme cycle.|0||r01_chamber_b|abyss_diver
+chamber|r01_chamber_b__roman-inventor|1|Culasse a glissiere d'inventeur|Anomalous|Rome / Inventeur|4|4|4|4|0|0|Glissiere renforcee animee avec le meme cycle.|0||r01_chamber_b|roman_inventor
+chamber|r01_chamber_b__dieselpunk|1|Culasse a glissiere diesel|Anomalous|Dieselpunk|4|4|4|4|0|0|Glissiere renforcee animee avec le meme cycle.|0||r01_chamber_b|dieselpunk
+chamber|r01_chamber_c__original|1|Culasse a anneau d'intervention|Predator|Intervention|4|4|4|4|0|0|Anneau de traction ouvert sur le chariot mobile.|0||r01_chamber_c|original
+chamber|r01_chamber_c__war-torn|1|Culasse a anneau des ruines|Predator|Ruines|4|4|4|4|0|0|Anneau de traction ouvert sur le chariot mobile.|0||r01_chamber_c|war_torn
+chamber|r01_chamber_c__medieval-forge|1|Culasse a anneau de la forge|Predator|Forge medievale|4|4|4|4|0|0|Anneau de traction ouvert sur le chariot mobile.|0||r01_chamber_c|medieval_forge
+chamber|r01_chamber_c__prehistoric|1|Culasse a anneau d'os et de silex|Predator|Os et silex|4|4|4|4|0|0|Anneau de traction ouvert sur le chariot mobile.|0||r01_chamber_c|prehistoric
+chamber|r01_chamber_c__living-jungle|1|Culasse a anneau de la canopee|Predator|Canopee|4|4|4|4|0|0|Anneau de traction ouvert sur le chariot mobile.|0||r01_chamber_c|living_jungle
+chamber|r01_chamber_c__medieval-alchemy|1|Culasse a anneau d'alchimie|Predator|Alchimie|4|4|4|4|0|0|Anneau de traction ouvert sur le chariot mobile.|0||r01_chamber_c|medieval_alchemy
+chamber|r01_chamber_c__porcelain-fluidics|1|Culasse a anneau de porcelaine|Predator|Porcelaine|4|4|4|4|0|0|Anneau de traction ouvert sur le chariot mobile.|0||r01_chamber_c|porcelain_fluidics
+chamber|r01_chamber_c__ww1-trench|1|Culasse a anneau des tranchees|Predator|Grande Guerre|4|4|4|4|0|0|Anneau de traction ouvert sur le chariot mobile.|0||r01_chamber_c|ww1_trench
+chamber|r01_chamber_c__bedrock-miner|1|Culasse a anneau des profondeurs|Predator|Bedrock|4|4|4|4|0|0|Anneau de traction ouvert sur le chariot mobile.|0||r01_chamber_c|bedrock_miner
+chamber|r01_chamber_c__new-york-noir|1|Culasse a anneau de minuit|Predator|New York noir|4|4|4|4|0|0|Anneau de traction ouvert sur le chariot mobile.|0||r01_chamber_c|new_york_noir
+chamber|r01_chamber_c__castaway|1|Culasse a anneau des rivages|Predator|Bois de naufrage|4|4|4|4|0|0|Anneau de traction ouvert sur le chariot mobile.|0||r01_chamber_c|castaway
+chamber|r01_chamber_c__abyss-diver|1|Culasse a anneau des abysses|Predator|Abysses|4|4|4|4|0|0|Anneau de traction ouvert sur le chariot mobile.|0||r01_chamber_c|abyss_diver
+chamber|r01_chamber_c__roman-inventor|1|Culasse a anneau d'inventeur|Predator|Rome / Inventeur|4|4|4|4|0|0|Anneau de traction ouvert sur le chariot mobile.|0||r01_chamber_c|roman_inventor
+chamber|r01_chamber_c__dieselpunk|1|Culasse a anneau diesel|Predator|Dieselpunk|4|4|4|4|0|0|Anneau de traction ouvert sur le chariot mobile.|0||r01_chamber_c|dieselpunk
+chamber|r01_chamber_d__original|1|Culasse a double piston d'intervention|Engine|Intervention|4|4|4|4|0|0|Deux tiges de guidage et un capot de protection mobile.|0||r01_chamber_d|original
+chamber|r01_chamber_d__war-torn|1|Culasse a double piston des ruines|Engine|Ruines|4|4|4|4|0|0|Deux tiges de guidage et un capot de protection mobile.|0||r01_chamber_d|war_torn
+chamber|r01_chamber_d__medieval-forge|1|Culasse a double piston de la forge|Engine|Forge medievale|4|4|4|4|0|0|Deux tiges de guidage et un capot de protection mobile.|0||r01_chamber_d|medieval_forge
+chamber|r01_chamber_d__prehistoric|1|Culasse a double piston d'os et de silex|Engine|Os et silex|4|4|4|4|0|0|Deux tiges de guidage et un capot de protection mobile.|0||r01_chamber_d|prehistoric
+chamber|r01_chamber_d__living-jungle|1|Culasse a double piston de la canopee|Engine|Canopee|4|4|4|4|0|0|Deux tiges de guidage et un capot de protection mobile.|0||r01_chamber_d|living_jungle
+chamber|r01_chamber_d__medieval-alchemy|1|Culasse a double piston d'alchimie|Engine|Alchimie|4|4|4|4|0|0|Deux tiges de guidage et un capot de protection mobile.|0||r01_chamber_d|medieval_alchemy
+chamber|r01_chamber_d__porcelain-fluidics|1|Culasse a double piston de porcelaine|Engine|Porcelaine|4|4|4|4|0|0|Deux tiges de guidage et un capot de protection mobile.|0||r01_chamber_d|porcelain_fluidics
+chamber|r01_chamber_d__ww1-trench|1|Culasse a double piston des tranchees|Engine|Grande Guerre|4|4|4|4|0|0|Deux tiges de guidage et un capot de protection mobile.|0||r01_chamber_d|ww1_trench
+chamber|r01_chamber_d__bedrock-miner|1|Culasse a double piston des profondeurs|Engine|Bedrock|4|4|4|4|0|0|Deux tiges de guidage et un capot de protection mobile.|0||r01_chamber_d|bedrock_miner
+chamber|r01_chamber_d__new-york-noir|1|Culasse a double piston de minuit|Engine|New York noir|4|4|4|4|0|0|Deux tiges de guidage et un capot de protection mobile.|0||r01_chamber_d|new_york_noir
+chamber|r01_chamber_d__castaway|1|Culasse a double piston des rivages|Engine|Bois de naufrage|4|4|4|4|0|0|Deux tiges de guidage et un capot de protection mobile.|0||r01_chamber_d|castaway
+chamber|r01_chamber_d__abyss-diver|1|Culasse a double piston des abysses|Engine|Abysses|4|4|4|4|0|0|Deux tiges de guidage et un capot de protection mobile.|0||r01_chamber_d|abyss_diver
+chamber|r01_chamber_d__roman-inventor|1|Culasse a double piston d'inventeur|Engine|Rome / Inventeur|4|4|4|4|0|0|Deux tiges de guidage et un capot de protection mobile.|0||r01_chamber_d|roman_inventor
+chamber|r01_chamber_d__dieselpunk|1|Culasse a double piston diesel|Engine|Dieselpunk|4|4|4|4|0|0|Deux tiges de guidage et un capot de protection mobile.|0||r01_chamber_d|dieselpunk
+ammo|r01_ammo_a__original|1|Cassette balistique d'intervention|Baseline|Intervention|4|4|4|4|0|0|Cartouches visibles dans une cassette laterale.|0||r01_ammo_a|original
+ammo|r01_ammo_a__war-torn|1|Cassette balistique des ruines|Baseline|Ruines|4|4|4|4|0|0|Cartouches visibles dans une cassette laterale.|0||r01_ammo_a|war_torn
+ammo|r01_ammo_a__medieval-forge|1|Cassette balistique de la forge|Baseline|Forge medievale|4|4|4|4|0|0|Cartouches visibles dans une cassette laterale.|0||r01_ammo_a|medieval_forge
+ammo|r01_ammo_a__prehistoric|1|Cassette balistique d'os et de silex|Baseline|Os et silex|4|4|4|4|0|0|Cartouches visibles dans une cassette laterale.|0||r01_ammo_a|prehistoric
+ammo|r01_ammo_a__living-jungle|1|Cassette balistique de la canopee|Baseline|Canopee|4|4|4|4|0|0|Cartouches visibles dans une cassette laterale.|0||r01_ammo_a|living_jungle
+ammo|r01_ammo_a__medieval-alchemy|1|Cassette balistique d'alchimie|Baseline|Alchimie|4|4|4|4|0|0|Cartouches visibles dans une cassette laterale.|0||r01_ammo_a|medieval_alchemy
+ammo|r01_ammo_a__porcelain-fluidics|1|Cassette balistique de porcelaine|Baseline|Porcelaine|4|4|4|4|0|0|Cartouches visibles dans une cassette laterale.|0||r01_ammo_a|porcelain_fluidics
+ammo|r01_ammo_a__ww1-trench|1|Cassette balistique des tranchees|Baseline|Grande Guerre|4|4|4|4|0|0|Cartouches visibles dans une cassette laterale.|0||r01_ammo_a|ww1_trench
+ammo|r01_ammo_a__bedrock-miner|1|Cassette balistique des profondeurs|Baseline|Bedrock|4|4|4|4|0|0|Cartouches visibles dans une cassette laterale.|0||r01_ammo_a|bedrock_miner
+ammo|r01_ammo_a__new-york-noir|1|Cassette balistique de minuit|Baseline|New York noir|4|4|4|4|0|0|Cartouches visibles dans une cassette laterale.|0||r01_ammo_a|new_york_noir
+ammo|r01_ammo_a__castaway|1|Cassette balistique des rivages|Baseline|Bois de naufrage|4|4|4|4|0|0|Cartouches visibles dans une cassette laterale.|0||r01_ammo_a|castaway
+ammo|r01_ammo_a__abyss-diver|1|Cassette balistique des abysses|Baseline|Abysses|4|4|4|4|0|0|Cartouches visibles dans une cassette laterale.|0||r01_ammo_a|abyss_diver
+ammo|r01_ammo_a__roman-inventor|1|Cassette balistique d'inventeur|Baseline|Rome / Inventeur|4|4|4|4|0|0|Cartouches visibles dans une cassette laterale.|0||r01_ammo_a|roman_inventor
+ammo|r01_ammo_a__dieselpunk|1|Cassette balistique diesel|Baseline|Dieselpunk|4|4|4|4|0|0|Cartouches visibles dans une cassette laterale.|0||r01_ammo_a|dieselpunk
+ammo|r01_ammo_b__original|1|Cassette energetique d'intervention|Engine|Intervention|4|4|4|4|0|0|Cellules encastrees et indicateur de charge.|0||r01_ammo_b|original
+ammo|r01_ammo_b__war-torn|1|Cassette energetique des ruines|Engine|Ruines|4|4|4|4|0|0|Cellules encastrees et indicateur de charge.|0||r01_ammo_b|war_torn
+ammo|r01_ammo_b__medieval-forge|1|Cassette energetique de la forge|Engine|Forge medievale|4|4|4|4|0|0|Cellules encastrees et indicateur de charge.|0||r01_ammo_b|medieval_forge
+ammo|r01_ammo_b__prehistoric|1|Cassette energetique d'os et de silex|Engine|Os et silex|4|4|4|4|0|0|Cellules encastrees et indicateur de charge.|0||r01_ammo_b|prehistoric
+ammo|r01_ammo_b__living-jungle|1|Cassette energetique de la canopee|Engine|Canopee|4|4|4|4|0|0|Cellules encastrees et indicateur de charge.|0||r01_ammo_b|living_jungle
+ammo|r01_ammo_b__medieval-alchemy|1|Cassette energetique d'alchimie|Engine|Alchimie|4|4|4|4|0|0|Cellules encastrees et indicateur de charge.|0||r01_ammo_b|medieval_alchemy
+ammo|r01_ammo_b__porcelain-fluidics|1|Cassette energetique de porcelaine|Engine|Porcelaine|4|4|4|4|0|0|Cellules encastrees et indicateur de charge.|0||r01_ammo_b|porcelain_fluidics
+ammo|r01_ammo_b__ww1-trench|1|Cassette energetique des tranchees|Engine|Grande Guerre|4|4|4|4|0|0|Cellules encastrees et indicateur de charge.|0||r01_ammo_b|ww1_trench
+ammo|r01_ammo_b__bedrock-miner|1|Cassette energetique des profondeurs|Engine|Bedrock|4|4|4|4|0|0|Cellules encastrees et indicateur de charge.|0||r01_ammo_b|bedrock_miner
+ammo|r01_ammo_b__new-york-noir|1|Cassette energetique de minuit|Engine|New York noir|4|4|4|4|0|0|Cellules encastrees et indicateur de charge.|0||r01_ammo_b|new_york_noir
+ammo|r01_ammo_b__castaway|1|Cassette energetique des rivages|Engine|Bois de naufrage|4|4|4|4|0|0|Cellules encastrees et indicateur de charge.|0||r01_ammo_b|castaway
+ammo|r01_ammo_b__abyss-diver|1|Cassette energetique des abysses|Engine|Abysses|4|4|4|4|0|0|Cellules encastrees et indicateur de charge.|0||r01_ammo_b|abyss_diver
+ammo|r01_ammo_b__roman-inventor|1|Cassette energetique d'inventeur|Engine|Rome / Inventeur|4|4|4|4|0|0|Cellules encastrees et indicateur de charge.|0||r01_ammo_b|roman_inventor
+ammo|r01_ammo_b__dieselpunk|1|Cassette energetique diesel|Engine|Dieselpunk|4|4|4|4|0|0|Cellules encastrees et indicateur de charge.|0||r01_ammo_b|dieselpunk
+ammo|r01_ammo_c__original|1|Cassette bi-tube d'intervention|Rogue|Intervention|4|4|4|4|0|0|Deux tubes horizontaux retenus par un etrier ouvert.|0||r01_ammo_c|original
+ammo|r01_ammo_c__war-torn|1|Cassette bi-tube des ruines|Rogue|Ruines|4|4|4|4|0|0|Deux tubes horizontaux retenus par un etrier ouvert.|0||r01_ammo_c|war_torn
+ammo|r01_ammo_c__medieval-forge|1|Cassette bi-tube de la forge|Rogue|Forge medievale|4|4|4|4|0|0|Deux tubes horizontaux retenus par un etrier ouvert.|0||r01_ammo_c|medieval_forge
+ammo|r01_ammo_c__prehistoric|1|Cassette bi-tube d'os et de silex|Rogue|Os et silex|4|4|4|4|0|0|Deux tubes horizontaux retenus par un etrier ouvert.|0||r01_ammo_c|prehistoric
+ammo|r01_ammo_c__living-jungle|1|Cassette bi-tube de la canopee|Rogue|Canopee|4|4|4|4|0|0|Deux tubes horizontaux retenus par un etrier ouvert.|0||r01_ammo_c|living_jungle
+ammo|r01_ammo_c__medieval-alchemy|1|Cassette bi-tube d'alchimie|Rogue|Alchimie|4|4|4|4|0|0|Deux tubes horizontaux retenus par un etrier ouvert.|0||r01_ammo_c|medieval_alchemy
+ammo|r01_ammo_c__porcelain-fluidics|1|Cassette bi-tube de porcelaine|Rogue|Porcelaine|4|4|4|4|0|0|Deux tubes horizontaux retenus par un etrier ouvert.|0||r01_ammo_c|porcelain_fluidics
+ammo|r01_ammo_c__ww1-trench|1|Cassette bi-tube des tranchees|Rogue|Grande Guerre|4|4|4|4|0|0|Deux tubes horizontaux retenus par un etrier ouvert.|0||r01_ammo_c|ww1_trench
+ammo|r01_ammo_c__bedrock-miner|1|Cassette bi-tube des profondeurs|Rogue|Bedrock|4|4|4|4|0|0|Deux tubes horizontaux retenus par un etrier ouvert.|0||r01_ammo_c|bedrock_miner
+ammo|r01_ammo_c__new-york-noir|1|Cassette bi-tube de minuit|Rogue|New York noir|4|4|4|4|0|0|Deux tubes horizontaux retenus par un etrier ouvert.|0||r01_ammo_c|new_york_noir
+ammo|r01_ammo_c__castaway|1|Cassette bi-tube des rivages|Rogue|Bois de naufrage|4|4|4|4|0|0|Deux tubes horizontaux retenus par un etrier ouvert.|0||r01_ammo_c|castaway
+ammo|r01_ammo_c__abyss-diver|1|Cassette bi-tube des abysses|Rogue|Abysses|4|4|4|4|0|0|Deux tubes horizontaux retenus par un etrier ouvert.|0||r01_ammo_c|abyss_diver
+ammo|r01_ammo_c__roman-inventor|1|Cassette bi-tube d'inventeur|Rogue|Rome / Inventeur|4|4|4|4|0|0|Deux tubes horizontaux retenus par un etrier ouvert.|0||r01_ammo_c|roman_inventor
+ammo|r01_ammo_c__dieselpunk|1|Cassette bi-tube diesel|Rogue|Dieselpunk|4|4|4|4|0|0|Deux tubes horizontaux retenus par un etrier ouvert.|0||r01_ammo_c|dieselpunk
+ammo|r01_ammo_d__original|1|Bloc triple chambre d'intervention|Fortress|Intervention|4|4|4|4|0|0|Trois chambres hexagonales avec leur cerclage frontal.|0||r01_ammo_d|original
+ammo|r01_ammo_d__war-torn|1|Bloc triple chambre des ruines|Fortress|Ruines|4|4|4|4|0|0|Trois chambres hexagonales avec leur cerclage frontal.|0||r01_ammo_d|war_torn
+ammo|r01_ammo_d__medieval-forge|1|Bloc triple chambre de la forge|Fortress|Forge medievale|4|4|4|4|0|0|Trois chambres hexagonales avec leur cerclage frontal.|0||r01_ammo_d|medieval_forge
+ammo|r01_ammo_d__prehistoric|1|Bloc triple chambre d'os et de silex|Fortress|Os et silex|4|4|4|4|0|0|Trois chambres hexagonales avec leur cerclage frontal.|0||r01_ammo_d|prehistoric
+ammo|r01_ammo_d__living-jungle|1|Bloc triple chambre de la canopee|Fortress|Canopee|4|4|4|4|0|0|Trois chambres hexagonales avec leur cerclage frontal.|0||r01_ammo_d|living_jungle
+ammo|r01_ammo_d__medieval-alchemy|1|Bloc triple chambre d'alchimie|Fortress|Alchimie|4|4|4|4|0|0|Trois chambres hexagonales avec leur cerclage frontal.|0||r01_ammo_d|medieval_alchemy
+ammo|r01_ammo_d__porcelain-fluidics|1|Bloc triple chambre de porcelaine|Fortress|Porcelaine|4|4|4|4|0|0|Trois chambres hexagonales avec leur cerclage frontal.|0||r01_ammo_d|porcelain_fluidics
+ammo|r01_ammo_d__ww1-trench|1|Bloc triple chambre des tranchees|Fortress|Grande Guerre|4|4|4|4|0|0|Trois chambres hexagonales avec leur cerclage frontal.|0||r01_ammo_d|ww1_trench
+ammo|r01_ammo_d__bedrock-miner|1|Bloc triple chambre des profondeurs|Fortress|Bedrock|4|4|4|4|0|0|Trois chambres hexagonales avec leur cerclage frontal.|0||r01_ammo_d|bedrock_miner
+ammo|r01_ammo_d__new-york-noir|1|Bloc triple chambre de minuit|Fortress|New York noir|4|4|4|4|0|0|Trois chambres hexagonales avec leur cerclage frontal.|0||r01_ammo_d|new_york_noir
+ammo|r01_ammo_d__castaway|1|Bloc triple chambre des rivages|Fortress|Bois de naufrage|4|4|4|4|0|0|Trois chambres hexagonales avec leur cerclage frontal.|0||r01_ammo_d|castaway
+ammo|r01_ammo_d__abyss-diver|1|Bloc triple chambre des abysses|Fortress|Abysses|4|4|4|4|0|0|Trois chambres hexagonales avec leur cerclage frontal.|0||r01_ammo_d|abyss_diver
+ammo|r01_ammo_d__roman-inventor|1|Bloc triple chambre d'inventeur|Fortress|Rome / Inventeur|4|4|4|4|0|0|Trois chambres hexagonales avec leur cerclage frontal.|0||r01_ammo_d|roman_inventor
+ammo|r01_ammo_d__dieselpunk|1|Bloc triple chambre diesel|Fortress|Dieselpunk|4|4|4|4|0|0|Trois chambres hexagonales avec leur cerclage frontal.|0||r01_ammo_d|dieselpunk
+projectile|r01_projectile_a__original|1|Porte-flechettes d'intervention|Predator|Intervention|4|4|4|4|0|0|Trois flechettes retenues dans un berceau.|0||r01_projectile_a|original
+projectile|r01_projectile_a__war-torn|1|Porte-flechettes des ruines|Predator|Ruines|4|4|4|4|0|0|Trois flechettes retenues dans un berceau.|0||r01_projectile_a|war_torn
+projectile|r01_projectile_a__medieval-forge|1|Porte-flechettes de la forge|Predator|Forge medievale|4|4|4|4|0|0|Trois flechettes retenues dans un berceau.|0||r01_projectile_a|medieval_forge
+projectile|r01_projectile_a__prehistoric|1|Porte-flechettes d'os et de silex|Predator|Os et silex|4|4|4|4|0|0|Trois flechettes retenues dans un berceau.|0||r01_projectile_a|prehistoric
+projectile|r01_projectile_a__living-jungle|1|Porte-flechettes de la canopee|Predator|Canopee|4|4|4|4|0|0|Trois flechettes retenues dans un berceau.|0||r01_projectile_a|living_jungle
+projectile|r01_projectile_a__medieval-alchemy|1|Porte-flechettes d'alchimie|Predator|Alchimie|4|4|4|4|0|0|Trois flechettes retenues dans un berceau.|0||r01_projectile_a|medieval_alchemy
+projectile|r01_projectile_a__porcelain-fluidics|1|Porte-flechettes de porcelaine|Predator|Porcelaine|4|4|4|4|0|0|Trois flechettes retenues dans un berceau.|0||r01_projectile_a|porcelain_fluidics
+projectile|r01_projectile_a__ww1-trench|1|Porte-flechettes des tranchees|Predator|Grande Guerre|4|4|4|4|0|0|Trois flechettes retenues dans un berceau.|0||r01_projectile_a|ww1_trench
+projectile|r01_projectile_a__bedrock-miner|1|Porte-flechettes des profondeurs|Predator|Bedrock|4|4|4|4|0|0|Trois flechettes retenues dans un berceau.|0||r01_projectile_a|bedrock_miner
+projectile|r01_projectile_a__new-york-noir|1|Porte-flechettes de minuit|Predator|New York noir|4|4|4|4|0|0|Trois flechettes retenues dans un berceau.|0||r01_projectile_a|new_york_noir
+projectile|r01_projectile_a__castaway|1|Porte-flechettes des rivages|Predator|Bois de naufrage|4|4|4|4|0|0|Trois flechettes retenues dans un berceau.|0||r01_projectile_a|castaway
+projectile|r01_projectile_a__abyss-diver|1|Porte-flechettes des abysses|Predator|Abysses|4|4|4|4|0|0|Trois flechettes retenues dans un berceau.|0||r01_projectile_a|abyss_diver
+projectile|r01_projectile_a__roman-inventor|1|Porte-flechettes d'inventeur|Predator|Rome / Inventeur|4|4|4|4|0|0|Trois flechettes retenues dans un berceau.|0||r01_projectile_a|roman_inventor
+projectile|r01_projectile_a__dieselpunk|1|Porte-flechettes diesel|Predator|Dieselpunk|4|4|4|4|0|0|Trois flechettes retenues dans un berceau.|0||r01_projectile_a|dieselpunk
+projectile|r01_projectile_b__original|1|Porte-ampoules d'intervention|Anomalous|Intervention|4|4|4|4|0|0|Deux ampoules sous un capot de protection.|0||r01_projectile_b|original
+projectile|r01_projectile_b__war-torn|1|Porte-ampoules des ruines|Anomalous|Ruines|4|4|4|4|0|0|Deux ampoules sous un capot de protection.|0||r01_projectile_b|war_torn
+projectile|r01_projectile_b__medieval-forge|1|Porte-ampoules de la forge|Anomalous|Forge medievale|4|4|4|4|0|0|Deux ampoules sous un capot de protection.|0||r01_projectile_b|medieval_forge
+projectile|r01_projectile_b__prehistoric|1|Porte-ampoules d'os et de silex|Anomalous|Os et silex|4|4|4|4|0|0|Deux ampoules sous un capot de protection.|0||r01_projectile_b|prehistoric
+projectile|r01_projectile_b__living-jungle|1|Porte-ampoules de la canopee|Anomalous|Canopee|4|4|4|4|0|0|Deux ampoules sous un capot de protection.|0||r01_projectile_b|living_jungle
+projectile|r01_projectile_b__medieval-alchemy|1|Porte-ampoules d'alchimie|Anomalous|Alchimie|4|4|4|4|0|0|Deux ampoules sous un capot de protection.|0||r01_projectile_b|medieval_alchemy
+projectile|r01_projectile_b__porcelain-fluidics|1|Porte-ampoules de porcelaine|Anomalous|Porcelaine|4|4|4|4|0|0|Deux ampoules sous un capot de protection.|0||r01_projectile_b|porcelain_fluidics
+projectile|r01_projectile_b__ww1-trench|1|Porte-ampoules des tranchees|Anomalous|Grande Guerre|4|4|4|4|0|0|Deux ampoules sous un capot de protection.|0||r01_projectile_b|ww1_trench
+projectile|r01_projectile_b__bedrock-miner|1|Porte-ampoules des profondeurs|Anomalous|Bedrock|4|4|4|4|0|0|Deux ampoules sous un capot de protection.|0||r01_projectile_b|bedrock_miner
+projectile|r01_projectile_b__new-york-noir|1|Porte-ampoules de minuit|Anomalous|New York noir|4|4|4|4|0|0|Deux ampoules sous un capot de protection.|0||r01_projectile_b|new_york_noir
+projectile|r01_projectile_b__castaway|1|Porte-ampoules des rivages|Anomalous|Bois de naufrage|4|4|4|4|0|0|Deux ampoules sous un capot de protection.|0||r01_projectile_b|castaway
+projectile|r01_projectile_b__abyss-diver|1|Porte-ampoules des abysses|Anomalous|Abysses|4|4|4|4|0|0|Deux ampoules sous un capot de protection.|0||r01_projectile_b|abyss_diver
+projectile|r01_projectile_b__roman-inventor|1|Porte-ampoules d'inventeur|Anomalous|Rome / Inventeur|4|4|4|4|0|0|Deux ampoules sous un capot de protection.|0||r01_projectile_b|roman_inventor
+projectile|r01_projectile_b__dieselpunk|1|Porte-ampoules diesel|Anomalous|Dieselpunk|4|4|4|4|0|0|Deux ampoules sous un capot de protection.|0||r01_projectile_b|dieselpunk
+projectile|r01_projectile_c__original|1|Berceau monodard d'intervention|Baseline|Intervention|4|4|4|4|0|0|Un dard large retenu par deux attaches et une pointe conique.|0||r01_projectile_c|original
+projectile|r01_projectile_c__war-torn|1|Berceau monodard des ruines|Baseline|Ruines|4|4|4|4|0|0|Un dard large retenu par deux attaches et une pointe conique.|0||r01_projectile_c|war_torn
+projectile|r01_projectile_c__medieval-forge|1|Berceau monodard de la forge|Baseline|Forge medievale|4|4|4|4|0|0|Un dard large retenu par deux attaches et une pointe conique.|0||r01_projectile_c|medieval_forge
+projectile|r01_projectile_c__prehistoric|1|Berceau monodard d'os et de silex|Baseline|Os et silex|4|4|4|4|0|0|Un dard large retenu par deux attaches et une pointe conique.|0||r01_projectile_c|prehistoric
+projectile|r01_projectile_c__living-jungle|1|Berceau monodard de la canopee|Baseline|Canopee|4|4|4|4|0|0|Un dard large retenu par deux attaches et une pointe conique.|0||r01_projectile_c|living_jungle
+projectile|r01_projectile_c__medieval-alchemy|1|Berceau monodard d'alchimie|Baseline|Alchimie|4|4|4|4|0|0|Un dard large retenu par deux attaches et une pointe conique.|0||r01_projectile_c|medieval_alchemy
+projectile|r01_projectile_c__porcelain-fluidics|1|Berceau monodard de porcelaine|Baseline|Porcelaine|4|4|4|4|0|0|Un dard large retenu par deux attaches et une pointe conique.|0||r01_projectile_c|porcelain_fluidics
+projectile|r01_projectile_c__ww1-trench|1|Berceau monodard des tranchees|Baseline|Grande Guerre|4|4|4|4|0|0|Un dard large retenu par deux attaches et une pointe conique.|0||r01_projectile_c|ww1_trench
+projectile|r01_projectile_c__bedrock-miner|1|Berceau monodard des profondeurs|Baseline|Bedrock|4|4|4|4|0|0|Un dard large retenu par deux attaches et une pointe conique.|0||r01_projectile_c|bedrock_miner
+projectile|r01_projectile_c__new-york-noir|1|Berceau monodard de minuit|Baseline|New York noir|4|4|4|4|0|0|Un dard large retenu par deux attaches et une pointe conique.|0||r01_projectile_c|new_york_noir
+projectile|r01_projectile_c__castaway|1|Berceau monodard des rivages|Baseline|Bois de naufrage|4|4|4|4|0|0|Un dard large retenu par deux attaches et une pointe conique.|0||r01_projectile_c|castaway
+projectile|r01_projectile_c__abyss-diver|1|Berceau monodard des abysses|Baseline|Abysses|4|4|4|4|0|0|Un dard large retenu par deux attaches et une pointe conique.|0||r01_projectile_c|abyss_diver
+projectile|r01_projectile_c__roman-inventor|1|Berceau monodard d'inventeur|Baseline|Rome / Inventeur|4|4|4|4|0|0|Un dard large retenu par deux attaches et une pointe conique.|0||r01_projectile_c|roman_inventor
+projectile|r01_projectile_c__dieselpunk|1|Berceau monodard diesel|Baseline|Dieselpunk|4|4|4|4|0|0|Un dard large retenu par deux attaches et une pointe conique.|0||r01_projectile_c|dieselpunk
+projectile|r01_projectile_d__original|1|Rack a disques d'intervention|Fortress|Intervention|4|4|4|4|0|0|Quatre capsules circulaires dans un casier ouvert.|0||r01_projectile_d|original
+projectile|r01_projectile_d__war-torn|1|Rack a disques des ruines|Fortress|Ruines|4|4|4|4|0|0|Quatre capsules circulaires dans un casier ouvert.|0||r01_projectile_d|war_torn
+projectile|r01_projectile_d__medieval-forge|1|Rack a disques de la forge|Fortress|Forge medievale|4|4|4|4|0|0|Quatre capsules circulaires dans un casier ouvert.|0||r01_projectile_d|medieval_forge
+projectile|r01_projectile_d__prehistoric|1|Rack a disques d'os et de silex|Fortress|Os et silex|4|4|4|4|0|0|Quatre capsules circulaires dans un casier ouvert.|0||r01_projectile_d|prehistoric
+projectile|r01_projectile_d__living-jungle|1|Rack a disques de la canopee|Fortress|Canopee|4|4|4|4|0|0|Quatre capsules circulaires dans un casier ouvert.|0||r01_projectile_d|living_jungle
+projectile|r01_projectile_d__medieval-alchemy|1|Rack a disques d'alchimie|Fortress|Alchimie|4|4|4|4|0|0|Quatre capsules circulaires dans un casier ouvert.|0||r01_projectile_d|medieval_alchemy
+projectile|r01_projectile_d__porcelain-fluidics|1|Rack a disques de porcelaine|Fortress|Porcelaine|4|4|4|4|0|0|Quatre capsules circulaires dans un casier ouvert.|0||r01_projectile_d|porcelain_fluidics
+projectile|r01_projectile_d__ww1-trench|1|Rack a disques des tranchees|Fortress|Grande Guerre|4|4|4|4|0|0|Quatre capsules circulaires dans un casier ouvert.|0||r01_projectile_d|ww1_trench
+projectile|r01_projectile_d__bedrock-miner|1|Rack a disques des profondeurs|Fortress|Bedrock|4|4|4|4|0|0|Quatre capsules circulaires dans un casier ouvert.|0||r01_projectile_d|bedrock_miner
+projectile|r01_projectile_d__new-york-noir|1|Rack a disques de minuit|Fortress|New York noir|4|4|4|4|0|0|Quatre capsules circulaires dans un casier ouvert.|0||r01_projectile_d|new_york_noir
+projectile|r01_projectile_d__castaway|1|Rack a disques des rivages|Fortress|Bois de naufrage|4|4|4|4|0|0|Quatre capsules circulaires dans un casier ouvert.|0||r01_projectile_d|castaway
+projectile|r01_projectile_d__abyss-diver|1|Rack a disques des abysses|Fortress|Abysses|4|4|4|4|0|0|Quatre capsules circulaires dans un casier ouvert.|0||r01_projectile_d|abyss_diver
+projectile|r01_projectile_d__roman-inventor|1|Rack a disques d'inventeur|Fortress|Rome / Inventeur|4|4|4|4|0|0|Quatre capsules circulaires dans un casier ouvert.|0||r01_projectile_d|roman_inventor
+projectile|r01_projectile_d__dieselpunk|1|Rack a disques diesel|Fortress|Dieselpunk|4|4|4|4|0|0|Quatre capsules circulaires dans un casier ouvert.|0||r01_projectile_d|dieselpunk
+optic|r01_optic_a__original|1|Viseur cadre d'intervention|Predator|Intervention|4|4|4|4|0|0|Cadre rectangulaire et lentille texturee a reflets bleus, sans croix ajoutee.|0||r01_optic_a|original
+optic|r01_optic_a__war-torn|1|Viseur cadre des ruines|Predator|Ruines|4|4|4|4|0|0|Cadre rectangulaire et lentille texturee a reflets bleus, sans croix ajoutee.|0||r01_optic_a|war_torn
+optic|r01_optic_a__medieval-forge|1|Viseur cadre de la forge|Predator|Forge medievale|4|4|4|4|0|0|Cadre rectangulaire et lentille texturee a reflets bleus, sans croix ajoutee.|0||r01_optic_a|medieval_forge
+optic|r01_optic_a__prehistoric|1|Viseur cadre d'os et de silex|Predator|Os et silex|4|4|4|4|0|0|Cadre rectangulaire et lentille texturee a reflets bleus, sans croix ajoutee.|0||r01_optic_a|prehistoric
+optic|r01_optic_a__living-jungle|1|Viseur cadre de la canopee|Predator|Canopee|4|4|4|4|0|0|Cadre rectangulaire et lentille texturee a reflets bleus, sans croix ajoutee.|0||r01_optic_a|living_jungle
+optic|r01_optic_a__medieval-alchemy|1|Viseur cadre d'alchimie|Predator|Alchimie|4|4|4|4|0|0|Cadre rectangulaire et lentille texturee a reflets bleus, sans croix ajoutee.|0||r01_optic_a|medieval_alchemy
+optic|r01_optic_a__porcelain-fluidics|1|Viseur cadre de porcelaine|Predator|Porcelaine|4|4|4|4|0|0|Cadre rectangulaire et lentille texturee a reflets bleus, sans croix ajoutee.|0||r01_optic_a|porcelain_fluidics
+optic|r01_optic_a__ww1-trench|1|Viseur cadre des tranchees|Predator|Grande Guerre|4|4|4|4|0|0|Cadre rectangulaire et lentille texturee a reflets bleus, sans croix ajoutee.|0||r01_optic_a|ww1_trench
+optic|r01_optic_a__bedrock-miner|1|Viseur cadre des profondeurs|Predator|Bedrock|4|4|4|4|0|0|Cadre rectangulaire et lentille texturee a reflets bleus, sans croix ajoutee.|0||r01_optic_a|bedrock_miner
+optic|r01_optic_a__new-york-noir|1|Viseur cadre de minuit|Predator|New York noir|4|4|4|4|0|0|Cadre rectangulaire et lentille texturee a reflets bleus, sans croix ajoutee.|0||r01_optic_a|new_york_noir
+optic|r01_optic_a__castaway|1|Viseur cadre des rivages|Predator|Bois de naufrage|4|4|4|4|0|0|Cadre rectangulaire et lentille texturee a reflets bleus, sans croix ajoutee.|0||r01_optic_a|castaway
+optic|r01_optic_a__abyss-diver|1|Viseur cadre des abysses|Predator|Abysses|4|4|4|4|0|0|Cadre rectangulaire et lentille texturee a reflets bleus, sans croix ajoutee.|0||r01_optic_a|abyss_diver
+optic|r01_optic_a__roman-inventor|1|Viseur cadre d'inventeur|Predator|Rome / Inventeur|4|4|4|4|0|0|Cadre rectangulaire et lentille texturee a reflets bleus, sans croix ajoutee.|0||r01_optic_a|roman_inventor
+optic|r01_optic_a__dieselpunk|1|Viseur cadre diesel|Predator|Dieselpunk|4|4|4|4|0|0|Cadre rectangulaire et lentille texturee a reflets bleus, sans croix ajoutee.|0||r01_optic_a|dieselpunk
+optic|r01_optic_b__original|1|Lunette compacte d'intervention|Predator|Intervention|4|4|4|4|0|0|Deux bagues, oculaire et tourelles de reglage.|0||r01_optic_b|original
+optic|r01_optic_b__war-torn|1|Lunette compacte des ruines|Predator|Ruines|4|4|4|4|0|0|Deux bagues, oculaire et tourelles de reglage.|0||r01_optic_b|war_torn
+optic|r01_optic_b__medieval-forge|1|Lunette compacte de la forge|Predator|Forge medievale|4|4|4|4|0|0|Deux bagues, oculaire et tourelles de reglage.|0||r01_optic_b|medieval_forge
+optic|r01_optic_b__prehistoric|1|Lunette compacte d'os et de silex|Predator|Os et silex|4|4|4|4|0|0|Deux bagues, oculaire et tourelles de reglage.|0||r01_optic_b|prehistoric
+optic|r01_optic_b__living-jungle|1|Lunette compacte de la canopee|Predator|Canopee|4|4|4|4|0|0|Deux bagues, oculaire et tourelles de reglage.|0||r01_optic_b|living_jungle
+optic|r01_optic_b__medieval-alchemy|1|Lunette compacte d'alchimie|Predator|Alchimie|4|4|4|4|0|0|Deux bagues, oculaire et tourelles de reglage.|0||r01_optic_b|medieval_alchemy
+optic|r01_optic_b__porcelain-fluidics|1|Lunette compacte de porcelaine|Predator|Porcelaine|4|4|4|4|0|0|Deux bagues, oculaire et tourelles de reglage.|0||r01_optic_b|porcelain_fluidics
+optic|r01_optic_b__ww1-trench|1|Lunette compacte des tranchees|Predator|Grande Guerre|4|4|4|4|0|0|Deux bagues, oculaire et tourelles de reglage.|0||r01_optic_b|ww1_trench
+optic|r01_optic_b__bedrock-miner|1|Lunette compacte des profondeurs|Predator|Bedrock|4|4|4|4|0|0|Deux bagues, oculaire et tourelles de reglage.|0||r01_optic_b|bedrock_miner
+optic|r01_optic_b__new-york-noir|1|Lunette compacte de minuit|Predator|New York noir|4|4|4|4|0|0|Deux bagues, oculaire et tourelles de reglage.|0||r01_optic_b|new_york_noir
+optic|r01_optic_b__castaway|1|Lunette compacte des rivages|Predator|Bois de naufrage|4|4|4|4|0|0|Deux bagues, oculaire et tourelles de reglage.|0||r01_optic_b|castaway
+optic|r01_optic_b__abyss-diver|1|Lunette compacte des abysses|Predator|Abysses|4|4|4|4|0|0|Deux bagues, oculaire et tourelles de reglage.|0||r01_optic_b|abyss_diver
+optic|r01_optic_b__roman-inventor|1|Lunette compacte d'inventeur|Predator|Rome / Inventeur|4|4|4|4|0|0|Deux bagues, oculaire et tourelles de reglage.|0||r01_optic_b|roman_inventor
+optic|r01_optic_b__dieselpunk|1|Lunette compacte diesel|Predator|Dieselpunk|4|4|4|4|0|0|Deux bagues, oculaire et tourelles de reglage.|0||r01_optic_b|dieselpunk
+optic|r01_optic_c__original|1|Dioptre annulaire d'intervention|Rogue|Intervention|4|4|4|4|0|0|Anneau metallique et verre existant dans une monture ouverte.|0||r01_optic_c|original
+optic|r01_optic_c__war-torn|1|Dioptre annulaire des ruines|Rogue|Ruines|4|4|4|4|0|0|Anneau metallique et verre existant dans une monture ouverte.|0||r01_optic_c|war_torn
+optic|r01_optic_c__medieval-forge|1|Dioptre annulaire de la forge|Rogue|Forge medievale|4|4|4|4|0|0|Anneau metallique et verre existant dans une monture ouverte.|0||r01_optic_c|medieval_forge
+optic|r01_optic_c__prehistoric|1|Dioptre annulaire d'os et de silex|Rogue|Os et silex|4|4|4|4|0|0|Anneau metallique et verre existant dans une monture ouverte.|0||r01_optic_c|prehistoric
+optic|r01_optic_c__living-jungle|1|Dioptre annulaire de la canopee|Rogue|Canopee|4|4|4|4|0|0|Anneau metallique et verre existant dans une monture ouverte.|0||r01_optic_c|living_jungle
+optic|r01_optic_c__medieval-alchemy|1|Dioptre annulaire d'alchimie|Rogue|Alchimie|4|4|4|4|0|0|Anneau metallique et verre existant dans une monture ouverte.|0||r01_optic_c|medieval_alchemy
+optic|r01_optic_c__porcelain-fluidics|1|Dioptre annulaire de porcelaine|Rogue|Porcelaine|4|4|4|4|0|0|Anneau metallique et verre existant dans une monture ouverte.|0||r01_optic_c|porcelain_fluidics
+optic|r01_optic_c__ww1-trench|1|Dioptre annulaire des tranchees|Rogue|Grande Guerre|4|4|4|4|0|0|Anneau metallique et verre existant dans une monture ouverte.|0||r01_optic_c|ww1_trench
+optic|r01_optic_c__bedrock-miner|1|Dioptre annulaire des profondeurs|Rogue|Bedrock|4|4|4|4|0|0|Anneau metallique et verre existant dans une monture ouverte.|0||r01_optic_c|bedrock_miner
+optic|r01_optic_c__new-york-noir|1|Dioptre annulaire de minuit|Rogue|New York noir|4|4|4|4|0|0|Anneau metallique et verre existant dans une monture ouverte.|0||r01_optic_c|new_york_noir
+optic|r01_optic_c__castaway|1|Dioptre annulaire des rivages|Rogue|Bois de naufrage|4|4|4|4|0|0|Anneau metallique et verre existant dans une monture ouverte.|0||r01_optic_c|castaway
+optic|r01_optic_c__abyss-diver|1|Dioptre annulaire des abysses|Rogue|Abysses|4|4|4|4|0|0|Anneau metallique et verre existant dans une monture ouverte.|0||r01_optic_c|abyss_diver
+optic|r01_optic_c__roman-inventor|1|Dioptre annulaire d'inventeur|Rogue|Rome / Inventeur|4|4|4|4|0|0|Anneau metallique et verre existant dans une monture ouverte.|0||r01_optic_c|roman_inventor
+optic|r01_optic_c__dieselpunk|1|Dioptre annulaire diesel|Rogue|Dieselpunk|4|4|4|4|0|0|Anneau metallique et verre existant dans une monture ouverte.|0||r01_optic_c|dieselpunk
+optic|r01_optic_d__original|1|Viseur prismatique d'intervention|Engine|Intervention|4|4|4|4|0|0|Corps octogonal court, verre en retrait et bloc de reglage.|0||r01_optic_d|original
+optic|r01_optic_d__war-torn|1|Viseur prismatique des ruines|Engine|Ruines|4|4|4|4|0|0|Corps octogonal court, verre en retrait et bloc de reglage.|0||r01_optic_d|war_torn
+optic|r01_optic_d__medieval-forge|1|Viseur prismatique de la forge|Engine|Forge medievale|4|4|4|4|0|0|Corps octogonal court, verre en retrait et bloc de reglage.|0||r01_optic_d|medieval_forge
+optic|r01_optic_d__prehistoric|1|Viseur prismatique d'os et de silex|Engine|Os et silex|4|4|4|4|0|0|Corps octogonal court, verre en retrait et bloc de reglage.|0||r01_optic_d|prehistoric
+optic|r01_optic_d__living-jungle|1|Viseur prismatique de la canopee|Engine|Canopee|4|4|4|4|0|0|Corps octogonal court, verre en retrait et bloc de reglage.|0||r01_optic_d|living_jungle
+optic|r01_optic_d__medieval-alchemy|1|Viseur prismatique d'alchimie|Engine|Alchimie|4|4|4|4|0|0|Corps octogonal court, verre en retrait et bloc de reglage.|0||r01_optic_d|medieval_alchemy
+optic|r01_optic_d__porcelain-fluidics|1|Viseur prismatique de porcelaine|Engine|Porcelaine|4|4|4|4|0|0|Corps octogonal court, verre en retrait et bloc de reglage.|0||r01_optic_d|porcelain_fluidics
+optic|r01_optic_d__ww1-trench|1|Viseur prismatique des tranchees|Engine|Grande Guerre|4|4|4|4|0|0|Corps octogonal court, verre en retrait et bloc de reglage.|0||r01_optic_d|ww1_trench
+optic|r01_optic_d__bedrock-miner|1|Viseur prismatique des profondeurs|Engine|Bedrock|4|4|4|4|0|0|Corps octogonal court, verre en retrait et bloc de reglage.|0||r01_optic_d|bedrock_miner
+optic|r01_optic_d__new-york-noir|1|Viseur prismatique de minuit|Engine|New York noir|4|4|4|4|0|0|Corps octogonal court, verre en retrait et bloc de reglage.|0||r01_optic_d|new_york_noir
+optic|r01_optic_d__castaway|1|Viseur prismatique des rivages|Engine|Bois de naufrage|4|4|4|4|0|0|Corps octogonal court, verre en retrait et bloc de reglage.|0||r01_optic_d|castaway
+optic|r01_optic_d__abyss-diver|1|Viseur prismatique des abysses|Engine|Abysses|4|4|4|4|0|0|Corps octogonal court, verre en retrait et bloc de reglage.|0||r01_optic_d|abyss_diver
+optic|r01_optic_d__roman-inventor|1|Viseur prismatique d'inventeur|Engine|Rome / Inventeur|4|4|4|4|0|0|Corps octogonal court, verre en retrait et bloc de reglage.|0||r01_optic_d|roman_inventor
+optic|r01_optic_d__dieselpunk|1|Viseur prismatique diesel|Engine|Dieselpunk|4|4|4|4|0|0|Corps octogonal court, verre en retrait et bloc de reglage.|0||r01_optic_d|dieselpunk
+underbarrel|r01_underbarrel_a__original|1|Poignee inclinee d'intervention|Fortress|Intervention|4|4|4|4|0|0|Prise caoutchouc inclinee sur collier commun.|0||r01_underbarrel_a|original
+underbarrel|r01_underbarrel_a__war-torn|1|Poignee inclinee des ruines|Fortress|Ruines|4|4|4|4|0|0|Prise caoutchouc inclinee sur collier commun.|0||r01_underbarrel_a|war_torn
+underbarrel|r01_underbarrel_a__medieval-forge|1|Poignee inclinee de la forge|Fortress|Forge medievale|4|4|4|4|0|0|Prise caoutchouc inclinee sur collier commun.|0||r01_underbarrel_a|medieval_forge
+underbarrel|r01_underbarrel_a__prehistoric|1|Poignee inclinee d'os et de silex|Fortress|Os et silex|4|4|4|4|0|0|Prise caoutchouc inclinee sur collier commun.|0||r01_underbarrel_a|prehistoric
+underbarrel|r01_underbarrel_a__living-jungle|1|Poignee inclinee de la canopee|Fortress|Canopee|4|4|4|4|0|0|Prise caoutchouc inclinee sur collier commun.|0||r01_underbarrel_a|living_jungle
+underbarrel|r01_underbarrel_a__medieval-alchemy|1|Poignee inclinee d'alchimie|Fortress|Alchimie|4|4|4|4|0|0|Prise caoutchouc inclinee sur collier commun.|0||r01_underbarrel_a|medieval_alchemy
+underbarrel|r01_underbarrel_a__porcelain-fluidics|1|Poignee inclinee de porcelaine|Fortress|Porcelaine|4|4|4|4|0|0|Prise caoutchouc inclinee sur collier commun.|0||r01_underbarrel_a|porcelain_fluidics
+underbarrel|r01_underbarrel_a__ww1-trench|1|Poignee inclinee des tranchees|Fortress|Grande Guerre|4|4|4|4|0|0|Prise caoutchouc inclinee sur collier commun.|0||r01_underbarrel_a|ww1_trench
+underbarrel|r01_underbarrel_a__bedrock-miner|1|Poignee inclinee des profondeurs|Fortress|Bedrock|4|4|4|4|0|0|Prise caoutchouc inclinee sur collier commun.|0||r01_underbarrel_a|bedrock_miner
+underbarrel|r01_underbarrel_a__new-york-noir|1|Poignee inclinee de minuit|Fortress|New York noir|4|4|4|4|0|0|Prise caoutchouc inclinee sur collier commun.|0||r01_underbarrel_a|new_york_noir
+underbarrel|r01_underbarrel_a__castaway|1|Poignee inclinee des rivages|Fortress|Bois de naufrage|4|4|4|4|0|0|Prise caoutchouc inclinee sur collier commun.|0||r01_underbarrel_a|castaway
+underbarrel|r01_underbarrel_a__abyss-diver|1|Poignee inclinee des abysses|Fortress|Abysses|4|4|4|4|0|0|Prise caoutchouc inclinee sur collier commun.|0||r01_underbarrel_a|abyss_diver
+underbarrel|r01_underbarrel_a__roman-inventor|1|Poignee inclinee d'inventeur|Fortress|Rome / Inventeur|4|4|4|4|0|0|Prise caoutchouc inclinee sur collier commun.|0||r01_underbarrel_a|roman_inventor
+underbarrel|r01_underbarrel_a__dieselpunk|1|Poignee inclinee diesel|Fortress|Dieselpunk|4|4|4|4|0|0|Prise caoutchouc inclinee sur collier commun.|0||r01_underbarrel_a|dieselpunk
+underbarrel|r01_underbarrel_b__original|1|Tube auxiliaire d'intervention|Engine|Intervention|4|4|4|4|0|0|Capsule sous canon avec verrou et collier.|0||r01_underbarrel_b|original
+underbarrel|r01_underbarrel_b__war-torn|1|Tube auxiliaire des ruines|Engine|Ruines|4|4|4|4|0|0|Capsule sous canon avec verrou et collier.|0||r01_underbarrel_b|war_torn
+underbarrel|r01_underbarrel_b__medieval-forge|1|Tube auxiliaire de la forge|Engine|Forge medievale|4|4|4|4|0|0|Capsule sous canon avec verrou et collier.|0||r01_underbarrel_b|medieval_forge
+underbarrel|r01_underbarrel_b__prehistoric|1|Tube auxiliaire d'os et de silex|Engine|Os et silex|4|4|4|4|0|0|Capsule sous canon avec verrou et collier.|0||r01_underbarrel_b|prehistoric
+underbarrel|r01_underbarrel_b__living-jungle|1|Tube auxiliaire de la canopee|Engine|Canopee|4|4|4|4|0|0|Capsule sous canon avec verrou et collier.|0||r01_underbarrel_b|living_jungle
+underbarrel|r01_underbarrel_b__medieval-alchemy|1|Tube auxiliaire d'alchimie|Engine|Alchimie|4|4|4|4|0|0|Capsule sous canon avec verrou et collier.|0||r01_underbarrel_b|medieval_alchemy
+underbarrel|r01_underbarrel_b__porcelain-fluidics|1|Tube auxiliaire de porcelaine|Engine|Porcelaine|4|4|4|4|0|0|Capsule sous canon avec verrou et collier.|0||r01_underbarrel_b|porcelain_fluidics
+underbarrel|r01_underbarrel_b__ww1-trench|1|Tube auxiliaire des tranchees|Engine|Grande Guerre|4|4|4|4|0|0|Capsule sous canon avec verrou et collier.|0||r01_underbarrel_b|ww1_trench
+underbarrel|r01_underbarrel_b__bedrock-miner|1|Tube auxiliaire des profondeurs|Engine|Bedrock|4|4|4|4|0|0|Capsule sous canon avec verrou et collier.|0||r01_underbarrel_b|bedrock_miner
+underbarrel|r01_underbarrel_b__new-york-noir|1|Tube auxiliaire de minuit|Engine|New York noir|4|4|4|4|0|0|Capsule sous canon avec verrou et collier.|0||r01_underbarrel_b|new_york_noir
+underbarrel|r01_underbarrel_b__castaway|1|Tube auxiliaire des rivages|Engine|Bois de naufrage|4|4|4|4|0|0|Capsule sous canon avec verrou et collier.|0||r01_underbarrel_b|castaway
+underbarrel|r01_underbarrel_b__abyss-diver|1|Tube auxiliaire des abysses|Engine|Abysses|4|4|4|4|0|0|Capsule sous canon avec verrou et collier.|0||r01_underbarrel_b|abyss_diver
+underbarrel|r01_underbarrel_b__roman-inventor|1|Tube auxiliaire d'inventeur|Engine|Rome / Inventeur|4|4|4|4|0|0|Capsule sous canon avec verrou et collier.|0||r01_underbarrel_b|roman_inventor
+underbarrel|r01_underbarrel_b__dieselpunk|1|Tube auxiliaire diesel|Engine|Dieselpunk|4|4|4|4|0|0|Capsule sous canon avec verrou et collier.|0||r01_underbarrel_b|dieselpunk
+underbarrel|r01_underbarrel_c__original|1|Stabilisateur replie d'intervention|Predator|Intervention|4|4|4|4|0|0|Deux branches repliees sous le canon et patins articules.|0||r01_underbarrel_c|original
+underbarrel|r01_underbarrel_c__war-torn|1|Stabilisateur replie des ruines|Predator|Ruines|4|4|4|4|0|0|Deux branches repliees sous le canon et patins articules.|0||r01_underbarrel_c|war_torn
+underbarrel|r01_underbarrel_c__medieval-forge|1|Stabilisateur replie de la forge|Predator|Forge medievale|4|4|4|4|0|0|Deux branches repliees sous le canon et patins articules.|0||r01_underbarrel_c|medieval_forge
+underbarrel|r01_underbarrel_c__prehistoric|1|Stabilisateur replie d'os et de silex|Predator|Os et silex|4|4|4|4|0|0|Deux branches repliees sous le canon et patins articules.|0||r01_underbarrel_c|prehistoric
+underbarrel|r01_underbarrel_c__living-jungle|1|Stabilisateur replie de la canopee|Predator|Canopee|4|4|4|4|0|0|Deux branches repliees sous le canon et patins articules.|0||r01_underbarrel_c|living_jungle
+underbarrel|r01_underbarrel_c__medieval-alchemy|1|Stabilisateur replie d'alchimie|Predator|Alchimie|4|4|4|4|0|0|Deux branches repliees sous le canon et patins articules.|0||r01_underbarrel_c|medieval_alchemy
+underbarrel|r01_underbarrel_c__porcelain-fluidics|1|Stabilisateur replie de porcelaine|Predator|Porcelaine|4|4|4|4|0|0|Deux branches repliees sous le canon et patins articules.|0||r01_underbarrel_c|porcelain_fluidics
+underbarrel|r01_underbarrel_c__ww1-trench|1|Stabilisateur replie des tranchees|Predator|Grande Guerre|4|4|4|4|0|0|Deux branches repliees sous le canon et patins articules.|0||r01_underbarrel_c|ww1_trench
+underbarrel|r01_underbarrel_c__bedrock-miner|1|Stabilisateur replie des profondeurs|Predator|Bedrock|4|4|4|4|0|0|Deux branches repliees sous le canon et patins articules.|0||r01_underbarrel_c|bedrock_miner
+underbarrel|r01_underbarrel_c__new-york-noir|1|Stabilisateur replie de minuit|Predator|New York noir|4|4|4|4|0|0|Deux branches repliees sous le canon et patins articules.|0||r01_underbarrel_c|new_york_noir
+underbarrel|r01_underbarrel_c__castaway|1|Stabilisateur replie des rivages|Predator|Bois de naufrage|4|4|4|4|0|0|Deux branches repliees sous le canon et patins articules.|0||r01_underbarrel_c|castaway
+underbarrel|r01_underbarrel_c__abyss-diver|1|Stabilisateur replie des abysses|Predator|Abysses|4|4|4|4|0|0|Deux branches repliees sous le canon et patins articules.|0||r01_underbarrel_c|abyss_diver
+underbarrel|r01_underbarrel_c__roman-inventor|1|Stabilisateur replie d'inventeur|Predator|Rome / Inventeur|4|4|4|4|0|0|Deux branches repliees sous le canon et patins articules.|0||r01_underbarrel_c|roman_inventor
+underbarrel|r01_underbarrel_c__dieselpunk|1|Stabilisateur replie diesel|Predator|Dieselpunk|4|4|4|4|0|0|Deux branches repliees sous le canon et patins articules.|0||r01_underbarrel_c|dieselpunk
+underbarrel|r01_underbarrel_d__original|1|Garde-main carene d'intervention|Fortress|Intervention|4|4|4|4|0|0|Deux joues laterales et un sabot protegent la prise inferieure.|0||r01_underbarrel_d|original
+underbarrel|r01_underbarrel_d__war-torn|1|Garde-main carene des ruines|Fortress|Ruines|4|4|4|4|0|0|Deux joues laterales et un sabot protegent la prise inferieure.|0||r01_underbarrel_d|war_torn
+underbarrel|r01_underbarrel_d__medieval-forge|1|Garde-main carene de la forge|Fortress|Forge medievale|4|4|4|4|0|0|Deux joues laterales et un sabot protegent la prise inferieure.|0||r01_underbarrel_d|medieval_forge
+underbarrel|r01_underbarrel_d__prehistoric|1|Garde-main carene d'os et de silex|Fortress|Os et silex|4|4|4|4|0|0|Deux joues laterales et un sabot protegent la prise inferieure.|0||r01_underbarrel_d|prehistoric
+underbarrel|r01_underbarrel_d__living-jungle|1|Garde-main carene de la canopee|Fortress|Canopee|4|4|4|4|0|0|Deux joues laterales et un sabot protegent la prise inferieure.|0||r01_underbarrel_d|living_jungle
+underbarrel|r01_underbarrel_d__medieval-alchemy|1|Garde-main carene d'alchimie|Fortress|Alchimie|4|4|4|4|0|0|Deux joues laterales et un sabot protegent la prise inferieure.|0||r01_underbarrel_d|medieval_alchemy
+underbarrel|r01_underbarrel_d__porcelain-fluidics|1|Garde-main carene de porcelaine|Fortress|Porcelaine|4|4|4|4|0|0|Deux joues laterales et un sabot protegent la prise inferieure.|0||r01_underbarrel_d|porcelain_fluidics
+underbarrel|r01_underbarrel_d__ww1-trench|1|Garde-main carene des tranchees|Fortress|Grande Guerre|4|4|4|4|0|0|Deux joues laterales et un sabot protegent la prise inferieure.|0||r01_underbarrel_d|ww1_trench
+underbarrel|r01_underbarrel_d__bedrock-miner|1|Garde-main carene des profondeurs|Fortress|Bedrock|4|4|4|4|0|0|Deux joues laterales et un sabot protegent la prise inferieure.|0||r01_underbarrel_d|bedrock_miner
+underbarrel|r01_underbarrel_d__new-york-noir|1|Garde-main carene de minuit|Fortress|New York noir|4|4|4|4|0|0|Deux joues laterales et un sabot protegent la prise inferieure.|0||r01_underbarrel_d|new_york_noir
+underbarrel|r01_underbarrel_d__castaway|1|Garde-main carene des rivages|Fortress|Bois de naufrage|4|4|4|4|0|0|Deux joues laterales et un sabot protegent la prise inferieure.|0||r01_underbarrel_d|castaway
+underbarrel|r01_underbarrel_d__abyss-diver|1|Garde-main carene des abysses|Fortress|Abysses|4|4|4|4|0|0|Deux joues laterales et un sabot protegent la prise inferieure.|0||r01_underbarrel_d|abyss_diver
+underbarrel|r01_underbarrel_d__roman-inventor|1|Garde-main carene d'inventeur|Fortress|Rome / Inventeur|4|4|4|4|0|0|Deux joues laterales et un sabot protegent la prise inferieure.|0||r01_underbarrel_d|roman_inventor
+underbarrel|r01_underbarrel_d__dieselpunk|1|Garde-main carene diesel|Fortress|Dieselpunk|4|4|4|4|0|0|Deux joues laterales et un sabot protegent la prise inferieure.|0||r01_underbarrel_d|dieselpunk
+grip|r01_grip_a__original|1|Crosse squelette d'intervention|Rogue|Intervention|4|4|4|4|0|0|Poignee textilee et crosse tubulaire.|0||r01_grip_a|original
+grip|r01_grip_a__war-torn|1|Crosse squelette des ruines|Rogue|Ruines|4|4|4|4|0|0|Poignee textilee et crosse tubulaire.|0||r01_grip_a|war_torn
+grip|r01_grip_a__medieval-forge|1|Crosse squelette de la forge|Rogue|Forge medievale|4|4|4|4|0|0|Poignee textilee et crosse tubulaire.|0||r01_grip_a|medieval_forge
+grip|r01_grip_a__prehistoric|1|Crosse squelette d'os et de silex|Rogue|Os et silex|4|4|4|4|0|0|Poignee textilee et crosse tubulaire.|0||r01_grip_a|prehistoric
+grip|r01_grip_a__living-jungle|1|Crosse squelette de la canopee|Rogue|Canopee|4|4|4|4|0|0|Poignee textilee et crosse tubulaire.|0||r01_grip_a|living_jungle
+grip|r01_grip_a__medieval-alchemy|1|Crosse squelette d'alchimie|Rogue|Alchimie|4|4|4|4|0|0|Poignee textilee et crosse tubulaire.|0||r01_grip_a|medieval_alchemy
+grip|r01_grip_a__porcelain-fluidics|1|Crosse squelette de porcelaine|Rogue|Porcelaine|4|4|4|4|0|0|Poignee textilee et crosse tubulaire.|0||r01_grip_a|porcelain_fluidics
+grip|r01_grip_a__ww1-trench|1|Crosse squelette des tranchees|Rogue|Grande Guerre|4|4|4|4|0|0|Poignee textilee et crosse tubulaire.|0||r01_grip_a|ww1_trench
+grip|r01_grip_a__bedrock-miner|1|Crosse squelette des profondeurs|Rogue|Bedrock|4|4|4|4|0|0|Poignee textilee et crosse tubulaire.|0||r01_grip_a|bedrock_miner
+grip|r01_grip_a__new-york-noir|1|Crosse squelette de minuit|Rogue|New York noir|4|4|4|4|0|0|Poignee textilee et crosse tubulaire.|0||r01_grip_a|new_york_noir
+grip|r01_grip_a__castaway|1|Crosse squelette des rivages|Rogue|Bois de naufrage|4|4|4|4|0|0|Poignee textilee et crosse tubulaire.|0||r01_grip_a|castaway
+grip|r01_grip_a__abyss-diver|1|Crosse squelette des abysses|Rogue|Abysses|4|4|4|4|0|0|Poignee textilee et crosse tubulaire.|0||r01_grip_a|abyss_diver
+grip|r01_grip_a__roman-inventor|1|Crosse squelette d'inventeur|Rogue|Rome / Inventeur|4|4|4|4|0|0|Poignee textilee et crosse tubulaire.|0||r01_grip_a|roman_inventor
+grip|r01_grip_a__dieselpunk|1|Crosse squelette diesel|Rogue|Dieselpunk|4|4|4|4|0|0|Poignee textilee et crosse tubulaire.|0||r01_grip_a|dieselpunk
+grip|r01_grip_b__original|1|Crosse amortie d'intervention|Fortress|Intervention|4|4|4|4|0|0|Poignee moulee et crosse a plaque amortissante.|0||r01_grip_b|original
+grip|r01_grip_b__war-torn|1|Crosse amortie des ruines|Fortress|Ruines|4|4|4|4|0|0|Poignee moulee et crosse a plaque amortissante.|0||r01_grip_b|war_torn
+grip|r01_grip_b__medieval-forge|1|Crosse amortie de la forge|Fortress|Forge medievale|4|4|4|4|0|0|Poignee moulee et crosse a plaque amortissante.|0||r01_grip_b|medieval_forge
+grip|r01_grip_b__prehistoric|1|Crosse amortie d'os et de silex|Fortress|Os et silex|4|4|4|4|0|0|Poignee moulee et crosse a plaque amortissante.|0||r01_grip_b|prehistoric
+grip|r01_grip_b__living-jungle|1|Crosse amortie de la canopee|Fortress|Canopee|4|4|4|4|0|0|Poignee moulee et crosse a plaque amortissante.|0||r01_grip_b|living_jungle
+grip|r01_grip_b__medieval-alchemy|1|Crosse amortie d'alchimie|Fortress|Alchimie|4|4|4|4|0|0|Poignee moulee et crosse a plaque amortissante.|0||r01_grip_b|medieval_alchemy
+grip|r01_grip_b__porcelain-fluidics|1|Crosse amortie de porcelaine|Fortress|Porcelaine|4|4|4|4|0|0|Poignee moulee et crosse a plaque amortissante.|0||r01_grip_b|porcelain_fluidics
+grip|r01_grip_b__ww1-trench|1|Crosse amortie des tranchees|Fortress|Grande Guerre|4|4|4|4|0|0|Poignee moulee et crosse a plaque amortissante.|0||r01_grip_b|ww1_trench
+grip|r01_grip_b__bedrock-miner|1|Crosse amortie des profondeurs|Fortress|Bedrock|4|4|4|4|0|0|Poignee moulee et crosse a plaque amortissante.|0||r01_grip_b|bedrock_miner
+grip|r01_grip_b__new-york-noir|1|Crosse amortie de minuit|Fortress|New York noir|4|4|4|4|0|0|Poignee moulee et crosse a plaque amortissante.|0||r01_grip_b|new_york_noir
+grip|r01_grip_b__castaway|1|Crosse amortie des rivages|Fortress|Bois de naufrage|4|4|4|4|0|0|Poignee moulee et crosse a plaque amortissante.|0||r01_grip_b|castaway
+grip|r01_grip_b__abyss-diver|1|Crosse amortie des abysses|Fortress|Abysses|4|4|4|4|0|0|Poignee moulee et crosse a plaque amortissante.|0||r01_grip_b|abyss_diver
+grip|r01_grip_b__roman-inventor|1|Crosse amortie d'inventeur|Fortress|Rome / Inventeur|4|4|4|4|0|0|Poignee moulee et crosse a plaque amortissante.|0||r01_grip_b|roman_inventor
+grip|r01_grip_b__dieselpunk|1|Crosse amortie diesel|Fortress|Dieselpunk|4|4|4|4|0|0|Poignee moulee et crosse a plaque amortissante.|0||r01_grip_b|dieselpunk
+grip|r01_grip_c__original|1|Crosse triangulee d'intervention|Baseline|Intervention|4|4|4|4|0|0|Prise commune et crosse ouverte a deux diagonales.|0||r01_grip_c|original
+grip|r01_grip_c__war-torn|1|Crosse triangulee des ruines|Baseline|Ruines|4|4|4|4|0|0|Prise commune et crosse ouverte a deux diagonales.|0||r01_grip_c|war_torn
+grip|r01_grip_c__medieval-forge|1|Crosse triangulee de la forge|Baseline|Forge medievale|4|4|4|4|0|0|Prise commune et crosse ouverte a deux diagonales.|0||r01_grip_c|medieval_forge
+grip|r01_grip_c__prehistoric|1|Crosse triangulee d'os et de silex|Baseline|Os et silex|4|4|4|4|0|0|Prise commune et crosse ouverte a deux diagonales.|0||r01_grip_c|prehistoric
+grip|r01_grip_c__living-jungle|1|Crosse triangulee de la canopee|Baseline|Canopee|4|4|4|4|0|0|Prise commune et crosse ouverte a deux diagonales.|0||r01_grip_c|living_jungle
+grip|r01_grip_c__medieval-alchemy|1|Crosse triangulee d'alchimie|Baseline|Alchimie|4|4|4|4|0|0|Prise commune et crosse ouverte a deux diagonales.|0||r01_grip_c|medieval_alchemy
+grip|r01_grip_c__porcelain-fluidics|1|Crosse triangulee de porcelaine|Baseline|Porcelaine|4|4|4|4|0|0|Prise commune et crosse ouverte a deux diagonales.|0||r01_grip_c|porcelain_fluidics
+grip|r01_grip_c__ww1-trench|1|Crosse triangulee des tranchees|Baseline|Grande Guerre|4|4|4|4|0|0|Prise commune et crosse ouverte a deux diagonales.|0||r01_grip_c|ww1_trench
+grip|r01_grip_c__bedrock-miner|1|Crosse triangulee des profondeurs|Baseline|Bedrock|4|4|4|4|0|0|Prise commune et crosse ouverte a deux diagonales.|0||r01_grip_c|bedrock_miner
+grip|r01_grip_c__new-york-noir|1|Crosse triangulee de minuit|Baseline|New York noir|4|4|4|4|0|0|Prise commune et crosse ouverte a deux diagonales.|0||r01_grip_c|new_york_noir
+grip|r01_grip_c__castaway|1|Crosse triangulee des rivages|Baseline|Bois de naufrage|4|4|4|4|0|0|Prise commune et crosse ouverte a deux diagonales.|0||r01_grip_c|castaway
+grip|r01_grip_c__abyss-diver|1|Crosse triangulee des abysses|Baseline|Abysses|4|4|4|4|0|0|Prise commune et crosse ouverte a deux diagonales.|0||r01_grip_c|abyss_diver
+grip|r01_grip_c__roman-inventor|1|Crosse triangulee d'inventeur|Baseline|Rome / Inventeur|4|4|4|4|0|0|Prise commune et crosse ouverte a deux diagonales.|0||r01_grip_c|roman_inventor
+grip|r01_grip_c__dieselpunk|1|Crosse triangulee diesel|Baseline|Dieselpunk|4|4|4|4|0|0|Prise commune et crosse ouverte a deux diagonales.|0||r01_grip_c|dieselpunk
+grip|r01_grip_d__original|1|Crosse a joue reglable d'intervention|Engine|Intervention|4|4|4|4|0|0|Cadre ferme, appui-joue sureleve et plaque amortissante.|0||r01_grip_d|original
+grip|r01_grip_d__war-torn|1|Crosse a joue reglable des ruines|Engine|Ruines|4|4|4|4|0|0|Cadre ferme, appui-joue sureleve et plaque amortissante.|0||r01_grip_d|war_torn
+grip|r01_grip_d__medieval-forge|1|Crosse a joue reglable de la forge|Engine|Forge medievale|4|4|4|4|0|0|Cadre ferme, appui-joue sureleve et plaque amortissante.|0||r01_grip_d|medieval_forge
+grip|r01_grip_d__prehistoric|1|Crosse a joue reglable d'os et de silex|Engine|Os et silex|4|4|4|4|0|0|Cadre ferme, appui-joue sureleve et plaque amortissante.|0||r01_grip_d|prehistoric
+grip|r01_grip_d__living-jungle|1|Crosse a joue reglable de la canopee|Engine|Canopee|4|4|4|4|0|0|Cadre ferme, appui-joue sureleve et plaque amortissante.|0||r01_grip_d|living_jungle
+grip|r01_grip_d__medieval-alchemy|1|Crosse a joue reglable d'alchimie|Engine|Alchimie|4|4|4|4|0|0|Cadre ferme, appui-joue sureleve et plaque amortissante.|0||r01_grip_d|medieval_alchemy
+grip|r01_grip_d__porcelain-fluidics|1|Crosse a joue reglable de porcelaine|Engine|Porcelaine|4|4|4|4|0|0|Cadre ferme, appui-joue sureleve et plaque amortissante.|0||r01_grip_d|porcelain_fluidics
+grip|r01_grip_d__ww1-trench|1|Crosse a joue reglable des tranchees|Engine|Grande Guerre|4|4|4|4|0|0|Cadre ferme, appui-joue sureleve et plaque amortissante.|0||r01_grip_d|ww1_trench
+grip|r01_grip_d__bedrock-miner|1|Crosse a joue reglable des profondeurs|Engine|Bedrock|4|4|4|4|0|0|Cadre ferme, appui-joue sureleve et plaque amortissante.|0||r01_grip_d|bedrock_miner
+grip|r01_grip_d__new-york-noir|1|Crosse a joue reglable de minuit|Engine|New York noir|4|4|4|4|0|0|Cadre ferme, appui-joue sureleve et plaque amortissante.|0||r01_grip_d|new_york_noir
+grip|r01_grip_d__castaway|1|Crosse a joue reglable des rivages|Engine|Bois de naufrage|4|4|4|4|0|0|Cadre ferme, appui-joue sureleve et plaque amortissante.|0||r01_grip_d|castaway
+grip|r01_grip_d__abyss-diver|1|Crosse a joue reglable des abysses|Engine|Abysses|4|4|4|4|0|0|Cadre ferme, appui-joue sureleve et plaque amortissante.|0||r01_grip_d|abyss_diver
+grip|r01_grip_d__roman-inventor|1|Crosse a joue reglable d'inventeur|Engine|Rome / Inventeur|4|4|4|4|0|0|Cadre ferme, appui-joue sureleve et plaque amortissante.|0||r01_grip_d|roman_inventor
+grip|r01_grip_d__dieselpunk|1|Crosse a joue reglable diesel|Engine|Dieselpunk|4|4|4|4|0|0|Cadre ferme, appui-joue sureleve et plaque amortissante.|0||r01_grip_d|dieselpunk
+power|r01_power_a__original|1|Cellule ambre 24V d'intervention|Engine|Intervention|4|4|4|4|0|0|Batterie amovible, verrou, bornes et etiquette 24V.|0||r01_power_a|original
+power|r01_power_a__war-torn|1|Cellule ambre 24V des ruines|Engine|Ruines|4|4|4|4|0|0|Batterie amovible, verrou, bornes et etiquette 24V.|0||r01_power_a|war_torn
+power|r01_power_a__medieval-forge|1|Cellule ambre 24V de la forge|Engine|Forge medievale|4|4|4|4|0|0|Batterie amovible, verrou, bornes et etiquette 24V.|0||r01_power_a|medieval_forge
+power|r01_power_a__prehistoric|1|Cellule ambre 24V d'os et de silex|Engine|Os et silex|4|4|4|4|0|0|Batterie amovible, verrou, bornes et etiquette 24V.|0||r01_power_a|prehistoric
+power|r01_power_a__living-jungle|1|Cellule ambre 24V de la canopee|Engine|Canopee|4|4|4|4|0|0|Batterie amovible, verrou, bornes et etiquette 24V.|0||r01_power_a|living_jungle
+power|r01_power_a__medieval-alchemy|1|Cellule ambre 24V d'alchimie|Engine|Alchimie|4|4|4|4|0|0|Batterie amovible, verrou, bornes et etiquette 24V.|0||r01_power_a|medieval_alchemy
+power|r01_power_a__porcelain-fluidics|1|Cellule ambre 24V de porcelaine|Engine|Porcelaine|4|4|4|4|0|0|Batterie amovible, verrou, bornes et etiquette 24V.|0||r01_power_a|porcelain_fluidics
+power|r01_power_a__ww1-trench|1|Cellule ambre 24V des tranchees|Engine|Grande Guerre|4|4|4|4|0|0|Batterie amovible, verrou, bornes et etiquette 24V.|0||r01_power_a|ww1_trench
+power|r01_power_a__bedrock-miner|1|Cellule ambre 24V des profondeurs|Engine|Bedrock|4|4|4|4|0|0|Batterie amovible, verrou, bornes et etiquette 24V.|0||r01_power_a|bedrock_miner
+power|r01_power_a__new-york-noir|1|Cellule ambre 24V de minuit|Engine|New York noir|4|4|4|4|0|0|Batterie amovible, verrou, bornes et etiquette 24V.|0||r01_power_a|new_york_noir
+power|r01_power_a__castaway|1|Cellule ambre 24V des rivages|Engine|Bois de naufrage|4|4|4|4|0|0|Batterie amovible, verrou, bornes et etiquette 24V.|0||r01_power_a|castaway
+power|r01_power_a__abyss-diver|1|Cellule ambre 24V des abysses|Engine|Abysses|4|4|4|4|0|0|Batterie amovible, verrou, bornes et etiquette 24V.|0||r01_power_a|abyss_diver
+power|r01_power_a__roman-inventor|1|Cellule ambre 24V d'inventeur|Engine|Rome / Inventeur|4|4|4|4|0|0|Batterie amovible, verrou, bornes et etiquette 24V.|0||r01_power_a|roman_inventor
+power|r01_power_a__dieselpunk|1|Cellule ambre 24V diesel|Engine|Dieselpunk|4|4|4|4|0|0|Batterie amovible, verrou, bornes et etiquette 24V.|0||r01_power_a|dieselpunk
+power|r01_power_b__original|1|Condensateur teal 48V d'intervention|Anomalous|Intervention|4|4|4|4|0|0|Deux capaciteurs, etrier, bornes et etiquette 48V.|0||r01_power_b|original
+power|r01_power_b__war-torn|1|Condensateur teal 48V des ruines|Anomalous|Ruines|4|4|4|4|0|0|Deux capaciteurs, etrier, bornes et etiquette 48V.|0||r01_power_b|war_torn
+power|r01_power_b__medieval-forge|1|Condensateur teal 48V de la forge|Anomalous|Forge medievale|4|4|4|4|0|0|Deux capaciteurs, etrier, bornes et etiquette 48V.|0||r01_power_b|medieval_forge
+power|r01_power_b__prehistoric|1|Condensateur teal 48V d'os et de silex|Anomalous|Os et silex|4|4|4|4|0|0|Deux capaciteurs, etrier, bornes et etiquette 48V.|0||r01_power_b|prehistoric
+power|r01_power_b__living-jungle|1|Condensateur teal 48V de la canopee|Anomalous|Canopee|4|4|4|4|0|0|Deux capaciteurs, etrier, bornes et etiquette 48V.|0||r01_power_b|living_jungle
+power|r01_power_b__medieval-alchemy|1|Condensateur teal 48V d'alchimie|Anomalous|Alchimie|4|4|4|4|0|0|Deux capaciteurs, etrier, bornes et etiquette 48V.|0||r01_power_b|medieval_alchemy
+power|r01_power_b__porcelain-fluidics|1|Condensateur teal 48V de porcelaine|Anomalous|Porcelaine|4|4|4|4|0|0|Deux capaciteurs, etrier, bornes et etiquette 48V.|0||r01_power_b|porcelain_fluidics
+power|r01_power_b__ww1-trench|1|Condensateur teal 48V des tranchees|Anomalous|Grande Guerre|4|4|4|4|0|0|Deux capaciteurs, etrier, bornes et etiquette 48V.|0||r01_power_b|ww1_trench
+power|r01_power_b__bedrock-miner|1|Condensateur teal 48V des profondeurs|Anomalous|Bedrock|4|4|4|4|0|0|Deux capaciteurs, etrier, bornes et etiquette 48V.|0||r01_power_b|bedrock_miner
+power|r01_power_b__new-york-noir|1|Condensateur teal 48V de minuit|Anomalous|New York noir|4|4|4|4|0|0|Deux capaciteurs, etrier, bornes et etiquette 48V.|0||r01_power_b|new_york_noir
+power|r01_power_b__castaway|1|Condensateur teal 48V des rivages|Anomalous|Bois de naufrage|4|4|4|4|0|0|Deux capaciteurs, etrier, bornes et etiquette 48V.|0||r01_power_b|castaway
+power|r01_power_b__abyss-diver|1|Condensateur teal 48V des abysses|Anomalous|Abysses|4|4|4|4|0|0|Deux capaciteurs, etrier, bornes et etiquette 48V.|0||r01_power_b|abyss_diver
+power|r01_power_b__roman-inventor|1|Condensateur teal 48V d'inventeur|Anomalous|Rome / Inventeur|4|4|4|4|0|0|Deux capaciteurs, etrier, bornes et etiquette 48V.|0||r01_power_b|roman_inventor
+power|r01_power_b__dieselpunk|1|Condensateur teal 48V diesel|Anomalous|Dieselpunk|4|4|4|4|0|0|Deux capaciteurs, etrier, bornes et etiquette 48V.|0||r01_power_b|dieselpunk
+power|r01_power_c__original|1|Reserve toroidale d'intervention|Rogue|Intervention|4|4|4|4|0|0|Reserve annulaire ouverte et connecteurs sur un support plat.|0||r01_power_c|original
+power|r01_power_c__war-torn|1|Reserve toroidale des ruines|Rogue|Ruines|4|4|4|4|0|0|Reserve annulaire ouverte et connecteurs sur un support plat.|0||r01_power_c|war_torn
+power|r01_power_c__medieval-forge|1|Reserve toroidale de la forge|Rogue|Forge medievale|4|4|4|4|0|0|Reserve annulaire ouverte et connecteurs sur un support plat.|0||r01_power_c|medieval_forge
+power|r01_power_c__prehistoric|1|Reserve toroidale d'os et de silex|Rogue|Os et silex|4|4|4|4|0|0|Reserve annulaire ouverte et connecteurs sur un support plat.|0||r01_power_c|prehistoric
+power|r01_power_c__living-jungle|1|Reserve toroidale de la canopee|Rogue|Canopee|4|4|4|4|0|0|Reserve annulaire ouverte et connecteurs sur un support plat.|0||r01_power_c|living_jungle
+power|r01_power_c__medieval-alchemy|1|Reserve toroidale d'alchimie|Rogue|Alchimie|4|4|4|4|0|0|Reserve annulaire ouverte et connecteurs sur un support plat.|0||r01_power_c|medieval_alchemy
+power|r01_power_c__porcelain-fluidics|1|Reserve toroidale de porcelaine|Rogue|Porcelaine|4|4|4|4|0|0|Reserve annulaire ouverte et connecteurs sur un support plat.|0||r01_power_c|porcelain_fluidics
+power|r01_power_c__ww1-trench|1|Reserve toroidale des tranchees|Rogue|Grande Guerre|4|4|4|4|0|0|Reserve annulaire ouverte et connecteurs sur un support plat.|0||r01_power_c|ww1_trench
+power|r01_power_c__bedrock-miner|1|Reserve toroidale des profondeurs|Rogue|Bedrock|4|4|4|4|0|0|Reserve annulaire ouverte et connecteurs sur un support plat.|0||r01_power_c|bedrock_miner
+power|r01_power_c__new-york-noir|1|Reserve toroidale de minuit|Rogue|New York noir|4|4|4|4|0|0|Reserve annulaire ouverte et connecteurs sur un support plat.|0||r01_power_c|new_york_noir
+power|r01_power_c__castaway|1|Reserve toroidale des rivages|Rogue|Bois de naufrage|4|4|4|4|0|0|Reserve annulaire ouverte et connecteurs sur un support plat.|0||r01_power_c|castaway
+power|r01_power_c__abyss-diver|1|Reserve toroidale des abysses|Rogue|Abysses|4|4|4|4|0|0|Reserve annulaire ouverte et connecteurs sur un support plat.|0||r01_power_c|abyss_diver
+power|r01_power_c__roman-inventor|1|Reserve toroidale d'inventeur|Rogue|Rome / Inventeur|4|4|4|4|0|0|Reserve annulaire ouverte et connecteurs sur un support plat.|0||r01_power_c|roman_inventor
+power|r01_power_c__dieselpunk|1|Reserve toroidale diesel|Rogue|Dieselpunk|4|4|4|4|0|0|Reserve annulaire ouverte et connecteurs sur un support plat.|0||r01_power_c|dieselpunk
+power|r01_power_d__original|1|Batterie a trois cartouches d'intervention|Fortress|Intervention|4|4|4|4|0|0|Trois cartouches verticales retenues sous un capot commun.|0||r01_power_d|original
+power|r01_power_d__war-torn|1|Batterie a trois cartouches des ruines|Fortress|Ruines|4|4|4|4|0|0|Trois cartouches verticales retenues sous un capot commun.|0||r01_power_d|war_torn
+power|r01_power_d__medieval-forge|1|Batterie a trois cartouches de la forge|Fortress|Forge medievale|4|4|4|4|0|0|Trois cartouches verticales retenues sous un capot commun.|0||r01_power_d|medieval_forge
+power|r01_power_d__prehistoric|1|Batterie a trois cartouches d'os et de silex|Fortress|Os et silex|4|4|4|4|0|0|Trois cartouches verticales retenues sous un capot commun.|0||r01_power_d|prehistoric
+power|r01_power_d__living-jungle|1|Batterie a trois cartouches de la canopee|Fortress|Canopee|4|4|4|4|0|0|Trois cartouches verticales retenues sous un capot commun.|0||r01_power_d|living_jungle
+power|r01_power_d__medieval-alchemy|1|Batterie a trois cartouches d'alchimie|Fortress|Alchimie|4|4|4|4|0|0|Trois cartouches verticales retenues sous un capot commun.|0||r01_power_d|medieval_alchemy
+power|r01_power_d__porcelain-fluidics|1|Batterie a trois cartouches de porcelaine|Fortress|Porcelaine|4|4|4|4|0|0|Trois cartouches verticales retenues sous un capot commun.|0||r01_power_d|porcelain_fluidics
+power|r01_power_d__ww1-trench|1|Batterie a trois cartouches des tranchees|Fortress|Grande Guerre|4|4|4|4|0|0|Trois cartouches verticales retenues sous un capot commun.|0||r01_power_d|ww1_trench
+power|r01_power_d__bedrock-miner|1|Batterie a trois cartouches des profondeurs|Fortress|Bedrock|4|4|4|4|0|0|Trois cartouches verticales retenues sous un capot commun.|0||r01_power_d|bedrock_miner
+power|r01_power_d__new-york-noir|1|Batterie a trois cartouches de minuit|Fortress|New York noir|4|4|4|4|0|0|Trois cartouches verticales retenues sous un capot commun.|0||r01_power_d|new_york_noir
+power|r01_power_d__castaway|1|Batterie a trois cartouches des rivages|Fortress|Bois de naufrage|4|4|4|4|0|0|Trois cartouches verticales retenues sous un capot commun.|0||r01_power_d|castaway
+power|r01_power_d__abyss-diver|1|Batterie a trois cartouches des abysses|Fortress|Abysses|4|4|4|4|0|0|Trois cartouches verticales retenues sous un capot commun.|0||r01_power_d|abyss_diver
+power|r01_power_d__roman-inventor|1|Batterie a trois cartouches d'inventeur|Fortress|Rome / Inventeur|4|4|4|4|0|0|Trois cartouches verticales retenues sous un capot commun.|0||r01_power_d|roman_inventor
+power|r01_power_d__dieselpunk|1|Batterie a trois cartouches diesel|Fortress|Dieselpunk|4|4|4|4|0|0|Trois cartouches verticales retenues sous un capot commun.|0||r01_power_d|dieselpunk
+cooling|r01_cooling_a__original|1|Radiateur a ailettes d'intervention|Fortress|Intervention|4|4|4|4|0|0|Six ailettes metalliques sur semelle commune.|0||r01_cooling_a|original
+cooling|r01_cooling_a__war-torn|1|Radiateur a ailettes des ruines|Fortress|Ruines|4|4|4|4|0|0|Six ailettes metalliques sur semelle commune.|0||r01_cooling_a|war_torn
+cooling|r01_cooling_a__medieval-forge|1|Radiateur a ailettes de la forge|Fortress|Forge medievale|4|4|4|4|0|0|Six ailettes metalliques sur semelle commune.|0||r01_cooling_a|medieval_forge
+cooling|r01_cooling_a__prehistoric|1|Radiateur a ailettes d'os et de silex|Fortress|Os et silex|4|4|4|4|0|0|Six ailettes metalliques sur semelle commune.|0||r01_cooling_a|prehistoric
+cooling|r01_cooling_a__living-jungle|1|Radiateur a ailettes de la canopee|Fortress|Canopee|4|4|4|4|0|0|Six ailettes metalliques sur semelle commune.|0||r01_cooling_a|living_jungle
+cooling|r01_cooling_a__medieval-alchemy|1|Radiateur a ailettes d'alchimie|Fortress|Alchimie|4|4|4|4|0|0|Six ailettes metalliques sur semelle commune.|0||r01_cooling_a|medieval_alchemy
+cooling|r01_cooling_a__porcelain-fluidics|1|Radiateur a ailettes de porcelaine|Fortress|Porcelaine|4|4|4|4|0|0|Six ailettes metalliques sur semelle commune.|0||r01_cooling_a|porcelain_fluidics
+cooling|r01_cooling_a__ww1-trench|1|Radiateur a ailettes des tranchees|Fortress|Grande Guerre|4|4|4|4|0|0|Six ailettes metalliques sur semelle commune.|0||r01_cooling_a|ww1_trench
+cooling|r01_cooling_a__bedrock-miner|1|Radiateur a ailettes des profondeurs|Fortress|Bedrock|4|4|4|4|0|0|Six ailettes metalliques sur semelle commune.|0||r01_cooling_a|bedrock_miner
+cooling|r01_cooling_a__new-york-noir|1|Radiateur a ailettes de minuit|Fortress|New York noir|4|4|4|4|0|0|Six ailettes metalliques sur semelle commune.|0||r01_cooling_a|new_york_noir
+cooling|r01_cooling_a__castaway|1|Radiateur a ailettes des rivages|Fortress|Bois de naufrage|4|4|4|4|0|0|Six ailettes metalliques sur semelle commune.|0||r01_cooling_a|castaway
+cooling|r01_cooling_a__abyss-diver|1|Radiateur a ailettes des abysses|Fortress|Abysses|4|4|4|4|0|0|Six ailettes metalliques sur semelle commune.|0||r01_cooling_a|abyss_diver
+cooling|r01_cooling_a__roman-inventor|1|Radiateur a ailettes d'inventeur|Fortress|Rome / Inventeur|4|4|4|4|0|0|Six ailettes metalliques sur semelle commune.|0||r01_cooling_a|roman_inventor
+cooling|r01_cooling_a__dieselpunk|1|Radiateur a ailettes diesel|Fortress|Dieselpunk|4|4|4|4|0|0|Six ailettes metalliques sur semelle commune.|0||r01_cooling_a|dieselpunk
+cooling|r01_cooling_b__original|1|Circuit cuivre d'intervention|Engine|Intervention|4|4|4|4|0|0|Deux conduites cuivre et echangeur ceramique.|0||r01_cooling_b|original
+cooling|r01_cooling_b__war-torn|1|Circuit cuivre des ruines|Engine|Ruines|4|4|4|4|0|0|Deux conduites cuivre et echangeur ceramique.|0||r01_cooling_b|war_torn
+cooling|r01_cooling_b__medieval-forge|1|Circuit cuivre de la forge|Engine|Forge medievale|4|4|4|4|0|0|Deux conduites cuivre et echangeur ceramique.|0||r01_cooling_b|medieval_forge
+cooling|r01_cooling_b__prehistoric|1|Circuit cuivre d'os et de silex|Engine|Os et silex|4|4|4|4|0|0|Deux conduites cuivre et echangeur ceramique.|0||r01_cooling_b|prehistoric
+cooling|r01_cooling_b__living-jungle|1|Circuit cuivre de la canopee|Engine|Canopee|4|4|4|4|0|0|Deux conduites cuivre et echangeur ceramique.|0||r01_cooling_b|living_jungle
+cooling|r01_cooling_b__medieval-alchemy|1|Circuit cuivre d'alchimie|Engine|Alchimie|4|4|4|4|0|0|Deux conduites cuivre et echangeur ceramique.|0||r01_cooling_b|medieval_alchemy
+cooling|r01_cooling_b__porcelain-fluidics|1|Circuit cuivre de porcelaine|Engine|Porcelaine|4|4|4|4|0|0|Deux conduites cuivre et echangeur ceramique.|0||r01_cooling_b|porcelain_fluidics
+cooling|r01_cooling_b__ww1-trench|1|Circuit cuivre des tranchees|Engine|Grande Guerre|4|4|4|4|0|0|Deux conduites cuivre et echangeur ceramique.|0||r01_cooling_b|ww1_trench
+cooling|r01_cooling_b__bedrock-miner|1|Circuit cuivre des profondeurs|Engine|Bedrock|4|4|4|4|0|0|Deux conduites cuivre et echangeur ceramique.|0||r01_cooling_b|bedrock_miner
+cooling|r01_cooling_b__new-york-noir|1|Circuit cuivre de minuit|Engine|New York noir|4|4|4|4|0|0|Deux conduites cuivre et echangeur ceramique.|0||r01_cooling_b|new_york_noir
+cooling|r01_cooling_b__castaway|1|Circuit cuivre des rivages|Engine|Bois de naufrage|4|4|4|4|0|0|Deux conduites cuivre et echangeur ceramique.|0||r01_cooling_b|castaway
+cooling|r01_cooling_b__abyss-diver|1|Circuit cuivre des abysses|Engine|Abysses|4|4|4|4|0|0|Deux conduites cuivre et echangeur ceramique.|0||r01_cooling_b|abyss_diver
+cooling|r01_cooling_b__roman-inventor|1|Circuit cuivre d'inventeur|Engine|Rome / Inventeur|4|4|4|4|0|0|Deux conduites cuivre et echangeur ceramique.|0||r01_cooling_b|roman_inventor
+cooling|r01_cooling_b__dieselpunk|1|Circuit cuivre diesel|Engine|Dieselpunk|4|4|4|4|0|0|Deux conduites cuivre et echangeur ceramique.|0||r01_cooling_b|dieselpunk
+cooling|r01_cooling_c__original|1|Dissipateur a pointes d'intervention|Rogue|Intervention|4|4|4|4|0|0|Deux plaques portant chacune neuf picots metalliques.|0||r01_cooling_c|original
+cooling|r01_cooling_c__war-torn|1|Dissipateur a pointes des ruines|Rogue|Ruines|4|4|4|4|0|0|Deux plaques portant chacune neuf picots metalliques.|0||r01_cooling_c|war_torn
+cooling|r01_cooling_c__medieval-forge|1|Dissipateur a pointes de la forge|Rogue|Forge medievale|4|4|4|4|0|0|Deux plaques portant chacune neuf picots metalliques.|0||r01_cooling_c|medieval_forge
+cooling|r01_cooling_c__prehistoric|1|Dissipateur a pointes d'os et de silex|Rogue|Os et silex|4|4|4|4|0|0|Deux plaques portant chacune neuf picots metalliques.|0||r01_cooling_c|prehistoric
+cooling|r01_cooling_c__living-jungle|1|Dissipateur a pointes de la canopee|Rogue|Canopee|4|4|4|4|0|0|Deux plaques portant chacune neuf picots metalliques.|0||r01_cooling_c|living_jungle
+cooling|r01_cooling_c__medieval-alchemy|1|Dissipateur a pointes d'alchimie|Rogue|Alchimie|4|4|4|4|0|0|Deux plaques portant chacune neuf picots metalliques.|0||r01_cooling_c|medieval_alchemy
+cooling|r01_cooling_c__porcelain-fluidics|1|Dissipateur a pointes de porcelaine|Rogue|Porcelaine|4|4|4|4|0|0|Deux plaques portant chacune neuf picots metalliques.|0||r01_cooling_c|porcelain_fluidics
+cooling|r01_cooling_c__ww1-trench|1|Dissipateur a pointes des tranchees|Rogue|Grande Guerre|4|4|4|4|0|0|Deux plaques portant chacune neuf picots metalliques.|0||r01_cooling_c|ww1_trench
+cooling|r01_cooling_c__bedrock-miner|1|Dissipateur a pointes des profondeurs|Rogue|Bedrock|4|4|4|4|0|0|Deux plaques portant chacune neuf picots metalliques.|0||r01_cooling_c|bedrock_miner
+cooling|r01_cooling_c__new-york-noir|1|Dissipateur a pointes de minuit|Rogue|New York noir|4|4|4|4|0|0|Deux plaques portant chacune neuf picots metalliques.|0||r01_cooling_c|new_york_noir
+cooling|r01_cooling_c__castaway|1|Dissipateur a pointes des rivages|Rogue|Bois de naufrage|4|4|4|4|0|0|Deux plaques portant chacune neuf picots metalliques.|0||r01_cooling_c|castaway
+cooling|r01_cooling_c__abyss-diver|1|Dissipateur a pointes des abysses|Rogue|Abysses|4|4|4|4|0|0|Deux plaques portant chacune neuf picots metalliques.|0||r01_cooling_c|abyss_diver
+cooling|r01_cooling_c__roman-inventor|1|Dissipateur a pointes d'inventeur|Rogue|Rome / Inventeur|4|4|4|4|0|0|Deux plaques portant chacune neuf picots metalliques.|0||r01_cooling_c|roman_inventor
+cooling|r01_cooling_c__dieselpunk|1|Dissipateur a pointes diesel|Rogue|Dieselpunk|4|4|4|4|0|0|Deux plaques portant chacune neuf picots metalliques.|0||r01_cooling_c|dieselpunk
+cooling|r01_cooling_d__original|1|Ventilateurs doubles d'intervention|Anomalous|Intervention|4|4|4|4|0|0|Deux petits ventilateurs carenes de chaque cote du canon.|0||r01_cooling_d|original
+cooling|r01_cooling_d__war-torn|1|Ventilateurs doubles des ruines|Anomalous|Ruines|4|4|4|4|0|0|Deux petits ventilateurs carenes de chaque cote du canon.|0||r01_cooling_d|war_torn
+cooling|r01_cooling_d__medieval-forge|1|Ventilateurs doubles de la forge|Anomalous|Forge medievale|4|4|4|4|0|0|Deux petits ventilateurs carenes de chaque cote du canon.|0||r01_cooling_d|medieval_forge
+cooling|r01_cooling_d__prehistoric|1|Ventilateurs doubles d'os et de silex|Anomalous|Os et silex|4|4|4|4|0|0|Deux petits ventilateurs carenes de chaque cote du canon.|0||r01_cooling_d|prehistoric
+cooling|r01_cooling_d__living-jungle|1|Ventilateurs doubles de la canopee|Anomalous|Canopee|4|4|4|4|0|0|Deux petits ventilateurs carenes de chaque cote du canon.|0||r01_cooling_d|living_jungle
+cooling|r01_cooling_d__medieval-alchemy|1|Ventilateurs doubles d'alchimie|Anomalous|Alchimie|4|4|4|4|0|0|Deux petits ventilateurs carenes de chaque cote du canon.|0||r01_cooling_d|medieval_alchemy
+cooling|r01_cooling_d__porcelain-fluidics|1|Ventilateurs doubles de porcelaine|Anomalous|Porcelaine|4|4|4|4|0|0|Deux petits ventilateurs carenes de chaque cote du canon.|0||r01_cooling_d|porcelain_fluidics
+cooling|r01_cooling_d__ww1-trench|1|Ventilateurs doubles des tranchees|Anomalous|Grande Guerre|4|4|4|4|0|0|Deux petits ventilateurs carenes de chaque cote du canon.|0||r01_cooling_d|ww1_trench
+cooling|r01_cooling_d__bedrock-miner|1|Ventilateurs doubles des profondeurs|Anomalous|Bedrock|4|4|4|4|0|0|Deux petits ventilateurs carenes de chaque cote du canon.|0||r01_cooling_d|bedrock_miner
+cooling|r01_cooling_d__new-york-noir|1|Ventilateurs doubles de minuit|Anomalous|New York noir|4|4|4|4|0|0|Deux petits ventilateurs carenes de chaque cote du canon.|0||r01_cooling_d|new_york_noir
+cooling|r01_cooling_d__castaway|1|Ventilateurs doubles des rivages|Anomalous|Bois de naufrage|4|4|4|4|0|0|Deux petits ventilateurs carenes de chaque cote du canon.|0||r01_cooling_d|castaway
+cooling|r01_cooling_d__abyss-diver|1|Ventilateurs doubles des abysses|Anomalous|Abysses|4|4|4|4|0|0|Deux petits ventilateurs carenes de chaque cote du canon.|0||r01_cooling_d|abyss_diver
+cooling|r01_cooling_d__roman-inventor|1|Ventilateurs doubles d'inventeur|Anomalous|Rome / Inventeur|4|4|4|4|0|0|Deux petits ventilateurs carenes de chaque cote du canon.|0||r01_cooling_d|roman_inventor
+cooling|r01_cooling_d__dieselpunk|1|Ventilateurs doubles diesel|Anomalous|Dieselpunk|4|4|4|4|0|0|Deux petits ventilateurs carenes de chaque cote du canon.|0||r01_cooling_d|dieselpunk
+receiver|r01_receiver_side__original|1|Traverse d'intervention|Baseline|Intervention|4|4|4|4|0|0|Alimentation laterale. Extraction sur le cote et main animee. Memes chargeurs et proprietes.|0||r01_receiver_side|original
+receiver|r01_receiver_side__war-torn|1|Traverse des ruines|Baseline|Ruines|4|4|4|4|0|0|Alimentation laterale. Extraction sur le cote et main animee. Memes chargeurs et proprietes.|0||r01_receiver_side|war_torn
+receiver|r01_receiver_side__medieval-forge|1|Traverse de la forge|Baseline|Forge medievale|4|4|4|4|0|0|Alimentation laterale. Extraction sur le cote et main animee. Memes chargeurs et proprietes.|0||r01_receiver_side|medieval_forge
+receiver|r01_receiver_side__prehistoric|1|Traverse d'os et de silex|Baseline|Os et silex|4|4|4|4|0|0|Alimentation laterale. Extraction sur le cote et main animee. Memes chargeurs et proprietes.|0||r01_receiver_side|prehistoric
+receiver|r01_receiver_side__living-jungle|1|Traverse de la canopee|Baseline|Canopee|4|4|4|4|0|0|Alimentation laterale. Extraction sur le cote et main animee. Memes chargeurs et proprietes.|0||r01_receiver_side|living_jungle
+receiver|r01_receiver_side__medieval-alchemy|1|Traverse d'alchimie|Baseline|Alchimie|4|4|4|4|0|0|Alimentation laterale. Extraction sur le cote et main animee. Memes chargeurs et proprietes.|0||r01_receiver_side|medieval_alchemy
+receiver|r01_receiver_side__porcelain-fluidics|1|Traverse de porcelaine|Baseline|Porcelaine|4|4|4|4|0|0|Alimentation laterale. Extraction sur le cote et main animee. Memes chargeurs et proprietes.|0||r01_receiver_side|porcelain_fluidics
+receiver|r01_receiver_side__ww1-trench|1|Traverse des tranchees|Baseline|Grande Guerre|4|4|4|4|0|0|Alimentation laterale. Extraction sur le cote et main animee. Memes chargeurs et proprietes.|0||r01_receiver_side|ww1_trench
+receiver|r01_receiver_side__bedrock-miner|1|Traverse des profondeurs|Baseline|Bedrock|4|4|4|4|0|0|Alimentation laterale. Extraction sur le cote et main animee. Memes chargeurs et proprietes.|0||r01_receiver_side|bedrock_miner
+receiver|r01_receiver_side__new-york-noir|1|Traverse de minuit|Baseline|New York noir|4|4|4|4|0|0|Alimentation laterale. Extraction sur le cote et main animee. Memes chargeurs et proprietes.|0||r01_receiver_side|new_york_noir
+receiver|r01_receiver_side__castaway|1|Traverse des rivages|Baseline|Bois de naufrage|4|4|4|4|0|0|Alimentation laterale. Extraction sur le cote et main animee. Memes chargeurs et proprietes.|0||r01_receiver_side|castaway
+receiver|r01_receiver_side__abyss-diver|1|Traverse des abysses|Baseline|Abysses|4|4|4|4|0|0|Alimentation laterale. Extraction sur le cote et main animee. Memes chargeurs et proprietes.|0||r01_receiver_side|abyss_diver
+receiver|r01_receiver_side__roman-inventor|1|Traverse d'inventeur|Baseline|Rome / Inventeur|4|4|4|4|0|0|Alimentation laterale. Extraction sur le cote et main animee. Memes chargeurs et proprietes.|0||r01_receiver_side|roman_inventor
+receiver|r01_receiver_side__dieselpunk|1|Traverse diesel|Baseline|Dieselpunk|4|4|4|4|0|0|Alimentation laterale. Extraction sur le cote et main animee. Memes chargeurs et proprietes.|0||r01_receiver_side|dieselpunk
+receiver|r01_receiver_top__original|1|Zenith d'intervention|Baseline|Intervention|4|4|4|4|0|0|Alimentation superieure. Extraction vers le haut et viseur decale. Memes chargeurs et proprietes.|0||r01_receiver_top|original
+receiver|r01_receiver_top__war-torn|1|Zenith des ruines|Baseline|Ruines|4|4|4|4|0|0|Alimentation superieure. Extraction vers le haut et viseur decale. Memes chargeurs et proprietes.|0||r01_receiver_top|war_torn
+receiver|r01_receiver_top__medieval-forge|1|Zenith de la forge|Baseline|Forge medievale|4|4|4|4|0|0|Alimentation superieure. Extraction vers le haut et viseur decale. Memes chargeurs et proprietes.|0||r01_receiver_top|medieval_forge
+receiver|r01_receiver_top__prehistoric|1|Zenith d'os et de silex|Baseline|Os et silex|4|4|4|4|0|0|Alimentation superieure. Extraction vers le haut et viseur decale. Memes chargeurs et proprietes.|0||r01_receiver_top|prehistoric
+receiver|r01_receiver_top__living-jungle|1|Zenith de la canopee|Baseline|Canopee|4|4|4|4|0|0|Alimentation superieure. Extraction vers le haut et viseur decale. Memes chargeurs et proprietes.|0||r01_receiver_top|living_jungle
+receiver|r01_receiver_top__medieval-alchemy|1|Zenith d'alchimie|Baseline|Alchimie|4|4|4|4|0|0|Alimentation superieure. Extraction vers le haut et viseur decale. Memes chargeurs et proprietes.|0||r01_receiver_top|medieval_alchemy
+receiver|r01_receiver_top__porcelain-fluidics|1|Zenith de porcelaine|Baseline|Porcelaine|4|4|4|4|0|0|Alimentation superieure. Extraction vers le haut et viseur decale. Memes chargeurs et proprietes.|0||r01_receiver_top|porcelain_fluidics
+receiver|r01_receiver_top__ww1-trench|1|Zenith des tranchees|Baseline|Grande Guerre|4|4|4|4|0|0|Alimentation superieure. Extraction vers le haut et viseur decale. Memes chargeurs et proprietes.|0||r01_receiver_top|ww1_trench
+receiver|r01_receiver_top__bedrock-miner|1|Zenith des profondeurs|Baseline|Bedrock|4|4|4|4|0|0|Alimentation superieure. Extraction vers le haut et viseur decale. Memes chargeurs et proprietes.|0||r01_receiver_top|bedrock_miner
+receiver|r01_receiver_top__new-york-noir|1|Zenith de minuit|Baseline|New York noir|4|4|4|4|0|0|Alimentation superieure. Extraction vers le haut et viseur decale. Memes chargeurs et proprietes.|0||r01_receiver_top|new_york_noir
+receiver|r01_receiver_top__castaway|1|Zenith des rivages|Baseline|Bois de naufrage|4|4|4|4|0|0|Alimentation superieure. Extraction vers le haut et viseur decale. Memes chargeurs et proprietes.|0||r01_receiver_top|castaway
+receiver|r01_receiver_top__abyss-diver|1|Zenith des abysses|Baseline|Abysses|4|4|4|4|0|0|Alimentation superieure. Extraction vers le haut et viseur decale. Memes chargeurs et proprietes.|0||r01_receiver_top|abyss_diver
+receiver|r01_receiver_top__roman-inventor|1|Zenith d'inventeur|Baseline|Rome / Inventeur|4|4|4|4|0|0|Alimentation superieure. Extraction vers le haut et viseur decale. Memes chargeurs et proprietes.|0||r01_receiver_top|roman_inventor
+receiver|r01_receiver_top__dieselpunk|1|Zenith diesel|Baseline|Dieselpunk|4|4|4|4|0|0|Alimentation superieure. Extraction vers le haut et viseur decale. Memes chargeurs et proprietes.|0||r01_receiver_top|dieselpunk
+receiver|r01_receiver_arch__original|1|Arche d'intervention|Rogue|Intervention|4|4|4|4|0|0|Double arche ajouree, branches effilees et mecanique suspendue. Alimentation dessous.|0||r01_receiver_arch|original
+receiver|r01_receiver_arch__war-torn|1|Arche des ruines|Rogue|Ruines|4|4|4|4|0|0|Double arche ajouree, branches effilees et mecanique suspendue. Alimentation dessous.|0||r01_receiver_arch|war_torn
+receiver|r01_receiver_arch__medieval-forge|1|Arche de la forge|Rogue|Forge medievale|4|4|4|4|0|0|Double arche ajouree, branches effilees et mecanique suspendue. Alimentation dessous.|0||r01_receiver_arch|medieval_forge
+receiver|r01_receiver_arch__prehistoric|1|Arche d'os et de silex|Rogue|Os et silex|4|4|4|4|0|0|Double arche ajouree, branches effilees et mecanique suspendue. Alimentation dessous.|0||r01_receiver_arch|prehistoric
+receiver|r01_receiver_arch__living-jungle|1|Arche de la canopee|Rogue|Canopee|4|4|4|4|0|0|Double arche ajouree, branches effilees et mecanique suspendue. Alimentation dessous.|0||r01_receiver_arch|living_jungle
+receiver|r01_receiver_arch__medieval-alchemy|1|Arche d'alchimie|Rogue|Alchimie|4|4|4|4|0|0|Double arche ajouree, branches effilees et mecanique suspendue. Alimentation dessous.|0||r01_receiver_arch|medieval_alchemy
+receiver|r01_receiver_arch__porcelain-fluidics|1|Arche de porcelaine|Rogue|Porcelaine|4|4|4|4|0|0|Double arche ajouree, branches effilees et mecanique suspendue. Alimentation dessous.|0||r01_receiver_arch|porcelain_fluidics
+receiver|r01_receiver_arch__ww1-trench|1|Arche des tranchees|Rogue|Grande Guerre|4|4|4|4|0|0|Double arche ajouree, branches effilees et mecanique suspendue. Alimentation dessous.|0||r01_receiver_arch|ww1_trench
+receiver|r01_receiver_arch__bedrock-miner|1|Arche des profondeurs|Rogue|Bedrock|4|4|4|4|0|0|Double arche ajouree, branches effilees et mecanique suspendue. Alimentation dessous.|0||r01_receiver_arch|bedrock_miner
+receiver|r01_receiver_arch__new-york-noir|1|Arche de minuit|Rogue|New York noir|4|4|4|4|0|0|Double arche ajouree, branches effilees et mecanique suspendue. Alimentation dessous.|0||r01_receiver_arch|new_york_noir
+receiver|r01_receiver_arch__castaway|1|Arche des rivages|Rogue|Bois de naufrage|4|4|4|4|0|0|Double arche ajouree, branches effilees et mecanique suspendue. Alimentation dessous.|0||r01_receiver_arch|castaway
+receiver|r01_receiver_arch__abyss-diver|1|Arche des abysses|Rogue|Abysses|4|4|4|4|0|0|Double arche ajouree, branches effilees et mecanique suspendue. Alimentation dessous.|0||r01_receiver_arch|abyss_diver
+receiver|r01_receiver_arch__roman-inventor|1|Arche d'inventeur|Rogue|Rome / Inventeur|4|4|4|4|0|0|Double arche ajouree, branches effilees et mecanique suspendue. Alimentation dessous.|0||r01_receiver_arch|roman_inventor
+receiver|r01_receiver_arch__dieselpunk|1|Arche diesel|Rogue|Dieselpunk|4|4|4|4|0|0|Double arche ajouree, branches effilees et mecanique suspendue. Alimentation dessous.|0||r01_receiver_arch|dieselpunk
+receiver|r01_receiver_arch_top__original|1|Arche superieure d'intervention|Rogue|Intervention|4|4|4|4|0|0|Arche ajouree, collier superieur et viseur deporte. Alimentation superieure.|0||r01_receiver_arch_top|original
+receiver|r01_receiver_arch_top__war-torn|1|Arche superieure des ruines|Rogue|Ruines|4|4|4|4|0|0|Arche ajouree, collier superieur et viseur deporte. Alimentation superieure.|0||r01_receiver_arch_top|war_torn
+receiver|r01_receiver_arch_top__medieval-forge|1|Arche superieure de la forge|Rogue|Forge medievale|4|4|4|4|0|0|Arche ajouree, collier superieur et viseur deporte. Alimentation superieure.|0||r01_receiver_arch_top|medieval_forge
+receiver|r01_receiver_arch_top__prehistoric|1|Arche superieure d'os et de silex|Rogue|Os et silex|4|4|4|4|0|0|Arche ajouree, collier superieur et viseur deporte. Alimentation superieure.|0||r01_receiver_arch_top|prehistoric
+receiver|r01_receiver_arch_top__living-jungle|1|Arche superieure de la canopee|Rogue|Canopee|4|4|4|4|0|0|Arche ajouree, collier superieur et viseur deporte. Alimentation superieure.|0||r01_receiver_arch_top|living_jungle
+receiver|r01_receiver_arch_top__medieval-alchemy|1|Arche superieure d'alchimie|Rogue|Alchimie|4|4|4|4|0|0|Arche ajouree, collier superieur et viseur deporte. Alimentation superieure.|0||r01_receiver_arch_top|medieval_alchemy
+receiver|r01_receiver_arch_top__porcelain-fluidics|1|Arche superieure de porcelaine|Rogue|Porcelaine|4|4|4|4|0|0|Arche ajouree, collier superieur et viseur deporte. Alimentation superieure.|0||r01_receiver_arch_top|porcelain_fluidics
+receiver|r01_receiver_arch_top__ww1-trench|1|Arche superieure des tranchees|Rogue|Grande Guerre|4|4|4|4|0|0|Arche ajouree, collier superieur et viseur deporte. Alimentation superieure.|0||r01_receiver_arch_top|ww1_trench
+receiver|r01_receiver_arch_top__bedrock-miner|1|Arche superieure des profondeurs|Rogue|Bedrock|4|4|4|4|0|0|Arche ajouree, collier superieur et viseur deporte. Alimentation superieure.|0||r01_receiver_arch_top|bedrock_miner
+receiver|r01_receiver_arch_top__new-york-noir|1|Arche superieure de minuit|Rogue|New York noir|4|4|4|4|0|0|Arche ajouree, collier superieur et viseur deporte. Alimentation superieure.|0||r01_receiver_arch_top|new_york_noir
+receiver|r01_receiver_arch_top__castaway|1|Arche superieure des rivages|Rogue|Bois de naufrage|4|4|4|4|0|0|Arche ajouree, collier superieur et viseur deporte. Alimentation superieure.|0||r01_receiver_arch_top|castaway
+receiver|r01_receiver_arch_top__abyss-diver|1|Arche superieure des abysses|Rogue|Abysses|4|4|4|4|0|0|Arche ajouree, collier superieur et viseur deporte. Alimentation superieure.|0||r01_receiver_arch_top|abyss_diver
+receiver|r01_receiver_arch_top__roman-inventor|1|Arche superieure d'inventeur|Rogue|Rome / Inventeur|4|4|4|4|0|0|Arche ajouree, collier superieur et viseur deporte. Alimentation superieure.|0||r01_receiver_arch_top|roman_inventor
+receiver|r01_receiver_arch_top__dieselpunk|1|Arche superieure diesel|Rogue|Dieselpunk|4|4|4|4|0|0|Arche ajouree, collier superieur et viseur deporte. Alimentation superieure.|0||r01_receiver_arch_top|dieselpunk
+receiver|r01_receiver_gyre__original|1|Gyre d'intervention|Engine|Intervention|4|4|4|4|0|0|Noyau cylindrique, cerclages ouverts et cage helicoidale. Alimentation dessous.|0||r01_receiver_gyre|original
+receiver|r01_receiver_gyre__war-torn|1|Gyre des ruines|Engine|Ruines|4|4|4|4|0|0|Noyau cylindrique, cerclages ouverts et cage helicoidale. Alimentation dessous.|0||r01_receiver_gyre|war_torn
+receiver|r01_receiver_gyre__medieval-forge|1|Gyre de la forge|Engine|Forge medievale|4|4|4|4|0|0|Noyau cylindrique, cerclages ouverts et cage helicoidale. Alimentation dessous.|0||r01_receiver_gyre|medieval_forge
+receiver|r01_receiver_gyre__prehistoric|1|Gyre d'os et de silex|Engine|Os et silex|4|4|4|4|0|0|Noyau cylindrique, cerclages ouverts et cage helicoidale. Alimentation dessous.|0||r01_receiver_gyre|prehistoric
+receiver|r01_receiver_gyre__living-jungle|1|Gyre de la canopee|Engine|Canopee|4|4|4|4|0|0|Noyau cylindrique, cerclages ouverts et cage helicoidale. Alimentation dessous.|0||r01_receiver_gyre|living_jungle
+receiver|r01_receiver_gyre__medieval-alchemy|1|Gyre d'alchimie|Engine|Alchimie|4|4|4|4|0|0|Noyau cylindrique, cerclages ouverts et cage helicoidale. Alimentation dessous.|0||r01_receiver_gyre|medieval_alchemy
+receiver|r01_receiver_gyre__porcelain-fluidics|1|Gyre de porcelaine|Engine|Porcelaine|4|4|4|4|0|0|Noyau cylindrique, cerclages ouverts et cage helicoidale. Alimentation dessous.|0||r01_receiver_gyre|porcelain_fluidics
+receiver|r01_receiver_gyre__ww1-trench|1|Gyre des tranchees|Engine|Grande Guerre|4|4|4|4|0|0|Noyau cylindrique, cerclages ouverts et cage helicoidale. Alimentation dessous.|0||r01_receiver_gyre|ww1_trench
+receiver|r01_receiver_gyre__bedrock-miner|1|Gyre des profondeurs|Engine|Bedrock|4|4|4|4|0|0|Noyau cylindrique, cerclages ouverts et cage helicoidale. Alimentation dessous.|0||r01_receiver_gyre|bedrock_miner
+receiver|r01_receiver_gyre__new-york-noir|1|Gyre de minuit|Engine|New York noir|4|4|4|4|0|0|Noyau cylindrique, cerclages ouverts et cage helicoidale. Alimentation dessous.|0||r01_receiver_gyre|new_york_noir
+receiver|r01_receiver_gyre__castaway|1|Gyre des rivages|Engine|Bois de naufrage|4|4|4|4|0|0|Noyau cylindrique, cerclages ouverts et cage helicoidale. Alimentation dessous.|0||r01_receiver_gyre|castaway
+receiver|r01_receiver_gyre__abyss-diver|1|Gyre des abysses|Engine|Abysses|4|4|4|4|0|0|Noyau cylindrique, cerclages ouverts et cage helicoidale. Alimentation dessous.|0||r01_receiver_gyre|abyss_diver
+receiver|r01_receiver_gyre__roman-inventor|1|Gyre d'inventeur|Engine|Rome / Inventeur|4|4|4|4|0|0|Noyau cylindrique, cerclages ouverts et cage helicoidale. Alimentation dessous.|0||r01_receiver_gyre|roman_inventor
+receiver|r01_receiver_gyre__dieselpunk|1|Gyre diesel|Engine|Dieselpunk|4|4|4|4|0|0|Noyau cylindrique, cerclages ouverts et cage helicoidale. Alimentation dessous.|0||r01_receiver_gyre|dieselpunk
+chamber|r01_chamber_inventor__original|1|Culasse a manivelle d'intervention|Rogue|Intervention|4|4|4|4|0|0|Chariot ouvert, roue dentee et manivelle decalee.|0||r01_chamber_inventor|original
+chamber|r01_chamber_inventor__war-torn|1|Culasse a manivelle des ruines|Rogue|Ruines|4|4|4|4|0|0|Chariot ouvert, roue dentee et manivelle decalee.|0||r01_chamber_inventor|war_torn
+chamber|r01_chamber_inventor__medieval-forge|1|Culasse a manivelle de la forge|Rogue|Forge medievale|4|4|4|4|0|0|Chariot ouvert, roue dentee et manivelle decalee.|0||r01_chamber_inventor|medieval_forge
+chamber|r01_chamber_inventor__prehistoric|1|Culasse a manivelle d'os et de silex|Rogue|Os et silex|4|4|4|4|0|0|Chariot ouvert, roue dentee et manivelle decalee.|0||r01_chamber_inventor|prehistoric
+chamber|r01_chamber_inventor__living-jungle|1|Culasse a manivelle de la canopee|Rogue|Canopee|4|4|4|4|0|0|Chariot ouvert, roue dentee et manivelle decalee.|0||r01_chamber_inventor|living_jungle
+chamber|r01_chamber_inventor__medieval-alchemy|1|Culasse a manivelle d'alchimie|Rogue|Alchimie|4|4|4|4|0|0|Chariot ouvert, roue dentee et manivelle decalee.|0||r01_chamber_inventor|medieval_alchemy
+chamber|r01_chamber_inventor__porcelain-fluidics|1|Culasse a manivelle de porcelaine|Rogue|Porcelaine|4|4|4|4|0|0|Chariot ouvert, roue dentee et manivelle decalee.|0||r01_chamber_inventor|porcelain_fluidics
+chamber|r01_chamber_inventor__ww1-trench|1|Culasse a manivelle des tranchees|Rogue|Grande Guerre|4|4|4|4|0|0|Chariot ouvert, roue dentee et manivelle decalee.|0||r01_chamber_inventor|ww1_trench
+chamber|r01_chamber_inventor__bedrock-miner|1|Culasse a manivelle des profondeurs|Rogue|Bedrock|4|4|4|4|0|0|Chariot ouvert, roue dentee et manivelle decalee.|0||r01_chamber_inventor|bedrock_miner
+chamber|r01_chamber_inventor__new-york-noir|1|Culasse a manivelle de minuit|Rogue|New York noir|4|4|4|4|0|0|Chariot ouvert, roue dentee et manivelle decalee.|0||r01_chamber_inventor|new_york_noir
+chamber|r01_chamber_inventor__castaway|1|Culasse a manivelle des rivages|Rogue|Bois de naufrage|4|4|4|4|0|0|Chariot ouvert, roue dentee et manivelle decalee.|0||r01_chamber_inventor|castaway
+chamber|r01_chamber_inventor__abyss-diver|1|Culasse a manivelle des abysses|Rogue|Abysses|4|4|4|4|0|0|Chariot ouvert, roue dentee et manivelle decalee.|0||r01_chamber_inventor|abyss_diver
+chamber|r01_chamber_inventor__roman-inventor|1|Culasse a manivelle d'inventeur|Rogue|Rome / Inventeur|4|4|4|4|0|0|Chariot ouvert, roue dentee et manivelle decalee.|0||r01_chamber_inventor|roman_inventor
+chamber|r01_chamber_inventor__dieselpunk|1|Culasse a manivelle diesel|Rogue|Dieselpunk|4|4|4|4|0|0|Chariot ouvert, roue dentee et manivelle decalee.|0||r01_chamber_inventor|dieselpunk
+chamber|r01_chamber_diesel__original|1|Culasse a cames d'intervention|Engine|Intervention|4|4|4|4|0|0|Arbre a cames, ressort apparent et levier de rappel.|0||r01_chamber_diesel|original
+chamber|r01_chamber_diesel__war-torn|1|Culasse a cames des ruines|Engine|Ruines|4|4|4|4|0|0|Arbre a cames, ressort apparent et levier de rappel.|0||r01_chamber_diesel|war_torn
+chamber|r01_chamber_diesel__medieval-forge|1|Culasse a cames de la forge|Engine|Forge medievale|4|4|4|4|0|0|Arbre a cames, ressort apparent et levier de rappel.|0||r01_chamber_diesel|medieval_forge
+chamber|r01_chamber_diesel__prehistoric|1|Culasse a cames d'os et de silex|Engine|Os et silex|4|4|4|4|0|0|Arbre a cames, ressort apparent et levier de rappel.|0||r01_chamber_diesel|prehistoric
+chamber|r01_chamber_diesel__living-jungle|1|Culasse a cames de la canopee|Engine|Canopee|4|4|4|4|0|0|Arbre a cames, ressort apparent et levier de rappel.|0||r01_chamber_diesel|living_jungle
+chamber|r01_chamber_diesel__medieval-alchemy|1|Culasse a cames d'alchimie|Engine|Alchimie|4|4|4|4|0|0|Arbre a cames, ressort apparent et levier de rappel.|0||r01_chamber_diesel|medieval_alchemy
+chamber|r01_chamber_diesel__porcelain-fluidics|1|Culasse a cames de porcelaine|Engine|Porcelaine|4|4|4|4|0|0|Arbre a cames, ressort apparent et levier de rappel.|0||r01_chamber_diesel|porcelain_fluidics
+chamber|r01_chamber_diesel__ww1-trench|1|Culasse a cames des tranchees|Engine|Grande Guerre|4|4|4|4|0|0|Arbre a cames, ressort apparent et levier de rappel.|0||r01_chamber_diesel|ww1_trench
+chamber|r01_chamber_diesel__bedrock-miner|1|Culasse a cames des profondeurs|Engine|Bedrock|4|4|4|4|0|0|Arbre a cames, ressort apparent et levier de rappel.|0||r01_chamber_diesel|bedrock_miner
+chamber|r01_chamber_diesel__new-york-noir|1|Culasse a cames de minuit|Engine|New York noir|4|4|4|4|0|0|Arbre a cames, ressort apparent et levier de rappel.|0||r01_chamber_diesel|new_york_noir
+chamber|r01_chamber_diesel__castaway|1|Culasse a cames des rivages|Engine|Bois de naufrage|4|4|4|4|0|0|Arbre a cames, ressort apparent et levier de rappel.|0||r01_chamber_diesel|castaway
+chamber|r01_chamber_diesel__abyss-diver|1|Culasse a cames des abysses|Engine|Abysses|4|4|4|4|0|0|Arbre a cames, ressort apparent et levier de rappel.|0||r01_chamber_diesel|abyss_diver
+chamber|r01_chamber_diesel__roman-inventor|1|Culasse a cames d'inventeur|Engine|Rome / Inventeur|4|4|4|4|0|0|Arbre a cames, ressort apparent et levier de rappel.|0||r01_chamber_diesel|roman_inventor
+chamber|r01_chamber_diesel__dieselpunk|1|Culasse a cames diesel|Engine|Dieselpunk|4|4|4|4|0|0|Arbre a cames, ressort apparent et levier de rappel.|0||r01_chamber_diesel|dieselpunk
+optic|r01_optic_inventor__original|1|Dioptre astrolabe d'intervention|Predator|Intervention|4|4|4|4|0|0|Anneaux de visee, graduations en relief et molette laterale.|0||r01_optic_inventor|original
+optic|r01_optic_inventor__war-torn|1|Dioptre astrolabe des ruines|Predator|Ruines|4|4|4|4|0|0|Anneaux de visee, graduations en relief et molette laterale.|0||r01_optic_inventor|war_torn
+optic|r01_optic_inventor__medieval-forge|1|Dioptre astrolabe de la forge|Predator|Forge medievale|4|4|4|4|0|0|Anneaux de visee, graduations en relief et molette laterale.|0||r01_optic_inventor|medieval_forge
+optic|r01_optic_inventor__prehistoric|1|Dioptre astrolabe d'os et de silex|Predator|Os et silex|4|4|4|4|0|0|Anneaux de visee, graduations en relief et molette laterale.|0||r01_optic_inventor|prehistoric
+optic|r01_optic_inventor__living-jungle|1|Dioptre astrolabe de la canopee|Predator|Canopee|4|4|4|4|0|0|Anneaux de visee, graduations en relief et molette laterale.|0||r01_optic_inventor|living_jungle
+optic|r01_optic_inventor__medieval-alchemy|1|Dioptre astrolabe d'alchimie|Predator|Alchimie|4|4|4|4|0|0|Anneaux de visee, graduations en relief et molette laterale.|0||r01_optic_inventor|medieval_alchemy
+optic|r01_optic_inventor__porcelain-fluidics|1|Dioptre astrolabe de porcelaine|Predator|Porcelaine|4|4|4|4|0|0|Anneaux de visee, graduations en relief et molette laterale.|0||r01_optic_inventor|porcelain_fluidics
+optic|r01_optic_inventor__ww1-trench|1|Dioptre astrolabe des tranchees|Predator|Grande Guerre|4|4|4|4|0|0|Anneaux de visee, graduations en relief et molette laterale.|0||r01_optic_inventor|ww1_trench
+optic|r01_optic_inventor__bedrock-miner|1|Dioptre astrolabe des profondeurs|Predator|Bedrock|4|4|4|4|0|0|Anneaux de visee, graduations en relief et molette laterale.|0||r01_optic_inventor|bedrock_miner
+optic|r01_optic_inventor__new-york-noir|1|Dioptre astrolabe de minuit|Predator|New York noir|4|4|4|4|0|0|Anneaux de visee, graduations en relief et molette laterale.|0||r01_optic_inventor|new_york_noir
+optic|r01_optic_inventor__castaway|1|Dioptre astrolabe des rivages|Predator|Bois de naufrage|4|4|4|4|0|0|Anneaux de visee, graduations en relief et molette laterale.|0||r01_optic_inventor|castaway
+optic|r01_optic_inventor__abyss-diver|1|Dioptre astrolabe des abysses|Predator|Abysses|4|4|4|4|0|0|Anneaux de visee, graduations en relief et molette laterale.|0||r01_optic_inventor|abyss_diver
+optic|r01_optic_inventor__roman-inventor|1|Dioptre astrolabe d'inventeur|Predator|Rome / Inventeur|4|4|4|4|0|0|Anneaux de visee, graduations en relief et molette laterale.|0||r01_optic_inventor|roman_inventor
+optic|r01_optic_inventor__dieselpunk|1|Dioptre astrolabe diesel|Predator|Dieselpunk|4|4|4|4|0|0|Anneaux de visee, graduations en relief et molette laterale.|0||r01_optic_inventor|dieselpunk
+optic|r01_optic_diesel__original|1|Viseur periscopique d'intervention|Engine|Intervention|4|4|4|4|0|0|Colonne etagee, capot profile et reglage lateral.|0||r01_optic_diesel|original
+optic|r01_optic_diesel__war-torn|1|Viseur periscopique des ruines|Engine|Ruines|4|4|4|4|0|0|Colonne etagee, capot profile et reglage lateral.|0||r01_optic_diesel|war_torn
+optic|r01_optic_diesel__medieval-forge|1|Viseur periscopique de la forge|Engine|Forge medievale|4|4|4|4|0|0|Colonne etagee, capot profile et reglage lateral.|0||r01_optic_diesel|medieval_forge
+optic|r01_optic_diesel__prehistoric|1|Viseur periscopique d'os et de silex|Engine|Os et silex|4|4|4|4|0|0|Colonne etagee, capot profile et reglage lateral.|0||r01_optic_diesel|prehistoric
+optic|r01_optic_diesel__living-jungle|1|Viseur periscopique de la canopee|Engine|Canopee|4|4|4|4|0|0|Colonne etagee, capot profile et reglage lateral.|0||r01_optic_diesel|living_jungle
+optic|r01_optic_diesel__medieval-alchemy|1|Viseur periscopique d'alchimie|Engine|Alchimie|4|4|4|4|0|0|Colonne etagee, capot profile et reglage lateral.|0||r01_optic_diesel|medieval_alchemy
+optic|r01_optic_diesel__porcelain-fluidics|1|Viseur periscopique de porcelaine|Engine|Porcelaine|4|4|4|4|0|0|Colonne etagee, capot profile et reglage lateral.|0||r01_optic_diesel|porcelain_fluidics
+optic|r01_optic_diesel__ww1-trench|1|Viseur periscopique des tranchees|Engine|Grande Guerre|4|4|4|4|0|0|Colonne etagee, capot profile et reglage lateral.|0||r01_optic_diesel|ww1_trench
+optic|r01_optic_diesel__bedrock-miner|1|Viseur periscopique des profondeurs|Engine|Bedrock|4|4|4|4|0|0|Colonne etagee, capot profile et reglage lateral.|0||r01_optic_diesel|bedrock_miner
+optic|r01_optic_diesel__new-york-noir|1|Viseur periscopique de minuit|Engine|New York noir|4|4|4|4|0|0|Colonne etagee, capot profile et reglage lateral.|0||r01_optic_diesel|new_york_noir
+optic|r01_optic_diesel__castaway|1|Viseur periscopique des rivages|Engine|Bois de naufrage|4|4|4|4|0|0|Colonne etagee, capot profile et reglage lateral.|0||r01_optic_diesel|castaway
+optic|r01_optic_diesel__abyss-diver|1|Viseur periscopique des abysses|Engine|Abysses|4|4|4|4|0|0|Colonne etagee, capot profile et reglage lateral.|0||r01_optic_diesel|abyss_diver
+optic|r01_optic_diesel__roman-inventor|1|Viseur periscopique d'inventeur|Engine|Rome / Inventeur|4|4|4|4|0|0|Colonne etagee, capot profile et reglage lateral.|0||r01_optic_diesel|roman_inventor
+optic|r01_optic_diesel__dieselpunk|1|Viseur periscopique diesel|Engine|Dieselpunk|4|4|4|4|0|0|Colonne etagee, capot profile et reglage lateral.|0||r01_optic_diesel|dieselpunk
+power|r01_power_inventor__original|1|Accumulateur a ressort d'intervention|Rogue|Intervention|4|4|4|4|0|0|Deux tambours de remontage et courroies sous un arceau ouvert.|0||r01_power_inventor|original
+power|r01_power_inventor__war-torn|1|Accumulateur a ressort des ruines|Rogue|Ruines|4|4|4|4|0|0|Deux tambours de remontage et courroies sous un arceau ouvert.|0||r01_power_inventor|war_torn
+power|r01_power_inventor__medieval-forge|1|Accumulateur a ressort de la forge|Rogue|Forge medievale|4|4|4|4|0|0|Deux tambours de remontage et courroies sous un arceau ouvert.|0||r01_power_inventor|medieval_forge
+power|r01_power_inventor__prehistoric|1|Accumulateur a ressort d'os et de silex|Rogue|Os et silex|4|4|4|4|0|0|Deux tambours de remontage et courroies sous un arceau ouvert.|0||r01_power_inventor|prehistoric
+power|r01_power_inventor__living-jungle|1|Accumulateur a ressort de la canopee|Rogue|Canopee|4|4|4|4|0|0|Deux tambours de remontage et courroies sous un arceau ouvert.|0||r01_power_inventor|living_jungle
+power|r01_power_inventor__medieval-alchemy|1|Accumulateur a ressort d'alchimie|Rogue|Alchimie|4|4|4|4|0|0|Deux tambours de remontage et courroies sous un arceau ouvert.|0||r01_power_inventor|medieval_alchemy
+power|r01_power_inventor__porcelain-fluidics|1|Accumulateur a ressort de porcelaine|Rogue|Porcelaine|4|4|4|4|0|0|Deux tambours de remontage et courroies sous un arceau ouvert.|0||r01_power_inventor|porcelain_fluidics
+power|r01_power_inventor__ww1-trench|1|Accumulateur a ressort des tranchees|Rogue|Grande Guerre|4|4|4|4|0|0|Deux tambours de remontage et courroies sous un arceau ouvert.|0||r01_power_inventor|ww1_trench
+power|r01_power_inventor__bedrock-miner|1|Accumulateur a ressort des profondeurs|Rogue|Bedrock|4|4|4|4|0|0|Deux tambours de remontage et courroies sous un arceau ouvert.|0||r01_power_inventor|bedrock_miner
+power|r01_power_inventor__new-york-noir|1|Accumulateur a ressort de minuit|Rogue|New York noir|4|4|4|4|0|0|Deux tambours de remontage et courroies sous un arceau ouvert.|0||r01_power_inventor|new_york_noir
+power|r01_power_inventor__castaway|1|Accumulateur a ressort des rivages|Rogue|Bois de naufrage|4|4|4|4|0|0|Deux tambours de remontage et courroies sous un arceau ouvert.|0||r01_power_inventor|castaway
+power|r01_power_inventor__abyss-diver|1|Accumulateur a ressort des abysses|Rogue|Abysses|4|4|4|4|0|0|Deux tambours de remontage et courroies sous un arceau ouvert.|0||r01_power_inventor|abyss_diver
+power|r01_power_inventor__roman-inventor|1|Accumulateur a ressort d'inventeur|Rogue|Rome / Inventeur|4|4|4|4|0|0|Deux tambours de remontage et courroies sous un arceau ouvert.|0||r01_power_inventor|roman_inventor
+power|r01_power_inventor__dieselpunk|1|Accumulateur a ressort diesel|Rogue|Dieselpunk|4|4|4|4|0|0|Deux tambours de remontage et courroies sous un arceau ouvert.|0||r01_power_inventor|dieselpunk
+power|r01_power_diesel__original|1|Reservoir a huile d'intervention|Engine|Intervention|4|4|4|4|0|0|Deux colonnes d huile, conduites et manometre mecanique.|0||r01_power_diesel|original
+power|r01_power_diesel__war-torn|1|Reservoir a huile des ruines|Engine|Ruines|4|4|4|4|0|0|Deux colonnes d huile, conduites et manometre mecanique.|0||r01_power_diesel|war_torn
+power|r01_power_diesel__medieval-forge|1|Reservoir a huile de la forge|Engine|Forge medievale|4|4|4|4|0|0|Deux colonnes d huile, conduites et manometre mecanique.|0||r01_power_diesel|medieval_forge
+power|r01_power_diesel__prehistoric|1|Reservoir a huile d'os et de silex|Engine|Os et silex|4|4|4|4|0|0|Deux colonnes d huile, conduites et manometre mecanique.|0||r01_power_diesel|prehistoric
+power|r01_power_diesel__living-jungle|1|Reservoir a huile de la canopee|Engine|Canopee|4|4|4|4|0|0|Deux colonnes d huile, conduites et manometre mecanique.|0||r01_power_diesel|living_jungle
+power|r01_power_diesel__medieval-alchemy|1|Reservoir a huile d'alchimie|Engine|Alchimie|4|4|4|4|0|0|Deux colonnes d huile, conduites et manometre mecanique.|0||r01_power_diesel|medieval_alchemy
+power|r01_power_diesel__porcelain-fluidics|1|Reservoir a huile de porcelaine|Engine|Porcelaine|4|4|4|4|0|0|Deux colonnes d huile, conduites et manometre mecanique.|0||r01_power_diesel|porcelain_fluidics
+power|r01_power_diesel__ww1-trench|1|Reservoir a huile des tranchees|Engine|Grande Guerre|4|4|4|4|0|0|Deux colonnes d huile, conduites et manometre mecanique.|0||r01_power_diesel|ww1_trench
+power|r01_power_diesel__bedrock-miner|1|Reservoir a huile des profondeurs|Engine|Bedrock|4|4|4|4|0|0|Deux colonnes d huile, conduites et manometre mecanique.|0||r01_power_diesel|bedrock_miner
+power|r01_power_diesel__new-york-noir|1|Reservoir a huile de minuit|Engine|New York noir|4|4|4|4|0|0|Deux colonnes d huile, conduites et manometre mecanique.|0||r01_power_diesel|new_york_noir
+power|r01_power_diesel__castaway|1|Reservoir a huile des rivages|Engine|Bois de naufrage|4|4|4|4|0|0|Deux colonnes d huile, conduites et manometre mecanique.|0||r01_power_diesel|castaway
+power|r01_power_diesel__abyss-diver|1|Reservoir a huile des abysses|Engine|Abysses|4|4|4|4|0|0|Deux colonnes d huile, conduites et manometre mecanique.|0||r01_power_diesel|abyss_diver
+power|r01_power_diesel__roman-inventor|1|Reservoir a huile d'inventeur|Engine|Rome / Inventeur|4|4|4|4|0|0|Deux colonnes d huile, conduites et manometre mecanique.|0||r01_power_diesel|roman_inventor
+power|r01_power_diesel__dieselpunk|1|Reservoir a huile diesel|Engine|Dieselpunk|4|4|4|4|0|0|Deux colonnes d huile, conduites et manometre mecanique.|0||r01_power_diesel|dieselpunk
+cooling|r01_cooling_inventor__original|1|Eventails a lamelles d'intervention|Baseline|Intervention|4|4|4|4|0|0|Deux bouquets de lamelles deployees sur leurs pivots.|0||r01_cooling_inventor|original
+cooling|r01_cooling_inventor__war-torn|1|Eventails a lamelles des ruines|Baseline|Ruines|4|4|4|4|0|0|Deux bouquets de lamelles deployees sur leurs pivots.|0||r01_cooling_inventor|war_torn
+cooling|r01_cooling_inventor__medieval-forge|1|Eventails a lamelles de la forge|Baseline|Forge medievale|4|4|4|4|0|0|Deux bouquets de lamelles deployees sur leurs pivots.|0||r01_cooling_inventor|medieval_forge
+cooling|r01_cooling_inventor__prehistoric|1|Eventails a lamelles d'os et de silex|Baseline|Os et silex|4|4|4|4|0|0|Deux bouquets de lamelles deployees sur leurs pivots.|0||r01_cooling_inventor|prehistoric
+cooling|r01_cooling_inventor__living-jungle|1|Eventails a lamelles de la canopee|Baseline|Canopee|4|4|4|4|0|0|Deux bouquets de lamelles deployees sur leurs pivots.|0||r01_cooling_inventor|living_jungle
+cooling|r01_cooling_inventor__medieval-alchemy|1|Eventails a lamelles d'alchimie|Baseline|Alchimie|4|4|4|4|0|0|Deux bouquets de lamelles deployees sur leurs pivots.|0||r01_cooling_inventor|medieval_alchemy
+cooling|r01_cooling_inventor__porcelain-fluidics|1|Eventails a lamelles de porcelaine|Baseline|Porcelaine|4|4|4|4|0|0|Deux bouquets de lamelles deployees sur leurs pivots.|0||r01_cooling_inventor|porcelain_fluidics
+cooling|r01_cooling_inventor__ww1-trench|1|Eventails a lamelles des tranchees|Baseline|Grande Guerre|4|4|4|4|0|0|Deux bouquets de lamelles deployees sur leurs pivots.|0||r01_cooling_inventor|ww1_trench
+cooling|r01_cooling_inventor__bedrock-miner|1|Eventails a lamelles des profondeurs|Baseline|Bedrock|4|4|4|4|0|0|Deux bouquets de lamelles deployees sur leurs pivots.|0||r01_cooling_inventor|bedrock_miner
+cooling|r01_cooling_inventor__new-york-noir|1|Eventails a lamelles de minuit|Baseline|New York noir|4|4|4|4|0|0|Deux bouquets de lamelles deployees sur leurs pivots.|0||r01_cooling_inventor|new_york_noir
+cooling|r01_cooling_inventor__castaway|1|Eventails a lamelles des rivages|Baseline|Bois de naufrage|4|4|4|4|0|0|Deux bouquets de lamelles deployees sur leurs pivots.|0||r01_cooling_inventor|castaway
+cooling|r01_cooling_inventor__abyss-diver|1|Eventails a lamelles des abysses|Baseline|Abysses|4|4|4|4|0|0|Deux bouquets de lamelles deployees sur leurs pivots.|0||r01_cooling_inventor|abyss_diver
+cooling|r01_cooling_inventor__roman-inventor|1|Eventails a lamelles d'inventeur|Baseline|Rome / Inventeur|4|4|4|4|0|0|Deux bouquets de lamelles deployees sur leurs pivots.|0||r01_cooling_inventor|roman_inventor
+cooling|r01_cooling_inventor__dieselpunk|1|Eventails a lamelles diesel|Baseline|Dieselpunk|4|4|4|4|0|0|Deux bouquets de lamelles deployees sur leurs pivots.|0||r01_cooling_inventor|dieselpunk
+cooling|r01_cooling_diesel__original|1|Radiateur a faisceau d'intervention|Fortress|Intervention|4|4|4|4|0|0|Collecteurs arrondis, tubes paralleles et ailettes exterieures.|0||r01_cooling_diesel|original
+cooling|r01_cooling_diesel__war-torn|1|Radiateur a faisceau des ruines|Fortress|Ruines|4|4|4|4|0|0|Collecteurs arrondis, tubes paralleles et ailettes exterieures.|0||r01_cooling_diesel|war_torn
+cooling|r01_cooling_diesel__medieval-forge|1|Radiateur a faisceau de la forge|Fortress|Forge medievale|4|4|4|4|0|0|Collecteurs arrondis, tubes paralleles et ailettes exterieures.|0||r01_cooling_diesel|medieval_forge
+cooling|r01_cooling_diesel__prehistoric|1|Radiateur a faisceau d'os et de silex|Fortress|Os et silex|4|4|4|4|0|0|Collecteurs arrondis, tubes paralleles et ailettes exterieures.|0||r01_cooling_diesel|prehistoric
+cooling|r01_cooling_diesel__living-jungle|1|Radiateur a faisceau de la canopee|Fortress|Canopee|4|4|4|4|0|0|Collecteurs arrondis, tubes paralleles et ailettes exterieures.|0||r01_cooling_diesel|living_jungle
+cooling|r01_cooling_diesel__medieval-alchemy|1|Radiateur a faisceau d'alchimie|Fortress|Alchimie|4|4|4|4|0|0|Collecteurs arrondis, tubes paralleles et ailettes exterieures.|0||r01_cooling_diesel|medieval_alchemy
+cooling|r01_cooling_diesel__porcelain-fluidics|1|Radiateur a faisceau de porcelaine|Fortress|Porcelaine|4|4|4|4|0|0|Collecteurs arrondis, tubes paralleles et ailettes exterieures.|0||r01_cooling_diesel|porcelain_fluidics
+cooling|r01_cooling_diesel__ww1-trench|1|Radiateur a faisceau des tranchees|Fortress|Grande Guerre|4|4|4|4|0|0|Collecteurs arrondis, tubes paralleles et ailettes exterieures.|0||r01_cooling_diesel|ww1_trench
+cooling|r01_cooling_diesel__bedrock-miner|1|Radiateur a faisceau des profondeurs|Fortress|Bedrock|4|4|4|4|0|0|Collecteurs arrondis, tubes paralleles et ailettes exterieures.|0||r01_cooling_diesel|bedrock_miner
+cooling|r01_cooling_diesel__new-york-noir|1|Radiateur a faisceau de minuit|Fortress|New York noir|4|4|4|4|0|0|Collecteurs arrondis, tubes paralleles et ailettes exterieures.|0||r01_cooling_diesel|new_york_noir
+cooling|r01_cooling_diesel__castaway|1|Radiateur a faisceau des rivages|Fortress|Bois de naufrage|4|4|4|4|0|0|Collecteurs arrondis, tubes paralleles et ailettes exterieures.|0||r01_cooling_diesel|castaway
+cooling|r01_cooling_diesel__abyss-diver|1|Radiateur a faisceau des abysses|Fortress|Abysses|4|4|4|4|0|0|Collecteurs arrondis, tubes paralleles et ailettes exterieures.|0||r01_cooling_diesel|abyss_diver
+cooling|r01_cooling_diesel__roman-inventor|1|Radiateur a faisceau d'inventeur|Fortress|Rome / Inventeur|4|4|4|4|0|0|Collecteurs arrondis, tubes paralleles et ailettes exterieures.|0||r01_cooling_diesel|roman_inventor
+cooling|r01_cooling_diesel__dieselpunk|1|Radiateur a faisceau diesel|Fortress|Dieselpunk|4|4|4|4|0|0|Collecteurs arrondis, tubes paralleles et ailettes exterieures.|0||r01_cooling_diesel|dieselpunk

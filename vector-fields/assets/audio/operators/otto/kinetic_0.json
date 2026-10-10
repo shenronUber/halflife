@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "kinetic",
+  "variant": 0,
+  "text": "[grunts] Oof! That hit like a truck!",
+  "request": {
+    "text": "[grunts] Oof! That hit like a truck!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "4ec2afc65133a2b32e97907f1ac49ad0b30930fa06ac16c974b0db41268a3333",
+  "sha256": "8fe7996d069c7f3837e628e386ca860ffaca747a1d9139de4958c9f2968edab0",
+  "request_id": "3LDfYn3GpQBu3yQY06jr",
+  "reported_credit_cost": "4"
+}

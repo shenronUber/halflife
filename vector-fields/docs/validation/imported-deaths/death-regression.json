@@ -1,0 +1,15 @@
+{
+  "seconds": 61.48,
+  "checks": [
+    "original silhouette, UVs and 77 sequences unchanged",
+    "all 32 anatomical combinations valid; 15 themed fragments",
+    "14 real target deaths, standard and electrical independently of anatomical loss",
+    "one corpse per death; corpse survives target respawn",
+    "active effect captured on normal fatal damage",
+    "cadaver expiry clears client state",
+    "actual player head explosion with electrical death",
+    "native screenshots of initial pose, motion, settled corpse and menu"
+  ],
+  "log": "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\death-visual\\native.log",
+  "captures": "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\animation-native\\death-visual\\vf_animation\\scrshots"
+}

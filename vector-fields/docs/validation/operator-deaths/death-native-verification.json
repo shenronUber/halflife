@@ -1,0 +1,23 @@
+{
+  "seconds": 45.38,
+  "actors": 6,
+  "bank_clips": 102,
+  "target_deaths": 139,
+  "player_deaths": 23,
+  "checks": [
+    "all 102 short cries emitted through actual target damage deaths",
+    "all five tactical states fall back to standard for every actor",
+    "same selection on real player deaths across all 21 states, including a gib death",
+    "one cry per life; no old spoken deaths",
+    "instant death cancels queued effect dialogue",
+    "paired states before primaries, most recent within each category",
+    "expired and cleared states select standard",
+    "six real bullet traces proc the element before death",
+    "native positional sounds and caption-free VFDeath metadata reach the client",
+    "voice mute suppresses death audio; auditions do not swallow the next real death",
+    "player effects clear only after death selection"
+  ],
+  "server_sha256": "4966b247f1d36318cbd3993ac8134b8991ef930f7ed0acc29859784f4b7c7bc3",
+  "client_sha256": "4ef46711efe5ef4f9e31cdae0d3dd582d47be0107cbfb5d30d454c4fc4931a08",
+  "log": "C:\\Users\\Mathieu\\Documents\\Half life Project\\runtime\\vector-engine-death-validation\\death-native.log"
+}

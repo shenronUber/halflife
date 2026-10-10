@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "low_health",
+  "variant": 0,
+  "text": "[strained] Scheisse. I'm barely standing.",
+  "request": {
+    "text": "[strained] Scheisse. I'm barely standing.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "ba8cf083fe957b8af9b78ebf6f500f97255d4ea43bcf5ba41fd7bcd154f17664",
+  "sha256": "430179e84e2014a64d01066607ab2fd0df8e2e1c6c721f39c7f31a38e4bbbbc3",
+  "request_id": "cEA1mFHmOUnzWulD6PRv",
+  "reported_credit_cost": "5"
+}

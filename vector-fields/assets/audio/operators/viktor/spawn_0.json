@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "spawn",
+  "variant": 0,
+  "text": "[calm] Ладно. Let's finish this.",
+  "request": {
+    "text": "[calm] Ладно. Let's finish this.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "b5365c95224743ae86d5f87c4150622030035a29fc320afde9f5805f93dcc5fe",
+  "sha256": "aa992cc7e640a73e9428b79abd6e629b2e51b75b98acd53bf6123a4e9cd07c32",
+  "request_id": "bC6ShxOODjxff7Al6QcY",
+  "reported_credit_cost": "4"
+}

@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "actor": "diego",
+  "cause": "resonant_impact",
+  "text": "[grunts] UHH! [screaming] Aaaaagh! [groaning] Nnngh...",
+  "request": {
+    "text": "[grunts] UHH! [screaming] Aaaaagh! [groaning] Nnngh...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "030742d99c31cfb6fa1f0eafdb97d3accbd34076baed23290806e72f782f94be",
+  "sha256": "41074e0542b97d90f4351fcc3c3c37089de6c083763830a35c8227e20e6046ee",
+  "request_id": "HJg5tZRndoMsuM8x9aWg"
+}

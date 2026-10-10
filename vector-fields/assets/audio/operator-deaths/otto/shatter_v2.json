@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "actor": "otto",
+  "cause": "shatter",
+  "text": "[screaming] AAGH!",
+  "request": {
+    "text": "[screaming] AAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "d896c1a97d6f43b88f7043f49fb350dd32f25d212fc4055677a7e017b860f9fb",
+  "sha256": "1ce28b5b6c6699a48b7427efe7e07b6e551dfcce7f676b2574e96309ddcc283f",
+  "request_id": "THITkIh0BO6jYJeSkvy5"
+}

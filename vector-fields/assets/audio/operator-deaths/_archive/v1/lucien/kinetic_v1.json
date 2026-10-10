@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "actor": "lucien",
+  "cause": "kinetic",
+  "text": "[grunts] UHH! [gasping] Hah! [groaning] Urrgh...",
+  "request": {
+    "text": "[grunts] UHH! [gasping] Hah! [groaning] Urrgh...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "b327010c231d7b737a4a25819468bcecbfa78f5e6f560a8938ca454c1c634068",
+  "sha256": "e262fefe169480f052dd682f0171f3b576aab96d15b7914b93f8918af63cf869",
+  "request_id": "GPRzBZdnVslWpCKrkqa4"
+}

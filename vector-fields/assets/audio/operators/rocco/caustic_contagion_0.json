@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "caustic_contagion",
+  "variant": 0,
+  "text": "[coughs] Acid and poison! Get it off!",
+  "request": {
+    "text": "[coughs] Acid and poison! Get it off!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "7bf2df7d13474493902aeb51148e848ae57f93163b090f559f8c84cdcd0e1325",
+  "sha256": "d6813945382593323a022455206a63e6a0383a10ffce057ca804274755499307",
+  "request_id": "JFjBWm1I5rnn7ak7eDvc",
+  "reported_credit_cost": "4"
+}

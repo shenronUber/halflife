@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Cryo / fire",
+  "created_utc": "2026-10-09T02:54:20.973426+00:00",
+  "request_sha256": "af5f33f42e6e1a999cdd9bec16f9c6e95cede93dabf4cb2d6baae589bfd5ef80",
+  "request": {
+    "text": "Single cryogenic ice rifle shot. Immediate cold pressurized pneumatic crack with bright brittle ice tinkling, forceful compact discharge, very short frosty tail. Close dry game sound, no voice, no music, no echo, exactly one trigger pull at start.",
+    "duration_seconds": 1.2,
+    "prompt_influence": 0.55,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "180b2bc529aa75bff7fbc391e5ab274cbdb03f0430a70b5afa2bf6a6014ebd5f",
+  "bytes": 20106,
+  "text": "Single cryogenic ice rifle shot. Immediate cold pressurized pneumatic crack with bright brittle ice tinkling, forceful compact discharge, very short frosty tail. Close dry game sound, no voice, no music, no echo, exactly one trigger pull at start.",
+  "request_id": null,
+  "reported_credit_cost": "12"
+}

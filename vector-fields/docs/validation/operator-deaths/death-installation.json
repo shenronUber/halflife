@@ -1,0 +1,24 @@
+{
+  "status": "installed-and-native-tested",
+  "clips": 102,
+  "actors": 6,
+  "causes": 17,
+  "format": "mono 11025 Hz / 8-bit PCM",
+  "max_duration_seconds": 2.8177,
+  "server_sha256": "4966b247f1d36318cbd3993ac8134b8991ef930f7ed0acc29859784f4b7c7bc3",
+  "client_sha256": "4ef46711efe5ef4f9e31cdae0d3dd582d47be0107cbfb5d30d454c4fc4931a08",
+  "installed": [
+    "C:\\Users\\Mathieu\\Documents\\Half life Project\\runtime\\vector-engine\\vf_visual",
+    "C:\\Users\\Mathieu\\Documents\\Half life Project\\runtime\\jk-botti-research\\engine\\valve"
+  ],
+  "release_artifacts": 288,
+  "engine_changes_required": false,
+  "checks": [
+    "139 actual chamber deaths and 23 actual player deaths pass the contextual matrix",
+    "two native clients receive both normal and gib cries through reliable audio/metadata",
+    "private respawn dialogue remains owner-only",
+    "real jk_botti dies under a six-hit Electro state and the human receives its contextual cry",
+    "old spoken death clips are not precached or emitted",
+    "both launchers deploy the same validated binaries and all 102 game WAVs"
+  ]
+}

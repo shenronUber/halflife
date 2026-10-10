@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Toxic / dismemberment",
+  "created_utc": "2026-10-09T23:28:55.676724+00:00",
+  "request_sha256": "f703fafedd9aa453532b13decb4530bdf4db3e0fa841c4a35b053fdbfe6cbba9",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A soft wet fibrous rupture followed by one muffled dusty spore puff and a brief papery flutter. Physical tissue detachment first, purple poison cloud afterwards. No bubbling.",
+    "duration_seconds": 1.1,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "133ee007adbf1447779fe5511d7091a4a481985f032af5a98e6fc69383d750c7",
+  "bytes": 18434,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A soft wet fibrous rupture followed by one muffled dusty spore puff and a brief papery flutter. Physical tissue detachment first, purple poison cloud afterwards. No bubbling.",
+  "request_id": null,
+  "reported_credit_cost": "11"
+}

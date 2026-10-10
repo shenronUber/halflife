@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "actor": "lucien",
+  "cause": "cavitation",
+  "text": "[choking] Ghh! [groaning] Urrgh! [gurgling] Ghrr...",
+  "request": {
+    "text": "[choking] Ghh! [groaning] Urrgh! [gurgling] Ghrr...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "85f76bbb2f9efa61617876989839eff34e9dfc95a7323ca7af969d7a1c9cd8d6",
+  "sha256": "b5255794aac44e941a0703596655206485e90f3df20795d1e0118b511996b0bc",
+  "request_id": "09A24Oumkwk3NnN4JB7i"
+}

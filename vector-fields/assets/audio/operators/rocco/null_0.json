@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "null",
+  "variant": 0,
+  "text": "[relieved] Reactions blocked. Molto bene.",
+  "request": {
+    "text": "[relieved] Reactions blocked. Molto bene.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "b0579593fcba0e293af6ae578255055784e0d3b160c9cd1c4ca6b41e1021a8ff",
+  "sha256": "105abfcbf882ede61868c700da5f65f81a659fe8d420a5bb5b69f987eab8f8ee",
+  "request_id": "8lKJkwCh2bbZNFWgBngc",
+  "reported_credit_cost": "5"
+}

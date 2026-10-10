@@ -1,0 +1,33 @@
+{
+  "audio_sha256": "21d8244b16e15201bf1d0aeaa6db3431be8d8741ca2da9c2d2cc61604dea79bb",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "Ah! [panting]",
+    "words": [
+      {
+        "text": "Ah!",
+        "start": 0.16,
+        "end": 0.32,
+        "type": "word",
+        "logprob": -0.21245826315134764
+      },
+      {
+        "text": " ",
+        "start": 0.32,
+        "end": 1.04,
+        "type": "spacing",
+        "logprob": -0.00016306500765495002
+      },
+      {
+        "text": "[panting]",
+        "start": 1.04,
+        "end": 4.52,
+        "type": "audio_event",
+        "logprob": -0.006778483342800644
+      }
+    ],
+    "transcription_id": "4JIrdNHd3wYnuI3Q5TJ4",
+    "audio_duration_secs": 4.578375
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "taunt",
+  "variant": 2,
+  "text": "[dryly] All this equipment, and absolutely no talent.",
+  "request": {
+    "text": "[dryly] All this equipment, and absolutely no talent.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "3bcf2ad0684d7bf971eac7d63350d4399ec6ac08ba06e250b2320a3702e8da68",
+  "sha256": "616542a4909bd5406b20b4ee54104fe672ebd0a9f58af4bedac0380c3d1a7ab5",
+  "request_id": "8P3F727685RNpHteGS6Z",
+  "reported_credit_cost": "6"
+}

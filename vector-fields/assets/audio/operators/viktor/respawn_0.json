@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "respawn",
+  "variant": 0,
+  "text": "[annoyed] Опять! You at keyboard. Concentrate, дурак!",
+  "request": {
+    "text": "[annoyed] Опять! You at keyboard. Concentrate, дурак!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "6d68e51e52a6186513327bea85f4a8abcaa9e47e9fae5c13379be0f599c0b7f6",
+  "sha256": "837c1cc6e4b88cdca2e346bd2a805db1a0bb4677de0682cc52cff304e93b54bd",
+  "request_id": "WMPKLsX8zGMKO0ENFrs4",
+  "reported_credit_cost": "6"
+}

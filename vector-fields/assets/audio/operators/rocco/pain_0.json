@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "pain",
+  "variant": 0,
+  "text": "[pained] Ah! Porca miseria!",
+  "request": {
+    "text": "[pained] Ah! Porca miseria!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "17ea743936d91ad41f2b897e35f34a65d9d2e91337a35fd58c4c7756e268ed0b",
+  "sha256": "2701d3e01413ac9f69fc6217a05e62e37e8513ac6c4b2ed6894aab4785eb8472",
+  "request_id": "9QHurhOXBBr2wEzUhF6W",
+  "reported_credit_cost": "3"
+}

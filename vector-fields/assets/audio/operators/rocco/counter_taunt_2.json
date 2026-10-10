@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "counter_taunt",
+  "variant": 2,
+  "text": "[defiant] Keep talking. I'll knock those teeth out!",
+  "request": {
+    "text": "[defiant] Keep talking. I'll knock those teeth out!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "9c27fa4b44845827209d69cebdf06228d4283e28e17eb8b86fcfdc88dfe82ce4",
+  "sha256": "01ad7927008e8d146599d81fd1c1e0ebb13c796e3ff9dc40e688e3087c2a2540",
+  "request_id": "2xEWO0e5kwkFunPJXbCj",
+  "reported_credit_cost": "6"
+}

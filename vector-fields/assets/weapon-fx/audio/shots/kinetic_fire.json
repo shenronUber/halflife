@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Kinetic / fire",
+  "created_utc": "2026-10-09T02:54:37.040467+00:00",
+  "request_sha256": "84cdccf411976c501df14c8f89ec31b70bc61f4b18e23dd6131f3fc5757ce620",
+  "request": {
+    "text": "Single compact military assault rifle gunshot. Exactly one loud immediate sharp supersonic crack with short weighty mechanical body, tiny action clack after it. No multiple shots, no shell bouncing, no voice, no music, no long reverb. Close dry game sound.",
+    "duration_seconds": 1.2,
+    "prompt_influence": 0.55,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "94d51611b941fd2da014e55cedec3cc23e1f18ddcf1648979287ce82d66f46f8",
+  "bytes": 20106,
+  "text": "Single compact military assault rifle gunshot. Exactly one loud immediate sharp supersonic crack with short weighty mechanical body, tiny action clack after it. No multiple shots, no shell bouncing, no voice, no music, no long reverb. Close dry game sound.",
+  "request_id": null,
+  "reported_credit_cost": "12"
+}

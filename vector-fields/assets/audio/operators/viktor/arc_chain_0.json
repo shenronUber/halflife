@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "arc_chain",
+  "variant": 0,
+  "text": "[pained] Wet and electrified. Блин.",
+  "request": {
+    "text": "[pained] Wet and electrified. Блин.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "dd844b41808ffa5e520689d23348cb9bf0cfa1224728273a5e65f666a63f45b6",
+  "sha256": "45b57dbf8146cbc4867c44a5b391aabc73e7ea8063c0e9ed76a92d3621eff640",
+  "request_id": "ej1I9qmnuo3zHfsen7y7",
+  "reported_credit_cost": "4"
+}

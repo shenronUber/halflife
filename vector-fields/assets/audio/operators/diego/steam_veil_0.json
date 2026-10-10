@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "steam_veil",
+  "variant": 0,
+  "text": "[coughs] Vapor! Can't see a thing!",
+  "request": {
+    "text": "[coughs] Vapor! Can't see a thing!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "01630035d526b5cbf6fc69aeb308b03a2c245fd6593585d29c516606c666aabb",
+  "sha256": "4caeb83def041f7353e00a6ad2d51d9ead7cee198cf777c71cadca1788a09dbc",
+  "request_id": "WP9ersGbfMP28cKpp4Bx",
+  "reported_credit_cost": "4"
+}

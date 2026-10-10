@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "actor": "lucien",
+  "cause": "corrosion",
+  "text": "[screaming] Aaaagh! [choking] Ghrgh... [exhales] Hhh...",
+  "request": {
+    "text": "[screaming] Aaaagh! [choking] Ghrgh... [exhales] Hhh...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "52d5051e60a0a5e78cc073304a69e8007cd7c15158efc71429048b3bb8ec0a45",
+  "sha256": "05855012dbdd015f1189a231e03fa0c3469552621b58d11a72918928bfe53455",
+  "request_id": "L4N6QP3fz9yGkhuPOPQ4"
+}

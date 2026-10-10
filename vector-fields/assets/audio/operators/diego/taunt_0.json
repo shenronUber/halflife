@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "taunt",
+  "variant": 0,
+  "text": "[taunting] Vamos, cabrón. Hit me if you can!",
+  "request": {
+    "text": "[taunting] Vamos, cabrón. Hit me if you can!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "5f2e0da0ed6bb94d9da9397b9a78ecb456548c67a7411337f037bee5766007f5",
+  "sha256": "ce722ed44b22528dba8e2adfb866db3f7e1f5d84b304f709a36fc980c23b61a5",
+  "request_id": "CzXLOUtfq92fZRvIXTLW",
+  "reported_credit_cost": "5"
+}

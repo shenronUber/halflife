@@ -1,0 +1,47 @@
+{
+  "audio_sha256": "12b0c93018542232abac5733428c6db16a47bde8c94b00eb197573caec3432e1",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "[coughs] [screams] [sighs]",
+    "words": [
+      {
+        "text": "[coughs]",
+        "start": 0.04,
+        "end": 0.3,
+        "type": "audio_event",
+        "logprob": -0.00954178655349046
+      },
+      {
+        "text": " ",
+        "start": 0.3,
+        "end": 0.3,
+        "type": "spacing",
+        "logprob": -0.05083468183875084
+      },
+      {
+        "text": "[screams]",
+        "start": 0.3,
+        "end": 1.32,
+        "type": "audio_event",
+        "logprob": -0.039095978342153274
+      },
+      {
+        "text": " ",
+        "start": 1.32,
+        "end": 1.34,
+        "type": "spacing",
+        "logprob": -0.0019286142196506262
+      },
+      {
+        "text": "[sighs]",
+        "start": 1.34,
+        "end": 3.5,
+        "type": "audio_event",
+        "logprob": -0.13050213111564515
+      }
+    ],
+    "transcription_id": "4L2pza4XO6wo9KnZTm9y",
+    "audio_duration_secs": 4.3804375
+  }
+}

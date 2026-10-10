@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "death",
+  "variant": 0,
+  "text": "[screams] Aah! Quelle fin stupide!",
+  "request": {
+    "text": "[screams] Aah! Quelle fin stupide!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "9b6c5d7bf8ba53d58a17bac5a9bc0a89a68bcb51070c92ecee706bfd76c174bc",
+  "sha256": "e1438eee5b245fe3c82e7e85c65d948ad3e473a9ab3cfd1b57c51ad325b77f55",
+  "request_id": "TF7SU8fxAYqrSkyaAwD0",
+  "reported_credit_cost": "4"
+}

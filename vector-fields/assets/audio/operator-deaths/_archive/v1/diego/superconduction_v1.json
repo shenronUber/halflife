@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "actor": "diego",
+  "cause": "superconduction",
+  "text": "[shivering] Hh-hh... [screaming] A-a-aagh! [weakly] Hhh...",
+  "request": {
+    "text": "[shivering] Hh-hh... [screaming] A-a-aagh! [weakly] Hhh...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "7252c00a4d16ad507313bf12beda8478f55dc9a8e1f9d661b4419e266a2a7e49",
+  "sha256": "a685593cdd166bca70742d1913e0875fc080f97b4f1eef966eba0d086ad1992a",
+  "request_id": "o5YHzO3MSrjpQK2XXIjk"
+}

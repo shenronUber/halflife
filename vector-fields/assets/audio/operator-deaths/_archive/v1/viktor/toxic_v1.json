@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "actor": "viktor",
+  "cause": "toxic",
+  "text": "[coughing] Khh! Khh! [wheezing] Hhh... [groaning] Nngh...",
+  "request": {
+    "text": "[coughing] Khh! Khh! [wheezing] Hhh... [groaning] Nngh...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "f7ce71281de38ab1656f632530456c882e28361441aefc9904c49451fdf6bc92",
+  "sha256": "3bac45599bc914f6334d297a82aabc9d51eece2848d85f15164f30e2f5456b67",
+  "request_id": "PIq0LEdjSbbhCKQb2FiZ"
+}

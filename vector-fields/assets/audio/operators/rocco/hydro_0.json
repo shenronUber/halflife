@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "hydro",
+  "variant": 0,
+  "text": "[annoyed] Mamma mia, I'm soaked!",
+  "request": {
+    "text": "[annoyed] Mamma mia, I'm soaked!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "437d909f560ff6a320ff7763dcd38c3ea7b16949284c09784fcaa355d18cadcb",
+  "sha256": "8d5d95020531731a1b6809de9d4b0ba4d3848e2e1dad76b8389ad9ba626bc72d",
+  "request_id": "GGSLEB5e9MfmVLbVvJ1R",
+  "reported_credit_cost": "4"
+}

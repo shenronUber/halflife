@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "kill",
+  "variant": 0,
+  "text": "[dryly] Готово. You can rest now.",
+  "request": {
+    "text": "[dryly] Готово. You can rest now.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "571a9aa8b0c3d94129fb6a3e85bdbaf689c3745d2aae6a2f65def075094803fb",
+  "sha256": "f3dd1f1dd892d081c3cadcf1c37d358837e4830fba405c862dd95e0302e48c0a",
+  "request_id": "kuVE88chUdbJ1M7mXk1T",
+  "reported_credit_cost": "4"
+}

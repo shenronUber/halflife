@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Corrosion / death",
+  "created_utc": "2026-10-09T23:28:55.965461+00:00",
+  "request_sha256": "d203b54d161b88aba426b2d7ae1abb0a0524553b03bf29bd6d0d4eaacc0f7eab",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. Close aggressive acid etching: irregular wet sizzling bubbles, a brief dissolving squelch and a narrow chemical fizz tapering away. Bright acid corrosion; no flame whoosh.",
+    "duration_seconds": 2.1,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "79217bc997fee4bbaa4191bc06922d63cab07562db423af87d0006838f61b67a",
+  "bytes": 34316,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. Close aggressive acid etching: irregular wet sizzling bubbles, a brief dissolving squelch and a narrow chemical fizz tapering away. Bright acid corrosion; no flame whoosh.",
+  "request_id": null,
+  "reported_credit_cost": "21"
+}

@@ -1,0 +1,19 @@
+{
+  "audio_sha256": "52891b947ce6544b5980989d897b76d38667ea9184119dd306ed7692cf0c607b",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "[grunts]",
+    "words": [
+      {
+        "text": "[grunts]",
+        "start": 0.04,
+        "end": 0.64,
+        "type": "audio_event",
+        "logprob": -0.14852471921605886
+      }
+    ],
+    "transcription_id": "2mcdWRtC7aO7w2erKQFx",
+    "audio_duration_secs": 2.0470625
+  }
+}

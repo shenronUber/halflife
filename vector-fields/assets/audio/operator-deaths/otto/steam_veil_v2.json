@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "actor": "otto",
+  "cause": "steam_veil",
+  "text": "[choking][screaming] HAAAGH!",
+  "request": {
+    "text": "[choking][screaming] HAAAGH!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "d2476e9cad9b23b536aff81ca79075bd8d157d102501fdb0c5ab68cf56fd911d",
+  "sha256": "1d86aaad016a108aec4d9755c721e01706c9e8786ee5773225afe4e52bb9d738",
+  "request_id": "NRxyAXWPWN2D6T2dNMmm"
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Thermal / death",
+  "created_utc": "2026-10-09T23:28:52.420353+00:00",
+  "request_sha256": "5ad5a7d7568ca4e9847a8c0cd9225de36e64f04138c32ff4953299039241d14b",
+  "request": {
+    "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A fast orange flame whoosh blooms then collapses into dry ember crackles and a soft charred crunch. Hot combustion release, short and physical.",
+    "duration_seconds": 1.7,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "80d6d79975ad2e6aa4804cc892e134a0270e3bcb823b994678058fc0e6eec2c3",
+  "bytes": 28047,
+  "text": "Single dry close positional game sound effect. Immediate attack, self-contained fade, no voice, no scream, no breath, no words, no music, no ambience, no weapon firing, no reverb. A fast orange flame whoosh blooms then collapses into dry ember crackles and a soft charred crunch. Hot combustion release, short and physical.",
+  "request_id": null,
+  "reported_credit_cost": "17"
+}

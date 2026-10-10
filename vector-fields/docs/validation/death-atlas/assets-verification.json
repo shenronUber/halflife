@@ -1,0 +1,13 @@
+{
+  "profiles": 16,
+  "imported_clips": 10,
+  "new_mixamo_clips": 7,
+  "whole_limbs": 5,
+  "small_fragments": 15,
+  "checks": [
+    "all elemental profile pools resolve to compiled sequences",
+    "profile order matches server catalog",
+    "recognizable rigid head/arms/legs with wound materials",
+    "existing fragment indices 0..14 retained"
+  ]
+}

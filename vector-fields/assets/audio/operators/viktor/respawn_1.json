@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "respawn",
+  "variant": 1,
+  "text": "[dryly] Gun is defective. Bullets refuse to cooperate. Very suspicious.",
+  "request": {
+    "text": "[dryly] Gun is defective. Bullets refuse to cooperate. Very suspicious.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "e9f5d20f592a62c133fbba261f16567c34f4b3077075c85c746713ebd237b601",
+  "sha256": "32bd5866354c21cfba9c18e27ac56307a5a62acc434e5c24ead3f756a9a3d585",
+  "request_id": "wJQrEYnyHcna6XLJtxyy",
+  "reported_credit_cost": "8"
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "respawn",
+  "variant": 0,
+  "text": "[frustrated] Mamma mia! You with the keyboard. Focus, idiota!",
+  "request": {
+    "text": "[frustrated] Mamma mia! You with the keyboard. Focus, idiota!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "bc850fc3817e0e406f9e4fe63eb5389707e334ddb3f72e7403257e042d9636ec",
+  "sha256": "416e3b9cf9dbd4ba3765f6440ec3bd7ebbf3c059d102823290fdb330935cc3af",
+  "request_id": "qQriS84MoeGfzJ6MXPLz",
+  "reported_credit_cost": "7"
+}

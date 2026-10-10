@@ -1,0 +1,19 @@
+{
+  "audio_sha256": "529982452c68e34d959675b5c9a174189cd817663c7dc785445e584358168382",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "[groaning]",
+    "words": [
+      {
+        "text": "[groaning]",
+        "start": 0.68,
+        "end": 7.94,
+        "type": "audio_event",
+        "logprob": -0.19531503812565157
+      }
+    ],
+    "transcription_id": "C8UUwoRxeMpBhcSGDcG4",
+    "audio_duration_secs": 8.01275
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "resonant_impact",
+  "variant": 0,
+  "text": "[pained] Resonance. Felt that in my bones.",
+  "request": {
+    "text": "[pained] Resonance. Felt that in my bones.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "601e1a90ed51336f5da617036a375420b4f4d4c4c3002c0eb50d2209c29ef31c",
+  "sha256": "cf4ceb86102093dc80be09bb01351037d3a07846ed5c4d808e03e3dd59f2dd25",
+  "request_id": "VXX7muKWzMpSrTEo2co8",
+  "reported_credit_cost": "5"
+}

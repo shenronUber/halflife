@@ -1,0 +1,247 @@
+{
+  "acquired": "2026-10-10",
+  "banks": [
+    {
+      "bank": "quaternius",
+      "author_page": "https://quaternius.itch.io/universal-animation-library",
+      "mirror": "https://github.com/J-Ponzo/gltf-universal-animation-library",
+      "git_tree": "e24c23cf2a1323488a3faa226ea7ea21f644b73e",
+      "assets": [
+        {
+          "file": "quaternius-standard.gltf",
+          "source_path": "glTF/AnimationLibrary_Godot_Standard.gltf",
+          "github_blob": "d9e132ad1d41089f8f96488775829d220a4beb05",
+          "retrieval_url": "https://api.github.com/repos/J-Ponzo/gltf-universal-animation-library/git/blobs/d9e132ad1d41089f8f96488775829d220a4beb05",
+          "bytes": 2459987,
+          "sha256": "0ff075c7ad6855c5c2c37a171592ee8f0d6ab2f58259e2be77a9b63dd8027765"
+        },
+        {
+          "file": "AnimationLibrary_Godot_Standard.bin",
+          "source_path": "glTF/AnimationLibrary_Godot_Standard.bin",
+          "github_blob": "481652b8b1571b15c254b44f4d9b9f702498f948",
+          "retrieval_url": "https://api.github.com/repos/J-Ponzo/gltf-universal-animation-library/git/blobs/481652b8b1571b15c254b44f4d9b9f702498f948",
+          "bytes": 1587224,
+          "sha256": "6e65377d81558333c4093dbb144a48fd19019343d82b1a3a7992a98ec0e0543c"
+        }
+      ]
+    },
+    {
+      "bank": "kaykit",
+      "author_page": "https://kaylousberg.itch.io/kaykit-character-animations",
+      "mirror": "https://github.com/GeorgeQLe/assets-kaykit-3d-characters",
+      "git_tree": "af08a62d3669370ec4636ae6314b38cdcd5dd759",
+      "assets": [
+        {
+          "file": "kaykit-general.glb",
+          "source_path": "assets/kaykit/character-animations-1.1/Animations/gltf/Rig_Medium/Rig_Medium_General.glb",
+          "github_blob": "5d16cb6815fc8371705147188813f851c10ba26a",
+          "retrieval_url": "https://api.github.com/repos/GeorgeQLe/assets-kaykit-3d-characters/git/blobs/5d16cb6815fc8371705147188813f851c10ba26a",
+          "bytes": 828240,
+          "sha256": "5f725c0f745f36078c7238968cd5c04843cbc6260689eb6e7f5e2bbd7ffdd7ad"
+        }
+      ]
+    },
+    {
+      "bank": "mixamo",
+      "author_page": "https://www.mixamo.com/",
+      "author_documentation": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+      "mirror": "https://github.com/MisterYI/deevid-mixamo-assets",
+      "git_tree": "13066bbd431c855fdc154d1e32d7a37c0b8ee013",
+      "assets": [
+        {
+          "file": "mixamo-Crouch_Death.glb",
+          "source_path": "anim/Crouch_Death.glb",
+          "github_blob": "381464aef04111d52bb6f5214d8456c734f0503d",
+          "retrieval_url": "https://api.github.com/repos/MisterYI/deevid-mixamo-assets/git/blobs/381464aef04111d52bb6f5214d8456c734f0503d",
+          "bytes": 78612,
+          "sha256": "3504122c2b85b2be04130d9bc63c231d0ce0257260a61d1dec450fbb5b3addf3"
+        },
+        {
+          "file": "mixamo-Death.glb",
+          "source_path": "anim/Death.glb",
+          "github_blob": "fbb049b8dec2f0603a93017bf6faac0913201c19",
+          "retrieval_url": "https://api.github.com/repos/MisterYI/deevid-mixamo-assets/git/blobs/fbb049b8dec2f0603a93017bf6faac0913201c19",
+          "bytes": 92220,
+          "sha256": "fe25cf6b5c24703d410ce168a2bf1dfce0ac0189891b83291a661e2c4b411b67"
+        },
+        {
+          "file": "mixamo-Death_Crouching_Headshot_Front.glb",
+          "source_path": "anim/Death_Crouching_Headshot_Front.glb",
+          "github_blob": "153f27293daeb1ea71f8046c5d705f2da53cd6b7",
+          "retrieval_url": "https://api.github.com/repos/MisterYI/deevid-mixamo-assets/git/blobs/153f27293daeb1ea71f8046c5d705f2da53cd6b7",
+          "bytes": 81992,
+          "sha256": "2b0b39148737b17bb1929113060f3cf52ece6c1a44423c66dcc60f6439e496e9"
+        },
+        {
+          "file": "mixamo-Death_From_Right.glb",
+          "source_path": "anim/Death_From_Right.glb",
+          "github_blob": "43ae0275d2268fffff4059737159990fa2d473fa",
+          "retrieval_url": "https://api.github.com/repos/MisterYI/deevid-mixamo-assets/git/blobs/43ae0275d2268fffff4059737159990fa2d473fa",
+          "bytes": 98172,
+          "sha256": "9ec41141c135a2a1b03cc3912b77d1c5778ebe22b94355ed0c2aa93fc2ca8e92"
+        },
+        {
+          "file": "mixamo-Death_From_The_Front.glb",
+          "source_path": "anim/Death_From_The_Front.glb",
+          "github_blob": "6c65fc7a00c51081f3cc3a4b8acd4a2e7211102b",
+          "retrieval_url": "https://api.github.com/repos/MisterYI/deevid-mixamo-assets/git/blobs/6c65fc7a00c51081f3cc3a4b8acd4a2e7211102b",
+          "bytes": 100716,
+          "sha256": "4de3acc5173656bdfcc2edeb6df54881bcb6073fc13d20ba42a9c951bc65f4d3"
+        },
+        {
+          "file": "mixamo-Dying.glb",
+          "source_path": "anim/Dying.glb",
+          "github_blob": "288a111d4fed3b21372c33f5315d2acca46813bb",
+          "retrieval_url": "https://api.github.com/repos/MisterYI/deevid-mixamo-assets/git/blobs/288a111d4fed3b21372c33f5315d2acca46813bb",
+          "bytes": 148260,
+          "sha256": "be1e9655ed41c77c3dfeb6538fa2ef218a2386e909fb56b628b9b438561b174a"
+        },
+        {
+          "file": "mixamo-Falling_Down.glb",
+          "source_path": "anim/Falling_Down.glb",
+          "github_blob": "f2c887e7934bc4c2471b04853c823a7cbbad39cb",
+          "retrieval_url": "https://api.github.com/repos/MisterYI/deevid-mixamo-assets/git/blobs/f2c887e7934bc4c2471b04853c823a7cbbad39cb",
+          "bytes": 65404,
+          "sha256": "f303ca8424c84302e6c5c0c4312ee70a61f36bbe182b99af075af399d61582b2"
+        },
+        {
+          "file": "mixamo-Falling_Flat_Impact.glb",
+          "source_path": "anim/Falling_Flat_Impact.glb",
+          "github_blob": "ef5beff073dcf214b8565c98e821f8223f4bee16",
+          "retrieval_url": "https://api.github.com/repos/MisterYI/deevid-mixamo-assets/git/blobs/ef5beff073dcf214b8565c98e821f8223f4bee16",
+          "bytes": 62492,
+          "sha256": "045424734acb082334a8e065b9bc0b76849aae616af055a7bb7b42c2b0714b70"
+        },
+        {
+          "file": "mixamo-Flying_Back_Death.glb",
+          "source_path": "anim/Flying_Back_Death.glb",
+          "github_blob": "0cb8191dccccd07d68adc643668b591e42ea9c50",
+          "retrieval_url": "https://api.github.com/repos/MisterYI/deevid-mixamo-assets/git/blobs/0cb8191dccccd07d68adc643668b591e42ea9c50",
+          "bytes": 78612,
+          "sha256": "335d0b1df9ccb48c68f62b2a2bcc49f407f5fad4b90bcda81196ca4cf7870b4c"
+        },
+        {
+          "file": "mixamo-Hit_Reaction.glb",
+          "source_path": "anim/Hit_Reaction.glb",
+          "github_blob": "e83fae658d7463fbc2c5920d7528c607315a41d1",
+          "retrieval_url": "https://api.github.com/repos/MisterYI/deevid-mixamo-assets/git/blobs/e83fae658d7463fbc2c5920d7528c607315a41d1",
+          "bytes": 84972,
+          "sha256": "aea6b459dae1b78ce4cff412a55c2283069b63d77b4ade654c715869770f9d87"
+        },
+        {
+          "file": "mixamo-Injured_Hurting_Idle.glb",
+          "source_path": "anim/Injured_Hurting_Idle.glb",
+          "github_blob": "e8f91586a797042f226ff85e6e75a7d3a08f2a03",
+          "retrieval_url": "https://api.github.com/repos/MisterYI/deevid-mixamo-assets/git/blobs/e8f91586a797042f226ff85e6e75a7d3a08f2a03",
+          "bytes": 76904,
+          "sha256": "02633e4f3fb1c31d46e45a1ee599c1b7542067054aff0f0add67e3324aff1ccf"
+        },
+        {
+          "file": "mixamo-Injured_Stumble_Idle.glb",
+          "source_path": "anim/Injured_Stumble_Idle.glb",
+          "github_blob": "c4256bd744b2af13265511d729632e16ebbe7b23",
+          "retrieval_url": "https://api.github.com/repos/MisterYI/deevid-mixamo-assets/git/blobs/c4256bd744b2af13265511d729632e16ebbe7b23",
+          "bytes": 133848,
+          "sha256": "5d0dac8a9bcee238db1c8f8152aec3848544d478368e14313f6d005b2824d161"
+        },
+        {
+          "file": "mixamo-Livershot_Knockdown.glb",
+          "source_path": "anim/Livershot_Knockdown.glb",
+          "github_blob": "4615cd6013a88c82c2242e0db1699bc5662aeb48",
+          "retrieval_url": "https://api.github.com/repos/MisterYI/deevid-mixamo-assets/git/blobs/4615cd6013a88c82c2242e0db1699bc5662aeb48",
+          "bytes": 217824,
+          "sha256": "45c3462a94f66223f1c83b53d2f79b9b739a17ee13968d4efc38ced3cc6d812d"
+        },
+        {
+          "file": "mixamo-Mutant_Dying.glb",
+          "source_path": "anim/Mutant_Dying.glb",
+          "github_blob": "a4ee7f18f1bcbf7b50f5cdd78f329101251a994a",
+          "retrieval_url": "https://api.github.com/repos/MisterYI/deevid-mixamo-assets/git/blobs/a4ee7f18f1bcbf7b50f5cdd78f329101251a994a",
+          "bytes": 124516,
+          "sha256": "6075c8c4afbf4d0e32183c3fd40c7a707e86e81a1fd49efbaac8df8774a8a327"
+        },
+        {
+          "file": "mixamo-Rifle_Run_To_Dying.glb",
+          "source_path": "anim/Rifle_Run_To_Dying.glb",
+          "github_blob": "bf3260978f2de7f8097baaaacf08110134b8b3d4",
+          "retrieval_url": "https://api.github.com/repos/MisterYI/deevid-mixamo-assets/git/blobs/bf3260978f2de7f8097baaaacf08110134b8b3d4",
+          "bytes": 81156,
+          "sha256": "28f24f13327425128b620969f007be7f911a788dfc77d492b618f94f0aae9252"
+        },
+        {
+          "file": "mixamo-Standing_Death_Backward_01.glb",
+          "source_path": "anim/Standing_Death_Backward_01.glb",
+          "github_blob": "d82abab553180dadb203edd38ef6c62088b9bd7c",
+          "retrieval_url": "https://api.github.com/repos/MisterYI/deevid-mixamo-assets/git/blobs/d82abab553180dadb203edd38ef6c62088b9bd7c",
+          "bytes": 99020,
+          "sha256": "3d91555142c3a5c518eaa484626015396d50055b2b7c6bdf3fad646a6f639b4b"
+        },
+        {
+          "file": "mixamo-Standing_Death_Left_01.glb",
+          "source_path": "anim/Standing_Death_Left_01.glb",
+          "github_blob": "42470b770de76d1c614f5c3ece42219303f274f6",
+          "retrieval_url": "https://api.github.com/repos/MisterYI/deevid-mixamo-assets/git/blobs/42470b770de76d1c614f5c3ece42219303f274f6",
+          "bytes": 76904,
+          "sha256": "39816a55581aaa825088b60ddc9edecb64d334a2a568c5f78e87702675e81f37"
+        },
+        {
+          "file": "mixamo-Standing_React_Death_Backward.glb",
+          "source_path": "anim/Standing_React_Death_Backward.glb",
+          "github_blob": "5ee57ba659ff39b11263af2c2af2dc235cbecada",
+          "retrieval_url": "https://api.github.com/repos/MisterYI/deevid-mixamo-assets/git/blobs/5ee57ba659ff39b11263af2c2af2dc235cbecada",
+          "bytes": 104944,
+          "sha256": "0926791a3b9acb080835499cb584c358814fcfe35775f3d0bd364645cc80defa"
+        },
+        {
+          "file": "mixamo-Standing_React_Death_Right.glb",
+          "source_path": "anim/Standing_React_Death_Right.glb",
+          "github_blob": "3170ac6526953b725fde5329d03016e2524b6707",
+          "retrieval_url": "https://api.github.com/repos/MisterYI/deevid-mixamo-assets/git/blobs/3170ac6526953b725fde5329d03016e2524b6707",
+          "bytes": 102400,
+          "sha256": "b5eb01a3c9d207a961f324174c6d31a741b66dfe6566c59f31d61a27507f338b"
+        },
+        {
+          "file": "mixamo-Sword_And_Shield_Death.glb",
+          "source_path": "anim/Sword_And_Shield_Death.glb",
+          "github_blob": "988ba4954ed36c6aca09ef101eb7540b3725e8f4",
+          "retrieval_url": "https://api.github.com/repos/MisterYI/deevid-mixamo-assets/git/blobs/988ba4954ed36c6aca09ef101eb7540b3725e8f4",
+          "bytes": 77764,
+          "sha256": "9042d917ffd14662cb2623e75e7f107650815ad4151bc42545595969238ac96c"
+        },
+        {
+          "file": "mixamo-Two_Handed_Sword_Death.glb",
+          "source_path": "anim/Two_Handed_Sword_Death.glb",
+          "github_blob": "0f90e55ae19210864ea70c689d7162c5244e14aa",
+          "retrieval_url": "https://api.github.com/repos/MisterYI/deevid-mixamo-assets/git/blobs/0f90e55ae19210864ea70c689d7162c5244e14aa",
+          "bytes": 79448,
+          "sha256": "8800580fd3563dc775e0624e27e6befdba7b0c2e0c1b9985408abb86f249f312"
+        },
+        {
+          "file": "mixamo-Walking_To_Dying.glb",
+          "source_path": "anim/Walking_To_Dying.glb",
+          "github_blob": "ab0e994e38c5267ce4e56796b9532198cf67ec24",
+          "retrieval_url": "https://api.github.com/repos/MisterYI/deevid-mixamo-assets/git/blobs/ab0e994e38c5267ce4e56796b9532198cf67ec24",
+          "bytes": 113436,
+          "sha256": "95628149f62089afb3fa9f167e23bb91d3e87107c3fbfe5880d6eefc33d4cb15"
+        },
+        {
+          "file": "mixamo-Zombie_Death.glb",
+          "source_path": "anim/Zombie_Death.glb",
+          "github_blob": "2a393efae10164c780343ad5a8c637d9ef58f84d",
+          "retrieval_url": "https://api.github.com/repos/MisterYI/deevid-mixamo-assets/git/blobs/2a393efae10164c780343ad5a8c637d9ef58f84d",
+          "bytes": 91388,
+          "sha256": "846b7b650357f0c2ca4740513f47e9bd73d433c6a2286786c7d2ac4cd1fe27a8"
+        },
+        {
+          "file": "mixamo-Zombie_Dying.glb",
+          "source_path": "anim/Zombie_Dying.glb",
+          "github_blob": "88d87384174c97fef8462c45762551608ea9343f",
+          "retrieval_url": "https://api.github.com/repos/MisterYI/deevid-mixamo-assets/git/blobs/88d87384174c97fef8462c45762551608ea9343f",
+          "bytes": 99020,
+          "sha256": "b98e226226f1663518e13ea835759a5ca8834da35d739f72cffc2b6f51693a79"
+        }
+      ]
+    }
+  ],
+  "notes": "Unmodified author animation exports from public mirrors. Only death tracks are compiled; all other tracks remain available offline for future transfer."
+}

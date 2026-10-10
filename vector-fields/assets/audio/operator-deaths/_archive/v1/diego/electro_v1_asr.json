@@ -1,0 +1,61 @@
+{
+  "audio_sha256": "a95e50a116a9df9a29854f94c39f0917ef7d3c0ee219d8600518ea8eb3cb0d1b",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "Ah! Mm. [grunting] [panting]",
+    "words": [
+      {
+        "text": "Ah!",
+        "start": 0.16,
+        "end": 0.62,
+        "type": "word",
+        "logprob": -0.17530078689257303
+      },
+      {
+        "text": " ",
+        "start": 0.62,
+        "end": 1.24,
+        "type": "spacing",
+        "logprob": -0.595458447933197
+      },
+      {
+        "text": "Mm.",
+        "start": 1.76,
+        "end": 2.2,
+        "type": "word",
+        "logprob": -0.3970780999419124
+      },
+      {
+        "text": " ",
+        "start": 2.2,
+        "end": 2.36,
+        "type": "spacing",
+        "logprob": -0.1416582465171814
+      },
+      {
+        "text": "[grunting]",
+        "start": 2.36,
+        "end": 3.78,
+        "type": "audio_event",
+        "logprob": -0.245133714202287
+      },
+      {
+        "text": " ",
+        "start": 3.78,
+        "end": 3.78,
+        "type": "spacing",
+        "logprob": -0.01416344940662384
+      },
+      {
+        "text": "[panting]",
+        "start": 5.28,
+        "end": 6.16,
+        "type": "audio_event",
+        "logprob": -0.02371592565898373
+      }
+    ],
+    "transcription_id": "MUKPMu3tpNg4k6NNkJ70",
+    "audio_duration_secs": 6.191125
+  }
+}

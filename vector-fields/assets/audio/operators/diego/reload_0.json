@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "reload",
+  "variant": 0,
+  "text": "[urgent] Recargando! Cover me!",
+  "request": {
+    "text": "[urgent] Recargando! Cover me!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "aae235be1cb00a9f836ef3f9f5fe83ea16fb91fa891e032b81eeb2dc03684579",
+  "sha256": "ef4ccc569d5a401690e8474f052bfde751ce64a6541a31493b2fe5630eb3ef1e",
+  "request_id": "KfEH8sWfX9AHFhKf5QbR",
+  "reported_credit_cost": "3"
+}

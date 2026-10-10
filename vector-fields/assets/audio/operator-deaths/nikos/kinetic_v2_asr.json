@@ -1,0 +1,19 @@
+{
+  "audio_sha256": "e83761956426a7c015db428f68ca2da6a8dcf91ac2c6d0c2452a64e1132e9464",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "Ah!",
+    "words": [
+      {
+        "text": "Ah!",
+        "start": 0.14,
+        "end": 0.88,
+        "type": "word",
+        "logprob": -0.1357120006578043
+      }
+    ],
+    "transcription_id": "itqgnNpfjmMoPtFcDKko",
+    "audio_duration_secs": 1.331625
+  }
+}

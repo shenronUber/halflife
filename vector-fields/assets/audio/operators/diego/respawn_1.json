@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "respawn",
+  "variant": 1,
+  "text": "[indignant] This gun is basura! I want the one the enemy has!",
+  "request": {
+    "text": "[indignant] This gun is basura! I want the one the enemy has!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "d2b871cbab98be9b00082e5e48590d8ad07ed48507b34e69b8da8ff6c14e8cc2",
+  "sha256": "310e6534210aa632eba9945555a51e61fdf3d13b33bdcbb47a3d3126ca63e9d3",
+  "request_id": "0FxYd8uXBn6Yya8T4L7N",
+  "reported_credit_cost": "7"
+}

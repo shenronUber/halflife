@@ -1,0 +1,25 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Sarah / shield_broken",
+  "created_utc": "2026-10-09T02:34:56.197949+00:00",
+  "request_sha256": "28c59b4195a9c406bf8920a58cb56ceedfb16e051dfb3836400bc73e73b490bc",
+  "request": {
+    "text": "Shield down. Moving to cover.",
+    "model_id": "eleven_v4",
+    "language_code": "en",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "endpoint": "/v1/text-to-speech/EXAVITQu4vr4xnSDxMaL?output_format=mp3_44100_128",
+  "sha256": "7fe5ef804fa6c23ff4249760a66553eb6f31d4f73df665f22bef6f6a7b2f85c8",
+  "bytes": 35570,
+  "text": "Shield down. Moving to cover.",
+  "request_id": "fWmKmmmD4k3CYSW529XV",
+  "reported_credit_cost": "3",
+  "voice_id": "EXAVITQu4vr4xnSDxMaL",
+  "voice_name": "Sarah",
+  "language": "en"
+}

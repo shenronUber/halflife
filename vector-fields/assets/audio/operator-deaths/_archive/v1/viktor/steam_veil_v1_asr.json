@@ -1,0 +1,75 @@
+{
+  "audio_sha256": "23f9c7a3d86e09dbe78fcdd2e7e7b7e229ba3f12b7da05733b1db141df1c8233",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "[inhales] Ha! [coughs] [growls] [exhales]",
+    "words": [
+      {
+        "text": "[inhales]",
+        "start": 0.04,
+        "end": 0.66,
+        "type": "audio_event",
+        "logprob": -0.09484734092395575
+      },
+      {
+        "text": " ",
+        "start": 0.66,
+        "end": 0.76,
+        "type": "spacing",
+        "logprob": -0.0014073477359488606
+      },
+      {
+        "text": "Ha!",
+        "start": 0.78,
+        "end": 0.98,
+        "type": "word",
+        "logprob": -0.000964297903313612
+      },
+      {
+        "text": " ",
+        "start": 0.98,
+        "end": 0.98,
+        "type": "spacing",
+        "logprob": 0.0
+      },
+      {
+        "text": "[coughs]",
+        "start": 0.98,
+        "end": 1.6,
+        "type": "audio_event",
+        "logprob": -0.00015422918004838316
+      },
+      {
+        "text": " ",
+        "start": 1.6,
+        "end": 1.6,
+        "type": "spacing",
+        "logprob": -0.005569298751652241
+      },
+      {
+        "text": "[growls]",
+        "start": 1.6,
+        "end": 3.18,
+        "type": "audio_event",
+        "logprob": -0.005240527327461879
+      },
+      {
+        "text": " ",
+        "start": 3.18,
+        "end": 3.18,
+        "type": "spacing",
+        "logprob": -1.7881377516459906e-06
+      },
+      {
+        "text": "[exhales]",
+        "start": 3.18,
+        "end": 6.04,
+        "type": "audio_event",
+        "logprob": -0.0012339947288096266
+      }
+    ],
+    "transcription_id": "RjSXOhlj1kWHWp3MbCsn",
+    "audio_duration_secs": 6.0884375
+  }
+}

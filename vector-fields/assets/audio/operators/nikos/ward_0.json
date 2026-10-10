@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "model_id": "eleven_v4",
+  "event": "ward",
+  "variant": 0,
+  "text": "[relieved] Shield up. Μπράβο!",
+  "request": {
+    "text": "[relieved] Shield up. Μπράβο!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "47c453f8620e50ac549e0ae5e8fee4413f45842f151442ee8bb4c741275df75e",
+  "sha256": "c4bb1f77ade673d14ded9e2e0751496ac78a0a0469423faa4ff5aecff6a3f5f1",
+  "request_id": "YfMTka3IWSEQs5CNC6nr",
+  "reported_credit_cost": "3"
+}

@@ -1,0 +1,19 @@
+{
+  "audio_sha256": "07e1fd6acca6bf2f7bcfead824aa507e52c5e70b181cf05b32d59161d0ddf2a1",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "[growls]",
+    "words": [
+      {
+        "text": "[growls]",
+        "start": 0.1,
+        "end": 1.2,
+        "type": "audio_event",
+        "logprob": -0.20048213588436029
+      }
+    ],
+    "transcription_id": "ZhwUTwc9CR7JHSTvk3MA",
+    "audio_duration_secs": 1.878375
+  }
+}

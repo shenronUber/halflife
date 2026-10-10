@@ -17,6 +17,9 @@
 #include "util.h"
 #include "game.h"
 #include "vf_skins.h"
+#include "vf_voice.h"
+#include "vf_death.h"
+#include "vf_combat.h"
 
 cvar_t	displaysoundlist = {"displaysoundlist","0"};
 
@@ -460,7 +463,10 @@ cvar_t sv_busters = { "sv_busters", "0" };
 // This gets called one time when the game is initialied
 void GameDLLInit( void )
 {
+	VF_VoiceRegister();
+	VF_DeathRegister();
     VF_InitSkins();
+    VF_CombatInit();
 	// Register cvars here:
 
 	g_psv_gravity = CVAR_GET_POINTER( "sv_gravity" );

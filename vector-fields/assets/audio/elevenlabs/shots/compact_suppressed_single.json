@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Compact / Suppressed pistol",
+  "created_utc": "2026-10-09T02:32:47.630659+00:00",
+  "request_sha256": "19c09c42879d6e586815af661abfda14e32feb94af964fe7042a2133dea2c1b5",
+  "request": {
+    "text": "Exactly one suppressed pistol shot, isolated close microphone recording for a video game. A tight low pressure pop with a crisp sliding metal action and restrained punch, realistic rather than a laser or cartoon silencer. Shot immediately at the start, short clean decay. Dry studio sound, no music, no voice, no ambience, no echo, no additional shots.",
+    "duration_seconds": 1.4,
+    "prompt_influence": 0.5,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "8972bfb10422c477997465b8eaf2a1354ad8fe80049c60afa97336c60ab16d03",
+  "bytes": 23031,
+  "text": "Exactly one suppressed pistol shot, isolated close microphone recording for a video game. A tight low pressure pop with a crisp sliding metal action and restrained punch, realistic rather than a laser or cartoon silencer. Shot immediately at the start, short clean decay. Dry studio sound, no music, no voice, no ambience, no echo, no additional shots.",
+  "request_id": null,
+  "reported_credit_cost": "14"
+}

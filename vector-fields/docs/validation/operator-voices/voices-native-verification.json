@@ -1,0 +1,21 @@
+{
+  "clips_precached": 131,
+  "events_emitted": 38,
+  "checks": [
+    "actual Xash client/server DLLs load",
+    "all four actors emit spawn and taunt",
+    "all 21 effect and tactical lines can be auditioned",
+    "successful real reload triggers a line",
+    "real damage triggers pain, burn, shock, armor loss and critical health",
+    "real death emits the actor death voice",
+    "taunt key spam emits one line",
+    "selected identity survives save/load",
+    "invalid actor/event rejected",
+    "client receives metadata and renders subtitle screenshots",
+    "no missing voice sample errors"
+  ],
+  "limits": [
+    "Audio content still requires human listening review.",
+    "Combo auditions do not implement elemental combat rules."
+  ]
+}

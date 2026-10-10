@@ -1,0 +1,68 @@
+{
+  "request_sha256": "ffaf8961b65f82bc7a3b573678170df7718b63360a536285bece051cdb0e7f93",
+  "request": {
+    "voice_name": "VF / Diego Vega",
+    "voice_description": "An original male Spanish video-game skirmisher from Spain, age 28. Bright agile slightly husky upper-mid register, energetic breath and quick crisp attack, clearly Spanish-accented fluent English, tapped and rolled Rs, open Spanish vowels, bouncing conversational rhythm. Competitive, cheeky, smiling bravado with an explosive short fuse. Occasional short native Spanish expressions inside predominantly English dialogue. A believable mobile action fighter with sharp exertion sounds, not a narrator. Clean dry close microphone, no music, no background, no reverb. No imitation of a real person.",
+    "generated_voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+    "labels": {
+      "gender": "male",
+      "accent": "Spanish",
+      "use_case": "video_game"
+    }
+  },
+  "response": {
+    "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+    "name": "VF / Diego Vega",
+    "samples": null,
+    "category": "generated",
+    "fine_tuning": {
+      "is_allowed_to_fine_tune": false,
+      "state": {},
+      "verification_failures": [],
+      "verification_attempts_count": 0,
+      "manual_verification_requested": false,
+      "language": null,
+      "progress": {},
+      "message": {},
+      "dataset_duration_seconds": null,
+      "verification_attempts": null,
+      "slice_ids": null,
+      "manual_verification": null,
+      "max_verification_attempts": null,
+      "next_max_verification_attempts_reset_unix_ms": null
+    },
+    "labels": {
+      "gender": "male",
+      "accent": "Spanish",
+      "use_case": "video_game"
+    },
+    "description": "An original male Spanish video-game skirmisher from Spain, age 28. Bright agile slightly husky upper-mid register, energetic breath and quick crisp attack, clearly Spanish-accented fluent English, tapped and rolled Rs, open Spanish vowels, bouncing conversational rhythm. Competitive, cheeky, smiling bravado with an explosive short fuse. Occasional short native Spanish expressions inside predominantly English dialogue. A believable mobile action fighter with sharp exertion sounds, not a narrator. Clean dry close microphone, no music, no background, no reverb. No imitation of a real person.",
+    "preview_url": "https://api.us.elevenlabs.io/v1/voices/ohfhjPf3ZmNXHgSXn0G0/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJjdXN0b20iLCJ3b3Jrc3BhY2VfaWQiOiJmYzk0ZGQwYzMzOGI0MjAwODNhMzMyYjNhOWQ1N2E5ZiIsImZpbGVuYW1lIjoiNDRkNGYzM2ItYzBkNC00OTEzLTlhNGYtMzFmNzM3OWQyYWQ5Lm1wMyIsInRpbWVzdGFtcCI6MTc5MTUxMTIwMDAwMDAwMH0%3D",
+    "available_for_tiers": [],
+    "settings": {
+      "stability": 0.5,
+      "use_speaker_boost": true,
+      "similarity_boost": 0.75,
+      "style": 0.0,
+      "speed": 1.0
+    },
+    "sharing": null,
+    "high_quality_base_model_ids": [],
+    "verified_languages": [],
+    "collection_ids": null,
+    "safety_control": null,
+    "voice_verification": null,
+    "permission_on_resource": null,
+    "is_owner": null,
+    "is_legacy": false,
+    "is_mixed": false,
+    "favorited_at_unix": null,
+    "created_at_unix": 1791514570,
+    "is_bookmarked": null,
+    "recording_quality": null,
+    "labelling_status": null,
+    "recording_quality_reason": null,
+    "orb_thumbnail_signed_urls": null
+  },
+  "request_id": null
+}

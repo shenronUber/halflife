@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "ward",
+  "variant": 0,
+  "text": "[relieved] Shield up. Sehr gut.",
+  "request": {
+    "text": "[relieved] Shield up. Sehr gut.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "9393d30ec2dce87ffb715619ccf72179d71ac9be510eb0e4401f5cef6a7c0220",
+  "sha256": "40e73930979dba234849459001cd128749bf1a7077251b50252611ed31a6ac57",
+  "request_id": "qhnoLPoH2uIWBrY1aNsE",
+  "reported_credit_cost": "3"
+}

@@ -1,0 +1,20 @@
+{
+  "profiles": 16,
+  "imported_clips": 10,
+  "compiled_imported_poses": 934,
+  "catalogue_files": 886,
+  "inspected_candidates": 24,
+  "new_mixamo_clips": 7,
+  "whole_limb_models": 5,
+  "small_fragment_models": 15,
+  "native_physical_profiles": 16,
+  "native_previous_bank_combinations": 18,
+  "multiplayer_clients": 3,
+  "unit_tests": 41,
+  "files": {
+    "files": 290,
+    "models": 76
+  },
+  "native_alternate_variants": 3,
+  "all_ten_imports_rendered_natively": true
+}

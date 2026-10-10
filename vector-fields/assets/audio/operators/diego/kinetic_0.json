@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "kinetic",
+  "variant": 0,
+  "text": "[grunts] Oof! Menudo golpe!",
+  "request": {
+    "text": "[grunts] Oof! Menudo golpe!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "15824436528555f42f0228dc5748bde5ac4135a9bec324066fe7246192eba2b0",
+  "sha256": "7aaf233228df06561575cb3bd9b477a32a3ed8926d17bdb530bfbe5d01dbb0fb",
+  "request_id": "AzTeE98t0EUgT9GMJDyk",
+  "reported_credit_cost": "3"
+}

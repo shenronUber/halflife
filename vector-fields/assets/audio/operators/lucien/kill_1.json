@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "model_id": "eleven_v4",
+  "event": "kill",
+  "variant": 1,
+  "text": "[mocking] Adieu, amateur.",
+  "request": {
+    "text": "[mocking] Adieu, amateur.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "0c49495cd2714ce0115b100fec2c1cb585a35780b258c2f70b3d44aa20abffc8",
+  "sha256": "cc3eb214e60bdd24a32bb4dfbd146b988b386e1dbe02e1a6d2a29d806d06b665",
+  "request_id": "hXgDTI32p7Fc5oEWZ4rw",
+  "reported_credit_cost": "3"
+}

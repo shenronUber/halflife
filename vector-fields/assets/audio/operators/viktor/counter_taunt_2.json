@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "counter_taunt",
+  "variant": 2,
+  "text": "[defiant] Big mouth. Come closer. We fix that.",
+  "request": {
+    "text": "[defiant] Big mouth. Come closer. We fix that.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "e72796bec5c07e2a12360e50a19b0b855c7e627ee19b48ee5b17d2b102108b98",
+  "sha256": "69292d8d078bb721ae72db53a69b41706b73b191ecf7453f2a7666be97d082a7",
+  "request_id": "Eo9Hl0Su8ICNywMAwTmh",
+  "reported_credit_cost": "5"
+}

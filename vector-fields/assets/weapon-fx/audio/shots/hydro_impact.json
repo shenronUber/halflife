@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Hydro / impact",
+  "created_utc": "2026-10-09T02:54:16.153847+00:00",
+  "request_sha256": "6b04f9f7be7b9234bd46f658c3635085b79dffe2334e1b6f9c304e26cb22f143",
+  "request": {
+    "text": "One short violent water projectile impact. Immediate wet slap on stone, sharp spray and falling droplets, short close dry tail. No firing sound, no voice, no music.",
+    "duration_seconds": 1.2,
+    "prompt_influence": 0.55,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "0d3e90ce33a0164848bad0394217e0f840a865c58a02b1becbcb139534f995fe",
+  "bytes": 20106,
+  "text": "One short violent water projectile impact. Immediate wet slap on stone, sharp spray and falling droplets, short close dry tail. No firing sound, no voice, no music.",
+  "request_id": null,
+  "reported_credit_cost": "12"
+}

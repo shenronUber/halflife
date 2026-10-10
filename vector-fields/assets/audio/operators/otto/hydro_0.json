@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "hydro",
+  "variant": 0,
+  "text": "[annoyed] Nass! I'm completely soaked.",
+  "request": {
+    "text": "[annoyed] Nass! I'm completely soaked.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "4418039c5106dfe754f0b62d330b3c352826b70cc63adf1f3b2474ba7789923a",
+  "sha256": "43f2129ba0dad3c3452195f29e66f9deb1b5a27dc27e4b0130d70880dc9b5114",
+  "request_id": "ZihpvccHtBusVdIETc4T",
+  "reported_credit_cost": "4"
+}

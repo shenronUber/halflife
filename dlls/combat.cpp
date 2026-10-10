@@ -29,6 +29,8 @@
 #include "animation.h"
 #include "weapons.h"
 #include "func_break.h"
+#include "vf_combat.h"
+#include "vf_death.h"
 
 extern DLL_GLOBAL Vector		g_vecAttackDir;
 extern DLL_GLOBAL int			g_iSkillLevel;
@@ -305,7 +307,7 @@ void CBaseMonster :: GibMonster( void )
 	TraceResult	tr;
 	BOOL		gibbed = FALSE;
 
-	EMIT_SOUND(ENT(pev), CHAN_WEAPON, "common/bodysplat.wav", 1, ATTN_NORM);		
+	if(!VF_DeathGibSound(this))EMIT_SOUND(ENT(pev), CHAN_WEAPON, "common/bodysplat.wav", 1, ATTN_NORM);
 
 	// only humans throw skulls !!!UNDONE - eventually monsters will have their own sets of gibs
 	if ( HasHumanGibs() )
@@ -1439,6 +1441,7 @@ void CBaseEntity::FireBullets(ULONG cShots, Vector vecSrc, Vector vecDirShooting
 		if (tr.flFraction != 1.0)
 		{
 			CBaseEntity *pEntity = CBaseEntity::Instance(tr.pHit);
+			VF_ProjectileTraceScope vfImpact(iBulletType, pevAttacker, vecSrc, vecEnd, tr, (float)iDamage);
 
 			if ( iDamage )
 			{
@@ -1537,6 +1540,7 @@ Vector CBaseEntity::FireBulletsPlayer ( ULONG cShots, Vector vecSrc, Vector vecD
 		if (tr.flFraction != 1.0)
 		{
 			CBaseEntity *pEntity = CBaseEntity::Instance(tr.pHit);
+			VF_ProjectileTraceScope vfImpact(iBulletType, pevAttacker, vecSrc, vecEnd, tr, (float)iDamage);
 
 			if ( iDamage )
 			{

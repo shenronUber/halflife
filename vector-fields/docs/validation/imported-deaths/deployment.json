@@ -1,0 +1,17 @@
+{
+  "files": 290,
+  "models": 76,
+  "date": "2026-10-10",
+  "destination": "C:\\Users\\Mathieu\\Documents\\Half life Project\\runtime\\vector-engine\\vf_visual",
+  "death_sequences": {
+    "vf_electro": 77,
+    "vf_q_death": 78,
+    "vf_k_death_a": 79,
+    "vf_k_death_b": 80
+  },
+  "checks": [
+    "current client and server deployed",
+    "compiled death and fragment models deployed",
+    "all canonical release artifacts match generated sources"
+  ]
+}

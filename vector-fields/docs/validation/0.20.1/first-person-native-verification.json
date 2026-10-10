@@ -1,0 +1,63 @@
+{
+  "native": {
+    "captures": [
+      "fp_gign",
+      "fp_salvager",
+      "fp_warden",
+      "fp_bone",
+      "fp_canopy",
+      "fp_alchemist",
+      "fp_porcelain",
+      "fp_trench",
+      "fp_bedrock",
+      "fp_noir",
+      "fp_castaway",
+      "fp_diver",
+      "fp_roman_inventor",
+      "fp_dieselpunk",
+      "fp_mixed_roman_gloves",
+      "fp_mixed_diver_sleeves",
+      "fp_restored",
+      "fp_a_a_out",
+      "fp_a_a_in",
+      "fp_a_b_out",
+      "fp_a_b_in",
+      "fp_a_c_out",
+      "fp_a_c_in",
+      "fp_a_d_out",
+      "fp_a_d_in",
+      "fp_side_a_out",
+      "fp_side_a_in",
+      "fp_side_b_out",
+      "fp_side_b_in",
+      "fp_side_c_out",
+      "fp_side_c_in",
+      "fp_side_d_out",
+      "fp_side_d_in",
+      "fp_arch_top_a_out",
+      "fp_arch_top_a_in",
+      "fp_arch_top_b_out",
+      "fp_arch_top_b_in",
+      "fp_arch_top_c_out",
+      "fp_arch_top_c_in",
+      "fp_arch_top_d_out",
+      "fp_arch_top_d_in",
+      "fp_preview_hands",
+      "fp_preview_clean"
+    ],
+    "resolution": [
+      1920,
+      1080
+    ],
+    "last_texture_bytes": 829722338,
+    "checks": [
+      "14 complete outfits rendered in first person",
+      "changing gloves and torso independently",
+      "mixed appearance survives save/load",
+      "all four magazines fire and reload on bottom, side and top rigs",
+      "optional preview hands and clean player preview",
+      "1753 pairwise assemblies with the new hands",
+      "no rejected assemblies or recurring model loads"
+    ]
+  }
+}

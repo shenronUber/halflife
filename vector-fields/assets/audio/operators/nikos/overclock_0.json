@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "model_id": "eleven_v4",
+  "event": "overclock",
+  "variant": 0,
+  "text": "[excited] Πάμε! Everything's faster!",
+  "request": {
+    "text": "[excited] Πάμε! Everything's faster!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "00b2946df160d4fd0cea474bebd5e23b944965b018fbf0b2eeec31d953465b00",
+  "sha256": "2229436263589081cab8b01eed4c034613b04f97d4ea94aa314b6021a73f4d1f",
+  "request_id": "mOLrh2BrbpliVyT5kw9S",
+  "reported_credit_cost": "4"
+}

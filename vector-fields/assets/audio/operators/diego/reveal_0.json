@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "model_id": "eleven_v4",
+  "event": "reveal",
+  "variant": 0,
+  "text": "[urgent] Marcado! They know where I am!",
+  "request": {
+    "text": "[urgent] Marcado! They know where I am!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "516021202641ada6bed5e5593602367e2adf6e9103aefc0a81ef74b8e94cc1eb",
+  "sha256": "26aa36974381c48fc5a3cfce00925c3f093c124b8fffaff61e471707ae4ed3de",
+  "request_id": "C2qPR23mUpxSnucI3MwS",
+  "reported_credit_cost": "4"
+}

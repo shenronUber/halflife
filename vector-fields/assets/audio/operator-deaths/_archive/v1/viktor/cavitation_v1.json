@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "actor": "viktor",
+  "cause": "cavitation",
+  "text": "[choking] Ghh! [groaning] Urrgh! [gurgling] Ghrr...",
+  "request": {
+    "text": "[choking] Ghh! [groaning] Urrgh! [gurgling] Ghrr...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "85f76bbb2f9efa61617876989839eff34e9dfc95a7323ca7af969d7a1c9cd8d6",
+  "sha256": "f157a5b89fbc42c88cd8ccb804c0af6672d4a92425900cd643539eaaabb0fa7f",
+  "request_id": "cIXIzOGXFnlN4XuVTJ5E"
+}

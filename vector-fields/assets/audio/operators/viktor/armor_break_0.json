@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "armor_break",
+  "variant": 0,
+  "text": "[urgent] Armor gone. Чёрт.",
+  "request": {
+    "text": "[urgent] Armor gone. Чёрт.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "1a4f5a6a5c72b98bc2df3c4145c8b19ae0d7e62d72662079631e2622594e3df7",
+  "sha256": "f6284b211a36a21e8ab99f1006a8b63ec72dfecc6b027f2cb7558b5ef2372da9",
+  "request_id": "v6FNAsicYFRE4YctFnHR",
+  "reported_credit_cost": "3"
+}

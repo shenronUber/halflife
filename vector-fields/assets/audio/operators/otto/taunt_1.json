@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "taunt",
+  "variant": 1,
+  "text": "[mocking] So much ammunition. So little talent.",
+  "request": {
+    "text": "[mocking] So much ammunition. So little talent.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "db8d861ab626a46c8f0ed2066398a7de406e4a1299f4c0cb362f74a01343adbe",
+  "sha256": "0eb317eea51503da889e304484318a629d96d40d1637420b72867ac578175996",
+  "request_id": "QzogSnNRr4Sh05hWQSRN",
+  "reported_credit_cost": "5"
+}

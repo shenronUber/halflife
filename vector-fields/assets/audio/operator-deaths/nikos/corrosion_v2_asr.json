@@ -1,0 +1,19 @@
+{
+  "audio_sha256": "ea2de12f1576d82c27f01a6728111d27dd1c704f35297efb81de598a0cbbd552",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "[yells]",
+    "words": [
+      {
+        "text": "[yells]",
+        "start": 0.1,
+        "end": 0.86,
+        "type": "audio_event",
+        "logprob": -0.12024003703069563
+      }
+    ],
+    "transcription_id": "DK6NbYo5grQHdJCXueJE",
+    "audio_duration_secs": 1.6295
+  }
+}

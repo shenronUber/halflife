@@ -30,6 +30,9 @@
 #include "soundent.h"
 #include "decals.h"
 #include "gamerules.h"
+#include "vf_skins.h"
+#include "vf_voice.h"
+#include "../game_shared/vf_voice_catalog.h"
 
 extern CGraph	WorldGraph;
 extern int gEvilImpulse101;
@@ -1011,6 +1014,8 @@ BOOL CBasePlayerWeapon :: DefaultDeploy( char *szViewModel, char *szWeaponModel,
 	m_pPlayer->pev->viewmodel = MAKE_STRING(szViewModel);
 	m_pPlayer->pev->weaponmodel = MAKE_STRING(szWeaponModel);
 	strcpy( m_pPlayer->m_szAnimExtention, szAnimExt );
+	VF_ApplyPlayerModel(m_pPlayer);
+	m_pPlayer->SetAnimation(PLAYER_IDLE);
 	SendWeaponAnim( iAnim, skiplocal, body );
 
 	m_pPlayer->m_flNextAttack = UTIL_WeaponTimeBase() + 0.5;
@@ -1037,6 +1042,7 @@ BOOL CBasePlayerWeapon :: DefaultReload( int iClipSize, int iAnim, float fDelay,
 	SendWeaponAnim( iAnim, UseDecrement() ? 1 : 0 );
 
 	m_fInReload = TRUE;
+	VF_VoiceSpeak(m_pPlayer,vfv::E_reload);
 
 	m_flTimeWeaponIdle = UTIL_WeaponTimeBase() + 3;
 	return TRUE;

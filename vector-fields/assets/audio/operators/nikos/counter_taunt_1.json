@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "model_id": "eleven_v4",
+  "event": "counter_taunt",
+  "variant": 1,
+  "text": "[threatening] I'll kill you, μαλάκα!",
+  "request": {
+    "text": "[threatening] I'll kill you, μαλάκα!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "4da5475ad7cae1434b98cd1ea48116ae35c1aaef5a3ff63d0a5d206fe2b2d9cf",
+  "sha256": "bc2fea3620d16bc8864d3d5b7b49ea76c6a01927602bf6778443ba23c1258536",
+  "request_id": "O1Ga55DUemfI0OU0nVQ3",
+  "reported_credit_cost": "4"
+}

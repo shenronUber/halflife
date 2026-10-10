@@ -1,0 +1,715 @@
+{
+  "schema": 1,
+  "language": "English with Italian/French/Spanish/Russian/German/Greek code switching",
+  "actors": [
+    {
+      "id": "rocco",
+      "name": "Rocco Bellini",
+      "accent": "Italian",
+      "native": "it",
+      "temperament": "Flamboyant, competitive, a theatrical showman who treats combat as an art.",
+      "direction": "An original male Italian video-game fighter, age 35. Warm raspy mid-low tenor, bright forward resonance, rolling Rs, recognisable Italian accent in English with musical Italian vowels and lively rising-falling rhythm. Charming, cocky and theatrically expressive, with sudden explosive anger. Speak fluent intelligible English with short naturally pronounced Italian interjections. A physical action-game performance, compact energetic delivery, not a narrator. Clean dry close microphone, no music, no background, no reverb. No imitation of a real person.",
+      "audition": "[confident] Andiamo! Rocco is here, and this fight needs a little style. [annoyed] Mamma mia, my armor is melting! [taunting] Come closer, stronzo. I promise you a beautiful defeat.",
+      "lines": {
+        "spawn": [
+          "[excited] Andiamo! Let's make an entrance."
+        ],
+        "respawn": [
+          "[frustrated] Mamma mia! You with the keyboard. Focus, idiota!",
+          "[indignant] This gun shoots everywhere except where I aim. Che schifo!",
+          "[annoyed] Again? This game is broken. Rocco cannot possibly be the problem."
+        ],
+        "reload": [
+          "[urgent] Ricarico! Cover me."
+        ],
+        "kill": [
+          "[pleased] Bellissimo. Stay down.",
+          "[laughing] Bravo, you almost had me!"
+        ],
+        "pain": [
+          "[pained] Ah! Porca miseria!",
+          "[grunts] Ugh!"
+        ],
+        "death": [
+          "[screams] Aah! No, no, no!"
+        ],
+        "low_health": [
+          "[strained] Merda. I'm barely standing."
+        ],
+        "armor_break": [
+          "[urgent] Armor's gone! Che disastro!"
+        ],
+        "taunt": [
+          "[taunting] Come here, stronzo. I have a present.",
+          "[mocking] Mamma mia, you aim like a broken toaster!",
+          "[laughing] All that noise, and you still miss!"
+        ],
+        "hydro": [
+          "[annoyed] Mamma mia, I'm soaked!"
+        ],
+        "electro": [
+          "[pained] Aah! I'm getting shocked!"
+        ],
+        "cryo": [
+          "[shivering] Brr! I'm freezing, cazzo!"
+        ],
+        "thermal": [
+          "[panicked] Fuoco! I'm on fire!"
+        ],
+        "toxic": [
+          "[coughs] Ugh! Poison. Che schifo!"
+        ],
+        "corrosion": [
+          "[alarmed] Acid! It's eating my armor!"
+        ],
+        "sonic": [
+          "[pained] My ears! Basta with the noise!"
+        ],
+        "kinetic": [
+          "[grunts] Oof! That hit like a truck!"
+        ],
+        "arc_chain": [
+          "[pained] Water and lightning! Not bellissimo!"
+        ],
+        "superconduction": [
+          "[strained] Frozen and shocked! Porca miseria!"
+        ],
+        "shatter": [
+          "[panicked] My frozen armor is shattering!"
+        ],
+        "resonant_impact": [
+          "[pained] That shockwave went straight through me!"
+        ],
+        "cavitation": [
+          "[alarmed] Acid shockwave! Everything's bursting!"
+        ],
+        "caustic_contagion": [
+          "[coughs] Acid and poison! Get it off!"
+        ],
+        "toxic_ignition": [
+          "[panicked] The poison's burning! Cazzo!"
+        ],
+        "steam_veil": [
+          "[coughs] Steam! I can't see a damn thing!"
+        ],
+        "phase": [
+          "[pleased] Intoccabile! Phasing through!"
+        ],
+        "null": [
+          "[relieved] Reactions blocked. Molto bene."
+        ],
+        "ward": [
+          "[confident] Protected! Come on, then!"
+        ],
+        "reveal": [
+          "[annoyed] They've marked me! Che palle!"
+        ],
+        "overclock": [
+          "[excited] Overclock! Più veloce!"
+        ],
+        "counter_taunt": [
+          "[angry] Vieni qui! Say that to my face, stronzo!",
+          "[threatening] I'll kill you, pezzo di merda!",
+          "[defiant] Keep talking. I'll knock those teeth out!"
+        ]
+      }
+    },
+    {
+      "id": "lucien",
+      "name": "Lucien Moreau",
+      "accent": "French",
+      "native": "fr",
+      "temperament": "Fastidious, dry, unimpressed; delivers insults as devastating polite reviews.",
+      "direction": "An original male French video-game duellist, age 42. Smooth dry medium baritone with a slight nasal edge, precise consonants, unmistakable French accent in fluent clear English, French uvular R and elegant restrained musical phrasing. Suave sarcastic superiority, clipped wit, easily offended dignity, controlled urgency that breaks into sharp pain. English is the main language, brief French phrases pronounced natively. Natural compact action-game acting, not narration or announcer. Clean dry close microphone, no music, no background, no reverb. No imitation of a real person.",
+      "audition": "[dryly] Bon. Lucien has arrived. Please try to make this fight worth my time. [annoyed] Merde, my armor is dissolving. [taunting] Your aim is an insult to geometry, mon ami. Come and disappoint me again.",
+      "lines": {
+        "spawn": [
+          "[dryly] Bon. Let's try to be professional."
+        ],
+        "respawn": [
+          "[dryly] Respawned. Magnifique. Perhaps you could aim this time, mon ami.",
+          "[annoyed] This weapon is an insult to engineering. I demand a refund!",
+          "[sarcastic] Clearly a bug. A flawless man, a badly coded game."
+        ],
+        "reload": [
+          "[urgent] Je recharge. Cover me."
+        ],
+        "kill": [
+          "[dryly] Voilà. A lesson in precision.",
+          "[mocking] Adieu, amateur."
+        ],
+        "pain": [
+          "[pained] Ah! Putain!"
+        ],
+        "death": [
+          "[screams] Aah! Quelle fin stupide!"
+        ],
+        "low_health": [
+          "[strained] Merde. I need medical attention."
+        ],
+        "armor_break": [
+          "[annoyed] Armor broken. Magnifique."
+        ],
+        "taunt": [
+          "[mocking] Your aim is an insult to geometry, mon ami.",
+          "[taunting] Come on, connard. Impress me.",
+          "[dryly] All this equipment, and absolutely no talent."
+        ],
+        "hydro": [
+          "[disgusted] Trempé. My suit is ruined."
+        ],
+        "electro": [
+          "[pained] Putain! Electric shock!"
+        ],
+        "cryo": [
+          "[shivering] Glacé! I can barely move!"
+        ],
+        "thermal": [
+          "[panicked] Au feu! I'm burning!"
+        ],
+        "toxic": [
+          "[coughs] Poison. C'est dégoûtant."
+        ],
+        "corrosion": [
+          "[alarmed] Acide! My armor is dissolving!"
+        ],
+        "sonic": [
+          "[pained] Mes oreilles! Stop that noise!"
+        ],
+        "kinetic": [
+          "[grunts] Oof! Quel manque de finesse."
+        ],
+        "arc_chain": [
+          "[pained] Soaked and electrocuted. Très mauvais."
+        ],
+        "superconduction": [
+          "[strained] Frozen and electrified! Merde!"
+        ],
+        "shatter": [
+          "[alarmed] The ice is shattering around me!"
+        ],
+        "resonant_impact": [
+          "[pained] Resonant impact! Right through me!"
+        ],
+        "cavitation": [
+          "[alarmed] Acid and pressure! It's bursting!"
+        ],
+        "caustic_contagion": [
+          "[coughs] Corrosion and poison. Quelle horreur!"
+        ],
+        "toxic_ignition": [
+          "[panicked] The poison ignited! Putain!"
+        ],
+        "steam_veil": [
+          "[coughs] Vapeur! Visibility is gone!"
+        ],
+        "phase": [
+          "[confident] Intangible. Très élégant."
+        ],
+        "null": [
+          "[relieved] Reactions suppressed. Enfin."
+        ],
+        "ward": [
+          "[confident] Ward active. Essayez encore."
+        ],
+        "reveal": [
+          "[annoyed] Repéré! They can see me!"
+        ],
+        "overclock": [
+          "[excited] Overclock. Allons-y!"
+        ],
+        "counter_taunt": [
+          "[angry] Viens ici! Say that to my face, connard!",
+          "[threatening] I'll kill you, mon cher. Slowly.",
+          "[defiant] Shut your mouth and come fight me!"
+        ]
+      }
+    },
+    {
+      "id": "diego",
+      "name": "Diego Vega",
+      "accent": "Spanish",
+      "native": "es",
+      "temperament": "Quick, cheeky, kinetic; turns every exchange into a dare.",
+      "direction": "An original male Spanish video-game skirmisher from Spain, age 28. Bright agile slightly husky upper-mid register, energetic breath and quick crisp attack, clearly Spanish-accented fluent English, tapped and rolled Rs, open Spanish vowels, bouncing conversational rhythm. Competitive, cheeky, smiling bravado with an explosive short fuse. Occasional short native Spanish expressions inside predominantly English dialogue. A believable mobile action fighter with sharp exertion sounds, not a narrator. Clean dry close microphone, no music, no background, no reverb. No imitation of a real person.",
+      "audition": "[excited] Vamos! Diego is in, and I hope you brought your good aim today. [alarmed] Joder, that acid is eating my armor! [taunting] Come on, cabrón. Stop shooting the furniture and fight me!",
+      "lines": {
+        "spawn": [
+          "[excited] Vamos! Keep up if you can!"
+        ],
+        "respawn": [
+          "[frustrated] Otra vez? Hey, genius at the keyboard. Try staying alive!",
+          "[indignant] This gun is basura! I want the one the enemy has!",
+          "[sarcastic] The game cheated, amigo. Obviously. My talent is not up for debate."
+        ],
+        "reload": [
+          "[urgent] Recargando! Cover me!"
+        ],
+        "kill": [
+          "[laughing] Hasta luego!",
+          "[pleased] Uno menos. Who's next?"
+        ],
+        "pain": [
+          "[pained] Ah! Joder!",
+          "[grunts] Hah!"
+        ],
+        "death": [
+          "[screams] Aah! No puede ser!"
+        ],
+        "low_health": [
+          "[strained] Mierda. I'm nearly done."
+        ],
+        "armor_break": [
+          "[urgent] Sin armadura! I need cover!"
+        ],
+        "taunt": [
+          "[taunting] Vamos, cabrón. Hit me if you can!",
+          "[mocking] Stop shooting the furniture! I'm over here!",
+          "[laughing] That was your best shot? Qué pena!"
+        ],
+        "hydro": [
+          "[annoyed] Empapado! I'm soaked!"
+        ],
+        "electro": [
+          "[pained] Joder! Electric shock!"
+        ],
+        "cryo": [
+          "[shivering] Qué frío! I'm freezing!"
+        ],
+        "thermal": [
+          "[panicked] Fuego! Get it off me!"
+        ],
+        "toxic": [
+          "[coughs] Veneno! That tastes like death!"
+        ],
+        "corrosion": [
+          "[alarmed] Ácido! My armor is melting!"
+        ],
+        "sonic": [
+          "[pained] Mis oídos! That noise hurts!"
+        ],
+        "kinetic": [
+          "[grunts] Oof! Menudo golpe!"
+        ],
+        "arc_chain": [
+          "[pained] Soaked and shocked! Mierda!"
+        ],
+        "superconduction": [
+          "[strained] Ice and lightning! Joder!"
+        ],
+        "shatter": [
+          "[panicked] The ice is breaking! I'm shattering!"
+        ],
+        "resonant_impact": [
+          "[pained] That ringing punch went through me!"
+        ],
+        "cavitation": [
+          "[alarmed] Acid and pressure! It's popping!"
+        ],
+        "caustic_contagion": [
+          "[coughs] Acid and poison! Qué asco!"
+        ],
+        "toxic_ignition": [
+          "[panicked] The poison caught fire! Joder!"
+        ],
+        "steam_veil": [
+          "[coughs] Vapor! Can't see a thing!"
+        ],
+        "phase": [
+          "[laughing] Intangible! Catch me now!"
+        ],
+        "null": [
+          "[relieved] Reactions blocked. Perfecto."
+        ],
+        "ward": [
+          "[confident] Protection up! Dale!"
+        ],
+        "reveal": [
+          "[urgent] Marcado! They know where I am!"
+        ],
+        "overclock": [
+          "[excited] Overclock! Más rápido!"
+        ],
+        "counter_taunt": [
+          "[angry] Ven aqui! Say that to my face, cabron!",
+          "[threatening] Te voy a matar! You're dead, amigo!",
+          "[defiant] Keep talking. I'll shut that mouth for you!"
+        ]
+      }
+    },
+    {
+      "id": "viktor",
+      "name": "Viktor Volkov",
+      "accent": "Russian",
+      "native": "ru",
+      "temperament": "Very low voice, spare words, deadpan confidence; treats absurd danger as routine.",
+      "direction": "An original male Russian video-game heavy fighter, age 48. Very deep resonant gravel bass, broad chest tone, slow deliberate clipped speech, unmistakable Russian accent in fluent intelligible English, firm consonants and Russian vowel placement. Deadpan absurdly calm humour, stoic menace, small amused breaths, sudden raw physical grunts under impact. English is the main language, with brief idiomatic Russian interjections pronounced natively. Compact grounded action-game performance, not narration. Clean dry close microphone, no music, no background, no reverb. No imitation of a real person.",
+      "audition": "[calm] Ладно. Viktor is here. We finish this, then we go home. [annoyed] Блин. Acid is eating my armor. [taunting] Иди сюда. Come closer. At this distance, even you might finally hit something.",
+      "lines": {
+        "spawn": [
+          "[calm] Ладно. Let's finish this."
+        ],
+        "respawn": [
+          "[annoyed] Опять! You at keyboard. Concentrate, дурак!",
+          "[dryly] Gun is defective. Bullets refuse to cooperate. Very suspicious.",
+          "[deadpan] Another death. Engine problem. I am submitting complaint. To nobody."
+        ],
+        "reload": [
+          "[urgent] Перезарядка. Cover me."
+        ],
+        "kill": [
+          "[dryly] Готово. You can rest now.",
+          "[pleased] Хорошо. Next."
+        ],
+        "pain": [
+          "[pained] Argh! Блин!",
+          "[grunts] Ugh!"
+        ],
+        "death": [
+          "[screams] Aah! Чёрт!"
+        ],
+        "low_health": [
+          "[strained] Плохо. Need a medic."
+        ],
+        "armor_break": [
+          "[urgent] Armor gone. Чёрт."
+        ],
+        "taunt": [
+          "[taunting] Иди сюда. Even you can hit at this distance.",
+          "[dryly] So much ammunition. So little talent.",
+          "[mocking] Come closer, придурок. I am getting bored."
+        ],
+        "hydro": [
+          "[annoyed] Мокрый. Now I am soaked."
+        ],
+        "electro": [
+          "[pained] Чёрт! Electric shock!"
+        ],
+        "cryo": [
+          "[shivering] Холодно. Too cold, even for me."
+        ],
+        "thermal": [
+          "[panicked] Горю! I am burning!"
+        ],
+        "toxic": [
+          "[coughs] Яд. Poison in my lungs."
+        ],
+        "corrosion": [
+          "[alarmed] Кислота. It is eating the armor."
+        ],
+        "sonic": [
+          "[pained] My ears. Тише!"
+        ],
+        "kinetic": [
+          "[grunts] Oof! Сильно. Good hit."
+        ],
+        "arc_chain": [
+          "[pained] Wet and electrified. Блин."
+        ],
+        "superconduction": [
+          "[strained] Frozen and shocked. Очень плохо."
+        ],
+        "shatter": [
+          "[alarmed] Ice shattering. I am breaking with it."
+        ],
+        "resonant_impact": [
+          "[pained] Resonance. Felt that in my bones."
+        ],
+        "cavitation": [
+          "[alarmed] Acid pressure. It is bursting."
+        ],
+        "caustic_contagion": [
+          "[coughs] Acid and poison. Вот дерьмо."
+        ],
+        "toxic_ignition": [
+          "[panicked] Poison is on fire. Чёрт!"
+        ],
+        "steam_veil": [
+          "[coughs] Пар. Steam everywhere. Can't see."
+        ],
+        "phase": [
+          "[calm] Фаза. Your bullets can wait."
+        ],
+        "null": [
+          "[relieved] Reactions blocked. Хорошо."
+        ],
+        "ward": [
+          "[confident] Protected. Давай."
+        ],
+        "reveal": [
+          "[annoyed] They marked me. Проклятье."
+        ],
+        "overclock": [
+          "[excited] Overclock. Быстрее!"
+        ],
+        "counter_taunt": [
+          "[angry] Иди сюда! Say that to my face.",
+          "[threatening] I'll kill you, сука.",
+          "[defiant] Big mouth. Come closer. We fix that."
+        ]
+      }
+    },
+    {
+      "id": "otto",
+      "name": "Otto Stahl",
+      "accent": "German",
+      "native": "de",
+      "temperament": "Strict, methodical and dryly sarcastic; military precision turns into explosive irritation.",
+      "direction": "An original male German action-game fighter, age 40. Deep resonant stern baritone with a compact chesty growl. Recognisable German accent in fluent intelligible English: crisp consonants, firm rhythm and German vowel shapes. Methodical, blunt, impatient, very dry humour; sudden forceful bursts when hurt or provoked. Short naturally pronounced German interjections mixed with English. Energetic physical video-game acting, not narration. Clean dry close microphone, no music, no background, no reverb. No imitation of a real person.",
+      "audition": "[confident] Jawohl! Otto Stahl is ready. A little discipline, and this fight is finished. [annoyed] Scheisse! My armor is gone. [taunting] Come here, Dummkopf. Let us test your courage.",
+      "lines": {
+        "spawn": [
+          "[confident] Jawohl. Let's do this properly."
+        ],
+        "respawn": [
+          "[frustrated] Schon wieder! You at the keyboard. Focus, du Idiot!",
+          "[annoyed] This rifle is defective. I demand German quality control!",
+          "[dryly] The engine has made an error. Naturally, I am operating perfectly."
+        ],
+        "reload": [
+          "[urgent] Nachladen! Cover me."
+        ],
+        "kill": [
+          "[dry] Sehr gut. Stay down.",
+          "[mocking] Your performance was unacceptable."
+        ],
+        "pain": [
+          "[pained] Ah! Verdammt!",
+          "[grunts] Ugh!"
+        ],
+        "death": [
+          "[screams] Aah! Nein!"
+        ],
+        "low_health": [
+          "[strained] Scheisse. I'm barely standing."
+        ],
+        "armor_break": [
+          "[urgent] Armor gone! Verdammt!"
+        ],
+        "taunt": [
+          "[taunting] Come here, Dummkopf. Show me your aim.",
+          "[mocking] So much ammunition. So little talent.",
+          "[laughing] Ach, you call that shooting?"
+        ],
+        "counter_taunt": [
+          "[angry] Komm her! Say that to my face!",
+          "[threatening] I'll kill you, verdammter Idiot!",
+          "[defiant] Enough talking. Come and fight me!"
+        ],
+        "hydro": [
+          "[annoyed] Nass! I'm completely soaked."
+        ],
+        "electro": [
+          "[pained] Aah! Strom! I'm getting shocked!"
+        ],
+        "cryo": [
+          "[shivering] Brr! Verdammt, I'm freezing!"
+        ],
+        "thermal": [
+          "[panicked] Feuer! I'm on fire!"
+        ],
+        "toxic": [
+          "[coughs] Gift! Ugh, poison!"
+        ],
+        "corrosion": [
+          "[alarmed] Acid! My armor is dissolving!"
+        ],
+        "sonic": [
+          "[pained] My ears! Ruhe!"
+        ],
+        "kinetic": [
+          "[grunts] Oof! That hit like a truck!"
+        ],
+        "arc_chain": [
+          "[pained] Water and electricity! Scheisse!"
+        ],
+        "superconduction": [
+          "[strained] Frozen and shocked! Verdammt!"
+        ],
+        "shatter": [
+          "[panicked] My frozen armor is shattering!"
+        ],
+        "resonant_impact": [
+          "[pained] That shockwave went straight through me!"
+        ],
+        "cavitation": [
+          "[alarmed] Acid shockwave! Everything is bursting!"
+        ],
+        "caustic_contagion": [
+          "[coughs] Corrosive poison! It's spreading!"
+        ],
+        "toxic_ignition": [
+          "[panicked] The poison is burning! Feuer!"
+        ],
+        "steam_veil": [
+          "[strained] Hot steam! I can't see!"
+        ],
+        "phase": [
+          "[confident] Phase active. Going through."
+        ],
+        "null": [
+          "[frustrated] Abgeschaltet! My systems are dead!"
+        ],
+        "ward": [
+          "[relieved] Shield up. Sehr gut."
+        ],
+        "reveal": [
+          "[urgent] Spotted! They can see me!"
+        ],
+        "overclock": [
+          "[excited] Schneller! Everything is faster!"
+        ]
+      }
+    },
+    {
+      "id": "nikos",
+      "name": "Nikos Petros",
+      "accent": "Greek",
+      "native": "el",
+      "temperament": "Proud, exuberant and argumentative; warm Mediterranean swagger with gravelly bursts of anger.",
+      "direction": "An original male Greek action-game fighter, age 36. Warm husky mid-low baritone, lively chest resonance and a rough laughing edge. Recognisable modern Greek accent in fluent intelligible English: Greek vowel shapes, rolled Rs and expressive emphatic rhythm. Proud, boastful, argumentative, theatrical and quick to explode when provoked. English mixed with short naturally pronounced modern Greek interjections, never ancient Greek. Physical energetic video-game acting, not narration. Clean dry close microphone, no music, no background, no reverb. No imitation of a real person.",
+      "audition": "[excited] Έλα! Nikos is here. We fight, we win, and then we celebrate! [annoyed] Παναγία μου! My armor is melting! [taunting] Come here, μαλάκα. Show me what you have.",
+      "lines": {
+        "spawn": [
+          "[excited] Έλα! Let's make some trouble."
+        ],
+        "respawn": [
+          "[frustrated] Πάλι? You with the keyboard! Wake up, re!",
+          "[indignant] This gun is useless! Even my grandmother could build a better one!",
+          "[sarcastic] Terrible game. Obviously the developers are afraid of my talent."
+        ],
+        "reload": [
+          "[urgent] Reloading! Κάλυψέ με!"
+        ],
+        "kill": [
+          "[pleased] Μπράβο! Stay down.",
+          "[laughing] Nice try, φίλε!"
+        ],
+        "pain": [
+          "[pained] Ah! Γαμώτο!",
+          "[grunts] Ugh!"
+        ],
+        "death": [
+          "[screams] Aah! Όχι!"
+        ],
+        "low_health": [
+          "[strained] Παναγία μου. I'm barely standing."
+        ],
+        "armor_break": [
+          "[urgent] Armor's gone! Γαμώτο!"
+        ],
+        "taunt": [
+          "[taunting] Come here, μαλάκα. I have a surprise.",
+          "[mocking] My grandmother shoots better than you!",
+          "[laughing] All that noise, and you still miss, φίλε!"
+        ],
+        "counter_taunt": [
+          "[angry] Έλα εδώ! Say that to my face!",
+          "[threatening] I'll kill you, μαλάκα!",
+          "[defiant] Keep talking. I'll knock those teeth out!"
+        ],
+        "hydro": [
+          "[annoyed] Παναγία μου, I'm soaked!"
+        ],
+        "electro": [
+          "[pained] Aah! Ρεύμα! I'm getting shocked!"
+        ],
+        "cryo": [
+          "[shivering] Brr! I'm freezing, γαμώτο!"
+        ],
+        "thermal": [
+          "[panicked] Φωτιά! I'm on fire!"
+        ],
+        "toxic": [
+          "[coughs] Ugh! Poison, γαμώτο!"
+        ],
+        "corrosion": [
+          "[alarmed] Acid! It's eating my armor!"
+        ],
+        "sonic": [
+          "[pained] My ears! Σταμάτα!"
+        ],
+        "kinetic": [
+          "[grunts] Oof! That hit like a truck!"
+        ],
+        "arc_chain": [
+          "[pained] Water and lightning! Γαμώτο!"
+        ],
+        "superconduction": [
+          "[strained] Frozen and shocked! Παναγία μου!"
+        ],
+        "shatter": [
+          "[panicked] My frozen armor is shattering!"
+        ],
+        "resonant_impact": [
+          "[pained] That shockwave went straight through me!"
+        ],
+        "cavitation": [
+          "[alarmed] Acid shockwave! Everything's bursting!"
+        ],
+        "caustic_contagion": [
+          "[coughs] Corrosive poison! It's spreading!"
+        ],
+        "toxic_ignition": [
+          "[panicked] The poison is burning! Φωτιά!"
+        ],
+        "steam_veil": [
+          "[strained] Hot steam! I can't see!"
+        ],
+        "phase": [
+          "[confident] Phase active. Coming through, φίλε!"
+        ],
+        "null": [
+          "[frustrated] Nothing works! Γαμώτο!"
+        ],
+        "ward": [
+          "[relieved] Shield up. Μπράβο!"
+        ],
+        "reveal": [
+          "[urgent] Spotted! They can see me!"
+        ],
+        "overclock": [
+          "[excited] Πάμε! Everything's faster!"
+        ]
+      }
+    }
+  ],
+  "events": [
+    "spawn",
+    "reload",
+    "kill",
+    "pain",
+    "death",
+    "low_health",
+    "armor_break",
+    "taunt",
+    "counter_taunt",
+    "respawn",
+    "hydro",
+    "electro",
+    "cryo",
+    "thermal",
+    "toxic",
+    "corrosion",
+    "sonic",
+    "kinetic",
+    "arc_chain",
+    "superconduction",
+    "shatter",
+    "resonant_impact",
+    "cavitation",
+    "caustic_contagion",
+    "toxic_ignition",
+    "steam_veil",
+    "phase",
+    "null",
+    "ward",
+    "reveal",
+    "overclock"
+  ],
+  "notes": [
+    "Original fictional male voices. Spoken dialogue primarily English; native interjections.",
+    "Elements and combinations follow data/effects.json, whose gameplay consequences are still provisional.",
+    "No live TTS or API key in runtime; offline WAV assets only."
+  ]
+}

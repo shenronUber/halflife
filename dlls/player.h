@@ -18,6 +18,10 @@
 
 #include "pm_materials.h"
 #include "../game_shared/vf_loadout.h"
+#include "../game_shared/vf_voice_policy.h"
+#include "../game_shared/vf_taunt_policy.h"
+#include "../game_shared/vf_status_policy.h"
+#include "../game_shared/vf_proc_policy.h"
 #include "../game_shared/vf_appearance.h"
 
 
@@ -72,6 +76,7 @@ typedef enum
 	PLAYER_SUPERJUMP,
 	PLAYER_DIE,
 	PLAYER_ATTACK1,
+	PLAYER_RELOAD,
 } PLAYER_ANIM;
 
 #define MAX_ID_RANGE 2048
@@ -90,11 +95,29 @@ enum sbar_data
 class CBasePlayer : public CBaseMonster
 {
 public:
+	int m_vfVoice; // 1-based server-selected identity; zero migrates old saves
+	vfv::State m_vfVoiceState; // transient scheduler, reset after restore
+	float m_vfVoiceSpawnAt;
+	int m_vfVoiceSpawnEvent; // pending first-spawn or private post-death reply
+	int m_vfVoiceDied,m_vfVoiceRespawnLast; // saved death context and last private clip+1
+	bool m_vfVoiceDeathSpoken;
+	unsigned int m_vfVoiceLife;
+	vft::Memory m_vfHeardTaunt;
+	float m_vfBotCounterAt,m_vfBotTauntAt;
+	vfs::State m_vfStatus;
+	vfp::Accumulator m_vfProc;
+	bool m_vfStatusDeveloper;
 	int m_vfItems[vf::SlotCount];
 	int m_vfCatalogHash;
 	int m_vfSkins[5],m_vfSkinHash;
 	int m_vfWeaponStyles[vf::WeaponStyleSlots],m_vfWeaponStyleHash;
 	int m_vfAppearanceMode; // 0 equipment-linked, 1 free appearance
+	int m_vfDeveloper; // authoritative experimental equipment mode
+	int m_vfShotFX; // 0 gameplay default, 1..8 server-authorized developer vector
+	int m_vfKeyFlags; // 1 equipment, 2 weapon finishes, 4 free appearances
+	string_t m_vfItemKeys[vf::SlotCount];
+	string_t m_vfStyleKeys[vf::WeaponStyleSlots];
+	string_t m_vfSkinKeys[vf::SkinZones];
 	
 	// Spectator camera
 	void	Observer_FindNextPlayer( bool bReverse );

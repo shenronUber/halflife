@@ -1,0 +1,18 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "actor": "otto",
+  "cause": "caustic_contagion",
+  "text": "[coughing] Khh! [choking] Ghrr... [wheezing] Hhh...",
+  "request": {
+    "text": "[coughing] Khh! [choking] Ghrr... [wheezing] Hhh...",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.85
+    }
+  },
+  "request_sha256": "1fd78684b4afa866a075ad6cedae5389b8f2b7506499370e54422372b9dfc07d",
+  "sha256": "b85d70748f0518db5248909348d77e0c03d21d82aa95e95c8fec70b7ffb4b978",
+  "request_id": "yPqmyOeS6EaTRxWczM2z"
+}

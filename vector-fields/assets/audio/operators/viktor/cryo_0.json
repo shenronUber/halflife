@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "model_id": "eleven_v4",
+  "event": "cryo",
+  "variant": 0,
+  "text": "[shivering] Холодно. Too cold, even for me.",
+  "request": {
+    "text": "[shivering] Холодно. Too cold, even for me.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "71111035d331e98fcd6b59df2b88748aa591eccb0fd2294dffba721b2fa862fb",
+  "sha256": "bed9c7950a2ea474e3be54ab2bb5cc92ee051cc7377631322e4b0ca3a3b19a94",
+  "request_id": "y7duNGqdM0GtIDNlljOp",
+  "reported_credit_cost": "5"
+}

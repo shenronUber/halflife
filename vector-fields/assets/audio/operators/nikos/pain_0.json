@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "model_id": "eleven_v4",
+  "event": "pain",
+  "variant": 0,
+  "text": "[pained] Ah! Γαμώτο!",
+  "request": {
+    "text": "[pained] Ah! Γαμώτο!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "1a7477bf47109a41c3e8ced1b643b21c309aa5935cd064b0200c1026be16b0ac",
+  "sha256": "6f4248e2e8e2cd2996b67179467a297dd1a4db2bec1967d3831041de2ede2491",
+  "request_id": "WFe2d4u58BxwoMJOuqvE",
+  "reported_credit_cost": "2"
+}

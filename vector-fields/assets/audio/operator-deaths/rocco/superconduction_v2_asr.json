@@ -1,0 +1,33 @@
+{
+  "audio_sha256": "208b61509d54d805e3a466a663e5dab5fba6026c806e3cf64add81ed1fe656e2",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "Ah ha.",
+    "words": [
+      {
+        "text": "Ah",
+        "start": 0.16,
+        "end": 0.52,
+        "type": "word",
+        "logprob": -0.2333219200372696
+      },
+      {
+        "text": " ",
+        "start": 0.52,
+        "end": 0.6,
+        "type": "spacing",
+        "logprob": -0.9043907523155212
+      },
+      {
+        "text": "ha.",
+        "start": 0.66,
+        "end": 0.74,
+        "type": "word",
+        "logprob": -0.7913641134897867
+      }
+    ],
+    "transcription_id": "rBEuSwlhPhB3xFhnaKzA",
+    "audio_duration_secs": 2.1324375
+  }
+}

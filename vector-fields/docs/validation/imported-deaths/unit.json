@@ -1,0 +1,32 @@
+{
+  "suites": [
+    "unit"
+  ],
+  "passed": true,
+  "results": [
+    {
+      "suite": "unit",
+      "test": "validate.py",
+      "passed": true,
+      "seconds": 1.91
+    },
+    {
+      "suite": "unit",
+      "test": "model_contract.py",
+      "passed": true,
+      "seconds": 0.08
+    },
+    {
+      "suite": "unit",
+      "test": "contract_documentation.py",
+      "passed": true,
+      "seconds": 0.06
+    },
+    {
+      "suite": "unit",
+      "test": "tests/status_renderer_update_test.py",
+      "passed": true,
+      "seconds": 0.16
+    }
+  ]
+}

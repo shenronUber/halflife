@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "model_id": "eleven_v4",
+  "event": "electro",
+  "variant": 0,
+  "text": "[pained] Aah! I'm getting shocked!",
+  "request": {
+    "text": "[pained] Aah! I'm getting shocked!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "c59f555db6fb1c2457499378565005cd801d4dc39426eb88be9181c2cefb43db",
+  "sha256": "74d09b01b33b12959ade1f4fd7ae90c6945e85681f1b63b12e4e918be8d86902",
+  "request_id": "l7yz1UIOO2aA44XZIPN9",
+  "reported_credit_cost": "4"
+}

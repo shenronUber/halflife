@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -110,10 +110,14 @@ call ..\..\filecopy.bat $(TargetDir)\$(TargetName).pdb ..\..\..\game\mod\cl_dlls
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\game_shared\vf_loadout.cpp" />
+    <ClCompile Include="..\..\cl_dll\vf_voice.cpp" />
+    <ClCompile Include="..\..\cl_dll\vf_range.cpp" />
+    <ClCompile Include="..\..\cl_dll\vf_death.cpp" />
     <ClCompile Include="..\..\game_shared\vf_appearance.cpp" />
     <ClCompile Include="..\..\cl_dll\vf_character.cpp" />
     <ClCompile Include="..\..\cl_dll\vf_ui.cpp" />
     <ClCompile Include="..\..\cl_dll\vf_effects.cpp" />
+    <ClCompile Include="..\..\cl_dll\vf_weapon_fx.cpp" />
     <ClCompile Include="..\..\cl_dll\vf_preview.cpp" />
     <ClCompile Include="..\..\cl_dll\vf_engine.cpp" />
     <ClCompile Include="..\..\cl_dll\vf_skinmenu.cpp" />

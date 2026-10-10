@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "model_id": "eleven_v4",
+  "event": "cavitation",
+  "variant": 0,
+  "text": "[alarmed] Acid shockwave! Everything is bursting!",
+  "request": {
+    "text": "[alarmed] Acid shockwave! Everything is bursting!",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "request_sha256": "81273ea30369379db30722c50d7edbc65a0870cbb5356afeae7be5095b079ad6",
+  "sha256": "b58674e25434a9962bd4d5bccabec3037b7d18520e6cb812d3b3fce35e5d1177",
+  "request_id": "dyV26AaWz0yQ9RetTn1X",
+  "reported_credit_cost": "5"
+}

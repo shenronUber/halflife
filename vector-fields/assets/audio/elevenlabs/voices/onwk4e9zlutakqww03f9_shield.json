@@ -1,0 +1,25 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Daniel / shield_broken",
+  "created_utc": "2026-10-09T02:34:53.530993+00:00",
+  "request_sha256": "607848dbe2db4c5765e6ccb2bfdfc34e3dbfd9f102f288a3224b35a1ac814ed4",
+  "request": {
+    "text": "Shield down. Moving to cover.",
+    "model_id": "eleven_v4",
+    "language_code": "en",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    }
+  },
+  "endpoint": "/v1/text-to-speech/onwK4e9ZLuTAKqWW03F9?output_format=mp3_44100_128",
+  "sha256": "a6e97db64a4a3d8ff8af161206ec8b57807762477065bed5ba169f0d0ede129d",
+  "bytes": 38078,
+  "text": "Shield down. Moving to cover.",
+  "request_id": "oIhbKVIgl0C6mG0h4P26",
+  "reported_credit_cost": "3",
+  "voice_id": "onwK4e9ZLuTAKqWW03F9",
+  "voice_name": "Daniel",
+  "language": "en"
+}

@@ -1,0 +1,33 @@
+{
+  "audio_sha256": "69498b14f35f184883a2b53e991e0944daf3af9a37c1664a8f337f6c94c7d6e5",
+  "response": {
+    "language_code": "eng",
+    "language_probability": 1.0,
+    "text": "[inhales] Ah!",
+    "words": [
+      {
+        "text": "[inhales]",
+        "start": 0.06,
+        "end": 0.76,
+        "type": "audio_event",
+        "logprob": -0.07253783554586421
+      },
+      {
+        "text": " ",
+        "start": 0.76,
+        "end": 0.8,
+        "type": "spacing",
+        "logprob": -0.12923987209796906
+      },
+      {
+        "text": "Ah!",
+        "start": 0.94,
+        "end": 1.26,
+        "type": "word",
+        "logprob": -0.0927638616412878
+      }
+    ],
+    "transcription_id": "BMenbDOYns9SmE73zO77",
+    "audio_duration_secs": 2.1975
+  }
+}
