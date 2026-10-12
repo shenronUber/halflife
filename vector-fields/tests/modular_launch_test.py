@@ -13,7 +13,7 @@ from native_workspace import port
 
 def run():
     mod=prepare()
-    (mod/'modular_launch_smoke.cfg').write_text('wait 120\ndeveloper 1\necho MODULAR_LAUNCH_READY\ncmd vf_modular_info\ncmd vf_modular_check\ncmd vf_traversal_info\n+attack\nwait 12\n-attack\ncmd vf_traversal_info\nwait 12\nscreenshot scrshots/modular_launch.png\nwait 4\nquit\n',encoding='ascii')
+    (mod/'modular_launch_smoke.cfg').write_text('gl_vsync 0\nhost_framerate .016666667\nfps_max 60\nwait 120\ndeveloper 1\necho MODULAR_LAUNCH_READY\ncmd vf_modular_info\ncmd vf_modular_check\ncmd vf_traversal_info\n+attack\nwait 12\n-attack\ncmd vf_traversal_info\nwait 12\nscreenshot scrshots/modular_launch.png\nwait 4\nquit\n',encoding='ascii')
     process=subprocess.Popen([str(LIVE/'xash3d.exe'),'-ip','127.0.0.1','-noip6','-rodir','F:/SteamLibrary/steamapps/common/Half-Life',
         '-game',MOD_NAME,'-windowed','-width','1280','-height','720','-nointro','-nowriteconfig','-dev','1',
         '-port',str(port()),'-clientport',str(port()),'-log','modular-launch-smoke.log','+sv_cheats','1','+maxplayers','1',
