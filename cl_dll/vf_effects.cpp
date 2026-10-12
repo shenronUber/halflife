@@ -17,6 +17,7 @@
 #include "pm_defs.h"
 #include "event_api.h"
 #include "vf_effects.h"
+#include "vf_atmosphere.h"
 #include "vf_death.h"
 #include "vf_range.h"
 #include "vf_weapon_fx.h"
@@ -298,12 +299,13 @@ void Matrix(){
 }
 void VF_EffectsDeathLab(){deathLab=true;testPlayer=false;Open();}
 void VF_EffectsInit(){
+ VF_AtmosphereInit();
  gEngfuncs.pfnAddCommand("vf_death_lab",VF_EffectsDeathLab);
  VF_WeaponFXInit();
  gEngfuncs.pfnHookUserMsg("VFStatus",ReceiveStatus);gEngfuncs.pfnAddCommand("vf_status_visual_layers",VisualLayers);gEngfuncs.pfnAddCommand("vf_status_visual_stats",VisualStats);gEngfuncs.pfnAddCommand("vf_status_decal_audit",DecalAudit);gEngfuncs.Con_DPrintf("VFStatus arms: renderer=1\n");gEngfuncs.pfnAddCommand("vf_effect_player_test",OpenTest);gEngfuncs.pfnAddCommand("vf_status_client",PlayerStats);
  gEngfuncs.pfnAddCommand("vf_effects",Open);gEngfuncs.pfnAddCommand("vf_effect_select",ChooseCommand);gEngfuncs.pfnAddCommand("vf_effect_spawn",SpawnCommand);gEngfuncs.pfnAddCommand("vf_effect_attach",Attach);gEngfuncs.pfnAddCommand("vf_effect_clear",Clear);gEngfuncs.pfnAddCommand("vf_effect_next",Next);gEngfuncs.pfnAddCommand("vf_effect_prev",Prev);gEngfuncs.pfnAddCommand("vf_effect_audit",Audit);gEngfuncs.pfnAddCommand("vf_effect_stats",Stats);gEngfuncs.pfnAddCommand("vf_effect_bench",Bench);gEngfuncs.pfnAddCommand("vf_effect_layers",LayersCommand);VF_EffectsReset();
 }
-void VF_EffectsReset(){VF_RangeReset();RestoreArms();feedbackEdges=feedbackPrimitives=0;screenFeedback=armFeedback=true;VF_WeaponFXReset();memset(playerStatus,0,sizeof(playerStatus));statusOrder=0;testPlayer=false;emitterCount=0;memset(sprites,0,sizeof(sprites));memset(statusDecals,0,sizeof(statusDecals));mannequin=NULL;mannequinIndex=0;generated=visibleModels=0;frames=0;totalMs=0;bench=-1;paused=false;epoch=0;pauseAt=0;}
+void VF_EffectsReset(){VF_AtmosphereReset();VF_RangeReset();RestoreArms();feedbackEdges=feedbackPrimitives=0;screenFeedback=armFeedback=true;VF_WeaponFXReset();memset(playerStatus,0,sizeof(playerStatus));statusOrder=0;testPlayer=false;emitterCount=0;memset(sprites,0,sizeof(sprites));memset(statusDecals,0,sizeof(statusDecals));mannequin=NULL;mannequinIndex=0;generated=visibleModels=0;frames=0;totalMs=0;bench=-1;paused=false;epoch=0;pauseAt=0;}
 void VF_EffectsEntities(){
  VF_RangeEntities();StatusArms();StatusEntities();visibleModels=0;if(!emitterCount)return;
  if(!mannequin)mannequin=gEngfuncs.CL_LoadModel("models/vf_skins/persona_scout.mdl",&mannequinIndex);

@@ -93,7 +93,7 @@ def build(ensure=False):
         return target
     OUT.mkdir(parents=True,exist_ok=True)
     g=geometry()
-    text=base.entity(dict(classname='worldspawn',message='Vector Fields - Grille modulaire',wad=wad.as_posix(),skyname='desert'),
+    text=base.entity(dict(classname='worldspawn',message='Vector Fields - Grille modulaire',wad=wad.as_posix(),skyname='vf_storm',MaxRange='16384'),
                      [base.asset.map_box(*b) for b in g['world']])
     text+=base.entity(dict(classname='vf_modular_controller',origin='0 0 128',targetname='vf_layout'))
     for row in g['candidates']:

@@ -22,12 +22,14 @@ SUITES={
   ['tests/test_room_native_test.py'],
   ['tests/combined_room_native_test.py'],
   ['tests/modular_native_test.py'],['tests/modular_multiplayer_test.py'],['tests/modular_launch_test.py'],
+  ['tests/atmosphere_native_test.py'],
   ['tests/current_release_test.py']],
  'unit':[
   ['validate.py','--unit-worker'],
   ['model_contract.py','--check'],['contract_documentation.py','--check'],['tests/status_renderer_update_test.py']],
  'policy':[['cpp_tests.py']],
  'assets':[
+  ['tests/atmosphere_assets_test.py'],
   ['tests/headgear_assets_test.py'],['tests/headgear_feedback_test.py'],
   ['tests/weapon_inspect_clearance_test.py'],
   ['tests/weapon_melee_geometry_test.py'],

@@ -170,6 +170,9 @@ max_edicts "2048"
             if companion.exists():shutil.copy2(companion,target/companion.name)
     shutil.copytree(ROOT/'generated/ui',dst/'sprites/vf_ui',dirs_exist_ok=True)
     shutil.copytree(ROOT/'generated/effects',dst/'sprites/vf_effects',dirs_exist_ok=True)
+    if args.visual_lab:
+        from build_atmosphere import deploy as deploy_atmosphere
+        deploy_atmosphere(dst)
     from build_status_decals import build as build_status_decals
     build_status_decals(ensure=True)
     from build_headgear_hud import build as build_headgear_hud

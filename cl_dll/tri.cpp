@@ -21,6 +21,7 @@
 #include "particleman.h"
 #include "tri.h"
 #include "vf_effects.h"
+#include "vf_atmosphere.h"
 extern IParticleMan *g_pParticleMan;
 
 /*
@@ -50,6 +51,7 @@ Render any triangles with transparent rendermode needs here
 */
 void CL_DLLEXPORT HUD_DrawTransparentTriangles( void )
 {
+    VF_AtmosphereWorld();
     VF_EffectsWorld();
 //	RecClDrawTransparentTriangles();
 

@@ -141,7 +141,9 @@ def shared_copy(source,target):
  return str(target)
 
 def copy_resources(source,target,**kwargs):
- return shutil.copytree(source,target,dirs_exist_ok=True,copy_function=shared_copy,**kwargs)
+ kwargs.setdefault('dirs_exist_ok',True)
+ kwargs.setdefault('copy_function',shared_copy)
+ return shutil.copytree(source,target,**kwargs)
 
 def private_copy(source,target):
  """Detach a staged hardlink before a test overrides one of its media files."""

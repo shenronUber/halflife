@@ -31,3 +31,13 @@ Fusionner ou cherry-picker les commits de code, données et recettes, puis recon
 ## Modifier le moteur
 
 `vector-fields/build-engine.ps1` compile les extensions et leurs tests dans `build/engine-candidate`. Sa compilation contrôle que les sources ne changent pas. Lancer ensuite `build_release.py` pour tester le moteur avec les DLL, animations et cartes avant publication. Une modification des sources moteur sans candidat correspondant bloque la publication suivante ; les anciens fichiers installés sont conservés.
+
+## Atmosphère de la grille modulaire
+
+La TriangleAPI de cette version du moteur ignore l'opacité des sommets dans certains chemins. Le compilateur produit donc huit niveaux d'opacité pour les nuages, en conservant leurs couleurs et en multipliant uniquement leur alpha original. La nappe encode son raccord radial dans l'alpha de sa texture. Le rendu trie les bancs par profondeur et sélectionne ces images précompilées ; aucune modification du moteur n'est nécessaire.
+
+`assets/atmosphere` conserve les quatre peintures originales et les prompts ImageGen. `build_atmosphere.py` compile six faces TGA de 2048 pixels pour `vf_storm`, à partir d'un panorama et de vues dédiées au zénith et au nadir. Un même champ directionnel assure les raccords des faces. La résolution des images originales et le rééchantillonnage sont consignés dans le manifeste ; les exports compilés restent dans `generated/atmosphere`.
+
+`vf_atmosphere.cpp` dessine une nappe sous les plateformes, deux courants de nuages à des profondeurs distinctes, des bancs supérieurs, un tourbillon lointain et des éclairs intermittents. Il utilise la TriangleAPI et les sprites RGBA natifs du moteur Xash installé. Le relief est simulé par des couches et des particules ; il n'y a pas de raymarching volumétrique. Ces décors n'ajoutent aucune collision ni entité serveur. La portée visuelle de `vf_modular` passe à 16384 pour accueillir le décor extérieur, sans changer ses limites physiques ou la récupération après chute.
+
+La publication inclut automatiquement ciel, sprites et manifeste. Les suites obligatoires vérifient les douze arêtes du cube, ses huit coins, l'alpha des nuages, les quatre rebords, le mouvement à caméra fixe, les éclairs, les perspectives, sauvegarde/rechargement, retour de carte et isolation dans `vf_range`. Les tests existants contrôlent toujours les 102 candidats de géométrie, les douze jonctions, les déplacements et le multijoueur. `vf_atmosphere 0` retire l'animation ; `vf_atmosphere_quality 1` réduit les couches ; les valeurs normales sont 1 et 2. `vf_atmosphere_time -1` garde le temps du jeu ; une valeur positive fige uniquement le décor pour les captures. `vf_atmosphere_info` et `vf_atmosphere_bench` servent au diagnostic.

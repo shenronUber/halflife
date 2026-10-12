@@ -4,6 +4,14 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'vector-fields'))
 from native_workspace import copy_resources,private_copy
+
+def mutable_copy(source,target):
+ # Generated authoring banks are rebuilt in place. They must not share cache
+ # hardlinks with donor inputs, another output bank, or a frozen native test.
+ target=Path(target)
+ if ROOT.resolve()not in target.resolve().parents:raise ValueError('Generated destination escaped this checkout')
+ if target.is_file()and target.stat().st_nlink>1:target.unlink()
+ return shutil.copy2(source,target)
 def run(seed):
  seed=Path(seed).resolve()
  if seed==ROOT:raise ValueError('Run the copy inside the new worktree, with the original project as --seed.')
@@ -13,9 +21,22 @@ def run(seed):
  for relative in ['vector-fields/generated','weapon-lab/generated','weapon-lab/extracted','asset-probe/tools','asset-probe/sdhlt','devtools/SDL2-sdk']:
   source=seed/relative;target=ROOT/relative
   if source.is_dir():
-   copy_resources(source,target,dirs_exist_ok=True,ignore=shutil.ignore_patterns('__pycache__','*.log','*.obj','*.pdb','*.ilk'))
+   copier=mutable_copy if relative in('vector-fields/generated','weapon-lab/generated','weapon-lab/extracted')else shutil.copy2
+   shutil.copytree(source,target,dirs_exist_ok=True,copy_function=copier,ignore=shutil.ignore_patterns('__pycache__','*.log','*.obj','*.pdb','*.ilk'))
    copied.append(relative)
  # Engine sources are mutable and must never share hardlinks across branches.
+ # These reviewed static module inputs are still local workshop dependencies.
+ # Preserve branch-owned sources; only seed files absent from the new checkout.
+ for relative in ['vector-fields/chassis-workshop/identity-2026-10-11',
+                  'vector-fields/weapon-workshop/fitted-2026-10-11',
+                  'vector-fields/weapon-workshop/finish-2026-10-11',
+                  'vector-fields/weapon-workshop/polish-2026-10-11']:
+  source=seed/relative
+  for p in source.rglob('*'):
+   if not p.is_file()or p.suffix.lower()not in('.py','.json','.mdl','.smd','.qc','.bmp'):continue
+   if any(part in('native-engine','integration-backup','profile','__pycache__')for part in p.relative_to(source).parts):continue
+   target=ROOT/relative/p.relative_to(source)
+   if not target.exists():target.parent.mkdir(parents=True,exist_ok=True);private_copy(p,target)
  if(seed/'runtime/engine-source').exists():
   shutil.copytree(seed/'runtime/engine-source',ROOT/'runtime/engine-source',dirs_exist_ok=True,
                   ignore=shutil.ignore_patterns('.git','build','build-*','__pycache__','*.obj','*.pdb'))

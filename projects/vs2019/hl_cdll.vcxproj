@@ -116,6 +116,7 @@ call ..\..\filecopy.bat $(TargetDir)\$(TargetName).pdb ..\..\..\game\mod\cl_dlls
     <ClCompile Include="..\..\game_shared\vf_appearance.cpp" />
     <ClCompile Include="..\..\cl_dll\vf_character.cpp" />
     <ClCompile Include="..\..\cl_dll\vf_ui.cpp" />
+    <ClCompile Include="..\..\cl_dll\vf_atmosphere.cpp" />
     <ClCompile Include="..\..\cl_dll\vf_effects.cpp" />
     <ClCompile Include="..\..\cl_dll\vf_weapon_fx.cpp" />
     <ClCompile Include="..\..\cl_dll\vf_preview.cpp" />
