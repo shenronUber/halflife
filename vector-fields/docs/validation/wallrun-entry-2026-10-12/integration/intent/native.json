@@ -1,0 +1,181 @@
+{
+  "passed": true,
+  "states": {
+    "ENTRY": {
+      "phase": 8,
+      "velocity": [
+        320.0,
+        -24.0,
+        0.0
+      ]
+    },
+    "POS_90": {
+      "phase": 8,
+      "velocity": [
+        320.0,
+        0.0,
+        0.0
+      ]
+    },
+    "NEG_90": {
+      "phase": 8,
+      "velocity": [
+        320.0,
+        0.0,
+        0.0
+      ]
+    },
+    "OVER_90": {
+      "phase": 0,
+      "velocity": [
+        319.947,
+        30.552,
+        -73.6
+      ]
+    },
+    "NO_JUMP": {
+      "phase": 0,
+      "velocity": [
+        320.0,
+        0.0,
+        -66.4
+      ]
+    },
+    "PARALLEL_JUMP": {
+      "phase": 0,
+      "velocity": [
+        320.0,
+        0.0,
+        -66.4
+      ]
+    },
+    "SHALLOW_RIGHT": {
+      "phase": 8,
+      "velocity": [
+        320.0,
+        0.0,
+        0.0
+      ]
+    },
+    "SHALLOW_LEFT": {
+      "phase": 8,
+      "velocity": [
+        320.0,
+        24.0,
+        0.0
+      ]
+    },
+    "AWAY_RIGHT": {
+      "phase": 0,
+      "velocity": [
+        320.0,
+        0.0,
+        -66.4
+      ]
+    },
+    "AWAY_LEFT": {
+      "phase": 0,
+      "velocity": [
+        320.0,
+        0.0,
+        -67.2
+      ]
+    },
+    "UP_RIGHT": {
+      "phase": 8,
+      "velocity": [
+        320.0,
+        -24.0,
+        0.0
+      ]
+    },
+    "DOWN_LEFT": {
+      "phase": 8,
+      "velocity": [
+        320.0,
+        24.0,
+        0.0
+      ]
+    },
+    "STRAFE_RIGHT": {
+      "phase": 8,
+      "velocity": [
+        320.0,
+        0.0,
+        0.0
+      ]
+    },
+    "STRAFE_LEFT": {
+      "phase": 8,
+      "velocity": [
+        320.0,
+        24.0,
+        0.0
+      ]
+    },
+    "AWAY_VIEW_STRAFE_RIGHT": {
+      "phase": 8,
+      "velocity": [
+        320.0,
+        -24.0,
+        0.0
+      ]
+    },
+    "AWAY_VIEW_STRAFE_LEFT": {
+      "phase": 8,
+      "velocity": [
+        320.0,
+        0.0,
+        0.0
+      ]
+    },
+    "WRONG_STRAFE_RIGHT": {
+      "phase": 0,
+      "velocity": [
+        320.0,
+        0.0,
+        -66.4
+      ]
+    },
+    "WRONG_STRAFE_LEFT": {
+      "phase": 0,
+      "velocity": [
+        320.0,
+        0.0,
+        -66.4
+      ]
+    },
+    "STRAFE_NO_JUMP": {
+      "phase": 0,
+      "velocity": [
+        320.0,
+        0.0,
+        -67.2
+      ]
+    },
+    "STRAFE_NO_FORWARD": {
+      "phase": 0,
+      "velocity": [
+        320.0,
+        0.0,
+        -66.4
+      ]
+    },
+    "STRAFE_TAKEOFF_RIGHT": {
+      "phase": 8,
+      "velocity": [
+        320.0,
+        0.0,
+        0.0
+      ]
+    },
+    "STRAFE_TAKEOFF_LEFT": {
+      "phase": 8,
+      "velocity": [
+        320.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

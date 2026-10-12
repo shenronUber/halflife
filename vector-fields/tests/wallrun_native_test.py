@@ -36,7 +36,8 @@ def run():
     place();add('save vf_wallrun','wait 4','load vf_wallrun','+forward','wait 15');probe('RESTORED')
     # Entry must be voluntary; existing momentum alone cannot attach.
     for name,yaw,pitch,jump in [('NO_JUMP',300,0,False),('PARALLEL_JUMP',0,0,True),
-                                ('AWAY_JUMP',60,0,True),('SKY_JUMP',300,-85,True),('ENTRY_SQUARE',270,0,True)]:
+                                ('AWAY_JUMP',60,0,True),('SKY_JUMP',300,-89,True),('ENTRY_SQUARE',270,0,True),
+                                ('ENTRY_SHALLOW',359,0,True),('ENTRY_DOWN',359,89,True)]:
         add('-forward','-jump','wait 15','cmd vf_traversal_place -700 -1006 128 0 320 0 0','wait 3',
             f'vf_traversal_look {yaw} {pitch}','+forward')
         if jump:add('+jump')
@@ -79,9 +80,9 @@ def run():
     assert cases['RELEASED']['phase']==0 and cases['RELEASED']['velocity'][2]<0
     assert cases['BOUNCE']['phase']==0 and cases['BOUNCE']['velocity'][2]>300
     assert cases['TOO_SLOW']['phase']==0
-    for name in ['NO_JUMP','PARALLEL_JUMP','AWAY_JUMP','SKY_JUMP','OVER_POS_90','OVER_NEG_90',
+    for name in ['NO_JUMP','PARALLEL_JUMP','AWAY_JUMP','OVER_POS_90','OVER_NEG_90',
                  'OVER_POS_90_NO_REATTACH','OVER_NEG_90_NO_REATTACH']:assert cases[name]['phase']==0,(name,cases[name])
-    for name in ['ENTRY_SQUARE','FREE_POS_90','FREE_NEG_90','FREE_WRAP']:
+    for name in ['ENTRY_SQUARE','ENTRY_SHALLOW','ENTRY_DOWN','SKY_JUMP','FREE_POS_90','FREE_NEG_90','FREE_WRAP']:
         assert cases[name]['phase']==8 and cases[name]['velocity'][0]>280 and abs(cases[name]['velocity'][1])<25,(name,cases[name])
     for a,b in [('FREE_START','FREE_POS_90'),('FREE_POS_90','FREE_NEG_90'),('FREE_NEG_90','FREE_WRAP')]:
         assert cases[b]['origin'][0]>cases[a]['origin'][0]+40 and abs(cases[b]['origin'][1]-cases[a]['origin'][1])<1,(a,b,cases)
@@ -93,7 +94,7 @@ def run():
     from build_weapon_melee import digest
     report.update(passed=True,client_sha256=digest(mod/'cl_dlls/client.dll'),server_sha256=digest(mod/'dlls/hl.dll'),
                   renderer_sha256=digest(engine/'ref_gl.dll'),engine_sha256=digest(engine/'xash.dll'),
-                  checks=['jump plus wall-facing entry','no incidental attachment','look-independent straight run',
+                  checks=['jump plus angular wall-facing entry without a narrow cone or pitch restriction','no incidental attachment','look-independent straight run',
                           'both inclusive 90 degree yaw limits','free vertical look','immediate drop beyond either limit',
                           'no reattachment without jump','ground takeoff','both walls and chained contacts','fire/reload/save/load'])
     (OUT/'native.json').write_text(json.dumps(report,indent=2))

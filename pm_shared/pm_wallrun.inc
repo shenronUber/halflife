@@ -8,6 +8,19 @@ static int VF_WR_Forward(void) {
  return (pmove->cmd.buttons&IN_FORWARD)&&pmove->cmd.forwardmove>10&&
   !(pmove->cmd.buttons&IN_DUCK)&&!(pmove->flags&FL_DUCKING)&&pmove->usehull==0;
 }
+static int VF_WR_Intent(vec3_t normal) {
+ vec3_t look;float rightInto;
+ /* The support trace supplies the actual nearby wall. Its horizontal
+    tangent separates a wall-facing look from an away-facing look; there
+    is no narrow entry cone or need to hit a particular visible face. */
+ VF_TR_Direction(pmove->angles[1],look);
+ if(DotProduct(look,normal)<-VF_WR_INTENT_EPSILON)return 1;
+ /* GoldSrc's right vector is (sin(yaw), -cos(yaw)). Use view-relative
+    strafe input, not momentum or the wall's stored left/right label. */
+ rightInto=look[1]*normal[0]-look[0]*normal[1];
+ return ((pmove->cmd.buttons&IN_MOVERIGHT)&&pmove->cmd.sidemove>10&&rightInto<-VF_WR_INTENT_EPSILON)||
+        ((pmove->cmd.buttons&IN_MOVELEFT)&&pmove->cmd.sidemove<-10&&rightInto>VF_WR_INTENT_EPSILON);
+}
 static int VF_WR_Wall(vec3_t normal,pmtrace_t *wall) {
  vec3_t end;pmtrace_t hull;
  VectorMA(pmove->origin,-VF_WR_REACH,normal,end);hull=VF_TR_Trace(pmove->origin,end,0);
@@ -63,14 +76,13 @@ static int VF_WR_Move(void) {
  pmove->oldbuttons=pmove->cmd.buttons;return 1;
 }
 static int VF_WR_Start(void) {
- vec3_t travel,probe,end,tangent,look,normal;pmtrace_t wall;float speed,along,yaw;int side,state;
- /* A nearby wall alone is not an input. Space plus a look toward it is
-    required at contact, including the held Space from a running takeoff. */
+ vec3_t travel,probe,end,tangent,normal;pmtrace_t wall;float speed,along,yaw;int side,state;
+ /* A nearby wall alone is not an input. The held takeoff jump plus either
+    a wall-facing look or a strafe into the wall supplies entry intent. */
  if(pmove->onground!=-1||!(pmove->cmd.buttons&IN_JUMP)||!VF_WR_Forward()||pmove->velocity[2]<-450)return 0;
  speed=(float)sqrt(pmove->velocity[0]*pmove->velocity[0]+pmove->velocity[1]*pmove->velocity[1]);
  if(speed<VF_WR_MIN_SPEED)return 0;
  travel[0]=pmove->velocity[0]/speed;travel[1]=pmove->velocity[1]/speed;travel[2]=0;
- VF_TR_Direction(pmove->angles[1],look);
  for(side=-1;side<=1;side+=2){
   probe[0]=-travel[1]*side;probe[1]=travel[0]*side;probe[2]=0;
   VectorMA(pmove->origin,24,probe,end);wall=VF_TR_Trace(pmove->origin,end,0);
@@ -79,8 +91,7 @@ static int VF_WR_Start(void) {
   along=DotProduct(travel,normal);
   tangent[0]=travel[0]-normal[0]*along;tangent[1]=travel[1]-normal[1]*along;tangent[2]=0;VectorNormalize(tangent);
   along=DotProduct(pmove->velocity,tangent);
-  if(along<VF_WR_MIN_TANGENT||
-     -DotProduct(look,normal)*(float)cos(pmove->angles[0]*3.141592653589793/180)<VF_WR_ENTRY_LOOK_DOT||
+  if(along<VF_WR_MIN_TANGENT||!VF_WR_Intent(normal)||
      !VF_WR_Wall(normal,&wall))continue;
   yaw=(float)(atan2(tangent[1],tangent[0])*180/3.141592653589793);
   /* Entry and continuation must use the same packed heading. Otherwise

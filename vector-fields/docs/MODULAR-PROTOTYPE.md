@@ -94,9 +94,11 @@ dans leur état réseau). Les portes et plateformes ordinaires restent exclues.
   des traces réelles sur les douze jonctions, sans changer la carte.
 - **Lanceur** : `Essayer la grille modulaire - Vector Fields.cmd --seed 42`.
 
-Le wall run conserve les commandes actuelles : prendre de l'élan le long du mur,
-regarder le mur en maintenant Espace pour accrocher, puis regarder vers l'arrivée
-en gardant Avancer. Une chute ramène au départ par un téléporteur de récupération.
+Pour le wall run, prendre de l'élan le long du mur et sauter en gardant Avancer.
+Orienter le regard du côté du mur, même légèrement, ou maintenir la direction
+latérale qui pousse vers lui permet d'accrocher. Le regard reste ensuite libre
+jusqu'à 90° de chaque côté du cap conservé. Une chute ramène au départ par un
+téléporteur de récupération. Voir [Wall run](WALLRUN.md).
 La sauvegarde conserve l'agencement ; elle ne provoque pas un nouveau tirage.
 
 ## Construction et validation

@@ -50,11 +50,47 @@ int main(void) {
   wallrun_setup(right,320);tick(ms,IN_FORWARD|IN_JUMP,right?60:300,320,0);
   expect(VF_TR_Phase(player.iuser4)==0,"jumping while looking away from wall stays ordinary");
   wallrun_setup(right,320);tick(ms,IN_FORWARD|IN_JUMP,right?331:29,320,0);
-  expect(VF_TR_Phase(player.iuser4)==0,"entry below thirty degrees toward the wall is rejected");
-  wallrun_setup(right,320);tick(ms,IN_FORWARD|IN_JUMP,right?330:30,320,0);
-  expect(VF_TR_Phase(player.iuser4)==VF_TR_WALL_RUN,"entry cone includes thirty degree boundary");
-  wallrun_setup(right,320);player.cmd.viewangles[0]=-85;tick(ms,IN_FORWARD|IN_JUMP,entry,320,0);
-  expect(VF_TR_Phase(player.iuser4)==0,"looking at the sky is not looking toward a wall for entry");
+  expect(VF_TR_Phase(player.iuser4)==VF_TR_WALL_RUN,"a shallow wall-facing look no longer needs the old thirty degree entry cone");
+  wallrun_setup(right,320);tick(ms,IN_FORWARD|IN_JUMP,right?359:1,320,0);
+  expect(VF_TR_Phase(player.iuser4)==VF_TR_WALL_RUN,"one degree into the wall side of its tangent is sufficient");
+  wallrun_setup(right,320);count=1;
+  if(right)block(-128,-64,0,128,-18,256);else block(-128,18,0,128,64,256);
+  player.cmd.viewangles[0]=-89;tick(ms,IN_FORWARD|IN_JUMP,right?359:1,320,0);
+  expect(VF_TR_Phase(player.iuser4)==VF_TR_WALL_RUN,"angular intent does not require an eye ray to hit the finite visible wall");
+  for(i=0;i<2;++i){
+   wallrun_setup(right,320);player.cmd.viewangles[0]=i?89:-89;tick(ms,IN_FORWARD|IN_JUMP,entry,320,0);
+   expect(VF_TR_Phase(player.iuser4)==VF_TR_WALL_RUN,"entry uses horizontal intent independently of looking up or down");
+  }
+  wallrun_setup(right,320);tick(ms,IN_FORWARD|IN_JUMP,right?1:359,320,0);
+  expect(VF_TR_Phase(player.iuser4)==0,"a shallow look on the away side of the tangent stays an ordinary jump");
+  wallrun_setup(right,320);tick(ms,IN_FORWARD|IN_JUMP|(right?IN_MOVERIGHT:IN_MOVELEFT),0,320,right?320:-320);
+  expect(VF_TR_Phase(player.iuser4)==VF_TR_WALL_RUN,"forward and strafe into either wall attaches while looking parallel");
+  x=player.origin[0];tick(ms,IN_FORWARD,0,320,0);
+  expect(VF_TR_Phase(player.iuser4)==VF_TR_WALL_RUN&&player.origin[0]>x,"strafe is only needed for entry and does not steer the stored run heading");
+  wallrun_setup(right,320);player.velocity[0]=-320;
+  tick(ms,IN_FORWARD|IN_JUMP|(right?IN_MOVELEFT:IN_MOVERIGHT),180,320,right?-320:320);
+  expect(VF_TR_Phase(player.iuser4)==VF_TR_WALL_RUN&&player.velocity[0]<-300,"turning the run around reverses the required view-relative strafe key");
+  wallrun_setup(right,320);player.cmd.viewangles[0]=-89;
+  tick(ms,IN_FORWARD|IN_JUMP|(right?IN_MOVERIGHT:IN_MOVELEFT),right?60:300,320,right?320:-320);
+  expect(VF_TR_Phase(player.iuser4)==VF_TR_WALL_RUN,"view-relative strafe into the wall supplies intent even while looking away and upward");
+  wallrun_setup(right,320);tick(ms,IN_FORWARD|IN_JUMP|(right?IN_MOVELEFT:IN_MOVERIGHT),0,320,right?-320:320);
+  expect(VF_TR_Phase(player.iuser4)==0,"strafe away from the wall cannot supply attachment intent");
+  wallrun_setup(right,320);tick(ms,IN_FORWARD|IN_JUMP,0,320,right?320:-320);
+  expect(VF_TR_Phase(player.iuser4)==0,"lateral momentum without the directional input does not supply strafe intent");
+  wallrun_setup(right,320);tick(ms,IN_FORWARD|IN_JUMP|(right?IN_MOVERIGHT:IN_MOVELEFT),0,320,right?-320:320);
+  expect(VF_TR_Phase(player.iuser4)==0,"the strafe button must agree with its signed movement command");
+  wallrun_setup(right,320);tick(ms,IN_FORWARD|(right?IN_MOVERIGHT:IN_MOVELEFT),0,320,right?320:-320);
+  expect(VF_TR_Phase(player.iuser4)==0,"pushing against a wall without jumping cannot attach");
+  wallrun_setup(right,320);tick(ms,IN_JUMP|(right?IN_MOVERIGHT:IN_MOVELEFT),0,0,right?320:-320);
+  expect(VF_TR_Phase(player.iuser4)==0,"jump and strafe without forward input cannot attach");
+  wallrun_setup(right,320);count=1;tick(ms,IN_FORWARD|IN_JUMP|(right?IN_MOVERIGHT:IN_MOVELEFT),0,320,right?320:-320);
+  expect(VF_TR_Phase(player.iuser4)==0,"jump and inward input still require a real supporting wall");
+  reset(0,0,36.03125f);player.velocity[0]=320;
+  if(right)block(-4096,-64,0,4096,-18,512);else block(-4096,18,0,4096,64,512);
+  tick(ms,IN_FORWARD,0,320,0);
+  tick(ms,IN_FORWARD|IN_JUMP|(right?IN_MOVERIGHT:IN_MOVELEFT),0,320,right?320:-320);
+  tick(ms,IN_FORWARD|IN_JUMP|(right?IN_MOVERIGHT:IN_MOVELEFT),0,320,right?320:-320);
+  expect(VF_TR_Phase(player.iuser4)==VF_TR_WALL_RUN,"a real grounded takeoff with inward strafe attaches on either wall");
   wallrun_setup(right,320);tick(ms,IN_FORWARD|IN_JUMP,entry,320,0);
   expect(VF_TR_Phase(player.iuser4)==VF_TR_WALL_RUN,"jump plus wall-facing look enters on either side");
   expect(!VF_TR_BusyHands(player.iuser4)&&!VF_TR_NoReload(player.iuser4)&&VF_TR_CanFire(player.iuser4,0,180),"wall running keeps weapon policy available");
@@ -125,6 +161,10 @@ int main(void) {
   }
  }
  for(ms=8;ms<=33;ms=ms==8?16:ms==16?33:34){
+  oblique_setup(17.04f);tick(ms,IN_FORWARD|IN_JUMP|IN_MOVELEFT,17.04f,320,-320);
+  expect(VF_TR_Phase(player.iuser4)==VF_TR_WALL_RUN,"strafe intent follows view-relative movement on an oblique supporting wall");
+  oblique_setup(17.04f);tick(ms,IN_FORWARD|IN_JUMP|IN_MOVERIGHT,17.04f,320,320);
+  expect(VF_TR_Phase(player.iuser4)==0,"oblique-wall strafe away is rejected instead of relying on an axis-aligned wall label");
   oblique_setup(17.04f);tick(ms,IN_FORWARD|IN_JUMP,107.04f,320,0);
   expect(VF_TR_Phase(player.iuser4)==0&&player.velocity[2]>0&&player.fuser1>=0,
          "oblique entry outside packed heading limit preserves the ordinary airborne jump instead of forcing a drop");

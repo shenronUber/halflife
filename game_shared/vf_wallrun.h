@@ -13,10 +13,10 @@
 #define VF_WR_JUMP_SPEED 420.0f
 #define VF_WR_JUMP_OUT 180.0f
 #define VF_WR_CYCLE_DISTANCE 160.0f
-/* Intentional entry: look within 60 degrees of the supporting wall's
-   inward normal. Once attached, yaw is free through either side's 90
-   degrees from the stored run direction; pitch never breaks attachment. */
-#define VF_WR_ENTRY_LOOK_DOT .5f
+/* Entry intent is horizontal: look to the wall side of its tangent, or
+   strafe into it. Only numerical noise around an exactly parallel look
+   is excluded. Once attached, yaw stays within 90 degrees of the run. */
+#define VF_WR_INTENT_EPSILON .0001f
 #define VF_WR_LOOK_LIMIT 90.0f
 static int VF_WR_LookAllowed(float viewYaw,float runYaw) {
  float delta=viewYaw-runYaw;

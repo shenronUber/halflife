@@ -1,0 +1,511 @@
+{
+  "passed": true,
+  "completed_utc": "2026-10-12T18:51:51.215410+00:00",
+  "release_id": "20261012-182515-93db5e1f",
+  "source_identity": "d25cc057c6b842a74e0e5b1b21b5f33187d202bf1568cb204191c6e2efaaf2c9",
+  "validation": {
+    "suites": [
+      "unit",
+      "policy",
+      "assets",
+      "integration"
+    ],
+    "passed": true,
+    "results": [
+      {
+        "suite": "unit",
+        "test": "validate.py",
+        "passed": true,
+        "seconds": 11.55
+      },
+      {
+        "suite": "unit",
+        "test": "model_contract.py",
+        "passed": true,
+        "seconds": 0.08
+      },
+      {
+        "suite": "unit",
+        "test": "contract_documentation.py",
+        "passed": true,
+        "seconds": 0.06
+      },
+      {
+        "suite": "unit",
+        "test": "tests/status_renderer_update_test.py",
+        "passed": true,
+        "seconds": 3.95
+      },
+      {
+        "suite": "policy",
+        "test": "cpp_tests.py",
+        "passed": true,
+        "seconds": 31.77
+      },
+      {
+        "suite": "assets",
+        "test": "tests/headgear_assets_test.py",
+        "passed": true,
+        "seconds": 22.97
+      },
+      {
+        "suite": "assets",
+        "test": "tests/headgear_feedback_test.py",
+        "passed": true,
+        "seconds": 2.42
+      },
+      {
+        "suite": "assets",
+        "test": "tests/weapon_inspect_clearance_test.py",
+        "passed": true,
+        "seconds": 3.75
+      },
+      {
+        "suite": "assets",
+        "test": "tests/weapon_melee_geometry_test.py",
+        "passed": true,
+        "seconds": 2.11
+      },
+      {
+        "suite": "assets",
+        "test": "tests/new_personas_test.py",
+        "passed": true,
+        "seconds": 0.58
+      },
+      {
+        "suite": "assets",
+        "test": "tests/artisan_sets_test.py",
+        "passed": true,
+        "seconds": 0.62
+      },
+      {
+        "suite": "assets",
+        "test": "tests/test_room_assets_test.py",
+        "passed": true,
+        "seconds": 0.08
+      },
+      {
+        "suite": "assets",
+        "test": "tests/fragment_finish_assets_test.py",
+        "passed": true,
+        "seconds": 0.22
+      },
+      {
+        "suite": "assets",
+        "test": "tests/death_sounds_test.py",
+        "passed": true,
+        "seconds": 2.12
+      },
+      {
+        "suite": "assets",
+        "test": "tests/death_motion_test.py",
+        "passed": true,
+        "seconds": 1.17
+      },
+      {
+        "suite": "assets",
+        "test": "tests/death_atlas_test.py",
+        "passed": true,
+        "seconds": 0.33
+      },
+      {
+        "suite": "assets",
+        "test": "tests/external_death_animations_test.py",
+        "passed": true,
+        "seconds": 4.58
+      },
+      {
+        "suite": "assets",
+        "test": "tests/death_visual_native_test.py",
+        "passed": true,
+        "seconds": 1.2
+      },
+      {
+        "suite": "assets",
+        "test": "tests/wound_textures_test.py",
+        "passed": true,
+        "seconds": 8.52
+      },
+      {
+        "suite": "assets",
+        "test": "tests/death_voice_assets_test.py",
+        "passed": true,
+        "seconds": 0.52
+      },
+      {
+        "suite": "assets",
+        "test": "tests/status_decals_assets_test.py",
+        "passed": true,
+        "seconds": 1.34
+      },
+      {
+        "suite": "assets",
+        "test": "tests/model_contract_assets_test.py",
+        "passed": true,
+        "seconds": 0.33
+      },
+      {
+        "suite": "assets",
+        "test": "tests/traversal_assets_test.py",
+        "passed": true,
+        "seconds": 5.14
+      },
+      {
+        "suite": "assets",
+        "test": "tests/first_person_test.py",
+        "passed": true,
+        "seconds": 1.34
+      },
+      {
+        "suite": "assets",
+        "test": "tests/operator_rig_test.py",
+        "passed": true,
+        "seconds": 1.09
+      },
+      {
+        "suite": "assets",
+        "test": "tests/reference_extensions_test.py",
+        "passed": true,
+        "seconds": 12.62
+      },
+      {
+        "suite": "assets",
+        "test": "tests/reference_chassis_test.py",
+        "passed": true,
+        "seconds": 6.64
+      },
+      {
+        "suite": "assets",
+        "test": "tests/r01_fitted_assets_test.py",
+        "passed": true,
+        "seconds": 0.69
+      },
+      {
+        "suite": "assets",
+        "test": "tests/r01_finish_revision_test.py",
+        "passed": true,
+        "seconds": 7.05
+      },
+      {
+        "suite": "assets",
+        "test": "tests/reference_themes_test.py",
+        "passed": true,
+        "seconds": 4.53
+      },
+      {
+        "suite": "assets",
+        "test": "tests/reference_platform_test.py",
+        "passed": true,
+        "seconds": 21.89
+      },
+      {
+        "suite": "assets",
+        "test": "tests/foregrip_assets_test.py",
+        "passed": true,
+        "seconds": 3.41
+      },
+      {
+        "suite": "assets",
+        "test": "tests/third_person_assets_test.py",
+        "passed": true,
+        "seconds": 4.38
+      },
+      {
+        "suite": "assets",
+        "test": "tests/weapon_fx_test.py",
+        "passed": true,
+        "seconds": 0.3
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 67.36
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 78.52
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 69.3
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 39.53
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 43.7
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 37.61
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 56.59
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 92.75
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 82.73
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 24.55
+      },
+      {
+        "suite": "integration",
+        "test": "tests/test_room_native_test.py",
+        "passed": true,
+        "seconds": 74.69
+      },
+      {
+        "suite": "integration",
+        "test": "tests/combined_room_native_test.py",
+        "passed": true,
+        "seconds": 82.14
+      },
+      {
+        "suite": "integration",
+        "test": "tests/modular_native_test.py",
+        "passed": true,
+        "seconds": 71.77
+      },
+      {
+        "suite": "integration",
+        "test": "tests/modular_multiplayer_test.py",
+        "passed": true,
+        "seconds": 30.5
+      },
+      {
+        "suite": "integration",
+        "test": "tests/modular_launch_test.py",
+        "passed": true,
+        "seconds": 7.73
+      },
+      {
+        "suite": "integration",
+        "test": "tests/current_release_test.py",
+        "passed": true,
+        "seconds": 85.64
+      }
+    ]
+  },
+  "post_install_map": "vf_range",
+  "native_checks": {
+    "passed": true,
+    "states": {
+      "ENTRY": {
+        "phase": 8,
+        "velocity": [
+          320.0,
+          -24.0,
+          0.0
+        ]
+      },
+      "POS_90": {
+        "phase": 8,
+        "velocity": [
+          320.0,
+          0.0,
+          0.0
+        ]
+      },
+      "NEG_90": {
+        "phase": 8,
+        "velocity": [
+          320.0,
+          0.0,
+          0.0
+        ]
+      },
+      "OVER_90": {
+        "phase": 0,
+        "velocity": [
+          319.947,
+          30.552,
+          -73.6
+        ]
+      },
+      "NO_JUMP": {
+        "phase": 0,
+        "velocity": [
+          320.0,
+          0.0,
+          -66.4
+        ]
+      },
+      "PARALLEL_JUMP": {
+        "phase": 0,
+        "velocity": [
+          320.0,
+          0.0,
+          -66.4
+        ]
+      },
+      "SHALLOW_RIGHT": {
+        "phase": 8,
+        "velocity": [
+          320.0,
+          0.0,
+          0.0
+        ]
+      },
+      "SHALLOW_LEFT": {
+        "phase": 8,
+        "velocity": [
+          320.0,
+          24.0,
+          0.0
+        ]
+      },
+      "AWAY_RIGHT": {
+        "phase": 0,
+        "velocity": [
+          320.0,
+          0.0,
+          -66.4
+        ]
+      },
+      "AWAY_LEFT": {
+        "phase": 0,
+        "velocity": [
+          320.0,
+          0.0,
+          -67.2
+        ]
+      },
+      "UP_RIGHT": {
+        "phase": 8,
+        "velocity": [
+          320.0,
+          -24.0,
+          0.0
+        ]
+      },
+      "DOWN_LEFT": {
+        "phase": 8,
+        "velocity": [
+          320.0,
+          24.0,
+          0.0
+        ]
+      },
+      "STRAFE_RIGHT": {
+        "phase": 8,
+        "velocity": [
+          320.0,
+          0.0,
+          0.0
+        ]
+      },
+      "STRAFE_LEFT": {
+        "phase": 8,
+        "velocity": [
+          320.0,
+          24.0,
+          0.0
+        ]
+      },
+      "AWAY_VIEW_STRAFE_RIGHT": {
+        "phase": 8,
+        "velocity": [
+          320.0,
+          -24.0,
+          0.0
+        ]
+      },
+      "AWAY_VIEW_STRAFE_LEFT": {
+        "phase": 8,
+        "velocity": [
+          320.0,
+          0.0,
+          0.0
+        ]
+      },
+      "WRONG_STRAFE_RIGHT": {
+        "phase": 0,
+        "velocity": [
+          320.0,
+          0.0,
+          -66.4
+        ]
+      },
+      "WRONG_STRAFE_LEFT": {
+        "phase": 0,
+        "velocity": [
+          320.0,
+          0.0,
+          -66.4
+        ]
+      },
+      "STRAFE_NO_JUMP": {
+        "phase": 0,
+        "velocity": [
+          320.0,
+          0.0,
+          -67.2
+        ]
+      },
+      "STRAFE_NO_FORWARD": {
+        "phase": 0,
+        "velocity": [
+          320.0,
+          0.0,
+          -66.4
+        ]
+      },
+      "STRAFE_TAKEOFF_RIGHT": {
+        "phase": 8,
+        "velocity": [
+          320.0,
+          0.0,
+          0.0
+        ]
+      },
+      "STRAFE_TAKEOFF_LEFT": {
+        "phase": 8,
+        "velocity": [
+          320.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "post_install_deployment": {
+    "files": 652,
+    "models": 116
+  },
+  "hashes": {
+    "client": "44d3e41fef8d57b00e7fca93665af0a8156970d435b8e727555de50618b01ebe",
+    "server": "2e35e176c0c1f58ad6a114f7af538bb88d22449f39e85da244e6474c9bc3a096"
+  },
+  "captures": [
+    "wallrun_entry_first.png",
+    "wallrun_entry_third.png"
+  ]
+}
