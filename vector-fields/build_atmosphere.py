@@ -105,11 +105,12 @@ def build(ensure=False):
     manifest.write_text(json.dumps(state,indent=2)+'\n')
     print('PASS sky assets: six 2048 faces, three native RGBA textures',flush=True)
     return OUT
-def runtime_files():
-    state=json.loads((OUT/'manifest.json').read_text())
-    files=[(OUT/'manifest.json',Path('vf/atmosphere.json'))]
-    files +=[(OUT/'gfx/env'/('vf_storm'+s+'.tga'),Path('gfx/env')/('vf_storm'+s+'.tga'))for s in AXES]
-    files +=[(OUT/'sprites'/(name+'.spr'),Path('sprites/vf_atmosphere')/(name+'.spr'))for name in('cloud','deck','white')]
+def runtime_files(folder=OUT):
+    folder=Path(folder)
+    state=json.loads((folder/'manifest.json').read_text())
+    files=[(folder/'manifest.json',Path('vf/atmosphere.json'))]
+    files +=[(folder/'gfx/env'/('vf_storm'+s+'.tga'),Path('gfx/env')/('vf_storm'+s+'.tga'))for s in AXES]
+    files +=[(folder/'sprites'/(name+'.spr'),Path('sprites/vf_atmosphere')/(name+'.spr'))for name in('cloud','deck','white')]
     for source,target in files:
         if source.name!='manifest.json':assert sha(source)==state['cache']['outputs'][str(source.resolve())],source
     return files

@@ -1,5 +1,6 @@
 """Model and delivery contracts fail safely without changing inventory identity."""
 import json
+import hashlib
 import importlib.util
 from unittest.mock import patch
 import shutil
@@ -72,6 +73,13 @@ class DeliveryTests(unittest.TestCase):
             self.write('generated/headgear-audio/sound/vf_headgear/'+name,b'headgear audio')
         self.write('generated/headgear-hud/manifest.json',json.dumps(dict(assets=[dict(id='riot')])).encode())
         self.write('generated/headgear-hud/riot.spr',b'headgear lens')
+        from build_atmosphere import AXES
+        atmosphere=['gfx/env/vf_storm'+s+'.tga' for s in AXES]+['sprites/'+name+'.spr' for name in('cloud','deck','white')]
+        hashes={}
+        for name in atmosphere:
+            path='generated/atmosphere/'+name;data=('atmosphere '+name).encode();self.write(path,data)
+            hashes[str((self.root/path).resolve())]=hashlib.sha256(data).hexdigest()
+        self.write('generated/atmosphere/manifest.json',json.dumps(dict(cache=dict(outputs=hashes))).encode())
         for source in ['build/client/client.dll','build/server/hl.dll','data/equipment.txt','data/r01_styles.txt','generated/visual_skins/skins.txt','data/effects.json','data/weapon_fx.json','generated/weapon-fx/decals.wad','version.json','generated/effects/test.spr','generated/weapon-fx/sprites/test.spr','generated/weapon-fx/sound/test.wav']:
             self.write(source,b'fixture')
         self.write('data/status_decals.json',json.dumps(dict(effects=[dict(id='hydro')])).encode())
@@ -96,6 +104,14 @@ class DeliveryTests(unittest.TestCase):
 
     def test_complete_delivery_is_verified(self):
         result=release.verify_deployment(self.dest,self.root);self.assertGreater(result['models'],10)
+
+    def test_missing_nadir_sky_face_is_detected(self):
+        (self.dest/'gfx/env/vf_stormdn.tga').unlink()
+        with self.assertRaisesRegex(FileNotFoundError,'vf_stormdn.tga'):release.verify_deployment(self.dest,self.root)
+
+    def test_stale_cloud_coverage_is_detected(self):
+        (self.dest/'sprites/vf_atmosphere/cloud.spr').write_bytes(b'old cloud')
+        with self.assertRaisesRegex(RuntimeError,'cloud.spr'):release.verify_deployment(self.dest,self.root)
 
     def test_missing_headgear_texture_is_detected(self):
         (self.dest/'sprites/vf_headgear_hud/riot.spr').unlink()

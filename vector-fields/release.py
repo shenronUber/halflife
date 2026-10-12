@@ -108,7 +108,7 @@ def deployment_files(root=ROOT,sdk=None):
         ('version.json','vf/version.json'))]
     from game_profiles import MAPS
     from build_atmosphere import runtime_files as atmosphere_files
-    result += [(root/'generated/atmosphere'/source.relative_to(ROOT/'generated/atmosphere'),target) for source,target in atmosphere_files()]
+    result += atmosphere_files(root/'generated/atmosphere')
     result += [(root/'generated'/row['source']/(name+'.bsp'),Path('maps')/(name+'.bsp'))
                for name,row in MAPS.items()]
     sdk=Path(sdk or (os.environ.get('VF_RELEASE_SDK',root/'build')if root.resolve()==ROOT.resolve()else root/'build'))
