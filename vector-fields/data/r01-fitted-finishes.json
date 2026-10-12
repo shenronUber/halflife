@@ -1,0 +1,779 @@
+{
+  "schema": 1,
+  "revision": "fitted-2026-10-11",
+  "scope": "All 72 current R1 modular shapes; player skins and animations excluded.",
+  "mode": "One or two fixed inventory finishes per object. Historical 14-bank assets retained for developer review.",
+  "models": {
+    "r01_receiver_a": {
+      "name": "R-01 / Chassis Atelier",
+      "slot": "receiver",
+      "styles": [
+        "original",
+        "medieval-forge"
+      ],
+      "intrinsic": true,
+      "rationale": "Deux atlas Blender propres a ce chassis : finition originale et acier forge, ferrures patinees et laiton medieval punk.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/receiver.jpg"
+    },
+    "r01_receiver_b": {
+      "name": "R-01 / Chassis Circuit",
+      "slot": "receiver",
+      "styles": [
+        "original",
+        "medieval-forge"
+      ],
+      "intrinsic": true,
+      "rationale": "Deux atlas Blender propres a ce chassis : finition originale et acier forge, ferrures patinees et laiton medieval punk.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/receiver.jpg"
+    },
+    "r01_receiver_c": {
+      "name": "R-01 / Chassis Nomade",
+      "slot": "receiver",
+      "styles": [
+        "original",
+        "medieval-forge"
+      ],
+      "intrinsic": true,
+      "rationale": "Deux atlas Blender propres a ce chassis : finition originale et acier forge, ferrures patinees et laiton medieval punk.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/receiver.jpg"
+    },
+    "r01_receiver_d": {
+      "name": "R-01 / Chassis Bastion",
+      "slot": "receiver",
+      "styles": [
+        "original",
+        "medieval-forge"
+      ],
+      "intrinsic": true,
+      "rationale": "Deux atlas Blender propres a ce chassis : finition originale et acier forge, ferrures patinees et laiton medieval punk.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/receiver.jpg"
+    },
+    "r01_barrel_a": {
+      "name": "Canon chemise",
+      "slot": "barrel",
+      "styles": [
+        "original",
+        "ww1-trench"
+      ],
+      "intrinsic": false,
+      "rationale": "Matiere compatible avec les chemises, longerons ou bobines reels; conserver le contraste des bagues.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/barrel.jpg"
+    },
+    "r01_barrel_b": {
+      "name": "Canon a induction",
+      "slot": "barrel",
+      "styles": [
+        "original",
+        "dieselpunk"
+      ],
+      "intrinsic": false,
+      "rationale": "Matiere compatible avec les chemises, longerons ou bobines reels; conserver le contraste des bagues.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/barrel.jpg"
+    },
+    "r01_barrel_c": {
+      "name": "Canon a longerons",
+      "slot": "barrel",
+      "styles": [
+        "original",
+        "war-torn"
+      ],
+      "intrinsic": false,
+      "rationale": "Matiere compatible avec les chemises, longerons ou bobines reels; conserver le contraste des bagues.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/barrel.jpg"
+    },
+    "r01_barrel_d": {
+      "name": "Canon a caisson",
+      "slot": "barrel",
+      "styles": [
+        "original",
+        "medieval-forge"
+      ],
+      "intrinsic": false,
+      "rationale": "Matiere compatible avec les chemises, longerons ou bobines reels; conserver le contraste des bagues.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/barrel.jpg"
+    },
+    "r01_muzzle_a": {
+      "name": "Frein ajoure",
+      "slot": "muzzle",
+      "styles": [
+        "original",
+        "ww1-trench"
+      ],
+      "intrinsic": false,
+      "rationale": "Les parties ajourees restent en metal; refuser les illusions de tuyauterie imprimee et les matieres organiques sans support.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/muzzle.jpg"
+    },
+    "r01_muzzle_b": {
+      "name": "Moderateur court",
+      "slot": "muzzle",
+      "styles": [
+        "original",
+        "new-york-noir"
+      ],
+      "intrinsic": false,
+      "rationale": "Les parties ajourees restent en metal; refuser les illusions de tuyauterie imprimee et les matieres organiques sans support.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/muzzle.jpg"
+    },
+    "r01_muzzle_c": {
+      "name": "Cache-flamme a griffes",
+      "slot": "muzzle",
+      "styles": [
+        "original",
+        "war-torn"
+      ],
+      "intrinsic": false,
+      "rationale": "Les parties ajourees restent en metal; refuser les illusions de tuyauterie imprimee et les matieres organiques sans support.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/muzzle.jpg"
+    },
+    "r01_muzzle_d": {
+      "name": "Compensateur hexagonal",
+      "slot": "muzzle",
+      "styles": [
+        "original",
+        "abyss-diver"
+      ],
+      "intrinsic": false,
+      "rationale": "Les parties ajourees restent en metal; refuser les illusions de tuyauterie imprimee et les matieres organiques sans support.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/muzzle.jpg"
+    },
+    "r01_feed_a": {
+      "name": "Chargeur nervure",
+      "slot": "feed",
+      "styles": [
+        "original",
+        "war-torn"
+      ],
+      "intrinsic": false,
+      "rationale": "Nervures et raccord doivent rester metalliques; seconde finition coherentement patinee.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/feed.jpg"
+    },
+    "r01_feed_b": {
+      "name": "Chargeur double pile",
+      "slot": "feed",
+      "styles": [
+        "original",
+        "new-york-noir"
+      ],
+      "intrinsic": false,
+      "rationale": "Nervures et raccord doivent rester metalliques; seconde finition coherentement patinee.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/feed.jpg"
+    },
+    "r01_feed_c": {
+      "name": "Chargeur coude",
+      "slot": "feed",
+      "styles": [
+        "original",
+        "medieval-forge"
+      ],
+      "intrinsic": false,
+      "rationale": "Nervures et raccord doivent rester metalliques; seconde finition coherentement patinee.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/feed.jpg"
+    },
+    "r01_feed_d": {
+      "name": "Chargeur a tambour bas",
+      "slot": "feed",
+      "styles": [
+        "original",
+        "ww1-trench"
+      ],
+      "intrinsic": false,
+      "rationale": "Nervures et raccord doivent rester metalliques; seconde finition coherentement patinee.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/feed.jpg"
+    },
+    "r01_chamber_a": {
+      "name": "Culasse a levier",
+      "slot": "chamber",
+      "styles": [
+        "original"
+      ],
+      "intrinsic": false,
+      "rationale": "Les glissieres et mecanismes doivent rester usines; pas de bois, os ou tuyaux peints sur les surfaces fonctionnelles.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/chamber.jpg"
+    },
+    "r01_chamber_b": {
+      "name": "Culasse a glissiere",
+      "slot": "chamber",
+      "styles": [
+        "original"
+      ],
+      "intrinsic": false,
+      "rationale": "Les glissieres et mecanismes doivent rester usines; pas de bois, os ou tuyaux peints sur les surfaces fonctionnelles.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/chamber.jpg"
+    },
+    "r01_chamber_c": {
+      "name": "Culasse a anneau",
+      "slot": "chamber",
+      "styles": [
+        "original"
+      ],
+      "intrinsic": false,
+      "rationale": "Les glissieres et mecanismes doivent rester usines; pas de bois, os ou tuyaux peints sur les surfaces fonctionnelles.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/chamber.jpg"
+    },
+    "r01_chamber_d": {
+      "name": "Culasse a double piston",
+      "slot": "chamber",
+      "styles": [
+        "original"
+      ],
+      "intrinsic": false,
+      "rationale": "Les glissieres et mecanismes doivent rester usines; pas de bois, os ou tuyaux peints sur les surfaces fonctionnelles.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/chamber.jpg"
+    },
+    "r01_ammo_a": {
+      "name": "Cassette balistique",
+      "slot": "ammo",
+      "styles": [
+        "original",
+        "ww1-trench"
+      ],
+      "intrinsic": false,
+      "rationale": "Preserver cartouches, berceau et entretoises; variante technique adaptee a la cassette.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/ammo.jpg"
+    },
+    "r01_ammo_b": {
+      "name": "Cassette energetique",
+      "slot": "ammo",
+      "styles": [
+        "original",
+        "abyss-diver"
+      ],
+      "intrinsic": false,
+      "rationale": "Preserver cartouches, berceau et entretoises; variante technique adaptee a la cassette.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/ammo.jpg"
+    },
+    "r01_ammo_c": {
+      "name": "Cassette bi-tube",
+      "slot": "ammo",
+      "styles": [
+        "original",
+        "medieval-forge"
+      ],
+      "intrinsic": false,
+      "rationale": "Preserver cartouches, berceau et entretoises; variante technique adaptee a la cassette.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/ammo.jpg"
+    },
+    "r01_ammo_d": {
+      "name": "Bloc triple chambre",
+      "slot": "ammo",
+      "styles": [
+        "original",
+        "porcelain-fluidics"
+      ],
+      "intrinsic": false,
+      "rationale": "Preserver cartouches, berceau et entretoises; variante technique adaptee a la cassette.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/ammo.jpg"
+    },
+    "r01_projectile_a": {
+      "name": "Porte-flechettes",
+      "slot": "projectile",
+      "styles": [
+        "original",
+        "ww1-trench"
+      ],
+      "intrinsic": false,
+      "rationale": "Conserver la distinction entre flechettes, ampoules et disques; palette secondaire adaptee aux charges visibles.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/projectile.jpg"
+    },
+    "r01_projectile_b": {
+      "name": "Porte-ampoules",
+      "slot": "projectile",
+      "styles": [
+        "original",
+        "medieval-alchemy"
+      ],
+      "intrinsic": false,
+      "rationale": "Conserver la distinction entre flechettes, ampoules et disques; palette secondaire adaptee aux charges visibles.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/projectile.jpg"
+    },
+    "r01_projectile_c": {
+      "name": "Berceau monodard",
+      "slot": "projectile",
+      "styles": [
+        "original",
+        "medieval-forge"
+      ],
+      "intrinsic": false,
+      "rationale": "Conserver la distinction entre flechettes, ampoules et disques; palette secondaire adaptee aux charges visibles.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/projectile.jpg"
+    },
+    "r01_projectile_d": {
+      "name": "Rack a disques",
+      "slot": "projectile",
+      "styles": [
+        "original",
+        "porcelain-fluidics"
+      ],
+      "intrinsic": false,
+      "rationale": "Conserver la distinction entre flechettes, ampoules et disques; palette secondaire adaptee aux charges visibles.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/projectile.jpg"
+    },
+    "r01_optic_a": {
+      "name": "Viseur cadre",
+      "slot": "optic",
+      "styles": [
+        "original",
+        "abyss-diver"
+      ],
+      "intrinsic": false,
+      "rationale": "Verre, cadre et support restent lisibles; seconde finition conforme aux volumes existants.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/optic.jpg"
+    },
+    "r01_optic_b": {
+      "name": "Lunette compacte",
+      "slot": "optic",
+      "styles": [
+        "original",
+        "new-york-noir"
+      ],
+      "intrinsic": false,
+      "rationale": "Verre, cadre et support restent lisibles; seconde finition conforme aux volumes existants.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/optic.jpg"
+    },
+    "r01_optic_c": {
+      "name": "Dioptre annulaire",
+      "slot": "optic",
+      "styles": [
+        "original",
+        "medieval-forge"
+      ],
+      "intrinsic": false,
+      "rationale": "Verre, cadre et support restent lisibles; seconde finition conforme aux volumes existants.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/optic.jpg"
+    },
+    "r01_optic_d": {
+      "name": "Viseur prismatique",
+      "slot": "optic",
+      "styles": [
+        "original",
+        "porcelain-fluidics"
+      ],
+      "intrinsic": false,
+      "rationale": "Verre, cadre et support restent lisibles; seconde finition conforme aux volumes existants.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/optic.jpg"
+    },
+    "r01_underbarrel_a": {
+      "name": "Poignee inclinee",
+      "slot": "underbarrel",
+      "styles": [
+        "original",
+        "medieval-forge"
+      ],
+      "intrinsic": false,
+      "rationale": "Respecter prise, armature et fixation; bois/cuir seulement sur la poignee ou le garde-main.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/underbarrel.jpg"
+    },
+    "r01_underbarrel_b": {
+      "name": "Tube auxiliaire",
+      "slot": "underbarrel",
+      "styles": [
+        "original",
+        "new-york-noir"
+      ],
+      "intrinsic": false,
+      "rationale": "Respecter prise, armature et fixation; bois/cuir seulement sur la poignee ou le garde-main.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/underbarrel.jpg"
+    },
+    "r01_underbarrel_c": {
+      "name": "Stabilisateur replie",
+      "slot": "underbarrel",
+      "styles": [
+        "original",
+        "war-torn"
+      ],
+      "intrinsic": false,
+      "rationale": "Respecter prise, armature et fixation; bois/cuir seulement sur la poignee ou le garde-main.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/underbarrel.jpg"
+    },
+    "r01_underbarrel_d": {
+      "name": "Garde-main carene",
+      "slot": "underbarrel",
+      "styles": [
+        "original",
+        "ww1-trench"
+      ],
+      "intrinsic": false,
+      "rationale": "Respecter prise, armature et fixation; bois/cuir seulement sur la poignee ou le garde-main.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/underbarrel.jpg"
+    },
+    "r01_grip_a": {
+      "name": "Crosse squelette",
+      "slot": "grip",
+      "styles": [
+        "original",
+        "medieval-forge"
+      ],
+      "intrinsic": true,
+      "rationale": "Poignee galbee au repere du MP40, deux atlas propres a la poignee et a sa crosse.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/grip.jpg"
+    },
+    "r01_grip_b": {
+      "name": "Crosse amortie",
+      "slot": "grip",
+      "styles": [
+        "original",
+        "ww1-trench"
+      ],
+      "intrinsic": true,
+      "rationale": "Poignee galbee au repere du MP40, deux atlas propres a la poignee et a sa crosse.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/grip.jpg"
+    },
+    "r01_grip_c": {
+      "name": "Crosse triangulee",
+      "slot": "grip",
+      "styles": [
+        "original",
+        "new-york-noir"
+      ],
+      "intrinsic": true,
+      "rationale": "Poignee galbee au repere du MP40, deux atlas propres a la poignee et a sa crosse.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/grip.jpg"
+    },
+    "r01_grip_d": {
+      "name": "Crosse a joue reglable",
+      "slot": "grip",
+      "styles": [
+        "original",
+        "abyss-diver"
+      ],
+      "intrinsic": true,
+      "rationale": "Poignee galbee au repere du MP40, deux atlas propres a la poignee et a sa crosse.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/grip.jpg"
+    },
+    "r01_power_a": {
+      "name": "Cellule ambre 24V",
+      "slot": "power",
+      "styles": [
+        "original"
+      ],
+      "intrinsic": false,
+      "rationale": "Pile 24V: garder uniquement la coque industrielle et son etiquette electrique. Les autres palettes brouillent bornes et marquage.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/power.jpg"
+    },
+    "r01_power_b": {
+      "name": "Condensateur teal 48V",
+      "slot": "power",
+      "styles": [
+        "original",
+        "abyss-diver"
+      ],
+      "intrinsic": false,
+      "rationale": "Bornes, jauge et capot restent lisibles; pas d habillage organique qui contredit la fonction electrique.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/power.jpg"
+    },
+    "r01_power_c": {
+      "name": "Reserve toroidale",
+      "slot": "power",
+      "styles": [
+        "original",
+        "dieselpunk"
+      ],
+      "intrinsic": false,
+      "rationale": "Bornes, jauge et capot restent lisibles; pas d habillage organique qui contredit la fonction electrique.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/power.jpg"
+    },
+    "r01_power_d": {
+      "name": "Batterie a trois cartouches",
+      "slot": "power",
+      "styles": [
+        "original",
+        "abyss-diver"
+      ],
+      "intrinsic": false,
+      "rationale": "Bornes, jauge et capot restent lisibles; pas d habillage organique qui contredit la fonction electrique.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/power.jpg"
+    },
+    "r01_cooling_a": {
+      "name": "Radiateur a ailettes",
+      "slot": "cooling",
+      "styles": [
+        "original",
+        "medieval-forge"
+      ],
+      "intrinsic": false,
+      "rationale": "Les ailettes et circuits restent des materiaux thermiques; conserver les differences cuivre/acier.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/cooling.jpg"
+    },
+    "r01_cooling_b": {
+      "name": "Circuit cuivre",
+      "slot": "cooling",
+      "styles": [
+        "original",
+        "abyss-diver"
+      ],
+      "intrinsic": false,
+      "rationale": "Les ailettes et circuits restent des materiaux thermiques; conserver les differences cuivre/acier.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/cooling.jpg"
+    },
+    "r01_cooling_c": {
+      "name": "Dissipateur a pointes",
+      "slot": "cooling",
+      "styles": [
+        "original",
+        "war-torn"
+      ],
+      "intrinsic": false,
+      "rationale": "Les ailettes et circuits restent des materiaux thermiques; conserver les differences cuivre/acier.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/cooling.jpg"
+    },
+    "r01_cooling_d": {
+      "name": "Ventilateurs doubles",
+      "slot": "cooling",
+      "styles": [
+        "original",
+        "abyss-diver"
+      ],
+      "intrinsic": false,
+      "rationale": "Les ailettes et circuits restent des materiaux thermiques; conserver les differences cuivre/acier.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/cooling.jpg"
+    },
+    "r01_receiver_side": {
+      "name": "R-01 / Traverse",
+      "slot": "receiver",
+      "styles": [
+        "original",
+        "medieval-forge"
+      ],
+      "intrinsic": true,
+      "rationale": "Deux atlas Blender propres a ce chassis : finition originale et acier forge, ferrures patinees et laiton medieval punk.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/receiver.jpg"
+    },
+    "r01_receiver_top": {
+      "name": "R-01 / Zenith",
+      "slot": "receiver",
+      "styles": [
+        "original",
+        "medieval-forge"
+      ],
+      "intrinsic": true,
+      "rationale": "Deux atlas Blender propres a ce chassis : finition originale et acier forge, ferrures patinees et laiton medieval punk.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/receiver.jpg"
+    },
+    "r01_receiver_arch": {
+      "name": "R-01 / Arche",
+      "slot": "receiver",
+      "styles": [
+        "original",
+        "medieval-forge"
+      ],
+      "intrinsic": true,
+      "rationale": "Deux atlas Blender propres a ce chassis : finition originale et acier forge, ferrures patinees et laiton medieval punk.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/receiver.jpg"
+    },
+    "r01_receiver_arch_top": {
+      "name": "R-01 / Arche superieure",
+      "slot": "receiver",
+      "styles": [
+        "original",
+        "medieval-forge"
+      ],
+      "intrinsic": true,
+      "rationale": "Deux atlas Blender propres a ce chassis : finition originale et acier forge, ferrures patinees et laiton medieval punk.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/receiver.jpg"
+    },
+    "r01_receiver_gyre": {
+      "name": "R-01 / Gyre",
+      "slot": "receiver",
+      "styles": [
+        "original",
+        "medieval-forge"
+      ],
+      "intrinsic": true,
+      "rationale": "Deux atlas Blender propres a ce chassis : finition originale et acier forge, ferrures patinees et laiton medieval punk.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/receiver.jpg"
+    },
+    "r01_chamber_inventor": {
+      "name": "Culasse a manivelle",
+      "slot": "chamber",
+      "styles": [
+        "original",
+        "roman-inventor"
+      ],
+      "intrinsic": false,
+      "rationale": "Les glissieres et mecanismes doivent rester usines; pas de bois, os ou tuyaux peints sur les surfaces fonctionnelles.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/chamber.jpg"
+    },
+    "r01_chamber_diesel": {
+      "name": "Culasse a cames",
+      "slot": "chamber",
+      "styles": [
+        "original",
+        "dieselpunk"
+      ],
+      "intrinsic": false,
+      "rationale": "Les glissieres et mecanismes doivent rester usines; pas de bois, os ou tuyaux peints sur les surfaces fonctionnelles.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/chamber.jpg"
+    },
+    "r01_optic_inventor": {
+      "name": "Dioptre astrolabe",
+      "slot": "optic",
+      "styles": [
+        "original",
+        "roman-inventor"
+      ],
+      "intrinsic": false,
+      "rationale": "Verre, cadre et support restent lisibles; seconde finition conforme aux volumes existants.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/optic.jpg"
+    },
+    "r01_optic_diesel": {
+      "name": "Viseur periscopique",
+      "slot": "optic",
+      "styles": [
+        "original",
+        "dieselpunk"
+      ],
+      "intrinsic": false,
+      "rationale": "Verre, cadre et support restent lisibles; seconde finition conforme aux volumes existants.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/optic.jpg"
+    },
+    "r01_power_inventor": {
+      "name": "Accumulateur a ressort",
+      "slot": "power",
+      "styles": [
+        "original",
+        "roman-inventor"
+      ],
+      "intrinsic": false,
+      "rationale": "Bornes, jauge et capot restent lisibles; pas d habillage organique qui contredit la fonction electrique.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/power.jpg"
+    },
+    "r01_power_diesel": {
+      "name": "Reservoir a huile",
+      "slot": "power",
+      "styles": [
+        "original",
+        "dieselpunk"
+      ],
+      "intrinsic": false,
+      "rationale": "Bornes, jauge et capot restent lisibles; pas d habillage organique qui contredit la fonction electrique.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/power.jpg"
+    },
+    "r01_cooling_inventor": {
+      "name": "Eventails a lamelles",
+      "slot": "cooling",
+      "styles": [
+        "original",
+        "roman-inventor"
+      ],
+      "intrinsic": false,
+      "rationale": "Les ailettes et circuits restent des materiaux thermiques; conserver les differences cuivre/acier.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/cooling.jpg"
+    },
+    "r01_cooling_diesel": {
+      "name": "Radiateur a faisceau",
+      "slot": "cooling",
+      "styles": [
+        "original",
+        "dieselpunk"
+      ],
+      "intrinsic": false,
+      "rationale": "Les ailettes et circuits restent des materiaux thermiques; conserver les differences cuivre/acier.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/cooling.jpg"
+    },
+    "r01_receiver_m40": {
+      "name": "R-01 / Fonderie",
+      "slot": "receiver",
+      "styles": [
+        "original",
+        "medieval-forge"
+      ],
+      "intrinsic": true,
+      "rationale": "Deux atlas Blender propres a ce chassis : finition originale et acier forge, ferrures patinees et laiton medieval punk.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/receiver.jpg"
+    },
+    "r01_receiver_a47": {
+      "name": "R-01 / Vieux arsenal",
+      "slot": "receiver",
+      "styles": [
+        "original",
+        "medieval-forge"
+      ],
+      "intrinsic": true,
+      "rationale": "Deux atlas Blender propres a ce chassis : finition originale et acier forge, ferrures patinees et laiton medieval punk.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/receiver.jpg"
+    },
+    "r01_receiver_ossuary": {
+      "name": "R-01 / Ossuaire",
+      "slot": "receiver",
+      "styles": [
+        "original"
+      ],
+      "intrinsic": true,
+      "rationale": "Atlas exclusif deja dessine pour ce chassis; aucune finition universelle.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/receiver.jpg"
+    },
+    "r01_receiver_bramble": {
+      "name": "R-01 / Roncier",
+      "slot": "receiver",
+      "styles": [
+        "original"
+      ],
+      "intrinsic": true,
+      "rationale": "Atlas exclusif deja dessine pour ce chassis; aucune finition universelle.",
+      "audit": "weapon-workshop/fitted-2026-10-11/audit/receiver.jpg"
+    },
+    "r01_barrel_e": {
+      "name": "Canon Aigrette",
+      "slot": "barrel",
+      "styles": [
+        "original"
+      ],
+      "intrinsic": true,
+      "rationale": "Atlas UV exclusif Blender, construit autour de la geometrie de cette piece. Tube acier droit, ailettes longitudinales, bois rouge et frettes."
+    },
+    "r01_barrel_f": {
+      "name": "Canon Relique",
+      "slot": "barrel",
+      "styles": [
+        "original"
+      ],
+      "intrinsic": true,
+      "rationale": "Atlas UV exclusif Blender, construit autour de la geometrie de cette piece. Fourreau d os, tendons et brides sur un tube mecanique apparent."
+    },
+    "r01_muzzle_e": {
+      "name": "Silencieux Sourdine",
+      "slot": "muzzle",
+      "styles": [
+        "original"
+      ],
+      "intrinsic": true,
+      "rationale": "Atlas UV exclusif Blender, construit autour de la geometrie de cette piece. Silencieux long bleui, bagues moletees et nez a pans."
+    },
+    "r01_muzzle_f": {
+      "name": "Silencieux Tresse",
+      "slot": "muzzle",
+      "styles": [
+        "original"
+      ],
+      "intrinsic": true,
+      "rationale": "Atlas UV exclusif Blender, construit autour de la geometrie de cette piece. Gaine textile sable ajustee, brides et coutures sur noyau acier."
+    },
+    "r01_muzzle_g": {
+      "name": "Silencieux Campanule",
+      "slot": "muzzle",
+      "styles": [
+        "original"
+      ],
+      "intrinsic": true,
+      "rationale": "Atlas UV exclusif Blender, construit autour de la geometrie de cette piece. Chambres etagees en laiton patine, cerclages et agrafes acier."
+    },
+    "r01_muzzle_h": {
+      "name": "Silencieux Ossifie",
+      "slot": "muzzle",
+      "styles": [
+        "original"
+      ],
+      "intrinsic": true,
+      "rationale": "Atlas UV exclusif Blender, construit autour de la geometrie de cette piece. Fourreau d os irregulier, tendon et insert mecanique apparent."
+    },
+    "r01_muzzle_i": {
+      "name": "Silencieux Etouffoir",
+      "slot": "muzzle",
+      "styles": [
+        "original"
+      ],
+      "intrinsic": true,
+      "rationale": "Atlas UV exclusif Blender, construit autour de la geometrie de cette piece. Carene ceramique facettee, joints graphite et nez metallique."
+    }
+  }
+}

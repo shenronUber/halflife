@@ -6,17 +6,27 @@ import build_skins as geometry
 from pathlib import Path
 from PIL import Image
 from build_modular import compile_model
-from studio_assets import Studio,canonical
+from studio_assets import Studio,canonical,smd_uv
 import build_cache
+import persona_head_seams
+import persona_head_continuity
 ROOT=Path(__file__).resolve().parent
 ASSETS=ROOT/'assets/personas';OUT=ROOT/'generated/personas';CATALOG=ROOT/'generated/visual_skins'
+
+def smd_tri(triangles):
+ # Keep reference UVs in memory for slicing/charts. Compensate only when
+ # exporting the 512px character materials to StudioMDL (including corpses).
+ return geometry.smd_tri([(material,[dict(v,uv=smd_uv(v['uv'],512,512))for v in tri]
+                          if material.startswith(('persona_','fragment_detail_'))else tri)
+                         for material,tri in triangles])
 
 def donor(config):
  return next(r for r in json.loads((CATALOG/'cs-skins.json').read_bytes())['records']if r['id']==config['base_skin'])
 
 def input_hash(config):
- paths=[Path(__file__),ASSETS/'personas.json',ASSETS/config['reference'],Path(donor(config)['path'])]
+ paths=[Path(__file__),Path(persona_head_seams.__file__),Path(persona_head_continuity.__file__),ASSETS/'personas.json',ASSETS/config['reference'],Path(donor(config)['path'])]
  paths += [ASSETS/t['id']/'texture-atlas.png'for t in config['themes']]
+ paths += [ASSETS/t['id']/t['head_continuity']for t in config['themes']if t.get('head_continuity')]
  paths += [ROOT/'generated/modular/vf_operator.qc',ROOT/'build_skins.py']+sorted((ROOT/'generated/tfc-soldier').glob('*.smd'))
  return build_cache.fingerprint(paths+[CATALOG/'cs-skins.json']+build_cache.compiler_inputs())
 
@@ -75,7 +85,7 @@ def build_fitted_rig(config):
  for b,matrix in bind.items():
   center=matrix[:3,3];tri=[geometry.vertex(center+offset,[0,0,1],[.5,.5],b)for offset in (np.array([0.,0,0]),np.array([.02,0,0]),np.array([0,.02,0]))]
   anchors.append(('persona_original.bmp',tri))
- write_smd(OUT/'persona_anchors.smd',header,geometry.smd_tri(anchors))
+ write_smd(OUT/'persona_anchors.smd',header,smd_tri(anchors))
  qc=(ROOT/'generated/modular/vf_operator.qc').read_text()
  qc=qc.replace('vf_operator.mdl','persona_rig.mdl')
  qc=re.sub(r'\$bodygroup\s+\w+\s*\{.*?\}', '',qc,flags=re.S)
@@ -83,7 +93,7 @@ def build_fitted_rig(config):
  qc+='\n'+'\n'.join(fitted_hitboxes(source,bind))+'\n'
  # The renderer hides the carrier. Keep a complete fallback for corpses.
  zones,_=tailored_mesh(config)
- write_smd(OUT/'persona_body.smd',header,geometry.smd_tri([t for zone in zones for t in zone]))
+ write_smd(OUT/'persona_body.smd',header,smd_tri([t for zone in zones for t in zone]))
  qc+='\n$body rig "persona_anchors"\n$body body "persona_body"\n'
  path=OUT/'persona_rig.qc';path.write_text(qc);compile_model(path)
  rig=Studio(path.with_suffix('.mdl'));oldrig=Studio(ROOT/'generated/modular/vf_operator.mdl')
@@ -124,19 +134,41 @@ def build(ensure=False):
    keys={x.split('|')[1]for x in catalog.read_text().splitlines()if x}
    if 'persona_gign'in keys and all(t['key']in keys for t in old['themes']):print('Character texture families are current.');return old
  OUT.mkdir(parents=True,exist_ok=True)
+ donor_triangles=Studio(donor(config)['path']).mesh()
+ head_layout=persona_head_seams.layout(donor_triangles)
+ continuity_layout=persona_head_continuity.layout(donor_triangles)
+ corrected_dir=OUT/'corrected-atlases';corrected_dir.mkdir(exist_ok=True)
+ head_audit=[]
+ def atlas(source,key,filename,palette_method='median-cut',shirt_collar=False,head_layer=None):
+  image=Image.open(source).convert('RGB').resize((512,512),Image.Resampling.LANCZOS)
+  selection=None
+  if head_layer:
+   image,selection=persona_head_continuity.apply_head_layer(image,Image.open(head_layer),continuity_layout)
+  corrected,joins=persona_head_seams.normalize(image,head_layout,shirt_collar=shirt_collar)
+  corrected,padding=persona_head_seams.pad_head_edges(corrected,head_layout)
+  corrected,continuity=persona_head_continuity.align(corrected,continuity_layout)
+  corrected.save(corrected_dir/(key+'.png'))
+  methods={'median-cut':Image.Quantize.MEDIANCUT,'octree':Image.Quantize.FASTOCTREE}
+  indexed=corrected.quantize(256,method=methods[palette_method])
+  indexed,palette_fit=persona_head_continuity.fit_indexed_edges(indexed,continuity_layout)
+  indexed.save(OUT/filename)
+  continuity['indexed_after']=persona_head_continuity.measure(indexed,continuity_layout)
+  continuity['palette_fit']=palette_fit
+  head_audit.append(dict(key=key,source=str(Path(source).relative_to(ROOT)),corrected_atlas=str((corrected_dir/(key+'.png')).relative_to(ROOT)),joins=joins,padding=padding,continuity=continuity,head_layer=str(Path(head_layer).relative_to(ROOT))if head_layer else None,selection=selection))
  materials=['persona_original.bmp']
- Image.open(ASSETS/config['reference']).convert('RGB').quantize(256).save(OUT/materials[0])
+ atlas(ASSETS/config['reference'],'gign',materials[0])
  for theme in config['themes']:
   source=ASSETS/theme['id']/'texture-atlas.png';im=Image.open(source).convert('RGB')
   assert abs(im.width/im.height-1)<.01,source
   name='persona_'+theme['key']+'.bmp'
-  im.resize((512,512),Image.Resampling.LANCZOS).quantize(256).save(OUT/name)
+  head_layer=ASSETS/theme['id']/theme['head_continuity']if theme.get('head_continuity')else None
+  atlas(source,theme['key'],name,theme.get('palette_method','median-cut'),theme.get('shirt_collar',False),head_layer)
   materials.append(name)
  header,rig=build_fitted_rig(config)
  zones,tailoring=tailored_mesh(config)
  for z,triangles in enumerate(zones):
   from build_modular import write_smd
-  write_smd(OUT/f'{model}_{z}.smd',header,geometry.smd_tri(triangles))
+  write_smd(OUT/f'{model}_{z}.smd',header,smd_tri(triangles))
 
  qc=f'$modelname "{model}.mdl"\n$cd "."\n$cdtexture "."\n'
  for z,zone in enumerate(('head','torso','hands','legs','feet')):
@@ -159,10 +191,16 @@ def build(ensure=False):
  shutil.copy2(compiled,CATALOG/compiled.name)
  shutil.copy2(OUT/'persona_rig.mdl',CATALOG/'persona_rig.mdl')
  record=dict(inputs_sha256=digest,base_skin=config['base_skin'],base_model=f'cs_skin_{config["base_skin"]}',base_entry=baseid,model=model,skin_families=len(materials),zones=5,themes=themes,triangles=sum(len(studio.mesh({i:1 if i==z else 0 for i in range(5)}))for z in range(5)),bytes=compiled.stat().st_size,sha256=hashlib.sha256(compiled.read_bytes()).hexdigest(),tailoring=tailoring,rig=rig,limits=['Original GIGN shape; compatible animation rotations on fitted bone origins; newly authored textures','same silhouette for all themes','five zones fitted to the GIGN topology; other donor bodies can have mismatched boundaries','indexed diffuse textures, no PBR or geometry relief'])
- outputs=[p for p in OUT.iterdir() if p.suffix in ('.mdl','.qc','.smd','.bmp')]+[CATALOG/(model+'.mdl'),CATALOG/'persona_rig.mdl']
+ audit_path=OUT/'head-join-audit.json'
+ audit=dict(schema=2,method='AI-authored head charts; matched filtered values and cross-edge shading on donor geometry',layout=head_layout['bounds'],skins=head_audit,skins_checked=len(head_audit),skins_corrected=sum(any(j['corrected']for j in r['joins'])for r in head_audit),joins_corrected=sum(j['corrected']for r in head_audit for j in r['joins']))
+ audit['catalog']=dict(appearances=len(lines),generated_gign=sum(r.split('|')[1].startswith('persona_')for r in lines),imported_cs=sum(r.split('|')[1].startswith('cs_skin_')for r in lines),legacy=sum(not r.split('|')[1].startswith(('persona_','cs_skin_'))for r in lines),scope='Normalize authored GIGN atlases; imported originals and legacy character layouts keep their own textures')
+ audit_path.write_text(json.dumps(audit,indent=2)+'\n',encoding='utf-8')
+ record['head_join_audit']=dict(path=str(audit_path.relative_to(ROOT)),skins_checked=audit['skins_checked'],skins_corrected=audit['skins_corrected'],joins_corrected=audit['joins_corrected'])
+ outputs=[p for p in OUT.iterdir() if p.suffix in ('.mdl','.qc','.smd','.bmp')]+[CATALOG/(model+'.mdl'),CATALOG/'persona_rig.mdl',audit_path]+list(corrected_dir.glob('*.png'))
  record['build_cache']=build_cache.record(digest,outputs)
  build_cache.write(manifest,record)
  print('Built',model,len(themes),'new appearances on one model;',len(lines),'catalog entries.')
+ print('Head joins:',audit['skins_checked'],'skins checked,',audit['skins_corrected'],'skins /',audit['joins_corrected'],'joins corrected.')
  return record
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('--ensure',action='store_true');build(p.parse_args().ensure)

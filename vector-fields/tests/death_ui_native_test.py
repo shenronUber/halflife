@@ -10,7 +10,7 @@ def run():
  s+='save vf_death_visual_test\nwait 15\nload vf_death_visual_test\nwait 160\necho RESTORED_CORPSE\nvf_death_client\nvf_engine_stats\nscreenshot scrshots/restored_corpse.png\ncmd vf_death_clear\nwait 5\n'
  s+='echo BUDGET_BEGIN\n'+('cmd vf_range_reset 0\ncmd vf_range_death 0 all standard legacy\nwait 1\n'*13)+'wait 8\necho BUDGET_STATE\nvf_death_client\nvf_engine_stats\ncmd vf_death_clear\nwait 8\necho CLEAN_STATE\nvf_death_client\necho CLEAN_END\n+duck\nwait 60\ncmd vf_body_info\nwait 3\necho CROUCH_DEATH\ncmd vf_death_test head electro\nwait 30\nvf_death_client\nquit\n'
  (m/'death_ui.cfg').write_text(s,encoding='ascii')
- p=subprocess.Popen([str(e/'xash3d.exe'),'-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_animation','-windowed','-width','1280','-height','720','-console','-nointro','-nowriteconfig','-log','death-ui.log','+sv_cheats','1','+map','vf_range','+exec','death_ui.cfg'],cwd=e)
+ p=subprocess.Popen([str(e/'xash3d.exe'),'-ip','127.0.0.1','-noip6','-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_animation','-windowed','-width','1280','-height','720','-console','-nointro','-nowriteconfig','-log','death-ui.log','+sv_cheats','1','+map','vf_range','+exec','death_ui.cfg'],cwd=e)
  try:p.wait(timeout=40);assert p.returncode==0
  finally:
   if p.poll() is None:p.terminate();p.wait(10)

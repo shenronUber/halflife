@@ -13,12 +13,12 @@ def run():
  first=start+'vf_skin_all 179\nvf_skin_commit\nwait 35\nvf_skins\nwait 1500\nvf_engine_stats\nscreenshot scrshots/persona_peer_a.png\nwait 10\n+forward\nwait 15\n-forward\nwait 250\nquit\n'
  second=start+'vf_skin_all 177\nvf_skin_set 0 181\nvf_skin_set 2 178\nvf_skin_commit\nwait 35\nvf_skins\nwait 400\nvf_engine_stats\nscreenshot scrshots/persona_peer_b.png\nwait 10\n+duck\nwait 80\n-duck\nwait 500\nvf_engine_stats\nscreenshot scrshots/persona_peer_move.png\nwait 10\nquit\n'
  (MOD/'persona_peer_a.cfg').write_text(first);(peer/'vf_personas/persona_peer_b.cfg').write_text(second)
- server=subprocess.Popen([str(ENGINE/'xash.exe'),*common,'-log','persona-server.log','+ip','127.0.0.1','-port','27045','+maxplayers','4','+sv_lan','1','+sv_cheats','1','+deathmatch','1','+developer','1','+map','vf_range'],cwd=ENGINE,creationflags=subprocess.CREATE_NO_WINDOW)
+ server=subprocess.Popen([str(ENGINE/'xash.exe'),'-ip','127.0.0.1','-noip6',*common,'-log','persona-server.log','+ip','127.0.0.1','-port','27045','+maxplayers','4','+sv_lan','1','+sv_cheats','1','+deathmatch','1','+developer','1','+map','vf_range'],cwd=ENGINE,creationflags=subprocess.CREATE_NO_WINDOW)
  children=[];began=time.time()
  try:
   time.sleep(4);assert server.poll()is None
   def launch(folder,port,cfg,name):
-   args=[str(folder/'xash3d.exe'),*common,'-borderless','-width','1920','-height','1080','-nowriteconfig','-log','persona-peer.log','+exec','lab_controls.cfg','-clientport',str(port),'+name',name,'+connect','127.0.0.1:27045','+exec',cfg]
+   args=[str(folder/'xash3d.exe'),'-ip','127.0.0.1','-noip6',*common,'-borderless','-width','1920','-height','1080','-nowriteconfig','-log','persona-peer.log','+exec','lab_controls.cfg','-clientport',str(port),'+name',name,'+connect','127.0.0.1:27045','+exec',cfg]
    children.append(subprocess.Popen(args,cwd=folder))
   launch(ENGINE,27046,'persona_peer_a.cfg','Canopy')
   time.sleep(8);launch(peer,27047,'persona_peer_b.cfg','Porcelain')

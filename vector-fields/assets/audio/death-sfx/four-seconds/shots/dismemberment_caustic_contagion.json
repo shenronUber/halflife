@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "CausticContagion / dismemberment",
+  "created_utc": "2026-10-10T00:48:18.772075+00:00",
+  "request_sha256": "c0a9f8d9dd838bf29df161984cf4a05f1ec4b7d696f104540248195ead99a237",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. A sticky fibrous rip and two acidic bubble bursts, followed by alternating wet caustic sizzling and dry papery spore flutter, pulsing down together. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "34786add019345445ac377e1292f198f99fadf6f192202e3f9011ff6062f5145",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. A sticky fibrous rip and two acidic bubble bursts, followed by alternating wet caustic sizzling and dry papery spore flutter, pulsing down together. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

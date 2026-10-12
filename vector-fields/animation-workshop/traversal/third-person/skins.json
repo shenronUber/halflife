@@ -1,0 +1,163 @@
+[
+  {
+    "skin": 0,
+    "title": "Skin de base",
+    "textures": [
+      "part0_0.bmp"
+    ]
+  },
+  {
+    "skin": 1,
+    "title": "Recuperateur des ruines",
+    "textures": [
+      "part0_1.bmp"
+    ]
+  },
+  {
+    "skin": 2,
+    "title": "Sentinelle de la forge",
+    "textures": [
+      "part0_2.bmp"
+    ]
+  },
+  {
+    "skin": 3,
+    "title": "Gardien d'os et de silex",
+    "textures": [
+      "part0_3.bmp"
+    ]
+  },
+  {
+    "skin": 4,
+    "title": "Veilleur de la canopee",
+    "textures": [
+      "part0_4.bmp"
+    ]
+  },
+  {
+    "skin": 5,
+    "title": "Veilleur alchimiste",
+    "textures": [
+      "part0_5.bmp"
+    ]
+  },
+  {
+    "skin": 6,
+    "title": "Operateur de porcelaine",
+    "textures": [
+      "part0_6.bmp"
+    ]
+  },
+  {
+    "skin": 7,
+    "title": "Sentinelle des tranchees",
+    "textures": [
+      "part0_7.bmp"
+    ]
+  },
+  {
+    "skin": 8,
+    "title": "Mineur des profondeurs",
+    "textures": [
+      "part0_8.bmp"
+    ]
+  },
+  {
+    "skin": 9,
+    "title": "Detective de minuit",
+    "textures": [
+      "part0_9.bmp"
+    ]
+  },
+  {
+    "skin": 10,
+    "title": "Naufrage des rivages",
+    "textures": [
+      "part0_10.bmp"
+    ]
+  },
+  {
+    "skin": 11,
+    "title": "Plongeur des abysses",
+    "textures": [
+      "part0_11.bmp"
+    ]
+  },
+  {
+    "skin": 12,
+    "title": "Artisan de la Renaissance",
+    "textures": [
+      "part0_12.bmp"
+    ]
+  },
+  {
+    "skin": 13,
+    "title": "Mecanicien diesel",
+    "textures": [
+      "part0_13.bmp"
+    ]
+  },
+  {
+    "skin": 14,
+    "title": "Red Son",
+    "textures": [
+      "part0_14.bmp"
+    ]
+  },
+  {
+    "skin": 15,
+    "title": "Selenite",
+    "textures": [
+      "part0_15.bmp"
+    ]
+  },
+  {
+    "skin": 16,
+    "title": "Heros masque",
+    "textures": [
+      "part0_16.bmp"
+    ]
+  },
+  {
+    "skin": 17,
+    "title": "Pilote de rallye",
+    "textures": [
+      "part0_17.bmp"
+    ]
+  },
+  {
+    "skin": 18,
+    "title": "Soldat penitent",
+    "textures": [
+      "part0_18.bmp"
+    ]
+  },
+  {
+    "skin": 19,
+    "title": "Operateur de jade",
+    "textures": [
+      "part0_19.bmp"
+    ]
+  },
+  {
+    "skin": 20,
+    "title": "Operateur d'ambre",
+    "textures": [
+      "part0_20.bmp"
+    ]
+  },
+  {
+    "skin": 21,
+    "title": "Savage Butcher",
+    "textures": [
+      "part0_21.bmp"
+    ]
+  },
+  {
+    "skin": 22,
+    "title": "Miami Vice",
+    "textures": [
+      "part0_22.bmp"
+    ]
+  }
+]

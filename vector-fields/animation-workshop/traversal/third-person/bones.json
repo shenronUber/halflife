@@ -1,0 +1,219 @@
+[
+  {
+    "id": 0,
+    "bone": "Bip01",
+    "role": "Origine du modèle",
+    "parent": "",
+    "usage": "Contrôle par les enfants"
+  },
+  {
+    "id": 1,
+    "bone": "Bip01 Pelvis",
+    "role": "Bassin",
+    "parent": "Bip01",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 2,
+    "bone": "Bip01 L Leg",
+    "role": "Cuisse gauche",
+    "parent": "Bip01 Pelvis",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 3,
+    "bone": "Bip01 L Leg1",
+    "role": "Mollet gauche",
+    "parent": "Bip01 L Leg",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 4,
+    "bone": "Bip01 L Foot",
+    "role": "Pied gauche",
+    "parent": "Bip01 L Leg1",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 5,
+    "bone": "Bip01 R Leg",
+    "role": "Cuisse droit",
+    "parent": "Bip01 Pelvis",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 6,
+    "bone": "Bip01 R Leg1",
+    "role": "Mollet droit",
+    "parent": "Bip01 R Leg",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 7,
+    "bone": "Bip01 R Foot",
+    "role": "Pied droit",
+    "parent": "Bip01 R Leg1",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 8,
+    "bone": "Bip01 Spine",
+    "role": "Tronc : Spine",
+    "parent": "Bip01 Pelvis",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 9,
+    "bone": "Bip01 Spine1",
+    "role": "Tronc : Spine1",
+    "parent": "Bip01 Spine",
+    "usage": "Contrôle par les enfants"
+  },
+  {
+    "id": 10,
+    "bone": "Bip01 Spine2",
+    "role": "Tronc : Spine2",
+    "parent": "Bip01 Spine1",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 11,
+    "bone": "Bip01 Spine3",
+    "role": "Tronc : Spine3",
+    "parent": "Bip01 Spine2",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 12,
+    "bone": "Bip01 Neck",
+    "role": "Cou",
+    "parent": "Bip01 Spine3",
+    "usage": "Contrôle par les enfants"
+  },
+  {
+    "id": 13,
+    "bone": "Bip01 Head",
+    "role": "Tête",
+    "parent": "Bip01 Neck",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 14,
+    "bone": "Bip01 L Arm",
+    "role": "Clavicule gauche",
+    "parent": "Bip01 Neck",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 15,
+    "bone": "Bip01 L Arm1",
+    "role": "Bras gauche",
+    "parent": "Bip01 L Arm",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 16,
+    "bone": "Bip01 L Arm2",
+    "role": "Avant-bras gauche",
+    "parent": "Bip01 L Arm1",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 17,
+    "bone": "Bip01 L Hand",
+    "role": "Poignet / main gauche",
+    "parent": "Bip01 L Arm2",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 18,
+    "bone": "Bip01 L Finger0",
+    "role": "Pouce simplifié gauche",
+    "parent": "Bip01 L Hand",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 19,
+    "bone": "Bip01 L Finger1",
+    "role": "Doigts groupés : base gauche",
+    "parent": "Bip01 L Hand",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 20,
+    "bone": "Bip01 L Finger11",
+    "role": "Doigts groupés : extrémité gauche",
+    "parent": "Bip01 L Finger1",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 21,
+    "bone": "Bip01 R Arm",
+    "role": "Clavicule droit",
+    "parent": "Bip01 Neck",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 22,
+    "bone": "Bip01 R Arm1",
+    "role": "Bras droit",
+    "parent": "Bip01 R Arm",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 23,
+    "bone": "Bip01 R Arm2",
+    "role": "Avant-bras droit",
+    "parent": "Bip01 R Arm1",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 24,
+    "bone": "Bip01 R Hand",
+    "role": "Poignet / main droit",
+    "parent": "Bip01 R Arm2",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 25,
+    "bone": "Bip01 R Finger0",
+    "role": "Pouce simplifié droit",
+    "parent": "Bip01 R Hand",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 26,
+    "bone": "Bip01 R Finger1",
+    "role": "Doigts groupés : base droit",
+    "parent": "Bip01 R Hand",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 27,
+    "bone": "Bip01 R Finger11",
+    "role": "Doigts groupés : extrémité droit",
+    "parent": "Bip01 R Finger1",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 28,
+    "bone": "VF_Weapon",
+    "role": "Attache de l’arme",
+    "parent": "Bip01 R Hand",
+    "usage": "Aucun mesh visible"
+  },
+  {
+    "id": 29,
+    "bone": "VF_Magazine",
+    "role": "Attache du chargeur",
+    "parent": "VF_Weapon",
+    "usage": "Aucun mesh visible"
+  },
+  {
+    "id": 30,
+    "bone": "VF_Bolt",
+    "role": "Attache de la culasse",
+    "parent": "VF_Weapon",
+    "usage": "Aucun mesh visible"
+  }
+]

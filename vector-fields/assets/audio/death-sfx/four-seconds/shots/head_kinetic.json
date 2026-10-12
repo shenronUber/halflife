@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Kinetic / head",
+  "created_utc": "2026-10-10T00:48:01.125098+00:00",
+  "request_sha256": "492beda38f79b4690bcba5719c46da68b61137c66bc0fc9a033b914aa8aca77b",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. Head exploding like a ripe pumpkin: deep wet pop, crunchy rupture, broad pulp splatter and dripping.  Element: One heavy bone crack, a deep solid thump and tearing fibers, followed by irregular dense physical fragments scattering and small wet impacts Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "04ebab9df79a55818cf0e7842d46421bb8e608e771b853969ea13517a1a5d76a",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. Head exploding like a ripe pumpkin: deep wet pop, crunchy rupture, broad pulp splatter and dripping.  Element: One heavy bone crack, a deep solid thump and tearing fibers, followed by irregular dense physical fragments scattering and small wet impacts Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

@@ -1,16 +1,16 @@
-# Extension native Vector Fields, version 3
+# Extension native Vector Fields, version 4
 
 <!-- generated-contract:start -->
 
 | Contrat courant | Valeur |
 | --- | ---: |
-| API renderer | 3 |
+| API renderer | 4 |
 | Pièces par assemblage | 24 |
 | Assemblages actifs | 96 |
 | Modèles en cache | 2048 |
-| Protocole équipement | 4 |
-| VFBuild (octets) | 64 |
-| VFState (octets) | 75 |
+| Protocole équipement | 5 |
+| VFBuild (octets) | 66 |
+| VFState (octets) | 77 |
 | Capacité catalogue | 2048 |
 
 <!-- generated-contract:end -->
@@ -43,13 +43,19 @@ python vector-fields/tests/native_multiplayer_test.py
 ```
 
 Fermer les processus du moteur natif avant de remplacer ses DLL. Le script
-vérifie le commit et applique `xash3d.patch` seulement si nécessaire ; il refuse
+vérifie le commit et applique `xash3d.patch` et `first-person-body.patch`
+seulement si nécessaire ; il refuse
 les conflits au lieu d'écraser des modifications. Il copie `gl_vf.inc` et le
 contrat `game_shared/vf_engine_api.h`, puis compile client, serveur dédié,
 renderer, bibliothèques auxiliaires et tests amont. La configuration MSVC est
 volontairement explicite : l'adapter si la machine utilise un autre toolset.
 Les atlas de textures créés pour le projet et leurs prompts sont dans Git.
 Les modèles compilés, exports dérivés et ressources importées restent locaux.
+
+Le geste des équipements de tête est isolé dans `gl_vf_headgear.inc`.
+Il reprend la pose équipée pour lever la main gauche, sans déformer les
+sommets de la manche. Aucun MDL ni fichier d'animation n'est réécrit.
+L'empreinte du module figure dans le manifeste du moteur.
 
 ## Contrat
 

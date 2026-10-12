@@ -1,0 +1,24 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Otto Stahl / visor",
+  "created_utc": "2026-10-11T21:22:51.750071+00:00",
+  "request_sha256": "d9eb5a3aa6872d7000f0dcd1d99c42b20c62c4810e24c13692c6ddf3d2a032bd",
+  "request": {
+    "text": "[dry] Visor down. Precision requires a face.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "endpoint": "/v1/text-to-speech/edgqs6sEs8iMvFG1VpR8?output_format=mp3_44100_128",
+  "sha256": "3b481bafb0538b7aa6bb72cb5142bcebd9df9cd859e9af1c813c64662ed15977",
+  "bytes": 56050,
+  "text": "[dry] Visor down. Precision requires a face.",
+  "request_id": "6ThklAPhYcJRDEkBs6Vf",
+  "reported_credit_cost": "5",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "voice_name": "Otto Stahl",
+  "language": "en"
+}

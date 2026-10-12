@@ -4,6 +4,7 @@
 #include "player.h"
 #include "weapons.h"
 #include "vf_skins.h"
+#include "../game_shared/vf_traversal.h"
 #include "vf_equipment.h"
 #include "../game_shared/vf_appearance.h"
 #include "../game_shared/vf_loadout.h"
@@ -38,6 +39,7 @@ static void State(CBasePlayer* p,CBasePlayer* recipient,bool active){
  if(p->m_vfAppearanceMode!=1)VF_ResolveEquipmentSkins(p,skins,resolved);
  WRITE_BYTE(vf::Protocol);WRITE_BYTE(p->entindex());WRITE_BYTE(active?1:0);WRITE_BYTE(p->m_vfAppearanceMode==1?1:0);WRITE_LONG(skins.hash);WRITE_LONG(p->m_vfCatalogHash);WRITE_LONG(p->m_vfWeaponStyleHash);
  for(int z=0;z<5;++z)WRITE_BYTE(resolved[z]);for(int s=0;s<vf::SlotCount;++s)WRITE_SHORT(p->m_vfItems[s]);for(int s=0;s<vf::WeaponStyleSlots;++s)WRITE_BYTE(p->m_vfWeaponStyles[s]);MESSAGE_END();
+ VF_SendHeadgear(p,recipient);
 }
 void VF_PreparePlayerSave(CBasePlayer* p){Ensure(p);}
 void VF_DeathPlayerSkins(CBasePlayer* p,int* out){
@@ -53,7 +55,7 @@ bool VF_ApplyPlayerModel(CBasePlayer* p){
  int index=!strcmp(model,"models/vf_operator.mdl")?legacyRigIndex:fittedRigIndex;
  int mount=VF_ReferenceMount(p);
  if(index==fittedRigIndex && mount>=0 && mount<3 && referenceRigIndex[mount] &&
-    p->m_pActiveItem && p->m_pActiveItem->m_iId==WEAPON_MP5){model=vf::Carrier(mount).thirdPerson;index=referenceRigIndex[mount];}
+    (VF_TR_Phase(p->pev->iuser4) || (p->m_pActiveItem && p->m_pActiveItem->m_iId==WEAPON_MP5))){model=vf::Carrier(mount).thirdPerson;index=referenceRigIndex[mount];}
  if(!index)return false;
  if(strcmp(STRING(p->pev->model),model)||p->pev->modelindex!=index){
   SET_MODEL(p->edict(),model);
@@ -76,6 +78,8 @@ void VF_SyncPlayer(CBasePlayer* p,bool spawn){
  State(p,NULL,true);VF_SendWeaponFX(p);
 }
 void VF_PrecacheSkins() {
+ int headgearBytes=0;byte* headgearData=LOAD_FILE_FOR_ME("models/vf_headgear/headgear.mdl",&headgearBytes);
+ if(headgearData){FREE_FILE(headgearData);PRECACHE_MODEL("models/vf_headgear/headgear.mdl");}
  VF_PrecacheWeaponFX();
  int size=0;byte* text=LOAD_FILE_FOR_ME("vf/skins.txt",&size);
  vf::ParseAppearances((const char*)text,size>0?size:0,skins);if(text)FREE_FILE(text);

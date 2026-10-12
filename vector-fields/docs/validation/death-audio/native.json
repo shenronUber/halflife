@@ -1,38 +1,21 @@
 {
-  "seconds": 83.38,
+  "seconds": 123.66,
   "cases": [
     {
       "case": "hydro",
       "region": "head",
       "active_native_channels": [
         {
-          "name": "vf_death_sfx/death_hydro.wav",
-          "entnum": 24,
-          "volume": 0.800000011920929,
-          "attenuation": 0.796875,
-          "channel": 4,
-          "pitch": 100,
-          "samplePos": 2560.0
-        },
-        {
-          "name": "vf_death_sfx/dismemberment_hydro.wav",
+          "name": "vf_death_sfx/head_hydro.wav",
           "entnum": 13,
-          "volume": 0.800000011920929,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 3,
-          "pitch": 112,
-          "samplePos": 2867.2000122070312
-        },
-        {
-          "name": "vf_deaths/rocco/hydro_v2.wav",
-          "entnum": 24,
-          "volume": 0.8470588326454163,
-          "attenuation": 0.796875,
-          "channel": 2,
-          "pitch": 100,
-          "samplePos": 1280.0
+          "pitch": 104,
+          "samplePos": 2129.919921875
         }
-      ]
+      ],
+      "tail_native_channels": []
     },
     {
       "case": "electro",
@@ -41,7 +24,7 @@
         {
           "name": "vf_death_sfx/death_electro.wav",
           "entnum": 24,
-          "volume": 0.800000011920929,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 4,
           "pitch": 100,
@@ -49,8 +32,8 @@
         },
         {
           "name": "vf_death_sfx/dismemberment_electro.wav",
-          "entnum": 34,
-          "volume": 0.800000011920929,
+          "entnum": 29,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 3,
           "pitch": 100,
@@ -65,7 +48,8 @@
           "pitch": 100,
           "samplePos": 1024.0
         }
-      ]
+      ],
+      "tail_native_channels": []
     },
     {
       "case": "cryo",
@@ -74,7 +58,7 @@
         {
           "name": "vf_death_sfx/death_cryo.wav",
           "entnum": 24,
-          "volume": 0.800000011920929,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 4,
           "pitch": 100,
@@ -83,7 +67,7 @@
         {
           "name": "vf_death_sfx/dismemberment_cryo.wav",
           "entnum": 13,
-          "volume": 0.800000011920929,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 3,
           "pitch": 100,
@@ -98,7 +82,8 @@
           "pitch": 100,
           "samplePos": 1024.0
         }
-      ]
+      ],
+      "tail_native_channels": []
     },
     {
       "case": "thermal",
@@ -107,7 +92,7 @@
         {
           "name": "vf_death_sfx/death_thermal.wav",
           "entnum": 24,
-          "volume": 0.800000011920929,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 4,
           "pitch": 100,
@@ -115,12 +100,12 @@
         },
         {
           "name": "vf_death_sfx/dismemberment_thermal.wav",
-          "entnum": 34,
-          "volume": 0.800000011920929,
+          "entnum": 29,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 3,
-          "pitch": 92,
-          "samplePos": 1884.1600341796875
+          "pitch": 96,
+          "samplePos": 1966.0799560546875
         },
         {
           "name": "vf_deaths/rocco/thermal_v2.wav",
@@ -131,7 +116,8 @@
           "pitch": 100,
           "samplePos": 1024.0
         }
-      ]
+      ],
+      "tail_native_channels": []
     },
     {
       "case": "toxic",
@@ -140,7 +126,7 @@
         {
           "name": "vf_death_sfx/death_toxic.wav",
           "entnum": 24,
-          "volume": 0.800000011920929,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 4,
           "pitch": 100,
@@ -149,11 +135,11 @@
         {
           "name": "vf_death_sfx/dismemberment_toxic.wav",
           "entnum": 13,
-          "volume": 0.800000011920929,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 3,
-          "pitch": 92,
-          "samplePos": 1884.1600341796875
+          "pitch": 96,
+          "samplePos": 1966.0799560546875
         },
         {
           "name": "vf_deaths/rocco/toxic_v2.wav",
@@ -164,40 +150,24 @@
           "pitch": 100,
           "samplePos": 1024.0
         }
-      ]
+      ],
+      "tail_native_channels": []
     },
     {
       "case": "corrosion",
       "region": "head",
       "active_native_channels": [
         {
-          "name": "vf_death_sfx/death_corrosion.wav",
-          "entnum": 24,
-          "volume": 0.800000011920929,
-          "attenuation": 0.796875,
-          "channel": 4,
-          "pitch": 100,
-          "samplePos": 2048.0
-        },
-        {
-          "name": "vf_death_sfx/dismemberment_corrosion.wav",
-          "entnum": 34,
-          "volume": 0.800000011920929,
+          "name": "vf_death_sfx/head_corrosion.wav",
+          "entnum": 29,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 3,
-          "pitch": 112,
-          "samplePos": 2293.760009765625
-        },
-        {
-          "name": "vf_deaths/rocco/corrosion_v2.wav",
-          "entnum": 24,
-          "volume": 0.8470588326454163,
-          "attenuation": 0.796875,
-          "channel": 2,
-          "pitch": 100,
-          "samplePos": 1024.0
+          "pitch": 104,
+          "samplePos": 2129.919921875
         }
-      ]
+      ],
+      "tail_native_channels": []
     },
     {
       "case": "sonic",
@@ -206,20 +176,20 @@
         {
           "name": "vf_death_sfx/death_sonic.wav",
           "entnum": 24,
-          "volume": 0.800000011920929,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 4,
           "pitch": 100,
-          "samplePos": 2560.0
+          "samplePos": 2048.0
         },
         {
           "name": "vf_death_sfx/dismemberment_sonic.wav",
           "entnum": 13,
-          "volume": 0.800000011920929,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 3,
           "pitch": 100,
-          "samplePos": 2560.0
+          "samplePos": 2048.0
         },
         {
           "name": "vf_deaths/rocco/sonic_v2.wav",
@@ -228,9 +198,10 @@
           "attenuation": 0.796875,
           "channel": 2,
           "pitch": 100,
-          "samplePos": 1280.0
+          "samplePos": 1024.0
         }
-      ]
+      ],
+      "tail_native_channels": []
     },
     {
       "case": "kinetic",
@@ -239,7 +210,7 @@
         {
           "name": "vf_death_sfx/death_kinetic.wav",
           "entnum": 24,
-          "volume": 0.800000011920929,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 4,
           "pitch": 100,
@@ -247,8 +218,8 @@
         },
         {
           "name": "vf_death_sfx/dismemberment_kinetic.wav",
-          "entnum": 34,
-          "volume": 0.800000011920929,
+          "entnum": 29,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 3,
           "pitch": 100,
@@ -263,7 +234,8 @@
           "pitch": 100,
           "samplePos": 1280.0
         }
-      ]
+      ],
+      "tail_native_channels": []
     },
     {
       "case": "arc_chain",
@@ -272,7 +244,7 @@
         {
           "name": "vf_death_sfx/death_arc_chain.wav",
           "entnum": 24,
-          "volume": 0.800000011920929,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 4,
           "pitch": 100,
@@ -281,11 +253,11 @@
         {
           "name": "vf_death_sfx/dismemberment_arc_chain.wav",
           "entnum": 13,
-          "volume": 0.800000011920929,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 3,
-          "pitch": 92,
-          "samplePos": 1884.1600341796875
+          "pitch": 96,
+          "samplePos": 1966.0799560546875
         },
         {
           "name": "vf_deaths/rocco/arc_chain_v2.wav",
@@ -296,7 +268,8 @@
           "pitch": 100,
           "samplePos": 1024.0
         }
-      ]
+      ],
+      "tail_native_channels": []
     },
     {
       "case": "superconduction",
@@ -305,7 +278,7 @@
         {
           "name": "vf_death_sfx/death_superconduction.wav",
           "entnum": 24,
-          "volume": 0.800000011920929,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 4,
           "pitch": 100,
@@ -313,12 +286,12 @@
         },
         {
           "name": "vf_death_sfx/dismemberment_superconduction.wav",
-          "entnum": 34,
-          "volume": 0.800000011920929,
+          "entnum": 29,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 3,
-          "pitch": 92,
-          "samplePos": 1884.1600341796875
+          "pitch": 96,
+          "samplePos": 1966.0799560546875
         },
         {
           "name": "vf_deaths/rocco/superconduction_v2.wav",
@@ -329,40 +302,24 @@
           "pitch": 100,
           "samplePos": 1024.0
         }
-      ]
+      ],
+      "tail_native_channels": []
     },
     {
       "case": "shatter",
       "region": "head",
       "active_native_channels": [
         {
-          "name": "vf_death_sfx/death_shatter.wav",
-          "entnum": 24,
-          "volume": 0.800000011920929,
-          "attenuation": 0.796875,
-          "channel": 4,
-          "pitch": 100,
-          "samplePos": 2048.0
-        },
-        {
-          "name": "vf_death_sfx/dismemberment_shatter.wav",
+          "name": "vf_death_sfx/head_shatter.wav",
           "entnum": 13,
-          "volume": 0.800000011920929,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 3,
-          "pitch": 112,
-          "samplePos": 2293.760009765625
-        },
-        {
-          "name": "vf_deaths/rocco/shatter_v2.wav",
-          "entnum": 24,
-          "volume": 0.8470588326454163,
-          "attenuation": 0.796875,
-          "channel": 2,
-          "pitch": 100,
-          "samplePos": 1024.0
+          "pitch": 104,
+          "samplePos": 2129.919921875
         }
-      ]
+      ],
+      "tail_native_channels": []
     },
     {
       "case": "resonant_impact",
@@ -371,7 +328,7 @@
         {
           "name": "vf_death_sfx/death_resonant_impact.wav",
           "entnum": 24,
-          "volume": 0.800000011920929,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 4,
           "pitch": 100,
@@ -379,8 +336,8 @@
         },
         {
           "name": "vf_death_sfx/dismemberment_resonant_impact.wav",
-          "entnum": 34,
-          "volume": 0.800000011920929,
+          "entnum": 29,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 3,
           "pitch": 100,
@@ -395,7 +352,8 @@
           "pitch": 100,
           "samplePos": 1024.0
         }
-      ]
+      ],
+      "tail_native_channels": []
     },
     {
       "case": "cavitation",
@@ -404,7 +362,7 @@
         {
           "name": "vf_death_sfx/death_cavitation.wav",
           "entnum": 24,
-          "volume": 0.800000011920929,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 4,
           "pitch": 100,
@@ -413,7 +371,7 @@
         {
           "name": "vf_death_sfx/dismemberment_cavitation.wav",
           "entnum": 13,
-          "volume": 0.800000011920929,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 3,
           "pitch": 100,
@@ -428,7 +386,8 @@
           "pitch": 100,
           "samplePos": 1024.0
         }
-      ]
+      ],
+      "tail_native_channels": []
     },
     {
       "case": "caustic_contagion",
@@ -437,20 +396,20 @@
         {
           "name": "vf_death_sfx/death_caustic_contagion.wav",
           "entnum": 24,
-          "volume": 0.800000011920929,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 4,
           "pitch": 100,
-          "samplePos": 2560.0
+          "samplePos": 2048.0
         },
         {
           "name": "vf_death_sfx/dismemberment_caustic_contagion.wav",
-          "entnum": 34,
-          "volume": 0.800000011920929,
+          "entnum": 29,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 3,
-          "pitch": 92,
-          "samplePos": 2355.2000427246094
+          "pitch": 96,
+          "samplePos": 1966.0799560546875
         },
         {
           "name": "vf_deaths/rocco/caustic_contagion_v2.wav",
@@ -459,9 +418,10 @@
           "attenuation": 0.796875,
           "channel": 2,
           "pitch": 100,
-          "samplePos": 1280.0
+          "samplePos": 1024.0
         }
-      ]
+      ],
+      "tail_native_channels": []
     },
     {
       "case": "toxic_ignition",
@@ -470,20 +430,20 @@
         {
           "name": "vf_death_sfx/death_toxic_ignition.wav",
           "entnum": 24,
-          "volume": 0.800000011920929,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 4,
           "pitch": 100,
-          "samplePos": 2048.0
+          "samplePos": 2560.0
         },
         {
           "name": "vf_death_sfx/dismemberment_toxic_ignition.wav",
           "entnum": 13,
-          "volume": 0.800000011920929,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 3,
-          "pitch": 92,
-          "samplePos": 1884.1600341796875
+          "pitch": 96,
+          "samplePos": 2457.5999450683594
         },
         {
           "name": "vf_deaths/rocco/toxic_ignition_v2.wav",
@@ -492,66 +452,42 @@
           "attenuation": 0.796875,
           "channel": 2,
           "pitch": 100,
-          "samplePos": 1024.0
+          "samplePos": 1280.0
         }
-      ]
+      ],
+      "tail_native_channels": []
     },
     {
       "case": "steam_veil",
       "region": "head",
       "active_native_channels": [
         {
-          "name": "vf_death_sfx/death_steam_veil.wav",
-          "entnum": 24,
-          "volume": 0.800000011920929,
-          "attenuation": 0.796875,
-          "channel": 4,
-          "pitch": 100,
-          "samplePos": 2048.0
-        },
-        {
-          "name": "vf_death_sfx/dismemberment_steam_veil.wav",
-          "entnum": 34,
-          "volume": 0.800000011920929,
+          "name": "vf_death_sfx/head_steam_veil.wav",
+          "entnum": 29,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 3,
-          "pitch": 112,
-          "samplePos": 2293.760009765625
-        },
-        {
-          "name": "vf_deaths/rocco/steam_veil_v2.wav",
-          "entnum": 24,
-          "volume": 0.8470588326454163,
-          "attenuation": 0.796875,
-          "channel": 2,
-          "pitch": 100,
-          "samplePos": 1024.0
+          "pitch": 104,
+          "samplePos": 2662.39990234375
         }
-      ]
+      ],
+      "tail_native_channels": []
     },
     {
       "case": "neutral",
       "region": "head",
       "active_native_channels": [
         {
-          "name": "vf_death_sfx/dismemberment_standard.wav",
+          "name": "vf_death_sfx/head_standard.wav",
           "entnum": 13,
-          "volume": 0.800000011920929,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 3,
-          "pitch": 112,
-          "samplePos": 2293.760009765625
-        },
-        {
-          "name": "vf_deaths/rocco/standard_v2.wav",
-          "entnum": 24,
-          "volume": 0.8470588326454163,
-          "attenuation": 0.796875,
-          "channel": 2,
-          "pitch": 100,
-          "samplePos": 1024.0
+          "pitch": 104,
+          "samplePos": 2129.919921875
         }
-      ]
+      ],
+      "tail_native_channels": []
     },
     {
       "case": "plain",
@@ -566,7 +502,8 @@
           "pitch": 100,
           "samplePos": 1024.0
         }
-      ]
+      ],
+      "tail_native_channels": []
     },
     {
       "case": "effect_only",
@@ -575,9 +512,59 @@
         {
           "name": "vf_death_sfx/death_electro.wav",
           "entnum": 24,
-          "volume": 0.800000011920929,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 4,
+          "pitch": 100,
+          "samplePos": 2048.0
+        },
+        {
+          "name": "vf_deaths/rocco/electro_v2.wav",
+          "entnum": 24,
+          "volume": 0.8470588326454163,
+          "attenuation": 0.796875,
+          "channel": 2,
+          "pitch": 100,
+          "samplePos": 1024.0
+        }
+      ],
+      "tail_native_channels": []
+    },
+    {
+      "case": "voices_muted",
+      "region": "left_arm",
+      "active_native_channels": [
+        {
+          "name": "vf_death_sfx/death_electro.wav",
+          "entnum": 24,
+          "volume": 1.0,
+          "attenuation": 0.796875,
+          "channel": 4,
+          "pitch": 100,
+          "samplePos": 2048.0
+        },
+        {
+          "name": "vf_death_sfx/dismemberment_electro.wav",
+          "entnum": 28,
+          "volume": 1.0,
+          "attenuation": 0.796875,
+          "channel": 3,
+          "pitch": 100,
+          "samplePos": 2048.0
+        }
+      ],
+      "tail_native_channels": []
+    },
+    {
+      "case": "death_muted",
+      "region": "right_arm",
+      "active_native_channels": [
+        {
+          "name": "vf_death_sfx/dismemberment_electro.wav",
+          "entnum": 13,
+          "volume": 1.0,
+          "attenuation": 0.796875,
+          "channel": 3,
           "pitch": 100,
           "samplePos": 2560.0
         },
@@ -590,55 +577,8 @@
           "pitch": 100,
           "samplePos": 1280.0
         }
-      ]
-    },
-    {
-      "case": "voices_muted",
-      "region": "left_arm",
-      "active_native_channels": [
-        {
-          "name": "vf_death_sfx/death_electro.wav",
-          "entnum": 24,
-          "volume": 0.800000011920929,
-          "attenuation": 0.796875,
-          "channel": 4,
-          "pitch": 100,
-          "samplePos": 2048.0
-        },
-        {
-          "name": "vf_death_sfx/dismemberment_electro.wav",
-          "entnum": 28,
-          "volume": 0.800000011920929,
-          "attenuation": 0.796875,
-          "channel": 3,
-          "pitch": 100,
-          "samplePos": 2048.0
-        }
-      ]
-    },
-    {
-      "case": "death_muted",
-      "region": "right_arm",
-      "active_native_channels": [
-        {
-          "name": "vf_death_sfx/dismemberment_electro.wav",
-          "entnum": 13,
-          "volume": 0.800000011920929,
-          "attenuation": 0.796875,
-          "channel": 3,
-          "pitch": 100,
-          "samplePos": 2048.0
-        },
-        {
-          "name": "vf_deaths/rocco/electro_v2.wav",
-          "entnum": 24,
-          "volume": 0.8470588326454163,
-          "attenuation": 0.796875,
-          "channel": 2,
-          "pitch": 100,
-          "samplePos": 1024.0
-        }
-      ]
+      ],
+      "tail_native_channels": []
     },
     {
       "case": "tear_muted",
@@ -647,11 +587,11 @@
         {
           "name": "vf_death_sfx/death_electro.wav",
           "entnum": 24,
-          "volume": 0.800000011920929,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 4,
           "pitch": 100,
-          "samplePos": 2048.0
+          "samplePos": 1536.0
         },
         {
           "name": "vf_deaths/rocco/electro_v2.wav",
@@ -660,24 +600,16 @@
           "attenuation": 0.796875,
           "channel": 2,
           "pitch": 100,
-          "samplePos": 1024.0
+          "samplePos": 768.0
         }
-      ]
+      ],
+      "tail_native_channels": []
     },
     {
       "case": "both_muted",
       "region": "head",
-      "active_native_channels": [
-        {
-          "name": "vf_deaths/rocco/electro_v2.wav",
-          "entnum": 24,
-          "volume": 0.8470588326454163,
-          "attenuation": 0.796875,
-          "channel": 2,
-          "pitch": 100,
-          "samplePos": 1024.0
-        }
-      ]
+      "active_native_channels": [],
+      "tail_native_channels": []
     },
     {
       "case": "reaction_priority",
@@ -686,7 +618,7 @@
         {
           "name": "vf_death_sfx/death_arc_chain.wav",
           "entnum": 24,
-          "volume": 0.800000011920929,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 4,
           "pitch": 100,
@@ -695,7 +627,7 @@
         {
           "name": "vf_death_sfx/dismemberment_arc_chain.wav",
           "entnum": 28,
-          "volume": 0.800000011920929,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 3,
           "pitch": 100,
@@ -710,7 +642,8 @@
           "pitch": 100,
           "samplePos": 2048.0
         }
-      ]
+      ],
+      "tail_native_channels": []
     },
     {
       "case": "expired",
@@ -725,7 +658,8 @@
           "pitch": 100,
           "samplePos": 2048.0
         }
-      ]
+      ],
+      "tail_native_channels": []
     },
     {
       "case": "tactical",
@@ -738,42 +672,26 @@
           "attenuation": 0.796875,
           "channel": 2,
           "pitch": 100,
-          "samplePos": 2304.0
+          "samplePos": 2048.0
         }
-      ]
+      ],
+      "tail_native_channels": []
     },
     {
       "case": "all_limbs",
       "region": "all",
       "active_native_channels": [
         {
-          "name": "vf_death_sfx/death_shatter.wav",
-          "entnum": 24,
-          "volume": 0.800000011920929,
-          "attenuation": 0.796875,
-          "channel": 4,
-          "pitch": 100,
-          "samplePos": 4096.0
-        },
-        {
-          "name": "vf_death_sfx/dismemberment_shatter.wav",
+          "name": "vf_death_sfx/head_shatter.wav",
           "entnum": 13,
-          "volume": 0.800000011920929,
+          "volume": 1.0,
           "attenuation": 0.796875,
           "channel": 3,
           "pitch": 100,
-          "samplePos": 4096.0
-        },
-        {
-          "name": "vf_deaths/rocco/shatter_v2.wav",
-          "entnum": 24,
-          "volume": 0.8470588326454163,
-          "attenuation": 0.796875,
-          "channel": 2,
-          "pitch": 100,
-          "samplePos": 2048.0
+          "samplePos": 4608.0
         }
-      ]
+      ],
+      "tail_native_channels": []
     }
   ],
   "player": {
@@ -785,13 +703,14 @@
     "native_s_show_capture": "C:\\Users\\Mathieu\\Documents\\Half life Project\\vector-fields\\build\\death-audio\\gib_mix.png"
   },
   "checks": [
-    "all 16 genuine status deaths play three simultaneous native mixer channels",
-    "five body regions plus all-limb event; one detachment cue per event",
-    "ordinary non-elemental deaths retain only the cry",
+    "all 16 elemental profiles use genuine native mixer channels; head loss suppresses cry and plays its dedicated explosion",
+    "five body regions plus all-limb event; exactly one physical member per removed zone; one detachment cue per event",
+    "explicit intact test deaths retain only the cry",
     "elemental death without dismemberment has two channels",
     "voice and each SFX volume mute independently",
     "active reaction outranks a more recently applied base element",
     "expired effects and tactical conditions do not select elemental sounds",
+    "short sound effects finish naturally without a prolonged tail",
     "already dead targets cannot trigger a second death",
     "restoring a settled corpse does not trigger old death sounds",
     "real player death and full-body gib preserve the pre-clear effect"

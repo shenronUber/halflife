@@ -52,18 +52,19 @@ clientdata_t none
 	DEFINE_DELTA( vuser2[1], DT_SIGNED | DT_FLOAT, 10, 1.0 ),
 	DEFINE_DELTA( vuser2[2], DT_SIGNED | DT_FLOAT, 10, 1.0 ),
 
-	DEFINE_DELTA( vuser3[0], DT_SIGNED | DT_FLOAT, 10, 1.0 ),
-	DEFINE_DELTA( vuser3[1], DT_SIGNED | DT_FLOAT, 10, 1.0 ),
+	DEFINE_DELTA( vuser3[0], DT_SIGNED | DT_FLOAT, 22, 128.0 ),
+	DEFINE_DELTA( vuser3[1], DT_SIGNED | DT_FLOAT, 22, 128.0 ),
 	DEFINE_DELTA( vuser3[2], DT_SIGNED | DT_FLOAT, 10, 1.0 ),
 
 	DEFINE_DELTA( vuser4[0], DT_SIGNED | DT_FLOAT, 10, 1.0 ),
 	DEFINE_DELTA( vuser4[1], DT_SIGNED | DT_FLOAT, 10, 1.0 ),
 	DEFINE_DELTA( vuser4[2], DT_SIGNED | DT_FLOAT, 10, 1.0 ),
 	
-	DEFINE_DELTA( fuser1, DT_SIGNED | DT_FLOAT, 22, 128.0 ),
+	DEFINE_DELTA( fuser1, DT_SIGNED | DT_FLOAT, 16, 1000.0 ),
 	DEFINE_DELTA( fuser2, DT_SIGNED | DT_FLOAT, 10, 128.0 ),
 	DEFINE_DELTA( fuser3, DT_SIGNED | DT_FLOAT, 10, 128.0 ),
-	DEFINE_DELTA( fuser4, DT_SIGNED | DT_FLOAT, 2, 128.0 )
+	DEFINE_DELTA( fuser4, DT_SIGNED | DT_FLOAT, 22, 128.0 ),
+	DEFINE_DELTA( iuser4, DT_INTEGER, 24, 1.0 )
 }
 
 entity_state_t gamedll Entity_Encode
@@ -102,7 +103,7 @@ entity_state_t gamedll Entity_Encode
 	DEFINE_DELTA( angles[2], DT_ANGLE, 16, 1.0 ),
 	DEFINE_DELTA( colormap, DT_INTEGER, 16, 1.0 ),
 	DEFINE_DELTA( framerate, DT_SIGNED | DT_FLOAT, 8, 16.0 ),
-	DEFINE_DELTA( skin, DT_SHORT | DT_SIGNED, 9, 1.0 ),
+	DEFINE_DELTA( skin, DT_SHORT | DT_SIGNED, 11, 1.0 ),
 	DEFINE_DELTA( controller[0], DT_BYTE, 8, 1.0 ),
 	DEFINE_DELTA( controller[1], DT_BYTE, 8, 1.0 ),
 	DEFINE_DELTA( controller[2], DT_BYTE, 8, 1.0 ),
@@ -130,7 +131,7 @@ entity_state_t gamedll Entity_Encode
 entity_state_player_t gamedll Player_Encode
 {
 	DEFINE_DELTA( animtime, DT_TIMEWINDOW_8, 8, 1.0 ),
-	DEFINE_DELTA( frame, DT_FLOAT, 8, 1.0 ),
+	DEFINE_DELTA( frame, DT_FLOAT, 16, 128.0 ),
 	DEFINE_DELTA( origin[0], DT_SIGNED | DT_FLOAT, 18, 32.0 ),
 	DEFINE_DELTA( angles[0], DT_ANGLE, 16, 1.0 ),
 	DEFINE_DELTA( angles[1], DT_ANGLE, 16, 1.0 ),
@@ -155,7 +156,7 @@ entity_state_player_t gamedll Player_Encode
 	DEFINE_DELTA( angles[2], DT_ANGLE, 16, 1.0 ),
 	DEFINE_DELTA( colormap, DT_INTEGER, 16, 1.0 ),
 	DEFINE_DELTA( framerate, DT_SIGNED | DT_FLOAT, 8, 16.0 ),
-	DEFINE_DELTA( skin, DT_SHORT | DT_SIGNED, 9, 1.0 ),
+	DEFINE_DELTA( skin, DT_SHORT | DT_SIGNED, 11, 1.0 ),
 	DEFINE_DELTA( controller[0], DT_BYTE, 8, 1.0 ),
 	DEFINE_DELTA( controller[1], DT_BYTE, 8, 1.0 ),
 	DEFINE_DELTA( controller[2], DT_BYTE, 8, 1.0 ),
@@ -177,7 +178,21 @@ entity_state_player_t gamedll Player_Encode
 	DEFINE_DELTA( basevelocity[0], DT_SIGNED | DT_FLOAT, 16, 8.0 ),
 	DEFINE_DELTA( basevelocity[1], DT_SIGNED | DT_FLOAT, 16, 8.0 ),
 	DEFINE_DELTA( basevelocity[2], DT_SIGNED | DT_FLOAT, 16, 8.0 ),
-	DEFINE_DELTA( spectator, DT_INTEGER, 1, 1.0 )
+	DEFINE_DELTA( spectator, DT_INTEGER, 1, 1.0 ),
+	DEFINE_DELTA( iuser4, DT_INTEGER, 24, 1.0 ),
+	DEFINE_DELTA( fuser1, DT_SIGNED | DT_FLOAT, 16, 1000.0 ),
+	DEFINE_DELTA( fuser4, DT_SIGNED | DT_FLOAT, 22, 128.0 ),
+	DEFINE_DELTA( vuser3[0], DT_SIGNED | DT_FLOAT, 22, 128.0 ),
+	DEFINE_DELTA( vuser3[1], DT_SIGNED | DT_FLOAT, 22, 128.0 ),
+	DEFINE_DELTA( vuser4[0], DT_SIGNED | DT_FLOAT, 17, 128.0 ),
+	DEFINE_DELTA( vuser4[1], DT_FLOAT, 24, 256.0 ),
+	DEFINE_DELTA( vuser4[2], DT_FLOAT, 16, 1.0 ),
+	DEFINE_DELTA( vuser1[0], DT_FLOAT, 16, 1.0 ),
+	DEFINE_DELTA( vuser1[1], DT_FLOAT, 20, 256.0 ),
+	DEFINE_DELTA( vuser1[2], DT_FLOAT, 32, 1000.0 ),
+	DEFINE_DELTA( vuser2[0], DT_FLOAT, 16, 1.0 ),
+	DEFINE_DELTA( vuser2[1], DT_FLOAT, 20, 1.0 ),
+	DEFINE_DELTA( vuser2[2], DT_FLOAT, 32, 1000.0 )
 }
 
 custom_entity_state_t gamedll Custom_Encode

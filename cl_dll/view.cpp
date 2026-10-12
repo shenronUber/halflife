@@ -2,6 +2,8 @@
 
 #include "hud.h"
 #include "vf_character.h"
+#include "vf_engine.h"
+#include "../game_shared/vf_traversal.h"
 #include "cl_util.h"
 #include "cvardef.h"
 #include "usercmd.h"
@@ -490,7 +492,7 @@ void V_CalcNormalRefdef ( struct ref_params_s *pparams )
 	cl_entity_t		*ent, *view;
 	int				i;
 	vec3_t			angles;
-	float			bob, waterOffset;
+	float			bob, rawBob, bobScale, waterOffset;
 	static viewinterp_t		ViewInterp;
 
 	static float oldz = 0;
@@ -516,7 +518,14 @@ void V_CalcNormalRefdef ( struct ref_params_s *pparams )
 
 	// transform the view offset by the model's matrix to get the offset from
 	// model origin for the view
-	bob = V_CalcBob ( pparams );
+	// Scale only the applied bob; preserve Valve's cached walking cycle so
+	// leaving a slide restores ordinary walk/jump/fall and weapon motion.
+	rawBob = V_CalcBob ( pparams );
+	bobScale = VF_TraversalViewBobScale();
+	bob = rawBob * bobScale;
+	if ( gEngfuncs.pfnGetCvarFloat("developer") >= 2 )
+		gEngfuncs.Con_DPrintf("VFSlideView time=%.4f scale=%.2f raw=%.4f applied=%.4f\n",
+			pparams->time, bobScale, rawBob, bob);
 
 	// refresh position
 	VectorCopy ( pparams->simorg, pparams->vieworg );
@@ -524,6 +533,9 @@ void V_CalcNormalRefdef ( struct ref_params_s *pparams )
 	VectorAdd( pparams->vieworg, pparams->viewheight, pparams->vieworg );
 
 	VectorCopy ( pparams->cl_viewangles, pparams->viewangles );
+	if( !CL_IsThirdPerson() )
+		pparams->viewangles[PITCH] = max(-89.f, min(89.f,
+			pparams->viewangles[PITCH] + VF_TraversalViewPitch()));
 
 	gEngfuncs.V_CalcShake();
 	gEngfuncs.V_ApplyShake( pparams->vieworg, pparams->viewangles, 1.0 );
@@ -792,7 +804,11 @@ void V_CalcNormalRefdef ( struct ref_params_s *pparams )
 	if ( CL_IsThirdPerson() )
 	{
 		VectorCopy( camAngles, pparams->viewangles);
-		float pitch = camAngles[ 0 ];
+		// Orbiting a review camera must not change a fitted operator's aim pose.
+		// That would move visible head/arm hitboxes without moving collision.
+		float pitch = VF_EngineIsReferenceWeapon(ent->index) ||
+			VF_TR_Phase(ent->curstate.iuser4)==VF_TR_SLIDE
+			? pparams->cl_viewangles[PITCH] : camAngles[0];
 
 		// Normalize angles
 		if ( pitch > 180 ) 

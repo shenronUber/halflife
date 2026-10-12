@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "ResonantImpact / death",
+  "created_utc": "2026-10-10T00:48:10.640829+00:00",
+  "request_sha256": "ae8961bf93275e68b299a462d738d064122d1bf484e5f653fac7478369a22036",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. A dense hard impact followed by two clearly separated metallic rings, each lower in pitch, and a sustained low resonant pressure tail with a few hard settling rebounds. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "f5a358b1c3e9bc21e9a01771b25e36b89b960c9cf3ba854fba2d65eb09e892ee",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. A dense hard impact followed by two clearly separated metallic rings, each lower in pitch, and a sustained low resonant pressure tail with a few hard settling rebounds. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

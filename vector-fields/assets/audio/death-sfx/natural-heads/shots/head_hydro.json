@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Hydro / head",
+  "created_utc": "2026-10-10T01:16:08.595255+00:00",
+  "request_sha256": "bcf2792621ae19e299e90d91df691f0dbb0898991655aeeb1a6137cb2a17e8b5",
+  "request": {
+    "text": "2-second dry close game SFX. One head bursts like a ripe pumpkin: a sharp wet hollow pop, crunchy shell rupture, dense pulp splatter and a few falling blood drops. A brief pressurized water squirt and heavy droplets. Natural quick decay. No voice, scream, music, weapon shot, ambience or reverb.",
+    "duration_seconds": 2.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "e3286de3f9af67485652618b2b852f16f8e9425992f23cc15b5ec59373e4402a",
+  "bytes": 33062,
+  "text": "2-second dry close game SFX. One head bursts like a ripe pumpkin: a sharp wet hollow pop, crunchy shell rupture, dense pulp splatter and a few falling blood drops. A brief pressurized water squirt and heavy droplets. Natural quick decay. No voice, scream, music, weapon shot, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "20"
+}

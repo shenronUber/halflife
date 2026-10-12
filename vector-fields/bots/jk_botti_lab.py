@@ -12,7 +12,7 @@ class Server:
         self.log=ENGINE/logname
         with socket.socket(socket.AF_INET,socket.SOCK_DGRAM) as check:
             check.bind(('127.0.0.1',PORT))
-        self.p=subprocess.Popen([str(ENGINE/'xash.exe'),'-rodir',str(STEAM),'-game','valve','-console','-noip6','-log',logname,'+ip','127.0.0.1','-port',str(PORT),'+maxplayers','6','+sv_lan','1','+sv_cheats','1','+deathmatch','1','+developer','1','+rcon_password',PASSWORD,'+map',mapname,'+exec','vf_voice_behavior.cfg'],cwd=ENGINE,creationflags=subprocess.CREATE_NO_WINDOW)
+        self.p=subprocess.Popen([str(ENGINE/'xash.exe'),'-ip','127.0.0.1','-noip6','-rodir',str(STEAM),'-game','valve','-console','-log',logname,'+ip','127.0.0.1','-port',str(PORT),'+maxplayers','6','+sv_lan','1','+sv_cheats','1','+deathmatch','1','+developer','1','+rcon_password',PASSWORD,'+map',mapname,'+exec','vf_voice_behavior.cfg'],cwd=ENGINE,creationflags=subprocess.CREATE_NO_WINDOW)
         self.responses=[]
     def command(self,cmd):
         sock=socket.socket(socket.AF_INET,socket.SOCK_DGRAM);sock.settimeout(1)
@@ -92,7 +92,7 @@ def play(mapname):
     server=Server(mapname,'jk-play-server.log');client=None
     try:
         server.ready()
-        client=subprocess.Popen([str(ENGINE/'xash3d.exe'),'-rodir',str(STEAM),'-game','valve','-borderless','-width','1920','-height','1080','-nointro','-log','jk-play-client.log','-clientport','27036','+name','VF_Player','+exec','vf_bot_controls.cfg','+connect',f'127.0.0.1:{PORT}'],cwd=ENGINE)
+        client=subprocess.Popen([str(ENGINE/'xash3d.exe'),'-ip','127.0.0.1','-noip6','-rodir',str(STEAM),'-game','valve','-borderless','-width','1920','-height','1080','-nointro','-log','jk-play-client.log','-clientport','27036','+name','VF_Player','+exec','vf_bot_controls.cfg','+connect',f'127.0.0.1:{PORT}'],cwd=ENGINE)
         client.wait()
         if client.returncode:raise RuntimeError('Client exited: '+str(client.returncode))
     finally:

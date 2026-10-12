@@ -1,0 +1,24 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Diego Vega / generic",
+  "created_utc": "2026-10-11T21:22:46.108525+00:00",
+  "request_sha256": "8a6513f58e9aca82999b08ba5629cfee509611e2d3cdd11a72c275c3ead0ab79",
+  "request": {
+    "text": "[confident] Headgear on. Vamos.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "endpoint": "/v1/text-to-speech/ohfhjPf3ZmNXHgSXn0G0?output_format=mp3_44100_128",
+  "sha256": "c9dc0a4adf6adcb4d30fbe30312bfc6bdd0e40ee794b78df3e8fba779f73aee6",
+  "bytes": 35570,
+  "text": "[confident] Headgear on. Vamos.",
+  "request_id": "aEa516kvnCd0v033SMq5",
+  "reported_credit_cost": "3",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "voice_name": "Diego Vega",
+  "language": "en"
+}

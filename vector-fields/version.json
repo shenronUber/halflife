@@ -6,6 +6,7 @@
   "launcher": "Jouer - Vector Fields.cmd",
   "default_theme": "original",
   "features": [
+    "Predicted low vault, ledge catch and indefinite hang, one-handed 360 shooting without reload, manual climb/drop and long soap slide with fitted visible legs and world-anchored palms",
     "Independent first-person gloves and sleeves follow the equipped character items across fourteen outfits",
     "Anatomical UV charts retain existing outfit detail; full wrist display/frame and detached cuff removed, with targeted finger subdivision on the original skeleton",
     "Forward overhand grip and relaxed wrist on the side-fed receiver",

@@ -1,0 +1,7 @@
+[
+  {"id":"helmet_riot","type":1,"name":"Casque anti-emeute","family":"Fortress","description":"Coque tactique et visiere panoramique articulee. H : relever ou abaisser."},
+  {"id":"helmet_ballistic","type":2,"name":"Casque balistique","family":"Fortress","description":"Protection faciale massive avec fente optique. H : relever ou abaisser."},
+  {"id":"helmet_nvg_red","type":3,"name":"Optiques tactiques rouges","family":"Predator","description":"Harnais trioculaire rouge avec batterie arriere. H : front ou yeux."},
+  {"id":"helmet_nvg_green","type":4,"name":"Optiques tactiques vertes","family":"Engine","description":"Instrument binoculaire vert et telemetre lateral. H : front ou yeux."},
+  {"id":"helmet_gas_mask","type":5,"name":"Masque a gaz","family":"Fortress","description":"Visiere panoramique, filtre et harnais elastique. H : porter ou ranger sur la tete."}
+]

@@ -96,6 +96,10 @@ class CBasePlayer : public CBaseMonster
 {
 public:
 	int m_vfVoice; // 1-based server-selected identity; zero migrates old saves
+	float m_vfRegionDamage[5]; // cumulative post-armor damage for this life, saved
+	int m_vfTraversalState;
+	float m_vfTraversalRemaining; // duration, not an absolute FIELD_TIME
+	Vector m_vfTraversalAnchor; // XY anchor and ledge height; landmark-relative
 	vfv::State m_vfVoiceState; // transient scheduler, reset after restore
 	float m_vfVoiceSpawnAt;
 	int m_vfVoiceSpawnEvent; // pending first-spawn or private post-death reply
@@ -108,6 +112,8 @@ public:
 	vfp::Accumulator m_vfProc;
 	bool m_vfStatusDeveloper;
 	int m_vfItems[vf::SlotCount];
+	int m_vfHeadgearRaised;
+	float m_vfHeadgearStart;
 	int m_vfCatalogHash;
 	int m_vfSkins[5],m_vfSkinHash;
 	int m_vfWeaponStyles[vf::WeaponStyleSlots],m_vfWeaponStyleHash;

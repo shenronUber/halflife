@@ -5,6 +5,8 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 from model_contract import load,generate
 from studio_assets import Studio
+from traversal_animations import NAMES
+from r01_finish_policy import allowed
 
 
 def run():
@@ -21,7 +23,7 @@ def run():
             carrier=Studio(ROOT/'generated'/folder/name)
             sockets=data['sockets']['third_person' if view=='third_person' else 'first_person']
             assert all(socket in carrier.names for socket in sockets.values()),(name,sockets)
-            assert len(carrier.sequences)==(data['persona_sequences']+4 if view=='third_person' else 9)
+            assert len(carrier.sequences)==(data['persona_sequences']+4+len(NAMES) if view=='third_person' else 9)
             checked+=1
     assert manifest['socket']==data['sockets']['first_person']['weapon']
     assert manifest['animated_sockets']=={k:data['sockets']['first_person'][k] for k in ('feed','chamber')}
@@ -29,7 +31,8 @@ def run():
     for line in (ROOT/'data/equipment.txt').read_text(encoding='ascii').splitlines():
         fields=line.split('|')
         if len(fields)==17 and fields[15] in counts:counts[fields[15]]+=1
-    assert all(count==manifest['skin_families'] for count in counts.values()),counts
+    pieces={p['id']:p for p in manifest['pieces']}
+    assert all(count==len(allowed(key)) for key,count in counts.items()),counts
     print('PASS model contract:',checked,'compiled carriers,',len(counts),'explicit traits,',sum(counts.values()),'immutable variants')
 
 

@@ -1,17 +1,5 @@
 {
-  "version": "0.20.6",
-  "runtime": "vf_visual",
-  "models_hash_verified": 76,
-  "artifacts_hash_verified": 324,
-  "checks": [
-    "canonical startup and release metadata deployed",
-    "client/server, catalogs, effects and all character, R01 and third-person model hashes match runtime",
-    "startup opens the inventory without applying a preset",
-    "equipping a named top receiver preserves all other items",
-    "named receiver and fixed finish survive save/load"
-  ],
-  "captures": [
-    "current_release_menu.png",
-    "current_release_pair.png"
-  ]
+  "files": 640,
+  "models": 105,
+  "passed": true
 }

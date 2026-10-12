@@ -1,12 +1,12 @@
 """Independent clothing/detail finishes through native Studio skin-table references."""
-import struct
+import json,struct
 from pathlib import Path
 
-FINISH_COUNT=14
+FINISH_COUNT=1+len(json.loads((Path(__file__).resolve().parent/'assets/personas/personas.json').read_text(encoding='utf-8'))['themes'])
 DETAIL_MATERIAL='fragment_detail_original.bmp'
 
 def skin_pairs(count=FINISH_COUNT):
-    # Keep the historical uniform families 0..13 stable, then add mixed pairs.
+    # Keep all uniform family indices stable, then add mixed pairs.
     return [(i,i) for i in range(count)]+[(a,b) for a in range(count) for b in range(count) if a!=b]
 
 def pair_skin(primary,detail,count=FINISH_COUNT):
@@ -16,8 +16,8 @@ def pair_skin(primary,detail,count=FINISH_COUNT):
 def expand_skin_table(data,count=FINISH_COUNT):
     """Append references to the two compiled atlas banks; geometry/pixels stay intact.
 
-    The classic compiler accepts only 32 QC rows. Compile 14 uniform families,
-    then express all 196 pairs in the MDL's ordinary skin table, without new atlases.
+    The classic compiler accepts only 32 QC rows. Compile uniform families,
+    then express every pair in the MDL's ordinary skin table, without new atlases.
     """
     result=bytearray(data)
     if result[:4]!=b'IDST' or struct.unpack_from('<i',result,4)[0]!=10:raise ValueError('Studio v10 model required')

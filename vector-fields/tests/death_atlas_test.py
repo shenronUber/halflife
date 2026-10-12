@@ -17,7 +17,7 @@ def assets():
  for p in d['profiles']:
   positions.append(status.index('"'+p['effect']+'"'));assert 0<p['fx_seconds']<12
   for id in p['motions']:assert ids[id]['sequence'] in m.sequences
- assert positions==sorted(positions) and all(len(p['motions']) in [1,2] for p in d['profiles'])
+ assert positions==sorted(positions) and all(len(set(p['motions']))==3 for p in d['profiles'])
  assert g.parts[0][1]==20
  for i,name in enumerate(REGIONS):
   tri=g.mesh({0:15+i});small=[g.mesh({0:i*3+k}) for k in range(3)];points=np.array([v['p'] for _,t in tri for v in t]);bounds=np.ptp(points,axis=0)
@@ -43,7 +43,7 @@ def run():
  s+='cmd vf_death_clear\ncmd vf_range_reset 0\ndefault_fov 90\nvf_death_lab\nwait 10\necho ATLAS_GUI\nvf_ui_pointer 620 258 1\nwait 3\nvf_ui_pointer 620 258 0\nwait 3\nscreenshot scrshots/atlas_menu.png\nvf_ui_pointer 190 408 1\nwait 3\nvf_ui_pointer 190 408 0\nwait 3\nvf_ui_pointer 1100 445 1\nwait 3\nvf_ui_pointer 1100 445 0\nwait 40\nvf_death_client\necho ATLAS_GUI_END\n'
  s+='cmd vf_death_clear\nvf_death_lab\nwait 8\necho CATALOG_GUI\nvf_ui_pointer 490 258 1\nwait 3\nvf_ui_pointer 490 258 0\nwait 3\nvf_ui_pointer 610 568 1\nwait 3\nvf_ui_pointer 610 568 0\nwait 3\nscreenshot scrshots/catalog_page2.png\nvf_ui_pointer 290 459 1\nwait 3\nvf_ui_pointer 290 459 0\nwait 3\nvf_ui_pointer 1100 445 1\nwait 3\nvf_ui_pointer 1100 445 0\nwait 40\nvf_death_client\necho CATALOG_GUI_END\n'
  s+='cmd vf_death_clear\nwait 100\necho CLEARED_ATLAS\nvf_death_client\nwait 8\nquit\n'
- (m/'atlas.cfg').write_text(s);started=time.monotonic();p=subprocess.Popen([str(e/'xash3d.exe'),'-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_animation','-windowed','-width','1280','-height','720','-console','-nointro','-nowriteconfig','-log','atlas.log','+sv_cheats','1','+map','vf_range','+exec','atlas.cfg'],cwd=e)
+ (m/'atlas.cfg').write_text(s);started=time.monotonic();p=subprocess.Popen([str(e/'xash3d.exe'),'-ip','127.0.0.1','-noip6','-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_animation','-windowed','-width','1280','-height','720','-console','-nointro','-nowriteconfig','-log','atlas.log','+sv_cheats','1','+map','vf_range','+exec','atlas.cfg'],cwd=e)
  try:p.wait(timeout=220);assert p.returncode==0
  finally:
   if p.poll() is None:p.terminate();p.wait(10)
@@ -56,12 +56,12 @@ def verify(e,d,started=None):
  motions={o['id']:o for o in d['motions']};records=[]
  for i,p in enumerate(d['profiles']):
   id=p['effect'];part=log.split('BEGIN_'+id)[1].split('END_'+id)[0];motion=re.search(r'VFDeathVisual .*sequence=(\w+)',part)[1];assert motion in [motions[o]['sequence'] for o in p['motions']],(id,motion)
-  spawn=re.findall(r'VFFragment spawn entity=(\d+) body=(\d+) effect=(\d+) whole=(\d+)',part);assert len(spawn)==4 and all(int(x[2])==i for x in spawn) and sum(int(x[3]) for x in spawn)==1,id
+  spawn=re.findall(r'VFFragment spawn entity=(\d+) body=(\d+) effect=(\d+) whole=(\d+)',part);assert len(spawn)==1 and all(int(x[2])==i for x in spawn) and sum(int(x[3]) for x in spawn)==1,id
   whole=int(next(x[0] for x in spawn if x[3]=='1'));trail=re.findall(fr'VFFragment client entity={whole} body=\d+ effect={i} whole=1 age=[\d.]+ blood=(\d+) elemental=(\d+) travel=([\d.]+)',part)
   assert trail and max(int(x[0]) for x in trail)>0 and max(int(x[1]) for x in trail)>0 and max(float(x[2]) for x in trail)>10,(id,trail)
   assert 'rejected=0' in part and 'frame=255.0' in part,(id,part[-2500:]);assert (m/'scrshots'/f'{id}_end.png').stat().st_size>1000
   records.append(dict(effect=id,animation=motion,region=REGIONS[i%5],blood=max(int(x[0]) for x in trail),elemental=max(int(x[1]) for x in trail),whole_limb_distance=max(float(x[2]) for x in trail)))
- gui=log.split('ATLAS_GUI ')[1].split('ATLAS_GUI_END ')[0];assert 'VFUI click: Atlas' in gui and 'VFUI click: TOXIC / Agonie lente' in gui and 'mask=1 effect=4 sequence=vf_m_agony' in gui,gui
+ gui=log.split('ATLAS_GUI ')[1].split('ATLAS_GUI_END ')[0];assert 'VFUI click: Atlas' in gui and 'VFUI click: TOXIC / Agonie lente' in gui and any('mask=1 effect=4 sequence='+motions[id]['sequence'] in gui for id in d['profiles'][4]['motions']),gui
  gui=log.split('CATALOG_GUI ')[1].split('CATALOG_GUI_END ')[0];assert 'VFUI click: Suivant' in gui and 'VFUI click: Mixamo : agonie lente' in gui and 'mask=1 effect=4 sequence=vf_m_agony' in gui,gui
  cleared=log.split('CLEARED_ATLAS ')[1];assert 'VFCorpse client' not in cleared and 'VFFragment client' not in cleared and 'pool active=0' in cleared
  assert all(int(n)<=384 for n in re.findall(r'pool active=(\d+)',log))
@@ -74,16 +74,16 @@ def verify(e,d,started=None):
   frames.append(sheet)
  frames[0].save(OUT/'atlas-morts.gif',save_all=True,append_images=frames[1:],duration=220,loop=0);frames[5].save(OUT/'atlas-morts.jpg')
  for f in ['atlas_menu.png','catalog_page2.png']:shutil.copy2(m/'scrshots'/f,OUT/f)
- result=dict(seconds=round(time.monotonic()-started,2) if started else None,profiles=records,checks=['sixteen automatic effect-to-animation selections','five anatomical regions exercised','real whole limb plus three small physics fragments per removal','blood and elemental particles emitted along each moving limb','sprite pool bounded at 384','native F8 atlas effect selection and second catalogue page','clearing deletes corpses, fragments and trails'],log=str(OUT/'native.log'))
+ result=dict(seconds=round(time.monotonic()-started,2) if started else None,profiles=records,checks=['sixteen automatic effect-to-animation selections','five anatomical regions exercised','one real whole limb per removal, without duplicate segment meshes','blood and elemental particles emitted along each moving limb','sprite pool bounded at 384','native F8 atlas effect selection and second catalogue page','clearing deletes corpses, fragments and trails'],log=str(OUT/'native.log'))
  (OUT/'native-verification.json').write_text(json.dumps(result,indent=2));print('PASS native atlas',json.dumps(result),flush=True);return result
 def manual():
  """Exercise the alternate atlas candidates that RNG need not choose in a run."""
  d=assets();e=harness.stage('death-atlas-manual');m=e/'vf_animation';(m/'maps').mkdir(exist_ok=True);shutil.copy2(ROOT/'generated/test-room/vf_range.bsp',m/'maps/vf_range.bsp')
- cases=[('collapse','left_arm','corrosion',81),('impact_right','right_leg','hydro',82),('spin','head','resonant_impact',23)]
+ cases=[('collapse','left_arm','corrosion',81),('impact_right','right_leg','hydro',82),('spin','head','resonant_impact',91)]
  cfg='wait 180\ndeveloper 1\ncon_notifytime 0\ngl_vsync 0\nfps_max 60\ncmd give item_suit\ncmd give weapon_crowbar\ncmd weapon_crowbar\nnoclip\ndefault_fov 50\n'
  for motion,region,effect,index in cases:
   cfg+=f'cmd vf_death_clear\ncmd vf_range_reset 0\necho MANUAL_{motion}\ncmd vf_range_death 0 {region} {effect} {motion}\ncmd vf_death_view scene\nwait 48\nscreenshot scrshots/{motion}_motion.png\nwait 480\nvf_death_client\nvf_engine_stats\nscreenshot scrshots/{motion}_end.png\necho MANUAL_END_{motion}\nwait 6\n'
- cfg+='wait 8\nquit\n';(m/'atlas_manual.cfg').write_text(cfg);p=subprocess.Popen([str(e/'xash3d.exe'),'-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_animation','-windowed','-width','1280','-height','720','-console','-nointro','-nowriteconfig','-log','atlas-manual.log','+sv_cheats','1','+map','vf_range','+exec','atlas_manual.cfg'],cwd=e)
+ cfg+='wait 8\nquit\n';(m/'atlas_manual.cfg').write_text(cfg);p=subprocess.Popen([str(e/'xash3d.exe'),'-ip','127.0.0.1','-noip6','-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_animation','-windowed','-width','1280','-height','720','-console','-nointro','-nowriteconfig','-log','atlas-manual.log','+sv_cheats','1','+map','vf_range','+exec','atlas_manual.cfg'],cwd=e)
  try:p.wait(timeout=45);assert p.returncode==0
  finally:
   if p.poll() is None:p.terminate();p.wait(10)

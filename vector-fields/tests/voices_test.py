@@ -2,9 +2,10 @@
 import argparse,array,hashlib,json,re,shutil,subprocess,time,wave,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
+from native_workspace import engine_path, shared_copy, private_copy
 PROJECT=ROOT.parent
 SOURCE=PROJECT/'runtime/vector-engine'
-ENGINE=PROJECT/'runtime/vector-engine-voice-validation'
+ENGINE=engine_path(PROJECT/'runtime/vector-engine-voice-validation')
 MOD=ENGINE/'vf_visual'
 ASSETS=ROOT/'assets/audio/operators'
 ACTORS=[a['id'] for a in json.loads((ROOT/'data/voices.json').read_text(encoding='utf-8-sig'))['actors']]
@@ -52,17 +53,17 @@ def prepare():
     check_native_interface(SOURCE,ROOT/'build/client/client.dll')
     ENGINE.mkdir(parents=True,exist_ok=True)
     for p in SOURCE.iterdir():
-        if p.is_file() and p.suffix.lower() in ('.dll','.exe'):shutil.copy2(p,ENGINE/p.name)
+        if p.is_file() and p.suffix.lower() in ('.dll','.exe'):private_copy(p,ENGINE/p.name)
     for folder in ['valve','vf_visual','cs_assets','tfc_assets']:
         if (SOURCE/folder).exists():
-            shutil.copytree(SOURCE/folder,ENGINE/folder,dirs_exist_ok=True,ignore=shutil.ignore_patterns('scrshots','save','*.log'))
+            shutil.copytree(SOURCE/folder,ENGINE/folder,dirs_exist_ok=True,copy_function=shared_copy,ignore=shutil.ignore_patterns('scrshots','save','*.log'))
     for part,destination in [('server','dlls/hl.dll'),('client','cl_dlls/client.dll')]:
-        shutil.copy2(ROOT/f'build/{part}'/Path(destination).name,MOD/destination)
+        private_copy(ROOT/f'build/{part}'/Path(destination).name,MOD/destination)
     manifest=read(ASSETS/'manifest.json')
     for clip in manifest['clips']:
         rel=clip['path'].removeprefix('vf_voices/')
         target=MOD/'sound'/clip['path'];target.parent.mkdir(parents=True,exist_ok=True)
-        shutil.copy2(ASSETS/rel,target)
+        private_copy(ASSETS/rel,target)
     from death_voice_workshop import deploy as deploy_death_voices
     deploy_death_voices(MOD)
     return manifest
@@ -84,7 +85,7 @@ def run_native():
     cfg+='cmd vf_voice_test death\nwait 100\ncmd vf_taunt\nwait 10\nquit\n'
     (MOD/'vf_voices_native_test.cfg').write_text(cfg,encoding='ascii')
     logfile=ENGINE/'voices-native.log';started=time.time()
-    args=[str(ENGINE/'xash3d.exe'),'-rodir',STEAM,'-game','vf_visual','-width','1280','-height','720','-console','-nointro','-nowriteconfig','-log',logfile.name,'+exec','lab_controls.cfg','+sv_cheats','1','+developer','1','+map','vf_range','+exec','vf_voices_native_test.cfg']
+    args=[str(ENGINE/'xash3d.exe'),'-ip','127.0.0.1','-noip6','-rodir',STEAM,'-game','vf_visual','-width','1280','-height','720','-console','-nointro','-nowriteconfig','-log',logfile.name,'+exec','lab_controls.cfg','+sv_cheats','1','+developer','1','+map','vf_range','+exec','vf_voices_native_test.cfg']
     p=subprocess.Popen(args,cwd=ENGINE,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
     try:p.wait(timeout=100)
     except subprocess.TimeoutExpired:p.terminate();p.wait(10);raise
@@ -122,24 +123,24 @@ def run_native():
     write_report('voices-native-verification.json',report);print('PASS voices native',report,flush=True)
 def run_multiplayer():
     prepare()
-    peer=PROJECT/'runtime/vector-engine-voice-peer'
+    peer=engine_path(PROJECT/'runtime/vector-engine-voice-peer')
     peer.mkdir(parents=True,exist_ok=True)
     for p in ENGINE.iterdir():
-        if p.is_file() and p.suffix.lower() in ('.dll','.exe'):shutil.copy2(p,peer/p.name)
+        if p.is_file() and p.suffix.lower() in ('.dll','.exe'):private_copy(p,peer/p.name)
     for folder in ['valve','vf_visual','cs_assets','tfc_assets']:
-        if (ENGINE/folder).exists():shutil.copytree(ENGINE/folder,peer/folder,dirs_exist_ok=True,ignore=shutil.ignore_patterns('scrshots','save','*.log'))
+        if (ENGINE/folder).exists():shutil.copytree(ENGINE/folder,peer/folder,dirs_exist_ok=True,copy_function=shared_copy,ignore=shutil.ignore_patterns('scrshots','save','*.log'))
     # No cheats: normal users can taunt, but cannot choose/forge speech events.
     first='wait 300\ndeveloper 1\nfps_max 100\ncmd vf_peer_pose\nwait 700\ncmd vf_voice_info\ncmd vf_voice_set rocco\ncmd vf_voice_preview toxic_ignition\nwait 400\necho VOICE_MULTI_SPAM_BEGIN\ncmd vf_taunt\nwait 1\ncmd vf_taunt\nwait 30\necho VOICE_MULTI_SPAM_END\nwait 400\nquit\n'
     second='wait 300\ndeveloper 1\nfps_max 100\ncmd vf_peer_pose\nwait 500\ncmd vf_voice_info\ncmd vf_taunt\nwait 650\nquit\n'
     (MOD/'vf_voice_peer_a.cfg').write_text(first,encoding='ascii')
     (peer/'vf_visual/vf_voice_peer_b.cfg').write_text(second,encoding='ascii')
     common=['-rodir',STEAM,'-game','vf_visual','-console','-nointro']
-    server=subprocess.Popen([str(ENGINE/'xash.exe'),*common,'-log','voices-server.log','+ip','127.0.0.1','-port','27065','+maxplayers','4','+sv_lan','1','+sv_cheats','0','+deathmatch','1','+developer','1','+map','vf_range','+vf_counter_taunts','0'],cwd=ENGINE,creationflags=subprocess.CREATE_NO_WINDOW,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+    server=subprocess.Popen([str(ENGINE/'xash.exe'),'-ip','127.0.0.1','-noip6',*common,'-log','voices-server.log','+ip','127.0.0.1','-port','27065','+maxplayers','4','+sv_lan','1','+sv_cheats','0','+deathmatch','1','+developer','1','+map','vf_range','+vf_counter_taunts','0'],cwd=ENGINE,creationflags=subprocess.CREATE_NO_WINDOW,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
     children=[]
     try:
         time.sleep(4);assert server.poll()is None
         for folder,port,cfg,name in [(ENGINE,27066,'vf_voice_peer_a.cfg','VOICE_A'),(peer,27067,'vf_voice_peer_b.cfg','VOICE_B')]:
-            args=[str(folder/'xash3d.exe'),*common,'-width','960','-height','540','-nowriteconfig','-log','voices-peer.log','-clientport',str(port),'+exec','lab_controls.cfg','+name',name,'+connect','127.0.0.1:27065','+exec',cfg]
+            args=[str(folder/'xash3d.exe'),'-ip','127.0.0.1','-noip6',*common,'-width','960','-height','540','-nowriteconfig','-log','voices-peer.log','-clientport',str(port),'+exec','lab_controls.cfg','+name',name,'+connect','127.0.0.1:27065','+exec',cfg]
             children.append(subprocess.Popen(args,cwd=folder,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL))
             time.sleep(5)
         for p in children:p.wait(timeout=90);assert p.returncode==0

@@ -1,0 +1,24 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Viktor Volkov / mask",
+  "created_utc": "2026-10-11T21:22:50.044435+00:00",
+  "request_sha256": "2fa5356422e0acb6a0c92495fa5c6c0f5a64585979fafc81d8c972197d7e059f",
+  "request": {
+    "text": "[dry] Mask on. Better than holding breath.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "endpoint": "/v1/text-to-speech/MIGoD5dgOR9odYK1ejQC?output_format=mp3_44100_128",
+  "sha256": "a316a29381e1d26bedd61ee3c59b809a703e0c843fa4d16c620f4190186dbe84",
+  "bytes": 48527,
+  "text": "[dry] Mask on. Better than holding breath.",
+  "request_id": "Hxa0o2xKg9RhsUer5T39",
+  "reported_credit_cost": "5",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "voice_name": "Viktor Volkov",
+  "language": "en"
+}

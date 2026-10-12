@@ -13,9 +13,11 @@ les options développeur. Le même build contient les deux espaces.
 - [Guide, construction et limites](vector-fields/README.md)
 - [Historique](vector-fields/CHANGELOG.md)
 - [Cinq nouveaux ensembles GIGN + R1](vector-fields/assets/EXPEDITIONS.md)
+- [Red Son, Sélénite, Héros masqué, Pilote de rallye et Soldat pénitent](vector-fields/assets/personas/NEW-COSTUMES.md)
 - [Extension native Xash3D](vector-fields/engine/README.md)
 
-Cette version rassemble 948 équipements à apparence fixe, quatorze finitions dont
+Cette installation rassemble 973 équipements à apparence fixe, dix-neuf apparences
+opérateur et quatorze finitions d'armes dont
 Rome / Inventeur et Dieselpunk, des mains qui suivent la tenue équipée, des animations
 R1 adaptées, les effets élémentaires et les voix de six opérateurs. La salle GIGN,
 l’atlas des morts, les démembrements et le laboratoire des bots sont intégrés à une

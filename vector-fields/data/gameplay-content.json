@@ -209,5 +209,107 @@
       "Rogue",
       "Anomalous"
     ]
-  }
+  },
+  "operator_collections": [
+    {
+      "id": "red-son",
+      "key": "red_son",
+      "name": "Red Son",
+      "operator": "Red Son",
+      "family": "Baseline",
+      "item_suffix": "Red Son"
+    },
+    {
+      "id": "selenite",
+      "key": "selenite",
+      "name": "Selenite",
+      "operator": "Selenite",
+      "family": "Baseline",
+      "item_suffix": "Selenite"
+    },
+    {
+      "id": "masked-hero",
+      "key": "masked_hero",
+      "name": "Heros masque",
+      "operator": "Heros masque",
+      "family": "Baseline",
+      "item_suffix": "Heros masque"
+    },
+    {
+      "id": "rally-driver",
+      "key": "rally_driver",
+      "name": "Pilote de rallye",
+      "operator": "Pilote de rallye",
+      "family": "Baseline",
+      "item_suffix": "Pilote de rallye"
+    },
+    {
+      "id": "penitent-soldier",
+      "key": "penitent_soldier",
+      "name": "Soldat penitent",
+      "operator": "Soldat penitent",
+      "family": "Baseline",
+      "item_suffix": "Soldat penitent"
+    },
+    {
+      "id": "jade-symbiosis",
+      "key": "jade_symbiosis",
+      "name": "Operateur de jade",
+      "operator": "Operateur de jade",
+      "family": "Baseline",
+      "item_suffix": "Operateur de jade",
+      "gear_descriptions": {
+        "head": "Masque de reparation asymetrique, un oeil humain et un oculaire technique d inspection du jade.",
+        "torso": "Plaques de jade reparees par un circuit scelle; reservoir dorsal de fluide de reparation.",
+        "gloves": "Gants techniques avec ports d'injection et capillaires du kit de reparation.",
+        "legs": "Pantalon technique, genouilleres de jade reparees et etui de plaquettes de rechange.",
+        "boots": "Bottes techniques a renforts de jade repares et semelles souples."
+      }
+    },
+    {
+      "id": "amber-culture",
+      "key": "amber_culture",
+      "name": "Operateur d'ambre",
+      "operator": "Operateur d'ambre",
+      "family": "Baseline",
+      "item_suffix": "Operateur d'ambre",
+      "gear_descriptions": {
+        "head": "Visiere d analyse ambree et masque filtrant du laboratoire de terrain.",
+        "torso": "Cassette de prelevements et petite centrifugeuse dorsale, dans un harnais technique.",
+        "gloves": "Gants avec bracelet d'analyse, contacts de sonde et fenetre de controle ambree.",
+        "legs": "Pantalon technique avec etui protege pour tubes de prelevement scelles.",
+        "boots": "Bottes de terrain a protections ceramiques et petits hublots de controle scelles."
+      }
+    },
+    {
+      "id": "savage-butcher",
+      "key": "savage_butcher",
+      "name": "Savage Butcher",
+      "operator": "Savage Butcher",
+      "family": "Baseline",
+      "item_suffix": "Savage Butcher",
+      "gear_descriptions": {
+        "head": "Masque integral de boucher ivoire use, ferme tout autour de la tete, avec deux ouvertures pour les yeux.",
+        "torso": "Tablier court de boucher sale et tache, sur une veste de travail et un harnais balistique.",
+        "gloves": "Gants de travail epais, souilles de sang et de crasse.",
+        "legs": "Deux jambes distinctes de pantalon de travail sombre, renforce et sali, avec des poches utilitaires.",
+        "boots": "Bottes de travail noires, usees et salies."
+      }
+    },
+    {
+      "id": "miami-vice",
+      "key": "miami_vice",
+      "name": "Miami Vice",
+      "operator": "Miami Vice",
+      "family": "Baseline",
+      "item_suffix": "Miami Vice",
+      "gear_descriptions": {
+        "head": "Cagoule bleu nuit et lunettes aviateur a monture doree.",
+        "torso": "Veste bleue et chemise rose, sous un gilet pare-balles sombre.",
+        "gloves": "Gants en cuir bleu nuit, poignets de chemise rose et manches de costume.",
+        "legs": "Pantalon de costume bleu a plis marques, avec renforts discrets.",
+        "boots": "Bottes en cuir sombre, adaptees au costume et au terrain."
+      }
+    }
+  ]
 }

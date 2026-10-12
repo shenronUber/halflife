@@ -28,6 +28,8 @@
 #include "r_efx.h"
 
 #include "../hud_iface.h"
+#include "../vf_engine.h"
+#include "../../game_shared/vf_traversal.h"
 #include "../com_weapons.h"
 #include "../demo.h"
 
@@ -147,6 +149,7 @@ CBasePlayerWeapon :: DefaultReload
 */
 BOOL CBasePlayerWeapon :: DefaultReload( int iClipSize, int iAnim, float fDelay, int body )
 {
+	if (VF_TR_NoReload(m_pPlayer->pev->iuser4)) return FALSE;
 
 	if (m_pPlayer->m_rgAmmo[m_iPrimaryAmmoType] <= 0)
 		return FALSE;
@@ -324,6 +327,14 @@ Handles weapon firing, reloading, etc.
 */
 void CBasePlayerWeapon::ItemPostFrame( void )
 {
+	const int traversal=m_pPlayer->pev->iuser4;
+	if (VF_TR_NoReload(traversal)) {
+		m_fInReload=FALSE;m_fInSpecialReload=0;
+		m_pPlayer->pev->button &= ~(IN_RELOAD|IN_ATTACK2);
+		if (VF_TR_BusyHands(traversal)) return;
+	}
+	if (!VF_TR_CanFire(traversal,m_pPlayer->pev->fuser1,m_pPlayer->pev->v_angle.y)) return;
+
 	if ((m_fInReload) && (m_pPlayer->m_flNextAttack <= 0.0))
 	{
 #if 0 // FIXME, need ammo on client to make this work right
@@ -358,7 +369,7 @@ void CBasePlayerWeapon::ItemPostFrame( void )
 
 		PrimaryAttack();
 	}
-	else if ( m_pPlayer->pev->button & IN_RELOAD && iMaxClip() != WEAPON_NOCLIP && !m_fInReload ) 
+	else if ( !VF_TR_NoReload(traversal) && m_pPlayer->pev->button & IN_RELOAD && iMaxClip() != WEAPON_NOCLIP && !m_fInReload )
 	{
 		// reload when reload is pressed, or if no buttons are down and weapon is empty.
 		Reload();
@@ -370,7 +381,7 @@ void CBasePlayerWeapon::ItemPostFrame( void )
 		m_fFireOnEmpty = FALSE;
 
 		// weapon is useable. Reload if empty and weapon has waited as long as it has to after firing
-		if ( m_iClip == 0 && !(iFlags() & ITEM_FLAG_NOAUTORELOAD) && m_flNextPrimaryAttack < 0.0 )
+		if ( !VF_TR_NoReload(traversal) && m_iClip == 0 && !(iFlags() & ITEM_FLAG_NOAUTORELOAD) && m_flNextPrimaryAttack < 0.0 )
 		{
 			Reload();
 			return;
@@ -816,6 +827,8 @@ void HUD_WeaponsPostThink( local_state_s *from, local_state_s *to, usercmd_t *cm
 
 	// Set player variables that weapons code might check/alter
 	player.pev->button = cmd->buttons;
+	player.pev->iuser4 = to->client.iuser4;
+	player.pev->fuser1 = to->client.fuser1; // same predicted frame: arm/draw fire lock
 
 	player.pev->velocity = from->client.velocity;
 	player.pev->flags = from->client.flags;
@@ -853,6 +866,9 @@ void HUD_WeaponsPostThink( local_state_s *from, local_state_s *to, usercmd_t *cm
 		 ( ( CRpg * )player.m_pActiveItem)->m_cActiveRockets = (int)from->client.vuser2[ 2 ];
 	}
 	
+	if (VF_TR_NoReload(player.pev->iuser4) && (pWeapon->m_fInReload || pWeapon->m_fInSpecialReload)) {
+		pWeapon->m_fInReload=FALSE;pWeapon->m_fInSpecialReload=0;player.m_flNextAttack=0;
+	}
 	// Don't go firing anything if we have died or are spectating
 	// Or if we don't have a weapon model deployed
 	if ( ( player.pev->deadflag != ( DEAD_DISCARDBODY + 1 ) ) && 
@@ -1080,4 +1096,6 @@ void CL_DLLEXPORT HUD_PostRunCmd( struct local_state_s *from, struct local_state
 	
 	// All games can use FOV state
 	g_lastFOV = to->client.fov;
+	VF_InspectPredict(to->client.m_iId,cmd->buttons,to->weapondata[4].m_fInReload!=0,to->client.m_flNextAttack);
+	VF_TraversalPredict(to->client.iuser4,to->client.fuser1,cmd->viewangles[1],cmd->viewangles[0],to->client.fuser4-to->client.origin[2],to->client.vuser3,to->client.fuser4);
 }

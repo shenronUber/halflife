@@ -29,11 +29,12 @@ const {chromium}=require(path.join(process.env.USERPROFILE,'.cache/codex-runtime
   for(const cause of ['phase','null','ward','reveal','overclock']){
    await page.selectOption('#deathCause',cause);const state=await page.evaluate(()=>window.workshopState);assert.equal(state.death.cry,'standard');assert.equal(state.death.fx,0);assert.equal(state.glError,0);
   }
-  const profiles=JSON.parse(fs.readFileSync(path.join(root,'assets/animations/death-atlas.json'),'utf8')).profiles;
+  const atlas=JSON.parse(fs.readFileSync(path.join(root,'assets/animations/death-atlas.json'),'utf8')),profiles=atlas.profiles;
+  for(const motion of atlas.motions.filter(m=>m.sequence))assert.equal(await page.evaluate(id=>D.scenes.deaths.clips[id].source,motion.id),motion.sequence);
   for(const profile of profiles){
    await page.selectOption('#deathCause',profile.effect);let state=await page.evaluate(()=>window.workshopState);assert.equal(state.death.motion,profile.motions[0]);
    await page.locator('#timeline').fill(String(10));await page.locator('#timeline').dispatchEvent('input');state=await page.evaluate(()=>window.workshopState);assert(state.death.fx>0);assert.equal(state.glError,0);
-   if(profile.motions.length>1){await page.click('#deathVariant');assert.equal((await page.evaluate(()=>window.workshopState)).death.motion,profile.motions[1]);}
+   assert.equal(profile.motions.length,3);for(const id of [profile.motions[1],profile.motions[2],profile.motions[0]]){await page.click('#deathVariant');assert.equal((await page.evaluate(()=>window.workshopState)).death.motion,id);}
   }
   const motions=await page.locator('#deathMotion option').evaluateAll(options=>options.map(o=>o.value).filter(v=>v!=='auto'));
   for(const motion of motions){await page.selectOption('#deathMotion',motion);await page.locator('#timeline').fill('10');await page.locator('#timeline').dispatchEvent('input');const s=await page.evaluate(()=>window.workshopState);assert.equal(s.death.motion,motion);assert.equal(s.glError,0);assert(s.triangles>700)}

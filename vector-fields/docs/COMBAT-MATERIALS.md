@@ -10,7 +10,9 @@ Dans Xash3D, `SV_HullForStudioModel` transmet la séquence, la frame et les para
 
 La boîte de déplacement du joueur reste distincte : debout, `mins=-16,-16,-36` et `maxs=16,16,36`. Elle n'a pas été modifiée. La configuration testée utilise `sv_clienttrace=1` ; une valeur de zéro désactive les hitboxes individuelles pour les traces joueur. La valeur positive ajoute la tolérance de trace historique du moteur.
 
-**Limite de correspondance visuelle :** le moteur serveur conserve son calcul de pose historique. Le renderer applique en plus la démarche et une correction de rotation du torse (`R_VFPlayerTorsoYaw`). Ces corrections ne sont pas entièrement reproduites dans la collision serveur. Les nouvelles poses de bras et le rechargement sont bien dans le modèle serveur ; une égalité précise avec le corps affiché pendant tous les déplacements nécessite encore de partager le calcul complet de pose entre serveur et renderer. `GET_BONE_POSITION` sert au diagnostic ; les traces réelles restent l'autorité pour les dégâts, avec leurs propres paramètres de mélange.
+**Pose partagée :** les opérateurs GIGN utilisent maintenant le même évaluateur `vf_player_pose.inc` pour les os affichés et les os des hitboxes serveur. La démarche, les transitions d'animation, la rotation du torse, la composition du combat accroupi/en glissade, les contraintes des mains sur un rebord et le geste de casque sont calculés dans les deux chemins. Le serveur fournit la direction et l'avancement de démarche ainsi que la transition précédente ; aucun os fourni par un client ne sert à calculer les collisions. `GET_BONE_POSITION` utilise également cette pose. Les limites de recherche des traces englobent les hitboxes posées, même lorsqu'un bras ou une jambe sort du volume de déplacement.
+
+La précision reste celle des volumes anatomiques GoldSrc et des données d'animation transmises ; ce changement n'ajoute pas de collision par triangle ni de compensation de latence. Les modèles historiques du laboratoire gardent leur chemin Studio d'origine. `tests/player_pose_native_test.py` compare les vingt matrices réellement affichées aux matrices serveur dans les poses ordinaires, accroupies, en déplacement, en recharge, en glissade, en suspension armée, en franchissement et pendant le geste de casque ; il contrôle aussi une véritable intersection de trace sur la main.
 
 ## Dégâts conservés
 
@@ -65,6 +67,15 @@ Validation : `tests/combat_policy_test.cpp`, `tests/combat_native_test.py`, `tes
 - `native-verification.json` : sept vrais groupes tracés, dégâts et armure conservés, absence de fuite du contexte, équipement/munition identifiés, matériau béton identifié, traces et centres de hitbox déplacés pendant un vrai rechargement sans déplacement du bassin.
 - `model-verification.json` : suppression exclusive du groupe 8 dans les quatre modèles ; aucune modification des autres hitboxes, textures, maillages ou canaux d'animation.
 - `deployment.json` : empreintes des fichiers vérifiés puis installés.
+
+`tests/player_pose_native_test.py` compare les vingt volumes réellement rendus et
+tracés sur 33 poses : déplacement, accroupissement, recharge, glissade,
+suspension, franchissement et casque. Les huit coins de chaque volume sont
+comparés dans le monde, avec une tolérance de 0,35 unité pour la quantification
+réseau. Cette vérification locale ne mesure pas le décalage dû à la latence.
+`tests/combat_regression_native_test.py` vérifie les seuils anatomiques après
+armure, le coup fatal, les sauvegardes et les chutes avec huit profils élémentaires.
+Les résultats sont réunis dans [le rapport du 12 octobre 2026](validation/combat-fixes-2026-10-12.json).
 
 Le futur calcul pourra utiliser `membre + couches traversées + projectile`. Ce socle prépare ces données ; il n'implémente pas encore la pénétration, l'énergie résiduelle, la couverture précise des armures ou une simulation exacte des tissus.
 

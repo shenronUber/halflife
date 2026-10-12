@@ -1,0 +1,1162 @@
+[
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_catch",
+    "corner": 0,
+    "frames": 9,
+    "seconds": 0.28,
+    "fps": 28.571428298950195,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_catch_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_catch_0.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_idle",
+    "corner": 0,
+    "frames": 37,
+    "seconds": 1.2,
+    "fps": 30.0,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_idle_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_idle_0.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_arm",
+    "corner": 0,
+    "frames": 9,
+    "seconds": 0.28,
+    "fps": 28.571428298950195,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_arm_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_arm_0.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_0",
+    "corner": 0,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_0_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_0_0.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_0",
+    "corner": 1,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_0_1.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_0_1.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_0",
+    "corner": 2,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_0_2.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_0_2.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_0",
+    "corner": 3,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_0_3.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_0_3.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_1",
+    "corner": 0,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_1_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_1_0.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_1",
+    "corner": 1,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_1_1.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_1_1.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_1",
+    "corner": 2,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_1_2.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_1_2.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_1",
+    "corner": 3,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_1_3.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_1_3.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_2",
+    "corner": 0,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_2_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_2_0.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_2",
+    "corner": 1,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_2_1.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_2_1.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_2",
+    "corner": 2,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_2_2.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_2_2.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_2",
+    "corner": 3,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_2_3.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_2_3.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_3",
+    "corner": 0,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_3_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_3_0.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_3",
+    "corner": 1,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_3_1.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_3_1.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_3",
+    "corner": 2,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_3_2.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_3_2.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_3",
+    "corner": 3,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_3_3.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_3_3.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_4",
+    "corner": 0,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_4_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_4_0.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_4",
+    "corner": 1,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_4_1.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_4_1.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_4",
+    "corner": 2,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_4_2.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_4_2.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_4",
+    "corner": 3,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_4_3.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_4_3.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_5",
+    "corner": 0,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_5_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_5_0.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_5",
+    "corner": 1,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_5_1.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_5_1.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_5",
+    "corner": 2,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_5_2.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_5_2.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_5",
+    "corner": 3,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_5_3.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_5_3.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_6",
+    "corner": 0,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_6_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_6_0.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_6",
+    "corner": 1,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_6_1.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_6_1.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_6",
+    "corner": 2,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_6_2.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_6_2.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_6",
+    "corner": 3,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_6_3.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_6_3.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_7",
+    "corner": 0,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_7_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_7_0.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_7",
+    "corner": 1,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_7_1.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_7_1.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_7",
+    "corner": 2,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_7_2.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_7_2.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_aim_7",
+    "corner": 3,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_aim_7_3.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_aim_7_3.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_climb",
+    "corner": 0,
+    "frames": 27,
+    "seconds": 0.85,
+    "fps": 30.58823585510254,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_climb_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_climb_0.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_slide_start",
+    "corner": 0,
+    "frames": 9,
+    "seconds": 0.25,
+    "fps": 32.0,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_slide_start_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_slide_start_0.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_slide_loop",
+    "corner": 0,
+    "frames": 37,
+    "seconds": 1.2,
+    "fps": 30.0,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_slide_loop_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_slide_loop_0.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_slide_end",
+    "corner": 0,
+    "frames": 10,
+    "seconds": 0.3,
+    "fps": 30.0,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_slide_end_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_slide_end_0.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_0",
+    "corner": 0,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_0_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_0_0.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_0",
+    "corner": 1,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_0_1.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_0_1.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_0",
+    "corner": 2,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_0_2.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_0_2.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_0",
+    "corner": 3,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_0_3.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_0_3.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_1",
+    "corner": 0,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_1_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_1_0.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_1",
+    "corner": 1,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_1_1.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_1_1.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_1",
+    "corner": 2,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_1_2.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_1_2.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_1",
+    "corner": 3,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_1_3.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_1_3.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_2",
+    "corner": 0,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_2_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_2_0.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_2",
+    "corner": 1,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_2_1.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_2_1.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_2",
+    "corner": 2,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_2_2.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_2_2.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_2",
+    "corner": 3,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_2_3.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_2_3.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_3",
+    "corner": 0,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_3_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_3_0.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_3",
+    "corner": 1,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_3_1.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_3_1.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_3",
+    "corner": 2,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_3_2.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_3_2.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_3",
+    "corner": 3,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_3_3.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_3_3.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_4",
+    "corner": 0,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_4_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_4_0.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_4",
+    "corner": 1,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_4_1.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_4_1.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_4",
+    "corner": 2,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_4_2.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_4_2.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_4",
+    "corner": 3,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_4_3.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_4_3.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_5",
+    "corner": 0,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_5_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_5_0.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_5",
+    "corner": 1,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_5_1.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_5_1.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_5",
+    "corner": 2,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_5_2.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_5_2.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_5",
+    "corner": 3,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_5_3.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_5_3.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_6",
+    "corner": 0,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_6_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_6_0.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_6",
+    "corner": 1,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_6_1.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_6_1.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_6",
+    "corner": 2,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_6_2.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_6_2.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_6",
+    "corner": 3,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_6_3.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_6_3.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_7",
+    "corner": 0,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_7_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_7_0.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_7",
+    "corner": 1,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_7_1.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_7_1.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_7",
+    "corner": 2,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_7_2.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_7_2.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_hang_both_7",
+    "corner": 3,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_hang_both_7_3.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_hang_both_7_3.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_drop",
+    "corner": 0,
+    "frames": 10,
+    "seconds": 0.3,
+    "fps": 30.0,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_drop_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_drop_0.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_catch",
+    "corner": 0,
+    "frames": 9,
+    "seconds": 0.28,
+    "fps": 28.571428298950195,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_catch_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_catch_0.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_idle",
+    "corner": 0,
+    "frames": 37,
+    "seconds": 1.2,
+    "fps": 30.0,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_idle_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_idle_0.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_arm",
+    "corner": 0,
+    "frames": 9,
+    "seconds": 0.28,
+    "fps": 28.571428298950195,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_arm_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_arm_0.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_0",
+    "corner": 0,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_0_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_0_0.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_0",
+    "corner": 1,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_0_1.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_0_1.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_0",
+    "corner": 2,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_0_2.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_0_2.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_0",
+    "corner": 3,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_0_3.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_0_3.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_1",
+    "corner": 0,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_1_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_1_0.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_1",
+    "corner": 1,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_1_1.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_1_1.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_1",
+    "corner": 2,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_1_2.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_1_2.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_1",
+    "corner": 3,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_1_3.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_1_3.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_2",
+    "corner": 0,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_2_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_2_0.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_2",
+    "corner": 1,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_2_1.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_2_1.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_2",
+    "corner": 2,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_2_2.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_2_2.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_2",
+    "corner": 3,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_2_3.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_2_3.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_3",
+    "corner": 0,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_3_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_3_0.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_3",
+    "corner": 1,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_3_1.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_3_1.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_3",
+    "corner": 2,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_3_2.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_3_2.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_3",
+    "corner": 3,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_3_3.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_3_3.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_4",
+    "corner": 0,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_4_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_4_0.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_4",
+    "corner": 1,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_4_1.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_4_1.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_4",
+    "corner": 2,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_4_2.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_4_2.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_4",
+    "corner": 3,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_4_3.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_4_3.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_5",
+    "corner": 0,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_5_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_5_0.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_5",
+    "corner": 1,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_5_1.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_5_1.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_5",
+    "corner": 2,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_5_2.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_5_2.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_5",
+    "corner": 3,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_5_3.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_5_3.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_6",
+    "corner": 0,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_6_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_6_0.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_6",
+    "corner": 1,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_6_1.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_6_1.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_6",
+    "corner": 2,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_6_2.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_6_2.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_6",
+    "corner": 3,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_6_3.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_6_3.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_7",
+    "corner": 0,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_7_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_7_0.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_7",
+    "corner": 1,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_7_1.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_7_1.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_7",
+    "corner": 2,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_7_2.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_7_2.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_hang_aim_7",
+    "corner": 3,
+    "frames": 3,
+    "seconds": 1.2,
+    "fps": 1.6666669845581055,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_hang_aim_7_3.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_hang_aim_7_3.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_climb",
+    "corner": 0,
+    "frames": 27,
+    "seconds": 0.85,
+    "fps": 30.58823585510254,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_climb_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_climb_0.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_drop",
+    "corner": 0,
+    "frames": 10,
+    "seconds": 0.3,
+    "fps": 30.0,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_drop_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_drop_0.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_vault",
+    "corner": 0,
+    "frames": 26,
+    "seconds": 0.82,
+    "fps": 30.487804412841797,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_vault_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_vault_0.smd"
+  },
+  {
+    "view": "first-person",
+    "gesture": "vf_stepup",
+    "corner": 0,
+    "frames": 29,
+    "seconds": 0.92,
+    "fps": 30.434783935546875,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\first-person\\vf_stepup_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\first-person\\vf_stepup_0.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_vault",
+    "corner": 0,
+    "frames": 26,
+    "seconds": 0.82,
+    "fps": 30.487804412841797,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_vault_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_vault_0.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_stepup",
+    "corner": 0,
+    "frames": 29,
+    "seconds": 0.92,
+    "fps": 30.434783935546875,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_stepup_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_stepup_0.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_slide_start",
+    "corner": 0,
+    "frames": 9,
+    "seconds": 0.25,
+    "fps": 32.0,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_slide_start_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_slide_start_0.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_slide_loop",
+    "corner": 0,
+    "frames": 37,
+    "seconds": 1.2,
+    "fps": 30.0,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_slide_loop_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_slide_loop_0.smd"
+  },
+  {
+    "view": "third-person",
+    "gesture": "vf_slide_end",
+    "corner": 0,
+    "frames": 10,
+    "seconds": 0.3,
+    "fps": 30.0,
+    "editable": "G:\\Half life Project\\vector-fields\\animation-workshop\\traversal\\third-person\\vf_slide_end_0.smd",
+    "override": "G:\\Half life Project\\vector-fields\\assets\\animations\\traversal-edits\\third-person\\vf_slide_end_0.smd"
+  }
+]

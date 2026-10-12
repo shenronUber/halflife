@@ -14,12 +14,12 @@ def run():
  second=start+second_items+'vf_commit\nwait 35\n'+click(1220,40)+'wait 1000\nvf_engine_stats\nscreenshot scrshots/r01_styles_peer_b.png\nwait 20\nquit\n'
  (MOD/'r01_peer_a.cfg').write_text(first,encoding='ascii')
  (peer/'vf_visual/r01_peer_b.cfg').write_text(second,encoding='ascii')
- server=subprocess.Popen([str(ENGINE/'xash.exe'),*common,'-log','r01-styles-server.log','+ip','127.0.0.1','-port','27035','+maxplayers','4','+sv_lan','1','+sv_cheats','0','+deathmatch','1','+developer','1','+map','vf_range'],cwd=ENGINE,creationflags=subprocess.CREATE_NO_WINDOW)
+ server=subprocess.Popen([str(ENGINE/'xash.exe'),'-ip','127.0.0.1','-noip6',*common,'-log','r01-styles-server.log','+ip','127.0.0.1','-port','27035','+maxplayers','4','+sv_lan','1','+sv_cheats','0','+deathmatch','1','+developer','1','+map','vf_range'],cwd=ENGINE,creationflags=subprocess.CREATE_NO_WINDOW)
  children=[];started=time.time()
  try:
   time.sleep(4);assert server.poll()is None
   def launch(folder,port,cfg,name):
-   args=[str(folder/'xash3d.exe'),*common,'-borderless','-width','1920','-height','1080','-nowriteconfig','-log','r01-styles-peer.log','+exec','lab_controls.cfg','-clientport',str(port),'+name',name,'+connect','127.0.0.1:27035','+exec',cfg]
+   args=[str(folder/'xash3d.exe'),'-ip','127.0.0.1','-noip6',*common,'-borderless','-width','1920','-height','1080','-nowriteconfig','-log','r01-styles-peer.log','+exec','lab_controls.cfg','-clientport',str(port),'+name',name,'+connect','127.0.0.1:27035','+exec',cfg]
    children.append(subprocess.Popen(args,cwd=folder))
   launch(ENGINE,27036,'r01_peer_a.cfg','R01_A')
   time.sleep(8)

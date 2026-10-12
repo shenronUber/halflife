@@ -7,6 +7,7 @@ from library_engine_test import ROOT,MOD,run_cfg
 sys.path.insert(0,str(ROOT))
 from build_reference_weapon import part,KEYS,Mesh
 from studio_assets import Studio
+from build_identity_chassis import WORKSHOP
 
 BASELINE=ROOT/'tests/fixtures/r01-surface-before-isotropic-uv.json'
 def surface(mesh):
@@ -38,7 +39,10 @@ def mapping():
     ratios.append(ratio)
    studio=Studio(ROOT/'generated/r01'/(name+'.mdl'))
    for domain,current in [('source',surface(mesh)),('compiled',surface(studio.mesh()))]:
-    assert_surface(current,baseline[name][domain],compiled=domain=='compiled')
+    expected=baseline[name][domain]
+    if key=='receiver' and domain=='compiled':
+     expected=surface(Studio(WORKSHOP/'legacy-trigger-review'/'ab'[variant]/(name+'.mdl')).mesh())
+    assert_surface(current,expected,compiled=domain=='compiled')
    assert studio.numskinfamilies==len(json.loads((ROOT/'assets/r01/variants/variants.json').read_text(encoding='utf-8'))['variants'])+1
    assert all(0<w<=256 and 0<h<=256 for _,w,h,_,_ in studio.textures)
    records.append(dict(model=name,triangles=len(mesh),non_glass_triangles=len(ratios),max_anisotropy=max(ratios)))

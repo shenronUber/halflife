@@ -14,12 +14,14 @@
 #include "../game_shared/vf_death_sfx_catalog.h"
 #include "vf_effect_catalog.h"
 #include <cstring>
+#include "../game_shared/vf_active_entities.h"
 namespace {
 struct Corpse{int missing,effect,skins[5];float until,started;};Corpse corpses[2048];int lightning=0;
 struct Fragment{int body,effect,serial,blood,elemental;float started,until,next,lastAt,travel;Vector last;bool seen,burst;};Fragment fragments[2048];
 enum {TrailCapacity=384};
 struct Trail{bool active;float born,until,gravity;Vector origin,velocity,span;vf_fx_particle_t draw;};Trail trail[TrailCapacity];
-int trailCursor=0,scanCursor=1,trailPeak=0;float lastTrailTime=0;
+vf::ActiveEntities<2048> activeCorpses,activeFragments;
+int trailCursor=0,scanCursor=0,trailPeak=0;float lastTrailTime=0;
 int ReceiveSound(const char*,int size,void* data){
  if(size!=5)return 1;BEGIN_READ(data,size);int id=READ_SHORT(),layer=READ_BYTE(),effect=READ_BYTE()-1,pitch=READ_BYTE();
  if(id<1||id>=2048||layer>1||effect<-1||effect>=16)return 1;
@@ -31,6 +33,7 @@ int ReceiveFragment(const char*,int size,void* data){
  if(size!=10)return 1;BEGIN_READ(data,size);int id=READ_SHORT(),body=READ_BYTE(),effect=READ_BYTE()-1,age=READ_SHORT(),left=READ_SHORT(),serial=(unsigned short)READ_SHORT();
  if(id<1||id>=2048||body>=20||effect>=16||age<0||age>1200||left<0||left>1200||!serial)return 1;
  Fragment& f=fragments[id];if(f.serial!=serial){f=Fragment();f.serial=serial;}f.body=body;f.effect=effect;f.started=gEngfuncs.GetClientTime()-age*.01f;f.until=left?gEngfuncs.GetClientTime()+left*.01f:0;
+ if(left&&age<=220)activeFragments.Add(id);else activeFragments.Remove(id);
  gEngfuncs.Con_DPrintf("VFFragment received entity=%d body=%d effect=%d age=%.2f remaining=%.2f serial=%d\n",id,body,effect,age*.01f,left*.01f,serial);return 1;
 }
 float Random(float a,float b){return gEngfuncs.pfnRandomFloat(a,b);}
@@ -55,12 +58,16 @@ void EmitTrail(Fragment& f,const Vector& origin,const Vector& velocity,float now
 }
 void FragmentWorld(float now,const cl_entity_t* viewer){
  float dt=lastTrailTime?fminf(.05f,fmaxf(0.f,now-lastTrailTime)):0;lastTrailTime=now;int emits=0;
- for(int i=0;i<2047;++i){int id=1+(scanCursor-1+i)%2047;Fragment& f=fragments[id];float age=now-f.started;if(f.until<=now||age<0||age>2.2f)continue;
+ for(int i=0;i<activeFragments.count;){int id=activeFragments.ids[i];Fragment& f=fragments[id];
+  float age=now-f.started;if(f.until<=now||age>2.2f){activeFragments.Remove(id);continue;}++i;
+ }
+ int total=activeFragments.count;
+ for(int i=0;i<total;++i){int id=activeFragments.ids[(scanCursor+i)%total];Fragment& f=fragments[id];float age=now-f.started;if(age<0)continue;
   cl_entity_t* e=gEngfuncs.GetEntityByIndex(id);if(!e||!e->model||strcmp(e->model->name,vfdeath::GibModel)||e->curstate.body!=f.body||e->curstate.messagenum!=viewer->curstate.messagenum)continue;
   Vector position=e->origin,velocity(0,0,0);if(f.seen&&now>f.lastAt){velocity=(position-f.last)*(1.f/(now-f.lastAt));f.travel+=(position-f.last).Length();}f.last=position;f.lastAt=now;f.seen=true;
   if(!f.burst){f.burst=true;if(f.body>=15&&age<.3f)for(int n=0;n<10;++n)EmitBlood(f,position,e->curstate.velocity,now,true);}
   if(emits<12&&now>=f.next&&(velocity.Length()>12||age<.15f)){EmitTrail(f,position,velocity,now);f.next=now+.06f;++emits;}
- }scanCursor=1+(scanCursor+126)%2047;
+ }scanCursor=total?(scanCursor+1)%total:0;
  vf_fx_particle_t draws[TrailCapacity];int count=0;
  for(int i=0;i<TrailCapacity;++i){Trail& t=trail[i];if(!t.active)continue;if(now>=t.until){t.active=false;continue;}t.origin=t.origin+t.velocity*dt;t.origin.z+=.5f*t.gravity*dt*dt;t.velocity.z+=t.gravity*dt;float life=(now-t.born)/(t.until-t.born);t.draw.alpha=(1-life)*(t.draw.blood?.92f:.8f);
   float size=t.draw.size;t.draw.size=t.draw.pattern==vfx::Rings?2+life*7:size;for(int k=0;k<3;++k){t.draw.origin[k]=t.origin[k];t.draw.end[k]=t.origin[k]+t.span[k]*(1-life);}draws[count++]=t.draw;if(t.draw.pattern==vfx::Rings)t.draw.size=size;
@@ -68,26 +75,29 @@ void FragmentWorld(float now,const cl_entity_t* viewer){
 }
 int Receive(const char*,int size,void* data){
  if(size!=13)return 1;BEGIN_READ(data,size);int id=READ_SHORT(),missing=READ_BYTE(),effect=READ_BYTE()-1,skins[5];for(int z=0;z<5;++z)skins[z]=READ_BYTE();int age=READ_SHORT(),left=READ_SHORT();
- if(id<1||id>=2048||missing>31||effect>=vfs::Count||age<0||left<0||left>1500)return 1;for(int z=0;z<5;++z)if(skins[z]>=14)return 1;
+ if(id<1||id>=2048||missing>31||effect>=vfs::Count||age<0||left<0||left>1500)return 1;for(int z=0;z<5;++z)if(skins[z]>=vfdeath::FinishCount)return 1;
  Corpse& c=corpses[id];c.missing=missing;c.effect=effect;memcpy(c.skins,skins,sizeof(skins));c.until=left?gEngfuncs.GetClientTime()+left*.01f:0;c.started=gEngfuncs.GetClientTime()-age*.01f;
+ if(left)activeCorpses.Add(id);else activeCorpses.Remove(id);
  gEngfuncs.Con_DPrintf("VFCorpse received entity=%d mask=%d effect=%d age=%.2f remaining=%.2f\n",id,missing,effect,age*.01f,left*.01f);return 1;
 }
 void Stats(){int bloodActive=0,invalidBlood=0;for(int n=0;n<TrailCapacity;++n)if(trail[n].active&&trail[n].draw.blood&&trail[n].until>gEngfuncs.GetClientTime()){++bloodActive;const vf_fx_particle_t& p=trail[n].draw;if(p.color[0]<.5f||p.color[1]>.05f||p.color[2]>.05f)++invalidBlood;}
  gEngfuncs.Con_Printf("VFBlood alpha_rgb=1 radial_burst=10 gravity=300 active=%d invalid_color=%d\n",bloodActive,invalidBlood);
  int active=0;for(int i=0;i<TrailCapacity;++i)if(trail[i].active&&trail[i].until>gEngfuncs.GetClientTime())++active;gEngfuncs.Con_Printf("VFFragment pool active=%d peak=%d capacity=%d\n",active,trailPeak,TrailCapacity);for(int i=1;i<2048;++i)if(fragments[i].until>gEngfuncs.GetClientTime()){const Fragment& f=fragments[i];cl_entity_t* e=gEngfuncs.GetEntityByIndex(i);int skin=e&&e->model&&!strcmp(e->model->name,vfdeath::GibModel)?e->curstate.skin:-1;int primary,detail;vfdeath::FragmentPairFinishes(skin,primary,detail);gEngfuncs.Con_Printf("VFFragment client entity=%d body=%d effect=%d whole=%d age=%.2f blood=%d elemental=%d travel=%.1f position=%.1f,%.1f,%.1f skin=%d primary=%d detail=%d\n",i,f.body,f.effect,f.body>=15,gEngfuncs.GetClientTime()-f.started,f.blood,f.elemental,f.travel,f.last.x,f.last.y,f.last.z,skin,primary,detail);}for(int i=1;i<2048;++i)if(corpses[i].until>gEngfuncs.GetClientTime()){
  const Corpse& c=corpses[i];cl_entity_t* e=gEngfuncs.GetEntityByIndex(i);
- gEngfuncs.Con_Printf("VFCorpse client entity=%d mask=%d effect=%d body=%d skins=%d,%d,%d,%d,%d age=%.2f sequence=%d frame=%.1f model=%s\n",i,c.missing,c.effect,vfdeath::Body(c.missing),c.skins[0],c.skins[1],c.skins[2],c.skins[3],c.skins[4],gEngfuncs.GetClientTime()-c.started,e?e->curstate.sequence:-1,e?e->curstate.frame:0,e&&e->model?e->model->name:"none");
+ gEngfuncs.Con_Printf("VFCorpse client entity=%d mask=%d effect=%d body=%d skins=%d,%d,%d,%d,%d age=%.2f sequence=%d frame=%.1f model=%s origin_xy=%.2f,%.2f yaw=%.2f\n",i,c.missing,c.effect,vfdeath::Body(c.missing),c.skins[0],c.skins[1],c.skins[2],c.skins[3],c.skins[4],gEngfuncs.GetClientTime()-c.started,e?e->curstate.sequence:-1,e?e->curstate.frame:0,e&&e->model?e->model->name:"none",e?e->origin.x:0,e?e->origin.y:0,e?e->angles.y:0);
 }}
 }
 void VF_DeathInit(){gEngfuncs.pfnHookUserMsg("VFDeathSfx",ReceiveSound);gEngfuncs.pfnHookUserMsg("VFCorpse",Receive);gEngfuncs.pfnHookUserMsg("VFFragment",ReceiveFragment);gEngfuncs.pfnAddCommand("vf_death_client",Stats);VF_DeathReset();}
-void VF_DeathReset(){memset(corpses,0,sizeof(corpses));memset(fragments,0,sizeof(fragments));memset(trail,0,sizeof(trail));trailCursor=0;scanCursor=1;trailPeak=0;lastTrailTime=0;lightning=0;}
+void VF_DeathReset(){memset(corpses,0,sizeof(corpses));memset(fragments,0,sizeof(fragments));memset(trail,0,sizeof(trail));activeCorpses.Reset();activeFragments.Reset();trailCursor=0;scanCursor=0;trailPeak=0;lastTrailTime=0;lightning=0;}
 bool VF_DeathAssembly(int id,vf_assembly_t& a){
  if(id<1||id>=2048||corpses[id].until<=gEngfuncs.GetClientTime())return false;const Corpse& c=corpses[id];memset(&a,0,sizeof(a));strcpy(a.rig,vfdeath::Model);a.body=vfdeath::Body(c.missing);
  for(int z=0;z<5;++z){int body=vfdeath::Body(c.missing,z);if(!body)continue;vf_part_t& p=a.parts[a.count++];strcpy(p.model,vfdeath::Model);p.body=body;p.skin=c.skins[z];p.mode=VF_PART_MERGE;}return true;
 }
 void VF_DeathWorld(){
  float now=gEngfuncs.GetClientTime();cl_entity_t* viewer=gEngfuncs.GetLocalPlayer();if(!viewer)return;FragmentWorld(now,viewer);
- for(int id=1;id<2048;++id){Corpse& c=corpses[id];float age=now-c.started;const vfdeath::Profile* profile=vfdeath::ProfileFor(c.effect);if(c.until<=now||!profile||age>profile->fxSeconds)continue;cl_entity_t* e=gEngfuncs.GetEntityByIndex(id);if(!e||!e->model||strcmp(e->model->name,vfdeath::Model)||e->curstate.messagenum!=viewer->curstate.messagenum)continue;
+ for(int i=0;i<activeCorpses.count;){int id=activeCorpses.ids[i];Corpse& c=corpses[id];
+  if(c.until<=now){activeCorpses.Remove(id);continue;}++i;
+  float age=now-c.started;const vfdeath::Profile* profile=vfdeath::ProfileFor(c.effect);if(!profile||age>profile->fxSeconds)continue;cl_entity_t* e=gEngfuncs.GetEntityByIndex(id);if(!e||!e->model||strcmp(e->model->name,vfdeath::Model)||e->curstate.messagenum!=viewer->curstate.messagenum)continue;
   // Effect survives status clearing/respawn because it belongs to this corpse.
   float fall=vfdeath::Electric(c.effect)?fminf(1.f,fmaxf(0.f,(age-.85f)/.83f)):0;Vector center=e->origin-Vector(0.f,0.f,fall*26);float offset[3];
   if(vfmotion::Centre(e->curstate.sequence,e->curstate.frame,offset)){float a=e->angles[1]*.01745329252f;center=e->origin+Vector(cosf(a)*offset[0]-sinf(a)*offset[1],sinf(a)*offset[0]+cosf(a)*offset[1],offset[2]);}

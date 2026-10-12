@@ -2,9 +2,13 @@
 import json,re,subprocess,time
 from pathlib import Path
 from PIL import Image,ImageChops
-ROOT=Path(__file__).resolve().parents[1];ENGINE=ROOT.parent/'runtime/vector-engine';MOD=ENGINE/'vf_visual'
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from native_workspace import engine_path,stage_installed,port
+ROOT=Path(__file__).resolve().parents[1];ENGINE=engine_path(ROOT/'build/visual_engine_test');MOD=ENGINE/'vf_visual'
 
 def run():
+ stage_installed(ENGINE,MOD.name)
  captures=[]
  def capture(name):
   captures.append(name);return f'wait 50\nscreenshot scrshots/{name}.png\nwait 4\n'
@@ -23,7 +27,7 @@ def run():
   captures.append('visual_'+name+'_reload')
  script+='vf_engine_audit\nvf_weapon_audit\nvf_engine_stats\nvf_skins\ncmd vf_body_info\nsave vf_visual_smoke\nwait 80\nload vf_visual_smoke\nwait 220\nvf_skins\nvf_skin_tab 0\n'+capture('visual_restored')+'vf_skins\nwait 5\nquit\n'
  (MOD/'vf_visual_test.cfg').write_text(script,encoding='ascii')
- command=[str(ENGINE/'xash3d.exe'),'-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_visual','-windowed','-width','1280','-height','720','-console','-nointro','-log','visual-test.log','+exec','lab_controls.cfg','+map','vf_range','+exec','vf_visual_test.cfg']
+ command=[str(ENGINE/'xash3d.exe'),'-ip','127.0.0.1','-noip6','-port',str(port()),'-clientport',str(port()),'-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_visual','-windowed','-width','1280','-height','720','-console','-nointro','-log','visual-test.log','+exec','lab_controls.cfg','+map','vf_range','+exec','vf_visual_test.cfg']
  start=time.time();p=subprocess.Popen(command,cwd=ENGINE)
  try:p.wait(timeout=180)
  except subprocess.TimeoutExpired:p.terminate();p.wait(10);raise

@@ -2,9 +2,10 @@
 import json,re,shutil,socket,subprocess,time
 from pathlib import Path
 import voices_test as base
+from native_workspace import engine_path, shared_copy, private_copy
 PROJECT=base.PROJECT;ROOT=base.ROOT
-ENGINE=PROJECT/'runtime/vector-engine-respawn-validation'
-PEER=PROJECT/'runtime/vector-engine-respawn-peer'
+ENGINE=engine_path(PROJECT/'runtime/vector-engine-respawn-validation')
+PEER=engine_path(PROJECT/'runtime/vector-engine-respawn-peer')
 base.ENGINE=ENGINE;base.MOD=ENGINE/'vf_visual'
 PASSWORD='vf_respawn_validation';PORT=27115
 
@@ -45,9 +46,9 @@ def events(log):return re.findall(r'VFVoice play: player=(\d+) actor=(\w+) event
 def run():
  manifest=base.prepare();PEER.mkdir(parents=True,exist_ok=True)
  for p in ENGINE.iterdir():
-  if p.is_file() and p.suffix.lower() in ('.dll','.exe'):shutil.copy2(p,PEER/p.name)
+  if p.is_file() and p.suffix.lower() in ('.dll','.exe'):private_copy(p,PEER/p.name)
  for folder in ['valve','vf_visual','cs_assets','tfc_assets']:
-  if (ENGINE/folder).exists():shutil.copytree(ENGINE/folder,PEER/folder,dirs_exist_ok=True,ignore=shutil.ignore_patterns('scrshots','save','*.log'))
+  if (ENGINE/folder).exists():shutil.copytree(ENGINE/folder,PEER/folder,dirs_exist_ok=True,copy_function=shared_copy,ignore=shutil.ignore_patterns('scrshots','save','*.log'))
  init='wait 180\ndeveloper 1\ngl_vsync 0\nfps_max 100\ncon_notifytime 0\nvf_voice_subtitles 2\ncmd vf_peer_pose\nwait 200\n'
  phase(ENGINE,0,init+'echo RESPAWN_OWNER_READY\n')
  phase(PEER,0,init+'echo RESPAWN_PEER_READY\n')
@@ -66,12 +67,12 @@ def run():
  common=['-rodir',base.STEAM,'-game','vf_visual','-console','-nointro']
  for folder in [ENGINE,PEER]:
   for name in ['respawn-server.log','respawn-peer.log']:(folder/name).unlink(missing_ok=True)
- server=subprocess.Popen([str(ENGINE/'xash.exe'),*common,'-log','respawn-server.log','+ip','127.0.0.1','-port',str(PORT),'+rcon_password',PASSWORD,'+maxplayers','4','+sv_lan','1','+sv_cheats','1','+deathmatch','1','+mp_forcerespawn','0','+developer','1','+map','vf_range'],cwd=ENGINE,creationflags=subprocess.CREATE_NO_WINDOW,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+ server=subprocess.Popen([str(ENGINE/'xash.exe'),'-ip','127.0.0.1','-noip6',*common,'-log','respawn-server.log','+ip','127.0.0.1','-port',str(PORT),'+rcon_password',PASSWORD,'+maxplayers','4','+sv_lan','1','+sv_cheats','1','+deathmatch','1','+mp_forcerespawn','0','+developer','1','+map','vf_range'],cwd=ENGINE,creationflags=subprocess.CREATE_NO_WINDOW,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
  children=[]
  try:
   time.sleep(3)
   for folder,port,name in [(ENGINE,27116,'RESPAWN_OWNER'),(PEER,27117,'RESPAWN_PEER')]:
-   children.append(subprocess.Popen([str(folder/'xash3d.exe'),*common,'-width','1280','-height','720','-nowriteconfig','-log','respawn-peer.log','-clientport',str(port),'+exec','lab_controls.cfg','+developer','1','+gl_vsync','0','+fps_max','100','+name',name,'+connect',f'127.0.0.1:{PORT}','+exec','respawn_phase_0.cfg'],cwd=folder,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL))
+   children.append(subprocess.Popen([str(folder/'xash3d.exe'),'-ip','127.0.0.1','-noip6',*common,'-width','1280','-height','720','-nowriteconfig','-log','respawn-peer.log','-clientport',str(port),'+exec','lab_controls.cfg','+developer','1','+gl_vsync','0','+fps_max','100','+name',name,'+connect',f'127.0.0.1:{PORT}','+exec','respawn_phase_0.cfg'],cwd=folder,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL))
    wait_for(folder,name+'_READY')
   initial=events(read(ENGINE,'respawn-server.log'))
   assert len([e for e in initial if e[2]=='spawn'])==2,initial

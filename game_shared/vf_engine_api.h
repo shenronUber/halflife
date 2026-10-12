@@ -1,7 +1,7 @@
 /* Optional, versioned Vector Fields renderer extension. No GoldSrc ABI changes. */
 #ifndef VF_ENGINE_API_H
 #define VF_ENGINE_API_H
-#define VF_ENGINE_API_VERSION 3
+#define VF_ENGINE_API_VERSION 4
 #define VF_MAX_PARTS 24
 #define VF_MAX_ASSEMBLIES 96
 #define VF_PART_MERGE 0
@@ -17,6 +17,8 @@ typedef struct vf_assembly_s {
  char rig[64];
  int draw_rig,body,skin,count;
  int replace_carried; /* assembly includes the equipped third-person weapon */
+ int headgear_type; /* 0 idle; 1..5 identifies an active left-hand gesture */
+ float headgear_phase; /* normalized authoritative gesture clock */
  vf_part_t parts[VF_MAX_PARTS];
 } vf_assembly_t;
 typedef struct vf_preview_s {

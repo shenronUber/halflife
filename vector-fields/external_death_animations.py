@@ -5,7 +5,7 @@ import base64,hashlib,json,math,struct,warnings
 from pathlib import Path
 import numpy as np
 from scipy.spatial.transform import Rotation,Slerp
-from animation_assets import globals_of
+from animation_assets import globals_of,sequence_frames
 ROOT=Path(__file__).resolve().parent
 ASSETS=ROOT/'assets/animations/death-banks'
 CLIPS=[('vf_q_death','Quaternius - chute','quaternius-standard.gltf','Death01','A_TPose'),
@@ -78,6 +78,9 @@ def retarget(model,spec):
   import death_wounds as wounds
   zones,_=personas.tailored_mesh(json.loads((personas.ASSETS/'personas.json').read_text()));groups,_,_=wounds.segment(zones,model);wounds.align_collar(groups);model.death_mesh=[t for g in groups for t in g]
  mesh=model.death_mesh;vertices=np.array([np.linalg.inv(bind[v['b']])@np.r_[v['p'],1] for _,tri in mesh for v in tri]);bones=np.array([v['b'] for _,tri in mesh for v in tri]);reference_hip=animated[0,hip,:3,3]
+ standing=sequence_frames(model,'look_idle')[0];standing_global=globals_of(standing,model.parents)
+ local[1:,:3,3]=standing[1:,:3,3]
+ heading=None
  for sample,pose in enumerate(animated):
   frame=local.copy();global_rot=[]
   for i,node in enumerate(indices):
@@ -86,6 +89,22 @@ def retarget(model,spec):
    else:r=C@pose[node,:3,:3]@ref[node,:3,:3].T@C.T@bind[i,:3,:3]
    frame[i,:3,:3]=global_rot[parent].T@r if parent>=0 else r;global_rot.append(r)
   frame[0,:3,3]+=C@(pose[hip,:3,3]-reference_hip)*scale
+  # Donor reference axes and the first animated pose need not face the same
+  # way. Align the shoulders to our living rig once, without rotating corpses
+  # at runtime. Blend the short entry from the actual standing pose.
+  g=globals_of(frame,model.parents)
+  if heading is None:
+   donor=g[21,:3,3]-g[14,:3,3];target=standing_global[21,:3,3]-standing_global[14,:3,3]
+   heading=Rotation.from_euler('z',math.atan2(target[1],target[0])-math.atan2(donor[1],donor[0])).as_matrix()
+  frame[0,:3,:3]=heading@frame[0,:3,:3];frame[0,:3,3]=heading@frame[0,:3,3]
+  entry=min(1.,sample*duration/(len(animated)-1)/.2);entry=entry*entry*(3-2*entry)
+  if entry<1:
+   frame[0,:3,3]=standing[0,:3,3]*(1-entry)+frame[0,:3,3]*entry
+   for i in range(len(frame)):
+    frame[i,:3,:3]=Slerp([0,1],Rotation.from_matrix([standing[i,:3,:3],frame[i,:3,:3]]))([entry]).as_matrix()[0]
+  # Remove locomotion carried by the source hips. The torso and limbs still
+  # topple naturally, but the pelvis stays over the fatal-hit position.
+  g=globals_of(frame,model.parents);frame[0,:2,3]+=standing_global[1,:2,3]-g[1,:2,3]
   g=globals_of(frame,model.parents);world=np.einsum('vij,vj->vi',g[bones],vertices)
   # These are grounded collapses. Fit the actual retained GIGN body to the floor,
   # rather than transferring the short KayKit legs' vertical root trajectory.
@@ -111,7 +130,7 @@ def retarget(model,spec):
        rotation=Rotation.from_euler(axis,hi,degrees=True).as_matrix();frame[upper,:3,:3]=g[model.parents[upper],:3,:3].T@rotation@g[upper,:3,:3];break
      else:raise ValueError('Cannot fit settled limb to the ground: '+sequence+' frame '+str(sample)+' bone '+str(upper))
   out.append(frame)
- return np.array(out),dict(id=sequence,label=label,source_file=file,source_clip=clip,reference=reference,frames=len(out),fps=(len(out)-1)/duration,seconds=duration,leg_scale=float(scale),sha256=hashlib.sha256((ASSETS/file).read_bytes()).hexdigest())
+ return np.array(out),dict(id=sequence,label=label,source_file=file,source_clip=clip,reference=reference,frames=len(out),fps=(len(out)-1)/duration,seconds=duration,leg_scale=float(scale),anchored_hips=True,entry_seconds=.2,sha256=hashlib.sha256((ASSETS/file).read_bytes()).hexdigest())
 
 def export(model,header,folder):
  records=[]
@@ -129,8 +148,9 @@ def export(model,header,folder):
 def effect_tracks(model,path):
  """Bake effect centres from the compiled poses, including their root motion."""
  from animation_assets import sequence_frames
- rows=['// Generated from compiled corpse poses by build_deaths.py.', '#ifndef VF_DEATH_TRACKS_H', '#define VF_DEATH_TRACKS_H', 'namespace vfmotion {', 'static const int Sequences[]={18,19,20,21,22,23,24,'+','.join(str(model.sequences.index(n)) for n in ['vf_electro']+[s[0] for s in CLIPS])+'};', 'static const float Centres[][33][3]={']
- for name in model.sequences[18:25]+['vf_electro']+[s[0] for s in CLIPS]:
+ electric=['vf_electro','vf_electro_back','vf_electro_forward','vf_headshot','vf_spin']
+ rows=['// Generated from compiled corpse poses by build_deaths.py.', '#ifndef VF_DEATH_TRACKS_H', '#define VF_DEATH_TRACKS_H', 'namespace vfmotion {', 'static const int Sequences[]={18,19,20,21,22,23,24,'+','.join(str(model.sequences.index(n)) for n in electric+[s[0] for s in CLIPS])+'};', 'static const float Centres[][33][3]={']
+ for name in model.sequences[18:25]+electric+[s[0] for s in CLIPS]:
   poses=sequence_frames(model,name);centres=np.array([(g[11,:3,3]+g[13,:3,3])*.5 for g in (globals_of(p,model.parents) for p in poses)]);rows.append('{ // '+name)
   for t in np.linspace(0,len(poses)-1,33):
    i=min(int(t),len(poses)-2);v=centres[i]*(1-(t-i))+centres[i+1]*(t-i);rows.append('{'+','.join(f'{x:.6f}f' for x in v)+'},')

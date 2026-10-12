@@ -165,11 +165,13 @@ def input_paths(recipe_path=RECIPE):
     from build_personas import donor,ASSETS
     config=json.loads((ASSETS/'personas.json').read_text(encoding='utf-8'))
     paths=[Path(__file__),Path(recipe_path),ROOT/'model_contract.py',ROOT/'data/model_contract.json',
-           ROOT/'animation_assets.py',ROOT/'inspect_animations.py',ROOT/'build_reference_platforms.py',
+           ROOT/'animation_assets.py',ROOT/'traversal_animations.py',ROOT/'traversal_vault.py',ROOT/'traversal_aim.py',ROOT/'inspect_animations.py',ROOT/'build_reference_platforms.py',
            ROOT/'build_personas.py',ASSETS/'personas.json',ROOT/'generated/visual_skins/cs-skins.json',
            Path(donor(config)['path']),FP/'r01_rig.mdl']+build_cache.compiler_inputs()
     paths += [p for p in TP.iterdir() if p.suffix in ('.mdl','.qc','.smd','.bmp')]
-    return paths
+    from external_traversal_animations import inputs as traversal_inputs
+    from traversal_editor import inputs as edit_inputs
+    return paths+traversal_inputs()+edit_inputs("third-person")
 
 
 def build(recipe_path=RECIPE,ensure=False):
@@ -210,6 +212,8 @@ def build(recipe_path=RECIPE,ensure=False):
             frames=a.reload(name,platform);key=platform+'_'+name;smd(a.model,frames,OUT/(key+'.smd'))
             qc+=f'\n$sequence "{name}" {{\n "{key}"\n fps {sequence_info(a.source,name)["fps"]}\n}}\n'
             authored[(name,0)]=frames
+        from traversal_animations import append_tp
+        traversal_qc,traversal_frames=append_tp(a,platform,OUT);qc+=traversal_qc;authored.update(traversal_frames)
         # Muzzle events now use real weapon coordinates instead of old MP5 offsets.
         qc=re.sub(r'^\$attachment .*$', '',qc,flags=re.M)
         for i in range(4):qc+=f'\n$attachment {i} "{SOCKETS[0]}" 0 {36.5*a.scale:.8f} 0\n'

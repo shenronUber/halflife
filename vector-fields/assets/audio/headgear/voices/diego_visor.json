@@ -1,0 +1,24 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Diego Vega / visor",
+  "created_utc": "2026-10-11T21:22:46.323721+00:00",
+  "request_sha256": "eb1167fb28c93e6842ab8c58b42e094451681c6b9329b081c2d4d9327fd2d171",
+  "request": {
+    "text": "[playful] Visor down. Keep up, amigo.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "endpoint": "/v1/text-to-speech/ohfhjPf3ZmNXHgSXn0G0?output_format=mp3_44100_128",
+  "sha256": "94400ed632ec87ed3199be4fdb0edfacde0b64d63fa9b89526fdf8f8f9a3adfb",
+  "bytes": 48527,
+  "text": "[playful] Visor down. Keep up, amigo.",
+  "request_id": "YZ9ubNURPPxj76j3rBbA",
+  "reported_credit_cost": "4",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "voice_name": "Diego Vega",
+  "language": "en"
+}

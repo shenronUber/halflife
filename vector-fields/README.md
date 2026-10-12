@@ -1,6 +1,29 @@
 # Vector Fields — version 0.20.7
 
+La salle **vf_range** réunit les quatre cibles de tir et une aile de parcours : franchissement, suspension, saut vers le rebord opposé, glissade et wall run. **F4** y retourne. **F9** ouvre la grille modulaire **vf_modular**, maintenant intégrée au même jeu, serveur et client. **F5** affiche sa graine ; **F10/F12** changent de vue.
+
+**Jouer - Vector Fields.cmd** et **build.ps1** passent par une publication unique : compilation privée, empreintes des sources et ressources, validations, puis remplacement du build complet avec retour arrière. Une modification pendant les contrôles invalide le candidat. Le lanceur rapide utilise le dernier build publié.
+
+Le [workflow de développement](docs/BUILD-WORKFLOW.md) décrit les branches, les worktrees et la préparation des ressources locales.
+
+Les ajouts du 12 octobre sont réunis dans le lancement habituel : wall run,
+saut depuis une suspension vers un rebord opposé et frappe au canon sur **V**.
+Le [contrôle d’intégration](docs/validation/integration-2026-10-12.json) vérifie
+leur coexistence, les poses de collision, la marche, les statuts et les dégâts.
+Le [spasme du dos au début du rechargement](docs/validation/reload-transition-2026-10-12.json)
+est corrigé : la transition repart de la visée affichée, avec vérification
+image par image des trois montages debout et accroupi.
+
 La 0.20.7 consolide les équipements, animations, effets, voix et morts ajoutés depuis la dernière publication GitHub. Les fragments gardent les finitions indépendantes des gants et bottes ; la salle et les deux lanceurs utilisent des ressources vérifiées. [Notes de version](docs/RELEASE-0.20.7.md) · [Rapport de validation](docs/validation/maintenance-0.20.7.json).
+
+Déplacements : franchissement bas, prise de rebord, suspension, tir à une main à 360°, remontée et glissade courte avec jambes visibles et délai de récupération. Le parcours est intégré à la salle combinée (**F4**) ; **F9** ouvre la grille modulaire. [Commandes et fonctionnement](docs/TRAVERSAL.md).
+
+**V** déclenche une frappe descendante avec l'avant du canon du R1, animée dans
+Blender en première et troisième personne. La main gauche se dégage et reste
+libre pendant que la droite relève l'arme puis l'abat ;
+le serveur valide un unique contact, sans consommer de munitions.
+[Source Blender et fonctionnement](docs/WEAPON-MELEE.md).
+[Validation de la frappe au canon](docs/validation/barrel-strike-2026-10-12.json).
 
 Morts : 16 signatures elementaires et 17 arrachements sonores, superposes au cri. Sang disperse en gouttes rouges avec gravite. Essai : **F4 puis F8** ; ecoute : `Atelier - Sons de mort.cmd`. Voir [les details](docs/DEATH-SOUNDS.md).
 
@@ -34,18 +57,37 @@ Les cinq coupes utilisent des [textures de plaie mesurées](docs/WOUND-TEXTURES.
 Choisir un emplacement, puis un objet de la liste, puis **Équiper**.
 **Annuler** rétablit la configuration précédente.
 
+**Jouer - Vector Fields rapide.cmd** ouvre directement le jeu déjà préparé,
+avec les mêmes réglages et le même écran d’équipement. Il évite la génération,
+la recopie des ressources et les vérifications complètes à chaque partie.
+Après une mise à jour des modèles, sons, cartes ou DLLs, lancer une fois
+**Jouer - Vector Fields.cmd** pour préparer la nouvelle version.
+
 Les collections servent uniquement à filtrer la liste. Il n’y a plus de boutons
 d’ensemble ni de changement global de texture dans le menu de jeu. Chaque
 objet possède sa finition, son nom et son identifiant ; changer de châssis
 conserve les onze autres objets de l’arme. Tous les objets sont accessibles.
 
-Le catalogue de jeu comporte **948 objets** : 854 pièces R1 (61 géométries dans
-14 finitions), 70 pièces de tenue et 24 accessoires provisoires. Les cinq zones
-GIGN ont quatorze collections, dont les nouvelles tenues **Rome / Inventeur**
+Le catalogue de jeu comporte **269 objets** : 130 pièces R1 (72 formes avec
+une ou deux finitions adaptées), 115 pièces de tenue et 24 accessoires provisoires.
+Deux canons et cinq silencieux ont chacun leur atlas Blender propre ; voir
+[les modèles et la sélection des textures](docs/R1-FITTED-FINISHES.md) et
+[les poignées, l’A-47 et les textures médiévales](docs/R1-GRIP-AND-FORGE.md). Les cinq zones
+GIGN ont vingt-trois collections, dont les tenues **Rome / Inventeur**
 et **Dieselpunk**. Épaules, ceinture, bouclier et spécial restent optionnels.
 
+Les [cinq nouveaux costumes](assets/personas/NEW-COSTUMES.md) ajoutent **Red Son**,
+**Sélénite**, **Héros masqué**, **Pilote de rallye** et **Soldat pénitent**, avec
+25 pièces équipables, leurs mains et les textures de déplacement et de mort.
+Les [variations artisanales](assets/personas/ARTISAN-SETS.md) ajoutent aussi
+**Opérateur de jade** et **Opérateur d’ambre**, dix pièces mêlant textiles
+techniques, inserts nobles et biofluides discrets, inspirées par
+le principe de l'Opérateur de porcelaine.
+**Savage Butcher** et **Miami Vice** ajoutent dix autres pièces : tenue de boucher
+militarisée, puis costume bleu et chemise rose sous un gilet pare-balles, avec aviateurs.
+
 Les mains en première personne suivent les **gants équipés**, et les manches
-la **veste équipée**. Les quatorze collections peuvent être mélangées ; le
+la **veste équipée**. Les vingt-trois collections peuvent être mélangées ; le
 changement prend effet en validant l’objet, sans modifier la finition de l’arme.
 Le dépliage anatomique conserve les détails disponibles dans les textures
 actuelles ; la plaque carrée est supprimée et les doigts arrondis sans changer le
@@ -55,7 +97,7 @@ poignet assoupli.
 Pour contrôler les modèles compilés et leurs UV hors du jeu :
 `python vector-fields/inspect_first_person.py`, puis ouvrir
 `vector-fields/build/first-person-inspector.html` (rotation, zoom, paume/dos,
-maillage et choix des quatorze tenues).
+maillage et choix des vingt-trois familles).
 
 **Atelier - Animations.cmd** prépare et ouvre l’atelier animé hors du jeu.
 La vue initiale présente notre personnage GIGN tenant les douze pièces réelles
@@ -87,7 +129,7 @@ et des prises adaptées à chaque alimentation.
 L’affichage des adversaires réutilise leur équipement et leurs finitions réseau,
 avec une extension native v3 (24 pièces, échelle des sockets, suppression de
 l’arme historique remplacée). Cette intégration est vérifiée dans un runtime
-d’essai séparé sous `build/animation-native`. Le moteur installé dispose aussi
+d’essai temporaire sous `build/native-sessions`. Le moteur installé dispose aussi
 de cette extension v3. Recompiler le moteur et le client ensemble lors
 d’un changement d’interface. Le lanceur refuse un mélange v2/v3 avant de copier des
 fichiers, pour éviter un affichage de secours Half-Life inattendu.
@@ -101,12 +143,18 @@ il rétablissait l’index Gordon à chaque image, malgré le nom du modèle éq
 Pour les porteurs R-01, la rotation du torse suit désormais la verticale plutôt
 que les axes inclinés de la colonne accroupie ; les appuis natifs sont conservés.
 `tests/third_person_native_test.py` vérifie ces états sur deux clients et prend
-des captures du geste reçu. `--verify` relit une session existante sans relancer
-le jeu. L’intégration reste dans `build/animation-native`.
-Les dimensions anatomiques des zones de dégâts sont héritées du porteur GIGN ;
-leurs positions suivent maintenant le porteur serveur. Le combat et ces zones
-restent à valider. Le donneur
-comporte notamment une ancienne zone de bouclier (groupe 8), à adapter à notre équipement.
+des captures du geste reçu. Les rapports et captures restent dans
+`build/native-evidence` ; le runtime d’essai est supprimé à la fin du processus.
+Une nouvelle vérification native relance un environnement depuis les sources actuelles.
+Les tests et aperçus isolés démarrent avec `-ip 127.0.0.1 -noip6` : les sockets
+IPv4 restent sur ce PC et aucune écoute IPv6 n’est ouverte. Les échanges entre
+serveur et clients locaux sont conservés, sans autorisation de pare-feu à créer
+pour chaque nouveau dossier temporaire. Ces essais ne peuvent pas héberger de
+joueurs sur le réseau local ; le lancement normal du jeu conserve ses réglages.
+Les 20 zones anatomiques suivent une pose commune au rendu et aux collisions
+serveur, y compris les corrections du torse, les prises, la glissade et le geste
+du casque. L’ancienne zone invisible de bouclier est retirée. Les volumes restent
+des boîtes anatomiques ; les collisions ne suivent pas chaque triangle du maillage.
 Le geste FP est synchronisé sur les 1,5 s de recharge gameplay.
 Les contrôles de prise et le test natif ciblé sont décrits dans
 [la note sur les poignées avant](docs/ANIMATIONS-FOREGRIP.md).
@@ -983,13 +1031,44 @@ Voir [les commandes, les assets et les tests](WEAPON_FX.md).
 
 ## Validation et maintenance
 
+Six designs de headgear sont disponibles en essai local dans l'atelier :
+`python vector-fields/play_headgear.py --helmet riot`, `--helmet riot-up`,
+`--helmet spartan`, `--helmet nvg-red`, `--helmet nvg-green`,
+`--helmet ballistic` ou `--helmet gas-mask`
+depuis la racine du projet. Ils suivent l'os de la tête sur les cagoules
+existantes. L'anti-émeute, les deux optiques, le casque blindé et le masque à gaz
+acceptent le suffixe `-up` pour leur position relevée/rangée.
+Voir [le fonctionnement, les limites et les captures](docs/HEADGEAR.md).
+
 `powershell -ExecutionPolicy Bypass -File vector-fields/build.ps1` compile les DLL,
 les tests C++ et valide les suites unitaires et les assets. Après déploiement avec
 `python vector-fields/play.py --visual-lab --deploy-only`, exécuter
 `python vector-fields/validate.py --suite native`, puis `--suite multiplayer`.
-`--suite all` enchaîne les quatre suites ; `--list` donne la liste maintenue.
+`--suite policy` recompile et exécute les tests C++ depuis les sources actuelles.
+`--suite all` enchaîne les cinq suites ; `--list` donne la liste maintenue.
 
 Les traits de modèles sont dans `data/model_contract.json`. Les rigs et les
 pièces d’arme disposent de caches séparés qui vérifient leurs dépendances et
 sorties. Voir [les contrats](docs/ARCHITECTURE.md) et
 [la version 0.20.7](docs/RELEASE-0.20.7.md).
+
+Les tests isolés d’animation, d’effets et de voix utilisent désormais
+`native_workspace.py`. Chaque processus possède une session temporaire distincte.
+Les ressources lourdes partagent un cache immuable par empreinte dans
+`build/native-resources` ; les DLL, configurations et fichiers modifiés par un test
+restent privés. Une recompilation du runtime principal ne modifie donc pas une
+session déjà lancée. À la fin, les logs et captures sont archivés dans
+`build/native-evidence`, avec un seul résultat récent par cas, puis le moteur
+d’essai est supprimé. Les ateliers et leurs sources restent conservés.
+
+`powershell -ExecutionPolicy Bypass -File vector-fields/cleanup-test-runtimes.ps1`
+affiche le diagnostic des anciens runtimes connus. Avec `-Apply`, cette commande
+archive leurs captures, vidéos, sauvegardes et sources de travail, puis les
+supprime. Elle refuse les chemins hors projet, les liens de répertoire, les
+fichiers suivis par Git et tout nettoyage pendant qu’un moteur de jeu tourne.
+Le bilan est écrit dans `build/runtime-cleanup.json`. Les ateliers, `generated`,
+le runtime principal, les bibliothèques sources et Git sont exclus du nettoyage.
+Les sessions abandonnées après arrêt de leur processus sont également récupérées.
+`python vector-fields/project_storage.py` mesure le dossier en distinguant sa
+taille logique et celle des fichiers distincts, pour compter les liens physiques
+une seule fois.

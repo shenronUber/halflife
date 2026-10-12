@@ -33,5 +33,95 @@ def run():
   assert all((engine/n).read_bytes()==(update/n).read_bytes() for n in NAMES)
   check_native_interface(engine,client)
   assert not prepare_native_renderer_update(engine,client,update)
- print('PASS renderer update: hash validation, arm capability gate, no replacement with locked DLL, verified classic install, repeat no-op')
+  client.write_bytes(b'v3 connected VFStatus arms: renderer=1 VFTraversal render: world palms=2')
+  try:check_native_interface(engine,client)
+  except RuntimeError:pass
+  else:raise AssertionError('new grip client accepted the old traversal renderer')
+  meta['traversal_renderer_version']=2
+  (update/'vector-engine-build.json').write_text(json.dumps(meta))
+  before=(engine/'vector-engine-build.json').read_bytes()
+  try:prepare_native_renderer_update(engine,client,update)
+  except RuntimeError as error:assert 'traversal grip validation' in str(error)
+  else:raise AssertionError('untested traversal grip renderer accepted')
+  assert (engine/'vector-engine-build.json').read_bytes()==before
+  meta['traversal_grip_verified']=True
+  (update/'vector-engine-build.json').write_text(json.dumps(meta))
+  assert prepare_native_renderer_update(engine,client,update)
+  check_native_interface(engine,client)
+  assert not prepare_native_renderer_update(engine,client,update)
+  client.write_bytes(b'v4 connected VFStatus arms: renderer=1 VFTraversal render: world palms=2')
+  meta['extension_version']=4
+  meta['headgear_verified']=True
+  (update/'vector-engine-build.json').write_text(json.dumps(meta))
+  before=(engine/'vector-engine-build.json').read_bytes()
+  try:prepare_native_renderer_update(engine,client,update)
+  except RuntimeError as error:assert 'articulated headgear' in str(error)
+  else:raise AssertionError('renderer without headgear capability accepted')
+  assert (engine/'vector-engine-build.json').read_bytes()==before
+  meta['headgear_renderer_version']=1
+  meta.pop('headgear_verified')
+  (update/'vector-engine-build.json').write_text(json.dumps(meta))
+  try:prepare_native_renderer_update(engine,client,update)
+  except RuntimeError as error:assert 'headgear animation validation' in str(error)
+  else:raise AssertionError('untested headgear renderer accepted')
+  assert (engine/'vector-engine-build.json').read_bytes()==before
+  meta['headgear_verified']=True
+  (update/'vector-engine-build.json').write_text(json.dumps(meta))
+  assert prepare_native_renderer_update(engine,client,update)
+  check_native_interface(engine,client)
+  assert not prepare_native_renderer_update(engine,client,update)
+  assert prepare_native_renderer_update(engine,client,update,force=True)
+  check_native_interface(engine,client)
+  client.write_bytes(client.read_bytes()+b' VFBody render: world body=1 VFBody motion: world slide=1')
+  meta['body_renderer_version']=1;meta['body_verified']=True
+  (update/'vector-engine-build.json').write_text(json.dumps(meta))
+  try:check_native_interface(update,client)
+  except RuntimeError:pass
+  else:raise AssertionError('world-slide client accepted old body renderer')
+  try:prepare_native_renderer_update(engine,client,update)
+  except RuntimeError as error:assert 'own-body validation' in str(error)
+  else:raise AssertionError('old body renderer installed for world-slide client')
+  meta['body_renderer_version']=2;meta['body_verified']=False
+  (update/'vector-engine-build.json').write_text(json.dumps(meta))
+  try:prepare_native_renderer_update(engine,client,update)
+  except RuntimeError as error:assert 'own-body validation' in str(error)
+  else:raise AssertionError('untested world-slide renderer installed')
+  meta['body_verified']=True
+  (update/'vector-engine-build.json').write_text(json.dumps(meta))
+  assert prepare_native_renderer_update(engine,client,update)
+  check_native_interface(engine,client)
+  assert not prepare_native_renderer_update(engine,client,update)
+  client.write_bytes(client.read_bytes()+b' VFPlayerPose collision: shared=1')
+  before=(engine/'vector-engine-build.json').read_bytes()
+  try:check_native_interface(engine,client)
+  except RuntimeError as error:assert 'shared player-pose' in str(error)
+  else:raise AssertionError('shared-pose client accepted legacy collision engine')
+  meta['player_pose_version']=1
+  (update/'vector-engine-build.json').write_text(json.dumps(meta))
+  try:prepare_native_renderer_update(engine,client,update)
+  except RuntimeError as error:assert 'collision/render validation' in str(error)
+  else:raise AssertionError('untested shared collision engine installed')
+  assert (engine/'vector-engine-build.json').read_bytes()==before
+  meta['player_pose_verified']=True
+  (update/'vector-engine-build.json').write_text(json.dumps(meta))
+  assert prepare_native_renderer_update(engine,client,update)
+  check_native_interface(engine,client)
+  assert not prepare_native_renderer_update(engine,client,update)
+  client.write_bytes(client.read_bytes()+b' VFMelee pose: shared=1')
+  before=(engine/'vector-engine-build.json').read_bytes()
+  try:check_native_interface(engine,client)
+  except RuntimeError as error:assert 'shared melee-pose' in str(error)
+  else:raise AssertionError('melee snapshot client accepted legacy body filters')
+  meta['melee_pose_version']=1
+  (update/'vector-engine-build.json').write_text(json.dumps(meta))
+  try:prepare_native_renderer_update(engine,client,update)
+  except RuntimeError as error:assert 'melee-pose engine' in str(error)
+  else:raise AssertionError('untested melee-pose engine installed')
+  assert (engine/'vector-engine-build.json').read_bytes()==before
+  meta['melee_pose_verified']=True
+  (update/'vector-engine-build.json').write_text(json.dumps(meta))
+  assert prepare_native_renderer_update(engine,client,update)
+  check_native_interface(engine,client)
+  assert not prepare_native_renderer_update(engine,client,update)
+ print('PASS renderer update: hash validation, shared collision/melee/body capability gates, locked DLL refusal, verified install, repeat no-op')
 if __name__=='__main__':run()

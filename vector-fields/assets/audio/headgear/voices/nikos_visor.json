@@ -1,0 +1,24 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Nikos Petros / visor",
+  "created_utc": "2026-10-11T21:22:54.348711+00:00",
+  "request_sha256": "7fc7711a5b3edc2aa218b1ef88aa3819684205322f36becd59a3463559dcb927",
+  "request": {
+    "text": "[proud] Visor down. Even legends need protection.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "endpoint": "/v1/text-to-speech/uAGRkdJlXqIKwzx0HORp?output_format=mp3_44100_128",
+  "sha256": "2bc64fe67267cab6017e6cdd224b3557484a8c2def5b04cf174be43b2cd40dc0",
+  "bytes": 62319,
+  "text": "[proud] Visor down. Even legends need protection.",
+  "request_id": "XohmK9tRjS7eLaWkUzuX",
+  "reported_credit_cost": "5",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "voice_name": "Nikos Petros",
+  "language": "en"
+}

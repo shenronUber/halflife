@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Neutre / head",
+  "created_utc": "2026-10-10T00:47:38.727404+00:00",
+  "request_sha256": "30a5e3bacc51d6629b1c5d846e5e516c309229fef24cd86bb4b457a9c1bd9f11",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. Head exploding like a ripe pumpkin: deep wet pop, crunchy rupture, broad pulp splatter and dripping.  Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "56c364d437c7b0e4f699ffcb453c06e539ffeb6451b2cea8a41949b2ab38c0c5",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. Head exploding like a ripe pumpkin: deep wet pop, crunchy rupture, broad pulp splatter and dripping.  Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

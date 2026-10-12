@@ -1,0 +1,24 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Viktor Volkov / goggles",
+  "created_utc": "2026-10-11T21:22:50.332203+00:00",
+  "request_sha256": "441fdcb7fe556f38ad737407cb581c92812309175d206906f6729b8bdc72a24c",
+  "request": {
+    "text": "[deadpan] Goggles on. Darkness is unemployed.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "endpoint": "/v1/text-to-speech/MIGoD5dgOR9odYK1ejQC?output_format=mp3_44100_128",
+  "sha256": "7af64b657002b144880ba352338d7b8fecc65bd605e4429652569f059ef6f144",
+  "bytes": 58558,
+  "text": "[deadpan] Goggles on. Darkness is unemployed.",
+  "request_id": "4Lhu1AATM4F8qCAARkrD",
+  "reported_credit_cost": "5",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "voice_name": "Viktor Volkov",
+  "language": "en"
+}

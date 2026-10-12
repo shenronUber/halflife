@@ -60,7 +60,8 @@ def export_deaths(exporter, scenes, make_clip):
     used = {c['source'] for c in clips.values()}
     for name in model.sequences[18:25]:
         if name not in used:
-            clips[name] = make_clip(model, name, historical.get(name, 'Historique · ' + name))
+            key = 'legacy_'+name if name in clips else name
+            clips[key] = make_clip(model, name, historical.get(name, 'Historique · ' + name))
     # Match the native corpse emitter's 33-point chest/head centre tracks.
     for value in clips.values():
         poses = sequence_frames(model, value['source'])
@@ -98,7 +99,7 @@ def export_deaths(exporter, scenes, make_clip):
     causes = [dict(id=c['id'], name=c['name'], kind=c['kind']) for c in script['causes']]
     causes += [dict(id=e['id'], name=e['name'] + ' · cri standard', kind=2) for e in effects if e['kind'] == 2]
     sprites = ['bubble', 'hotglow', 'steam1', 'fire', 'white']
-    result = dict(emissions=emissions, actors=actors, causes=causes, cries=cries, profiles=atlas['profiles'],
+    result = dict(emissions=emissions, actors=actors, causes=causes, cries=cries, profiles=atlas['profiles'], standard_motions=atlas['standard_motions'], head_motions=atlas['head_motions'],
                   effects={e['id']: dict(id=e['id'], layers=e['layers'], visual=e['visual']) for e in effects},
                   sprites=[sprite_frames(ROOT / 'generated/effects' / (s + '.spr')) for s in sprites])
     record = dict(model=str(model.path), model_sha256=hashlib.sha256(model.data).hexdigest(),

@@ -27,7 +27,7 @@ def run():
  s+='vf_reference\nwait 25\nvf_item r01_underbarrel_a__living-jungle\nvf_commit\nwait 25\n'+close()+'echo STYLED_FOREGRIP_TOP\nvf_engine_stats\n'+snap('styled_top')+'quit\n'
  (mod/'foregrip_test.cfg').write_text(s,encoding='ascii')
  started=time.time()
- command=[str(engine/'xash3d.exe'),'-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_animation','-windowed','-width','1920','-height','1080','-console','-nointro','-nowriteconfig','-log','foregrip-test.log','+exec','lab_controls.cfg','+developer','1','+sv_cheats','1','+map','vf_range','+exec','foregrip_test.cfg']
+ command=[str(engine/'xash3d.exe'),'-ip','127.0.0.1','-noip6','-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_animation','-windowed','-width','1920','-height','1080','-console','-nointro','-nowriteconfig','-log','foregrip-test.log','+exec','lab_controls.cfg','+developer','1','+sv_cheats','1','+map','vf_range','+exec','foregrip_test.cfg']
  child=subprocess.Popen(command,cwd=engine)
  try:child.wait(timeout=55);assert child.returncode==0
  finally:

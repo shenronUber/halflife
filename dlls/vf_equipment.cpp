@@ -2,8 +2,10 @@
 #include "util.h"
 #include "cbase.h"
 #include "player.h"
+#include "weapons.h"
 #include "vf_equipment.h"
 #include "vf_skins.h"
+#include "vf_voice.h"
 #include "../game_shared/vf_loadout.h"
 #include "../game_shared/vf_appearance.h"
 #include "../game_shared/vf_legacy_save.h"
@@ -87,7 +89,9 @@ const vf::Item* VF_EquippedItem(CBasePlayer* p,int slot) {
     int index=p->m_vfItems[slot];
     return index>0&&index<catalog.count&&catalog.items[index].slot==slot?&catalog.items[index]:NULL;
 }
+#include "vf_headgear.inc"
 bool VF_EquipmentCommand(CBasePlayer* p,const char* command) {
+    if(VF_HeadgearCommand(p,command))return true;
     if(!strcmp(command,"vf_fx_camera")){
         if(!VF_DeveloperAllowed()||strcmp(STRING(gpGlobals->mapname),"vf_fx_range")||CMD_ARGC()!=2)return true;
         const char* names[]={"concrete","metal","wood","flesh","sky","brush","side"};
@@ -146,6 +150,7 @@ bool VF_EquipmentCommand(CBasePlayer* p,const char* command) {
     vf::Result result=experimental?vf::EvaluateExperiment(catalog,candidate,totals):vf::EvaluateGameplay(catalog,candidate,totals);
     if(result==vf::Accepted&&!vf::BoundWeaponStyles(catalog,weaponStyles,candidate,styles))result=vf::BadItem;
     if(result==vf::Accepted){
+        if(candidate[vf::HelmetSlot]!=p->m_vfItems[vf::HelmetSlot]){p->m_vfHeadgearStart=0;p->m_vfHeadgearRaised=0;}
         memcpy(p->m_vfItems,candidate,sizeof(candidate));memcpy(p->m_vfWeaponStyles,styles,sizeof(styles));
         p->m_vfDeveloper=experimental?1:0;StoreKeys(p);
     }

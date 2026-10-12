@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Sonic / dismemberment",
+  "created_utc": "2026-10-10T00:47:57.356310+00:00",
+  "request_sha256": "a51a51ee171598fbd4f125a414411808362f9ca06031a3358e64593015622371",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. A taut dry physical rupture and a sharp pressure crack, followed by a sustained pitched descending resonant ring with three weakening pulses. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "8534de784fafb0c7b4e9f1e090755c126a6a2293dfa593efa471c2ecd5d86450",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. A taut dry physical rupture and a sharp pressure crack, followed by a sustained pitched descending resonant ring with three weakening pulses. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

@@ -22,6 +22,11 @@
 #include "pm_shared.h"
 #include "pm_movevars.h"
 #include "pm_debug.h"
+#include "../game_shared/vf_traversal.h"
+#ifndef SND_STOP
+// Movement is also compiled without the server-only util.h sound flags.
+#define SND_STOP (1<<5)
+#endif
 #include <stdio.h>  // NULL
 #include <math.h>   // sqrt
 #include <string.h> // strcpy
@@ -508,6 +513,10 @@ void PM_UpdateStepSound( void )
 	float flduck;
 	int	fLadder;
 	int step;
+
+	// Continuous sliding friction replaces footsteps on the body channel.
+	if ( VF_TR_Phase(pmove->iuser4) == VF_TR_SLIDE )
+		return;
 
 	if ( pmove->flTimeStepSound > 0 )
 		return;
@@ -1248,6 +1257,7 @@ void PM_Friction (void)
 		//friction = pmove->movevars->friction;      
 
 		friction *= pmove->friction;  // player friction?
+		if (VF_TR_Phase(pmove->iuser4)==VF_TR_SLIDE) friction=VF_TR_SLIDE_FRICTION;
 
 		// Bleed off some speed, but if we have less than the bleed
 		//  threshhold, bleed the theshold amount.
@@ -2952,6 +2962,8 @@ Numtouch and touchindex[] will be set if any of the physents
 were contacted during the move.
 =============
 */
+#include "pm_traversal.inc"
+
 void PM_PlayerMove ( qboolean server )
 {
 	physent_t *pLadder = NULL;
@@ -3020,6 +3032,8 @@ void PM_PlayerMove ( qboolean server )
 			g_onladder = 1;
 		}
 	}
+
+	if (PM_VFTraversal(pLadder != NULL)) return;
 
 	PM_UpdateStepSound();
 
@@ -3326,11 +3340,22 @@ and client.  This will ensure that prediction behaves appropriately.
 
 void PM_Move ( struct playermove_s *ppmove, int server )
 {
+	int wasSliding, isSliding;
 	assert( pm_shared_initialized );
 
 	pmove = ppmove;
+	wasSliding = VF_TR_Phase(pmove->iuser4) == VF_TR_SLIDE;
 	
 	PM_PlayerMove( ( server != 0 ) ? true : false );
+
+	// Predict once locally; the server's PM sound callback sends the same
+	// positional cue to other players. Replayed commands must stay silent.
+	isSliding = VF_TR_Phase(pmove->iuser4) == VF_TR_SLIDE &&
+		!pmove->dead && !pmove->spectator && pmove->iuser1 == 0 &&
+		pmove->movetype == MOVETYPE_WALK;
+	if ( pmove->runfuncs && wasSliding != isSliding )
+		pmove->PM_PlaySound(CHAN_BODY, VF_TR_SLIDE_SOUND, .65f, ATTN_NORM,
+			isSliding ? 0 : SND_STOP, PITCH_NORM);
 
 	if ( pmove->onground != -1 )
 	{

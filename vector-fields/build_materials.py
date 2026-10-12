@@ -26,9 +26,9 @@ def build():
  # Follow the real equipment key order, rather than duplicating numeric indices.
  shared=(ROOT.parent/'game_shared/vf_loadout.cpp').read_text(encoding='utf-8-sig')
  slots=re.findall(r'"([^"]+)"',re.search(r'SlotKeys\[SlotCount\]=\{([^}]+)',shared)[1])
- assert len(slots)==21 and set(c['slot_profiles'])==set(slots) and all(v in pids for v in c['slot_profiles'].values())
+ assert set(c['slot_profiles'])==set(slots) and all(v in pids for v in c['slot_profiles'].values())
  lines+=['};','enum EquipmentSlot {'+','.join('Slot_'+k+'='+str(i)for i,k in enumerate(slots))+'};']
- lines+=['static const int slotProfiles[21]={'+','.join('Profile_'+c['slot_profiles'][k] for k in slots)+'};','struct ItemOverride {const char* key;int profile;};','static const ItemOverride itemOverrides[]={']
+ lines+=['enum {EquipmentSlotCount='+str(len(slots))+'};','static const int slotProfiles[EquipmentSlotCount]={'+','.join('Profile_'+c['slot_profiles'][k] for k in slots)+'};','struct ItemOverride {const char* key;int profile;};','static const ItemOverride itemOverrides[]={']
  for r in c['item_overrides']:
   assert r['profile']in pids and re.fullmatch('[a-z][a-z0-9_-]{0,79}',r['key']);lines.append('{"'+r['key']+'",Profile_'+r['profile']+'},')
  lines+=['{"",Profile_unknown}};','inline int TextureMaterial(char type){switch(type){']

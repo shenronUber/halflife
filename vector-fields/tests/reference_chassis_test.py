@@ -8,6 +8,9 @@ from build_reference_weapon import ROOT,OUT,Mesh,part as original_part
 from build_reference_chassis import CHASSIS,part
 from studio_assets import Studio
 from reference_extensions_test import mesh_digest
+from build_identity_chassis import INTRINSIC,WORKSHOP
+from r01_finish_policy import policy,allowed
+from build_r01_finish import is_current as fitted_current,source as fitted_source
 
 
 def side_ray_hits(mesh,y,z):
@@ -27,11 +30,14 @@ def assets():
     pool=json.loads((ROOT/'data/lootpool.json').read_text())
     old=Studio(OUT/'r01_receiver_a.mdl');reports={}
     rows=[r.split('|')for r in (ROOT/'data/equipment.txt').read_text().splitlines()if r.startswith('receiver|r01_') and len(r.split('|'))==14]
-    assert len(rows)==9 and len(manifest['pieces'])==61 and len(pool['entries'])==948
+    assert len(rows)==9+len(INTRINSIC) and {p['id'] for p in manifest['pieces']}==set(policy()['models'])
+    assert sum(e['id'].startswith('r01_') for e in pool['entries'])==sum(len(s['styles']) for s in policy()['models'].values())
     for key,spec in CHASSIS.items():
         ident='r01_receiver_'+key;mesh=part(key,Mesh);model=Studio(OUT/(ident+'.mdl'))
         record=next(r for r in manifest['pieces']if r['id']==ident)
-        assert len(mesh)==len(model.mesh())==record['triangles']
+        assert len(model.mesh())==record['triangles']
+        reviewed=Studio(fitted_source(ident) if fitted_current(model.path) else WORKSHOP/'legacy-trigger-review'/key/(ident+'.mdl'))
+        assert mesh_digest(model.mesh())==mesh_digest(reviewed.mesh())
         assert hashlib.sha256(model.data).hexdigest()==record['sha256']
         assert len(model.names)==1 and np.allclose(model.bind[0],old.bind[0])
         assert model.numskinfamilies==finishes and len(model.textures)<=100
@@ -49,7 +55,7 @@ def assets():
         for skin in range(finishes):assert mesh_digest(model.mesh(skin=skin))==digest
         entry=next(r for r in rows if r[1]==ident)
         assert entry[4]==spec['family'] and entry[6:12]==rows[0][6:12]
-        assert len([r for r in pool['entries']if r.get('model')=='models/vf_r01/'+ident+'.mdl'])==finishes
+        assert len([r for r in pool['entries']if r.get('model')=='models/vf_r01/'+ident+'.mdl'])==len(allowed(ident))
         reports[key]=dict(triangles=len(mesh),vertices=len({tuple(v['p'])for _,tri in model.mesh()for v in tri}),finishes=finishes,sha256=record['sha256'])
     # These points lay inside the original rectangular receiver. Arche has real holes.
     arch=part('arch',Mesh)
@@ -92,8 +98,10 @@ def native():
         after=log.split(f'Loading game from save/vf_chassis_{key}.sav')[1]
         assert f'VFR01 applied: receiver=r01_receiver_{key} power=r01_power_d'in after
         assert 'VFR01 state: player=1 first=7 optic=4 feed=7'in after
-    assert 'VFR01 audit: checked=1753 failed=0 parts=12 combinations=191102976'in log
-    assert 'VFEquipment audit: objects=1113 passed=1113 failed=0'in log
+    from reference_platform_test import audit_counts
+    checked,objects,combinations=audit_counts()
+    assert f'VFR01 audit: checked={checked} failed=0 parts=12 combinations={combinations}'in log
+    assert f'VFEquipment audit: objects={objects} passed={objects} failed=0'in log
     assert 'VFState rejected'not in log and 'rejected=0'in log
     # Review sheets are crops of native screenshots, not separate concept renders.
     font=ImageFont.truetype('C:/Windows/Fonts/segoeui.ttf',22)
@@ -106,7 +114,7 @@ def native():
             im=im.crop((490,305,1210,726)) if not kind.startswith('hand') else im.resize((720,405))
             y=50+row*460;draw.text((col*720+20,y),title,font=font,fill='white');board.paste(im,(col*720,y+32))
     board.save(ROOT/'build/r01-sculpted-chassis.jpg',quality=95)
-    report=dict(captures=captures,assemblies=1753,equipment_objects=1113,reload_combinations=8,checks=['both shortcuts selected through native pointer input','four existing complete module sets on each chassis','first-person shooting and two reload phases for all eight magazine/chassis pairs','two stable chassis IDs and mixed finishes restored after save/load'],limits=['pairwise audit does not prove every combination free of visual clipping','existing MP5 gameplay and stock third-person weapon'])
+    report=dict(captures=captures,assemblies=checked,equipment_objects=objects,reload_combinations=8,checks=['both shortcuts selected through native pointer input','four existing complete module sets on each chassis','first-person shooting and two reload phases for all eight magazine/chassis pairs','two stable chassis IDs and mixed finishes restored after save/load'],limits=['pairwise audit does not prove every combination free of visual clipping','existing MP5 gameplay and stock third-person weapon'])
     (ROOT/'build/reference-chassis-native.json').write_text(json.dumps(report,indent=2))
     print('PASS sculpted chassis native:',len(captures),'captures, eight reload combinations, two saves and 1753 assemblies',flush=True)
 

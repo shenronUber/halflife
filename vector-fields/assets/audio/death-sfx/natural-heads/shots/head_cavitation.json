@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Cavitation / head",
+  "created_utc": "2026-10-10T01:16:19.131774+00:00",
+  "request_sha256": "b6685621d61e78ece6b7bf19da7a2d21f1fde19303acce9a4ce9d32349e558eb",
+  "request": {
+    "text": "2-second dry close game SFX. One head bursts like a ripe pumpkin: a sharp wet hollow pop, crunchy shell rupture, dense pulp splatter and a few falling blood drops. A hollow suction gulp, liquid pressure pop and acidic spray. Natural quick decay. No voice, scream, music, weapon shot, ambience or reverb.",
+    "duration_seconds": 2.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "775811953c050234d939d852a87eb3aa1af37d648ffa8075a0ea107b9f325ba1",
+  "bytes": 33062,
+  "text": "2-second dry close game SFX. One head bursts like a ripe pumpkin: a sharp wet hollow pop, crunchy shell rupture, dense pulp splatter and a few falling blood drops. A hollow suction gulp, liquid pressure pop and acidic spray. Natural quick decay. No voice, scream, music, weapon shot, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "20"
+}

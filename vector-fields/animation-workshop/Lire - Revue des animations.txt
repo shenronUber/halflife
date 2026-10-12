@@ -1,0 +1,94 @@
+Atelier Blender — revue des déplacements
+
+Depuis G:\Half life Project :
+  Revoir les mains - Vector Fields.cmd
+  Revoir le corps - Vector Fields.cmd
+
+Les projets modifiables sont Mains-R1-revue-complete.blend et
+Corps-R1-revue-complete.blend, dans animation-workshop\traversal\blender.
+Les projets d'origine et les versions précédentes sont conservés.
+
+Dans Blender, ouvrir le panneau latéral avec N, onglet Vector Fields.
+Choisir Geste et Skin. Visage, Profil et Corps donnent les vues de contrôle.
+Le projet Mains sert aux mains en première personne ; Corps sert aux poses
+extérieures, au dos, à la tête et aux jambes. Les jambes de glissade visibles
+en première personne sont dérivées de la géométrie du personnage équipé.
+
+Main_G / Main_D déplacent les poignets ; Coude_G / Coude_D orientent les
+coudes. Les commandes des doigts règlent les phalanges. Pour le corps,
+tourner les commandes de la colonne et de la tête en mode Pose. Pendant
+la suspension, garder la forme du bassin et des jambes contre le mur.
+En visée à gauche, la racine recule légèrement et remonte de trois unités
+au maximum pour tendre le bras d'appui ; les articulations des jambes
+gardent leur posture. La visée à droite conserve la pose précédente.
+Enregistrer la pose sélectionnée insère les clés de la commande sélectionnée.
+Exporter ce geste pour le jeu écrit la piste SMD dans le dossier de retouches.
+Enregistrer aussi le fichier .blend pour garder les commandes et les clés.
+
+Pour vérifier une suspension : dos des mains orienté vers le visage,
+doigts par-dessus le rebord, pouces vers l'intérieur. Le repère solide
+correspond au rebord et suit le changement de hauteur du corps. Pendant le tir, l'origine
+du personnage monte de 22 unités : le rebord est donc 22 unités plus bas
+dans les coordonnées du corps. La racine compense cette montée : bassin,
+genoux et pieds restent à leur place, hormis le petit recul et la remontée
+volontaires en visée gauche. Ne pas relever la main d'appui avec
+le torse. La rotation du torse et de la tête est limitée ; pour un tir
+derrière le personnage, l'arme passe par-dessus l'épaule.
+Face au mur, le canon reste vertical et le tir est bloqué. Jusqu'à 45°
+de chaque côté, la garde est complète ; entre 45° et 75°, le bras se
+déplie progressivement. Le tir est autorisé à partir de 75°.
+À droite, le poignet reste à hauteur d'épaule et le bras atteint 94 %
+de sa portée anatomique, même quand la caméra regarde en haut ou en bas.
+Vers la gauche, le bras gauche se tend, le torse s'incline en arrière et
+le poignet droit passe au-dessus de l'épaule gauche. Le bras droit sort
+devant le buste avec un coude plié à environ 83°, puis l'avant-bras revient
+vers la gauche : le poignet ne tire plus un bras droit à travers le torse.
+Le coude gauche
+descend pour laisser passer le bras droit ; la main gauche conserve sa
+prise sur le rebord. Le recul s'atténue progressivement vers l'arrière ;
+le trajet du bras droit se raccorde progressivement à la visée de l'autre côté.
+
+Pour la glissade : bassin bas, torse légèrement en arrière, jambe gauche
+devant avec la pointe de botte vers le ciel, jambe droite repliée sous la fesse. Le fichier de corps contient les transitions
+d'entrée et de sortie ; les poses ordinaires de R1 sont conservées aux raccords.
+
+Retouche montée et regard (11 octobre) : la montée subjective montre les deux
+mains dans l'axe du rebord, puis une poussée commune vers le bas. Les mains se
+retirent sous le cadre avant de revenir à la prise R1 ; les coudes restent
+écartés et bas. La caméra conserve sa hauteur lors du passage au volume de
+collision accroupi et rejoint la hauteur de vue debout en fin de montée.
+Pendant la glissade, le cou et la tête compensent l'inclinaison du torse :
+regard légèrement vers le sol, environ cinq degrés sous l'horizon. La posture
+assise et les bottes sont conservées. Les deux fichiers revue-complete.blend
+contiennent ces retouches ; leurs versions avant-climb-slide sont conservées.
+Les quatre exports concernés sont dans retouches\climb-slide et dans les
+overrides assets\animations\traversal-edits. Les contrôles Blender ciblés sont
+dans verification\audit-traversal\climb-slide, la vidéo et la preuve de
+déploiement dans docs\validation\traversal\transitions.
+
+Contrôles conservés dans traversal\blender\verification\audit-traversal\after :
+  73 pistes de mains, 41 pistes de corps ; vues et planches de chaque geste.
+Les captures réelles du jeu se trouvent dans docs\validation\traversal,
+dont les sous-dossiers multiplayer et slide-review.
+
+Les modèles restent ceux du jeu, avec peu de polygones et des gants simplifiés.
+L'audit vérifie les axes, les longueurs, la prise et les raccords ; une retouche
+artistique peut encore améliorer la silhouette aux angles extrêmes.
+
+Glissade courte (11 octobre) : 1,2 seconde maximum, vitesse minimale 280,
+vitesse conservée et plafonnée à 400, friction 0,35. Après toute sortie,
+récupération 0,85 seconde et nouvel appui Ctrl requis. La jambe droite se
+replie sous le bassin : genou devant, talon sous la fesse et semelle vers
+le sol. La jambe gauche, le regard, le torse et le R1 restent conservés.
+La pose du modèle de jambes subjectif reprend la même silhouette.
+Projet de corps : Corps-R1-revue-complete.blend, retouches de glissade
+dans retouches\short-slide. Vidéo et validation :
+docs\validation\traversal\short-slide.
+
+Combat pendant la glissade : le jeu conserve maintenant les animations
+ordinaires du R1 (visée, tir, rechargement, sortie d'arme). En vue extérieure,
+seuls le bassin et les jambes proviennent des clips de glissade ; le haut
+du corps joue l'action de l'arme, orientée avec la visée. La pose complète
+de glissade dans Blender reste la source du bas du corps, tandis que le
+jeu compose ces deux animations. Le rechargement continue après la sortie.
+Vidéo et tests réels : docs\validation\traversal\slide-combat.

@@ -1,0 +1,24 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Lucien Moreau / goggles",
+  "created_utc": "2026-10-11T21:22:45.028328+00:00",
+  "request_sha256": "853395265d38625f7fa2b79687ec0fa6e7e793876add96c1dd0751b600487364",
+  "request": {
+    "text": "[confident] Goggles on. Nothing escapes good taste.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "endpoint": "/v1/text-to-speech/lWtkpHRd8R4BLyKo8pl2?output_format=mp3_44100_128",
+  "sha256": "8209616c47346eecf023a42c0026482de4c63f050760a41d22d709aeb7973591",
+  "bytes": 51035,
+  "text": "[confident] Goggles on. Nothing escapes good taste.",
+  "request_id": "6cE9NNqA9whnbnZP4POe",
+  "reported_credit_cost": "6",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "voice_name": "Lucien Moreau",
+  "language": "en"
+}

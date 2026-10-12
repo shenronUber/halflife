@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "visor_up",
+  "created_utc": "2026-10-11T21:22:57.331566+00:00",
+  "request_sha256": "b657ce9930a94a203ec1b3f8ca5def38102b92011f64ded7512256bdebc1a36a",
+  "request": {
+    "text": "Single tactical helmet visor raised: release latch click, short stiff metal hinge and polymer slide, final retaining click. Close dry equipment foley, no voice, no footsteps, no ambience, no music. One short action.",
+    "duration_seconds": 0.7,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "671d8a9b23f1135e2c353e0c2b421a3345f172e4b972e2c9c2482e4162617855",
+  "bytes": 12164,
+  "text": "Single tactical helmet visor raised: release latch click, short stiff metal hinge and polymer slide, final retaining click. Close dry equipment foley, no voice, no footsteps, no ambience, no music. One short action.",
+  "request_id": null,
+  "reported_credit_cost": "7"
+}

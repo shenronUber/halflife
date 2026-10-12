@@ -1,0 +1,436 @@
+[
+  {
+    "id": 0,
+    "bone": "Bone01",
+    "role": "Origine du modèle",
+    "parent": "",
+    "usage": "Contrôle par les enfants"
+  },
+  {
+    "id": 1,
+    "bone": "Bone02",
+    "role": "Repère de déplacement",
+    "parent": "Bone01",
+    "usage": "Contrôle par les enfants"
+  },
+  {
+    "id": 2,
+    "bone": "Bone03",
+    "role": "Repère de placement",
+    "parent": "Bone02",
+    "usage": "Contrôle par les enfants"
+  },
+  {
+    "id": 3,
+    "bone": "Bone04",
+    "role": "Ancrage commun des bras",
+    "parent": "Bone03",
+    "usage": "Contrôle par les enfants"
+  },
+  {
+    "id": 4,
+    "bone": "Bone05",
+    "role": "Coude / avant-bras droit",
+    "parent": "Bone04",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 5,
+    "bone": "Bone06",
+    "role": "Articulation intermédiaire droite",
+    "parent": "Bone05",
+    "usage": "Contrôle par les enfants"
+  },
+  {
+    "id": 6,
+    "bone": "Bone07",
+    "role": "Poignet / paume droite",
+    "parent": "Bone06",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 7,
+    "bone": "Bone08",
+    "role": "Pouce historique de prise d’arme (inactif sur le gant ouvert)",
+    "parent": "Bone07",
+    "usage": "Aucun mesh visible"
+  },
+  {
+    "id": 8,
+    "bone": "Bone09",
+    "role": "Pouce historique de prise d’arme (inactif sur le gant ouvert)",
+    "parent": "Bone08",
+    "usage": "Aucun mesh visible"
+  },
+  {
+    "id": 9,
+    "bone": "Bone10",
+    "role": "Pouce historique de prise d’arme (inactif sur le gant ouvert)",
+    "parent": "Bone09",
+    "usage": "Aucun mesh visible"
+  },
+  {
+    "id": 10,
+    "bone": "Bone40",
+    "role": "Coude / avant-bras gauche",
+    "parent": "Bone04",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 11,
+    "bone": "Bone41",
+    "role": "Articulation intermédiaire gauche",
+    "parent": "Bone40",
+    "usage": "Contrôle par les enfants"
+  },
+  {
+    "id": 12,
+    "bone": "Bone42",
+    "role": "Poignet / paume gauche",
+    "parent": "Bone41",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 13,
+    "bone": "Bone43",
+    "role": "Pouce gauche : base (1/3)",
+    "parent": "Bone42",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 14,
+    "bone": "Bone44",
+    "role": "Pouce gauche : articulation suivante (2/3)",
+    "parent": "Bone43",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 15,
+    "bone": "Bone45",
+    "role": "Pouce gauche : articulation suivante (3/3)",
+    "parent": "Bone44",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 16,
+    "bone": "Bone47",
+    "role": "Index gauche : base (1/4)",
+    "parent": "Bone42",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 17,
+    "bone": "Bone48",
+    "role": "Index gauche : articulation suivante (2/4)",
+    "parent": "Bone47",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 18,
+    "bone": "Bone49",
+    "role": "Index gauche : articulation suivante (3/4)",
+    "parent": "Bone48",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 19,
+    "bone": "Bone50",
+    "role": "Index gauche : extrémité (4/4)",
+    "parent": "Bone49",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 20,
+    "bone": "Bone51",
+    "role": "Majeur gauche : base (1/4)",
+    "parent": "Bone42",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 21,
+    "bone": "Bone52",
+    "role": "Majeur gauche : articulation suivante (2/4)",
+    "parent": "Bone51",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 22,
+    "bone": "Bone53",
+    "role": "Majeur gauche : articulation suivante (3/4)",
+    "parent": "Bone52",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 23,
+    "bone": "Bone54",
+    "role": "Majeur gauche : extrémité (4/4)",
+    "parent": "Bone53",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 24,
+    "bone": "Bone55",
+    "role": "Annulaire gauche : base (1/4)",
+    "parent": "Bone42",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 25,
+    "bone": "Bone56",
+    "role": "Annulaire gauche : articulation suivante (2/4)",
+    "parent": "Bone55",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 26,
+    "bone": "Bone57",
+    "role": "Annulaire gauche : articulation suivante (3/4)",
+    "parent": "Bone56",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 27,
+    "bone": "Bone58",
+    "role": "Annulaire gauche : extrémité (4/4)",
+    "parent": "Bone57",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 28,
+    "bone": "Bone59",
+    "role": "Auriculaire gauche : base (1/4)",
+    "parent": "Bone42",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 29,
+    "bone": "Bone60",
+    "role": "Auriculaire gauche : articulation suivante (2/4)",
+    "parent": "Bone59",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 30,
+    "bone": "Bone61",
+    "role": "Auriculaire gauche : articulation suivante (3/4)",
+    "parent": "Bone60",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 31,
+    "bone": "Bone62",
+    "role": "Auriculaire gauche : extrémité (4/4)",
+    "parent": "Bone61",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 32,
+    "bone": "Bone95",
+    "role": "Repère auxiliaire de manche / accessoire",
+    "parent": "Bone40",
+    "usage": "Aucun mesh visible"
+  },
+  {
+    "id": 33,
+    "bone": "Bone110",
+    "role": "Repère auxiliaire de manche / accessoire",
+    "parent": "Bone95",
+    "usage": "Aucun mesh visible"
+  },
+  {
+    "id": 34,
+    "bone": "Bone112",
+    "role": "Repère auxiliaire de manche / accessoire",
+    "parent": "Bone95",
+    "usage": "Aucun mesh visible"
+  },
+  {
+    "id": 35,
+    "bone": "Bone114",
+    "role": "Repère auxiliaire de manche / accessoire",
+    "parent": "Bone95",
+    "usage": "Aucun mesh visible"
+  },
+  {
+    "id": 36,
+    "bone": "Bone116",
+    "role": "Repère auxiliaire de manche / accessoire",
+    "parent": "Bone95",
+    "usage": "Aucun mesh visible"
+  },
+  {
+    "id": 37,
+    "bone": "Bone118",
+    "role": "Repère auxiliaire de manche / accessoire",
+    "parent": "Bone95",
+    "usage": "Aucun mesh visible"
+  },
+  {
+    "id": 38,
+    "bone": "Bone120",
+    "role": "Repère auxiliaire de manche / accessoire",
+    "parent": "Bone95",
+    "usage": "Aucun mesh visible"
+  },
+  {
+    "id": 39,
+    "bone": "VFRight_Bone43",
+    "role": "Pouce droit : base (1/3)",
+    "parent": "Bone07",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 40,
+    "bone": "VFRight_Bone44",
+    "role": "Pouce droit : articulation suivante (2/3)",
+    "parent": "VFRight_Bone43",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 41,
+    "bone": "VFRight_Bone45",
+    "role": "Pouce droit : articulation suivante (3/3)",
+    "parent": "VFRight_Bone44",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 42,
+    "bone": "VFRight_Bone47",
+    "role": "Index droit : base (1/4)",
+    "parent": "Bone07",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 43,
+    "bone": "VFRight_Bone48",
+    "role": "Index droit : articulation suivante (2/4)",
+    "parent": "VFRight_Bone47",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 44,
+    "bone": "VFRight_Bone49",
+    "role": "Index droit : articulation suivante (3/4)",
+    "parent": "VFRight_Bone48",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 45,
+    "bone": "VFRight_Bone50",
+    "role": "Index droit : extrémité (4/4)",
+    "parent": "VFRight_Bone49",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 46,
+    "bone": "VFRight_Bone51",
+    "role": "Majeur droit : base (1/4)",
+    "parent": "Bone07",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 47,
+    "bone": "VFRight_Bone52",
+    "role": "Majeur droit : articulation suivante (2/4)",
+    "parent": "VFRight_Bone51",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 48,
+    "bone": "VFRight_Bone53",
+    "role": "Majeur droit : articulation suivante (3/4)",
+    "parent": "VFRight_Bone52",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 49,
+    "bone": "VFRight_Bone54",
+    "role": "Majeur droit : extrémité (4/4)",
+    "parent": "VFRight_Bone53",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 50,
+    "bone": "VFRight_Bone55",
+    "role": "Annulaire droit : base (1/4)",
+    "parent": "Bone07",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 51,
+    "bone": "VFRight_Bone56",
+    "role": "Annulaire droit : articulation suivante (2/4)",
+    "parent": "VFRight_Bone55",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 52,
+    "bone": "VFRight_Bone57",
+    "role": "Annulaire droit : articulation suivante (3/4)",
+    "parent": "VFRight_Bone56",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 53,
+    "bone": "VFRight_Bone58",
+    "role": "Annulaire droit : extrémité (4/4)",
+    "parent": "VFRight_Bone57",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 54,
+    "bone": "VFRight_Bone59",
+    "role": "Auriculaire droit : base (1/4)",
+    "parent": "Bone07",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 55,
+    "bone": "VFRight_Bone60",
+    "role": "Auriculaire droit : articulation suivante (2/4)",
+    "parent": "VFRight_Bone59",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 56,
+    "bone": "VFRight_Bone61",
+    "role": "Auriculaire droit : articulation suivante (3/4)",
+    "parent": "VFRight_Bone60",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 57,
+    "bone": "VFRight_Bone62",
+    "role": "Auriculaire droit : extrémité (4/4)",
+    "parent": "VFRight_Bone61",
+    "usage": "Contrôle direct du mesh"
+  },
+  {
+    "id": 58,
+    "bone": "Bone75",
+    "role": "Repère de l’arme",
+    "parent": "Bone04",
+    "usage": "Aucun mesh visible"
+  },
+  {
+    "id": 59,
+    "bone": "Bone76",
+    "role": "Attache de l’arme",
+    "parent": "Bone75",
+    "usage": "Aucun mesh visible"
+  },
+  {
+    "id": 60,
+    "bone": "Bone71",
+    "role": "Attache du chargeur",
+    "parent": "Bone76",
+    "usage": "Aucun mesh visible"
+  },
+  {
+    "id": 61,
+    "bone": "R01_Bolt",
+    "role": "Attache de la culasse",
+    "parent": "Bone76",
+    "usage": "Aucun mesh visible"
+  }
+]

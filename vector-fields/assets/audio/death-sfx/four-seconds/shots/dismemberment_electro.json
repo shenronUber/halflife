@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Electro / dismemberment",
+  "created_utc": "2026-10-10T00:47:44.465897+00:00",
+  "request_sha256": "c893d6df6719233c3e6aab04924fcf591bbf68de590075724d5501fc9cf85a4c",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. A sharp bone and tendon crack combined with a high-voltage whip, followed by uneven sparking arcs and a sustained rough electrical discharge that winds down. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "6a1fb5eda6156d4a1f5636e2caba39b0fadd09a549335daa8aa354103bc6bf01",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. A sharp bone and tendon crack combined with a high-voltage whip, followed by uneven sparking arcs and a sustained rough electrical discharge that winds down. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "mask_up",
+  "created_utc": "2026-10-11T21:22:58.637321+00:00",
+  "request_sha256": "828abcd29953dc9f06d7c48aa0d6abb53f97df5fbf191ab46d665fb4904412c0",
+  "request": {
+    "text": "Single airtight gas mask removed: rubber seal releases with a short pressure hiss and soft suction pop, elastic strap relaxes. Close dry gear foley. No breathing loop, voice, footsteps, ambience or music.",
+    "duration_seconds": 0.7,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "3d07fb6694b4f28418287707034f013f96e04503abaea7a3d2f7408251caa35b",
+  "bytes": 12164,
+  "text": "Single airtight gas mask removed: rubber seal releases with a short pressure hiss and soft suction pop, elastic strap relaxes. Close dry gear foley. No breathing loop, voice, footsteps, ambience or music.",
+  "request_id": null,
+  "reported_credit_cost": "7"
+}

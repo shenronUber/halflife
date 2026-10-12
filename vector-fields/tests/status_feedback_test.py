@@ -98,12 +98,12 @@ def multiplayer():
   put(mod/'feedback-peer.cfg','developer 1\ngl_vsync 0\nfps_max 60\ncon_notifytime 0\nexec feedback-init.cfg\n')
  (a/'feedback-server.log').unlink(missing_ok=True)
  common=['-rodir',base.STEAM,'-game','vf_fx_test','-console','-nointro']
- server=subprocess.Popen([str(a/'xash.exe'),*common,'-log','feedback-server.log','+ip','127.0.0.1','-port','27115','+rcon_password','vf_feedback_test','+maxplayers','4','+sv_lan','1','+sv_cheats','1','+deathmatch','1','+developer','1','+vf_native_models','1','+vf_voices','0','+map','vf_fx_range'],cwd=a,creationflags=subprocess.CREATE_NO_WINDOW)
+ server=subprocess.Popen([str(a/'xash.exe'),'-ip','127.0.0.1','-noip6',*common,'-log','feedback-server.log','+ip','127.0.0.1','-port','27115','+rcon_password','vf_feedback_test','+maxplayers','4','+sv_lan','1','+sv_cheats','1','+deathmatch','1','+developer','1','+vf_native_models','1','+vf_voices','0','+map','vf_fx_range'],cwd=a,creationflags=subprocess.CREATE_NO_WINDOW)
  children=[]
  try:
   wait_log(a/'feedback-server.log','4 player server started',server)
   def launch(engine,port,name):
-   p=subprocess.Popen([str(engine/'xash3d.exe'),*common,'-borderless','-width','1280','-height','720','-nowriteconfig','-log','feedback-peer.log','-clientport',str(port),'+developer','1','+gl_vsync','0','+fps_max','60','+name',name,'+connect','127.0.0.1:27115','+exec','feedback-peer.cfg'],cwd=engine);children.append(p);return p
+   p=subprocess.Popen([str(engine/'xash3d.exe'),'-ip','127.0.0.1','-noip6',*common,'-borderless','-width','1280','-height','720','-nowriteconfig','-log','feedback-peer.log','-clientport',str(port),'+developer','1','+gl_vsync','0','+fps_max','60','+name',name,'+connect','127.0.0.1:27115','+exec','feedback-peer.cfg'],cwd=engine);children.append(p);return p
   pa=launch(a,27116,'FEEDBACK_A')
   wait_log(a/'feedback-peer.log','VFStatus received: player=1',pa)
   init='developer 1\ncon_notifytime 0\nvf_voice_subtitles 0\nweapon_9mmAR\nwait 30\n'

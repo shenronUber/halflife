@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Shatter / head",
+  "created_utc": "2026-10-10T00:48:11.193340+00:00",
+  "request_sha256": "fa75f5adaebbc81aef3016d48d258b4f48076de737cdc9e85e072116f6eeab64",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. Head exploding like a ripe pumpkin: deep wet pop, crunchy rupture, broad pulp splatter and dripping.  Element: A violent frozen bone fracture and dense crunchy break, followed by a broad long cascade of sharp ice splinters bouncing, scattering and Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "b81526d01960f8998a2896501ed674e2ffe07f609f5a00e95476edc48b2aa658",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. Head exploding like a ripe pumpkin: deep wet pop, crunchy rupture, broad pulp splatter and dripping.  Element: A violent frozen bone fracture and dense crunchy break, followed by a broad long cascade of sharp ice splinters bouncing, scattering and Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

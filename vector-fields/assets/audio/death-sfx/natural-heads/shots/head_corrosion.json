@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Corrosion / head",
+  "created_utc": "2026-10-10T01:16:13.423509+00:00",
+  "request_sha256": "2c31eb80d7a9b6a5bb2770260fd1a3b87564bdc7b182de5c0f6ffdbacfe81aee",
+  "request": {
+    "text": "2-second dry close game SFX. One head bursts like a ripe pumpkin: a sharp wet hollow pop, crunchy shell rupture, dense pulp splatter and a few falling blood drops. A caustic liquid spit and short irregular chemical sizzle. Natural quick decay. No voice, scream, music, weapon shot, ambience or reverb.",
+    "duration_seconds": 2.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "86c94ed7b6d7352cbdf6450ba1018aad9b314250bd04d31a56e737e23c98db49",
+  "bytes": 33062,
+  "text": "2-second dry close game SFX. One head bursts like a ripe pumpkin: a sharp wet hollow pop, crunchy shell rupture, dense pulp splatter and a few falling blood drops. A caustic liquid spit and short irregular chemical sizzle. Natural quick decay. No voice, scream, music, weapon shot, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "20"
+}

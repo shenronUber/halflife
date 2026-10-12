@@ -1,0 +1,24 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Otto Stahl / generic",
+  "created_utc": "2026-10-11T21:22:51.467156+00:00",
+  "request_sha256": "50965bfdc0dd3fe68d054cebd204b839bb84c5def1bc4e21b8db38b2b4ba6ba2",
+  "request": {
+    "text": "[stern] Headgear on. Systems ready.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "endpoint": "/v1/text-to-speech/edgqs6sEs8iMvFG1VpR8?output_format=mp3_44100_128",
+  "sha256": "75de34b252d08de9cccd77d86415330c2e035b9f4fe4f545cfd694dc451be9fb",
+  "bytes": 40586,
+  "text": "[stern] Headgear on. Systems ready.",
+  "request_id": "0YMM1KhoNM3jGo2d7r1m",
+  "reported_credit_cost": "4",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "voice_name": "Otto Stahl",
+  "language": "en"
+}

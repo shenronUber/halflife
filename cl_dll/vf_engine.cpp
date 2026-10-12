@@ -7,6 +7,10 @@ extern engine_studio_api_t IEngineStudio;
 #include "parsemsg.h"
 #include "Exports.h"
 #include "vf_engine.h"
+#include "vf_ui.h"
+#include "vf_character.h"
+#include "../game_shared/vf_traversal.h"
+#include "../game_shared/vf_weapon_melee.h"
 #include "vf_death.h"
 #include "../game_shared/vf_death_visual.h"
 #include "vf_range.h"
@@ -16,12 +20,23 @@ extern engine_studio_api_t IEngineStudio;
 #include "../game_shared/vf_engine_api.h"
 #include "../game_shared/vf_appearance.h"
 #include "../game_shared/vf_loadout.h"
+#include "../game_shared/vf_headgear.h"
+#include "../game_shared/vf_player_pose.h"
+#include "../game_shared/vf_headgear_feedback.h"
+#include "vf_headgear_hud_catalog.h"
+#include "triangleapi.h"
+#include "r_efx.h"
+#include "dlight.h"
+#include "event_api.h"
 #include "../game_shared/vf_model_contract.h"
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
 #include <algorithm>
 #include <chrono>
+#include "camera.h"
+#include "in_defs.h"
+#include "../game_shared/vf_weapon_inspect.h"
 
 namespace {
 const vf_engine_api_t* engine=NULL;
@@ -36,13 +51,51 @@ char benchLabel[32]="";unsigned int benchLoads=0;
 vf::Catalog equipment;
 struct Player {bool active;int skins[5],items[vf::SlotCount],styles[vf::WeaponStyleSlots],body,mode;bool thirdPerson;int reloadStage;};
 Player players[33];
+int traversalState=0;float traversalRemaining=0,traversalYaw=0,traversalPitch=0,traversalDepth=40;
+float traversalAnchor[3]={};bool traversalReport=false;
+int traversalSequence=-1;float traversalStart=0;
 bool requested=false,paused=false;
 int sequence=0,sequences=0;
 bool referenceHands=false;
+void TraversalRenderInfo(){traversalReport=true;}
+void TraversalLook(){if(gEngfuncs.Cmd_Argc()<2||gEngfuncs.pfnGetCvarFloat("sv_cheats")==0)return;float angles[3]={gEngfuncs.Cmd_Argc()>2?(float)atof(gEngfuncs.Cmd_Argv(2)):0,(float)atof(gEngfuncs.Cmd_Argv(1)),0};if(_finite(angles[0])&&_finite(angles[1]))gEngfuncs.SetViewAngles(angles);}
 void ReferenceHands(){referenceHands=gEngfuncs.Cmd_Argc()>1?atoi(gEngfuncs.Cmd_Argv(1))!=0:!referenceHands;}
 float animationStart=0,pauseTime=0;
 char lastRig[64]="",animationLabel[112]="";
 const char* rig="models/vf_operator.mdl";
+// Optional local workshop accessory. Equipment and network state stay authoritative.
+int trialHeadgear=0;
+const char* headgearModel="models/vf_headgear/headgear.mdl";
+void AddTrialHeadgear(vf_assembly_t& a){
+ if(trialHeadgear<=0||a.count>=VF_MAX_PARTS)return;
+ vf_part_t& p=a.parts[a.count++];memset(&p,0,sizeof(p));
+ strcpy(p.model,headgearModel);p.body=trialHeadgear;p.mode=VF_PART_MERGE;
+}
+#include "vf_headgear.inc"
+#include "vf_headgear_hud.inc"
+#include "vf_weapon_inspect.inc"
+#include "vf_weapon_melee.inc"
+void HeadgearCommand(){
+ const char* option=gEngfuncs.Cmd_Argc()==2?gEngfuncs.Cmd_Argv(1):"";
+ int selected=!strcmp(option,"none")?0:(!strcmp(option,"riot")||!strcmp(option,"riot-down"))?1:!strcmp(option,"spartan")?2:!strcmp(option,"riot-up")?3:
+  (!strcmp(option,"nvg-red")||!strcmp(option,"nvg-red-down"))?4:(!strcmp(option,"nvg-green")||!strcmp(option,"nvg-green-down"))?5:
+  !strcmp(option,"nvg-red-up")?6:!strcmp(option,"nvg-green-up")?7:(!strcmp(option,"ballistic")||!strcmp(option,"ballistic-down"))?8:
+  !strcmp(option,"ballistic-up")?9:(!strcmp(option,"gas-mask")||!strcmp(option,"gas-mask-down"))?10:!strcmp(option,"gas-mask-up")?11:-1;
+ if(selected<0){gEngfuncs.Con_Printf("Usage: vf_headgear none|riot|riot-down|riot-up|spartan|nvg-red|nvg-red-down|nvg-red-up|nvg-green|nvg-green-down|nvg-green-up|ballistic|ballistic-down|ballistic-up|gas-mask|gas-mask-down|gas-mask-up (local visual trial)\n");return;}
+ if(selected&&(!engine||engine->SequenceInfo(headgearModel,0,NULL,0,NULL)<=0)){
+  gEngfuncs.Con_Printf("VFHeadgear: optional model unavailable; build and deploy headgear first\n");return;
+ }
+ trialHeadgear=selected;gEngfuncs.Con_Printf("VFHeadgear trial: %s variant=%d bone=Bip01 Head local=1\n",option,selected);
+}
+void HeadgearAudit(){
+ if(!engine)return;int passed=0,failed=0;
+ for(int carrier=0;carrier<4;++carrier)for(int variant=0;variant<12;++variant){
+  vf_assembly_t a={};strcpy(a.rig,carrier?vf::Carrier(carrier-1).thirdPerson:"models/vf_skins/persona_rig.mdl");
+  if(variant){a.count=1;strcpy(a.parts[0].model,headgearModel);a.parts[0].body=variant;a.parts[0].mode=VF_PART_MERGE;}
+  if(engine->SetAssembly(2043,&a))++passed;else ++failed;
+ }
+ engine->ClearAssembly(2043);gEngfuncs.Con_Printf("VFHeadgear audit: carriers=4 variants=12 passed=%d failed=%d\n",passed,failed);
+}
 void LoadCatalogs() {
  int n=0;byte* bytes=gEngfuncs.COM_LoadFile((char*)"vf/skins.txt",5,&n);
  vf::ParseAppearances((char*)bytes,n>0?n:0,skins);if(bytes)gEngfuncs.COM_FreeFile(bytes);
@@ -80,11 +133,12 @@ void BenchCommand(){
  gEngfuncs.Con_DPrintf("VFBench start: %s\n",benchLabel);
 }
 // Legacy family_* variants dye clothing only. Authored skin families also style the head.
-void SkinAssembly(vf_assembly_t& a,const char* keys[5],int isolate) {
+void SkinAssembly(vf_assembly_t& a,const char* keys[5],int isolate,bool headgear=true) {
  if(!skins.valid)LoadCatalogs();
  int ids[5];for(int z=0;z<5;++z)ids[z]=vf::FindAppearance(skins,keys[z]);
  memset(&a,0,sizeof(a));strcpy(a.rig,vf::OperatorRig(skins,ids));
  for(int z=0;z<5;++z)if(isolate<0||z==isolate){vf_part_t& p=a.parts[a.count++];const char* model=keys[z];for(int i=0;i<skins.count;++i)if(!strcmp(keys[z],skins.entries[i].key)){model=skins.entries[i].model;p.skin=(z==0&&!strncmp(model,"family_",7))?0:skins.entries[i].skin;break;}snprintf(p.model,sizeof(p.model),"models/vf_skins/%s.mdl",model);p.body=1<<z;}
+ if(headgear&&(isolate<0||isolate==0)&&!strcmp(a.rig,"models/vf_skins/persona_rig.mdl"))AddTrialHeadgear(a);
 }
 
 void EquipmentAccessories(vf_assembly_t& a,const int* items,bool weapon){
@@ -104,7 +158,7 @@ bool ReferenceWeapon(vf_assembly_t& a,const int* items,bool hands,int isolate=-1
   vf::FindModelTraits(vf::ItemModel(equipment.items[underbarrel]))->supportGrip;
  memset(&a,0,sizeof(a));strcpy(a.rig,vf::Carrier(platform).firstPerson);a.draw_rig=0;a.body=1;
  if(foregrip)strcpy(a.rig,vf::Carrier(platform).foregrip);
- for(int slot=9;slot<vf::SlotCount;++slot){
+ for(int slot=9;slot<vf::WeaponEnd;++slot){
   if(isolate>=0&&slot!=isolate)continue;
   int id=items[slot];if(id<=0||id>=equipment.count||equipment.items[id].slot!=slot)return false;
   const char* key=vf::ItemModel(equipment.items[id]);if(strncmp(key,"r01_",4))return false;
@@ -125,9 +179,71 @@ bool ReferenceWeapon(vf_assembly_t& a,const int* items,bool hands,int isolate=-1
  }
  return a.count>0;
 }
+
+void TraversalView(cl_entity_t* e,vf_assembly_t& a,const int* items){
+ // This viewmodel is reused after traversal. Clear renderer metadata as well
+ // as the animation track, otherwise a stale phase suppresses the H gesture.
+ e->curstate.iuser4=traversalState;e->curstate.fuser1=traversalRemaining;
+ int phase=VF_TR_Phase(traversalState);if(!phase){if(traversalSequence>=0){e->curstate.sequence=0;e->curstate.frame=0;e->curstate.animtime=gEngfuncs.GetClientTime();e->latched.prevsequence=0;}traversalSequence=-1;return;}
+ if(strncmp(a.rig,"models/vf_r01/r01_rig",strlen("models/vf_r01/r01_rig")))return;
+ const char* base=strrchr(a.rig,'/');char path[64];snprintf(path,sizeof(path),"models/vf_traversal/%.40s",base+1);
+ char* extension=strstr(path,".mdl");if(extension)strcpy(extension,"_tr.mdl");
+ if(engine->SequenceInfo(path,0,NULL,0,NULL)<=0)return;
+ strcpy(a.rig,path);
+ // Renderer-only viewmodel metadata: world contacts do not inherit camera
+ // interpolation, weapon bob or firing recoil. No network field is added.
+ e->curstate.iuser4=traversalState;e->curstate.fuser1=traversalRemaining;
+ e->curstate.fuser2=traversalReport?1:0;traversalReport=false;
+ float radians=VF_TR_Yaw(traversalState)*3.141592653589793f/180;
+ float forward[2]={(float)cos(radians),(float)sin(radians)};
+ float supportOffset=phase==VF_TR_VAULT?((traversalState&VF_TR_WIDE)?-26.f:-VF_TR_VaultSpan(traversalState)-20.f):18.f;
+ for(int axis=0;axis<2;++axis){
+  float side=axis==0?-forward[1]:forward[0];
+  e->curstate.vuser1[axis]=traversalAnchor[axis]+supportOffset*forward[axis]+8*side;
+  e->curstate.vuser2[axis]=traversalAnchor[axis]+18*forward[axis]-8*side;
+ }
+ e->curstate.vuser1[2]=e->curstate.vuser2[2]=traversalAnchor[2]-VF_TR_FP_GRIP_BELOW_TOP;
+ // Sliding occupies the lower body only. Keep the weapon's live sequence,
+ // clock and interpolation so firing, reload, draw and idle remain visible.
+ if(phase!=VF_TR_SLIDE&&phase!=VF_TR_WALL_RUN){
+ int index=phase==VF_TR_VAULT?((traversalState&VF_TR_WIDE)?25:0):phase==VF_TR_HANG?(traversalRemaining>0?((traversalState&VF_TR_RETURNING)?3:1):2):
+  phase==VF_TR_ARMED?(traversalRemaining>0?3:4):phase==VF_TR_CLIMB?12:phase==VF_TR_DROP?24:phase==VF_TR_WALL_JUMP?((traversalState&VF_TR_TURNED)?27:26):
+  traversalRemaining>VF_TR_SLIDE_TIME-.25f?13:traversalRemaining<.3f?15:14;
+ if(VF_TR_Hanging(traversalState)&&traversalRemaining<=0){
+  float delta=VF_TR_Angle(traversalYaw-VF_TR_Yaw(traversalState));
+  int sector=((int)floor((delta+22.5f)/45.f)+8)%8;index=(phase==VF_TR_ARMED?4:16)+sector;
+  float offset=VF_TR_Angle(delta-sector*45.f);
+  e->curstate.blending[0]=(byte)(std::max)(0.f,(std::min)(255.f,(offset+22.5f)*255/45));
+  e->curstate.blending[1]=(byte)(((std::max)(-70.f,(std::min)(70.f,traversalPitch))+70)*255/140);
+ }else e->curstate.blending[0]=e->curstate.blending[1]=127;
+ if(index!=traversalSequence){traversalSequence=index;traversalStart=gEngfuncs.GetClientTime();e->latched.prevsequence=index+9;}
+ e->curstate.sequence=index+9;e->curstate.animtime=traversalStart;e->curstate.framerate=1;
+ if(phase==VF_TR_VAULT||phase==VF_TR_CLIMB||phase==VF_TR_DROP||phase==VF_TR_WALL_JUMP){
+  float total=phase==VF_TR_WALL_JUMP?VF_TR_WALL_JUMP_TIME:phase==VF_TR_DROP?VF_TR_DROP_TIME:VF_TR_TransferTime(traversalState);
+  e->curstate.frame=(std::max)(0.f,(std::min)(255.f,(1-traversalRemaining/total)*255));e->curstate.framerate=0;
+ }else if(index==3){
+  float progress=(VF_TR_HANG_DEPTH-traversalDepth)/(VF_TR_HANG_DEPTH-VF_TR_ARMED_DEPTH);
+  e->curstate.frame=(std::max)(0.f,(std::min)(255.f,progress*255));e->curstate.framerate=0;
+ }else e->curstate.frame=0;
+ }else {
+  traversalSequence=-1;
+  if(e->curstate.sequence>=9)e->curstate.sequence=0;
+  if(e->latched.prevsequence>=9)e->latched.prevsequence=e->curstate.sequence;
+ }
+ // Busy hands show the same equipped gloves and sleeves, with no gun floating
+ // between them. Armed suspension retains the chassis and its muzzle socket.
+ if(VF_TR_HideWeapon(traversalState,traversalRemaining)){
+  int count=0;for(int i=0;i<a.count;++i)if(a.parts[i].mode==VF_PART_MERGE)a.parts[count++]=a.parts[i];a.count=count;
+  for(int i=0;i<a.count;++i)if(strstr(a.parts[i].model,"_gloves.mdl"))strcpy(a.parts[i].model,"models/vf_traversal/ledge_gloves.mdl");
+  for(int i=0;i<a.count;++i)if(strstr(a.parts[i].model,"_sleeves.mdl"))strcpy(a.parts[i].model,"models/vf_traversal/ledge_sleeves.mdl");
+ }
+ if(phase==VF_TR_VAULT)for(int i=0;i<a.count;++i)if(strstr(a.parts[i].model,"_gloves.mdl"))strcpy(a.parts[i].model,"models/vf_traversal/ledge_gloves.mdl");
+ // Seated legs now use the equipped world body. A socket on the weapon root
+ // would rotate both boots with camera pitch and yaw.
+}
 void ReferenceAudit(){
  if(!engine)return;LoadCatalogs();int ids[12][vf::MaxItems]={},counts[12]={},items[vf::SlotCount];vf::GameplayDefaults(equipment,items);
- for(int i=1;i<equipment.count;++i){const vf::Item& p=equipment.items[i];if(p.slot>=9&&!strcmp(p.weaponStyle,"original"))ids[p.slot-9][counts[p.slot-9]++]=i;}
+ for(int i=1;i<equipment.count;++i){const vf::Item& p=equipment.items[i];if(vf::WeaponSlot(p.slot)&&!strcmp(p.weaponStyle,"original"))ids[p.slot-9][counts[p.slot-9]++]=i;}
  unsigned long long combinations=1;for(int s=0;s<12;++s){if(!counts[s]){gEngfuncs.Con_Printf("VFR01 audit: missing slot=%d\n",s+9);return;}combinations*=counts[s];}
  // Every shape and pair of sockets is exercised. Enumerating millions of
  // complete builds would block the game without adding new socket contracts.
@@ -178,8 +294,8 @@ void WeaponAssembly(vf_assembly_t& a,int body) {
 void EquipmentAudit(){
  if(!engine)return;LoadCatalogs();int items[vf::SlotCount],passed=0,failed=0;
  for(int i=1;i<equipment.count;++i){if(!strncmp(equipment.items[i].id,"r01_",4))vf::GameplayDefaults(equipment,items);else vf::Defaults(equipment,items);items[equipment.items[i].slot]=i;vf_assembly_t a;bool ok;
-  if(equipment.items[i].slot>=vf::GearSlots)ok=EquipmentWeapon(a,items,false);
-  else{int ids[5];ok=vf::EquipmentSkins(equipment,items,skins,ids);if(ok){const char* keys[5];for(int z=0;z<5;++z)keys[z]=skins.entries[ids[z]].key;SkinAssembly(a,keys,-1);EquipmentAccessories(a,items,false);}}
+  if(vf::WeaponSlot(equipment.items[i].slot))ok=EquipmentWeapon(a,items,false);
+  else{int ids[5];ok=vf::EquipmentSkins(equipment,items,skins,ids);if(ok){const char* keys[5];for(int z=0;z<5;++z)keys[z]=skins.entries[ids[z]].key;SkinAssembly(a,keys,-1);EquipmentAccessories(a,items,false);AddEquippedHeadgear(a,items);}}
   if(ok&&engine->SetAssembly(2045,&a))++passed;else ++failed;
  }engine->ClearAssembly(2045);gEngfuncs.Con_DPrintf("VFEquipment audit: objects=%d passed=%d failed=%d max_parts=%d\n",equipment.count-1,passed,failed,VF_MAX_PARTS);
 }
@@ -209,6 +325,7 @@ void Stats() {
  for(int i=1;i<=32;++i)if(players[i].active){
   cl_entity_t* peer=gEngfuncs.GetEntityByIndex(i);
   if(peer)gEngfuncs.Con_DPrintf("VFPeerPose player=%d sequence=%d frame=%.1f gait=%d model=%s\n",i,peer->curstate.sequence,peer->curstate.frame,peer->curstate.gaitsequence,peer->model?peer->model->name:"none");
+  if(peer)gEngfuncs.Con_DPrintf("VFPeerTraversal player=%d phase=%d sequence=%d gait=%d wall=%.2f top=%.3f blends=%d,%d\n",i,VF_TR_Phase(peer->curstate.iuser4),peer->curstate.sequence,peer->curstate.gaitsequence,VF_TR_Yaw(peer->curstate.iuser4),peer->curstate.fuser4,peer->curstate.blending[0],peer->curstate.blending[1]);
  }
  cl_entity_t* local=gEngfuncs.GetLocalPlayer();int id=local?local->index:0;
  vf_assembly_t a;
@@ -268,9 +385,34 @@ extern "C" int CL_DLLEXPORT HUD_VFEngineInterface(int version,const vf_engine_ap
  engine=NULL;if(version!=VF_ENGINE_API_VERSION||!api||api->version!=version||api->size!=sizeof(*api))return 0;
  engine=api;return 1;
 }
+void VF_TraversalPredict(int state,float remaining,float yaw,float pitch,float depth,const float* anchor,float top){traversalAnchor[0]=anchor[0];traversalAnchor[1]=anchor[1];traversalAnchor[2]=top;traversalDepth=depth;traversalState=state;traversalRemaining=remaining;traversalYaw=yaw;traversalPitch=pitch;}
+float VF_TraversalViewBobScale(){return VF_TR_Phase(traversalState)==VF_TR_SLIDE?.1f:1.f;}
+float VF_TraversalViewPitch(){
+ if(VF_TR_Phase(traversalState)!=VF_TR_VAULT)return 0;
+ float t=max(0.f,min(1.f,1-traversalRemaining/VF_TR_TransferTime(traversalState)));
+ float w=t<.20f?t/.20f:t<.40f?1:(.62f-t)/.22f;w=max(0.f,min(1.f,w));
+ return 35*w*w*(3-2*w);
+}
+
+void VF_TraversalHud(){
+ if(VF_CharacterOpen())return;int phase=VF_TR_Phase(traversalState);const char* hint=NULL;
+ if(phase==VF_TR_HANG)hint="Rebord : ESPACE monter / CTRL lacher / Clic droit armer";
+ if(phase==VF_TR_ARMED)hint=VF_TR_CanFire(traversalState,traversalRemaining,traversalYaw)?"Tir / Recharge bloquee / Clic droit : deux mains":"Tournez-vous sur le cote pour tirer / Clic droit : deux mains";
+ if(phase==VF_TR_SLIDE)hint="Glissade : CTRL maintenu / ESPACE sauter";
+ if(phase==VF_TR_WALL_RUN)hint="Wall run : avancer maintenu / ESPACE rebond vers le regard";
+ if(hint){vfui::Box(270,650,740,32,vfui::bg,185);vfui::Text(284,657,hint,vfui::white,710);}
+}
 bool VF_EngineAvailable(){return engine!=NULL;}
 void VF_EngineInit(){
+ headgearHud=gEngfuncs.pfnRegisterVariable("vf_headgear_hud","1",FCVAR_ARCHIVE);
+ gEngfuncs.pfnAddCommand("vf_headgear_hud_info",HeadgearHudInfo);
+ gEngfuncs.pfnAddCommand("vf_inspect",InspectCommand);gEngfuncs.pfnAddCommand("vf_inspect_info",InspectInfo);
+ gEngfuncs.pfnAddCommand("vf_melee",MeleeCommand);gEngfuncs.pfnAddCommand("vf_melee_info",MeleeInfo);gEngfuncs.pfnHookUserMsg("VFMelee",MeleeMessage);
+ gEngfuncs.pfnAddCommand("vf_headgear_toggle",HeadgearToggle);gEngfuncs.pfnAddCommand("vf_headgear_info",HeadgearInfo);gEngfuncs.pfnHookUserMsg("VFHeadgear",HeadgearMessage);
+ gEngfuncs.pfnAddCommand("vf_headgear",HeadgearCommand);gEngfuncs.pfnAddCommand("vf_headgear_audit",HeadgearAudit);
  gEngfuncs.pfnAddCommand("vf_reference_audit",ReferenceAudit);
+ gEngfuncs.pfnAddCommand("vf_traversal_look",TraversalLook);
+ gEngfuncs.pfnAddCommand("vf_traversal_render_info",TraversalRenderInfo);
  gEngfuncs.pfnAddCommand("vf_reference_hands",ReferenceHands);
  gEngfuncs.pfnHookUserMsg("VFState",State);gEngfuncs.pfnAddCommand("vf_engine_stats",Stats);gEngfuncs.pfnAddCommand("vf_equipment_audit",EquipmentAudit);gEngfuncs.pfnAddCommand("vf_engine_audit",Audit);
  gEngfuncs.pfnAddCommand("vf_animation",AnimationCommand);gEngfuncs.pfnAddCommand("vf_animation_pause",PauseCommand);gEngfuncs.pfnAddCommand("vf_animation_time",FrameCommand);
@@ -279,11 +421,18 @@ void VF_EngineInit(){
  thirdPersonEnabled=gEngfuncs.pfnRegisterVariable("vf_third_person","1",0);
  visualEnabled=gEngfuncs.pfnRegisterVariable("vf_visual_enabled","0",FCVAR_ARCHIVE);
  gEngfuncs.pfnAddCommand("vf_weapon_part",ModuleCommand);gEngfuncs.pfnAddCommand("vf_weapon_equip",VF_EngineModuleEquip);gEngfuncs.pfnAddCommand("vf_weapon_reset",VF_EngineModuleReset);gEngfuncs.pfnAddCommand("vf_weapon_audit",ModuleAudit);gEngfuncs.pfnAddCommand("vf_visual_bench",BenchCommand);
- gEngfuncs.Con_DPrintf("VFEngine: native extension %s\n",engine?"v3 connected":"unavailable (legacy previews)");VF_EngineReset();
+ gEngfuncs.Con_DPrintf("VFTraversal render: world palms=2\n");
+ gEngfuncs.Con_DPrintf("VFBody render: world body=1\n");
+ gEngfuncs.Con_DPrintf("VFBody motion: world slide=1\n");
+ gEngfuncs.Con_DPrintf("VFEngine: native extension %s\n",engine?"v4 connected":"unavailable (legacy previews)");VF_EngineReset();
+ gEngfuncs.Con_DPrintf("VFPlayerPose collision: shared=1\n");
+ gEngfuncs.Con_DPrintf("VFMelee pose: shared=1\n");
 }
 bool VF_EngineIsReferenceWeapon(int id){return id>0&&id<=32&&players[id].active&&equipment.valid&&players[id].items[9]>0&&players[id].items[9]<equipment.count&&!strncmp(equipment.items[players[id].items[9]].id,"r01_receiver_",13);}
-void VF_EngineReset(){memset(players,0,sizeof(players));weaponStyles.valid=false;requested=false;paused=false;sequence=0;lastRig[0]=0;skins.valid=arsenal.valid=equipment.valid=modules.valid=false;benchCount=-1;for(int z=0;z<4;++z)draftParts[z]=visualParts[z]&&_finite(visualParts[z]->value)&&visualParts[z]->value>=0&&visualParts[z]->value<3?(int)visualParts[z]->value:0;if(engine)engine->ClearAssembly(0);}
+void VF_InspectPredict(int weapon,int buttons,bool reload,float nextAttack){inspectWeapon=weapon;inspectButtons=buttons;inspectReload=reload;inspectNextAttack=nextAttack;}
+void VF_EngineReset(){memset(meleeClients,0,sizeof(meleeClients));meleePosed=meleeReport=false;HeadgearVisionReset();inspectState.Reset();inspectWeapon=inspectButtons=0;inspectReload=inspectReport=false;inspectNextAttack=0;trialHeadgear=0;traversalState=0;traversalSequence=-1;memset(players,0,sizeof(players));memset(headgearStates,0,sizeof(headgearStates));weaponStyles.valid=false;requested=false;paused=false;sequence=0;lastRig[0]=0;skins.valid=arsenal.valid=equipment.valid=modules.valid=false;benchCount=-1;for(int z=0;z<4;++z)draftParts[z]=visualParts[z]&&_finite(visualParts[z]->value)&&visualParts[z]->value>=0&&visualParts[z]->value<3?(int)visualParts[z]->value:0;if(engine)engine->ClearAssembly(0);}
 void VF_EngineEntity(cl_entity_s* e,const char* model){
+ HeadgearVisionEntity(e);
  if(!engine||!e||!model||e->index<=0)return;
  int id=e->index;
  if(!stricmp(model,vfdeath::Model)){vf_assembly_t a;if(VF_DeathAssembly(id,a))engine->SetAssembly(id,&a);else engine->ClearAssembly(id);return;}
@@ -291,32 +440,45 @@ void VF_EngineEntity(cl_entity_s* e,const char* model){
  if(targetSkin>=0&&!stricmp(model,"models/vf_skins/persona_rig.mdl")){
   vf_assembly_t a={};strcpy(a.rig,"models/vf_skins/persona_rig.mdl");a.count=1;
   strcpy(a.parts[0].model,"models/vf_skins/persona_scout.mdl");a.parts[0].body=31;a.parts[0].skin=targetSkin;a.parts[0].mode=VF_PART_MERGE;
+  AddTrialHeadgear(a);
   engine->SetAssembly(id,&a);return;
  }
  if(!e->player){if(stricmp(model,rig)){engine->ClearAssembly(e->index);return;}cl_entity_t* local=gEngfuncs.GetLocalPlayer();id=local?local->index:0;}
  if(!e->player){memset(e->curstate.controller,128,sizeof(e->curstate.controller));memset(e->latched.prevcontroller,128,sizeof(e->latched.prevcontroller));}
  if(id<1||id>32||!players[id].active){engine->ClearAssembly(e->index);return;}
  const char* keys[5];for(int z=0;z<5;++z)keys[z]=skins.entries[players[id].skins[z]].key;
- vf_assembly_t a;SkinAssembly(a,keys,-1);if(!players[id].mode)EquipmentAccessories(a,players[id].items,false);bool third=ThirdPersonWeapon(a,players[id],e);if(third&&!e->player){e->curstate.sequence=41;e->curstate.frame=0;e->curstate.framerate=0;e->latched.prevsequence=41;}if(e->player){if(third&&!players[id].thirdPerson)gEngfuncs.Con_DPrintf("VFThirdPerson player=%d rig=%s parts=%d scale=%.2f replace_carried=%d\n",id,a.rig,a.count,VF_THIRD_PERSON_SCALE,a.replace_carried);players[id].thirdPerson=third;
+ cl_entity_t* local=gEngfuncs.GetLocalPlayer();
+ vf_assembly_t a;SkinAssembly(a,keys,-1,local&&local->index==id);if(!players[id].mode)EquipmentAccessories(a,players[id].items,false);bool third=ThirdPersonWeapon(a,players[id],e);if(third&&!e->player){e->curstate.sequence=41;e->curstate.frame=0;e->curstate.framerate=0;e->latched.prevsequence=41;}if(e->player){if(third&&!players[id].thirdPerson)gEngfuncs.Con_DPrintf("VFThirdPerson player=%d rig=%s parts=%d scale=%.2f replace_carried=%d\n",id,a.rig,a.count,VF_THIRD_PERSON_SCALE,a.replace_carried);players[id].thirdPerson=third;
  int stage=third&&(e->curstate.sequence==vf::PersonaSequenceCount||e->curstate.sequence==vf::PersonaSequenceCount+1)?1+(int)e->curstate.frame/64:0;
  if(stage!=players[id].reloadStage){
   gEngfuncs.Con_DPrintf("VFThirdPersonReload player=%d stage=%d sequence=%d frame=%.1f gait=%d\n",id,stage,e->curstate.sequence,e->curstate.frame,e->curstate.gaitsequence);
   players[id].reloadStage=stage;
  }
- }engine->SetAssembly(e->index,&a);
+ }
+ if(e->player && VF_TR_Phase(e->curstate.iuser4) && !strcmp(a.rig,"models/vf_skins/persona_rig.mdl")){
+  strcpy(a.rig,vf::Carrier(0).thirdPerson);
+ }
+ if(e->player && VF_TR_HideWeapon(e->curstate.iuser4,e->curstate.fuser1)){
+  a.replace_carried=1;int count=0;for(int i=0;i<a.count;++i)if(a.parts[i].mode!=VF_PART_SOCKET || strncmp(a.parts[i].model,"models/vf_r01/",14))a.parts[count++]=a.parts[i];a.count=count;
+ }
+ MeleeAssembly(e,a,id,false);
+ AddEquippedHeadgear(a,players[id].items,id,false,e);
+ engine->SetAssembly(e->index,&a);
 }
 void VF_EngineWeapon(cl_entity_s* e,int fallbackBody){
  if(!engine)return;
+ if(e)MeleeView(e);
  if(!requested&&gEngfuncs.GetClientTime()>1){requested=true;gEngfuncs.pfnServerCmd("vf_skin_request\nvf_request\n");}
- if(!e||!e->model||stricmp(e->model->name,"models/v_9mmar.mdl")){engine->ClearAssembly(-1);return;}
+ if(!e||!e->model||stricmp(e->model->name,"models/v_9mmar.mdl")){InspectCancel("weapon changed");engine->ClearAssembly(-1);return;}
+ InspectView(e);
  cl_entity_t* local=gEngfuncs.GetLocalPlayer();int id=local?local->index:0;
  int body=id>0&&id<=32&&players[id].active?players[id].body:fallbackBody;
- vf_assembly_t a;if(id>0&&id<=32&&players[id].active&&!players[id].mode&&EquipmentWeapon(a,players[id].items,true,players[id].styles)){engine->SetAssembly(-1,&a);return;}
+ vf_assembly_t a;if(id>0&&id<=32&&players[id].active&&!players[id].mode&&EquipmentWeapon(a,players[id].items,true,players[id].styles)){TraversalView(e,a,players[id].items);AddEquippedHeadgear(a,players[id].items,id,true);FreezeHeadgearWeapon(e,id);InspectAssembly(e,a);MeleeAssembly(e,a,id,true);engine->SetAssembly(-1,&a);return;}
  const char* imported=VF_LibraryWeaponPath();if(imported&&!VF_EngineLinked()){memset(&a,0,sizeof(a));snprintf(a.rig,sizeof(a.rig),"%s",imported);a.draw_rig=1;if(engine->SetAssembly(-1,&a))return;}
- if(visualEnabled&&visualEnabled->value>=.5f&&VisualAssembly(a,true,false)){engine->SetAssembly(-1,&a);return;}
+ if(visualEnabled&&visualEnabled->value>=.5f&&VisualAssembly(a,true,false)){TraversalView(e,a,players[id].items);AddEquippedHeadgear(a,players[id].items,id,true);FreezeHeadgearWeapon(e,id);InspectAssembly(e,a);MeleeAssembly(e,a,id,true);engine->SetAssembly(-1,&a);return;}
  // Free character skins can keep the equipped R-01. Explicit local weapon trials above still win.
- if(id>0&&id<=32&&players[id].active&&ReferenceWeapon(a,players[id].items,true,-1,players[id].styles)){engine->SetAssembly(-1,&a);return;}
- WeaponAssembly(a,body);if(engine->SetAssembly(-1,&a))e->curstate.body=body&1;
+ if(id>0&&id<=32&&players[id].active&&ReferenceWeapon(a,players[id].items,true,-1,players[id].styles)){TraversalView(e,a,players[id].items);AddEquippedHeadgear(a,players[id].items,id,true);FreezeHeadgearWeapon(e,id);InspectAssembly(e,a);MeleeAssembly(e,a,id,true);engine->SetAssembly(-1,&a);return;}
+ WeaponAssembly(a,body);if(id>0&&id<=32){AddEquippedHeadgear(a,players[id].items,id,true);FreezeHeadgearWeapon(e,id);}if(engine->SetAssembly(-1,&a))e->curstate.body=body&1;
 }
 bool VF_EnginePreviewSkins(const char* keys[5],int isolate,float yaw,float zoom,float x,float y,float w,float h){vf_assembly_t a;SkinAssembly(a,keys,isolate);return Preview(a,yaw,zoom,x,y,w,h);}
 bool VF_EnginePreviewModel(const char* path,int body,bool modular,float yaw,float zoom,float x,float y,float w,float h){
@@ -354,7 +516,7 @@ bool VF_EnginePreviewEquipment(const int* items,bool weapon,float x,float y,floa
  vf_assembly_t a;
  if(styles&&!vf::ValidWeaponStyles(weaponStyles,styles))return false;
  if(weapon){if(!EquipmentWeapon(a,items,referenceHands,styles))return false;}
- else{int ids[5];if(!vf::EquipmentSkins(equipment,items,skins,ids))return false;const char* keys[5];for(int z=0;z<5;++z)keys[z]=skins.entries[ids[z]].key;SkinAssembly(a,keys,-1);EquipmentAccessories(a,items,false);}
+ else{int ids[5];if(!vf::EquipmentSkins(equipment,items,skins,ids))return false;const char* keys[5];for(int z=0;z<5;++z)keys[z]=skins.entries[ids[z]].key;SkinAssembly(a,keys,-1);EquipmentAccessories(a,items,false);AddEquippedHeadgear(a,items);}
  return Preview(a,VF_PreviewYaw(),VF_PreviewZoomValue(),x,y,w,h);
 }
 bool VF_EnginePreviewCurrent(bool weapon,float x,float y,float w,float h){
@@ -363,8 +525,11 @@ bool VF_EnginePreviewCurrent(bool weapon,float x,float y,float w,float h){
 
 bool VF_EngineValidateModel(const char* path){return engine&&engine->SequenceInfo(path,0,NULL,0,NULL)>0;}
 
+void VF_HeadgearScreen(){HeadgearScreenDraw();}
+bool VF_HeadgearVoiceMuffled(int player){int type=0;float cover=HeadgearPlayerCover(player,&type);return vf::HeadgearMuffled(type,cover);}
+
 bool VF_EnginePreviewReferencePart(const int* items,int slot,float x,float y,float w,float h,const int* styles){
- if(!equipment.valid)LoadCatalogs();if(!engine||slot<9||slot>=vf::SlotCount)return false;
+ if(!equipment.valid)LoadCatalogs();if(!engine||slot<9||slot>=vf::WeaponEnd)return false;
  if(styles&&!vf::ValidWeaponStyles(weaponStyles,styles))return false;
  vf_assembly_t a;if(!ReferenceWeapon(a,items,false,slot,styles))return false;
  // Side-mounted cassettes open towards +X; show their finished face first.

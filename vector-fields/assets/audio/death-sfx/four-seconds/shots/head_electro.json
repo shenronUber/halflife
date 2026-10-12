@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Electro / head",
+  "created_utc": "2026-10-10T00:47:44.379817+00:00",
+  "request_sha256": "05752209268e14aaa4905e298fd86e7a8d2a888575b7bf53e040e0ca5b217ca4",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. Head exploding like a ripe pumpkin: deep wet pop, crunchy rupture, broad pulp splatter and dripping.  Element: A sharp bone and tendon crack combined with a high-voltage whip, followed by uneven sparking arcs and a sustained rough electrical discharge that winds Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "155c5530703e4f0c089e208887673d25f71567d7423e6fc540c778b0237d79a0",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. Head exploding like a ripe pumpkin: deep wet pop, crunchy rupture, broad pulp splatter and dripping.  Element: A sharp bone and tendon crack combined with a high-voltage whip, followed by uneven sparking arcs and a sustained rough electrical discharge that winds Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

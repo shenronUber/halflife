@@ -42,7 +42,9 @@
 #include "vf_combat.h"
 #include "../game_shared/vf_voice_catalog.h"
 #include "vf_skins.h"
+#include "vf_weapon_melee.h"
 #include "vf_death.h"
+#include "../game_shared/vf_traversal.h"
 
 // #define DUCKFIX
 
@@ -81,9 +83,15 @@ extern CGraph	WorldGraph;
 TYPEDESCRIPTION	CBasePlayer::m_playerSaveData[] = 
 {
 	DEFINE_FIELD( CBasePlayer, m_vfVoice, FIELD_INTEGER ),
+	DEFINE_ARRAY( CBasePlayer, m_vfRegionDamage, FIELD_FLOAT, 5 ),
+	DEFINE_FIELD( CBasePlayer, m_vfTraversalState, FIELD_INTEGER ),
+	DEFINE_FIELD( CBasePlayer, m_vfTraversalRemaining, FIELD_FLOAT ),
+	DEFINE_FIELD( CBasePlayer, m_vfTraversalAnchor, FIELD_POSITION_VECTOR ),
 	DEFINE_FIELD( CBasePlayer, m_vfVoiceDied, FIELD_INTEGER ),
 	DEFINE_FIELD( CBasePlayer, m_vfVoiceRespawnLast, FIELD_INTEGER ),
 	DEFINE_ARRAY( CBasePlayer, m_vfItems, FIELD_INTEGER, vf::SlotCount ),
+	DEFINE_FIELD( CBasePlayer, m_vfHeadgearRaised, FIELD_INTEGER ),
+	DEFINE_FIELD( CBasePlayer, m_vfHeadgearStart, FIELD_TIME ),
 	DEFINE_FIELD( CBasePlayer, m_vfCatalogHash, FIELD_INTEGER ),
 	DEFINE_ARRAY( CBasePlayer, m_vfSkins, FIELD_INTEGER, 5 ),
 	DEFINE_FIELD( CBasePlayer, m_vfSkinHash, FIELD_INTEGER ),
@@ -427,6 +435,7 @@ void CBasePlayer :: TraceAttack( entvars_t *pevAttacker, float flDamage, Vector 
 		m_LastHitGroup = ptr->iHitgroup;
 
 		flDamage = VF_PlayerTraceDamage(this, pevAttacker, flDamage, vecDir, *ptr, bitsDamageType);
+		VF_DeathTrace(this, ptr->iHitgroup, vecDir, flDamage, pevAttacker, bitsDamageType);
 
 		SpawnBlood(ptr->vecEndPos, BloodColor(), flDamage);// a little surface blood.
 		TraceBleed( flDamage, vecDir, ptr, bitsDamageType );
@@ -478,6 +487,7 @@ int CBasePlayer :: TakeDamage( entvars_t *pevInflictor, entvars_t *pevAttacker, 
 	if ( !g_pGameRules->FPlayerCanTakeDamage( this, pAttacker ) )
 	{
 		// Refuse the damage
+		VF_DeathDiscardTrace(this);
 		return 0;
 	}
 
@@ -509,7 +519,9 @@ int CBasePlayer :: TakeDamage( entvars_t *pevInflictor, entvars_t *pevAttacker, 
 
 	// this cast to INT is critical!!! If a player ends up with 0.5 health, the engine will get that
 	// as an int (zero) and think the player is dead! (this will incite a clientside screentilt, etc)
+	VF_DeathDamage(this, pevAttacker, (int)flDamage, bitsDamageType);
 	fTookDamage = CBaseMonster::TakeDamage(pevInflictor, pevAttacker, (int)flDamage, bitsDamageType);
+	VF_DeathDiscardTrace(this);
 	if (fTookDamage) VF_VoiceDamage(this,bitsDamageType,flHealthPrev,vfArmorBefore);
 
 	// reset damage time countdown for each type of time based damage player just sustained
@@ -930,7 +942,11 @@ entvars_t *g_pevLastInflictor;  // Set in combat.cpp.  Used to pass the damage i
 
 void CBasePlayer::Killed( entvars_t *pevAttacker, int iGib )
 {
-	VF_DeathCapture(this);
+	// Fitted operators use the thresholded corpse path; ordinary overkill must
+	// not bypass regional rules through the legacy whole-body gib path.
+	if (VF_DeathCompatible(this)) iGib=GIB_NEVER;
+	VF_DeathCapture(this, iGib==GIB_ALWAYS || (pev->health<-40 && iGib!=GIB_NEVER),
+		pevAttacker && pevAttacker!=pev ? pev->origin-pevAttacker->origin : g_vecZero);
 	VF_VoiceKilled(this,pevAttacker);
 	CSound *pSound;
 
@@ -1022,6 +1038,46 @@ void CBasePlayer::Killed( entvars_t *pevAttacker, int iGib )
 // Set the activity based on an event or current state
 void CBasePlayer::SetAnimation( PLAYER_ANIM playerAnim )
 {
+ if(playerAnim!=PLAYER_DIE&&VF_MeleePose(this))return;
+ const int traversal=VF_TR_Phase(pev->iuser4);
+ if (traversal && traversal!=VF_TR_SLIDE && traversal!=VF_TR_WALL_RUN && IsAlive() && playerAnim!=PLAYER_DIE) {
+  VF_ApplyPlayerModel(this);
+  const char* name=traversal==VF_TR_VAULT?((pev->iuser4&VF_TR_WIDE)?"vf_stepup":"vf_vault"):traversal==VF_TR_CLIMB?"vf_climb":traversal==VF_TR_DROP?"vf_drop":
+   traversal==VF_TR_WALL_JUMP?((pev->iuser4&VF_TR_TURNED)?"vf_wall_jump_turn":"vf_wall_jump"):
+   traversal==VF_TR_HANG?(pev->fuser1>0?((pev->iuser4&VF_TR_RETURNING)?"vf_hang_arm":"vf_hang_catch"):"vf_hang_idle"):
+   traversal==VF_TR_ARMED?(pev->fuser1>0?"vf_hang_arm":"vf_hang_aim_0"):
+   pev->fuser1>VF_TR_SLIDE_TIME-.25f?"vf_slide_start":pev->fuser1<.3f?"vf_slide_end":"vf_slide_loop";
+  char aimName[40];
+  if(traversal==VF_TR_ARMED && pev->fuser1<=0) {
+   float delta=VF_TR_Angle(pev->v_angle.y-VF_TR_Yaw(pev->iuser4));
+   int sector=((int)floor((delta+22.5f)/45.f)+8)%8;
+   sprintf(aimName,"vf_hang_aim_%d",sector);name=aimName;
+   float offset=VF_TR_Angle(delta-sector*45.f);
+   pev->blending[0]=(byte)(max(0.f,min(255.f,(offset+22.5f)*255/45)));
+  }
+  int seq=LookupSequence(name);
+  if(seq>=0) {
+   if(pev->sequence!=seq){pev->sequence=seq;pev->frame=0;ResetSequenceInfo();}
+   pev->gaitsequence=0;pev->angles=Vector(0,traversal==VF_TR_WALL_JUMP?
+    VF_TR_WallJumpBodyYaw(pev->iuser4,pev->fuser1,pev->v_angle.y):VF_TR_Yaw(pev->iuser4),0);
+   if(traversal!=VF_TR_ARMED || pev->fuser1>0) pev->blending[0]=127;
+   pev->blending[1]=(byte)((max(-70.f,min(70.f,pev->v_angle.x))+70)*255/140);
+   m_Activity=m_IdealActivity=ACT_IDLE;
+   if(traversal==VF_TR_VAULT||traversal==VF_TR_CLIMB||traversal==VF_TR_DROP||traversal==VF_TR_WALL_JUMP) {
+    float total=traversal==VF_TR_WALL_JUMP?VF_TR_WALL_JUMP_TIME:traversal==VF_TR_DROP?VF_TR_DROP_TIME:VF_TR_TransferTime(pev->iuser4);
+    pev->frame=max(0.f,min(255.f,(1-pev->fuser1/total)*255));pev->framerate=0;
+   }else if(!strcmp(name,"vf_hang_arm")) {
+    float progress=(VF_TR_HANG_DEPTH-(pev->fuser4-pev->origin.z))/(VF_TR_HANG_DEPTH-VF_TR_ARMED_DEPTH);
+    pev->frame=max(0.f,min(255.f,progress*255));pev->framerate=0;
+   }else pev->framerate=1;
+   return;
+  }
+ }
+ if((!traversal || traversal==VF_TR_SLIDE || traversal==VF_TR_WALL_RUN) && IsAlive()) VF_ApplyPlayerModel(this);
+ // Wall running keeps the live combat track and reuses the ordinary run gait.
+ if(traversal==VF_TR_WALL_RUN && IsAlive() && (m_Activity==ACT_HOP || m_Activity==ACT_LEAP)) m_Activity=ACT_WALK;
+ const bool uprightCombat = strstr(STRING(pev->model),"models/vf_r01/r01_tp")!=NULL;
+
 	if (playerAnim==PLAYER_RELOAD) VF_VoiceSpeak(this,vfv::E_reload);
 	int animDesired;
 	float speed;
@@ -1114,7 +1170,7 @@ void CBasePlayer::SetAnimation( PLAYER_ANIM playerAnim )
 		return;
 
 	case ACT_RANGE_ATTACK1:
-		if ( FBitSet( pev->flags, FL_DUCKING ) )	// crouching
+		if ( FBitSet( pev->flags, FL_DUCKING ) && traversal!=VF_TR_SLIDE && !uprightCombat )
 			strcpy( szAnim, "crouch_shoot_" );
 		else
 			strcpy( szAnim, "ref_shoot_" );
@@ -1146,7 +1202,7 @@ void CBasePlayer::SetAnimation( PLAYER_ANIM playerAnim )
 		{
 		 CBasePlayerWeapon* weapon=m_pActiveItem?(CBasePlayerWeapon*)m_pActiveItem->GetWeaponPtr():NULL;
 		 if(weapon && weapon->m_fInReload){
-		  strcpy(szAnim,FBitSet(pev->flags,FL_DUCKING)?"crouch_reload_":"ref_reload_");
+		  strcpy(szAnim,FBitSet(pev->flags,FL_DUCKING)&&traversal!=VF_TR_SLIDE&&!uprightCombat?"crouch_reload_":"ref_reload_");
 		  strcat(szAnim,m_szAnimExtention);animDesired=LookupSequence(szAnim);
 		  if(animDesired>=0){
 		   preserveReloadFrame=m_Activity==ACT_RELOAD;
@@ -1156,7 +1212,7 @@ void CBasePlayer::SetAnimation( PLAYER_ANIM playerAnim )
 		}
 		if (m_Activity != ACT_RANGE_ATTACK1 || m_fSequenceFinished)
 		{
-			if ( FBitSet( pev->flags, FL_DUCKING ) )	// crouching
+			if ( FBitSet( pev->flags, FL_DUCKING ) && traversal!=VF_TR_SLIDE && !uprightCombat )
 				strcpy( szAnim, "crouch_aim_" );
 			else
 				strcpy( szAnim, "ref_aim_" );
@@ -1172,7 +1228,11 @@ void CBasePlayer::SetAnimation( PLAYER_ANIM playerAnim )
 		}
 	}
 
-	if ( FBitSet( pev->flags, FL_DUCKING ) )
+	if ( traversal == VF_TR_WALL_RUN )
+	{
+		pev->gaitsequence = LookupActivity( ACT_RUN );
+	}
+	else if ( FBitSet( pev->flags, FL_DUCKING ) )
 	{
 		if ( speed == 0)
 		{
@@ -2598,6 +2658,7 @@ CheckPowerups(CBasePlayer* player)
 
 	// Keep the equipped carrier and its sequence table authoritative. The old
 	// unconditional reset silently restored Gordon after every PostThink.
+	if (VF_MeleePose(player)) return;
 	if (!VF_ApplyPlayerModel(player)) pev->modelindex = g_ulModelIndexPlayer;
 }
 
@@ -2804,7 +2865,7 @@ void CBasePlayer::PostThink()
 	// select the proper animation for the player character	
 	if ( IsAlive() )
 	{
-		if (!pev->velocity.x && !pev->velocity.y)
+		if (VF_TR_Phase(pev->iuser4) || pev->sequence>=81 || (!pev->velocity.x && !pev->velocity.y))
 			SetAnimation( PLAYER_IDLE );
 		else if ((pev->velocity.x || pev->velocity.y) && (FBitSet(pev->flags, FL_ONGROUND)))
 			SetAnimation( PLAYER_WALK );
@@ -2813,6 +2874,8 @@ void CBasePlayer::PostThink()
 	}
 
 	StudioFrameAdvance( );
+	VF_PlayerPoseUpdate(this);
+	if(IsAlive()&&VF_DeathCompatible(this))UTIL_SetOrigin(pev,pev->origin);
 
 
 	UpdatePlayerSound();
@@ -3047,6 +3110,7 @@ void CBasePlayer::Spawn( void )
 	m_bitsHUDDamage		= -1;
 	m_bitsDamageType	= 0;
 	m_afPhysicsFlags	= 0;
+	pev->iuser4=0;pev->fuser1=pev->fuser4=0;pev->vuser3.x=pev->vuser3.y=0;
 	m_fLongJump			= FALSE;// no longjump module. 
 
 	g_engfuncs.pfnSetPhysicsKeyValue( edict(), "slj", "0" );
@@ -3168,6 +3232,9 @@ void CBasePlayer :: Precache( void )
 int CBasePlayer::Save( CSave &save )
 {
 	VF_PreparePlayerSave(this);
+	m_vfTraversalState = pev->iuser4;
+	m_vfTraversalRemaining = pev->fuser1;
+	m_vfTraversalAnchor = Vector(pev->vuser3.x, pev->vuser3.y, pev->fuser4);
 	if ( !CBaseMonster::Save(save) )
 		return 0;
 
@@ -3189,6 +3256,12 @@ int CBasePlayer::Restore( CRestore &restore )
 	if ( !CBaseMonster::Restore(restore) )
 		return 0;
 
+	// Old saves have no traversal fields: never reuse state from the previous level.
+	m_vfTraversalState = 0;
+	m_vfTraversalRemaining = 0;
+	m_vfTraversalAnchor = g_vecZero;
+	memset(m_vfRegionDamage,0,sizeof(m_vfRegionDamage));
+	VF_DeathDiscardTrace(this);
 	int status = restore.ReadFields( "PLAYER", this, m_playerSaveData, ARRAYSIZE(m_playerSaveData) );
 
 	SAVERESTOREDATA *pSaveData = (SAVERESTOREDATA *)gpGlobals->pSaveData;
@@ -3202,6 +3275,20 @@ int CBasePlayer::Restore( CRestore &restore )
 		pev->origin = VARS(pentSpawnSpot)->origin + Vector(0,0,1);
 		pev->angles = VARS(pentSpawnSpot)->angles;
 	}
+	pev->iuser4 = 0;
+	pev->fuser1 = 0;
+	pev->vuser3.x = pev->vuser3.y = pev->fuser4 = 0;
+	if (status && pSaveData->fUseLandmark &&
+		VF_TR_SaveValid(m_vfTraversalState, m_vfTraversalRemaining, m_vfTraversalAnchor))
+	{
+		pev->iuser4 = m_vfTraversalState;
+		pev->fuser1 = m_vfTraversalRemaining;
+		pev->vuser3.x = m_vfTraversalAnchor.x;
+		pev->vuser3.y = m_vfTraversalAnchor.y;
+		pev->fuser4 = m_vfTraversalAnchor.z;
+		// PM_VFTraversal rechecks support/collision before consuming the next move.
+	}
+	// vuser3.z carries ammo and must not be restored with the traversal anchor.
 	pev->v_angle.z = 0;	// Clear out roll
 	pev->angles = pev->v_angle;
 
@@ -4044,6 +4131,13 @@ Called every frame by the player PostThink
 */
 void CBasePlayer::ItemPostFrame()
 {
+	if (VF_TR_NoReload(pev->iuser4) && m_pActiveItem) {
+		CBasePlayerWeapon* weapon=(CBasePlayerWeapon*)m_pActiveItem->GetWeaponPtr();
+		if (weapon && (weapon->m_fInReload || weapon->m_fInSpecialReload)) {
+			weapon->m_fInReload=FALSE;weapon->m_fInSpecialReload=0;m_flNextAttack=UTIL_WeaponTimeBase();
+		}
+	}
+
 	static int fInSelect = FALSE;
 
 	// check if the player is using a tank

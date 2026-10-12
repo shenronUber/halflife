@@ -43,7 +43,7 @@ def export():
                     vertices.append([*p,*n,*r['uv']])
             groups.append(dict(kind=kind,vertices=vertices))
         poses[label]=groups
-    data=dict(poses=poses,textures={k:[png(m.textures[m.skin[i]])for i in range(14)]for k,m in parts.items()},themes=json.loads((OUT/'first-person.json').read_text())['themes'])
+    data=dict(poses=poses,textures={k:[png(m.textures[m.skin[i]])for i in range(m.numskinfamilies)]for k,m in parts.items()},themes=json.loads((OUT/'first-person.json').read_text())['themes'])
     template=(ROOT/'first_person_inspector.template.html').read_text(encoding='utf-8-sig')
     path=ROOT/'build/first-person-inspector.html'
     path.write_text(template.replace('__DATA__',json.dumps(data,separators=(',',':'))),encoding='utf-8')

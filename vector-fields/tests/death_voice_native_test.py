@@ -2,14 +2,15 @@
 import json,re,shutil,subprocess,time
 from pathlib import Path
 import voices_test as base
-ROOT=base.ROOT;ENGINE=base.PROJECT/'runtime/vector-engine-death-validation';MOD=ENGINE/'vf_visual'
+from native_workspace import engine_path, shared_copy, private_copy
+ROOT=base.ROOT;ENGINE=engine_path(base.PROJECT/'runtime/vector-engine-death-validation');MOD=ENGINE/'vf_visual'
 base.ENGINE=ENGINE;base.MOD=MOD
 
 def block(name,body):return 'echo DEATH_BEGIN_'+name+'\n'+body+'wait 12\necho DEATH_END_'+name+'\n'
 def section(log,name):return log.split('DEATH_BEGIN_'+name,1)[1].split('DEATH_END_'+name,1)[0]
 def deaths(log):return re.findall(r'VFDeath play: entity=(\d+) actor=(\w+) cause=(\w+) sample=(\S+)',log)
 def run():
- base.prepare();shutil.copy2(ROOT/'generated/test-room/vf_range.bsp',MOD/'maps/vf_range.bsp')
+ base.prepare();private_copy(ROOT/'generated/test-room/vf_range.bsp',MOD/'maps/vf_range.bsp')
  manifest=base.read(ROOT/'assets/audio/operator-deaths/manifest.json');effects=base.read(ROOT/'data/effects.json')['effects']
  causes=[c['id'] for c in manifest['causes']];expected={}
  init='wait 180\ndeveloper 1\ngl_vsync 0\nfps_max 100\ncon_notifytime 0\nvf_voice_subtitles 2\ncmd vf_range_aim 0\nwait 20\n'
@@ -52,7 +53,7 @@ def run():
  extra+='quit\n';(MOD/'death_extra.cfg').write_text(extra,encoding='ascii');files.append('death_extra.cfg')
  (MOD/'death_run.cfg').write_text(init+''.join('exec '+f+'\n' for f in files),encoding='ascii')
  logpath=ENGINE/'death-native.log';logpath.unlink(missing_ok=True);start=time.monotonic()
- child=subprocess.Popen([str(ENGINE/'xash3d.exe'),'-rodir',base.STEAM,'-game','vf_visual','-windowed','-width','1280','-height','720','-console','-nointro','-nowriteconfig','-log',logpath.name,'+exec','lab_controls.cfg','+sv_cheats','1','+developer','1','+map','vf_range','+exec','death_run.cfg'],cwd=ENGINE,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+ child=subprocess.Popen([str(ENGINE/'xash3d.exe'),'-ip','127.0.0.1','-noip6','-rodir',base.STEAM,'-game','vf_visual','-windowed','-width','1280','-height','720','-console','-nointro','-nowriteconfig','-log',logpath.name,'+exec','lab_controls.cfg','+sv_cheats','1','+developer','1','+map','vf_range','+exec','death_run.cfg'],cwd=ENGINE,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
  try:child.wait(timeout=150);assert child.returncode==0,child.returncode
  finally:
   if child.poll() is None:child.terminate();child.wait(10)

@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "size": [1024, 576],
+  "assets": [
+    {"type": 1, "id": "riot", "source": "riot.png", "name": "Visière anti-émeute"},
+    {"type": 2, "id": "ballistic", "source": "ballistic.png", "name": "Visière blindée"},
+    {"type": 3, "id": "red_optics", "source": "red_optics.png", "name": "Optiques rouges"},
+    {"type": 4, "id": "green_optics", "source": "green_optics.png", "name": "Optiques vertes"},
+    {"type": 5, "id": "gas_mask", "source": "gas_mask.png", "name": "Masque à gaz"}
+  ]
+}

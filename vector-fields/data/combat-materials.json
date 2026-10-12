@@ -175,7 +175,8 @@
     "underbarrel": "unknown",
     "grip": "unknown",
     "power": "unknown",
-    "cooling": "unknown"
+    "cooling": "unknown",
+    "helmet": "unknown"
   },
   "item_overrides": [],
   "texture_types": {

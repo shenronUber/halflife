@@ -3,7 +3,14 @@
 struct cl_entity_s;
 bool VF_EngineIsReferenceWeapon(int player);
 void VF_EngineInit();
+void VF_TraversalHud();
+void VF_HeadgearScreen();
+bool VF_HeadgearVoiceMuffled(int player);
+float VF_TraversalViewPitch();
+float VF_TraversalViewBobScale();
 void VF_EngineReset();
+void VF_InspectPredict(int weapon,int buttons,bool reload,float nextAttack);
+void VF_TraversalPredict(int state,float remaining,float yaw,float pitch,float depth,const float* anchor,float top);
 bool VF_EngineAvailable();
 void VF_EngineEntity(cl_entity_s* entity,const char* model);
 void VF_EngineWeapon(cl_entity_s* entity,int fallbackBody);

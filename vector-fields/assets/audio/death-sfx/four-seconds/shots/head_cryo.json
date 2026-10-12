@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Cryo / head",
+  "created_utc": "2026-10-10T00:47:48.005774+00:00",
+  "request_sha256": "9ff8385aeae9e83cfaefbc2ba2210f7aa3dcc733986bc993a8117e54a87aee6a",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. Head exploding like a ripe pumpkin: deep wet pop, crunchy rupture, broad pulp splatter and dripping.  Element: A brittle frozen bone fracture with a crunchy tissue break, followed by a long scatter of small ice chips, crystalline ticks and settling Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "c72fdda9ade2431cd108b77ed87f7948a01fb1b102de93d6cd26d308716910d3",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. Head exploding like a ripe pumpkin: deep wet pop, crunchy rupture, broad pulp splatter and dripping.  Element: A brittle frozen bone fracture with a crunchy tissue break, followed by a long scatter of small ice chips, crystalline ticks and settling Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

@@ -2,8 +2,15 @@
 import json,re,subprocess,time,argparse
 from pathlib import Path
 from PIL import Image,ImageChops
-ROOT=Path(__file__).resolve().parents[1];ENGINE=ROOT.parent/'runtime/vector-engine';MOD=ENGINE/'vf_visual'
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from native_workspace import engine_path,stage_installed,port
+ROOT=Path(__file__).resolve().parents[1];ENGINE=engine_path(ROOT/'build/equipment_engine_test');MOD=ENGINE/'vf_visual'
+_staged=False
+
 def run(width=1920,height=1080):
+ global _staged
+ if not _staged:stage_installed(ENGINE,MOD.name);_staged=True
  captures=[]
  def click(x,y):return f'vf_ui_pointer {x} {y} 1\nwait 3\nvf_ui_pointer {x} {y} 0\nwait 14\n'
  def snap(name):
@@ -32,7 +39,7 @@ def run(width=1920,height=1080):
  s+='vf_effect_clear\nvf_engine_stats\nquit\n'
  assert len(s.encode())<24000
  (MOD/'vf_equipment_test.cfg').write_text(s,encoding='ascii');logfile=f'equipment-{width}.log';start=time.time()
- p=subprocess.Popen([str(ENGINE/'xash3d.exe'),'-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_visual','-borderless','-width',str(width),'-height',str(height),'-console','-nointro','-nowriteconfig','-log',logfile,'+exec','lab_controls.cfg','+map','vf_range','+exec','vf_equipment_test.cfg'],cwd=ENGINE)
+ p=subprocess.Popen([str(ENGINE/'xash3d.exe'),'-ip','127.0.0.1','-noip6','-port',str(port()),'-clientport',str(port()),'-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_visual','-borderless','-width',str(width),'-height',str(height),'-console','-nointro','-nowriteconfig','-log',logfile,'+exec','lab_controls.cfg','+map','vf_range','+exec','vf_equipment_test.cfg'],cwd=ENGINE)
  try:p.wait(timeout=120)
  except subprocess.TimeoutExpired:p.terminate();p.wait(10);raise
  assert p.returncode==0,p.returncode

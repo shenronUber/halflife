@@ -2,8 +2,11 @@
 import json,re,subprocess,time
 from PIL import Image,ImageChops
 from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from native_workspace import engine_path,stage_installed,port,private_copy
 ROOT=Path(__file__).resolve().parents[1]
-ENGINE=ROOT.parent/'runtime/vector-engine'
+ENGINE=engine_path(ROOT/'build/native_engine_test')
 MOD=ENGINE/'vf_engine'
 STEAM='F:/SteamLibrary/steamapps/common/Half-Life'
 
@@ -12,7 +15,13 @@ def fingerprint(path):
     for b in path.read_bytes():n=((n^b)*16777619)&0xffffffff
     return n
 
+_staged=False
+
 def run():
+    global _staged
+    if not _staged:
+        stage_installed(ENGINE,MOD.name)
+        private_copy(ROOT/'generated/skins/skins.txt',MOD/'vf/skins.txt');_staged=True
     captures=[]
     def capture(name):
         captures.append(name)
@@ -33,7 +42,7 @@ def run():
     script+=f'cmd vf_skin_apply {sh} 999 0 0 0 0\nwait 30\ncmd vf_skin_apply 0 0 0 0 0 0\nwait 30\n'
     script+='save vf_engine_smoke\nwait 100\nload vf_engine_smoke\nwait 200\nvf_skins\nwait 100\n'+capture('engine_restored')+'vf_engine_stats\nvf_skins\nwait 10\nquit\n'
     (MOD/'vf_native_test.cfg').write_text(script,encoding='ascii')
-    command=[str(ENGINE/'xash3d.exe'),'-rodir',STEAM,'-game','vf_engine','-windowed','-width','1280','-height','720','-console','-nointro','-log','native-test.log','+exec','lab_controls.cfg','+map','vf_range','+exec','vf_native_test.cfg']
+    command=[str(ENGINE/'xash3d.exe'),'-ip','127.0.0.1','-noip6','-port',str(port()),'-clientport',str(port()),'-rodir',STEAM,'-game','vf_engine','-windowed','-width','1280','-height','720','-console','-nointro','-log','native-test.log','+exec','lab_controls.cfg','+map','vf_range','+exec','vf_native_test.cfg']
     start=time.time();p=subprocess.Popen(command,cwd=ENGINE)
     try:p.wait(timeout=130)
     except subprocess.TimeoutExpired:p.terminate();p.wait(10);raise

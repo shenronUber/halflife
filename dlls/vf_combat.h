@@ -18,6 +18,7 @@ int VF_CurrentShotElement();
 void VF_CombatInit();
 void VF_CombatReset();
 void VF_CombatClear(CBasePlayer* player);
+void VF_PlayerPoseUpdate(CBasePlayer* player);
 float VF_PlayerTraceDamage(CBasePlayer* victim,entvars_t* attacker,float raw,const Vector& direction,const TraceResult& trace,int damageBits);
 bool VF_CombatCommand(CBasePlayer*,const char*);
 #endif

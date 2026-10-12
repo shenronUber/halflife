@@ -1,0 +1,24 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Nikos Petros / goggles",
+  "created_utc": "2026-10-11T21:22:55.734093+00:00",
+  "request_sha256": "5229749f9cf4e8a8b311b1784f3903d9b6769a7998933690c231d49d0a648926",
+  "request": {
+    "text": "[confident] Goggles on. I see the whole battlefield.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "endpoint": "/v1/text-to-speech/uAGRkdJlXqIKwzx0HORp?output_format=mp3_44100_128",
+  "sha256": "ff62cd355c3a8cd399219b51a5c9a2377d6357c65ff2bd6cf28b0bd51e12a9c5",
+  "bytes": 56050,
+  "text": "[confident] Goggles on. I see the whole battlefield.",
+  "request_id": "A8HDvCd356MZaEHuRbLg",
+  "reported_credit_cost": "6",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "voice_name": "Nikos Petros",
+  "language": "en"
+}

@@ -1,0 +1,24 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Viktor Volkov / visor",
+  "created_utc": "2026-10-11T21:22:49.151133+00:00",
+  "request_sha256": "362c06b096281d03b55f653d15ca64e44cc412e3e117c3e2f682dbd80f87a8e8",
+  "request": {
+    "text": "[deadpan] Visor down. Face is not spare part.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "endpoint": "/v1/text-to-speech/MIGoD5dgOR9odYK1ejQC?output_format=mp3_44100_128",
+  "sha256": "35dbde7636915e8dc062eceda8368e2c9a9b76d58a40e2801b42a018fe5f30c5",
+  "bytes": 53542,
+  "text": "[deadpan] Visor down. Face is not spare part.",
+  "request_id": "CsomZjX7NC8rySd4ffhv",
+  "reported_credit_cost": "5",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "voice_name": "Viktor Volkov",
+  "language": "en"
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "SteamVeil / death",
+  "created_utc": "2026-10-10T00:48:24.342497+00:00",
+  "request_sha256": "dc4362401f64730ebd5a95156966e8a6339aa02d0e6b3995c8fb1dbfc752abbb",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. A sharp pressurized steam decompression and a broad bright vapor hiss, swelling once and holding before falling into scattered sputtering hot water droplets. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "20f28daf2b136b555be01c8c08083d1488144dd0d5026ec9e59430a683681a95",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. A sharp pressurized steam decompression and a broad bright vapor hiss, swelling once and holding before falling into scattered sputtering hot water droplets. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

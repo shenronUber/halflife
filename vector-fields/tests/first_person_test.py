@@ -32,7 +32,7 @@ def assets():
         _,_,tris=base.read_smd(OUT/f'r01_fp_{kind}.smd');combined+=tris
         mdl=Studio(OUT/f'r01_fp_{kind}.mdl');parts[kind]=mdl
         assert len(mdl.mesh())==len(tris)>0
-        assert mdl.numskinfamilies==14 and mdl.numskinref==1
+        assert mdl.numskinfamilies==record['skin_families'] and mdl.numskinref==1
         assert all(set(mdl.names)<=set(r.names)for r in rigs),'every merge bone must exist on each platform'
         for bone,name in enumerate(mdl.names):
             for rig in rigs:assert np.allclose(mdl.bind[bone],rig.bind[rig.names.index(name)],atol=2e-4),'merge bind changed'
@@ -44,7 +44,7 @@ def assets():
             assert abs(np.cross(uv[1]-uv[0],uv[2]-uv[0]))>1e-9,'UV end faces and seams must not collapse'
             normals=np.array([list(map(float,row.split()[4:7]))for row in rows])
             assert np.allclose(np.linalg.norm(normals,axis=1),1,atol=1e-4),'smooth normals must remain unit vectors'
-        assert len({hashlib.sha256(t[3]+t[4]).hexdigest()for t in mdl.textures})==14
+        assert len({hashlib.sha256(t[3]+t[4]).hexdigest()for t in mdl.textures})==record['skin_families']
     actual=vertices(combined)
     assert expected<=actual,'all original anatomical vertices and bone weights must be retained'
     assert actual&vertices(source)==expected,'display/frame/cuff vertices must not survive the cleanup'
@@ -88,8 +88,8 @@ def assets():
             assert q[1]>-3,'long under-sleeve panels must follow the torso, not the glove'
 
     # Verify paired skin references against both compiled models, including cross-outfit pairs.
-    for glove in range(14):
-        for sleeve in range(14):
+    for glove in range(record['skin_families']):
+        for sleeve in range(record['skin_families']):
             for kind,index in [('gloves',glove),('sleeves',sleeve)]:
                 mdl=parts[kind];tex=mdl.textures[mdl.skin[index]]
                 assert tex[0]==f'fp_{kind}_{index:02}.bmp' and tex[1:3]==mdl.textures[0][1:3] and all(0<n<=512 for n in tex[1:3])
@@ -129,12 +129,10 @@ def assets():
     assert max(abs(np.diff(rolls)))<5.5,'top roll must ease in and out'
     peaks=np.max(heights,axis=0)
     assert peaks[1]-peaks[0]>15,'left hand must stay lower through top extraction'
-    unchanged=None;baseline=ROOT/'build/first-person-baseline/weapon-hashes.json'
-    if baseline.exists():
-        hashes=json.loads(baseline.read_text());unchanged=len(hashes)
-        assert all(hashlib.sha256((OUT/p).read_bytes()).hexdigest()==h for p,h in hashes.items()),'weapon meshes/textures changed while updating hands'
-    return dict(triangles=len(combined),added_finger_triangles=record['refinement']['added_triangles'],skin_pairs=196,weapon_models_unchanged=unchanged,idle_wrist_degrees=idle_bend,max_reload_elbow_step_degrees=max_step,top_reload_roll_degrees=min(rolls),top_wrist_height_reduction_units=float(peaks[1]-peaks[0]),removed_accessory_triangles=len(discarded),index_clearance=index_clearance,
-                checks=['original glove surface and joint vertices retained; complete display/frame and detached cuff removed; fingers rounded without new bones','merge bones and bind pose compatible with all three rigs','14 non-CHROME skin families on each part, noncollapsed anatomical UVs, smooth glove normals','all 196 glove/sleeve skin pairs resolve','relaxed lateral wrist and low elbow','no elbow pole flip in reload','compiled index clears the shared cassette shell on all three feeds','smooth left top-reload roll, right grip and both arm lengths preserved'])
+    # Geometry/UV/rig contracts above are independent of an optional local
+    # cache. Chassis changes are covered by reference_chassis_test instead.
+    return dict(triangles=len(combined),added_finger_triangles=record['refinement']['added_triangles'],skin_pairs=record['skin_families']**2,idle_wrist_degrees=idle_bend,max_reload_elbow_step_degrees=max_step,top_reload_roll_degrees=min(rolls),top_wrist_height_reduction_units=float(peaks[1]-peaks[0]),removed_accessory_triangles=len(discarded),index_clearance=index_clearance,
+                checks=['original glove surface and joint vertices retained; complete display/frame and detached cuff removed; fingers rounded without new bones','merge bones and bind pose compatible with all three rigs','all authored non-CHROME skin families on each part, noncollapsed anatomical UVs, smooth glove normals','all glove/sleeve skin pairs resolve','relaxed lateral wrist and low elbow','no elbow pole flip in reload','compiled index clears the shared cassette shell on all three feeds','smooth left top-reload roll, right grip and both arm lengths preserved'])
 
 
 def native():
@@ -166,7 +164,9 @@ def native():
         assert f'gloves={t["skin"]} sleeves={t["skin"]} parts=14 rig=models/vf_r01/r01_rig_side.mdl' in section(f'FP_THEME_{t["skin"]}'),t
     for label,glove,sleeve in [('FP_GLOVES_ONLY',12,13),('FP_TORSO_ONLY',12,11),('FP_RESTORED',12,11)]:
         assert f'gloves={glove} sleeves={sleeve} parts=14' in section(label),label
-    assert 'VFR01 audit: checked=1753 failed=0' in log
+    from reference_platform_test import audit_counts
+    checked,_,_=audit_counts()
+    assert f'VFR01 audit: checked={checked} failed=0' in log
     assert 'VFState rejected'not in log and 'VF equipment: result=6'not in log
     stats=re.findall(r'VFEngine: assemblies=.*?loads=(\d+).*?rejected=(\d+).*?texture_bytes=(\d+)',log)
     assert stats and all(int(r[1])==0 for r in stats)

@@ -12,6 +12,7 @@
 #include "vf_character.h"
 #include "../game_shared/vf_voice_catalog.h"
 #include "../game_shared/vf_status_catalog.h"
+#include "../game_shared/vf_death_visual.h"
 #include "vf_effect_catalog.h"
 #include <cstring>
 #include <cstdio>
@@ -21,7 +22,7 @@ struct Target {int entity,skin,actor,hp,maxhp;bool alive;float until[8];int hits
 Target targets[4];
 int Receive(const char*,int size,void* data){
  if(size!=35)return 1;BEGIN_READ(data,size);int protocol=READ_BYTE(),entity=READ_SHORT(),slot=READ_BYTE(),skin=READ_BYTE(),actor=READ_BYTE(),alive=READ_BYTE(),hp=READ_SHORT(),maxhp=READ_SHORT();
- if(protocol!=1||slot>=4||entity<1||entity>=2048||skin>=14||actor>=vfv::ActorCount||alive>1||hp<0||maxhp<1||hp>maxhp)return 1;
+ if(protocol!=1||slot>=4||entity<1||entity>=2048||skin>=vfdeath::FinishCount||actor>=vfv::ActorCount||alive>1||hp<0||maxhp<1||hp>maxhp)return 1;
  int remaining[8],hits[8];for(int i=0;i<8;++i){remaining[i]=READ_SHORT();if(remaining[i]<0||remaining[i]>3000)return 1;}for(int i=0;i<8;++i){hits[i]=READ_BYTE();if(hits[i]>5)return 1;}
  Target& t=targets[slot];t.entity=entity;t.skin=skin;t.actor=actor;t.alive=alive!=0;t.hp=hp;t.maxhp=maxhp;
  for(int i=0;i<8;++i){t.until[i]=remaining[i]>0?gEngfuncs.GetClientTime()+remaining[i]*.01f:0;t.hits[i]=hits[i];}

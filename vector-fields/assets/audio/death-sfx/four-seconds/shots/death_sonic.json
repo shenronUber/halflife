@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Sonic / death",
+  "created_utc": "2026-10-10T00:47:57.474420+00:00",
+  "request_sha256": "eb6ae4503d9c42a95aed3b8687d6bd9c1c5c0821803ca8239949cfeecb10ba07",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. Three separated strong sound-pressure pulses and a broad metallic resonant ring sweeping downward, with a wavering harmonic decay. No electrical fizz. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "cb5cd26f1fe315765492b857626ee21e60b9eec98fb4ad82b86c0b84032f6051",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. Three separated strong sound-pressure pulses and a broad metallic resonant ring sweeping downward, with a wavering harmonic decay. No electrical fizz. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

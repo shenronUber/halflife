@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Electro / death",
+  "created_utc": "2026-10-10T00:47:42.386819+00:00",
+  "request_sha256": "d1013a00c63a17ae1af7f2cf81560fd2222d8c84494f8cbcd1f1922f633bda98",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. Five powerful descending electrical arc pulses, then a loud unstable short-circuit buzz with irregular crackles and a falling electrical power-down tone. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "84a9f9768fae3578f734fb801214f72190030dc980b0948fefd6fe98e0775961",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. Five powerful descending electrical arc pulses, then a loud unstable short-circuit buzz with irregular crackles and a falling electrical power-down tone. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

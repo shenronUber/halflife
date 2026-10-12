@@ -80,7 +80,7 @@ def roll_top_weapon(local,parents,angle):
  assert error<1e-5,error
 
 
-def solve_arm(local,parents,goal,neutral_wrist=False,right=False):
+def solve_arm(local,parents,goal,neutral_wrist=False,right=False,elbow_pole=None):
  """Two-link arm with preserved lengths and a stable elbow pole.
  Bone04 anchors both arms. A short intermediate joint precedes each wrist.
  Finger pose and all bone lengths are retained.
@@ -95,7 +95,7 @@ def solve_arm(local,parents,goal,neutral_wrist=False,right=False):
  # For the lateral handlebar grasp, place the elbow on the feasible circle
  # biased toward a straight wrist, retaining a low elbow outside the view.
  ideal_elbow=goal[:3,3]-desired@relative[:3,3] if neutral_wrist else elbow
- pole=.4*(ideal_elbow-shoulder)+.6*(elbow-shoulder);pole-=direction*np.dot(pole,direction)
+ pole=.4*(ideal_elbow-shoulder)+.6*(elbow-shoulder) if elbow_pole is None else np.array(elbow_pole)-shoulder;pole-=direction*np.dot(pole,direction)
  if np.linalg.norm(pole)<1e-6:pole=np.cross(direction,[0,0,1])
  pole/=np.linalg.norm(pole)
  along=(a*a-b*b+dist*dist)/(2*dist);height=math.sqrt(max(0,a*a-along*along))

@@ -18,6 +18,7 @@
 #include "cbase.h"
 #include "monsters.h"
 #include "weapons.h"
+#include "../game_shared/vf_traversal.h"
 #include "nodes.h"
 #include "player.h"
 #include "gamerules.h"
@@ -264,6 +265,7 @@ void CShotgun::SecondaryAttack( void )
 
 void CShotgun::Reload( void )
 {
+	if(VF_TR_NoReload(m_pPlayer->pev->iuser4)){m_fInSpecialReload=0;return;}
 	if (m_pPlayer->m_rgAmmo[m_iPrimaryAmmoType] <= 0 || m_iClip == SHOTGUN_MAX_CLIP)
 		return;
 

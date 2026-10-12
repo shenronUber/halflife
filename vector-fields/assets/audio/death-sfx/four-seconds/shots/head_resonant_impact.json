@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "ResonantImpact / head",
+  "created_utc": "2026-10-10T00:48:13.113748+00:00",
+  "request_sha256": "d7513f1bc27c107f098f9e60a5edd45bb634476f8de72d4f9d08a9d6c01248bd",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. Head exploding like a ripe pumpkin: deep wet pop, crunchy rupture, broad pulp splatter and dripping.  Element: A heavy tendon and bone snap followed by two separated metallic resonant pings, then a deep wavering physical pressure ring and scattered settling Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "9b953c47fa3e5e26936358e5d5871c93e20b34d7ba1ffad7ba4e56d0f5be1271",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. Head exploding like a ripe pumpkin: deep wet pop, crunchy rupture, broad pulp splatter and dripping.  Element: A heavy tendon and bone snap followed by two separated metallic resonant pings, then a deep wavering physical pressure ring and scattered settling Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

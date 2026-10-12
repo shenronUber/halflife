@@ -1,0 +1,24 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Nikos Petros / mask",
+  "created_utc": "2026-10-11T21:22:55.453458+00:00",
+  "request_sha256": "a373a0bfefd89b3ad5c508afab7d138558ef48a1941c4d1c1a4caac1b5c9508f",
+  "request": {
+    "text": "[dry] Mask on. Not the fresh air I was promised.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "endpoint": "/v1/text-to-speech/uAGRkdJlXqIKwzx0HORp?output_format=mp3_44100_128",
+  "sha256": "921da8e275e838297fd4ef93e52880c294f4a6cd162662ab2a0c00aef0f54061",
+  "bytes": 58558,
+  "text": "[dry] Mask on. Not the fresh air I was promised.",
+  "request_id": "2wlxkcBeuPTpuB9wgyiL",
+  "reported_credit_cost": "5",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "voice_name": "Nikos Petros",
+  "language": "en"
+}

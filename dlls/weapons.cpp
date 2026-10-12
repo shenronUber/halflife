@@ -31,6 +31,7 @@
 #include "decals.h"
 #include "gamerules.h"
 #include "vf_skins.h"
+#include "../game_shared/vf_traversal.h"
 #include "vf_voice.h"
 #include "../game_shared/vf_voice_catalog.h"
 
@@ -660,6 +661,14 @@ BOOL CanAttack( float attack_time, float curtime, BOOL isPredicted )
 
 void CBasePlayerWeapon::ItemPostFrame( void )
 {
+	const int traversal=m_pPlayer->pev->iuser4;
+	if (VF_TR_NoReload(traversal)) {
+		m_fInReload=FALSE;m_fInSpecialReload=0;
+		m_pPlayer->pev->button &= ~(IN_RELOAD|IN_ATTACK2);
+		if (VF_TR_BusyHands(traversal)) return;
+	}
+	if (!VF_TR_CanFire(traversal,m_pPlayer->pev->fuser1,m_pPlayer->pev->v_angle.y)) return;
+
 	if ((m_fInReload) && ( m_pPlayer->m_flNextAttack <= UTIL_WeaponTimeBase() ) )
 	{
 		// complete the reload. 
@@ -700,7 +709,7 @@ void CBasePlayerWeapon::ItemPostFrame( void )
 		m_pPlayer->TabulateAmmo();
 		PrimaryAttack();
 	}
-	else if ( m_pPlayer->pev->button & IN_RELOAD && iMaxClip() != WEAPON_NOCLIP && !m_fInReload ) 
+	else if ( !VF_TR_NoReload(traversal) && m_pPlayer->pev->button & IN_RELOAD && iMaxClip() != WEAPON_NOCLIP && !m_fInReload )
 	{
 		// reload when reload is pressed, or if no buttons are down and weapon is empty.
 		Reload();
@@ -723,7 +732,7 @@ void CBasePlayerWeapon::ItemPostFrame( void )
 		else
 		{
 			// weapon is useable. Reload if empty and weapon has waited as long as it has to after firing
-			if ( m_iClip == 0 && !(iFlags() & ITEM_FLAG_NOAUTORELOAD) && m_flNextPrimaryAttack < ( UseDecrement() ? 0.0 : gpGlobals->time ) )
+			if ( !VF_TR_NoReload(traversal) && m_iClip == 0 && !(iFlags() & ITEM_FLAG_NOAUTORELOAD) && m_flNextPrimaryAttack < ( UseDecrement() ? 0.0 : gpGlobals->time ) )
 			{
 				Reload();
 				return;
@@ -1028,6 +1037,7 @@ BOOL CBasePlayerWeapon :: DefaultDeploy( char *szViewModel, char *szWeaponModel,
 
 BOOL CBasePlayerWeapon :: DefaultReload( int iClipSize, int iAnim, float fDelay, int body )
 {
+	if (VF_TR_NoReload(m_pPlayer->pev->iuser4)) return FALSE;
 	if (m_pPlayer->m_rgAmmo[m_iPrimaryAmmoType] <= 0)
 		return FALSE;
 

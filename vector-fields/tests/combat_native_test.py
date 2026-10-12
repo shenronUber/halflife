@@ -6,9 +6,10 @@ sys.path.insert(0,str(ROOT));sys.path.insert(0,str(ROOT/'tests'))
 import third_person_native_test as harness
 OUT=ROOT/'build/combat'
 
-def run(server=None,client=None):
- engine=harness.stage('combat',server=server or ROOT/'build/server/hl.dll',client=client or harness.BASE/'vf_visual/cl_dlls/client.dll');mod=engine/'vf_animation'
- for name in ('xash.dll','ref_gl.dll'):shutil.copy2(harness.BASE/name,engine/name)
+def run(server=None,client=None,renderer=None):
+ engine=harness.stage('combat',server=server or ROOT/'build/server/hl.dll',client=client or harness.BASE/'vf_visual/cl_dlls/client.dll',renderer=renderer);mod=engine/'vf_animation'
+ for name in ('xash.dll','ref_gl.dll'):shutil.copy2((Path(renderer) if renderer else harness.BASE)/name,engine/name)
+ shutil.copy2(ROOT.parent/'network/delta.lst',mod/'delta.lst')
  shutil.copy2(client or harness.BASE/'vf_visual/cl_dlls/client.dll',mod/'cl_dlls/client.dll')
  # Keep the established first-person carriers, including their optional foregrip.
  for path in (ROOT/'generated/r01').glob('r01_rig*.mdl'):shutil.copy2(path,mod/'models/vf_r01'/path.name)
@@ -16,7 +17,7 @@ def run(server=None,client=None):
  s+='cmd vf_materials_info\ncmd vf_body_info\necho COMBAT_IDLE\ncmd vf_hitbox_info\nvf_impact_debug 1\ncmd vf_combat_selftest\nwait 10\nvf_impact_debug 1\n+attack\nwait 12\n-attack\nwait 10\necho COMBAT_SHOT\ncmd vf_impact_info\n'
  s+='+reload\nwait 2\n-reload\nwait 20\necho COMBAT_RELOAD_A\ncmd vf_reload_info\ncmd vf_hitbox_info\ncmd vf_hitbox_probe\nwait 45\necho COMBAT_RELOAD_B\ncmd vf_reload_info\ncmd vf_hitbox_info\ncmd vf_hitbox_probe\nwait 55\necho COMBAT_FINISHED\ncmd vf_reload_info\ncmd vf_hitbox_info\nvf_engine_stats\nwait 15\nquit\n'
  (mod/'combat_test.cfg').write_text(s,encoding='ascii')
- command=[str(engine/'xash3d.exe'),'-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_animation','-windowed','-width','1280','-height','720','-console','-nointro','-nowriteconfig','-log','combat-test.log','+exec','lab_controls.cfg','+developer','1','+sv_cheats','1','+map','vf_range','+exec','combat_test.cfg']
+ command=[str(engine/'xash3d.exe'),'-ip','127.0.0.1','-noip6','-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_animation','-windowed','-width','1280','-height','720','-console','-nointro','-nowriteconfig','-log','combat-test.log','+exec','lab_controls.cfg','+developer','1','+sv_cheats','1','+map','vf_range','+exec','combat_test.cfg']
  start=time.time();child=subprocess.Popen(command,cwd=engine)
  try:
   child.wait(timeout=35);assert child.returncode==0,child.returncode
@@ -50,7 +51,7 @@ def verify(engine,start=None):
  probe_motion=sum((x-y)**2 for x,y in zip(samples['COMBAT_RELOAD_A']['probe'],samples['COMBAT_RELOAD_B']['probe']))**.5;assert probe_motion>1
  assert all(abs(x-y)<.05 for x,y in zip(samples['COMBAT_RELOAD_A']['centers']['Bip01 Pelvis'],samples['COMBAT_RELOAD_B']['centers']['Bip01 Pelvis'])), 'trace displacement must not be caused by player movement'
  assert 'active=0 clip=50 model=models/vf_r01/r01_tp.mdl' in log
- report=dict(elapsed_seconds=round(time.time()-start,2)if start else None,material_count=int(materials[1]),profile_count=int(materials[2]),multipliers=dict(zip(['head','chest','abdomen','arm','leg'],map(float,materials.groups()[2:]))),reload_samples=samples,left_hand_motion_units=motion,actual_trace_motion_units=probe_motion,server_sha256=hashlib.sha256((engine/'vf_animation/dlls/hl.dll').read_bytes()).hexdigest(),catalog_sha256=hashlib.sha256((ROOT/'data/combat-materials.json').read_bytes()).hexdigest(),checks=['actual engine traces find all seven anatomical regions','legacy health damage verified for seven regions','legacy armor ratio and armor consumption preserved','projectile context does not leak into unscoped melee','equipped projectile and ammo identity captured independently of finish/VFX','textile and flesh layers identified','20 anatomical hitboxes, no invisible shield','actual engine trace intersections and server bone centers advance with reload; pelvis stays fixed','movement hull unchanged','reload completes and no renderer rejection'],limits=['GET_BONE_POSITION diagnostics reflect the server pose; precise hull blending may differ','client gait and torso corrections are not fully reproduced in server collision','clothing coverage is a coarse hitgroup proxy; no triangle-level layering or penetration','density is provisional; resistance, thickness, mass and speed are uncalibrated'],mode='identify_only')
+ report=dict(elapsed_seconds=round(time.time()-start,2)if start else None,material_count=int(materials[1]),profile_count=int(materials[2]),multipliers=dict(zip(['head','chest','abdomen','arm','leg'],map(float,materials.groups()[2:]))),reload_samples=samples,left_hand_motion_units=motion,actual_trace_motion_units=probe_motion,server_sha256=hashlib.sha256((engine/'vf_animation/dlls/hl.dll').read_bytes()).hexdigest(),catalog_sha256=hashlib.sha256((ROOT/'data/combat-materials.json').read_bytes()).hexdigest(),checks=['actual engine traces find all seven anatomical regions','legacy health damage verified for seven regions','legacy armor ratio and armor consumption preserved','projectile context does not leak into unscoped melee','equipped projectile and ammo identity captured independently of finish/VFX','textile and flesh layers identified','20 anatomical hitboxes, no invisible shield','actual engine trace intersections and server bone centers advance with reload; pelvis stays fixed','movement hull unchanged','reload completes and no renderer rejection'],limits=['shared pose solver is independently validated by player_pose_native_test; volumes are anatomical boxes','clothing coverage is a coarse hitgroup proxy; no triangle-level layering or penetration','density is provisional; resistance, thickness, mass and speed are uncalibrated'],mode='identify_only')
  (OUT/'native-verification.json').write_text(json.dumps(report,indent=2),encoding='utf-8');print('PASS native combat:',json.dumps({k:v for k,v in report.items()if k!='reload_samples'}));return report
 if __name__=='__main__':
  if '--verify' in sys.argv:verify(harness.OUT/'combat')

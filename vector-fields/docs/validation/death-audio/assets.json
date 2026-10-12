@@ -1,45 +1,46 @@
 {
-  "clips": 33,
+  "clips": 50,
   "death": 16,
   "dismemberment": 17,
+  "head_explosions": 17,
   "format": "mono PCM 22050 Hz / 16 bit",
-  "bytes": 2073336,
+  "bytes": 3571380,
   "duration_range": [
-    1.061497,
+    1.0614965986394558,
     2.08
   ],
   "closest_signal_pairs": [
     [
-      0.9725761981762998,
-      "dismemberment_resonant_impact",
-      "death_corrosion"
+      0.9742535973743562,
+      "death_caustic_contagion",
+      "dismemberment_cryo"
     ],
     [
-      0.9488835310373727,
-      "dismemberment_resonant_impact",
-      "dismemberment_arc_chain"
+      0.9587132907640721,
+      "head_toxic_ignition",
+      "head_caustic_contagion"
     ],
     [
-      0.9392733466511752,
-      "dismemberment_arc_chain",
-      "death_corrosion"
+      0.9565429615080359,
+      "head_toxic_ignition",
+      "dismemberment_shatter"
     ],
     [
-      0.9379390972890935,
-      "death_toxic_ignition",
+      0.9548844851478667,
+      "death_cavitation",
       "death_hydro"
     ],
     [
-      0.9308027098553672,
-      "death_resonant_impact",
-      "death_shatter"
+      0.9508042469360545,
+      "head_cavitation",
+      "death_cavitation"
     ]
   ],
   "checks": [
     "each element and cross-element reaction has independent death and detachment assets",
     "neutral detachment exists without an elemental death cue",
-    "33 unique generated masters and exported WAV hashes",
-    "audible quick attacks, no digital clipping, fade-outs and mix headroom",
+    "50 unique generated masters and exported WAV hashes",
+    "original source frame counts preserved; natural short timing, audible attack, no digital clipping",
     "complete offline bank; preview links and provenance valid"
   ]
 }

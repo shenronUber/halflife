@@ -1,0 +1,24 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Otto Stahl / mask",
+  "created_utc": "2026-10-11T21:22:52.543994+00:00",
+  "request_sha256": "9c68a7f88d4a19d82f2b09c59141de0dc61f1279b476e94799bda05cb86f13ee",
+  "request": {
+    "text": "[stern] Mask on. Seal verified.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "endpoint": "/v1/text-to-speech/edgqs6sEs8iMvFG1VpR8?output_format=mp3_44100_128",
+  "sha256": "6427d6617cb1cc2114b0fb02bb943fe85b54625e1a814c0668c5f71e4b1ce85a",
+  "bytes": 48527,
+  "text": "[stern] Mask on. Seal verified.",
+  "request_id": "0mWTKlhTQljGFGyqwP8b",
+  "reported_credit_cost": "3",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "voice_name": "Otto Stahl",
+  "language": "en"
+}

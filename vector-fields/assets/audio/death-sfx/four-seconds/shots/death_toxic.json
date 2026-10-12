@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Toxic / death",
+  "created_utc": "2026-10-10T00:47:51.875338+00:00",
+  "request_sha256": "acdc8bf3ea35411f71d7f55a345257e1e674800988b81537b8e56f350824fa83",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. A hollow muffled toxic cloud eruption with a papery rustling spore texture, followed by irregular dusty poison pulses and a dry fluttering decay. No liquid bubbling. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "058697b3cfacee2653d181d0014926b41663d4ff224da597572a82f0174f7e13",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. A hollow muffled toxic cloud eruption with a papery rustling spore texture, followed by irregular dusty poison pulses and a dry fluttering decay. No liquid bubbling. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

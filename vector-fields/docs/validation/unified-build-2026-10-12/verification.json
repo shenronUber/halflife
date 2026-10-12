@@ -1,0 +1,365 @@
+{
+  "passed": true,
+  "completed_utc": "2026-10-12T18:06:10.571049+00:00",
+  "release_id": "20261012-173920-b52854d8",
+  "source_identity": "8cef2712d75d413230541429e2d89f3bf59100ea198e8187115a984434b740dd",
+  "engine_source_identity": "ac8552b64152955ee8d1f7b505cf4fee6e29f2cd39f8ae644f1667359db93d7e",
+  "runtime": "vf_visual",
+  "deployment": {
+    "files": 652,
+    "models": 116
+  },
+  "validation": {
+    "suites": [
+      "unit",
+      "policy",
+      "assets",
+      "integration"
+    ],
+    "passed": true,
+    "results": [
+      {
+        "suite": "unit",
+        "test": "validate.py",
+        "passed": true,
+        "seconds": 8.56
+      },
+      {
+        "suite": "unit",
+        "test": "model_contract.py",
+        "passed": true,
+        "seconds": 0.06
+      },
+      {
+        "suite": "unit",
+        "test": "contract_documentation.py",
+        "passed": true,
+        "seconds": 0.06
+      },
+      {
+        "suite": "unit",
+        "test": "tests/status_renderer_update_test.py",
+        "passed": true,
+        "seconds": 5.14
+      },
+      {
+        "suite": "policy",
+        "test": "cpp_tests.py",
+        "passed": true,
+        "seconds": 42.31
+      },
+      {
+        "suite": "assets",
+        "test": "tests/headgear_assets_test.py",
+        "passed": true,
+        "seconds": 20.55
+      },
+      {
+        "suite": "assets",
+        "test": "tests/headgear_feedback_test.py",
+        "passed": true,
+        "seconds": 3.36
+      },
+      {
+        "suite": "assets",
+        "test": "tests/weapon_inspect_clearance_test.py",
+        "passed": true,
+        "seconds": 3.3
+      },
+      {
+        "suite": "assets",
+        "test": "tests/weapon_melee_geometry_test.py",
+        "passed": true,
+        "seconds": 1.97
+      },
+      {
+        "suite": "assets",
+        "test": "tests/new_personas_test.py",
+        "passed": true,
+        "seconds": 0.53
+      },
+      {
+        "suite": "assets",
+        "test": "tests/artisan_sets_test.py",
+        "passed": true,
+        "seconds": 0.56
+      },
+      {
+        "suite": "assets",
+        "test": "tests/test_room_assets_test.py",
+        "passed": true,
+        "seconds": 0.08
+      },
+      {
+        "suite": "assets",
+        "test": "tests/fragment_finish_assets_test.py",
+        "passed": true,
+        "seconds": 0.19
+      },
+      {
+        "suite": "assets",
+        "test": "tests/death_sounds_test.py",
+        "passed": true,
+        "seconds": 1.94
+      },
+      {
+        "suite": "assets",
+        "test": "tests/death_motion_test.py",
+        "passed": true,
+        "seconds": 1.14
+      },
+      {
+        "suite": "assets",
+        "test": "tests/death_atlas_test.py",
+        "passed": true,
+        "seconds": 0.28
+      },
+      {
+        "suite": "assets",
+        "test": "tests/external_death_animations_test.py",
+        "passed": true,
+        "seconds": 4.39
+      },
+      {
+        "suite": "assets",
+        "test": "tests/death_visual_native_test.py",
+        "passed": true,
+        "seconds": 1.19
+      },
+      {
+        "suite": "assets",
+        "test": "tests/wound_textures_test.py",
+        "passed": true,
+        "seconds": 8.25
+      },
+      {
+        "suite": "assets",
+        "test": "tests/death_voice_assets_test.py",
+        "passed": true,
+        "seconds": 0.42
+      },
+      {
+        "suite": "assets",
+        "test": "tests/status_decals_assets_test.py",
+        "passed": true,
+        "seconds": 1.45
+      },
+      {
+        "suite": "assets",
+        "test": "tests/model_contract_assets_test.py",
+        "passed": true,
+        "seconds": 0.48
+      },
+      {
+        "suite": "assets",
+        "test": "tests/traversal_assets_test.py",
+        "passed": true,
+        "seconds": 6.08
+      },
+      {
+        "suite": "assets",
+        "test": "tests/first_person_test.py",
+        "passed": true,
+        "seconds": 1.33
+      },
+      {
+        "suite": "assets",
+        "test": "tests/operator_rig_test.py",
+        "passed": true,
+        "seconds": 1.66
+      },
+      {
+        "suite": "assets",
+        "test": "tests/reference_extensions_test.py",
+        "passed": true,
+        "seconds": 11.66
+      },
+      {
+        "suite": "assets",
+        "test": "tests/reference_chassis_test.py",
+        "passed": true,
+        "seconds": 6.8
+      },
+      {
+        "suite": "assets",
+        "test": "tests/r01_fitted_assets_test.py",
+        "passed": true,
+        "seconds": 0.53
+      },
+      {
+        "suite": "assets",
+        "test": "tests/r01_finish_revision_test.py",
+        "passed": true,
+        "seconds": 6.3
+      },
+      {
+        "suite": "assets",
+        "test": "tests/reference_themes_test.py",
+        "passed": true,
+        "seconds": 4.34
+      },
+      {
+        "suite": "assets",
+        "test": "tests/reference_platform_test.py",
+        "passed": true,
+        "seconds": 21.81
+      },
+      {
+        "suite": "assets",
+        "test": "tests/foregrip_assets_test.py",
+        "passed": true,
+        "seconds": 3.19
+      },
+      {
+        "suite": "assets",
+        "test": "tests/third_person_assets_test.py",
+        "passed": true,
+        "seconds": 5.59
+      },
+      {
+        "suite": "assets",
+        "test": "tests/weapon_fx_test.py",
+        "passed": true,
+        "seconds": 0.3
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 55.08
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 77.33
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 75.67
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 37.98
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 44.67
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 42.55
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 58.8
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 98.72
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 81.45
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 27.53
+      },
+      {
+        "suite": "integration",
+        "test": "tests/test_room_native_test.py",
+        "passed": true,
+        "seconds": 75.73
+      },
+      {
+        "suite": "integration",
+        "test": "tests/combined_room_native_test.py",
+        "passed": true,
+        "seconds": 83.55
+      },
+      {
+        "suite": "integration",
+        "test": "tests/modular_native_test.py",
+        "passed": true,
+        "seconds": 70.77
+      },
+      {
+        "suite": "integration",
+        "test": "tests/modular_multiplayer_test.py",
+        "passed": true,
+        "seconds": 32.06
+      },
+      {
+        "suite": "integration",
+        "test": "tests/modular_launch_test.py",
+        "passed": true,
+        "seconds": 7.47
+      },
+      {
+        "suite": "integration",
+        "test": "tests/current_release_test.py",
+        "passed": true,
+        "seconds": 85.88
+      }
+    ]
+  },
+  "delivered": [
+    "Single locked private-build/validation/publication path with source and artifact hashes, complete mod swap, backup and rollback",
+    "Maintained integration gate includes intentional wallrun, two views, observers and late join, walljump, reload, melee/network, walking, hitboxes, combat, both main maps and save/load",
+    "Modular map uses the same main client/server and resources; old modular launcher is a compatibility shortcut",
+    "Combined vf_range preserves four reactive targets and includes the shared vault/hang/backjump/slide/wallrun geometry in a connected bay",
+    "Current code, data, authored animation exports and principal Blender sources prepared as a local Git checkpoint; worktree dependency bootstrap and workflow documentation added"
+  ],
+  "controls": {
+    "F4": "Combat and parkour room",
+    "F9": "New modular layout in the same main game",
+    "F5": "Current modular seed and layout",
+    "F10": "Third person",
+    "F12": "First person",
+    "END": "Clear effect preview"
+  },
+  "native_combined_room": {
+    "passed": true,
+    "map": "vf_range",
+    "states": {
+      "VAULT": 1,
+      "HANG": 2,
+      "PUSH": 7,
+      "CAUGHT": 2,
+      "RUN": 8,
+      "SLIDE": 5
+    },
+    "shooting_proc": true
+  },
+  "hitboxes": {
+    "poses": 70,
+    "boxes": 1400,
+    "max_corner_error_units": 0.11159079634882364
+  },
+  "reload_max_adjacent_torso_step_degrees": 0.3179654970866074,
+  "normal_launcher_post_publication": "Passed; existing release recognized without recompilation or resource changes",
+  "source_checkpoint_scope": "Source/data/recipes and principal authoring scenes; generated runtimes/dependencies are seeded explicitly for a new worktree. Historical experiments and large local capture archives are retained locally.",
+  "captures": [
+    "G:\\Half life Project\\vector-fields\\docs\\validation\\unified-build-2026-10-12\\combined_combat.png",
+    "G:\\Half life Project\\vector-fields\\docs\\validation\\unified-build-2026-10-12\\combined_wallrun_first.png",
+    "G:\\Half life Project\\vector-fields\\docs\\validation\\unified-build-2026-10-12\\combined_wallrun_third.png",
+    "G:\\Half life Project\\vector-fields\\docs\\validation\\unified-build-2026-10-12\\modular_main.png"
+  ]
+}

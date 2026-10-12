@@ -9,6 +9,7 @@
 #include "vf_equipment.h"
 #include "vf_voice.h"
 #include "vf_combat.h"
+#include "../game_shared/vf_death_visual.h"
 #include "../game_shared/vf_proc_policy.h"
 #include "../game_shared/vf_combat_policy.h"
 #include "../game_shared/vf_voice_catalog.h"
@@ -22,30 +23,31 @@
 namespace { int targetMessage=0;const char* rig="models/vf_skins/persona_rig.mdl";int outfitClock=-1; }
 class CVFRangeTarget:public CBaseMonster {
 public:
- int slot,skin,actor,deathMask,deathMotion;float revive,nextSync,replyAt;EHANDLE source;unsigned int sourceLife;float replyUntil;
- vfs::State status;vfp::Accumulator hits;vfv::State voice;
+ int slot,skin,actor,deathMask,deathMotion;float revive,nextSync,replyAt,deathHitTime;EHANDLE source;unsigned int sourceLife;float replyUntil;
+ Vector deathDirection;vfs::State status;vfp::Accumulator hits;vfv::State voice;
+ float regionDamage[5],traceWeights[5],traceTotal;entvars_t* traceAttacker;int traceBits;bool traceApplied;
  void Spawn();void Precache();void KeyValue(KeyValueData*);
  int Classify(){return CLASS_HUMAN_MILITARY;}
  int BloodColor(){return BLOOD_COLOR_RED;}
  void TraceAttack(entvars_t*,float,Vector,TraceResult*,int);
  int TakeDamage(entvars_t*,entvars_t*,float,int);void Killed(entvars_t*,int);
- void EXPORT TargetThink();void Send(CBasePlayer* to=0);void Reset();
+ void EXPORT TargetThink();void Send(CBasePlayer* to=0);void Reset(bool damage=true);
  int Save(CSave&);int Restore(CRestore&);static TYPEDESCRIPTION m_SaveData[];
 };
 LINK_ENTITY_TO_CLASS(vf_range_target,CVFRangeTarget);
-TYPEDESCRIPTION CVFRangeTarget::m_SaveData[]={DEFINE_FIELD(CVFRangeTarget,slot,FIELD_INTEGER),DEFINE_FIELD(CVFRangeTarget,skin,FIELD_INTEGER),DEFINE_FIELD(CVFRangeTarget,actor,FIELD_INTEGER)};
+TYPEDESCRIPTION CVFRangeTarget::m_SaveData[]={DEFINE_FIELD(CVFRangeTarget,slot,FIELD_INTEGER),DEFINE_FIELD(CVFRangeTarget,skin,FIELD_INTEGER),DEFINE_FIELD(CVFRangeTarget,actor,FIELD_INTEGER),DEFINE_ARRAY(CVFRangeTarget,regionDamage,FIELD_FLOAT,5)};
 int CVFRangeTarget::Save(CSave& save){if(!CBaseMonster::Save(save))return 0;return save.WriteFields("VF_RANGE",this,m_SaveData,ARRAYSIZE(m_SaveData));}
-int CVFRangeTarget::Restore(CRestore& restore){if(!CBaseMonster::Restore(restore))return 0;int ok=restore.ReadFields("VF_RANGE",this,m_SaveData,ARRAYSIZE(m_SaveData));Reset();revive=IsAlive()?0:gpGlobals->time+2;nextSync=0;SetThink(&CVFRangeTarget::TargetThink);pev->nextthink=gpGlobals->time+.1f;return ok;}
+int CVFRangeTarget::Restore(CRestore& restore){if(!CBaseMonster::Restore(restore))return 0;int ok=restore.ReadFields("VF_RANGE",this,m_SaveData,ARRAYSIZE(m_SaveData));Reset(false);revive=IsAlive()?0:gpGlobals->time+2;nextSync=0;SetThink(&CVFRangeTarget::TargetThink);pev->nextthink=gpGlobals->time+.1f;return ok;}
 void CVFRangeTarget::KeyValue(KeyValueData* k){if(!strcmp(k->szKeyName,"vf_slot")){slot=atoi(k->szValue);k->fHandled=TRUE;}else CBaseMonster::KeyValue(k);}
 void CVFRangeTarget::Precache(){PRECACHE_MODEL((char*)rig);PRECACHE_MODEL("models/vf_skins/persona_scout.mdl");}
-void CVFRangeTarget::Reset(){vfs::Reset(status);vfp::Reset(hits);vfv::Reset(voice);replyAt=replyUntil=0;source=NULL;sourceLife=0;}
+void CVFRangeTarget::Reset(bool damage){vfs::Reset(status);vfp::Reset(hits);vfv::Reset(voice);replyAt=replyUntil=0;source=NULL;sourceLife=0;deathHitTime=-1;deathDirection=g_vecZero;m_LastHitGroup=HITGROUP_GENERIC;deathMask=-1;deathMotion=0;traceTotal=0;traceAttacker=NULL;traceBits=0;traceApplied=false;memset(traceWeights,0,sizeof(traceWeights));if(damage)memset(regionDamage,0,sizeof(regionDamage));}
 void CVFRangeTarget::Spawn(){
  deathMask=deathMotion=0;Precache();SET_MODEL(edict(),rig);
  pev->movetype=MOVETYPE_NONE;pev->solid=SOLID_SLIDEBOX;pev->flags|=FL_MONSTER;pev->effects&=~EF_NODRAW;
  pev->takedamage=DAMAGE_YES;pev->deadflag=DEAD_NO;pev->health=pev->max_health=300;
  // Link only after solidity is set, so engine traces can find the target.
  UTIL_SetSize(pev,Vector(-16,-16,-36),Vector(16,16,36));UTIL_SetOrigin(pev,pev->origin);
- if(outfitClock<0)outfitClock=RANDOM_LONG(0,13);skin=(outfitClock+++slot*3)%14;actor=RANDOM_LONG(0,vfv::ActorCount-1);
+ if(outfitClock<0)outfitClock=RANDOM_LONG(0,vfdeath::FinishCount-1);skin=(outfitClock+++slot*3)%vfdeath::FinishCount;actor=RANDOM_LONG(0,vfv::ActorCount-1);
  pev->sequence=LookupSequence("look_idle");if(pev->sequence<0)pev->sequence=0;pev->frame=0;ResetSequenceInfo();
  pev->controller[0]=pev->controller[1]=pev->controller[2]=pev->controller[3]=127;pev->blending[0]=127;pev->blending[1]=0;
  Reset();revive=0;nextSync=gpGlobals->time+1;SetThink(&CVFRangeTarget::TargetThink);pev->nextthink=gpGlobals->time+.1f;
@@ -59,8 +61,11 @@ void CVFRangeTarget::Send(CBasePlayer* to){
 }
 void CVFRangeTarget::TraceAttack(entvars_t* attacker,float damage,Vector dir,TraceResult* trace,int bits){
  if(!IsAlive()||!pev->takedamage)return;
+ if(deathHitTime!=gpGlobals->time||traceAttacker!=attacker||traceApplied){memset(traceWeights,0,sizeof(traceWeights));traceTotal=0;traceBits=0;traceApplied=false;}
+ m_LastHitGroup=trace->iHitgroup;deathHitTime=gpGlobals->time;deathDirection=dir;traceAttacker=attacker;traceBits|=bits;
  vfc::Multipliers m={gSkillData.plrHead,gSkillData.plrChest,gSkillData.plrStomach,gSkillData.plrArm,gSkillData.plrLeg};
  damage=vfc::LegacyTraceDamage(damage,vfc::HitRegion(trace->iHitgroup),m);
+ traceTotal+=damage;int region=vfdeath::DamageRegion(trace->iHitgroup);if(region>=0)traceWeights[region]+=damage;
  int e=(bits&DMG_BULLET)&&damage>0?VF_CurrentShotElement():-1;
  if(vfp::Hit(hits,e,gpGlobals->time)){
   vfs::Result r=vfs::ApplyPrimary(status,e,gpGlobals->time,vfp::Duration);
@@ -69,13 +74,20 @@ void CVFRangeTarget::TraceAttack(entvars_t* attacker,float damage,Vector dir,Tra
  }
  SpawnBlood(trace->vecEndPos,BloodColor(),damage);AddMultiDamage(attacker,this,damage,bits);Send();
 }
-int CVFRangeTarget::TakeDamage(entvars_t*,entvars_t* attacker,float damage,int){
- if(!IsAlive()||!pev->takedamage)return 0;pev->health-=damage;
- if(pev->health<=0){pev->health=0;Killed(attacker,GIB_NEVER);}else VF_VoiceEntity(this,actor,voice,vfv::E_pain);Send();return 1;
+int CVFRangeTarget::TakeDamage(entvars_t* inflictor,entvars_t* attacker,float damage,int bits){
+ if(!IsAlive()||!pev->takedamage||!std::isfinite(damage)||damage<=0)return 0;
+ bool localized=deathHitTime==gpGlobals->time&&traceAttacker==attacker&&!traceApplied&&traceBits==bits;
+ if(localized){vfdeath::AccumulateDamage(regionDamage,traceWeights,traceTotal,damage);traceApplied=true;}
+ else {deathHitTime=-1;m_LastHitGroup=HITGROUP_GENERIC;deathDirection=inflictor&&inflictor!=pev?pev->origin-inflictor->origin:g_vecZero;}
+ pev->health-=damage;
+ if(pev->health<=0){pev->health=0;Killed(attacker,GIB_NEVER);}else VF_VoiceEntity(this,actor,voice,vfv::E_pain);deathHitTime=-1;Send();return 1;
 }
 void CVFRangeTarget::Killed(entvars_t*,int){
- if(pev->deadflag!=DEAD_NO)return;VF_DeathTarget(this,skin,status,deathMask,deathMotion);deathMask=deathMotion=0;
- VF_VoiceEntityDeath(this,actor,voice,status);pev->deadflag=DEAD_DEAD;pev->takedamage=DAMAGE_NO;pev->solid=SOLID_NOT;pev->effects|=EF_NODRAW;
+ if(pev->deadflag!=DEAD_NO)return;if(deathHitTime!=gpGlobals->time)m_LastHitGroup=HITGROUP_GENERIC;
+ int mask=deathMask<0?vfdeath::AutomaticMask(m_LastHitGroup,regionDamage,pev->max_health):deathMask;
+ int region=vfdeath::DamageRegion(m_LastHitGroup);ALERT(at_console,"VFRange anatomy target=%d hitgroup=%d mask=%d regional_damage=%.3f maximum_health=%.3f\n",slot,m_LastHitGroup,mask,region>=0?regionDamage[region]:0,pev->max_health);
+ VF_DeathTarget(this,skin,status,mask,deathMotion,deathDirection);deathMask=-1;deathMotion=0;
+ VF_VoiceEntityDeath(this,actor,voice,status,false,(mask&vfdeath::Head)!=0);pev->deadflag=DEAD_DEAD;pev->takedamage=DAMAGE_NO;pev->solid=SOLID_NOT;pev->effects|=EF_NODRAW;
  UTIL_SetOrigin(pev,pev->origin);vfs::Reset(status);vfp::Reset(hits);replyAt=0;revive=gpGlobals->time+2;Send();
  ALERT(at_console,"VFRange death target=%d respawn=2\n",slot);
 }
@@ -132,8 +144,21 @@ bool VF_RangeCommand(CBasePlayer* p,const char* cmd){
  if(!strcmp(cmd,"vf_range_reset")){if(!t->IsAlive()){t->Spawn();return true;}t->Reset();t->pev->health=t->pev->max_health;t->Send();return true;}
  if(!strcmp(cmd,"vf_range_aim")){Vector pos=t->pev->origin+Vector(0,-160,0);UTIL_SetOrigin(p->pev,pos);p->pev->velocity=p->pev->basevelocity=g_vecZero;p->pev->v_angle=p->pev->angles=Vector(3.6f,90,0);p->pev->fixangle=1;return true;}
  if(!strcmp(cmd,"vf_range_fire")&&t->IsAlive()){
-  Vector dest=t->pev->origin+Vector(0,0,15),src=dest+Vector(0,-140,0);int count=CMD_ARGC()>2?atoi(CMD_ARGV(2)):1;count=count<1?1:count>6?6:count;
-  p->FireBulletsPlayer(count,src,Vector(0,1,0),g_vecZero,8192,BULLET_PLAYER_MP5,0,0,p->pev,p->random_seed);return true;
+  Vector dest=t->pev->origin+Vector(0,0,15);
+   // Optional authored zone for real bullet-impact regression probes.
+   if(CMD_ARGC()>3){int mask=VF_DeathMask(CMD_ARGV(3));const int regions[]={1,2,4,8,16},bones[]={13,16,23,3,6};bool found=false;
+    for(int i=0;i<5;++i)if(mask==regions[i]){Vector angle;t->GetBonePosition(bones[i],dest,angle);found=true;}
+    if(!found)return true;
+   }
+   Vector direction(0,1,0);
+   if(CMD_ARGC()>4){
+    float yaw=t->pev->angles.y*.01745329252f;Vector front(cosf(yaw),sinf(yaw),0),left(-sinf(yaw),cosf(yaw),0);
+    const char* side=CMD_ARGV(4);
+    if(!strcmp(side,"front"))direction=front*-1;else if(!strcmp(side,"back"))direction=front;
+    else if(!strcmp(side,"left"))direction=left*-1;else if(!strcmp(side,"right"))direction=left;else return true;
+   }
+   Vector src=dest-direction*140;int count=CMD_ARGC()>2?atoi(CMD_ARGV(2)):1;count=count<1?1:count>6?6:count;
+  p->FireBulletsPlayer(count,src,direction,g_vecZero,8192,BULLET_PLAYER_MP5,0,0,p->pev,p->random_seed);return true;
  }
  return true;
 }

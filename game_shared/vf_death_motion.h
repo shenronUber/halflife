@@ -2,23 +2,25 @@
 #ifndef VF_DEATH_MOTION_H
 #define VF_DEATH_MOTION_H
 namespace vfmotion {
-struct Motion { const char* id; const char* label; const char* sequence; };
+struct Motion { const char* id; const char* label; const char* sequence; bool directional; };
 static const Motion Motions[]={
- {"auto","Variante automatique",0},
- {"legacy","Chutes historiques",0},
- {"quaternius","Quaternius : chute","vf_q_death"},
- {"kaykit_a","KayKit : chute rapide","vf_k_death_a"},
- {"kaykit_b","KayKit : effondrement","vf_k_death_b"},
- {"collapse","Mixamo : chute au sol","vf_m_collapse"},
- {"impact_right","Mixamo : impact lateral","vf_m_impact_right"},
- {"impact_front","Mixamo : recul frontal","vf_m_impact_front"},
- {"agony","Mixamo : agonie lente","vf_m_agony"},
- {"collapse_left","Mixamo : chute laterale","vf_m_collapse_left"},
- {"recoil_back","Mixamo : douleur puis recul","vf_m_recoil_back"},
- {"recoil_right","Mixamo : douleur puis chute","vf_m_recoil_right"},
- {"electric","Contractions electriques","vf_electro"},
- {"headshot","Impact a la tete","headshot"},
- {"spin","Impact avec rotation","die_spin"},
+ {"auto","Variante automatique",0,false},
+ {"legacy","Chutes historiques",0,false},
+ {"quaternius","Quaternius : chute","vf_q_death",false},
+ {"kaykit_a","KayKit : chute rapide","vf_k_death_a",false},
+ {"kaykit_b","KayKit : effondrement","vf_k_death_b",false},
+ {"collapse","Mixamo : chute au sol","vf_m_collapse",false},
+ {"impact_right","Mixamo : impact lateral","vf_m_impact_right",true},
+ {"impact_front","Mixamo : recul frontal","vf_m_impact_front",true},
+ {"agony","Mixamo : agonie lente","vf_m_agony",false},
+ {"collapse_left","Mixamo : chute laterale","vf_m_collapse_left",true},
+ {"recoil_back","Mixamo : douleur puis recul","vf_m_recoil_back",true},
+ {"recoil_right","Mixamo : douleur puis chute","vf_m_recoil_right",true},
+ {"electric","Contractions electriques","vf_electro",false},
+ {"headshot","Impact a la tete","vf_headshot",false},
+ {"spin","Impact avec rotation","vf_spin",true},
+ {"electric_back","Contractions puis chute en arriere","vf_electro_back",false},
+ {"electric_forward","Contractions puis effondrement en avant","vf_electro_forward",false},
 };
 static const int Count=sizeof(Motions)/sizeof(Motions[0]);
 }

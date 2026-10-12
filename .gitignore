@@ -13,3 +13,8 @@
 # Disposable workspace exports and installed JavaScript dependencies.
 /outputs/
 **/node_modules/
+/vector-fields/weapon-workshop/*/native-engine/
+/vector-fields/weapon-workshop/*/integration-backup/
+/vector-fields/weapon-workshop/*/profile/
+/vector-fields/weapon-workshop/*/tests/
+/vector-fields/weapon-workshop/*/catalogue-build-check/

@@ -10,6 +10,7 @@
 #include "vf_equipment.h"
 #include "vf_combat.h"
 #include "vf_status.h"
+#include "vf_death.h"
 #include "../game_shared/vf_loadout.h"
 #include "pm_materials.h"
 #include <cstdio>
@@ -115,6 +116,7 @@ void Selftest(CBasePlayer* p){
  Vector velocity=p->pev->velocity,baseVelocity=p->pev->basevelocity,punch=p->pev->punchangle;
  float dmgTake=p->pev->dmg_take,dmgSave=p->pev->dmg_save;int damageBits=p->m_bitsDamageType,hudBits=p->m_bitsHUDDamage;
  vfs::State status=p->m_vfStatus;vfv::State voice=p->m_vfVoiceState;
+ float regionDamage[5];memcpy(regionDamage,p->m_vfRegionDamage,sizeof(regionDamage));
  p->pev->flags&=~FL_GODMODE;int passed=0;char line[260];
  for(int group=1;group<=7;++group){TraceResult trace;Vector source;if(!RegionTrace(p,group,trace,source)){snprintf(line,sizeof(line),"VFCombatTest missing_group=%d\n",group);CLIENT_PRINTF(p->edict(),print_console,line);continue;}
   p->pev->health=1000;p->pev->armorvalue=0;float baseline=vfc::LegacyTraceDamage(10,vfc::HitRegion(group),Multipliers());
@@ -133,7 +135,29 @@ void Selftest(CBasePlayer* p){
  p->pev->health=health;p->pev->armorvalue=armor;p->pev->flags=flags;p->m_lastDamageAmount=lastAmount;p->m_LastHitGroup=lastGroup;
  p->pev->velocity=velocity;p->pev->basevelocity=baseVelocity;p->pev->punchangle=punch;p->pev->dmg_take=dmgTake;p->pev->dmg_save=dmgSave;
  p->m_bitsDamageType=damageBits;p->m_bitsHUDDamage=hudBits;p->m_vfStatus=status;p->m_vfVoiceState=voice;VF_StatusSync(p);
+ memcpy(p->m_vfRegionDamage,regionDamage,sizeof(regionDamage));VF_DeathDiscardTrace(p);
  snprintf(line,sizeof(line),"VFCombatTest summary groups=%d/7 armor_unchanged=%d no_projectile_leak=%d\n",passed,armorOK,scopeOK);CLIENT_PRINTF(p->edict(),print_console,line);
+}
+bool AnatomyProbe(CBasePlayer* p){
+ if(!VF_DeveloperAllowed()||!CVAR_GET_FLOAT("sv_cheats"))return true;
+ if(CMD_ARGC()==5&&!strcmp(CMD_ARGV(1),"setup")){
+  float maximum=atof(CMD_ARGV(2)),health=atof(CMD_ARGV(3)),armor=atof(CMD_ARGV(4));
+  if(!std::isfinite(maximum)||!std::isfinite(health)||!std::isfinite(armor)||maximum<=0||maximum>10000||health<=0||health>maximum||armor<0||armor>10000)return true;
+  if(!p->IsAlive())p->Spawn();p->pev->flags&=~FL_GODMODE;p->pev->takedamage=DAMAGE_AIM;
+  p->pev->max_health=maximum;p->pev->health=health;p->pev->armorvalue=armor;
+  VF_DeathSpawn(p);VF_StatusClear(p);return true;
+ }
+ if(CMD_ARGC()==4&&!strcmp(CMD_ARGV(1),"hit")&&p->IsAlive()){
+  int group=atoi(CMD_ARGV(2));float raw=atof(CMD_ARGV(3));
+  if(group<1||group>7||!std::isfinite(raw)||raw<=0||raw>10000)return true;
+  TraceResult trace;Vector source;if(!RegionTrace(p,group,trace,source)){ALERT(at_console,"VFAnatomy probe missing group=%d\n",group);return true;}
+  ClearMultiDamage();{VF_ProjectileTraceScope scope(BULLET_PLAYER_MP5,p->pev,source,trace.vecEndPos,trace,raw,false);p->TraceAttack(p->pev,raw,(trace.vecEndPos-source).Normalize(),&trace,DMG_BULLET);}
+  ApplyMultiDamage(p->pev,p->pev);return true;
+ }
+ if(CMD_ARGC()==3&&!strcmp(CMD_ARGV(1),"fall")&&p->IsAlive()){
+  float amount=atof(CMD_ARGV(2));if(std::isfinite(amount)&&amount>0&&amount<=10000)p->TakeDamage(VARS(INDEXENT(0)),VARS(INDEXENT(0)),amount,DMG_FALL);return true;
+ }
+ return true;
 }
 }
 VF_ProjectileTraceScope::VF_ProjectileTraceScope(int bullet,entvars_t* from,const Vector& src,const Vector& destination,const TraceResult& trace,float baseDamage,bool allowProc):previous(shot),bulletType(bullet),attacker(from),source(src),end(destination){element=-1;CBaseEntity* e=from?CBaseEntity::Instance(from):NULL;
@@ -153,6 +177,10 @@ float VF_PlayerTraceDamage(CBasePlayer* victim,entvars_t* attacker,float raw,con
  return r.baseline;
 }
 bool VF_CombatCommand(CBasePlayer* p,const char* cmd){
+ if(!strcmp(cmd,"vf_anatomy_probe"))return AnatomyProbe(p);
+ if(!strcmp(cmd,"vf_anatomy_info")){
+  ALERT(at_console,"VFAnatomy player=%d health=%.3f maximum=%.3f armor=%.3f damage=%.3f,%.3f,%.3f,%.3f,%.3f\n",p->entindex(),p->pev->health,p->pev->max_health,p->pev->armorvalue,p->m_vfRegionDamage[0],p->m_vfRegionDamage[1],p->m_vfRegionDamage[2],p->m_vfRegionDamage[3],p->m_vfRegionDamage[4]);return true;
+ }
  if(!strcmp(cmd,"vf_impact_info")){Print(CMD_ARGC()>1&&!strcmp(CMD_ARGV(1),"incoming")?incoming[p->entindex()]:outgoing[p->entindex()],p->edict());return true;}
  if(!strcmp(cmd,"vf_hitbox_info")){Hitboxes(p);return true;}
  if(!strcmp(cmd,"vf_hitbox_probe")){HitboxProbe(p);return true;}

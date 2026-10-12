@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Toxic / head",
+  "created_utc": "2026-10-10T00:47:53.594349+00:00",
+  "request_sha256": "094cb7e597903715d8589a75dff94503f25fffc6195406006fa6ae66f1df883b",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. Head exploding like a ripe pumpkin: deep wet pop, crunchy rupture, broad pulp splatter and dripping.  Element: A sticky soft fibrous rupture and muffled poisonous spore puff, followed by sustained dry papery spore flutter and hollow dusty settling. No liquid Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "3779d5f1d15d1c36bd0c27b1b25046970194e95b563cbc81bf35d3e51c889961",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. Head exploding like a ripe pumpkin: deep wet pop, crunchy rupture, broad pulp splatter and dripping.  Element: A sticky soft fibrous rupture and muffled poisonous spore puff, followed by sustained dry papery spore flutter and hollow dusty settling. No liquid Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Sonic / death",
+  "created_utc": "2026-10-10T00:52:59.779951+00:00",
+  "request_sha256": "5f3fb0a61c3df32becc869d2aaded3d64aa295b1c3caa4adb158ecdaddff5fcf",
+  "request": {
+    "text": "4-second dry close game SFX. Three strong sonic pressure pulses start a sustained metallic resonant ring. Hold the wavering descending harmonic ring at a clearly audible level for 3.5 seconds. No electricity. Do not fade early. Fade only in the last 0.3 seconds. No voice, scream, music, gunshot or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "eb166505d4b040c78241423c4bc082a2d8d3b0bcc6c19d9c849de85900a0ed84",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Three strong sonic pressure pulses start a sustained metallic resonant ring. Hold the wavering descending harmonic ring at a clearly audible level for 3.5 seconds. No electricity. Do not fade early. Fade only in the last 0.3 seconds. No voice, scream, music, gunshot or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

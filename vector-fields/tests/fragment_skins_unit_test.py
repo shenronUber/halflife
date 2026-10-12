@@ -2,16 +2,16 @@
 import struct,sys,unittest
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
-from fragment_skins import skin_pairs,pair_skin,expand_skin_table
+from fragment_skins import FINISH_COUNT,skin_pairs,pair_skin,expand_skin_table
 
 class FragmentSkinTests(unittest.TestCase):
  def test_every_pair_has_a_unique_native_index(self):
-  pairs=skin_pairs();self.assertEqual(len(pairs),196)
-  self.assertEqual([pair_skin(a,b) for a,b in pairs],list(range(196)))
+  pairs=skin_pairs();self.assertEqual(len(pairs),FINISH_COUNT**2)
+  self.assertEqual([pair_skin(a,b) for a,b in pairs],list(range(FINISH_COUNT**2)))
  def test_uniform_indices_remain_compatible(self):
-  for i in range(14):self.assertEqual(pair_skin(i,i),i)
+  for i in range(FINISH_COUNT):self.assertEqual(pair_skin(i,i),i)
  def test_invalid_finishes_are_rejected(self):
-  for a,b in [(-1,0),(0,-1),(14,0),(0,14)]:
+  for a,b in [(-1,0),(0,-1),(FINISH_COUNT,0),(0,FINISH_COUNT)]:
    with self.assertRaises(ValueError):pair_skin(a,b)
  def fixture(self):
   data=bytearray(800);data[:4]=b'IDST';struct.pack_into('<i',data,4,10)

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Hydro / head",
+  "created_utc": "2026-10-10T00:47:42.657072+00:00",
+  "request_sha256": "25b677a7250a36c375e27aafd169585ee95f273d419cf93f9ca44084b9ca77ce",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. Head exploding like a ripe pumpkin: deep wet pop, crunchy rupture, broad pulp splatter and dripping.  Element: A pressurized liquid snap and soaked tissue rip, followed by a turbulent water jet, heavy droplets and a falling gurgling Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "f13acd011b1239ecd1b82f8f7ef793fe2cd86f651bebcefd7897fa4f79b56a16",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. Head exploding like a ripe pumpkin: deep wet pop, crunchy rupture, broad pulp splatter and dripping.  Element: A pressurized liquid snap and soaked tissue rip, followed by a turbulent water jet, heavy droplets and a falling gurgling Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

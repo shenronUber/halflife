@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "ToxicIgnition / head",
+  "created_utc": "2026-10-10T00:48:23.411635+00:00",
+  "request_sha256": "2576e0e9ecfc1e8cc93fe0cba7d21f8e749cebf7fb1fb0c5e8047bb9883b03ee",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. Head exploding like a ripe pumpkin: deep wet pop, crunchy rupture, broad pulp splatter and dripping.  Element: A wet tendon snap engulfed by a muffled gas ignition, followed by sustained rough flame licking and dry poisonous spore flutter with small charred Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "90741b4b85f5f3a2b8eb38fdec0c85fc24e95133cc09cc11fe25ffd46d74fa7b",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. Head exploding like a ripe pumpkin: deep wet pop, crunchy rupture, broad pulp splatter and dripping.  Element: A wet tendon snap engulfed by a muffled gas ignition, followed by sustained rough flame licking and dry poisonous spore flutter with small charred Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

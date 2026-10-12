@@ -16,7 +16,7 @@ inline int ItemProfile(int slot,const char* id,const char* model,const ItemOverr
  // A precise physical object overrides its generic geometry profile.
  for(int i=0;id&&overrides[i].key[0];++i)if(!strcmp(overrides[i].key,id))return overrides[i].profile;
  for(int i=0;model&&overrides[i].key[0];++i)if(!strcmp(overrides[i].key,model))return overrides[i].profile;
- return slot>=0&&slot<21?slotProfiles[slot]:Profile_unknown;
+ return slot>=0&&slot<EquipmentSlotCount?slotProfiles[slot]:Profile_unknown;
 }
 inline bool LayerCalibrated(const LayerDefinition& l){return l.material>=0&&l.material<MaterialCount&&materials[l.material].calibrated&&materials[l.material].resistanceJPerMm>=0&&l.thicknessMm>=0;}
 

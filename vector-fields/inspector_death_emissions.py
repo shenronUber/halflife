@@ -129,7 +129,7 @@ def export_emissions(exporter, corpse, visual, sprite_frames):
         sfx.setdefault(c['effect'], {})[c['layer']] = dict(
             src='data:audio/wav;base64,'+base64.b64encode(data).decode('ascii'),
             duration=duration, path=c['path'], sha256=c['sha256'])
-    assert len(sfx) == 17 and sum(map(len, sfx.values())) == 33
+    assert len(sfx) == 17 and sum(map(len, sfx.values())) == len(bank['clips'])
     assert 'death' not in sfx['standard']
     sprite_path = legacy_resource('sprites/blood.spr'); lightning_path = legacy_resource('sprites/lgtning.spr')
     decal_path = legacy_resource('decals.wad')

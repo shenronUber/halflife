@@ -1,0 +1,24 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Viktor Volkov / generic",
+  "created_utc": "2026-10-11T21:22:48.920941+00:00",
+  "request_sha256": "b9d47f56be37a4ce366c17a5d47f8d489fe4c2463bb7c65ae6de56ebfe2c79a7",
+  "request": {
+    "text": "[deadpan] Headgear on. Business first.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "endpoint": "/v1/text-to-speech/MIGoD5dgOR9odYK1ejQC?output_format=mp3_44100_128",
+  "sha256": "0844b57289ef4e5d9c4399c04b43822b621ba406ea9c7a14ae28d1f64e7a5eba",
+  "bytes": 43511,
+  "text": "[deadpan] Headgear on. Business first.",
+  "request_id": "TmReRJc7y3D41G9uWh5E",
+  "reported_credit_cost": "4",
+  "voice_id": "MIGoD5dgOR9odYK1ejQC",
+  "voice_name": "Viktor Volkov",
+  "language": "en"
+}

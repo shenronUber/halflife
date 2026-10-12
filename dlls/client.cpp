@@ -24,6 +24,7 @@
 */
 
 #include "extdll.h"
+#include "../game_shared/vf_traversal.h"
 #include "util.h"
 #include "cbase.h"
 #include "saverestore.h"
@@ -35,6 +36,8 @@
 #include "vf_status.h"
 #include "vf_combat.h"
 #include "vf_range.h"
+#include "vf_modular.h"
+#include "../game_shared/vf_static_brush.h"
 #include "vf_death.h"
 #include "vf_skins.h"
 #include "soundent.h"
@@ -46,6 +49,10 @@
 #include "usercmd.h"
 #include "netadr.h"
 #include "pm_shared.h"
+#include "studio.h"
+#include <cmath>
+#include "vf_player_pose.inc"
+#include "vf_weapon_melee.inc"
 
 #if !defined ( _WIN32 )
 #include <ctype.h>
@@ -209,6 +216,7 @@ void ClientPutInServer( edict_t *pEntity )
 	entvars_t *pev = &pEntity->v;
 
 	pPlayer = GetClassPtr((CBasePlayer *)pev);
+	VF_MeleeForget(pPlayer->entindex());
 	pPlayer->SetCustomDecalFrames(-1); // Assume none;
 	pPlayer->m_vfVoiceDied=pPlayer->m_vfVoiceRespawnLast=0; // a new connection is a first appearance
 
@@ -220,6 +228,7 @@ void ClientPutInServer( edict_t *pEntity )
 
 	pPlayer->pev->iuser1 = 0;	// disable any spec modes
 	pPlayer->pev->iuser2 = 0; 
+	VF_MeleeSync(pPlayer);
 }
 
 #include "voice_gamemgr.h"
@@ -518,7 +527,23 @@ void ClientCommand( edict_t *pEntity )
 
 	entvars_t *pev = &pEntity->v;
 
-	if ( VF_DeathCommand(GetClassPtr((CBasePlayer *)pev), pcmd) || VF_RangeCommand(GetClassPtr((CBasePlayer *)pev), pcmd) || VF_CombatCommand(GetClassPtr((CBasePlayer *)pev), pcmd) || VF_StatusCommand(GetClassPtr((CBasePlayer *)pev), pcmd) || VF_VoiceCommand(GetClassPtr((CBasePlayer *)pev), pcmd) || VF_SkinCommand(GetClassPtr((CBasePlayer *)pev), pcmd) || VF_EquipmentCommand(GetClassPtr((CBasePlayer *)pev), pcmd) )
+
+ if(FStrEq(pcmd,"vf_traversal_info")){
+  CBasePlayer* p=GetClassPtr((CBasePlayer*)pev);CBasePlayerWeapon* w=p->m_pActiveItem?(CBasePlayerWeapon*)p->m_pActiveItem->GetWeaponPtr():NULL;
+  ALERT(at_console,"VFTraversal phase=%d state=%d origin=%.3f,%.3f,%.3f velocity=%.3f,%.3f,%.3f time=%.3f health=%.1f clip=%d reload=%d sequence=%d yaw=%.2f anchor=%.2f\n",
+   VF_TR_Phase(pev->iuser4),pev->iuser4,pev->origin.x,pev->origin.y,pev->origin.z,pev->velocity.x,pev->velocity.y,pev->velocity.z,pev->fuser1,pev->health,w?w->m_iClip:-1,w?w->m_fInReload:0,pev->sequence,pev->v_angle.y,VF_TR_Yaw(pev->iuser4));return;
+ }
+
+ if(FStrEq(pcmd,"vf_traversal_place")){
+  if(CVAR_GET_FLOAT("sv_cheats")==0 || CMD_ARGC()<5)return;
+  Vector origin(atof(CMD_ARGV(1)),atof(CMD_ARGV(2)),atof(CMD_ARGV(3)));
+  TraceResult tr;UTIL_TraceHull(origin,origin,dont_ignore_monsters,head_hull,pEntity,&tr);if(tr.fStartSolid||tr.fAllSolid)return;
+  pev->iuser4=0;pev->fuser1=pev->fuser4=0;pev->flags&=~(FL_DUCKING|FL_ONGROUND);UTIL_SetSize(pev,VEC_HULL_MIN,VEC_HULL_MAX);
+  UTIL_SetOrigin(pev,origin);pev->v_angle=pev->angles=Vector(0,atof(CMD_ARGV(4)),0);pev->fixangle=1;pev->oldbuttons=0;
+  pev->velocity=Vector(CMD_ARGC()>5?atof(CMD_ARGV(5)):0,CMD_ARGC()>6?atof(CMD_ARGV(6)):0,CMD_ARGC()>7?atof(CMD_ARGV(7)):0);
+  pev->view_ofs=Vector(0,0,28);GetClassPtr((CBasePlayer*)pev)->m_flFallVelocity=0;return;
+ }
+	if ( VF_ModularCommand(GetClassPtr((CBasePlayer *)pev), pcmd) || VF_MeleeCommand(GetClassPtr((CBasePlayer *)pev), pcmd) || VF_DeathCommand(GetClassPtr((CBasePlayer *)pev), pcmd) || VF_RangeCommand(GetClassPtr((CBasePlayer *)pev), pcmd) || VF_CombatCommand(GetClassPtr((CBasePlayer *)pev), pcmd) || VF_StatusCommand(GetClassPtr((CBasePlayer *)pev), pcmd) || VF_VoiceCommand(GetClassPtr((CBasePlayer *)pev), pcmd) || VF_SkinCommand(GetClassPtr((CBasePlayer *)pev), pcmd) || VF_EquipmentCommand(GetClassPtr((CBasePlayer *)pev), pcmd) )
 	{
 		return;
 	}
@@ -782,8 +807,10 @@ void PlayerPostThink( edict_t *pEntity )
 	entvars_t *pev = &pEntity->v;
 	CBasePlayer *pPlayer = (CBasePlayer *)GET_PRIVATE(pEntity);
 
-	if (pPlayer)
+	if (pPlayer) {
 		pPlayer->PostThink( );
+		VF_MeleeThink(pPlayer);
+	}
 }
 
 
@@ -821,6 +848,7 @@ void StartFrame( void )
 
 void ClientPrecache( void )
 {
+	VF_MeleePrecache();
 	VF_PrecacheSkins();
 	VF_VoicePrecache();
 	VF_StatusPrecache();
@@ -838,6 +866,7 @@ void ClientPrecache( void )
 	PRECACHE_SOUND("player/pl_step2.wav");
 	PRECACHE_SOUND("player/pl_step3.wav");
 	PRECACHE_SOUND("player/pl_step4.wav");
+	PRECACHE_SOUND(VF_TR_SLIDE_SOUND);
 
 	PRECACHE_SOUND("common/npc_step1.wav");		// NPC walk on concrete
 	PRECACHE_SOUND("common/npc_step2.wav");
@@ -1231,6 +1260,10 @@ int AddToFullPack( struct entity_state_s *state, int e, edict_t *ent, edict_t *h
 	state->colormap   = ent->v.colormap;
 
 	state->movetype   = ent->v.movetype;
+	// Immobile modular BSPs use PUSH on the server to satisfy its hull checks,
+	// and expose NONE to client prediction, including the installed client DLL.
+	if ( !player && VF_StaticBrush(ent->v.movetype,ent->v.solid,ent->v.controller) )
+		state->movetype = MOVETYPE_NONE;
 	state->sequence   = ent->v.sequence;
 	state->framerate  = ent->v.framerate;
 	state->body       = ent->v.body;
@@ -1284,6 +1317,15 @@ int AddToFullPack( struct entity_state_s *state, int e, edict_t *ent, edict_t *h
 
 		state->weaponmodel  = MODEL_INDEX( STRING( ent->v.weaponmodel ) );
 		state->gaitsequence = ent->v.gaitsequence;
+		state->iuser4 = ent->v.iuser4;state->fuser1=ent->v.fuser1;state->fuser4=ent->v.fuser4;
+		state->vuser3[0]=ent->v.vuser3[0];state->vuser3[1]=ent->v.vuser3[1];
+		vf_player_pose_t vfPose={};
+		if(VF_PlayerPose((CBasePlayer*)CBaseEntity::Instance(ent),vfPose)){
+			state->vuser4[0]=vfPose.gait_yaw;state->vuser4[1]=vfPose.gait_frame;state->vuser4[2]=VF_PLAYER_POSE_MARKER;
+			state->vuser1[0]=(float)vfPose.previous_sequence;state->vuser1[1]=vfPose.previous_frame;state->vuser1[2]=vfPose.transition_time;
+			state->vuser2[0]=VF_PosePackBlend(vfPose.previous_blend[0],vfPose.previous_blend[1]);
+			state->vuser2[1]=VF_PosePackGear(vfPose.headgear_phase,vfPose.headgear_type,vfPose.headgear_raised);state->vuser2[2]=vfPose.sample_time;
+		}
 		state->spectator = ent->v.flags & FL_SPECTATOR;
 		state->friction     = ent->v.friction;
 
@@ -1728,6 +1770,8 @@ void UpdateClientData ( const edict_t *ent, int sendweapons, struct clientdata_s
 	cd->flSwimTime		= pev->flSwimTime;
 	cd->waterjumptime	= pev->teleport_time;
 
+	cd->iuser4=pev->iuser4;cd->fuser1=pev->fuser1;cd->fuser4=pev->fuser4;
+	cd->vuser3.x=pev->vuser3.x;cd->vuser3.y=pev->vuser3.y;
 	strcpy( cd->physinfo, ENGINE_GETPHYSINFO( ent ) );
 
 	cd->maxspeed		= pev->maxspeed;

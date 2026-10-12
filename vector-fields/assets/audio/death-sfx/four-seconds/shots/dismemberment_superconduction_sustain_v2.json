@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Superconduction / dismemberment",
+  "created_utc": "2026-10-10T00:53:01.502937+00:00",
+  "request_sha256": "47f825b1a1da922ebea81af0dfda61f08fe76b414d2be12da328d4265fd40859",
+  "request": {
+    "text": "4-second dry close game SFX. A frozen bone snaps with a sharp electrical chirp. Then a continuous loud thin icy metallic singing tone and needle-like electrical fizz persist for 3.5 seconds, with crystalline ticks. Do not fade early. Fade only in the last 0.3 seconds. No voice, scream, music, gunshot or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "11167b6389557d05a91ba44ddad059b328ef9099cd332ea31ab97c5a1ed140ec",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. A frozen bone snaps with a sharp electrical chirp. Then a continuous loud thin icy metallic singing tone and needle-like electrical fizz persist for 3.5 seconds, with crystalline ticks. Do not fade early. Fade only in the last 0.3 seconds. No voice, scream, music, gunshot or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

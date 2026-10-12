@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Thermal / head",
+  "created_utc": "2026-10-10T01:16:11.812023+00:00",
+  "request_sha256": "6ccc3487bfd82a9ffed76a25b8494a81cadde7a04ac5a5c24ace17db8588aae3",
+  "request": {
+    "text": "2-second dry close game SFX. One head bursts like a ripe pumpkin: a sharp wet hollow pop, crunchy shell rupture, dense pulp splatter and a few falling blood drops. A tight flame whip and a brief ember crackle. Natural quick decay. No voice, scream, music, weapon shot, ambience or reverb.",
+    "duration_seconds": 2.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "0280deda9eccf4162d9ec94911ea0e7cfea6c5d1de1796e4eee68ad8e142853d",
+  "bytes": 33062,
+  "text": "2-second dry close game SFX. One head bursts like a ripe pumpkin: a sharp wet hollow pop, crunchy shell rupture, dense pulp splatter and a few falling blood drops. A tight flame whip and a brief ember crackle. Natural quick decay. No voice, scream, music, weapon shot, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "20"
+}

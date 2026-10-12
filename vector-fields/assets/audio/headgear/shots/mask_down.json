@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "mask_down",
+  "created_utc": "2026-10-11T21:22:58.937575+00:00",
+  "request_sha256": "4e05f16b9e5f3ff303f9841bc715cf962f43da78ec95cad8fcab46a12f105b86",
+  "request": {
+    "text": "Single gas mask pressed onto a face: thick rubber seal compressed, strap tension, short soft airtight suction and tiny pressure hiss, final secure click. Close dry realistic protective equipment foley. No breathing loop, voices, ambience or music.",
+    "duration_seconds": 0.9,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "e338070c5a931d9bc2cec63e5aa2b0097ca73f10ebe56cd132ebfd3905961ff2",
+  "bytes": 15090,
+  "text": "Single gas mask pressed onto a face: thick rubber seal compressed, strap tension, short soft airtight suction and tiny pressure hiss, final secure click. Close dry realistic protective equipment foley. No breathing loop, voices, ambience or music.",
+  "request_id": null,
+  "reported_credit_cost": "9"
+}

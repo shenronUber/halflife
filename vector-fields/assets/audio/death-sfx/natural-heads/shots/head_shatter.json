@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Shatter / head",
+  "created_utc": "2026-10-10T01:16:17.520287+00:00",
+  "request_sha256": "56064b4c615b4f604287594bd245e63c11daa83df7175d682f9610914fc73414",
+  "request": {
+    "text": "2-second dry close game SFX. One head bursts like a ripe pumpkin: a sharp wet hollow pop, crunchy shell rupture, dense pulp splatter and a few falling blood drops. A dense frozen crunch and cascade of sharp ice splinters. Natural quick decay. No voice, scream, music, weapon shot, ambience or reverb.",
+    "duration_seconds": 2.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "2ed804c63b4156848ac9f380f909aec2c20e7d47a1c45cbdeaeaa5f59ab97023",
+  "bytes": 33062,
+  "text": "2-second dry close game SFX. One head bursts like a ripe pumpkin: a sharp wet hollow pop, crunchy shell rupture, dense pulp splatter and a few falling blood drops. A dense frozen crunch and cascade of sharp ice splinters. Natural quick decay. No voice, scream, music, weapon shot, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "20"
+}

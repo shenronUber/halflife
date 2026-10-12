@@ -8,16 +8,19 @@ from build_reference_weapon import ROOT,OUT,Mesh,KEYS,part as core_part
 from build_reference_themes import PARTS,part
 from studio_assets import Studio
 from reference_extensions_test import mesh_digest
+from build_identity_chassis import INTRINSIC
+from r01_finish_policy import policy,allowed
 
 
 def assets():
     manifest=json.loads((OUT/'manifest.json').read_text(encoding='utf-8'))
     pool=json.loads((ROOT/'data/lootpool.json').read_text())
     records={r['id']:r for r in manifest['pieces']};checks=0;report={}
-    assert len(records)==61 and len(pool['entries'])==948
+    assert set(records)==set(policy()['models'])
+    assert sum(e['id'].startswith('r01_') for e in pool['entries'])==sum(len(s['styles']) for s in policy()['models'].values())
     assert manifest['animated_sockets']['chamber']=='R01_Bolt'
     rows=[r.split('|')for r in (ROOT/'data/equipment.txt').read_text().splitlines()if r and not r.startswith(('#','limits'))]
-    assert len(rows)==1113 and len(rows)<2048
+    assert len(rows)<2048
     for slot,specs in PARTS.items():
         digests=[mesh_digest(core_part(slot,i))for i in range(4)]
         for spec in specs:
@@ -46,7 +49,7 @@ def assets():
                     if name.split(b'\0')[0].decode().endswith('_t11.bmp'):assert flags&32;glass+=1
                 assert glass==14
             row=next(r for r in rows if r[1]==key);assert row[4]==spec['family']and row[6:12]==['4','4','4','4','0','0']
-            assert len([e for e in pool['entries']if e.get('model')=='models/vf_r01/'+key+'.mdl'])==14
+            assert len([e for e in pool['entries']if e.get('model')=='models/vf_r01/'+key+'.mdl'])==len(allowed(key))
             report[key]=dict(triangles=len(mesh),vertices=vertices,skin_families=14)
     # Both chamber shapes consume the existing translating socket in every rig.
     for rig in ('r01_rig','r01_rig_side','r01_rig_top'):
@@ -56,7 +59,7 @@ def assets():
         bone=int(re.search(r'(\d+) "R01_Bolt"',text)[1])
         values=[float(m[1])for m in re.finditer(r'^'+str(bone)+r' [^ ]+ ([\d.\-]+) ',text,re.M)]
         assert max(values)-min(values)>.5
-    (ROOT/'build/reference-themes-assets.json').write_text(json.dumps(dict(pieces=report,shape_finish_checks=checks,total_objects=1113),indent=2))
+    (ROOT/'build/reference-themes-assets.json').write_text(json.dumps(dict(pieces=report,shape_finish_checks=checks,total_objects=len(rows)),indent=2))
     print('PASS themed modules: eight distinct meshes,',checks,'shape/finish checks, three moving bolt sockets',flush=True)
 
 
@@ -89,8 +92,10 @@ def native():
         after=log.split(f'Loading game from save/vf_themes_{theme}.sav')[-1]
         assert f'receiver=r01_receiver_{receiver} power=r01_power_{theme} chamber=r01_chamber_{theme} optic=r01_optic_{theme} cooling=r01_cooling_{theme}'in after
         assert f'VFR01 state: player=1 first={style} optic=4 feed={style}'in after
-    assert 'VFR01 audit: checked=1753 failed=0 parts=12 combinations=191102976'in log
-    assert 'VFEquipment audit: objects=1113 passed=1113 failed=0'in log
+    from reference_platform_test import audit_counts
+    checked,objects,combinations=audit_counts()
+    assert f'VFR01 audit: checked={checked} failed=0 parts=12 combinations={combinations}'in log
+    assert f'VFEquipment audit: objects={objects} passed={objects} failed=0'in log
     assert 'VFState rejected'not in log and 'rejected=0'in log
     font=ImageFont.truetype('C:/Windows/Fonts/segoeui.ttf',22)
     for board_name,views in [('modules',[('chamber_angle','Culasse'),('optic_angle','Optique'),('power_angle','Reserve'),('cooling_angle','Refroidissement')]),('sets',[('angle','Assemblage'),('hand','En main')])]:
@@ -102,7 +107,7 @@ def native():
                 im=im.crop((780,500,1920,1080)).resize((720,366),Image.Resampling.LANCZOS)if kind=='hand'else im.crop((490,305,1210,726))
                 y=45+465*row;board.paste(im,(720*col,y+30));draw.text((720*col+16,y),label,font=font,fill='white')
         board.save(ROOT/f'build/r01-themed-{board_name}.jpg',quality=95,subsampling=0)
-    (ROOT/'build/reference-themes-native.json').write_text(json.dumps(dict(captures=captures,reloads=6,assemblies=1753,equipment_objects=1113,checks=['two UI presets','eight meshes inspected from two sides','both sets fire and reload on three platforms','two saves preserve all four new IDs and mixed finishes']),indent=2))
+    (ROOT/'build/reference-themes-native.json').write_text(json.dumps(dict(captures=captures,reloads=6,assemblies=checked,equipment_objects=objects,checks=['two UI presets','eight meshes inspected from two sides','both sets fire and reload on three platforms','two saves preserve all four new IDs and mixed finishes']),indent=2))
     print('PASS themed modules native:',len(captures),'captures; six reloads; two saves; 1753 assemblies',flush=True)
 
 

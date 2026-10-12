@@ -42,7 +42,7 @@ def assets():
    for pose in poses:
     mat=pose[v['b']]@np.linalg.inv(m.bind[v['b']]);gap=np.linalg.norm((mat@np.r_[v['p'],1])-(mat@np.r_[neighbor['p'],1]));max_gap=max(max_gap,float(gap))
   assert max_gap<.001
-  for skin in range(14):assert {m.textures[t][0] for t,_ in m.mesh({i:1 if i==index+12 else -1 for i in range(17)},skin=skin)}=={material}
+  for skin in range(report['skin_families']):assert {m.textures[t][0] for t,_ in m.mesh({i:1 if i==index+12 else -1 for i in range(17)},skin=skin)}=={material}
   for model,key in [(m,'corpse'),(g,'fragments')]:
    tex=next(t for t in model.textures if t[0]==material);assert list(tex[1:3])==record['compiled_pixels'][key]
    count,offset=struct.unpack_from('<ii',model.data,180);ti=next(i for i,t in enumerate(model.textures) if t[0]==material);flags=struct.unpack_from('<i',model.data,offset+ti*80+64)[0];assert flags==1,'Wound must use opaque flat light, without emissive or additive flags'
@@ -52,10 +52,10 @@ def assets():
   visible=m.mesh(choices);assert all(any(p['b']==v['b'] and np.linalg.norm(p['p']-v['p'])<.001 for _,t in visible for p in t) for _,tri in pelvis for v in tri),'Pelvis removed'
  for part in range(20):
   tri=g.mesh({0:part});assert any(g.textures[t][0].startswith('death_') for t,_ in tri)
-  for skin in range(14):assert {g.textures[t][0] for t,_ in g.mesh({0:part},skin=skin) if g.textures[t][0].startswith('death_')}=={g.textures[t][0] for t,_ in tri if g.textures[t][0].startswith('death_')}
+  for skin in range(report['skin_families']):assert {g.textures[t][0] for t,_ in g.mesh({0:part},skin=skin) if g.textures[t][0].startswith('death_')}=={g.textures[t][0] for t,_ in tri if g.textures[t][0].startswith('death_')}
  report['continuity_checks']=checks
  (OUT/'measurements.json').write_text(json.dumps({k:v for k,v in report.items() if k!='build_cache'},indent=2))
- print('PASS wound assets: five 2D UV charts, constant 16 px/unit, 14 skins, animated borders, pelvis intact in 32 combinations, 20 closed fragments',flush=True)
+ print(f'PASS wound assets: five 2D UV charts, constant 16 px/unit, {report["skin_families"]} skins, animated borders, pelvis intact in 32 combinations, 20 closed fragments',flush=True)
  return report
 
 def run():
@@ -65,7 +65,7 @@ def run():
   cfg+=f'cmd vf_death_clear\ncmd vf_range_reset 0\ncmd vf_range_aim 0\nwait 3\necho BEGIN_WOUND_{name}\ncmd vf_range_death 0 {name} standard\nwait 140\ncmd vf_death_inspect {name}\nwait 10\nvf_engine_stats\nvf_death_client\nscreenshot scrshots/wound_{name}.png\necho END_WOUND_{name}\nwait 6\n'
  cfg+='cmd vf_death_clear\ndefault_fov 90\nnoclip\nvf_death_lab\nwait 10\nvf_ui_pointer 1100 445 1\nwait 3\nvf_ui_pointer 1100 445 0\nwait 35\nvf_engine_stats\nscreenshot scrshots/wound_electro.png\nwait 130\nscreenshot scrshots/wound_electro_corpse.png\nwait 8\nquit\n'
  (mod/'wound_textures.cfg').write_text(cfg,encoding='ascii');started=time.monotonic()
- child=subprocess.Popen([str(engine/'xash3d.exe'),'-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_animation','-windowed','-width','1280','-height','720','-console','-nointro','-nowriteconfig','-log','wound-textures.log','+sv_cheats','1','+map','vf_range','+exec','wound_textures.cfg'],cwd=engine)
+ child=subprocess.Popen([str(engine/'xash3d.exe'),'-ip','127.0.0.1','-noip6','-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_animation','-windowed','-width','1280','-height','720','-console','-nointro','-nowriteconfig','-log','wound-textures.log','+sv_cheats','1','+map','vf_range','+exec','wound_textures.cfg'],cwd=engine)
  try:child.wait(timeout=40);assert child.returncode==0
  finally:
   if child.poll() is None:child.terminate();child.wait(10)

@@ -1,0 +1,24 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Lucien Moreau / visor",
+  "created_utc": "2026-10-11T21:22:43.857279+00:00",
+  "request_sha256": "f008994a3ff64a49a3fd524c29bb1ac5828873bf2279f46bb45f969bc419a945",
+  "request": {
+    "text": "[sarcastic] Visor down. A little dignity, please.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "endpoint": "/v1/text-to-speech/lWtkpHRd8R4BLyKo8pl2?output_format=mp3_44100_128",
+  "sha256": "8491b6f892ab93487f9a4d7fecb19f040bf6e708e3ae58e4d93b71a661b05b79",
+  "bytes": 53542,
+  "text": "[sarcastic] Visor down. A little dignity, please.",
+  "request_id": "tjvXLOsn5WRJNqDUHal6",
+  "reported_credit_cost": "5",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "voice_name": "Lucien Moreau",
+  "language": "en"
+}

@@ -1,0 +1,65 @@
+{
+  "author": "Adobe Mixamo",
+  "author_page": "https://www.mixamo.com/",
+  "author_documentation": "https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html",
+  "mirror": "https://github.com/MisterYI/deevid-mixamo-assets",
+  "commit": "13066bbd431c855fdc154d1e32d7a37c0b8ee013",
+  "assets": [
+    {
+      "id": "Hanging",
+      "file": "Hanging.glb",
+      "url": "https://raw.githubusercontent.com/MisterYI/deevid-mixamo-assets/13066bbd431c855fdc154d1e32d7a37c0b8ee013/anim/Hanging.glb",
+      "git_blob": "dc44f94604fa28b0ce4a4bddfad451cbdeab6f5e",
+      "sha256": "81e94ea1548432792fd1a217f1ddfa122ca34db1c3cdd73d7ac29716a1b8e17a",
+      "bytes": 144028
+    },
+    {
+      "id": "Hanging_Idle",
+      "file": "Hanging_Idle.glb",
+      "url": "https://raw.githubusercontent.com/MisterYI/deevid-mixamo-assets/13066bbd431c855fdc154d1e32d7a37c0b8ee013/anim/Hanging_Idle.glb",
+      "git_blob": "0dc2d6714cb7251d64286271bce5d7e09effca6a",
+      "sha256": "b5f4bfe0d11585dd71a9a18acc16c1f9ea08364bd7f975f0360a3e1ab048c473",
+      "bytes": 138940
+    },
+    {
+      "id": "Freehang_Climb",
+      "file": "Freehang_Climb.glb",
+      "url": "https://raw.githubusercontent.com/MisterYI/deevid-mixamo-assets/13066bbd431c855fdc154d1e32d7a37c0b8ee013/anim/Freehang_Climb.glb",
+      "git_blob": "a58f4f342047f583410dbb1243e33637384ed7c9",
+      "sha256": "6c099fca2acc177609015ad14d607dd45345aa1680454ce7d3afe9639d3f11f4",
+      "bytes": 302636
+    },
+    {
+      "id": "Climbing_To_Top",
+      "file": "Climbing_To_Top.glb",
+      "url": "https://raw.githubusercontent.com/MisterYI/deevid-mixamo-assets/13066bbd431c855fdc154d1e32d7a37c0b8ee013/anim/Climbing_To_Top.glb",
+      "git_blob": "3d48c35924231ad10fa4f482be12a08ff420fabf",
+      "sha256": "747034e8dd2c3ec308810faa80bd86dd54e985a1ecb599651aa234e065c491f9",
+      "bytes": 94348
+    },
+    {
+      "id": "Freehang_Drop",
+      "file": "Freehang_Drop.glb",
+      "url": "https://raw.githubusercontent.com/MisterYI/deevid-mixamo-assets/13066bbd431c855fdc154d1e32d7a37c0b8ee013/anim/Freehang_Drop.glb",
+      "git_blob": "ee93bd94ecdba8bc9f435613214763ebbf1c775d",
+      "sha256": "8647cd218eaa912efb2579bf7a078c99ed7adc458b121c369a0f7f504ef76473",
+      "bytes": 50272
+    },
+    {
+      "id": "Vault_Over_Box",
+      "file": "Vault_Over_Box.glb",
+      "url": "https://raw.githubusercontent.com/MisterYI/deevid-mixamo-assets/13066bbd431c855fdc154d1e32d7a37c0b8ee013/anim/Vault_Over_Box.glb",
+      "git_blob": "55971bf3b0857c71db510d16aa09b6169642d61f",
+      "sha256": "d8af18028fd494bbd426931b6e80b6c797b5a7c4c2a46b988ed5df31b314e6f0",
+      "bytes": 65404
+    },
+    {
+      "id": "Braced_Hang_Hop_Up",
+      "file": "Braced_Hang_Hop_Up.glb",
+      "url": "https://raw.githubusercontent.com/MisterYI/deevid-mixamo-assets/13066bbd431c855fdc154d1e32d7a37c0b8ee013/anim/Braced_Hang_Hop_Up.glb",
+      "git_blob": "7c83c765c9e6bb8581f7e674d6ce18f332718936",
+      "sha256": "9478140562fe112be56175dd805d85311022d117c0c8ef6def73ef581b14ad6d",
+      "bytes": 103260
+    }
+  ]
+}

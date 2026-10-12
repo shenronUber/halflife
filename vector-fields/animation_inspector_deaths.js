@@ -10,7 +10,7 @@ function pausePlayback(){playing=false;$('play').textContent='Lire';pauseAllDeat
 function syncDeathAudio(play=false){syncAllDeathAudio(play)}
 function configureDeath(){
  pausePlayback();
- const profile=deathProfile(),options=profile?.motions||(deathMask()&1?['headshot']:['quaternius','kaykit_a','kaykit_b']);
+ const profile=deathProfile(),options=profile?.motions||(deathMask()&1?Death.head_motions:Death.standard_motions);
  const chosen=$('deathMotion').value==='auto'?options[deathVariant%options.length]:$('deathMotion').value;
  $('clip').value=chosen;clip=scene.clips[chosen];frame=0;$('timeline').max=endFrame();
  const cry=deathCry();deathAudio.src=cry.src;deathAudio.load();configureEmissionAudio();prepareDeathSimulation();

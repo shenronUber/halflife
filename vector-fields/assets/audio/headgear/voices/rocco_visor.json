@@ -1,0 +1,24 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Rocco Bellini / visor",
+  "created_utc": "2026-10-11T21:22:39.636849+00:00",
+  "request_sha256": "797db16b35333de29c829d5b068b8e4b35b865a85289f12e5380603409ab8c06",
+  "request": {
+    "text": "[playful] Visor down. Protect the pretty face.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "endpoint": "/v1/text-to-speech/FmMTwHErJNXXbixvoFWZ?output_format=mp3_44100_128",
+  "sha256": "6330b53ee23a296f5ea06fa5362943b959aac618cf410e5cd0d0f9d4bb3ba027",
+  "bytes": 49781,
+  "text": "[playful] Visor down. Protect the pretty face.",
+  "request_id": "FDM5O5FOWZlahOZ5oIQ3",
+  "reported_credit_cost": "5",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "voice_name": "Rocco Bellini",
+  "language": "en"
+}

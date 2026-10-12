@@ -94,6 +94,7 @@ void CL_DLLEXPORT HUD_TxferLocalOverrides( struct entity_state_s *state, const s
 
 	// Fire prevention
 	state->iuser4 = client->iuser4;
+	state->fuser1=client->fuser1;state->fuser4=client->fuser4;
 }
 
 /*
@@ -143,6 +144,9 @@ void CL_DLLEXPORT HUD_ProcessPlayerState( struct entity_state_s *dst, const stru
 	dst->friction				= src->friction;
 	dst->gravity				= src->gravity;
 	dst->gaitsequence			= src->gaitsequence;
+	dst->iuser4=src->iuser4;dst->fuser1=src->fuser1;dst->fuser4=src->fuser4;
+	VectorCopy(src->vuser1,dst->vuser1);VectorCopy(src->vuser2,dst->vuser2);
+	VectorCopy(src->vuser3,dst->vuser3);VectorCopy(src->vuser4,dst->vuser4);
 	dst->spectator				= src->spectator;
 	dst->usehull				= src->usehull;
 	dst->playerclass			= src->playerclass;
@@ -221,6 +225,7 @@ void CL_DLLEXPORT HUD_TxferPredictionData ( struct entity_state_s *ps, const str
 	// Fire prevention
 	pcd->iuser4 = ppcd->iuser4;
 
+	pcd->fuser1=ppcd->fuser1;pcd->fuser4=ppcd->fuser4;
 	pcd->fuser2					= ppcd->fuser2;
 	pcd->fuser3					= ppcd->fuser3;
 

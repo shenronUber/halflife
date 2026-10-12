@@ -1,0 +1,24 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Diego Vega / goggles",
+  "created_utc": "2026-10-11T21:22:47.335924+00:00",
+  "request_sha256": "a6e115ca76dd060c212e12b0ddadefa66628645766d3c281daed0e3bb66b4c70",
+  "request": {
+    "text": "[excited] Goggles on. Nowhere to hide.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "endpoint": "/v1/text-to-speech/ohfhjPf3ZmNXHgSXn0G0?output_format=mp3_44100_128",
+  "sha256": "42845debdd39fa97af5e4115e8003181e3ea08da14c1e734d6fbdb31d9b995e1",
+  "bytes": 43511,
+  "text": "[excited] Goggles on. Nowhere to hide.",
+  "request_id": "7egUGoXUkREUDXJcU7ur",
+  "reported_credit_cost": "4",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "voice_name": "Diego Vega",
+  "language": "en"
+}

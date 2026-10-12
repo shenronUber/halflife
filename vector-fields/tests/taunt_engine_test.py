@@ -2,6 +2,7 @@
 import json,re,shutil,socket,subprocess,time
 from pathlib import Path
 import voices_test as base
+from native_workspace import engine_path, shared_copy, private_copy
 ROOT=base.ROOT;ENGINE=base.ENGINE;MOD=base.MOD;PASSWORD='vf_taunt_validation';PORT=27095
 
 def rcon(command):
@@ -25,11 +26,11 @@ def wait_for(folder,marker,filename='taunt-peer.log',timeout=45):
  raise AssertionError('timeout '+marker)
 def social(log):return re.findall(r'VFVoice social: player=(\d+) event=(\w+) reply_to=(\d+) bot=(\d+)',log)
 def run():
- base.prepare();peer=base.PROJECT/'runtime/vector-engine-taunt-peer';peer.mkdir(parents=True,exist_ok=True)
+ base.prepare();peer=engine_path(base.PROJECT/'runtime/vector-engine-taunt-peer');peer.mkdir(parents=True,exist_ok=True)
  for p in ENGINE.iterdir():
-  if p.is_file() and p.suffix.lower() in ('.dll','.exe'):shutil.copy2(p,peer/p.name)
+  if p.is_file() and p.suffix.lower() in ('.dll','.exe'):private_copy(p,peer/p.name)
  for folder in ['valve','vf_visual','cs_assets','tfc_assets']:
-  if (ENGINE/folder).exists():shutil.copytree(ENGINE/folder,peer/folder,dirs_exist_ok=True,ignore=shutil.ignore_patterns('scrshots','save','*.log'))
+  if (ENGINE/folder).exists():shutil.copytree(ENGINE/folder,peer/folder,dirs_exist_ok=True,copy_function=shared_copy,ignore=shutil.ignore_patterns('scrshots','save','*.log'))
  init='wait 180\ndeveloper 1\ngl_vsync 0\nfps_max 100\ncon_notifytime 0\nvf_voice_subtitles 2\ncmd vf_peer_pose\n'
  phase(ENGINE,0,init+'cmd vf_voice_set otto\nwait 20\necho TAUNT_A_READY\n')
  phase(peer,0,init+'cmd vf_voice_set nikos\nwait 20\necho TAUNT_B_READY\n')
@@ -47,12 +48,12 @@ def run():
  phase(peer,7,'cmd vf_voice_set nikos\ncmd vf_taunt\nwait 20\necho TAUNT_B_MUTED\n')
  phase(ENGINE,6,'quit\n');phase(peer,8,'quit\n')
  common=['-rodir',base.STEAM,'-game','vf_visual','-console','-nointro']
- server=subprocess.Popen([str(ENGINE/'xash.exe'),*common,'-log','taunt-server.log','+ip','127.0.0.1','-port',str(PORT),'+rcon_password',PASSWORD,'+maxplayers','4','+sv_lan','1','+sv_cheats','1','+deathmatch','1','+developer','1','+map','vf_range'],cwd=ENGINE,creationflags=subprocess.CREATE_NO_WINDOW,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+ server=subprocess.Popen([str(ENGINE/'xash.exe'),'-ip','127.0.0.1','-noip6',*common,'-log','taunt-server.log','+ip','127.0.0.1','-port',str(PORT),'+rcon_password',PASSWORD,'+maxplayers','4','+sv_lan','1','+sv_cheats','1','+deathmatch','1','+developer','1','+map','vf_range'],cwd=ENGINE,creationflags=subprocess.CREATE_NO_WINDOW,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
  children=[]
  try:
   time.sleep(3);rcon('vf_taunt_cooldown 1')
   for folder,port,name in [(ENGINE,27096,'TAUNT_A'),(peer,27097,'TAUNT_B')]:
-   children.append(subprocess.Popen([str(folder/'xash3d.exe'),*common,'-width','1280','-height','720','-nowriteconfig','-log','taunt-peer.log','-clientport',str(port),'+exec','lab_controls.cfg','+developer','1','+gl_vsync','0','+fps_max','100','+name',name,'+connect',f'127.0.0.1:{PORT}','+exec','taunt_phase_0.cfg'],cwd=folder,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL))
+   children.append(subprocess.Popen([str(folder/'xash3d.exe'),'-ip','127.0.0.1','-noip6',*common,'-width','1280','-height','720','-nowriteconfig','-log','taunt-peer.log','-clientport',str(port),'+exec','lab_controls.cfg','+developer','1','+gl_vsync','0','+fps_max','100','+name',name,'+connect',f'127.0.0.1:{PORT}','+exec','taunt_phase_0.cfg'],cwd=folder,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL))
    wait_for(folder,'TAUNT_'+('A' if folder==ENGINE else 'B')+'_READY')
   advance(ENGINE,0);wait_for(ENGINE,'TAUNT_A_NEAR');advance(peer,0);wait_for(peer,'TAUNT_B_COUNTER')
   near=(ENGINE/'taunt-server.log').read_text(errors='replace');assert social(near)==[('1','taunt','0','0'),('2','counter_taunt','1','0')],social(near)

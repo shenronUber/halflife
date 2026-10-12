@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "categories": ["generic", "visor", "mask", "goggles"],
+  "actors": {
+    "rocco": ["[confident] Headgear on. Showtime.", "[playful] Visor down. Protect the pretty face.", "[dry] Mask on. Finally, decent air.", "[amused] Goggles on. I see you, bello."],
+    "lucien": ["[dry] Headgear on. Try to look professional.", "[sarcastic] Visor down. A little dignity, please.", "[dry] Mask on. Your perfume is lethal.", "[confident] Goggles on. Nothing escapes good taste."],
+    "diego": ["[confident] Headgear on. Vamos.", "[playful] Visor down. Keep up, amigo.", "[amused] Mask on. That smells like trouble.", "[excited] Goggles on. Nowhere to hide."],
+    "viktor": ["[deadpan] Headgear on. Business first.", "[deadpan] Visor down. Face is not spare part.", "[dry] Mask on. Better than holding breath.", "[deadpan] Goggles on. Darkness is unemployed."],
+    "otto": ["[stern] Headgear on. Systems ready.", "[dry] Visor down. Precision requires a face.", "[stern] Mask on. Seal verified.", "[dry] Goggles on. Your hiding place is inefficient."],
+    "nikos": ["[confident] Headgear on. Let's make history.", "[proud] Visor down. Even legends need protection.", "[dry] Mask on. Not the fresh air I was promised.", "[confident] Goggles on. I see the whole battlefield."]
+  },
+  "sounds": [
+    {"id": "visor_down", "seconds": 0.8, "prompt": "Single close-up tactical helmet visor lowered: short heavy hinge movement, polymer scrape, two dry metal clicks and a firm latch. Crisp realistic gear foley, no voices, no footsteps, no ambience, no music. One short action."},
+    {"id": "visor_up", "seconds": 0.7, "prompt": "Single tactical helmet visor raised: release latch click, short stiff metal hinge and polymer slide, final retaining click. Close dry equipment foley, no voice, no footsteps, no ambience, no music. One short action."},
+    {"id": "mask_down", "seconds": 0.9, "prompt": "Single gas mask pressed onto a face: thick rubber seal compressed, strap tension, short soft airtight suction and tiny pressure hiss, final secure click. Close dry realistic protective equipment foley. No breathing loop, voices, ambience or music."},
+    {"id": "mask_up", "seconds": 0.7, "prompt": "Single airtight gas mask removed: rubber seal releases with a short pressure hiss and soft suction pop, elastic strap relaxes. Close dry gear foley. No breathing loop, voice, footsteps, ambience or music."},
+    {"id": "goggles_down", "seconds": 1.0, "prompt": "Single high-tech tactical night vision goggles lowered: small mount click and short servo, followed by a crisp rising electronic power-up chirp and two quiet confirmation beeps. Dry close equipment foley, compact grounded sci-fi, no voice, ambience or music."},
+    {"id": "goggles_up", "seconds": 0.7, "prompt": "Single tactical optical goggles powered off and lifted: brief falling electronic shutdown chirp, dry mount release click, tiny servo movement and final click. Compact realistic technical gear foley, no voice, ambience, music or loop."}
+  ]
+}

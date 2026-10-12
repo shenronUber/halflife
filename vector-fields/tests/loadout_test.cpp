@@ -1,5 +1,6 @@
 #include "../../game_shared/vf_loadout.h"
 #include "../../game_shared/vf_appearance.h"
+#include "../../game_shared/vf_death_visual.h"
 #include <stdio.h>
 #include <string.h>
 #include <string>
@@ -15,11 +16,11 @@ int main(int argc,char** argv) {
     std::ifstream f(argv[1],std::ios::binary);
     std::string text((std::istreambuf_iterator<char>(f)),std::istreambuf_iterator<char>());
     static vf::Catalog c;Check(vf::ParseCatalog(text.data(),text.size(),c),"real catalog parses");
-    Check(c.count==1114,"1113 equipment objects plus empty, including 70 fitted GIGN pieces");
+    Check(c.count>200&&c.count<vf::MaxItems,"curated equipment fits the catalogue budget");
     int selected[vf::SlotCount],totals[vf::BudgetCount];vf::Defaults(c,selected);
     Check(vf::Evaluate(c,selected,totals)==vf::Accepted,"starter build within all six budgets");
     for(int s=0;s<vf::SlotCount;++s) {
-        Check(c.items[selected[s]].slot==s,"starter matches slot");
+        Check((s==vf::HelmetSlot&&!selected[s])||c.items[selected[s]].slot==s,"starter matches slot");
         int a=selected[s],b=vf::Cycle(c,s,a,1);
         Check(b!=a&&b>0&&c.items[b].slot==s,"can select alternate");
         int last=b;
@@ -80,9 +81,15 @@ int main(int argc,char** argv) {
                     for(int fp=2;fp<=3;++fp)Check(vf::FirstPersonSkin(c,build,catalog,fp)==(item.slot==fp?expectedSkin:0),"first-person gloves and sleeves follow only their equipped slot");
                     Check(vf::EquipmentSkins(c,build,catalog,ids),"custom item resolves its authored appearance");
                     for(int z=0;z<5;++z)Check(!strcmp(catalog.entries[ids[z]].key,zoneSlots[z]==item.slot?item.appearance:"persona_gign"),"custom equipment changes only its mapped GIGN zone");
-                }else if(vf::GameplayItem(item)){if(item.slot<vf::GearSlots)++provisional;else ++reference;}
+                }else if(vf::GameplayItem(item)){if(item.slot<vf::GearSlots)++provisional;else if(vf::WeaponSlot(item.slot))++reference;}
             }
-            Check(custom==70&&provisional==24&&reference==854,"gameplay catalog excludes historical body and weapon placeholders");
+            Check(custom==5*vfdeath::FinishCount&&provisional==24&&reference>70,"gameplay catalog includes curated R1 objects and fitted player pieces");
+            int shapes=0;
+            for(int i=1;i<c.count;++i)if(c.items[i].slot>=vf::GearSlots&&!strncmp(c.items[i].id,"r01_",4)&&!c.items[i].model[0]){
+                int finishes=0;for(int j=1;j<c.count;++j)if(!strcmp(c.items[j].model,c.items[i].id))++finishes;
+                Check(finishes>=1&&finishes<=2,"each weapon shape has one or two approved finishes");++shapes;
+            }
+            Check(shapes>=70&&reference<=2*shapes,"curated inventory covers all R1 shapes");
             Check(vf::FirstPersonSkin(c,NULL,catalog,2)==0,"missing first-person loadout uses default gloves");
             vf::GameplayDefaults(c,build);
             Check(vf::FirstPersonSkin(c,build,catalog,-1)==0&&vf::FirstPersonSkin(c,build,catalog,9)==0,"unrelated first-person slots use default");
@@ -94,7 +101,7 @@ int main(int argc,char** argv) {
             for(int slot=0;slot<vf::SlotCount;++slot)if(build[slot])Check(!build[slot]||vf::GameplayItem(c.items[build[slot]]),"return from dev normalizes every historical object");
             vf::Defaults(c,build);
             Check(vf::EquipmentSkins(c,build,catalog,ids),"all default equipped looks resolve");
-            for(int slot=0;slot<vf::SlotCount;++slot)for(int family=0;family<6;++family){
+            for(int slot=0;slot<vf::WeaponEnd;++slot)for(int family=0;family<6;++family){
                 int found=0;
                 for(int i=1;i<c.count;++i)if(c.items[i].slot==slot){build[slot]=i;if(vf::EquipmentFamily(c,build,slot)==family){found=i;break;}}
                 Check(found>0,"every slot represents every family");

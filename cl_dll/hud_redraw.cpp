@@ -21,6 +21,7 @@
 #include "bench.h"
 #include "vf_character.h"
 #include "vf_effects.h"
+#include "vf_engine.h"
 
 #include "vgui_TeamFortressViewport.h"
 
@@ -146,6 +147,7 @@ int CHud :: Redraw( float flTime, int intermission )
 	
 	// Status borders are behind health/ammo so combat information stays legible.
 	VF_EffectsScreen();
+	VF_HeadgearScreen();
 
 	// draw all registered HUD elements
 	if ( m_pCvarDraw->value )
@@ -224,7 +226,7 @@ int CHud :: Redraw( float flTime, int intermission )
 	}
 	*/
 
-	if (!intermission) { VF_CharacterDraw(); VF_EffectsHud(); }
+	if (!intermission) { VF_CharacterDraw(); VF_EffectsHud(); VF_TraversalHud(); }
 	return 1;
 }
 

@@ -1,0 +1,24 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Diego Vega / mask",
+  "created_utc": "2026-10-11T21:22:47.341929+00:00",
+  "request_sha256": "69f8980df5b97a86ef97d23b45a0a55d30d4d32c389f7ed7415f09c325fd233f",
+  "request": {
+    "text": "[amused] Mask on. That smells like trouble.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "endpoint": "/v1/text-to-speech/ohfhjPf3ZmNXHgSXn0G0?output_format=mp3_44100_128",
+  "sha256": "46a9514a7df2190c662e5849776ea74e9e01996ac8262516c00bc3c69e5e791d",
+  "bytes": 56050,
+  "text": "[amused] Mask on. That smells like trouble.",
+  "request_id": "sfXQ0qtNtt86q8XphMkS",
+  "reported_credit_cost": "5",
+  "voice_id": "ohfhjPf3ZmNXHgSXn0G0",
+  "voice_name": "Diego Vega",
+  "language": "en"
+}

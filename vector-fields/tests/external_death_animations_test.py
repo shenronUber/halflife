@@ -12,13 +12,17 @@ OUT=ROOT/'build/external-deaths';OUT.mkdir(parents=True,exist_ok=True)
 NAMES=['quaternius','kaykit_a','kaykit_b'];MASKS={'none':0,'head':1,'left_arm':2,'right_arm':4,'left_leg':8,'right_leg':16}
 
 def assets():
- m=Studio(ROOT/'generated/deaths/persona_death.mdl');base=Studio(ROOT/'generated/personas/persona_rig.mdl');assert m.sequences[:77]==base.sequences and m.sequences[77]=='vf_electro' and m.sequences[78:]==[s[0] for s in bank.CLIPS]
+ m=Studio(ROOT/'generated/deaths/persona_death.mdl');base=Studio(ROOT/'generated/personas/persona_rig.mdl');assert m.sequences[:77]==base.sequences and m.sequences[77]=='vf_electro' and m.sequences[78:88]==[s[0] for s in bank.CLIPS] and m.sequences[88:]==['vf_electro_back','vf_electro_forward','vf_headshot','vf_spin']
  assert m.names==base.names and m.parents==base.parents and len(m.names)==28
  mesh=m.mesh({0:-1,**{i:1 for i in range(1,12)},**{i:0 for i in range(12,17)}});bones=np.array([v['b'] for _,t in mesh for v in t]);vertices=np.array([np.linalg.inv(m.bind[v['b']])@np.r_[v['p'],1] for _,t in mesh for v in t]);records=[]
  for spec in bank.CLIPS:
   f=sequence_frames(m,spec[0]);source,record=bank.retarget(base,spec);assert f.shape==source.shape and np.allclose(f,source,atol=.005),'Compiled motion differs from the pinned source transfer'
   info=sequence_info(m,spec[0]);assert not info['flags']&1 and abs((len(f)-1)/info['fps']-record['seconds'])<1e-5
   lengths=np.linalg.norm(f[:,1:,:3,3],axis=2);assert np.max(np.ptp(lengths,axis=0))<.001,'Retarget stretched a GIGN limb'
+  hip=np.array([globals_of(p,m.parents)[1,:2,3] for p in f]);assert np.max(np.ptp(hip,axis=0))<.015,'Donor root motion displaces the death position'
+  living=globals_of(sequence_frames(base,'look_idle')[0],base.parents);start=globals_of(f[0],m.parents)
+  assert np.max(abs(start[:,:3,:3]-living[:,:3,:3]))<.001,'Death changes the initial facing or pose'
+  assert np.max(abs(start[:,:2,3]-living[:,:2,3]))<.015,'Death starts away from the living body'
   floors=[];torso=None
   for frame in f:
    g=globals_of(frame,m.parents);world=np.einsum('vij,vj->vi',g[bones],vertices);floors.append(float(world[:,2].min()));assert np.isfinite(world).all()
@@ -45,7 +49,7 @@ def run():
  cfg+='default_fov 90\nvf_death_lab\nwait 10\nscreenshot scrshots/animations_menu.png\necho GUI_BEGIN\nvf_ui_pointer 300 462 1\nwait 3\nvf_ui_pointer 300 462 0\nwait 3\nvf_ui_pointer 1100 445 1\nwait 3\nvf_ui_pointer 1100 445 0\nwait 25\ncmd vf_death_view\ndefault_fov 50\nwait 4\nvf_death_client\nvf_engine_stats\nscreenshot scrshots/menu_kaykit_electro_head.png\necho GUI_END\n'
  cfg+='save vf_imported_death\nwait 8\nload vf_imported_death\nwait 170\necho RESTORED\nvf_death_client\necho RESTORED_END\n'
  cfg+='cmd vf_death_clear\necho PLAYER_BEGIN\ncmd vf_death_test left_leg electro quaternius\nwait 420\nvf_death_client\necho PLAYER_END\nwait 8\nquit\n'
- (m/'external.cfg').write_text(cfg);started=time.monotonic();p=subprocess.Popen([str(e/'xash3d.exe'),'-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_animation','-windowed','-width','1280','-height','720','-console','-nointro','-nowriteconfig','-log','external.log','+sv_cheats','1','+map','vf_range','+exec','external.cfg'],cwd=e)
+ (m/'external.cfg').write_text(cfg);started=time.monotonic();p=subprocess.Popen([str(e/'xash3d.exe'),'-ip','127.0.0.1','-noip6','-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_animation','-windowed','-width','1280','-height','720','-console','-nointro','-nowriteconfig','-log','external.log','+sv_cheats','1','+map','vf_range','+exec','external.cfg'],cwd=e)
  try:p.wait(timeout=95);assert p.returncode==0
  finally:
   if p.poll() is None:p.terminate();p.wait(10)

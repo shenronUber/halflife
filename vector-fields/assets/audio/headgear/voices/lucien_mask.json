@@ -1,0 +1,24 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Lucien Moreau / mask",
+  "created_utc": "2026-10-11T21:22:44.731057+00:00",
+  "request_sha256": "b34a2290185ae10403167713e70ac5d2029bd3087ac38b4cf72d7ef42a2cf19c",
+  "request": {
+    "text": "[dry] Mask on. Your perfume is lethal.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "endpoint": "/v1/text-to-speech/lWtkpHRd8R4BLyKo8pl2?output_format=mp3_44100_128",
+  "sha256": "78cdaf33a04ef4629138f7695a72f3b783f9fa2bb5463218069bb97138a35996",
+  "bytes": 48527,
+  "text": "[dry] Mask on. Your perfume is lethal.",
+  "request_id": "sYRlZ0ODXzGOkNE2XwAJ",
+  "reported_credit_cost": "4",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "voice_name": "Lucien Moreau",
+  "language": "en"
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Shatter / death",
+  "created_utc": "2026-10-10T00:48:08.767803+00:00",
+  "request_sha256": "777ff130dd64cddfd65235705753fa56608eb89357a10732f74fab52f08bd75b",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. A broad explosive ice-smashing crash and crunchy frozen collapse, followed by a dense sustained cascade of sharp glassy chunks, scattered icy ticks and a falling crystalline tail. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "afa0bd2170b71b20c545ba86da7f58e618fe68b0ecee141cccf247447dbb7615",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. A broad explosive ice-smashing crash and crunchy frozen collapse, followed by a dense sustained cascade of sharp glassy chunks, scattered icy ticks and a falling crystalline tail. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

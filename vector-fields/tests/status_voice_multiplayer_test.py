@@ -2,14 +2,15 @@
 import json,re,shutil,subprocess,time
 from pathlib import Path
 import voices_test as base
+from native_workspace import engine_path, shared_copy, private_copy
 ROOT=base.ROOT;ENGINE=base.ENGINE;MOD=base.MOD
 
 def run():
- base.prepare();peer=base.PROJECT/'runtime/vector-engine-status-peer';peer.mkdir(parents=True,exist_ok=True)
+ base.prepare();peer=engine_path(base.PROJECT/'runtime/vector-engine-status-peer');peer.mkdir(parents=True,exist_ok=True)
  for p in ENGINE.iterdir():
-  if p.is_file() and p.suffix.lower() in ('.dll','.exe'):shutil.copy2(p,peer/p.name)
+  if p.is_file() and p.suffix.lower() in ('.dll','.exe'):private_copy(p,peer/p.name)
  for folder in ['valve','vf_visual','cs_assets','tfc_assets']:
-  if (ENGINE/folder).exists():shutil.copytree(ENGINE/folder,peer/folder,dirs_exist_ok=True,ignore=shutil.ignore_patterns('scrshots','save','*.log'))
+  if (ENGINE/folder).exists():shutil.copytree(ENGINE/folder,peer/folder,dirs_exist_ok=True,copy_function=shared_copy,ignore=shutil.ignore_patterns('scrshots','save','*.log'))
  def phase(folder,index,body):
   mod=folder/'vf_visual';(mod/f'vf_status_phase_{index}.cfg').write_text(body+f'wait 5\nexec vf_status_wait_{index}.cfg\n',encoding='ascii')
   (mod/f'vf_status_wait_{index}.cfg').write_text(f'wait 30\nexec vf_status_wait_{index}.cfg\n',encoding='ascii')
@@ -37,12 +38,12 @@ def run():
   target=folder/'vf_visual/vf_status_connect_wait.cfg';temp=target.with_suffix('.tmp')
   temp.write_text('exec vf_status_phase_0.cfg\n',encoding='ascii');temp.replace(target)
  common=['-rodir',base.STEAM,'-game','vf_visual','-console','-nointro']
- server=subprocess.Popen([str(ENGINE/'xash.exe'),*common,'-log','status-server.log','+ip','127.0.0.1','-port','27085','+rcon_password','vf_status_local_validation','+maxplayers','4','+sv_lan','1','+sv_cheats','0','+deathmatch','1','+developer','1','+map','vf_range'],cwd=ENGINE,creationflags=subprocess.CREATE_NO_WINDOW,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+ server=subprocess.Popen([str(ENGINE/'xash.exe'),'-ip','127.0.0.1','-noip6',*common,'-log','status-server.log','+ip','127.0.0.1','-port','27085','+rcon_password','vf_status_local_validation','+maxplayers','4','+sv_lan','1','+sv_cheats','0','+deathmatch','1','+developer','1','+map','vf_range'],cwd=ENGINE,creationflags=subprocess.CREATE_NO_WINDOW,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
  children=[];started=time.time()
  try:
   time.sleep(3);assert server.poll()is None
   def launch(folder,port,cfg,name):
-   child=subprocess.Popen([str(folder/'xash3d.exe'),*common,'-windowed','-width','960','-height','540','-nowriteconfig','-log','status-peer.log','-clientport',str(port),'+exec','lab_controls.cfg','+developer','1','+gl_vsync','0','+fps_max','100','+name',name,'+connect','127.0.0.1:27085','+exec',cfg],cwd=folder,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL);children.append(child)
+   child=subprocess.Popen([str(folder/'xash3d.exe'),'-ip','127.0.0.1','-noip6',*common,'-windowed','-width','960','-height','540','-nowriteconfig','-log','status-peer.log','-clientport',str(port),'+exec','lab_controls.cfg','+developer','1','+gl_vsync','0','+fps_max','100','+name',name,'+connect','127.0.0.1:27085','+exec',cfg],cwd=folder,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL);children.append(child)
   def wait_for(folder,marker,filename='status-peer.log'):
    deadline=time.time()+45
    while time.time()<deadline:

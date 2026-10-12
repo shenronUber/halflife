@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Thermal / head",
+  "created_utc": "2026-10-10T00:47:50.023835+00:00",
+  "request_sha256": "4dbde6e3a3a5ff4d7e97d20f969ff21ce935b754670f3a9fa2360c598d2cb0c3",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. Head exploding like a ripe pumpkin: deep wet pop, crunchy rupture, broad pulp splatter and dripping.  Element: A charred fibrous rupture and tight flame whip, followed by sustained sizzling heat, crackling embers and a rough falling flame Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "f8d273e150a0a9e7b7e58152aeb4fbca5b333d7a2a4bfec816d3f4fe2d7db172",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. Head exploding like a ripe pumpkin: deep wet pop, crunchy rupture, broad pulp splatter and dripping.  Element: A charred fibrous rupture and tight flame whip, followed by sustained sizzling heat, crackling embers and a rough falling flame Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

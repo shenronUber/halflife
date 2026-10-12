@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "goggles_down",
+  "created_utc": "2026-10-11T21:23:01.150595+00:00",
+  "request_sha256": "772484921be11cec19e3e08396a6e2b37551b1e2dc45e81359c3e3c3fe64999e",
+  "request": {
+    "text": "Single high-tech tactical night vision goggles lowered: small mount click and short servo, followed by a crisp rising electronic power-up chirp and two quiet confirmation beeps. Dry close equipment foley, compact grounded sci-fi, no voice, ambience or music.",
+    "duration_seconds": 1.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "209e087773dd0a67a612c95fca21fe1c2d41fab86fad1dd094f60524b1610a59",
+  "bytes": 17180,
+  "text": "Single high-tech tactical night vision goggles lowered: small mount click and short servo, followed by a crisp rising electronic power-up chirp and two quiet confirmation beeps. Dry close equipment foley, compact grounded sci-fi, no voice, ambience or music.",
+  "request_id": null,
+  "reported_credit_cost": "10"
+}

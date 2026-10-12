@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "goggles_up",
+  "created_utc": "2026-10-11T21:23:00.455960+00:00",
+  "request_sha256": "0692a318e39291992dfe9ad33afe760b251c8f67e3662f57b6994146af5fb245",
+  "request": {
+    "text": "Single tactical optical goggles powered off and lifted: brief falling electronic shutdown chirp, dry mount release click, tiny servo movement and final click. Compact realistic technical gear foley, no voice, ambience, music or loop.",
+    "duration_seconds": 0.7,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "b11e859483e8a1eaad18a19dab7bad5f08ec825b3a4a87b017ac07f24c55b5e4",
+  "bytes": 12164,
+  "text": "Single tactical optical goggles powered off and lifted: brief falling electronic shutdown chirp, dry mount release click, tiny servo movement and final click. Compact realistic technical gear foley, no voice, ambience, music or loop.",
+  "request_id": null,
+  "reported_credit_cost": "7"
+}

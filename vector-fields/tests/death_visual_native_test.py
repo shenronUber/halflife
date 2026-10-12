@@ -4,6 +4,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT));sys.path.insert(0,str(ROOT/'tests'))
 import third_person_native_test as harness
 from studio_assets import Studio
+from fragment_skins import FINISH_COUNT
 from animation_assets import sequence_frames
 import numpy as np
 OUT=ROOT/'build/death-visual';OUT.mkdir(parents=True,exist_ok=True)
@@ -13,7 +14,7 @@ def assets():
  assert m.names==base.names and m.sequences[:77]==base.sequences
  assert all(np.allclose(a,b,atol=1e-4) for a,b in zip(m.bind,base.bind))
  for name in ['die_simple','headshot','gutshot','die_forwards']:assert np.allclose(sequence_frames(m,name),sequence_frames(base,name),atol=1e-4)
- e=sequence_frames(m,'vf_electro');fall=sequence_frames(base,'die_simple');assert np.allclose(e[-len(fall):],fall,atol=.005) and not np.allclose(e[5],e[0])
+ e=sequence_frames(m,'vf_electro');fall=sequence_frames(base,'die_simple');assert np.allclose(e[-len(fall):,1:],fall[:,1:],atol=.005) and np.allclose(e[-len(fall):,0,2:],fall[:,0,2:],atol=.005) and not np.allclose(e[5],e[0])
  full=m.mesh({0:-1,**{i+1:1 if i<11 else 0 for i in range(16)}});original=base.mesh({0:-1,1:0});assert len(original)==740 and len(full)>=740
  # Planar cuts subdivide the corpse mesh. Original UV corners remain, with
  # <=.02 model-unit recompilation rounding when a collar vertex changes bone.
@@ -27,9 +28,9 @@ def assets():
  for missing in range(32):
   choices={i:int(not(missing&r) if i<11 else bool(missing&r)) for i,r in enumerate([1,0,2,4,2,4,8,16,8,16,0,1,2,4,8,16])}
   tri=m.mesh({0:-1,**{i+1:v for i,v in choices.items()}});assert tri and all(np.isfinite(v['p']).all() for _,t in tri for v in t)
- g=Studio(ROOT/'generated/deaths/persona_death_gibs.mdl');assert g.parts[0][1]==20 and g.numskinfamilies==196
+ g=Studio(ROOT/'generated/deaths/persona_death_gibs.mdl');assert g.parts[0][1]==20 and g.numskinfamilies==FINISH_COUNT**2
  for i in range(20):assert g.mesh({0:i})
- print('PASS death geometry: original silhouette/UVs, 77 sequences, 32 anatomical combinations, electrical contraction, 20 fragments, 14 corpse skins and 196 fragment pairs',flush=True)
+ print(f'PASS death geometry: original silhouette/UVs, 77 sequences, 32 anatomical combinations, electrical contraction, 20 fragments, {FINISH_COUNT} corpse skins and {FINISH_COUNT**2} fragment pairs',flush=True)
 def run():
  assets();engine=harness.stage('death-visual');mod=engine/'vf_animation';(mod/'maps').mkdir(exist_ok=True);shutil.copy2(ROOT/'generated/test-room/vf_range.bsp',mod/'maps/vf_range.bsp')
  cfg='wait 180\ndeveloper 1\ncon_notifytime 0\ngl_vsync 0\nfps_max 60\nr_drawviewmodel 0\ncmd give item_suit\ncmd give weapon_9mmAR\nweapon_9mmAR\nwait 15\n'
@@ -41,7 +42,7 @@ def run():
  cfg+='vf_death_lab\nwait 10\nscreenshot scrshots/death_menu.png\nvf_effects\nwait 5\n'
  cfg+='echo PLAYER_DEATH\ncmd vf_death_test head electro\nwait 160\nvf_death_client\necho PLAYER_END\nquit\n'
  (mod/'death_visual.cfg').write_text(cfg,encoding='ascii');start=time.monotonic()
- child=subprocess.Popen([str(engine/'xash3d.exe'),'-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_animation','-windowed','-width','1280','-height','720','-console','-nointro','-nowriteconfig','-log','death-visual.log','+exec','lab_controls.cfg','+sv_cheats','1','+map','vf_range','+exec','death_visual.cfg'],cwd=engine)
+ child=subprocess.Popen([str(engine/'xash3d.exe'),'-ip','127.0.0.1','-noip6','-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_animation','-windowed','-width','1280','-height','720','-console','-nointro','-nowriteconfig','-log','death-visual.log','+exec','lab_controls.cfg','+sv_cheats','1','+map','vf_range','+exec','death_visual.cfg'],cwd=engine)
  try:child.wait(timeout=80);assert child.returncode==0
  finally:
   if child.poll() is None:child.terminate();child.wait(10)

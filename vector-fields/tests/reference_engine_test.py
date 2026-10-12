@@ -7,17 +7,20 @@ sys.path.insert(0,str(ROOT))
 from studio_assets import Studio
 import build_modular as base
 import numpy as np
+from build_identity_chassis import INTRINSIC
+from r01_finish_policy import policy
 
 def assets():
  manifest=json.loads((ROOT/'generated/r01/manifest.json').read_text(encoding='utf-8'))
  rig=Studio(ROOT/'generated/r01/r01_rig.mdl')
- assert len(manifest['pieces'])==60 and len(rig.sequences)==9
+ assert {p['id'] for p in manifest['pieces']}==set(policy()['models']) and len(rig.sequences)==9
  for record in manifest['pieces']:
   s=Studio(ROOT/'generated/r01'/(record['id']+'.mdl'));mesh=s.mesh()
   assert len(mesh)==record['triangles'] and len(s.names)==1
   for _,tri in mesh:
    assert all(np.isfinite(v['p']).all() and np.isfinite(v['n']).all() for v in tri)
-  assert all(0<w<=256 and 0<h<=256 for _,w,h,_,_ in s.textures) # StudioMDL may crop unused texels.
+  limit=512 if record.get('intrinsic_texture') else 256
+  assert all(0<w<=limit and 0<h<=limit for _,w,h,_,_ in s.textures) # StudioMDL may crop unused texels.
  # An animated bolt must actually translate, not merely have a different name.
  text=(ROOT/'generated/r01/shoot1_1.smd').read_text(encoding='ascii')
  bid=int(re.search(r'(\d+) "R01_Bolt"',text)[1]);values=[float(m[1])for m in re.finditer(r'^'+str(bid)+r' 0 ([\d.\-]+) 0 0 0 0$',text,re.M)]

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Neutre / head",
+  "created_utc": "2026-10-10T00:52:57.919526+00:00",
+  "request_sha256": "af8888e400df7ff3332e6d904a0fa1827c14b67a55225423b95911e3a49d594a",
+  "request": {
+    "text": "4-second dry close game SFX. One head bursts like a ripe pumpkin: loud wet hollow pop, crunchy rupture, pulp splatter. Then a continuous dense succession of wet pulp impacts, gurgling liquid and heavy blood drops for 3.5 seconds. Do not fade early. Fade only in the last 0.3 seconds. No voice, scream, music, gunshot or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "184fb4239bdcbd6e7c1f2d1741ecb82ee00a86db93a4aaedf0d7bae289ca9ee5",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. One head bursts like a ripe pumpkin: loud wet hollow pop, crunchy rupture, pulp splatter. Then a continuous dense succession of wet pulp impacts, gurgling liquid and heavy blood drops for 3.5 seconds. Do not fade early. Fade only in the last 0.3 seconds. No voice, scream, music, gunshot or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

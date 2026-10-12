@@ -1,0 +1,24 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Otto Stahl / goggles",
+  "created_utc": "2026-10-11T21:22:53.097894+00:00",
+  "request_sha256": "c66d390180b93f571b2e06bdcde79d9aba36b4c1d1860ab5c28c668763c3588b",
+  "request": {
+    "text": "[dry] Goggles on. Your hiding place is inefficient.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "endpoint": "/v1/text-to-speech/edgqs6sEs8iMvFG1VpR8?output_format=mp3_44100_128",
+  "sha256": "3448767f13fb99fddf02c2a7cf9a11115a09832fa7083f54e0c039b84047c5b0",
+  "bytes": 62319,
+  "text": "[dry] Goggles on. Your hiding place is inefficient.",
+  "request_id": "mNNSDkZv9h8T8WoMI98G",
+  "reported_credit_cost": "6",
+  "voice_id": "edgqs6sEs8iMvFG1VpR8",
+  "voice_name": "Otto Stahl",
+  "language": "en"
+}

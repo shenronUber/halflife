@@ -1,0 +1,24 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Lucien Moreau / generic",
+  "created_utc": "2026-10-11T21:22:43.586211+00:00",
+  "request_sha256": "51917295024e3216dcafe3e2c354c5aec742d6c15c2bfc0bd0b851ded1f0e97e",
+  "request": {
+    "text": "[dry] Headgear on. Try to look professional.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "endpoint": "/v1/text-to-speech/lWtkpHRd8R4BLyKo8pl2?output_format=mp3_44100_128",
+  "sha256": "489969653f91d0b7e27c52408d1ea635d983e9b72542b1eda9875b763b71b396",
+  "bytes": 44765,
+  "text": "[dry] Headgear on. Try to look professional.",
+  "request_id": "w6HnBBeFi99ZphazdZrT",
+  "reported_credit_cost": "5",
+  "voice_id": "lWtkpHRd8R4BLyKo8pl2",
+  "voice_name": "Lucien Moreau",
+  "language": "en"
+}

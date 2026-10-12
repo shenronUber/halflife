@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Cryo / dismemberment",
+  "created_utc": "2026-10-10T00:47:46.358144+00:00",
+  "request_sha256": "f82dd666b37590a8f869bb9b09e238292823f03e91f16132be211593e4004f99",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. A brittle frozen bone fracture with a crunchy tissue break, followed by a long scatter of small ice chips, crystalline ticks and settling frost. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "7a8be8d21da10620e77af7d4c395e7083c9b64d770337ba81a95bc6bc95e9a05",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. A brittle frozen bone fracture with a crunchy tissue break, followed by a long scatter of small ice chips, crystalline ticks and settling frost. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

@@ -24,8 +24,8 @@ int main(int argc,char** argv){
  int selection[vf::SlotCount],totals[vf::BudgetCount];vf::GameplayDefaults(catalog,selection);
  Check(vf::EvaluateGameplay(catalog,selection,totals)==vf::Accepted,"complete gameplay defaults accepted");
  for(int s=0;s<vf::SlotCount;++s){
-  int saved=selection[s];selection[s]=0;bool optional=s==1||s==4||s==7||s==8;
-  Check(vf::EvaluateGameplay(catalog,selection,totals)==(optional?vf::Accepted:vf::Incompatible),"only the four optional gameplay slots may be empty");selection[s]=saved;
+  int saved=selection[s];selection[s]=0;bool optional=vf::OptionalSlot(s);
+  Check(vf::EvaluateGameplay(catalog,selection,totals)==(optional?vf::Accepted:vf::Incompatible),"only optional gameplay slots may be empty");selection[s]=saved;
  }
  vf::Defaults(catalog,selection);
  Check(vf::EvaluateExperiment(catalog,selection,totals)==vf::Accepted,"complete historical builds retained in experimental mode");
@@ -85,13 +85,14 @@ int main(int argc,char** argv){
  appearances[0]=0;Check(!strcmp(vf::OperatorRig(skins,appearances),"models/vf_operator.mdl"),"mixed legacy bodies keep their original common skeleton");
  // Gameplay inventory binds geometry and finish atomically, including large wire IDs.
  vf::GameplayDefaults(catalog,selection);memset(finishes,0,sizeof(finishes));
- int variant=vf::FindItem(catalog,"r01_receiver_arch_top__dieselpunk");
- Check(variant>255,"real inventory IDs exceed byte range");selection[9]=variant;
+ int variantStyle=vf::FindAppearance(styles,"medieval_forge");
+ int variant=vf::FindItem(catalog,"r01_receiver_arch_top__medieval-forge");
+ Check(variant>0&&vf::FindItem(catalog,"helmet_gas_mask")>255,"real inventory IDs exceed byte range");selection[9]=variant;
  Check(vf::ReceiverMount(catalog.items[variant])==2&&vf::ReceiverMount(catalog.items[vf::FindItem(catalog,"r01_receiver_arch_top")])==2,"base and named chassis share the top feed mount");
  Check(vf::EvaluateGameplay(catalog,selection,totals)==vf::Accepted,"new top receiver is a gameplay item");
  Check(!vf::BoundWeaponStyles(catalog,styles,selection,finishes),"forged finish for a named item is rejected");
  vf::BindWeaponStyles(catalog,styles,selection,finishes);
- Check(vf::BoundWeaponStyles(catalog,styles,selection,finishes)&&finishes[0]==13,"fixed finish resolves correctly");
+ Check(vf::BoundWeaponStyles(catalog,styles,selection,finishes)&&finishes[0]==variantStyle,"fixed finish resolves correctly");
  Check(vf::BuildMessageSize==2+8+2*vf::SlotCount+vf::WeaponStyleSlots&&vf::StateMessageSize==4+12+5+2*vf::SlotCount+vf::WeaponStyleSlots,"shared protocol lengths include short inventory IDs");
  for(int i=1;i<catalog.count;++i)if(catalog.items[i].model[0]){
   int slot=catalog.items[i].slot,saved=selection[slot];selection[slot]=i;
@@ -100,12 +101,12 @@ int main(int argc,char** argv){
   Check(vf::EvaluateGameplay(catalog,selection,totals)==vf::Accepted,"every inventory object fits its intended slot");selection[slot]=saved;
  }
  vf::GameplayDefaults(catalog,selection);
- for(int s=9;s<vf::SlotCount;++s){selection[s]=vf::FindItem(catalog,vf::ItemModel(catalog.items[selection[s]]));finishes[s-9]=(s-9)%styles.count;}
- selection[9]=vf::FindItem(catalog,"r01_receiver_arch_top");finishes[0]=13;
+ for(int s=9;s<vf::WeaponEnd;++s){selection[s]=vf::FindItem(catalog,vf::ItemModel(catalog.items[selection[s]]));finishes[s-9]=(s-9)%styles.count;}
+ selection[9]=vf::FindItem(catalog,"r01_receiver_arch_top");finishes[0]=variantStyle;
  Check(vf::EvaluateGameplay(catalog,selection,totals)==vf::Incompatible,"base geometry is reserved for developer tools");
  vf::PromoteGameplayEquipment(catalog,styles,selection,finishes);
  Check(selection[9]==variant,"old chassis and separate finish migrate to the exact named item");
- for(int s=9;s<vf::SlotCount;++s)Check(catalog.items[selection[s]].model[0]&&!strcmp(catalog.items[selection[s]].weaponStyle,styles.entries[finishes[s-9]].key),"migration preserves each independent finish");
+ for(int s=9;s<vf::WeaponEnd;++s)Check(catalog.items[selection[s]].model[0]&&!strcmp(catalog.items[selection[s]].weaponStyle,styles.entries[finishes[s-9]].key),"migration preserves each independent finish");
  int savedItems[vf::SlotCount];memcpy(savedItems,selection,sizeof(selection));
  vf::PromoteGameplayEquipment(catalog,styles,selection,finishes);Check(!memcmp(savedItems,selection,sizeof(selection)),"inventory migration is idempotent");
  static vf::Catalog invalid;std::string unsafe=text;size_t at=unsafe.find("||r01_receiver_a|original");

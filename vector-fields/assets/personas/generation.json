@@ -45,6 +45,129 @@
     {
       "id": "abyss-diver",
       "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a11be2-708e-78a2-b12c-a67a704ceed4\\exec-3eef4cc6-32e8-475d-9970-5ebe7c162a15.png"
+    },
+    {
+      "id": "red-son",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a1279f-0717-7710-bb3e-171ecbb87a65\\exec-b8c0ccf9-6ba5-4ed5-b6f6-2ef221064107.png",
+      "saved_atlas": "red-son/texture-atlas.png",
+      "prompt": "red-son/prompt.txt",
+      "sha256": "ee1a678f8272e7e348791a5af1f28db2ad0991dd25bd0d46534cb2abfe7fd2f0",
+      "reference": "reference-uv.png",
+      "tool": "built-in image_gen"
+    },
+    {
+      "id": "selenite",
+      "path": "C:/Users/Mathieu/.codex/generated_images/01a1279f-0717-7710-bb3e-171ecbb87a65/exec-8014553e-c887-4f60-8e1b-8263f563d2c4.png",
+      "saved_atlas": "selenite/texture-atlas.png",
+      "prompt": "selenite/lunar-circuit-prompt.txt",
+      "sha256": "8a730aa2f8bd76b5be33b8122fe0f69bb91a3dac6e5f8881398a851f7d3c15ca",
+      "reference": "reference-uv.png",
+      "tool": "built-in image_gen",
+      "prompt_sequence": [
+        "selenite/prompt.txt",
+        "selenite/revision-prompt.txt",
+        "selenite/equipment-prompt.txt",
+        "selenite/breathing-system-prompt.txt",
+        "selenite/lunar-circuit-prompt.txt"
+      ],
+      "revision": "Unlettered lunar respiratory apparatus, blank rounded pressure chambers integrated into an asymmetrical interlaced hose circuit; clear visor and natural skin, no dust"
+    },
+    {
+      "id": "masked-hero",
+      "path": "C:/Users/Mathieu/.codex/generated_images/01a1279f-0717-7710-bb3e-171ecbb87a65/exec-560b431b-7756-4a35-b293-fc40c0616bd1.png",
+      "saved_atlas": "masked-hero/texture-atlas.png",
+      "prompt": "masked-hero/head-join-prompt.txt",
+      "sha256": "7711631a432e34aa31bc27b3b9272e43c872ad4faf62d75cf1d8e5be693cdbd9",
+      "reference": "reference-uv.png",
+      "tool": "built-in image_gen",
+      "prompt_sequence": [
+        "masked-hero/prompt.txt",
+        "masked-hero/cowl-and-back-prompt.txt",
+        "masked-hero/head-join-prompt.txt"
+      ],
+      "revision": "Blue eye surround, blue curved head join at 67%/4.7% and blue neighboring rectangular head join; smooth dorsal panel without abdominal blocks"
+    },
+    {
+      "id": "rally-driver",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a1279f-0717-7710-bb3e-171ecbb87a65\\exec-f1a2a51d-5ad8-4325-b7b1-7551757c6b54.png",
+      "saved_atlas": "rally-driver/texture-atlas.png",
+      "prompt": "rally-driver/prompt.txt",
+      "sha256": "45e1bba34cb164661b5cd9ba6ec247746f58478d90c47ce907373d23482ae466",
+      "reference": "reference-uv.png",
+      "tool": "built-in image_gen"
+    },
+    {
+      "id": "penitent-soldier",
+      "path": "C:/Users/Mathieu/.codex/generated_images/01a1279f-0717-7710-bb3e-171ecbb87a65/exec-8876e288-890f-494b-837b-740c89af3f29.png",
+      "saved_atlas": "penitent-soldier/texture-atlas.png",
+      "prompt": "penitent-soldier/final-prompt.txt",
+      "sha256": "809277a0a9c61d90fce3f97275b18470d9c2f8b3509cf75ed29fceaf337c5c23",
+      "reference": "reference-uv.png",
+      "tool": "built-in image_gen",
+      "revision": "Dirty white armor, brown mud, single elongated yellow cross; fully armored face and redesigned back"
+    },
+    {
+      "id": "jade-symbiosis",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a1279f-0717-7710-bb3e-171ecbb87a65\\exec-705d0fa7-65ba-4b07-8f70-8c290a0e7ee5.png",
+      "saved_atlas": "jade-symbiosis/texture-atlas.png",
+      "prompt": "jade-symbiosis/face-personality-prompt.txt",
+      "sha256": "298d16c3fc553e508f8726fb5a6264916321a993e5efbfc25fcc90ffd779bcc8",
+      "reference": "reference-uv.png",
+      "tool": "built-in image_gen",
+      "prompt_sequence": [
+        "jade-symbiosis/techwear-prompt.txt",
+        "jade-symbiosis/gimmick-prompt.txt",
+        "jade-symbiosis/face-personality-prompt.txt"
+      ],
+      "edit_reference": "jade-symbiosis/gimmick-reference.png",
+      "revision": "Approved equipment preserved; distinctive human technical mask"
+    },
+    {
+      "id": "amber-culture",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a1279f-0717-7710-bb3e-171ecbb87a65\\exec-62bd7eac-5bf2-4aa0-82f7-7d967f47ae78.png",
+      "saved_atlas": "amber-culture/texture-atlas.png",
+      "prompt": "amber-culture/face-personality-prompt.txt",
+      "sha256": "b8a994b05d21c96e8b5abf9f8685033d99e7959b6e1b5c437816e4cd935647ba",
+      "reference": "reference-uv.png",
+      "tool": "built-in image_gen",
+      "prompt_sequence": [
+        "amber-culture/techwear-prompt.txt",
+        "amber-culture/gimmick-prompt.txt",
+        "amber-culture/face-personality-prompt.txt"
+      ],
+      "edit_reference": "amber-culture/gimmick-reference.png",
+      "revision": "Approved equipment preserved; distinctive human technical mask"
+    },
+    {
+      "id": "savage-butcher",
+      "path": "C:/Users/Mathieu/.codex/generated_images/01a1279f-0717-7710-bb3e-171ecbb87a65/exec-bb0ba1c1-79c1-4dbc-8834-7530753206d5.png",
+      "saved_atlas": "savage-butcher/texture-atlas.png",
+      "prompt": "savage-butcher/eye-apertures-prompt.txt",
+      "sha256": "da15ac9db225aed14c8664dd1be366253de36576a5f37ce30f9fffe452441f54",
+      "reference": "reference-uv.png",
+      "tool": "built-in image_gen",
+      "prompt_sequence": [
+        "savage-butcher/prompt.txt",
+        "savage-butcher/legs-and-integral-mask-prompt.txt",
+        "savage-butcher/eye-apertures-prompt.txt"
+      ],
+      "edit_reference": "savage-butcher/integral-mask-reference.png",
+      "revision": "Separated dark work trouser legs, short apron on torso only, complete dirty ivory protective head shell with two eye apertures and matching three head joins"
+    },
+    {
+      "id": "miami-vice",
+      "path": "C:/Users/Mathieu/.codex/generated_images/01a1279f-0717-7710-bb3e-171ecbb87a65/exec-aba7924f-1729-453a-9b0f-d0d7929d83b1.png",
+      "saved_atlas": "miami-vice/texture-atlas.png",
+      "prompt": "miami-vice/collar-and-sleeves-prompt.txt",
+      "sha256": "ae3b4ad6d1dd8639f002aebf3f07792df299f4d6566d164e1e6918f912acb2e4",
+      "reference": "reference-uv.png",
+      "tool": "built-in image_gen",
+      "prompt_sequence": [
+        "miami-vice/prompt.txt",
+        "miami-vice/collar-and-sleeves-prompt.txt"
+      ],
+      "edit_reference": "miami-vice/collar-and-sleeves-reference.png",
+      "revision": "Connected pink dress-shirt collar across neck UV islands; blue shoulders and pink cuffs at anatomical wrists only"
     }
   ]
 }

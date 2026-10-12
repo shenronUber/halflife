@@ -3,7 +3,11 @@
 #define VF_LOADOUT_H
 #include <stddef.h>
 namespace vf {
-enum { BudgetCount=6, GearSlots=9, SlotCount=21, MaxItems=2048, Protocol=4, BuildMessageSize=64, StateMessageSize=75 };
+// Append optional operator equipment; preserve every historical slot and weapon index.
+enum { BudgetCount=6, GearSlots=9, WeaponEnd=21, HelmetSlot=21, OperatorSlots=10, SlotCount=22, MaxItems=2048, Protocol=5, BuildMessageSize=66, StateMessageSize=77 };
+inline bool WeaponSlot(int s) { return s>=GearSlots && s<WeaponEnd; }
+inline bool OptionalSlot(int s) { return s==1||s==4||s==7||s==8||s==HelmetSlot; }
+inline int OperatorSlot(int row) { return row==GearSlots?HelmetSlot:row; }
 extern const char* const SlotKeys[SlotCount];
 extern const char* const SlotNames[SlotCount];
 extern const char* const BudgetCodes[BudgetCount];

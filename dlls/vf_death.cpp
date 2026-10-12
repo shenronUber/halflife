@@ -12,6 +12,7 @@
 #include "../game_shared/vf_wound_catalog.h"
 #include "../game_shared/vf_death_motion.h"
 #include "../game_shared/vf_death_atlas.h"
+#include "../game_shared/vf_death_tracks.h"
 #include "../game_shared/vf_death_sfx_catalog.h"
 #include <cmath>
 #include "../game_shared/vf_fragment_geometry.h"
@@ -22,9 +23,10 @@
 #undef min
 namespace {
 int message=0,fragmentMessage=0,soundMessage=0;
-cvar_t deathVolume={"vf_death_sfx_volume","0.8",FCVAR_SERVER};
-cvar_t dismemberVolume={"vf_dismember_sfx_volume","0.8",FCVAR_SERVER};unsigned int fragmentSerial=0;const float lifetime=15;
-struct Snapshot{bool valid;int mask,effect,motion,skins[5];};Snapshot snapshots[33];int pending[33],pendingMotion[33];
+cvar_t deathVolume={"vf_death_sfx_volume","1",FCVAR_SERVER};
+cvar_t dismemberVolume={"vf_dismember_sfx_volume","1",FCVAR_SERVER};unsigned int fragmentSerial=0;const float lifetime=15;
+struct Snapshot{bool valid,grounded;int mask,effect,motion,skins[5];Vector impact;};Snapshot snapshots[33];int pending[33],pendingMotion[33],lastMotion[17];
+struct FatalTrace{int hitgroup,bits;float time,total,weights[5];Vector direction;entvars_t* attacker;bool applied;};FatalTrace fatalTraces[33];
 }
 class CVFDeathCorpse:public CBaseAnimating {
 public:
@@ -69,12 +71,12 @@ namespace {
 // (corpse/CHAN_ITEM) coexist without replacing each other.
 void DeathAudio(CBaseEntity* emitter,int layer,int effect,int mask=0){
  const vfds::Profile& profile=vfds::For(effect);
- const char* sample=layer?profile.dismemberment:profile.death;if(!sample)return;
+ const char* sample=layer?((mask&vfdeath::Head)?profile.head:profile.dismemberment):profile.death;if(!sample)return;
  float volume=layer?dismemberVolume.value:deathVolume.value;
  if(!std::isfinite(volume)||volume<=0)return;volume=std::min(1.f,volume);
  int channel=layer?CHAN_ITEM:CHAN_BODY;
  // One detachment salvo per event rather than one sound for every small gib.
- int pitch=!layer?PITCH_NORM:mask==vfdeath::Head?112:(mask==vfdeath::LeftLeg||mask==vfdeath::RightLeg)?92:PITCH_NORM;
+ int pitch=!layer?PITCH_NORM:mask==vfdeath::Head?104:(mask==vfdeath::LeftLeg||mask==vfdeath::RightLeg)?96:PITCH_NORM;
  EMIT_SOUND_DYN(emitter->edict(),channel,sample,volume,ATTN_NORM,0,pitch);
  if(soundMessage){MESSAGE_BEGIN(MSG_PAS_R,soundMessage,(float*)&emitter->pev->origin);WRITE_SHORT(emitter->entindex());WRITE_BYTE(layer);WRITE_BYTE(effect+1);WRITE_BYTE(pitch);MESSAGE_END();}
  ALERT(at_console,"VFDeathSfx play entity=%d layer=%s effect=%s channel=%d pitch=%d volume=%.2f sample=%s\n",emitter->entindex(),layer?"dismemberment":"death",profile.id,channel,pitch,volume,sample);
@@ -87,6 +89,29 @@ void TrimFragments(){
  }
  if(count>=72&&oldest)((CVFDeathFragment*)oldest)->End();
 }
+int SelectMotion(CBaseAnimating* corpse,const Snapshot& s){
+ const vfdeath::Profile* profile=vfdeath::ProfileFor(s.effect);
+ const int* pool=profile?profile->motions:(s.mask&vfdeath::Head?vfdeath::HeadMotions:vfdeath::StandardMotions);
+ int count=profile?profile->count:3,candidates[3],size=0,key=s.effect+1;
+ float yaw=corpse->pev->angles.y*.01745329252f;
+ float x=cosf(yaw)*s.impact.x+sinf(yaw)*s.impact.y,y=-sinf(yaw)*s.impact.x+cosf(yaw)*s.impact.y;
+ for(int i=0;i<count;++i){
+  int motion=pool[i];bool compatible=true;
+  if(vfmotion::Motions[motion].directional&&x*x+y*y>.01f){
+   int sequence=corpse->LookupSequence(vfmotion::Motions[motion].sequence);float start[3],end[3];
+   if(vfmotion::Centre(sequence,0,start)&&vfmotion::Centre(sequence,255,end)){
+    float dx=end[0]-start[0],dy=end[1]-start[1];
+    compatible=dx*x+dy*y>=-.25f*sqrtf((dx*dx+dy*dy)*(x*x+y*y));
+   }
+  }
+  if(compatible)candidates[size++]=motion;
+ }
+ // Each profile has two grounded collapses as well as its signature gesture.
+ // Those remain available for every impact direction and anatomical loss.
+ if(!size){for(int i=0;i<count;++i)candidates[size++]=pool[i];}
+ if(size>1&&key>=0&&key<17)for(int i=0;i<size;++i)if(candidates[i]==lastMotion[key]){candidates[i]=candidates[--size];break;}
+ int selected=candidates[RANDOM_LONG(0,size-1)];if(key>=0&&key<17)lastMotion[key]=selected;return selected;
+}
 void Corpse(CBaseMonster* victim,const Snapshot& s){
  CBaseEntity* e=NULL;CVFDeathCorpse* oldest=NULL;int count=0;
  while((e=UTIL_FindEntityByClassname(e,"vf_death_corpse"))!=NULL){if(FBitSet(e->pev->flags,FL_KILLME))continue;CVFDeathCorpse* c=(CVFDeathCorpse*)e;++count;if(!oldest||c->started<oldest->started)oldest=c;}
@@ -94,10 +119,10 @@ void Corpse(CBaseMonster* victim,const Snapshot& s){
  CVFDeathCorpse* c=GetClassPtr((CVFDeathCorpse*)NULL);SET_MODEL(c->edict(),vfdeath::Model);
  c->missing=s.mask;c->effect=s.effect;memcpy(c->skins,s.skins,sizeof(c->skins));c->started=gpGlobals->time;c->until=gpGlobals->time+lifetime;c->nextSync=gpGlobals->time+1;
  c->pev->controller[0]=c->pev->controller[1]=c->pev->controller[2]=c->pev->controller[3]=127;c->pev->blending[0]=127;
- c->pev->angles=Vector(0,victim->pev->angles.y,0);c->pev->skin=s.skins[1];c->pev->body=vfdeath::Body(s.mask);c->pev->velocity=Vector(victim->pev->velocity.x*.2f,victim->pev->velocity.y*.2f,0);
+ c->pev->angles=Vector(0,victim->pev->angles.y,0);c->pev->skin=s.skins[1];c->pev->body=vfdeath::Body(s.mask);c->pev->velocity=s.grounded?g_vecZero:victim->pev->velocity;
  UTIL_SetSize(c->pev,Vector(-16,-16,-36),Vector(16,16,36));// Preserve foot height when the victim used the crouching hull.
  Vector origin=victim->pev->origin;origin.z+=36+victim->pev->mins.z;UTIL_SetOrigin(c->pev,origin);
- int motion=s.motion;if(!motion)motion=vfdeath::AutomaticMotion(s.effect,s.mask,RANDOM_LONG(0,32767));
+ int motion=s.motion;if(!motion)motion=SelectMotion(c,s);
  const char* sequence=(s.mask&vfdeath::Head)?"headshot":(s.mask&(vfdeath::LeftLeg|vfdeath::RightLeg))?"die_forwards":"die_simple";
  if(motion>=2&&motion<vfmotion::Count){sequence=vfmotion::Motions[motion].sequence;c->pev->sequence=c->LookupSequence(sequence);}
  else if(!s.mask){int desired=c->LookupActivity(victim->GetDeathActivity());if(desired>=0){c->pev->sequence=desired;sequence="historical_activity";}else c->pev->sequence=c->LookupSequence(sequence);}else c->pev->sequence=c->LookupSequence(sequence);
@@ -107,9 +132,11 @@ void Corpse(CBaseMonster* victim,const Snapshot& s){
   Vector point,angles;victim->GetBonePosition(bones[i],point,angles);
   // The client emits a bounded ballistic burst at the fresh whole fragment.
   // Legacy BloodStream used a fixed vertical ray and a broad palette ramp.
-  for(int chunk=0;chunk<4;++chunk){
+  // Keep the recognizable member and three physical debris pieces, each
+  // with an independent trajectory, clothing finish and elemental trail.
+  for(int piece=0;piece<vfdeath::FragmentsPerRegion;++piece){
    TrimFragments();CVFDeathFragment* g=GetClassPtr((CVFDeathFragment*)NULL);g->Spawn(vfdeath::GibModel);g->pev->fuser4=gpGlobals->time;
-   g->pev->body=chunk==3?15+i:i*3+chunk;g->pev->skin=vfdeath::FragmentSkin(i,s.skins);g->m_bloodColor=BLOOD_COLOR_RED;g->m_lifeTime=10;
+   g->pev->body=piece?i*3+piece-1:15+i;g->pev->skin=vfdeath::FragmentSkin(i,s.skins);g->m_bloodColor=BLOOD_COLOR_RED;g->m_lifeTime=10;
    g->pev->angles=Vector(RANDOM_FLOAT(-90,90),RANDOM_FLOAT(0,360),RANDOM_FLOAT(-90,90));
    float force=(s.effect==7||s.effect==11)?1.3f:1.f;
    g->pev->velocity=Vector(RANDOM_FLOAT(-130,130),RANDOM_FLOAT(-130,130),RANDOM_FLOAT(100,230))*force;
@@ -118,16 +145,38 @@ void Corpse(CBaseMonster* victim,const Snapshot& s){
   }
  }
  if(s.mask)DeathAudio(c,1,s.effect,s.mask);
- ALERT(at_console,"VFDeathVisual corpse=%d victim=%d mask=%d effect=%d sequence=%s lifetime=15 origin_z=%.1f victim_mins_z=%.1f\n",c->entindex(),victim->entindex(),s.mask,s.effect,sequence,c->pev->origin.z,victim->pev->mins.z);
+ ALERT(at_console,"VFDeathVisual corpse=%d victim=%d mask=%d effect=%d sequence=%s lifetime=15 origin_z=%.1f victim_mins_z=%.1f motion=%d impact=%.3f,%.3f grounded=%d origin_xy=%.2f,%.2f yaw=%.2f velocity_xy=%.2f,%.2f\n",c->entindex(),victim->entindex(),s.mask,s.effect,sequence,c->pev->origin.z,victim->pev->mins.z,motion,s.impact.x,s.impact.y,s.grounded,c->pev->origin.x,c->pev->origin.y,c->pev->angles.y,c->pev->velocity.x,c->pev->velocity.y);
 }
 }
 void VF_DeathRegister(){CVAR_REGISTER(&deathVolume);CVAR_REGISTER(&dismemberVolume);}
-void VF_DeathPrecache(){if(!soundMessage)soundMessage=REG_USER_MSG("VFDeathSfx",5);for(int i=0;i<vfds::ProfileCount;++i){const vfds::Profile& p=vfds::Profiles[i];if(p.death)PRECACHE_SOUND((char*)p.death);PRECACHE_SOUND((char*)p.dismemberment);}if(!message)message=REG_USER_MSG("VFCorpse",13);if(!fragmentMessage)fragmentMessage=REG_USER_MSG("VFFragment",10);PRECACHE_MODEL((char*)vfdeath::Model);PRECACHE_MODEL((char*)vfdeath::GibModel);PRECACHE_MODEL("sprites/lgtning.spr");memset(snapshots,0,sizeof(snapshots));memset(pending,0,sizeof(pending));memset(pendingMotion,0,sizeof(pendingMotion));}
+void VF_DeathPrecache(){if(!soundMessage)soundMessage=REG_USER_MSG("VFDeathSfx",5);for(int i=0;i<vfds::ProfileCount;++i){const vfds::Profile& p=vfds::Profiles[i];if(p.death)PRECACHE_SOUND((char*)p.death);PRECACHE_SOUND((char*)p.dismemberment);PRECACHE_SOUND((char*)p.head);}if(!message)message=REG_USER_MSG("VFCorpse",13);if(!fragmentMessage)fragmentMessage=REG_USER_MSG("VFFragment",10);PRECACHE_MODEL((char*)vfdeath::Model);PRECACHE_MODEL((char*)vfdeath::GibModel);PRECACHE_MODEL("sprites/lgtning.spr");PRECACHE_SOUND("common/null.wav");memset(snapshots,0,sizeof(snapshots));for(int i=0;i<17;++i)lastMotion[i]=-1;memset(pendingMotion,0,sizeof(pendingMotion));for(int i=0;i<33;++i){pending[i]=-1;fatalTraces[i].time=-1;}}
 void VF_DeathSync(CBasePlayer* p){CBaseEntity* e=NULL;while((e=UTIL_FindEntityByClassname(e,"vf_death_corpse"))!=NULL)((CVFDeathCorpse*)e)->Send(p);e=NULL;while((e=UTIL_FindEntityByClassname(e,"gib"))!=NULL)if(!FBitSet(e->pev->flags,FL_KILLME)&&!strcmp(STRING(e->pev->model),vfdeath::GibModel))((CVFDeathFragment*)e)->Send(p);}
-void VF_DeathSpawn(CBasePlayer* p){int i=p->entindex();if(i>0&&i<=32){snapshots[i].valid=false;pending[i]=pendingMotion[i]=0;}}
-void VF_DeathCapture(CBasePlayer* p){if(p->m_vfVoiceDeathSpoken)return;int i=p->entindex();if(i<1||i>32)return;Snapshot& s=snapshots[i];s.valid=strstr(STRING(p->pev->model),"persona_rig")||strstr(STRING(p->pev->model),"r01_tp");s.mask=pending[i];s.motion=pendingMotion[i];pending[i]=pendingMotion[i]=0;s.effect=vfd::Causes[vfd::CauseFor(p->m_vfStatus,gpGlobals->time)].effect;VF_DeathPlayerSkins(p,s.skins);DeathAudio(p,0,s.effect);}
+void VF_DeathDiscardTrace(CBasePlayer* p){int i=p->entindex();if(i>0&&i<=32){fatalTraces[i]=FatalTrace();fatalTraces[i].time=-1;}}
+void VF_DeathSpawn(CBasePlayer* p){int i=p->entindex();if(i>0&&i<=32){snapshots[i].valid=false;snapshots[i].mask=0;pending[i]=-1;pendingMotion[i]=0;VF_DeathDiscardTrace(p);memset(p->m_vfRegionDamage,0,sizeof(p->m_vfRegionDamage));}}
+void VF_DeathTrace(CBasePlayer* p,int hitgroup,const Vector& direction,float damage,entvars_t* attacker,int bits){
+ int i=p->entindex();if(i<1||i>32||!std::isfinite(damage)||damage<=0)return;FatalTrace& t=fatalTraces[i];
+ if(t.time!=gpGlobals->time||t.attacker!=attacker||t.applied){t=FatalTrace();t.time=gpGlobals->time;t.attacker=attacker;}
+ t.hitgroup=hitgroup;t.direction=direction;t.bits|=bits;t.total+=damage;
+ int region=vfdeath::DamageRegion(hitgroup);if(region>=0)t.weights[region]+=damage;
+}
+void VF_DeathDamage(CBasePlayer* p,entvars_t* attacker,float healthDamage,int bits){
+ int i=p->entindex();if(i<1||i>32)return;FatalTrace& t=fatalTraces[i];
+ if(t.time!=gpGlobals->time||t.attacker!=attacker||t.applied||t.bits!=bits||
+    !p->pev->takedamage||(p->pev->flags&FL_GODMODE)||!std::isfinite(healthDamage)||healthDamage<=0){VF_DeathDiscardTrace(p);return;}
+ vfdeath::AccumulateDamage(p->m_vfRegionDamage,t.weights,t.total,healthDamage);t.applied=true;
+}
+bool VF_DeathCompatible(CBasePlayer* p){return strstr(STRING(p->pev->model),"persona_rig")||strstr(STRING(p->pev->model),"r01_tp");}
+bool VF_DeathHeadMissing(CBasePlayer* p){int i=p->entindex();return i>0&&i<=32&&(snapshots[i].mask&vfdeath::Head)!=0;}
+void VF_DeathCapture(CBasePlayer* p,bool fullGib,const Vector& impact){if(p->m_vfVoiceDeathSpoken)return;int i=p->entindex();if(i<1||i>32)return;Snapshot& s=snapshots[i];s.valid=VF_DeathCompatible(p);
+const bool localized=fatalTraces[i].time==gpGlobals->time&&fatalTraces[i].applied;
+int group=localized?fatalTraces[i].hitgroup:HITGROUP_GENERIC;
+s.impact=localized?fatalTraces[i].direction:impact;s.grounded=FBitSet(p->pev->flags,FL_ONGROUND)!=0;
+s.mask=pending[i]>=0?pending[i]:vfdeath::AutomaticMask(group,p->m_vfRegionDamage,p->pev->max_health);s.motion=pendingMotion[i];
+int region=vfdeath::DamageRegion(group);
+ALERT(at_console,"VFDeath anatomy victim=%d hitgroup=%d mask=%d override=%d regional_damage=%.3f maximum_health=%.3f\n",i,group,s.mask,pending[i]>=0,region>=0?p->m_vfRegionDamage[region]:0,p->pev->max_health);
+pending[i]=-1;pendingMotion[i]=0;fatalTraces[i].time=-1;s.effect=vfd::Causes[vfd::CauseFor(p->m_vfStatus,gpGlobals->time)].effect;VF_DeathPlayerSkins(p,s.skins);if(!(s.mask&vfdeath::Head))DeathAudio(p,0,s.effect);}
 void VF_DeathPlayer(CBasePlayer* p){int i=p->entindex();if(i<1||i>32||!snapshots[i].valid)return;Corpse(p,snapshots[i]);snapshots[i].valid=false;p->pev->effects|=EF_NODRAW;}
-void VF_DeathTarget(CBaseMonster* p,int skin,const vfs::State& state,int mask,int motion){Snapshot s={};s.motion=motion;s.mask=mask&31;s.effect=vfd::Causes[vfd::CauseFor(state,gpGlobals->time)].effect;for(int z=0;z<5;++z)s.skins[z]=skin;DeathAudio(p,0,s.effect);Corpse(p,s);}
+void VF_DeathTarget(CBaseMonster* p,int skin,const vfs::State& state,int mask,int motion,const Vector& impact){Snapshot s={};s.grounded=FBitSet(p->pev->flags,FL_ONGROUND)||p->pev->movetype==MOVETYPE_NONE;s.impact=impact;s.motion=motion;s.mask=mask<0?0:mask&31;s.effect=vfd::Causes[vfd::CauseFor(state,gpGlobals->time)].effect;for(int z=0;z<5;++z)s.skins[z]=skin;if(!(s.mask&vfdeath::Head))DeathAudio(p,0,s.effect);Corpse(p,s);}
 bool VF_DeathGibSound(CBaseMonster* p){if(!p->IsPlayer())return false;int i=p->entindex();if(i<1||i>32)return false;DeathAudio(p,1,snapshots[i].effect,31);return true;}
 int VF_DeathMask(const char* name){const char* names[]={"none","head","left_arm","right_arm","left_leg","right_leg","all"};const int masks[]={0,1,2,4,8,16,31};for(int i=0;i<7;++i)if(!strcmp(name,names[i]))return masks[i];return -1;}
 int VF_DeathMotion(const char* id){for(int i=0;i<vfmotion::Count;++i)if(!strcmp(id,vfmotion::Motions[i].id))return i;return -1;}

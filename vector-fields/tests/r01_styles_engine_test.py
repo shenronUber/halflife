@@ -6,6 +6,10 @@ from PIL import Image,ImageChops,ImageDraw,ImageFont
 from library_engine_test import run_cfg,click,ROOT,MOD
 sys.path.insert(0,str(ROOT))
 from studio_assets import Studio
+from build_identity_chassis import INTRINSIC,WORKSHOP
+from build_fitted_modules import INTRINSIC as FITTED,WORKSHOP as FITTED_WORKSHOP
+from r01_finish_policy import policy
+from build_r01_finish import is_current as fitted_current,source as fitted_source
 
 def fingerprint(path):
  value=2166136261
@@ -26,20 +30,30 @@ def assets():
  from r01_uv_mapping_test import surface,BASELINE,assert_surface
  before=json.loads(BASELINE.read_text())
  assert data['uv_mapping']=='isotropic-tiled-v1'
- assert data['skin_families']==len(data['styles']) and len(data['pieces'])==61
+ assert data['skin_families']==len(data['styles']) and {p['id'] for p in data['pieces']}==set(policy()['models'])
  total=0
  for record in data['pieces']:
   s=Studio(ROOT/'generated/r01'/(record['id']+'.mdl'))
-  assert s.numskinfamilies==data['skin_families'] and len(s.textures)<=100
+  assert s.numskinfamilies==record.get('skin_families',data['skin_families']) and len(s.textures)<=100
   assert len(s.mesh())==record['triangles']
   original=geometry_digest(s,0)
   current=surface(s.mesh())
-  if record['id']in before:assert_surface(current,before[record['id']]['compiled'],compiled=True)
-  for family in range(data['skin_families']):
+  if fitted_current(s.path):
+   assert geometry_digest(s,0)==geometry_digest(Studio(fitted_source(record['id'])),0)
+  elif record['id'] in FITTED:
+   key=record['id'][4:]
+   approved=Studio(FITTED_WORKSHOP/key/'export'/(record['id']+'.mdl'))
+   assert geometry_digest(s,0)==geometry_digest(approved,0)
+  elif record.get('geometry_revision') and record['id'] not in INTRINSIC:
+   key=record['id'].removeprefix('r01_receiver_')
+   approved=Studio(WORKSHOP/'legacy-trigger-review'/key/(record['id']+'.mdl'))
+   assert geometry_digest(s,0)==geometry_digest(approved,0)
+  elif record['id']in before:assert_surface(current,before[record['id']]['compiled'],compiled=True)
+  for family in range(s.numskinfamilies):
    assert geometry_digest(s,family)==original,(record['id'],family)
    table=s.skin[family*s.numskinref:(family+1)*s.numskinref]
    assert all(0<=i<len(s.textures)for i in table)
-   if family:assert table!=s.skin[:s.numskinref]
+   if family and not fitted_current(s.path):assert table!=s.skin[:s.numskinref]
    total+=1
  return data,total
 

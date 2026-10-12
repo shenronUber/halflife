@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Shatter / dismemberment",
+  "created_utc": "2026-10-10T00:48:08.714754+00:00",
+  "request_sha256": "1a6a99d27f142afab3eb0587e3b0ea90ce7c19756315319f4d26688c746a6fca",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. A violent frozen bone fracture and dense crunchy break, followed by a broad long cascade of sharp ice splinters bouncing, scattering and tinkling. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "98de40cc85bf57499b49b0400413853b22fe7229354a2efe98dac247f829e1ee",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. A violent frozen bone fracture and dense crunchy break, followed by a broad long cascade of sharp ice splinters bouncing, scattering and tinkling. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

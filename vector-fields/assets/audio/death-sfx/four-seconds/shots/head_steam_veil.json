@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "SteamVeil / head",
+  "created_utc": "2026-10-10T00:48:26.156176+00:00",
+  "request_sha256": "139462af8916aa0a731194b788c5eeaeb1791e00cc61ba21f8704467f61ee217",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. Head exploding like a ripe pumpkin: deep wet pop, crunchy rupture, broad pulp splatter and dripping.  Element: A taut soaked tissue snap and a bright pressurized steam jet, followed by sustained hot vapor hissing, wet sputters and cooling water Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "4f55c163b36c73596218781ed5aa406c7f608bad0f3ecb5d79a2772e310c8bf9",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. Head exploding like a ripe pumpkin: deep wet pop, crunchy rupture, broad pulp splatter and dripping.  Element: A taut soaked tissue snap and a bright pressurized steam jet, followed by sustained hot vapor hissing, wet sputters and cooling water Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

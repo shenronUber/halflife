@@ -1,0 +1,24 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Rocco Bellini / generic",
+  "created_utc": "2026-10-11T21:22:39.634847+00:00",
+  "request_sha256": "06dff915f4ee69fc4893295a606ed8b0e47c631a21e11b0671183831587fff75",
+  "request": {
+    "text": "[confident] Headgear on. Showtime.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "endpoint": "/v1/text-to-speech/FmMTwHErJNXXbixvoFWZ?output_format=mp3_44100_128",
+  "sha256": "cc61fdbd95a750b98c5416892534ec514776502749491c5853aa90b9608db862",
+  "bytes": 36824,
+  "text": "[confident] Headgear on. Showtime.",
+  "request_id": "P0evBOT7ai8vKLhXKzNZ",
+  "reported_credit_cost": "4",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "voice_name": "Rocco Bellini",
+  "language": "en"
+}

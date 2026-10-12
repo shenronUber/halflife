@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Corrosion / death",
+  "created_utc": "2026-10-10T00:47:53.589345+00:00",
+  "request_sha256": "da72cb7b0932c49976f6d48a608197dfafa2eb6d34952e766f30e9634e26259f",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. Irregular wet acidic bubbles erupt into a pronounced dissolving chemical sizzle, with scattered viscous pops and a sustained sour fizz gradually dying away. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "07ed24112205c75939781c4a196e7e99f7baac452b44e29b2de32ac676652b61",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. Irregular wet acidic bubbles erupt into a pronounced dissolving chemical sizzle, with scattered viscous pops and a sustained sour fizz gradually dying away. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

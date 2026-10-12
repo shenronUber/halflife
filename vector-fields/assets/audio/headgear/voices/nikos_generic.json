@@ -1,0 +1,24 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Nikos Petros / generic",
+  "created_utc": "2026-10-11T21:22:54.105750+00:00",
+  "request_sha256": "98c1e8ac2ecb94e7257bf88b684fb76b325c526f632c1136980c18e3eb43ad51",
+  "request": {
+    "text": "[confident] Headgear on. Let's make history.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "endpoint": "/v1/text-to-speech/uAGRkdJlXqIKwzx0HORp?output_format=mp3_44100_128",
+  "sha256": "74f1f9305a5b48952675be3eaab4b87d6a69ab23890e09f374d7ef1d8f63cd7b",
+  "bytes": 48527,
+  "text": "[confident] Headgear on. Let's make history.",
+  "request_id": "yZYBUcIc1I3ooA9updV4",
+  "reported_credit_cost": "5",
+  "voice_id": "uAGRkdJlXqIKwzx0HORp",
+  "voice_name": "Nikos Petros",
+  "language": "en"
+}

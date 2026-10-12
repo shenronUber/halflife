@@ -1,0 +1,10 @@
+Use case: stylized-concept
+Asset type: diffuse material atlas for manually authored low-poly GoldSrc 3D headgear.
+Primary request: one square 2 by 2 MATERIAL TEXTURE ATLAS, each quadrant filling its whole tile edge-to-edge, no gaps, no labels.
+Input images: Image 1 is a MATERIAL and equipment style reference for a black ballistic helmet; Image 2 is a MATERIAL reference for a black rubber panoramic gas mask and silver round filter. These are references, not edit targets. Do not draw either complete object.
+Top left tile: matte near-black ballistic painted composite, dark charcoal, fine pebbled grain, subtly worn scattered scratches, softly mottled diffuse variation.
+Top right tile: black molded gas-mask rubber, supple smooth charcoal rubber with subtle molded grain and gray scuffing, no forms or face.
+Bottom left tile: front orthographic circular silver filter grille, exactly centered circle, concentric silver rims, central small capped hub, radial ribs and fine perforations between ribs, fills nearly all square; charcoal background.
+Bottom right tile: wrapped brushed silver filter-canister side diffuse texture, horizontal subdued olive yellow and green narrow inspection bands across middle, gray industrial texture and fine scratches, no text.
+Style/medium: detailed hand-painted late 1990s realistic game texture, flat material swatches, diffuse-only, neutral illumination, texture detail legible at 256px per quadrant, dark but readable.
+Constraints: perfect 2x2 quadrants. No perspective, no objects, no helmets, no masks, no text, no logos, no watermark. Opaque square image.

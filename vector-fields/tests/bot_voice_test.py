@@ -2,23 +2,24 @@
 import json,re,shutil,subprocess,sys,time
 from pathlib import Path
 import voices_test as base
+from native_workspace import engine_path, shared_copy, private_copy
 sys.path.insert(0,str(base.ROOT/'bots'))
 import jk_botti_lab as jk
-ROOT=base.ROOT;ENGINE=base.PROJECT/'runtime/vector-engine-bot-voice-validation';MOD=ENGINE/'valve'
+ROOT=base.ROOT;ENGINE=engine_path(base.PROJECT/'runtime/vector-engine-bot-voice-validation');MOD=ENGINE/'valve'
 SOURCE=base.PROJECT/'runtime/jk-botti-research/engine'
 def stage():
  ENGINE.mkdir(parents=True,exist_ok=True)
  for p in SOURCE.iterdir():
-  if p.is_file() and p.suffix.lower() in ('.exe','.dll'):shutil.copy2(p,ENGINE/p.name)
+  if p.is_file() and p.suffix.lower() in ('.exe','.dll'):private_copy(p,ENGINE/p.name)
  for folder in ['valve','cs_assets']:
-  shutil.copytree(SOURCE/folder,ENGINE/folder,dirs_exist_ok=True,ignore=shutil.ignore_patterns('scrshots','save','*.log','*.matrix'))
- for part,path in [('server','dlls/hl.dll'),('client','cl_dlls/client.dll')]:shutil.copy2(ROOT/f'build/{part}'/Path(path).name,MOD/path)
+  shutil.copytree(SOURCE/folder,ENGINE/folder,dirs_exist_ok=True,copy_function=shared_copy,ignore=shutil.ignore_patterns('scrshots','save','*.log','*.matrix'))
+ for part,path in [('server','dlls/hl.dll'),('client','cl_dlls/client.dll')]:private_copy(ROOT/f'build/{part}'/Path(path).name,MOD/path)
  manifest=base.read(base.ASSETS/'manifest.json')
  for clip in manifest['clips']:
-  out=MOD/'sound'/clip['path'];out.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(base.ASSETS/clip['path'].removeprefix('vf_voices/'),out)
+  out=MOD/'sound'/clip['path'];out.parent.mkdir(parents=True,exist_ok=True);private_copy(base.ASSETS/clip['path'].removeprefix('vf_voices/'),out)
  from death_voice_workshop import deploy as deploy_death_voices
  deploy_death_voices(MOD)
- shutil.copy2(ROOT/'data/voice_behavior.cfg',MOD/'vf_voice_behavior.cfg')
+ private_copy(ROOT/'data/voice_behavior.cfg',MOD/'vf_voice_behavior.cfg')
  # Autonomous bot movement is retained; only shooting is disabled for stable dialogue tests.
  config=MOD/'addons/jk_botti/jk_botti.cfg';s=config.read_text();s=s.replace('pause 2','pause 2\nbotdontshoot 1');config.write_text(s)
 def phase(index,body):
@@ -55,7 +56,7 @@ def run():
   start=len(log());wait(lambda:any(x[1]=='taunt' and x[3]=='1' for x in entries(log()[start:])) and any(x[1]=='counter_taunt' and x[2] in ['1','2'] and x[3]=='1' for x in entries(log()[start:])),25)
   bot_exchange=entries(log()[start:]);server.command('vf_bot_taunts 0');time.sleep(1);mute_start=len(log());time.sleep(3);assert not entries(log()[mute_start:]),'bot mute failed'
   server.command('vf_bot_taunt_chance 0');server.command('vf_bot_counter_chance 0')
-  client=subprocess.Popen([str(ENGINE/'xash3d.exe'),'-rodir',str(jk.STEAM),'-game','valve','-width','1280','-height','720','-console','-nointro','-nowriteconfig','-log','bot-voice-client.log','-clientport','27106','+exec','lab_controls.cfg','+developer','1','+gl_vsync','0','+fps_max','100','+name','VOICE_HUMAN','+connect','127.0.0.1:27105','+exec','bot_voice_phase_0.cfg'],cwd=ENGINE,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+  client=subprocess.Popen([str(ENGINE/'xash3d.exe'),'-ip','127.0.0.1','-noip6','-rodir',str(jk.STEAM),'-game','valve','-width','1280','-height','720','-console','-nointro','-nowriteconfig','-log','bot-voice-client.log','-clientport','27106','+exec','lab_controls.cfg','+developer','1','+gl_vsync','0','+fps_max','100','+name','VOICE_HUMAN','+connect','127.0.0.1:27105','+exec','bot_voice_phase_0.cfg'],cwd=ENGINE,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
   human_ready('BOT_HUMAN_READY');place();server.command('vf_bot_taunts 1')
   start=len(log());advance(0);human_ready('BOT_HUMAN_ZERO');time.sleep(5)
   zero=log()[start:];assert ('3','taunt','0','0') in entries(zero),entries(zero);assert not any(x[3]=='1' for x in entries(zero)),entries(zero)

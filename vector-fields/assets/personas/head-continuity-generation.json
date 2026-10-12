@@ -1,0 +1,226 @@
+{
+  "tool": "built-in image_gen",
+  "outputs": [
+    {
+      "id": "war-torn",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a1279f-0717-7710-bb3e-171ecbb87a65\\exec-67e78fa1-4a6f-4b18-925c-c6d78b33ce62.png",
+      "saved_layer": "war-torn\\head-continuity.png",
+      "prompt": "war-torn\\head-continuity-prompt.txt",
+      "reference": "war-torn\\head-continuity-reference.png",
+      "source_atlas_sha256": "7d2f771d0e73ce49eb3d985f0fdb890aff26bc479faf2487545eba2d93bb5dfc",
+      "sha256": "1d1eac65b07ff19755f10d549aaf07588982e368d0f6856fcbfb60f77d2a19ba",
+      "tool": "built-in image_gen"
+    },
+    {
+      "id": "medieval-forge",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a1279f-0717-7710-bb3e-171ecbb87a65\\exec-55900428-c49e-4d87-bfeb-d506dabd24e2.png",
+      "saved_layer": "medieval-forge\\head-continuity.png",
+      "prompt": "medieval-forge\\head-continuity-prompt.txt",
+      "reference": "medieval-forge\\head-continuity-reference.png",
+      "source_atlas_sha256": "217f268b850ff36d984d9998229754d4d5a321f562f166529e66db18f7c46029",
+      "sha256": "be511851f7bb1b2c08de6550d82083e15ffdd7371ba941f952b9ff91f6254183",
+      "tool": "built-in image_gen"
+    },
+    {
+      "id": "prehistoric",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a1279f-0717-7710-bb3e-171ecbb87a65\\exec-5d020e75-fca9-4fc7-afa5-868d309d7aab.png",
+      "saved_layer": "prehistoric\\head-continuity.png",
+      "prompt": "prehistoric\\head-continuity-prompt.txt",
+      "reference": "prehistoric\\head-continuity-reference.png",
+      "source_atlas_sha256": "3f9fcd7edde6334872eeb9c3053d155fa4ea27cfe1a42ee99f7401c8865ab72e",
+      "sha256": "03d95ea2eae0a87e9a05c5e09de874e61c5dbece279362ab4e2dd695ef913108",
+      "tool": "built-in image_gen"
+    },
+    {
+      "id": "living-jungle",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a1279f-0717-7710-bb3e-171ecbb87a65\\exec-cd0f3b6d-54d6-4f46-82b6-ed5eacf7fe1d.png",
+      "saved_layer": "living-jungle\\head-continuity.png",
+      "prompt": "living-jungle\\head-continuity-prompt.txt",
+      "reference": "living-jungle\\head-continuity-reference.png",
+      "source_atlas_sha256": "3277dd37af138d0ffd0903cf040df61dbdb1d3929bc413ca400ffa7402895011",
+      "sha256": "41abe5e1aa4d5f08eb67522951acba829d140dab9eb2873eea697d07409ae33f",
+      "tool": "built-in image_gen"
+    },
+    {
+      "id": "medieval-alchemy",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a1279f-0717-7710-bb3e-171ecbb87a65\\exec-d28a77c7-b2ec-4597-b0f7-f9df078e3f0c.png",
+      "saved_layer": "medieval-alchemy\\head-continuity.png",
+      "prompt": "medieval-alchemy\\head-continuity-prompt.txt",
+      "reference": "medieval-alchemy\\head-continuity-reference.png",
+      "source_atlas_sha256": "6ecfcaf8316b2d6260451a1c94c5bf388975ba35bdb8efc87359dcf5aacde781",
+      "sha256": "a27e9d3a76636d29da96673e190b812f0842a764a24ef568ef5daa036d51b5eb",
+      "tool": "built-in image_gen"
+    },
+    {
+      "id": "porcelain-fluidics",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a1279f-0717-7710-bb3e-171ecbb87a65\\exec-ce174902-107a-4016-894d-c50ffab5cf12.png",
+      "saved_layer": "porcelain-fluidics\\head-continuity.png",
+      "prompt": "porcelain-fluidics\\head-continuity-colour-prompt.txt",
+      "reference": "porcelain-fluidics\\head-continuity-reference.png",
+      "source_atlas_sha256": "fe9adf99da5f8db1f79e3ffe2ca69a31fca342c0364dee6491fb9050cc883da0",
+      "sha256": "762e696fe5242021e8d3e0b37437b3f2544d9e9394b183365ce5b0547a577f48",
+      "tool": "built-in image_gen"
+    },
+    {
+      "id": "ww1-trench",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a1279f-0717-7710-bb3e-171ecbb87a65\\exec-0ff80a34-f6f0-46ea-bb09-4aa1928831b0.png",
+      "saved_layer": "ww1-trench\\head-continuity.png",
+      "prompt": "ww1-trench\\head-continuity-prompt.txt",
+      "reference": "ww1-trench\\head-continuity-reference.png",
+      "source_atlas_sha256": "b1dc80c47e60f441f788662f62cd79c76fd861592bccf165a6347b7262029fc5",
+      "sha256": "77d273a0dd559374772efe6cc780e6062609d85f92b9af1e59aade3946d73e90",
+      "tool": "built-in image_gen"
+    },
+    {
+      "id": "bedrock-miner",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a1279f-0717-7710-bb3e-171ecbb87a65\\exec-cbd01824-f9a1-4514-9671-005d40967aac.png",
+      "saved_layer": "bedrock-miner\\head-continuity.png",
+      "prompt": "bedrock-miner\\head-continuity-prompt.txt",
+      "reference": "bedrock-miner\\head-continuity-reference.png",
+      "source_atlas_sha256": "0fd31be60967e789d9170d249dfe9759be1b861313b63ae19050b54d000d2b71",
+      "sha256": "8c1c67f53c009efcc182134166b3792a18c9ef1e8c884b5148b7a4b347f9004f",
+      "tool": "built-in image_gen"
+    },
+    {
+      "id": "new-york-noir",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a1279f-0717-7710-bb3e-171ecbb87a65\\exec-d1391b9c-9ca8-4eef-b56e-591606e04cf3.png",
+      "saved_layer": "new-york-noir\\head-continuity.png",
+      "prompt": "new-york-noir\\head-continuity-prompt.txt",
+      "reference": "new-york-noir\\head-continuity-reference.png",
+      "source_atlas_sha256": "a1480e4ec2dd2c22edd14c7251389a13a5bf7ae6d01ee5e5d766450a75f0991b",
+      "sha256": "a91a918fa121087ec8380e63bdc9ae0f5ccc26cd8d20117089207f1c32c029d4",
+      "tool": "built-in image_gen"
+    },
+    {
+      "id": "castaway",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a1279f-0717-7710-bb3e-171ecbb87a65\\exec-6aeef671-c2dc-4acb-abab-b7750ad87876.png",
+      "saved_layer": "castaway\\head-continuity.png",
+      "prompt": "castaway\\head-continuity-prompt.txt",
+      "reference": "castaway\\head-continuity-reference.png",
+      "source_atlas_sha256": "1e0f01d46774250519ffcbf62a1f7113626814338278a1988926d08274f2f927",
+      "sha256": "a2f877ad46b6d71670440f104d760f2c0467a71ed4c55233c189eb12ba5f9f71",
+      "tool": "built-in image_gen"
+    },
+    {
+      "id": "abyss-diver",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a1279f-0717-7710-bb3e-171ecbb87a65\\exec-95dcff0f-b787-4fa0-8b12-47ea0d64ed15.png",
+      "saved_layer": "abyss-diver\\head-continuity.png",
+      "prompt": "abyss-diver\\head-continuity-prompt.txt",
+      "reference": "abyss-diver\\head-continuity-reference.png",
+      "source_atlas_sha256": "040a0aaaba64cebcd8cdd142d61a39840025bde16ddc254881a1b5372fca5073",
+      "sha256": "4d91c8c729d204704e2e95805a7f56ae83189175fe4bd127adef78e6abec18b7",
+      "tool": "built-in image_gen"
+    },
+    {
+      "id": "roman-inventor",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a1279f-0717-7710-bb3e-171ecbb87a65\\exec-4b0c15d4-71c8-4a79-bf28-26d480ff68dd.png",
+      "saved_layer": "roman-inventor\\head-continuity.png",
+      "prompt": "roman-inventor\\head-continuity-prompt.txt",
+      "reference": "roman-inventor\\head-continuity-reference.png",
+      "source_atlas_sha256": "593c7786bd91fe19d6e750cb54f146eb22775423fa7147d37ff168d390972713",
+      "sha256": "f7439a2f6e41995e01963e4f3530698a7311ad730d2f70c08bda95bdcdb50c0b",
+      "tool": "built-in image_gen"
+    },
+    {
+      "id": "dieselpunk",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a1279f-0717-7710-bb3e-171ecbb87a65\\exec-dc43e616-61fa-43a7-9cc8-878954b7b68a.png",
+      "saved_layer": "dieselpunk\\head-continuity.png",
+      "prompt": "dieselpunk\\head-continuity-prompt.txt",
+      "reference": "dieselpunk\\head-continuity-reference.png",
+      "source_atlas_sha256": "02fffdc834ad2e3e1c61da17688d5f489ade9d280cd3e607adb983121b96add1",
+      "sha256": "d993c526394c16d84799768ddc471e414d943b62c9dedb0b65617e43177aaeb6",
+      "tool": "built-in image_gen"
+    },
+    {
+      "id": "red-son",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a1279f-0717-7710-bb3e-171ecbb87a65\\exec-48bf8d15-60ae-4142-8ede-864704a6f664.png",
+      "saved_layer": "red-son\\head-continuity.png",
+      "prompt": "red-son\\head-continuity-colour-prompt.txt",
+      "reference": "red-son\\head-continuity-reference.png",
+      "source_atlas_sha256": "ee1a678f8272e7e348791a5af1f28db2ad0991dd25bd0d46534cb2abfe7fd2f0",
+      "sha256": "e5de9e55188f28e46547d97a51f40ad3b211fc99f1bcc32c312e45858fdae92d",
+      "tool": "built-in image_gen"
+    },
+    {
+      "id": "selenite",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a1279f-0717-7710-bb3e-171ecbb87a65\\exec-b7945abf-7d32-4ae0-8805-dfbeeda4f1b9.png",
+      "saved_layer": "selenite\\head-continuity.png",
+      "prompt": "selenite\\head-continuity-prompt.txt",
+      "reference": "selenite\\head-continuity-reference.png",
+      "source_atlas_sha256": "8a730aa2f8bd76b5be33b8122fe0f69bb91a3dac6e5f8881398a851f7d3c15ca",
+      "sha256": "1494d29628fd664ed541fc461571e77d2c83c3b1bbc01624263fd822d1a4d5b7",
+      "tool": "built-in image_gen"
+    },
+    {
+      "id": "masked-hero",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a1279f-0717-7710-bb3e-171ecbb87a65\\exec-91787e55-c5ec-4857-99d0-8bb5bbd1184e.png",
+      "saved_layer": "masked-hero\\head-continuity.png",
+      "prompt": "masked-hero\\head-continuity-prompt.txt",
+      "reference": "masked-hero\\head-continuity-reference.png",
+      "source_atlas_sha256": "7711631a432e34aa31bc27b3b9272e43c872ad4faf62d75cf1d8e5be693cdbd9",
+      "sha256": "49cae785604e74984d7a4f64211f39b6497462af3ea3c72b6f278d65c906456f",
+      "tool": "built-in image_gen"
+    },
+    {
+      "id": "rally-driver",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a1279f-0717-7710-bb3e-171ecbb87a65\\exec-c7364590-e4ed-499a-a873-a929357937b9.png",
+      "saved_layer": "rally-driver\\head-continuity.png",
+      "prompt": "rally-driver\\head-continuity-prompt.txt",
+      "reference": "rally-driver\\head-continuity-reference.png",
+      "source_atlas_sha256": "45e1bba34cb164661b5cd9ba6ec247746f58478d90c47ce907373d23482ae466",
+      "sha256": "3109b3ce1dae118383be528e059f803cc6e90688811b1218b46a1ffe490f0fbf",
+      "tool": "built-in image_gen"
+    },
+    {
+      "id": "penitent-soldier",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a1279f-0717-7710-bb3e-171ecbb87a65\\exec-9b03015f-9707-4fcb-8084-9168353f7249.png",
+      "saved_layer": "penitent-soldier\\head-continuity.png",
+      "prompt": "penitent-soldier\\head-continuity-prompt.txt",
+      "reference": "penitent-soldier\\head-continuity-reference.png",
+      "source_atlas_sha256": "809277a0a9c61d90fce3f97275b18470d9c2f8b3509cf75ed29fceaf337c5c23",
+      "sha256": "bd0a261821c2874140bb5ba40e16192fbfd8d60939fd96d06d6da6acaf2dbc17",
+      "tool": "built-in image_gen"
+    },
+    {
+      "id": "jade-symbiosis",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a1279f-0717-7710-bb3e-171ecbb87a65\\exec-ad094581-caae-4afb-830d-07f9891c568d.png",
+      "saved_layer": "jade-symbiosis\\head-continuity.png",
+      "prompt": "jade-symbiosis\\head-continuity-prompt.txt",
+      "reference": "jade-symbiosis\\head-continuity-reference.png",
+      "source_atlas_sha256": "298d16c3fc553e508f8726fb5a6264916321a993e5efbfc25fcc90ffd779bcc8",
+      "sha256": "85917d1e4460236fce48a8bf78c87f2a168a9035c281761a5d499a58e215cdcd",
+      "tool": "built-in image_gen"
+    },
+    {
+      "id": "amber-culture",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a1279f-0717-7710-bb3e-171ecbb87a65\\exec-7c059fe4-15ea-4613-b39c-da7fe682c0b0.png",
+      "saved_layer": "amber-culture\\head-continuity.png",
+      "prompt": "amber-culture\\head-continuity-prompt.txt",
+      "reference": "amber-culture\\head-continuity-reference.png",
+      "source_atlas_sha256": "b8a994b05d21c96e8b5abf9f8685033d99e7959b6e1b5c437816e4cd935647ba",
+      "sha256": "fa42aace9f40a9c12b861de5eac6ed059dc23e96bdadaaf9a7cc4757b10798ec",
+      "tool": "built-in image_gen"
+    },
+    {
+      "id": "savage-butcher",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a1279f-0717-7710-bb3e-171ecbb87a65\\exec-2b37b62d-eb3e-40bd-95ab-c4c108d75700.png",
+      "saved_layer": "savage-butcher\\head-continuity.png",
+      "prompt": "savage-butcher\\head-continuity-prompt.txt",
+      "reference": "savage-butcher\\head-continuity-reference.png",
+      "source_atlas_sha256": "da15ac9db225aed14c8664dd1be366253de36576a5f37ce30f9fffe452441f54",
+      "sha256": "974eb51a919c504c562f96aba822afbc2005f58ff4448adc050b61c7f9002213",
+      "tool": "built-in image_gen"
+    },
+    {
+      "id": "miami-vice",
+      "path": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a1279f-0717-7710-bb3e-171ecbb87a65\\exec-c82318e7-1cb9-4513-8796-d682bd29319c.png",
+      "saved_layer": "miami-vice\\head-continuity.png",
+      "prompt": "miami-vice\\head-continuity-prompt.txt",
+      "reference": "miami-vice\\head-continuity-reference.png",
+      "source_atlas_sha256": "ae3b4ad6d1dd8639f002aebf3f07792df299f4d6566d164e1e6918f912acb2e4",
+      "sha256": "a6cc69d000ce4ad0295285a23ad27e40ddfe9b52f0d6c61a4ce0080f9f0d5d14",
+      "tool": "built-in image_gen"
+    }
+  ],
+  "integration": "Only rear shell, narrow side chart and crown selected; authored face, collar and clothing retained; geometric colour and shading continuity fit at compile time"
+}

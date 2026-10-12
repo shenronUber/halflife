@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Sonic / head",
+  "created_utc": "2026-10-10T00:47:59.234287+00:00",
+  "request_sha256": "68d04ac26a8a96fbebf1240caabd1598be3dd96675940986b740305e0b4a27eb",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. Head exploding like a ripe pumpkin: deep wet pop, crunchy rupture, broad pulp splatter and dripping.  Element: A taut dry physical rupture and a sharp pressure crack, followed by a sustained pitched descending resonant ring with three weakening Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "3c80846944878d48ee8f61992864957b6d231c5b706c49c130d1cd6e8782aec2",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. Head exploding like a ripe pumpkin: deep wet pop, crunchy rupture, broad pulp splatter and dripping.  Element: A taut dry physical rupture and a sharp pressure crack, followed by a sustained pitched descending resonant ring with three weakening Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

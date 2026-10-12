@@ -4,6 +4,8 @@
 #include "cl_entity.h"
 #include "event_api.h"
 #include "vf_voice.h"
+#include "vf_engine.h"
+#include "../game_shared/vf_headgear_audio_catalog.h"
 #include "../game_shared/vf_voice_catalog.h"
 #include "../game_shared/vf_death_catalog.h"
 #include <cstdio>
@@ -16,6 +18,17 @@ int ReceiveDeath(const char*,int size,void* data){
     int index=vfd::Index(actor,cause);if(entity<1||entity>=2048||index<0)return 1;
     gEngfuncs.Con_DPrintf("VFDeath received: entity=%d actor=%s cause=%s sample=%s\n",entity,vfv::Actors[actor].id,vfd::Causes[cause].id,vfd::Clips[index].path);
     return 1; // audio is already replicated by the native sound channel
+}
+int ReceiveHeadgear(const char*,int size,void* data){
+ if(size!=3)return 1;BEGIN_READ(data,size);
+ int player=READ_BYTE(),actor=READ_BYTE(),line=READ_BYTE();
+ if(player<1||player>gEngfuncs.GetMaxClients()||actor>=vfv::ActorCount||line>=vfha::ClipCount)return 1;
+ const vfha::Clip& clip=vfha::Clips[line];if(clip.actor!=actor)return 1;
+ gEngfuncs.Con_DPrintf("VFHeadgear voice received: player=%d actor=%s category=%d\n",player,vfv::Actors[actor].id,clip.category);
+ cl_entity_t* local=gEngfuncs.GetLocalPlayer();
+ if(!subtitles||subtitles->value<=0||!local||(subtitles->value<2&&local->index!=player))return 1;
+ char text[256];snprintf(text,sizeof(text),"%s: %s\n",vfv::Actors[actor].name,clip.text);
+ gHUD.m_SayText.SayTextPrint(text,static_cast<int>(strlen(text)),player);return 1;
 }
 int Receive(const char*,int size,void* data){
     if(size!=3)return 1;
@@ -31,8 +44,9 @@ int Receive(const char*,int size,void* data){
         if(!local||local->index!=player)return 1;
         // This engine call only plays on this client. Keep gameplay speech on
         // the same local voice channel so injuries/death can interrupt it.
-        gEngfuncs.pEventAPI->EV_PlaySound(player,local->origin,CHAN_VOICE,clip.path,.85f,ATTN_NONE,0,PITCH_NORM);
-        gEngfuncs.Con_DPrintf("VFVoice private played: player=%d clip=%d\n",player,line);
+        const char* sample=VF_HeadgearVoiceMuffled(player)?vfha::Mask(clip.path):clip.path;
+        gEngfuncs.pEventAPI->EV_PlaySound(player,local->origin,CHAN_VOICE,sample,.85f,ATTN_NONE,0,PITCH_NORM);
+        gEngfuncs.Con_DPrintf("VFVoice private played: player=%d clip=%d sample=%s\n",player,line,sample);
     }
     if(!subtitles||subtitles->value<=0||!local)return 1;
     if(subtitles->value<2&&local->index!=player)return 1;
@@ -45,5 +59,6 @@ void VF_VoiceInit(){
     subtitles=gEngfuncs.pfnRegisterVariable("vf_voice_subtitles","1",FCVAR_ARCHIVE);
     gEngfuncs.pfnHookUserMsg("VFVoice",Receive);
     gEngfuncs.pfnHookUserMsg("VFDeath",ReceiveDeath);
+    gEngfuncs.pfnHookUserMsg("VFHeadVoice",ReceiveHeadgear);
 }
 

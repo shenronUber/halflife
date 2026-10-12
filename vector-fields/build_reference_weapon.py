@@ -339,6 +339,11 @@ def stage_inputs():
  modules += [ROOT/'assets/r01/variants'/entry['id']/'texture-atlas.png' for entry in config['variants']]
  # Only the bind pose affects magazine vertices, not gesture or foregrip recipes.
  modules += [SOURCE/'mp40_hands.smd',SOURCE/'mp40_rig.qc']
+ from build_identity_chassis import inputs as identity_inputs
+ modules += identity_inputs()
+ from build_fitted_modules import inputs as fitted_inputs
+ from build_r01_finish import inputs as finish_inputs
+ modules += fitted_inputs()+finish_inputs()+[ROOT/'r01_finish_policy.py',ROOT/'data/r01-fitted-finishes.json']
  rigs=common+[ROOT/'assets/r01/texture-atlas.png',ROOT/'build_reference_platforms.py',ROOT/'first_person_grips.py',ROOT/'build_foregrip.py',ROOT/'assets/animations/r01-first-person-foregrip.json']
  rigs += [p for p in SOURCE.iterdir() if p.suffix in ('.smd','.qc','.bmp')]
  return dict(modules=modules,rigs=rigs)
@@ -464,7 +469,13 @@ def build_modules(rig):
    records.append(dict(id=name,slot=key,slot_index=KEYS.index(key)+9,variant=v,name=spec['name'],theme=spec['key'],triangles=len(mesh),bytes=model.stat().st_size,sha256=hashlib.sha256(model.read_bytes()).hexdigest()))
    lines.append('|'.join([key,name,'1',spec['name'],spec['family'],'Relais R-01','4','4','4','4','0','0',spec['description']+' Visuel uniquement.','0']))
    print(name,len(mesh),'triangles',flush=True)
- catalog=ROOT/'data/equipment.txt';old=catalog.read_text(encoding='utf-8');old='\n'.join(x for x in old.splitlines()if '|r01_'not in x and not x.startswith('# Relais R-01'))
+ from build_identity_chassis import apply_modules as reviewed_modules,base_rows as identity_rows
+ reviewed_modules(OUT,records);lines.extend(identity_rows())
+ from build_fitted_modules import apply_modules as fitted_modules,base_rows as fitted_rows
+ fitted_modules(OUT,records);lines.extend(fitted_rows())
+ from build_r01_finish import apply_modules as finish_modules
+ finish_modules(OUT,records)
+ catalog=ROOT/'data/equipment.txt';old=catalog.read_text(encoding='utf-8');old='\n'.join(x for x in old.splitlines()if '|r01_'not in x and not x.startswith(('# Relais R-01','# Reviewed chassis')))
  catalog.write_text(old.rstrip()+'\n# Relais R-01: four core variants per slot, four extra receivers and eight themed modules.\n'+'\n'.join(lines)+'\n',encoding='utf-8')
  report=dict(inputs_sha256=inputs_hash(),name='Relais R-01',version=7,platforms=[dict(id="bottom",name="Atelier / Circuit",rig="r01_rig"),dict(id="side",name="Traverse",rig="r01_rig_side"),dict(id="top",name="Zenith",rig="r01_rig_top")],uv_mapping='isotropic-tiled-v1',styles=styles,skin_families=len(styles),pieces=records,combinations=math.prod(sum(r['slot']==key for r in records)for key in KEYS),texture_source='assets/r01/texture-atlas.png',socket='Bone76',animated_sockets={'feed':'Bone71','chamber':'R01_Bolt'},rig='r01_rig',limits=['MP5 gameplay retained','bottom reload from MP40; side/top authored feed tracks and left-arm IK on the same hands','first-person angled foregrip variants; third-person contacts authored separately'])
  (OUT/'manifest.json').write_text(json.dumps(report,indent=2,ensure_ascii=False),encoding='utf-8')

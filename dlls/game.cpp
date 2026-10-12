@@ -20,6 +20,7 @@
 #include "vf_voice.h"
 #include "vf_death.h"
 #include "vf_combat.h"
+#include "vf_modular.h"
 
 cvar_t	displaysoundlist = {"displaysoundlist","0"};
 
@@ -463,6 +464,7 @@ cvar_t sv_busters = { "sv_busters", "0" };
 // This gets called one time when the game is initialied
 void GameDLLInit( void )
 {
+	VF_ModularInit();
 	VF_VoiceRegister();
 	VF_DeathRegister();
     VF_InitSkins();

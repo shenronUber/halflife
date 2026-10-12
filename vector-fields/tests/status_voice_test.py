@@ -36,7 +36,7 @@ def native():
  cfg+='map vf_range\nwait 240\ndeveloper 1\ncon_notifytime 0\ncmd vf_status_dev 1\nwait 5\ncmd vf_voice_set diego\nwait 5\ncmd vf_status_apply ward 30\nwait 25\nsave vf_status_transient\nwait 60\nload vf_status_transient\nwait 180\ncmd vf_status_info\nvf_status_client\nscreenshot scrshots/status_after_load.png\nwait 5\nquit\n'
  assert len(cfg.encode())<24000,len(cfg)
  (MOD/'vf_status_native.cfg').write_text(cfg,encoding='ascii');started=time.time()
- p=subprocess.Popen([str(ENGINE/'xash3d.exe'),'-rodir',base.STEAM,'-game','vf_visual','-width','1280','-height','720','-console','-nointro','-nowriteconfig','-log','status-native.log','+exec','lab_controls.cfg','+sv_cheats','1','+developer','1','+map','vf_range','+exec','vf_status_native.cfg'],cwd=ENGINE,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+ p=subprocess.Popen([str(ENGINE/'xash3d.exe'),'-ip','127.0.0.1','-noip6','-rodir',base.STEAM,'-game','vf_visual','-width','1280','-height','720','-console','-nointro','-nowriteconfig','-log','status-native.log','+exec','lab_controls.cfg','+sv_cheats','1','+developer','1','+map','vf_range','+exec','vf_status_native.cfg'],cwd=ENGINE,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
  try:p.wait(timeout=230)
  except subprocess.TimeoutExpired:p.terminate();p.wait(10);raise
  assert p.returncode==0,p.returncode

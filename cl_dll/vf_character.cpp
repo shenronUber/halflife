@@ -26,7 +26,16 @@ int draft[vf::SlotCount],applied[vf::SlotCount];
 int gameplayItems[vf::SlotCount]={},gameplayStyles[vf::WeaponStyleSlots]={};bool gameplaySaved=false;
 bool opened=false,synchronized=false,pending=false;
 int tab=0,row=0,familyFilter=-1,itemPage=0,collectionFilter=-1;
-bool CollectionMatch(const vf::Item& item){return collectionFilter<0||!strcmp(item.flavor,weaponStyles.entries[collectionFilter].name);}
+int CollectionCount(){
+ if(tab)return weaponStyles.valid?weaponStyles.count:0;
+ int count=0;for(int i=1;i<catalog.count;++i)if(catalog.items[i].slot==0&&vf::GameplayItem(catalog.items[i]))++count;return count;
+}
+const char* CollectionName(int index){
+ if(tab)return index>=0&&index<weaponStyles.count?weaponStyles.entries[index].name:"";
+ for(int i=1;i<catalog.count;++i)if(catalog.items[i].slot==0&&vf::GameplayItem(catalog.items[i])){if(index--==0)return catalog.items[i].flavor;}
+ return "";
+}
+bool CollectionMatch(const vf::Item& item){return collectionFilter<0||!strcmp(item.flavor,CollectionName(collectionFilter));}
 float fixedAngles[3],requestTime=0;
 char status[128]="F1 : ouvrir le personnage";
 
@@ -39,7 +48,7 @@ void ApplyReference(int v){
  const char* theme=v==4?"inventor":v==5?"diesel":NULL;
  int base=v<4?v:v-2,finish=theme?vf::FindAppearance(weaponStyles,v==4?"roman_inventor":"dieselpunk"):-1;
  if(theme&&finish<0){strcpy(status,"Finition du theme absente du catalogue.");return;}
- for(int s=9;s<vf::SlotCount;++s){
+ for(int s=9;s<vf::WeaponEnd;++s){
   char key[40];
   if(theme&&s==9)snprintf(key,sizeof(key),"r01_receiver_%s",v==4?"arch":"gyre");
   else if(theme&&(s==13||s==16||s==19||s==20))snprintf(key,sizeof(key),"r01_%s_%s",vf::SlotKeys[s],theme);
@@ -77,7 +86,9 @@ void PlatformCommand(){
 }
 
 bool Dirty() { return memcmp(draft,applied,sizeof(draft))!=0||memcmp(draftStyles,appliedStyles,sizeof(draftStyles))!=0; }
-int Slot() { return (tab?vf::GearSlots:0)+row; }
+int SlotAt(int n) { return tab?vf::GearSlots+n:vf::OperatorSlot(n); }
+int Slot() { return SlotAt(row); }
+void SlotFocus(int s) { tab=vf::WeaponSlot(s);row=s==vf::HelmetSlot?vf::GearSlots:s-(tab?vf::GearSlots:0); }
 void FocusSelection(){
  int ordinal=0,slot=Slot();bool ref=tab&&IsReference();
  for(int i=1;i<catalog.count;++i){const vf::Item& item=catalog.items[i];
@@ -88,16 +99,16 @@ void FocusSelection(){
 void ChooseStyle(int id,int slot){
  if(!vfui::Developer()||!synchronized||pending||!IsReference()||!weaponStyles.valid||id<0||id>=weaponStyles.count)return;
  // Editing finishes belongs to the lab; detach any fixed inventory identity.
- for(int s=9;s<vf::SlotCount;++s)if(slot<0||s==slot){int at=draft[s];if(at>0&&catalog.items[at].model[0])draft[s]=vf::FindItem(catalog,catalog.items[at].model);}
+ for(int s=9;s<vf::WeaponEnd;++s)if(slot<0||s==slot){int at=draft[s];if(at>0&&catalog.items[at].model[0])draft[s]=vf::FindItem(catalog,catalog.items[at].model);}
  if(slot<0)for(int s=0;s<vf::WeaponStyleSlots;++s)draftStyles[s]=id;
- else if(slot>=9&&slot<vf::SlotCount)draftStyles[slot-9]=id;else return;
+ else if(vf::WeaponSlot(slot))draftStyles[slot-9]=id;else return;
  gEngfuncs.Con_DPrintf("VFR01 draft style: id=%d slot=%d\n",id,slot);
  strcpy(status,"Finition modifiee : inspecter puis appliquer.");
 }
 void StyleCommand(){
  unsigned int id,slot;
  if((gEngfuncs.Cmd_Argc()!=2&&gEngfuncs.Cmd_Argc()!=3)||!vf::ParseUnsigned(gEngfuncs.Cmd_Argv(1),id))return;
- if(gEngfuncs.Cmd_Argc()==3){if(!vf::ParseUnsigned(gEngfuncs.Cmd_Argv(2),slot)||slot<9||slot>=vf::SlotCount)return;ChooseStyle((int)id,(int)slot);}
+ if(gEngfuncs.Cmd_Argc()==3){if(!vf::ParseUnsigned(gEngfuncs.Cmd_Argv(2),slot)||slot<9||slot>=vf::WeaponEnd)return;ChooseStyle((int)id,(int)slot);}
  else ChooseStyle((int)id,-1);
 }
 void Load() {
@@ -127,7 +138,7 @@ void GameplayCommand(){
 void ItemCommand(){
  if(!opened||!synchronized||pending||gEngfuncs.Cmd_Argc()!=2)return;
  for(int i=1;i<catalog.count;++i)if(!strcmp(catalog.items[i].id,gEngfuncs.Cmd_Argv(1))&&Eligible(catalog.items[i])){
-  int at=catalog.items[i].slot;draft[at]=i;tab=at>=vf::GearSlots;row=at-(tab?vf::GearSlots:0);itemPage=0;
+  int at=catalog.items[i].slot;draft[at]=i;SlotFocus(at);itemPage=0;
   vf::BindWeaponStyles(catalog,weaponStyles,draft,draftStyles);collectionFilter=-1;FocusSelection();gEngfuncs.Con_DPrintf("VFGameplay draft: %s\n",catalog.items[i].id);break;
  }
 }
@@ -142,7 +153,7 @@ void OutfitCommand(){
 }
 void CycleItem(int direction){
  if(!opened||!synchronized||pending)return;
- int at=Slot();bool optional=at==1||at==4||at==7||at==8;
+ int at=Slot();bool optional=vf::OptionalSlot(at);
  for(int step=1;step<=catalog.count;++step){int id=(draft[at]+(direction>0?step:catalog.count*2-step))%catalog.count;
   if(!id){if((vfui::Developer()&&!IsReference())||optional){draft[at]=0;break;}continue;}
   const vf::Item& item=catalog.items[id];
@@ -170,7 +181,7 @@ void SwitchTab() { if(opened) { tab=1-tab;row=0;collectionFilter=-1;FocusSelecti
 void SelectSlot() {
     if(!opened||gEngfuncs.Cmd_Argc()!=2)return;
     unsigned int s;
-    if(vf::ParseUnsigned(gEngfuncs.Cmd_Argv(1),s)&&s<vf::SlotCount) {tab=s>=vf::GearSlots;row=s-(tab?vf::GearSlots:0);collectionFilter=-1;FocusSelection();}
+    if(vf::ParseUnsigned(gEngfuncs.Cmd_Argv(1),s)&&s<vf::SlotCount) {SlotFocus(s);collectionFilter=-1;FocusSelection();}
 }
 void Rotate() {VF_PreviewRotate(30);}
 void InspectModel() {
@@ -205,7 +216,7 @@ int Message(const char*,int size,void* buffer) {
     // A confirmed R-01 choice replaces local weapon previews, not the body skin.
     if(referenceSubmission&&result==vf::Accepted)VF_EngineModuleReset();
     strcpy(status,result==vf::Accepted?"Equipement enregistre.":"Configuration refusee. Equipement precedent conserve.");
-    gEngfuncs.Con_DPrintf("VFBuild received: result=%d hash=%u head=%d slots=21\n",result,hash,received[0]);
+    gEngfuncs.Con_DPrintf("VFBuild received: result=%d hash=%u head=%d slots=22\n",result,hash,received[0]);
     gEngfuncs.Con_DPrintf("VF visuals: operator=%d weapon=%d\n",vf::OperatorBody(catalog,applied),vf::WeaponBody(catalog,applied));
     if(applied[9]>0&&!strncmp(catalog.items[applied[9]].id,"r01_",4))gEngfuncs.Con_DPrintf("VFR01 applied: receiver=%s power=%s chamber=%s optic=%s cooling=%s\n",catalog.items[applied[9]].id,catalog.items[applied[19]].id,catalog.items[applied[13]].id,catalog.items[applied[16]].id,catalog.items[applied[20]].id);
     if(referencePending!=-1){int v=referencePending;referencePending=-1;if(v!=-2||!IsReference())ApplyReference(v>=0?v:0);}
@@ -295,8 +306,8 @@ int VF_CharacterKey(int down,int key) {
     else if(key=='x') VF_PreviewZoom(-.05f);
     else if(key=='t') VF_EngineAnimation(1);
     else if(key=='p') VF_EnginePause();
-    else if(key==K_UPARROW) {row=(row+(tab?12:9)-1)%(tab?12:9);collectionFilter=-1;FocusSelection();}
-    else if(key==K_DOWNARROW) {row=(row+1)%(tab?12:9);collectionFilter=-1;FocusSelection();}
+    else if(key==K_UPARROW) {row=(row+(tab?12:vf::OperatorSlots)-1)%(tab?12:vf::OperatorSlots);collectionFilter=-1;FocusSelection();}
+    else if(key==K_DOWNARROW) {row=(row+1)%(tab?12:vf::OperatorSlots);collectionFilter=-1;FocusSelection();}
     else if(key==K_RIGHTARROW||key==K_SPACE) Next();
     else if(key==K_LEFTARROW)CycleItem(-1);
     else if(key==K_ENTER) Commit();
@@ -308,11 +319,11 @@ namespace {
 void SelectDraft(int id){if(!synchronized||pending)return;draft[Slot()]=id;vf::BindWeaponStyles(catalog,weaponStyles,draft,draftStyles);gEngfuncs.Con_DPrintf("VFEquipment selection: slot=%d id=%s\n",Slot(),catalog.items[id].id);strcpy(status,Dirty()?"Configuration modifiee : appliquer pour valider.":"Configuration actuelle.");}
 void DrawGameplay(){
  namespace u=vfui;
- const char* labels[]={"Tete","Epaules","Gants","Torse","Ceinture","Jambes","Bottes","Bouclier","Special","Chassis","Canon","Bouche","Chargeur","Culasse","Charge","Projectile","Optique","Sous-canon","Poignee","Batterie","Refroidissement"};
- const int icons[]={14,15,16,17,18,19,20,2,5,21,22,23,24,4,26,27,28,29,30,31,32};
- int slot=Slot(),start=tab?9:0,count=tab?12:9;
+ const char* labels[]={"Tete","Epaules","Gants","Torse","Ceinture","Jambes","Bottes","Bouclier","Special","Chassis","Canon","Bouche","Chargeur","Culasse","Charge","Projectile","Optique","Sous-canon","Poignee","Batterie","Refroidissement","Casque"};
+ const int icons[]={14,15,16,17,18,19,20,2,5,21,22,23,24,4,26,27,28,29,30,31,32,14};
+ int slot=Slot(),start=tab?9:0,count=tab?12:vf::OperatorSlots;
  u::Text(24,158,"EMPLACEMENTS",u::muted);
- for(int n=0;n<count;++n){int at=start+n;float y=188+n*34.f;
+ for(int n=0;n<count;++n){int at=SlotAt(n);float y=188+n*34.f;
   if(u::Button(24,y,204,29,labels[at],row==n,true,icons[at])){row=n;slot=at;collectionFilter=-1;FocusSelection();}
   if(draft[at]!=applied[at])u::Box(215,y+10,4,9,u::amber);
   if(u::Hover(24,y,204,29))u::Tip(catalog.items[draft[at]].name);
@@ -327,11 +338,12 @@ void DrawGameplay(){
  // Collection changes filter the owned objects only; equipping always selects one row.
  u::Text(838,158,labels[slot],u::white,418);
  u::Text(838,184,"FILTRER PAR COLLECTION",u::muted);
- bool filtering=slot>=9||slot==0||slot==2||slot==3||slot==5||slot==6;
+ bool filtering=vf::WeaponSlot(slot)||slot==0||slot==2||slot==3||slot==5||slot==6;
  if(filtering){
-  if(u::Button(838,209,42,29,"<")){collectionFilter=(collectionFilter+weaponStyles.count+1)%(weaponStyles.count+1)-1;itemPage=0;}
-  if(u::Button(887,209,320,29,collectionFilter<0?"Toutes les collections":weaponStyles.entries[collectionFilter].name,false)) {collectionFilter=-1;itemPage=0;}
-  if(u::Button(1214,209,42,29,">")){collectionFilter=(collectionFilter+2)%(weaponStyles.count+1)-1;itemPage=0;}
+  int count=CollectionCount();
+  if(u::Button(838,209,42,29,"<")){collectionFilter=(collectionFilter+count+1)%(count+1)-1;itemPage=0;}
+  if(u::Button(887,209,320,29,collectionFilter<0?"Toutes les collections":CollectionName(collectionFilter),false)) {collectionFilter=-1;itemPage=0;}
+  if(u::Button(1214,209,42,29,">")){collectionFilter=(collectionFilter+2)%(count+1)-1;itemPage=0;}
  }else u::Text(838,215,"Tous les objets",u::muted);
  int matches[vf::MaxItems],visible=0;
  for(int i=1;i<catalog.count;++i)if(catalog.items[i].slot==slot&&vf::GameplayItem(catalog.items[i])&&(!filtering||CollectionMatch(catalog.items[i])))matches[visible++]=i;
@@ -346,7 +358,7 @@ void DrawGameplay(){
  if(u::Button(838,590,42,27,"<",false,itemPage>0))--itemPage;
  char page[100];snprintf(page,sizeof(page),"%d objets  /  Page %d sur %d",visible,itemPage+1,pages);u::Text(894,596,page,u::muted,304);
  if(u::Button(1214,590,42,27,">",false,itemPage+1<pages))++itemPage;
- if(slot==1||slot==4||slot==7||slot==8)if(u::Button(838,622,418,27,"Retirer cet equipement",draft[slot]==0,synchronized&&!pending&&draft[slot]!=0))SelectDraft(0);
+ if(vf::OptionalSlot(slot))if(u::Button(838,622,418,27,"Retirer cet equipement",draft[slot]==0,synchronized&&!pending&&draft[slot]!=0))SelectDraft(0);
  int totals[vf::BudgetCount],old[vf::BudgetCount];vf::Result result=vf::EvaluateGameplay(catalog,draft,totals);vf::Evaluate(catalog,applied,old);
  const char* budgetLabels[]={"Chaleur","Inertie","Stabilite","Integrite","Signature","Effort"};int first=tab?0:4,last=tab?4:6;
  for(int b=first;b<last;++b){float step=786.f/(last-first),x=24+(b-first)*step;u::Meter(x,635,step-22,budgetLabels[b],totals[b],old[b],catalog.limits[b],u::BudgetColor(b),34+b);if(u::Hover(x,635,step-22,30))u::Tip(u::BudgetTip(b));}
@@ -359,8 +371,8 @@ void DrawGameplay(){
 }
 void Preset(int kind){
  if(!synchronized||pending)return;
- int start=tab?vf::GearSlots:0,end=tab?vf::SlotCount:vf::GearSlots;
- for(int slot=start;slot<end;++slot){
+ int count=tab?12:vf::OperatorSlots;
+ for(int n=0;n<count;++n){int slot=SlotAt(n);
   int best=0,score=-100000;
   for(int i=1;i<catalog.count;++i)if(catalog.items[i].slot==slot&&Eligible(catalog.items[i])){
    const vf::Item& it=catalog.items[i];int f=vfui::FamilyId(it.category),cost=0;for(int b=0;b<vf::BudgetCount;++b)cost+=it.cost[b];
@@ -378,11 +390,11 @@ void VF_CharacterDraw() {
  if((pending||!synchronized)&&catalog.valid&&gEngfuncs.GetClientTime()-requestTime>5){pending=false;synchronized=false;strcpy(status,"Connexion absente. Fermer et rouvrir l'atelier.");}
  u::Begin(tab?1:0);if(!opened)return;if(u::Guide()){u::End();return;}
  if(!u::Developer()){DrawGameplay();u::End();return;}
- int slot=Slot(),count=tab?12:9,start=tab?9:0;
+ int slot=Slot(),count=tab?12:vf::OperatorSlots,start=tab?9:0;
  u::Text(24,160,tab?"SOUS-TYPES / ARME":"SOUS-TYPES / EQUIPEMENT",u::white,272);
- const char* compact[]={"Tete","Epaules","Gants","Torse","Ceinture","Jambes","Bottes","Bouclier","Special","Chassis","Canon","Bouche","Chargeur","Culasse","Charge","Projectile","Optique","Sous-canon","Poignee","Batterie","Refroidir"};
- const int slotIcons[]={14,15,16,17,18,19,20,2,5,21,22,23,24,4,26,27,28,29,30,31,32};
- for(int n=0;n<count;++n){int at=start+n;float x=24+(n%2)*140.f,y=199+(n/2)*(tab?51.f:58.f);
+ const char* compact[]={"Tete","Epaules","Gants","Torse","Ceinture","Jambes","Bottes","Bouclier","Special","Chassis","Canon","Bouche","Chargeur","Culasse","Charge","Projectile","Optique","Sous-canon","Poignee","Batterie","Refroidir","Casque"};
+ const int slotIcons[]={14,15,16,17,18,19,20,2,5,21,22,23,24,4,26,27,28,29,30,31,32,14};
+ for(int n=0;n<count;++n){int at=SlotAt(n);float x=24+(n%2)*140.f,y=199+(n/2)*(tab?51.f:58.f);
   if(u::Button(x,y,131,tab?44.f:49.f,compact[at],row==n,true,slotIcons[at])){row=n;familyFilter=-1;itemPage=0;slot=Slot();}
   int id=draft[at];int f=id>0&&id<catalog.count?u::FamilyId(catalog.items[id].category):-1;
   if(f>=0)u::Box(x+113,y+6,9,3,u::families[f].color);
@@ -391,7 +403,7 @@ void VF_CharacterDraw() {
  u::Text(24,509,"FAMILLES DE GAMEPLAY",u::muted);
  const char* presets[]={"Baseline","Predator","Fortress","Rogue","Engine","Anom."};
  for(int f=0;f<6;++f)if(u::Button(24+(f%3)*94.f,536+(f/3)*38.f,87,31,presets[f],false,synchronized&&!pending)){
-  for(int s=start;s<start+count;++s){int best=0,score=999999;for(int i=1;i<catalog.count;++i){const vf::Item& it=catalog.items[i];if(it.slot!=s||!Eligible(it)||u::FamilyId(it.category)!=f)continue;int cost=0;for(int b=0;b<vf::BudgetCount;++b)cost+=it.cost[b];if(cost<score){best=i;score=cost;}}if(best||u::Developer())draft[s]=best;}
+  for(int n=0;n<count;++n){int s=SlotAt(n);int best=0,score=999999;for(int i=1;i<catalog.count;++i){const vf::Item& it=catalog.items[i];if(it.slot!=s||!Eligible(it)||u::FamilyId(it.category)!=f)continue;int cost=0;for(int b=0;b<vf::BudgetCount;++b)cost+=it.cost[b];if(cost<score){best=i;score=cost;}}if(best||u::Developer())draft[s]=best;}
   strcpy(status,"Famille selectionnee : inspecter puis appliquer.");familyFilter=f;itemPage=0;
  }
  if(tab){
@@ -469,7 +481,7 @@ void VF_CharacterDraw() {
  if(u::Button(850,460,50,27,"<",false,itemPage>0))--itemPage;
  char pageText[70];snprintf(pageText,sizeof(pageText),"%d objets / %d sur %d",visible,itemPage+1,pages);u::Text(918,465,pageText,u::muted,262);
  if(u::Button(1206,460,50,27,">",false,itemPage+1<pages))++itemPage;
- if(u::Developer()||slot==1||slot==4||slot==7||slot==8){if(u::Button(850,494,406,26,"Emplacement libre",draft[slot]==0,synchronized&&!pending))SelectDraft(0);}
+ if(u::Developer()||vf::OptionalSlot(slot)){if(u::Button(850,494,406,26,"Emplacement libre",draft[slot]==0,synchronized&&!pending))SelectDraft(0);}
  u::Text(850,526,ref?"PIECE / COLLECTION":item.appearance[0]?"EQUIPEMENT / GIGN":"EQUIPEMENT / MODELE PROVISOIRE",u::amber);u::Wrap(850,551,item.description,406,u::white,2);
  if(ref&&u::Developer()&&u::Button(850,591,406,25,referenceIsolate?"Revenir a l arme complete":"Isoler cette piece en 3D",referenceIsolate))referenceIsolate=!referenceIsolate;
  int totals[vf::BudgetCount],old[vf::BudgetCount];vf::Result result=u::Developer()?vf::EvaluateExperiment(catalog,draft,totals):vf::EvaluateGameplay(catalog,draft,totals);vf::Evaluate(catalog,applied,old);

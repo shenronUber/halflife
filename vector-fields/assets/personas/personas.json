@@ -8,42 +8,48 @@
       "key": "salvager",
       "title": "Recuperateur des ruines",
       "theme": "WAR-TORN SALVAGER. Battle-worn sand canvas and olive patched fatigues, mismatched charcoal armor plates stitched to the vest, rusted rivets, ceramic crack repairs, faded orange cloth tabs, scuffed dark rubber boots. Hood becomes a patched protective fabric coif; the masked face keeps anatomically aligned human eyes with dusty surrounding cloth and a compact fabric filter pattern below the eye slit. Abrasion and visible hand repairs tell a survivor story. Material details should remain legible on a 512-pixel game texture.",
-      "skin": 1
+      "skin": 1,
+      "head_continuity": "head-continuity.png"
     },
     {
       "id": "medieval-forge",
       "key": "warden",
       "title": "Sentinelle de la forge",
       "theme": "MEDIEVAL FORGE WARDEN. Replace the tactical appearance with steel lamellar armor plates over burgundy gambeson, dark chainmail sleeve and trouser sections, brown leather belts with bronze rivets, armored leather gauntlets and boots. Vest pockets become overlapping forged steel scales and leather clasps in the same outlines. Hood becomes a chainmail coif, masked face a dark steel lower-face guard with the same aligned visible human eye slit. No modern tactical signage, no futuristic panels. Rich rubbed steel and worn burgundy textile, bold legible medieval craftsmanship.",
-      "skin": 2
+      "skin": 2,
+      "head_continuity": "head-continuity.png"
     },
     {
       "id": "prehistoric",
       "key": "bone",
       "title": "Gardien d'os et de silex",
       "theme": "PREHISTORIC BONE AND FLINT GUARDIAN. Pale irregular carved bone plates and chipped dark flint sewn onto ochre and russet rawhide. Trouser and sleeve islands become fur-trimmed stitched hides, vest pockets become carved bone protective sections held by sinew knots in the same positions. Hood becomes a rough suede and bone ritual covering with a matching lower-face bone mask, anatomically aligned brown human eyes at the existing eye slit. Gloves and boots become hide wraps. Strong ivory, ochre and charcoal material identity. No metal, modern pockets, logos, machinery, or gratuitous human skull imagery. Patterns must be large enough for low resolution.",
-      "skin": 3
+      "skin": 3,
+      "head_continuity": "head-continuity.png"
     },
     {
       "id": "living-jungle",
       "key": "canopy",
       "title": "Veilleur de la canopee",
       "theme": "LIVING JUNGLE CANOPY SCOUT. An outfit constructed from overlapping deep green waxy leaves, braided rattan, dark bark protective scales and amber resin fasteners. Vest becomes bark chest armor bound by flexible vines; pants and sleeves woven palm fiber with green leaf reinforcement panels; gloves and boots woven fibers and mottled bark. Hood becomes a fitted leaf hood and lower-face mask made of tightly layered small leaves, retain exactly the existing human eye position. Tiny restrained turquoise bioluminescent veins as accent, dark olive leaf shadows and warm golden plant fiber edges. Botanical construction, no camouflage cloth and no army equipment.",
-      "skin": 4
+      "skin": 4,
+      "head_continuity": "head-continuity.png"
     },
     {
       "id": "medieval-alchemy",
       "key": "alchemist",
       "title": "Veilleur alchimiste",
       "theme": "MEDIEVAL ALCHEMIST GUARD. Rich wine red quilted textile, etched aged brass armor panels, dark indigo leather joints, small amber and teal glass insets replacing existing vest pocket details. Delicate pale alchemical circular diagrams engraved within breastplate regions, no readable text. Hood becomes a fitted dark indigo leather coif with brass forehead filigree and ornate brass lower-face mask, preserving the exact eye slit with aligned human eyes. Boots and gloves wine leather reinforced with brass. Strong contrast between crimson cloth, honeyed brass and turquoise glass; hand-crafted mystical equipment rather than modern military.",
-      "skin": 5
+      "skin": 5,
+      "head_continuity": "head-continuity.png"
     },
     {
       "id": "porcelain-fluidics",
       "key": "porcelain",
       "title": "Operateur de porcelaine",
       "theme": "PORCELAIN FLUIDICS OPERATOR. Smooth ivory ceramic armor with cobalt blue hand-painted channels, celadon green flexible joint fabrics, coral red seals and thin copper seams. Vest pockets become articulated glazed porcelain modules with small translucent cyan fluid channels painted inside their original outlines. Pants and sleeves segmented ivory ceramic protective shells over teal woven fabric; gloves and boots ivory and muted coral with teal joints. Hood and masked face become an elegant fitted porcelain automaton mask; the two eye slits stay precisely aligned and glow soft pale cyan instead of human eyes. No oversized ornaments. Distinct clean ceramic craft, fine crackle glazing and repaired gold seams, readable at low resolution.",
-      "skin": 6
+      "skin": 6,
+      "head_continuity": "head-continuity.png"
     },
     {
       "id": "ww1-trench",
@@ -52,7 +58,8 @@
       "theme": "Laine bleu horizon, toile et cuir; acier bleui, noyer et laiton.",
       "skin": 7,
       "coverage": "Full clothing and lower-face mask; visible human eyes only",
-      "pack": "expeditions-01"
+      "pack": "expeditions-01",
+      "head_continuity": "head-continuity.png"
     },
     {
       "id": "bedrock-miner",
@@ -61,7 +68,8 @@
       "theme": "Charbon, basalte, toile ocre et lampes ambrees.",
       "skin": 8,
       "coverage": "Full clothing and lower-face mask; visible human eyes only",
-      "pack": "expeditions-01"
+      "pack": "expeditions-01",
+      "head_continuity": "head-continuity.png"
     },
     {
       "id": "new-york-noir",
@@ -70,7 +78,8 @@
       "theme": "Tweed anthracite, gabardine, cuir noir et metal poli.",
       "skin": 9,
       "coverage": "Full clothing and lower-face mask; visible human eyes only",
-      "pack": "expeditions-01"
+      "pack": "expeditions-01",
+      "head_continuity": "head-continuity.png"
     },
     {
       "id": "castaway",
@@ -79,7 +88,8 @@
       "theme": "Bois flotte, fibres, ecorce, silex et cordages.",
       "skin": 10,
       "coverage": "Full clothing and lower-face mask; visible human eyes only",
-      "pack": "expeditions-01"
+      "pack": "expeditions-01",
+      "head_continuity": "head-continuity.png"
     },
     {
       "id": "abyss-diver",
@@ -88,7 +98,8 @@
       "theme": "Neoprene petrol, caoutchouc, laiton et verre marin.",
       "skin": 11,
       "coverage": "Full clothing and lower-face mask; visible human eyes only",
-      "pack": "expeditions-01"
+      "pack": "expeditions-01",
+      "head_continuity": "head-continuity.png"
     },
     {
       "id": "roman-inventor",
@@ -98,7 +109,8 @@
       "theme": "Artisan de la Renaissance",
       "generated_source": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a11cc3-e1ee-71f1-9175-b4b5cb65a6cc\\exec-b3a67d90-e076-429f-a5d7-6b768b28fa22.png",
       "prompt": "prompt.txt",
-      "generation_tool": "built-in image_gen"
+      "generation_tool": "built-in image_gen",
+      "head_continuity": "head-continuity.png"
     },
     {
       "id": "dieselpunk",
@@ -108,7 +120,118 @@
       "theme": "Mecanicien diesel",
       "generated_source": "C:\\Users\\Mathieu\\.codex\\generated_images\\01a11cc3-e1ee-71f1-9175-b4b5cb65a6cc\\exec-c9f37c84-6046-4e2a-a9ab-76c542062837.png",
       "prompt": "prompt.txt",
-      "generation_tool": "built-in image_gen"
+      "generation_tool": "built-in image_gen",
+      "head_continuity": "head-continuity.png"
+    },
+    {
+      "id": "red-son",
+      "key": "red_son",
+      "title": "Red Son",
+      "skin": 14,
+      "theme": "Red Son",
+      "prompt": "prompt.txt",
+      "generation_tool": "built-in image_gen",
+      "pack": "lunar-heroes-01",
+      "coverage": "Fully covered clothing and lower face, original aligned eyes; no helmet",
+      "head_continuity": "head-continuity.png"
+    },
+    {
+      "id": "selenite",
+      "key": "selenite",
+      "title": "Selenite",
+      "skin": 15,
+      "theme": "Monochrome sealed lunar pressure suit, clear visor with naturally colored skin and eyes, asymmetrical intertwined breathing tubes and blank rounded pressure chambers; no writing or Moon dust",
+      "prompt": "lunar-circuit-prompt.txt",
+      "generation_tool": "built-in image_gen",
+      "pack": "lunar-heroes-01",
+      "coverage": "Fully covered clothing and lower face, original aligned eyes; no helmet",
+      "head_continuity": "head-continuity.png"
+    },
+    {
+      "id": "masked-hero",
+      "key": "masked_hero",
+      "title": "Heros masque",
+      "skin": 16,
+      "theme": "Cobalt-blue cowl with blue head joining patch and no red eye surround; scarlet and gold front torso, smooth dorsal back panel without abdominal blocks",
+      "prompt": "head-join-prompt.txt",
+      "generation_tool": "built-in image_gen",
+      "pack": "lunar-heroes-01",
+      "coverage": "Fully covered clothing and lower face, original aligned eyes; no helmet",
+      "head_continuity": "head-continuity.png"
+    },
+    {
+      "id": "rally-driver",
+      "key": "rally_driver",
+      "title": "Pilote de rallye",
+      "skin": 17,
+      "theme": "Pilote de rallye",
+      "prompt": "prompt.txt",
+      "generation_tool": "built-in image_gen",
+      "pack": "lunar-heroes-01",
+      "coverage": "Fully covered clothing and lower face, original aligned eyes; no helmet",
+      "head_continuity": "head-continuity.png"
+    },
+    {
+      "id": "penitent-soldier",
+      "key": "penitent_soldier",
+      "title": "Soldat penitent",
+      "skin": 18,
+      "theme": "Dirty white crusader ballistic armor, brown mud, one elongated yellow face cross, full ballistic mask with only two eye openings, redesigned back cuirass",
+      "prompt": "final-prompt.txt",
+      "generation_tool": "built-in image_gen",
+      "pack": "lunar-heroes-01",
+      "coverage": "Fully covered clothing and lower face, original aligned eyes; no helmet",
+      "head_continuity": "head-continuity.png"
+    },
+    {
+      "id": "jade-symbiosis",
+      "key": "jade_symbiosis",
+      "title": "Operateur de jade",
+      "skin": 19,
+      "theme": "Self-repairing jade techwear, repaired mineral panels and sealed repair circuits; one natural human eye and a compact external inspection ocular",
+      "prompt": "face-personality-prompt.txt",
+      "generation_tool": "built-in image_gen",
+      "pack": "artisan-techwear-01",
+      "coverage": "One naturally colored human eye and skin visible; external technical ocular covers the other eye; covered lower-face respirator and full techwear",
+      "head_continuity": "head-continuity.png"
+    },
+    {
+      "id": "amber-culture",
+      "key": "amber_culture",
+      "title": "Operateur d'ambre",
+      "skin": 20,
+      "theme": "Amber field laboratory techwear: sampling cassette, dorsal centrifuge and sealed cartridges; translucent analysis visor over human eyes",
+      "prompt": "face-personality-prompt.txt",
+      "generation_tool": "built-in image_gen",
+      "pack": "artisan-techwear-01",
+      "coverage": "Natural human eyes and skin visible behind an amber analysis visor; laboratory filter mask and full technical clothing",
+      "head_continuity": "head-continuity.png"
+    },
+    {
+      "id": "savage-butcher",
+      "key": "savage_butcher",
+      "title": "Savage Butcher",
+      "skin": 21,
+      "theme": "Filthy militarized butcher: short stained off-white torso apron, separate dark trouser legs, blood-stained rubber gloves and complete wraparound ivory butcher mask",
+      "coverage": "Complete ivory protective head shell on front, back and sides; only two original human eyes visible through narrow apertures; separate dark work trouser legs",
+      "prompt": "eye-apertures-prompt.txt",
+      "generation_tool": "built-in image_gen",
+      "pack": "crime-techwear-01",
+      "head_continuity": "head-continuity.png"
+    },
+    {
+      "id": "miami-vice",
+      "key": "miami_vice",
+      "title": "Miami Vice",
+      "skin": 22,
+      "palette_method": "octree",
+      "shirt_collar": true,
+      "theme": "Blue tailored suit with continuous pink dress-shirt collar around the navy balaclava, pink cuffs at wrists only, dark ballistic vest and gold-framed aviator sunglasses",
+      "coverage": "Original human face proportions, aviators over aligned eyes, covered navy balaclava and full suit",
+      "prompt": "collar-and-sleeves-prompt.txt",
+      "generation_tool": "built-in image_gen",
+      "pack": "crime-techwear-01",
+      "head_continuity": "head-continuity.png"
     }
   ]
 }

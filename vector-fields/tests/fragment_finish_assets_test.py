@@ -25,6 +25,6 @@ def run():
   assert any(n.startswith('death_') for n in names)
  # Pixel banks grow with finish count, not with its square; all 20 meshes are shared.
  assert len(model.textures)<=FINISH_COUNT*2+5
- print('PASS fragment finishes: 196 compiled pairs, independent glove/boot bank, fixed wounds, 20 shared meshes')
+ print(f'PASS fragment finishes: {FINISH_COUNT**2} compiled pairs, independent glove/boot bank, fixed wounds, 20 shared meshes')
 
 if __name__=='__main__':run()

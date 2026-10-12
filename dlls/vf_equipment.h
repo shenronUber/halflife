@@ -4,6 +4,7 @@ class CBasePlayer;
 bool VF_DeveloperAllowed();
 int VF_ReferenceMount(CBasePlayer* player);
 void VF_RegisterMessages();
+void VF_SendHeadgear(CBasePlayer* player,CBasePlayer* recipient=0);
 void VF_PrecacheWeaponFX();
 void VF_SendWeaponFX(CBasePlayer* player,CBasePlayer* recipient=0);
 int VF_WeaponFXCode(CBasePlayer* player);

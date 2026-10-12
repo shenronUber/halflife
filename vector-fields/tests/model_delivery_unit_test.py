@@ -57,10 +57,21 @@ class ModelTests(unittest.TestCase):
 class DeliveryTests(unittest.TestCase):
     def setUp(self):
         self.temp=tempfile.TemporaryDirectory();self.addCleanup(self.temp.cleanup);self.root=Path(self.temp.name)/'source';self.dest=Path(self.temp.name)/'runtime';self.root.mkdir()
+        # These fixtures exercise delivery integrity; real skeleton upgrades
+        # are covered by the asset/native suites, not these arbitrary bytes.
+        normalizer=patch('thumb_articulation.source_with_thumb',side_effect=lambda p:p)
+        normalizer.start();self.addCleanup(normalizer.stop)
         for group,_,required in release.MODEL_GROUPS:
             for name in required:self.write('generated/'+group+'/'+name+'.mdl',b'model')
         self.write('generated/r01/manifest.json',json.dumps(dict(pieces=[dict(id='r01_receiver_a')])).encode())
         self.write('generated/r01/r01_receiver_a.mdl',b'receiver')
+        self.write('generated/headgear-audio/manifest.json',json.dumps(dict(
+            clips=[dict(path='vf_headgear/line.wav')], sounds=[dict(path='vf_headgear/latch.wav')],
+            muffled=[dict(path='vf_headgear/muffled/line.wav')])).encode())
+        for name in ('line.wav','latch.wav','muffled/line.wav'):
+            self.write('generated/headgear-audio/sound/vf_headgear/'+name,b'headgear audio')
+        self.write('generated/headgear-hud/manifest.json',json.dumps(dict(assets=[dict(id='riot')])).encode())
+        self.write('generated/headgear-hud/riot.spr',b'headgear lens')
         for source in ['build/client/client.dll','build/server/hl.dll','data/equipment.txt','data/r01_styles.txt','generated/visual_skins/skins.txt','data/effects.json','data/weapon_fx.json','generated/weapon-fx/decals.wad','version.json','generated/effects/test.spr','generated/weapon-fx/sprites/test.spr','generated/weapon-fx/sound/test.wav']:
             self.write(source,b'fixture')
         self.write('data/status_decals.json',json.dumps(dict(effects=[dict(id='hydro')])).encode())
@@ -70,7 +81,12 @@ class DeliveryTests(unittest.TestCase):
         self.write('generated/death-sfx/manifest.json',json.dumps(dict(clips=[dict(path='vf_death_sfx/death_electro.wav'),dict(path='vf_death_sfx/dismemberment_standard.wav')])).encode())
         self.write('generated/death-sfx/sound/death_electro.wav',b'element death')
         self.write('generated/death-sfx/sound/dismemberment_standard.wav',b'detachment')
+        self.write('generated/traversal-sfx/manifest.json',json.dumps(dict(clips=[dict(path='vf_traversal/slide.wav')])).encode())
+        self.write('generated/traversal-sfx/slide.wav',b'continuous slide friction')
         self.write('generated/test-room/vf_range.bsp',b'target room')
+        self.write('generated/traversal-range/vf_traversal.bsp',b'traversal room')
+        self.write('generated/modular-range/vf_modular.bsp',b'modular room')
+        network=self.root.parent/'network/delta.lst';network.parent.mkdir(exist_ok=True);network.write_bytes(b'traversal network')
         self.write('generated/weapon-fx/range/vf_fx_range.bsp',b'FX room')
         for source,target in release.deployment_files(self.root):
             out=self.dest/target;out.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,out)
@@ -80,6 +96,14 @@ class DeliveryTests(unittest.TestCase):
 
     def test_complete_delivery_is_verified(self):
         result=release.verify_deployment(self.dest,self.root);self.assertGreater(result['models'],10)
+
+    def test_missing_headgear_texture_is_detected(self):
+        (self.dest/'sprites/vf_headgear_hud/riot.spr').unlink()
+        with self.assertRaisesRegex(FileNotFoundError,'riot.spr'):release.verify_deployment(self.dest,self.root)
+
+    def test_stale_filtered_voice_is_detected(self):
+        (self.dest/'sound/vf_headgear/muffled/line.wav').write_bytes(b'wrong voice')
+        with self.assertRaisesRegex(RuntimeError,r'muffled[\\/]line.wav'):release.verify_deployment(self.dest,self.root)
 
     def test_stale_third_person_carrier_is_detected(self):
         (self.dest/'models/vf_r01/r01_tp_top.mdl').write_bytes(b'old rig')
@@ -117,6 +141,14 @@ class DeliveryTests(unittest.TestCase):
         (self.dest/'sound/vf_death_sfx/dismemberment_standard.wav').write_bytes(b'old detachment')
         with self.assertRaisesRegex(RuntimeError,'dismemberment_standard.wav'):release.verify_deployment(self.dest,self.root)
 
+    def test_missing_slide_sound_is_detected(self):
+        (self.dest/'sound/vf_traversal/slide.wav').unlink()
+        with self.assertRaisesRegex(FileNotFoundError,'slide.wav'):release.verify_deployment(self.dest,self.root)
+
+    def test_stale_slide_sound_is_detected(self):
+        (self.dest/'sound/vf_traversal/slide.wav').write_bytes(b'old slide')
+        with self.assertRaisesRegex(RuntimeError,'slide.wav'):release.verify_deployment(self.dest,self.root)
+
     def test_stale_server_dll_is_detected(self):
         (self.dest/'dlls/hl.dll').write_bytes(b'old server')
         with self.assertRaisesRegex(RuntimeError,'hl.dll'):release.verify_deployment(self.dest,self.root)
@@ -138,6 +170,22 @@ class DeliveryTests(unittest.TestCase):
         engine=Path(self.temp.name)/'engine';engine.mkdir();(engine/'vector-engine-build.json').write_text('{"extension_version":2}')
         with self.assertRaises(RuntimeError):release.check_native_interface(engine,client)
         self.assertEqual(b'fixture',(self.dest/'cl_dlls/client.dll').read_bytes())
+
+    def test_missing_slide_legs_is_detected(self):
+        (self.dest/'models/vf_traversal/slide_legs.mdl').unlink()
+        with self.assertRaisesRegex(FileNotFoundError,'slide_legs'):release.verify_deployment(self.dest,self.root)
+
+    def test_stale_traversal_network_is_detected(self):
+        (self.dest/'delta.lst').write_bytes(b'old network')
+        with self.assertRaisesRegex(RuntimeError,'delta.lst'):release.verify_deployment(self.dest,self.root)
+
+    def test_world_palm_client_refuses_an_older_renderer(self):
+        client=self.root/'build/client/client.dll';client.write_bytes(b'v3 connected VFTraversal render: world palms=1')
+        engine=Path(self.temp.name)/'engine';engine.mkdir();meta=engine/'vector-engine-build.json'
+        meta.write_text('{"extension_version":3,"status_viewmodel_version":1}')
+        with self.assertRaisesRegex(RuntimeError,'world-anchored'):release.check_native_interface(engine,client)
+        meta.write_text('{"extension_version":3,"status_viewmodel_version":1,"traversal_renderer_version":1}')
+        release.check_native_interface(engine,client)
 
     def test_canonical_startup_loads_voice_policy_once(self):
         self.assertEqual(1,release.startup().count('exec vf_voice_behavior.cfg'))

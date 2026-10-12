@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Hydro / death",
+  "created_utc": "2026-10-10T00:47:40.634613+00:00",
+  "request_sha256": "efca44063009d215ed9209cdfdb259f6e8fadf8ea94367291ac43fe267ea1c60",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. A deep collapsing water pocket, a forceful dense splash and a rolling hollow liquid gurgle, followed by turbulent water draining and scattered heavy droplets. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "26c6df5212ddaf14a40c0f84a98003e619b86557803679eda85e2d9db99468ad",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. A deep collapsing water pocket, a forceful dense splash and a rolling hollow liquid gurgle, followed by turbulent water draining and scattered heavy droplets. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

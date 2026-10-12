@@ -1,0 +1,33 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-10-11",
+  "prompts": "prompts.json",
+  "assets": [
+    {
+      "file": "riot-materials.png",
+      "sha256": "453708d0ecd80a9260d6ffd0e9f1b4b1d1f00952213c8b8e333188a4608dc877",
+      "original": "C:/Users/Mathieu/.codex/generated_images/01a1279f-0717-7710-bb3e-171ecbb87a65/exec-261814e6-be09-43b3-807b-b9ad24ec3320.png"
+    },
+    {
+      "file": "spartan-materials.png",
+      "sha256": "af2fa02935ee8a721ab2593243e1a2f7fe344a948b3a6e864932ce3c4f2a6091",
+      "original": "C:/Users/Mathieu/.codex/generated_images/01a1279f-0717-7710-bb3e-171ecbb87a65/exec-6a86a8b0-1e43-4d3c-9e97-0d8011881d47.png"
+    },
+    {
+      "file": "optics-materials.png",
+      "prompt": "optics-prompt.txt",
+      "sha256": "a8b020e1cc1144c5e6b3a786fccd93aa44e0458dd71df7d8b2395165050c34cf",
+      "original": "C:/Users/Mathieu/.codex/generated_images/01a1279f-0717-7710-bb3e-171ecbb87a65/exec-a3f4f413-7048-4a77-abfb-4af0af975270.png"
+    },
+    {
+      "file": "ballistic-gas-materials.png",
+      "prompt": "ballistic-gas-prompt.txt",
+      "sha256": "8222e9d9b388096c5b777662e1301f3eef1658f4cf634bb91ac567f8bec765a0",
+      "original": "C:/Users/Mathieu/.codex/generated_images/01a1279f-0717-7710-bb3e-171ecbb87a65/exec-ffdf64eb-daf4-40e5-9e93-35426e2e1538.png",
+      "references": [
+        "references/ballistic-user.png",
+        "references/gas-mask-user.png"
+      ]
+    }
+  ]
+}

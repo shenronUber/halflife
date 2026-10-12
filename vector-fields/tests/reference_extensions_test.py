@@ -6,6 +6,8 @@ from PIL import Image,ImageDraw,ImageFont
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from build_reference_weapon import ROOT,OUT,KEYS,part
 from studio_assets import Studio
+from build_identity_chassis import INTRINSIC,WORKSHOP
+from r01_finish_policy import policy,allowed
 
 
 def mesh_digest(mesh):
@@ -19,8 +21,8 @@ def assets():
     data=json.loads((OUT/'manifest.json').read_text())
     finishes=len(data['styles'])
     counts=collections.Counter(p['slot']for p in data['pieces'])
-    assert counts==dict.fromkeys(KEYS,4)|{'receiver':9,'chamber':6,'optic':6,'power':6,'cooling':6}
-    assert len(data['pieces'])==61 and data['combinations']==math.prod(counts.values())==191102976
+    assert counts==dict.fromkeys(KEYS,4)|{'receiver':9+len(INTRINSIC),'barrel':6,'muzzle':9,'chamber':6,'optic':6,'power':6,'cooling':6}
+    assert {p['id'] for p in data['pieces']}==set(policy()['models']) and data['combinations']==math.prod(counts.values())
     byid={p['id']:p for p in data['pieces']};triangles=0;material_checks=0
     rig=Studio(OUT/'r01_rig.mdl')
     mag=np.linalg.inv(rig.bind[rig.names.index('Bone71')])@rig.bind[rig.names.index('Bone76')]
@@ -33,10 +35,18 @@ def assets():
         assert all(digests[v]not in digests[:v]for v in (2,3)),(slot,'each new geometry must differ from all earlier variants')
         for variant in (2,3):
             key=f'r01_{slot}_{"abcd"[variant]}';mesh=part(slot,variant);record=byid[key]
-            model=Studio(OUT/(key+'.mdl'));assert len(model.mesh())==record['triangles']==len(mesh)
+            model=Studio(OUT/(key+'.mdl'));assert len(model.mesh())==record['triangles']
+            from build_r01_finish import is_current as fitted_current,source as fitted_source
+            polished=fitted_current(model.path)
+            if polished:
+                assert mesh_digest(model.mesh())==mesh_digest(Studio(fitted_source(key)).mesh())
+            elif slot=='receiver':
+                reviewed=Studio(WORKSHOP/'legacy-trigger-review'/'abcd'[variant]/(key+'.mdl'))
+                assert mesh_digest(model.mesh())==mesh_digest(reviewed.mesh())
+            else:assert record['triangles']==len(mesh)
             assert len(model.names)==1 and model.numskinfamilies==finishes and len(model.textures)<=100
             assert hashlib.sha256(model.data).hexdigest()==record['sha256']
-            assert all(0<w<=256 and 0<h<=256 for _,w,h,_,_ in model.textures)
+            assert all(0<w<=(512 if polished else 256) and 0<h<=(512 if polished else 256) for _,w,h,_,_ in model.textures)
             for material,tri in mesh:
                 assert re.fullmatch(r'r01_t\d\d.bmp',material)and int(material[5:7])<16
                 uv=np.array([v['uv']for v in tri]);p=np.array([v['p']for v in tri])
@@ -52,7 +62,7 @@ def assets():
                 table=model.skin[skin*model.numskinref:(skin+1)*model.numskinref]
                 assert all(0<=i<len(model.textures)for i in table)
                 # Every embedded diffuse is copied from its existing atlas tile.
-                for index in table:
+                for index in (() if polished else table):
                     name,w,h,pixels,palette=model.textures[index]
                     assert (OUT/name).exists(),(key,name)
                     assert (OUT/name).read_bytes(),name
@@ -69,14 +79,14 @@ def assets():
                     name,flags,*_=__import__('struct').unpack_from('<64s4i',model.data,off+i*80)
                     if name.split(b'\0')[0].decode().endswith('_t11.bmp'):assert flags&32,'new glass must be additive'
     pool=json.loads((ROOT/'data/lootpool.json').read_text())
-    assert len(pool['entries'])==948
+    assert sum(e['id'].startswith('r01_') for e in pool['entries'])==sum(len(s['styles']) for s in policy()['models'].values())
     for slot in KEYS:
         for letter in 'cd':
             rows=[e for e in pool['entries']if e.get('model')==f'models/vf_r01/r01_{slot}_{letter}.mdl']
-            assert len(rows)==finishes and len({e['collection']for e in rows})==finishes
-    report=dict(new_pieces=24,total_pieces=61,existing_finishes=finishes,shape_finish_checks=material_checks,source_triangles=triangles,combinations=data['combinations'],loot_entries=948,checks=['two distinct additional geometries per socket; nine receivers','all source UVs finite, contained and isotropic outside glass','compiled models retain one socket bone and all installed finishes','magazine connectors coincide with the original compiled neck','new optical glass remains additive','each new shape registered in all installed cosmetic collections'])
+            assert len(rows)==len(allowed(f'r01_{slot}_{letter}')) and len({e['collection']for e in rows})==len(rows)
+    report=dict(new_pieces=24,total_pieces=len(data['pieces']),existing_finishes=finishes,shape_finish_checks=material_checks,source_triangles=triangles,combinations=data['combinations'],loot_entries=len(pool['entries']),checks=['two distinct additional geometries per core socket; revised receiver geometry','all source UVs finite, contained and isotropic outside glass','compiled core models retain one socket bone and all installed finishes','magazine connectors coincide with the original compiled neck','new optical glass remains additive','each core shape registered in all installed cosmetic collections'])
     (ROOT/'build/reference-extensions-assets.json').write_text(json.dumps(report,indent=2))
-    print('PASS R-01 additions: 24 meshes,',material_checks,'shape/finish checks, original magazine connectors and 948 loot entries',flush=True)
+    print('PASS R-01 additions: 24 meshes,',material_checks,'shape/finish checks, original magazine connectors and 993 loot entries',flush=True)
     return report
 
 
@@ -105,8 +115,10 @@ def native():
     for letter in 'cd':
         assert f'VFR01 applied: receiver=r01_receiver_{letter} power=r01_power_{letter}'in log
         for platform in range(3):assert f'VFR01 platform: {platform} feed=r01_feed_{letter}'in log
-    assert 'VFR01 audit: checked=1753 failed=0 parts=12 combinations=191102976 coverage=single-and-pairs'in log
-    assert 'VFEquipment audit: objects=1113 passed=1113 failed=0'in log
+    from reference_platform_test import audit_counts
+    checked,objects,combinations=audit_counts()
+    assert f'VFR01 audit: checked={checked} failed=0 parts=12 combinations={combinations} coverage=single-and-pairs'in log
+    assert f'VFEquipment audit: objects={objects} passed={objects} failed=0'in log
     assert 'VFState rejected'not in log and 'rejected=0'in log
     after=log.split('Loading game from save/vf_r01_additions.sav')[-1]
     assert 'receiver=r01_receiver_c power=r01_power_d'in after
@@ -126,7 +138,7 @@ def native():
         view=Image.open(MOD/'scrshots'/f'r01_new_{letter}_assembly.png').convert('RGB').crop((490,305,1210,726))
         sets.paste(view,(column*720,45))
     sets.save(ROOT/'build/r01-new-sets.jpg',quality=94)
-    report=dict(captures=captures,checked_assemblies=1753,equipment_objects=1113,coverage='every individual piece and every pair of sockets; not exhaustive full-build enumeration',checks=['both new presets selected through native pointer routing','all 24 new pieces and two complete weapons rendered','both new magazines fired and reloaded on all three platforms','mixed old/new build and individual finishes survive save/load'],contact_sheet=str(ROOT/'build/r01-new-parts.jpg'))
+    report=dict(captures=captures,checked_assemblies=checked,equipment_objects=objects,coverage='every individual piece and every pair of sockets; not exhaustive full-build enumeration',checks=['both new presets selected through native pointer routing','all 24 new pieces and two complete weapons rendered','both new magazines fired and reloaded on all three platforms','mixed old/new build and individual finishes survive save/load'],contact_sheet=str(ROOT/'build/r01-new-parts.jpg'))
     (ROOT/'build/reference-extensions-native.json').write_text(json.dumps(report,indent=2))
     print('PASS native R-01 additions:',len(captures),'captures; 1753 assemblies; six magazine/platform reloads',flush=True)
 

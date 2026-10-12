@@ -5,6 +5,7 @@
 #include "gamerules.h"
 #include "vf_equipment.h"
 #include "vf_voice.h"
+#include "vf_death.h"
 #include "vf_status.h"
 #include "vf_range.h"
 #include "../game_shared/vf_voice_catalog.h"
@@ -61,13 +62,17 @@ int Event(const char* text){
     return -1;
 }
 }
+#include "vf_headgear_feedback.inc"
+static_assert(vfv::EventCount<=vfha::ScheduleEvent,"Headgear needs the unused scheduler slot");
 void VF_VoiceRegister(){
+    GearRegister();
     CVAR_REGISTER(&enabled);CVAR_REGISTER(&taunts);CVAR_REGISTER(&counters);
     CVAR_REGISTER(&radius);CVAR_REGISTER(&window);CVAR_REGISTER(&tauntCooldown);
     CVAR_REGISTER(&botTaunts);CVAR_REGISTER(&botChance);CVAR_REGISTER(&botInterval);
     CVAR_REGISTER(&botCounterChance);CVAR_REGISTER(&botCounterDelay);
 }
 void VF_VoicePrecache(){
+    GearPrecache();
     if(!message)message=REG_USER_MSG("VFVoice",3);
     if(!targetMessage)targetMessage=REG_USER_MSG("VFRangeVoice",4);
     if(!deathMessage)deathMessage=REG_USER_MSG("VFDeath",4);
@@ -103,10 +108,11 @@ bool VF_VoiceDeath(CBasePlayer* p){
     // Read effects before Killed clears them. DeathSound calls this again later.
     if(p->m_vfVoice<1||p->m_vfVoice>vfv::ActorCount)p->m_vfVoice=RANDOM_LONG(1,vfv::ActorCount);
     p->m_vfVoiceDeathSpoken=true; // handled once per life, including muted deaths
-    if(Ready(p,true))VF_VoiceEntityDeath(p,p->m_vfVoice-1,p->m_vfVoiceState,p->m_vfStatus);
+    if(VF_DeathHeadMissing(p)||Ready(p,true))VF_VoiceEntityDeath(p,p->m_vfVoice-1,p->m_vfVoiceState,p->m_vfStatus,false,VF_DeathHeadMissing(p));
     return true;
 }
 void VF_VoiceThink(CBasePlayer* p){
+    GearThink(p);
     VF_StatusThink(p);
     if(Bot(p))BotThink(p);
     vfv::State& s=p->m_vfVoiceState;
@@ -153,7 +159,8 @@ bool VF_VoiceSpeak(CBasePlayer* p,int event,bool audition){
     // Personal respawn dialogue has no positional sound broadcast. Its owner
     // plays the precached clip locally after a reliable private user message.
     bool personal=event==vfv::E_respawn;
-    if(!personal)EMIT_SOUND_DYN(p->edict(),CHAN_VOICE,clip.path,0.85f,attenuation,0,PITCH_NORM);
+    const char* sample=VF_HeadgearVoiceSample(p,clip.path);
+    if(!personal)EMIT_SOUND_DYN(p->edict(),CHAN_VOICE,sample,0.85f,attenuation,0,PITCH_NORM);
     if(message){
         if(personal){
             MESSAGE_BEGIN(MSG_ONE,message,NULL,p->edict());
@@ -172,7 +179,7 @@ bool VF_VoiceSpeak(CBasePlayer* p,int event,bool audition){
         }
     }
     ALERT(at_console,"VFVoice play: player=%d actor=%s event=%s clip=%d sample=%s\n",
-        ENTINDEX(p->edict()),vfv::Actors[clip.actor].id,vfv::Events[event],index,clip.path);
+        ENTINDEX(p->edict()),vfv::Actors[clip.actor].id,vfv::Events[event],index,sample);
     if(event==vfv::E_taunt&&!audition)Heard(p,clip.duration);
     return true;
 }
@@ -240,7 +247,7 @@ void VF_VoiceDamage(CBasePlayer* p,int type,float healthBefore,float armorBefore
     else if(type&DMG_ACID)effect=vfs::S_corrosion;
     else if(type&(DMG_POISON|DMG_NERVEGAS))effect=vfs::S_toxic;
     else if(type&DMG_SONIC)effect=vfs::S_sonic;
-    else if(type&(DMG_CLUB|DMG_CRUSH|DMG_FALL|DMG_BLAST))effect=vfs::S_kinetic;
+    else if(!(type&DMG_FALL)&&(type&(DMG_CLUB|DMG_CRUSH|DMG_BLAST)))effect=vfs::S_kinetic;
     int critical=healthBefore>25&&p->pev->health<=25?vfv::E_low_health:
         armorBefore>0&&p->pev->armorvalue<=0?vfv::E_armor_break:-1;
     if(effect>=0)VF_ApplyPlayerEffect(p,effect,4.0f,critical<0);
@@ -255,6 +262,7 @@ void VF_VoiceKilled(CBasePlayer* victim,entvars_t* attacker){
     VF_VoiceSpeak(static_cast<CBasePlayer*>(killer),vfv::E_kill);
 }
 bool VF_VoiceCommand(CBasePlayer* p,const char* command){
+    if(GearVoiceCommand(p,command))return true;
     if(!strcmp(command,"vf_taunt")){
         if(!VF_VoiceTaunt(p))CLIENT_PRINTF(p->edict(),print_console,"VFVoice taunt unavailable (busy, cooldown, spectator, or disabled).\n");
         return true;
@@ -326,24 +334,29 @@ bool VF_VoiceEntity(CBaseEntity* entity,int actor,vfv::State& state,int event){
 }
 
 // No VFVoice clip index or caption: the death bank has its own actor/cause ID.
-bool VF_VoiceEntityDeath(CBaseEntity* entity,int actor,vfv::State& state,const vfs::State& status,bool audition){
+bool VF_VoiceEntityDeath(CBaseEntity* entity,int actor,vfv::State& state,const vfs::State& status,bool audition,bool headMissing){
  if(!entity||actor<0||actor>=vfd::ActorCount)return false;
  state.pendingEvent=-1;
  if(!audition&&state.last[vfv::E_death]>=0)return true;
  int cause=vfd::CauseFor(status,gpGlobals->time),index=vfd::Index(actor,cause);
  const vfd::Clip& clip=vfd::Clips[index];
  if(!audition)state.last[vfv::E_death]=index; // reset by spawn, not by effect clearing
+ if(headMissing&&!audition){
+  EMIT_SOUND_DYN(entity->edict(),CHAN_VOICE,"common/null.wav",0,ATTN_NORM,SND_STOP,PITCH_NORM);
+  ALERT(at_console,"VFDeath voice suppressed: entity=%d reason=head_missing\n",entity->entindex());return true;
+ }
  if(!enabled.value)return true;
  int previous=state.last[vfv::E_death];
  vfv::Commit(state,vfv::E_death,index,100,gpGlobals->time,clip.duration,0);
  if(audition)state.last[vfv::E_death]=previous;
- EMIT_SOUND_DYN(entity->edict(),CHAN_VOICE,clip.path,.85f,ATTN_NORM,0,PITCH_NORM);
+ const char* sample=clip.path; // Death cries retain their original performance, with any equipment.
+ EMIT_SOUND_DYN(entity->edict(),CHAN_VOICE,sample,.85f,ATTN_NORM,0,PITCH_NORM);
  if(deathMessage){
   // Diagnostic metadata follows the same audible set as native sound. The
   // client neither plays a second sound nor prints any subtitle for a cry.
   MESSAGE_BEGIN(MSG_PAS_R,deathMessage,entity->pev->origin);
   WRITE_SHORT(entity->entindex());WRITE_BYTE(actor);WRITE_BYTE(cause);MESSAGE_END();
  }
- ALERT(at_console,"VFDeath play: entity=%d actor=%s cause=%s sample=%s\n",entity->entindex(),vfv::Actors[actor].id,vfd::Causes[cause].id,clip.path);
+ ALERT(at_console,"VFDeath play: entity=%d actor=%s cause=%s sample=%s\n",entity->entindex(),vfv::Actors[actor].id,vfd::Causes[cause].id,sample);
  return true;
 }

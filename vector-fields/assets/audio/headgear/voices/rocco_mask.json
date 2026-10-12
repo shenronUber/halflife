@@ -1,0 +1,24 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "voice",
+  "name": "Rocco Bellini / mask",
+  "created_utc": "2026-10-11T21:22:42.015982+00:00",
+  "request_sha256": "d1809d1091904a7038dfdffe6b6364dde56ce3cfdee7ee9ffdc92ba47f01bf41",
+  "request": {
+    "text": "[dry] Mask on. Finally, decent air.",
+    "model_id": "eleven_v4",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.8
+    }
+  },
+  "endpoint": "/v1/text-to-speech/FmMTwHErJNXXbixvoFWZ?output_format=mp3_44100_128",
+  "sha256": "3b8120e02e648003afa00cd2e2dca6fb62971cf12ac129b86ffed73b47b82417",
+  "bytes": 53542,
+  "text": "[dry] Mask on. Finally, decent air.",
+  "request_id": "7O9OFg5y4CA116srMQSI",
+  "reported_credit_cost": "4",
+  "voice_id": "FmMTwHErJNXXbixvoFWZ",
+  "voice_name": "Rocco Bellini",
+  "language": "en"
+}

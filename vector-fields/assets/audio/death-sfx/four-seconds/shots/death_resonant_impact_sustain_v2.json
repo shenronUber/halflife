@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "ResonantImpact / death",
+  "created_utc": "2026-10-10T00:53:03.297599+00:00",
+  "request_sha256": "e3e8c83799b7b6749796d3f9cb9daf9a971bc20587b0b66123e8dfc9f9beedc8",
+  "request": {
+    "text": "4-second dry close game SFX. A dense hard impact followed by two separated descending metallic pings. A loud low wavering physical pressure ring sustains beneath hard settling rebounds throughout the next 3.5 seconds. No early fade. Fade only in the last 0.3 seconds. No voice, scream, music, gunshot or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "ee62d0c31b9898afa3ba45c58c1da450b6fba33bbe80b64f7d68e81f001666b9",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. A dense hard impact followed by two separated descending metallic pings. A loud low wavering physical pressure ring sustains beneath hard settling rebounds throughout the next 3.5 seconds. No early fade. Fade only in the last 0.3 seconds. No voice, scream, music, gunshot or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

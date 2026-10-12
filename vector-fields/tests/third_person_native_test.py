@@ -5,36 +5,44 @@ import os,json,shutil,subprocess,time,sys,re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 PROJECT=ROOT.parent
-BASE=PROJECT/'runtime/vector-engine'
+BASE=Path(os.environ.get('VF_TEST_ENGINE',PROJECT/'runtime/vector-engine'))
+SDK=Path(os.environ.get('VF_RELEASE_SDK',ROOT/'build'))
 OUT=ROOT/'build/animation-native'
 
 
-def shared_copy(source,target):
-    if not Path(target).exists():os.link(source,target)
-    return target
+from native_workspace import engine_path, shared_copy, private_copy
 
 
-def stage(name,server=None,client=None):
-    engine=OUT/name;mod=engine/'vf_animation';engine.mkdir(parents=True,exist_ok=True)
-    for path in BASE.iterdir():
-        if path.is_file() and path.suffix.lower() in ('.dll','.exe'):shutil.copy2(path,engine/path.name)
+def stage(name,server=None,client=None,renderer=None):
+    engine=engine_path(OUT/name);mod=engine/'vf_animation';engine.mkdir(parents=True,exist_ok=True)
+    binaries=Path(renderer) if renderer else BASE
+    for path in binaries.iterdir():
+        if path.is_file() and path.suffix.lower() in ('.dll','.exe'):private_copy(path,engine/path.name)
     # Shared immutable fallback resources; all writes go into vf_animation.
-    for folder in ('valve','tfc_assets','vf_visual'):
-        shutil.copytree(BASE/folder,engine/folder,dirs_exist_ok=True,copy_function=shared_copy,ignore=shutil.ignore_patterns('scrshots','save','*.log'))
+    (engine/'valve').mkdir(exist_ok=True)
+    for folder in ('tfc_assets','vf_visual'):
+        ignored=('scrshots','save','*.log')+ (('models',) if renderer and folder=='vf_visual' else ())
+        shutil.copytree(BASE/folder,engine/folder,dirs_exist_ok=True,copy_function=shared_copy,ignore=shutil.ignore_patterns(*ignored))
+        if 'models' in ignored:
+            for model in (BASE/folder/'models').glob('*.mdl'):shared_copy(model,engine/folder/'models'/model.name)
     for folder in ('cl_dlls','dlls','vf','models/vf_r01','models/vf_skins','scrshots'):(mod/folder).mkdir(parents=True,exist_ok=True)
-    shutil.copy2(client or ROOT/'build/client/client.dll',mod/'cl_dlls/client.dll')
-    shutil.copy2(server or ROOT/'build/server/hl.dll',mod/'dlls/hl.dll')
+    private_copy(client or SDK/'client/client.dll',mod/'cl_dlls/client.dll')
+    private_copy(server or SDK/'server/hl.dll',mod/'dlls/hl.dll')
     from release import check_native_interface
-    check_native_interface(BASE,Path(client or ROOT/'build/client/client.dll'))
-    for path in (ROOT/'generated/r01').glob('*.mdl'):shutil.copy2(path,mod/'models/vf_r01'/path.name)
-    for path in (ROOT/'generated/third-person').glob('*.mdl'):shutil.copy2(path,mod/'models/vf_r01'/path.name)
-    for path in (ROOT/'generated/personas').glob('*.mdl'):shutil.copy2(path,mod/'models/vf_skins'/path.name)
+    check_native_interface(binaries,Path(client or SDK/'client/client.dll'))
+    if renderer:
+        from release import MODEL_GROUPS
+        for source,target,_ in MODEL_GROUPS:
+            for asset in (ROOT/'generated'/source).glob('*.mdl'):shared_copy(asset,mod/'models'/target/asset.name)
+    for path in (ROOT/'generated/r01').glob('*.mdl'):private_copy(path,mod/'models/vf_r01'/path.name)
+    for path in (ROOT/'generated/third-person').glob('*.mdl'):private_copy(path,mod/'models/vf_r01'/path.name)
+    for path in (ROOT/'generated/personas').glob('*.mdl'):private_copy(path,mod/'models/vf_skins'/path.name)
     shutil.copytree(ROOT/'generated/deaths',mod/'models/vf_deaths',dirs_exist_ok=True,ignore=shutil.ignore_patterns('*.smd','*.qc','*.bmp','*.log','manifest.json'))
-    for name in ('equipment.txt','r01_styles.txt'):shutil.copy2(ROOT/'data'/name,mod/'vf'/name)
-    shutil.copy2(ROOT/'generated/visual_skins/skins.txt',mod/'vf/skins.txt')
+    for name in ('equipment.txt','r01_styles.txt'):private_copy(ROOT/'data'/name,mod/'vf'/name)
+    private_copy(ROOT/'generated/visual_skins/skins.txt',mod/'vf/skins.txt')
     from build_test_room import build as build_test_room
     (mod/'maps').mkdir(exist_ok=True)
-    shutil.copy2(build_test_room(ensure=True),mod/'maps/vf_range.bsp')
+    private_copy(build_test_room(ensure=True),mod/'maps/vf_range.bsp')
     from death_voice_workshop import deploy as deploy_death_voices
     deploy_death_voices(mod)
     from build_death_sounds import deploy as deploy_death_sounds
@@ -66,13 +74,13 @@ def run():
             commands+='cmd vf_peer_pose\n+attack\nwait 8\n-attack\nwait 12\n+reload\nwait 2\n-reload\nwait 20\ncmd weapon_crowbar\nwait 20\necho RELOAD_HOLSTERED\ncmd vf_reload_info\nweapon_9mmAR\nwait 100\ncmd vf_body_info\ncmd vf_model_info\nvf_engine_stats\nwait 160\nquit\n'
         (engines[index]/'vf_animation/animation_test.cfg').write_text(commands,encoding='ascii')
     common=['-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_animation','-console','-nointro']
-    server=subprocess.Popen([str(engines[0]/'xash.exe'),*common,'-log','animation-server.log','+ip','127.0.0.1','-port','27065','+maxplayers','4','+sv_lan','1','+sv_cheats','1','+deathmatch','1','+developer','1','+map','vf_range'],cwd=engines[0],creationflags=subprocess.CREATE_NO_WINDOW)
+    server=subprocess.Popen([str(engines[0]/'xash.exe'),'-ip','127.0.0.1','-noip6',*common,'-log','animation-server.log','+ip','127.0.0.1','-port','27065','+maxplayers','4','+sv_lan','1','+sv_cheats','1','+deathmatch','1','+developer','1','+map','vf_range'],cwd=engines[0],creationflags=subprocess.CREATE_NO_WINDOW)
     children=[];started=time.time()
     try:
         time.sleep(3);assert server.poll() is None
         for i,engine in enumerate(engines):
             if i:time.sleep(4)
-            children.append(subprocess.Popen([str(engine/'xash3d.exe'),*common,'-windowed','-width','1200','-height','800','-nowriteconfig','-log','animation-peer.log','-clientport',str(27066+i),'+name','Animator_'+str(i),'+connect','127.0.0.1:27065','+exec','animation_test.cfg'],cwd=engine))
+            children.append(subprocess.Popen([str(engine/'xash3d.exe'),'-ip','127.0.0.1','-noip6',*common,'-windowed','-width','1200','-height','800','-nowriteconfig','-log','animation-peer.log','-clientport',str(27066+i),'+name','Animator_'+str(i),'+connect','127.0.0.1:27065','+exec','animation_test.cfg'],cwd=engine))
         for child in children:child.wait(timeout=80);assert child.returncode==0
         verify(engines,started)
     finally:

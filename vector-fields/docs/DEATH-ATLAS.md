@@ -4,26 +4,32 @@ Le jeu contient dix animations de mort importees : trois Quaternius/KayKit et se
 
 ## Choix et essai en jeu
 
-Lancer `Jouer - Vector Fields.cmd`, puis **F4** pour la salle et **F8** pour les morts. L onglet **Atlas** propose les elements puis les reactions. Choisir un effet et une zone a droite provoque une mort avec le mouvement automatique correspondant. **Catalogue** contient trois pages de mouvements a imposer manuellement.
+Lancer `Jouer - Vector Fields.cmd`, puis **F4** pour la salle et **F8** pour les morts. L onglet **Atlas** propose les elements puis les reactions. Choisir un effet et une zone a droite provoque une mort avec le mouvement automatique correspondant. **Catalogue** contient quatre pages de mouvements a imposer manuellement.
 
 | Effet | Gestuelle automatique | Particules des morceaux |
 |---|---|---|
-| hydro | Perte d equilibre (impact_right, kaykit_b) | Gouttes bleues et rides |
-| electro | Contractions (electric) | Arcs et etincelles ambre |
-| cryo | Effondrement raide (kaykit_a) | Eclats cyan et brume froide |
-| thermal | Douleur et recul (recoil_back) | Flammes et braises orange |
-| toxic | Agonie lente (agony) | Spores violettes |
-| corrosion | Douleur et chute (recoil_right, collapse) | Gouttes et bulles acides vert jaune |
-| sonic | Chute laterale (collapse_left) | Ondes roses |
-| kinetic | Recul violent (impact_front) | Traits d impact et etincelles |
-| arc_chain | Contractions et gouttes (electric) | Gouttes bleues et arcs ambre |
-| superconduction | Contractions et givre (electric) | Cristaux bleus et arcs blancs |
-| shatter | Rupture et chute raide (kaykit_a) | Eclats et gerbe blanche |
-| resonant_impact | Impact avec rotation (spin, impact_front) | Ondes roses et eclats couleur metal |
-| cavitation | Douleur et chute laterale (recoil_right) | Bulles acides, ondes et gouttes |
-| caustic_contagion | Agonie corrosive (agony) | Brume verte, gouttes et spores violettes |
-| toxic_ignition | Douleur et combustion (recoil_back) | Brume et flammes |
-| steam_veil | Recul dans la vapeur (recoil_back) | Vapeur blanche et gouttes bleues |
+| hydro | Perte d equilibre (impact_right, kaykit_b, quaternius) | Gouttes bleues et rides |
+| electro | Contractions (electric, electric_back, electric_forward) | Arcs et etincelles ambre |
+| cryo | Effondrement raide (kaykit_a, kaykit_b, quaternius) | Eclats cyan et brume froide |
+| thermal | Douleur et recul (recoil_back, collapse, kaykit_b) | Flammes et braises orange |
+| toxic | Agonie lente (agony, collapse, kaykit_b) | Spores violettes |
+| corrosion | Douleur et chute (recoil_right, collapse, kaykit_b) | Gouttes et bulles acides vert jaune |
+| sonic | Chute laterale (collapse_left, quaternius, kaykit_b) | Ondes roses |
+| kinetic | Recul violent (impact_front, quaternius, kaykit_b) | Traits d impact et etincelles |
+| arc_chain | Contractions et gouttes (electric, electric_back, electric_forward) | Gouttes bleues et arcs ambre |
+| superconduction | Contractions et givre (electric, electric_back, electric_forward) | Cristaux bleus et arcs blancs |
+| shatter | Rupture et chute raide (kaykit_a, kaykit_b, quaternius) | Eclats et gerbe blanche |
+| resonant_impact | Impact avec rotation (spin, quaternius, kaykit_b) | Ondes roses et eclats couleur metal |
+| cavitation | Douleur et chute laterale (recoil_right, collapse, kaykit_b) | Bulles acides, ondes et gouttes |
+| caustic_contagion | Agonie corrosive (agony, collapse, kaykit_b) | Brume verte, gouttes et spores violettes |
+| toxic_ignition | Douleur et combustion (recoil_back, collapse, kaykit_b) | Brume et flammes |
+| steam_veil | Recul dans la vapeur (recoil_back, collapse, kaykit_b) | Vapeur blanche et gouttes bleues |
+
+## Ancrage et variations
+
+Chaque effet dispose de trois gestuelles. Les morts classiques et les pertes de tete ont egalement trois choix. Le serveur ecarte la derniere gestuelle jouee pour la meme cause afin d eviter les repetitions consecutives. Les impacts marques utilisent la direction du coup fatal en coordonnees locales ; les chutes sur place restent disponibles depuis tous les angles.
+
+Les imports commencent dans la pose debout et l orientation du personnage vivant, avec une transition de 0,2 seconde vers la gestuelle. Leur bassin est ancre en XY pendant toute la chute. Les cadavres au sol ne recuperent pas la vitesse de recul ajoutee par les degats ; en l air ils conservent leur mouvement physique. Les contractions electriques possedent trois fins de chute distinctes. Les 77 sequences historiques conservent leurs indices ; les variantes ancrees de la rotation et du headshot sont ajoutees a part.
 
 ## Inventaire verifie
 
@@ -60,7 +66,7 @@ Lancer `Jouer - Vector Fields.cmd`, puis **F4** pour la salle et **F8** pour les
 
 ## Membres et presentation
 
-Chaque zone retiree genere une piece anatomique reconnaissable et trois petits fragments, habilles selon le theme de la victime. Ce sont des entites Studio propulsees, soumises a la gravite et aux collisions du decor. Elles ne se bloquent pas entre elles ni contre les personnages. Au repos, la piece entiere est orientee et posee au sol selon les dimensions mesurees de son maillage. Les coupes utilisent les textures de plaies existantes.
+Chaque zone retiree genere une piece anatomique reconnaissable et trois petits debris, habilles selon les finitions independantes de la victime. Ces quatre entites Studio sont propulsees avec des vitesses et rotations distinctes, puis soumises a la gravite et aux collisions du decor. Elles ne se bloquent pas entre elles ni contre les personnages. Au repos, la piece entiere est orientee et posee au sol selon les dimensions mesurees de son maillage. Les coupes utilisent les textures de plaies existantes.
 
 Pendant les 2,2 premieres secondes de mouvement, les morceaux emettent du sang et les couches visuelles de leur effet. Les particules conservent leur position dans le monde, leur vitesse et leur duree : la trainee reste derriere le membre. Une reaction conserve toutes ses couches (deux ou trois). Le cadavre porte sa propre signature pendant la duree indiquee dans l atlas, jusqu a 6,2 secondes pour l agonie.
 
@@ -68,8 +74,8 @@ Le serveur diffuse l effet, l age, le modele de fragment et un identifiant de ge
 
 Les mouvements sont transferes sur les 28 os GIGN ; les longueurs des membres sont conservees. Les poses sont ajustees au maillage decoupe reel pour eviter les contacts sous le sol et garder le torse au sol en fin de chute. Les 77 sequences historiques et les indices des trois imports precedents sont conserves. Les quatre attaches du modele restent inchangees.
 
-Ces gestuelles representent les effets par interpretation artistique ; les banques ne proposent pas toutes une mort acide ou electrique nommee comme telle. Les seuils de degats par zone restent a definir, comme convenu. Les commandes de test restent `vf_range_death <0..3> <zone> <effet> [mouvement]` et `vf_death_test <zone> <effet> [mouvement]`.
+Ces gestuelles representent les effets par interpretation artistique ; les banques ne proposent pas toutes une mort acide ou electrique nommee comme telle. Une tete ou un membre eclate seulement a la mort si ses degats cumules apres armure depassent strictement 50 % de la vie maximale et si le coup fatal touche cette meme zone. Les compteurs repartent de zero a la reapparition. Les commandes de test restent `vf_range_death <0..3> <zone> <effet> [mouvement]` et `vf_death_test <zone> <effet> [mouvement]`.
 
 ## Validation
 
-Les rapports et captures natifs sont dans `docs/validation/death-atlas/`. Les suites verifient les 16 associations automatiques, les cinq zones anatomiques, les trajectoires et particules, le choix par F8, la sauvegarde du cadavre, les budgets et la synchronisation reseau.
+Les rapports et captures natifs sont dans `docs/validation/death-atlas/`. La suite `tests/death_motion_test.py` verifie l ancrage des 15 mouvements, 90 morts sans repetition consecutive et 20 morts par balles depuis quatre directions. Les autres suites verifient les 16 associations automatiques, les cinq zones anatomiques, les trajectoires et particules, le choix par F8, la sauvegarde du cadavre, les budgets et la synchronisation reseau.

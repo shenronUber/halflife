@@ -110,6 +110,7 @@ call ..\..\filecopy.bat $(TargetDir)\$(TargetName).pdb ..\..\..\game\mod\dlls\$(
     <ClCompile Include="..\..\dlls\vf_status.cpp" />
     <ClCompile Include="..\..\dlls\vf_combat.cpp" />
     <ClCompile Include="..\..\dlls\vf_range.cpp" />
+    <ClCompile Include="..\..\dlls\vf_modular.cpp" />
     <ClCompile Include="..\..\dlls\vf_death.cpp" />
     <ClCompile Include="..\..\dlls\vf_skins.cpp" />
     <ClCompile Include="..\..\game_shared\vf_appearance.cpp" />

@@ -1,5 +1,5 @@
 """One short native test of four reactive targets and all eight six-hit procs."""
-import hashlib,json,re,shutil,subprocess,sys,time
+import hashlib,json,re,shutil,subprocess,sys,time,os
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT));sys.path.insert(0,str(ROOT/'tests'))
 import third_person_native_test as harness
@@ -22,7 +22,7 @@ def run():
  # Genuine repeated hits kill a target and its scheduled respawn restores it.
  s+='cmd vf_range_fire 0 6\ncmd vf_range_fire 0 6\ncmd vf_range_fire 0 6\ncmd vf_range_fire 0 6\ncmd vf_range_fire 0 6\ncmd vf_range_fire 0 6\ncmd vf_range_fire 0 6\ncmd vf_range_fire 0 6\ncmd vf_range_fire 0 6\ncmd vf_range_fire 0 6\nwait 160\necho RESPAWN_DONE\ncmd vf_range_info\nvf_engine_stats\nwait 12\nquit\n'
  (mod/'range_test.cfg').write_text(s,encoding='ascii');start=time.monotonic()
- child=subprocess.Popen([str(engine/'xash3d.exe'),'-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_animation','-windowed','-width','1280','-height','720','-console','-nointro','-nowriteconfig','-log','range-test.log','+exec','lab_controls.cfg','+developer','1','+sv_cheats','1','+map','vf_range','+exec','range_test.cfg'],cwd=engine)
+ child=subprocess.Popen([str(engine/'xash3d.exe'),'-ip','127.0.0.1','-noip6','-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_animation','-windowed','-width','1280','-height','720','-console','-nointro','-nowriteconfig','-log','range-test.log','+exec','lab_controls.cfg','+developer','1','+sv_cheats','1','+map','vf_range','+exec','range_test.cfg'],cwd=engine)
  try:child.wait(timeout=45);assert child.returncode==0,child.returncode
  finally:
   if child.poll() is None:child.terminate();child.wait(10)
@@ -47,7 +47,8 @@ def run():
  assert 'VFState rejected'not in log and 'rejected=0'in log
  for e in ELEMENTS:assert (mod/'scrshots'/('proc_'+e+'.png')).stat().st_size>1000
  report=dict(elapsed_seconds=round(time.monotonic()-start,2),targets=assigned[:4],elements=ELEMENTS,server_sha256=hashlib.sha256((mod/'dlls/hl.dll').read_bytes()).hexdigest(),client_sha256=hashlib.sha256((mod/'cl_dlls/client.dll').read_bytes()).hexdigest(),map_sha256=hashlib.sha256(source).hexdigest(),captures=[str(mod/'scrshots'/('proc_'+e+'.png'))for e in ELEMENTS],checks=['four distinct GIGN outfits; random existing operator voices','five actual engine hits do not proc; sixth hit procs for all eight elements','effect state and counts received by the client','normal attack input also triggers the six-hit rule','nearest target responds to a genuine player taunt','all status durations expire and the eight effect onset voices are emitted','target dies under genuine hits and respawns after two seconds','renderer accepts all GIGN target assemblies','map geometry and lighting preserved; patch is idempotent'])
- assert report['server_sha256']==hashlib.sha256((ROOT/'build/server/hl.dll').read_bytes()).hexdigest(),'Room test staged an obsolete server DLL'
- assert report['client_sha256']==hashlib.sha256((ROOT/'build/client/client.dll').read_bytes()).hexdigest(),'Room test staged an obsolete client DLL'
+ sdk=Path(os.environ.get('VF_RELEASE_SDK',ROOT/'build'))
+ assert report['server_sha256']==hashlib.sha256((sdk/'server/hl.dll').read_bytes()).hexdigest(),'Room test staged an obsolete server DLL'
+ assert report['client_sha256']==hashlib.sha256((sdk/'client/client.dll').read_bytes()).hexdigest(),'Room test staged an obsolete client DLL'
  (OUT/'native-verification.json').write_text(json.dumps(report,indent=2),encoding='utf-8');print('PASS native room',json.dumps(report))
 if __name__=='__main__':run()

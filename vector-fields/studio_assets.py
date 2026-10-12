@@ -12,6 +12,15 @@ def canonical(name):
  for a,b in [('clavicle','arm'),('upperarm','arm1'),('forearm','arm2'),('thigh','leg'),('calf','leg1')]:s=s.replace(a,b)
  return s or 'root'
 
+def smd_uv(uv,width,height):
+ """Invert StudioMDL's (dimension-1) conversion with slack for truncation.
+
+ Studio.mesh UVs address MDL texels / texture dimension. Sending those
+ fractions directly to StudioMDL shifts most U values left by one texel.
+ A half-texel bias survives decimal serialization and integer truncation.
+ """
+ return np.array([(uv[0]*width+.5)/(width-1),(uv[1]*height-.5)/(height-1)])
+
 class Studio:
  def __init__(self,path):
   self.path=Path(path);self.data=d=self.path.read_bytes();assert d[:4]==b'IDST' and struct.unpack_from('<i',d,4)[0]==10

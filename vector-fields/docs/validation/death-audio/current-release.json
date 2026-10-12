@@ -1,8 +1,8 @@
 {
-  "version": "0.20.6",
+  "version": "0.20.7",
   "runtime": "vf_visual",
   "models_hash_verified": 76,
-  "artifacts_hash_verified": 324,
+  "artifacts_hash_verified": 343,
   "checks": [
     "canonical startup and release metadata deployed",
     "client/server, catalogs, effects and all character, R01 and third-person model hashes match runtime",

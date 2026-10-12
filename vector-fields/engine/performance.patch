@@ -1,0 +1,26 @@
+--- a/ref/gl/gl_rmain.c
++++ b/ref/gl/gl_rmain.c
+@@ -18,6 +18,7 @@
+ #include "library.h"
+ #include "beamdef.h"
+ #include "entity_types.h"
++#include "gl_vf_perf.inc"
+ 
+ 
+ #define IsLiquidContents( cnt )	( cnt == CONTENTS_WATER || cnt == CONTENTS_SLIME || cnt == CONTENTS_LAVA )
+@@ -1118,6 +1119,7 @@
+ 	if( !FBitSet( RI.rvp.flags, RF_ONLY_CLIENTDRAW ))
+ 		R_RunViewmodelEvents();
+ 
++	if(FBitSet(RI.rvp.flags,RF_DRAW_WORLD))R_VFPerfBegin();
+ 	tr.realframecount++; // right called after viewmodel events
+ 	R_RenderScene();
+ 
+@@ -1131,6 +1133,7 @@
+ */
+ void R_EndFrame( void )
+ {
++	R_VFPerfEnd();
+ 	GL_PresentScreenTarget();
+ #if XASH_PSVITA
+ 	VGL_ShimEndFrame();

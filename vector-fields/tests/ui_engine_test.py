@@ -1,9 +1,13 @@
 """Exercise native pointer hit testing, navigation and server-backed commits."""
 import json, subprocess, time, re, argparse
 from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from native_workspace import engine_path,stage_installed,port
 ROOT=Path(__file__).resolve().parents[1]
-ENGINE=ROOT.parent/'runtime/vector-engine'; MOD=ENGINE/'vf_visual'
+ENGINE=engine_path(ROOT/'build/ui_engine_test'); MOD=ENGINE/'vf_visual'
 def run(width=1920,height=1080):
+ stage_installed(ENGINE,MOD.name)
  captures=[]
  def snap(name):
   name=f'ui_{width}_{name}';captures.append(name)
@@ -26,7 +30,7 @@ def run(width=1920,height=1080):
  s+='vf_character\nwait 30\n'+snap('restored')+'vf_character\nwait 10\nquit\n'
  (MOD/'vf_ui_test.cfg').write_text(s,encoding='ascii')
  logfile=f'ui-{width}-test.log'
- args=[str(ENGINE/'xash3d.exe'),'-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_visual','-borderless','-width',str(width),'-height',str(height),'-console','-nointro','-nowriteconfig','-log',logfile,'+exec','lab_controls.cfg','+map','vf_range','+exec','vf_ui_test.cfg']
+ args=[str(ENGINE/'xash3d.exe'),'-ip','127.0.0.1','-noip6','-port',str(port()),'-clientport',str(port()),'-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_visual','-borderless','-width',str(width),'-height',str(height),'-console','-nointro','-nowriteconfig','-log',logfile,'+exec','lab_controls.cfg','+map','vf_range','+exec','vf_ui_test.cfg']
  started=time.time();p=subprocess.Popen(args,cwd=ENGINE)
  try:p.wait(timeout=100)
  except subprocess.TimeoutExpired:p.terminate();p.wait(10);raise

@@ -1,30 +1,35 @@
 {
-  "schema": 1,
+  "schema": 2,
   "motions": [
     {
       "id": "auto",
       "label": "Variante automatique",
-      "sequence": null
+      "sequence": null,
+      "directional": false
     },
     {
       "id": "legacy",
       "label": "Chutes historiques",
-      "sequence": null
+      "sequence": null,
+      "directional": false
     },
     {
       "id": "quaternius",
       "label": "Quaternius : chute",
-      "sequence": "vf_q_death"
+      "sequence": "vf_q_death",
+      "directional": false
     },
     {
       "id": "kaykit_a",
       "label": "KayKit : chute rapide",
-      "sequence": "vf_k_death_a"
+      "sequence": "vf_k_death_a",
+      "directional": false
     },
     {
       "id": "kaykit_b",
       "label": "KayKit : effondrement",
-      "sequence": "vf_k_death_b"
+      "sequence": "vf_k_death_b",
+      "directional": false
     },
     {
       "id": "collapse",
@@ -32,7 +37,8 @@
       "sequence": "vf_m_collapse",
       "source_file": "mixamo-Death.glb",
       "source_clip": "mixamo.com",
-      "reference": "bind"
+      "reference": "bind",
+      "directional": false
     },
     {
       "id": "impact_right",
@@ -40,7 +46,8 @@
       "sequence": "vf_m_impact_right",
       "source_file": "mixamo-Death_From_Right.glb",
       "source_clip": "mixamo.com",
-      "reference": "bind"
+      "reference": "bind",
+      "directional": true
     },
     {
       "id": "impact_front",
@@ -48,7 +55,8 @@
       "sequence": "vf_m_impact_front",
       "source_file": "mixamo-Death_From_The_Front.glb",
       "source_clip": "mixamo.com",
-      "reference": "bind"
+      "reference": "bind",
+      "directional": true
     },
     {
       "id": "agony",
@@ -56,7 +64,8 @@
       "sequence": "vf_m_agony",
       "source_file": "mixamo-Dying.glb",
       "source_clip": "mixamo.com",
-      "reference": "bind"
+      "reference": "bind",
+      "directional": false
     },
     {
       "id": "collapse_left",
@@ -64,7 +73,8 @@
       "sequence": "vf_m_collapse_left",
       "source_file": "mixamo-Standing_Death_Left_01.glb",
       "source_clip": "mixamo.com",
-      "reference": "bind"
+      "reference": "bind",
+      "directional": true
     },
     {
       "id": "recoil_back",
@@ -72,7 +82,8 @@
       "sequence": "vf_m_recoil_back",
       "source_file": "mixamo-Standing_React_Death_Backward.glb",
       "source_clip": "mixamo.com",
-      "reference": "bind"
+      "reference": "bind",
+      "directional": true
     },
     {
       "id": "recoil_right",
@@ -80,22 +91,38 @@
       "sequence": "vf_m_recoil_right",
       "source_file": "mixamo-Standing_React_Death_Right.glb",
       "source_clip": "mixamo.com",
-      "reference": "bind"
+      "reference": "bind",
+      "directional": true
     },
     {
       "id": "electric",
       "label": "Contractions electriques",
-      "sequence": "vf_electro"
+      "sequence": "vf_electro",
+      "directional": false
     },
     {
       "id": "headshot",
       "label": "Impact a la tete",
-      "sequence": "headshot"
+      "sequence": "vf_headshot",
+      "directional": false
     },
     {
       "id": "spin",
       "label": "Impact avec rotation",
-      "sequence": "die_spin"
+      "sequence": "vf_spin",
+      "directional": true
+    },
+    {
+      "id": "electric_back",
+      "label": "Contractions puis chute en arriere",
+      "sequence": "vf_electro_back",
+      "directional": false
+    },
+    {
+      "id": "electric_forward",
+      "label": "Contractions puis effondrement en avant",
+      "sequence": "vf_electro_forward",
+      "directional": false
     }
   ],
   "profiles": [
@@ -104,7 +131,8 @@
       "label": "Perte d equilibre",
       "motions": [
         "impact_right",
-        "kaykit_b"
+        "kaykit_b",
+        "quaternius"
       ],
       "fx_seconds": 3.7
     },
@@ -112,15 +140,19 @@
       "effect": "electro",
       "label": "Contractions",
       "motions": [
-        "electric"
+        "electric",
+        "electric_back",
+        "electric_forward"
       ],
-      "fx_seconds": 2.1
+      "fx_seconds": 3.2
     },
     {
       "effect": "cryo",
       "label": "Effondrement raide",
       "motions": [
-        "kaykit_a"
+        "kaykit_a",
+        "kaykit_b",
+        "quaternius"
       ],
       "fx_seconds": 1.6
     },
@@ -128,7 +160,9 @@
       "effect": "thermal",
       "label": "Douleur et recul",
       "motions": [
-        "recoil_back"
+        "recoil_back",
+        "collapse",
+        "kaykit_b"
       ],
       "fx_seconds": 4.1
     },
@@ -136,7 +170,9 @@
       "effect": "toxic",
       "label": "Agonie lente",
       "motions": [
-        "agony"
+        "agony",
+        "collapse",
+        "kaykit_b"
       ],
       "fx_seconds": 6.2
     },
@@ -145,7 +181,8 @@
       "label": "Douleur et chute",
       "motions": [
         "recoil_right",
-        "collapse"
+        "collapse",
+        "kaykit_b"
       ],
       "fx_seconds": 4.0
     },
@@ -153,7 +190,9 @@
       "effect": "sonic",
       "label": "Chute laterale",
       "motions": [
-        "collapse_left"
+        "collapse_left",
+        "quaternius",
+        "kaykit_b"
       ],
       "fx_seconds": 2.8
     },
@@ -161,7 +200,9 @@
       "effect": "kinetic",
       "label": "Recul violent",
       "motions": [
-        "impact_front"
+        "impact_front",
+        "quaternius",
+        "kaykit_b"
       ],
       "fx_seconds": 3.9
     },
@@ -169,23 +210,29 @@
       "effect": "arc_chain",
       "label": "Contractions et gouttes",
       "motions": [
-        "electric"
+        "electric",
+        "electric_back",
+        "electric_forward"
       ],
-      "fx_seconds": 2.1
+      "fx_seconds": 3.2
     },
     {
       "effect": "superconduction",
       "label": "Contractions et givre",
       "motions": [
-        "electric"
+        "electric",
+        "electric_back",
+        "electric_forward"
       ],
-      "fx_seconds": 2.1
+      "fx_seconds": 3.2
     },
     {
       "effect": "shatter",
       "label": "Rupture et chute raide",
       "motions": [
-        "kaykit_a"
+        "kaykit_a",
+        "kaykit_b",
+        "quaternius"
       ],
       "fx_seconds": 1.8
     },
@@ -194,7 +241,8 @@
       "label": "Impact avec rotation",
       "motions": [
         "spin",
-        "impact_front"
+        "quaternius",
+        "kaykit_b"
       ],
       "fx_seconds": 3.9
     },
@@ -202,7 +250,9 @@
       "effect": "cavitation",
       "label": "Douleur et chute laterale",
       "motions": [
-        "recoil_right"
+        "recoil_right",
+        "collapse",
+        "kaykit_b"
       ],
       "fx_seconds": 4.0
     },
@@ -210,7 +260,9 @@
       "effect": "caustic_contagion",
       "label": "Agonie corrosive",
       "motions": [
-        "agony"
+        "agony",
+        "collapse",
+        "kaykit_b"
       ],
       "fx_seconds": 6.2
     },
@@ -218,7 +270,9 @@
       "effect": "toxic_ignition",
       "label": "Douleur et combustion",
       "motions": [
-        "recoil_back"
+        "recoil_back",
+        "collapse",
+        "kaykit_b"
       ],
       "fx_seconds": 4.1
     },
@@ -226,9 +280,21 @@
       "effect": "steam_veil",
       "label": "Recul dans la vapeur",
       "motions": [
-        "recoil_back"
+        "recoil_back",
+        "collapse",
+        "kaykit_b"
       ],
       "fx_seconds": 4.1
     }
+  ],
+  "standard_motions": [
+    "quaternius",
+    "kaykit_a",
+    "kaykit_b"
+  ],
+  "head_motions": [
+    "headshot",
+    "quaternius",
+    "kaykit_b"
   ]
 }

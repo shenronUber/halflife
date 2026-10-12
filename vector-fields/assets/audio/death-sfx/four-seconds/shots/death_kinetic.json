@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Kinetic / death",
+  "created_utc": "2026-10-10T00:47:59.255306+00:00",
+  "request_sha256": "935b95986d0bcefa3fd152c810e559648cd8ca12ffdaa3d15b68bc6c0b483b97",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. One dense low physical impact and a crunchy body collapse, followed by a staggered scatter of hard debris, gritty impacts and heavy settling thuds. No ringing or electricity. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "224a697c7841e90166beac354ce52fe4527c5072accfddfca5efaac5c46a2a55",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. One dense low physical impact and a crunchy body collapse, followed by a staggered scatter of hard debris, gritty impacts and heavy settling thuds. No ringing or electricity. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

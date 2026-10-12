@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "ArcChain / death",
+  "created_utc": "2026-10-10T00:48:03.000250+00:00",
+  "request_sha256": "c428f5d22df2674cb7fe01014710b3f353bc082bbc71e4a271e783e698963291",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. Three clearly separated electrical relays skipping through conductive water, with strong irregular zaps, sizzling water, trailing wet crackles and a falling spark tail. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "337168dfd78ea2aab84a3117d8919165ad29ada0a1fae27958b63be4a84a4d12",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. Three clearly separated electrical relays skipping through conductive water, with strong irregular zaps, sizzling water, trailing wet crackles and a falling spark tail. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

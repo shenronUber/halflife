@@ -49,18 +49,18 @@ bool ValidWeaponStyles(const AppearanceCatalog& c,const int* styles) {
 }
 bool BoundWeaponStyles(const Catalog& c,const AppearanceCatalog& styles,const int* items,const int* chosen){
  if(!c.valid||!ValidWeaponStyles(styles,chosen))return false;
- for(int s=GearSlots;s<SlotCount;++s){int id=items[s];if(id<0||id>=c.count)return false;
+ for(int s=GearSlots;s<WeaponEnd;++s){int id=items[s];if(id<0||id>=c.count)return false;
   if(c.items[id].weaponStyle[0]&&FindAppearance(styles,c.items[id].weaponStyle)!=chosen[s-GearSlots])return false;
  }return true;
 }
 void BindWeaponStyles(const Catalog& c,const AppearanceCatalog& styles,const int* items,int* chosen){
- for(int s=GearSlots;s<SlotCount;++s){int id=items[s];if(id<=0||id>=c.count)continue;
+ for(int s=GearSlots;s<WeaponEnd;++s){int id=items[s];if(id<=0||id>=c.count)continue;
   if(c.items[id].weaponStyle[0])chosen[s-GearSlots]=FindAppearance(styles,c.items[id].weaponStyle);
  }
 }
 void PromoteGameplayEquipment(const Catalog& c,const AppearanceCatalog& styles,int* items,int* chosen){
  // Migrate saved developer/base IDs only after their separately saved finishes.
- for(int s=GearSlots;s<SlotCount;++s){int id=items[s],style=chosen[s-GearSlots];
+ for(int s=GearSlots;s<WeaponEnd;++s){int id=items[s],style=chosen[s-GearSlots];
   if(id<=0||id>=c.count||c.items[id].model[0]||style<0||style>=styles.count)continue;
   for(int i=1;i<c.count;++i)if(c.items[i].slot==s&&!strcmp(c.items[i].model,c.items[id].id)&&!strcmp(c.items[i].weaponStyle,styles.entries[style].key)){items[s]=i;break;}
  }
@@ -92,7 +92,7 @@ bool EquipmentSkins(const Catalog& c,const int* items,const AppearanceCatalog& s
  }memcpy(out,resolved,sizeof(resolved));return true;
 }
 int FirstPersonSkin(const Catalog& c,const int* items,const AppearanceCatalog& skins,int slot){
- if(!c.valid||!items||!skins.valid||(slot!=2&&slot!=3))return 0;
+ if(!c.valid||!items||!skins.valid||(slot!=2&&slot!=3&&slot!=5&&slot!=6))return 0;
  int id=items[slot];if(id<=0||id>=c.count||c.items[id].slot!=slot)return 0;
  int appearance=FindAppearance(skins,c.items[id].appearance);
  if(appearance<0||strcmp(skins.entries[appearance].model,"persona_scout"))return 0;

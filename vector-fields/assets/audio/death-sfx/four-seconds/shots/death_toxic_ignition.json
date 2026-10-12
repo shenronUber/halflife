@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "ToxicIgnition / death",
+  "created_utc": "2026-10-10T00:48:21.765793+00:00",
+  "request_sha256": "ebe72ea1b2ff11d71b03c9b13e74a6ff7fe2161d63c8c781db98984161bc47b3",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. A muffled gas-cloud ignition whump and a rolling rough flame, followed by sustained hollow toxic-cloud flutter mixed with charred gas pops and weakening fire. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "96204e99df70b542088b67cedee73ccd5347d16481d30aaa4d628afcbc49ddd0",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. A muffled gas-cloud ignition whump and a rolling rough flame, followed by sustained hollow toxic-cloud flutter mixed with charred gas pops and weakening fire. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

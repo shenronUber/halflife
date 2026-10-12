@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "clips": {
+    "hang": {
+      "file": "Freehang_Drop.glb",
+      "range": [
+        0,
+        0
+      ]
+    },
+    "climb": {
+      "file": "Climbing_To_Top.glb",
+      "range": [
+        0.4,
+        3.8
+      ]
+    },
+    "drop": {
+      "file": "Freehang_Drop.glb",
+      "range": [
+        0,
+        0.32
+      ]
+    }
+  },
+  "notes": [
+    "Root motion is supplied by predicted game movement; source translations are not imported.",
+    "Only the beginning of Freehang Drop is used: the original landing animation is excluded.",
+    "Vault Over Box, Hanging Idle, Freehang Climb and Braced Hang Hop Up were visually reviewed and rejected for these gestures. Low vault is authored on the game rigs."
+  ],
+  "contacts": {
+    "first_person": {
+      "left": [
+        18,
+        8,
+        6.2
+      ],
+      "right": [
+        18,
+        -8,
+        6.2
+      ],
+      "elbow_left": [
+        8,
+        12,
+        -12
+      ],
+      "elbow_right": [
+        8,
+        -12,
+        -12
+      ]
+    },
+    "third_person": {
+      "left": [
+        18,
+        8,
+        38.6
+      ],
+      "right": [
+        18,
+        -8,
+        38.6
+      ],
+      "elbow_left": [
+        3,
+        18,
+        18
+      ],
+      "elbow_right": [
+        -3,
+        -18,
+        15
+      ]
+    }
+  }
+}

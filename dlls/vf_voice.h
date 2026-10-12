@@ -3,6 +3,9 @@
 class CBasePlayer;
 struct entvars_s;
 void VF_VoiceRegister();
+void VF_HeadgearFeedbackFlush(CBasePlayer*);
+void VF_HeadgearFeedbackStart(CBasePlayer*,int type,bool raised);
+const char* VF_HeadgearVoiceSample(CBasePlayer*,const char* path);
 void VF_VoicePrecache();
 void VF_VoiceSpawn(CBasePlayer*);
 void VF_VoiceRestore(CBasePlayer*);
@@ -17,7 +20,7 @@ void VF_VoiceKilled(CBasePlayer*,entvars_s* attacker);
 class CBaseEntity;
 namespace vfv {struct State;}
 namespace vfs {struct State;}
-bool VF_VoiceEntityDeath(CBaseEntity*,int actor,vfv::State&,const vfs::State&,bool audition=false);
+bool VF_VoiceEntityDeath(CBaseEntity*,int actor,vfv::State&,const vfs::State&,bool audition=false,bool headMissing=false);
 bool VF_VoiceEntity(CBaseEntity*,int actor,vfv::State&,int event);
 #endif
 

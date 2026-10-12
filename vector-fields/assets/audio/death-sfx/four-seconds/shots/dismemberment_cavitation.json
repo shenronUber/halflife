@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Cavitation / dismemberment",
+  "created_utc": "2026-10-10T00:48:15.076580+00:00",
+  "request_sha256": "600b8a496adeda260cee35605f175717ca439af8930e2c7d6e8f41a1f925063f",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. A short suction gulp and dense wet pressure rupture, followed by repeated hollow imploding fluid bubbles, acidic spray and diminishing watery suction. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "d7c2a02c036442e9fa7f8cebad8e633d0ff314fdfeefd99d784dc19ebb976755",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. A short suction gulp and dense wet pressure rupture, followed by repeated hollow imploding fluid bubbles, acidic spray and diminishing watery suction. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

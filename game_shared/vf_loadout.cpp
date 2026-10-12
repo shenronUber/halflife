@@ -4,8 +4,8 @@
 #include <stdio.h>
 #include <limits.h>
 namespace vf {
-const char* const SlotKeys[SlotCount]={"head","shoulders","gloves","torso","belt","legs","boots","shield","special","receiver","barrel","muzzle","feed","chamber","ammo","projectile","optic","underbarrel","grip","power","cooling"};
-const char* const SlotNames[SlotCount]={"Tete","Epaules","Gants","Torse","Ceinture","Pantalon","Chaussures","Bouclier","Capacite speciale","Chassis / OS","Canon","Bouche","Alimentation","Culasse / cycle","Charge elementaire","Geometrie projectile","Optique","Sous-canon","Poignee / crosse","Batterie / capaciteur","Refroidissement"};
+const char* const SlotKeys[SlotCount]={"head","shoulders","gloves","torso","belt","legs","boots","shield","special","receiver","barrel","muzzle","feed","chamber","ammo","projectile","optic","underbarrel","grip","power","cooling","helmet"};
+const char* const SlotNames[SlotCount]={"Tete","Epaules","Gants","Torse","Ceinture","Pantalon","Chaussures","Bouclier","Capacite speciale","Chassis / OS","Canon","Bouche","Alimentation","Culasse / cycle","Charge elementaire","Geometrie projectile","Optique","Sous-canon","Poignee / crosse","Batterie / capaciteur","Refroidissement","Casque"};
 const char* const BudgetCodes[BudgetCount]={"TED","IP","HS","OI","SIG","BIO"};
 const char* const BudgetNames[BudgetCount]={"Dissipation thermo-entropique","Profil inertiel","Stabilisation harmonique","Integrite operationnelle","Empreinte detectable","Charge metabolique"};
 bool ParseUnsigned(const char* s,unsigned int& value) {
@@ -72,20 +72,21 @@ bool ParseCatalog(const char* data,size_t size,Catalog& c) {
         for(int b=0;b<BudgetCount;++b) {
             unsigned int x; if(!ParseUnsigned(f[6+b],x)||x>1000) return Fail(c,lineNo,"cout hors plage");
             item.cost[b]=x;
-            if(x&&((item.slot<GearSlots&&b<4)||(item.slot>=GearSlots&&b>=4)))
+            if(x&&((!WeaponSlot(item.slot)&&b<4)||(WeaponSlot(item.slot)&&b>=4)))
                 return Fail(c,lineNo,"cout attribue au mauvais systeme");
         }
         unsigned int visual;
-        int maxVisual=(item.slot==0||item.slot==3||item.slot==5)?2:((item.slot==11||item.slot==12)?1:0);
+        int maxVisual=item.slot==HelmetSlot?5:(item.slot==0||item.slot==3||item.slot==5)?2:((item.slot==11||item.slot==12)?1:0);
         if(!ParseUnsigned(f[13],visual)||visual>(unsigned int)maxVisual) return Fail(c,lineNo,"variante visuelle invalide");
         item.visual=visual;
+        if(item.slot==HelmetSlot&&!visual)return Fail(c,lineNo,"casque sans modele");
         if(fields==15){
             if(!Copy(item.appearance,sizeof(item.appearance),f[14]))return Fail(c,lineNo,"apparence invalide");
             for(const char* p=item.appearance;*p;++p)if(!((*p>='a'&&*p<='z')||(*p>='0'&&*p<='9')||*p=='_'))return Fail(c,lineNo,"cle apparence invalide");
             if(item.slot!=0&&item.slot!=2&&item.slot!=3&&item.slot!=5&&item.slot!=6)return Fail(c,lineNo,"apparence hors zone");
         }
         if(fields==17){
-            if(item.slot<GearSlots||*f[14]||strncmp(item.id,"r01_",4)||
+            if(!WeaponSlot(item.slot)||*f[14]||strncmp(item.id,"r01_",4)||
                !Copy(item.model,sizeof(item.model),f[15])||!Copy(item.weaponStyle,sizeof(item.weaponStyle),f[16]))return Fail(c,lineNo,"objet arme invalide");
             for(int k=15;k<=16;++k)for(const char* p=f[k];*p;++p)
                 if(!((*p>='a'&&*p<='z')||(*p>='0'&&*p<='9')||*p=='_'))return Fail(c,lineNo,"cle objet arme invalide");
@@ -119,8 +120,8 @@ Result EvaluateExperiment(const Catalog& c,const int selection[SlotCount],int to
     Result result=Evaluate(c,selection,totals);
     if(result!=Accepted&&result!=OverBudget)return result;
     bool reference=false;
-    for(int s=GearSlots;s<SlotCount;++s)if(selection[s]&&!strncmp(c.items[selection[s]].id,"r01_",4))reference=true;
-    if(reference)for(int s=GearSlots;s<SlotCount;++s)
+    for(int s=GearSlots;s<WeaponEnd;++s)if(selection[s]&&!strncmp(c.items[selection[s]].id,"r01_",4))reference=true;
+    if(reference)for(int s=GearSlots;s<WeaponEnd;++s)
         if(!selection[s]||strncmp(c.items[selection[s]].id,"r01_",4))return Incompatible;
     return result;
 }
@@ -131,7 +132,7 @@ Result EvaluateGameplay(const Catalog& c,const int selection[SlotCount],int tota
     for(int i=1;i<c.count;++i)if(c.items[i].appearance[0])authored=true;
     if(!authored)return Accepted; // Legacy laboratory catalogs have no gameplay subset.
     for(int s=0;s<SlotCount;++s){
-        int id=selection[s];bool optional=s==1||s==4||s==7||s==8;
+        int id=selection[s];bool optional=OptionalSlot(s);
         if((!id&&!optional)||(id&&!GameplayItem(c.items[id])))return Incompatible;
     }
     return Accepted;
@@ -150,25 +151,25 @@ void RestoreEquipment(const Catalog& c,const char* const keys[SlotCount],int sel
 void Defaults(const Catalog& c,int selection[SlotCount]) {
     memset(selection,0,sizeof(int)*SlotCount);
     if(!c.valid) return;
-    for(int i=1;i<c.count;++i) if(!selection[c.items[i].slot]) selection[c.items[i].slot]=i;
+    for(int i=1;i<c.count;++i) if(c.items[i].slot!=HelmetSlot&&!selection[c.items[i].slot]) selection[c.items[i].slot]=i;
     int totals[BudgetCount];
     if(Evaluate(c,selection,totals)!=Accepted) memset(selection,0,sizeof(int)*SlotCount);
 }
 const char* ItemModel(const Item& item){return item.model[0]?item.model:item.id;}
 int ReceiverMount(const Item& item){const ModelTraits* traits=FindModelTraits(ItemModel(item));return traits?traits->feedMount:0;}
 bool GameplayItem(const Item& item) {
-    return item.appearance[0] || (item.slot>=GearSlots&&item.model[0]&&item.weaponStyle[0]) ||
-           item.slot==1||item.slot==4||item.slot==7||item.slot==8;
+    return item.appearance[0] || (WeaponSlot(item.slot)&&item.model[0]&&item.weaponStyle[0]) ||
+           OptionalSlot(item.slot);
 }
 void GameplayDefaults(const Catalog& c,int selection[SlotCount]) {
     memset(selection,0,sizeof(int)*SlotCount);if(!c.valid)return;
     bool authored=false;
-    for(int i=1;i<c.count;++i)if(GameplayItem(c.items[i])){int s=c.items[i].slot;if(s!=1&&s!=4&&s!=7&&s!=8&&!selection[s])selection[s]=i;if(c.items[i].appearance[0])authored=true;}
+    for(int i=1;i<c.count;++i)if(GameplayItem(c.items[i])){int s=c.items[i].slot;if(!OptionalSlot(s)&&!selection[s])selection[s]=i;if(c.items[i].appearance[0])authored=true;}
     if(!authored)Defaults(c,selection); // Historical developer deployments remain supported.
 }
 void NormalizeGameplay(const Catalog& c,int selection[SlotCount]) {
     int base[SlotCount];GameplayDefaults(c,base);
-    for(int s=0;s<SlotCount;++s){int id=selection[s];bool optional=s==1||s==4||s==7||s==8;
+    for(int s=0;s<SlotCount;++s){int id=selection[s];bool optional=OptionalSlot(s);
         if(id<0||id>=c.count||(id&&(!GameplayItem(c.items[id])||c.items[id].slot!=s))||(!id&&!optional))selection[s]=base[s];
     }
     int totals[BudgetCount];if(EvaluateGameplay(c,selection,totals)!=Accepted)memcpy(selection,base,sizeof(base));

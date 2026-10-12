@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Kinetic / head",
+  "created_utc": "2026-10-10T00:52:59.805975+00:00",
+  "request_sha256": "9774d60f572ee2ed8d5313fd8b5a7b17e6efb9b73c0677c458ce4c41acf53ebd",
+  "request": {
+    "text": "4-second dry close game SFX. A head bursts like a ripe pumpkin with a deep wet pop, bone crunch and dense pulp splatter. Follow with heavy staggered wet impacts, bone pieces clattering and blood droplets continuously falling for 3.5 seconds. No early fade. Fade only in the last 0.3 seconds. No voice, scream, music, gunshot or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "519622099d9bd68a7283efbaef380031819a24d3de8bf50e32f74bacecc0cc83",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. A head bursts like a ripe pumpkin with a deep wet pop, bone crunch and dense pulp splatter. Follow with heavy staggered wet impacts, bone pieces clattering and blood droplets continuously falling for 3.5 seconds. No early fade. Fade only in the last 0.3 seconds. No voice, scream, music, gunshot or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

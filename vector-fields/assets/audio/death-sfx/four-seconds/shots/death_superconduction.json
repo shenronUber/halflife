@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Superconduction / death",
+  "created_utc": "2026-10-10T00:48:04.851348+00:00",
+  "request_sha256": "bec00755a4e36d850ef37cc1ee8c04b749cec45063ca77e331da972a7704d2e7",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. A thin high cold metallic singing whistle sweeping downward through fine crystalline fractures, with needle-like electrical fizz and a lingering icy harmonic tail. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "4cc06261e6f4d3db5e11d944248ede7690ac0eeed08736519db17032c050fa2e",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. A thin high cold metallic singing whistle sweeping downward through fine crystalline fractures, with needle-like electrical fizz and a lingering icy harmonic tail. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

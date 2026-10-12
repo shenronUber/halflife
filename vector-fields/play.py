@@ -4,8 +4,8 @@ import json
 import shutil
 import subprocess
 import sys
-import time
-from release import VERSION, startup as release_startup, check_native_interface, prepare_native_renderer_update, verify_deployment
+import time,os
+from release import VERSION, startup as release_startup, check_native_interface, prepare_native_renderer_update, prepare_thumb_models, verify_deployment
 from pathlib import Path
 from import_tfc import install,entities,write_entities
 from import_cs import install as install_cs
@@ -55,29 +55,40 @@ def main():
     parser.add_argument('--smoke-skins',action='store_true')
     parser.add_argument('--smoke-maps',action='store_true')
     parser.add_argument('--map',default='vf_range')
+    parser.add_argument('--stage-engine',type=Path,help=argparse.SUPPRESS)
+    parser.add_argument('--sdk-build',type=Path,help=argparse.SUPPRESS)
     args=parser.parse_args()
     if args.reference_lab:args.visual_lab=True
     if args.visual_lab:args.native_engine=True
+    if args.visual_lab and not args.stage_engine and not(args.smoke or args.smoke_skins or args.smoke_maps):
+        from build_release import ensure_published,launch
+        ensure_published()
+        if not args.deploy_only:return launch(args.map,args.reference_lab)
+        return
+    sdk=args.sdk_build or ROOT/'build'
+    if args.sdk_build:os.environ['VF_RELEASE_SDK']=str(sdk)
     if args.native_engine:
-        MOD='vf_engine';weapons.XASH=PROJECT/'runtime/vector-engine'
+        MOD='vf_engine';weapons.XASH=args.stage_engine or PROJECT/'runtime/vector-engine'
         if not (weapons.XASH/'xash3d.exe').exists():raise RuntimeError('Run build-engine.ps1 first')
         if args.visual_lab:MOD='vf_visual'
-        if prepare_native_renderer_update(weapons.XASH,ROOT/'build/client/client.dll'):print('Verified native status renderer installed.',flush=True)
-        check_native_interface(weapons.XASH,ROOT/'build/client/client.dll')
+        check_native_interface(weapons.XASH,sdk/'client/client.dll')
     if args.visual_lab:
         from build_reference_weapon import build as build_reference
         from build_personas import build as build_personas
         build_reference(ensure=True)
         build_personas(ensure=True)
+        from build_headgear import build as build_headgear
+        build_headgear(ensure=True)
         from build_lootpool import build as build_lootpool
         build_lootpool()
-    for p in ['build/server/hl.dll','build/client/client.dll','generated/modular/vf_operator.mdl','generated/modular/v_9mmar.mdl']:
+    for p in ['generated/modular/vf_operator.mdl','generated/modular/v_9mmar.mdl']:
         if not (ROOT/p).exists():raise RuntimeError('Build missing: '+p)
     engine=weapons.deploy(weapons.variants()[4],'xash',mod_name=MOD);dst=engine/MOD
+    shutil.copy2(PROJECT/"network/delta.lst",dst/"delta.lst")
     for source,target in [('build/server/hl.dll','dlls/hl.dll'),('build/client/client.dll','cl_dlls/client.dll'),
         ('data/equipment.txt','vf/equipment.txt'),('data/r01_styles.txt','vf/r01_styles.txt'),('generated/modular/vf_operator.mdl','models/vf_operator.mdl'),
         ('generated/modular/v_9mmar.mdl','models/v_9mmar.mdl'),('generated/modular/operator.vfm','vf/operator.vfm'),('generated/modular/rifle.vfm','vf/rifle.vfm')]:
-        out=dst/target;out.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(ROOT/source,out)
+        out=dst/target;out.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(sdk/Path(source).relative_to('build') if source.startswith('build/') else ROOT/source,out)
     shutil.copytree(ROOT/'generated/modular/sprites',dst/'sprites/vf_preview',dirs_exist_ok=True)
     for source in (ROOT/'generated/skins').glob('*.mdl'):
         target=dst/'models/vf_skins'/source.name;target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(source,target)
@@ -98,7 +109,7 @@ def main():
         shutil.copytree(sounds,dst/'sound/weapons',dirs_exist_ok=True)
     (dst/'selected-rifle.json').write_text(json.dumps({'name':'HK416 modular: standard/drum magazine, optional muzzle attachment',
         'source':'https://gamebanana.com/mods/640445','generated_by':'vector-fields/build_modular.py','engine':'xash',
-        'local_only':True,'movement':'Valve HLSDK movement unchanged; equipment DLLs modified'},indent=2))
+        'local_only':True,'movement':'Valve HLSDK base movement plus shared predicted Vector Fields traversal'},indent=2))
     manifest=install(weapons.HALF_LIFE/'tfc',engine,dst)
     print(f'TFC: {manifest["count"]} files, {len(manifest["maps"])} exploration maps',flush=True)
     cs_manifest=install_cs(weapons.HALF_LIFE/'cstrike',engine,dst) if args.visual_lab else {'maps':[]}
@@ -112,16 +123,31 @@ def main():
         build_first_person(ensure=True)
         from third_person import build as build_third_person
         build_third_person(ensure=True)
+        from build_traversal import build as build_traversal
+        build_traversal(ensure=True)
+        traversal_target=dst/'models/vf_traversal';traversal_target.mkdir(exist_ok=True)
+        for path in (ROOT/'generated/traversal').glob('*.mdl'):shutil.copy2(path,traversal_target/path.name)
+        from build_traversal_range import build as build_traversal_range
+        shutil.copy2(build_traversal_range(ensure=True),dst/'maps/vf_traversal.bsp')
         target=dst/'models/vf_r01';target.mkdir(parents=True,exist_ok=True)
         for path in (ROOT/'generated/r01').glob('*.mdl'):shutil.copy2(path,target/path.name)
         for path in (ROOT/'generated/third-person').glob('*.mdl'):shutil.copy2(path,target/path.name)
+        for source,folder in (('weapon-inspect','vf_inspect'),('weapon-melee','vf_melee')):
+            action_target=dst/'models'/folder;action_target.mkdir(exist_ok=True)
+            for path in (ROOT/'generated'/source).glob('*.mdl'):shutil.copy2(path,action_target/path.name)
         print(f'CS: {cs_manifest["count"]} resources, {len(cs_manifest["maps"])} exploration maps',flush=True)
-    valid_maps=['vf_range']+[i['name'] for i in manifest['maps']]+[i['name'] for i in cs_manifest['maps']]
+    from build_modular_range import build as build_modular_map
+    from game_profiles import MAPS,write_controls,prepare_maps
+    if args.visual_lab:shutil.copy2(build_modular_map(ensure=True),dst/'maps/vf_modular.bsp')
+    valid_maps=list(MAPS)+[i['name'] for i in manifest['maps']]+[i['name'] for i in cs_manifest['maps']]
     if args.map not in valid_maps:raise ValueError('Choose one of: '+', '.join(valid_maps))
     from build_deaths import build as build_deaths
     build_deaths(ensure=True)
     shutil.copytree(ROOT/'generated/deaths',dst/'models/vf_deaths',dirs_exist_ok=True,ignore=shutil.ignore_patterns('*.smd','*.qc','*.bmp','*.log','manifest.json'))
     add_mannequins(dst,args.native_engine)
+    if args.visual_lab:
+        headgear_target=dst/'models/vf_headgear';headgear_target.mkdir(parents=True,exist_ok=True)
+        shutil.copy2(ROOT/'generated/headgear/headgear.mdl',headgear_target/'headgear.mdl')
     (dst/'gameinfo.txt').write_text('''title "Vector Fields - Atelier de skins"
 basedir "valve"
 fallback_dir "tfc_assets"
@@ -146,6 +172,10 @@ max_edicts "2048"
     shutil.copytree(ROOT/'generated/effects',dst/'sprites/vf_effects',dirs_exist_ok=True)
     from build_status_decals import build as build_status_decals
     build_status_decals(ensure=True)
+    from build_headgear_hud import build as build_headgear_hud
+    build_headgear_hud(ensure=True)
+    from build_headgear_hud import deploy as deploy_headgear_hud
+    deploy_headgear_hud(dst)
     shutil.copytree(ROOT/'generated/status-decals',dst/'sprites/vf_status',dirs_exist_ok=True,ignore=shutil.ignore_patterns('manifest.json','*-mask.spr'))
     shutil.copy2(ROOT/'data/status_decals.json',dst/'vf/status_decals.json')
     shutil.copy2(ROOT/'data/effects.json',dst/'vf/effects.json')
@@ -154,6 +184,10 @@ max_edicts "2048"
     deploy_death_voices(dst)
     from build_death_sounds import deploy as deploy_death_sounds
     deploy_death_sounds(dst)
+    from build_traversal_sounds import deploy as deploy_traversal_sounds
+    deploy_traversal_sounds(dst)
+    from headgear_audio import deploy as deploy_headgear_audio
+    deploy_headgear_audio(dst)
     voice_assets=ROOT/'assets/audio/operators'
     if (voice_assets/'manifest.json').exists():
         for actor in json.loads((voice_assets/'manifest.json').read_text())['actors']:
@@ -175,8 +209,11 @@ max_edicts "2048"
     with (dst/'lab_controls.cfg').open('a') as f:
         f.write('\nbind "F1" "vf_character"\nbind "F2" "vf_operator"\nbind "F5" "vf_dev; exec vf_visit_2fort.cfg"\nhud_scale 1\nr_studio_drawelements 1\nr_studio_builtin_renderer 0\ndeveloper 0\ncon_notifytime 3\n')
         f.write('\nbind F11 \"vf_reference\"\nbind F7 "vf_dev"\nscr_drawversion 0\nbind F6 vf_dev\nbind F4 "map vf_range; exec vf_start.cfg"\nbind F3 vf_effects\nbind F9 vf_effect_clear\nbind PGUP vf_effect_prev\nbind PGDN vf_effect_next\n')
-        f.write('\nbind F8 vf_death_lab\n')
+        f.write('\nbind F8 vf_death_lab\nbind F9 "map vf_traversal"\n')
         f.write('\nbind j "cmd vf_taunt"\n')
+        f.write('\nbind h "vf_headgear_toggle"\n')
+        f.write('\nbind i "vf_inspect"\n')
+        f.write('\nbind v "vf_melee"\n')
         f.write('\nvf_native_models '+('1' if args.native_engine else '0')+'\n')
     wait='wait 180\n' # Xash3D supports a frame count; keep the command buffer small.
     equip='give item_suit\ngive weapon_9mmAR\ngive ammo_9mmbox\nweapon_9mmAR\n'
@@ -253,7 +290,11 @@ max_edicts "2048"
     if not (dst/'vf_voice_behavior.cfg').exists():shutil.copy2(ROOT/'data/voice_behavior.cfg',dst/'vf_voice_behavior.cfg')
     if not start.startswith('exec vf_voice_behavior.cfg\n'):start='exec vf_voice_behavior.cfg\n'+start
     (dst/'vf_start.cfg').write_text(start,encoding='ascii')
-    if args.visual_lab:verify_deployment(dst)
+    if args.visual_lab:
+        prepare_thumb_models(dst)
+        prepare_maps(dst)
+        write_controls(dst)
+        verify_deployment(dst)
     if args.deploy_only:return
     smoke=args.smoke or args.smoke_maps or args.smoke_skins
     log_name='vf-skins-test.log' if args.smoke_skins else 'vf-modular-test.log' if args.smoke else 'vf-skins.log'

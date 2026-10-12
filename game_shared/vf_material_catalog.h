@@ -30,8 +30,9 @@ static const Profile profiles[ProfileCount]={
 {"boot",1,{{Mat_rubber,-1.0f},{Mat_unknown,-1.0f},{Mat_unknown,-1.0f},{Mat_unknown,-1.0f}}},
 {"metal",1,{{Mat_steel,-1.0f},{Mat_unknown,-1.0f},{Mat_unknown,-1.0f},{Mat_unknown,-1.0f}}},
 };
-enum EquipmentSlot {Slot_head=0,Slot_shoulders=1,Slot_gloves=2,Slot_torso=3,Slot_belt=4,Slot_legs=5,Slot_boots=6,Slot_shield=7,Slot_special=8,Slot_receiver=9,Slot_barrel=10,Slot_muzzle=11,Slot_feed=12,Slot_chamber=13,Slot_ammo=14,Slot_projectile=15,Slot_optic=16,Slot_underbarrel=17,Slot_grip=18,Slot_power=19,Slot_cooling=20};
-static const int slotProfiles[21]={Profile_unknown,Profile_unknown,Profile_glove,Profile_uniform,Profile_unknown,Profile_uniform,Profile_boot,Profile_unknown,Profile_unknown,Profile_unknown,Profile_unknown,Profile_unknown,Profile_unknown,Profile_unknown,Profile_unknown,Profile_unknown,Profile_unknown,Profile_unknown,Profile_unknown,Profile_unknown,Profile_unknown};
+enum EquipmentSlot {Slot_head=0,Slot_shoulders=1,Slot_gloves=2,Slot_torso=3,Slot_belt=4,Slot_legs=5,Slot_boots=6,Slot_shield=7,Slot_special=8,Slot_receiver=9,Slot_barrel=10,Slot_muzzle=11,Slot_feed=12,Slot_chamber=13,Slot_ammo=14,Slot_projectile=15,Slot_optic=16,Slot_underbarrel=17,Slot_grip=18,Slot_power=19,Slot_cooling=20,Slot_helmet=21};
+enum {EquipmentSlotCount=22};
+static const int slotProfiles[EquipmentSlotCount]={Profile_unknown,Profile_unknown,Profile_glove,Profile_uniform,Profile_unknown,Profile_uniform,Profile_boot,Profile_unknown,Profile_unknown,Profile_unknown,Profile_unknown,Profile_unknown,Profile_unknown,Profile_unknown,Profile_unknown,Profile_unknown,Profile_unknown,Profile_unknown,Profile_unknown,Profile_unknown,Profile_unknown,Profile_unknown};
 struct ItemOverride {const char* key;int profile;};
 static const ItemOverride itemOverrides[]={
 {"",Profile_unknown}};
@@ -64,6 +65,6 @@ static const ProjectileDefinition projectiles[]={
 {"monster_12mm",8,(ProjectileNature)1,-1.0f,-1.0f,false},
 };
 enum {ProjectileCount=sizeof(projectiles)/sizeof(projectiles[0])};
-static const char* const catalogSha256="603e55a569b43897df64b1339296814d212dafe6448b9f50d4c4f85609d52a70";
+static const char* const catalogSha256="e67176f6133a93e6b1768c1f3cf07709b4d7193d7761d23326cd8116264bb80e";
 }
 #endif

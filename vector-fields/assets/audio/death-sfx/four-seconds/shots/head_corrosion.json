@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Corrosion / head",
+  "created_utc": "2026-10-10T00:47:55.537292+00:00",
+  "request_sha256": "cc69fc2dd3f56901646ff7a9bc35c36cfd8130c25a1aa1e30ac842a8bda3cff5",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. Head exploding like a ripe pumpkin: deep wet pop, crunchy rupture, broad pulp splatter and dripping.  Element: A viscous wet tissue tear and acidic bite, followed by pronounced continuous chemical sizzling, irregular caustic bubble pops and a thinning liquid Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "c98e6e415f671f11639b3be42cbbcd6260d83e55c7eb047eb390725a7012eb15",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. Head exploding like a ripe pumpkin: deep wet pop, crunchy rupture, broad pulp splatter and dripping.  Element: A viscous wet tissue tear and acidic bite, followed by pronounced continuous chemical sizzling, irregular caustic bubble pops and a thinning liquid Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

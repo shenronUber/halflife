@@ -8,12 +8,15 @@ import build_reference_platforms as pf
 import build_modular as base
 from animation_assets import sequence_info
 from studio_assets import Studio
+from build_identity_chassis import INTRINSIC
+from r01_finish_policy import policy
 
 OUT=ROOT/'generated/r01'
 
 def assets():
  manifest=json.loads((OUT/'manifest.json').read_text(encoding='utf-8'))
- assert len(manifest['pieces'])==61 and manifest['combinations']==191102976
+ assert {p['id'] for p in manifest['pieces']}==set(policy()['models'])
+ assert manifest['combinations']==math.prod(sum(p['slot_index']==slot for p in manifest['pieces']) for slot in range(9,21))
  motion=json.loads((OUT/'platform-motion.json').read_text())
  names,parents,_=base.skeleton(OUT/'mp40_hands.smd')
  _,original=pf.read_frames(OUT/'idle.smd');old=pf.globals_of(original[0],parents)
@@ -52,7 +55,7 @@ def assets():
  mags=[x for x in rows if x[1].startswith('r01_feed_')]
  assert [x[1]for x in mags]==['r01_feed_a','r01_feed_b','r01_feed_c','r01_feed_d']
  chassis=[x for x in rows if x[1].startswith('r01_receiver_')]
- assert len(chassis)==9 and all(x[6:12]==chassis[0][6:12]for x in chassis)
+ assert len(chassis)==9+len(INTRINSIC) and all(x[6:12]==chassis[0][6:12]for x in chassis)
  assert all(x[6:12]==mags[0][6:12]for x in mags)
  from r01_styles_engine_test import assets as styles
  _,style_checks=styles()

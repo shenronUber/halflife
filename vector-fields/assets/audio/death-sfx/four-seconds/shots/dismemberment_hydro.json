@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Hydro / dismemberment",
+  "created_utc": "2026-10-10T00:47:40.547532+00:00",
+  "request_sha256": "74721597807381a60aef668a65455eb19cf9d665ab7268f2f21dd7ff5340f16c",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. A pressurized liquid snap and soaked tissue rip, followed by a turbulent water jet, heavy droplets and a falling gurgling trickle. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "b0e005bc06a688622e8bfe3e4a07e54d58718a98bc34a5d8cb9bf3e521106050",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. A pressurized liquid snap and soaked tissue rip, followed by a turbulent water jet, heavy droplets and a falling gurgling trickle. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

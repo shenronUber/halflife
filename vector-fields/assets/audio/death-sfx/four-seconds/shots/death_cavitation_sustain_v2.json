@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Cavitation / death",
+  "created_utc": "2026-10-10T00:53:03.496784+00:00",
+  "request_sha256": "b8b09aa35671ac72175f316686adaf48be8ca44009b969dfc1e1ef0cdb4facf1",
+  "request": {
+    "text": "4-second dry close game SFX. Liquid bubbles implode into a deep hollow pop. Then a sustained turbulent liquid suction and a dense succession of weakening hollow bubble collapses, acidic splatters and pressure gurgles remain loud for 3.5 seconds. Fade only in the last 0.3 seconds. No voice, scream, music, gunshot or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "23cc66c53809cad2cd69519a9b26df38f5bfa9c100c5398f8a4ba5d634827001",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Liquid bubbles implode into a deep hollow pop. Then a sustained turbulent liquid suction and a dense succession of weakening hollow bubble collapses, acidic splatters and pressure gurgles remain loud for 3.5 seconds. Fade only in the last 0.3 seconds. No voice, scream, music, gunshot or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

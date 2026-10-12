@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Cavitation / death",
+  "created_utc": "2026-10-10T00:48:16.778411+00:00",
+  "request_sha256": "b6dc6d6cef85d6fbc4cb07ab91d4235eff3b44e70722bd2cff3df8cb37325e40",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. A fast cluster of liquid bubbles imploding into one deep hollow pop, then repeated weakening hollow fluid collapses, a low pressure ring and splattering acidic water. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "19effe3cb596bca3f7351bca837398b54627637b5e0bcba2a6e9a3e453cceb7d",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. A fast cluster of liquid bubbles imploding into one deep hollow pop, then repeated weakening hollow fluid collapses, a low pressure ring and splattering acidic water. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

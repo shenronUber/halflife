@@ -19,17 +19,20 @@ def samples(path):
         return np.frombuffer(w.readframes(w.getnframes()),dtype='<i2').astype(float)/32768
 
 def assets():
-    manifest=bank.build(ensure=True);assert len(manifest['clips'])==33
+    manifest=bank.build(ensure=True);assert len(manifest['clips'])==50
     keys={(c['layer'],c['effect']) for c in manifest['clips']};ids=[p['id'] for p in bank.recipe()['profiles']]
-    assert keys=={('death',id) for id in ids[1:]}|{('dismemberment',id) for id in ids}
-    assert len({c['sha256'] for c in manifest['clips']})==33
-    assert len({c['source_sha256'] for c in manifest['clips']})==33
+    assert keys=={('death',id) for id in ids[1:]}|{('dismemberment',id) for id in ids}|{('head',id) for id in ids}
+    assert len({c['sha256'] for c in manifest['clips']})==50
+    assert len({c['source_sha256'] for c in manifest['clips']})==50
     durations={};features=[]
     for c in manifest['clips']:
         path=bank.OUT/'sound'/(c['id']+'.wav');x=samples(path)
         assert hashlib.sha256(path.read_bytes()).hexdigest()==c['sha256']
-        assert .3<len(x)/22050<2.6 and np.max(np.abs(x))<(.181 if c['layer']=='death' else .201)
-        assert np.sqrt(np.mean(x*x))>.003,c['id']
+        assert .5<len(x)/22050<2.3 and np.max(np.abs(x))<{'death':.221,'dismemberment':.201,'head':.701}[c['layer']]
+        assert np.sqrt(np.mean(x*x))>.025,c['id']
+        with wave.open(str(bank.master_folder(c)/'shots'/(c['master_id']+'.wav'))) as source:
+            assert source.getnframes()==len(x)==c['source_frames'],c['id']
+        assert c['tempo_scale']==1.0,c['id'] # loudness processing preserves native timing
         assert np.max(np.abs(x[:1544]))>.002,c['id'] # audible onset within 70 ms
         assert np.max(np.abs(x[-22:]))<.012,c['id'] # short fade prevents click
         assert abs(len(x)/22050-c['duration'])<.000001
@@ -45,7 +48,7 @@ def assets():
     assert not list(bank.MASTERS.glob('**/*.pending'))
     listen=(bank.OUT/'listen.html').read_text(encoding='utf-8')
     for src in re.findall(r'src="([^"]+)"',listen):assert (bank.OUT/src).is_file()
-    report('assets',dict(clips=33,death=16,dismemberment=17,format=manifest['format'],bytes=sum((bank.OUT/'sound'/(c['id']+'.wav')).stat().st_size for c in manifest['clips']),duration_range=[min(durations.values()),max(durations.values())],closest_signal_pairs=pairs[:5],checks=['each element and cross-element reaction has independent death and detachment assets','neutral detachment exists without an elemental death cue','33 unique generated masters and exported WAV hashes','audible quick attacks, no digital clipping, fade-outs and mix headroom','complete offline bank; preview links and provenance valid']))
+    report('assets',dict(clips=50,death=16,dismemberment=17,head_explosions=17,format=manifest['format'],bytes=sum((bank.OUT/'sound'/(c['id']+'.wav')).stat().st_size for c in manifest['clips']),duration_range=[min(durations.values()),max(durations.values())],closest_signal_pairs=pairs[:5],checks=['each element and cross-element reaction has independent death and detachment assets','neutral detachment exists without an elemental death cue','50 unique generated masters and exported WAV hashes','original source frame counts preserved; natural short timing, audible attack, no digital clipping','complete offline bank; preview links and provenance valid']))
     return manifest
 
 def mixer_channels(save):
@@ -73,8 +76,8 @@ def setup(name):
     e=harness.stage(name);m=e/'vf_animation';(m/'maps').mkdir(exist_ok=True);shutil.copy2(ROOT/'generated/test-room/vf_range.bsp',m/'maps/vf_range.bsp');return e,m
 
 def launch(e,cfg,log):
-    p=subprocess.Popen([str(e/'xash3d.exe'),'-rodir',STEAM,'-game','vf_animation','-windowed','-width','1280','-height','720','-console','-nointro','-nowriteconfig','-log',log,'+sv_cheats','1','+map','vf_range','+exec',cfg],cwd=e)
-    try:p.wait(timeout=135);assert p.returncode==0
+    p=subprocess.Popen([str(e/'xash3d.exe'),'-ip','127.0.0.1','-noip6','-rodir',STEAM,'-game','vf_animation','-windowed','-width','1280','-height','720','-console','-nointro','-nowriteconfig','-log',log,'+sv_cheats','1','+map','vf_range','+exec',cfg],cwd=e)
+    try:p.wait(timeout=220);assert p.returncode==0
     finally:
         if p.poll() is None:p.terminate();p.wait(10)
     return (e/log).read_text(errors='replace')
@@ -99,13 +102,15 @@ def native():
         dict(id='all_limbs',cause='shatter',region='all',voices=True,death=True,tear=True,setup='cmd vf_range_effect 0 shatter\n'),
     ]
     for case in cases:
-        id=case['id'];cfg+='cmd vf_death_clear\ncmd vf_range_reset 0\ncmd vf_range_voice 0 rocco\nvf_voices 1\nvf_death_sfx_volume .8\nvf_dismember_sfx_volume .8\nstopsound\necho BEGIN_'+id+'\n'+case['setup']+f'cmd vf_range_death 0 {case["region"]}\nwait 12\nsave vf_audio_{id}\n'
+        case['head']=case['region'] in ('head','all')
+        if case['head']:case['voices']=case['death']=False
+        id=case['id'];cfg+='cmd vf_death_clear\ncmd vf_range_reset 0\ncmd vf_range_voice 0 rocco\nvf_voices 1\nvf_death_sfx_volume 1\nvf_dismember_sfx_volume 1\nstopsound\necho BEGIN_'+id+'\n'+case['setup']+f'cmd vf_range_death 0 {case["region"]}\nwait 12\nsave vf_audio_{id}\n'
         if id in ('electro','cryo','corrosion','all_limbs'):cfg+=f'screenshot scrshots/{id}_mix.png\n'
         # A second fatal probe on the already dead target must be ignored.
-        cfg+=f'cmd vf_range_kill 0\nwait 220\necho END_{id}\n'
+        cfg+=f'cmd vf_range_kill 0\nwait 360\nsave vf_audio_tail_{id}\nwait 12\necho END_{id}\n'
     # Existing corpse state is restored after the one-shot sounds have ended.
-    cfg+='vf_voices 1\nvf_death_sfx_volume .8\nvf_dismember_sfx_volume .8\ncmd vf_death_clear\ncmd vf_range_reset 0\ncmd vf_range_death 0 left_arm corrosion\nwait 340\nsave vf_audio_settled\nwait 12\necho RESTORE_BEGIN\nload vf_audio_settled\nwait 100\necho RESTORE_END\n'
-    # Real player deaths and full gibbing use the same pre-clear cause snapshot.
+    cfg+='vf_voices 1\nvf_death_sfx_volume 1\nvf_dismember_sfx_volume 1\ncmd vf_death_clear\ncmd vf_range_reset 0\ncmd vf_range_death 0 left_arm corrosion\nwait 340\nsave vf_audio_settled\nwait 12\necho RESTORE_BEGIN\nload vf_audio_settled\nwait 100\necho RESTORE_END\n'
+    # Real player deaths and unlocalized overkill use the same pre-clear cause snapshot.
     cfg+='stopsound\ncmd vf_voice_set rocco\necho PLAYER_BEGIN\ncmd vf_death_test right_leg cryo\nwait 12\nscreenshot scrshots/player_mix.png\nwait 280\necho PLAYER_END\n'
     cfg+='load vf_audio_settled\nwait 120\nstopsound\ncmd vf_voice_set rocco\ncmd vf_status_dev 1\ncmd vf_status_apply electro\necho GIB_BEGIN\ncmd vf_voice_test gib\nwait 12\nscreenshot scrshots/gib_mix.png\nwait 240\necho GIB_END\nquit\n'
     (m/'death_audio.cfg').write_text(cfg,encoding='ascii');started=time.monotonic();log=launch(e,'death_audio.cfg','death-audio.log');(OUT/'native.log').write_text(log)
@@ -116,14 +121,18 @@ def native():
         expected=[]
         if case['voices']:expected.append(('vf_deaths/rocco/'+case['cause']+'_v2.wav',2))
         if case['death']:expected.append(('vf_death_sfx/death_'+case['cause']+'.wav',4))
-        if case['tear']:expected.append(('vf_death_sfx/dismemberment_'+case['cause']+'.wav',3))
+        if case['tear']:expected.append(('vf_death_sfx/'+('head_' if case['head'] else 'dismemberment_')+case['cause']+'.wav',3))
         channels=mixer_channels(m/'save'/('vf_audio_'+id+'.sav'))
         actual=[c for c in channels if c.get('name','').startswith(('vf_deaths/','vf_death_sfx/'))]
         assert {(c['name'],c['channel']) for c in actual}==set(expected),(id,actual,expected)
         assert all(c.get('samplePos',0)>0 and c.get('volume',0)>0 and c['attenuation']>0 for c in actual),(id,actual)
         assert len(re.findall(r'VFDeathSfx play .*layer=death',part))==int(case['death']),(id,part[-1600:])
         assert len(re.findall(r'VFDeathSfx play .*layer=dismemberment',part))==int(case['tear']),(id,part[-1600:])
-        verified.append(dict(case=id,region=case['region'],active_native_channels=actual))
+        tail=mixer_channels(m/'save'/('vf_audio_tail_'+id+'.sav'))
+        tail_sfx={c['name'] for c in tail if c.get('name','').startswith('vf_death_sfx/')}
+        assert not tail_sfx,(id,'short one-shot sounds must have ended',tail_sfx)
+        assert len(re.findall(r'VFFragment spawn ',part))==({'none':0,'all':5}.get(case['region'],1)),(id,'duplicate anatomy')
+        verified.append(dict(case=id,region=case['region'],active_native_channels=actual,tail_native_channels=tail))
     restored=log.split('RESTORE_BEGIN ')[1].split('RESTORE_END ')[0]
     assert 'VFDeathSfx play' not in restored and 'VFDeath play:' not in restored
     player_part=log.split('PLAYER_BEGIN ')[1].split('PLAYER_END ')[0]
@@ -131,12 +140,12 @@ def native():
     for name,part,effect in [('player',player_part,'cryo'),('gib',gib_part,'electro')]:
         assert len(re.findall(r'VFDeath play: entity=1 actor=rocco cause='+effect,part))==1,(name,part[-2000:])
         assert len(re.findall(r'VFDeathSfx play .*layer=death effect='+effect,part))==1,(name,part[-2000:])
-        assert len(re.findall(r'VFDeathSfx play .*layer=dismemberment effect='+effect,part))==1,(name,part[-2000:])
-        assert len(re.findall(r'VFDeathSfx received:',part))==2,(name,part[-2000:])
+        assert len(re.findall(r'VFDeathSfx play .*layer=dismemberment effect='+effect,part))==(name!='gib'),(name,part[-2000:])
+        assert len(re.findall(r'VFDeathSfx received:',part))==(1 if name=='gib' else 2),(name,part[-2000:])
         shutil.copy2(m/'scrshots'/(name+'_mix.png'),OUT/(name+'_mix.png'))
     player=dict(cause='cryo',native_s_show_capture=str(OUT/'player_mix.png'));gib=dict(cause='electro',native_s_show_capture=str(OUT/'gib_mix.png'))
     for id in ('electro','cryo','corrosion','all_limbs'):shutil.copy2(m/'scrshots'/(id+'_mix.png'),OUT/(id+'_mix.png'))
-    report('native',dict(seconds=round(time.monotonic()-started,2),cases=verified,player=player,full_gib=gib,checks=['all 16 genuine status deaths play three simultaneous native mixer channels','five body regions plus all-limb event; one detachment cue per event','ordinary non-elemental deaths retain only the cry','elemental death without dismemberment has two channels','voice and each SFX volume mute independently','active reaction outranks a more recently applied base element','expired effects and tactical conditions do not select elemental sounds','already dead targets cannot trigger a second death','restoring a settled corpse does not trigger old death sounds','real player death and full-body gib preserve the pre-clear effect']))
+    report('native',dict(seconds=round(time.monotonic()-started,2),cases=verified,player=player,full_gib=gib,checks=['all 16 elemental profiles use genuine native mixer channels; head loss suppresses cry and plays its dedicated explosion','five body regions plus all-limb event; one whole member plus three physical debris pieces per removed zone; one detachment cue per event','explicit intact test deaths retain only the cry','elemental death without dismemberment has two channels','voice and each SFX volume mute independently','active reaction outranks a more recently applied base element','expired effects and tactical conditions do not select elemental sounds','short sound effects finish naturally without a prolonged tail','already dead targets cannot trigger a second death','restoring a settled corpse does not trigger old death sounds','real player death and unlocalized overkill preserve the pre-clear effect; overkill does not bypass the anatomical threshold']))
     return verified
 
 if __name__=='__main__':

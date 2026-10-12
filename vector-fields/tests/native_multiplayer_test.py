@@ -1,19 +1,24 @@
 """Two independent clients on a loopback dedicated server; no public service."""
-import json,os,re,shutil,subprocess,time
+import json,os,re,shutil,subprocess,time,sys
 from pathlib import Path
 from native_engine_test import ROOT,ENGINE,STEAM,fingerprint
 
+sys.path.insert(0,str(ROOT))
+from native_workspace import engine_path, shared_copy, private_copy, stage_installed
+
 def prepare_peer(mod):
-    peer=ROOT.parent/'runtime/vector-engine-peer'
+    peer=engine_path(ROOT.parent/'runtime/vector-engine-peer')
     peer.mkdir(parents=True,exist_ok=True)
     for f in ENGINE.iterdir():
-        if f.is_file() and f.suffix.lower() in ('.dll','.exe'):shutil.copy2(f,peer/f.name)
+        if f.is_file() and f.suffix.lower() in ('.dll','.exe'):private_copy(f,peer/f.name)
     for folder in ['valve',mod,'tfc_assets']:
-        shutil.copytree(ENGINE/folder,peer/folder,dirs_exist_ok=True,ignore=shutil.ignore_patterns('scrshots','save','*.log'))
+        shutil.copytree(ENGINE/folder,peer/folder,dirs_exist_ok=True,copy_function=shared_copy,ignore=shutil.ignore_patterns('scrshots','save','*.log'))
     return peer
 
 def run(visual=False):
     mod='vf_visual' if visual else 'vf_engine'
+    stage_installed(ENGINE,mod)
+    if not visual:private_copy(ROOT/'generated/skins/skins.txt',ENGINE/mod/'vf/skins.txt')
     peer=prepare_peer(mod);skinHash=fingerprint(ROOT/'generated'/('visual_skins' if visual else 'skins')/'skins.txt')
     initial='wait 220\ndeveloper 1\ncon_notifytime 0\nfps_max 100\nweapon_9mmAR\ncmd vf_appearance_mode 1\nwait 20\ncmd vf_peer_pose\nwait 90\ncmd vf_body_info\n'
     first=initial+f'cmd vf_skin_apply {skinHash} 44 0 69 138 9\nwait 50\nvf_character\nwait 90\nvf_select_slot 12\nvf_next_item\nvf_select_slot 11\nvf_next_item\nvf_commit\nwait 60\nvf_character\n'
@@ -24,14 +29,14 @@ def run(visual=False):
     (ENGINE/mod/'vf_peer_a.cfg').write_text(first,encoding='ascii')
     (peer/mod/'vf_peer_b.cfg').write_text(second,encoding='ascii')
     common=['-rodir',STEAM,'-game',mod,'-console','-nointro']
-    server_args=[str(ENGINE/'xash.exe'),*common,'-log','native-server.log','+ip','127.0.0.1','-port','27025','+maxplayers','4','+sv_lan','1','+sv_cheats','1','+deathmatch','1','+developer','1','+map','vf_range']
+    server_args=[str(ENGINE/'xash.exe'),'-ip','127.0.0.1','-noip6',*common,'-log','native-server.log','+ip','127.0.0.1','-port','27025','+maxplayers','4','+sv_lan','1','+sv_cheats','1','+deathmatch','1','+developer','1','+map','vf_range']
     server=subprocess.Popen(server_args,cwd=ENGINE,creationflags=subprocess.CREATE_NO_WINDOW)
     children=[];started=time.time()
     try:
         time.sleep(4)
         assert server.poll() is None,'Dedicated server exited'
         def launch(folder,port,cfg,name):
-            args=[str(folder/'xash3d.exe'),*common,'-borderless','-width','1920','-height','1080','-log','native-peer.log','+exec','lab_controls.cfg','-clientport',str(port),'+name',name,'+connect','127.0.0.1:27025','+exec',cfg]
+            args=[str(folder/'xash3d.exe'),'-ip','127.0.0.1','-noip6',*common,'-borderless','-width','1920','-height','1080','-log','native-peer.log','+exec','lab_controls.cfg','-clientport',str(port),'+name',name,'+connect','127.0.0.1:27025','+exec',cfg]
             child=subprocess.Popen(args,cwd=folder);children.append(child)
         launch(ENGINE,27026,'vf_peer_a.cfg','VF_A')
         # The second player joins after the first committed its appearance.

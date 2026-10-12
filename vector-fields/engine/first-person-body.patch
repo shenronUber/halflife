@@ -1,0 +1,42 @@
+diff --git a/ref/gl/gl_studio.c b/ref/gl/gl_studio.c
+--- a/ref/gl/gl_studio.c
++++ b/ref/gl/gl_studio.c
+@@ -1910,8 +1910,11 @@
+ 
+ ===============
+ */
++static qboolean R_VFDrawBodyMesh( short *ptricmds, vec3_t *normals, float s, float t );
++
+ static void R_StudioSubmitMesh( short *ptricmds, vec3_t *pstudionorms, float s, float t, float shellscale, int tesslevel )
+ {
++	if( R_VFDrawBodyMesh( ptricmds, pstudionorms, s, t )) return;
+ 	if( tesslevel > 0 )
+ 	{
+ 		// R_StudioDrawTruformMesh( ptricmds, pstudionorms, s, t, shellscale, tesslevel );
+@@ -3323,14 +3326,13 @@
+ R_DrawViewModel
+ =================
+ */
++static void R_VFDrawFirstPersonBody( void );
++
+ void R_DrawViewModel( void )
+ {
+ 	cl_entity_t	*view = tr.viewent;
+ 
+ 	R_GatherPlayerLight( view );
+-
+-	if( r_drawviewmodel->value == 0 )
+-		return;
+ 
+ 	if( ENGINE_GET_PARM( PARM_THIRDPERSON ))
+ 		return;
+@@ -3338,6 +3340,9 @@
+ 	// ignore in thirdperson, camera view or client is died
+ 	if( FBitSet( RI.rvp.flags, RF_DRAW_CUBEMAP ) || ENGINE_GET_PARM( PARM_LOCAL_HEALTH ) <= 0 || !CL_IsViewEntityLocalPlayer())
+ 		return;
++
++	R_VFDrawFirstPersonBody();
++	if( r_drawviewmodel->value == 0 ) return;
+ 
+ 	tr.blend = CL_FxBlend( view ) / 255.0f;
+ 	if( !R_ModelOpaque( view->curstate.rendermode ) && tr.blend <= 0.0f )

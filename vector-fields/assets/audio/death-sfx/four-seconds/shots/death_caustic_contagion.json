@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "CausticContagion / death",
+  "created_utc": "2026-10-10T00:48:18.732038+00:00",
+  "request_sha256": "3cde1455041437ce336b671a5947ec774105da3b933984200325047502c22a31",
+  "request": {
+    "text": "4-second dry close game SFX. Immediate loud attack. Two distinctly spaced viscous chemical bubble bursts with crackly papery spores between them, followed by alternating acidic fizz and organic dusty flutter in a pulsing decay. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "a284222cdb8878dfe2e0a80edaffa8f6a17fa591edc0f63f372a51061df2036f",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. Immediate loud attack. Two distinctly spaced viscous chemical bubble bursts with crackly papery spores between them, followed by alternating acidic fizz and organic dusty flutter in a pulsing decay. Audible evolving tail for 3 seconds; fade only at end. No voice, scream, music, ambience or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}

@@ -31,12 +31,12 @@ def run():
             put(mod/("fx-"+phase+".cfg"),"wait 15\nexec fx-"+phase+".cfg\n")
         put(mod/"fx-peer.cfg","developer 1\ngl_vsync 0\nfps_max 60\ncon_notifytime 0\nexec fx-init.cfg\n")
     (a/"fx-server.log").unlink(missing_ok=True)
-    server=subprocess.Popen([str(a/"xash.exe"),*common,"-log","fx-server.log","+ip","127.0.0.1","-port","27065","+rcon_password","vf_fx_loopback","+maxplayers","4","+sv_lan","1","+sv_cheats","1","+deathmatch","1","+developer","1","+vf_native_models","1","+vf_voices","0","+map","vf_fx_range"],cwd=a,creationflags=subprocess.CREATE_NO_WINDOW)
+    server=subprocess.Popen([str(a/"xash.exe"),'-ip','127.0.0.1','-noip6',*common,"-log","fx-server.log","+ip","127.0.0.1","-port","27065","+rcon_password","vf_fx_loopback","+maxplayers","4","+sv_lan","1","+sv_cheats","1","+deathmatch","1","+developer","1","+vf_native_models","1","+vf_voices","0","+map","vf_fx_range"],cwd=a,creationflags=subprocess.CREATE_NO_WINDOW)
     children=[];started=time.time()
     try:
         wait_log(a/"fx-server.log","4 player server started",server)
         def launch(folder,port,name):
-            process=subprocess.Popen([str(folder/"xash3d.exe"),*common,"-borderless","-width","1920","-height","1080","-nowriteconfig","-log","fx-peer.log","-clientport",str(port),"+developer","1","+gl_vsync","0","+fps_max","60","+name",name,"+connect","127.0.0.1:27065","+exec","fx-peer.cfg"],cwd=folder)
+            process=subprocess.Popen([str(folder/"xash3d.exe"),'-ip','127.0.0.1','-noip6',*common,"-borderless","-width","1920","-height","1080","-nowriteconfig","-log","fx-peer.log","-clientport",str(port),"+developer","1","+gl_vsync","0","+fps_max","60","+name",name,"+connect","127.0.0.1:27065","+exec","fx-peer.cfg"],cwd=folder)
             children.append(process);return process
         pa=launch(a,27066,"FX_A")
         wait_log(a/"fx-peer.log","VFShot sync: player=1 code=0",pa)

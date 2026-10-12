@@ -34,12 +34,12 @@ produit un cadavre animé. Les explosions intégrales historiques restent dans
 leur parcours existant. Ce prototype ne raccorde pas encore tous les monstres
 Half-Life à un modèle démembrable.
 
-Les boutons forcent le membre perdu sur un vrai coup fatal. Aucun seuil de
-headshot ou d’accumulation de dégâts par membre n’est ajouté pour l’instant.
-La politique de dégâts pourra ensuite sélectionner le masque des membres
-perdus sans multiplier les animations : chaque animation fonctionne avec
-les 32 combinaisons de pertes. Les réglages de l’arme et les seuils seront
-abordés après la revue visuelle.
+Les boutons du laboratoire forcent le membre perdu sur un vrai coup fatal.
+En jeu ordinaire, la tête et chaque membre cumulent séparément les dégâts
+de santé réellement subis après l'armure. Une région éclate seulement à la mort,
+si elle a reçu strictement plus de la moitié de la vie maximale et si le coup
+fatal la touche. Un coup au torse ou un décès non localisé ne retire rien.
+Chaque animation reste compatible avec les 32 combinaisons du laboratoire.
 
 Le découpage utilise les faces et os existants ; il constitue une première
 version visible. Les sections des bras et cuisses sont planes ; le cou suit le col existant.

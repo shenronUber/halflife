@@ -1,30 +1,47 @@
 {
-  "assets": 33,
-  "death_signatures": 16,
-  "detachment_signatures": 17,
-  "unit_tests": 43,
-  "native_cases": 27,
-  "multiplayer_clients": 3,
-  "delivery": {
-    "files": 324,
-    "models": 76
+  "date": "2026-10-10",
+  "changes": [
+    "automatic dismemberment on normal compatible player/bot and range target deaths",
+    "one physical member per removed zone instead of one whole plus three segments",
+    "50 natural short elemental / detachment / head-explosion SFX; 33 original takes restored and 17 directly generated two-second head takes",
+    "head loss emits one pumpkin-like elemental explosion and suppresses the cry",
+    "102 original cries and original 0.85 volume preserved"
+  ],
+  "checks": {
+    "unit_tests": 58,
+    "generated_audio_clips": 50,
+    "automatic_target_cases": 7,
+    "real_player_head": true,
+    "native_audio_cases": 27,
+    "real_player_limb_and_full_gib": true,
+    "multiplayer_clients": 3,
+    "mixed_whole_members": 5,
+    "deployment_files": 343,
+    "deployment_models": 76,
+    "current_release_startup_and_save_load": true
   },
-  "checks": [
-    "33 independent generated masters",
-    "three simultaneous native audio channels",
-    "automatic status cause before status clear",
-    "five dismemberment zones and neutral variant",
-    "real player death and full-body gib",
-    "voice and SFX volumes independent",
-    "no old audio on late join or settled corpse restore",
-    "radial dark-red blood with alpha blending and gravity",
-    "main launcher assets and DLL hashes verified"
+  "reports": [
+    "assets.json",
+    "native.json",
+    "automatic.json",
+    "fragment-finishes.json",
+    "multiplayer.json",
+    "mix-levels.json",
+    "deployment.json",
+    "current-release.json"
   ],
-  "limits": [
-    "listening mix examples are offline mono previews; game plays separate positional native sound events",
-    "regional dismemberment damage thresholds remain the existing prototype controls"
-  ],
-  "additional_player_cases": 2,
-  "current_release_native": "passed",
-  "blood_native": "passed"
+  "audio_correction": {
+    "date": "2026-10-10",
+    "duration_range_seconds": [
+      1.0614965986394558,
+      2.08
+    ],
+    "time_stretching": false,
+    "source_frame_counts_preserved": 50,
+    "native_audio_cases": 27,
+    "short_effects_finished_in_all_late_mixer_samples": true,
+    "original_cry_volume_verified_in_native_mixer": true,
+    "cry_files_unchanged": 102,
+    "changed_deployment_files": 51
+  }
 }

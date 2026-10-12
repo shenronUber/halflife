@@ -1,7 +1,7 @@
 """Weapon FX regression: binary resources + actual predicted fires in native engine.
 Runtime staging isolates tests from the normal build and from other workshops.
 """
-import argparse,array,hashlib,json,math,os,re,shutil,struct,subprocess,time,wave
+import argparse,array,hashlib,json,math,os,re,shutil,struct,subprocess,time,wave,sys
 from pathlib import Path
 from PIL import Image,ImageDraw,ImageFont
 ROOT=Path(__file__).resolve().parents[1]
@@ -67,36 +67,39 @@ def assets():
     return dict(profiles=8,sprites=40,sounds=40,decals=8,stock_decals=222,audio=audio,
         checks=["native index-alpha sprite headers, frames, nonempty alpha and buffer lengths","WAD mip offsets, palette transparency, preserved stock entries","eight frontal flashes have centered emission and light in all four quadrants","40 mono 11025 Hz / 8-bit PCM WAVs: level, duration, RMS, DC and four distinct material variants"])
 
-def shared_copy(source,target):
-    if not Path(target).exists():os.link(source,target)
-    return target
+sys.path.insert(0,str(ROOT))
+from native_workspace import engine_path, shared_copy, private_copy
+
 
 def stage(name):
-    engine=OUT/name;engine.mkdir(parents=True,exist_ok=True)
+    engine=engine_path(OUT/name);engine.mkdir(parents=True,exist_ok=True)
     for f in BASE.iterdir():
-        if f.is_file() and f.suffix.lower() in (".dll",".exe"):shutil.copy2(f,engine/f.name)
+        if f.is_file() and f.suffix.lower() in (".dll",".exe"):private_copy(f,engine/f.name)
     for folder in ("valve","vf_visual","cs_assets"):
         shutil.copytree(BASE/folder,engine/folder,dirs_exist_ok=True,copy_function=shared_copy,ignore=shutil.ignore_patterns("scrshots","save","*.log","*.cfg"))
     mod=engine/"vf_fx_test"
     for folder in ("dlls","cl_dlls","vf","maps","sound","sprites","scrshots"):(mod/folder).mkdir(parents=True,exist_ok=True)
-    shutil.copy2(ROOT/"build/weaponfx-server/hl.dll",mod/"dlls/hl.dll")
-    shutil.copy2(ROOT/"build/weaponfx-client/client.dll",mod/"cl_dlls/client.dll")
-    shutil.copy2(ROOT/"generated/weapon-fx/decals.wad",mod/"decals.wad")
-    shutil.copy2(ROOT/"generated/weapon-fx/range/vf_fx_range.bsp",mod/"maps/vf_fx_range.bsp")
+    # Validate the maintained game, rather than archived experiment DLLs.
+    from release import check_native_interface
+    check_native_interface(BASE,ROOT/"build/client/client.dll")
+    private_copy(ROOT/"build/server/hl.dll",mod/"dlls/hl.dll")
+    private_copy(ROOT/"build/client/client.dll",mod/"cl_dlls/client.dll")
+    private_copy(ROOT/"generated/weapon-fx/decals.wad",mod/"decals.wad")
+    private_copy(ROOT/"generated/weapon-fx/range/vf_fx_range.bsp",mod/"maps/vf_fx_range.bsp")
     shutil.copytree(ROOT/"generated/weapon-fx/sprites",mod/"sprites/vf_weaponfx",dirs_exist_ok=True)
     shutil.copytree(ROOT/"generated/weapon-fx/sound",mod/"sound/vf_weaponfx",dirs_exist_ok=True)
     for source,target in [("data/equipment.txt","equipment.txt"),("data/r01_styles.txt","r01_styles.txt"),("generated/visual_skins/skins.txt","skins.txt"),("generated/skins/arsenal.txt","arsenal.txt")]:
-        shutil.copy2(ROOT/source,mod/"vf"/target)
+        private_copy(ROOT/source,mod/"vf"/target)
     (mod/"vf/native_engine.txt").write_text("Isolated weapon FX test\n")
     (mod/"gameinfo.txt").write_text('title "Vector Fields / Weapon FX test"\nbasedir "valve"\nfallback_dir "vf_visual"\ngamedll "dlls/hl.dll"\ndllpath "cl_dlls"\ngamemode "normal"\nmax_edicts "2048"\n')
     # Explicit material table: fallback chains are one level on some engine builds.
-    shutil.copy2(BASE/"cs_assets/sound/materials.txt",mod/"sound/materials.txt")
+    private_copy(BASE/"cs_assets/sound/materials.txt",mod/"sound/materials.txt")
     return engine,mod
 
 def click(x,y):return f"vf_ui_pointer {x} {y} 1\nwait 3\nvf_ui_pointer {x} {y} 0\nwait 12\n"
 def run_cfg(engine,mod,name,script,timeout=70,mapname="vf_fx_range"):
     (mod/(name+".cfg")).write_text(script,encoding="ascii")
-    command=[str(engine/"xash3d.exe"),"-rodir",STEAM,"-game","vf_fx_test","-borderless","-width","1920","-height","1080","-console","-nointro","-nowriteconfig","-log",name+".log","+sv_cheats","1","+map",mapname,"+exec",name+".cfg"]
+    command=[str(engine/"xash3d.exe"),'-ip','127.0.0.1','-noip6',"-rodir",STEAM,"-game","vf_fx_test","-borderless","-width","1920","-height","1080","-console","-nointro","-nowriteconfig","-log",name+".log","+sv_cheats","1","+map",mapname,"+exec",name+".cfg"]
     p=subprocess.Popen(command,cwd=engine)
     try:p.wait(timeout=timeout)
     except subprocess.TimeoutExpired:p.terminate();p.wait(10);raise

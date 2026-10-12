@@ -373,7 +373,7 @@ void VF_EffectsScreen(){
 void VF_EffectsHud(){
  VF_RangeHud();VF_WeaponFXHud();StatusHud();
  if(VF_CharacterOpen()||!emitterCount)return;
- u::Box(24,570,575,72,u::bg,215);char label[160];snprintf(label,sizeof(label),"%s / VISUEL UNIQUEMENT",vfx::effects[selected].name);u::Text(36,582,label,Color(selected),550);u::Text(36,608,"F3 : guide   PgPrec / PgSuiv : effet   F9 : retirer",u::white,550);
+ u::Box(24,570,575,72,u::bg,215);char label[160];snprintf(label,sizeof(label),"%s / VISUEL UNIQUEMENT",vfx::effects[selected].name);u::Text(36,582,label,Color(selected),550);u::Text(36,608,"F3 : guide   PgPrec / PgSuiv : effet   Fin : retirer",u::white,550);
  for(int i=0;i<emitterCount;++i){float point[3]={emitters[i].center.x,emitters[i].center.y,emitters[i].center.z+49},screen[3];if(!gEngfuncs.pTriAPI->WorldToScreen(point,screen)&&fabsf(screen[0])<.85f&&fabsf(screen[1])<.9f){float x=(screen[0]+1)*ScreenWidth*.5f,y=(1-screen[1])*ScreenHeight*.5f;x=(x-u::X(0))/u::SX();y=(y-u::Y(0))/u::SY();u::Text(x-94,y,vfx::effects[emitters[i].effect].name,Color(emitters[i].effect),210);}}
 }
 

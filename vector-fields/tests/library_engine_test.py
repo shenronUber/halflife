@@ -2,12 +2,22 @@
 import argparse,json,re,subprocess,time
 from pathlib import Path
 from PIL import Image
-ROOT=Path(__file__).resolve().parents[1];ENGINE=ROOT.parent/'runtime/vector-engine';MOD=ENGINE/'vf_visual'
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from native_workspace import engine_path,stage_installed,port
+ROOT=Path(__file__).resolve().parents[1];ENGINE=engine_path(ROOT/'build/library_engine_test');MOD=ENGINE/'vf_visual'
 ENTRIES=json.loads((ROOT/'generated/library/manifest.json').read_bytes())['entries']
 def click(x,y):return f'vf_ui_pointer {x} {y} 1\nwait 3\nvf_ui_pointer {x} {y} 0\nwait 12\n'
+_staged=False
+
+def prepare():
+ global _staged
+ if not _staged:stage_installed(ENGINE,MOD.name);_staged=True
+
 def run_cfg(name,script,mapname='vf_range',captures=(),timeout=100):
+ prepare()
  path=MOD/(name+'.cfg');path.write_text(script,encoding='ascii');start=time.time()
- command=[str(ENGINE/'xash3d.exe'),'-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_visual','-borderless','-width','1920','-height','1080','-console','-nointro','-nowriteconfig','-log',name+'.log','+exec','lab_controls.cfg','+developer','1','+map',mapname,'+exec',path.name]
+ command=[str(ENGINE/'xash3d.exe'),'-ip','127.0.0.1','-noip6','-port',str(port()),'-clientport',str(port()),'-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_visual','-borderless','-width','1920','-height','1080','-console','-nointro','-nowriteconfig','-log',name+'.log','+exec','lab_controls.cfg','+developer','1','+map',mapname,'+exec',path.name]
  p=subprocess.Popen(command,cwd=ENGINE)
  try:p.wait(timeout=timeout)
  except subprocess.TimeoutExpired:p.terminate();p.wait(10);raise

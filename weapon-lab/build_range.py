@@ -18,25 +18,31 @@ def build(ensure=False):
     sys.path.insert(0,str(ROOT.parent/'vector-fields'))
     import build_cache
     tools=ROOT.parent/'asset-probe'/'sdhlt'/'sdhlt-v1.3.0'/'tools'/'Win64'
-    inputs=[Path(__file__),ROOT.parent/'asset-probe/generate_assets.py',
+    inputs=[Path(__file__),ROOT.parent/'asset-probe/generate_assets.py',ROOT.parent/'vector-fields/build_traversal_range.py',
             Path('F:/SteamLibrary/steamapps/common/Half-Life/valve/halflife.wad'),
             *[tools/f'sdHL{stage}_x64.exe' for stage in ('CSG','BSP','VIS','RAD')]]
     digest=build_cache.fingerprint(inputs)
     manifest=OUT/'build-cache.json';target=OUT/'vf_range.bsp'
     if ensure and build_cache.current(build_cache.read(manifest),digest):return target
     OUT.mkdir(parents=True,exist_ok=True)
-    brushes=[((-528,-528,-16),(528,528,0),'FIFTIES_FLR01'),
-             ((-528,-528,256),(528,528,272),'CRETE3_WALL01'),
-             ((-528,-528,0),(-512,528,256),'CRETE3_WALL01'),
-             ((512,-528,0),(528,528,256),'CRETE3_WALL01'),
-             ((-512,-528,0),(512,-512,256),'CRETE3_WALL01'),
-             ((-512,512,0),(512,528,256),'CRETE3_WALL01')]
+    brushes=[((-528,-1040,-32),(5392,1040,0),'FIFTIES_FLR01'),
+             ((-528,-1040,768),(5392,1040,800),'CRETE3_WALL01'),
+             ((-528,-1040,0),(-512,1040,800),'CRETE3_WALL01'),
+             ((5376,-1040,0),(5392,1040,800),'CRETE3_WALL01'),
+             ((-512,-1040,0),(5376,-1024,800),'CRETE3_WALL01'),
+             ((-512,1024,0),(5376,1040,800),'CRETE3_WALL01'),
+             # Shooting and movement bays share a wide, walkable doorway.
+             ((512,-1024,0),(528,128,256),'CRETE3_WALL01'),
+             ((512,384,0),(528,1024,256),'CRETE3_WALL01')]
+    from build_traversal_range import course_boxes
+    for lo,hi,texture in course_boxes():
+        brushes.append(((lo[0]+1280,lo[1],lo[2]),(hi[0]+1280,hi[1],hi[2]),texture))
     for i in range(6): brushes.append(((-450+40*i,100,0),(-410+40*i,220,16*(i+1)),'CRETE3_WALL01'))
     brushes += [((-120,100,0),(-40,220,96),'CRATE01'),
                 ((60,100,0),(140,220,96),'CRATE01'),
                 ((240,100,0),(320,220,128),'CRATE01'),
                 ((-40,-160,0),(40,-80,48),'CRATE01')]
-    text=entity({'classname':'worldspawn','message':'Vector Fields - Weapon Lab',
+    text=entity({'classname':'worldspawn','message':'Vector Fields - Combat et parcours',
                  'wad':'F:/SteamLibrary/steamapps/common/Half-Life/valve/halflife.wad'},
                 [asset.map_box(*b) for b in brushes])
     text+=entity({'classname':'info_player_start','origin':'-400 -400 40','angle':'45'})
@@ -49,6 +55,8 @@ def build(ensure=False):
     for x in [-350,0,350]:
         for y in [-350,0,350]:
             text+=entity({'classname':'light','origin':f'{x} {y} 220','_light':'255 230 200 500'})
+    for x in (900,1600,2300,3000,3700,4400,5100):
+        for y in (-700,0,700):text+=entity({'classname':'light','origin':f'{x} {y} 650','_light':'225 240 255 1100'})
     for x in [-300,-100,100,300]:
         text+=entity({'classname':'func_breakable','health':'150','material':'1'},
                     [asset.map_box((x-28,400,0),(x+28,440,80),'CRATE01')])

@@ -1,0 +1,20 @@
+{
+  "provider": "ElevenLabs",
+  "kind": "sfx",
+  "name": "Superconduction / head",
+  "created_utc": "2026-10-10T00:53:01.564995+00:00",
+  "request_sha256": "6aab105af788cf3383e37e206c0a3e29b21ae1081d1a83f7322eda79d0f45890",
+  "request": {
+    "text": "4-second dry close game SFX. A pumpkin-like head bursts: loud wet hollow pop, shell crunch, broad pulp splatter. Continue with dense falling wet droplets beneath a sustained icy high electrical singing whistle and fine crystalline ticks for 3.5 seconds. Fade only in the last 0.3 seconds. No voice, scream, music, gunshot or reverb.",
+    "duration_seconds": 4.0,
+    "prompt_influence": 0.65,
+    "loop": false,
+    "model_id": "eleven_text_to_sound_v2"
+  },
+  "endpoint": "/v1/sound-generation?output_format=mp3_44100_128",
+  "sha256": "2acb408868fe964f9ef393aa72ec16d7cdf4de2b01032ae2cde7e9bce3532ee7",
+  "bytes": 65245,
+  "text": "4-second dry close game SFX. A pumpkin-like head bursts: loud wet hollow pop, shell crunch, broad pulp splatter. Continue with dense falling wet droplets beneath a sustained icy high electrical singing whistle and fine crystalline ticks for 3.5 seconds. Fade only in the last 0.3 seconds. No voice, scream, music, gunshot or reverb.",
+  "request_id": null,
+  "reported_credit_cost": "40"
+}
