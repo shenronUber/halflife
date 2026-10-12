@@ -14,7 +14,7 @@ def run():
  assert len([e for e in rows if e.get('classname')=='vf_range_target'])==4
  assert not any(e.get('classname')=='cycler'and 'vf_tfc/'in e.get('model','')for e in rows)
  assert patch(source)==source
- s='wait 180\ndeveloper 1\ncon_notifytime 0\nvf_voice_subtitles 2\nfps_max 60\nweapon_9mmAR\nvf_reference 0\nwait 25\nvf_commit\nwait 25\nvf_ui_pointer 1220 40 1\nwait 3\nvf_ui_pointer 1220 40 0\nwait 15\n'
+ s='wait 180\ndeveloper 1\ncon_notifytime 0\nvf_voice_subtitles 2\ngl_vsync 0\nhost_framerate .016666667\nfps_max 60\nweapon_9mmAR\nvf_reference 0\nwait 25\nvf_commit\nwait 25\nvf_ui_pointer 1220 40 1\nwait 3\nvf_ui_pointer 1220 40 0\nwait 15\n'
  s+='cmd vf_range_aim 0\nwait 15\ncmd vf_range_info\nvf_range_client\nscreenshot scrshots/range_start.png\nwait 4\n'
  for i,e in enumerate(ELEMENTS):
   slot=i%4;s+=f'cmd vf_range_reset {slot}\ncmd vf_fx_profile {e}\nwait 4\ncmd vf_range_fire {slot} 5\nwait 6\necho FIVE_{e}\ncmd vf_range_info\nwait 4\ncmd vf_range_fire {slot} 1\nwait 20\necho PROC_{e}\ncmd vf_range_info\nvf_range_client\ncmd vf_range_aim {slot}\nwait 8\nscreenshot scrshots/proc_{e}.png\nwait 5\n'
