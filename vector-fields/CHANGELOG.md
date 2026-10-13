@@ -1,3 +1,11 @@
+## Commande de lancement commune et contrôles de démarrage — 2026-10-13
+
+- Le lanceur applique la graine et la variante avant une seule commande `map`. La commande redondante est retirée ; les configurations d'arrivée continuent de venir du registre des cartes.
+- Les tests natifs utilisent désormais cette commande de production pour `vf_modular` et `vf_tiles`, au lieu d'une copie de l'ancien lanceur. Ils contrôlent la première graine générée, les collisions, la variante mélangée et un tir avec l'arme reçue.
+- Huit tests unitaires supplémentaires couvrent les cartes du registre, les graines limites et invalides, les cartes importées, les configurations d'arrivée et le refus des installations non validées ou altérées.
+- Le test réseau des modules attend désormais la génération du serveur et la connexion confirmée des deux clients avant ses commandes de contrôle. Les sondes ne partent plus pendant le sign-on ; six tests unitaires couvrent l'attente, les marqueurs incomplets, l'arrêt d'un processus et le délai maximal.
+- Validation finale : 124 tests unitaires, 17 groupes C/C++ et 58 étapes réussies. Paquet `20261013-100010-e8358306` installé puis revérifié ; [rapport et cause du test réseau corrigé](docs/validation/launcher-hardening-2026-10-13.json).
+
 ## Modules jouables, menu de cartes et ambiances — 2026-10-13
 
 - F4 ouvre un menu commun pour les cartes locales, les huit variantes de modules et les cartes CS/TFC importées en exploration. Les descriptions restent des données ; les commandes de lancement n'utilisent que des identifiants validés.

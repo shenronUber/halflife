@@ -1,0 +1,167 @@
+================================================================================
+Xash3D FWGS 0.21 (4204, 9137964-dirty, master, win32-i386)
+Game started at Oct13 2026 [12:23.00]
+================================================================================
+Time to first frame: 1.420 seconds
+CRC e064baae is matched, get challenge, fragment size 1400
+LoadBackground: found steam background in base directory
+Reading config script file settings.scr
+Reading config script file user.scr
+Warning: unexpected end of sprites/hud.txt (257 should be 247)
+Unable to open commandmenu.txt
+execing peer.cfg
+execing peer.cfg
+Verifying and downloading resources...
+Setting up renderer...
+SKY:  vf_stormrt, vf_stormbk, vf_stormlf, vf_stormft, vf_stormup, vf_stormdn. done
+execing peer.cfg
+VoiceCapture_Init: error creating capture device (DirectSound CreateCaptureBuffer: Unknown DirectSound error (0x80004005))
+Warning: No microphone is available.
+Signon network traffic:  21.642 Kb from server, 1.573 Kb to server
+client connected at 2.56 sec
+VFAtmosphere texture: id=1 loaded=1
+VFAtmosphere texture: id=0 loaded=1
+Couldn't open file overviews/vf_tiles.txt. Using default values for overiew mode.
+Couldn't open file overviews/vf_tiles.txt. Using default values for overiew mode.
+VFAppearance state: player=1 mode=0
+VFR01 state: player=1 first=0 optic=0 feed=0
+VFState player=1 skins=182,182,182,182,182 weapon=0
+VFHeadgear state: player=1 raised=0 elapsed=0
+VFShot sync: player=1 code=0
+VFAppearance state: player=1 mode=0
+VFR01 state: player=1 first=0 optic=0 feed=0
+VFState player=1 skins=182,182,182,182,182 weapon=0
+VFHeadgear state: player=1 raised=0 elapsed=0
+VFShot sync: player=1 code=0
+VFStatus received: player=1 developer=0 active=0
+VFThirdPerson player=1 rig=models/vf_r01/r01_tp.mdl parts=17 scale=0.68 replace_carried=1
+VFAtmosphere texture: id=1 loaded=1
+VFAtmosphere texture: id=0 loaded=1
+execing peer.cfg
+VFAppearance state: player=1 mode=0
+VFR01 state: player=1 first=0 optic=0 feed=0
+VFState player=1 skins=182,182,182,182,182 weapon=0
+VFHeadgear state: player=1 raised=0 elapsed=0
+VFShot sync: player=1 code=0
+VFAppearance state: player=1 mode=0
+VFR01 state: player=1 first=0 optic=0 feed=0
+VFState player=1 skins=182,182,182,182,182 weapon=0
+VFHeadgear state: player=1 raised=0 elapsed=0
+VFShot sync: player=1 code=0
+VFAppearance state: player=1 mode=0
+VFR01 state: player=1 first=0 optic=0 feed=0
+VFState player=1 skins=182,182,182,182,182 weapon=0
+VFHeadgear state: player=1 raised=0 elapsed=0
+VFThirdPerson player=1 rig=models/vf_r01/r01_tp.mdl parts=17 scale=0.68 replace_carried=1
+VFAppearance state: player=1 mode=0
+VFR01 state: player=1 first=0 optic=0 feed=0
+VFState player=1 skins=182,182,182,182,182 weapon=0
+VFHeadgear state: player=1 raised=0 elapsed=0
+VFShot sync: player=1 code=0
+VFAppearance state: player=1 mode=0
+VFR01 state: player=1 first=0 optic=0 feed=0
+VFState player=1 skins=182,182,182,182,182 weapon=0
+VFHeadgear state: player=1 raised=0 elapsed=0
+VFShot sync: player=1 code=0
+VFAppearance state: player=1 mode=0
+VFR01 state: player=1 first=0 optic=0 feed=0
+VFState player=1 skins=182,182,182,182,182 weapon=0
+VFHeadgear state: player=1 raised=0 elapsed=0
+VFThirdPerson player=1 rig=models/vf_r01/r01_tp.mdl parts=17 scale=0.68 replace_carried=1
+execing peer.cfg
+execing peer.cfg
+VFVoice received: player=1 actor=viktor event=spawn clip=116 sample=vf_voices/viktor/spawn_0.wav
+execing peer.cfg
+VFAtmosphere texture: id=2 loaded=1
+execing peer.cfg
+execing peer.cfg
+execing peer.cfg
+execing peer.cfg
+execing peer.cfg
+execing peer.cfg
+execing peer.cfg
+execing peer.cfg
+execing peer.cfg
+execing peer.cfg
+execing peer.cfg
+execing peer.cfg
+execing peer.cfg
+execing peer.cfg
+execing peer.cfg
+execing peer.cfg
+execing peer.cfg
+execing peer.cfg
+execing peer.cfg
+execing peer.cfg
+execing peer.cfg
+VFStatus received: player=2 developer=0 active=0
+execing peer.cfg
+execing peer.cfg
+execing peer.cfg
+VFAppearance state: player=2 mode=0
+VFR01 state: player=2 first=0 optic=0 feed=0
+VFState player=2 skins=182,182,182,182,182 weapon=0
+VFHeadgear state: player=2 raised=0 elapsed=0
+VFShot sync: player=2 code=0
+VFThirdPerson player=2 rig=models/vf_r01/r01_tp.mdl parts=17 scale=0.68 replace_carried=1
+execing peer.cfg
+VFAppearance state: player=2 mode=0
+VFR01 state: player=2 first=0 optic=0 feed=0
+VFState player=2 skins=182,182,182,182,182 weapon=0
+VFHeadgear state: player=2 raised=0 elapsed=0
+VFShot sync: player=2 code=0
+VFAppearance state: player=2 mode=0
+VFR01 state: player=2 first=0 optic=0 feed=0
+VFState player=2 skins=182,182,182,182,182 weapon=0
+VFHeadgear state: player=2 raised=0 elapsed=0
+VFThirdPerson player=2 rig=models/vf_r01/r01_tp.mdl parts=17 scale=0.68 replace_carried=1
+execing peer.cfg
+PEER_READY 
+VFAtmosphere active=1 enabled=1 quality=2 loaded=3 banks=50 time=11.045 wind=419.708,121.495 flash=0.000 cpu_mean_ms=0.0446 frames=291 collision=0
+VFModular seed=6 cells=0,1,1,0,1,2,0,3,3 modules=4 cell_size=1280 gap=256 extent=4352 bridges=2 wallruns=5 pillars=1 joins=5 covers=0 active=32
+VFModular edge=0 cells=0,1 type=2 pillar=0
+VFModular edge=1 cells=1,2 type=0 pillar=0
+VFModular edge=2 cells=3,4 type=2 pillar=0
+VFModular edge=3 cells=4,5 type=2 pillar=0
+VFModular edge=4 cells=6,7 type=2 pillar=0
+VFModular edge=5 cells=7,8 type=0 pillar=0
+VFModular edge=6 cells=0,3 type=0 pillar=0
+VFModular edge=7 cells=1,4 type=0 pillar=0
+VFModular edge=8 cells=2,5 type=2 pillar=0
+VFModular edge=9 cells=3,6 type=0 pillar=0
+VFModular edge=10 cells=4,7 type=1 pillar=0
+VFModular edge=11 cells=5,8 type=1 pillar=1
+VFTiles module=0 mask=73 form=I room=7 forced=-1
+VFTiles module=1 mask=22 form=L room=0 forced=-1
+VFTiles module=2 mask=32 form=mono room=2 forced=-1
+VFTiles module=3 mask=384 form=domino room=4 forced=-1
+VFModular trace edge=0 floor=0 wall=1 type=2
+VFModular trace edge=1 floor=1 wall=0 type=0
+VFModular trace edge=2 floor=0 wall=1 type=2
+VFModular trace edge=3 floor=0 wall=1 type=2
+VFModular trace edge=4 floor=0 wall=1 type=2
+VFModular trace edge=5 floor=1 wall=0 type=0
+VFModular trace edge=6 floor=1 wall=0 type=0
+VFModular trace edge=7 floor=1 wall=0 type=0
+VFModular trace edge=8 floor=0 wall=1 type=2
+VFModular trace edge=9 floor=1 wall=0 type=0
+VFModular trace edge=10 floor=1 wall=0 type=1
+VFModular trace edge=11 floor=1 wall=0 type=1
+VFModular check seed=6 candidates=141 mismatches=0
+VFAppearance state: player=2 mode=0
+VFR01 state: player=2 first=0 optic=0 feed=0
+VFState player=2 skins=182,182,182,182,182 weapon=0
+VFHeadgear state: player=2 raised=0 elapsed=0
+VFShot sync: player=2 code=0
+VFAppearance state: player=2 mode=0
+VFR01 state: player=2 first=0 optic=0 feed=0
+VFState player=2 skins=182,182,182,182,182 weapon=0
+VFHeadgear state: player=2 raised=0 elapsed=0
+VFThirdPerson player=2 rig=models/vf_r01/r01_tp.mdl parts=17 scale=0.68 replace_carried=1
+Viktor Volkov: Ladno. Let's finish this.
+VFVoice received: player=2 actor=nikos event=spawn clip=194 sample=vf_voices/nikos/spawn_0.wav
+
+================================================================================
+Xash3D FWGS 0.21 (4204, 9137964-dirty, master, win32-i386)
+Stopped with reason "command" at Oct13 2026 [12:23.11]
+================================================================================

@@ -12,6 +12,10 @@ Les empreintes des sources et du paquet sont revérifiées après les tests. Le 
 
 Les résultats sont liés aux empreintes du paquet dans `vf/release-bundle.json`. Ne pas publier en copiant une DLL à la main, ni réutiliser une preuve provenant d'un ancien candidat.
 
+`build_release.launch_command` construit la commande commune au jeu et aux essais de démarrage. La graine et la variante sont appliquées avant une unique commande `map`, puis le registre choisit la configuration d'arrivée. Le test natif lance réellement `vf_modular` et `vf_tiles` par ce chemin, vérifie la première graine, les collisions et un tir avec l'arme reçue.
+
+Le test réseau des intérieurs utilise `native_workspace.wait_for_log` pour observer la génération du serveur, le sign-on et l'état reçu de chaque joueur. Le premier reste connecté jusqu'à l'arrivée du second ; les sondes ne sont libérées qu'ensuite. Cette attente a un délai maximal et échoue immédiatement si un processus quitte, au lieu de dépendre du nombre d'images de démarrage.
+
 L'empreinte des entrées inclut le protocole `network/delta.lst`, les patches moteur, les ressources et bibliothèques de compilation. Le contrôle du build installé compare aussi l'identité du moteur. Un fichier source retiré est également retiré du cache de compilation.
 
 La rétention garde le candidat installé, un précédent candidat validé et un ancien mod pour retour arrière. Les autres candidats, y compris les compilations échouées, sont retirés sous le verrou de publication, après copie des rapports, sauvegardes et d'un échantillon de captures dans `build/retention`. Les ateliers, sources Blender et textures ne font pas partie des chemins nettoyés. `python vector-fields/release_retention.py` affiche le plan ; `--apply` l'applique et compacte les preuves de sessions retirées à 32 captures par cas. Les rapports et sauvegardes restent complets. Les séquences complètes publiées par les tests dans leurs dossiers de résultats restent disponibles. Les futures sessions retirées suivent cette même limite, sans recopier tous les fichiers avant de les réduire.

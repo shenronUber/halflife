@@ -1,0 +1,701 @@
+{
+  "passed": true,
+  "checked_utc": "2026-10-13T10:31:34.671632+00:00",
+  "version": "0.20.7",
+  "installed_release": "20261013-100010-e8358306",
+  "source_identity": "c92361774ae1c651a3cae85f0bbdd46cd08adc7e52369ead6d39b1f4a9c610f6",
+  "engine_source_identity": "25e5ddda777b757ffe62feaf64c00b23ee0034784736ff98891b649e3e9b4959",
+  "installed_files_verified": 6627,
+  "changes": [
+    "Shared startup command with map-registry arrival configuration, choices before one map request and valid integer seeds.",
+    "Native startup gate consumes the production command for both modular maps.",
+    "Bounded log-based readiness replaces the tile network frame delay; both peers stay connected until state is received."
+  ],
+  "unit_tests": 124,
+  "new_unit_tests": 14,
+  "policy_groups": 17,
+  "full_gate": {
+    "suites": [
+      "unit",
+      "policy",
+      "assets",
+      "integration"
+    ],
+    "passed": true,
+    "results": [
+      {
+        "suite": "unit",
+        "test": "validate.py",
+        "passed": true,
+        "seconds": 11.3
+      },
+      {
+        "suite": "unit",
+        "test": "model_contract.py",
+        "passed": true,
+        "seconds": 0.06
+      },
+      {
+        "suite": "unit",
+        "test": "contract_documentation.py",
+        "passed": true,
+        "seconds": 0.06
+      },
+      {
+        "suite": "unit",
+        "test": "tests/status_renderer_update_test.py",
+        "passed": true,
+        "seconds": 4.83
+      },
+      {
+        "suite": "policy",
+        "test": "cpp_tests.py",
+        "passed": true,
+        "seconds": 41.0
+      },
+      {
+        "suite": "assets",
+        "test": "tests/tile_laboratory_assets_test.py",
+        "passed": true,
+        "seconds": 0.73
+      },
+      {
+        "suite": "assets",
+        "test": "tests/atmosphere_assets_test.py",
+        "passed": true,
+        "seconds": 0.64
+      },
+      {
+        "suite": "assets",
+        "test": "tests/modular_ambience_test.py",
+        "passed": true,
+        "seconds": 0.78
+      },
+      {
+        "suite": "assets",
+        "test": "tests/headgear_assets_test.py",
+        "passed": true,
+        "seconds": 20.56
+      },
+      {
+        "suite": "assets",
+        "test": "tests/headgear_feedback_test.py",
+        "passed": true,
+        "seconds": 2.27
+      },
+      {
+        "suite": "assets",
+        "test": "tests/weapon_inspect_clearance_test.py",
+        "passed": true,
+        "seconds": 3.27
+      },
+      {
+        "suite": "assets",
+        "test": "tests/weapon_melee_geometry_test.py",
+        "passed": true,
+        "seconds": 2.03
+      },
+      {
+        "suite": "assets",
+        "test": "tests/new_personas_test.py",
+        "passed": true,
+        "seconds": 0.55
+      },
+      {
+        "suite": "assets",
+        "test": "tests/artisan_sets_test.py",
+        "passed": true,
+        "seconds": 0.55
+      },
+      {
+        "suite": "assets",
+        "test": "tests/test_room_assets_test.py",
+        "passed": true,
+        "seconds": 0.08
+      },
+      {
+        "suite": "assets",
+        "test": "tests/fragment_finish_assets_test.py",
+        "passed": true,
+        "seconds": 0.19
+      },
+      {
+        "suite": "assets",
+        "test": "tests/death_sounds_test.py",
+        "passed": true,
+        "seconds": 1.94
+      },
+      {
+        "suite": "assets",
+        "test": "tests/death_motion_test.py",
+        "passed": true,
+        "seconds": 1.12
+      },
+      {
+        "suite": "assets",
+        "test": "tests/death_atlas_test.py",
+        "passed": true,
+        "seconds": 0.28
+      },
+      {
+        "suite": "assets",
+        "test": "tests/external_death_animations_test.py",
+        "passed": true,
+        "seconds": 4.41
+      },
+      {
+        "suite": "assets",
+        "test": "tests/death_visual_native_test.py",
+        "passed": true,
+        "seconds": 1.19
+      },
+      {
+        "suite": "assets",
+        "test": "tests/wound_textures_test.py",
+        "passed": true,
+        "seconds": 7.98
+      },
+      {
+        "suite": "assets",
+        "test": "tests/death_voice_assets_test.py",
+        "passed": true,
+        "seconds": 0.42
+      },
+      {
+        "suite": "assets",
+        "test": "tests/status_decals_assets_test.py",
+        "passed": true,
+        "seconds": 2.06
+      },
+      {
+        "suite": "assets",
+        "test": "tests/model_contract_assets_test.py",
+        "passed": true,
+        "seconds": 0.31
+      },
+      {
+        "suite": "assets",
+        "test": "tests/traversal_assets_test.py",
+        "passed": true,
+        "seconds": 5.83
+      },
+      {
+        "suite": "assets",
+        "test": "tests/first_person_test.py",
+        "passed": true,
+        "seconds": 1.3
+      },
+      {
+        "suite": "assets",
+        "test": "tests/operator_rig_test.py",
+        "passed": true,
+        "seconds": 1.25
+      },
+      {
+        "suite": "assets",
+        "test": "tests/reference_extensions_test.py",
+        "passed": true,
+        "seconds": 11.03
+      },
+      {
+        "suite": "assets",
+        "test": "tests/reference_chassis_test.py",
+        "passed": true,
+        "seconds": 6.19
+      },
+      {
+        "suite": "assets",
+        "test": "tests/r01_fitted_assets_test.py",
+        "passed": true,
+        "seconds": 0.5
+      },
+      {
+        "suite": "assets",
+        "test": "tests/r01_finish_revision_test.py",
+        "passed": true,
+        "seconds": 6.11
+      },
+      {
+        "suite": "assets",
+        "test": "tests/reference_themes_test.py",
+        "passed": true,
+        "seconds": 4.31
+      },
+      {
+        "suite": "assets",
+        "test": "tests/reference_platform_test.py",
+        "passed": true,
+        "seconds": 21.36
+      },
+      {
+        "suite": "assets",
+        "test": "tests/foregrip_assets_test.py",
+        "passed": true,
+        "seconds": 3.19
+      },
+      {
+        "suite": "assets",
+        "test": "tests/third_person_assets_test.py",
+        "passed": true,
+        "seconds": 5.08
+      },
+      {
+        "suite": "assets",
+        "test": "tests/weapon_fx_test.py",
+        "passed": true,
+        "seconds": 0.3
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 57.23
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 78.61
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 72.22
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 36.83
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 40.89
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 42.72
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 54.69
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 86.72
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 80.06
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 24.28
+      },
+      {
+        "suite": "integration",
+        "test": "tests/test_room_native_test.py",
+        "passed": true,
+        "seconds": 75.94
+      },
+      {
+        "suite": "integration",
+        "test": "tests/combined_room_native_test.py",
+        "passed": true,
+        "seconds": 84.3
+      },
+      {
+        "suite": "integration",
+        "test": "tests/modular_native_test.py",
+        "passed": true,
+        "seconds": 72.02
+      },
+      {
+        "suite": "integration",
+        "test": "tests/modular_multiplayer_test.py",
+        "passed": true,
+        "seconds": 33.56
+      },
+      {
+        "suite": "integration",
+        "test": "tests/modular_launch_test.py",
+        "passed": true,
+        "seconds": 12.31
+      },
+      {
+        "suite": "integration",
+        "test": "tests/tile_laboratory_native_test.py",
+        "passed": true,
+        "seconds": 155.2
+      },
+      {
+        "suite": "integration",
+        "test": "tests/tile_laboratory_network_test.py",
+        "passed": true,
+        "seconds": 36.47
+      },
+      {
+        "suite": "integration",
+        "test": "tests/atmosphere_native_test.py",
+        "passed": true,
+        "seconds": 32.42
+      },
+      {
+        "suite": "integration",
+        "test": "tests/modular_ambience_test.py",
+        "passed": true,
+        "seconds": 27.66
+      },
+      {
+        "suite": "integration",
+        "test": "tests/pose_cache_native_test.py",
+        "passed": true,
+        "seconds": 149.36
+      },
+      {
+        "suite": "integration",
+        "test": "tests/current_release_test.py",
+        "passed": true,
+        "seconds": 92.66
+      }
+    ]
+  },
+  "gate_log_sha256": "8249edc138df36baa99ac6b2825674337a2fba97cb843da2b7f5d7bb4b807ee9",
+  "startup_cases": [
+    {
+      "map": "vf_modular",
+      "passed": true,
+      "exit_code": 0,
+      "seed": 42,
+      "command": [
+        "G:\\Half life Project\\vector-fields\\build\\releases\\20261013-100010-e8358306\\engine\\xash3d.exe",
+        "-nowriteconfig",
+        "-dev",
+        "1",
+        "-port",
+        "51857",
+        "-clientport",
+        "51858",
+        "-log",
+        "vf_modular-launch-smoke.log",
+        "+sv_cheats",
+        "1",
+        "+maxplayers",
+        "1",
+        "-ip",
+        "127.0.0.1",
+        "-noip6",
+        "-rodir",
+        "F:/SteamLibrary/steamapps/common/Half-Life",
+        "-game",
+        "vf_visual",
+        "-windowed",
+        "-width",
+        "1280",
+        "-height",
+        "720",
+        "-nointro",
+        "+exec",
+        "lab_controls.cfg",
+        "+vf_modular_seed",
+        "42",
+        "+map",
+        "vf_modular",
+        "+exec",
+        "vf_modular_start.cfg",
+        "+exec",
+        "modular_launch_smoke.cfg"
+      ],
+      "clips": [
+        25,
+        24
+      ],
+      "observed_seeds": [
+        42,
+        42
+      ],
+      "map_requests": 1,
+      "files": {
+        "vector-fields\\build\\releases\\20261013-100010-e8358306\\engine\\vf_visual\\dlls\\hl.dll": "b369a3fb7dd012ddead3be7c1a11fe46d3dc0e2c8dd8327e4733d7da7e88e7ec",
+        "vector-fields\\build\\releases\\20261013-100010-e8358306\\engine\\vf_visual\\cl_dlls\\client.dll": "a4a507baec7814a820a977fb8f43e0a890c17a9ff05e384c13e0f8bab342ff90",
+        "vector-fields\\build\\releases\\20261013-100010-e8358306\\engine\\vf_visual\\maps\\vf_modular.bsp": "8a4328601ab5efb5c41f7ccd61cc25341f39c876f0017792f1ab336a8c55d785"
+      }
+    },
+    {
+      "map": "vf_tiles",
+      "passed": true,
+      "exit_code": 0,
+      "seed": 42,
+      "command": [
+        "G:\\Half life Project\\vector-fields\\build\\releases\\20261013-100010-e8358306\\engine\\xash3d.exe",
+        "-nowriteconfig",
+        "-dev",
+        "1",
+        "-port",
+        "51859",
+        "-clientport",
+        "51860",
+        "-log",
+        "vf_tiles-launch-smoke.log",
+        "+sv_cheats",
+        "1",
+        "+maxplayers",
+        "1",
+        "-ip",
+        "127.0.0.1",
+        "-noip6",
+        "-rodir",
+        "F:/SteamLibrary/steamapps/common/Half-Life",
+        "-game",
+        "vf_visual",
+        "-windowed",
+        "-width",
+        "1280",
+        "-height",
+        "720",
+        "-nointro",
+        "+exec",
+        "lab_controls.cfg",
+        "+vf_tiles_variant",
+        "-1",
+        "+vf_modular_seed",
+        "42",
+        "+map",
+        "vf_tiles",
+        "+exec",
+        "vf_tiles_start.cfg",
+        "+exec",
+        "modular_launch_smoke.cfg"
+      ],
+      "clips": [
+        25,
+        24
+      ],
+      "observed_seeds": [
+        42,
+        42
+      ],
+      "map_requests": 1,
+      "files": {
+        "vector-fields\\build\\releases\\20261013-100010-e8358306\\engine\\vf_visual\\dlls\\hl.dll": "b369a3fb7dd012ddead3be7c1a11fe46d3dc0e2c8dd8327e4733d7da7e88e7ec",
+        "vector-fields\\build\\releases\\20261013-100010-e8358306\\engine\\vf_visual\\cl_dlls\\client.dll": "a4a507baec7814a820a977fb8f43e0a890c17a9ff05e384c13e0f8bab342ff90",
+        "vector-fields\\build\\releases\\20261013-100010-e8358306\\engine\\vf_visual\\maps\\vf_tiles.bsp": "93f7ac6db629ded811eef1ad2cb770350b4177d932e85a734370e2ee03f9d6bf"
+      }
+    }
+  ],
+  "network_readiness": [
+    {
+      "peer": 0,
+      "connected_line": 21,
+      "player_state_line": 28,
+      "probe_line": 119,
+      "sha256": "2d7b09f221ca2b54a340a38fc52ae804c84da0ff86214387731436436dc5d6c2"
+    },
+    {
+      "peer": 1,
+      "connected_line": 21,
+      "player_state_line": 33,
+      "probe_line": 69,
+      "sha256": "030c7ac261eb9be007978612294c4735ba25cdc2ad488f656cf7988afcb3f6f1"
+    }
+  ],
+  "initial_failure": {
+    "passed": false,
+    "candidate": "20261013-092822-2769960f",
+    "failure": "tile network probe executed before sign-on",
+    "probe_line": 5,
+    "connection_line": 13,
+    "excerpt": [
+      "================================================================================",
+      "Xash3D FWGS 0.21 (4204, 9137964-dirty, master, win32-i386)",
+      "Game started at Oct13 2026 [11:52.00]",
+      "================================================================================",
+      "PEER_READY ",
+      "VFAtmosphere active=0 enabled=1 quality=2 loaded=0 banks=0 time=0.000 wind=0.000,0.000 flash=0.000 cpu_mean_ms=0.0000 frames=0 collision=0",
+      "Verifying and downloading resources...",
+      "Setting up renderer...",
+      "SKY:  vf_stormrt, vf_stormbk, vf_stormlf, vf_stormft, vf_stormup, vf_stormdn. done",
+      "VoiceCapture_Init: error creating capture device (DirectSound CreateCaptureBuffer: Unknown DirectSound error (0x80004005))",
+      "Warning: No microphone is available.",
+      "Signon network traffic:  21.278 Kb from server, 2.322 Kb to server",
+      "client connected at 2.43 sec",
+      "VFAtmosphere texture: id=1 loaded=1",
+      "VFAtmosphere texture: id=0 loaded=1",
+      "Couldn't open file overviews/vf_tiles.txt. Using default values for overiew mode.",
+      "Couldn't open file overviews/vf_tiles.txt. Using default values for overiew mode.",
+      "VFAppearance state: player=1 mode=0",
+      "VFR01 state: player=1 first=0 optic=0 feed=0",
+      "VFState player=1 skins=182,182,182,182,182 weapon=0"
+    ],
+    "fix": "Wait for server generation and both received player states before releasing probes."
+  },
+  "pose_benchmark": {
+    "passed": true,
+    "rows": [
+      {
+        "clients": 2,
+        "queries": 2048,
+        "requests": 4096,
+        "enabled": 0,
+        "milliseconds": 66.9178,
+        "hits": 0,
+        "evaluations": 4096
+      },
+      {
+        "clients": 2,
+        "queries": 2048,
+        "requests": 4096,
+        "enabled": 1,
+        "milliseconds": 2.1382,
+        "hits": 4094,
+        "evaluations": 2
+      },
+      {
+        "clients": 2,
+        "queries": 2048,
+        "requests": 4096,
+        "enabled": 1,
+        "milliseconds": 2.115,
+        "hits": 4094,
+        "evaluations": 2
+      },
+      {
+        "clients": 2,
+        "queries": 2048,
+        "requests": 4096,
+        "enabled": 0,
+        "milliseconds": 64.3883,
+        "hits": 0,
+        "evaluations": 4096
+      },
+      {
+        "clients": 2,
+        "queries": 2048,
+        "requests": 4096,
+        "enabled": 0,
+        "milliseconds": 64.1109,
+        "hits": 0,
+        "evaluations": 4096
+      },
+      {
+        "clients": 2,
+        "queries": 2048,
+        "requests": 4096,
+        "enabled": 1,
+        "milliseconds": 2.1172,
+        "hits": 4094,
+        "evaluations": 2
+      },
+      {
+        "clients": 2,
+        "queries": 2048,
+        "requests": 4096,
+        "enabled": 1,
+        "milliseconds": 2.1461,
+        "hits": 4094,
+        "evaluations": 2
+      },
+      {
+        "clients": 2,
+        "queries": 2048,
+        "requests": 4096,
+        "enabled": 0,
+        "milliseconds": 65.2269,
+        "hits": 0,
+        "evaluations": 4096
+      },
+      {
+        "clients": 2,
+        "queries": 2048,
+        "requests": 4096,
+        "enabled": 0,
+        "milliseconds": 66.0093,
+        "hits": 0,
+        "evaluations": 4096
+      },
+      {
+        "clients": 2,
+        "queries": 2048,
+        "requests": 4096,
+        "enabled": 1,
+        "milliseconds": 2.1139,
+        "hits": 4094,
+        "evaluations": 2
+      },
+      {
+        "clients": 2,
+        "queries": 2048,
+        "requests": 4096,
+        "enabled": 1,
+        "milliseconds": 2.136,
+        "hits": 4094,
+        "evaluations": 2
+      },
+      {
+        "clients": 2,
+        "queries": 2048,
+        "requests": 4096,
+        "enabled": 0,
+        "milliseconds": 68.0322,
+        "hits": 0,
+        "evaluations": 4096
+      },
+      {
+        "clients": 2,
+        "queries": 2048,
+        "requests": 4096,
+        "enabled": 0,
+        "milliseconds": 68.5231,
+        "hits": 0,
+        "evaluations": 4096
+      },
+      {
+        "clients": 2,
+        "queries": 2048,
+        "requests": 4096,
+        "enabled": 1,
+        "milliseconds": 2.106,
+        "hits": 4094,
+        "evaluations": 2
+      },
+      {
+        "clients": 2,
+        "queries": 2048,
+        "requests": 4096,
+        "enabled": 1,
+        "milliseconds": 2.1039,
+        "hits": 4094,
+        "evaluations": 2
+      },
+      {
+        "clients": 2,
+        "queries": 2048,
+        "requests": 4096,
+        "enabled": 0,
+        "milliseconds": 68.8958,
+        "hits": 0,
+        "evaluations": 4096
+      }
+    ],
+    "median_batch_ms": {
+      "0": 66.0093,
+      "1": 2.115
+    },
+    "speedup": 31.21007092198581,
+    "scope": "4096 identical-state server pose requests across two real loopback players; excludes network latency, collision planes and rendering. Cache-off already includes the removed redundant torso evaluation."
+  },
+  "publication_scope": "Source, tests, documentation and compact evidence; generated candidate/runtime/tool trees remain local."
+}

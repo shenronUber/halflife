@@ -75,6 +75,21 @@ def file_lock(path,timeout=60):
    else:fcntl.flock(handle.fileno(),fcntl.LOCK_UN)
 
 
+def wait_for_log(path,markers,processes=(),timeout=60):
+ """Wait for observed engine state, fail on process exit or a bounded timeout."""
+ path=Path(path);markers=(markers,)if isinstance(markers,str)else tuple(markers)
+ if not markers or any(not marker for marker in markers):raise ValueError('Readiness needs nonempty log markers')
+ deadline=time.monotonic()+timeout;text=''
+ while time.monotonic()<deadline:
+  for process in processes:
+   code=process.poll()
+   if code is not None:raise RuntimeError(f'Engine exited with code {code} before readiness: {path}')
+  if path.is_file():text=path.read_text(encoding='utf-8',errors='replace')
+  if all(marker in text for marker in markers):return text
+  time.sleep(.05)
+ missing=[marker for marker in markers if marker not in text]
+ raise TimeoutError(f'Engine readiness timed out: {path}; missing {missing}\n'+text[-1500:])
+
 def port():
  """Let the OS choose a free local UDP port for an isolated native launch."""
  with socket.socket(socket.AF_INET,socket.SOCK_DGRAM) as bound:

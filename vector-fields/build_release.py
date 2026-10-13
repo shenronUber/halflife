@@ -186,20 +186,25 @@ def ensure_published(force=False):
   if not force and installed_current():print('Verified installed release is current.',flush=True)
   else:publish(create())
   retain_releases()
-def launch(mapname='vf_range',reference=False,seed=0):
+def launch_command(mapname='vf_range',reference=False,seed=0,engine=None):
  from game_profiles import MAPS,arrival_config
- if mapname not in MAPS and not(LIVE/'vf_visual/maps'/(mapname+'.bsp')).exists():raise ValueError('Unknown map: '+mapname)
+ engine=LIVE if engine is None else Path(engine)
+ if mapname not in MAPS and not(engine/'vf_visual/maps'/(mapname+'.bsp')).is_file():raise ValueError('Unknown map: '+mapname)
+ if mapname in('vf_modular','vf_tiles')and(type(seed)is not int or not 0<=seed<=2147483647):raise ValueError('seed must be 0..2147483647')
+ command=[str(engine/'xash3d.exe'),'-ip','127.0.0.1','-noip6','-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_visual','-windowed','-width','1280','-height','720','-nointro','+exec','lab_controls.cfg']
+ # Xash initializes the game DLL before processing startup commands. Apply the
+ # server's choices before its sole map request instead of scheduling it twice.
+ if mapname=='vf_tiles':command+=['+vf_tiles_variant','-1']
+ if mapname in('vf_modular','vf_tiles'):command+=['+vf_modular_seed',str(seed)]
+ return command+['+map',mapname,'+exec',arrival_config(mapname,reference)+'.cfg']
+
+def launch(mapname='vf_range',reference=False,seed=0):
+ command=launch_command(mapname,reference,seed)
  with file_lock(LOCK):
   if not RECEIPT.exists()or not read(RECEIPT).get('passed'):raise RuntimeError('Prepare the validated release first.')
   for name,value in read(RECEIPT)['files'].items():
    path=LIVE/name
    if not path.is_file()or sha(path)!=value:raise RuntimeError('Installed release differs; use the normal launcher to rebuild: '+name)
-  cfg=arrival_config(mapname,reference)+'.cfg'
-  command=[str(LIVE/'xash3d.exe'),'-ip','127.0.0.1','-noip6','-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_visual','-windowed','-width','1280','-height','720','-nointro','+exec','lab_controls.cfg']
-  if mapname=='vf_tiles':command+=['+vf_tiles_variant','-1']
-  command+=['+map',mapname]
-  if mapname in('vf_modular','vf_tiles'):command+=['+vf_modular_seed',str(seed),'+map',mapname]
-  command+=['+exec',cfg]
   child=subprocess.Popen(command,cwd=LIVE,creationflags=getattr(subprocess,'CREATE_NO_WINDOW',0))
  return child.wait()
 if __name__=='__main__':

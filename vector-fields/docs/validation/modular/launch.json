@@ -1,0 +1,126 @@
+{
+  "passed": true,
+  "mod": "vf_visual",
+  "cases": [
+    {
+      "map": "vf_modular",
+      "passed": true,
+      "exit_code": 0,
+      "seed": 42,
+      "command": [
+        "G:\\Half life Project\\vector-fields\\build\\releases\\20261013-100010-e8358306\\engine\\xash3d.exe",
+        "-nowriteconfig",
+        "-dev",
+        "1",
+        "-port",
+        "51857",
+        "-clientport",
+        "51858",
+        "-log",
+        "vf_modular-launch-smoke.log",
+        "+sv_cheats",
+        "1",
+        "+maxplayers",
+        "1",
+        "-ip",
+        "127.0.0.1",
+        "-noip6",
+        "-rodir",
+        "F:/SteamLibrary/steamapps/common/Half-Life",
+        "-game",
+        "vf_visual",
+        "-windowed",
+        "-width",
+        "1280",
+        "-height",
+        "720",
+        "-nointro",
+        "+exec",
+        "lab_controls.cfg",
+        "+vf_modular_seed",
+        "42",
+        "+map",
+        "vf_modular",
+        "+exec",
+        "vf_modular_start.cfg",
+        "+exec",
+        "modular_launch_smoke.cfg"
+      ],
+      "clips": [
+        25,
+        24
+      ],
+      "observed_seeds": [
+        42,
+        42
+      ],
+      "map_requests": 1,
+      "files": {
+        "vector-fields\\build\\releases\\20261013-100010-e8358306\\engine\\vf_visual\\dlls\\hl.dll": "b369a3fb7dd012ddead3be7c1a11fe46d3dc0e2c8dd8327e4733d7da7e88e7ec",
+        "vector-fields\\build\\releases\\20261013-100010-e8358306\\engine\\vf_visual\\cl_dlls\\client.dll": "a4a507baec7814a820a977fb8f43e0a890c17a9ff05e384c13e0f8bab342ff90",
+        "vector-fields\\build\\releases\\20261013-100010-e8358306\\engine\\vf_visual\\maps\\vf_modular.bsp": "8a4328601ab5efb5c41f7ccd61cc25341f39c876f0017792f1ab336a8c55d785"
+      }
+    },
+    {
+      "map": "vf_tiles",
+      "passed": true,
+      "exit_code": 0,
+      "seed": 42,
+      "command": [
+        "G:\\Half life Project\\vector-fields\\build\\releases\\20261013-100010-e8358306\\engine\\xash3d.exe",
+        "-nowriteconfig",
+        "-dev",
+        "1",
+        "-port",
+        "51859",
+        "-clientport",
+        "51860",
+        "-log",
+        "vf_tiles-launch-smoke.log",
+        "+sv_cheats",
+        "1",
+        "+maxplayers",
+        "1",
+        "-ip",
+        "127.0.0.1",
+        "-noip6",
+        "-rodir",
+        "F:/SteamLibrary/steamapps/common/Half-Life",
+        "-game",
+        "vf_visual",
+        "-windowed",
+        "-width",
+        "1280",
+        "-height",
+        "720",
+        "-nointro",
+        "+exec",
+        "lab_controls.cfg",
+        "+vf_tiles_variant",
+        "-1",
+        "+vf_modular_seed",
+        "42",
+        "+map",
+        "vf_tiles",
+        "+exec",
+        "vf_tiles_start.cfg",
+        "+exec",
+        "modular_launch_smoke.cfg"
+      ],
+      "clips": [
+        25,
+        24
+      ],
+      "observed_seeds": [
+        42,
+        42
+      ],
+      "map_requests": 1,
+      "files": {
+        "vector-fields\\build\\releases\\20261013-100010-e8358306\\engine\\vf_visual\\dlls\\hl.dll": "b369a3fb7dd012ddead3be7c1a11fe46d3dc0e2c8dd8327e4733d7da7e88e7ec",
+        "vector-fields\\build\\releases\\20261013-100010-e8358306\\engine\\vf_visual\\cl_dlls\\client.dll": "a4a507baec7814a820a977fb8f43e0a890c17a9ff05e384c13e0f8bab342ff90",
+        "vector-fields\\build\\releases\\20261013-100010-e8358306\\engine\\vf_visual\\maps\\vf_tiles.bsp": "93f7ac6db629ded811eef1ad2cb770350b4177d932e85a734370e2ee03f9d6bf"
+      }
+    }
+  ]
+}
