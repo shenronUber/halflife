@@ -4,7 +4,7 @@ La carte `vf_range` comporte quatre cibles GIGN utilisant les quatorze tenues du
 
 ## Essayer
 
-Relancer **Jouer - Vector Fields.cmd**, puis **F4** pour revenir dans la salle. Choisir un vecteur dans **F3 > Weapon FX / R1**, fermer le panneau et tirer avec le R1. **J** provoque les personnages proches : la cible vivante la plus proche qui entend le joueur lui rÃ©pond aprÃ¨s sa rÃ©plique. Le son est positionnel. Pour afficher aussi les sous-titres des cibles, saisir `vf_voice_subtitles 2` ; `1` conserve les seuls sous-titres du joueur, `0` les masque.
+Relancer **Jouer - Vector Fields.cmd**, puis **F4 → Combat et parcours → Lancer** pour revenir dans la salle. Choisir un vecteur dans **F3 > Weapon FX / R1**, fermer le panneau et tirer avec le R1. **J** provoque les personnages proches : la cible vivante la plus proche qui entend le joueur lui rÃ©pond aprÃ¨s sa rÃ©plique. Le son est positionnel. Pour afficher aussi les sous-titres des cibles, saisir `vf_voice_subtitles 2` ; `1` conserve les seuls sous-titres du joueur, `0` les masque.
 
 Au-dessus de chaque cible figurent son numÃ©ro, sa voix, sa santÃ© et la progression vers le dÃ©clenchement. Une fois l'Ã©tat actif, un halo, des particules et un compte Ã  rebours le montrent sur son corps. Les huit Ã©tats sont Hydro, Electro, Cryo, Thermal, Toxic, Corrosion, Sonic et Kinetic.
 

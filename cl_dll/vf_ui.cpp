@@ -52,7 +52,7 @@ bool Key(int down,int key){
  if(key==K_MWHEELUP||key==K_MWHEELDOWN){if(down)wheel+=key==K_MWHEELUP?1:-1;return true;}
  if(modeMenu&&key==K_ESCAPE){if(down)modeMenu=false;return true;}
  if(guide&&key==K_ESCAPE){if(down)guide=false;return true;}
- if(guide&&key!=K_F1&&key!=K_F2&&key!=K_F3&&key!=K_F6&&key!=K_F7&&key!=K_F9&&key!=K_F8&&key!=K_F10&&key!=K_F11)return true;
+ if(guide&&key!=K_F1&&key!=K_F2&&key!=K_F3&&key!=K_F4&&key!=K_F6&&key!=K_F7&&key!=K_F9&&key!=K_F8&&key!=K_F10&&key!=K_F11)return true;
  return false;
 }
 void Box(float x,float y,float w,float h,Color c,int a){if(w<=0||h<=0)return;gEngfuncs.pfnFillRGBABlend(int(X(x)),int(Y(y)),int(w*SX()+.5f),int(h*SY()+.5f),c.r,c.g,c.b,a);}

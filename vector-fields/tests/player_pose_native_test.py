@@ -62,7 +62,7 @@ def run(candidate=None,only=None,extended=False,melee_phases=False):
     if melee_phases:
      for phase,frames in [('raise',16),('contact',24),('follow',30)]:
       sample(name+'_'+phase,commands+['vf_melee',f'wait {frames}'])
- lines.append('quit')
+ lines+=['vf_sv_pose_info','quit']
  for part,start in enumerate(range(0,len(lines),70)):
   chunk=lines[start:start+70]
   if start+70<len(lines):chunk.append(f'exec player_pose_{part+1}.cfg')

@@ -107,8 +107,11 @@ def deployment_files(root=ROOT,sdk=None):
         ('data/status_decals.json','vf/status_decals.json'),('data/weapon_fx.json','vf/weapon_fx.json'),('generated/weapon-fx/decals.wad','decals.wad'),
         ('version.json','vf/version.json'))]
     from game_profiles import MAPS
+    result.append((root/'generated/map-menu/maps.txt',Path('vf/maps.txt')))
     from build_atmosphere import runtime_files as atmosphere_files
     result += atmosphere_files(root/'generated/atmosphere')
+    from build_modular_ambience import runtime_files as ambience_files
+    result += ambience_files(root/'generated/modular-ambience')
     result += [(root/'generated'/row['source']/(name+'.bsp'),Path('maps')/(name+'.bsp'))
                for name,row in MAPS.items()]
     sdk=Path(sdk or (os.environ.get('VF_RELEASE_SDK',root/'build')if root.resolve()==ROOT.resolve()else root/'build'))

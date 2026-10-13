@@ -1,7 +1,9 @@
 # Vector Fields — version 0.20.7
 
-La salle **vf_range** réunit les quatre cibles de tir et une aile de parcours : franchissement, suspension, saut vers le rebord opposé, glissade et wall run. **F4** y retourne. **F9** ouvre la grille modulaire **vf_modular**, maintenant intégrée au même jeu, serveur et client. **F5** affiche sa graine ; **F10/F12** changent de vue.
+La salle **vf_range** réunit les quatre cibles de tir et une aile de parcours : franchissement, suspension, saut vers le rebord opposé, glissade et wall run. **F4** ouvre le menu de cartes : salle commune, grille simple **vf_modular**, modules jouables **vf_tiles** et cartes de référence. Les huit variantes sont présentées dans le [guide du prototype](docs/TILE-LABORATORY.md). **F5** affiche sa graine ; **F10/F12** changent de vue.
 
+
+Les sections historiques ci-dessous peuvent citer d’anciens raccourcis. Dans le jeu principal actuel, F4 ouvre le menu des cartes ; F9 et Home ne chargent plus de carte. End retire les effets locaux.
 **Jouer - Vector Fields.cmd** et **build.ps1** passent par une publication unique : compilation privée, empreintes des sources et ressources, validations, puis remplacement du build complet avec retour arrière. Une modification pendant les contrôles invalide le candidat. Le lanceur rapide utilise le dernier build publié.
 
 Le [workflow de développement](docs/BUILD-WORKFLOW.md) décrit les branches, les worktrees et la préparation des ressources locales.
@@ -16,7 +18,7 @@ image par image des trois montages debout et accroupi.
 
 La 0.20.7 consolide les équipements, animations, effets, voix et morts ajoutés depuis la dernière publication GitHub. Les fragments gardent les finitions indépendantes des gants et bottes ; la salle et les deux lanceurs utilisent des ressources vérifiées. [Notes de version](docs/RELEASE-0.20.7.md) · [Rapport de validation](docs/validation/maintenance-0.20.7.json).
 
-Déplacements : franchissement bas, prise de rebord, suspension, tir à une main à 360°, remontée et glissade courte avec jambes visibles et délai de récupération. Le parcours est intégré à la salle combinée (**F4**) ; **F9** ouvre la grille modulaire. [Commandes et fonctionnement](docs/TRAVERSAL.md).
+Déplacements : franchissement bas, prise de rebord, suspension, tir à une main à 360°, remontée et glissade courte avec jambes visibles et délai de récupération. Le parcours est intégré à la salle combinée ; **F4** ouvre le menu pour choisir cette salle ou une grille modulaire. [Commandes et fonctionnement](docs/TRAVERSAL.md).
 
 **V** déclenche une frappe descendante avec l'avant du canon du R1, animée dans
 Blender en première et troisième personne. La main gauche se dégage et reste
@@ -25,7 +27,7 @@ le serveur valide un unique contact, sans consommer de munitions.
 [Source Blender et fonctionnement](docs/WEAPON-MELEE.md).
 [Validation de la frappe au canon](docs/validation/barrel-strike-2026-10-12.json).
 
-Morts : 16 signatures elementaires et 17 arrachements sonores, superposes au cri. Sang disperse en gouttes rouges avec gravite. Essai : **F4 puis F8** ; ecoute : `Atelier - Sons de mort.cmd`. Voir [les details](docs/DEATH-SOUNDS.md).
+Morts : 16 signatures elementaires et 17 arrachements sonores, superposes au cri. Sang disperse en gouttes rouges avec gravite. Essai : **F4 → Combat et parcours → Lancer**, puis **F8** ; ecoute : `Atelier - Sons de mort.cmd`. Voir [les details](docs/DEATH-SOUNDS.md).
 
 Correction 0.20.1 : retrait complet du boîtier et du bracelet des gants, index aligné sur la prise des autres doigts, rechargement supérieur avec bascule de l’arme vers la gauche.
 
@@ -44,7 +46,7 @@ Six impacts du même élément en **3 secondes** activent un état visible penda
 **6 secondes**. Choisir le vecteur dans **F3 > Weapon FX / R1**, puis tirer ;
 **J** les provoque. Voir [la salle et ses règles](docs/TEST-ROOM.md).
 
-Les morts et démembrements se testent dans **F8** après **F4**. L'**Atlas** relie
+Les morts et démembrements se testent dans **F8** après **F4 → Combat et parcours → Lancer**. L'**Atlas** relie
 les huit éléments et huit réactions à des gestuelles distinctes. Dix mouvements
 Quaternius/KayKit/Mixamo sont importés sur le GIGN. Les membres projetés produisent
 du sang et les particules de leur effet ; voir [l'atlas et l'inventaire](docs/DEATH-ATLAS.md).
@@ -1040,12 +1042,14 @@ existantes. L'anti-émeute, les deux optiques, le casque blindé et le masque à
 acceptent le suffixe `-up` pour leur position relevée/rangée.
 Voir [le fonctionnement, les limites et les captures](docs/HEADGEAR.md).
 
-`powershell -ExecutionPolicy Bypass -File vector-fields/build.ps1` compile les DLL,
-les tests C++ et valide les suites unitaires et les assets. Après déploiement avec
-`python vector-fields/play.py --visual-lab --deploy-only`, exécuter
-`python vector-fields/validate.py --suite native`, puis `--suite multiplayer`.
+`powershell -ExecutionPolicy Bypass -File vector-fields/build.ps1` passe par
+`build_release.py` : compilation privée, suites `unit`, `policy`, `assets` et
+`integration`, vérification des empreintes, puis installation du candidat validé.
+Les essais natifs et réseau requis font partie de cette validation commune.
+Voir le [workflow de construction](docs/BUILD-WORKFLOW.md).
 `--suite policy` recompile et exécute les tests C++ depuis les sources actuelles.
-`--suite all` enchaîne les cinq suites ; `--list` donne la liste maintenue.
+`python vector-fields/validate.py --suite all` enchaîne les six suites, y compris
+les contrôles historiques `native` et `multiplayer` ; `--list` donne la liste maintenue.
 
 Les traits de modèles sont dans `data/model_contract.json`. Les rigs et les
 pièces d’arme disposent de caches séparés qui vérifient leurs dépendances et

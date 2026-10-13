@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "seed": 6,
+  "peers": [
+    {
+      "0": [
+        73,
+        "I",
+        7,
+        -1
+      ],
+      "1": [
+        22,
+        "L",
+        0,
+        -1
+      ],
+      "2": [
+        32,
+        "mono",
+        2,
+        -1
+      ],
+      "3": [
+        384,
+        "domino",
+        4,
+        -1
+      ]
+    },
+    {
+      "0": [
+        73,
+        "I",
+        7,
+        -1
+      ],
+      "1": [
+        22,
+        "L",
+        0,
+        -1
+      ],
+      "2": [
+        32,
+        "mono",
+        2,
+        -1
+      ],
+      "3": [
+        384,
+        "domino",
+        4,
+        -1
+      ]
+    }
+  ],
+  "checks": [
+    "all four module forms",
+    "server-owned rooms and seams",
+    "late-join candidate collisions",
+    "atmosphere resources loaded"
+  ]
+}

@@ -17,7 +17,7 @@ def adopt_engine(source,candidate):
     """Reuse an independently tested engine only with identical input files."""
     candidate=Path(candidate);compiled=candidate/'engine-source';engine=OUT/'engine';engine.mkdir(exist_ok=True)
     pairs={}
-    for n in ('vf_engine_api.h','vf_assembly_policy.h','vf_traversal.h','vf_wallrun.h','vf_headgear.h','vf_player_pose.h'):
+    for n in ('vf_engine_api.h','vf_assembly_policy.h','vf_traversal.h','vf_wallrun.h','vf_headgear.h','vf_player_pose.h','vf_pose_cache.h'):
         pairs['game_shared/'+n]=compiled/'common'/n
     for n in ('vf_player_pose.inc','vf_wallrun_pose.inc','gl_vf_headgear.inc','sv_vf_pose.inc','gl_vf.inc','gl_vf_perf.inc'):
         pairs['vector-fields/engine/'+n]=compiled/('ref/gl'if n in ('gl_vf.inc','gl_vf_perf.inc')else'common')/n
@@ -50,11 +50,15 @@ def adopt_engine(source,candidate):
     (OUT/'diagnostic-inputs.json').write_text(json.dumps(diagnostics,indent=2))
     print('PASS reused identical engine snapshot: 18 engine tests passed',flush=True)
 
-def refresh_game(source):
-    """Incrementally rebuild our existing private game snapshot after drift."""
+def sync_game_sources(source):
+    """Mirror inputs, including removals, before incremental compilation."""
     source=Path(source);assert OUT.resolve()in source.resolve().parents
     ignored={'.obj','.pdb','.log','.ilk','.exp'}
-    for folder in ('dlls','cl_dll','common','engine','pm_shared','game_shared','public','external','lib','utils/vgui','utils/common','projects/vs2019'):
+    from build_weapon_melee import SDK_INPUT_FOLDERS
+    for folder in SDK_INPUT_FOLDERS:
+        # Do not let a removed header continue compiling from the old cache.
+        for cached in (source/folder).rglob('*'):
+            if cached.is_file()and not(PROJECT/cached.relative_to(source)).is_file():cached.unlink()
         for p in(PROJECT/folder).rglob('*'):
             if not p.is_file()or p.suffix in ignored or '.git'in p.parts:continue
             target=source/p.relative_to(PROJECT)
@@ -62,6 +66,9 @@ def refresh_game(source):
             target.parent.mkdir(parents=True,exist_ok=True)
             if target.exists():os.chmod(target,0o666)
             shutil.copy2(p,target)
+def refresh_game(source):
+    """Incrementally rebuild our existing private game snapshot after drift."""
+    source=Path(source);sync_game_sources(source)
     vswhere=Path(os.environ['ProgramFiles(x86)'])/'Microsoft Visual Studio/Installer/vswhere.exe'
     vs=Path(subprocess.check_output([str(vswhere),'-latest','-products','*','-requires','Microsoft.VisualStudio.Component.VC.Tools.x86.x64','-property','installationPath'],text=True).strip())
     for name,project in [('server','hldll'),('client','hl_cdll')]:
@@ -88,7 +95,7 @@ def rebuild_engine(source):
         return shutil.copy2(src,dst)
     shutil.copytree(ROOT/'build/wallrun/engine-source',engine_source,dirs_exist_ok=True,copy_function=copy_changed,
         ignore=shutil.ignore_patterns('.git','build','.builds','.lock-*','__pycache__','*.log'))
-    for n in ('vf_engine_api.h','vf_assembly_policy.h','vf_traversal.h','vf_wallrun.h','vf_headgear.h','vf_player_pose.h'):
+    for n in ('vf_engine_api.h','vf_assembly_policy.h','vf_traversal.h','vf_wallrun.h','vf_headgear.h','vf_player_pose.h','vf_pose_cache.h'):
         copy_changed(source/'game_shared'/n,engine_source/'common'/n)
     snapshots={}
     for n in ('vf_player_pose.inc','vf_wallrun_pose.inc','gl_vf_headgear.inc','sv_vf_pose.inc'):
@@ -116,7 +123,8 @@ def build():
     import sys
     generation=uuid.uuid4().hex[:10]
     source=OUT/('source-'+generation);source.mkdir(parents=True,exist_ok=True)
-    for folder in ('dlls','cl_dll','common','engine','pm_shared','game_shared','public','external','lib','utils/vgui','utils/common','projects/vs2019'):
+    from build_weapon_melee import SDK_INPUT_FOLDERS
+    for folder in SDK_INPUT_FOLDERS:
         shutil.copytree(PROJECT/folder,source/folder,dirs_exist_ok=True,ignore=shutil.ignore_patterns('.git','__pycache__','*.obj','*.pdb','*.log','*.ilk','*.exp'))
     hashes={str(p.relative_to(source)):digest(p)for p in source.rglob('*')if p.is_file()}
     vswhere=Path(os.environ['ProgramFiles(x86)'])/'Microsoft Visual Studio/Installer/vswhere.exe'
@@ -129,7 +137,7 @@ def build():
     engine_source=OUT/('engine-source-'+generation)
     shutil.copytree(PROJECT/'runtime/engine-source',engine_source,dirs_exist_ok=True,
         ignore=shutil.ignore_patterns('.git','build','.builds','.lock-*','__pycache__','*.log'))
-    for name in ('vf_engine_api.h','vf_assembly_policy.h','vf_traversal.h','vf_wallrun.h','vf_headgear.h','vf_player_pose.h'):
+    for name in ('vf_engine_api.h','vf_assembly_policy.h','vf_traversal.h','vf_wallrun.h','vf_headgear.h','vf_player_pose.h','vf_pose_cache.h'):
         shutil.copy2(source/'game_shared'/name,engine_source/'common'/name)
     for name in ('vf_player_pose.inc','vf_wallrun_pose.inc','gl_vf_headgear.inc','sv_vf_pose.inc'):
         shutil.copy2(ROOT/'engine'/name,engine_source/'common'/name)

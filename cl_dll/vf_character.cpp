@@ -8,6 +8,7 @@
 #include "vf_range.h"
 #include "vf_skinmenu.h"
 #include "vf_ui.h"
+#include "vf_maps.h"
 #include "vf_effects.h"
 #include "cl_entity.h"
 #include "com_model.h"
@@ -120,6 +121,7 @@ void Load() {
     if(bytes)gEngfuncs.COM_FreeFile(bytes);
 }
 void Toggle() {
+    VF_MapsClose();
     vfui::Focus();gEngfuncs.pfnClientCmd("-attack\n-attack2\n");
     if(opened) { opened=false; return; }
     VF_SkinsClose();VF_SkinsRefresh();Load(); opened=true; synchronized=false; pending=false;
@@ -232,6 +234,7 @@ void VF_CharacterInit() {
     gEngfuncs.pfnAddCommand("vf_reference_style",StyleCommand);
     gEngfuncs.pfnAddCommand("vf_reference_isolate",ReferenceIsolate);
     vfui::Init();
+    VF_MapsInit();
     VF_EngineInit();
     VF_SkinsInit();
     VF_EffectsInit();
@@ -250,9 +253,10 @@ void VF_CharacterInit() {
     gEngfuncs.pfnHookUserMsg("VFBuild",Message);
     VF_CharacterReset();
 }
-void VF_CharacterReset() { gameplaySaved=false;referencePending=-1;platformPending=-1;referenceIsolate=false; VF_EffectsReset(); vfui::Focus();opened=false;synchronized=false;pending=false;VF_PreviewReset();VF_SkinsReset();VF_EngineReset(); }
+void VF_CharacterReset() { VF_MapsClose();gameplaySaved=false;referencePending=-1;platformPending=-1;referenceIsolate=false; VF_EffectsReset(); vfui::Focus();opened=false;synchronized=false;pending=false;VF_PreviewReset();VF_SkinsReset();VF_EngineReset(); }
 void VF_CharacterClose() {opened=false;vfui::Focus();}
 void VF_CharacterShow(int page) {
+    VF_MapsClose();
     if(!opened) {
         if(catalog.valid&&synchronized&&!pending) {VF_SkinsClose();vfui::Focus();opened=true;gEngfuncs.GetViewAngles(fixedAngles);}
         else Toggle();
@@ -286,9 +290,10 @@ void VF_CharacterUpdateModels() {
         view->curstate.body=synchronized?vf::WeaponBody(catalog,applied):0;
     VF_EngineWeapon(view,synchronized?vf::WeaponBody(catalog,applied):0);
 }
-bool VF_CharacterOpen() { return opened||VF_SkinsOpen(); }
-void VF_CharacterView(float* angles) { if(VF_SkinsOpen())VF_SkinsView(angles);else memcpy(angles,fixedAngles,sizeof(fixedAngles)); }
+bool VF_CharacterOpen() { return opened||VF_SkinsOpen()||VF_MapsOpen(); }
+void VF_CharacterView(float* angles) { if(VF_MapsOpen())VF_MapsView(angles);else if(VF_SkinsOpen())VF_SkinsView(angles);else memcpy(angles,fixedAngles,sizeof(fixedAngles)); }
 int VF_CharacterKey(int down,int key) {
+    if(!VF_MapsKey(down,key))return 0;
     if(vfui::Key(down,key))return 0;
     if(VF_SkinsOpen())return VF_SkinsKey(down,key);
     if(!opened) return 1;
@@ -297,7 +302,7 @@ int VF_CharacterKey(int down,int key) {
     if(key==K_F1&&vfui::Developer()){VF_CharacterGameplay(0);return 0;}
     if(key==K_ESCAPE||key==K_F1) { opened=false;return 0; }
     if(key==K_F2) {opened=false;return 1;}
-    if(key==K_F11)return 1;
+    if(key==K_F11||key==K_F4)return 1;
     if(key==K_F3||key==K_F6||key==K_F7||key==K_F9||key==K_F8||key==K_F10) return 1;
     if(key==K_TAB) { SwitchTab();return 0; }
     if(key=='q') VF_PreviewRotate(-10);
@@ -385,8 +390,9 @@ void Preset(int kind){
 }
 void VF_CharacterDraw() {
  namespace u=vfui;
+ if(VF_MapsOpen()){VF_MapsDraw();return;}
  if(VF_SkinsOpen()){VF_SkinsDraw();return;}
- if(!opened){u::Text(22,30,"[F1 / F2] OPERATEUR    [F11] ARME    [F6] OPTIONS DEVELOPPEUR",u::amber);return;}
+ if(!opened){u::Text(22,30,"[F1 / F2] OPERATEUR    [F11] ARME    [F4] CARTES    [F6] DEVELOPPEUR",u::amber);return;}
  if((pending||!synchronized)&&catalog.valid&&gEngfuncs.GetClientTime()-requestTime>5){pending=false;synchronized=false;strcpy(status,"Connexion absente. Fermer et rouvrir l'atelier.");}
  u::Begin(tab?1:0);if(!opened)return;if(u::Guide()){u::End();return;}
  if(!u::Developer()){DrawGameplay();u::End();return;}

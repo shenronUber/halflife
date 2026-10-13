@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "release": "20261013-040215-1514f323",
+  "source_identity": "1bc6147fd8e3a86be12ab78067ee4e39365a4b52442bb2c8d609c4c919e34bb6",
+  "mandatory_checks": 58,
+  "policy_cases": 17,
+  "verified_files": 670,
+  "verified_models": 116,
+  "menu_entries": 53,
+  "single_button": "F4",
+  "no_unrelated_source_changes": true,
+  "mod": "G:/Half life Project/runtime/vector-engine/vf_visual"
+}

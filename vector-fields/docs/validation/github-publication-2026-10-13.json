@@ -1,0 +1,508 @@
+{
+  "passed": true,
+  "checked_utc": "2026-10-13T09:14:37.126039+00:00",
+  "version": "0.20.7",
+  "installed_release": "20261013-040215-1514f323",
+  "source_identity": "1bc6147fd8e3a86be12ab78067ee4e39365a4b52442bb2c8d609c4c919e34bb6",
+  "engine_source_identity": "25e5ddda777b757ffe62feaf64c00b23ee0034784736ff98891b649e3e9b4959",
+  "installed_files_verified": 6627,
+  "installed_binaries": {
+    "ref_gl.dll": "ecb1143a84637541acbbb704f8d74e2c2b9bd994275d9feebd4821a1681e37e9",
+    "xash.dll": "87e24ab257131f9226c22c7e91201323bdd8f1cc3783fa6934cea59c7ba98489",
+    "vf_visual\\cl_dlls\\client.dll": "a4a507baec7814a820a977fb8f43e0a890c17a9ff05e384c13e0f8bab342ff90",
+    "vf_visual\\dlls\\hl.dll": "b369a3fb7dd012ddead3be7c1a11fe46d3dc0e2c8dd8327e4733d7da7e88e7ec"
+  },
+  "full_gate": {
+    "provenance": "Previously completed for this exact installed source and engine identity; sources and all installed hashes rechecked before Git publication.",
+    "suites": [
+      "unit",
+      "policy",
+      "assets",
+      "integration"
+    ],
+    "steps": 58,
+    "by_suite": {
+      "unit": 4,
+      "policy": 1,
+      "assets": 32,
+      "integration": 21
+    },
+    "results": [
+      {
+        "suite": "unit",
+        "test": "validate.py",
+        "passed": true,
+        "seconds": 11.31
+      },
+      {
+        "suite": "unit",
+        "test": "model_contract.py",
+        "passed": true,
+        "seconds": 0.06
+      },
+      {
+        "suite": "unit",
+        "test": "contract_documentation.py",
+        "passed": true,
+        "seconds": 0.06
+      },
+      {
+        "suite": "unit",
+        "test": "tests/status_renderer_update_test.py",
+        "passed": true,
+        "seconds": 3.92
+      },
+      {
+        "suite": "policy",
+        "test": "cpp_tests.py",
+        "passed": true,
+        "seconds": 35.84
+      },
+      {
+        "suite": "assets",
+        "test": "tests/tile_laboratory_assets_test.py",
+        "passed": true,
+        "seconds": 0.75
+      },
+      {
+        "suite": "assets",
+        "test": "tests/atmosphere_assets_test.py",
+        "passed": true,
+        "seconds": 0.69
+      },
+      {
+        "suite": "assets",
+        "test": "tests/modular_ambience_test.py",
+        "passed": true,
+        "seconds": 1.05
+      },
+      {
+        "suite": "assets",
+        "test": "tests/headgear_assets_test.py",
+        "passed": true,
+        "seconds": 20.89
+      },
+      {
+        "suite": "assets",
+        "test": "tests/headgear_feedback_test.py",
+        "passed": true,
+        "seconds": 2.33
+      },
+      {
+        "suite": "assets",
+        "test": "tests/weapon_inspect_clearance_test.py",
+        "passed": true,
+        "seconds": 3.36
+      },
+      {
+        "suite": "assets",
+        "test": "tests/weapon_melee_geometry_test.py",
+        "passed": true,
+        "seconds": 2.03
+      },
+      {
+        "suite": "assets",
+        "test": "tests/new_personas_test.py",
+        "passed": true,
+        "seconds": 0.55
+      },
+      {
+        "suite": "assets",
+        "test": "tests/artisan_sets_test.py",
+        "passed": true,
+        "seconds": 0.58
+      },
+      {
+        "suite": "assets",
+        "test": "tests/test_room_assets_test.py",
+        "passed": true,
+        "seconds": 0.08
+      },
+      {
+        "suite": "assets",
+        "test": "tests/fragment_finish_assets_test.py",
+        "passed": true,
+        "seconds": 0.2
+      },
+      {
+        "suite": "assets",
+        "test": "tests/death_sounds_test.py",
+        "passed": true,
+        "seconds": 2.03
+      },
+      {
+        "suite": "assets",
+        "test": "tests/death_motion_test.py",
+        "passed": true,
+        "seconds": 1.14
+      },
+      {
+        "suite": "assets",
+        "test": "tests/death_atlas_test.py",
+        "passed": true,
+        "seconds": 0.3
+      },
+      {
+        "suite": "assets",
+        "test": "tests/external_death_animations_test.py",
+        "passed": true,
+        "seconds": 4.28
+      },
+      {
+        "suite": "assets",
+        "test": "tests/death_visual_native_test.py",
+        "passed": true,
+        "seconds": 1.2
+      },
+      {
+        "suite": "assets",
+        "test": "tests/wound_textures_test.py",
+        "passed": true,
+        "seconds": 7.67
+      },
+      {
+        "suite": "assets",
+        "test": "tests/death_voice_assets_test.py",
+        "passed": true,
+        "seconds": 0.42
+      },
+      {
+        "suite": "assets",
+        "test": "tests/status_decals_assets_test.py",
+        "passed": true,
+        "seconds": 1.89
+      },
+      {
+        "suite": "assets",
+        "test": "tests/model_contract_assets_test.py",
+        "passed": true,
+        "seconds": 0.33
+      },
+      {
+        "suite": "assets",
+        "test": "tests/traversal_assets_test.py",
+        "passed": true,
+        "seconds": 5.3
+      },
+      {
+        "suite": "assets",
+        "test": "tests/first_person_test.py",
+        "passed": true,
+        "seconds": 1.3
+      },
+      {
+        "suite": "assets",
+        "test": "tests/operator_rig_test.py",
+        "passed": true,
+        "seconds": 0.91
+      },
+      {
+        "suite": "assets",
+        "test": "tests/reference_extensions_test.py",
+        "passed": true,
+        "seconds": 11.05
+      },
+      {
+        "suite": "assets",
+        "test": "tests/reference_chassis_test.py",
+        "passed": true,
+        "seconds": 6.02
+      },
+      {
+        "suite": "assets",
+        "test": "tests/r01_fitted_assets_test.py",
+        "passed": true,
+        "seconds": 0.53
+      },
+      {
+        "suite": "assets",
+        "test": "tests/r01_finish_revision_test.py",
+        "passed": true,
+        "seconds": 6.22
+      },
+      {
+        "suite": "assets",
+        "test": "tests/reference_themes_test.py",
+        "passed": true,
+        "seconds": 4.28
+      },
+      {
+        "suite": "assets",
+        "test": "tests/reference_platform_test.py",
+        "passed": true,
+        "seconds": 21.36
+      },
+      {
+        "suite": "assets",
+        "test": "tests/foregrip_assets_test.py",
+        "passed": true,
+        "seconds": 3.36
+      },
+      {
+        "suite": "assets",
+        "test": "tests/third_person_assets_test.py",
+        "passed": true,
+        "seconds": 4.39
+      },
+      {
+        "suite": "assets",
+        "test": "tests/weapon_fx_test.py",
+        "passed": true,
+        "seconds": 0.3
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 54.09
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 75.64
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 71.7
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 37.45
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 41.47
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 35.45
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 55.2
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 90.97
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 78.12
+      },
+      {
+        "suite": "integration",
+        "test": "tests/release_integration_test.py",
+        "passed": true,
+        "seconds": 26.31
+      },
+      {
+        "suite": "integration",
+        "test": "tests/test_room_native_test.py",
+        "passed": true,
+        "seconds": 77.11
+      },
+      {
+        "suite": "integration",
+        "test": "tests/combined_room_native_test.py",
+        "passed": true,
+        "seconds": 81.78
+      },
+      {
+        "suite": "integration",
+        "test": "tests/modular_native_test.py",
+        "passed": true,
+        "seconds": 72.61
+      },
+      {
+        "suite": "integration",
+        "test": "tests/modular_multiplayer_test.py",
+        "passed": true,
+        "seconds": 31.28
+      },
+      {
+        "suite": "integration",
+        "test": "tests/modular_launch_test.py",
+        "passed": true,
+        "seconds": 7.39
+      },
+      {
+        "suite": "integration",
+        "test": "tests/tile_laboratory_native_test.py",
+        "passed": true,
+        "seconds": 151.86
+      },
+      {
+        "suite": "integration",
+        "test": "tests/tile_laboratory_network_test.py",
+        "passed": true,
+        "seconds": 35.42
+      },
+      {
+        "suite": "integration",
+        "test": "tests/atmosphere_native_test.py",
+        "passed": true,
+        "seconds": 28.77
+      },
+      {
+        "suite": "integration",
+        "test": "tests/modular_ambience_test.py",
+        "passed": true,
+        "seconds": 27.0
+      },
+      {
+        "suite": "integration",
+        "test": "tests/pose_cache_native_test.py",
+        "passed": true,
+        "seconds": 148.75
+      },
+      {
+        "suite": "integration",
+        "test": "tests/current_release_test.py",
+        "passed": true,
+        "seconds": 91.84
+      }
+    ]
+  },
+  "fresh_recheck": {
+    "command": "python -B vector-fields/validate.py --suite unit --suite policy",
+    "unit_tests": 110,
+    "policy_groups": 17,
+    "validation": {
+      "suites": [
+        "unit",
+        "policy"
+      ],
+      "passed": true,
+      "results": [
+        {
+          "suite": "unit",
+          "test": "validate.py",
+          "passed": true,
+          "seconds": 12.95
+        },
+        {
+          "suite": "unit",
+          "test": "model_contract.py",
+          "passed": true,
+          "seconds": 0.06
+        },
+        {
+          "suite": "unit",
+          "test": "contract_documentation.py",
+          "passed": true,
+          "seconds": 0.06
+        },
+        {
+          "suite": "unit",
+          "test": "tests/status_renderer_update_test.py",
+          "passed": true,
+          "seconds": 3.84
+        },
+        {
+          "suite": "policy",
+          "test": "cpp_tests.py",
+          "passed": true,
+          "seconds": 35.22
+        }
+      ]
+    },
+    "policy_results": [
+      {
+        "test": "modular",
+        "passed": true
+      },
+      {
+        "test": "tile_rooms",
+        "passed": true
+      },
+      {
+        "test": "backend",
+        "passed": true
+      },
+      {
+        "test": "voice_filter",
+        "passed": true
+      },
+      {
+        "test": "headgear",
+        "passed": true
+      },
+      {
+        "test": "loadout",
+        "passed": true
+      },
+      {
+        "test": "architecture",
+        "passed": true
+      },
+      {
+        "test": "effects",
+        "passed": true
+      },
+      {
+        "test": "voice",
+        "passed": true
+      },
+      {
+        "test": "combat",
+        "passed": true
+      },
+      {
+        "test": "proc",
+        "passed": true
+      },
+      {
+        "test": "fragments",
+        "passed": true
+      },
+      {
+        "test": "inspect",
+        "passed": true
+      },
+      {
+        "test": "melee",
+        "passed": true
+      },
+      {
+        "test": "player_pose",
+        "passed": true
+      },
+      {
+        "test": "traversal",
+        "passed": true
+      },
+      {
+        "test": "wallrun",
+        "passed": true
+      }
+    ],
+    "log_sha256": "15e306d969fa537b448963e565451a407de68f5bcd5c31ac33cce5584e37d198"
+  },
+  "patch_check": {
+    "command": "git -C runtime/engine-source apply --reverse --check ../../vector-fields/engine/player-pose.patch",
+    "passed": true
+  },
+  "publication_scope": "Completed source, authored input assets, documentation and representative validation proofs. Generated builds, local tool installations and workshop backups remain local.",
+  "maintenance_report": "maintenance-2026-10-13.json",
+  "new_feature_reports": [
+    "tile-laboratory/native.json",
+    "tile-laboratory/network/network.json",
+    "modular-ambience/native.json",
+    "modular-ambience/assets.json"
+  ]
+}

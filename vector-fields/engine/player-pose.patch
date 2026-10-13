@@ -11,19 +11,28 @@ index 461b691..f30cc97 100644
  //
  // mod_sprite.c
 diff --git a/engine/common/mod_studio.c b/engine/common/mod_studio.c
-index 520ab7f..b26e348 100644
+index 520ab7f..45b614c 100644
 --- a/engine/common/mod_studio.c
 +++ b/engine/common/mod_studio.c
-@@ -22,6 +22,8 @@ GNU General Public License for more details.
+@@ -22,6 +22,9 @@ GNU General Public License for more details.
  #include "swaplib.h"
  
  typedef int (*STUDIOAPI)( int, sv_blending_interface_t**, server_studio_api_t*,  float (*transform)[3][4], float (*bones)[MAXSTUDIOBONES][3][4] );
 +static qboolean Mod_VFPlayerModel(model_t *model,const edict_t *edict);
 +static qboolean Mod_VFPlayerPose(model_t *model,float frame,int sequence,const edict_t *edict);
++static void Mod_VFClearPoseCache(void);
  
  typedef struct mstudiocache_s
  {
-@@ -374,7 +376,7 @@ hull_t *Mod_HullForStudio( model_t *model, float frame, int sequence, vec3_t ang
+@@ -250,6 +253,7 @@ ClearStudioCache
+ */
+ void Mod_ClearStudioCache( void )
+ {
++	Mod_VFClearPoseCache();
+ 	memset( cache_studio, 0, sizeof( cache_studio ));
+ 	cache_current_hull = cache_current_plane = 0;
+ 
+@@ -374,7 +378,7 @@ hull_t *Mod_HullForStudio( model_t *model, float frame, int sequence, vec3_t ang
  
  	*numhitboxes = 0; // assume error
  
@@ -32,7 +41,16 @@ index 520ab7f..b26e348 100644
  	{
  		mstudiocache_t *bonecache = Mod_CheckStudioCache( model, frame, sequence, angles, origin, size, pcontroller, pblending );
  
-@@ -631,6 +633,7 @@ NOTE: pEdict is unused
+@@ -426,7 +430,7 @@ hull_t *Mod_HullForStudio( model_t *model, float frame, int sequence, vec3_t ang
+ 	// tell trace code about hitbox count
+ 	*numhitboxes = (bSkipShield) ? (mod_studiohdr->numhitboxes - 1) : (mod_studiohdr->numhitboxes);
+ 
+-	if( mod_studiocache.value )
++	if( mod_studiocache.value && !Mod_VFPlayerModel(model,pEdict) )
+ 		Mod_AddToStudioCache( frame, sequence, angles, origin, size, pcontroller, pblending, model, studio_hull, *numhitboxes );
+ 
+ 	return studio_hull;
+@@ -631,6 +635,7 @@ NOTE: pEdict is unused
  static void SV_StudioSetupBones( model_t *pModel,	float frame, int sequence, const vec3_t angles, const vec3_t origin,
  	const byte *pcontroller, const byte *pblending, int iBone, const edict_t *pEdict )
  {
@@ -40,7 +58,7 @@ index 520ab7f..b26e348 100644
  	int		i, j, numbones = 0;
  	int		boneused[MAXSTUDIOBONES];
  	float		f = 0.0;
-@@ -728,6 +731,8 @@ static void SV_StudioSetupBones( model_t *pModel,	float frame, int sequence, con
+@@ -728,6 +733,8 @@ static void SV_StudioSetupBones( model_t *pModel,	float frame, int sequence, con
  StudioGetAttachment
  ====================
  */

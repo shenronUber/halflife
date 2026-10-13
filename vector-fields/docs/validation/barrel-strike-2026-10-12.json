@@ -1,0 +1,171 @@
+{
+  "passed": true,
+  "installed": true,
+  "date_utc": "2026-10-12T10:11:00.799344+00:00",
+  "gesture": "right-handed overhead barrel strike; left hand released through follow-through",
+  "binding": "V",
+  "duration": 1.1,
+  "impact": 0.43333333333333335,
+  "damage": 35,
+  "range": 40,
+  "models_changed": 9,
+  "assets": {
+    "melee_gloves.mdl": "0b7e69135b7bfa338b333e4641c17bd3e441462f17316c7a129619e7d842df36",
+    "melee_sleeves.mdl": "2366a3aa5980cc60228e11eb96a55ab6464e3423e190ace4b0f1e0ddefe600a1",
+    "r01_rig.mdl": "d12000da787877ffdf383f6c5dd1a617a72a24b347c1b77dcd091708c7039054",
+    "r01_rig_fg.mdl": "2af923464790f50ae7bd8946d806c5ea3e3156d000898ba4f6d7c43c8050fdbc",
+    "r01_rig_side.mdl": "ce65d5338b4a677e04a830fc5598061e465e5dc5fb7723b5640fa5f6b935b545",
+    "r01_rig_side_fg.mdl": "6ba0cbadc8094d5adc2e50693f84dbb10d6f81a04842cc1bb59d69112caadd64",
+    "r01_rig_top.mdl": "c6f5a9181f646ed5e7ab4de17b24b9a3172d5fce2f182f7e128d2a180cca28cb",
+    "r01_rig_top_fg.mdl": "80c784be1a0f4aa8474e97f2e3645356b41bf97a41be0865ba68a87183a05443",
+    "r01_tp.mdl": "881bfd77d574ef16094b30eca1e1f05ef3c3138600badcbad6f5c5ae4c0d3cc6",
+    "r01_tp_side.mdl": "0ed889a758d83a633785f575f0b8b6d934e1117561d8b3a36fb79faf37a1349e",
+    "r01_tp_top.mdl": "b5cf12b7c42ea2b484e7716a7c4778f44a49bf4fdd269d102915ef0536fae94b"
+  },
+  "delivery": {
+    "files": 651,
+    "models": 116
+  },
+  "main_binaries": {
+    "runtime\\vector-engine\\filesystem_stdio.dll": "ad7d7f2e507c305dc6715f5349a716e5b3567aa3e67baf2bc4bcddb668d904c3",
+    "runtime\\vector-engine\\menu.dll": "6ac2be0e9f56c22196c9994678a2847c02315fc6d4a2d740d5517d6ec1c4e67c",
+    "runtime\\vector-engine\\ref_gl.dll": "85dd9a5b6fe39530abd7d82c83eb00aaca8fb509e2e7a56746db9f4aa3494f05",
+    "runtime\\vector-engine\\ref_null.dll": "ed953a436e2d9e6c4f89e79a6c5643197a6ab29887657c581daa28f9de1e003e",
+    "runtime\\vector-engine\\SDL2.dll": "68c78590d1997122c30c992ec79857d32e5e976a0f17c0a69a2e29eab0101d70",
+    "runtime\\vector-engine\\vgui.dll": "7c3c116ced674508fb2109a0c517f628191f59694fd7489bca2c9954fa69e792",
+    "runtime\\vector-engine\\xash.dll": "6744832e9c178abcbbd769dbb53fd53d4af130f90a248ebdcca7d1d99c3b0e55",
+    "runtime\\vector-engine\\xash.exe": "318bda098cb2c044d8997ca45d0d17dbc7afc1bfa23dae74e537964f064834c3",
+    "runtime\\vector-engine\\xash3d.exe": "448faf985862d8a7906dcf029a74248e325da31dbb45bbfa117c2ab86382bff0",
+    "runtime\\vector-engine\\vector-engine-build.json": "019799bedc74f283db5fac3d52caadbc8e87ebde21d1bb8c3d614c033fe0fb71",
+    "runtime\\vector-engine\\vf_visual\\cl_dlls\\client.dll": "8cb0f039b2ff462b4538a44e553e6bee6c2be5664f03c942e8bd98bd6837440d",
+    "runtime\\vector-engine\\vf_visual\\dlls\\hl.dll": "116fa8cbe70486df49794e261d3ee6d1a663549e5e007834d202b543fdad9ddb",
+    "runtime\\vector-engine\\vf_visual\\delta.lst": "529709b7c99336af58770933fb74e320f61e6280bc24d7ef5d8386174187449d"
+  },
+  "backup": "G:\\Half life Project\\vector-fields\\build\\barrel-strike\\installation-backup",
+  "blender_file": "G:\\Half life Project\\vector-fields\\melee-workshop\\Frappe-au-canon-R1.blend",
+  "source_reference": "Photo 1.jpg supplied by user, six-stage overhead strike",
+  "validation": {
+    "geometry_tracks": 12,
+    "first_person_configurations": 6,
+    "native_captures": 242,
+    "third_person": [
+      "standing",
+      "crouching"
+    ],
+    "remote_frames": [
+      [
+        "21",
+        101,
+        9.3,
+        "remote_021.png"
+      ],
+      [
+        "22",
+        101,
+        74.0,
+        "remote_022.png"
+      ],
+      [
+        "23",
+        101,
+        138.6,
+        "remote_023.png"
+      ],
+      [
+        "24",
+        101,
+        198.5,
+        "remote_024.png"
+      ],
+      [
+        "35",
+        102,
+        39.2,
+        "remote_035.png"
+      ],
+      [
+        "36",
+        102,
+        106.0,
+        "remote_036.png"
+      ],
+      [
+        "37",
+        102,
+        175.2,
+        "remote_037.png"
+      ],
+      [
+        "38",
+        102,
+        232.8,
+        "remote_038.png"
+      ],
+      [
+        "47",
+        101,
+        57.8,
+        "remote_047.png"
+      ],
+      [
+        "48",
+        101,
+        124.7,
+        "remote_048.png"
+      ],
+      [
+        "49",
+        101,
+        189.2,
+        "remote_049.png"
+      ],
+      [
+        "50",
+        101,
+        251.5,
+        "remote_050.png"
+      ]
+    ],
+    "poses": 61,
+    "boxes": 1220,
+    "maximum_hitbox_corner_error_units": 0.12786439260285806,
+    "body_and_cancellations": {
+      "passed": true,
+      "first_person_body_during_melee": true,
+      "body_samples": 8,
+      "menu_cancels_before_impact": true,
+      "ledge_catch_cancels_before_impact": true,
+      "client_sha256": "8cb0f039b2ff462b4538a44e553e6bee6c2be5664f03c942e8bd98bd6837440d",
+      "server_sha256": "116fa8cbe70486df49794e261d3ee6d1a663549e5e007834d202b543fdad9ddb",
+      "renderer_sha256": "85dd9a5b6fe39530abd7d82c83eb00aaca8fb509e2e7a56746db9f4aa3494f05"
+    },
+    "status_shells": {
+      "passed": true,
+      "inspection_arm_shell": true,
+      "melee_arm_shell": true,
+      "weapon_shell_excluded": true,
+      "client_sha256": "8cb0f039b2ff462b4538a44e553e6bee6c2be5664f03c942e8bd98bd6837440d",
+      "server_sha256": "116fa8cbe70486df49794e261d3ee6d1a663549e5e007834d202b543fdad9ddb",
+      "renderer_sha256": "85dd9a5b6fe39530abd7d82c83eb00aaca8fb509e2e7a56746db9f4aa3494f05"
+    }
+  },
+  "preserved_sequences": {
+    "r01_rig.mdl": 9,
+    "r01_rig_fg.mdl": 9,
+    "r01_rig_side.mdl": 9,
+    "r01_rig_side_fg.mdl": 9,
+    "r01_rig_top.mdl": 9,
+    "r01_rig_top_fg.mdl": 9,
+    "r01_tp.mdl": 101,
+    "r01_tp_side.mdl": 101,
+    "r01_tp_top.mdl": 101
+  },
+  "evidence": [
+    "build\\barrel-strike\\geometry.json",
+    "build\\barrel-strike\\native\\melee\\native.json",
+    "build\\barrel-strike\\native\\melee_network\\network.json",
+    "build\\barrel-strike\\native\\pose_strike\\verification.json",
+    "build\\barrel-strike\\native\\melee_integration\\verification.json",
+    "build\\barrel-strike\\native\\gesture_status\\verification.json"
+  ]
+}

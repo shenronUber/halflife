@@ -4,6 +4,10 @@
 #include <cmath>
 #include <cstdio>
 int main(){
+ assert(vfdeath::SameDamageType(2,2|4096));
+ assert(vfdeath::SameDamageType(2|8192,2|4096|8192));
+ assert(!vfdeath::SameDamageType(2,32)); // fall cannot consume a bullet trace
+ assert(!vfdeath::SameDamageType(2,2|8)); // an additional damage cause is distinct
  bool used[vfdeath::FragmentSkinCount]={};
  for(int a=0;a<vfdeath::FinishCount;++a)for(int b=0;b<vfdeath::FinishCount;++b){
   int skin=vfdeath::FragmentPairSkin(a,b),p,d;assert(skin>=0&&skin<vfdeath::FragmentSkinCount&&!used[skin]);used[skin]=true;

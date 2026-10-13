@@ -4,7 +4,7 @@ Le jeu contient dix animations de mort importees : trois Quaternius/KayKit et se
 
 ## Choix et essai en jeu
 
-Lancer `Jouer - Vector Fields.cmd`, puis **F4** pour la salle et **F8** pour les morts. L onglet **Atlas** propose les elements puis les reactions. Choisir un effet et une zone a droite provoque une mort avec le mouvement automatique correspondant. **Catalogue** contient quatre pages de mouvements a imposer manuellement.
+Lancer `Jouer - Vector Fields.cmd`, puis **F4 → Combat et parcours → Lancer** pour la salle et **F8** pour les morts. L onglet **Atlas** propose les elements puis les reactions. Choisir un effet et une zone a droite provoque une mort avec le mouvement automatique correspondant. **Catalogue** contient quatre pages de mouvements a imposer manuellement.
 
 | Effet | Gestuelle automatique | Particules des morceaux |
 |---|---|---|

@@ -1,7 +1,7 @@
 # Wall run
 
-Le wall run est intégré au jeu principal `vf_visual`. **F4** ouvre la salle
-commune de tir et parcours ; **F9** ouvre la grille modulaire. **F10 / F12**
+Le wall run est intégré au jeu principal `vf_visual`. **F4** ouvre le menu
+pour choisir la salle commune ou les grilles modulaires. **F10 / F12**
 passent en troisième / première personne. La publication passe par
 `build_release.py`, avec les mêmes DLL et ressources pour les deux cartes.
 

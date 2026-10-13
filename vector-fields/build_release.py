@@ -17,7 +17,7 @@ def inputs():
  paths += [p for p in(ROOT/'tests').rglob('*')if p.is_file()and p.suffix in('.py','.c','.cpp','.h')]
  paths += list(PROJECT.glob('*.cmd'))+[PROJECT/'devtools/bootstrap-worktree.py']
  for folder in ('data','assets','engine','animation-workshop/traversal','melee-workshop'):
-  extensions={'.json','.txt','.py','.js','.smd','.qc','.inc','.h','.c','.cpp'}
+  extensions={'.json','.txt','.py','.js','.smd','.qc','.inc','.h','.c','.cpp','.patch'}
   if folder=='assets':extensions|={'.bmp','.png','.wav'}
   paths += [p for p in(ROOT/folder).rglob('*')if p.is_file()and p.suffix.lower()in extensions and 'review-backups'not in p.parts and '__pycache__'not in p.parts]
  paths += [ROOT/p for p in ['melee-workshop/Frappe-au-canon-R1-poing.blend','animation-workshop/traversal/blender/Corps-R1-revue-complete.blend','animation-workshop/traversal/blender/Mains-R1-revue-complete.blend']]
@@ -26,7 +26,7 @@ def inputs():
 def identity(state):return hashlib.sha256(json.dumps(state,sort_keys=True).encode()).hexdigest()
 def engine_identity():
  paths=[p for p in(ROOT/'engine').rglob('*')if p.is_file()and p.suffix in('.patch','.h','.inc','.c','.cpp')]
- paths += [PROJECT/'game_shared'/name for name in('vf_engine_api.h','vf_assembly_policy.h','vf_player_pose.h','vf_headgear.h','vf_traversal.h','vf_wallrun.h')]
+ paths += [PROJECT/'game_shared'/name for name in('vf_engine_api.h','vf_assembly_policy.h','vf_player_pose.h','vf_pose_cache.h','vf_headgear.h','vf_traversal.h','vf_wallrun.h')]
  return identity({str(p.relative_to(PROJECT)):sha(p)for p in paths})
 def run(arguments,folder,env=None):
  folder=Path(folder);folder.parent.mkdir(parents=True,exist_ok=True)
@@ -110,6 +110,7 @@ def publish(candidate,live=LIVE,canonical=ROOT/'build'):
  manifest=verify_bundle(candidate)
  if not manifest['passed']:raise RuntimeError('Publication requires a successfully validated bundle.')
  if manifest['source_identity']!=identity(inputs()):raise RuntimeError('Validated bundle is stale; rebuild before publishing.')
+ if manifest.get('engine_source_identity')!=engine_identity():raise RuntimeError('Validated engine sources are stale; rebuild before publishing.')
  token=uuid.uuid4().hex[:10];current=live/'vf_visual';pending=live/('.vf_visual-next-'+token);backup=live/('.vf_visual-before-'+token)
  pending.mkdir(parents=True);replaced=[];swapped=False
  try:
@@ -166,26 +167,38 @@ def installed_current():
  if not RECEIPT.exists():return False
  receipt=read(RECEIPT)
  if not receipt.get('passed')or receipt['source_identity']!=identity(inputs()):return False
+ if receipt.get('engine_source_identity')!=engine_identity():return False
  for name,value in receipt['files'].items():
   p=LIVE/name
   if not p.is_file()or sha(p)!=value:return False
  return True
+def retain_releases():
+ from release_retention import cleanup
+ if not RECEIPT.exists():return
+ try:
+  report=cleanup(OUT,LIVE,ROOT/'build/retention')
+  print('Release retention:',len(report['removed']),'obsolete generated trees removed.',flush=True)
+ except (OSError,ValueError,RuntimeError)as error:print('Retention deferred; validated release retained:',error,flush=True)
 def ensure_published(force=False):
  with file_lock(LOCK,timeout=60):
-  if not force and installed_current():print('Verified installed release is current.',flush=True);return
-  publish(create())
+  # Prune previous failed candidates before allocating another complete game.
+  retain_releases()
+  if not force and installed_current():print('Verified installed release is current.',flush=True)
+  else:publish(create())
+  retain_releases()
 def launch(mapname='vf_range',reference=False,seed=0):
- from game_profiles import MAPS
+ from game_profiles import MAPS,arrival_config
  if mapname not in MAPS and not(LIVE/'vf_visual/maps'/(mapname+'.bsp')).exists():raise ValueError('Unknown map: '+mapname)
  with file_lock(LOCK):
   if not RECEIPT.exists()or not read(RECEIPT).get('passed'):raise RuntimeError('Prepare the validated release first.')
   for name,value in read(RECEIPT)['files'].items():
    path=LIVE/name
    if not path.is_file()or sha(path)!=value:raise RuntimeError('Installed release differs; use the normal launcher to rebuild: '+name)
-  cfg='vf_modular_start.cfg'if mapname=='vf_modular'else'vf_reference_start.cfg'if reference else'vf_start.cfg'
+  cfg=arrival_config(mapname,reference)+'.cfg'
   command=[str(LIVE/'xash3d.exe'),'-ip','127.0.0.1','-noip6','-rodir','F:/SteamLibrary/steamapps/common/Half-Life','-game','vf_visual','-windowed','-width','1280','-height','720','-nointro','+exec','lab_controls.cfg']
+  if mapname=='vf_tiles':command+=['+vf_tiles_variant','-1']
   command+=['+map',mapname]
-  if mapname=='vf_modular':command+=['+vf_modular_seed',str(seed),'+map',mapname]
+  if mapname in('vf_modular','vf_tiles'):command+=['+vf_modular_seed',str(seed),'+map',mapname]
   command+=['+exec',cfg]
   child=subprocess.Popen(command,cwd=LIVE,creationflags=getattr(subprocess,'CREATE_NO_WINDOW',0))
  return child.wait()
@@ -194,5 +207,5 @@ if __name__=='__main__':
  if a.engine_identity:print(engine_identity());raise SystemExit(0)
  if a.launch_only:raise SystemExit(launch(a.map))
  if a.publish:
-  with file_lock(LOCK):publish(a.publish)
+   with file_lock(LOCK):publish(a.publish);retain_releases()
  else:ensure_published(a.force)

@@ -1,0 +1,223 @@
+[
+  {
+    "game": "valve",
+    "bsp_maps": 125,
+    "wad_files": [
+      {
+        "name": "cached.wad",
+        "textures": 2
+      },
+      {
+        "name": "decals.wad",
+        "textures": 222
+      },
+      {
+        "name": "fonts.wad",
+        "textures": 3
+      },
+      {
+        "name": "gfx.wad",
+        "textures": 7
+      },
+      {
+        "name": "halflife.wad",
+        "textures": 3116
+      },
+      {
+        "name": "liquids.wad",
+        "textures": 32
+      },
+      {
+        "name": "spraypaint.wad",
+        "textures": 14
+      },
+      {
+        "name": "tempdecal.wad",
+        "textures": 1
+      },
+      {
+        "name": "xeno.wad",
+        "textures": 264
+      }
+    ],
+    "mdl_files": 323,
+    "decor_candidates": [
+      "computergibs.mdl",
+      "forklift.mdl",
+      "garbagegibs.mdl",
+      "gasbag.mdl",
+      "mbarrel.mdl",
+      "med_crategibs.mdl",
+      "mil_crate.mdl",
+      "mil_crategibs.mdl",
+      "tech_crategibs.mdl",
+      "tree.mdl",
+      "treet.mdl",
+      "uplant1.mdl",
+      "uplant1t.mdl",
+      "uplant2.mdl",
+      "uplant2t.mdl",
+      "uplant3.mdl",
+      "uplant3t.mdl"
+    ],
+    "editable_map_sources": 0
+  },
+  {
+    "game": "cstrike",
+    "bsp_maps": 25,
+    "wad_files": [
+      {
+        "name": "ajawad.wad",
+        "textures": 1
+      },
+      {
+        "name": "cached.wad",
+        "textures": 2
+      },
+      {
+        "name": "chateau.wad",
+        "textures": 136
+      },
+      {
+        "name": "cstraining.wad",
+        "textures": 24
+      },
+      {
+        "name": "cstrike.wad",
+        "textures": 123
+      },
+      {
+        "name": "cs_747.wad",
+        "textures": 143
+      },
+      {
+        "name": "cs_assault.wad",
+        "textures": 22
+      },
+      {
+        "name": "cs_bdog.wad",
+        "textures": 132
+      },
+      {
+        "name": "cs_cbble.wad",
+        "textures": 61
+      },
+      {
+        "name": "cs_dust.wad",
+        "textures": 28
+      },
+      {
+        "name": "cs_havana.wad",
+        "textures": 122
+      },
+      {
+        "name": "cs_office.wad",
+        "textures": 102
+      },
+      {
+        "name": "decals.wad",
+        "textures": 225
+      },
+      {
+        "name": "de_airstrip.wad",
+        "textures": 69
+      },
+      {
+        "name": "de_aztec.wad",
+        "textures": 24
+      },
+      {
+        "name": "de_piranesi.wad",
+        "textures": 160
+      },
+      {
+        "name": "de_storm.wad",
+        "textures": 74
+      },
+      {
+        "name": "de_vertigo.wad",
+        "textures": 19
+      },
+      {
+        "name": "itsitaly.wad",
+        "textures": 99
+      },
+      {
+        "name": "n0th1ng.wad",
+        "textures": 8
+      },
+      {
+        "name": "prodigy.wad",
+        "textures": 2
+      },
+      {
+        "name": "tempdecal.wad",
+        "textures": 1
+      },
+      {
+        "name": "torntextures.wad",
+        "textures": 162
+      },
+      {
+        "name": "tswad.wad",
+        "textures": 29
+      }
+    ],
+    "mdl_files": 179,
+    "decor_candidates": [
+      "bag.mdl",
+      "bigtree.mdl",
+      "bush.mdl",
+      "conveyor1.mdl",
+      "conveyor2.mdl",
+      "conveyor3.mdl",
+      "conveyor_turn.mdl",
+      "pallet_with_bags.mdl",
+      "pallet_with_bags2.mdl",
+      "palmtree.mdl",
+      "pi_bush.mdl",
+      "pi_outlamp1.mdl",
+      "pi_stlamp.mdl",
+      "pi_tree.mdl",
+      "pi_tree1.mdl",
+      "pi_tree2.mdl",
+      "pi_tree3.mdl",
+      "pi_treeb.mdl",
+      "pred_plant.mdl",
+      "qtruck.mdl",
+      "truck.mdl"
+    ],
+    "editable_map_sources": 0
+  },
+  {
+    "game": "tfc",
+    "bsp_maps": 15,
+    "wad_files": [
+      {
+        "name": "cached.wad",
+        "textures": 4
+      },
+      {
+        "name": "decals.wad",
+        "textures": 7
+      },
+      {
+        "name": "ravelin.wad",
+        "textures": 14
+      },
+      {
+        "name": "tfc.WAD",
+        "textures": 279
+      },
+      {
+        "name": "tfc2.wad",
+        "textures": 395
+      }
+    ],
+    "mdl_files": 100,
+    "decor_candidates": [
+      "napalm.mdl"
+    ],
+    "editable_map_sources": 0
+  }
+]

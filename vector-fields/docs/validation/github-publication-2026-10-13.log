@@ -1,0 +1,155 @@
+[unit] validate.py --unit-worker
+test_engine_patches_belong_to_release_inputs (build_inputs_unit_test.BuildInputsTests) ... ok
+test_network_resources_libraries_and_deleted_headers_change_identity (build_inputs_unit_test.BuildInputsTests) ... ok
+test_removed_header_does_not_survive_in_compilation_cache (build_inputs_unit_test.BuildInputsTests) ... ok
+test_corrupted_output_invalidates (build_pipeline_unit_test.CacheTests) ... ok
+test_empty_outputs_cannot_claim_success (build_pipeline_unit_test.CacheTests) ... ok
+test_file_boundaries_cannot_collide (build_pipeline_unit_test.CacheTests) ... ok
+test_hash_is_order_independent_and_deduplicated (build_pipeline_unit_test.CacheTests) ... ok
+test_legacy_existence_only_cache_is_rebuilt (build_pipeline_unit_test.CacheTests) ... ok
+test_missing_input_reports_its_path (build_pipeline_unit_test.CacheTests) ... ok
+test_missing_output_invalidates (build_pipeline_unit_test.CacheTests) ... ok
+test_renamed_input_invalidates (build_pipeline_unit_test.CacheTests) ... ok
+test_same_size_same_timestamp_input_change_invalidates (build_pipeline_unit_test.CacheTests) ... ok
+test_truncated_state_recovers (build_pipeline_unit_test.CacheTests) ... ok
+test_unchanged_files_are_current (build_pipeline_unit_test.CacheTests) ... ok
+test_finish_catalog_has_one_serialization_for_both_generators (build_pipeline_unit_test.DependencyTests) ... ok
+test_gestures_and_foregrip_recipe_do_not_invalidate_weapon_meshes (build_pipeline_unit_test.DependencyTests) ... ok
+test_third_person_includes_retarget_helpers_and_donor (build_pipeline_unit_test.DependencyTests) ... ok
+test_animation_edit_rebuilds_rigs_only (build_pipeline_unit_test.RebuildTests) ... ok
+test_corrupted_rig_rebuilds_without_touching_modules (build_pipeline_unit_test.RebuildTests) ... ok
+test_failed_compile_does_not_commit_cache (build_pipeline_unit_test.RebuildTests) ... ok
+test_texture_edit_rebuilds_modules_only (build_pipeline_unit_test.RebuildTests) ... ok
+test_unchanged_build_invokes_no_compiler (build_pipeline_unit_test.RebuildTests) ... ok
+test_current_documents_match_source_declarations (documentation_unit_test.DocumentationTests) ... ok
+test_stale_contract_values_are_replaced (documentation_unit_test.DocumentationTests) ... ok
+test_every_pair_has_a_unique_native_index (fragment_skins_unit_test.FragmentSkinTests) ... ok
+test_invalid_finishes_are_rejected (fragment_skins_unit_test.FragmentSkinTests) ... ok
+test_missing_detail_bank_is_rejected (fragment_skins_unit_test.FragmentSkinTests) ... ok
+test_mixed_rows_reuse_the_correct_material_banks (fragment_skins_unit_test.FragmentSkinTests) ... ok
+test_uniform_indices_remain_compatible (fragment_skins_unit_test.FragmentSkinTests) ... ok
+test_wrong_compiled_family_count_is_rejected (fragment_skins_unit_test.FragmentSkinTests) ... ok
+test_bot_launcher_refreshes_models_and_maps_with_the_dlls (model_delivery_unit_test.BotDeliveryTests) ... ok
+test_bot_renderer_mismatch_is_rejected_before_asset_replacement (model_delivery_unit_test.BotDeliveryTests) ... ok
+test_canonical_startup_loads_voice_policy_once (model_delivery_unit_test.DeliveryTests) ... ok
+test_complete_delivery_is_verified (model_delivery_unit_test.DeliveryTests) ... ok
+test_missing_death_sound_is_detected (model_delivery_unit_test.DeliveryTests) ... ok
+test_missing_elemental_death_sfx_is_detected (model_delivery_unit_test.DeliveryTests) ... ok
+test_missing_fx_room_is_detected (model_delivery_unit_test.DeliveryTests) ... ok
+test_missing_headgear_texture_is_detected (model_delivery_unit_test.DeliveryTests) ... ok
+test_missing_nadir_sky_face_is_detected (model_delivery_unit_test.DeliveryTests) ... ok
+test_missing_piece_named_in_manifest_is_detected (model_delivery_unit_test.DeliveryTests) ... ok
+test_missing_required_hud_decal_cannot_hide_behind_empty_glob (model_delivery_unit_test.DeliveryTests) ... ok
+test_missing_room_is_detected (model_delivery_unit_test.DeliveryTests) ... ok
+test_missing_slide_legs_is_detected (model_delivery_unit_test.DeliveryTests) ... ok
+test_missing_slide_sound_is_detected (model_delivery_unit_test.DeliveryTests) ... ok
+test_missing_source_carrier_cannot_hide_behind_empty_glob (model_delivery_unit_test.DeliveryTests) ... ok
+test_stale_cloud_coverage_is_detected (model_delivery_unit_test.DeliveryTests) ... ok
+test_stale_death_sound_is_detected (model_delivery_unit_test.DeliveryTests) ... ok
+test_stale_detachment_sfx_is_detected (model_delivery_unit_test.DeliveryTests) ... ok
+test_stale_filtered_voice_is_detected (model_delivery_unit_test.DeliveryTests) ... ok
+test_stale_hud_decal_is_detected (model_delivery_unit_test.DeliveryTests) ... ok
+test_stale_room_is_detected (model_delivery_unit_test.DeliveryTests) ... ok
+test_stale_server_dll_is_detected (model_delivery_unit_test.DeliveryTests) ... ok
+test_stale_slide_sound_is_detected (model_delivery_unit_test.DeliveryTests) ... ok
+test_stale_third_person_carrier_is_detected (model_delivery_unit_test.DeliveryTests) ... ok
+test_stale_traversal_network_is_detected (model_delivery_unit_test.DeliveryTests) ... ok
+test_world_palm_client_refuses_an_older_renderer (model_delivery_unit_test.DeliveryTests) ... ok
+test_wrong_renderer_interface_is_rejected_before_delivery (model_delivery_unit_test.DeliveryTests) ... ok
+test_added_bolt_does_not_change_source_joint_mapping (model_delivery_unit_test.ModelTests) ... ok
+test_adding_top_chassis_updates_generated_selector (model_delivery_unit_test.ModelTests) ... ok
+test_ambiguous_sockets_are_rejected (model_delivery_unit_test.ModelTests) ... ok
+test_donor_joint_reordering_requires_explicit_review (model_delivery_unit_test.ModelTests) ... ok
+test_generated_header_matches_single_source (model_delivery_unit_test.ModelTests) ... ok
+test_grip_trait_requires_boolean (model_delivery_unit_test.ModelTests) ... ok
+test_invalid_feed_mount_is_rejected (model_delivery_unit_test.ModelTests) ... ok
+test_mount_wire_order_cannot_be_changed (model_delivery_unit_test.ModelTests) ... ok
+test_unsafe_carrier_path_is_rejected (model_delivery_unit_test.ModelTests) ... ok
+test_native_launches_bind_ipv4_loopback_and_disable_ipv6 (native_network_policy_unit_test.NativeNetworkPolicyUnitTest) ... ok
+test_cleanup_preserves_proof_and_rejects_escape (native_workspace_unit_test.NativeWorkspaceTest) ... ok
+test_failed_archive_preserves_previous_evidence_and_live_engine (native_workspace_unit_test.NativeWorkspaceTest) ... ok
+test_parallel_same_case_publishes_one_complete_snapshot (native_workspace_unit_test.NativeWorkspaceTest) ... ok
+test_snapshots_survive_source_updates_and_config_is_private (native_workspace_unit_test.NativeWorkspaceTest) ... ok
+test_all_head_joins_match_blue_hood (persona_head_seams_unit_test.HeadJoinTests) ... ok
+test_authored_shirt_collar_survives_head_seam_correction (persona_head_seams_unit_test.HeadJoinTests) ... ok
+test_coherent_material_is_unchanged (persona_head_seams_unit_test.HeadJoinTests) ... ok
+test_correction_is_idempotent_and_retains_shading (persona_head_seams_unit_test.HeadJoinTests) ... ok
+test_mdl_texels_survive_the_compiler_coordinate_conversion (persona_head_seams_unit_test.HeadJoinTests) ... ok
+test_uniform_black_join_can_match_light_hood (persona_head_seams_unit_test.HeadJoinTests) ... ok
+test_uv_gutter_extends_fabric_without_touching_eyes_or_shirt (persona_head_seams_unit_test.HeadJoinTests) ... ok
+test_discontinuous_surfaces_share_colour_and_shading_after_filtering (persona_head_seams_unit_test.SurfaceContinuityTests) ... ok
+test_face_interior_and_adjacent_boots_survive_surface_fit (persona_head_seams_unit_test.SurfaceContinuityTests) ... ok
+test_generated_clothing_face_and_shirt_collar_pixels_are_discarded (persona_head_seams_unit_test.SurfaceContinuityTests) ... ok
+test_palette_refit_keeps_clothing_indices_and_original_palette (persona_head_seams_unit_test.SurfaceContinuityTests) ... ok
+test_changed_engine_recipe_rejected (release_publication_unit_test.PublicationTests) ... ok
+test_changed_tested_binary_rejected (release_publication_unit_test.PublicationTests) ... ok
+test_failed_swap_restores_entire_old_mod_and_binaries (release_publication_unit_test.PublicationTests) ... ok
+test_installed_current_rejects_engine_drift (release_publication_unit_test.PublicationTests) ... ok
+test_stale_sources_rejected (release_publication_unit_test.PublicationTests) ... ok
+R-01 modules and animated rigs are current.
+R-01 modules and animated rigs are current.
+PASS published complete release test
+test_success_keeps_player_save (release_publication_unit_test.PublicationTests) ... ok
+test_unvalidated_rejected_before_live_write (release_publication_unit_test.PublicationTests) ... ok
+test_current_rollback_and_authored_assets_survive (release_retention_unit_test.RetentionTests) ... ok
+test_receipt_outside_release_root_is_rejected (release_retention_unit_test.RetentionTests) ... ok
+test_retired_captures_are_bounded_and_logs_saves_are_preserved (release_retention_unit_test.RetentionTests) ... ok
+test_central_validation_includes_new_integration_cases (runtime_contract_unit_test.RuntimeContractTest) ... ok
+test_command_and_message_lengths_follow_appended_slots (runtime_contract_unit_test.RuntimeContractTest) ... ok
+test_corrupt_map_is_rebuilt (test_room_unit_test.RoomTests) ... ok
+test_default_build_uses_authored_base (test_room_unit_test.RoomTests) ... ok
+test_patch_is_idempotent_and_preserves_geometry (test_room_unit_test.RoomTests) ... ok
+test_unchanged_build_does_not_rewrite_output (test_room_unit_test.RoomTests) ... ok
+test_changed_parent_is_rejected (traversal_editor_unit_test.TraversalEditorTest) ... ok
+test_combined_scene_mesh_keeps_binding_at_every_frame (traversal_editor_unit_test.TraversalEditorTest) ... ok
+test_hang_idle_finger_edit_reaches_camera_sectors (traversal_editor_unit_test.TraversalEditorTest) ... ok
+test_hanging_thumbs_spread_away_from_middle_fingers (traversal_editor_unit_test.TraversalEditorTest) ... ok
+test_invalid_transform_is_rejected (traversal_editor_unit_test.TraversalEditorTest) ... ok
+test_missing_bone_is_rejected (traversal_editor_unit_test.TraversalEditorTest) ... ok
+test_new_manual_vault_replaces_only_accepted_legacy_revision (traversal_editor_unit_test.TraversalEditorTest) ... ok
+test_round_trip_keeps_full_rig_and_transforms (traversal_editor_unit_test.TraversalEditorTest) ... ok
+test_stretched_arm_is_rejected (traversal_editor_unit_test.TraversalEditorTest) ... ok
+test_local_contract_is_unchanged (traversal_telemetry_unit_test.TelemetryTest) ... ok
+test_network_rounding_is_explicit (traversal_telemetry_unit_test.TelemetryTest) ... ok
+test_real_drift_still_fails (traversal_telemetry_unit_test.TelemetryTest) ... ok
+
+----------------------------------------------------------------------
+Ran 110 tests in 11.987s
+
+OK
+Prepared GIGN test room from authored base: four reactive targets, geometry and lighting retained
+Prepared GIGN test room from authored base: four reactive targets, geometry and lighting retained
+Prepared GIGN test room from authored base: four reactive targets, geometry and lighting retained
+Prepared GIGN test room from authored base: four reactive targets, geometry and lighting retained
+[unit] model_contract.py --check
+[unit] contract_documentation.py --check
+[unit] tests/status_renderer_update_test.py
+PASS renderer update: hash validation, shared collision/melee/body capability gates, locked DLL refusal, verified install, repeat no-op
+[policy] cpp_tests.py
+[modular] PASS modular: 583 unique exact covers, 10000 seeds, connected I/L/domino/mono modules, joins/supports/approaches and deterministic layouts
+[tile_rooms] PASS tile rooms: 10000 seeded layouts, eight variants, all four forms, coherent module interiors, forced comparisons and sealed internal joints
+[backend] backend policy: 4119 checks, 0 failures
+[voice_filter] PASS voice filtering: 227 dialogue variants, 24 normal announcements, 102 original death cries
+[headgear] PASS headgear policy: five optional items, stable slots/saves, complete R01 builds and reversible gesture
+[loadout] PASS: 2335 checks; independent equipment budgets and five-zone appearance validation; fingerprint=3155445387
+[architecture] PASS architecture: 605 validation, stable-key migration and rig-selection checks
+[effects] PASS effects: 10601 graph, trajectory, finite-value and capacity checks
+[voice] PASS death selection: 102 clips, 16 elemental causes, tactical fallback, expiry, reaction priority and clearing.
+PASS taunt policy: radius boundary, chance limits, hearing window, life identity and source validity.
+PASS effect lifecycle: eight symmetric reactions, consumption, refresh, expiry, no triples, voice mapping and cancellable onsets.
+PASS voice scheduling: cooldowns, interruption priority, death, no immediate repeats, restore.
+[combat] PASS combat policy: seven regions, unchanged skill damage, physical override precedence, unknown calibration and projectile types
+[proc] PASS six-hit proc: real sliding window, boundary, independent victims/elements, consumed batches, eight primaries without reactions
+[fragments] PASS fragment finishes: 529 reversible pairs, stable uniform indices, head/arms/legs use their own clothing zones
+[inspect] PASS inspection: continuous faster opening, opposite sides, readable holds, smooth return, combat/weapon/clock cancellation, no retrigger
+[melee] PASS melee policy: R1/alive/busy/reload/traversal gates, one impact at 20-240 fps and no late impact
+[player_pose] PASS shared player-pose families: all six reference/strike bodies and fitted GIGN; viewmodels and corpses excluded
+[traversal] PASS movement frame=8ms
+PASS movement frame=16ms
+PASS movement frame=33ms
+Traversal movement: 16899 checks, 0 failures
+[wallrun] PASS movement frame=8ms
+PASS movement frame=16ms
+PASS movement frame=33ms
+Traversal movement: 16899 checks, 0 failures
+Wall run plus traversal: 27125 checks, 0 wall-run failures

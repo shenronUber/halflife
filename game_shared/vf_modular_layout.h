@@ -45,9 +45,10 @@ inline std::vector<Layout> Tilings(){
  std::vector<int> masks;Placements(masks);std::vector<Layout> result;Layout current={};
  Enumerate(0,0,current,masks,result);return result;
 }
-inline Layout Generate(uint32_t seed){
+inline Layout Generate(uint32_t seed,int minimumModules=3){
  static const std::vector<Layout> all=Tilings();std::vector<int> eligible;
- for(size_t i=0;i<all.size();++i)if(all[i].modules>=3&&all[i].modules<=6)eligible.push_back((int)i);
+ if(minimumModules<3||minimumModules>6)minimumModules=3;
+ for(size_t i=0;i<all.size();++i)if(all[i].modules>=minimumModules&&all[i].modules<=6)eligible.push_back((int)i);
  Random random(seed);Layout result=all[eligible[random.Pick((int)eligible.size())]];
  std::vector<int> external;
  for(int e=0;e<Edges;++e){int a,b;EdgeCells(e,a,b);

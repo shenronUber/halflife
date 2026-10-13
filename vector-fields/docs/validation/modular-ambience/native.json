@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": [
+    "native engine loads all five WAVs with loop flags",
+    "save/load and map return reload the bank",
+    "map-only ambient entities",
+    "six storm sky faces deployed with the audio",
+    "review s_show captures for real active mixer channels"
+  ],
+  "screenshots": [
+    "ambience_other.png",
+    "ambience_restored.png",
+    "ambience_returned.png",
+    "ambience_started.png"
+  ]
+}

@@ -160,8 +160,9 @@ void VF_DeathTrace(CBasePlayer* p,int hitgroup,const Vector& direction,float dam
  int region=vfdeath::DamageRegion(hitgroup);if(region>=0)t.weights[region]+=damage;
 }
 void VF_DeathDamage(CBasePlayer* p,entvars_t* attacker,float healthDamage,int bits){
+ static_assert(vfdeath::GibPolicyMask==(DMG_NEVERGIB|DMG_ALWAYSGIB),"SDK gib flags changed");
  int i=p->entindex();if(i<1||i>32)return;FatalTrace& t=fatalTraces[i];
- if(t.time!=gpGlobals->time||t.attacker!=attacker||t.applied||t.bits!=bits||
+ if(t.time!=gpGlobals->time||t.attacker!=attacker||t.applied||!vfdeath::SameDamageType(t.bits,bits)||
     !p->pev->takedamage||(p->pev->flags&FL_GODMODE)||!std::isfinite(healthDamage)||healthDamage<=0){VF_DeathDiscardTrace(p);return;}
  vfdeath::AccumulateDamage(p->m_vfRegionDamage,t.weights,t.total,healthDamage);t.applied=true;
 }

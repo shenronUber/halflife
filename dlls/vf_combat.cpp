@@ -140,6 +140,25 @@ void Selftest(CBasePlayer* p){
 }
 bool AnatomyProbe(CBasePlayer* p){
  if(!VF_DeveloperAllowed()||!CVAR_GET_FLOAT("sv_cheats"))return true;
+ if(CMD_ARGC()==6&&!strcmp(CMD_ARGV(1),"shoot")&&p->IsAlive()){
+  int group=atoi(CMD_ARGV(2)),count=atoi(CMD_ARGV(5));float raw=atof(CMD_ARGV(3));
+  const char* name=CMD_ARGV(4);int bullet=!strcmp(name,"mp5")?BULLET_PLAYER_MP5:!strcmp(name,"9mm")?BULLET_PLAYER_9MM:!strcmp(name,"buckshot")?BULLET_PLAYER_BUCKSHOT:-1;
+  if(group<1||group>7||!std::isfinite(raw)||raw<=0||raw>1000||count<1||count>12||bullet<0)return true;
+  TraceResult trace;Vector source;if(!RegionTrace(p,group,trace,source)){ALERT(at_console,"VFAnatomy probe missing group=%d\n",group);return true;}
+  // A distinct shooter is needed: both SDK firing paths ignore their owner.
+  // Zero spread selects an actual traced region deterministically; normal
+  // bullet damage uses iDamage=0, including the SDK's extra NEVERGIB flag.
+  CBaseEntity* shooter=CBaseEntity::Create("info_target",source,g_vecZero);
+  if(!shooter)return true;
+  // Classic FireBullets routes its default 9mm branch through monDmg9MM.
+  // Preserve that SDK behavior; only the isolated probe adjusts its value.
+  float* skill=bullet==BULLET_PLAYER_MP5?&gSkillData.plrDmgMP5:bullet==BULLET_PLAYER_9MM?&gSkillData.monDmg9MM:&gSkillData.plrDmgBuckshot;
+  float original=*skill;*skill=raw;Vector direction=(trace.vecEndPos-source).Normalize();
+  float distance=(trace.vecEndPos-source).Length()+1;
+  if(bullet==BULLET_PLAYER_9MM)shooter->FireBullets(count,source,direction,g_vecZero,distance,bullet,0,0,shooter->pev);
+  else shooter->FireBulletsPlayer(count,source,direction,g_vecZero,distance,bullet,0,0,shooter->pev,42);
+  *skill=original;UTIL_Remove(shooter);return true;
+ }
  if(CMD_ARGC()==5&&!strcmp(CMD_ARGV(1),"setup")){
   float maximum=atof(CMD_ARGV(2)),health=atof(CMD_ARGV(3)),armor=atof(CMD_ARGV(4));
   if(!std::isfinite(maximum)||!std::isfinite(health)||!std::isfinite(armor)||maximum<=0||maximum>10000||health<=0||health>maximum||armor<0||armor>10000)return true;

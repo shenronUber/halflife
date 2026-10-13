@@ -1,5 +1,5 @@
 """One short native test of four reactive targets and all eight six-hit procs."""
-import hashlib,json,re,shutil,subprocess,sys,time,os
+import hashlib,json,re,shutil,subprocess,sys,time,os,math
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT));sys.path.insert(0,str(ROOT/'tests'))
 import third_person_native_test as harness
@@ -18,7 +18,14 @@ def run():
  s+='cmd vf_range_aim 0\nwait 15\ncmd vf_range_info\nvf_range_client\nscreenshot scrshots/range_start.png\nwait 4\n'
  for i,e in enumerate(ELEMENTS):
   slot=i%4;s+=f'cmd vf_range_reset {slot}\ncmd vf_fx_profile {e}\nwait 4\ncmd vf_range_fire {slot} 5\nwait 6\necho FIVE_{e}\ncmd vf_range_info\nwait 4\ncmd vf_range_fire {slot} 1\nwait 20\necho PROC_{e}\ncmd vf_range_info\nvf_range_client\ncmd vf_range_aim {slot}\nwait 8\nscreenshot scrshots/proc_{e}.png\nwait 5\n'
- s+='cmd vf_range_reset 0\ncmd vf_fx_profile thermal\ncmd vf_range_aim 0\nwait 25\n+attack\nwait 42\n-attack\nwait 15\necho REAL_TRIGGER\ncmd vf_range_info\nwait 10\ncmd vf_range_reset 0\ncmd vf_taunt\nwait 280\necho COUNTER_DONE\ncmd vf_range_info\n'
+ # Reply is scheduled after the randomly selected line plus .8 seconds and
+ # sampled by the target's .1-second think. The old 280-frame wait sometimes
+ # killed/reset the target just before Viktor's longer line could be answered.
+ catalog=(ROOT.parent/'game_shared/vf_voice_catalog.h').read_text()
+ durations=[float(d)for d in re.findall(r'\{\d+,7,\d+,"[^"]+","[^"]*",([\d.]+)f\}',catalog)]
+ assert durations,'Taunt durations must come from the compiled voice catalog'
+ counter_frames=math.ceil((max(durations)+1.25)*60)
+ s+=f'cmd vf_range_reset 0\ncmd vf_fx_profile thermal\ncmd vf_range_aim 0\nwait 25\n+attack\nwait 42\n-attack\nwait 15\necho REAL_TRIGGER\ncmd vf_range_info\nwait 10\ncmd vf_range_reset 0\ncmd vf_taunt\nwait {counter_frames}\necho COUNTER_DONE\ncmd vf_range_info\n'
  # Genuine repeated hits kill a target and its scheduled respawn restores it.
  s+='cmd vf_range_fire 0 6\ncmd vf_range_fire 0 6\ncmd vf_range_fire 0 6\ncmd vf_range_fire 0 6\ncmd vf_range_fire 0 6\ncmd vf_range_fire 0 6\ncmd vf_range_fire 0 6\ncmd vf_range_fire 0 6\ncmd vf_range_fire 0 6\ncmd vf_range_fire 0 6\nwait 160\necho RESPAWN_DONE\ncmd vf_range_info\nvf_engine_stats\nwait 12\nquit\n'
  (mod/'range_test.cfg').write_text(s,encoding='ascii');start=time.monotonic()

@@ -32,6 +32,10 @@ def run(candidate=None):
  # The final hit is direct fall damage, after the localized trace was consumed.
  index=lines.index('echo END_unlocalized');lines[index:index]=['cmd vf_anatomy_probe fall 40','wait 5']
  case('armor',10,[(4,50)],0,armor=100)
+ # Exercise FireBullets/FireBulletsPlayer rather than only TraceAttack.
+ for weapon in ('mp5','9mm','buckshot'):
+  case('real_'+weapon,51,[],2,commands=[f'cmd vf_anatomy_probe shoot 4 {8.5 if weapon=="buckshot" else 51} {weapon} {6 if weapon=="buckshot" else 1}','wait 3'])
+ case('real_buckshot_armor',10,[],0,armor=100,commands=['cmd vf_anatomy_probe shoot 4 8.5 buckshot 6','wait 3'])
  lines.extend(['cmd vf_death_clear','wait 3','echo BEGIN_save','cmd vf_anatomy_probe setup 100 51 0','wait 6','cmd vf_anatomy_probe hit 4 20','wait 3','save vf_region_totals','wait 10','load vf_region_totals','wait 90','cmd vf_anatomy_info','wait 3','cmd vf_anatomy_probe hit 4 31','wait 5','echo END_save'])
  cases.append(('save',2))
  lines.extend(['cmd vf_death_clear','wait 3','echo BEGIN_god','cmd vf_anatomy_probe setup 100 100 0','wait 6','god','wait 3','cmd vf_anatomy_probe hit 4 100','wait 3','cmd vf_anatomy_info','wait 3','god','wait 3','cmd vf_anatomy_probe fall 100','wait 5','echo END_god'])
@@ -58,7 +62,7 @@ def run(candidate=None):
   if mask:
    assert sum(int(f[1]) for f in fragments)==1 and len({f[2] for f in fragments})==4,(name,fragments)
    assert len(re.findall(r'VFDeathSfx play .*layer=dismemberment',part))==1,(name,part)
-  if name=='armor':assert 'damage=0.000,10.000,0.000,0.000,0.000' in part,part
+  if name in ('armor','real_buckshot_armor'):assert 'damage=0.000,10.000,0.000,0.000,0.000' in part,part
   if name=='god':assert 'health=100.000' in part and 'damage=0.000,0.000,0.000,0.000,0.000' in part,part
   if name=='save':assert 'damage=0.000,20.000,0.000,0.000,0.000' in part,part
   verified.append(dict(case=name,mask=mask,fragments=len(fragments)))

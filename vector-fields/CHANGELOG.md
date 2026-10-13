@@ -1,3 +1,21 @@
+## Modules jouables, menu de cartes et ambiances — 2026-10-13
+
+- F4 ouvre un menu commun pour les cartes locales, les huit variantes de modules et les cartes CS/TFC importées en exploration. Les descriptions restent des données ; les commandes de lancement n'utilisent que des identifiants validés.
+- `vf_tiles` assemble quatre à six modules, avec quatre familles d'intérieurs et deux variantes chacune. Les raccords, collisions et parcours réutilisent la génération serveur ; la grille `vf_modular` reste disponible.
+- Cinq ambiances longues bouclent dans les deux cartes modulaires : vent, tourbillon et trois grincements de structures. Les recettes, sources et empreintes sont conservées.
+- Build installé `20261013-040215-1514f323` : 58 étapes obligatoires réussies, avec les huit variantes, sauvegarde/restauration, chargements via le menu et deux clients réseau. Revérification avant publication : 110 tests unitaires et 17 groupes C/C++, puis concordance des sources, du moteur et des fichiers installés.
+- [Guide des modules](docs/TILE-LABORATORY.md) et [rapport de publication](docs/validation/github-publication-2026-10-13.json).
+
+## Dégâts anatomiques, builds et cache de poses — 2026-10-13
+
+- Les tirs SDK conservent leur localisation anatomique malgré les indicateurs de fragments `NEVERGIB` et `ALWAYSGIB`. Tests ajoutés sur les véritables chemins MP5, 9 mm et chevrotine, avec armure et sauvegarde.
+- Les empreintes de construction incluent protocole réseau, patches moteur, ressources et bibliothèques. Le contrôle du paquet installé et la publication vérifient aussi l'identité du moteur ; les sources supprimées ne restent plus dans le cache de compilation.
+- Rétention automatique : candidat installé, un précédent candidat validé et un ancien mod. Rapports et sauvegardes archivés avant retrait ; 32 captures par session retirée. Sources Blender, textures et ateliers conservés. Environ 42,5 Go distincts libérés après reconstruction et installation finales.
+- Cache serveur de poses à entrées exactes, limité à 32 joueurs (209 352 octets), sans changement de protocole. Réévaluation lors de toute variation de temps, état ou modèle ; suppression du double calcul du torse et des écritures dans le cache de collision historique inadapté.
+- Deux clients réels : 4 096 requêtes de poses identiques passent de 67,92 à 2,08 ms en médiane. Cette mesure isole les poses et ne représente pas un multiplicateur de FPS.
+- Validation : 110 tests unitaires, 16 suites C/C++, 18 tests moteur, 53 étapes de publication ; 25 cas anatomiques, 8 chutes, 70 poses et 1 400 hitboxes. Écart maximal de 0,112 unité. Les 6 616 fichiers installés et les empreintes des sources ont été revérifiés.
+- Rapport : `docs/validation/maintenance-2026-10-13.json`.
+
 ## Transition de rechargement et spasme du dos — 2026-10-12
 
 - La transition mémorise la visée réellement évaluée au-dessus de la démarche,

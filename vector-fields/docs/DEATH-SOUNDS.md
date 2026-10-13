@@ -4,7 +4,7 @@ Le jeu superpose trois sons natifs independants : le cri de la victime, la signa
 
 ## Essayer et ecouter
 
-Lancer `Jouer - Vector Fields.cmd`, puis **F4** et **F8**. Dans Atlas, choisir un element ou une reaction, puis Corps entier pour entendre cri + cause, ou une zone pour ajouter l arrachement. La tete utilise son propre son d explosion a un timbre legerement plus aigu (104 %), les jambes un timbre legerement plus grave (96 %) et les bras le timbre de reference. Si plusieurs zones sont retirees simultanement, une seule salve d arrachement accompagne les morceaux, pour ne pas empiler le meme son sur chaque membre.
+Lancer `Jouer - Vector Fields.cmd`, puis **F4 → Combat et parcours → Lancer**, puis **F8**. Dans Atlas, choisir un element ou une reaction, puis Corps entier pour entendre cri + cause, ou une zone pour ajouter l arrachement. La tete utilise son propre son d explosion a un timbre legerement plus aigu (104 %), les jambes un timbre legerement plus grave (96 %) et les bras le timbre de reference. Si plusieurs zones sont retirees simultanement, une seule salve d arrachement accompagne les morceaux, pour ne pas empiler le meme son sur chaque membre.
 
 `Atelier - Sons de mort.cmd` ouvre `generated/death-sfx/listen.html` : chaque ligne propose les signatures de mort, d arrachement et de tete seules et un mix d ecoute avec le cri de Rocco. Ces mixes mono ne sont que des exemples d ecoute ; le jeu joue les fichiers separement, avec leur position et attenuation natives.
 

@@ -1,0 +1,174 @@
+{
+  "passed": true,
+  "stats": {
+    "west": {
+      "active": 1,
+      "loaded": 2,
+      "banks": 45,
+      "time": 1.0,
+      "flash": 0.0
+    },
+    "east": {
+      "active": 1,
+      "loaded": 2,
+      "banks": 45,
+      "time": 1.0,
+      "flash": 0.0
+    },
+    "south": {
+      "active": 1,
+      "loaded": 2,
+      "banks": 45,
+      "time": 1.0,
+      "flash": 0.0
+    },
+    "north": {
+      "active": 1,
+      "loaded": 2,
+      "banks": 42,
+      "time": 1.0,
+      "flash": 0.0
+    },
+    "motion_a": {
+      "active": 1,
+      "loaded": 2,
+      "banks": 42,
+      "time": 1.0,
+      "flash": 0.0
+    },
+    "motion_b": {
+      "active": 1,
+      "loaded": 2,
+      "banks": 40,
+      "time": 9.0,
+      "flash": 0.0
+    },
+    "layer_1": {
+      "active": 1,
+      "loaded": 2,
+      "banks": 0,
+      "time": 9.0,
+      "flash": 0.0
+    },
+    "layer_2": {
+      "active": 1,
+      "loaded": 2,
+      "banks": 40,
+      "time": 9.0,
+      "flash": 0.0
+    },
+    "layer_4": {
+      "active": 1,
+      "loaded": 2,
+      "banks": 0,
+      "time": 9.0,
+      "flash": 0.0
+    },
+    "sky_only": {
+      "active": 1,
+      "loaded": 0,
+      "banks": 0,
+      "time": 9.0,
+      "flash": 0.0
+    },
+    "lightning": {
+      "active": 1,
+      "loaded": 3,
+      "banks": 37,
+      "time": 6.915,
+      "flash": 0.85
+    },
+    "calm": {
+      "active": 1,
+      "loaded": 3,
+      "banks": 37,
+      "time": 6.4,
+      "flash": 0.0
+    },
+    "funnel": {
+      "active": 1,
+      "loaded": 3,
+      "banks": 74,
+      "time": 18.0,
+      "flash": 0.0
+    },
+    "third_person": {
+      "active": 1,
+      "loaded": 3,
+      "banks": 82,
+      "time": 18.0,
+      "flash": 0.0
+    },
+    "restored": {
+      "active": 1,
+      "loaded": 2,
+      "banks": 85,
+      "time": 9.0,
+      "flash": 0.0
+    },
+    "overview": {
+      "active": 1,
+      "loaded": 2,
+      "banks": 144,
+      "time": 9.0,
+      "flash": 0.0
+    },
+    "zenith": {
+      "active": 1,
+      "loaded": 2,
+      "banks": 0,
+      "time": 9.0,
+      "flash": 0.0
+    },
+    "other_map": {
+      "active": 0,
+      "loaded": 0,
+      "banks": 0,
+      "time": 0.0,
+      "flash": 0.0
+    },
+    "returned": {
+      "active": 1,
+      "loaded": 2,
+      "banks": 90,
+      "time": 9.0,
+      "flash": 0.0
+    }
+  },
+  "geometry_checks": [
+    "0",
+    "0",
+    "0"
+  ],
+  "motion_mean_difference": 28.591050779286075,
+  "deck_difference_p99": 15.0,
+  "benchmarks": [
+    [
+      "65",
+      "0.0419",
+      "0.0366",
+      "8.2906",
+      "8.4286"
+    ],
+    [
+      "24",
+      "0.0148",
+      "0.0173",
+      "8.2890",
+      "8.4187"
+    ]
+  ],
+  "checks": [
+    "four outward platform edges",
+    "vertical nadir and zenith",
+    "cloud motion at fixed camera",
+    "distant lightning pulses",
+    "first and third person",
+    "save/load reloads textures",
+    "other map has no atmosphere",
+    "map return reloads resources",
+    "same 102 BSP collision candidates",
+    "bounded scenery CPU cost"
+  ],
+  "visual_review": "Review saved native screenshots for style and cloud/sky continuity; pixels do not prove full volumetric rendering."
+}

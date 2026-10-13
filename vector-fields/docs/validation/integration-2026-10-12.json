@@ -1,0 +1,2700 @@
+{
+  "passed": true,
+  "installed": true,
+  "verified_utc": "2026-10-12T04:36:17.582861+00:00",
+  "runtime_mod": "vf_visual",
+  "launcher": "Jouer - Vector Fields.cmd",
+  "features": {
+    "wall_run": "installed and validated on both wall sides; release, aimed bounce, weapons, save/restore and remote/late-join reception",
+    "wall_jump": "installed; backward or turned push-off from hanging, both views, higher ledge recatch and ordinary climb retained",
+    "melee": "installed on V; six mounts, 35 base damage, no ammunition consumed, standing/crouching, first/third person and two-client replication",
+    "walking": "eight direction/view combinations remain animated",
+    "anatomical_death": "strictly over half maximum health after armor, death only, final hit on the same region; four fragments retained",
+    "falling": "eight real falls; damage retained without elemental state"
+  },
+  "fixes": [
+    "shared collision/render solver accepts all melee carriers",
+    "first-person body remains visible during melee",
+    "third-person strike uses authoritative entity sequence/frame rather than reliable cue timing",
+    "routine player-model refresh preserves the active melee carrier",
+    "ongoing action rejects frozen/spectator ownership",
+    "status shells include inspection and melee gloves/sleeves while excluding weapon parts",
+    "multiplayer test scenarios wait for actual sign-on and active wall running before late join"
+  ],
+  "checks": {
+    "unit_tests": 95,
+    "unit_tests_passed": true,
+    "asset_checks": 29,
+    "policy_suites": 15,
+    "all_policies_passed": true,
+    "engine_tests": "18/18",
+    "pose_count": 43,
+    "hitbox_comparisons": 860,
+    "max_world_space_corner_error_units": 0.05696184548951329,
+    "delivery": {
+      "files": 651,
+      "models": 116
+    }
+  },
+  "native_proofs": {
+    "poses": {
+      "passed": true,
+      "seconds": 29.42,
+      "poses": [
+        {
+          "name": "idle_0",
+          "boxes": 20,
+          "phase": 0,
+          "maximum_matrix_error": 0.0002819999999985612,
+          "maximum_corner_error_units": 0.0004247476364787495
+        },
+        {
+          "name": "idle_90",
+          "boxes": 20,
+          "phase": 0,
+          "maximum_matrix_error": 0.0007630000000062864,
+          "maximum_corner_error_units": 0.0018253312293465712
+        },
+        {
+          "name": "idle_180",
+          "boxes": 20,
+          "phase": 0,
+          "maximum_matrix_error": 0.0007940000000417058,
+          "maximum_corner_error_units": 0.001856477395191944
+        },
+        {
+          "name": "idle_270",
+          "boxes": 20,
+          "phase": 0,
+          "maximum_matrix_error": 0.0006249999999994316,
+          "maximum_corner_error_units": 0.001531627890988635
+        },
+        {
+          "name": "crouch_-60",
+          "boxes": 20,
+          "phase": 0,
+          "maximum_matrix_error": 0.0005639999999971224,
+          "maximum_corner_error_units": 0.0012957498468375284
+        },
+        {
+          "name": "crouch_0",
+          "boxes": 20,
+          "phase": 0,
+          "maximum_matrix_error": 0.000335999999990122,
+          "maximum_corner_error_units": 0.0008227038137833924
+        },
+        {
+          "name": "crouch_60",
+          "boxes": 20,
+          "phase": 0,
+          "maximum_matrix_error": 0.000579999999985148,
+          "maximum_corner_error_units": 0.0012795281883590808
+        },
+        {
+          "name": "strafe_0",
+          "boxes": 20,
+          "phase": 0,
+          "maximum_matrix_error": 0.00408900000002177,
+          "maximum_corner_error_units": 0.0066267988645480206
+        },
+        {
+          "name": "strafe_45",
+          "boxes": 20,
+          "phase": 0,
+          "maximum_matrix_error": 0.010437000000024454,
+          "maximum_corner_error_units": 0.023221163942061262
+        },
+        {
+          "name": "strafe_90",
+          "boxes": 20,
+          "phase": 0,
+          "maximum_matrix_error": 0.002828999999998416,
+          "maximum_corner_error_units": 0.006277663612993246
+        },
+        {
+          "name": "strafe_135",
+          "boxes": 20,
+          "phase": 0,
+          "maximum_matrix_error": 0.007294000000001688,
+          "maximum_corner_error_units": 0.00819888257741398
+        },
+        {
+          "name": "strafe_180",
+          "boxes": 20,
+          "phase": 0,
+          "maximum_matrix_error": 0.009951000000000931,
+          "maximum_corner_error_units": 0.01800053741113803
+        },
+        {
+          "name": "strafe_225",
+          "boxes": 20,
+          "phase": 0,
+          "maximum_matrix_error": 0.004516999999964355,
+          "maximum_corner_error_units": 0.007460635496741239
+        },
+        {
+          "name": "strafe_270",
+          "boxes": 20,
+          "phase": 0,
+          "maximum_matrix_error": 0.005127000000015869,
+          "maximum_corner_error_units": 0.005957597807367088
+        },
+        {
+          "name": "strafe_315",
+          "boxes": 20,
+          "phase": 0,
+          "maximum_matrix_error": 0.008057000000007974,
+          "maximum_corner_error_units": 0.017754486893136835
+        },
+        {
+          "name": "reload",
+          "boxes": 20,
+          "phase": 0,
+          "maximum_matrix_error": 0.0006559999999922184,
+          "maximum_corner_error_units": 0.002019939803290725
+        },
+        {
+          "name": "crouch_reload",
+          "boxes": 20,
+          "phase": 0,
+          "maximum_matrix_error": 0.0008929999999907068,
+          "maximum_corner_error_units": 0.0013700863261580233
+        },
+        {
+          "name": "slide_0",
+          "boxes": 20,
+          "phase": 5,
+          "maximum_matrix_error": 0.0028379999999970096,
+          "maximum_corner_error_units": 0.0029054799496337274
+        },
+        {
+          "name": "slide_90",
+          "boxes": 20,
+          "phase": 5,
+          "maximum_matrix_error": 0.002761999999989939,
+          "maximum_corner_error_units": 0.0028050756186899276
+        },
+        {
+          "name": "slide_180",
+          "boxes": 20,
+          "phase": 5,
+          "maximum_matrix_error": 0.0028990000000135296,
+          "maximum_corner_error_units": 0.00293237458537203
+        },
+        {
+          "name": "hang",
+          "boxes": 20,
+          "phase": 2,
+          "maximum_matrix_error": 1.0000000000287557e-06,
+          "maximum_corner_error_units": 2.1101514468211166e-05
+        },
+        {
+          "name": "armed_0",
+          "boxes": 20,
+          "phase": 3,
+          "maximum_matrix_error": 0.0,
+          "maximum_corner_error_units": 0.0
+        },
+        {
+          "name": "armed_45",
+          "boxes": 20,
+          "phase": 3,
+          "maximum_matrix_error": 0.0,
+          "maximum_corner_error_units": 0.0
+        },
+        {
+          "name": "armed_90",
+          "boxes": 20,
+          "phase": 3,
+          "maximum_matrix_error": 0.0,
+          "maximum_corner_error_units": 0.0
+        },
+        {
+          "name": "armed_135",
+          "boxes": 20,
+          "phase": 3,
+          "maximum_matrix_error": 0.0,
+          "maximum_corner_error_units": 0.0
+        },
+        {
+          "name": "armed_180",
+          "boxes": 20,
+          "phase": 3,
+          "maximum_matrix_error": 0.0,
+          "maximum_corner_error_units": 0.0
+        },
+        {
+          "name": "armed_225",
+          "boxes": 20,
+          "phase": 3,
+          "maximum_matrix_error": 0.0,
+          "maximum_corner_error_units": 0.0
+        },
+        {
+          "name": "armed_270",
+          "boxes": 20,
+          "phase": 3,
+          "maximum_matrix_error": 0.0,
+          "maximum_corner_error_units": 0.0
+        },
+        {
+          "name": "armed_315",
+          "boxes": 20,
+          "phase": 3,
+          "maximum_matrix_error": 0.0,
+          "maximum_corner_error_units": 0.0
+        },
+        {
+          "name": "vault",
+          "boxes": 20,
+          "phase": 1,
+          "maximum_matrix_error": 0.036086999999998426,
+          "maximum_corner_error_units": 0.05696184548951329
+        },
+        {
+          "name": "stepup",
+          "boxes": 20,
+          "phase": 1,
+          "maximum_matrix_error": 0.002092000000001093,
+          "maximum_corner_error_units": 0.002901588872351692
+        },
+        {
+          "name": "helmet_riot",
+          "boxes": 20,
+          "phase": 0,
+          "maximum_matrix_error": 0.008270000000010214,
+          "maximum_corner_error_units": 0.014757155425740881
+        },
+        {
+          "name": "helmet_gas_mask",
+          "boxes": 20,
+          "phase": 0,
+          "maximum_matrix_error": 0.015900000000016234,
+          "maximum_corner_error_units": 0.027389667251218087
+        },
+        {
+          "name": "wallrun_right",
+          "boxes": 20,
+          "phase": 8,
+          "maximum_matrix_error": 0.0027610000000066748,
+          "maximum_corner_error_units": 0.0030158565374764227
+        },
+        {
+          "name": "wallrun_left",
+          "boxes": 20,
+          "phase": 8,
+          "maximum_matrix_error": 0.0028379999999970096,
+          "maximum_corner_error_units": 0.002846597137971189
+        },
+        {
+          "name": "walljump_back",
+          "boxes": 20,
+          "phase": 7,
+          "maximum_matrix_error": 0.024201000000005024,
+          "maximum_corner_error_units": 0.036453684827677475
+        },
+        {
+          "name": "walljump_turn",
+          "boxes": 20,
+          "phase": 7,
+          "maximum_matrix_error": 0.029876999999999043,
+          "maximum_corner_error_units": 0.03926756148842175
+        },
+        {
+          "name": "melee_bottom_stand",
+          "boxes": 20,
+          "phase": 0,
+          "maximum_matrix_error": 0.0005499999999756255,
+          "maximum_corner_error_units": 0.0007534068914631289
+        },
+        {
+          "name": "melee_bottom_crouch",
+          "boxes": 20,
+          "phase": 0,
+          "maximum_matrix_error": 0.009947000000000372,
+          "maximum_corner_error_units": 0.01629989589425431
+        },
+        {
+          "name": "melee_side_stand",
+          "boxes": 20,
+          "phase": 0,
+          "maximum_matrix_error": 0.011168999999995322,
+          "maximum_corner_error_units": 0.01500088472841529
+        },
+        {
+          "name": "melee_side_crouch",
+          "boxes": 20,
+          "phase": 0,
+          "maximum_matrix_error": 0.005237999999998522,
+          "maximum_corner_error_units": 0.008693965701038892
+        },
+        {
+          "name": "melee_top_stand",
+          "boxes": 20,
+          "phase": 0,
+          "maximum_matrix_error": 0.005736999999953696,
+          "maximum_corner_error_units": 0.007780396797906933
+        },
+        {
+          "name": "melee_top_crouch",
+          "boxes": 20,
+          "phase": 0,
+          "maximum_matrix_error": 0.0004249999999998977,
+          "maximum_corner_error_units": 0.0006761555142615692
+        }
+      ],
+      "boxes_compared": 860,
+      "maximum_matrix_error": 0.036086999999998426,
+      "maximum_corner_error_units": 0.05696184548951329,
+      "engine_sha256": "6744832e9c178abcbbd769dbb53fd53d4af130f90a248ebdcca7d1d99c3b0e55",
+      "renderer_sha256": "85dd9a5b6fe39530abd7d82c83eb00aaca8fb509e2e7a56746db9f4aa3494f05",
+      "server_sha256": "116fa8cbe70486df49794e261d3ee6d1a663549e5e007834d202b543fdad9ddb",
+      "limits": [
+        "Controlled pose/millisecond quantization; this does not measure network latency or lag compensation."
+      ]
+    },
+    "combat": {
+      "passed": true,
+      "seconds": 17.31,
+      "cases": [
+        {
+          "case": "exact_1",
+          "mask": 0,
+          "fragments": 0
+        },
+        {
+          "case": "above_1",
+          "mask": 1,
+          "fragments": 4
+        },
+        {
+          "case": "wrong_final_1",
+          "mask": 0,
+          "fragments": 0
+        },
+        {
+          "case": "exact_4",
+          "mask": 0,
+          "fragments": 0
+        },
+        {
+          "case": "above_4",
+          "mask": 2,
+          "fragments": 4
+        },
+        {
+          "case": "wrong_final_4",
+          "mask": 0,
+          "fragments": 0
+        },
+        {
+          "case": "exact_5",
+          "mask": 0,
+          "fragments": 0
+        },
+        {
+          "case": "above_5",
+          "mask": 4,
+          "fragments": 4
+        },
+        {
+          "case": "wrong_final_5",
+          "mask": 0,
+          "fragments": 0
+        },
+        {
+          "case": "exact_6",
+          "mask": 0,
+          "fragments": 0
+        },
+        {
+          "case": "above_6",
+          "mask": 8,
+          "fragments": 4
+        },
+        {
+          "case": "wrong_final_6",
+          "mask": 0,
+          "fragments": 0
+        },
+        {
+          "case": "exact_7",
+          "mask": 0,
+          "fragments": 0
+        },
+        {
+          "case": "above_7",
+          "mask": 16,
+          "fragments": 4
+        },
+        {
+          "case": "wrong_final_7",
+          "mask": 0,
+          "fragments": 0
+        },
+        {
+          "case": "cumulative",
+          "mask": 2,
+          "fragments": 4
+        },
+        {
+          "case": "central",
+          "mask": 0,
+          "fragments": 0
+        },
+        {
+          "case": "unlocalized",
+          "mask": 0,
+          "fragments": 0
+        },
+        {
+          "case": "armor",
+          "mask": 0,
+          "fragments": 0
+        },
+        {
+          "case": "save",
+          "mask": 2,
+          "fragments": 4
+        },
+        {
+          "case": "god",
+          "mask": 0,
+          "fragments": 0
+        }
+      ],
+      "falling": [
+        {
+          "profile": "hydro",
+          "health_after": 39.0
+        },
+        {
+          "profile": "electro",
+          "health_after": 39.0
+        },
+        {
+          "profile": "cryo",
+          "health_after": 39.0
+        },
+        {
+          "profile": "thermal",
+          "health_after": 39.0
+        },
+        {
+          "profile": "toxic",
+          "health_after": 39.0
+        },
+        {
+          "profile": "corrosion",
+          "health_after": 39.0
+        },
+        {
+          "profile": "sonic",
+          "health_after": 39.0
+        },
+        {
+          "profile": "kinetic",
+          "health_after": 39.0
+        }
+      ],
+      "server_sha256": "116fa8cbe70486df49794e261d3ee6d1a663549e5e007834d202b543fdad9ddb",
+      "renderer_sha256": "b5bb6dbca97789112b0b2d4093b498387783df1bb1c71e79c3eacfd8e6fe329f"
+    },
+    "wallrun": {
+      "passed": true,
+      "cases": {
+        "FIRST_ACTIVE": {
+          "phase": 8,
+          "state": 98304,
+          "origin": [
+            42.56,
+            -1007.992,
+            128.0
+          ],
+          "velocity": [
+            320.0,
+            0.0,
+            0.0
+          ],
+          "time": 0.266,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 41
+        },
+        "FIRE": {
+          "phase": 8,
+          "state": 98304,
+          "origin": [
+            106.56,
+            -1007.992,
+            128.0
+          ],
+          "velocity": [
+            320.0,
+            0.0,
+            0.0
+          ],
+          "time": 0.666,
+          "clip": 23,
+          "reload": 0,
+          "sequence": 42
+        },
+        "RELOAD": {
+          "phase": 8,
+          "state": 98304,
+          "origin": [
+            192.0,
+            -1007.992,
+            128.0
+          ],
+          "velocity": [
+            320.0,
+            0.0,
+            0.0
+          ],
+          "time": 0.2,
+          "clip": 23,
+          "reload": 1,
+          "sequence": 77
+        },
+        "LONG_ACTIVE": {
+          "phase": 8,
+          "state": 98304,
+          "origin": [
+            709.12,
+            -1007.992,
+            128.0
+          ],
+          "velocity": [
+            320.0,
+            0.0,
+            0.0
+          ],
+          "time": 0.432,
+          "clip": 50,
+          "reload": 0,
+          "sequence": 41
+        },
+        "THIRD_RIGHT": {
+          "phase": 8,
+          "state": 98304,
+          "origin": [
+            85.12,
+            -1007.992,
+            128.0
+          ],
+          "velocity": [
+            320.0,
+            0.0,
+            0.0
+          ],
+          "time": 0.532,
+          "clip": 50,
+          "reload": 0,
+          "sequence": 41
+        },
+        "RELEASED": {
+          "phase": 0,
+          "state": 0,
+          "origin": [
+            229.12,
+            -1007.992,
+            126.938
+          ],
+          "velocity": [
+            320.0,
+            0.0,
+            -72.8
+          ],
+          "time": -0.18,
+          "clip": 50,
+          "reload": 0,
+          "sequence": 41
+        },
+        "THIRD_LEFT": {
+          "phase": 8,
+          "state": 65536,
+          "origin": [
+            96.0,
+            1007.992,
+            128.0
+          ],
+          "velocity": [
+            320.0,
+            0.0,
+            0.0
+          ],
+          "time": 0.6,
+          "clip": 50,
+          "reload": 0,
+          "sequence": 41
+        },
+        "BOUNCE": {
+          "phase": 0,
+          "state": 0,
+          "origin": [
+            110.672,
+            1002.637,
+            135.194
+          ],
+          "velocity": [
+            241.859,
+            -315.012,
+            416.388
+          ],
+          "time": -0.18,
+          "clip": 50,
+          "reload": 0,
+          "sequence": 41
+        },
+        "FLIGHT": {
+          "phase": 0,
+          "state": 0,
+          "origin": [
+            239.582,
+            834.735,
+            243.494
+          ],
+          "velocity": [
+            241.859,
+            -315.012,
+            -10.011
+          ],
+          "time": 0.0,
+          "clip": 50,
+          "reload": 0,
+          "sequence": 41
+        },
+        "TOO_SLOW": {
+          "phase": 0,
+          "state": 0,
+          "origin": [
+            23.94,
+            -1006.0,
+            120.924
+          ],
+          "velocity": [
+            180.0,
+            0.0,
+            -106.4
+          ],
+          "time": 0.0,
+          "clip": 50,
+          "reload": 0,
+          "sequence": 41
+        },
+        "TAKEOFF": {
+          "phase": 8,
+          "state": 98304,
+          "origin": [
+            64.0,
+            -1007.969,
+            40.222
+          ],
+          "velocity": [
+            320.0,
+            0.0,
+            0.0
+          ],
+          "time": 0.368,
+          "clip": 50,
+          "reload": 0,
+          "sequence": 41
+        },
+        "CHAIN": {
+          "phase": 8,
+          "state": 98304,
+          "origin": [
+            -475.411,
+            672.031,
+            150.972
+          ],
+          "velocity": [
+            232.019,
+            0.0,
+            0.0
+          ],
+          "time": 0.58,
+          "clip": 50,
+          "reload": 0,
+          "sequence": 41
+        },
+        "RESTORED": {
+          "phase": 8,
+          "state": 98304,
+          "origin": [
+            53.12,
+            -1007.992,
+            128.0
+          ],
+          "velocity": [
+            320.0,
+            0.0,
+            0.0
+          ],
+          "time": 0.332,
+          "clip": 50,
+          "reload": 0,
+          "sequence": 0
+        }
+      },
+      "pose_samples": 257,
+      "animated_frames": 59,
+      "run_gaits": [
+        3
+      ],
+      "combat_sequences": [
+        "look_idle",
+        "ref_aim_mp5",
+        "ref_reload_mp5",
+        "ref_shoot_mp5"
+      ],
+      "sides": [
+        -1.0,
+        1.0
+      ]
+    },
+    "walljump": {
+      "cases": {
+        "first_back_held": {
+          "phase": 2,
+          "state": 2,
+          "origin": [
+            237.969,
+            -500.0,
+            56.031
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "time": 0.0,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 83,
+          "yaw": 0.0,
+          "wall_yaw": 0.0
+        },
+        "first_back_release": {
+          "phase": 7,
+          "state": 7,
+          "origin": [
+            224.469,
+            -500.0,
+            71.531
+          ],
+          "velocity": [
+            -270.0,
+            0.0,
+            290.0
+          ],
+          "time": 0.617,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 99,
+          "yaw": 0.0,
+          "wall_yaw": 0.0
+        },
+        "first_back_busy": {
+          "phase": 7,
+          "state": 7,
+          "origin": [
+            202.059,
+            -500.0,
+            92.846
+          ],
+          "velocity": [
+            -270.0,
+            0.0,
+            223.6
+          ],
+          "time": 0.534,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 99,
+          "yaw": 0.0,
+          "wall_yaw": 0.0
+        },
+        "first_back_flight": {
+          "phase": 7,
+          "state": 7,
+          "origin": [
+            165.879,
+            -500.0,
+            115.626
+          ],
+          "velocity": [
+            -270.0,
+            0.0,
+            116.4
+          ],
+          "time": 0.4,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 99,
+          "yaw": 180.0,
+          "wall_yaw": 0.0
+        },
+        "first_back_caught": {
+          "phase": 2,
+          "state": 14402,
+          "origin": [
+            114.031,
+            -500.0,
+            120.031
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "time": 0.0,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 83,
+          "yaw": 180.0,
+          "wall_yaw": 180.0
+        },
+        "first_back_settled": {
+          "phase": 2,
+          "state": 14402,
+          "origin": [
+            114.031,
+            -500.0,
+            120.031
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "time": 0.0,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 83,
+          "yaw": 180.0,
+          "wall_yaw": 180.0
+        },
+        "first_turn_held": {
+          "phase": 2,
+          "state": 2,
+          "origin": [
+            237.969,
+            -500.0,
+            56.031
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "time": 0.0,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 83,
+          "yaw": 180.0,
+          "wall_yaw": 0.0
+        },
+        "first_turn_release": {
+          "phase": 7,
+          "state": 32775,
+          "origin": [
+            224.469,
+            -500.0,
+            71.531
+          ],
+          "velocity": [
+            -270.0,
+            0.0,
+            290.0
+          ],
+          "time": 0.616,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 100,
+          "yaw": 180.0,
+          "wall_yaw": 0.0
+        },
+        "first_turn_busy": {
+          "phase": 7,
+          "state": 32775,
+          "origin": [
+            202.059,
+            -500.0,
+            92.846
+          ],
+          "velocity": [
+            -270.0,
+            0.0,
+            223.6
+          ],
+          "time": 0.533,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 100,
+          "yaw": 180.0,
+          "wall_yaw": 0.0
+        },
+        "first_turn_flight": {
+          "phase": 7,
+          "state": 32775,
+          "origin": [
+            166.149,
+            -500.0,
+            115.509
+          ],
+          "velocity": [
+            -270.0,
+            0.0,
+            117.2
+          ],
+          "time": 0.4,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 100,
+          "yaw": 180.0,
+          "wall_yaw": 0.0
+        },
+        "first_turn_caught": {
+          "phase": 2,
+          "state": 14402,
+          "origin": [
+            114.031,
+            -500.0,
+            120.031
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "time": 0.0,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 83,
+          "yaw": 180.0,
+          "wall_yaw": 180.0
+        },
+        "first_turn_settled": {
+          "phase": 2,
+          "state": 14402,
+          "origin": [
+            114.031,
+            -500.0,
+            120.031
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "time": 0.0,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 83,
+          "yaw": 180.0,
+          "wall_yaw": 180.0
+        },
+        "third_back_held": {
+          "phase": 2,
+          "state": 2,
+          "origin": [
+            237.969,
+            -500.0,
+            56.031
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "time": 0.0,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 83,
+          "yaw": 0.0,
+          "wall_yaw": 0.0
+        },
+        "third_back_release": {
+          "phase": 7,
+          "state": 7,
+          "origin": [
+            224.469,
+            -500.0,
+            71.531
+          ],
+          "velocity": [
+            -270.0,
+            0.0,
+            290.0
+          ],
+          "time": 0.617,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 99,
+          "yaw": 0.0,
+          "wall_yaw": 0.0
+        },
+        "third_back_busy": {
+          "phase": 7,
+          "state": 7,
+          "origin": [
+            201.789,
+            -500.0,
+            93.069
+          ],
+          "velocity": [
+            -270.0,
+            0.0,
+            222.8
+          ],
+          "time": 0.533,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 99,
+          "yaw": 0.0,
+          "wall_yaw": 0.0
+        },
+        "third_back_flight": {
+          "phase": 7,
+          "state": 7,
+          "origin": [
+            165.879,
+            -500.0,
+            115.626
+          ],
+          "velocity": [
+            -270.0,
+            0.0,
+            116.4
+          ],
+          "time": 0.4,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 99,
+          "yaw": 180.0,
+          "wall_yaw": 0.0
+        },
+        "third_back_caught": {
+          "phase": 2,
+          "state": 14402,
+          "origin": [
+            114.031,
+            -500.0,
+            120.031
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "time": 0.0,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 83,
+          "yaw": 180.0,
+          "wall_yaw": 180.0
+        },
+        "third_back_settled": {
+          "phase": 2,
+          "state": 14402,
+          "origin": [
+            114.031,
+            -500.0,
+            120.031
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "time": 0.0,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 83,
+          "yaw": 180.0,
+          "wall_yaw": 180.0
+        },
+        "third_turn_held": {
+          "phase": 2,
+          "state": 2,
+          "origin": [
+            237.969,
+            -500.0,
+            56.031
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "time": 0.0,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 83,
+          "yaw": 180.0,
+          "wall_yaw": 0.0
+        },
+        "third_turn_release": {
+          "phase": 7,
+          "state": 32775,
+          "origin": [
+            224.469,
+            -500.0,
+            71.531
+          ],
+          "velocity": [
+            -270.0,
+            0.0,
+            290.0
+          ],
+          "time": 0.617,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 100,
+          "yaw": 180.0,
+          "wall_yaw": 0.0
+        },
+        "third_turn_busy": {
+          "phase": 7,
+          "state": 32775,
+          "origin": [
+            201.789,
+            -500.0,
+            93.069
+          ],
+          "velocity": [
+            -270.0,
+            0.0,
+            222.8
+          ],
+          "time": 0.533,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 100,
+          "yaw": 180.0,
+          "wall_yaw": 0.0
+        },
+        "third_turn_flight": {
+          "phase": 7,
+          "state": 32775,
+          "origin": [
+            165.879,
+            -500.0,
+            115.626
+          ],
+          "velocity": [
+            -270.0,
+            0.0,
+            116.4
+          ],
+          "time": 0.4,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 100,
+          "yaw": 180.0,
+          "wall_yaw": 0.0
+        },
+        "third_turn_caught": {
+          "phase": 2,
+          "state": 14402,
+          "origin": [
+            114.031,
+            -500.0,
+            120.031
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "time": 0.0,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 83,
+          "yaw": 180.0,
+          "wall_yaw": 180.0
+        },
+        "third_turn_settled": {
+          "phase": 2,
+          "state": 14402,
+          "origin": [
+            114.031,
+            -500.0,
+            120.031
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "time": 0.0,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 83,
+          "yaw": 180.0,
+          "wall_yaw": 180.0
+        },
+        "climb": {
+          "phase": 4,
+          "state": 4,
+          "origin": [
+            237.969,
+            0.0,
+            70.678
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "time": 0.767,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 93,
+          "yaw": 0.0,
+          "wall_yaw": 0.0
+        },
+        "climb_done": {
+          "phase": 0,
+          "state": 0,
+          "origin": [
+            293.335,
+            0.0,
+            132.031
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "time": 0.0,
+          "clip": 25,
+          "reload": 0,
+          "sequence": 41,
+          "yaw": 0.0,
+          "wall_yaw": 0.0
+        }
+      },
+      "assets": [
+        {
+          "candidate": "G:\\Half life Project\\vector-fields\\build\\integration-audit\\installed\\generated\\traversal\\ledge_gloves.mdl",
+          "relative": "models/vf_traversal/ledge_gloves.mdl",
+          "view": "first-person",
+          "sha256": "cc9c37bd370e394e1fea073bae42d2df3bea668d16992e6111c2f51b34fd6934"
+        },
+        {
+          "candidate": "G:\\Half life Project\\vector-fields\\build\\integration-audit\\installed\\generated\\traversal\\ledge_sleeves.mdl",
+          "relative": "models/vf_traversal/ledge_sleeves.mdl",
+          "view": "first-person",
+          "sha256": "81be6f2e6656403e9ff1558c6926893529fe179a4ca9108bace14c5bbd120738"
+        },
+        {
+          "candidate": "G:\\Half life Project\\vector-fields\\build\\integration-audit\\installed\\generated\\traversal\\r01_rig_fg_tr.mdl",
+          "relative": "models/vf_traversal/r01_rig_fg_tr.mdl",
+          "view": "first-person",
+          "sha256": "5931c7f95fbdd03a0f10a93cfa1b9093268314ed18e118f275195ad82f6ecb3e"
+        },
+        {
+          "candidate": "G:\\Half life Project\\vector-fields\\build\\integration-audit\\installed\\generated\\traversal\\r01_rig_side_fg_tr.mdl",
+          "relative": "models/vf_traversal/r01_rig_side_fg_tr.mdl",
+          "view": "first-person",
+          "sha256": "15c9c9e0fef77e7cc756ac409fea9784ae821f6591d647f13d7b288bbd815155"
+        },
+        {
+          "candidate": "G:\\Half life Project\\vector-fields\\build\\integration-audit\\installed\\generated\\traversal\\r01_rig_side_tr.mdl",
+          "relative": "models/vf_traversal/r01_rig_side_tr.mdl",
+          "view": "first-person",
+          "sha256": "7f1cabbe1e589be76fe0d89a10fd084904e335d1391cc403770e43b10606dfeb"
+        },
+        {
+          "candidate": "G:\\Half life Project\\vector-fields\\build\\integration-audit\\installed\\generated\\traversal\\r01_rig_top_fg_tr.mdl",
+          "relative": "models/vf_traversal/r01_rig_top_fg_tr.mdl",
+          "view": "first-person",
+          "sha256": "8d68751a36b1c08afa212ec9e0d9e0d6210f787bfc50037913728b47e68806c6"
+        },
+        {
+          "candidate": "G:\\Half life Project\\vector-fields\\build\\integration-audit\\installed\\generated\\traversal\\r01_rig_top_tr.mdl",
+          "relative": "models/vf_traversal/r01_rig_top_tr.mdl",
+          "view": "first-person",
+          "sha256": "9fcd3a58b24fb69bea8d89b8861ae052f1840b3352e222e28ed1428b3025227c"
+        },
+        {
+          "candidate": "G:\\Half life Project\\vector-fields\\build\\integration-audit\\installed\\generated\\traversal\\r01_rig_tr.mdl",
+          "relative": "models/vf_traversal/r01_rig_tr.mdl",
+          "view": "first-person",
+          "sha256": "ed8bbaa752f447f26d42e1759093fa04de47a779a598060078558b2f84c6e5f1"
+        },
+        {
+          "candidate": "G:\\Half life Project\\vector-fields\\build\\integration-audit\\installed\\generated\\traversal\\slide_legs.mdl",
+          "relative": "models/vf_traversal/slide_legs.mdl",
+          "view": "first-person",
+          "sha256": "09e63e1c8612cb37c3970b9c359796d23ca8e8b45e2f361ad41986f63004284e"
+        },
+        {
+          "candidate": "G:\\Half life Project\\vector-fields\\build\\integration-audit\\installed\\generated\\third-person\\r01_tp.mdl",
+          "relative": "models/vf_r01/r01_tp.mdl",
+          "view": "third-person",
+          "sha256": "7d3c764716c058bf042dbc33067db5cec1c176f92f1984a24de58c7b01c47efc"
+        },
+        {
+          "candidate": "G:\\Half life Project\\vector-fields\\build\\integration-audit\\installed\\generated\\third-person\\r01_tp_side.mdl",
+          "relative": "models/vf_r01/r01_tp_side.mdl",
+          "view": "third-person",
+          "sha256": "e89f2f1889e632f2af1c7721c3ce9cfdacda529e8586f6954673e58dbbb43ed7"
+        },
+        {
+          "candidate": "G:\\Half life Project\\vector-fields\\build\\integration-audit\\installed\\generated\\third-person\\r01_tp_top.mdl",
+          "relative": "models/vf_r01/r01_tp_top.mdl",
+          "view": "third-person",
+          "sha256": "71183c0a9dbefe5277427b8940b5c99d9f90c6e0f1325f362739bc50aa3fc095"
+        }
+      ],
+      "binaries": {
+        "client": "8cb0f039b2ff462b4538a44e553e6bee6c2be5664f03c942e8bd98bd6837440d",
+        "server": "116fa8cbe70486df49794e261d3ee6d1a663549e5e007834d202b543fdad9ddb"
+      },
+      "engine": {
+        "filesystem_stdio.dll": "43cee5be40b85061966d5b6780c4995f3ff2dea880cb2118db1979321f246e9c",
+        "menu.dll": "923b931f56afefd1d78f43a7e83fb8487496e686343e7b396220d9e7694bc985",
+        "ref_gl.dll": "b5bb6dbca97789112b0b2d4093b498387783df1bb1c71e79c3eacfd8e6fe329f",
+        "SDL2.dll": "68c78590d1997122c30c992ec79857d32e5e976a0f17c0a69a2e29eab0101d70",
+        "vgui.dll": "52cd0b3665f2a612e96cd4e1747e4f6cabdcd89a1c9ca3ad679c879cc9f2f690",
+        "xash.dll": "6744832e9c178abcbbd769dbb53fd53d4af130f90a248ebdcca7d1d99c3b0e55",
+        "xash.exe": "318bda098cb2c044d8997ca45d0d17dbc7afc1bfa23dae74e537964f064834c3",
+        "xash3d.exe": "448faf985862d8a7906dcf029a74248e325da31dbb45bbfa117c2ab86382bff0"
+      },
+      "delta_sha256": "529709b7c99336af58770933fb74e320f61e6280bc24d7ef5d8386174187449d",
+      "passed": true
+    },
+    "walking": {
+      "passed": true,
+      "cases": {
+        "first_forward": {
+          "rendered_samples": 38,
+          "distance": 73.92000000000002,
+          "left_swing": 20.24200000000002,
+          "right_swing": 20.44799999999998
+        },
+        "first_diagonal": {
+          "rendered_samples": 38,
+          "distance": 104.70766505371036,
+          "left_swing": 20.260000000000005,
+          "right_swing": 20.278999999999996
+        },
+        "first_sideways": {
+          "rendered_samples": 38,
+          "distance": 74.03899999999999,
+          "left_swing": 20.268000000000015,
+          "right_swing": 20.48599999999999
+        },
+        "first_backward": {
+          "rendered_samples": 38,
+          "distance": 73.92,
+          "left_swing": 20.283,
+          "right_swing": 20.473
+        },
+        "third_forward": {
+          "rendered_samples": 38,
+          "distance": 73.92000000000002,
+          "left_swing": 20.239000000000004,
+          "right_swing": 20.414999999999992
+        },
+        "third_diagonal": {
+          "rendered_samples": 38,
+          "distance": 104.53795942622945,
+          "left_swing": 15.086000000000013,
+          "right_swing": 15.251999999999953
+        },
+        "third_sideways": {
+          "rendered_samples": 38,
+          "distance": 73.91899999999998,
+          "left_swing": 20.280000000000086,
+          "right_swing": 20.477999999999952
+        },
+        "third_backward": {
+          "rendered_samples": 38,
+          "distance": 73.92,
+          "left_swing": 20.227000000000018,
+          "right_swing": 20.395999999999987
+        }
+      },
+      "stops": true,
+      "views": 2,
+      "walking_directions": 4,
+      "binaries": {
+        "client": "8cb0f039b2ff462b4538a44e553e6bee6c2be5664f03c942e8bd98bd6837440d",
+        "server": "116fa8cbe70486df49794e261d3ee6d1a663549e5e007834d202b543fdad9ddb"
+      },
+      "renderer_sha256": "85dd9a5b6fe39530abd7d82c83eb00aaca8fb509e2e7a56746db9f4aa3494f05",
+      "delta_sha256": "529709b7c99336af58770933fb74e320f61e6280bc24d7ef5d8386174187449d",
+      "assets": {
+        "models/vf_traversal/ledge_gloves.mdl": "cc9c37bd370e394e1fea073bae42d2df3bea668d16992e6111c2f51b34fd6934",
+        "models/vf_traversal/ledge_sleeves.mdl": "81be6f2e6656403e9ff1558c6926893529fe179a4ca9108bace14c5bbd120738",
+        "models/vf_traversal/r01_rig_fg_tr.mdl": "5931c7f95fbdd03a0f10a93cfa1b9093268314ed18e118f275195ad82f6ecb3e",
+        "models/vf_traversal/r01_rig_side_fg_tr.mdl": "15c9c9e0fef77e7cc756ac409fea9784ae821f6591d647f13d7b288bbd815155",
+        "models/vf_traversal/r01_rig_side_tr.mdl": "7f1cabbe1e589be76fe0d89a10fd084904e335d1391cc403770e43b10606dfeb",
+        "models/vf_traversal/r01_rig_top_fg_tr.mdl": "8d68751a36b1c08afa212ec9e0d9e0d6210f787bfc50037913728b47e68806c6",
+        "models/vf_traversal/r01_rig_top_tr.mdl": "9fcd3a58b24fb69bea8d89b8861ae052f1840b3352e222e28ed1428b3025227c",
+        "models/vf_traversal/r01_rig_tr.mdl": "ed8bbaa752f447f26d42e1759093fa04de47a779a598060078558b2f84c6e5f1",
+        "models/vf_traversal/slide_legs.mdl": "09e63e1c8612cb37c3970b9c359796d23ca8e8b45e2f361ad41986f63004284e",
+        "models/vf_r01/r01_tp.mdl": "7d3c764716c058bf042dbc33067db5cec1c176f92f1984a24de58c7b01c47efc",
+        "models/vf_r01/r01_tp_side.mdl": "e89f2f1889e632f2af1c7721c3ce9cfdacda529e8586f6954673e58dbbb43ed7",
+        "models/vf_r01/r01_tp_top.mdl": "71183c0a9dbefe5277427b8940b5c99d9f90c6e0f1325f362739bc50aa3fc095"
+      }
+    },
+    "melee": {
+      "passed": true,
+      "states": {
+        "bottom_standard_ready": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 0,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_r01/r01_tp.mdl"
+        },
+        "bottom_standard_impact": {
+          "active": 1,
+          "age": 0.4,
+          "impact": 0,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_melee/r01_tp.mdl"
+        },
+        "bottom_standard_returned": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 1,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_r01/r01_tp.mdl"
+        },
+        "bottom_foregrip_ready": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 1,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_r01/r01_tp.mdl"
+        },
+        "bottom_foregrip_impact": {
+          "active": 1,
+          "age": 0.4,
+          "impact": 0,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_melee/r01_tp.mdl"
+        },
+        "bottom_foregrip_returned": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 1,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_r01/r01_tp.mdl"
+        },
+        "side_standard_ready": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 1,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_r01/r01_tp_side.mdl"
+        },
+        "side_standard_impact": {
+          "active": 1,
+          "age": 0.4,
+          "impact": 0,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_melee/r01_tp_side.mdl"
+        },
+        "side_standard_returned": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 1,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_r01/r01_tp_side.mdl"
+        },
+        "side_foregrip_ready": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 1,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_r01/r01_tp_side.mdl"
+        },
+        "side_foregrip_impact": {
+          "active": 1,
+          "age": 0.4,
+          "impact": 0,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_melee/r01_tp_side.mdl"
+        },
+        "side_foregrip_returned": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 1,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_r01/r01_tp_side.mdl"
+        },
+        "top_standard_ready": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 1,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_r01/r01_tp_top.mdl"
+        },
+        "top_standard_impact": {
+          "active": 1,
+          "age": 0.4,
+          "impact": 0,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_melee/r01_tp_top.mdl"
+        },
+        "top_standard_returned": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 1,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_r01/r01_tp_top.mdl"
+        },
+        "top_foregrip_ready": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 1,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_r01/r01_tp_top.mdl"
+        },
+        "top_foregrip_impact": {
+          "active": 1,
+          "age": 0.4,
+          "impact": 0,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_melee/r01_tp_top.mdl"
+        },
+        "top_foregrip_returned": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 1,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_r01/r01_tp_top.mdl"
+        },
+        "third_standing_ready": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 1,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_r01/r01_tp_top.mdl"
+        },
+        "third_standing_impact": {
+          "active": 1,
+          "age": 0.4,
+          "impact": 0,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_melee/r01_tp_top.mdl"
+        },
+        "third_standing_returned": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 1,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_r01/r01_tp_top.mdl"
+        },
+        "third_crouching_ready": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 1,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_r01/r01_tp_top.mdl"
+        },
+        "third_crouching_impact": {
+          "active": 1,
+          "age": 0.4,
+          "impact": 0,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_melee/r01_tp_top.mdl"
+        },
+        "third_crouching_returned": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 1,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_r01/r01_tp_top.mdl"
+        },
+        "contact_ready": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 1,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_r01/r01_tp_top.mdl"
+        },
+        "contact_early": {
+          "active": 1,
+          "age": 0.2,
+          "impact": 0,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_melee/r01_tp_top.mdl"
+        },
+        "contact_impact": {
+          "active": 1,
+          "age": 0.533,
+          "impact": 1,
+          "hits": 1,
+          "entity": 24,
+          "damage": 35.0,
+          "clip": 25,
+          "model": "models/vf_melee/r01_tp_top.mdl"
+        },
+        "contact_done": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 1,
+          "hits": 1,
+          "entity": 24,
+          "damage": 35.0,
+          "clip": 25,
+          "model": "models/vf_r01/r01_tp_top.mdl"
+        },
+        "cancelled": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 0,
+          "hits": 1,
+          "entity": 24,
+          "damage": 35.0,
+          "clip": 25,
+          "model": "models/vf_r01/r01_tp_top.mdl"
+        },
+        "out_of_range": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 1,
+          "hits": 1,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_r01/r01_tp_top.mdl"
+        },
+        "holstered": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 0,
+          "hits": 1,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": -1,
+          "model": "models/vf_skins/persona_rig.mdl"
+        },
+        "non_r1": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 0,
+          "hits": 1,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": -1,
+          "model": "models/vf_skins/persona_rig.mdl"
+        },
+        "fire_resumed": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 0,
+          "hits": 1,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 23,
+          "model": "models/vf_r01/r01_tp_top.mdl"
+        },
+        "reload_blocked": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 0,
+          "hits": 1,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 23,
+          "model": "models/vf_r01/r01_tp_top.mdl"
+        },
+        "reload_done": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 0,
+          "hits": 1,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 50,
+          "model": "models/vf_r01/r01_tp_top.mdl"
+        },
+        "menu_blocked": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 0,
+          "hits": 1,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 50,
+          "model": "models/vf_r01/r01_tp_top.mdl"
+        },
+        "inspect_replaced": {
+          "active": 1,
+          "age": 0.317,
+          "impact": 0,
+          "hits": 1,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 50,
+          "model": "models/vf_melee/r01_tp_top.mdl"
+        },
+        "headgear_blocked": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 1,
+          "hits": 1,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 50,
+          "model": "models/vf_r01/r01_tp_top.mdl"
+        },
+        "save_restored": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 0,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 50,
+          "model": "models/vf_r01/r01_tp_top.mdl"
+        },
+        "death_cancelled": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 0,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": -1,
+          "model": "models/vf_r01/r01_tp_top.mdl"
+        },
+        "map_reset": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 0,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_r01/r01_tp.mdl"
+        },
+        "slide_blocked": {
+          "active": 0,
+          "age": 0.0,
+          "impact": 0,
+          "hits": 0,
+          "entity": 0,
+          "damage": 0.0,
+          "clip": 25,
+          "model": "models/vf_r01/r01_tp.mdl"
+        }
+      },
+      "configurations": {
+        "bottom_standard": {
+          "rig": "r01_rig.mdl"
+        },
+        "bottom_foregrip": {
+          "rig": "r01_rig_fg.mdl"
+        },
+        "side_standard": {
+          "rig": "r01_rig_side.mdl"
+        },
+        "side_foregrip": {
+          "rig": "r01_rig_side_fg.mdl"
+        },
+        "top_standard": {
+          "rig": "r01_rig_top.mdl"
+        },
+        "top_foregrip": {
+          "rig": "r01_rig_top_fg.mdl"
+        }
+      },
+      "assets": {
+        "melee_gloves.mdl": "0b7e69135b7bfa338b333e4641c17bd3e441462f17316c7a129619e7d842df36",
+        "melee_sleeves.mdl": "2366a3aa5980cc60228e11eb96a55ab6464e3423e190ace4b0f1e0ddefe600a1",
+        "r01_rig.mdl": "c7520814e28cca480f45e297d4bb454437bed558851e5069127f5821404ee36e",
+        "r01_rig_fg.mdl": "a60bfe5d53254feabcd20a2f9046c84b5d8155dafd6374a4477e62a03bc989e7",
+        "r01_rig_side.mdl": "2ebdf606146bf58df201d4b526af2feb4fa89be1f203875d0014a3225976f9f1",
+        "r01_rig_side_fg.mdl": "c248ba6d034113eeb796b69e615e3d5bdf9e5a2723b56d127858c5271239d7f8",
+        "r01_rig_top.mdl": "adf1985d03878172633892acc05bfc4c32c98868937b242e5a4f2054744c918d",
+        "r01_rig_top_fg.mdl": "821d4cc17051bc5efbd0e24f2414c368a46bdf406db429fea3e93f70f1d52a50",
+        "r01_tp.mdl": "6136e0e74ec02c4e564d035effb72bdbab99fd8a93951071061b17d42d1fc35e",
+        "r01_tp_side.mdl": "5f34109430d6dfa8525a147c8e36dbae1d5664015524c39ad7e372a8e9023e45",
+        "r01_tp_top.mdl": "4234295da42cdb30f65abf38bc9055df1670c1c446060fafa28102ae6650a3d1"
+      },
+      "installed_before": {
+        "G:\\Half life Project\\runtime\\vector-engine\\vf_visual\\cl_dlls\\client.dll": "12c6a38d816e6be4d8f22d9b771b43199cf3e732e6d96d49701204ee6edc2210",
+        "G:\\Half life Project\\runtime\\vector-engine\\vf_visual\\dlls\\hl.dll": "55e51f2196588fe6803044d69b1ad684c353fe3ea1e7868f7e0e308a9bcba43c",
+        "G:\\Half life Project\\vector-fields\\build\\client\\client.dll": "12c6a38d816e6be4d8f22d9b771b43199cf3e732e6d96d49701204ee6edc2210",
+        "G:\\Half life Project\\vector-fields\\build\\server\\hl.dll": "55e51f2196588fe6803044d69b1ad684c353fe3ea1e7868f7e0e308a9bcba43c"
+      },
+      "engine_binaries": {
+        "ref_gl.dll": "85dd9a5b6fe39530abd7d82c83eb00aaca8fb509e2e7a56746db9f4aa3494f05",
+        "xash.dll": "6744832e9c178abcbbd769dbb53fd53d4af130f90a248ebdcca7d1d99c3b0e55",
+        "xash3d.exe": "448faf985862d8a7906dcf029a74248e325da31dbb45bbfa117c2ab86382bff0",
+        "xash.exe": "318bda098cb2c044d8997ca45d0d17dbc7afc1bfa23dae74e537964f064834c3",
+        "SDL2.dll": "68c78590d1997122c30c992ec79857d32e5e976a0f17c0a69a2e29eab0101d70"
+      },
+      "renderer_sha256": "85dd9a5b6fe39530abd7d82c83eb00aaca8fb509e2e7a56746db9f4aa3494f05",
+      "client_sha256": "8cb0f039b2ff462b4538a44e553e6bee6c2be5664f03c942e8bd98bd6837440d",
+      "server_sha256": "116fa8cbe70486df49794e261d3ee6d1a663549e5e007834d202b543fdad9ddb",
+      "elapsed": 75.44597387313843,
+      "captures": [
+        "bottom_standard_00",
+        "bottom_standard_01",
+        "bottom_standard_02",
+        "bottom_standard_03",
+        "bottom_standard_04",
+        "bottom_standard_05",
+        "bottom_standard_06",
+        "bottom_standard_07",
+        "bottom_standard_08",
+        "bottom_standard_09",
+        "bottom_standard_10",
+        "bottom_standard_11",
+        "bottom_standard_12",
+        "bottom_standard_13",
+        "bottom_standard_14",
+        "bottom_standard_15",
+        "bottom_standard_16",
+        "bottom_standard_17",
+        "bottom_standard_18",
+        "bottom_standard_19",
+        "bottom_standard_20",
+        "bottom_standard_21",
+        "bottom_standard_22",
+        "bottom_standard_23",
+        "bottom_standard_24",
+        "bottom_standard_25",
+        "bottom_standard_26",
+        "bottom_standard_27",
+        "bottom_standard_28",
+        "bottom_standard_29",
+        "bottom_foregrip_00",
+        "bottom_foregrip_01",
+        "bottom_foregrip_02",
+        "bottom_foregrip_03",
+        "bottom_foregrip_04",
+        "bottom_foregrip_05",
+        "bottom_foregrip_06",
+        "bottom_foregrip_07",
+        "bottom_foregrip_08",
+        "bottom_foregrip_09",
+        "bottom_foregrip_10",
+        "bottom_foregrip_11",
+        "bottom_foregrip_12",
+        "bottom_foregrip_13",
+        "bottom_foregrip_14",
+        "bottom_foregrip_15",
+        "bottom_foregrip_16",
+        "bottom_foregrip_17",
+        "bottom_foregrip_18",
+        "bottom_foregrip_19",
+        "bottom_foregrip_20",
+        "bottom_foregrip_21",
+        "bottom_foregrip_22",
+        "bottom_foregrip_23",
+        "bottom_foregrip_24",
+        "bottom_foregrip_25",
+        "bottom_foregrip_26",
+        "bottom_foregrip_27",
+        "bottom_foregrip_28",
+        "bottom_foregrip_29",
+        "side_standard_00",
+        "side_standard_01",
+        "side_standard_02",
+        "side_standard_03",
+        "side_standard_04",
+        "side_standard_05",
+        "side_standard_06",
+        "side_standard_07",
+        "side_standard_08",
+        "side_standard_09",
+        "side_standard_10",
+        "side_standard_11",
+        "side_standard_12",
+        "side_standard_13",
+        "side_standard_14",
+        "side_standard_15",
+        "side_standard_16",
+        "side_standard_17",
+        "side_standard_18",
+        "side_standard_19",
+        "side_standard_20",
+        "side_standard_21",
+        "side_standard_22",
+        "side_standard_23",
+        "side_standard_24",
+        "side_standard_25",
+        "side_standard_26",
+        "side_standard_27",
+        "side_standard_28",
+        "side_standard_29",
+        "side_foregrip_00",
+        "side_foregrip_01",
+        "side_foregrip_02",
+        "side_foregrip_03",
+        "side_foregrip_04",
+        "side_foregrip_05",
+        "side_foregrip_06",
+        "side_foregrip_07",
+        "side_foregrip_08",
+        "side_foregrip_09",
+        "side_foregrip_10",
+        "side_foregrip_11",
+        "side_foregrip_12",
+        "side_foregrip_13",
+        "side_foregrip_14",
+        "side_foregrip_15",
+        "side_foregrip_16",
+        "side_foregrip_17",
+        "side_foregrip_18",
+        "side_foregrip_19",
+        "side_foregrip_20",
+        "side_foregrip_21",
+        "side_foregrip_22",
+        "side_foregrip_23",
+        "side_foregrip_24",
+        "side_foregrip_25",
+        "side_foregrip_26",
+        "side_foregrip_27",
+        "side_foregrip_28",
+        "side_foregrip_29",
+        "top_standard_00",
+        "top_standard_01",
+        "top_standard_02",
+        "top_standard_03",
+        "top_standard_04",
+        "top_standard_05",
+        "top_standard_06",
+        "top_standard_07",
+        "top_standard_08",
+        "top_standard_09",
+        "top_standard_10",
+        "top_standard_11",
+        "top_standard_12",
+        "top_standard_13",
+        "top_standard_14",
+        "top_standard_15",
+        "top_standard_16",
+        "top_standard_17",
+        "top_standard_18",
+        "top_standard_19",
+        "top_standard_20",
+        "top_standard_21",
+        "top_standard_22",
+        "top_standard_23",
+        "top_standard_24",
+        "top_standard_25",
+        "top_standard_26",
+        "top_standard_27",
+        "top_standard_28",
+        "top_standard_29",
+        "top_foregrip_00",
+        "top_foregrip_01",
+        "top_foregrip_02",
+        "top_foregrip_03",
+        "top_foregrip_04",
+        "top_foregrip_05",
+        "top_foregrip_06",
+        "top_foregrip_07",
+        "top_foregrip_08",
+        "top_foregrip_09",
+        "top_foregrip_10",
+        "top_foregrip_11",
+        "top_foregrip_12",
+        "top_foregrip_13",
+        "top_foregrip_14",
+        "top_foregrip_15",
+        "top_foregrip_16",
+        "top_foregrip_17",
+        "top_foregrip_18",
+        "top_foregrip_19",
+        "top_foregrip_20",
+        "top_foregrip_21",
+        "top_foregrip_22",
+        "top_foregrip_23",
+        "top_foregrip_24",
+        "top_foregrip_25",
+        "top_foregrip_26",
+        "top_foregrip_27",
+        "top_foregrip_28",
+        "top_foregrip_29",
+        "third_standing_00",
+        "third_standing_01",
+        "third_standing_02",
+        "third_standing_03",
+        "third_standing_04",
+        "third_standing_05",
+        "third_standing_06",
+        "third_standing_07",
+        "third_standing_08",
+        "third_standing_09",
+        "third_standing_10",
+        "third_standing_11",
+        "third_standing_12",
+        "third_standing_13",
+        "third_standing_14",
+        "third_standing_15",
+        "third_standing_16",
+        "third_standing_17",
+        "third_standing_18",
+        "third_standing_19",
+        "third_standing_20",
+        "third_standing_21",
+        "third_standing_22",
+        "third_standing_23",
+        "third_standing_24",
+        "third_standing_25",
+        "third_standing_26",
+        "third_standing_27",
+        "third_standing_28",
+        "third_standing_29",
+        "third_crouching_00",
+        "third_crouching_01",
+        "third_crouching_02",
+        "third_crouching_03",
+        "third_crouching_04",
+        "third_crouching_05",
+        "third_crouching_06",
+        "third_crouching_07",
+        "third_crouching_08",
+        "third_crouching_09",
+        "third_crouching_10",
+        "third_crouching_11",
+        "third_crouching_12",
+        "third_crouching_13",
+        "third_crouching_14",
+        "third_crouching_15",
+        "third_crouching_16",
+        "third_crouching_17",
+        "third_crouching_18",
+        "third_crouching_19",
+        "third_crouching_20",
+        "third_crouching_21",
+        "third_crouching_22",
+        "third_crouching_23",
+        "third_crouching_24",
+        "third_crouching_25",
+        "third_crouching_26",
+        "third_crouching_27",
+        "third_crouching_28",
+        "third_crouching_29",
+        "contact_impact",
+        "slide_preserved"
+      ],
+      "checks": [
+        "six full feed/support configurations",
+        "standing/crouched third person",
+        "single server-authoritative contact at keyed impact",
+        "no ammo consumed",
+        "spam blocked",
+        "early cancellation",
+        "range miss",
+        "fire resumes",
+        "reload/menu/weapon/headgear/traversal priority",
+        "inspection replaced",
+        "save load cancels action",
+        "death sequence preserved",
+        "map reset",
+        "native assembly renderer"
+      ]
+    },
+    "melee_network": {
+      "passed": true,
+      "client_sha256": "8cb0f039b2ff462b4538a44e553e6bee6c2be5664f03c942e8bd98bd6837440d",
+      "server_sha256": "116fa8cbe70486df49794e261d3ee6d1a663549e5e007834d202b543fdad9ddb",
+      "renderer_sha256": "85dd9a5b6fe39530abd7d82c83eb00aaca8fb509e2e7a56746db9f4aa3494f05",
+      "engine_binaries": {
+        "ref_gl.dll": "85dd9a5b6fe39530abd7d82c83eb00aaca8fb509e2e7a56746db9f4aa3494f05",
+        "xash.dll": "6744832e9c178abcbbd769dbb53fd53d4af130f90a248ebdcca7d1d99c3b0e55",
+        "xash3d.exe": "448faf985862d8a7906dcf029a74248e325da31dbb45bbfa117c2ab86382bff0",
+        "xash.exe": "318bda098cb2c044d8997ca45d0d17dbc7afc1bfa23dae74e537964f064834c3",
+        "SDL2.dll": "68c78590d1997122c30c992ec79857d32e5e976a0f17c0a69a2e29eab0101d70"
+      },
+      "sequences": [
+        101,
+        102
+      ],
+      "remote_frames": [
+        [
+          "17",
+          101,
+          9.2,
+          "remote_017.png"
+        ],
+        [
+          "18",
+          101,
+          212.2,
+          "remote_018.png"
+        ],
+        [
+          "29",
+          102,
+          39.3,
+          "remote_029.png"
+        ],
+        [
+          "30",
+          102,
+          97.2,
+          "remote_030.png"
+        ],
+        [
+          "31",
+          102,
+          159.6,
+          "remote_031.png"
+        ],
+        [
+          "32",
+          102,
+          217.2,
+          "remote_032.png"
+        ],
+        [
+          "43",
+          101,
+          78.7,
+          "remote_043.png"
+        ],
+        [
+          "44",
+          101,
+          141.0,
+          "remote_044.png"
+        ],
+        [
+          "45",
+          101,
+          198.8,
+          "remote_045.png"
+        ]
+      ],
+      "checks": [
+        "two real native clients and dedicated loopback server",
+        "start/stop messages received by both clients",
+        "standing/crouched appended sequences rendered on remote player",
+        "remote modular rifle remains attached"
+      ]
+    },
+    "melee_transitions": {
+      "passed": true,
+      "first_person_body_during_melee": true,
+      "body_samples": 8,
+      "menu_cancels_before_impact": true,
+      "ledge_catch_cancels_before_impact": true,
+      "client_sha256": "8cb0f039b2ff462b4538a44e553e6bee6c2be5664f03c942e8bd98bd6837440d",
+      "server_sha256": "116fa8cbe70486df49794e261d3ee6d1a663549e5e007834d202b543fdad9ddb",
+      "renderer_sha256": "b5bb6dbca97789112b0b2d4093b498387783df1bb1c71e79c3eacfd8e6fe329f"
+    },
+    "headgear": {
+      "passed": true,
+      "actions": 11,
+      "pose_samples": 1146,
+      "first_and_third_person": true,
+      "max_right_hand_error": 0.0,
+      "max_weapon_error": 0.0,
+      "equipped_raised_save_restored": true,
+      "spam_rejected": true,
+      "captures": [
+        "helmet_riot_inventory",
+        "helmet_riot_fp_down",
+        "helmet_riot_fp_up_present",
+        "helmet_riot_fp_up_rise",
+        "helmet_riot_fp_up_reach",
+        "helmet_riot_fp_up_above",
+        "helmet_riot_fp_up_move",
+        "helmet_riot_fp_up_return",
+        "helmet_riot_fp_up_end",
+        "helmet_riot_fp_down_reach",
+        "helmet_riot_fp_down_move",
+        "helmet_riot_fp_down_return",
+        "helmet_riot_fp_down_end",
+        "helmet_riot_tp_down",
+        "helmet_riot_tp_up_reach",
+        "helmet_riot_tp_up_move",
+        "helmet_riot_tp_up_return",
+        "helmet_riot_tp_up_end",
+        "helmet_riot_tp_down_reach",
+        "helmet_riot_tp_down_move",
+        "helmet_riot_tp_down_return",
+        "helmet_riot_tp_down_end",
+        "helmet_riot_contact_front",
+        "helmet_riot_contact_left",
+        "helmet_riot_contact_oblique",
+        "headgear_after_save"
+      ],
+      "palm_orientation_checked": true,
+      "third_person_palm_inward": true,
+      "third_person_palm_toward_forehead": true,
+      "first_person_overhead_path": true,
+      "first_person_hand_on_edge": true,
+      "first_person_simple_lift": true,
+      "sleeve_deformation_removed": true,
+      "client_sha256": "8cb0f039b2ff462b4538a44e553e6bee6c2be5664f03c942e8bd98bd6837440d",
+      "renderer_sha256": "85dd9a5b6fe39530abd7d82c83eb00aaca8fb509e2e7a56746db9f4aa3494f05",
+      "server_sha256": "116fa8cbe70486df49794e261d3ee6d1a663549e5e007834d202b543fdad9ddb",
+      "diagnostic_skin": false
+    },
+    "gesture_status": {
+      "passed": true,
+      "inspection_arm_shell": true,
+      "melee_arm_shell": true,
+      "weapon_shell_excluded": true,
+      "client_sha256": "8cb0f039b2ff462b4538a44e553e6bee6c2be5664f03c942e8bd98bd6837440d",
+      "server_sha256": "116fa8cbe70486df49794e261d3ee6d1a663549e5e007834d202b543fdad9ddb",
+      "renderer_sha256": "85dd9a5b6fe39530abd7d82c83eb00aaca8fb509e2e7a56746db9f4aa3494f05"
+    }
+  },
+  "wallrun_network": {
+    "actor": [],
+    "observer": [
+      {
+        "player": 1,
+        "phase": 8,
+        "sequence": 41,
+        "gait": 3,
+        "yaw": 0.0
+      },
+      {
+        "player": 2,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      },
+      {
+        "player": 1,
+        "phase": 8,
+        "sequence": 41,
+        "gait": 3,
+        "yaw": 0.0
+      },
+      {
+        "player": 2,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      },
+      {
+        "player": 1,
+        "phase": 8,
+        "sequence": 41,
+        "gait": 3,
+        "yaw": 0.0
+      },
+      {
+        "player": 2,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      },
+      {
+        "player": 1,
+        "phase": 8,
+        "sequence": 41,
+        "gait": 3,
+        "yaw": 0.0
+      },
+      {
+        "player": 2,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      },
+      {
+        "player": 1,
+        "phase": 8,
+        "sequence": 41,
+        "gait": 3,
+        "yaw": 0.0
+      },
+      {
+        "player": 2,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      },
+      {
+        "player": 1,
+        "phase": 8,
+        "sequence": 41,
+        "gait": 3,
+        "yaw": 0.0
+      },
+      {
+        "player": 2,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      },
+      {
+        "player": 1,
+        "phase": 8,
+        "sequence": 41,
+        "gait": 3,
+        "yaw": 0.0
+      },
+      {
+        "player": 2,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      },
+      {
+        "player": 1,
+        "phase": 8,
+        "sequence": 41,
+        "gait": 3,
+        "yaw": 0.0
+      },
+      {
+        "player": 2,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      },
+      {
+        "player": 1,
+        "phase": 8,
+        "sequence": 41,
+        "gait": 3,
+        "yaw": 0.0
+      },
+      {
+        "player": 2,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      },
+      {
+        "player": 1,
+        "phase": 8,
+        "sequence": 41,
+        "gait": 3,
+        "yaw": 0.0
+      },
+      {
+        "player": 2,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      },
+      {
+        "player": 1,
+        "phase": 8,
+        "sequence": 41,
+        "gait": 3,
+        "yaw": 0.0
+      },
+      {
+        "player": 2,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      },
+      {
+        "player": 1,
+        "phase": 8,
+        "sequence": 41,
+        "gait": 3,
+        "yaw": 0.0
+      },
+      {
+        "player": 2,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      }
+    ],
+    "late": [
+      {
+        "player": 1,
+        "phase": 8,
+        "sequence": 41,
+        "gait": 3,
+        "yaw": 0.0
+      },
+      {
+        "player": 2,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      },
+      {
+        "player": 3,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      },
+      {
+        "player": 1,
+        "phase": 8,
+        "sequence": 41,
+        "gait": 3,
+        "yaw": 0.0
+      },
+      {
+        "player": 2,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      },
+      {
+        "player": 3,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      },
+      {
+        "player": 1,
+        "phase": 8,
+        "sequence": 41,
+        "gait": 3,
+        "yaw": 0.0
+      },
+      {
+        "player": 2,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      },
+      {
+        "player": 3,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      },
+      {
+        "player": 1,
+        "phase": 8,
+        "sequence": 41,
+        "gait": 3,
+        "yaw": 0.0
+      },
+      {
+        "player": 2,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      },
+      {
+        "player": 3,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      },
+      {
+        "player": 1,
+        "phase": 8,
+        "sequence": 41,
+        "gait": 3,
+        "yaw": 0.0
+      },
+      {
+        "player": 2,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      },
+      {
+        "player": 3,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      },
+      {
+        "player": 1,
+        "phase": 8,
+        "sequence": 41,
+        "gait": 3,
+        "yaw": 0.0
+      },
+      {
+        "player": 2,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      },
+      {
+        "player": 3,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      },
+      {
+        "player": 1,
+        "phase": 8,
+        "sequence": 41,
+        "gait": 3,
+        "yaw": 0.0
+      },
+      {
+        "player": 2,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      },
+      {
+        "player": 3,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      },
+      {
+        "player": 1,
+        "phase": 8,
+        "sequence": 41,
+        "gait": 3,
+        "yaw": 0.0
+      },
+      {
+        "player": 2,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      },
+      {
+        "player": 3,
+        "phase": 0,
+        "sequence": 41,
+        "gait": 2,
+        "yaw": 0.0
+      }
+    ]
+  },
+  "installation": {
+    "passed": true,
+    "installed": true,
+    "delivery": {
+      "files": 651,
+      "models": 116
+    },
+    "files": {
+      "runtime\\vector-engine\\xash3d.exe": "448faf985862d8a7906dcf029a74248e325da31dbb45bbfa117c2ab86382bff0",
+      "runtime\\vector-engine\\xash.dll": "6744832e9c178abcbbd769dbb53fd53d4af130f90a248ebdcca7d1d99c3b0e55",
+      "runtime\\vector-engine\\xash.exe": "318bda098cb2c044d8997ca45d0d17dbc7afc1bfa23dae74e537964f064834c3",
+      "runtime\\vector-engine\\ref_gl.dll": "85dd9a5b6fe39530abd7d82c83eb00aaca8fb509e2e7a56746db9f4aa3494f05",
+      "runtime\\vector-engine\\SDL2.dll": "68c78590d1997122c30c992ec79857d32e5e976a0f17c0a69a2e29eab0101d70",
+      "runtime\\vector-engine\\vector-engine-build.json": "019799bedc74f283db5fac3d52caadbc8e87ebde21d1bb8c3d614c033fe0fb71",
+      "runtime\\vector-engine\\vf_visual\\cl_dlls\\client.dll": "8cb0f039b2ff462b4538a44e553e6bee6c2be5664f03c942e8bd98bd6837440d",
+      "vector-fields\\build\\client\\client.dll": "8cb0f039b2ff462b4538a44e553e6bee6c2be5664f03c942e8bd98bd6837440d",
+      "runtime\\vector-engine\\vf_visual\\dlls\\hl.dll": "116fa8cbe70486df49794e261d3ee6d1a663549e5e007834d202b543fdad9ddb",
+      "vector-fields\\build\\server\\hl.dll": "116fa8cbe70486df49794e261d3ee6d1a663549e5e007834d202b543fdad9ddb"
+    },
+    "backup": "G:\\Half life Project\\vector-fields\\build\\integration-audit\\installation-backup"
+  },
+  "scope": [
+    "Frozen installed baseline was audited before changes; the fully published melee package was included in the corrected candidate.",
+    "Asset and policy coverage spans equipment, rigs, animations, status feedback, deaths, projectile effects and predicted traversal.",
+    "Focused native coverage validates the recent integration; it is not every historical developer prototype or every map.",
+    "Hitboxes are anatomical boxes. Controlled local pose comparisons do not measure internet latency or lag compensation."
+  ]
+}

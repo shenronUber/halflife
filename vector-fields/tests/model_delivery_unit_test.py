@@ -80,6 +80,9 @@ class DeliveryTests(unittest.TestCase):
             path='generated/atmosphere/'+name;data=('atmosphere '+name).encode();self.write(path,data)
             hashes[str((self.root/path).resolve())]=hashlib.sha256(data).hexdigest()
         self.write('generated/atmosphere/manifest.json',json.dumps(dict(cache=dict(outputs=hashes))).encode())
+        self.write('generated/modular-ambience/wind.wav',b'ambience fixture')
+        self.write('generated/modular-ambience/manifest.json',json.dumps(dict(clips=[dict(
+            path='vf_ambience/wind.wav',sha256=hashlib.sha256(b'ambience fixture').hexdigest())])).encode())
         for source in ['build/client/client.dll','build/server/hl.dll','data/equipment.txt','data/r01_styles.txt','generated/visual_skins/skins.txt','data/effects.json','data/weapon_fx.json','generated/weapon-fx/decals.wad','version.json','generated/effects/test.spr','generated/weapon-fx/sprites/test.spr','generated/weapon-fx/sound/test.wav']:
             self.write(source,b'fixture')
         self.write('data/status_decals.json',json.dumps(dict(effects=[dict(id='hydro')])).encode())
@@ -94,6 +97,8 @@ class DeliveryTests(unittest.TestCase):
         self.write('generated/test-room/vf_range.bsp',b'target room')
         self.write('generated/traversal-range/vf_traversal.bsp',b'traversal room')
         self.write('generated/modular-range/vf_modular.bsp',b'modular room')
+        self.write('generated/tile-laboratory/vf_tiles.bsp',b'tile room')
+        self.write('generated/map-menu/maps.txt',b'map menu')
         network=self.root.parent/'network/delta.lst';network.parent.mkdir(exist_ok=True);network.write_bytes(b'traversal network')
         self.write('generated/weapon-fx/range/vf_fx_range.bsp',b'FX room')
         for source,target in release.deployment_files(self.root):

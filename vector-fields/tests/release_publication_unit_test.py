@@ -11,12 +11,13 @@ class PublicationTests(unittest.TestCase):
   for path,data in [('engine/vf_visual/cl_dlls/client.dll',b'new-client'),('engine/vf_visual/dlls/hl.dll',b'new-server'),('engine/vf_visual/vf/version.json',b'{}'),('sdk/client/client.dll',b'new-client'),('sdk/server/hl.dll',b'new-server')]:
    p=self.candidate/path;p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(data)
   files={str(p.relative_to(self.candidate/'engine')):release.sha(p)for p in(self.candidate/'engine').rglob('*')if p.is_file()}
-  self.manifest=dict(id='test',passed=True,source_identity=release.identity(self.state),files=files)
+  self.manifest=dict(id='test',passed=True,source_identity=release.identity(self.state),engine_source_identity='test-engine',files=files)
   self.write()
   for p in [self.live/'vf_visual/cl_dlls/client.dll',self.live/'vf_visual/dlls/hl.dll',self.sdk/'client/client.dll',self.sdk/'server/hl.dll']:
    p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(b'old')
   p=self.live/'vf_visual/save/player.sav';p.parent.mkdir();p.write_bytes(b'player-save')
   self.patcher=patch.object(release,'inputs',return_value=self.state);self.patcher.start();self.addCleanup(self.patcher.stop)
+  engine=patch.object(release,'engine_identity',return_value='test-engine');engine.start();self.addCleanup(engine.stop)
  def write(self):(self.candidate/'bundle.json').write_text(json.dumps(self.manifest))
  def test_unvalidated_rejected_before_live_write(self):
   self.manifest['passed']=False;self.write()
@@ -28,6 +29,17 @@ class PublicationTests(unittest.TestCase):
  def test_changed_tested_binary_rejected(self):
   (self.candidate/'engine/vf_visual/dlls/hl.dll').write_bytes(b'tampered')
   with self.assertRaisesRegex(RuntimeError,'changed after'):release.publish(self.candidate,self.live,self.sdk)
+ def test_changed_engine_recipe_rejected(self):
+  self.manifest['engine_source_identity']='old-engine';self.write()
+  with self.assertRaisesRegex(RuntimeError,'engine sources are stale'):release.publish(self.candidate,self.live,self.sdk)
+  self.assertEqual(b'old',(self.sdk/'client/client.dll').read_bytes())
+ def test_installed_current_rejects_engine_drift(self):
+  receipt=self.live/'vf_visual/vf/release-bundle.json';receipt.parent.mkdir(parents=True)
+  receipt.write_text(json.dumps(dict(self.manifest,files={},engine_source_identity='old-engine')))
+  with patch.object(release,'RECEIPT',receipt),patch.object(release,'LIVE',self.live):
+   self.assertFalse(release.installed_current())
+   receipt.write_text(json.dumps(dict(self.manifest,files={})))
+   self.assertTrue(release.installed_current())
  def test_success_keeps_player_save(self):
   with patch.object(release,'verify_deployment'):release.publish(self.candidate,self.live,self.sdk)
   self.assertEqual(b'player-save',(self.live/'vf_visual/save/player.sav').read_bytes())

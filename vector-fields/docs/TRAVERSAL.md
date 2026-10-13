@@ -1,6 +1,6 @@
 # Déplacements
 
-Le lanceur habituel utilise le build principal validé `vf_visual`. **F4** ouvre `vf_range`, la salle commune de tir et parcours ; **F9** ouvre la grille modulaire `vf_modular`. Le parcours historique `vf_traversal` reste une carte de régression.
+Le lanceur habituel utilise le build principal validé `vf_visual`. **F4** ouvre le [menu de cartes](TILE-LABORATORY.md) pour choisir la salle commune `vf_range`, la grille simple `vf_modular`, les modules jouables `vf_tiles` et les cartes de référence. Le parcours historique `vf_traversal` reste une carte de régression.
 
 | Geste | Commande |
 | --- | --- |

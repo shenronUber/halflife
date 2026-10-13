@@ -30,7 +30,7 @@ V Normalize(V a){float length=sqrtf(Dot(a,a));return length>.001f?a*(1/length):V
 bool Modular(){
  const char* level=gEngfuncs.pfnGetLevelName();if(!level)return false;
  const char* name=level;for(const char* p=level;*p;++p)if(*p=='/'||*p=='\\')name=p+1;
- return !strcmp(name,"vf_modular.bsp")||!strcmp(name,"vf_modular");
+ return !strcmp(name,"vf_modular.bsp")||!strcmp(name,"vf_modular")||!strcmp(name,"vf_tiles.bsp")||!strcmp(name,"vf_tiles");
 }
 bool Bind(int id,int frame=0){
  if(!attempted[id]){attempted[id]=true;sprites[id]=gEngfuncs.pfnSPR_Load(paths[id]);

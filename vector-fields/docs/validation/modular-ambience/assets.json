@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "clips": [
+    {
+      "id": "wind",
+      "path": "vf_ambience/wind.wav",
+      "seconds": 34,
+      "frames": 749700,
+      "loop_start": 0,
+      "peak": 0.379974365234375,
+      "rms": 0.058130093818036445,
+      "sha256": "d2c8ef6906037c70b4ee0d1d40016246a3d3dcd229c8bad9bd237ecd0531db4e"
+    },
+    {
+      "id": "vortex",
+      "path": "vf_ambience/vortex.wav",
+      "seconds": 47,
+      "frames": 1036350,
+      "loop_start": 0,
+      "peak": 0.28997802734375,
+      "rms": 0.0611372193301756,
+      "sha256": "19efa8d53610358071cc7ef6b66bf104f6e127acfd8997eeb746e8236b8053dd"
+    },
+    {
+      "id": "strain_a",
+      "path": "vf_ambience/strain_a.wav",
+      "seconds": 43,
+      "frames": 948150,
+      "loop_start": 0,
+      "peak": 0.47998046875,
+      "rms": 0.024657634845129357,
+      "sha256": "cfcebcd6afd8a211b973487c330fcc2345c19db1b40eb1a5c6daf5673ebd1f51"
+    },
+    {
+      "id": "strain_b",
+      "path": "vf_ambience/strain_b.wav",
+      "seconds": 59,
+      "frames": 1300950,
+      "loop_start": 0,
+      "peak": 0.47998046875,
+      "rms": 0.020388421083733642,
+      "sha256": "9917edb7a54fd05f947badc2d654d1ff1c8f378fa02b0da01d4411e06f581705"
+    },
+    {
+      "id": "strain_c",
+      "path": "vf_ambience/strain_c.wav",
+      "seconds": 71,
+      "frames": 1565550,
+      "loop_start": 0,
+      "peak": 0.47998046875,
+      "rms": 0.01918918236729501,
+      "sha256": "7677eb450039378e38bbbe8c42db49c221528b48e519ec5d4499787529b86ac2"
+    }
+  ],
+  "entities": [
+    {
+      "pitch": "100",
+      "spawnflags": "1",
+      "health": "2",
+      "message": "vf_ambience/wind.wav",
+      "origin": "0 0 256",
+      "targetname": "vf_air_wind",
+      "classname": "ambient_generic"
+    },
+    {
+      "pitch": "100",
+      "spawnflags": "1",
+      "health": ".6",
+      "message": "vf_ambience/vortex.wav",
+      "origin": "-2000 2000 600",
+      "targetname": "vf_air_vortex",
+      "classname": "ambient_generic"
+    },
+    {
+      "pitch": "100",
+      "spawnflags": "8",
+      "health": "2.2",
+      "message": "vf_ambience/strain_a.wav",
+      "origin": "-1536 -1886 56",
+      "targetname": "vf_structure_strain_a",
+      "classname": "ambient_generic"
+    },
+    {
+      "pitch": "100",
+      "spawnflags": "8",
+      "health": "2.2",
+      "message": "vf_ambience/strain_b.wav",
+      "origin": "0 -350 56",
+      "targetname": "vf_structure_strain_b",
+      "classname": "ambient_generic"
+    },
+    {
+      "pitch": "100",
+      "spawnflags": "8",
+      "health": "2.2",
+      "message": "vf_ambience/strain_c.wav",
+      "origin": "1536 1186 56",
+      "targetname": "vf_structure_strain_c",
+      "classname": "ambient_generic"
+    }
+  ],
+  "maximum_pre_master_mix_peak": 0.41018066406250003,
+  "checks": [
+    "native RIFF cue loop markers",
+    "quiet long loops without a hard seam",
+    "sparse metal events",
+    "two global air beds and three local structures",
+    "five actual BSP sound entities"
+  ]
+}

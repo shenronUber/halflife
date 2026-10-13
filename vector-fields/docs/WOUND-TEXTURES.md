@@ -53,7 +53,7 @@ lumineuse ni émission. Les vêtements conservent leur éclairage habituel.
 
 ## Essai et validation
 
-Relancer **Jouer - Vector Fields.cmd**, ouvrir **F4**, puis **F8**. Choisir le
+Relancer **Jouer - Vector Fields.cmd**, ouvrir **F4 → Combat et parcours → Lancer**, puis **F8**. Choisir le
 membre et la mort classique ou électrique. Les textures sont indépendantes de
 l’effet et des quatorze finitions de vêtements. Les seuils de dégâts demeurent
 reportés, comme prévu dans le prototype.

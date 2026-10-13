@@ -4,6 +4,11 @@
 namespace vfdeath {
 enum {Head=1,LeftArm=2,RightArm=4,LeftLeg=8,RightLeg=16,All=31};
 enum { RegionCount=5, FragmentsPerRegion=4 };
+// These flags select whole-body gibbing, not the source of anatomical damage.
+enum { GibPolicyMask=(1<<12)|(1<<13) };
+inline bool SameDamageType(int traced,int applied){
+ return (traced&~GibPolicyMask)==(applied&~GibPolicyMask);
+}
 inline int DamageRegion(int hitgroup){
  switch(hitgroup){case 1:return 0;case 4:return 1;case 5:return 2;case 6:return 3;case 7:return 4;}
  return -1;

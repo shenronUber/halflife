@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "release": "20261012-211212-eab8f2d7",
+  "source_identity": "92c8bd22799516c5a394f59d7d58169503de2ada426c5f0f5485168b32447c5d",
+  "source_matches": true,
+  "mandatory_commands": 52,
+  "installed_files_checked": [
+    "vf_visual/gfx/env/vf_stormbk.tga",
+    "vf_visual/gfx/env/vf_stormdn.tga",
+    "vf_visual/gfx/env/vf_stormft.tga",
+    "vf_visual/gfx/env/vf_stormlf.tga",
+    "vf_visual/gfx/env/vf_stormrt.tga",
+    "vf_visual/gfx/env/vf_stormup.tga",
+    "vf_visual/sprites/vf_atmosphere/cloud.spr",
+    "vf_visual/sprites/vf_atmosphere/deck.spr",
+    "vf_visual/sprites/vf_atmosphere/white.spr",
+    "vf_visual/vf/atmosphere.json",
+    "vf_visual/cl_dlls/client.dll",
+    "vf_visual/dlls/hl.dll",
+    "vf_visual/maps/vf_modular.bsp"
+  ],
+  "receipts": "G:\\Half life Project\\runtime\\vector-engine\\vf_visual\\vf\\release-bundle.json"
+}

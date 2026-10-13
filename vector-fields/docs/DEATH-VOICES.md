@@ -53,7 +53,7 @@ The bank stays separate from the historical 233-entry dialogue catalog, avoiding
 
 ## Try it in the chamber
 
-Restart **Jouer - Vector Fields.cmd**, then press **F4**. Shooting a target six times with a chosen elemental profile activates its state; killing it during the six-second state plays its matching cry. Targets respawn after two seconds. The existing **F3 > Test joueur / voix** controls apply states to the player and trigger real normal/gib deaths.
+Restart **Jouer - Vector Fields.cmd**, then use **F4 → Combat et parcours → Lancer**. Shooting a target six times with a chosen elemental profile activates its state; killing it during the six-second state plays its matching cry. Targets respawn after two seconds. The existing **F3 > Test joueur / voix** controls apply states to the player and trigger real normal/gib deaths.
 
 For a controlled target example, in the console (solo, or with `sv_cheats 1`):
 

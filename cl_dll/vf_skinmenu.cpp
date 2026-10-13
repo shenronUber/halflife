@@ -94,7 +94,7 @@ int VF_SkinsKey(int down,int key){
  if(key==K_ESCAPE){opened=false;return 0;}
  if(key==K_F2){VF_CharacterGameplay(0);return 0;}
  if(key==K_F1){opened=false;return 1;}
- if(key==K_F3||key==K_F6||key==K_F7||key==K_F9||key==K_F8||key==K_F10||key==K_F11)return 1;
+ if(key==K_F3||key==K_F4||key==K_F6||key==K_F7||key==K_F9||key==K_F8||key==K_F10||key==K_F11)return 1;
  if(key==K_TAB)Tab();else if(key=='q')VF_PreviewRotate(-10);else if(key=='e')VF_PreviewRotate(10);
  else if(key=='z')VF_PreviewZoom(.05f);else if(key=='x')VF_PreviewZoom(-.05f);else if(key=='i')Isolate();
  else if(key=='t')VF_EngineAnimation(1);else if(key=='p')VF_EnginePause();

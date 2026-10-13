@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "release": "20261013-013058-53efb5a0",
+  "source_identity": "4536219a43b5919eca737e22d85530fb41fd2eb38504c4098daf8d79cb5950dd",
+  "engine_matches": true,
+  "mandatory_gate_steps": 55,
+  "installed_artifacts_checked": [
+    "vf_visual/gfx/env/vf_stormbk.tga",
+    "vf_visual/gfx/env/vf_stormdn.tga",
+    "vf_visual/gfx/env/vf_stormft.tga",
+    "vf_visual/gfx/env/vf_stormlf.tga",
+    "vf_visual/gfx/env/vf_stormrt.tga",
+    "vf_visual/gfx/env/vf_stormup.tga",
+    "vf_visual/sound/vf_ambience/strain_a.wav",
+    "vf_visual/sound/vf_ambience/strain_b.wav",
+    "vf_visual/sound/vf_ambience/strain_c.wav",
+    "vf_visual/sound/vf_ambience/vortex.wav",
+    "vf_visual/sound/vf_ambience/wind.wav",
+    "vf_visual/sprites/vf_atmosphere/cloud.spr",
+    "vf_visual/sprites/vf_atmosphere/deck.spr",
+    "vf_visual/sprites/vf_atmosphere/white.spr",
+    "vf_visual/vf/atmosphere.json",
+    "vf_visual/vf/modular-ambience.json",
+    "vf_visual/cl_dlls/client.dll",
+    "vf_visual/dlls/hl.dll",
+    "vf_visual/maps/vf_modular.bsp"
+  ],
+  "unchanged_baseline_inputs": 5100,
+  "architecture_audit_preserved": true,
+  "skybox_test_fix": "Isolated sound test now deploys and hash-checks all six storm sky faces."
+}

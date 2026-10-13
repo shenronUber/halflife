@@ -153,6 +153,28 @@ def private_copy(source,target):
   target.unlink()
  return shutil.copy2(source,target)
 
+def selected_captures(paths,limit=32):
+ paths=sorted(paths)
+ if len(paths)<=limit:return paths
+ return [paths[round(i*(len(paths)-1)/(limit-1))]for i in range(limit)]
+
+def copy_retired_captures(source,target):
+ source=Path(source);target=Path(target)
+ for p in selected_captures([p for p in source.rglob('*')if p.is_file()]):
+  dest=target/p.relative_to(source);dest.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(p,dest)
+
+def compact_captures(root,limit=32):
+ """Bound retired screenshots per case; logs and saves remain complete."""
+ root=Path(root);removed=0
+ for case in root.iterdir():
+  if not case.is_dir()or case.name.startswith('.'):continue
+  checked_child(case,root)
+  paths=[p for p in case.rglob('*')if p.is_file()and 'scrshots'in p.parts and p.suffix.lower()in('.png','.jpg','.bmp','.tga')]
+  kept=set(selected_captures(paths,limit))
+  for p in paths:
+   if p not in kept:checked_child(p,root).unlink();removed+=1
+ return removed
+
 def retire_engine(engine,destination):
  """Preserve diagnostics before removing the disposable tree."""
  engine=checked_child(engine,SESSIONS)
@@ -163,13 +185,23 @@ def retire_engine(engine,destination):
   elif path.is_dir() and path.name not in {'valve','tfc_assets','cs_assets','vf_visual'}:
    # Active isolated mods, not fallback media libraries.
    for folder in ('scrshots','save'):
-    if (path/folder).exists():shutil.copytree(path/folder,destination/path.name/folder,dirs_exist_ok=True)
+    if (path/folder).exists():
+     if folder=='scrshots':copy_retired_captures(path/folder,destination/path.name/folder)
+     else:shutil.copytree(path/folder,destination/path.name/folder,dirs_exist_ok=True)
    for cfg in path.glob('*.cfg'):
     target=destination/path.name/cfg.name;target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(cfg,target)
  # Some older harnesses use vf_visual or valve as their writable game mod.
  for folder in ('vf_visual','valve'):
   for child in ('scrshots','save'):
-   if (engine/folder/child).exists():shutil.copytree(engine/folder/child,destination/folder/child,dirs_exist_ok=True)
+   if (engine/folder/child).exists():
+    if child=='scrshots':copy_retired_captures(engine/folder/child,destination/folder/child)
+    else:shutil.copytree(engine/folder/child,destination/folder/child,dirs_exist_ok=True)
+ # Full capture sequences used by harnesses remain in their published OUT.
+ # The disposable engine keeps only a representative retired sample.
+ screenshots=[p for p in destination.rglob('*')if p.is_file()and 'scrshots'in p.parts and p.suffix.lower()in('.png','.jpg','.bmp','.tga')]
+ kept=set(selected_captures(screenshots))
+ for p in screenshots:
+  if p not in kept:checked_child(p,EVIDENCE).unlink()
  remove_tree(engine,SESSIONS)
 
 def publish_evidence(engine,name):

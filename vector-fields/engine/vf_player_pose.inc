@@ -108,7 +108,7 @@ static void R_VFCanonicalBones( cl_entity_t *ent,qboolean gait )
 // Fitted crouch poses bend the spine forward. Rotating each local spine X
 // axis then rolls the torso while strafing. Distribute the same yaw around
 // world-up instead, preserving the native feet/gait and every hand socket.
-static void R_VFPlayerTorsoYaw( cl_entity_t *ent )
+static void R_VFPlayerTorsoYaw( cl_entity_t *ent,qboolean prepared )
 {
  if( VF_TR_Phase(ent->curstate.iuser4)==VF_TR_SLIDE ) return;
  if( !ent->player || !ent->curstate.gaitsequence ) return;
@@ -121,7 +121,7 @@ static void R_VFPlayerTorsoYaw( cl_entity_t *ent )
  for( int i = 0; i < 4; ++i )
   ent->curstate.controller[i] = ent->latched.prevcontroller[i] = 127;
  m_pPlayerInfo = info;
- if(R_VFCanonicalPlayer(ent))R_VFCanonicalBones(ent,true);else R_StudioSetupBones( ent );
+ if(!prepared){if(R_VFCanonicalPlayer(ent))R_VFCanonicalBones(ent,true);else R_StudioSetupBones( ent );}
  m_pPlayerInfo = NULL;
  mstudiobone_t *bones = (void *)((byte *)m_pStudioHeader + m_pStudioHeader->boneindex);
  const char *spines[] = {"Bip01 Spine", "Bip01 Spine1", "Bip01 Spine2", "Bip01 Spine3"};

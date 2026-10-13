@@ -173,6 +173,8 @@ max_edicts "2048"
     if args.visual_lab:
         from build_atmosphere import deploy as deploy_atmosphere
         deploy_atmosphere(dst)
+        from build_modular_ambience import deploy as deploy_ambience
+        deploy_ambience(dst)
     from build_status_decals import build as build_status_decals
     build_status_decals(ensure=True)
     from build_headgear_hud import build as build_headgear_hud

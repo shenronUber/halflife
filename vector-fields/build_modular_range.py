@@ -5,6 +5,7 @@ import re
 import subprocess
 from pathlib import Path
 import build_cache
+import build_modular_ambience as ambience
 from build_traversal_range import base
 
 ROOT = Path(__file__).resolve().parent
@@ -84,7 +85,7 @@ def geometry():
 def build(ensure=False):
     tools=ROOT.parent/'asset-probe/sdhlt/sdhlt-v1.3.0/tools/Win64'
     wad=Path('F:/SteamLibrary/steamapps/common/Half-Life/valve/halflife.wad')
-    inputs=[Path(__file__),HEADER,ROOT/'build_traversal_range.py',ROOT.parent/'weapon-lab/build_range.py',
+    inputs=[Path(__file__),HEADER,ROOT/'build_traversal_range.py',Path(ambience.__file__),ROOT.parent/'weapon-lab/build_range.py',
             ROOT.parent/'asset-probe/generate_assets.py',wad,
             *[tools/f'sdHL{x}_x64.exe' for x in ('CSG','BSP','VIS','RAD')]]
     digest=build_cache.fingerprint(inputs)
@@ -96,6 +97,8 @@ def build(ensure=False):
     text=base.entity(dict(classname='worldspawn',message='Vector Fields - Grille modulaire',wad=wad.as_posix(),skyname='vf_storm',MaxRange='16384'),
                      [base.asset.map_box(*b) for b in g['world']])
     text+=base.entity(dict(classname='vf_modular_controller',origin='0 0 128',targetname='vf_layout'))
+    for sound in ambience.entities(g):
+        text+=base.entity(sound)
     for row in g['candidates']:
         text+=base.entity(dict(classname='vf_modular_piece',vf_role=str(row['role']),vf_index=str(row['index']),vf_variant=str(row['variant']),
                               targetname=f"vf_piece_{row['role']}_{row['index']}_{row['variant']}"),[base.asset.map_box(*b) for b in row['boxes']])

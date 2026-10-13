@@ -1,7 +1,7 @@
 # Prototype de grille modulaire
 
 Lancer **Essayer la grille modulaire - Vector Fields.cmd** à la racine du projet.
-La carte `vf_modular` est intégrée au jeu principal `runtime/vector-engine/vf_visual`, avec les mêmes client, serveur, moteur et ressources que la salle combinée de tir et de parcours. **F9** l'ouvre depuis le jeu, **F4** revient à la salle combinée. Son ancien lanceur reste un raccourci vers le jeu principal.
+La carte `vf_modular` est intégrée au jeu principal `runtime/vector-engine/vf_visual`, avec les mêmes client, serveur, moteur et ressources que la salle combinée de tir et de parcours. **F4** ouvre le menu pour choisir cette grille, la salle combinée ou les [modules jouables](TILE-LABORATORY.md). Son ancien lanceur reste un raccourci vers le jeu principal.
 
 La compilation et la publication passent par `build_release.py`, qui valide un candidat privé complet avant de remplacer le jeu installé. Les anciens dossiers `vf_modular_lab` et `build/modular` restent des archives et ne sont plus utilisés par les lanceurs.
 
@@ -85,7 +85,7 @@ dans leur état réseau). Les portes et plateformes ordinaires restent exclues.
 
 ## Commandes
 
-- **F9** : recharge la carte avec une graine aléatoire et réinitialise le parcours.
+- **F4** : menu de cartes ; choisir Grille modulaire pour un nouveau tirage.
 - **F5** : affiche graine, grille et liaisons dans la console.
 - **F10 / F12** : troisième / première personne.
 - **Console** : `vf_modular_seed 42`, puis `map vf_modular`, pour rejouer un tirage.

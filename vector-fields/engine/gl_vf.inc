@@ -398,7 +398,7 @@ static qboolean R_VFDrawAssembly( cl_entity_t *ent, const vf_resolved_t *assembl
 	int drawn = ent->player ? R_StudioDrawPlayer( base_flags, &ent->curstate ) : R_StudioDrawModel( base_flags );
 	vf_stats.pose_evaluations++;
  if( drawn && R_VFCanonicalPlayer(ent) ) R_VFCanonicalBones(ent,true);
- if( drawn && !vf_first_person_body && assembly->definition.replace_carried ) R_VFPlayerTorsoYaw( ent );
+ if( drawn && !vf_first_person_body && assembly->definition.replace_carried ) R_VFPlayerTorsoYaw( ent,R_VFCanonicalPlayer(ent) );
  if( drawn ) R_VFSlideCombat( ent );
  if( drawn ) R_VFLedgePalms( ent );
  if( drawn ) R_VFVaultPalm( ent );

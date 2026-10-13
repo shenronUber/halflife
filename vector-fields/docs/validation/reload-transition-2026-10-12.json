@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "installed": true,
+  "date_utc": "2026-10-12T10:33:47.516273+00:00",
+  "cause": "The transition cached raw aim-blend zero instead of the pitch blend actually evaluated above the gait.",
+  "fix": "Cache the canonical pitch blend for the previous animation, preserving the existing shared Studio evaluator.",
+  "maximum_adjacent_frame_torso_degrees_before": 29.067207251025295,
+  "maximum_adjacent_frame_torso_degrees_after": 0.2925046737289887,
+  "six_configurations": [
+    "bottom_stand",
+    "bottom_crouch",
+    "side_stand",
+    "side_crouch",
+    "top_stand",
+    "top_crouch"
+  ],
+  "native_frames_before": 96,
+  "native_frames_after": 96,
+  "poses": 61,
+  "boxes": 1220,
+  "maximum_hitbox_corner_error_units": 0.12786439260285806,
+  "backup": "G:\\Half life Project\\vector-fields\\build\\crouch-reload\\installation-backup",
+  "files": {
+    "vector-fields\\build\\client\\client.dll": "f41bd93b19786f953c629cb214eb7b4da60d3d2b6ee250e842ab87d594c6ad50",
+    "runtime\\vector-engine\\vf_visual\\cl_dlls\\client.dll": "f41bd93b19786f953c629cb214eb7b4da60d3d2b6ee250e842ab87d594c6ad50",
+    "vector-fields\\build\\server\\hl.dll": "4e345d09be67150e48cbb65c4d3f6c5cec21eb99444ff1a2c86f1c212d155e85",
+    "runtime\\vector-engine\\vf_visual\\dlls\\hl.dll": "4e345d09be67150e48cbb65c4d3f6c5cec21eb99444ff1a2c86f1c212d155e85"
+  },
+  "delivery": {
+    "files": 651,
+    "models": 116
+  },
+  "evidence": [
+    "build/crouch-reload/before/verification.json",
+    "build/crouch-reload/after/verification.json",
+    "build/crouch-reload/native/pose_strike/verification.json",
+    "build/crouch-reload/policy/results.json"
+  ]
+}

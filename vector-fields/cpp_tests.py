@@ -7,6 +7,7 @@ PROJECT=ROOT.parent
 OUT=ROOT/'build/policy-tests'
 TESTS={
  'modular':(['tests/modular_layout_test.cpp'],[]),
+ 'tile_rooms':(['tests/tile_rooms_policy_test.cpp'],[]),
  'backend':(['tests/backend_policy_test.cpp'],[]),
  'voice_filter':(['tests/voice_filter_policy_test.cpp'],[]),
  'headgear':(['tests/headgear_policy_test.cpp','../game_shared/vf_loadout.cpp','../game_shared/vf_appearance.cpp'],['data/equipment.txt','data/r01_styles.txt']),

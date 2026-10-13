@@ -3,11 +3,15 @@ import hashlib,json,os,subprocess,time
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent;PROJECT=ROOT.parent;OUT=ROOT/'build/weapon-melee'
 def digest(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
-def sources():
-    paths=[p for folder in ('cl_dll','dlls','game_shared','common','engine','public','pm_shared') for p in (PROJECT/folder).rglob('*')
-           if p.is_file() and p.suffix.lower() in ('.c','.cpp','.h','.inc')]
-    paths += [PROJECT/'projects/vs2019'/name for name in ('hl_cdll.vcxproj','hldll.vcxproj')]
-    return {str(p.relative_to(PROJECT)):digest(p) for p in sorted(paths)}
+SDK_INPUT_FOLDERS=('dlls','cl_dll','common','engine','pm_shared','game_shared','public','external','lib','utils/vgui','utils/common','projects/vs2019','network')
+SDK_INPUT_EXTENSIONS={'.c','.cpp','.h','.inc','.rc','.ico','.def','.props','.targets','.vcxproj','.lib','.lst'}
+def source_paths(project=None):
+    project=Path(project or PROJECT)
+    return sorted(p for folder in SDK_INPUT_FOLDERS for p in (project/folder).rglob('*')
+                  if p.is_file() and p.suffix.lower() in SDK_INPUT_EXTENSIONS and '.git'not in p.parts)
+def sources(project=None):
+    project=Path(project or PROJECT)
+    return {str(p.relative_to(project)):digest(p) for p in source_paths(project)}
 def build():
     assets=json.loads((ROOT/'generated/weapon-melee/manifest.json').read_text())
     assert all(digest(path)==sha for path,sha in assets['inputs'].items()),'Refresh melee assets against installed models'

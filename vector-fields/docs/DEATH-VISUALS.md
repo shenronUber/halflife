@@ -1,6 +1,6 @@
 # Morts animées et démembrement — prototype
 
-Relancer **Jouer - Vector Fields.cmd**, puis **F4** pour la salle GIGN et **F8**
+Relancer **Jouer - Vector Fields.cmd**, puis **F4 → Combat et parcours → Lancer** pour la salle GIGN et **F8**
 pour le laboratoire des morts. Choisir une animation à gauche, une cible, une mort classique ou
 électrique, puis le membre : tête, bras gauche/droit, jambe gauche/droite,
 corps entier ou tous les membres. Le bouton ferme le menu et cadre la cible.

@@ -4,6 +4,16 @@
 #include "vf_engine_api.h"
 #include "vf_player_pose.h"
 #include "vf_headgear.h"
+#include "vf_pose_cache.h"
+static struct {
+ qboolean valid;vf_pose_key_t key;
+ matrix3x4 bones[MAXSTUDIOBONES],transform;
+} vf_sv_pose_cache[33];
+static unsigned int vf_sv_pose_hits,vf_sv_pose_evaluations;
+static convar_t *vf_sv_pose_enabled;
+static void VF_SVPoseBench(void);
+static void VF_SVPoseInfo(void){Con_Printf("VFPoseCache hits=%u evaluations=%u bytes=%u enabled=%d\n",vf_sv_pose_hits,vf_sv_pose_evaluations,(unsigned)sizeof(vf_sv_pose_cache),vf_sv_pose_enabled&&vf_sv_pose_enabled->value!=0);}
+static void Mod_VFClearPoseCache(void){memset(vf_sv_pose_cache,0,sizeof(vf_sv_pose_cache));vf_sv_pose_hits=vf_sv_pose_evaluations=0;}
 
 static struct {
  matrix3x4 bonestransform[MAXSTUDIOBONES],lighttransform[MAXSTUDIOBONES],rotationmatrix;
@@ -77,8 +87,24 @@ static qboolean Mod_VFPlayerPose(model_t *model,float frame,int sequence,const e
  ent.curstate.vuser2[0]=VF_PosePackBlend(state.previous_blend[0],state.previous_blend[1]);
  ent.curstate.vuser2[1]=VF_PosePackGear(state.headgear_phase,state.headgear_type,state.headgear_raised);ent.curstate.vuser2[2]=state.sample_time;
  vf_sv_studio.time=svgame.globals->time;vf_sv_studio.interpolate=1;vf_sv_globals.developer=0;vf_sv_player.gaityaw=state.gait_yaw;
+ if(!vf_sv_pose_enabled){vf_sv_pose_enabled=Cvar_Get("vf_sv_pose_cache","1",0,"Reuse identical authoritative Studio poses");Cmd_AddCommand("vf_sv_pose_info",VF_SVPoseInfo,"Server pose cache counters");Cmd_AddCommand("vf_sv_pose_bench",VF_SVPoseBench,"Measure repeated server pose queries (cheats only)");}
+ vf_pose_key_t key={0};key.model=model;key.header=mod_studiohdr;key.entity=edict;key.game=svgame.hInstance;key.time=vf_sv_studio.time;
+ key.sequence=sequence;key.gait=ent.curstate.gaitsequence;key.hull=ent.curstate.usehull;key.traversal=ent.curstate.iuser4;memcpy(key.blend,ent.curstate.blending,2);
+ memcpy(key.values,ent.origin,3*sizeof(float));memcpy(key.values+3,ent.angles,3*sizeof(float));
+ key.values[6]=frame;key.values[7]=ent.curstate.animtime;key.values[8]=ent.curstate.framerate;key.values[9]=ent.curstate.fuser1;key.values[10]=ent.curstate.fuser4;
+ memcpy(key.values+11,ent.curstate.vuser1,3*sizeof(float));memcpy(key.values+14,ent.curstate.vuser2,3*sizeof(float));
+ memcpy(key.values+17,ent.curstate.vuser3,3*sizeof(float));memcpy(key.values+20,ent.curstate.vuser4,3*sizeof(float));key.values[23]=state.headgear_phase;
+ int slot=ent.index; qboolean cacheable=slot>0&&slot<=32&&vf_sv_pose_enabled->value!=0;
+ if(cacheable&&vf_sv_pose_cache[slot].valid&&VF_PoseKeyEqual(&key,&vf_sv_pose_cache[slot].key)){
+  ++vf_sv_pose_hits;
+  for(int i=0;i<mod_studiohdr->numbones;++i){Matrix3x4_Copy(studio_bones[i],vf_sv_pose_cache[slot].bones[i]);Matrix3x4_Copy(vf_sv_studio.bonestransform[i],studio_bones[i]);}
+  Matrix3x4_Copy(studio_transform,vf_sv_pose_cache[slot].transform);
+  if(Cvar_VariableInteger("developer")>=3)R_VFAuditPlayerPose("server",&ent);
+  return true;
+ }
+ ++vf_sv_pose_evaluations;
  R_VFCanonicalBones(&ent,true);
- if(VF_PoseReferenceModel(model->name))R_VFPlayerTorsoYaw(&ent);
+ if(VF_PoseReferenceModel(model->name))R_VFPlayerTorsoYaw(&ent,true);
  R_VFSlideCombat(&ent);R_VFLedgePalms(&ent);R_VFVaultPalm(&ent);
  vf_assembly_t gear={0};gear.headgear_type=state.headgear_type;gear.headgear_phase=state.headgear_phase;
  if(state.headgear_type>0){
@@ -88,7 +114,12 @@ static qboolean Mod_VFPlayerPose(model_t *model,float frame,int sequence,const e
  }
  for(int i=0;i<mod_studiohdr->numbones;++i)Matrix3x4_Copy(studio_bones[i],vf_sv_studio.bonestransform[i]);
  if(Cvar_VariableInteger("developer")>=3)R_VFAuditPlayerPose("server",&ent);
- Matrix3x4_Copy(studio_transform,vf_sv_studio.rotationmatrix);return true;
+ Matrix3x4_Copy(studio_transform,vf_sv_studio.rotationmatrix);
+ if(cacheable){vf_sv_pose_cache[slot].valid=true;vf_sv_pose_cache[slot].key=key;
+  for(int i=0;i<mod_studiohdr->numbones;++i)Matrix3x4_Copy(vf_sv_pose_cache[slot].bones[i],studio_bones[i]);
+  Matrix3x4_Copy(vf_sv_pose_cache[slot].transform,studio_transform);
+ }
+ return true;
 }
 
 void Mod_VFPlayerBounds(edict_t *edict){
@@ -103,4 +134,19 @@ void Mod_VFPlayerBounds(edict_t *edict){
   }
  }
  mod_studiohdr=saved;
+}
+
+static void VF_SVPoseBench(void){
+ if(sv.state!=ss_active||!Cvar_VariableInteger("sv_cheats")||Cmd_Argc()!=2)return;
+ int queries=Q_atoi(Cmd_Argv(1));if(queries<1||queries>4096)return;
+ unsigned hits=vf_sv_pose_hits,evals=vf_sv_pose_evaluations;int clients=0,requests=0;
+ studiohdr_t *saved=mod_studiohdr;double start=Platform_DoubleTime();
+ for(int i=1;i<=svs.maxclients&&i<=32;++i){
+  edict_t *edict=SV_EdictNum(i);model_t *model=SV_ModelHandle(edict->v.modelindex);
+  if(!model||!Mod_VFPlayerModel(model,edict)||edict->v.deadflag!=DEAD_NO)continue;
+  mod_studiohdr=Mod_StudioExtradata(model);if(!mod_studiohdr)continue;
+  ++clients;for(int q=0;q<queries;++q)requests+=Mod_VFPlayerPose(model,edict->v.frame,edict->v.sequence,edict);
+ }
+ mod_studiohdr=saved;
+ Con_Printf("VFPoseBench clients=%d queries=%d requests=%d enabled=%d milliseconds=%.4f hits=%u evaluations=%u\n",clients,queries,requests,vf_sv_pose_enabled->value!=0,(Platform_DoubleTime()-start)*1000,vf_sv_pose_hits-hits,vf_sv_pose_evaluations-evals);
 }
